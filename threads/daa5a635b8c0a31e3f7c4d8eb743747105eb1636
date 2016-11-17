@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0057: Importing Objective-C Lightweight Generics</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>April 14, 2016 at 12:00:00pm</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0057-importing-objc-generics.md<br></p><p>The review of SE-0057 &quot;Importing Objective-C Lightweight Generics&quot; ran from Mar 31…Apr 5, 2016. The proposal has been *accepted*:<br></p><p>This proposal only received light commentary from the community, but that feedback was universally positive.  The core team agrees that this is will greatly improve the expressivity of imported Objective-C APIs into Swift.  The implementation work is quite far along, and while there are still a couple engineering-level questions left, the design is solid, so we are comfortable accepting it at this point. <br></p><p>Thank you to Doug Gregor for proposing this, and Chris Willmore, Jordan Rose, and Joe Groff for driving forward the implementation effort!<br></p><p>-Chris Lattner<br>Review Manager<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

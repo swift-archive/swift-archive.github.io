@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/582b7183bda90126e385e2cc95cb7088?s=50"></div><header><strong>[Idea] Passing an Array to Variadic Functions</strong> from <string>Justin Jia</string> &lt;justin.jia.developer at gmail.com&gt;<p>April 15, 2016 at 08:00:00pm</p></header><div class="content"><p>Hi!<br></p><p>Currently, we can’t call a variadic function with an array of arguments.<br></p><p>Reference:<br>1. http://stackoverflow.com/questions/24024376/passing-an-array-to-a-function-with-variable-number-of-args-in-swift<br>2. https://www.drivenbycode.com/the-missing-apply-function-in-swift/<br></p><p>Consider the following use case:<br></p><p>```<br>func average(numbers: Double…) -&gt; Double {<br>    return sum(numbers) / numbers.count // Error: Cannot convert value of type ‘[Double]’ to expected argument type ‘Double&#39;<br>}<br></p><p>func sum(numbers: Double...) -&gt; Double { … }<br>```<br></p><p>Right now, there are two ways to fix it:<br></p><p>1. Add another function that accept `[Double]` as input.<br></p><p>```<br>func average(numbers: Double…) -&gt; Double {<br>    return sum(numbers) / numbers.count<br>}<br></p><p>func sum(numbers: Double...) -&gt; Double {<br>    return sum(numbers)<br>}<br></p><p>func sum(numbers: [Double]) -&gt; Double { … }<br>```<br></p><p>2. Implement an `apply()` function using `unsafeBitCast`.<br></p><p>```<br>func average(numbers: Double…) -&gt; Double {<br>    return sum(apply(numbers)) / numbers.count<br>}<br></p><p>func sum(numbers: [Double]) -&gt; Double { … }<br></p><p>func apply&lt;T, U&gt;(fn: (T...) -&gt; U, args: [T]) -&gt; U {<br>    typealias FunctionType = [T] -&gt; U<br>    return unsafeBitCast(fn, FunctionType.self)(args)<br>}<br>```<br></p><p>However, both solutions are not very elegant. The first solution requires the library author to implement both functions, and the second solution breaks the guarantees of Swift’s type system.<br></p><p>Swift should allow passing an array to variadic functions, or we should implement a type-safe `apply()` function in the standard library.<br></p><p>Justin<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d8cb5ce1e8a83d826650c91466c7800?s=50"></div><header><strong>Anonymous Enums (Updated)</strong> from <string>Yong hee Lee</string> &lt;yonghee226 at gmail.com&gt;<p>February 21, 2016 at 01:00:00am</p></header><div class="content"><p>Hi, I have a proposal.<br></p><p><br>enum Foo {<br>  case foo,bar<br>}<br></p><p>func test(a:Foo) {<br>  // …<br>}<br></p><p>test(.bar)<br></p><p><br>If I use an enum only as a parameter of a function, the name of enum  is redundant. <br></p><p>so I suggest a compact version like below.<br></p><p><br></p><p>func test(a:[foo|bar]) {<br>  // ...<br>}<br></p><p>test(.bar)<br></p><p><br></p><p>func adjustTemperature(temp:[low|normal|high]) {<br>  // ...<br>}<br></p><p>adjustTemperature(.high)<br></p><p><br></p><p>I think this is very useful.<br>What do you think?<br></p><p><br>————————————————————————————<br></p><p><br></p><p>I’ve added an explanation.<br></p><p><br>Benefits <br></p><p><br>Anonymous enums let you see all enum options at a glance.<br></p><p>func adjustTemperature(temp:[low|normal|high]) { … }<br>In case of normal enums, callers should check inside of the enum interface.<br></p><p><br>Anonymous enums encourage switch-case coding style.<br></p><p>// Bool variables lead to use if-else clauses.<br></p><p>var switchIsOn : Bool = true<br></p><p>if switchIsOn {<br>  //<br>  // ...<br>  //<br>} else {<br>  // <br>  // ...<br>  //<br>}<br></p><p>// Anonymouse enums lead to use switch-case clauses.<br></p><p>var switchState: [on|off] = .on<br></p><p>switch(switchState) {<br>case .on :<br>  //<br>  // ...<br>  //<br>case .off :<br>  //<br>  // ...<br>  //<br>}<br></p><p>// i think the switch-case is a much better option for readability because you can label each cases. If your code is very long and uses many nested if-clauses, it makes huge differences. <br></p><p><br>Generally, you don’t use anonymous enums as an alternative of normal enums.<br>I think enum is a structure but, anonymous enum is just a flag variable type. <br></p><p><br>You can make an anonymouse enum variable without thinking that you are making a new structure and increasing complexity.<br>Therefore, anonymous enums can replace bool flags easily without a mental barrier.<br></p><p>“Small differences make big changes”<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160221/950ba485/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

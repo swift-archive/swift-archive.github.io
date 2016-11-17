@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2d932a7cff4e614f7b268b11b3b362a7?s=50"></div><header><strong>Arrays and variadic parameters</strong> from <string>Alexandre Lopoukhine</string> &lt;superlopuh at gmail.com&gt;<p>July 29, 2016 at 11:00:00am</p></header><div class="content"><p>Hello all,<br></p><p>I&#39;m not sure if this has been brought up before, or what the status of the issue is as of Swift 3, but I was wondering why there is no option to call a function that takes a variadic parameter argument with an array. Seen as the parameter essentially becomes an array, and is used as such in the function, I think that adding the ability to call it with one directly could be useful, with few downsides. This will, for example, allow you to use the built-in `min` and `max` functions on arrays.<br></p><p>WDYT?<br></p><p>– Sasha<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3b3f5abbe48b7127e20fd69808c714bf?s=50"></div><header><strong>Arrays and variadic parameters</strong> from <string>Charlie Monroe</string> &lt;charlie at charliemonroe.net&gt;<p>July 29, 2016 at 12:00:00pm</p></header><div class="content"><p>This has been brought up and there was a proposal by Haravikk, but the discussion started almost mid-July and the deadline for all Swift 3 *implementation* was on Jul 27. So it didn&#39;t make it, but I think there will be enough discussion about it on Aug 1 and after (all discussion about features for future Swift releases is currently on hold until Aug 1).<br></p><p>Unfortunately, the suggested behavior has an issue what to do when the array is empty. For example, you&#39;ve mentioned min and max - there are (as variadic) ensured to always be called with at least one value. When you use it with an array, there is no guarantee that the array contains any element. In such cases, what should the min/max do? Crash? Return +-infinity?<br></p><p>Changing min/max to return an optional would be a solution, but I don&#39;t think a good one.<br></p><p>Moreover, for this particular example, you already have min/max on arrays:<br></p><p>let numbers = [23, 43, 12, 10]<br>numbers.minElement()<br></p><p>&gt; On Jul 29, 2016, at 11:46 AM, Alexandre Lopoukhine via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello all,<br>&gt; <br>&gt; I&#39;m not sure if this has been brought up before, or what the status of the issue is as of Swift 3, but I was wondering why there is no option to call a function that takes a variadic parameter argument with an array. Seen as the parameter essentially becomes an array, and is used as such in the function, I think that adding the ability to call it with one directly could be useful, with few downsides. This will, for example, allow you to use the built-in `min` and `max` functions on arrays.<br>&gt; <br>&gt; WDYT?<br>&gt; <br>&gt; – Sasha<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e164876f30b5aa511b02c6241b5315da?s=50"></div><header><strong>Extending a generic type where T == Void</strong> from <string>Benedict Cohen</string> &lt;ben at benedictcohen.co.uk&gt;<p>August  9, 2016 at 07:00:00pm</p></header><div class="content"><p>I have an enum that represents the states of a task:<br></p><p>enum TaskState&lt;InType, OutType&gt;{<br>case preparing<br>case ready(InType)<br>case executing(InType, TaskIdentifier)<br>case success(InType, OutType)<br>case failure(InType, Error)<br></p><p>mutating func transition(toReady: InType) {...}<br></p><p>}<br></p><p>//Usage<br>var locationSearchTaskState: TaskState&lt;String, [Location]&gt; = .preparing<br>//...<br>locationSearchTaskState.transition(toReady: text)<br></p><p>This works as desired for most cases. Not all tasks, however, have an input:<br></p><p>var topLocationsTaskState&lt;Void, [Location]&gt; = .ready( () )<br></p><p>In this case we have to pass the empty tuple as the value which is ugly. I&#39;d like to add some sugar to make this nicer. Something along the lines of:<br></p><p>extension TaskState where InType: Void {...}<br></p><p>Of course this doesn&#39;t work because Void is not a protocol (nor can it conform to a protocol because it&#39;s just a tuple). So my question: How can I extend a generic type when the generic parameter is Void? Are there alternative ways to model this problem?<br></p><p>Cheers<br>Ben<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

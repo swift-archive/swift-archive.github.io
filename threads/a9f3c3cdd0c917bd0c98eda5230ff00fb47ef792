@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0035 Limiting inout capture to @noescape contexts</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>February 23, 2016 at 07:00:00pm</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0035-limit-inout-capture.md<br></p><p>The review of SE-0035 &quot;Limiting inout capture to @noescape contexts&quot; ran from Feb 16…19, 2016. The proposal has been *accepted*:<br></p><p>This proposal has been very positively accepted by the community at large as well as the core team, and folks widely agree that it eliminates a common source of surprise, making Swift more predictable.<br></p><p>Thank you to Joe Groff for the proposal!    I filed https://bugs.swift.org/browse/SR-807 &lt;https://bugs.swift.org/browse/SR-807&gt; to track implementation of this.<br></p><p>-Chris Lattner<br>Review Manager<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160223/a9f3f792/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Fwd: [Draft] Rationalizing Sequence end-operation names</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July  1, 2016 at 03:00:00pm</p></header><div class="content"><p>on Thu Jun 23 2016, Xiaodi Wu &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Yikes, not only is the email too big for some mail clients, it&#39;s too big<br>&gt; for the mailing list. Resending with proposal snipped.<br>&gt;<br>&gt; On Thu, Jun 23, 2016 at 1:24 PM, David Hart via swift-evolution &lt;<br>&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt; Most of your proposal look great to me! Comments inline:<br>&gt;&gt;<br>&gt;&gt; On 23 Jun 2016, at 09:19, Brent Royal-Gordon via swift-evolution &lt;<br>&gt;&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;<br>&gt;&gt; As previously threatened mentioned, I&#39;ve written a draft proposal to fix<br>&gt;&gt; a number of naming issues with APIs operating on the beginning and end of<br>&gt;&gt; Sequences and Collections:<br>&gt;&gt;<br>&gt;&gt; • Inconsistent use of `prefix`/`suffix` vs. `first`/`last`<br>&gt;&gt; • Confusing naming of `drop` methods<br>&gt;&gt; • Ambiguous naming of `index(of:/where:)` and `drop(while:)`<br>&gt;&gt; • `prefix(upTo:)`, `prefix(through:)`, and `suffix(from:)` shouldn&#39;t be<br>&gt;&gt; part of this family at all<br>&gt;&gt;<br>&gt;&gt; To fix this, I propose:<br>&gt;&gt;<br>&gt;&gt; • Renaming all methods which operate on more than one element at the<br>&gt;&gt; beginning/end to use &quot;prefix&quot; or &quot;suffix&quot;, not &quot;first&quot; or &quot;last&quot;<br>&gt;&gt;<br>&gt;&gt; Looking at the first column in your table, I think the current API focuses<br>&gt; correctly on the number of elements returned (and consequently, the return<br>&gt; type) rather than the number of elements interrogated. &quot;First&quot; and &quot;last&quot;<br>&gt; on their own suggest very strongly that you get back either zero elements<br>&gt; or one element (thus, an optional would be the appropriate return type),<br>&gt; whereas &quot;prefix&quot; and &quot;suffix&quot; suggest 0 to all elements might be returned<br>&gt; (thus, an array or collection would be the appropriate return type).<br>&gt; Currently, the API adheres to that expectation as far as your &quot;get&quot; column<br>&gt; is concerned, and IMO the most consistent approach would be to whip the<br>&gt; remaining columns in line.<br>&gt;<br>&gt; To me, `first(where:)` is unambiguous and doubly distinguished from<br>&gt; `prefix(while:)`--even when the argument label is dropped in trailing<br>&gt; closure syntax, it is clear that `first` gives you at most one, and by<br>&gt; contradistinction `prefix` gives you at most all. I&#39;m not sure that<br>&gt; &quot;earliest&quot; is an improvement, since you&#39;re introducing another word and<br>&gt; breaking the parallels here. So on reflection, I&#39;m satisfied that first,<br>&gt; prefix, last, suffix all have their place in the API. Of course, I think<br>&gt; you could make a case for an across-the-board renaming of &quot;first&quot; to<br>&gt; &quot;earliest&quot; and &quot;last&quot; to &quot;latest&quot;--in fact, there could be an argument that<br>&gt; given 0-based indices the word &quot;first&quot; is an unfortunate choice in any<br>&gt; case.<br></p><p>Now it&#39;s my turn to call someone else overly fussy ;-).<br></p><p>People commonly talk about the first element of an array, and “earliest”<br>could even be confusing depending on context:<br></p><p>   let a = [ now(), tomorrow(), yesterday() ]<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

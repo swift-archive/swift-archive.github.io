@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review #2] SE-0117: Default classes to be non-subclassable publicly</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July 17, 2016 at 02:00:00pm</p></header><div class="content"><p>on Sun Jul 17 2016, Tino Heth &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I naturally assumed that &quot;public&quot; and &quot;open&quot; would be two separate<br>&gt; concepts, as it has been expressed that orthogonality* is favored.<br>&gt; But actually reading the proposal, it says:<br>&gt; &quot;open is invalid on declarations that are not also public&quot;, which imho<br>&gt; not only is an unnecessary mingling of the two concepts, it also<br>&gt; blocks the option to declare methods that can&#39;t be called outside the<br>&gt; framework, which isn&#39;t that uncommon in Cocoa (methods like<br>&gt; UIView.drawRect wouldn&#39;t show up in autocompletion lists anymore).<br></p><p>One point is to allow the possibility of non-public open methods in the<br>future, even if we know we don&#39;t have the time to design or implement<br>them today.<br></p><p>&gt; The whole proposal is about limitation whose rationale is<br>&gt; incomprehensible for many, but for this &quot;restriction of the<br>&gt; restriction&quot;, I can&#39;t see any rationale at all.<br>&gt;<br>&gt; - Tino<br>&gt;<br>&gt; * At class-level, there is afaics no orthogonality planned as well (a<br>&gt; class that is abstract outside its module… might be useful as well)<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

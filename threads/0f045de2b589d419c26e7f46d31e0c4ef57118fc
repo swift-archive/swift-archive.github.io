@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6c3c6af3a3702ecbe5bfa02e3d89aca?s=50"></div><header><strong>&#39;SwiftShims&#39;: no such file or directory</strong> from <string>Eric Wing</string> &lt;ewmailing at gmail.com&gt;<p>September 19, 2016 at 06:00:00am</p></header><div class="content"><p>I&#39;ve been trying to build Swift for Linux with --installable-package<br>to build a swift-package.tar.gz that I can install to another Linux<br>machine.<br></p><p>When I extract my package on the other machine, and try either<br>compiling a simple print(&quot;hello world&quot;) program either with swiftc, or<br>doing this in the swift repl, I get the error message:<br>opening import file for module &#39;SwiftShims&#39;: No such file or directory<br></p><p>I don&#39;t seem to get this problem on the machine I built Swift on.<br></p><p><br>I didn&#39;t have this problem with Swift 2.3, but I&#39;m always getting it<br>now with Swift 3.<br></p><p>What am I doing wrong?<br></p><p>Thanks,<br>Eric<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>&#39;SwiftShims&#39;: no such file or directory</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>September 19, 2016 at 08:00:00am</p></header><div class="content"><p>Are you building within a shared folder? We have heard reports of this happening in such an environment, but we don&#39;t have a handle on the exact steps to reproduce. Getting that information would be very useful.<br></p><p> - Daniel<br></p><p>&gt; On Sep 19, 2016, at 6:53 AM, Eric Wing via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I&#39;ve been trying to build Swift for Linux with --installable-package<br>&gt; to build a swift-package.tar.gz that I can install to another Linux<br>&gt; machine.<br>&gt; <br>&gt; When I extract my package on the other machine, and try either<br>&gt; compiling a simple print(&quot;hello world&quot;) program either with swiftc, or<br>&gt; doing this in the swift repl, I get the error message:<br>&gt; opening import file for module &#39;SwiftShims&#39;: No such file or directory<br>&gt; <br>&gt; I don&#39;t seem to get this problem on the machine I built Swift on.<br>&gt; <br>&gt; <br>&gt; I didn&#39;t have this problem with Swift 2.3, but I&#39;m always getting it<br>&gt; now with Swift 3.<br>&gt; <br>&gt; What am I doing wrong?<br>&gt; <br>&gt; Thanks,<br>&gt; Eric<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6c3c6af3a3702ecbe5bfa02e3d89aca?s=50"></div><header><strong>&#39;SwiftShims&#39;: no such file or directory</strong> from <string>Eric Wing</string> &lt;ewmailing at gmail.com&gt;<p>September 19, 2016 at 02:00:00pm</p></header><div class="content"><p>On 9/19/16, Daniel Dunbar &lt;daniel_dunbar at apple.com&gt; wrote:<br>&gt; Are you building within a shared folder? We have heard reports of this<br>&gt; happening in such an environment, but we don&#39;t have a handle on the exact<br>&gt; steps to reproduce. Getting that information would be very useful.<br>&gt;<br></p><p>Unfortunately no. I didn&#39;t use shared folders.<br></p><p>I&#39;m still having problems building corelibs-foundation. Could this be<br>the reason?<br></p><p>Thanks,<br>Eric<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

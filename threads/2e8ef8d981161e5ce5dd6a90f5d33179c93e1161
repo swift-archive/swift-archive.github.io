@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Review] SE-0077: Improved operator declarations</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>May 18, 2016 at 12:00:00pm</p></header><div class="content"><p>I underline that I very much rely on the Core team to pick the &quot;right&quot;<br>version of syntax.<br>The only opinion I have is that `greaterThan` and `above` are probably<br>better than `&gt;`.<br></p><p>- Anton<br></p><p>Trent Nadeau wrote:<br></p><p>&gt; Although I would prefer something like:<br>&gt; precedence(greaterThan: LogicalAnd)<br>&gt; to:<br>&gt; precedence(&gt; LogicalAnd)<br>&gt; I think the latter is more difficult to read, and I just find the idea of<br>&gt; using an operator in an operator/precendencegroup definition strange.<br></p><p><br>Xiaodi Wu wrote:<br></p><p>&gt; * `precedencegroup` defines both associativity and precedence, so the<br>&gt; naming isn&#39;t great. Maybe `operatorgroup`?<br>&gt; * I&#39;m not sure about the parentheses used between the braces. To me, it<br>&gt; would fit better with the language to use colons.<br>&gt; * It may be confusing that relative precedence levels are themselves<br>&gt; described using operators or words that describe operators. I&#39;d suggest<br>&gt; simpler words that aren&#39;t self-referential, such as &quot;above&quot; and &quot;below&quot;.<br>&gt; So to put it all together, here&#39;s the color of my bikeshed:<br>&gt; ```<br>&gt; operatorgroup Comparative {<br>&gt;   associativity: left,<br>&gt;   precedence: above(LogicalAnd)<br>&gt; }<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160518/2e8e1161/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

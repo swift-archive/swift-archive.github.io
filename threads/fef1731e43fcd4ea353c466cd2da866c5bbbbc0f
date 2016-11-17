@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Heads up: Enforcement of StdlibUnittest runAllTests()</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>January  9, 2016 at 03:00:00am</p></header><div class="content"><p>Heads up: StdlibUnittest is now enforcing that its test files run a test.<br></p><p>StdlibUnittest files are expected to end with runAllTests(). Previously if you forgot to call runAllTests() then the test file silently tested nothing and succeeded. Now the test file fails.<br></p><p>    Ran no tests and runNoTests() was not called. Aborting. <br>    Did you forget to call runAllTests()?<br></p><p>If you have an StdlibUnittest file that is expected to run no tests, you can call runNoTests() to prevent the error. I don&#39;t know of any such test today; we use lit&#39;s facilities instead (REQUIRES: and UNSUPPORTED:).<br></p><p>I found and fixed two test files, but I didn&#39;t run all tests on all platforms. If you find another new test failure because runAllTests() is missing, please send a pull request or just complain here.<br></p><p><br>-- <br>Greg Parker     gparker at apple.com     Runtime Wrangler<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

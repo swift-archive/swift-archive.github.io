@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f6b7154fd1d6a470d0b521a2e484bffc?s=50"></div><header><strong>swift generics not generic enough?</strong> from <string>Daniel Duan</string> &lt;daniel at duan.org&gt;<p>April 26, 2016 at 01:00:00am</p></header><div class="content"><p>Baojun Wang via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; Hi List,<br>&gt; <br>&gt; I&#39;m very new to swift, and feel quite excited about the features provided by<br>&gt; swift.<br></p><p>Hi Baojun,<br></p><p>Regarding generic features, I recommend reading the Manifesto from Douglas<br>Gregor:<br></p><p>http://article.gmane.org/gmane.comp.lang.swift.evolution/8484<br></p><p>You&#39;ll find that it addresses a lot current shortcomings in Swift&#39;s generics.<br>There have also been a great number of discussions subsequently.<br></p><p>- Daniel<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b44e6f73953e221952a6706badef3dd2?s=50"></div><header><strong>swift generics not generic enough?</strong> from <string>Baojun Wang</string> &lt;wangbj at gmail.com&gt;<p>April 26, 2016 at 09:00:00pm</p></header><div class="content"><p>Thanks for the link. I founded the original HKT mega thread only. Good to<br>know Swift 3.0 is working on complete generics.<br></p><p>- baojun<br></p><p>On Mon, Apr 25, 2016 at 6:47 PM Daniel Duan via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Baojun Wang via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt;<br>&gt; &gt; Hi List,<br>&gt; &gt;<br>&gt; &gt; I&#39;m very new to swift, and feel quite excited about the features<br>&gt; provided by<br>&gt; &gt; swift.<br>&gt;<br>&gt; Hi Baojun,<br>&gt;<br>&gt; Regarding generic features, I recommend reading the Manifesto from Douglas<br>&gt; Gregor:<br>&gt;<br>&gt; http://article.gmane.org/gmane.comp.lang.swift.evolution/8484<br>&gt;<br>&gt; You&#39;ll find that it addresses a lot current shortcomings in Swift&#39;s<br>&gt; generics.<br>&gt; There have also been a great number of discussions subsequently.<br>&gt;<br>&gt; - Daniel<br>&gt;<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160426/8bcc17bd/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

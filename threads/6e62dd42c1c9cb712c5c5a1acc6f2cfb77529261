@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>Proposal: Pattern Matching Partial Function (#111)</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>February  9, 2016 at 03:00:00pm</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160209/6e629261/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d118cdf2fe31053bc7032466c4da282?s=50"></div><header><strong>Proposal: Pattern Matching Partial Function (#111)</strong> from <string>Craig Cruden</string> &lt;ccruden at novafore.com&gt;<p>February 10, 2016 at 03:00:00am</p></header><div class="content"><p>&gt; On 2016-02-09, at 22:08:16, Thorsten Seitz via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; <br>&gt;&gt; I’m not sure where I stand on the switch-less case-list closure, but I am afraid that providing such dedicated closure syntax may set a precedent and cause others to want yet another dedicated closure syntax for their own goal; how do we consider a special closure syntax as acceptable, how many of them are too many. <br>&gt; <br>&gt; <br>&gt; Fair enough.<br></p><p>The `case` inside a closure is not a new concept.  Scala (among I think a few other functional languages) implements `case` as a partial function inside closures.  <br></p><p>I actually use it quite widely, but not as often as I would use it if it were in Swift - since Scala also implements a match expression (which for the most part would be the same as the match function in Swift - with the exception that it does not need function brackets).  <br></p><p>Given that at most we will get a match expression or the partial function `case` structure - I would prefer the `case` structure because it gives us both. <br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160210/c466989d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

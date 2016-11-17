@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e8cdbb342ee8fa6bd9ba1909db1e3ad7?s=50"></div><header><strong>Mocking in Swift</strong> from <string>Mark DiFranco</string> &lt;mpdifran at gmail.com&gt;<p>September  9, 2016 at 12:00:00am</p></header><div class="content"><p>This is my first post, let me know if I’m doing anything wrong!<br></p><p>Has there been any discussion on implementing mocking in Swift for tests?<br></p><p>I’ve been taking a TDD approach in my Swift apps, and I have resorted to hiding all my classes behind protocols (which encapsulates the public methods and properties for each class) in order to easily mock out dependencies in tests via manually created mock classes. <br></p><p>This has several downsides:<br></p><p>1) Protocols cannot conform to Equatable, reducing the number of useful collection methods available that require that protocol.<br>2) This process becomes quite cumbersome when classes require via method parameter a class that also needs to be mocked (and thus is hiding behind a protocol). The CoreBluetooth classes are an example of this.<br>3) There is a layer of code (directly above external dependencies) that needs to be hidden behind a protocol, thus leaving a layer that is un-testable, and usually very boilerplate.<br></p><p>I can provide examples of the current method I’m using to better highlight its shortcomings, if needed.<br></p><p>Cheers, <br>Mark<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

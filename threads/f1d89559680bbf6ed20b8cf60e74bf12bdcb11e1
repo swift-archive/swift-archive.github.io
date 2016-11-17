@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0045: Add scan, prefix(while:), drop(while:), and iterate to the stdlib</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 29, 2016 at 03:00:00pm</p></header><div class="content"><p>on Fri Apr 29 2016, Kevin Ballard &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Thu, Apr 28, 2016, at 11:48 AM, Joe Groff via swift-evolution wrote:<br>&gt;&gt; One thing I&#39;ve been thinking about with regards to the existing<br>&gt;&gt; `reduce` operation is whether it would be better expressed in Swift<br>&gt;&gt; as taking its closure as (inout State, Element) -&gt; Void rather than<br>&gt;&gt; (State, Element) -&gt; State. Doing so would avoid many of the<br>&gt;&gt; accidentally-quadratic issues with the current formulation of<br>&gt;<br>&gt;&gt; reduce:<br>&gt;&gt; <br>&gt;&gt; 	arrayOfArrays.reduce([], combine: +) // quadratic temporary arrays<br>&gt;&gt; 	arrayOfArrays.inPlaceReduce([], combine: +=) // can be linear by appending arrays in-place<br>&gt;&gt; <br>&gt;&gt; Thanks to the scoped semantics of `inout`, there&#39;s no hazard of the<br>&gt;&gt; mutable state reference being escaped, so the inout form is<br>&gt;&gt; isomorphic to the traditional pure form of reduce.<br>&gt;&gt; <br>&gt;&gt; Now `scan`-ing to generate an array of intermediate arrays is<br>&gt;&gt; inherently quadratic, since each intermediate array shows up as a<br>&gt;&gt; distinct copy in the resulting collection. However, if someone used<br>&gt;&gt; `scan` to produce a sequence of tree data structures instead of flat<br>&gt;&gt; arrays, it could still be interesting to share structure among the<br>&gt;&gt; intermediate states collected by `scan` by performing an in-place<br>&gt;&gt; operation to generate new values instead of an out-of-place<br>&gt;&gt; operation. It might be interesting to consider a similar signature<br>&gt;&gt; change to `scan` for these same reasons.<br>&gt;<br>&gt; That&#39;s an interesting idea. Taking the state as an inout parameter<br>&gt; seems useful, but it does mean breaking with precedent from other<br>&gt; languages and I do worry slightly about the ergonomics (not all<br>&gt; operations have mutating counterparts, <br></p><p>That&#39;s easy; you just mutate the whole state using assignment in the<br>closure:<br></p><p>  state = nonmutating(state)<br></p><p>&gt; though you could also say that there&#39;s mutating methods that don&#39;t<br>&gt; have trivial non-mutating versions too).<br></p><p>That one is harder unless you know you have value semantics; you need a<br>way to copy the state to create a non-mutating operation from a mutating one.<br></p><p>&gt; That said, regarding using `scan` to produce a sequence of tree data<br>&gt; structures, I&#39;d expect non-mutating operations to be able to share<br>&gt; state just as effectively as COW mutating operations.<br></p><p>Good point.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

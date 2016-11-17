@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0137: Avoiding Lock-In to Legacy Protocol Designs</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>August 12, 2016 at 10:00:00am</p></header><div class="content"><p>on Thu Aug 11 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Aug 10, 2016, at 2:03 PM, John McCall &lt;rjmccall at apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hello Swift community,<br>&gt;&gt; <br>&gt;&gt; The review of &quot;SE-0137: Avoiding Lock-In to Legacy Protocol Designs&quot; begins now and runs through August 14. The proposal is available here:<br>&gt;&gt; <br>&gt;&gt; 	https://github.com/apple/swift-evolution/blob/master/proposals/0137-avoiding-lock-in.md<br>&gt;<br>&gt; 	&#39;ExpressibleByStringInterpolation&#39; is deprecated: it will be<br>&gt; replaced or redesigned in Swift 4.0.  Instead of conforming to<br>&gt; &#39;ExpressibleByStringInterpolation&#39;, consider adding an<br>&gt; &#39;init(_:String)&#39;<br>&gt;<br>&gt; I&#39;m not sure I understand this error message. What is the second<br>&gt; sentence trying to imply you should do instead of conforming?<br></p><p>Hmm, I agree that could be clearer.  It&#39;s trying to say, “just use<br>string interpolations to express Strings, and give your type a<br>converting initializer from String.”<br></p><p>&gt;<br>&gt; Otherwise, +1 to all of this.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

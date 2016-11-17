@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Mutability for Foundation types in Swift</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 22, 2016 at 11:00:00am</p></header><div class="content"><p>on Fri Apr 22 2016, Sean Heber &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I don’t have anything significant to say other than that this is awesome.<br></p><p>+1; way to go, Tony et al!<br></p><p>&gt; l8r<br>&gt; Sean<br>&gt;<br>&gt;&gt; On Apr 22, 2016, at 12:18 PM, Tony Parker via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Dear swift-evolution denizens,<br>&gt;&gt; <br>&gt;&gt; As you know from our announcement of Swift Open Source and our work<br>&gt;&gt; on naming guidelines, one of our goals for Swift 3 is to “drop NS”<br>&gt;&gt; for Foundation. We want to to make the cross-platform Foundation API<br>&gt;&gt; that is available as part of swift-corelibs feel like it is not tied<br>&gt;&gt; to just Darwin targets. We also want to reinforce the idea that new<br>&gt;&gt; Foundation API must fit in with the language, standard library, and<br>&gt;&gt; the rapidly evolving design patterns we see in the community.<br>&gt;&gt; <br>&gt;&gt; You challenged us on one part of this plan: some Foundation API just<br>&gt;&gt; doesn’t “feel Swifty”, and a large part of the reason why is that it<br>&gt;&gt; often does not have the same value type behavior as other Swift<br>&gt;&gt; types. We took this feedback seriously, and I would like to share<br>&gt;&gt; with you the start of an important journey for some of the most<br>&gt;&gt; commonly used APIs on all of our platforms: adopting value semantics<br>&gt;&gt; for key Foundation types.<br>&gt;&gt; <br>&gt;&gt; We have been working on this for some time now, and the set of diffs<br>&gt;&gt; that result from this change is large. At this point, I am going to<br>&gt;&gt; focus effort on an overview of the high level goals and not the<br>&gt;&gt; individual API of each new type. In order to focus on delivering<br>&gt;&gt; something up to our quality standards, we are intentionally leaving<br>&gt;&gt; some class types as-is until a future proposal. If you don’t see<br>&gt;&gt; your favorite class on the list — don’t despair. We are going to<br>&gt;&gt; iterate on this over time. I see this as the start of the process.<br>&gt;&gt; <br>&gt;&gt; One process note: we are still trying to figure out the best way to<br>&gt;&gt; integrate changes to API that ship as part of the operating system<br>&gt;&gt; (which includes Foundation) into the swift-evolution review<br>&gt;&gt; process. Swift-evolution is normally focused on changes to<br>&gt;&gt; functionality in the compiler or standard library. In general, I<br>&gt;&gt; don’t expect all new Foundation API introduced in the<br>&gt;&gt; Darwin/Objective-C framework to go through the open source<br>&gt;&gt; process. However, as we’ve brought up this topic here before, I felt<br>&gt;&gt; it was important to bring this particular change to the<br>&gt;&gt; swift-evolution list.<br>&gt;&gt; <br>&gt;&gt; As always I welcome your feedback.<br>&gt;&gt; <br>&gt;&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0069-swift-mutability-for-foundation.md<br>&gt;&gt; <br>&gt;&gt; Thanks,<br>&gt;&gt; - Tony<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

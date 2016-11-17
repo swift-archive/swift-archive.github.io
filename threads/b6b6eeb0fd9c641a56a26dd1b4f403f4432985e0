@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/de18835ebfd36857837f607a0d09d07f?s=50"></div><header><strong>Vague error description when trying to match an instance in a switch statement</strong> from <string>hello at jtorhoff.com</string> &lt;hello at jtorhoff.com&gt;<p>September 15, 2016 at 08:00:00pm</p></header><div class="content"><p>The following code<br></p><p>struct A {}<br></p><p>let x = A()<br>let y = A()<br></p><p>switch x {<br>     case y:<br>         break<br>     default:<br>         break<br>}<br></p><p>produces &quot;error: expression pattern of type &#39;A&#39; cannot match values of <br>type &#39;A&#39;&quot;.<br>This is kind of a vague description of what is really going on,<br>the compiler actually expects A to adopt Equatable protocol.<br></p><p>I&#39;m using:<br>Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)<br>Target: x86_64-apple-macosx10.9<br></p><p>I wasn&#39;t sure where to post this.<br>It would be nice if the error message could be improved to spare <br>confusion for<br>the other developers.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2bc666e29724cd3bdf46b6cbbe4a07bb?s=50"></div><header><strong>Vague error description when trying to match an instance in a switch statement</strong> from <string>Quinn &quot;The Eskimo!&quot;</string> &lt;eskimo1 at apple.com&gt;<p>September 16, 2016 at 08:00:00am</p></header><div class="content"><p>On 15 Sep 2016, at 19:53, hello--- via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>&gt; It would be nice if the error message could be improved to spare confusion for<br>&gt; the other developers.<br></p><p>Indeed.  If you can file a bug about this, that’d be grand.<br></p><p>&lt;https://bugs.swift.org/&gt;<br></p><p>Share and Enjoy<br>--<br>Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

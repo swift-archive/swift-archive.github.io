@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ceee3416184656c101818713f1885af0?s=50"></div><header><strong>metatype of Int</strong> from <string>Jon Rafkind</string> &lt;jon.rafkind at hpe.com&gt;<p>December 21, 2015 at 06:00:00pm</p></header><div class="content"><p>Yes, context.getIntDecl() was exactly what I was looking for. Thank you Jordan!<br></p><p>On 12/18/2015 08:49 PM, Jordan Rose wrote:<br>I think Jon&#39;s trying to build something on top of swiftc or SourceKit. Yes?<br></p><p>You can do something like this to build your own metatype:<br></p><p>ASTContext &amp;ctx = …<br>Type intTy = ctx.getIntDecl()-&gt;getDeclaredType();<br>auto *intMetaTy = MetatypeType::get(intTy, ctx);<br></p><p>And then compare types using TypeBase::isEqual (which looks through typealiases and such—it&#39;s comparing &quot;canonical&quot; types).<br></p><p>Type unknownTy = …<br>if (unknownTy-&gt;isEqual(intMetaTy)) {<br>  // celebrate<br>}<br></p><p>Hope that helps,<br>Jordan<br></p><p>On Dec 18, 2015, at 13:47 , Slava Pestov via swift-dev &lt;swift-dev at swift.org&lt;mailto:swift-dev at swift.org&gt;&gt; wrote:<br></p><p>You can probably get the mangled name of the metatype, and refer to that. Eg,<br></p><p>public func f() -&gt; Any.Type {<br> return Int.self<br>}<br></p><p>f()<br></p><p>Compile this with -emit-ir:<br></p><p>@_TMSi = external global %swift.type, align 8<br></p><p>define %swift.type* @_TF4blah1fFT_PMP_() #0 {<br>entry:<br> ret %swift.type* @_TMSi<br>}<br></p><p>So in your C++ program,<br></p><p>extern &quot;C&quot; {<br> extern void *_TMSi;<br>}<br></p><p>Note that this is completely unsupported, and probably insane. You have been warned.<br></p><p>Slava<br></p><p>On Dec 18, 2015, at 12:14 PM, Rafkind, Jon via swift-dev &lt;&lt;mailto:swift-dev at swift.org&gt;swift-dev at swift.org&lt;mailto:swift-dev at swift.org&gt;&gt; wrote:<br></p><p>Sorry I should have been more specific. I am working at the C++ level. I have a swift::MetaType* and want to compare it to something.<br></p><p>On 12/18/2015 12:10 PM, Dave Abrahams wrote:<br></p><p><br></p><p><br>On Dec 18, 2015, at 11:16 AM, Rafkind, Jon via swift-dev &lt;swift-dev at swift.org&lt;mailto:swift-dev at swift.org&gt;&gt;&lt;&lt;mailto:swift-dev at swift.org&gt;mailto:swift-dev at swift.org&gt; wrote:<br></p><p>Given a swift::MetaType how can I tell if it corresponds to the MetaType of the standard Int type? Is there a way to get a reference to the MetaType from the StdlibModule or TheBuiltinModule?<br></p><p>For now I can convert the MetaType to a string and compare it to &quot;Int.Type&quot; but that is yucky.<br></p><p><br></p><p>Equality comparison works:<br></p><p>(swift) String.self == Int.self<br>// r2 : Bool = false<br>(swift) Int.self == Int.self<br>// r3 : Bool = true<br></p><p><br></p><p><br></p><p>--<br>_______________________________________________<br>swift-dev mailing list<br>swift-dev at swift.org&lt;mailto:swift-dev at swift.org&gt;&lt;&lt;mailto:swift-dev at swift.org&gt;mailto:swift-dev at swift.org&gt;<br>https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p><br></p><p>-Dave<br></p><p><br></p><p><br></p><p><br>--<br>_______________________________________________<br>swift-dev mailing list<br>swift-dev at swift.org&lt;mailto:swift-dev at swift.org&gt;<br>https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>_______________________________________________<br>swift-dev mailing list<br>swift-dev at swift.org&lt;mailto:swift-dev at swift.org&gt;<br>https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p><br>--<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

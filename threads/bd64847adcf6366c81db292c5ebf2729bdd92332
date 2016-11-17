@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>Cross Repository Testing with Swift CI</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>September  8, 2016 at 04:00:00pm</p></header><div class="content"><p>Cross Repository Testing with Swift CI<br>Swift CI now supports the ability to test multiple pull request across repositories. To use this new feature, simply provide the URL from corresponding pull requests in the same comment as &quot;@swift-ci Please test&quot; phrase. List all of the pull requests and then provide the specific test phrase you would like to trigger. Currently, it will only merge the main pull request you requested testing from as opposed to all of the PR&#39;s.<br></p><p>For example:<br></p><p>Please test with following pull request:<br>https://github.com/apple/swift/pull/4574 &lt;https://github.com/apple/swift/pull/4574&gt;<br></p><p>@swift-ci Please test Linux platform<br>Please test with following PR:<br>https://github.com/apple/swift-lldb/pull/48 &lt;https://github.com/apple/swift-lldb/pull/48&gt;<br>https://github.com/apple/swift-package-manager/pull/632 &lt;https://github.com/apple/swift-package-manager/pull/632&gt;<br></p><p>@swift-ci Please test macOS platform<br>Thanks,<br>Mishal Shah<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160908/bd642332/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f921fa5d507b31ef6984fd3d77ae710c?s=50"></div><header><strong>Cross Repository Testing with Swift CI</strong> from <string>Brian Gesiak</string> &lt;modocache at gmail.com&gt;<p>September  9, 2016 at 09:00:00am</p></header><div class="content"><p>Mishal, this is absolutely fantastic. Excellent work, thank you!<br></p><p>- Brian Gesiak<br></p><p><br>On Thu, Sep 8, 2016 at 7:48 PM, mishal_shah via swift-dev &lt;<br>swift-dev at swift.org&gt; wrote:<br></p><p>&gt; Cross Repository Testing with Swift CI<br>&gt;<br>&gt; Swift CI now supports the ability to test multiple pull request across<br>&gt; repositories. To use this new feature, simply provide the URL from<br>&gt; corresponding pull requests in the same comment as &quot;@swift-ci Please test&quot;<br>&gt; phrase. List all of the pull requests and then provide the specific test<br>&gt; phrase you would like to trigger. Currently, it will only merge the main<br>&gt; pull request you requested testing from as opposed to all of the PR&#39;s.<br>&gt;<br>&gt; For example:<br>&gt;<br>&gt; Please test with following pull request:https://github.com/apple/swift/pull/4574<br>&gt;<br>&gt; @swift-ci Please test Linux platform<br>&gt;<br>&gt; Please test with following PR:https://github.com/apple/swift-lldb/pull/48https://github.com/apple/swift-package-manager/pull/632<br>&gt;<br>&gt; @swift-ci Please test macOS platform<br>&gt;<br>&gt; Thanks,<br>&gt; Mishal Shah<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160909/d9d14244/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

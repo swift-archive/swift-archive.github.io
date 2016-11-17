@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8e2aa7fd262b7c4b6f53a89a52f527f9?s=50"></div><header><strong>They had parens upon thars</strong> from <string>Travis Griggs</string> &lt;travisgriggs at gmail.com&gt;<p>August  2, 2016 at 01:00:00pm</p></header><div class="content"><p>Chapter 1:<br></p><p>Coming from a Smalltalk background, I was enjoying added all kinds of properties to basic number types, for example:<br></p><p>extension Double {<br>    var rounded:Double {<br>        return round(self)<br>    }<br>}<br></p><p>Chapter 2: <br></p><p>I upgraded to XCode8Beta4 yesterday and firstly got to change all of UIColor.someColor() calls to UIColor.someColor accessors.<br></p><p>Secondly I got to scratch my head for a while regarding the cryptic compiler errors I was now getting from my Double.rounded extension. I finally found that FloatingPoint has added a rounded() method. Creating a conflict with my rounded property (I presume). So removed my extension and changed all of the accesses of rounded to be calls to rounded(), as well as change the rounded properties I had made for my own Angle and Duration enums for to rounded() methods for consistencies sake.<br></p><p>Chapter 3:<br></p><p>At this point, I felt a bit like a Sneetch (Dr Seuss). I was basically shuffling empty parens around my code base to make the new version happy.<br></p><p>I realize it can probably never be black and white, but is there at least some guidelines as to when a property ought to be a niladic method, and when a niladic method ought to be a property?<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

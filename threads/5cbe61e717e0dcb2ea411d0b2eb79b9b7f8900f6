@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4b1050243fba63752e081f574b19ee92?s=50"></div><header><strong>wishing I could cast (sort of) to protocol with associated type</strong> from <string>Robert Nikander</string> &lt;robert.nikander at icloud.com&gt;<p>November  2, 2016 at 03:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>In the following code, I want to test if x is a `SpecialController`. If it is, I want to get the `currentValue` as a `SpecialValue`. How do you do this? If not with a cast, then some other technique.<br></p><p>I understand the error, and that SpecialController by itself is not a simple type to cast to. But it seems like what I’m saying is logically consistent and not that complicated. Is there really no way to *say* it in Swift?<br></p><p>    protocol SpecialController {<br>        associated type SpecialValueType : SpecialValue<br>        var currentValue: SpecialValueType? { get }<br>    }<br>    ...<br>    var x: AnyObject = ...<br>    if let sc = x as? SpecialController {  // does not compile<br></p><p>Rob<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>wishing I could cast (sort of) to protocol with associated type</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>November  2, 2016 at 01:00:00pm</p></header><div class="content"><p>The only real way to do this today is to have two layers of protocol:<br></p><p>protocol SpecialControllerBase {<br>  var currentValueBase: SpecialValue? { get }<br>}<br>protocol SpecialController: SpecialControllerBase {<br>  associatedtype SpecialValueType : SpecialValue<br>  var currentValue: SpecialValueType? { get }<br>}<br>extension SpecialController {<br>  var currentValueBase: SpecialValue? { return self.currentValue }<br>}<br></p><p>Supporting this natively is the feature called generalized existentials, described in the “Generics Manifesto &lt;https://github.com/apple/swift/blob/master/docs/GenericsManifesto.md#generalized-existentials&gt;” of potential future Swift features. This has a lot of design and implementation considerations, so it’s not planned to happen right away, but it’s definitely a heavily-requested feature.<br></p><p>Jordan<br></p><p><br>&gt; On Nov 2, 2016, at 12:31, Robert Nikander via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; In the following code, I want to test if x is a `SpecialController`. If it is, I want to get the `currentValue` as a `SpecialValue`. How do you do this? If not with a cast, then some other technique.<br>&gt; <br>&gt; I understand the error, and that SpecialController by itself is not a simple type to cast to. But it seems like what I’m saying is logically consistent and not that complicated. Is there really no way to *say* it in Swift?<br>&gt; <br>&gt;    protocol SpecialController {<br>&gt;        associated type SpecialValueType : SpecialValue<br>&gt;        var currentValue: SpecialValueType? { get }<br>&gt;    }<br>&gt;    ...<br>&gt;    var x: AnyObject = ...<br>&gt;    if let sc = x as? SpecialController {  // does not compile<br>&gt; <br>&gt; Rob<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161102/d926501e/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

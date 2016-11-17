@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cc377023711b064682f44cd33e75e536?s=50"></div><header><strong>Is there a need for a Decimal type?</strong> from <string>Dale Buckley</string> &lt;dalebuckley86 at gmail.com&gt;<p>February 13, 2016 at 10:00:00pm</p></header><div class="content"><p>&gt; Cc:swift-evolution at swift.org<br>&gt; Subject:[swift-evolution] Is there a need for a Decimal type?<br>&gt; Date:13 February 2016 at 20:45:46 GMT<br>&gt; <br>&gt; <br>&gt; Both the NSDecimalNumber class and the NSDecimal struct are already available in Swift. If there were a set of operators and initializers for NSDecimal, would that provide most of what you need? The operators would be simple to implement over the existing functions, I think. Maybe the corelibs people would take those as a patch?<br>&gt; <br>&gt; —CK<br>&gt; <br>&gt; &gt; On Feb 13, 2016, at 3:51 AM, Dale Buckley via swift-evolution&lt;swift-evolution at swift.org&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; We all know the problems with floating point types, they are well documented and well understood by developers everywhere. We know when to use them and (hopefully) when not to use them and if you are working with financial values on a Foundation based platform you know to not use a floating point type and to use NSDecimalNumber instead.<br>&gt; &gt; <br>&gt; &gt; My question is this; should there be an equivalent NSDecimalNumber type built into Swift that can be used for precision sensitive decimal values where floating point types can’t be used?<br>&gt; &gt; <br>&gt; &gt; Maybe the answer isn’t an ‘equivalent’ as such, it would probably have a modern twist so I can see it looking like something else entirely, but the point still stands.<br>&gt; &gt; <br>&gt; &gt; I feel like there is a need for this, it’s not a new problem and has been solved many times over in other languages such as Objective-C (NSDecimalNumber) and Java (BigDecimal) etc. Yet as it stands we seem to be lacking an equivalent solution in Swift. It shouldn’t be left for an external library to solve, it’s one of those things that need to be built into the language.<br>&gt; &gt; <br>&gt; &gt; What are peoples thoughts on this?<br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-evolution mailing list<br>&gt; &gt; swift-evolution at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; <br>&gt; <br></p><p>I have been using what Foundation provides up until now. You are indeed correct that add the appropriate operators is a simple task to make it easier to use.<br></p><p>What my original discussion was aimed at was non Foundation based platforms where we don’t have this luxury.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0089229ece6e648767cff4dc6c6d38ab?s=50"></div><header><strong>Is there a need for a Decimal type?</strong> from <string>Charles Kissinger</string> &lt;crk at akkyra.com&gt;<p>February 13, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt; On Feb 13, 2016, at 2:46 PM, Dale Buckley &lt;dalebuckley86 at gmail.com&gt; wrote:<br>...<br>&gt; I have been using what Foundation provides up until now. You are indeed correct that add the appropriate operators is a simple task to make it easier to use.<br>&gt; <br>&gt; What my original discussion was aimed at was non Foundation based platforms where we don’t have this luxury.<br></p><p>My understanding is that NSDecimal is not yet implemented in cross-platform Foundation, but it will be. (That’s my reading of their status page.) It should eventually be available everywhere that Swift is.<br></p><p>No objection here to having a Decimal type in the standard library though. I think that would be great.<br></p><p>—CK<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

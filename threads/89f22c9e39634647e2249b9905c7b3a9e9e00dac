@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Draft] Abolish IUO type</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>March 17, 2016 at 12:00:00pm</p></header><div class="content"><p>+1 for the idea. It will extract compiler magic for IUO types into a variable declaration attribute.<br>-1 for current wording/details.<br></p><p>1. We have to add @implicitly_unwrapped attribute to the proposal. I hate implied &quot;attributes&quot;, available only to compiler. The wording needs to be reformulated in terms of this attribute<br>2. We need to encourage using the attribute instead of `!`. In order to do this, I suggest finding a concise name for it. Like @IUO, but possibly more readable<br>3. In the future, `!` can be removed entirely and leave only the attribute. But not for now<br></p><p>- Anton<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>[Draft] Abolish IUO type</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>March 17, 2016 at 06:00:00am</p></header><div class="content"><p>&gt; 1. We have to add @implicitly_unwrapped attribute to the proposal. I hate implied &quot;attributes&quot;, available only to compiler. The wording needs to be reformulated in terms of this attribute<br></p><p>Agree.<br></p><p>&gt; 2. We need to encourage using the attribute instead of `!`.<br>&gt; 3. In the future, `!` can be removed entirely and leave only the attribute. But not for now<br></p><p>Disagree. As I mentioned earlier in the thread, IUOs are going to become less common on Apple platforms, but they are here to stay in Swift as a whole.<br></p><p>&gt; In order to do this, I suggest finding a concise name for it. Like @IUO, but possibly more readable<br></p><p>I do agree that we should look for a shorter, better name. I suggest `@autounwrap`, by analogy with `@autoclosure`. Both features insert invisible syntax at usage sites to make an expression of one type appear to be an expression of a different type.<br></p><p>(Actually, I think that `@autoclosure` is a great analogy for this feature in many respects.)<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

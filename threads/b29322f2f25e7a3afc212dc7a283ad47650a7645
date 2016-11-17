@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Combining native and ObjC swift_class_getInstanceExtents entry points</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>December 23, 2015 at 04:00:00pm</p></header><div class="content"><p>In the runtime currently, there are two entry points for asking for the size of a class&#39;s instances, one for known-native Swift classes, and one for possibly-ObjC classes. It looks like they&#39;re only currently used for _debugPrecondition checks in ManagedBuffer&#39;s initializers to catch improperly-sized subclasses in debug builds, so I&#39;m wondering whether saving an `isObjC` branch in the known-native case is worth the extra entry point. Any concerns with merging them?<br></p><p>-Joe<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

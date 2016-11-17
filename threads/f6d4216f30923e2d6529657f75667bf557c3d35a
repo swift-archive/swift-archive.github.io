@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0125: Remove NonObjectiveCBase and isUniquelyReferenced</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July 25, 2016 at 08:00:00pm</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0125-remove-nonobjectivecbase.md<br></p><p>The review of &quot;SE-0125: Remove NonObjectiveCBase and isUniquelyReferenced&quot; ran from Active review July 19...22. The proposal has been *accepted*.<br></p><p>This proposal had significant community feedback to help refine and improve its design, and Arnold has incorporated that into his v2 of the proposal.  The core team agrees the new revision is a good design.<br></p><p>Thank you to Arnold Schwaighofer for driving this discussion forward!<br></p><p>-Chris Lattner<br>Review Manager<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>[Accepted] SE-0125: Remove NonObjectiveCBase and isUniquelyReferenced</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>July 26, 2016 at 06:00:00am</p></header><div class="content"><p>&gt; On Jul 25, 2016, at 8:47 PM, Chris Lattner via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0125-remove-nonobjectivecbase.md<br>&gt; <br>&gt; The review of &quot;SE-0125: Remove NonObjectiveCBase and isUniquelyReferenced&quot; ran from Active review July 19...22. The proposal has been *accepted*.<br>&gt; <br>&gt; This proposal had significant community feedback to help refine and improve its design, and Arnold has incorporated that into his v2 of the proposal.  The core team agrees the new revision is a good design.<br></p><p>A minor quibble with the documentation in the revised version:<br></p><p>&gt; /// Returns `true` iff `object` is class instance with a single strong<br>&gt; /// reference.<br>&gt; ///<br>&gt; /// * Does *not* modify `object`; the use of `inout` is an<br>&gt; ///   implementation artifact.<br>&gt; /// * Weak references do not affect the result of this function.<br>&gt; ///<br>&gt; /// Useful for implementing the copy-on-write optimization for the<br>&gt; /// deep storage of value types:<br>&gt; ///<br>&gt; ///     mutating func modifyMe(_ arg: X) {<br>&gt; ///       if isKnownUniquelyReferenced(&amp;myStorage) {<br>&gt; ///         myStorage.modifyInPlace(arg)<br>&gt; ///       }<br>&gt; ///       else {<br>&gt; ///         myStorage = self.createModified(myStorage, arg)<br>&gt; ///       }<br>&gt; ///     }<br>&gt; public func isKnownUniquelyReferenced&lt;T : AnyObject&gt;(_ object: inout T) -&gt; Bool<br>&gt; public func isKnownUniquelyReferenced&lt;T : AnyObject&gt;(_ object: inout T?) -&gt; Bool<br></p><p>Just to be crystal clear about its behavior, I would add a third bullet point to the list:<br></p><p>/// * Implementation limits may cause this function to always return <br>///   `false` for some objects, even if they actually are uniquely referenced. <br>///   It will never return `true` for an object with multiple strong references.<br></p><p>Or perhaps simply:<br></p><p>/// * This function may return false negatives, but never false positives.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

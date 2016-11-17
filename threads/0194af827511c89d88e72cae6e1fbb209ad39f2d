@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/84485982c35b38ea0d58ad0f9598ffba?s=50"></div><header><strong>Extensions to add observers</strong> from <string>Cody Weaver</string> &lt;codyleeweaver at gmail.com&gt;<p>April 20, 2016 at 11:00:00pm</p></header><div class="content"><p>This is my first time posting anything in the evolution forum or the users<br>forum, so I apologize if this isn&#39;t how we are supposed to do things.<br></p><p>PROPOSAL<br></p><p>My idea is to add a property observer in an extension.<br></p><p>MOTIVATION<br></p><p>This would make it so we can get rid of selectors.  It&#39;s my understanding<br>the selectors are &quot;Objective-C&quot;.<br></p><p>PROPOSED SOLUTION<br></p><p>   extension UIGestureRecognizer {<br>      self.state {<br>         didSet {<br>            self.handleStateChange()<br>         }<br>      }<br>   }<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160420/01949f2d/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

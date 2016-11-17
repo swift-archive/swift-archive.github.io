@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Comparing POP to OOP</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 25, 2016 at 06:00:00pm</p></header><div class="content"><p>on Tue Feb 16 2016, Brent Royal-Gordon &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt;&gt; We can override functionality provided from a protocol extension if<br>&gt; we need specific functionality for a particular type.<br>&gt;<br>&gt; No you can&#39;t. Protocol extension methods (that is, methods declared<br>&gt; only in an extension, as opposed to default implementations, which are<br>&gt; both declared in the protocol and defined in an extension) are<br>&gt; statically dispatched, so calling them on the protocol witness will<br>&gt; always use the extension&#39;s implementation, even if some concrete type<br>&gt; conforming to the protocol has a different implementation with the<br>&gt; same name and signature.<br>&gt;<br>&gt; (I&#39;ve worked on a proposal in the past that would require keywords to<br>&gt; make this behavior clearer, but I&#39;ve had trouble getting it through.)<br>&gt;<br>&gt; In any case, I&#39;m pretty sure that&#39;s what Daniel means when he says<br>&gt; extension methods are exactly equivalent to global functions. Sure,<br>&gt; they appear after a dot, have an implicit self parameter, and are<br>&gt; scoped to a particular type, but there&#39;s nothing dynamic about their<br>&gt; behavior—they&#39;re not overridable in any useful sense.<br></p><p>The difference is that they can function as overrides of requirements,<br>which global functions cannot (insert obligatory caveat about operator<br>hack here).<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

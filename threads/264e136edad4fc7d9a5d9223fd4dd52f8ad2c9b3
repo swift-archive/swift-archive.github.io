@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a32f0c9071fd24f75322395496dc6a32?s=50"></div><header><strong>[Idea] Typealias for protocols with associated types</strong> from <string>Eugene Gubin</string> &lt;hemet.mail at gmail.com&gt;<p>February  4, 2016 at 08:00:00pm</p></header><div class="content"><p>Currently protocols with associated types could not be used as types. One<br>could use type-erased wrappers (e.g. AnyGenerator,<br>AnyRandomAccessCollection etc.) but writing these produce a lot of<br>boilerplate code. I think it would be convenient to use something like this:<br></p><p>class MyClass {<br>    typealias IntCollection = CollectionType where<br>CollectionType.Generator.Element == Int<br></p><p>    var collection: IntCollection<br>}<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160204/264ec9b3/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/34b9659227ea084bb09a8ba4a450a162?s=50"></div><header><strong>[Idea] Typealias for protocols with associated types</strong> from <string>Jessy Catterwaul</string> &lt;mr.jessy at gmail.com&gt;<p>February  4, 2016 at 01:00:00pm</p></header><div class="content"><p>I agree, as long as the typealias and second use of the type name is not necessary.<br></p><p>Because <br>extension CollectionType where Generator.Element == Int {}<br>compiles…<br></p><p>var collection: CollectionType where Generator.Element == Int<br>should also.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160204/c8f0a486/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4d13105de53a43ce1df97869ca6c140e?s=50"></div><header><strong>[Idea] Typealias for protocols with associated types</strong> from <string>Maximilian Hünenberger</string> &lt;m.huenenberger at me.com&gt;<p>February  4, 2016 at 08:00:00pm</p></header><div class="content"><p>There is already a similar thread: [swift-evolution] Partially Constrained Protocols<br></p><p>There we discussed a more improved generics system including &quot;true&quot; generics for protocols with associated types:<br></p><p>var collection: CollectionType&lt;Generator.Element == Int&gt;<br></p><p>// if CollectionType had an Element typealias to Generator.Element<br></p><p>var collection: CollectionType&lt;Element == Int&gt;<br></p><p><br>Best regards<br>- Maximilian<br></p><p>&gt; Am 04.02.2016 um 19:01 schrieb Jessy Catterwaul via swift-evolution &lt;swift-evolution at swift.org&gt;:<br>&gt; <br>&gt; I agree, as long as the typealias and second use of the type name is not necessary.<br>&gt; <br>&gt; Because <br>&gt; extension CollectionType where Generator.Element == Int {}<br>&gt; compiles…<br>&gt; <br>&gt; var collection: CollectionType where Generator.Element == Int<br>&gt; should also.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160204/cfefd9e2/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

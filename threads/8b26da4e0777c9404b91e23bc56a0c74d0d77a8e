@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0c1c074a6e02963cd57f747ba0ccfe0b?s=50"></div><header><strong>Implementing JSONSerialization.jsonObject(with stream)</strong> from <string>Mamatha Busi</string> &lt;mamabusi at in.ibm.com&gt;<p>July 15, 2016 at 07:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160715/8b267a8e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>Implementing JSONSerialization.jsonObject(with stream)</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>July 15, 2016 at 07:00:00am</p></header><div class="content"><p>We had changed the return type of JSONSerialization to be Any such that it avoided the caller needing to bridge types (which works poorly on linux). Even though this is an API change technically, just change the return type to match the other JSONSerialization methods.<br></p><p>&gt; On Jul 15, 2016, at 12:44 AM, Mamatha Busi via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi<br>&gt;  <br>&gt; Trying to implement the JSONSerialization unimplemented method jsonObject(withStream). <br>&gt;  <br>&gt;  JSONSerialization.jsonObject(with stream: InputStream, options opt: ReadingOptions = []) throws -&gt; AnyObject<br>&gt;  <br>&gt; The comments in the source code mentions that apart from stream configuration all other behaviour of this method is the same as the JSONObjectWithData:options:error.<br>&gt; This implies that I can internally reuse the JSONObjectWithData method, however its return type is ‘Any’ whereas the return type in jsonObjectWithStream is ‘AnyObject’. As I cannot downcast ‘Any’ to ‘AnyObject’, I’m looking for inputs if I should rewrite the behaviour or is there any other way?<br>&gt;  <br>&gt; Thank you.<br>&gt;  <br>&gt; -Mamatha.<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160715/1ad3252c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

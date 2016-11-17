@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 22, 2016 at 03:00:00pm</p></header><div class="content"><p>on Fri Jan 22 2016, Matthew Johnson &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; This review seems like a good time to bring up the proposal regarding<br>&gt; naming conventions for conversion protocols:<br>&gt; https://github.com/apple/swift-evolution/pull/60<br>&gt; &lt;https://github.com/apple/swift-evolution/pull/60&gt;.  Dave had<br>&gt; mentioned having the standard library team discuss this as part of the<br>&gt; API guidelines:<br>&gt; https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151214/002798.html<br>&gt; &lt;https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151214/002798.html&gt;.<br>&gt; I’m wondering if the solution for this naming issue should continue as<br>&gt; an independent proposal or be included as part of the the larger API<br>&gt; Design Guidelines proposal.<br></p><p>We should finish this review as it is, and then have a much smaller<br>review of your proposed amendments to the guidelines.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>&#39;SwiftShims&#39;: no such file or directory</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>September 19, 2016 at 11:00:00pm</p></header><div class="content"><p>on Mon Sep 19 2016, Eric Wing &lt;swift-dev-AT-swift.org&gt; wrote:<br></p><p>&gt; On 9/19/16, Daniel Dunbar &lt;daniel_dunbar at apple.com&gt; wrote:<br>&gt;&gt; Are you building within a shared folder? We have heard reports of this<br>&gt;&gt; happening in such an environment, but we don&#39;t have a handle on the exact<br>&gt;&gt; steps to reproduce. Getting that information would be very useful.<br>&gt;&gt;<br>&gt;<br>&gt; Unfortunately no. I didn&#39;t use shared folders.<br>&gt;<br>&gt; I&#39;m still having problems building corelibs-foundation. Could this be<br>&gt; the reason?<br></p><p>SwiftShims is part of the standard library, and you shouldn&#39;t expect to<br>be able to build corelibs-foundation without having first built the<br>standard library.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

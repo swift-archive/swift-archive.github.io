@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a51efe0c2993455701ed4757862e4b11?s=50"></div><header><strong>Swift REPL don&#39;t functions on Ubuntu 14.04 LTS</strong> from <string>Piero Sabino</string> &lt;piero.sa at icloud.com&gt;<p>December  6, 2015 at 06:00:00pm</p></header><div class="content"><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151206/a78ddef0/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dbc48a135881e122fea26cf27760d11a?s=50"></div><header><strong>Swift REPL don&#39;t functions on Ubuntu 14.04 LTS</strong> from <string>Mish Awadah</string> &lt;mawadah at apple.com&gt;<p>December  7, 2015 at 11:00:00am</p></header><div class="content"><p>Please file a bug. <br></p><p>&gt; On Dec 6, 2015, at 10:47 AM, Piero Sabino via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151207/a8035e63/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

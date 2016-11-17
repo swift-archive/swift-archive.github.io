@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c753185b2c9261f9da6bf4372036cd07?s=50"></div><header><strong>Arrays and Optionals</strong> from <string>Sean Kosanovich</string> &lt;sean7512 at me.com&gt;<p>December 15, 2015 at 07:00:00am</p></header><div class="content"><p>Hello all!<br></p><p>I have been using Swift nearly exclusively for iOS projects since its release (for better or worse).  I love the fact that a compiling application gives me some sort of guarantee that I won’t encounter a nil reference (unless of course I ignore optionals and force unwrap them…not a great idea).<br></p><p>When pulling values out of a Dictionary, we get an Optional value which makes perfect sense.  Why does this not extend out to Arrays?  There is no guarantee that when I am pulling the 8th element out, that it will have a valid value.<br></p><p>It seems odd to me that Optionals are a fundamental part of the language but they don’t extend to Arrays.<br></p><p>Thanks,<br>Sean<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d47baf3a0f80c9fd13ece9c4b87c7fce?s=50"></div><header><strong>Arrays and Optionals</strong> from <string>Marc Knaup</string> &lt;marc at knaup.koeln&gt;<p>December 15, 2015 at 01:00:00pm</p></header><div class="content"><p>Hey Sean,<br></p><p>Jordan Rose answered this question yesterday in a different discussion:<br>https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151214/002425.html<br></p><p>On Tue, Dec 15, 2015 at 1:08 PM, Sean Kosanovich via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hello all!<br>&gt;<br>&gt; I have been using Swift nearly exclusively for iOS projects since its<br>&gt; release (for better or worse).  I love the fact that a compiling<br>&gt; application gives me some sort of guarantee that I won’t encounter a nil<br>&gt; reference (unless of course I ignore optionals and force unwrap them…not a<br>&gt; great idea).<br>&gt;<br>&gt; When pulling values out of a Dictionary, we get an Optional value which<br>&gt; makes perfect sense.  Why does this not extend out to Arrays?  There is no<br>&gt; guarantee that when I am pulling the 8th element out, that it will have a<br>&gt; valid value.<br>&gt;<br>&gt; It seems odd to me that Optionals are a fundamental part of the language<br>&gt; but they don’t extend to Arrays.<br>&gt;<br>&gt; Thanks,<br>&gt; Sean<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151215/8be4adb3/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

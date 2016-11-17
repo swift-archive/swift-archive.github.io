@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a9a3863e5d65369aacc65a74bf6083db?s=50"></div><header><strong>Linux Swift: Strange bug found in a simple arithmetic</strong> from <string>louislepegue</string> &lt;louislepegue at gmail.com&gt;<p>September  7, 2016 at 09:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160907/0673990e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Linux Swift: Strange bug found in a simple arithmetic</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>September  7, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On Sep 7, 2016, at 6:47 AM, louislepegue via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi<br>&gt; <br>&gt; This simple instruction can take more than 20 seconds to execute  and near 100% CPU on different Linux Swift version I tested.<br>&gt; Also tested in compiled mode with the same result.<br>&gt; <br>&gt; let simpleTest = Float(abs(11 - -3) + abs(4.5 - -4))  //!<br>&gt; print (&quot;simpleTest:  \(Simpletest)&quot;)<br>&gt; <br>&gt; I know that a many variations can cause more or less results I can&#39;t determine if Float or abs is the culprit.<br>&gt; <br>&gt; Do someone have an idea on this ?<br></p><p>We&#39;d appreciate some more information on how exactly you&#39;re compiling the above code. Are you running it as a script with `swift`, or compiling it then executing it? Are you optimizing? Running a script with `swift` will include type checking and code generation time, and we have some known compiler performance issues with heavily-overloaded operators such as the numeric operators.<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

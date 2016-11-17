@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Element vs. Iterator.Element</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 31, 2016 at 11:00:00am</p></header><div class="content"><p>on Mon Oct 31 2016, Toni Suter &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; Hi,<br>&gt;<br>&gt; This extension on Array works as expected:<br>&gt;<br>&gt; extension Array where Element: CustomStringConvertible {<br>&gt;     func f(_ x: Element) -&gt; String {<br>&gt;         return x.description<br>&gt;     }<br>&gt; }<br>&gt;<br>&gt; But when I use Iterator.Element instead, I get an error message (error: value of type &#39;Element&#39; has<br>&gt; no member &#39;description&#39;):<br>&gt;<br>&gt; extension Array where Iterator.Element: CustomStringConvertible {<br>&gt;     func f(_ x: Iterator.Element) -&gt; String {<br>&gt;         return x.description<br>&gt;     }<br>&gt; }<br>&gt;<br>&gt; I assume this is a type checker bug, but before I report it, I wanted to make sure that that’s<br>&gt; really the case. Or is there a difference between Element and<br>&gt; Iterator.Element?<br></p><p>There shouldn&#39;t be.  It&#39;s a bug, IMO.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3a6c94632d8c82a2f077bbabbdd412f6?s=50"></div><header><strong>Element vs. Iterator.Element</strong> from <string>Toni Suter</string> &lt;tonisuter at me.com&gt;<p>November  1, 2016 at 02:00:00pm</p></header><div class="content"><p>Ok, I have filed a bug: https://bugs.swift.org/browse/SR-3102 &lt;https://bugs.swift.org/browse/SR-3102&gt;<br></p><p>Best regards,<br>Toni<br></p><p>&gt; Am 31.10.2016 um 19:32 schrieb Dave Abrahams via swift-users &lt;swift-users at swift.org&gt;:<br>&gt; <br>&gt; <br>&gt; on Mon Oct 31 2016, Toni Suter &lt;swift-users-AT-swift.org &lt;http://swift-users-at-swift.org/&gt;&gt; wrote:<br>&gt; <br>&gt;&gt; Hi,<br>&gt;&gt; <br>&gt;&gt; This extension on Array works as expected:<br>&gt;&gt; <br>&gt;&gt; extension Array where Element: CustomStringConvertible {<br>&gt;&gt;    func f(_ x: Element) -&gt; String {<br>&gt;&gt;        return x.description<br>&gt;&gt;    }<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; But when I use Iterator.Element instead, I get an error message (error: value of type &#39;Element&#39; has<br>&gt;&gt; no member &#39;description&#39;):<br>&gt;&gt; <br>&gt;&gt; extension Array where Iterator.Element: CustomStringConvertible {<br>&gt;&gt;    func f(_ x: Iterator.Element) -&gt; String {<br>&gt;&gt;        return x.description<br>&gt;&gt;    }<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; I assume this is a type checker bug, but before I report it, I wanted to make sure that that’s<br>&gt;&gt; really the case. Or is there a difference between Element and<br>&gt;&gt; Iterator.Element?<br>&gt; <br>&gt; There shouldn&#39;t be.  It&#39;s a bug, IMO.<br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org &lt;mailto:swift-users at swift.org&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users &lt;https://lists.swift.org/mailman/listinfo/swift-users&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161101/e0545f58/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

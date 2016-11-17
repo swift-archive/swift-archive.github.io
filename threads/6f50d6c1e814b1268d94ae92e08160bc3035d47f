@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4e9d538b393049aac29d7af9ead7d0b?s=50"></div><header><strong>error: value of type &#39;NSMutableData&#39; has no member &#39;rangeOfData&#39;</strong> from <string>Rajat Talwar</string> &lt;cuterajat26 at gmail.com&gt;<p>January 15, 2016 at 10:00:00am</p></header><div class="content"><p>Hello devs,<br></p><p>I am new to swift on linux, am facing compilation issue  on this code saying &#39;NSMutableData&#39; has no member ‘rangeOfData&#39;<br></p><p><br></p><p>import Foundation<br></p><p>let buffer = NSMutableData(capacity: 200)<br>let delim:NSString = &quot;\n&quot;<br></p><p>buffer!.rangeOfData(delim.dataUsingEncoding(NSUTF8StringEncoding)!, options: [], range: NSMakeRange(0, buffer!.length))<br></p><p><br>I am using swift-2.2-SNAPSHOT-2016-01-11-a-ubuntu15.10<br></p><p><br>Any help or info is highly appreciated.<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160115/6f50d47f/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>error: value of type &#39;NSMutableData&#39; has no member &#39;rangeOfData&#39;</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>January 15, 2016 at 09:00:00am</p></header><div class="content"><p>Looks like we have some more missing method placeholders. That is just a bug in the regards that we forgot to add the NSUnimplemented stub for that. So i guess it is up for grabs for someone to implement.<br></p><p>&gt; On Jan 14, 2016, at 8:32 PM, Rajat Talwar via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello devs,<br>&gt; <br>&gt; I am new to swift on linux, am facing compilation issue  on this code saying &#39;NSMutableData&#39; has no member ‘rangeOfData&#39;<br>&gt; <br>&gt; <br>&gt; <br>&gt; import Foundation<br>&gt; <br>&gt; let buffer = NSMutableData(capacity: 200)<br>&gt; let delim:NSString = &quot;\n&quot;<br>&gt; <br>&gt; buffer!.rangeOfData(delim.dataUsingEncoding(NSUTF8StringEncoding)!, options: [], range: NSMakeRange(0, buffer!.length))<br>&gt; <br>&gt; <br>&gt; I am using swift-2.2-SNAPSHOT-2016-01-11-a-ubuntu15.10<br>&gt; <br>&gt; <br>&gt; Any help or info is highly appreciated.<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160115/ed28184a/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

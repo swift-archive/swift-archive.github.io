@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d765c64cfb3fb2b7f533af521ef4dabb?s=50"></div><header><strong>Building the OS X Package</strong> from <string>Mike Greiner</string> &lt;mgreiner at icloud.com&gt;<p>December 12, 2015 at 12:00:00pm</p></header><div class="content"><p>I’d like to build Swift as a convenient OS X Package similar to what’s provided with the development snapshots at https://swift.org/download/#latest-development-snapshots &lt;https://swift.org/download/#latest-development-snapshots&gt;<br></p><p>Could anyone tell me what build script options I could use to get as close as possible to that? Obviously the signing part would not be possible, but that’s fine I’m just deploying this internally.<br></p><p>Looking at `build-presets.ini`, I tried the `buildbot_osx_package` preset but it’s asking for a bunch of configuration options that I don’t know how to choose. Ideally I could just specify the package location on disk :)<br></p><p>Any help appreciated!<br></p><p>```<br>utils/build-script --preset=buildbot_osx_package<br>utils/build-script: missing option(s) for preset &#39;buildbot_osx_package&#39;: install_destdir, install_symroot, install_toolchain_dir, installable_package, installable_package, symbols_package, darwin_toolchain_bundle_identifier, darwin_toolchain_display_name, darwin_toolchain_xctoolchain_name, darwin_toolchain_version<br>```<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151212/f331f8f5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Building the OS X Package</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>December 12, 2015 at 09:00:00am</p></header><div class="content"><p>See:<br>  https://lists.swift.org/pipermail/swift-dev/Week-of-Mon-20151207/000196.html<br></p><p> - Daniel<br></p><p>&gt; On Dec 12, 2015, at 9:19 AM, Mike Greiner via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I’d like to build Swift as a convenient OS X Package similar to what’s provided with the development snapshots at https://swift.org/download/#latest-development-snapshots &lt;https://swift.org/download/#latest-development-snapshots&gt;<br>&gt; <br>&gt; Could anyone tell me what build script options I could use to get as close as possible to that? Obviously the signing part would not be possible, but that’s fine I’m just deploying this internally.<br>&gt; <br>&gt; Looking at `build-presets.ini`, I tried the `buildbot_osx_package` preset but it’s asking for a bunch of configuration options that I don’t know how to choose. Ideally I could just specify the package location on disk :)<br>&gt; <br>&gt; Any help appreciated!<br>&gt; <br>&gt; ```<br>&gt; utils/build-script --preset=buildbot_osx_package<br>&gt; utils/build-script: missing option(s) for preset &#39;buildbot_osx_package&#39;: install_destdir, install_symroot, install_toolchain_dir, installable_package, installable_package, symbols_package, darwin_toolchain_bundle_identifier, darwin_toolchain_display_name, darwin_toolchain_xctoolchain_name, darwin_toolchain_version<br>&gt; ```<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151212/2dc05947/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

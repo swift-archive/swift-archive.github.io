@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e860a1e0d21a7ae5467aacfe1d9c6a78?s=50"></div><header><strong>[Review] SE-0102: Remove @noreturn attribute and introduce an empty NoReturn type</strong> from <string>Denis Nikitenko</string> &lt;d.nikitenko at icloud.com&gt;<p>June 23, 2016 at 04:00:00pm</p></header><div class="content"><p>* What is your evaluation of the proposal? <br></p><p>+1.  I think that overall it’s a step in the right direction.<br></p><p> * Is the problem being addressed significant enough to warrant a change to Swift? <br></p><p>A function that never returns is fundamentally different from any other function.  Having this property captured in the function type - rather than additional meta-programming attributes - makes sense.  It also prevents the language users from creating nonsensical function signatures, such as @noreturn func test() -&gt; Int (which happily compiles and runs fine in XCode 8).<br></p><p>The NoReturn type has precedence in both computer science theory and modern general purpose programming languages.  I suspect a more generally named universal bottom type would be more &quot;future-proof&quot;, but I have no strong opinion on the matter.<br></p><p>While this is a breaking change, it affects a small corner of the language.  I see the benefit outweighing the cost.<br></p><p> * Does this proposal fit well with the feel and direction of Swift? <br></p><p>Yes.<br></p><p> * If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those? <br></p><p>I am aware of the existence of the bottom type in Scala and Rust, but I haven’t worked with them.<br></p><p> * How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br></p><p>A quick review, as well as a quick scan through the literature.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6e0bf2aabb9fc16782586e834dc6e2d7?s=50"></div><header><strong>Allow use of ; in anonymous closures</strong> from <string>Braeden Profile</string> &lt;jhaezhyr12 at gmail.com&gt;<p>August 17, 2016 at 09:00:00am</p></header><div class="content"><p>Okay, I currently love closure syntax, but something doesn’t sit right with me.  Why can’t I write…<br></p><p>[6,5].map { n in; n+1 }<br></p><p>…where there’s a semicolon after the parameter list?  I think it looks better, and should at least be allowed (not required).<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0e8516d3703e35b7df26986815b23e7a?s=50"></div><header><strong>Allow use of ; in anonymous closures</strong> from <string>Robert Widmann</string> &lt;devteam.codafi at gmail.com&gt;<p>August 17, 2016 at 09:00:00am</p></header><div class="content"><p>`in` is syntactic fluff to disambiguate the end of a parameter list and the start of the closure&#39;s body, not a statement.  In that regard it needs no additional delimiters like semicolons.<br></p><p>~Robert Widmann<br></p><p>2016/08/17 8:38、Braeden Profile via swift-evolution &lt;swift-evolution at swift.org&gt; のメッセージ:<br></p><p>&gt; Okay, I currently love closure syntax, but something doesn’t sit right with me.  Why can’t I write…<br>&gt; <br>&gt; [6,5].map { n in; n+1 }<br>&gt; <br>&gt; …where there’s a semicolon after the parameter list?  I think it looks better, and should at least be allowed (not required).<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>EXC_BAD_ACCESS on iOS simulator at app launch</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>March 10, 2016 at 02:00:00pm</p></header><div class="content"><p>I compiled clang, llvm and swift static libraries for iOS.<br></p><p>I created default single-page view ios swift project, added<br>frontend_main.cpp and an objective c wrapper with a single method that<br>calls frontend_main. I added the bridge header and when run on iOS<br>simulator i got EXC_BAD_ACCESS.<br></p><p>I have not even called any methods of the libraries yet.<br></p><p>The control never reached the AppDelegate.<br></p><p>below is the* backtrace*:<br></p><p>* thread #1: tid = 0xc25cb, 0x0d1ffddb<br>libsystem_pthread.dylib`_pthread_rwlock_check_init + 11, queue =<br>&#39;com.apple.main-thread&#39;, stop reason = EXC_BAD_ACCESS (code=1, address=0x0)<br></p><p>  * frame #0: 0x0d1ffddb libsystem_pthread.dylib`_pthread_rwlock_check_init<br>+ 11<br></p><p>    frame #1: 0x0d1ffaf0 libsystem_pthread.dylib`_pthread_rwlock_lock + 25<br></p><p>    frame #2: 0x0d204fcc<br>libsystem_pthread.dylib`pthread_rwlock_wrlock$UNIX2003 + 23<br></p><p>    frame #3: 0x1210ef13<br>libLLVMContainer.dylib`llvm::sys::RWMutexImpl::writer_acquire() + 19<br></p><p>    frame #4: 0x12069b12<br>libLLVMContainer.dylib`llvm::PassRegistry::addRegistrationListener(llvm::PassRegistrationListener*)<br>+ 34<br></p><p>    frame #5: 0x1206567e<br>libLLVMContainer.dylib`llvm::PassNameParser::PassNameParser() + 78<br></p><p>    frame #6: 0x1205cad3<br>libLLVMContainer.dylib`_GLOBAL__sub_I_LegacyPassManager.cpp + 1299<br></p><p>    frame #7: 0x0991b20f<br></p><p>    frame #8: 0x0991b368<br></p><p>    frame #9: 0x09916a01<br></p><p>    frame #10: 0x09916994<br></p><p>    frame #11: 0x09916994<br></p><p>    frame #12: 0x09916994<br></p><p>    frame #13: 0x09916994<br></p><p>    frame #14: 0x09916994<br></p><p>    frame #15: 0x09916994<br></p><p>    frame #16: 0x09916994<br></p><p>    frame #17: 0x09916994<br></p><p>    frame #18: 0x09915d54<br></p><p>    frame #19: 0x09915de3<br></p><p>    frame #20: 0x0990bc50<br></p><p>    frame #21: 0x0990f2c7<br></p><p>    frame #22: 0x0990b1f9<br></p><p>    frame #23: 0x8fe61118 dyld`dyld::useSimulatorDyld(int, macho_header<br>const*, char const*, int, char const**, char const**, char const**,<br>unsigned long*) + 1053<br></p><p>    frame #24: 0x8fe601f2 dyld`dyld::_main(macho_header const*, unsigned<br>long, int, char const**, char const**, char const**, unsigned long*) + 202<br></p><p>    frame #25: 0x8fe5c232 dyld`dyldbootstrap::start(macho_header const*,<br>int, char const**, long, macho_header const*, unsigned long*) + 428<br></p><p>    frame #26: 0x8fe5c047 dyld`_dyld_start + 71<br></p><p>(lldb)<br></p><p>Does anyone have any idea what gone wrong.<br></p><p><br>Thanks<br></p><p>Ramakrishna<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160310/0c2c8e1e/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

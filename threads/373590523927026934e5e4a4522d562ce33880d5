@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4d258a22a520c13772442666364207fa?s=50"></div><header><strong>Compiler switch?</strong> from <string>Don Wills</string> &lt;don.wills at portablesoftware.com&gt;<p>January  5, 2016 at 08:00:00pm</p></header><div class="content"><p>Hello Swift-Users,<br></p><p>I am building an automated translator to translate from another programming language to Swift.  It&#39;s mostly working, but there is one issue that would be hard for the translator to deal with - the issue of &#39;var&#39; vs. &#39;let&#39; declarations.<br></p><p>Right now the translator always creates local variables with the &#39;var&#39; keyword.  The result is lots of warnings from the compiler suggesting the change of &#39;var&#39; to &#39;let&#39; when the compiler ascertains that the variable cannot be modified.<br></p><p>My question is this:  Can the Swift compiler be modified to allow for turning off warnings in general or the &#39;var&#39; vs. &#39;let&#39; warning in particular?<br></p><p>If this email list is not the correct place to ask such a question, please suggest where I might ask the question.  Thanks.<br></p><p>Don Wills<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ec21faaf010581d3b9d6ef507644e622?s=50"></div><header><strong>Compiler switch?</strong> from <string>Jack Lawrence</string> &lt;jackl at apple.com&gt;<p>January  5, 2016 at 07:00:00pm</p></header><div class="content"><p>Hi Don,<br></p><p>It’s not currently possible to disable any warnings emitted by the Swift compiler. Alternatively, you could run a fix-it pass over all of the code after translation, which automatically accepts all suggested fix-its:<br></p><p>swiftc -fixit-all input_file.swift<br></p><p>Jack<br>&gt; On Jan 5, 2016, at 7:02 PM, Don Wills via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello Swift-Users,<br>&gt; <br>&gt; I am building an automated translator to translate from another programming language to Swift.  It&#39;s mostly working, but there is one issue that would be hard for the translator to deal with - the issue of &#39;var&#39; vs. &#39;let&#39; declarations.<br>&gt; <br>&gt; Right now the translator always creates local variables with the &#39;var&#39; keyword.  The result is lots of warnings from the compiler suggesting the change of &#39;var&#39; to &#39;let&#39; when the compiler ascertains that the variable cannot be modified.<br>&gt; <br>&gt; My question is this:  Can the Swift compiler be modified to allow for turning off warnings in general or the &#39;var&#39; vs. &#39;let&#39; warning in particular?<br>&gt; <br>&gt; If this email list is not the correct place to ask such a question, please suggest where I might ask the question.  Thanks.<br>&gt; <br>&gt; Don Wills<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

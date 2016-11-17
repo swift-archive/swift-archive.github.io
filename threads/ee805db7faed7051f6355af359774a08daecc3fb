@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6ebcb3e4fa5e0ed5ae514883b1748236?s=50"></div><header><strong>Ambiguous error for setting a value in a CChar array</strong> from <string>Adam Campbell</string> &lt;adam.92.ac at gmail.com&gt;<p>March  4, 2016 at 03:00:00am</p></header><div class="content"><p>Discovered this when trying to answer a stackoverflow question about<br>setting character values in a CCString array.<br></p><p>The following code produces an ambiguous error:<br>var buff = [CChar](count: 5, repeatedValue: 0)<br>buff[0] = &quot;A&quot;.utf8.first!.value // Error - Cannot assign value of type<br>&#39;Int8&#39; to type &#39;CChar&#39; (aka &#39;Int8&#39;)<br></p><p>I can easily get around this by changing the second line to:<br>buff[0].value = &quot;A&quot;.utf8.first!.value<br></p><p>Can someone explain what is happening here? As well as the significance of<br>Int8.value?<br></p><p>Thanks in advance,<br>Adam<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160304/ee80c3fb/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Ambiguous error for setting a value in a CChar array</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>March  3, 2016 at 08:00:00pm</p></header><div class="content"><p>On Thu, Mar 3, 2016 at 7:54 PM, Adam Campbell via swift-users<br>&lt;swift-users at swift.org&gt; wrote:<br>&gt; Discovered this when trying to answer a stackoverflow question about setting<br>&gt; character values in a CCString array.<br>&gt;<br>&gt; The following code produces an ambiguous error:<br>&gt; var buff = [CChar](count: 5, repeatedValue: 0)<br>&gt; buff[0] = &quot;A&quot;.utf8.first!.value // Error - Cannot assign value of type<br>&gt; &#39;Int8&#39; to type &#39;CChar&#39; (aka &#39;Int8&#39;)<br>&gt;<br>&gt; I can easily get around this by changing the second line to:<br>&gt; buff[0].value = &quot;A&quot;.utf8.first!.value<br>&gt;<br>&gt; Can someone explain what is happening here? As well as the significance of<br>&gt; Int8.value?<br></p><p>The &#39;var value&#39; property used to be a property of type Builtin.Int8,<br>which maps directly to LLVM&#39;s i8.  This is a part of the integers<br>implementation, and it was renamed to &#39;var _value&#39; a while ago.<br>Please don&#39;t use this property.  The code that you posted (that<br>accesses &#39;.value&#39;) does not compile anymore.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

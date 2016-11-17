@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/86faaff6b90699a5dda6b5cddcc36f97?s=50"></div><header><strong>Cannot use swift REPL from stand alone lldb build</strong> from <string>Dmitry Shevchenko</string> &lt;dmishe at google.com&gt;<p>October  7, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi Rex,<br></p><p>I am seeing errors like this when using a custom built lldb on a binary<br>that is built with a different toolchain.<br></p><p>If your app is built by Xcode with its default toolchain, then debugging it<br>with lldb built from scratch will cause issues. You can build your own<br>toolchain and use it in Xcode to achieve parity.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-lldb-dev/attachments/20161007/0aced851/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

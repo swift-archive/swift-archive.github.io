@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d00bbd71416af00395dd93c3fc3c54a?s=50"></div><header><strong>is inheritdoc available in swift?</strong> from <string>Maciej Madaj</string> &lt;mmadaj at kaliop.com&gt;<p>March 21, 2016 at 07:00:00pm</p></header><div class="content"><p>Hi!<br></p><p>I’m developing SDK for iOS, written purely in Swift - and I wonder is there<br>a way to use something similar to inheritdoc like in Java? Possible use<br>case: documentation stored in protocol which later on will be accessible in<br>objects confronting protocol:<br></p><p>protocol test {<br>/**<br>It does the magic! Loren ipsum, long description. Whatever<br>*/<br>func magic() -&gt; Int<br>}<br></p><p>class TestClass: test {<br></p><p>/**<br>@inherticdoc? instead of pasting protocol documentation<br>*/<br>public fund magic() -&gt; Int {<br>return 21<br>}<br></p><p>}<br></p><p>so when calling<br></p><p>let x = TestClass()<br>x.magic()<br></p><p>in quick help I would see „It does the magic! (…)” - without tedious<br>copy&amp;paste and managing in many places.<br></p><p>Default behavior looks to omit it all along.<br></p><p>Best regards.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160321/be4a0b5a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>is inheritdoc available in swift?</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>March 21, 2016 at 03:00:00pm</p></header><div class="content"><p>On Mon, Mar 21, 2016 at 11:02 AM, Maciej Madaj via swift-users<br>&lt;swift-users at swift.org&gt; wrote:<br>&gt; Hi!<br>&gt;<br>&gt; I’m developing SDK for iOS, written purely in Swift - and I wonder is there<br>&gt; a way to use something similar to inheritdoc like in Java?<br></p><p>Hi Maciej,<br></p><p>This is a feature that we likely want on by default without any<br>annotations.  It does not exist yet, and it is tracked by<br>https://bugs.swift.org/browse/SR-539<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

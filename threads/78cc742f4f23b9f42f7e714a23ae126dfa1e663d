@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>[Pitch] Rename flatten() to joined() and give joined() for string sequences the empty string as the default parameter</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>July 22, 2016 at 08:00:00pm</p></header><div class="content"><p>Currently<br></p><p>someSequence.joined(separator: [])<br>someSequence.flatten()<br></p><p>(where someSequence is a sequence of sequences) results in two equal sequences (apart from their exact types). I would like to have flatten() renamed to joined(), resulting in joined(_:) seemingly having an empty array as the default parameter.<br></p><p>Similarly, I propose to give joined(_:) for a sequence of strings the empty string as the default parameter, allowing us to replace something like<br></p><p>[&quot;Hello, &quot;, &quot;world!&quot;].joined(separator: &quot;&quot;) // &quot;Hello, world!&quot;<br></p><p>with<br></p><p>[&quot;Hello, &quot;, &quot;world!&quot;].joined() // &quot;Hello, world!”<br></p><p>In other words, I think joined(_:) should have a default parameter of either `[]` or `””` and flatten() could then be removed as it would act the exact same way as joined().<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160722/78cc663d/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

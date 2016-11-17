@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Discussion]: Deprecate !-Unwrapping of Optionals</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 29, 2016 at 02:00:00pm</p></header><div class="content"><p>on Sun Feb 28 2016, Developer &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Optional values pervade Swift code and so there is a significant part<br>&gt; of the language dedicated to manipulating them and using them safely.<br>&gt; An optional value may be conditionally let-bound, guarded,<br>&gt; pattern-matched on, given a default value with ??, or used with<br>&gt; higher-order functions like map and flatMap without having to interact<br>&gt; with partiality.  A corner case, however, remains in the form of the<br>&gt; postfix-! force-unwrap operator.  At the term level, there is little<br>&gt; reason to unwrap given the syntactic constructs above, and indeed code<br>&gt; that does becomes brittle and, by its very nature, open to the dreaded<br>&gt; &quot;unexpectedly found nil while unwrapping an optional value&quot; error (our<br>&gt; very own NullPointerException).  <br></p><p>Whether ! is a problem depends how you use it.  IIUC it&#39;s very common<br>that you know an optional is non-nil unless there&#39;s a bug in your code.<br>In those cases, IMO, y! is far preferable in terms of maintainability to<br></p><p>  if let x = y {<br></p><p>  }<br>  else fatalError(&quot;...&quot;)<br></p><p>and in terms of both maintainability *and* reliability, is much better<br>than:<br></p><p>  if let x = y {<br></p><p>  }<br>  else {<br>     // supposed &quot;recovery&quot; code that never actually gets executed<br>  }<br></p><p>If people use y! to avoid dealing with cases that can actually arise in<br>correct code that&#39;s a problem, but I&#39;m not sure taking away &quot;y!&quot; is the<br>cure.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

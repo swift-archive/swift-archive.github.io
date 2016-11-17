@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4390da3191e929ddd491269874fe5bc4?s=50"></div><header><strong>NSMassFormatter implementation</strong> from <string>Mauricio Meirelles</string> &lt;mauricio.m at gmail.com&gt;<p>April 14, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi all,<br>I was thinking on start the NSMassFormatter implementation.<br>Are you accepting PR for this?<br></p><p>Thanks,<br>Mauricio<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160414/8bd6dc4b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>NSMassFormatter implementation</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>April 14, 2016 at 09:00:00am</p></header><div class="content"><p>Absolutely! If you have any questions about the details of how the objc version works feel free to reach out.<br></p><p>&gt; On Apr 14, 2016, at 5:14 AM, Mauricio Meirelles via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi all,<br>&gt; I was thinking on start the NSMassFormatter implementation.<br>&gt; Are you accepting PR for this?<br>&gt; <br>&gt; Thanks,<br>&gt; Mauricio<br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b3592d65fd9318ba2f2b70379835526b?s=50"></div><header><strong>Change the name of the boolean operators?</strong> from <string>Sean Heber</string> &lt;sean at fifthace.com&gt;<p>December  3, 2015 at 04:00:00pm</p></header><div class="content"><p>I would like to propose that &amp;&amp;, ||, !, etc are replaced with keywords such as ?and?, ?or?, ?not?, etc. As small as this may seem, it is one of my favorite things about Python that, IMO, can dramatically improve readability.<br></p><p>l8r<br>Sean<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Change the name of the boolean operators?</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>December  3, 2015 at 02:00:00pm</p></header><div class="content"><p>&gt; On Dec 3, 2015, at 2:19 PM, Sean Heber &lt;sean at fifthace.com&gt; wrote:<br>&gt; <br>&gt; I would like to propose that &amp;&amp;, ||, !, etc are replaced with keywords such as ?and?, ?or?, ?not?, etc. As small as this may seem, it is one of my favorite things about Python that, IMO, can dramatically improve readability.<br></p><p>Hi Sean,<br></p><p>We?ve briefly considered this in the past.  However, this doesn?t align well with the design of swift, which partitions infix and prefix operators into their own namespace (composed of operator characters) and normal identifiers (composed of ?identifier characters?).  You can see the grammar for this in the Swift Programming Language Reference.<br></p><p>-Chris<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

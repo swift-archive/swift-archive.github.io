@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Proposal: Contiguous Variables (A.K.A. Fixed Sized Array Type)</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 29, 2016 at 01:00:00pm</p></header><div class="content"><p>on Thu Jan 28 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jan 28, 2016, at 9:41 PM, Félix Cloutier &lt;felixcca at yahoo.ca&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; I think that (4 x Int) needs to be syntax sugar for (Int, Int, Int,<br>&gt;&gt; Int). Not having them the same would introduce awkward cases into<br>&gt;&gt; the language.<br>&gt;<br>&gt; Agreed.  This means that:<br>&gt;<br>&gt;    let values: (4 x Int)(repeatedValue: 0) // Is this possible?<br>&gt;<br>&gt; will not be possible.<br></p><p>I think this avenue leaves some really crucial use-cases on the table,<br>e.g. implementing bounded-size dynamically-growable arrays.  There<br>should, at the very least, be a way to declare an array of uninitialized<br>suitably-aligned storage for any type.  And I think we&#39;d also need<br>non-type generic parameters to complete the picture.<br></p><p>&gt;&gt; Because of that, I also think that forcing people to use the<br>&gt;&gt; subscript would have some awkward consequences. What if I have a<br>&gt;&gt; func&lt;T, U&gt; that uses a (T, U) tuple and both T and U happen to be<br>&gt;&gt; the same type?<br>&gt;<br>&gt; I don’t understand this concern.<br>&gt;<br>&gt;&gt; So I think that tuples whose elements all have the same type should<br>&gt;&gt; get a subscript but shouldn&#39;t lose direct field access.<br>&gt;<br>&gt; Agreed.<br>&gt;<br>&gt; -Chris<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Proposal: Contiguous Variables (A.K.A. Fixed Sized Array Type)</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>January 29, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Jan 29, 2016, at 1:11 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Thu Jan 28 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt;&gt; On Jan 28, 2016, at 9:41 PM, Félix Cloutier &lt;felixcca at yahoo.ca&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I think that (4 x Int) needs to be syntax sugar for (Int, Int, Int,<br>&gt;&gt;&gt; Int). Not having them the same would introduce awkward cases into<br>&gt;&gt;&gt; the language.<br>&gt;&gt; <br>&gt;&gt; Agreed.  This means that:<br>&gt;&gt; <br>&gt;&gt;   let values: (4 x Int)(repeatedValue: 0) // Is this possible?<br>&gt;&gt; <br>&gt;&gt; will not be possible.<br>&gt; <br>&gt; I think this avenue leaves some really crucial use-cases on the table,<br>&gt; e.g. implementing bounded-size dynamically-growable arrays.<br></p><p>It doesn&#39;t foreclose on the future possibility, either. With integer generic parameters you could conceivably build something like that out of a primitive fixed-size tuple type.<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

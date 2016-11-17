@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d2fcdd5a6abf7204973117f37a18671?s=50"></div><header><strong>Canonical way to getifaddrs with SPM and Xcode</strong> from <string>Bouke Haarsma</string> &lt;bouke at haarsma.eu&gt;<p>September 12, 2016 at 09:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I would like to know the canonical way to call C’s getifaddrs, defined in ifaddr.h, using Swift 3. It should compile from both Xcode and SPM (Darwin and Glibc). As this header is not imported by the Darwin (/Glibc as well?) library, so the header would need to be imported by my own code. I tried two different approaches, but both failed;<br></p><p>1. Define a system module package;<br></p><p>&gt; module Cifaddrs [system] [extern_c] {<br>&gt;   header &quot;/usr/include/ifaddrs.h&quot;<br>&gt;   export *<br>&gt; }<br></p><p>With both Xcode/SPM it fails with:<br></p><p>&gt; /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/module.modulemap:7:8: error: redefinition of module &#39;Compression&#39;<br>&gt; module Compression [system] [extern_c] {<br>&gt;        ^<br></p><p>2. Define a Clang module;<br></p><p>&gt; Sources/Cifaddrs/include/Cifaddrs.h:<br>&gt; #import &lt;ifaddrs.h&gt;<br>&gt; <br>&gt; Sources/Cifaddrs/Cifaddrs.c:<br>&gt; (empty)<br></p><p>In Xcode it fails with:<br></p><p>&gt; […]Sources/Cifaddrs/include/Cifaddrs.h:1:9: Include of non-modular header inside framework module &#39;Cifaddrs&#39;<br></p><p><br>Note that setting CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES doesn’t affect Swift compiler.<br></p><p>Building using ``swift build`` however works.<br></p><p>Both approaches feel like convoluted ways for something that would’ve been very easy with plain C. Many thanks in advantage for showing me an easier way :).<br></p><p>—<br>Bouke<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

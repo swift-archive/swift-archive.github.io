@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8d00f5acbaa7d24e0900e5045462e008?s=50"></div><header><strong>Use of pthread_main_np() in NSOperation</strong> from <string>Chris Bailey</string> &lt;BAILEYC at uk.ibm.com&gt;<p>May 10, 2016 at 08:00:00pm</p></header><div class="content"><p>NSOperation.swift currently makes a call to pthread_main_np() on line 536. <br>This causes a compilation failure on Linux as there isn&#39;t an <br>implementation of pthread_main_np() in Glibc.<br></p><p>There&#39;s few ways of fixing this. Before I go ahead and implement one of <br>them, I&#39;d like to get some input on what we thing is the best approach.<br></p><p>The most obvious approach would be to leverage the shim we&#39;ve added to <br>CoreFoundation already. We implemented pthread_main_np() using the <br>following function in CFPlatform.c:<br>Boolean _CFIsMainThread(void) {<br>    return syscall(SYS_gettid) == getpid();<br>}<br>This is only available internally to CF, but could be exposed to <br>Foundation, either as _CFIsMainThread() or as pthread_main_np().<br></p><p>Other options would be to expose the pthread_main_np() shim that&#39;s in <br>Dispatch already (again internally), or to add it to the Glibc overlay so <br>its available globally.<br></p><p>Any thoughts on the best approach?<br></p><p>Chris<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160510/54877972/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>Use of pthread_main_np() in NSOperation</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>May 10, 2016 at 12:00:00pm</p></header><div class="content"><p>Since CF is really an implementation detail of Foundation for corelibs, let’s use the CF implementation for Foundation.<br></p><p>- Tony<br></p><p>&gt; On May 10, 2016, at 12:10 PM, Chris Bailey via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; NSOperation.swift currently makes a call to pthread_main_np() on line 536. This causes a compilation failure on Linux as there isn&#39;t an implementation of pthread_main_np() in Glibc. <br>&gt; <br>&gt; There&#39;s few ways of fixing this. Before I go ahead and implement one of them, I&#39;d like to get some input on what we thing is the best approach. <br>&gt; <br>&gt; The most obvious approach would be to leverage the shim we&#39;ve added to CoreFoundation already. We implemented pthread_main_np() using the following function in CFPlatform.c: <br>&gt; Boolean _CFIsMainThread(void) { <br>&gt;     return syscall(SYS_gettid) == getpid(); <br>&gt; } <br>&gt; This is only available internally to CF, but could be exposed to Foundation, either as _CFIsMainThread() or as pthread_main_np(). <br>&gt; <br>&gt; Other options would be to expose the pthread_main_np() shim that&#39;s in Dispatch already (again internally), or to add it to the Glibc overlay so its available globally. <br>&gt; <br>&gt; Any thoughts on the best approach? <br>&gt; <br>&gt; Chris_______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160510/f4f18319/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

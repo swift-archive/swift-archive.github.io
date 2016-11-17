@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d6e429dcd54ef30ec8ce67f478ac3f06?s=50"></div><header><strong>[Review] SE-0026 Abstract classes and methods</strong> from <string>Mirek Petricek</string> &lt;mirek at petricek.cz&gt;<p>February 26, 2016 at 09:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>I support the proposal to introduce abstract classes to Swift. I agree with what has been said about inheritance still being an important feature (despite going slightly out off fashion) and this will make it more useful.<br></p><p>I am just wondering if it is really necessary to have the requirement about having to declare a class as abstract if it &quot;contains one or more abstract methods/properties” as suggested in the proposal. Can’t we just consider the class as abstract as soon as there is at least one unimplemented abstract method/property? Furthermore, do we really need the keyword “abstract” as modifier of a class? <br></p><p>Regards,<br></p><p>Mirek<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[Review] SE-0026 Abstract classes and methods</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>March  5, 2016 at 09:00:00pm</p></header><div class="content"><p>I&#39;d prefer to see instantly whether a class is abstract or not. Furthermore it is very useful to declare a base class as abstract even if none of its members is abstract.<br></p><p>-Thorsten <br></p><p>&gt; Am 26.02.2016 um 22:25 schrieb Mirek Petricek via swift-evolution &lt;swift-evolution at swift.org&gt;:<br>&gt; <br>&gt; Hello,<br>&gt; <br>&gt; I support the proposal to introduce abstract classes to Swift. I agree with what has been said about inheritance still being an important feature (despite going slightly out off fashion) and this will make it more useful.<br>&gt; <br>&gt; I am just wondering if it is really necessary to have the requirement about having to declare a class as abstract if it &quot;contains one or more abstract methods/properties” as suggested in the proposal. Can’t we just consider the class as abstract as soon as there is at least one unimplemented abstract method/property? Furthermore, do we really need the keyword “abstract” as modifier of a class? <br>&gt; <br>&gt; Regards,<br>&gt; <br>&gt; Mirek<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

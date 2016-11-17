@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/708abe8093c1b67c209e6713070d0fd0?s=50"></div><header><strong>Problem calling a C function passing a void** from Swift 3</strong> from <string>Lane Schwartz</string> &lt;dowobeha at gmail.com&gt;<p>September 15, 2016 at 11:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I just moved to Xcode 8 (actually, it upgraded itself without me realizing<br>it, but anyway), and some previously working Swift 2.2 code now doesn&#39;t<br>work. I&#39;m having trouble migrating.<br></p><p>The code in question is supposed to declare, but not allocate, a block of<br>memory. A void** to that block of memory was then passed to a C function<br>(cudaMalloc to be specific) which then allocated memory on the GPU. The<br>swift 2.2 code that worked was like this:<br></p><p>var data_on_device : UnsafeMutablePointer&lt;Void&gt;<br></p><p>...<br></p><p>self.byteCount = count * sizeof(CFloat)<br></p><p>self.data_on_device = nil<br></p><p>let status = cudaMalloc(&amp;data_on_device, self.byteCount)<br></p><p><br>Then elsewhere in the code I would convert this pointer to its appropriate<br>typed version:<br></p><p>UnsafeMutablePointer&lt;Float&gt;(foo.data_on_device)<br></p><p><br>Can anyone help me get the equivalent functionality in Swift 3?<br></p><p>The closest I&#39;ve been able to come is the following, which (a) was very<br>non-obvious and took a lot of trial and error to find, and (b) is ugly.<br></p><p>var data_on_device : UnsafeMutablePointer&lt;Float&gt;<br>&gt; let data_on_device_void_pointer : UnsafeMutableRawPointer<br>&gt; ...<br>&gt; self.byteCount = count * MemoryLayout&lt;Float&gt;.size<br>&gt; self.data_on_device = UnsafeMutablePointer&lt;Float&gt;.allocate(capacity:0)<br>&gt; self.data_on_device_void_pointer = UnsafeMutableRawPointer(data_on_device)<br>&gt; var pointer_as_optional : UnsafeMutableRawPointer? =<br>&gt; data_on_device_void_pointer<br>&gt; let pointer : UnsafeMutablePointer&lt;UnsafeMutableRawPointer?&gt; =<br>&gt; UnsafeMutablePointer&lt;UnsafeMutableRawPointer?&gt;(&amp;pointer_as_optional)<br>&gt; let status = cudaMalloc(pointer, self.byteCount)<br></p><p><br> For reference, the code and git history is here: https://github.com/<br>dowobeha/mt-marathon-swift-c/blob/master/main.swift<br></p><p>Thanks,<br>Lane<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160915/7d9661d1/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

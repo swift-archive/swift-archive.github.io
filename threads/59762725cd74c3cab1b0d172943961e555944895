@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/545980cbc54981200c367ddbac27954a?s=50"></div><header><strong>Swift and Xcode along with Playgrounds is, full of bugs</strong> from <string>has</string> &lt;hengist.podd at nuggle.uk&gt;<p>November  2, 2016 at 05:00:00pm</p></header><div class="content"><p>Jens Alfke wrote:<br></p><p> &gt; Back when I worked at Apple I used to drop in on Steve and tell him<br> &gt; the metal UI appearance sucked. He’d chuckle in his kindly way,<br> &gt; and then nail my head to the floor.<br></p><p><br>Now Tim Cook owes me a new keyboard!<br></p><p><br>has<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

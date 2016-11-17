@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Using `map` and `flatMap` with implicit optionals</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>October 24, 2016 at 04:00:00pm</p></header><div class="content"><p>This could cause problems when the underlying type also has a `map` or `flatMap` function:<br></p><p>let array: [Int]! = nil<br>array.map { $0 } // crash<br></p><p>Should this use Optional.map or Array.map?<br></p><p>As a workaround, you can simply do<br></p><p>let array: [Int]! = nil<br>(array as Optional).map { $0 } // nil<br></p><p>&gt; Since `ImplicitlyUnwrappedOptional` types can be unwrapped with an `if let` or<br>&gt; accessed as an optional as in `foo?.bar` then why shouldn&#39;t there be implementations of `map` or `flatMap` for use with IUO types?<br>&gt; <br>&gt; I think having `map` and `flatMap` available on types marked with &quot;!&quot; would be convenient<br>&gt; but is there a good reason why that isn&#39;t the case now?<br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161024/05bf6f77/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

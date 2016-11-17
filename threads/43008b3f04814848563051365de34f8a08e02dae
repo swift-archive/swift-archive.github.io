@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5818a8a9211c31af95d6db8974457683?s=50"></div><header><strong>[Draft Proposal for pre discussion]NS_ENUM&#39;s should be considered Open</strong> from <string>Joseph Lord</string> &lt;joseph at human-friendly.com&gt;<p>April 21, 2016 at 07:00:00pm</p></header><div class="content"><p>Can I get some thoughts about this idea to remove undefined behaviour <br>from switch statements when an enum imported from Objective-C has a raw <br>value outside the expected set?<br></p><p>The proposal is on my fork and below: <br>https://github.com/josephlord/swift-evolution/blob/master/proposals/0000-consider_ns_enums_open.md<br></p><p>Thanks,<br></p><p>Joseph<br></p><p># NS_ENUMs should be considered Open<br></p><p>* Proposal: <br>[SE-NNNN](https://github.com/josephlord/swift-evolution/blob/master/proposals/0000-consider_ns_enums_open.md)<br>* Author(s): [Joseph Lord](https://github.com/josephlord)<br>* Status: [Early Draft]<br>* Review manager: TBD<br></p><p>## Introduction<br></p><p>Enums imported from C/Objective C could (as a result of library <br>versioning or bugs) actually have raw values outside of the defined <br>values. A default case should be required on switch statements involving <br>them and the current undefined behaviour should be removed.<br></p><p>Swift-evolution thread: [To be filled in after discussion]<br></p><p>## Motivation<br></p><p>In cases where an enum value is outside of the expected range and there <br>is no default in a switch the behaviour is currently undefined (it seems <br>to take the first case in practice) potentially leading to runtime <br>crashes. Undefined behaviour and crashes at runtime due to library <br>changes outside the developer&#39;s control are highly undesirable and Swift <br>should be helping us to make safe code to prevent them. At the moment if <br>you are handling all cases it is not even possible to add a default case.<br></p><p>I encountered the issue when testing on iOS 8 and hitting [an issue with <br>CoreData](http://stackoverflow.com/a/32978387/1476206) where it was <br>passing a zero value the NSFetchedResultsChangeType to my code. That <br>thread clearly shows that the issue is affecting people and while it is <br>clearly a bug in the unsafe code of Core Data that is something which <br>Swift should be defending against. There is a simple test example <br>showing the issue in [SR-1258](https://bugs.swift.org/browse/SR-1258)<br></p><p>## Proposed solution<br></p><p>Redefine NS_ENUMs from being a closed type to an open one. This would <br>then require a default case on all switch statements over the type. With <br>the default case explicit situation must be handled by the developer. <br>They can choose to raise errors call assertionFailure or <br>preconditionFailure as the wish or handle the case safely.<br></p><p>## Detailed design<br></p><p>  - Help required here<br></p><p>## Impact on existing code<br></p><p>This will break all switch statements over an enum imported from <br>Objective-C or C where there is no default case. There should not be any <br>automatic migration because it is appropriate for the developer to <br>decide on the course of action in each case.<br></p><p>## Alternatives considered<br></p><p>1) No change<br></p><p>This leaves the potential for undefined behaviour in all build modes if <br>cases of bugs in code outside of Swift OR in the event that new cases <br>are added to enums in future library versions.<br></p><p>2) Debug assertion<br></p><p>This would have the benefit that developers might discover errors more <br>quickly but could still leave risks where libraries (including OS <br>frameworks) are updated and introduce bugs after application release or <br>in untested configurations.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

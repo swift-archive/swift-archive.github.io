@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/706baf09e574d70814e4af2d54a315e0?s=50"></div><header><strong>Using Swift Package Manager with C++</strong> from <string>Vinicius Vendramini</string> &lt;vinivendra at gmail.com&gt;<p>November 12, 2016 at 07:00:00pm</p></header><div class="content"><p>I’m having issues using C++ code with the Swift PM. Simple examples work fine as long as I don’t use anything in the C++ standard library, otherwise the programs don’t compile.<br></p><p>My guess is that the Swift PM internally uses clang (as opposed to clang++) to compile C++ code, and while clang can compile normal C++ code it can’t link against the C++ standard library. Is that it?<br></p><p>The second example on the link below shows working C++ code with Swift. If I try to add a simple call to std::cout, for instance, the program stops compiling.<br></p><p>Thanks for any help :)<br></p><p>link: http://ankit.im/swift/2016/05/21/creating-objc-cpp-packages-with-swift-package-manager/ &lt;http://ankit.im/swift/2016/05/21/creating-objc-cpp-packages-with-swift-package-manager/&gt;<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161112/758baacb/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Using Swift Package Manager with C++</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>November 12, 2016 at 01:00:00pm</p></header><div class="content"><p>This was just fixed on trunk:<br>  https://bugs.swift.org/browse/SR-3152?jql=text%20~%20%22C%2B%2B%22%20ORDER%20BY%20created%20DESC<br></p><p>In the meantime, you can either use a recent snapshot from swift.org, or you can pass `-Xlinker -lc++` on the command line to work around the problem.<br></p><p> - Daniel<br></p><p>&gt; On Nov 12, 2016, at 1:42 PM, Vinicius Vendramini via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I’m having issues using C++ code with the Swift PM. Simple examples work fine as long as I don’t use anything in the C++ standard library, otherwise the programs don’t compile.<br>&gt; <br>&gt; My guess is that the Swift PM internally uses clang (as opposed to clang++) to compile C++ code, and while clang can compile normal C++ code it can’t link against the C++ standard library. Is that it?<br>&gt; <br>&gt; The second example on the link below shows working C++ code with Swift. If I try to add a simple call to std::cout, for instance, the program stops compiling.<br>&gt; <br>&gt; Thanks for any help :)<br>&gt; <br>&gt; link: http://ankit.im/swift/2016/05/21/creating-objc-cpp-packages-with-swift-package-manager/ &lt;http://ankit.im/swift/2016/05/21/creating-objc-cpp-packages-with-swift-package-manager/&gt;<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161112/7fbd2091/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

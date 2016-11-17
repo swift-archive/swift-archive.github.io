@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/94064636d740f54a1ea944b46f4dd8bd?s=50"></div><header><strong>SwiftPM, pkg-config and Xcode 8</strong> from <string>Jason Dusek</string> &lt;jason.dusek at gmail.com&gt;<p>July 21, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi All,<br></p><p>I recently discovered the pkgConfig feature for Package.swift and it<br>definitely makes binding to system libraries easier. After changing CLibPQ<br>&lt;https://github.com/solidsnack/CLibPQ&gt; to use it, I noticed I was able to<br>build a dependent project with swift build but Xcode could not build the<br>project any longer. This led me to the build settings, to try adding<br>/usr/local/{include,lib} for includes and libraries; but this did not seem<br>to make any difference -- all the symbols from the native lib were<br>unresolvable. This after several instances of cleaning the project,<br>restarting Xcode, &amp;c.<br></p><p>Does Xcode 8 consume the Package.swift file? What steps can I take to<br>ensure that native libs which discover their paths with pkgConfig can build<br>from Xcode, too?<br></p><p>Kind Regards,<br></p><p> Jason Dusek<br>​<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160721/ac51af7d/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

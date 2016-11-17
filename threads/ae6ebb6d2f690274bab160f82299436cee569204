@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b2fc174169a3054f2e9bcb366884b02b?s=50"></div><header><strong>final class performance</strong> from <string>Fabian Ehrentraud</string> &lt;Fabian.Ehrentraud at willhaben.at&gt;<p>June 23, 2016 at 07:00:00am</p></header><div class="content"><p>Somewhere I read that we should always write &quot;final class&quot; where possible, as it is more performant. Is this really the case, especially for non-library modules? Can&#39;t the compiler infer whether a class has no subclasses when compiling? Writing &quot;final&quot; just for performance reasons feels wrong. <br></p><p>-- Fabian<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9ae1f2ed10d2ef77cce06bbb5a2dcf7e?s=50"></div><header><strong>final class performance</strong> from <string>Alex Hoppen</string> &lt;alex at ateamer.de&gt;<p>June 23, 2016 at 12:00:00pm</p></header><div class="content"><p>AFAIK, Swift applies the same optimisations as for final classes if it can guarantee that the class will not be subclassed. That is, if the class is either private or internal and you have whole module optimisation enabled. If your class, however, is public and not final, there is no way the compiler can assure that it will not be subclassed in a different module and thus cannot perform optimisations like inlining method implementations.<br></p><p>– Alex<br></p><p>&gt; On 23 Jun 2016, at 09:16, Fabian Ehrentraud via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Somewhere I read that we should always write &quot;final class&quot; where possible, as it is more performant. Is this really the case, especially for non-library modules? Can&#39;t the compiler infer whether a class has no subclasses when compiling? Writing &quot;final&quot; just for performance reasons feels wrong. <br>&gt; <br>&gt; -- Fabian<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

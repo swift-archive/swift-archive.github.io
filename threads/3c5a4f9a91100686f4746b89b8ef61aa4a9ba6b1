@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>Notes from Swift core team 2016-04-05 design discussion</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>April  6, 2016 at 01:00:00pm</p></header><div class="content"><p>Great solution for C interop! Eventually, annotations for C language and<br>API notes could be replaced with such<br>automatically-generated-manually-correctable bridge files.<br>We could support a wide range of conversions for @shadowing_c, such as<br>convertion of IUO to optional or unwrapped type.<br>There could also be a CBridgeable protocol (like ObjectiveCBridgeable) to<br>convert Swift data types to ones imported from C. @shadowing_c should<br>support such convertions.<br>Better yet, just rename ObjectiveCBridgeable to Bridgeable, and call new<br>annotation @shadowingImport. Support for other languages, for example, C++,<br>can theoretically be added later.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160406/3c5aa6b1/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8dfc6932943f38e7a7de48be3194f13c?s=50"></div><header><strong>Notes from Swift core team 2016-04-05 design discussion</strong> from <string>Michael Ilseman</string> &lt;milseman at apple.com&gt;<p>April  6, 2016 at 02:00:00pm</p></header><div class="content"><p>I don’t think the notes were conveying a decided-upon solution, so much as a fervent discussion which did not yet yield a conclusion. If you have an idea of how to address this, could you put together a draft?<br></p><p>&gt; On Apr 6, 2016, at 3:39 AM, Антон Жилин via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Great solution for C interop! Eventually, annotations for C language and API notes could be replaced with such automatically-generated-manually-correctable bridge files.<br>&gt; We could support a wide range of conversions for @shadowing_c, such as convertion of IUO to optional or unwrapped type.<br>&gt; There could also be a CBridgeable protocol (like ObjectiveCBridgeable) to convert Swift data types to ones imported from C. @shadowing_c should support such convertions.<br>&gt; Better yet, just rename ObjectiveCBridgeable to Bridgeable, and call new annotation @shadowingImport. Support for other languages, for example, C++, can theoretically be added later.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

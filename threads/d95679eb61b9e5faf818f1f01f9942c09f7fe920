@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/30531676aaa28c283443b2bbe04e1a7b?s=50"></div><header><strong>[Idea] Custom default names for arguments of closures</strong> from <string>Alexey Demedetskiy</string> &lt;dalog at me.com&gt;<p>February 13, 2016 at 10:00:00pm</p></header><div class="content"><p>Great idea!<br></p><p>But I see little problem here. <br></p><p>In regular functions parameters names are written near their usage. $0 are also all-known. So you don’t need to ‘guess’ parameter name.<br>But if we will introduce some closure typealias in one file, and will use it in another - then we need somehow to know this parameter name. <br></p><p>Also, if closure definition will change parameters names for some reason - all client code need to be updated. <br></p><p>As an alternative solution, IDE hints can include these parameter names in closure autocomplete.<br>For your example:<br></p><p>executeClosure { *first, second in &lt;#code#&gt;* }<br></p><p>where *…* is a content of an autocomplete hint.<br></p><p>But I like the general direction anyway.<br></p><p>&gt; Right now Swift provides shorthand argument names ($0, $1 etc) by default which could be overriden with more specific names. I think it would be nice to define our own default names as part of type definition:<br>&gt; <br>&gt; typealias Closure = (first one: String, second two: String) -&gt;Void<br>&gt; <br>&gt; func executeClosure(closure: Closure) {<br>&gt; // the caller uses external parameter names, nothing changed here<br>&gt; closure(first: &quot;first&quot;, second: 2)<br>&gt; }<br>&gt; <br>&gt; executeClosure {<br>&gt; // the callee uses custom arguments instead of $0, $1<br>&gt; // also it is possible to override these names here as usual<br>&gt; print(&quot;one \(one) two \(two)&quot;)<br>&gt; }<br>&gt; <br>&gt; This feature is backward compatible in that way what both<br>&gt; <br>&gt; typealias Closure = (first: String, second: String) -&gt;Void<br>&gt; <br>&gt; and<br>&gt; <br>&gt; typealias Closure = (String, String) -&gt;Void<br>&gt; <br>&gt; will provide the same behavior like now.<br>&gt; <br>&gt; Possible applications: providing default argument names more meaningfull than $0, $1, DSL-like constructions.<br>&gt; <br>&gt; Possible problem: names could overlap. Nothing new. $0, $1 could overlap too. Override argument names or variable names in a scope._______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

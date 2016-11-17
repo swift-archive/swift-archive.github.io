@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0735d3bf1d76c0385258ac7a2a22d6fe?s=50"></div><header><strong>[RFC] New collections model: collections advance indices</strong> from <string>Károly Lőrentey</string> &lt;karoly at lorentey.hu&gt;<p>March  8, 2016 at 03:00:00pm</p></header><div class="content"><p>On 2016-03-04 02:00:36 +0000, Dave Abrahams via swift-evolution said:<br></p><p>&gt; <br>&gt; on Thu Mar 03 2016, Dmitri Gribenko &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; On Thu, Mar 3, 2016 at 9:56 AM, plx via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; # Concern: Linearity Baked-In<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Even with this change, I have some concern that the proposed<br>&gt;&gt;&gt; protocol hierarchy from `Collection` onward feels like it has a<br>&gt;&gt;&gt; foreseeable lack of generality due to how strongly &quot;linear&quot; the<br>&gt;&gt;&gt; design wants `Collection` to be.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Is this the right time to raise such concerns (e.g. in-scope for this <br>&gt;&gt;&gt; discussion)?<br>&gt;&gt; <br>&gt;&gt; We can definitely dive into more details about this.  One thing that I<br>&gt;&gt; would want to understand is whether this non-linearity concept could<br>&gt;&gt; be added later without a re-design.<br>&gt;&gt; <br>&gt;&gt; Could you provide more information about the linearity issues that you<br>&gt;&gt; have in mind?  Are you thinking of something like Segmented Iterators<br>&gt;&gt; and Hierarchical Algorithms [1]?<br>&gt;&gt; <br>&gt;&gt; [1] http://lafstern.org/matt/segmented.pdf<br>&gt; <br>&gt; Awesome paper; everybody should read it ;-)<br></p><p>Indeed; I just read it, and it has given me Ideas.<br></p><p>Off-list, I&#39;ve been thinking about implementing a low-level optimization<br>in stdlib that turns out to be essentially a narrow-minded<br>implementation of segmented iterators, dedicated to one specific usecase:<br>copying data out of a collection.<br></p><p>See e.g. https://github.com/apple/swift/pull/1194#discussion_r55251606<br>(scroll down to the section about _copyContents; I&#39;m bad at succinct <br>commenting.)<br></p><p>-- <br>Károly<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

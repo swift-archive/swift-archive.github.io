@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>Interspersing guard let with guard boolean</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>May 13, 2016 at 12:00:00pm</p></header><div class="content"><p>Is there a technical reason that Swift cannot be expanded to allow arbitrary mixes of conditional binding and boolean assertions within a single compound guard statement?<br></p><p>Thanks, -- E<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Interspersing guard let with guard boolean</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>May 13, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; On May 13, 2016, at 11:15 AM, Erica Sadun via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Is there a technical reason that Swift cannot be expanded to allow arbitrary mixes of conditional binding and boolean assertions within a single compound guard statement?<br></p><p>No. You already can, we just have the somewhat strange rule that to separate `guard` conditions uses `,` before optional or pattern conditions, but `where` before boolean conditions:<br></p><p>	guard x == 0,<br>	  let y = optional where<br>	  z == 2 {<br>	}<br></p><p>There&#39;s no technical reason we couldn&#39;t accept either &#39;where&#39; or &#39;,&#39; consistently.<br></p><p>-Joe<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>Interspersing guard let with guard boolean</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>May 13, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; On May 13, 2016, at 12:23 PM, Joe Groff &lt;jgroff at apple.com&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On May 13, 2016, at 11:15 AM, Erica Sadun via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Is there a technical reason that Swift cannot be expanded to allow arbitrary mixes of conditional binding and boolean assertions within a single compound guard statement?<br>&gt; <br>&gt; No. You already can, we just have the somewhat strange rule that to separate `guard` conditions uses `,` before optional or pattern conditions, but `where` before boolean conditions:<br>&gt; <br>&gt; 	guard x == 0,<br>&gt; 	  let y = optional where<br>&gt; 	  z == 2 {<br>&gt; 	}<br>&gt; <br>&gt; There&#39;s no technical reason we couldn&#39;t accept either &#39;where&#39; or &#39;,&#39; consistently.<br>&gt; <br>&gt; -Joe<br></p><p>Is it worth a proposal to allow both, for when the where clauses don&#39;t have to be semantically tied to the conditional binding?<br></p><p>-- E<br></p><p>/ccing  in Mike Ash so he can gloat<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a39ef1491768b90e7de8e0ec4d0b0091?s=50"></div><header><strong>Is &#39;self&#39; retained instead of member-function?</strong> from <string>Daniel Tartaglia</string> &lt;danielt1263 at gmail.com&gt;<p>February 10, 2016 at 03:00:00pm</p></header><div class="content"><p>In the code below, I’m confused as to wether ‘self’ is owned, unowned or retained inside the ‘bar()’ function. I was assuming that it would always be retained, but I am wondering if that’s correct… Especially the ‘unownedThunk’ example… I don’t recall anything in the Swift book explicitly answering this question.<br></p><p><br>class Foo {<br></p><p>    init() {<br>        ownedThunk = {<br>            self.bar()<br>        }<br>        unownedThunk = { [unowned self] in<br>            self.bar()<br>        }<br>        weakThunk = { [weak self] in<br>            self?.bar()<br>        }<br>    }<br></p><p>    func bar() {<br>        // is &#39;self&#39; owned/unowned/weak? here?<br>    }<br></p><p>    private var ownedThunk: () -&gt; Void = { }<br>    private var unownedThunk: () -&gt; Void = { }<br>    private var weakThunk: () -&gt; Void = { }<br></p><p>}<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160210/c687fda1/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Is &#39;self&#39; retained instead of member-function?</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>February 10, 2016 at 04:00:00pm</p></header><div class="content"><p>Yeah, &#39;self&#39; is always a strong reference if it isn&#39;t overridden by a capture list declaration, as are all arguments.<br></p><p>-Joe<br></p><p>&gt; On Feb 10, 2016, at 12:33 PM, Daniel Tartaglia via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; In the code below, I’m confused as to wether ‘self’ is owned, unowned or retained inside the ‘bar()’ function. I was assuming that it would always be retained, but I am wondering if that’s correct… Especially the ‘unownedThunk’ example… I don’t recall anything in the Swift book explicitly answering this question.<br>&gt; <br>&gt; <br>&gt; class Foo {<br>&gt; <br>&gt;     init() {<br>&gt;         ownedThunk = {<br>&gt;             self.bar()<br>&gt;         }<br>&gt;         unownedThunk = { [unowned self] in<br>&gt;             self.bar()<br>&gt;         }<br>&gt;         weakThunk = { [weak self] in<br>&gt;             self?.bar()<br>&gt;         }<br>&gt;     }<br>&gt; <br>&gt;     func bar() {<br>&gt;         // is &#39;self&#39; owned/unowned/weak? here?<br>&gt;     }<br>&gt; <br>&gt;     private var ownedThunk: () -&gt; Void = { }<br>&gt;     private var unownedThunk: () -&gt; Void = { }<br>&gt;     private var weakThunk: () -&gt; Void = { }<br>&gt; <br>&gt; }<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160210/daffb334/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

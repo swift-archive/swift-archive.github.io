@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/86f0b76b19fe3a655fdaa6c8bd1f9f1e?s=50"></div><header><strong>[Review] SE-0115: Rename Literal Syntax Protocols</strong> from <string>Roth Michaels</string> &lt;roth at rothmichaels.us&gt;<p>July  6, 2016 at 12:00:00pm</p></header><div class="content"><p>On Fri, Jul 01 2016 at 07:07:48 PM, Chris Lattner via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; 	https://github.com/apple/swift-evolution/blob/master/proposals/0115-literal-syntax-protocols.md<br></p><p>&gt; 	* What is your evaluation of the proposal?<br>+1 to the concept of the proposal.<br></p><p>I prefer some of the alternate names that have been discussed:<br>- ExpressibleByIntegerLiteral &gt; ExpressibleAsIntegerLiteral<br>- Syntax.IntergerLiteralProtocol &gt; ExpressibleByIntergerLiteral<br>- Syntax.Literal.IntegerProtocol &gt; Syntax.IntergerLiteralProtocol<br></p><p>&gt; 	* Is the problem being addressed significant enough to warrant a change to Swift?<br>&gt; 	* Does this proposal fit well with the feel and direction of<br>&gt; 	Swift?<br>Increasing clarity of the names feels in line with the direction of<br>Swift, but I am not sure which naming convention would be the most<br>Swifty.<br></p><p>&gt; 	* If you have used other languages or libraries with a similar<br>&gt; feature, how do you feel that this proposal compares to those?<br>I have not previously looked at how this is implemented in other<br>languages.<br></p><p>&gt; 	* How much effort did you put into your review? A glance, a<br>&gt; quick reading, or an in-depth study?<br>I casually followed the original discussion surrounding SE-0041.<br></p><p>I browsed the recent discussion on names to get a sense of which names<br>were being discussed in the community to try to offer some feedback with<br>minimal bike-shedding.<br></p><p>--<br>Roth Michaels<br>roth at rothmichaels.us<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

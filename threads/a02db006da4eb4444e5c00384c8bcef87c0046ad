@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Review] SE-0077: Improved operator declarations</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>May 19, 2016 at 05:00:00pm</p></header><div class="content"><p>Jeremy, inline:<br></p><p>By the way, in the future directions version of the BitwiseShift group we<br>&gt; have<br>&gt;      members(&lt;&lt;, &gt;&gt;)<br>&gt; Is that a typo?<br></p><p><br>Thanks, will try to fix it.<br></p><p>Also, just to confirm that my understanding of how this will work is<br>&gt; correct, the proposal seems to suggest that future directions definitions<br>&gt; of the bitwise operators will forbid combining bitwise operators in<br>&gt; expressions with arithmetic operators e.g.<br>&gt;      a &lt;&lt; b + c<br>&gt; will be illegal because there is no relationship defined between the<br>&gt; additive group and the bitwise groups (when it comes up for review, I will<br>&gt; definitely be opposed to that, but it doesn’t affect  my assessment of this<br>&gt; proposal).<br></p><p><br>Right, and another discussion will follow.<br></p><p><br>Leonardo:<br></p><p>Just forgive me if I didn&#39;t see this but I expect that I<br>&gt; cannot declare an operator belonging to more than one group or compare<br>&gt; to more than one group for precedence (thou I see some situations<br>&gt; being able to asset precedence against more than one group could be<br>&gt; useful).<br></p><p><br>Currently, any operator can belong to only one precedence group.<br>But one precedence group can contain multiple precedence() comparisons.<br></p><p>It follows from the grammar, but is not mentioned anywhere else.<br>That was my oversight. I&#39;ll try to add it.<br></p><p>By the way, I had asked if some simpler set of tools would suffice, e.g.<br>parent() instead of precedence().<br>It seemed that people preferred to have full power of directed graph at<br>their disposal.<br>For example, we can insert a precedence group between Additive and<br>Multiplicative:<br></p><p>precedencegroup Between {<br>    precedence(&gt; Additive)<br>    precedence(&lt; Multiplicative)<br>}<br></p><p>And by the way, if Additive and Multiplicative were not connected, this<br>Between would connect them by transitivity.<br></p><p>- Anton<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160519/a02d46ad/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

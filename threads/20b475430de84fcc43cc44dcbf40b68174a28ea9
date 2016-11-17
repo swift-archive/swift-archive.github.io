@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c155243169db74a7787bab9d57a1c3d6?s=50"></div><header><strong>\r\n is one Character</strong> from <string>Darren Mo</string> &lt;darren.mo at me.com&gt;<p>January 27, 2016 at 10:00:00pm</p></header><div class="content"><p>&quot;\r\n&quot; is a single Character. Is this the correct behaviour?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160127/20b48ea9/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/957b675456a66c394945a7361aedd51d?s=50"></div><header><strong>\r\n is one Character</strong> from <string>Zhao Xin</string> &lt;owenzx at gmail.com&gt;<p>January 28, 2016 at 01:00:00pm</p></header><div class="content"><p>​For a new line, Unix uses LF, Classic Mac uses  ​CR, Windows uses  CRLF.<br>They both means the CR in Unicode.<br></p><p>let str = &quot;\r\n&quot;<br></p><p>str.characters.count // 1<br></p><p>str.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) // 2<br></p><p>str.unicodeScalars.first!.value // 13<br></p><p><br>zhaoxin<br></p><p>On Thu, Jan 28, 2016 at 11:52 AM, Darren Mo via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; &quot;\r\n&quot; is a single Character. Is this the correct behaviour?<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160128/b305ddb4/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>\r\n is one Character</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>January 28, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On Jan 27, 2016, at 7:52 PM, Darren Mo via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; &quot;\r\n&quot; is a single Character. Is this the correct behaviour?<br></p><p>Yes, a Character corresponds to a Unicode grapheme cluster, and &quot;\r\n&quot; is considered a single grapheme cluster.<br></p><p>-Joe<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160128/fd5408fd/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c155243169db74a7787bab9d57a1c3d6?s=50"></div><header><strong>\r\n is one Character</strong> from <string>Darren Mo</string> &lt;darren.mo at me.com&gt;<p>January 28, 2016 at 02:00:00pm</p></header><div class="content"><p>Thanks, Joe. Found it at http://www.unicode.org/reports/tr29/#GB3.<br></p><p>&gt; On Jan 28, 2016, at 1:56 PM, Joe Groff &lt;jgroff at apple.com&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On Jan 27, 2016, at 7:52 PM, Darren Mo via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; &quot;\r\n&quot; is a single Character. Is this the correct behaviour?<br>&gt; <br>&gt; Yes, a Character corresponds to a Unicode grapheme cluster, and &quot;\r\n&quot; is considered a single grapheme cluster.<br>&gt; <br>&gt; -Joe<br>&gt; <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160128/cca45e1c/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>Take 2: Stdlib closure argument labels and	parameter names</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 29, 2016 at 09:00:00am</p></header><div class="content"><p>Dave Abrahams via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; I&#39;ve updated my pull request with a much more conservative set of<br>&gt; changes that preserves/restores label-free-ness for all “term of art”<br>&gt; functional methods such as filter and reduce.<br>&gt; <br>&gt; https://github.com/apple/swift/pull/2981<br>&gt; <br>&gt; My current thoughts are that many of the `by:` labels are awkward and<br>&gt; not adding much.  Perhaps they all ought to be omitted.<br></p><p>In sort, by: makes perfect sense.<br>In lexicographicallyPrecedes (elementsEqual), by: makes some sense, <br>because Precedes (Equal) is in method name.<br></p><p>starts(with:by:) looks odd, maybe starts(with:comparingBy:) ?<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/52ee3ad403caa4fe57e23196f824c91e?s=50"></div><header><strong>Introduce to a quality korean translation project</strong> from <string>Lee Yongkyu</string> &lt;snowcat8436 at gmail.com&gt;<p>January  8, 2016 at 01:00:00pm</p></header><div class="content"><p>Dear swift-dev.<br></p><p>Hello.<br>My name is yongkyu.<br>I&#39;d like to introduce you to a quality Korean translation project for &#39;The<br>Swift Programming Language&#39;.<br></p><p>I and co-workers already translated and distributed &#39;The Swift Programming<br>Language&#39; for swift 1.0 in Jan 2015.<br>site : http://swift.leantra.kr/<br>github : https://github.com/lean-tra/Swift-Korean<br></p><p>And we are translating the document for 2.1/2.2 now.<br>Our goal is the manual start distribution in Mar 2016.<br>Of course, we have a plan for the document for swift 3.0.<br></p><p>The site stand some people in good stead when they study swift.<br>but we want more people use it for study swift.<br>So, Do you support to link our translate project to swift document<br>translation page? (like Chinese Translation project).<br></p><p>I expect to receive good news for you.<br>and if you want more info or something, reply to me anytime.<br></p><p><br>yongkyu LEE<br>Team leantra<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160108/8551ba94/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

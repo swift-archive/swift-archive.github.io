@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>[Meta] Updating the proposal template to prompt backward compatibility concerns</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>July 21, 2016 at 09:00:00am</p></header><div class="content"><p>With the end of Swift 3 drawing near, we&#39;ll need to start designing with an eye toward backward compatibility. To that end, I think we should update the &quot;Impact on existing code&quot; proposal template to start asking writers to consider backward compatibility concerns. Here&#39;s some draft verbage to that effect:<br></p><p>https://github.com/jckarter/swift-evolution/blob/4bdd1b875a8402ec6bbabb3f37151262f130af2b/0000-template.md#backward-compatibility<br></p><p>Any concerns, revisions, or objections?<br></p><p>-Joe<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3b3f5abbe48b7127e20fd69808c714bf?s=50"></div><header><strong>[Meta] Updating the proposal template to prompt backward compatibility concerns</strong> from <string>Charlie Monroe</string> &lt;charlie at charliemonroe.net&gt;<p>July 21, 2016 at 09:00:00pm</p></header><div class="content"><p>I agree that the concern of future proposals should be backward compatibility, though I personaly think that Swift 4 will be full of breaking changes anyway (not as many as Swift 3, but there will be quite a few). In that matter, I&#39;m not sure that stressing backward compatibility is better than stressing better desing for the years to come.<br></p><p>&gt; On Jul 21, 2016, at 6:05 PM, Joe Groff via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; With the end of Swift 3 drawing near, we&#39;ll need to start designing with an eye toward backward compatibility. To that end, I think we should update the &quot;Impact on existing code&quot; proposal template to start asking writers to consider backward compatibility concerns. Here&#39;s some draft verbage to that effect:<br>&gt; <br>&gt; https://github.com/jckarter/swift-evolution/blob/4bdd1b875a8402ec6bbabb3f37151262f130af2b/0000-template.md#backward-compatibility<br>&gt; <br>&gt; Any concerns, revisions, or objections?<br>&gt; <br>&gt; -Joe<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>[Meta] Updating the proposal template to prompt backward compatibility concerns</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>July 21, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; On Jul 21, 2016, at 9:05 AM, Joe Groff via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; With the end of Swift 3 drawing near, we&#39;ll need to start designing with an eye toward backward compatibility. To that end, I think we should update the &quot;Impact on existing code&quot; proposal template to start asking writers to consider backward compatibility concerns. Here&#39;s some draft verbage to that effect:<br>&gt; <br>&gt; https://github.com/jckarter/swift-evolution/blob/4bdd1b875a8402ec6bbabb3f37151262f130af2b/0000-template.md#backward-compatibility<br>&gt; <br>&gt; Any concerns, revisions, or objections?<br></p><p>The section title should be sentence-case. Other than that, I think it&#39;s a good move.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

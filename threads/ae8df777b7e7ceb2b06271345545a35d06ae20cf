@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Analysis of case conventions for initialisms</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 12, 2016 at 02:00:00pm</p></header><div class="content"><p>on Fri Feb 12 2016, Jon Shier &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; 	I find myself distinctly unimpressed by the “argument from<br>&gt; other languages” presented in favor of #2. Any “rule” considered here<br>&gt; should be able to stand on it’s own logical merits, no matter what<br>&gt; other languages may do.<br></p><p>I disagree.  Other languages provide important data points about what<br>has worked/not-worked in every design space.  <br></p><p>It isn&#39;t that “.NET did this so it&#39;s good.”  It&#39;s “I&#39;ve been programming<br>in .NET for 10 years and discovered this part of its convention worked<br>well, and this other part caused problems for my team.”<br></p><p>What other languages have done also sets the groundwork for what is easy<br>for people to learn, and learnability is an important design goal for<br>Swift.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

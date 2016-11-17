@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3488bcf34d8c45d917ed27d67a0ffa45?s=50"></div><header><strong>Compilation Error - Which Toolchain?</strong> from <string>David Hart</string> &lt;david at hartbit.com&gt;<p>May 20, 2016 at 12:00:00am</p></header><div class="content"><p>Hi people,<br></p><p>Found some time to continue contributing to corelibs, but I’m getting a compilation error with master:<br></p><p>NSGeometry.swift (line 39):<br>35     private var hash: Int {<br>36 #if arch(i386) || arch(arm)<br>37         return Int(Float(self.native).bitPattern)<br>38 #else<br>39         return Int(self.native.bitPattern) // Value of type &#39;NativeType&#39; (aka &#39;Double&#39;) has no member &#39;bitPattern’<br>40 #endif<br>41     }<br></p><p>I’m using the latest development toolchain. Is that correct? What’s the rule on which toolchain to use? I tried building a fresh master toolchain instead but got a failing test.<br></p><p>Any ideas?<br>David.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dc7496f196a2409a2e21190cea4c4d8c?s=50"></div><header><strong>Compilation Error - Which Toolchain?</strong> from <string>Bhaktavatsal R Maram</string> &lt;bhamaram at in.ibm.com&gt;<p>May 20, 2016 at 06:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160520/1f5a8ec0/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

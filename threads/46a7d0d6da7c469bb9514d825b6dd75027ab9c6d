@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/34b9659227ea084bb09a8ba4a450a162?s=50"></div><header><strong>Proposal: optionally define nested functions elsewhere</strong> from <string>Jessy Catterwaul</string> &lt;mr.jessy at gmail.com&gt;<p>February  7, 2016 at 10:00:00am</p></header><div class="content"><p>I don’t believe this thread is well-served by having anyone be told why nested functions should not be nested functions. <br></p><p>Now, the power of nesting won’t be fully realized until nested protocol extensions work. The majority of my nested functions are generic (much thanks to those behind 7.3’s compiler improvements for allowing me to bring a lot of those back into functions, when I had had to move them outwards.), and would be better served as extensions on a nested protocol. But, I still use nested structs, classes, functions, and computed properties a lot; they can be very good for limiting scope to exactly what is needed, and for eliminating duplicate code. <br></p><p>So while I love the reasoning behind this proposal – the feature must be implemented, to avoid the ugliness that we deal with currently– I don’t like it as-is. I think the Swiftest way to do this is to use extensions for functions/properties/initializers.<br></p><p>I wager that initializers would benefit most:<br>http://merowing.info/2015/11/swift-init/ &lt;http://merowing.info/2015/11/swift-init/&gt;<br></p><p>extension init(coreDataStack stack: CoreDataStack) {…<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160207/46a79c6d/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

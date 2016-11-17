@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>Problems caused by &quot;is&lt;ErrorType&gt;&quot;</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>December  5, 2015 at 11:00:00pm</p></header><div class="content"><p>Investigating compiler_crashers/26960-void.swift, I found that<br>TypeBase::getMemberSubstitutions is being called on a NominalType<br>(StructType) whose Parent is an ErrorType (getString() returns &quot;&lt;&lt;error<br>type&gt;&gt;.B&quot;).<br></p><p>In this case, is&lt;ErrorType&gt;() returns false, because the type is not itself<br>an ErrorType, only its parent is.<br></p><p>Immediately collapsing any NominalType whose parent is ErrorType seems like<br>it would lose information that might be useful for diagnostics. However,<br>simply checking is&lt;ErrorType&gt;() is clearly insufficient.<br></p><p>Should there be something like &quot;isErrorType()&quot; which checks recursively<br>whether any members (including Parent) are ErrorType?<br></p><p>Jacob Bandes-Storch<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151205/f0247587/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/569ed436467cf145f3bbdd0d53fbe115?s=50"></div><header><strong>Problems caused by &quot;is&lt;ErrorType&gt;&quot;</strong> from <string>Slava Pestov</string> &lt;spestov at apple.com&gt;<p>December  7, 2015 at 10:00:00am</p></header><div class="content"><p>Hi Jacob,<br></p><p>Maybe it would be better to figure out why getMemberSubstitutions() is being called on the invalid type, and try to catch the problem further up?<br></p><p>Otherwise, Doug Gregor might have further suggestions.<br></p><p>Slava<br></p><p>&gt; On Dec 5, 2015, at 11:41 PM, Jacob Bandes-Storch via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Investigating compiler_crashers/26960-void.swift, I found that TypeBase::getMemberSubstitutions is being called on a NominalType (StructType) whose Parent is an ErrorType (getString() returns &quot;&lt;&lt;error type&gt;&gt;.B&quot;).<br>&gt; <br>&gt; In this case, is&lt;ErrorType&gt;() returns false, because the type is not itself an ErrorType, only its parent is.<br>&gt; <br>&gt; Immediately collapsing any NominalType whose parent is ErrorType seems like it would lose information that might be useful for diagnostics. However, simply checking is&lt;ErrorType&gt;() is clearly insufficient.<br>&gt; <br>&gt; Should there be something like &quot;isErrorType()&quot; which checks recursively whether any members (including Parent) are ErrorType?<br>&gt; <br>&gt; Jacob Bandes-Storch<br>&gt;  _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151207/2531511f/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

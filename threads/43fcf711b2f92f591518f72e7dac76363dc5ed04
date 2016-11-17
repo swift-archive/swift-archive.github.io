@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/eb8a8144f770c28da3b092a65291a4f3?s=50"></div><header><strong>Generic math macros on Linux</strong> from <string>Timothy Chagnon</string> &lt;tachagnon at gmail.com&gt;<p>January 28, 2016 at 07:00:00am</p></header><div class="content"><p>Hi folks,<br></p><p>I ran into this issue (or at least surprise) trying to compile some code<br>that uses math.h functions on both OSX and Linux.  Here&#39;s an example:<br></p><p>#if os(Linux)<br>  import Glibc<br>#else<br>  import Darwin<br>#endif<br></p><p>let x = Float(1.2345)<br>let y = sin(x)<br>print(y)<br></p><p>Compiles and runs fine on OSX, but fails with the following error on Linux:<br>*MathTest.swift:8:13: error: cannot convert value of type &#39;Float&#39; to<br>expected argument type &#39;Double&#39;*<br></p><p>I think I tracked this down to the fact that Darwin includes the<br>additional tgmath<br>style macros<br>&lt;https://github.com/apple/swift/blob/master/stdlib/public/SDK/Darwin/tgmath.swift.gyb#L44&gt;<br>that provide the overloaded sin(x: Float) -&gt; Float swift function. Glibc<br>only includes plain math.h functions:<br>double sin(double x);<br>float sinf(float x);<br></p><p>I can, of course, just use the explicit *f math.h functions on both<br>platforms.  But I&#39;m curious if this is a bug I should file or if this is<br>intentional to not have overloaded math functions in Swift.  I couldn&#39;t<br>find much mention of it in the bug tracker.<br></p><p>Tim<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160128/43fced04/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Generic math macros on Linux</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>January 27, 2016 at 11:00:00pm</p></header><div class="content"><p>On Wed, Jan 27, 2016 at 11:23 PM, Timothy Chagnon via swift-users<br>&lt;swift-users at swift.org&gt; wrote:<br>&gt; Hi folks,<br>&gt;<br>&gt; I ran into this issue (or at least surprise) trying to compile some code<br>&gt; that uses math.h functions on both OSX and Linux.  Here&#39;s an example:<br>&gt;<br>&gt; #if os(Linux)<br>&gt;   import Glibc<br>&gt; #else<br>&gt;   import Darwin<br>&gt; #endif<br>&gt;<br>&gt; let x = Float(1.2345)<br>&gt; let y = sin(x)<br>&gt; print(y)<br>&gt;<br>&gt; Compiles and runs fine on OSX, but fails with the following error on Linux:<br>&gt; MathTest.swift:8:13: error: cannot convert value of type &#39;Float&#39; to expected<br>&gt; argument type &#39;Double&#39;<br>&gt;<br>&gt; I think I tracked this down to the fact that Darwin includes the additional<br>&gt; tgmath style macros that provide the overloaded sin(x: Float) -&gt; Float swift<br>&gt; function. Glibc only includes plain math.h functions:<br>&gt; double sin(double x);<br>&gt; float sinf(float x);<br>&gt;<br>&gt; I can, of course, just use the explicit *f math.h functions on both<br>&gt; platforms.  But I&#39;m curious if this is a bug I should file or if this is<br>&gt; intentional to not have overloaded math functions in Swift.  I couldn&#39;t find<br>&gt; much mention of it in the bug tracker.<br></p><p>Yes, Glibc module is lacking an overlay for tgmath.  Please file a bug.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

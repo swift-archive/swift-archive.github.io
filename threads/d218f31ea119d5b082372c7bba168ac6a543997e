@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Reducing StdlibUnittest compile time</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>January 27, 2016 at 10:00:00am</p></header><div class="content"><p>Hi,<br></p><p>StdlibUnittest is an internal library that we use to write tests for the<br>standard library, and some parts of the runtime and the compiler (for example,<br>the implementation of bridging for Objective-C collections).  We heavily rely<br>on these tests to check correctness of the Swift compiler and standard library.<br></p><p>But there is an issue: today, StdlibUnittest takes a long time to build.<br>The following table shows the time it takes to build StdlibUnittest.<br></p><p>Compiler      Library       StdlibUnittest build time<br>ReleaseAssert Release       1m 43s<br>ReleaseAssert ReleaseAssert 4m 26s<br>DebugAssert   DebugAssert   2m 25s<br></p><p>I investigated the issue a little bit, and I moved the code that tests<br>sequences and collections into a new library, StdlibCollectionUnittest, which<br>only gets built when validation tests are run.<br></p><p>Compiler      Library       StdlibUnittest  StdlibCollectionUnittest<br>                            build time      build time<br>ReleaseAssert Release       30s             58s<br>ReleaseAssert ReleaseAssert 1m 10s          1m 20s<br>DebugAssert   DebugAssert   53s             50s<br></p><p>These time measurements show that the build time of the combined module is<br>greater than the sum of the build times of the pieces, and much more so when<br>the optimization is turned on.  We can make a conjecture that the optimizer is<br>not scaling well with the module size.<br></p><p>The last commit before the library split was<br>8aebe8d864ea6094355b365e0f505bb117e29304.  It would be great if someone could<br>look into the compiler issue.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

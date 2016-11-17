@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e41b4af40e5dcd99ca063dbbfd7af182?s=50"></div><header><strong>Xcode autocomplete and jump to def for the package manager project</strong> from <string>Valentin Radu</string> &lt;radu.v.valentin at me.com&gt;<p>December 17, 2015 at 02:00:00am</p></header><div class="content"><p>Hello all,<br></p><p>I’ve cloned the package manager repo and as I was going through it I saw that for the default Xcode project (the one in the Support dir) autocompletion and jump to def are not available for Swift. <br>Does anyone have an idea on how to fix this? I know there’s a hackish way of doing it: adding another dummy target and therefore forcing Xcode to index the files added to that target. Is there another cleaner solution? i suppose there must be a way since probably the core team used this features while developing the package manager (?)<br></p><p>– Valentin Radu<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>Xcode autocomplete and jump to def for the package manager project</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>December 16, 2015 at 04:00:00pm</p></header><div class="content"><p>&gt; Hello all,<br>&gt; <br>&gt; I’ve cloned the package manager repo and as I was going through it I saw that for the default Xcode project (the one in the Support dir) autocompletion and jump to def are not available for Swift. <br>&gt; Does anyone have an idea on how to fix this? I know there’s a hackish way of doing it: adding another dummy target and therefore forcing Xcode to index the files added to that target. Is there another cleaner solution? i suppose there must be a way since probably the core team used this features while developing the package manager (?)<br></p><p>I’m sorry to say, there is no cleaner way. Xcode will only index yellow folders. On the positive side, I have found it is good for improving one’s memory of the stdlib.<br></p><p>Max<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

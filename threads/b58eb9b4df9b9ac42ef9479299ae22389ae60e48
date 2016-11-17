@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>[META] Using escapes in Swift Evolution Proposal discussion links</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>May 16, 2016 at 10:00:00am</p></header><div class="content"><p>The standard Swift Evolution proposal template &lt;https://github.com/apple/swift-evolution/blob/master/0000-template.md&gt; includes the following introduction section:<br></p><p>## Introduction<br>A short description of what the feature is. Try to keep it to a<br>single-paragraph &quot;elevator pitch&quot; so the reader understands what<br>problem this proposal is addressing.  <br></p><p>Swift-evolution thread: [Discussion thread topic for that proposal](https://lists.swift.org/pipermail/swift-evolution)<br></p><p><br>Swift Evolution email subjects commonly use square brackets in the subject line. This email does just that: &quot;[META] Swift Evolution Proposals and Discussion Links&quot;. To create a valid markdown link, you must escape the square brackets. The following markup is malformed:<br>Swift-evolution thread: [[META] Swift Evolution Proposals and Discussion Links](gmane or pipermail url)<br>Add backslashes before square brackets within the topic:<br>Swift-evolution thread: [\[META\] Swift Evolution Proposals and Discussion Links](gmane or pipermail url)<br>Escaping enables Github to distinguish the bracket-deliniated text from the parenthesized URL.<br></p><p>Best regards,<br></p><p>-- E<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160516/b58e0e48/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

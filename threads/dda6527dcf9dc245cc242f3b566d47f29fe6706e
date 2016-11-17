@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4226542ea69d5b28efdf689104a49c6c?s=50"></div><header><strong>clang version requirements?</strong> from <string>Tom Gall</string> &lt;tom.gall at linaro.org&gt;<p>January  4, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi All,<br></p><p>Getting my &quot;sea&quot; legs under me building swift and company on Linux.<br>(Gentoo/x86-64 to be exact). In the docs I see Ubuntu 3.6 r100 as the<br>minimum mentioned for llvm/clang.<br></p><p>As API and standard support within the llvm/clang/clang++ universe can<br>change a bit, I was wondering if there was any issues with later<br>versions such as 3.7 or 3.8?<br></p><p>Thanks!<br></p><p>-- <br>Regards,<br>Tom<br></p><p>&quot;Where&#39;s the kaboom!? There was supposed to be an earth-shattering<br>kaboom!&quot; Marvin Martian<br>Director, Linaro Mobile Group<br>Tech Lead, GPGPU<br>Linaro.org │ Open source software for ARM SoCs<br>irc: tgall_foo | skype : tom_gall<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>clang version requirements?</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>January  4, 2016 at 11:00:00am</p></header><div class="content"><p>Hi, Tom. I wouldn&#39;t expect 3.7 or 3.8 to cause any problems when used as the compiler building Swift. You&#39;ll note that Swift embeds its own version of LLVM and Clang for later use; it will not (and cannot) use the standard one on your system. More information on that is available on the Swift website &lt;https://swift.org/contributing/#llvm-and-swift&gt;.<br></p><p>If you encounter any issues, please bring them up on this list!<br></p><p>Jordan<br></p><p><br>&gt; On Jan 4, 2016, at 10:41, Tom Gall via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi All,<br>&gt; <br>&gt; Getting my &quot;sea&quot; legs under me building swift and company on Linux.<br>&gt; (Gentoo/x86-64 to be exact). In the docs I see Ubuntu 3.6 r100 as the<br>&gt; minimum mentioned for llvm/clang.<br>&gt; <br>&gt; As API and standard support within the llvm/clang/clang++ universe can<br>&gt; change a bit, I was wondering if there was any issues with later<br>&gt; versions such as 3.7 or 3.8?<br>&gt; <br>&gt; Thanks!<br>&gt; <br>&gt; -- <br>&gt; Regards,<br>&gt; Tom<br>&gt; <br>&gt; &quot;Where&#39;s the kaboom!? There was supposed to be an earth-shattering<br>&gt; kaboom!&quot; Marvin Martian<br>&gt; Director, Linaro Mobile Group<br>&gt; Tech Lead, GPGPU<br>&gt; Linaro.org │ Open source software for ARM SoCs<br>&gt; irc: tgall_foo | skype : tom_gall<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160104/635efe09/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

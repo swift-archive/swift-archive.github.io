@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2b38d2b59a2dfdd3d78493f206827917?s=50"></div><header><strong>Remove the Need for &#39;self&#39; to Access &#39;dynamicType&#39;</strong> from <string>Mohamed Ebrahim Afifi</string> &lt;mohamede1945 at gmail.com&gt;<p>April 10, 2016 at 11:00:00am</p></header><div class="content"><p>Hi,<br></p><p>When access the `dynamicType` of a class inside one of its instance<br>methods. We should be using `self.dynamicType`. I purpose that the<br>dynamicType operator can be accessed without the need for the `self`.<br>So code like the following<br></p><p>class Foo {<br>    static let SomeStaticConstantValue = 5<br>    static func someStaticMethod() {<br>    }<br></p><p>    func bar() {<br>        self.dynamicType.someStaticMethod()<br>        print(self.dynamicType.SomeStaticConstantValue)<br>    }<br>}<br></p><p>can be translated to<br></p><p>class Foo {<br>    static let SomeStaticConstantValue = 5<br>    static func someStaticMethod() {<br>    }<br></p><p>    func bar() {<br>        dynamicType.someStaticMethod()<br>        print(dynamicType.SomeStaticConstantValue)<br>    }<br>}<br></p><p><br>Best Regards,<br>Mohamed Afifi<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160410/40a4f689/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bab03b11d4cd60804cf4a6ba68589430?s=50"></div><header><strong>Remove the Need for &#39;self&#39; to Access &#39;dynamicType&#39;</strong> from <string>Kevin Lundberg</string> &lt;kevin at klundberg.com&gt;<p>April 10, 2016 at 10:00:00pm</p></header><div class="content"><p>+1 to this. I commonly reference self alone very close to<br>self.dynamicType when I use the dynamicType keyword, and I dislike the<br>repetitiveness it brings. If a standalone dynamicType is already<br>disallowed by the compiler, I don&#39;t see a technical reason this cannot<br>happen, personally. If this can happen, then self should probably still<br>be required to qualify dynamicType in closure contexts (for<br>consistency), for example:<br></p><p>class Foo {<br>  let value = 123<br>  func bar() {<br>    dispatch_async(queue, {<br>      print(self.dynamicType.value) // self needed here in this closure<br>    })<br>  }<br>}<br></p><p>On 4/10/2016 5:15 AM, Mohamed Ebrahim Afifi via swift-evolution wrote:<br>&gt; Hi,<br>&gt;<br>&gt; When access the `dynamicType` of a class inside one of its instance<br>&gt; methods. We should be using `self.dynamicType`. I purpose that the<br>&gt; dynamicType operator can be accessed without the need for the `self`.<br>&gt; So code like the following<br>&gt;<br>&gt; class Foo {<br>&gt;     static let SomeStaticConstantValue = 5<br>&gt;     static func someStaticMethod() {<br>&gt;     }<br>&gt;<br>&gt;     func bar() {<br>&gt;         self.dynamicType.someStaticMethod()<br>&gt;         print(self.dynamicType.SomeStaticConstantValue)<br>&gt;     }<br>&gt; }<br>&gt;<br>&gt; can be translated to <br>&gt;<br>&gt; class Foo {<br>&gt;     static let SomeStaticConstantValue = 5<br>&gt;     static func someStaticMethod() {<br>&gt;     }<br>&gt;<br>&gt;     func bar() {<br>&gt;         dynamicType.someStaticMethod()<br>&gt;         print(dynamicType.SomeStaticConstantValue)<br>&gt;     }<br>&gt; }<br>&gt;<br>&gt;<br>&gt; Best Regards,<br>&gt; Mohamed Afifi<br>&gt;<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160410/fb16ad61/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

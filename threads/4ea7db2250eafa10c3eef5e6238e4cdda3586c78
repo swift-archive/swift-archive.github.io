@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>Proposal: Access control for protocols</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>December  4, 2015 at 12:00:00pm</p></header><div class="content"><p>I hope markdown is supported in these mails. :)<br></p><p>A few month ago I build a singleton generator with the help of protocols (just for fun). As you all know a true singleton will hide its init(), but right know there is no Access control for protocols. This might be a good feature for other code abstraction too.<br></p><p>Any feedback is welcome.<br></p><p>Here is my little implementation.<br></p><p>public protocol SingletonType { /* private */ init() } // wait for this feature to create a true singleton<br></p><p>private var singletonInstances = [String: SingletonType]()<br></p><p>public extension SingletonType {<br>     <br>    typealias SingletonInstance = Self<br>    typealias SingletonMetatype = Self.Type<br>     <br>    public static var getSingleton: SingletonInstance { return setSingleton { $0 } }<br>     <br>    public static var setSingleton: SingletonMetatype { return self }<br>     <br>    public static func setSingleton(setter: (_: SingletonInstance) -&gt; SingletonInstance) -&gt; SingletonInstance {<br>         <br>        guard let instance = singletonInstances[&quot;\(self)&quot;] as? Self else {<br>             <br>            return setInstance(self.init(), withSetter: setter, overridable: true)<br>        }<br>        return setInstance(instance, withSetter: setter, overridable: false)<br>    }<br>     <br>    private static func setInstance(var instance: Self, withSetter setter: (_: Self) -&gt; Self, overridable: Bool) -&gt; Self {<br>         <br>        // I will have to fix `var instance` in Swift 3.0 :/<br>         <br>        instance = restoreInstanceIfNeeded(instance1: instance, instance2: setter(instance), overridable: overridable)<br>         <br>        singletonInstances[&quot;\(self)&quot;] = instance<br>         <br>        return instance<br>    }<br>     <br>    private static func restoreInstanceIfNeeded(instance1 i1: Self, instance2 i2: Self, overridable: Bool) -&gt; Self {<br></p><p>        guard i1.dynamicType is AnyClass else { return i2 }<br>         <br>        return ((i1 as! AnyObject) !== (i2 as! AnyObject)) &amp;&amp; !overridable ? i1 : i2<br>    }<br>}<br></p><p>infix operator ? { associativity none }<br></p><p>func ? &lt;Instance: SingletonType&gt;(type: Instance.Type, newInstance: Instance) -&gt; Instance {<br>     <br>    return type.setSingleton { (_) -&gt; Instance in newInstance }<br>}<br></p><p><br>??<br>Regards Adrian<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151204/4ea76c78/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

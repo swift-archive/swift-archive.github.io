@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d048f41c6a1bb251ef820970a1ba511?s=50"></div><header><strong>[Pitch] Memberwise initialisers adopt the same access modifiers as the struct</strong> from <string>Ian Keen</string> &lt;iankeen82 at gmail.com&gt;<p>July 21, 2016 at 09:00:00am</p></header><div class="content"><p>I did see that one, however it appeared that proposal didn’t could on the access of the initialiser itself at all? just how it interacts with different properties access levels. It was kinda gargantuan, I’m proposing a single behavioural change for now, rather than introducing a ton of new features.<br></p><p>I would almost consider this a bug.<br></p><p><br></p><p>&gt; &gt; On Jul 20, 2016, at 8:15 PM, Ian Keen via swift-evolution&lt;swift-evolution at swift.org&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; Not much to this one… I think the memberwise `init` should follow the same level of access as the struct. It appears to default to `internal` regardless of the struct access modifiers<br>&gt; &gt; <br>&gt; &gt; Thoughts?<br>&gt; There was an extensive discussion and review of a proposal I put forward early this year for improving memberwise initialization. This topic has been deferred until after Swift 3 wraps up. We’ll be revisiting it in the coming months.<br>&gt; <br>&gt; &gt; <br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-evolution mailing list<br>&gt; &gt; swift-evolution at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; <br>&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc3a9ea0c6c870343d9acb4ac3059cdc?s=50"></div><header><strong>[Pitch] Memberwise initialisers adopt the same access modifiers as the struct</strong> from <string>Matthew Johnson</string> &lt;matthew at anandabits.com&gt;<p>July 21, 2016 at 11:00:00am</p></header><div class="content"><p>Sent from my iPad<br></p><p>&gt; On Jul 21, 2016, at 11:26 AM, Ian Keen &lt;iankeen82 at gmail.com&gt; wrote:<br>&gt; <br>&gt; I did see that one, however it appeared that proposal didn’t could on the access of the initialiser itself at all? just how it interacts with different properties access levels. It was kinda gargantuan, I’m proposing a single behavioural change for now, rather than introducing a ton of new features.<br>&gt; <br>&gt; I would almost consider this a bug.<br></p><p>This is an additive change so it is out of scope for Swift 3 no matter how small.  There are already plans to revisit the memberwise initialization discussion after Swift 3 is out.  I encourage you to join that discussion when it gets going.<br></p><p>&gt; <br>&gt; <br>&gt; <br>&gt;&gt;&gt; On Jul 20, 2016, at 8:15 PM, Ian Keen via swift-evolution&lt;swift-evolution at swift.org&gt;wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Not much to this one… I think the memberwise `init` should follow the same level of access as the struct. It appears to default to `internal` regardless of the struct access modifiers<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Thoughts?<br>&gt;&gt; There was an extensive discussion and review of a proposal I put forward early this year for improving memberwise initialization. This topic has been deferred until after Swift 3 wraps up. We’ll be revisiting it in the coming months.<br>&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; _______________________________________________<br>&gt;&gt;&gt; swift-evolution mailing list<br>&gt;&gt;&gt; swift-evolution at swift.org<br>&gt;&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt; <br>&gt;&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

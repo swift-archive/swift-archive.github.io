@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0080: Failable Numeric Conversion Initializers</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May  6, 2016 at 05:00:00pm</p></header><div class="content"><p>on Wed May 04 2016, Colin Barrett &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; Swift numeric types all currently have a family of conversion<br>&gt; initializers. In many use cases they leave a lot to be<br>&gt; desired. Initializing an integer type with a floating point value will<br>&gt; truncate any fractional portion of the number. Initializing with an<br>&gt; out-of-range value traps.<br>&gt;<br>&gt; Have you considered whether it makes sense to keep these around? Maybe<br>&gt; the failable ones should be the default, and give the other ones a<br>&gt; more descriptive 1st argument label.<br></p><p>That would overturn Swift&#39;s fundamental programming model for numerics,<br>which is based on the fact that, to a first approximation, everybody<br>codes, **and wants to continue coding** as though their Int is really an<br>unbounded integer and their Double is an unbounded real number with<br>unlimited precision.  We very intentionally make the limitations of our<br>numeric types observable, but also not in-your-face for basic operations.<br></p><p>If we were to go this route, we would also make you unwrap the result of<br>x + 1 because it might overflow.<br></p><p><br>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

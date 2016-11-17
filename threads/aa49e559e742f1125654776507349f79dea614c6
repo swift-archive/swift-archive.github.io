@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/67b0c6c64b78a3a9f6478c05a4a28447?s=50"></div><header><strong>Error Ubuntu 14-04 libicuuc.so</strong> from <string>Ximo Llácer</string> &lt;xllacer at gmail.com&gt;<p>December  4, 2015 at 01:00:00pm</p></header><div class="content"><p>Hi.<br></p><p>I?ve installed first sudo apt-get install clang and after tar it and set PATH, but its shows error when execute swift: <br></p><p>swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu14.04/usr/bin/repl_swift: error while loading shared libraries: libicuuc.so.52: cannot open shared object file: No such file or directory<br>error: failed to stop process at REPL breakpoint<br></p><p>Many Thanks.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d68c97e8e2f1653b54c24493caf236ae?s=50"></div><header><strong>Error Ubuntu 14-04 libicuuc.so</strong> from <string>Stephen Celis</string> &lt;stephen.celis at gmail.com&gt;<p>December  4, 2015 at 07:00:00am</p></header><div class="content"><p>Make sure you have a recent version of libicu:<br></p><p>    sudo apt-get install libicu52<br></p><p>Stephen<br></p><p>&gt; On Dec 4, 2015, at 7:55 AM, Ximo Ll?cer &lt;xllacer at gmail.com&gt; wrote:<br>&gt; <br>&gt; <br>&gt; Hi.<br>&gt; <br>&gt; I?ve installed first sudo apt-get install clang and after tar it and set PATH, but its shows error when execute swift: <br>&gt; <br>&gt; swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu14.04/usr/bin/repl_swift: error while loading shared libraries: libicuuc.so.52: cannot open shared object file: No such file or directory<br>&gt; error: failed to stop process at REPL breakpoint<br>&gt; <br>&gt; Many Thanks.<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

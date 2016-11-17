@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>[Proposal] Refining Identifier and Operator</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>October 20, 2016 at 01:00:00pm</p></header><div class="content"><p>I also need upside-down question mark and exclamation point:  ¡ ¿<br></p><p>¿If the right side up versions are operators, why not the upside-down versions?  I am using them because they are easy to type and my grammar calls for both ? and !, which are already in use by swift.  Using ¡ and ¿ is an easy translation when typing in from research papers (which use ! and ?).  I have quite a few projects dependent on these, and I don’t think they would ever be confused with identifiers… so why ban them?<br></p><p>Thanks,<br>Jon<br></p><p>&gt; On Thu, Oct 20, 2016 at 9:29 AM, Jonathan S. Shapiro via swift-evolution &lt;<br>&gt; swift-evolution at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;&gt; wrote:<br>&gt; <br>&gt; &gt; Quick poll as a sanity check on a possible alternative for operators:<br>&gt; &gt;<br>&gt; &gt; If we admitted [:Sm:] and [:So:] and the traditional ASCII operator<br>&gt; &gt; characters, would that cover the things that people currently feel<br>&gt; &gt; passionate about? That would almost certainly be compliant with UAX31 once<br>&gt; &gt; it settles, and I *think* it covers all of the cases people have raised<br>&gt; &gt; here.<br>&gt; &gt;<br>&gt; &gt; Useful links if you want to check:<br>&gt; &gt;<br>&gt; &gt; [:Sm:]  Symbol, Math<br>&gt; &gt; &lt;http://www.fileformat.info/info/unicode/category/Sm/list.htm &lt;http://www.fileformat.info/info/unicode/category/Sm/list.htm&gt;&gt;<br>&gt; &gt;<br>&gt; &gt; [:So:]   Symbol, Other<br>&gt; &gt; &lt;http://www.fileformat.info/info/unicode/category/So/list.htm &lt;http://www.fileformat.info/info/unicode/category/So/list.htm&gt;&gt;<br>&gt; &gt;<br>&gt; &gt;<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161020/baa631e0/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

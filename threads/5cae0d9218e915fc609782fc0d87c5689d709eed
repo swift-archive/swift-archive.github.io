@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2c84f5c3ebbefdb2b158e4b4f26c4aa1?s=50"></div><header><strong>Issue with Sample Playgrounds (Sample Code)</strong> from <string>Shyamal Chandra</string> &lt;shyamalc at gmail.com&gt;<p>November  7, 2016 at 08:00:00am</p></header><div class="content"><p>Hi,<br></p><p>I couldn&#39;t get this zipped file [ Playgrounds-Starter-Book.zip ] to open in<br>Xcode 8.0.  It is available at the following link:<br>https://developer.apple.com/swift/resources/<br></p><p>Do you know if there is some issue with the sample code?  Why doesn&#39;t it<br>open in Xcode?<br></p><p>Thanks!<br></p><p>Best,<br></p><p>Shyamal Chandra<br>shyamalc at gmail.com<br>Linkedin: http://www.linkedin.com/in/shyamalc<br>Phone: 620-719-9064<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161107/5cae9eed/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>Issue with Sample Playgrounds (Sample Code)</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>November  7, 2016 at 03:00:00pm</p></header><div class="content"><p>You encountered issues because that&#39;s a playground book and not a playground. It&#39;s meant solely for the iOS Swift Playgrounds app.<br></p><p>-- E<br></p><p>&gt; On Nov 7, 2016, at 7:49 AM, Shyamal Chandra via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; I couldn&#39;t get this zipped file [ Playgrounds-Starter-Book.zip ] to open in Xcode 8.0.  It is available at the following link: https://developer.apple.com/swift/resources/ &lt;https://developer.apple.com/swift/resources/&gt;<br>&gt; <br>&gt; Do you know if there is some issue with the sample code?  Why doesn&#39;t it open in Xcode?<br>&gt; <br>&gt; Thanks!<br>&gt; <br>&gt; Best,<br>&gt; <br>&gt; Shyamal Chandra<br>&gt; shyamalc at gmail.com &lt;mailto:shyamalc at gmail.com&gt;<br>&gt; Linkedin: http://www.linkedin.com/in/shyamalc &lt;http://www.linkedin.com/in/shyamalc&gt;<br>&gt; Phone: 620-719-9064<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161107/ec9d4ea3/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

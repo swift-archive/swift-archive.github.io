@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c9c44262e8b58b758a3876b9d29c095?s=50"></div><header><strong>Monorepo workflow using SPM</strong> from <string>Georgios Moschovitis</string> &lt;george.moschovitis at icloud.com&gt;<p>November  3, 2016 at 09:00:00pm</p></header><div class="content"><p>The Swift Package Manager is a great addition to the Swift programmer&#39;s toolbelt and in general I like the integration with Git.<br></p><p>However, since SPM promotes a separate Git repo per package and actually leverages Git tags to resolve dependency versions, I am wondering if it&#39;s possible to use the popular(?) &#39;monorepo&#39; workflow with SPM. <br></p><p>thanks,<br>-g.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161103/d4287433/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

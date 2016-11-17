@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Rejected] SE-0056: Allow trailing closures in `guard` conditions</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>April 20, 2016 at 09:00:00pm</p></header><div class="content"><p>Proposal link: https://github.com/apple/swift-evolution/blob/master/proposals/0056-trailing-closures-in-guard.md<br></p><p>Hello Swift community,<br></p><p>The review of SE-0056 &quot;Allow trailing closures in `guard` conditions” ran from March 31...April 5, 2016. The proposal is rejected. The core team felt that the benefits from this change were outweighed by the inconsistency it would introduce with `if` and `while`.<br></p><p>	- Doug<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160420/2527bff4/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

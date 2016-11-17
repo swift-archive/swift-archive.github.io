@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/831784a2b742c99e42317cb8f103900c?s=50"></div><header><strong>clang auto-attaching @discardableResult attribute on imported declarations</strong> from <string>Pär Strindevall</string> &lt;par at strindevall.com&gt;<p>October 21, 2016 at 01:00:00pm</p></header><div class="content"><p>Hey!<br></p><p>I got sick of having to assign unused results with _ = when using Objective-C dependencies so I decided to fork and fix the one I was using before finishing the line. When I searched for solutions to the problem I stumbled upon SE-0047 here: https://bugs.swift.org/browse/SR-1052 &lt;https://bugs.swift.org/browse/SR-1052&gt;<br></p><p>I noted that suggested patch 3 was to change the clang importer to attach @discardableResult automatically to imported declarations like the one I was using. Did this not happen? Is there any way for me to suppress the warnings that flood Xcode when not assigning unused results to nada if the dependency I’m bleep-blooping with is implemented in Objective-C?<br></p><p>Swiftly,<br></p><p>Pär Strindevall<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161021/2da8f0e4/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>clang auto-attaching @discardableResult attribute on imported declarations</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>October 24, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; On Oct 21, 2016, at 4:55 AM, Pär Strindevall via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hey!<br>&gt; <br>&gt; I got sick of having to assign unused results with _ = when using Objective-C dependencies so I decided to fork and fix the one I was using before finishing the line. When I searched for solutions to the problem I stumbled upon SE-0047 here: https://bugs.swift.org/browse/SR-1052 &lt;https://bugs.swift.org/browse/SR-1052&gt;<br>&gt; <br>&gt; I noted that suggested patch 3 was to change the clang importer to attach @discardableResult automatically to imported declarations like the one I was using. Did this not happen? Is there any way for me to suppress the warnings that flood Xcode when not assigning unused results to nada if the dependency I’m bleep-blooping with is implemented in Objective-C?<br></p><p>Hi Pär,<br></p><p>I’m confused what you’re saying.  If I understand you correctly, you’re saying that you’re interfacing with ObjC code and getting a bunch of warnings saying that you’re ignoring the results of calls to these functions.  If that is the case, then there is certainly a compiler bug at work.  Can you provide an example that reproduces this behavior?  If I’m misunderstanding the situation, please clarify.  Thanks!<br></p><p>-Chris<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161024/b118cb80/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

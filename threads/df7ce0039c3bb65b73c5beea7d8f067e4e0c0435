@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2679e7a28cb46e207a562ad4e7fc45fc?s=50"></div><header><strong>[Review] SE-0066: Standardize function type argument syntax to require parentheses</strong> from <string>James F</string> &lt;conductator at ntlworld.com&gt;<p>April 27, 2016 at 09:00:00pm</p></header><div class="content"><p>I&#39;m surprised this could lead to confusion. I have never encountered any errors relating to the current behaviour. That the presence of brackets could mean a parameter list, or a function that takes a parameter, I could see as an extension of tuple splat, providing flexibility. However, since tuple splat has been removed for now, I understand why this might need rethinking.<br></p><p>Why this means we have to add brackets to functions taking a single type, where there is no ambiguity or possibility for confusion, I don&#39;t understand at all.<br></p><p>Tuple splat originally allowed generic types to use tuple parameters as generic parameter lists to functions, allowing great syntax for things like notification forwarding (see frameworks such as ObservableSwift), and I was sad to see that go. With Swift 3 I&#39;ll just have to live with double-bracketed parameter lists.<br></p><p>I was in favour of keeping tuple splat, but that was more of an edge case. I find myself using single-parameter function types regularly, and love what support for functional programming Swift provides. I am definitely in favour of allowing the bracketless syntax.<br></p><p>------------ Begin Message ------------ <br>Group: gmane.comp.lang.swift.evolution <br>MsgID: &lt;8597386C-FE51-4156-9ECD-CEB11579C05C at apple.com&gt; <br></p><p>Hello Swift community,<br></p><p>The review of SE-0066 &quot;Standardize function type argument syntax to require parentheses&quot; begins now and runs through May 2, 2016. The proposal is available here:<br></p><p>https://github.com/apple/swift-evolution/blob/master/proposals/0066-standardize-function-type-syntax.md<br>Reviews are an important part of the Swift evolution process. All reviews should be sent to the swift-evolution mailing list at<br></p><p>https://lists.swift.org/mailman/listinfo/swift-evolution &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;<br>or, if you would like to keep your feedback private, directly to the review manager. When replying, please try to keep the proposal link at the top of the message:<br></p><p>Proposal link:<br></p><p>https://github.com/apple/swift-evolution/blob/master/proposals/0066-standardize-function-type-syntax.md<br>Reply text<br></p><p>Other replies<br>&lt;https://github.com/apple/swift-evolution#what-goes-into-a-review-1&gt;What goes into a review?<br></p><p>The goal of the review process is to improve the proposal under review through constructive criticism and, eventually, determine the direction of Swift. When writing your review, here are some questions you might want to answer in your review:<br></p><p>What is your evaluation of the proposal?<br>Is the problem being addressed significant enough to warrant a change to Swift?<br>Does this proposal fit well with the feel and direction of Swift?<br>If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br>How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>More information about the Swift evolution process is available at<br></p><p>https://github.com/apple/swift-evolution/blob/master/process.md &lt;https://github.com/apple/swift-evolution/blob/master/process.md&gt;<br>Thank you,<br></p><p>Doug Gregor<br></p><p>Review Manager<br></p><p><br></p><p><br></p><p>------------- End Message ------------- <br></p><p><br></p><p>From James F<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

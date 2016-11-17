@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>copy-on-write proposal</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 16, 2016 at 02:00:00pm</p></header><div class="content"><p>on Thu Oct 13 2016, Joe Groff &lt;swift-dev-AT-swift.org&gt; wrote:<br></p><p>&gt;&gt; On Oct 11, 2016, at 4:48 PM, Erik Eckstein via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; This is a proposal for representing copy-on-write buffers in<br>&gt;&gt; SIL. Actually it’s still a draft for a proposal. It also heavily<br>&gt;&gt; depends on how we move forward with SIL ownership.<br>&gt;&gt; &lt;CopyOnWrite.rst&gt;<br>&gt;&gt; If you have any comments, please let me know.<br>&gt;<br>&gt; The SIL-level design seems sensible to me at a glance. At the language<br>&gt; level, I think it would make more sense to treat this as an attribute<br>&gt; on class types rather than on properties in structs using the class. I<br>&gt; don&#39;t think many people reuse class definitions as both shared<br>&gt; reference types and as value type payloads, <br></p><p>Foundation does, or would if they could.<br></p><p>&gt; but beyond that, I think that making it an attribute of classes would<br>&gt; put us into a better position to leverage the borrow model to enforce<br>&gt; the &quot;mutable-only-when-unique&quot; aspect of COW implementations. John<br>&gt; alluded to this in the &quot;SIL address types and borrowing&quot; thread:<br>&gt;<br>&gt;&gt; I wonder if it would make more sense to make copy-on-write buffer<br>&gt;&gt; references a move-only type, so that as long as you were just<br>&gt;&gt; working with the raw reference (as opposed to the CoW aggregate,<br>&gt;&gt; which would remain copyable) it wouldn&#39;t get implicitly copied<br>&gt;&gt; anymore.  You could have mutable and immutable buffer reference<br>&gt;&gt; types, both move-only, and there could be a consuming checkUnique<br>&gt;&gt; operation on the immutable one that, I dunno, returned an Either of<br>&gt;&gt; the mutable and immutable versions.<br>&gt;&gt; <br>&gt;&gt; For CoW aggregates, you&#39;d need some @copied attribute on the field<br>&gt;&gt; to make sure that the CoW attribute was still copyable.  Within the<br>&gt;&gt; implementation of the type, though, you would be projecting out the<br>&gt;&gt; reference immediately, and thereafter you&#39;d be certain that you were<br>&gt;&gt; borrowing / moving it around as appropriate.<br>&gt;<br>&gt; If &#39;copy-on-write&#39; were a trait on classes, then we could distinguish<br>&gt; unique and nonunique references to the class. A unique reference would<br>&gt; act like a move-only type to prevent accidental loss of uniqueness. <br></p><p>+1<br></p><p>&gt; We can also allow a copy-on-write class to have &quot;mutating&quot; methods,<br>&gt; and only allow mutation on unique references. It seems to me like,<br>&gt; exploring this direction, we could also come up with a way for the<br>&gt; high-level value-semantics operations on the struct to statically<br>&gt; indicate which methods are known to leave the value&#39;s buffers in a<br>&gt; unique state, or which return values that are uniquely owned, which<br>&gt; would give the optimizer more ability to avoid uniqueness checks<br>&gt; across calls without relying on inlining and IPO.<br></p><p>That&#39;s pretty cool.  However, I think there&#39;s nothing to prevent any<br>mutating method from storing a copy of self in a global, so I think we&#39;d<br>need some participation from the programmer (either an agreement not to<br>do that, or an explicit claim of uniqueness on exit) in order to<br>identify operations that create/preserve uniqueness.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

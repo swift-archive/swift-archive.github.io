@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/965c169cdb452086f1c1d81a4127702f?s=50"></div><header><strong>[Review] SE-0046 Establish consistent label behavior across all parameters including first labels</strong> from <string>Pelaia II, Tom</string> &lt;pelaiata at ornl.gov&gt;<p>March 11, 2016 at 06:00:00pm</p></header><div class="content"><p>+1 for this proposal to normalize the first parameter declaration in methods and functions. It simplifies the language rules. Either way, the developer should think about which arguments (not just the first one) should have labels based on the design guidelines. Having uniform treatment for all argument positions in the language makes the most sense to me. Since the language offers optional labeling, it seems best to leave it to the developer to make the decisions according to the guidelines without biasing the first argument in the language.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

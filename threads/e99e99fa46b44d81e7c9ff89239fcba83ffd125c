@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/94c2e12d389e7354531339f1637aafd1?s=50"></div><header><strong>Proposal Sketch: simplify optional unwrapping syntax</strong> from <string>Kyle Carson</string> &lt;kyleacarson at gmail.com&gt;<p>December 21, 2015 at 08:00:00pm</p></header><div class="content"><p>I&#39;ve got another solution.  It&#39;s simple and very &quot;swift&quot;.  The code &quot;var != nil&quot; can be used as a hint to the compiler that *var* is not an optional.<br></p><p>Code example:<br></p><p>let color : Color? = getFavoriteColor()<br>if color != nil {<br>	// Color is no longer an Optional<br>}<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Proposal Sketch: simplify optional unwrapping syntax</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>December 22, 2015 at 10:00:00am</p></header><div class="content"><p>This is problematic for anything other than &#39;let&#39;, since the value could change / be changed while inside the block. And I wouldn&#39;t want to give &#39;let&#39; special privileges here.<br></p><p>Jordan<br></p><p>&gt; On Dec 21, 2015, at 18:36 , Kyle Carson via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I&#39;ve got another solution.  It&#39;s simple and very &quot;swift&quot;.  The code &quot;var != nil&quot; can be used as a hint to the compiler that *var* is not an optional.<br>&gt; <br>&gt; Code example:<br>&gt; <br>&gt; let color : Color? = getFavoriteColor()<br>&gt; if color != nil {<br>&gt; 	// Color is no longer an Optional<br>&gt; }<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/831ba6eb600af4a6587f263373921bb2?s=50"></div><header><strong>Proposal Sketch: simplify optional unwrapping syntax</strong> from <string>Tino Heth</string> &lt;2th at gmx.de&gt;<p>December 22, 2015 at 07:00:00pm</p></header><div class="content"><p>&gt; let color : Color? = getFavoriteColor()<br>&gt; if color != nil {<br>&gt; 	// Color is no longer an Optional<br>&gt; }<br>well, I&#39;d just write<br>if let color = getFavoriteColor() {…<br></p><p>This even more as the other solutions hide that &quot;color&quot; isn&#39;t the original &quot;color&quot; anymore inside the braces:<br>The first one was an Optional, the second one isn&#39;t.<br></p><p>Tino<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

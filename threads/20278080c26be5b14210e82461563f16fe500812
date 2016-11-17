@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/abf891ba571d5a819ddf547917abe1e1?s=50"></div><header><strong>Extending the for loop to have multiple clauses</strong> from <string>Al Skipp</string> &lt;al_skipp at fastmail.fm&gt;<p>December  9, 2015 at 09:00:00pm</p></header><div class="content"><p>I like this idea, but would certainly prefer it to be an expression (your alternative suggestion, array comprehension) rather than a statement. Your example of building an array of tuples [(suit, rank)] could then be achieved without having to append to a var during iteration.<br></p><p>&gt; Yes, it’d be great if you can combine it with where. Alternatively, it could be interesting to instead explore array comprehension syntax, rather than making `for` smarter. That’d allow for a more functional style. For example, Norvig’s spelling corrector (http://norvig.com/spell-correct.html &lt;http://norvig.com/spell-correct.html&gt;) would then be very straightforward to port.<br>&gt; <br>&gt; Re the x operator: it’s even easier if you define it with flatMap. However, the for syntax is different, because the second clause can depend on the first...<br>&gt; <br>&gt; Chris<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151209/20270812/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

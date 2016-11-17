@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0735d3bf1d76c0385258ac7a2a22d6fe?s=50"></div><header><strong>[swift-evolution-announce] [Review #2] SE-0117: Default classes to be non-subclassable publicly</strong> from <string>Károly Lőrentey</string> &lt;karoly at lorentey.hu&gt;<p>July 19, 2016 at 01:00:00pm</p></header><div class="content"><p>On 2016-07-19 00:46:21 +0000, Brent Royal-Gordon via swift-evolution said:<br></p><p>&gt;&gt; <br>&gt;&gt; On Jul 18, 2016, at 12:06 PM, Károly Lőrentey via swift-evolution <br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; Introducing &quot;dynamic&quot; or some other keyword to mark explicitly methods<br>&gt;&gt;&gt; that should be overriden is just the same &quot;open&quot; with sealed methods<br>&gt;&gt;&gt; by default would mean for public methods so it makes no difference to<br>&gt;&gt;&gt; me.<br>&gt;&gt; <br>&gt;&gt; &quot;dynamic&quot; is already in the language. It changes method dispatch to use <br>&gt;&gt; Objective-C style message passing, enabling advanced techniques based <br>&gt;&gt; on the dynamic runtime, such as method swizzling or KVO. Since it <br>&gt;&gt; already exists, I&#39;m not arguing for its introduction; I merely want it <br>&gt;&gt; integrated into the proposal, in order to keep the language coherent.<br>&gt; <br>&gt; I would prefer not to ascribe overridability semantics to `dynamic`. I <br>&gt; see `dynamic` as a hint to the compiler that something *outside of <br>&gt; normal, safe Swift code* may cause this entity&#39;s implementation to <br>&gt; change. A `dynamic final` member is a perfectly coherent concept: <br>&gt; Formally, nothing is allowed to override this member, but in practice, <br>&gt; something may change it behind the compiler&#39;s back.<br></p><p>&quot;dynamic final&quot; is prohibited by the current version of compiler. Can <br>you provide an example of a problem that would be solved by allowing it?<br></p><p>-- <br>Károly<br>@lorentey<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>[swift-evolution-announce] [Review #2] SE-0117: Default classes to be non-subclassable publicly</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>July 19, 2016 at 04:00:00am</p></header><div class="content"><p>&gt; On Jul 19, 2016, at 4:00 AM, Károly Lőrentey via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; &quot;dynamic final&quot; is prohibited by the current version of compiler.<br></p><p>Huh, I didn&#39;t know that. I don&#39;t agree with that design.<br></p><p>(However, I do notice that a `final` class can have `dynamic` members.)<br></p><p>&gt; Can you provide an example of a problem that would be solved by allowing it?<br></p><p>In our current Objective-C world, the obvious example would be an NSObject subclass with a property that should not be overridden (so you want to mark it `final`), but which participates in KVO (so in fact Foundation will use the Objective-C runtime to invisibly subclass the class, override the setter, and change the type of the instance to the subclass). I believe it makes perfect sense to declare such a property `dynamic final`; the Objective-C-level overriding performed by Foundation is an implementation detail, and does not change the fact that you should never declare an override of that property.<br></p><p>It&#39;s not really clear how `dynamic` would be used without Objective-C, but I could imagine analogous situations, like an ORM implementing Core Data-style faults using dirty, low-level class-changing hacks. A class that was *semantically* `final`, and thus ought to be eligible for static dispatch, might thus require dynamic dispatch anyway.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

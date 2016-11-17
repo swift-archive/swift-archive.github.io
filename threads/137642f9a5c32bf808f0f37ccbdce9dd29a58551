@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c53218a6524f4d644b6a75a4441ea631?s=50"></div><header><strong>[draft-proposal] allow access to the underlying collection of a slice</strong> from <string>Max Moiseev</string> &lt;moiseev at apple.com&gt;<p>May 13, 2016 at 11:00:00am</p></header><div class="content"><p>Hi everyone!<br></p><p>Here is the proposal to allow access to the underlying collections of slices. Existing API of slice types is very minimal and as such prevents possible optimizations. Exposing the base collection via a public readonly property will make such optimizations possible.<br></p><p>Max<br></p><p>Adding a public base property to slices<br></p><p>Proposal: SE-NNNN<br>Author(s): Max Moiseev &lt;https://github.com/moiseev&gt;<br>Status: Awaiting review<br>Review manager: TBD<br>Introduction<br></p><p>Slice types provided by the standard library &lt;https://github.com/apple/swift/blob/master/stdlib/public/core/Slice.swift.gyb&gt; should allow public readonly access to their base collections to make efficient implementations of protocol requirements possible in conforming types.<br></p><p>Motivation<br></p><p>The MutableCollection protocol conformance requires providing an implementation of the following subscript:<br></p><p>subscript(bounds: Range&lt;Index&gt;) -&gt; SubSequence { get set }<br>If the collection chooses to use one of a variety of slice types from the standard library as its SubSequence, the default implementation of a setter for this subscript will use the algorithm provided by the _writeBackMutableSlice &lt;https://github.com/apple/swift/blob/master/stdlib/public/core/WriteBackMutableSlice.swift&gt; function. This approach is fine for forward collections. It is quite possible, however, that the most efficient implementation of this setter would be to simply call the memcpy function. Unfortunately, slice API does not provide any way to reach to the underlying base collection, even though reference to it is stored in an internal property.<br></p><p>Proposed solution<br></p><p>We propose to export a public readonly property base, that will enable optimizations mentioned above. Here is how MutableRandomAccessSlice definition would look like:<br></p><p>public struct MutableRandomAccessSlice&lt;<br>  Base : protocol&lt;RandomAccessIndexable, MutableIndexable&gt;<br>&gt; : RandomAccessCollection, MutableCollection {<br></p><p>  /// The underlying collection of the slice<br>  public var base: Base { get }<br>}<br>The same change is applicable to both mutable and immutable slice types.<br></p><p>Impact on existing code<br></p><p>The proposed change is purely additive and does not affect existing code.<br></p><p>Alternatives considered<br></p><p>Alternative for immutable slices would be to simply rename the already read-only _base property to base and make it public, but this way the change is not purely additive and might cause some damage inside the standard library code.<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160513/13768551/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

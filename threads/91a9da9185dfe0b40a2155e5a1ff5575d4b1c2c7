@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e0cf6ae15b5fae33e4627c33690ba81d?s=50"></div><header><strong>new code owner for the SIL optimizer</strong> from <string>Bob Wilson</string> &lt;bob.wilson at apple.com&gt;<p>July 22, 2016 at 03:00:00pm</p></header><div class="content"><p>CODE_OWNERS.TXT still shows Nadav as the owner of the SIL optimizer, even though he is no longer working on Swift. We should have a new code owner, and I would like to nominate Erik Eckstein. There are a lot of different components to the SIL optimizer and no single person is an expert in all of them, but Erik has made significant contributions across many parts of the optimizer. I think he would be a good choice to serve as the code owner.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Swift Code Owners] new code owner for the SIL optimizer</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July 23, 2016 at 06:00:00pm</p></header><div class="content"><p>&gt; On Jul 22, 2016, at 3:59 PM, Bob Wilson &lt;bob.wilson at apple.com&gt; wrote:<br>&gt; <br>&gt; CODE_OWNERS.TXT still shows Nadav as the owner of the SIL optimizer, even though he is no longer working on Swift. We should have a new code owner, and I would like to nominate Erik Eckstein. There are a lot of different components to the SIL optimizer and no single person is an expert in all of them, but Erik has made significant contributions across many parts of the optimizer. I think he would be a good choice to serve as the code owner.<br></p><p>Makes sense!  Erik, please update CODE_OWNERS.TXT, congrats!<br></p><p>-Chris<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/37ed623c7e539c1e991c5be604e4a7aa?s=50"></div><header><strong>Confusing doc re: metatype type, also doesn&#39;t compile on linux</strong> from <string>Karl Pickett</string> &lt;karl.pickett at gmail.com&gt;<p>December  7, 2015 at 07:00:00pm</p></header><div class="content"><p>This code example:<br></p><p>if someInstance.dynamicType === someInstance.self {<br>    print(&quot;The dynamic and static type of someInstance are the same&quot;)<br>} else {<br>    print(&quot;The dynamic and static type of someInstance are different&quot;)<br>}<br>// prints &quot;The dynamic and static type of someInstance are different”<br></p><p>Does not compile on Linux.   It also is quite confusing - comparing a type<br>=== an instance?  It compiles on my mac but is it using some<br>objc weirdness or simply a bug?<br></p><p>I think the example means to do something like this:<br></p><p>// Note: === won&#39;t compile<br>if SomeBaseClass.self == someInstance.dynamicType {<br>    print(&quot;is base&quot;)<br>} else if SomeSubClass.self == someInstance.dynamicType {<br>    print(&quot;is subclass&quot;)<br>} else {<br>    print(&quot;is neither!&quot;)<br>}<br></p><p>One other minor typo:<br></p><p>“// and the runtime type of someInstance is SomeBaseClass”<br></p><p>should be SomeSubClass.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/d90e161d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dbc48a135881e122fea26cf27760d11a?s=50"></div><header><strong>Confusing doc re: metatype type, also doesn&#39;t compile on linux</strong> from <string>Mish Awadah</string> &lt;mawadah at apple.com&gt;<p>December  7, 2015 at 06:00:00pm</p></header><div class="content"><p>Could you please file a bug mentioning where the code example was taken from? <br></p><p>Thanks,<br>- mish<br></p><p>&gt; On Dec 7, 2015, at 5:11 PM, Karl Pickett via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; This code example:<br>&gt; <br>&gt; if someInstance.dynamicType === someInstance.self {<br>&gt;     print(&quot;The dynamic and static type of someInstance are the same&quot;)<br>&gt; } else {<br>&gt;     print(&quot;The dynamic and static type of someInstance are different&quot;)<br>&gt; }<br>&gt; // prints &quot;The dynamic and static type of someInstance are different”<br>&gt; <br>&gt; Does not compile on Linux.   It also is quite confusing - comparing a type === an instance?  It compiles on my mac but is it using some objc weirdness or simply a bug? <br>&gt; <br>&gt; I think the example means to do something like this:<br>&gt; <br>&gt; // Note: === won&#39;t compile<br>&gt; if SomeBaseClass.self == someInstance.dynamicType {<br>&gt;     print(&quot;is base&quot;)<br>&gt; } else if SomeSubClass.self == someInstance.dynamicType {<br>&gt;     print(&quot;is subclass&quot;)<br>&gt; } else {<br>&gt;     print(&quot;is neither!&quot;)<br>&gt; }<br>&gt; <br>&gt; One other minor typo:<br>&gt; <br>&gt; “// and the runtime type of someInstance is SomeBaseClass”<br>&gt; <br>&gt; should be SomeSubClass.<br>&gt; <br>&gt; <br>&gt; <br>&gt;  _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/80f68c37/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

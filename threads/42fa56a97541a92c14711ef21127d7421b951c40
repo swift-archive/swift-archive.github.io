@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] mapValues</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 13, 2016 at 11:00:00am</p></header><div class="content"><p>on Tue Apr 12 2016, Jonathan Hull &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I would really like to see something like the following added to the standard<br>&gt; library:<br>&gt;<br>&gt; extension Dictionary {<br>&gt;<br>&gt; func mapValues&lt;U&gt;(transform:(Key,Value)-&gt;U)-&gt;[Key:U] {<br>&gt; var output:[Key:U] = [:]<br>&gt; for (k,v) in self {<br>&gt; output[k] = transform(k,v)<br>&gt; }<br>&gt; return output<br>&gt; }<br>&gt;<br>&gt; }<br>&gt;<br>&gt; It comes up enough that I have had to add it to pretty much every one of my<br>&gt; projects. I also don’t feel comfortable adding it to my frameworks, since I<br>&gt; figure a lot of people are also adding something like this to their projects,<br>&gt; and I don’t want to cause a conflict with their version. Prime candidate for the<br>&gt; standard library.<br>&gt;<br>&gt; I like calling it ‘mapValues&#39; as opposed to providing an override for map, since<br>&gt; it makes the specific behavior more clear. I would expect ‘map&#39; to possibly map<br>&gt; the keys as well (though there are issues where the new keys overlap). I suppose<br>&gt; you could just have a bunch of overrides for map if the compiler becomes good<br>&gt; enough at differentiating return types: (Value)-&gt;(Value), (Key,Value)-&gt;Value,<br>&gt; (Key, Value)-&gt;(Key,Value)<br></p><p>I agree that we need a way to do this, and was surprised when what I<br>tried didn&#39;t work.  This should work:<br></p><p>  Dictionary(d.lazy.map { (k, v) in (k, transform(v)) })<br></p><p>We should have a proposal that makes the constructor work* if we don&#39;t<br>already have one.<br></p><p>I&#39;m inclined against building specialized variants of basic algorithms<br>into particular collections, though.  Could be talked out of it if the<br>use-case is strong enough.<br></p><p>------<br></p><p>* Only question: does this need a label, e.g. <br></p><p>    Dictionary(uniquingKeys: d.lazy.map { (k, v) in (k, transform(v)) })<br></p><p>  to denote that it&#39;s lossy?<br>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

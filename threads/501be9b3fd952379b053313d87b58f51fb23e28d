@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bfdcb4596e9da98cccbf9a0069fdff6c?s=50"></div><header><strong>Quick and dirty support for Linux i386 (32-bit)</strong> from <string>Nick Wellnhofer</string> &lt;wellnhofer at aevum.de&gt;<p>December  4, 2015 at 11:00:00pm</p></header><div class="content"><p>Hello swift-dev,<br></p><p>When I started to work on an unrelated pull request, I noticed that Linux i386 <br>isn&#39;t supported yet. This made me curious, and it turned out that 32-bit <br>support was easy to add. Here&#39;s a quick and dirty commit:<br></p><p>https://github.com/nwellnhof/swift/commit/1a5962c890e43f115fc5d629a7b2ec108e1f489a<br></p><p>For the most part, I simply replaced x86_64 with i386, breaking the 64-bit build.<br></p><p>I only got six test failures:<br></p><p>Failing Tests (6):<br>     Swift :: Driver/Dependencies/one-way-external.swift<br>     Swift :: Driver/subcommands.swift<br>     Swift :: IRGen/objc_simd.sil<br>     Swift :: Misc/expression_too_complex.swift<br>     Swift :: Prototypes/FloatingPoint.swift<br>     Swift :: SILAnalysis/callgraph.sil<br></p><p>Note that the LLVM debug build fails on i386 due to insufficient (virtual) <br>memory when linking. Linking with gold also failed, but gold with <br>--no-mmap-output-file might work.<br></p><p>Also note that I have no intentions to further pursue this work, but a few <br>non-trivial parts of the patch might be helpful to the community.<br></p><p>Regards,<br>Nick<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

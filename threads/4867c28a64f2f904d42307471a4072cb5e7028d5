@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>== works for NSObject? but not for Equatable?</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>April 27, 2016 at 10:00:00am</p></header><div class="content"><p>I’m changing some code that uses NSObject to use Equatable instead, and noticed that while I can compare two optional NSObjects for equality, I can’t compare two optional Equatables. That is, if a and b are of type NSObject?, then a==b compiles; whereas if a and b are Equatable?, a==b  fails with “Binary operator ‘==‘ cannot be applied to two ‘Equatable’ operands”.<br></p><p>I’m guessing that somewhere in the Foundation glue library is a definition of ==(NSObject?, NSObject?), whereas the standard library does not have an ==(Equatable?, Equatable?). Should it?<br></p><p>—Jens<br></p><p>PS: Using Swift 2.1(?), Xcode 7.3<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>== works for NSObject? but not for Equatable?</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>April 27, 2016 at 10:00:00am</p></header><div class="content"><p>Oh, never mind — I forgot that you can’t compare two Equatable values directly, only two values of the same concrete type that implements Equatable.<br></p><p>I’m still thinking in Objective-C, clearly…<br></p><p>—Jens<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ab16ef0384ba9270ddc26abea6c0d413?s=50"></div><header><strong>Extracting documentation from stdlib</strong> from <string>George King</string> &lt;gwk.lists at gmail.com&gt;<p>June 22, 2016 at 10:00:00am</p></header><div class="content"><p>Hi list,<br></p><p>After a bit of poking around I do not see how to extract/build the api docs from the stdlib source code. Is this functionality part of the open source release?<br></p><p>I am asking because the new Xcode 8 documentation viewer is very frustrating; everything is broken up into separate pages which makes browsing difficult, and the page css makes the windows artificially narrow, so reading declarations requires horizontal scrolling; as an example, look at the doc page for `zip(_:_:)`. On top of that, we used to be able to click through on a symbol and see the stdlib pseudo-header in its entirety; in xc 8 it appears to be broken up into a bunch of sections which are lazily loaded, which prevents me from looking for things whose names have changed in the migration.<br></p><p>Anyway, I realize that this is may not be the right forum to complain about Xcode, but as an open source community, we ought to have other options for looking at the docs!<br></p><p>Thanks in advance,<br>-George<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>Help Needed: SR-1023 - Driver Design Question</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>April 13, 2016 at 09:00:00am</p></header><div class="content"><p>I&#39;ve hit a road block in my resolution of SR-1023 [1].<br></p><p>I have a &quot;working&quot; patch in so far as I can now apply my patches to<br>master and resume compiling. I think my patch for the CMake changes is<br>largely acceptable (based on feedback of the associated PR [2]).<br></p><p>However, my patch for the driver has not been submitted for review yet<br>due to the immature nature of the patch. Basically what I did to the<br>driver is always send some flags to the linker; you can see the actual<br>patch in the comments of SR-1023 [3].<br></p><p>Ideally these flags should only be sent to the driver if the linker<br>supports the flags. Does anyone have a suggestion on how such a<br>conditional should be built?<br></p><p>[1] https://bugs.swift.org/browse/SR-1023<br>[2] https://github.com/apple/swift/pull/2012<br>[3]<br>https://bugs.swift.org/browse/SR-1023?focusedCommentId=13462&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-13462<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

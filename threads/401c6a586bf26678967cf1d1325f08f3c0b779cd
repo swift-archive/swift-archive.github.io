@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d2fcdd5a6abf7204973117f37a18671?s=50"></div><header><strong>Create InputStream and OutputStream inside CFSocket accept callback on Linux</strong> from <string>Bouke Haarsma</string> &lt;bouke at haarsma.eu&gt;<p>October 12, 2016 at 08:00:00am</p></header><div class="content"><p>Hi all,<br></p><p>I&#39;ve started working on an implementation of (NS)NetService <br>(https://github.com/Bouke/NetService), in pure Swift. My goal is to <br>stay close to the version in Cocoa. While I&#39;ve got an intial working <br>version, I&#39;ve hit a snag. When publishing a NetService, you can also <br>listen for connections for that service:<br></p><p>let ns = NetService(domain: &quot;local.&quot;, type: &quot;_airplay._tcp.&quot;, name: <br>&quot;demo&quot;, port: 7000)<br>ns.publish(options: [.listenForConnections])<br></p><p>The NetService&#39;s delegate has  a method for accepting connections:<br></p><p>    func netService(_ sender: NetService,<br>                    didAcceptConnectionWith inputStream: InputStream,<br>                    outputStream: OutputStream)<br></p><p>I&#39;ve setup a CFSocket for listening and inside the accept callback it <br>creates a CFReadStream and a CFWriteStream using <br>CFStreamCreatePairWithSocket. The problem is that CFNetwork is not <br>available on Linux and probably will never be. So <br>CFStreamCreatePairWithSocket is not available.<br></p><p>So the question is; how to create InputStream and OutputStream inside <br>the accept callback without CFNetwork?<br></p><p>-- <br>-Bouke<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20161012/401c79cd/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

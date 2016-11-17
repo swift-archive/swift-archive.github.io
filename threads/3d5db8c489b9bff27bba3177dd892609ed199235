@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8993e184f091e98f018c07d96ac4731f?s=50"></div><header><strong>Keyword Discoverability</strong> from <string>John Joyce</string> &lt;uchuugaka at icloud.com&gt;<p>January  4, 2016 at 07:00:00pm</p></header><div class="content"><p>Hello all<br></p><p>It feels like Swift has some risk of going the direction of C++ at times. By that I mean complexity creep. <br>Increasingly nuanced scoping results in more keywords and constructs. <br>Useful and good but increasingly complex and steepening learning curve. <br></p><p>I&#39;d like to kick off discussion of ways to increase discoverability. <br></p><p>One thought is tools.  <br>In thinking about contextual completions like Xcode&#39;s Open Quickly or the universal field thing in Sublime, it sure seems like some way to invoke a list of keywords and constructs available-in-the-current-scope would be helpful. <br></p><p>Thoughts ?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0e8516d3703e35b7df26986815b23e7a?s=50"></div><header><strong>Keyword Discoverability</strong> from <string>Robert Widmann</string> &lt;devteam.codafi at gmail.com&gt;<p>January  4, 2016 at 04:00:00am</p></header><div class="content"><p>Give escape a whack sometime.<br></p><p>~Robert Widmann<br></p><p>2016/01/04 3:43、John Joyce via swift-evolution &lt;swift-evolution at swift.org&gt; のメッセージ:<br></p><p>&gt; Hello all<br>&gt; <br>&gt; It feels like Swift has some risk of going the direction of C++ at times. By that I mean complexity creep. <br>&gt; Increasingly nuanced scoping results in more keywords and constructs. <br>&gt; Useful and good but increasingly complex and steepening learning curve. <br>&gt; <br>&gt; I&#39;d like to kick off discussion of ways to increase discoverability. <br>&gt; <br>&gt; One thought is tools.  <br>&gt; In thinking about contextual completions like Xcode&#39;s Open Quickly or the universal field thing in Sublime, it sure seems like some way to invoke a list of keywords and constructs available-in-the-current-scope would be helpful. <br>&gt; <br>&gt; Thoughts ?<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/10d0339242a000b0b683ed1d5e25a110?s=50"></div><header><strong>Keyword Discoverability</strong> from <string>Howard Lovatt</string> &lt;howard.lovatt at gmail.com&gt;<p>January  5, 2016 at 07:00:00am</p></header><div class="content"><p>I would prefer library functions rather than language constructs, basically if in doubt but it in the library rather than a language construct. Library functions are much easier to discover and document.<br></p><p>&gt; On 4 Jan 2016, at 9:43 PM, John Joyce via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello all<br>&gt; <br>&gt; It feels like Swift has some risk of going the direction of C++ at times. By that I mean complexity creep. <br>&gt; Increasingly nuanced scoping results in more keywords and constructs. <br>&gt; Useful and good but increasingly complex and steepening learning curve. <br>&gt; <br>&gt; I&#39;d like to kick off discussion of ways to increase discoverability. <br>&gt; <br>&gt; One thought is tools.  <br>&gt; In thinking about contextual completions like Xcode&#39;s Open Quickly or the universal field thing in Sublime, it sure seems like some way to invoke a list of keywords and constructs available-in-the-current-scope would be helpful. <br>&gt; <br>&gt; Thoughts ?<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

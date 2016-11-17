@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c69b8eb4df5af15923fd1647a8276890?s=50"></div><header><strong>[Review] Amendment: SE-0039: Moderning Playground Literals</strong> from <string>John McCall</string> &lt;rjmccall at apple.com&gt;<p>May 16, 2016 at 02:00:00pm</p></header><div class="content"><p>Original proposal:<br></p><p>  https://github.com/apple/swift-evolution/blob/master/proposals/0039-playgroundliterals.md &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0039-playgroundliterals.md&gt;<br></p><p>Pull request for modification:<br></p><p>  https://github.com/apple/swift-evolution/pull/324 &lt;https://github.com/apple/swift-evolution/pull/324&gt;<br></p><p>Description<br></p><p>The Swift core team would like to amend this proposal to spell out what&#39;s happening with the literal protocols.  The proposal was not explicit about the fact that the protocols were going to change, and in fact it turned out that changing them was not a good idea.  We&#39;ve already applied the effects of this amendment in trunk, but that is a decision that should be ratified by the community.  Please do not allow the fact that it&#39;s &quot;already done&quot; to discourage you from speaking up if you have strong feelings about this amendment.<br></p><p>The adjusted proposal fully specifies the &quot;changes&quot; to the object literal protocols.  I&#39;ve put &quot;changes&quot; in quotes because, in fact, the result is no net change to the _ColorLiteralConvertible protocol vs. prior releases of Swift, and the other two protocols have been changed only to add &quot;ResourceName&quot; as a suffix to the argument label.  Adding this to the label is more explicit and may be useful if we choose to embellish these protocols in the future; it also creates a simple algorithm for deriving the initializer name from the name of the protocol and the argument labels in the literal.<br></p><p>These protocols are currently underscored and therefore are not intended to be implemented outside of the Swift repository, which is why I did not initially push this through review.<br></p><p>We view this as a minor amendment to the proposal.  The fast-track process for such amendments is to just open a pull request against the swift-evolution repository, which I&#39;ve done and linked above.  Any necessary discussion should occur on that PR.  The core team will accept the PR after a reasonable amount of time unless there are strong objections; if there are, we will close the PR and start the ordinary evolution process.<br></p><p>John.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160516/5d44be23/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

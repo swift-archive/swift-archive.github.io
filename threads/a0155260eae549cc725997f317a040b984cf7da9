@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/268e1090c88890a4ed2387a4d22c661c?s=50"></div><header><strong>generic *= operator</strong> from <string>J.E. Schotsman</string> &lt;jeschot at xs4all.nl&gt;<p>March 21, 2016 at 12:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>I can define a custom *= operator like this:<br></p><p>func *=( inout lhs:UInt32, rhs:Float )-&gt;UInt32<br>	{<br>	lhs = UInt32( roundf( Float(lhs)*rhs ) )<br>	}<br></p><p>but my attempts to make this generic have failed.<br></p><p>I would like something like<br></p><p>func *=&lt;X:SomeIntegerProtocol,Y:SomeFloatProtocol&gt;( inout X, rhs:Y)-&gt; X<br>	{<br>	lhs =  X( (Y(lhs)*rhs).round() )<br>	}<br></p><p>that works for all integer types and all floating point types.<br></p><p>Is this feasible?<br></p><p>Jan E.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

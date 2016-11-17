@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Including `FileCheck` in downloadable toolchains</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>April 21, 2016 at 09:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I would like to propose that we include `FileCheck` in the downloadable toolchains.<br></p><p>The downloadable toolchains are quite useful for people who are wanting to work on Swift projects that use FileCheck (llbuild, swift-integration-tests), but don&#39;t want to build everything from scratch. I would suggest it be located in &#39;/usr/local/bin&#39;, to give some indication that it is a tool somewhat internal to the project.<br></p><p>Any objections? The gzipped tool comes to around 150KB, which is a drop in the bucket of our current ~200MB archives.<br></p><p> - Daniel<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>Including `FileCheck` in downloadable toolchains</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>April 22, 2016 at 09:00:00am</p></header><div class="content"><p>On Fri, Apr 22, 2016, at 12:28 AM, Daniel Dunbar via swift-dev wrote:<br>&gt; Hi all,<br>&gt; <br>&gt; I would like to propose that we include `FileCheck` in the downloadable<br>&gt; toolchains.<br>&gt; <br>&gt; The downloadable toolchains are quite useful for people who are wanting<br>&gt; to work on Swift projects that use FileCheck (llbuild,<br>&gt; swift-integration-tests), but don&#39;t want to build everything from<br>&gt; scratch. I would suggest it be located in &#39;/usr/local/bin&#39;, to give some<br>&gt; indication that it is a tool somewhat internal to the project.<br>&gt; <br>&gt; Any objections? The gzipped tool comes to around 150KB, which is a drop<br>&gt; in the bucket of our current ~200MB archives.<br>&gt; <br>&gt;  - Daniel<br></p><p>🙌<br></p><p>No objections from me. I have actually thought this same thing many<br>times before.<br></p><p>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>Including `FileCheck` in downloadable toolchains</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>April 22, 2016 at 12:00:00pm</p></header><div class="content"><p>SGTM<br></p><p>&gt; On Apr 21, 2016, at 9:28 PM, Daniel Dunbar via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi all,<br>&gt; <br>&gt; I would like to propose that we include `FileCheck` in the downloadable toolchains.<br>&gt; <br>&gt; The downloadable toolchains are quite useful for people who are wanting to work on Swift projects that use FileCheck (llbuild, swift-integration-tests), but don&#39;t want to build everything from scratch. I would suggest it be located in &#39;/usr/local/bin&#39;, to give some indication that it is a tool somewhat internal to the project.<br>&gt; <br>&gt; Any objections? The gzipped tool comes to around 150KB, which is a drop in the bucket of our current ~200MB archives.<br>&gt; <br>&gt; - Daniel<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

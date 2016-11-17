@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8743f8794fdfad2ccd7097ad4bc10337?s=50"></div><header><strong>Issue cross compiling swift-llvm for iOS from OS X</strong> from <string>Andrew Hyatt</string> &lt;andythehyatt at gmail.com&gt;<p>March 17, 2016 at 05:00:00pm</p></header><div class="content"><p>More information. When I build natively with no additional arguments, the folder &quot;build/Ninja-DebugAssert/llvm-macosx-x86_64/NATIVE” is created. <br></p><p>No equivalent folder for armv7s is created when using the arguments in the previous message. <br></p><p>&quot;build/Ninja-DebugAssert/llvm-iphoneos-armv7s/NATIVE&quot; is not created. <br></p><p>Is there a way to get the build system to create that NATIVE folder too and use it to generate the tables? <br></p><p>Andrew Hyatt<br>andythehyatt at gmail.com<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160317/3664607e/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

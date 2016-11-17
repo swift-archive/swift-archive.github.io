@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Idea] Bringing the partial/total ordering distinction into Comparable</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 25, 2016 at 04:00:00pm</p></header><div class="content"><p>on Sun Apr 24 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; Regarding how this affects sorting methods though, some people (myself included) like the simplicity of being able to do the following:<br>&gt;&gt; <br>&gt;&gt; 	myArray.sort(&gt;)	// If array is of Comparable elements, just throw in the operator<br>&gt;<br>&gt; That is extremely convenient. With my proposed extensions, it&#39;s actually writeable as this:<br>&gt;<br>&gt; 	myArray.sorted { ($0 &lt;=&gt; $1).reversed() }<br>&gt;<br>&gt; But that&#39;s obviously much less convenient. It&#39;s also equivalent to this:<br>&gt;<br>&gt; 	myArray.sorted { $1 &lt;=&gt; $0 }<br>&gt;<br>&gt; Which means, with the proper higher-order function, it&#39;s the same as this:<br>&gt;<br>&gt; 	myArray.sorted(flip(&lt;=&gt;))<br></p><p>There&#39;s no reason we can&#39;t accept both kinds of ordering function, though it<br>does expand the overload set, which is a usability downside.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>[Proposal] Remove eager `map` and `filter`</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>June 20, 2016 at 12:00:00am</p></header><div class="content"><p>They can’t have `rethrows` either.<br></p><p>&gt; &gt; 1. Make sure that<br>&gt; &gt; <br>&gt; &gt; Array(sequence.lazy.map { ... }) and sequence.map { ... }<br>&gt; &gt; Array(sequence.lazy.filter { ... }) and sequence.filter { ... }<br>&gt; &gt; <br>&gt; &gt; are just as fast (with -O). &quot;Fix lazy filter&quot; proposal should help with this.<br>&gt; &gt; <br>&gt; &gt; 2. Remove eager `map` and `filter`<br>&gt; &gt; <br>&gt; &gt; 3. Remove `lazy` property<br>&gt; &gt; <br>&gt; &gt; sequence.map { ... } will call lazy `map`, which is at least as fast as eager version<br>&gt; &gt; <br>&gt; &gt; 4. Re-add `array` property to LazySequence<br>&gt; &gt; <br>&gt; &gt; So that we can more easily convert to multipass sequence when needed.<br>&gt; The first three Swift 1 betas were this way; then the lazy higher-order functions were changed to the current design, apparently because the all-lazy solution was confusing. (It&#39;s also worth noting that if we had only lazy versions, they could not take @noescape.) So I don&#39;t really think this is going to fly.<br>&gt; <br>&gt; --<br>&gt; Brent Royal-Gordon<br>&gt; Architechies<br>&gt; <br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

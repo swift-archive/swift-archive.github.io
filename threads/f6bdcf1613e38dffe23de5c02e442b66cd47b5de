@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5a526876c64f821232993a7b6b7d2f4a?s=50"></div><header><strong>Int32.divideWithOverflow</strong> from <string>Peter W A Wood</string> &lt;peterwawood at gmail.com&gt;<p>November 10, 2016 at 12:00:00pm</p></header><div class="content"><p>I am using Swift to generate some tests with overflowing 32-bit integers. I have used the Int32.&lt;op&gt;WithOverflow functions but have come across a problem dividing Int32.min by -1 with overflow. I get an overflow error:<br></p><p>    error: division &#39;-2147483648 / -1&#39; results in an overflow<br>    Int32.divideWithOverflow(Int32.min, -1)<br></p><p>Is this the expected behaviour?<br></p><p>Regards<br></p><p>Peter<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

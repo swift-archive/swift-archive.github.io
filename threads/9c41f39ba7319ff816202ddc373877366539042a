@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/51189a173dd8b126f323f855de89f0b1?s=50"></div><header><strong>The Swift Programming Language - GERMAN</strong> from <string>Dominic Frei</string> &lt;dominic at dominicfrei.com&gt;<p>December 21, 2015 at 02:00:00pm</p></header><div class="content"><p>Hey guys,<br></p><p>this morning I read in a newsletter by NatashaTheRobot on Chris Lattner’s tweet about translating the Swift documentation.<br></p><p>Thought that would be a nice idea to finally contribute to Swift, so I started immediately with the German version:<br>https://github.com/DominicFrei/the-swift-programming-language-in-german &lt;https://github.com/DominicFrei/the-swift-programming-language-in-german&gt;<br></p><p>Happy coding! :)<br></p><p>Dominic Frei<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151221/9c41042a/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

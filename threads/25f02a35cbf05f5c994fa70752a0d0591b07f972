@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2015bc9dfdb8fbb37c4f9c1f1e77a503?s=50"></div><header><strong>run a specific test file</strong> from <string>Arsen Gasparyan</string> &lt;to.arsen.gasparyan at gmail.com&gt;<p>December  7, 2015 at 01:00:00pm</p></header><div class="content"><p>Hello,<br>Is it possible to run a specific test file like in rspec:<br></p><p>  rspec path/to/spec/file.rb<br></p><p>I have tried ./swift/utils/build-script -t<br>swift/test/decl/protocol/req/recursion.swift but it doesn&#39;t work.<br></p><p>Thanks.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/25f0f972/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d68c97e8e2f1653b54c24493caf236ae?s=50"></div><header><strong>run a specific test file</strong> from <string>Stephen Celis</string> &lt;stephen.celis at gmail.com&gt;<p>December  7, 2015 at 08:00:00am</p></header><div class="content"><p>Hi,<br></p><p>&gt; On Dec 7, 2015, at 8:19 AM, Arsen Gasparyan via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello,<br>&gt; Is it possible to run a specific test file like in rspec:<br>&gt; <br>&gt;   rspec path/to/spec/file.rb<br>&gt; <br>&gt; I have tried ./swift/utils/build-script -t swift/test/decl/protocol/req/recursion.swift but it doesn&#39;t work.<br></p><p>Check out the Testing doc:<br></p><p>https://github.com/apple/swift/blob/master/docs/Testing.rst#running-the-llvm-lit-based-testsuite<br></p><p>Wherever you ran the `build-script` you should have a `build` directory, so these 2 commands should get you to a build cycle:<br></p><p>    ./swift/utils/build-script<br>    ./llvm/utils/lit/lit.py -sv ./build/Ninja-DebugAssert/swift-macosx-x86_64/test-macosx-x86_64/decl/protocol/req/<br></p><p>There may be a better way, but this has worked for me so far.<br></p><p>Stephen<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

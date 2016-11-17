@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>Proposal: Specifying local parameter names for closures to generate strict argument list</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>December  8, 2015 at 07:00:00am</p></header><div class="content"><p>// I&#39;ll use this `function` as a closure later  <br>func setup(_ this: SomeType) -&gt; Void {  <br></p><p>    this.doSomeStuff() // local parameter `this`<br>}<br></p><p>setup(this: /* instance of SomeType */)<br>The example I’ll use here will build upon the code samples from the “Request for Discussion: Setup closures” topic.<br></p><p>protocol SettableType: class {<br>     <br>    init() // designated initializer<br>}<br></p><p>extension SettableType {<br>     <br>    init(@noescape setup: (this: Self) -&gt; Void) {<br>         <br>        self.init()<br>        setup(this: self)<br>    }<br>}<br></p><p>func &lt;&lt; &lt;T: SettableType&gt;(instance: T, @noescape setup: (this: T) -&gt; Void) -&gt; T {<br>     <br>    setup(this: instance)<br>    return instance<br>}<br></p><p>extension NSObject: SettableType {}<br>Right now this will look like this:<br></p><p>NSObject() { anyArgumentName in<br></p><p>    anyArgumentName.doSomeStuff()<br>}<br></p><p>// or<br>NSObject() {  <br></p><p>    $0.doSomeStuff()<br>}<br>If we had strict local parameter names we couold omit the argument list and don’t need the shorthand argument names ($0, $1) anymore. At least the argument list could be generated automaticaly.<br></p><p>Lets reuse the SettableType from before.<br></p><p>extension SettableType {<br>     <br>    init(@noescape setup: (_ this: Self) -&gt; Void) {<br>         <br>        // notice that `this` is now a local parameter and _ the external paramter<br>        self.init()<br>        setup(self) // in this scope only the external parameter is visible<br>    }<br>}<br></p><p>func &lt;&lt; &lt;T: SettableType&gt;(instance: T, @noescape setup: (_ this: T) -&gt; Void) -&gt; T {<br>     <br>    setup(instance) // same here<br>    return instance<br>}<br></p><p>let object = NSObject() { this in // we could omit the argument list<br></p><p>    this.doSomeStuff() // `this` is the generated argument name from the strict local parameter  <br>    $0.doSomeStuff() // should raise an error even if we omit the argument list<br>}<br></p><p>object &lt;&lt; {<br>    this.doSomeStuff()<br>}<br>Do you thing this feature is worth it?<br></p><p>Any feedback is welcome.<br></p><p><br></p><p>— <br>Regards Adrian<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151208/1d2ffb83/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

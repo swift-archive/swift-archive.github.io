@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0118: Closure Parameter Names and Labels</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July  6, 2016 at 06:00:00pm</p></header><div class="content"><p>on Wed Jul 06 2016, David Rönnqvist &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;    * What is your evaluation of the proposal?<br>&gt;<br>&gt; +1. These look like good improvements to me. (I&#39;m also happy that the map/filter/reduce naming was left out of this proposal)<br>&gt;<br>&gt; One thing I was wonder about was the capitalization of UTF8 in the<br>&gt; first example. Shouldn&#39;t that be s.withUTF8Buffer(processBytes)instead<br>&gt; of s.withUtf8Buffer(processBytes) or am I confusing Swift&#39;s<br>&gt; conventions with Cocoa&#39;s?<br></p><p>No, you&#39;re right; fixed, thanks!<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

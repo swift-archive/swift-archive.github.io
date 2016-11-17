@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c800c36d051cb46d6d801e1b48685ca6?s=50"></div><header><strong>C unsigned int[] imported as tuple?</strong> from <string>Thierry Passeron</string> &lt;thierry.passeron at gmail.com&gt;<p>October 29, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I’m working on a project where I deal with mach here and there, and strangely enough this C struct (from mach/processor_info.h)...<br></p><p>struct processor_cpu_load_info {             /* number of ticks while running... */<br>        unsigned int	cpu_ticks[CPU_STATE_MAX]; /* ... in the given mode */<br>}; <br></p><p>is imported in Swift 3 (at least in Xcode8.1 beta) as…<br></p><p>public struct processor_cpu_load_info {<br></p><p>    public var cpu_ticks: (UInt32, UInt32, UInt32, UInt32) /* number of ticks while running... */ /* ... in the given mode */<br>    ...<br>}<br></p><p>I find it strange because the index of each UInt32 value depends on machine.h define(d) indexes for CPU_STATE_USER, CPU_STATE_SYSTEM etc… <br></p><p>So the only way to access them in the tuple « format » is to hard code cpu_ticks.0 or cpu_ticks.1 etc… and thus we loose the defined named indexes from machine.h<br></p><p>Am I missing something? What do you guys think of this matter?<br></p><p>For me this tuple should have been at least imported with named fields or even better as [UInt32] array...<br></p><p>Best regards,<br>Thierry<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2bc666e29724cd3bdf46b6cbbe4a07bb?s=50"></div><header><strong>C unsigned int[] imported as tuple?</strong> from <string>Quinn &quot;The Eskimo!&quot;</string> &lt;eskimo1 at apple.com&gt;<p>October 31, 2016 at 09:00:00am</p></header><div class="content"><p>On 29 Oct 2016, at 11:34, Thierry Passeron via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>&gt; For me this tuple should have been at least imported with named fields or even better as [UInt32] array...<br></p><p>The latter is not possible because Swift does not currently have support for fixed-size arrays.  This is a well-known limitation.<br></p><p>To get the former you’d have to either tweak the Mach headers or give the Swift compiler knowledge about Mach.  Both are technically possible but I haven’t seen any concrete efforts in that direction.<br></p><p>Note: The situation with Mach APIs on our platforms is rather nuance.  They are officially supported but we strongly encourage folks not to use them because they are very tightly bound to the kernel.  In your case (getting CPU load information) using Mach is fine, but for most Mach APIs there are better high-level alternatives.<br></p><p>Feel free to file bug reports for where you’d like to see the system improved here.<br></p><p>&lt;https://developer.apple.com/bug-reporting/&gt;<br></p><p>In the meantime, if I were in your shoes I’d write an extension for `processor_cpu_load_info` that adds the accessors I need:<br></p><p>extension processor_cpu_load_info {<br>    var user: UInt32 {<br>        get {<br>            assert(CPU_STATE_USER == 0)<br>            return self.cpu_ticks.0<br>        }<br>        set {<br>            assert(CPU_STATE_USER == 0)<br>            self.cpu_ticks.0 = newValue<br></p><p>        }<br>    }<br>}<br></p><p>There’s very little risk hard coding the `.0` because:<br></p><p>* the order of these fields can’t change without breaking binary compatibility<br></p><p>* if you port the code to a new platform, you’ll very likely trip the asserts if the fields get re-ordered<br></p><p>Share and Enjoy<br>--<br>Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

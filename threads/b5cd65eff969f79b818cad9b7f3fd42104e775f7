@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>FYI: Swift-based Manifest proposal doc</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>December 11, 2015 at 10:00:00am</p></header><div class="content"><p>I have posted our original proposal for using a Swift-based Manifest Format to the repo:<br>  https://github.com/apple/swift-package-manager/blob/master/Documentation/Internals/SwiftBasedManifestFormat.md<br></p><p>This proposal lays out in more concrete detail our exact intentions w.r.t.:<br></p><p> - The division between having a Turing complete build description language, but having it be strongly isolated from the build itself. Our intention is that the only interaction the manifest can have with the build process is through well-defined APIs. This is important for ensuring that we evolve the package manager effectively without breaking existing packages.<br></p><p> - The ability to have automatic editing support for the manifest file. Our intention is that the &quot;leading package specification&quot; (`let package = Package()`...) will be enforced to be written in such a way that we can provide APIs to automatically edit it. This is important for ensuring that we can provide eventual UI support, and for allowing us to build really great workflows where the package manager helps users write their files correctly.<br></p><p> - Explains our hope that by allowing programatic customization of the manifest (through Swift code), we can ultimately end up with a cleaner experience by not forcing us to design explicit APIs and solutions for all the ways people want to lay out their projects.<br></p><p>Please let me know if you have any feedback. I posted this one directly to the repo since we already went this direction and implemented it, in the future this is exactly the kind of proposal that we would like to handle via the swift-evolution process (and would then eventually make it into the repo once accepted and implemented).<br></p><p> - Daniel<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

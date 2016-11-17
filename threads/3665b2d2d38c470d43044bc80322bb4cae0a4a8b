@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0045: Add scan, prefix(while:), drop(while:), and iterate to the stdlib</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May  1, 2016 at 05:00:00pm</p></header><div class="content"><p>on Sun May 01 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; The proposal has been updated as per feedback from the core team<br>&gt; (https://github.com/apple/swift-evolution/pull/275). This includes<br>&gt; removing some last vestiges of Swift 2 naming as well as replacing<br>&gt; `iterate(_:apply:)` with an overloaded function `unfold(_:applying:)`.<br>&gt;<br>&gt; The proposal says this:<br>&gt;<br>&gt; 	public func unfold&lt;T, State&gt;(_ initialState: State, applying: State -&gt; (T, State)?) -&gt; UnfoldSequence&lt;T&gt;<br>&gt; 	public func unfold&lt;T&gt;(_ initialElement: T, apply: T -&gt; T) -&gt; UnfoldSequence&lt;T&gt;<br>&gt;<br>&gt; However, the comment implies that the second one should instead be this:<br>&gt;<br>&gt; 	public func unfold&lt;T&gt;(_ initialElement: T, applying: T -&gt; T?) -&gt; UnfoldSequence&lt;T&gt;<br>&gt;<br>&gt; I&#39;m not sure I like having these be overloaded on only the return type<br>&gt; of the closure. <br></p><p>Why not?  It&#39;s a type, like anything else we might overload on.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

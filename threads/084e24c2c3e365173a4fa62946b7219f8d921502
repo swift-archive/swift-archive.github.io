@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/674fead3bfff884c72fa02c35d68f258?s=50"></div><header><strong>Initialize associated Types</strong> from <string>James Campbell</string> &lt;james at supmenow.com&gt;<p>January  7, 2016 at 10:00:00am</p></header><div class="content"><p>I would love to be able to initilize another type like this:<br></p><p>extension Unit where Self.UnitType: SignedIntegerType  {<br></p><p>    init(_ value: Double) { //Ideally this could be generic too.<br></p><p>        self.init()<br></p><p>        self.value = Self.UnitType(value)<br></p><p>    }<br></p><p>}<br></p><p>-- <br> Wizard<br>james at supmenow.com<br>+44 7523 279 698<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160107/084e1502/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7abf2ce34651dd5e97cd97b16ce21bae?s=50"></div><header><strong>Initialize associated Types</strong> from <string>Guillaume Lessard</string> &lt;glessard at tffenterprises.com&gt;<p>January  7, 2016 at 09:00:00am</p></header><div class="content"><p>You can do that if your constraining protocol defines an initializer with the desired signature.<br>I tried with both a struct extension and a protocol extension, no problem.<br></p><p>Is this about modifying the interface of SignedIntegerType, then?<br></p><p>Guillaume Lessard<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/674fead3bfff884c72fa02c35d68f258?s=50"></div><header><strong>Initialize associated Types</strong> from <string>James Campbell</string> &lt;james at supmenow.com&gt;<p>January  7, 2016 at 04:00:00pm</p></header><div class="content"><p>Yeah I want a protocol (In this case Unit) expression that says if the<br>class implementing this protocol has an associated type which is a<br>SignedIntegerType and it is initialized with a SignedIntegerType.<br></p><p>Then it should set the property value (Which should be the same type as the<br>assosiated type) with that SignedIntegerType<br></p><p>On Thu, Jan 7, 2016 at 4:33 PM, Guillaume Lessard &lt;<br>glessard at tffenterprises.com&gt; wrote:<br></p><p>&gt; You can do that if your constraining protocol defines an initializer with<br>&gt; the desired signature.<br>&gt; I tried with both a struct extension and a protocol extension, no problem.<br>&gt;<br>&gt; Is this about modifying the interface of SignedIntegerType, then?<br>&gt;<br>&gt; Guillaume Lessard<br>&gt;<br>&gt;<br></p><p><br>-- <br> Wizard<br>james at supmenow.com<br>+44 7523 279 698<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160107/50cc1ef7/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/389ea0cf26e2a2d4646bf580da2fb6b5?s=50"></div><header><strong>No hex dump anymore in Data description</strong> from <string>Martin R</string> &lt;martinr448 at gmail.com&gt;<p>August 27, 2016 at 08:00:00am</p></header><div class="content"><p>Is it intentional that the description method of Data returns only the number of bytes, but not a hex dump of the contents (as NSData did)? <br></p><p>    let data = Data(bytes: [1, 2, 3])<br>    print(data) // 3 bytes<br>    print(data.debugDescription) // 3 bytes<br></p><p>Of course I can bridge back to NSData:<br>    <br>    print(data as NSData) // &lt;010203&gt;<br></p><p>But other collection types (Array, Dictionary, Set) print all their elements, regardless of the size of the collection.<br></p><p>For debugging purposes, the &quot;old behavior&quot; of returning a hex dump would be useful.<br></p><p>Martin<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2bc666e29724cd3bdf46b6cbbe4a07bb?s=50"></div><header><strong>No hex dump anymore in Data description</strong> from <string>Quinn &quot;The Eskimo!&quot;</string> &lt;eskimo1 at apple.com&gt;<p>August 29, 2016 at 09:00:00am</p></header><div class="content"><p>On 27 Aug 2016, at 07:45, Martin R via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>&gt; Is it intentional that the description method of Data returns only the number of bytes, but not a hex dump of the contents (as NSData did)? <br></p><p>It doesn’t really matter if it was intentional or not; if it’s annoying then you should file a bug about it anyway.  [I’d file my own but it’d go into Radar and you wouldn’t be able to see it )-: ]<br></p><p>Share and Enjoy<br>--<br>Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/389ea0cf26e2a2d4646bf580da2fb6b5?s=50"></div><header><strong>No hex dump anymore in Data description</strong> from <string>Martin R</string> &lt;martinr448 at gmail.com&gt;<p>August 29, 2016 at 03:00:00pm</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160829/65ee26d4/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

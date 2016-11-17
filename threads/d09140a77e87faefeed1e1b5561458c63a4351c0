@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d145b9824a2bfc8aa2f3297f3a555e6?s=50"></div><header><strong>Memory leak in SourceKitService since using Swift name lookup tables by default</strong> from <string>Pascal Urban</string> &lt;mail at pscl.de&gt;<p>January 17, 2016 at 03:00:00pm</p></header><div class="content"><p>Hi all,<br>so there is currently a massive memory leak in SourceKitService when using the latest snapshot of Swift (since 22.12.15).<br></p><p>After some git bisecting I narrowed the introduction of the memory leak down to the following commits:<br>&quot;Clang importer: enable the Swift name lookup tables by default.&quot;<br>https://github.com/apple/swift/commit/ae6b41dc3774bae08f5e1f066ab557e77cd0324e<br></p><p>&quot;Clang importer: delete most of the old name lookup path. NFC&quot;<br>https://github.com/apple/swift/commit/19894754d40e0777706909330e07808e466b261d<br></p><p>lnspecting SourceKitService in Activity Monitor shows lots of duplicate open files.<br></p><p>At this point I&#39;m a bit out of my depth and don&#39;t know how to continue further.<br>I figured that the best next step would be to share my findings on the mailing list and open a new bug.<br>Hopefully someone more familiar with the code base can find the origin of the leak.<br></p><p>The bug report with more information can be found here:  https://bugs.swift.org/browse/SR-562<br></p><p>Pascal<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

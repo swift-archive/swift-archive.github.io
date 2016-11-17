@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Add a while clause to for loops</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>June  8, 2016 at 12:00:00am</p></header><div class="content"><p>I think `when` would be pretty confusing. If I didn’t know what it meant and I had to guess, I’d probably think that it means what `where` currently means.<br></p><p>Calling it `while` could perhaps cause confusing with the while loop, but it means the same thing in both contexts so people might already feel familiar with it.<br></p><p>&gt; &gt; On Jun 7, 2016, at 1:16 PM, Tim Vermeulen via swift-evolution&lt;swift-evolution at swift.org(mailto:swift-evolution at swift.org)&gt;wrote:<br>&gt; &gt; &gt; The meaning of the proposed while is not at all a pair for where, since where clauses in while loops would do the same thing as while clauses in for loops. That&#39;s crazy.<br>&gt; &gt; <br>&gt; &gt; It sounds crazy, but it’s the nature of the while loop. A where clause in a while loop also has a different result than a where clause in a for loop.<br>&gt; The where_clause appears in the for in statement<br>&gt; <br>&gt; for_in_statement : &#39;for&#39; &#39;case&#39;? pattern &#39;in&#39; expression where_clause? code_block<br>&gt; <br>&gt; It&#39;s syntactic sugar because the expression can be already be limited through functional chaining of some sort or another. At the same time, it&#39;s nice and pleasant to have `where` and I&#39;m not itching to throw it out. The same courtesy could be easily extend to `when` (because I don&#39;t really want to use the `while` keyword here, but I could easily be convinced otherwise because I don&#39;t have a strong stance either way):<br>&gt; <br>&gt; for_in_statement : &#39;for&#39; &#39;case&#39;? pattern &#39;in&#39; expression (where_clause | when_clause)? code_block<br>&gt; when_clause : &#39;when&#39; expression<br>&gt; <br>&gt; and again it could be nice and pleasant to have, although not necessary. The question comes down to how much does the language benefit by this sugar.<br>&gt; <br>&gt; I&#39;d say that in both cases, combining chaining and statements is marginallyless goodthan either using standalone chaining or statements without chaining. But as I say this, I know as a fact, I fully intend to use `sequence(_:, next:).take(while:)` with for0in statements, so I&#39;m starting from a hypocritical vantage point.<br>&gt; <br>&gt; To summarize, I&#39;m more +0.01 than I am -0.01 on this.<br>&gt; <br>&gt; -- E<br>&gt; p.s. Sorry, wux<br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

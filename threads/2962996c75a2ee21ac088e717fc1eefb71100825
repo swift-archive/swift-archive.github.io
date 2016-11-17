@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0e8516d3703e35b7df26986815b23e7a?s=50"></div><header><strong>Revisiting Optionals as Sequences</strong> from <string>Robert Widmann</string> &lt;devteam.codafi at gmail.com&gt;<p>December  3, 2015 at 06:00:00pm</p></header><div class="content"><p>A few months ago I sent a pair of radars (22414579 nee 22448207 and 21961711) about Optional?s extant overloading of flatMap and how it doesn?t align with either the STL or the reasons given for the closing of both radars.  <br></p><p>&gt; This issue behaves as intended based on the following:<br>&gt; <br>&gt; Yes, we are aware that this overload of flatMap could be viewed as unconventional. Nevertheless, it is useful and fits the overload set in general, if you view Optional as a sequence of zero or one T. It resembles this overload, where the closure returns an arbitrary sequence:<br>&gt; <br>&gt; extension SequenceType {<br>&gt;   public func flatMap&lt;S : SequenceType&gt;(transform: (Generator.Element) -&gt; S) -&gt; [S.Generator.Element]<br>&gt; }<br>&gt; <br>&gt; The type checker ensures that there is no ambiguity between the two overloads, and we don&#39;t see a reason to give one of the overloads a different name (and force users to learn it, and differentiate between the two), since conceptually the operation is the same.<br></p><p>If Swift wishes to regard Optionals as collections with 1 or 0 elements, then I propose that it should reflect that thinking with additions to the standard library.<br></p><p>Possible changes include:<br></p><p>1) Remove or rename Optional?s flatMap.  <br>This would cause a bit of breaking behavior, but it?s nothing some fixits couldn?t help with.<br></p><p>2) Add a SequenceType instance for Optional.<br>This kills 2 birds with 1 stone in that, if the radar rejection is to ring true, Optional should have a SequenceType instance in the STL, and such an instance would automatically come with its own proper overloading flatMap necessitating change 1.<br></p><p> Over in TypeLift land we?ve already implemented what we believe the SequenceType extensions should look like (https://github.com/typelift/Swiftz/blob/master/Swiftz/OptionalExt.swift#L139-L145 &lt;https://github.com/typelift/Swiftz/blob/master/Swiftz/OptionalExt.swift#L139-L145&gt;).<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151203/29620825/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

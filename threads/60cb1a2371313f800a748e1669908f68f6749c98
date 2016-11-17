@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a0703d30e768588b1811bead713d6dff?s=50"></div><header><strong>[proposal] Allow &quot;let&quot; for computed properties which only reference immutable data</strong> from <string>Andru Felipe Zuniga</string> &lt;andruzuniga at me.com&gt;<p>May 13, 2016 at 10:00:00am</p></header><div class="content"><p>It would be useful for clarification of a computed property being constant in extensions. For example:<br></p><p>extension SKSpriteNode {<br>	static let type: String {<br>		return “Sprite”<br>	}<br>}<br></p><p>Andru<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d02ed1b20fc3e0fa1592ce5982f24d2b?s=50"></div><header><strong>[proposal] Allow &quot;let&quot; for computed properties which only reference immutable data</strong> from <string>Leonardo Pessoa</string> &lt;me at lmpessoa.com&gt;<p>May 17, 2016 at 04:00:00pm</p></header><div class="content"><p>If the value of the property is a constant, shouldn&#39;t you just declare it<br>as one? If you have any sort of computation in it, even concatenating two<br>constant strings, can you really say this is a constant? And you would also<br>be overloading the compiler into trying to check for every property you use<br>let if the overall computation is constant or not. IMO, let isn&#39;t really<br>the most appropriate keyword to use for properties.<br></p><p>- Leonardo<br></p><p>On 13 May 2016 at 04:44, Andru Felipe Zuniga via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; It would be useful for clarification of a computed property being constant<br>&gt; in extensions. For example:<br>&gt;<br>&gt; extension SKSpriteNode {<br>&gt;         static let type: String {<br>&gt;                 return “Sprite”<br>&gt;         }<br>&gt; }<br>&gt;<br>&gt; Andru<br>&gt;<br>&gt;<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160517/b270d400/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

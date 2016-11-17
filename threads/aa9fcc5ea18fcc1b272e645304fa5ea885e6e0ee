@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e860a1e0d21a7ae5467aacfe1d9c6a78?s=50"></div><header><strong>[Review] Require self for accessing instance members</strong> from <string>Denis Nikitenko</string> &lt;d.nikitenko at icloud.com&gt;<p>December 16, 2015 at 11:00:00pm</p></header><div class="content"><p>* What is your evaluation of the proposal?<br></p><p>I vote to reject the proposal.<br></p><p>* Is the problem being addressed significant enough to warrant a change to Swift?<br></p><p>No.  It tries to address potential errors caused by variable shadowing.  However, I feel that this comes at the cost of making code less readable and overly verbose, and potentially hiding memory leaks caused by strong references in closures.  I do not believe this trade-off is worthwhile.  I echo the opinion of other participants who feel that this is something that should be enforced by in-house standards, rather than by the language itself.<br></p><p>From a pedagogical perspective, I found that students rarely encounter errors caused by confusion between instance variables and local variables.  However memory management in general makes their heads explode.  Anything that attracts attention to potential memory issues is definitely a plus in my book.   As a computer science instructor, I like always having self in closures, but not requiring it elsewhere.<br></p><p>* Does this proposal fit well with the feel and direction of Swift?<br></p><p>No, I don’t believe so.  The current usage strikes a good balance between clarity and safety.  I do not think that explicit self adds to either clarity or safety.<br></p><p>* If you have you used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br></p><p>I have used C++, Java, Swift, and C#, all of which have “this/self” keyword for explicit access of instance members, but do not require its use.  These languages use it sparingly, typically when initializing instance variables in constructors and init/set methods.  I’ve also noticed partial classes in C# sometimes using “this&quot; to emphasize that a particular instance member was defined in a separate source file.<br></p><p>A single opinion is just one data point and should be treated as such, but in my programming experience I did not encounter many shadowing errors that would have been prevented by an explicit use of “this/self”.  If we use it everywhere, we lose the ability to use it for signalling something really important.<br></p><p>* How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br></p><p>I have been following this discussion since the beginning and read the arguments from both sides.  I‘ve spent some time over the last few days reflecting on my past experiences and I have reviewed some of the Swift, C#, and C++ code on my hard drive to see where self/this is used (both in my code and in source code of 3rd party libraries).<br></p><p>regards,<br></p><p>Denis<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

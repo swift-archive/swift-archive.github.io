@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d042be5dcfe90e649f760303af3e429?s=50"></div><header><strong>Potential problamatic initializers, solved by removing tuple splat?</strong> from <string>Jens Persson</string> &lt;jens at bitcycle.com&gt;<p>February  7, 2016 at 02:00:00pm</p></header><div class="content"><p>let tenXs = String(count: 10, repeatedValue: Character(&quot;X&quot;))<br>let tenYs = String(count: 10, repaetedValue: Character(&quot;Y&quot;))<br>print(tenXs) // Prints XXXXXXXXXX<br>print(tenYs) // Prints (10, &quot;Y&quot;)<br></p><p>So, why doesn&#39;t tenYs print the expected YYYYYYYYYY?<br>- Because of the slightly misspelled repeatedValues parameter label.<br></p><p>Then why no compile time error for the misspelled parameter label?<br>- Because of this String intializer: public init&lt;T&gt;(_ instance: T)<br></p><p>I guess there are other similar examples, but I happened to stumble upon<br>this one just now.<br></p><p>Should they be considered a problem?<br></p><p>Is this an example of a problem that will be solved by removing tuple splat?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160207/5c9fb391/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4ab486d7597af4cfe0be33a762150848?s=50"></div><header><strong>Potential problamatic initializers, solved by removing tuple splat?</strong> from <string>Dany St-Amant</string> &lt;dsa.mls at icloud.com&gt;<p>February  7, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; Le 7 févr. 2016 à 08:45, Jens Persson via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt; <br>&gt; let tenXs = String(count: 10, repeatedValue: Character(&quot;X&quot;))<br>&gt; let tenYs = String(count: 10, repaetedValue: Character(&quot;Y&quot;))<br>&gt; print(tenXs) // Prints XXXXXXXXXX<br>&gt; print(tenYs) // Prints (10, &quot;Y&quot;)<br>&gt; <br>&gt; So, why doesn&#39;t tenYs print the expected YYYYYYYYYY?<br>&gt; - Because of the slightly misspelled repeatedValues parameter label.<br>&gt; <br>&gt; Then why no compile time error for the misspelled parameter label?<br>&gt; - Because of this String intializer: public init&lt;T&gt;(_ instance: T)<br>&gt; <br>&gt; I guess there are other similar examples, but I happened to stumble upon this one just now.<br>&gt; <br>&gt; Should they be considered a problem?<br>&gt; <br>&gt; Is this an example of a problem that will be solved by removing tuple splat?<br></p><p>Looks like some kind implicit tuple &quot;unsplating&quot;, the reverse of what is mentioned in SE-0029: Removing implicit tuple splat<br></p><p>class sample<br>{<br>    init&lt;T&gt;(_ instance: T)<br>    {<br>        print(instance)<br>    }<br>}<br></p><p>let tenYs = sample(count: 10, repaetedValue: Character(&quot;Y&quot;))<br></p><p>does display the same (10, &quot;Y&quot;).<br></p><p>Dany<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160207/a33c1f2f/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

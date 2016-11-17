@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cd92fa756ac6cb2524b1156c42d84460?s=50"></div><header><strong>SE-0095: SIL syntax and Any.self problem</strong> from <string>Josef Willsher</string> &lt;joewillsher at icloud.com&gt;<p>July  4, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I’ve been implementing SE-0095 &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0095-any-as-existential.md&gt; (here &lt;https://github.com/apple/swift/pull/3293&gt;) and have hit an issue around how Any.self is treated.<br></p><p>When in the type position, I parse Any like any other type, and resolve it to be an empty protocol composition in the constraint system &lt;https://github.com/apple/swift/pull/3293/files#diff-aee66a44df1b30cec188083399e31ec5R823&gt;, in resolveTopLevelTypeComponent. <br></p><p>This does not work for metatype lookup, where the lookup is unconstrained and I need to find a ValueDecl for the Any type. Currently I have kept the stdlib’s typealias Any = protocol&lt;&gt; so the type system can look to the stdlib through getAnyDecl to find it. Does anyone have an idea about how this could be done without this; there are no other keywords that need this sort of unconstrained lookup and are implicitly declared?<br></p><p>Another question I had: does SE-0095 extend to SIL syntax? The proposal does’t mention it, but I think it would seem out of place to keep the protocol&lt;&gt; pattern in .sil if we are replacing it in .swift, the AST, and the demangler.<br></p><p>Thanks,<br>Joe<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160704/d504ef57/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>SE-0095: SIL syntax and Any.self problem</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>July  5, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; On Jul 4, 2016, at 9:29 AM, Josef Willsher via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi everyone,<br>&gt; <br>&gt; I’ve been implementing SE-0095 (here) and have hit an issue around how Any.self is treated.<br>&gt; <br>&gt; When in the type position, I parse Any like any other type, and resolve it to be an empty protocol composition in the constraint system, in resolveTopLevelTypeComponent. <br>&gt; <br>&gt; This does not work for metatype lookup, where the lookup is unconstrained and I need to find a ValueDecl for the Any type. Currently I have kept the stdlib’s typealias Any = protocol&lt;&gt; so the type system can look to the stdlib through getAnyDecl to find it. Does anyone have an idea about how this could be done without this; there are no other keywords that need this sort of unconstrained lookup and are implicitly declared?<br></p><p>A ValueDecl for a type shouldn&#39;t be required for a metatype expression, since something like (Int, String).self or (() -&gt; ()).self ought to work too. Type resolution ought to handle this by turning the subexpression into a TypeExpr before we do type checking; see PreCheckExpression::simplifyTypeExpr.<br></p><p>&gt; Another question I had: does SE-0095 extend to SIL syntax? The proposal does’t mention it, but I think it would seem out of place to keep the protocol&lt;&gt; pattern in .sil if we are replacing it in .swift, the AST, and the demangler.<br></p><p>SIL mostly reuses Swift&#39;s type syntax, so this should fall out. You will want to ensure the demangler and the runtime use the new syntax when printing metatype values.<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

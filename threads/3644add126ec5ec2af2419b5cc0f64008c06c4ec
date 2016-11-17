@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e2303da56647c283b6d8e58d5831faca?s=50"></div><header><strong>Packaging Everything for Testing</strong> from <string>Joseph Bell</string> &lt;joe at iachieved.it&gt;<p>December 11, 2015 at 09:00:00pm</p></header><div class="content"><p>Howdy,<br></p><p>I have been using the SNAPSHOT .tar.gz to write some basic Swift<br>applications, and now wanted to turn my attention to compiling with the<br>latest coming out of the corelibs-foundation library.  I understand that to<br>do so I need to download clang, llvm, swift, and swift-corelibs-foundation<br>and use the swift/utils/build-script to build everything.<br></p><p>I can do that successfully, but now I have a build/Ninja-ReleaseAssert<br>directory littered with all manner of artifacts that it&#39;s not clear how to<br>pull together and run with it.  Is there either a packaging tool (creating<br>the filesystem layout seen in the SNAPSHOT) or sets of exports one uses to<br>run with a hand-built swift and corelibs?<br></p><p>Thanks!<br>Joe<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20151211/3644c4ec/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Packaging Everything for Testing</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>December 11, 2015 at 07:00:00pm</p></header><div class="content"><p>On Fri, Dec 11, 2015 at 7:13 PM, Joseph Bell via swift-corelibs-dev &lt;<br>swift-corelibs-dev at swift.org&gt; wrote:<br></p><p>&gt; Howdy,<br>&gt;<br>&gt; I have been using the SNAPSHOT .tar.gz to write some basic Swift<br>&gt; applications, and now wanted to turn my attention to compiling with the<br>&gt; latest coming out of the corelibs-foundation library.  I understand that to<br>&gt; do so I need to download clang, llvm, swift, and swift-corelibs-foundation<br>&gt; and use the swift/utils/build-script to build everything.<br>&gt;<br>&gt; I can do that successfully, but now I have a build/Ninja-ReleaseAssert<br>&gt; directory littered with all manner of artifacts that it&#39;s not clear how to<br>&gt; pull together and run with it.  Is there either a packaging tool (creating<br>&gt; the filesystem layout seen in the SNAPSHOT) or sets of exports one uses to<br>&gt; run with a hand-built swift and corelibs?<br>&gt;<br></p><p>Here&#39;s how the official packages are built:<br></p><p>./utils/build-script --preset=buildbot_linux_1404<br>install_destdir=/tmp/install installable_package=/tmp/swift.tar.gz<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20151211/7058bf55/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

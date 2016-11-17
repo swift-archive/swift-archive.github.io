@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[discussion] Change the behavior of @objc on a class?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 27, 2016 at 03:00:00pm</p></header><div class="content"><p>on Mon Jun 27 2016, Jordan Rose &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hey, all. An engineer at Apple noticed the following behavior:<br>&gt;<br>&gt; 1. class Foo: NSObject → exposed to Objective-C, Swift-style (mangled) runtime name<br>&gt; 2. @objc class Foo: NSObject → exposed to Objective-C, Swift-style (mangled) runtime name<br>&gt; 3. @objc(Foo) class Foo: NSObject → exposed to Objective-C, unmangled runtime name<br>&gt;<br>&gt; (and 4. @objc class Foo → illegal, classes must have ObjC heritage to be @objc.)<br>&gt;<br>&gt; They specifically observed that (1) and (2) have the same behavior,<br>&gt; and suggested that maybe (2) should be shorthand for (3).<br>&gt;<br>&gt; Pros:<br>&gt; - There aren&#39;t two ways to spell (1).<br>&gt; - Removing the mangling (and module uniquing) from the runtime name is<br>&gt; probably one of the most common uses of @objc on a class.<br>&gt;<br>&gt; Cons:<br>&gt; - It&#39;s a source-breaking change, for all that the &quot;@objc&quot; in (2) is redundant.<br>&gt; - For protocols, (1) and (2) are not equivalent, because @objc isn&#39;t inherited there.<br>&gt; - Mangling is used to namespace class names at run time; if you drop<br>&gt; that, the ObjC name should probably have a prefix. (This applies more<br>&gt; to frameworks than apps, though.)<br>&gt;<br>&gt; There are probably people who say that last con applies to the<br>&gt; generated header as well: we shouldn&#39;t put (1) or (2) into the<br>&gt; generated header because the ObjC name might conflict with another<br>&gt; class at compile time. This is valid, but probably too drastic a<br>&gt; change at this point.<br>&gt;<br>&gt; So, what does everyone think? I&#39;m leaning towards &quot;no change&quot; because<br>&gt; it&#39;s a bit subtle and not a big enough win, but if there&#39;s widespread<br>&gt; support for this I&#39;ll pull it into a proposal.<br></p><p>It seems like a win and the right solution.  Whether the win is “big<br>enough,” I can&#39;t say.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

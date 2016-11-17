@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dad1fc0d2023332e239a5c05e01fb577?s=50"></div><header><strong>CI outage for SDK and source updates tomorrow</strong> from <string>Nicole Jacque</string> &lt;nicole_jacque at apple.com&gt;<p>August 15, 2016 at 01:00:00pm</p></header><div class="content"><p>Hello All-<br></p><p>Tomorrow we will be temporarily bringing down the CI, starting around 2 PM, California time, in order to upgrade to the latest beta of Xcode 8 and the associated SDKs.  We will also be locking master while we land some source changes in support of the updated SDKs on both master and the swift-3.0-branch.    We expect the upgrade process to take several hours.  We’ll send out a message when the upgrade is complete.<br></p><p>As a reminder, once the upgrade is complete, if you are doing development on a Mac, the minimum required Xcode to build Swift from source will be the latest Xcode 8 beta.  The latest Xcode 8 beta can be downloaded at: https://developer.apple.com/download/ &lt;https://developer.apple.com/download/&gt;<br></p><p>Also, please note, we will not be branching again for Swift 3: the swift-3.0-branch branch will be our final preview and release branch for the Swift 3 release, and will be used to converge the Swift 3 release from now until it is declared ‘GM&#39;.  Any changes that are required for Swift 3 should be nominated for inclusion via pull request against the swift-3.0-branch branch. <br></p><p>Thanks!<br>Nicole<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160815/d6a8ffe7/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>CI outage for SDK and source updates tomorrow</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>August 16, 2016 at 03:00:00pm</p></header><div class="content"><p>Hi Everyone! <br></p><p>Xcode 8 beta 6 has been installed on ci.swift.org nodes. <br></p><p>Thanks, <br>Mishal Shah<br>&gt; On Aug 15, 2016, at 1:27 PM, Nicole Jacque via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello All-<br>&gt; <br>&gt; Tomorrow we will be temporarily bringing down the CI, starting around 2 PM, California time, in order to upgrade to the latest beta of Xcode 8 and the associated SDKs.  We will also be locking master while we land some source changes in support of the updated SDKs on both master and the swift-3.0-branch.    We expect the upgrade process to take several hours.  We’ll send out a message when the upgrade is complete.<br>&gt; <br>&gt; As a reminder, once the upgrade is complete, if you are doing development on a Mac, the minimum required Xcode to build Swift from source will be the latest Xcode 8 beta.  The latest Xcode 8 beta can be downloaded at: https://developer.apple.com/download/ &lt;https://developer.apple.com/download/&gt;<br>&gt; <br>&gt; Also, please note, we will not be branching again for Swift 3: the swift-3.0-branch branch will be our final preview and release branch for the Swift 3 release, and will be used to converge the Swift 3 release from now until it is declared ‘GM&#39;.  Any changes that are required for Swift 3 should be nominated for inclusion via pull request against the swift-3.0-branch branch. <br>&gt; <br>&gt; Thanks!<br>&gt; Nicole<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160816/064bd327/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

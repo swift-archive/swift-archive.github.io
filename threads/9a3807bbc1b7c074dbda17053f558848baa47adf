@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76eb9711d45c1c9a71c0f24004072a22?s=50"></div><header><strong>Very slow compilation of `lazyvar` properties</strong> from <string>Zach Waldowski</string> &lt;zach at waldowski.me&gt;<p>April 29, 2016 at 06:00:00pm</p></header><div class="content"><p>Tadeas Kriz via swift-users &lt;swift-users &lt;at&gt; swift.org&gt; writes:<br></p><p>&gt; <br>&gt; Hey everyone!<br>&gt; I spent last few days trying to bring down compilation time of our iOS<br>&gt; project, which has about 500 files and 50k lines (plus ~20 dependencies<br>&gt; precompiled into frameworks by Carthage).<br>&gt; <br>&gt; I stumbled upon this http://irace.me/swift-profiling and wrote myself a simple<br>&gt; script that sums up all the times spent on various places in code. To my<br>&gt; surprise, I found out that many of the lines that took the most of time to<br>&gt; compile were simply `lazy var ` properties in classes. Is it unique to our<br>&gt; project (I mean caused by misconfiguration) or do you guys see this as well?<br>&gt; <br>&gt; Thanks!<br>&gt; <br>&gt; Tadeas<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users &lt;at&gt; swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; <br></p><p>I’ve identified this as well. It’s pretty severe in my current project, which is<br>of a similar size. Various sprinklings of “private”, “final”, and “@nonobjc”<br>all seem to have no positive effect. Using the self-calling closure version<br>seems to exacerbate the problem.<br></p><p>Zachary<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/79cd2bdc2074f4e69eac60743fe785fc?s=50"></div><header><strong>NSURLRequest — missing attributes</strong> from <string>Daniel Eggert</string> &lt;danieleggert at me.com&gt;<p>March 16, 2016 at 03:00:00pm</p></header><div class="content"><p>I created https://github.com/apple/swift-corelibs-foundation/pull/290<br>to add 4 attributes that were missing compared to Darwin Foundation.<br></p><p>I also re-worked how attributes are used / stored for the immutable / mutable version.<br></p><p>I didn&#39;t add any documentation to the 4 attributes, because I didn&#39;t know if we&#39;re allowed to copy over documentation from the Darwin Foundation header files. Can someone clarify?<br></p><p>/Daniel<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>NSURLRequest — missing attributes</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>March 16, 2016 at 08:00:00am</p></header><div class="content"><p>I personally find inline documentation helpful as a reminder  of the goal of the desired behavior.<br></p><p>Sent from my iPhone<br></p><p>&gt; On Mar 16, 2016, at 7:47 AM, Daniel Eggert via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I created https://github.com/apple/swift-corelibs-foundation/pull/290<br>&gt; to add 4 attributes that were missing compared to Darwin Foundation.<br>&gt; <br>&gt; I also re-worked how attributes are used / stored for the immutable / mutable version.<br>&gt; <br>&gt; I didn&#39;t add any documentation to the 4 attributes, because I didn&#39;t know if we&#39;re allowed to copy over documentation from the Darwin Foundation header files. Can someone clarify?<br>&gt; <br>&gt; /Daniel<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

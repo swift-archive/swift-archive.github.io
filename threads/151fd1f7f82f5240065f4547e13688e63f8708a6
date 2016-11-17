@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/88c2c19b265bd8d3d7ffaca381c0fdff?s=50"></div><header><strong>NSData vs Data in swift 3</strong> from <string>CK TUNG</string> &lt;cktung at mac.com&gt;<p>August 12, 2016 at 04:00:00am</p></header><div class="content"><p>Anyone know where to get the updated guide on Binary Data in swift 3?<br></p><p>The only thing I know from WWDC video is that &quot;NSData&quot; is reference type and the &quot;Data&quot; is value type and they have different methods of init rules and to getbytes or copybytes.<br></p><p>Any idea on the motivation to have new Data class in Foundation ?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160812/151f08a6/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2bc666e29724cd3bdf46b6cbbe4a07bb?s=50"></div><header><strong>NSData vs Data in swift 3</strong> from <string>Quinn &quot;The Eskimo!&quot;</string> &lt;eskimo1 at apple.com&gt;<p>August 12, 2016 at 08:00:00am</p></header><div class="content"><p>On 12 Aug 2016, at 05:00, CK TUNG via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>&gt; Any idea on the motivation to have new Data class in Foundation ?<br></p><p>For the motivation behind these changes, check out the following Swift evolution proposals:<br></p><p>* SE-0069 “Mutability and Foundation Value Types”<br></p><p>&lt;https://github.com/apple/swift-evolution/blob/master/proposals/0069-swift-mutability-for-foundation.md&gt;<br></p><p>* SE-0086 “Drop NS Prefix in Swift Foundation”<br></p><p>&lt;https://github.com/apple/swift-evolution/blob/master/proposals/0086-drop-foundation-ns.md&gt;<br></p><p>If you have specific questions beyond that please post ’em here and we’ll see what we can do to help.<br></p><p>Share and Enjoy<br>--<br>Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

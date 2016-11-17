@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>Swift Development Toolchain supports installing in ~/Library</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>January 26, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi, <br></p><p>Swift OS X toolchain now supports user to install in ~/Library, this is only supported with swift-DEVELOPMENT-SNAPSHOT-2016-01-25-a-ox or newer toolchains. <br></p><p>How to change install location?<br></p><p>In the destination select section chose “Install for me only” (screenshot-1). However, if installer skips the destination select section, chose “Change Install Location…” in installation type section (screenshot-2). <br></p><p><br></p><p><br>Thanks,<br>Mishal Shah <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160126/f2bac664/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: Screen Shot 1.png<br>Type: image/png<br>Size: 33738 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160126/f2bac664/attachment.png&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: Screen Shot 2.png<br>Type: image/png<br>Size: 29525 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160126/f2bac664/attachment-0001.png&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06edc9bfd03c4e42da4e6b2704492487?s=50"></div><header><strong>Swift Development Toolchain supports installing in ~/Library</strong> from <string>Volodymyr Boichentsov</string> &lt;sakristx at gmail.com&gt;<p>January 26, 2016 at 09:00:00pm</p></header><div class="content"><p>👍🏻👍🏻👍🏻<br></p><p>Best Regards,<br>Volodymyr Boichentsov<br></p><p><br></p><p><br></p><p>&gt; On 26 Jan 2016, at 21:49, Mishal Shah via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi, <br>&gt; <br>&gt; Swift OS X toolchain now supports user to install in ~/Library, this is only supported with swift-DEVELOPMENT-SNAPSHOT-2016-01-25-a-ox or newer toolchains. <br>&gt; <br>&gt; How to change install location?<br>&gt; <br>&gt; In the destination select section chose “Install for me only” (screenshot-1). However, if installer skips the destination select section, chose “Change Install Location…” in installation type section (screenshot-2). <br>&gt; <br>&gt; &lt;Screen Shot 1.png&gt;<br>&gt; &lt;Screen Shot 2.png&gt;<br>&gt; <br>&gt; Thanks,<br>&gt; Mishal Shah <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160126/10e57684/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

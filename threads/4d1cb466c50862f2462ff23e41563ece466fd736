@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6c3c6af3a3702ecbe5bfa02e3d89aca?s=50"></div><header><strong>Swift compiler assertion failure: Assertion `LastArgWritten &gt;= adjustedArg.size()&#39; failed</strong> from <string>Eric Wing</string> &lt;ewmailing at gmail.com&gt;<p>November 15, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi, I have encountered an internal Swift compiler assertion/bug when<br>using Swift on ARM (Raspberry Pi).<br></p><p>The assertion is:<br>Swift compiler assertion failure: Assertion `LastArgWritten &gt;=<br>adjustedArg.size()&#39; failed<br></p><p>It seems to be related to calling a bridged C function with a C struct<br>parametert.<br></p><p><br>I posted on the swift-arm group. hpux735 said this is deeper into the<br>compiler internals than he knows about so we should see if we can get<br>the attention of some experts on this because we don&#39;t know how to<br>proceed.<br></p><p><br>I filed the bug here:<br>https://bugs.swift.org/browse/SR-2706<br></p><p>It also contains the simple reproducible test case with a build.sh script.<br>https://bugs.swift.org/secure/attachment/11334/SwiftArmCompileBug.tar.gz<br></p><p>Thanks,<br>Eric<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

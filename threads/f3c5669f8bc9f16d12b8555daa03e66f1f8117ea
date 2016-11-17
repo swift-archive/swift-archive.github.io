@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5f95a789704a3d7315667af3ac6d88ca?s=50"></div><header><strong>Having reference semantics counterpart of value types in an easier way</strong> from <string>Amir Abbas Mousavian</string> &lt;a.mosavian at gmail.com&gt;<p>June 24, 2016 at 01:00:00pm</p></header><div class="content"><p>Having reference semantics counterpart of value types in an easier way<br></p><p><br>Introduction<br></p><p>———————<br></p><p>Now swift has its basic datatypes as value semantics. Arrays, Int.<br>Dictionaries, Sets and … are struct types without any kind of inheritance.<br></p><p>To compensate it, programmers usually use NS classes of these types. We are<br>about to introducing a new way to have reference types in a more swifty way<br>rather than using Foundation framework.<br></p><p>Swift 3 introduce omitting NS prefix from Foundation framework but leaves<br>NS prefix for some types with struct counterparts like Array, which may<br>leads to inconstancy for developers, and many datatypes remain classes (e.g<br>URL) which should be struct in swift paradigm while they remained classes<br></p><p><br>Motivation<br></p><p>———————<br></p><p>Programmers usually have to memorize the counterpart of Swift datatypes in<br>Foundation easily.  Besides many datatypes remain classes (e.g URL) which<br>should be struct in swift paradigm while they remained classes<br></p><p><br></p><p>Proposed solution<br></p><p>———————<br></p><p>We can match existing classes to their value-type counterpart like this:<br></p><p><br>class Array: NSArray as reftype of Array {<br></p><p>}<br></p><p><br>The compiler should check all Array struct functions are implemented in<br>this new class type otherwise throw an compile error. For de novo<br>declarations:<br></p><p><br>class ValType as reftype of ValType {<br></p><p>}<br></p><p><br>here, the only thing user has to is reimplement mutating functions here, or<br>use Bridgeable protocol. I&#39;ve no idea here yet<br></p><p><br>To create a reference Array (former NSArray) programmer can simply do:<br></p><p><br>let NSArrayInstance: *Array[NSObject] = [];<br></p><p>or<br></p><p>let NSArrayInstance: reftype Array[NSObject] = [];<br></p><p><br>Alternative solution<br></p><p>———————<br></p><p>Leave Foundation framework as it is by now.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160624/f3c517ea/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

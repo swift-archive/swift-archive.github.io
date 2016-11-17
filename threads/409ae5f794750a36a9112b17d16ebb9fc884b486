@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Idea] Passing an Array to Variadic Functions</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 20, 2016 at 01:00:00pm</p></header><div class="content"><p>on Wed Apr 20 2016, Dave Abrahams &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; on Wed Apr 20 2016, Tino Heth &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt;&gt; The question is whether the downside to variadic parameters is really enough to justify _removing_ an existing language feature. <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; The burden of justification should be on those people wanting to<br>&gt;&gt;&gt; change the language, not on those wanting to maintain the status quo<br>&gt;&gt;&gt; and “I don’t like it” or “I think it makes code a tiny bit less<br>&gt;&gt;&gt; readable” is not sufficient justification, in my opinion because you<br>&gt;&gt;&gt; already have the option not to use the feature.<br>&gt;&gt; Afaics, this isn&#39;t true:<br>&gt;&gt; Increment/decrement operators, currying, tuple splat and even the<br>&gt;&gt; C-style for loop have already been deprecated, and although I would<br>&gt;&gt; have preferred to keep some of those constructs, I think it is good<br>&gt;&gt; how progressive Swift is pushed forward (&quot;would we add this feature<br>&gt;&gt; now if it wasn&#39;t already there?&quot;).<br>&gt;<br>&gt; We&#39;re in a stage of Swift&#39;s development where we can ask this question<br>&gt; fairly freely, and the fact that we expect to reach stability soon,<br></p><p>I should clarify that this is true for a sufficiently-nebulous<br>definition of “soon.” :-)<br></p><p>&gt; where it will be harder to ask the question, makes us ask it a bit<br>&gt; more often these days.  It&#39;s a balance; we don&#39;t want to create<br>&gt; arbitrary language churn, but we also don&#39;t want to be forever stuck<br>&gt; with decisions we&#39;ll regret later.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

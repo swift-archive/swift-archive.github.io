@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Revisiting SE-0041 Names</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 27, 2016 at 07:00:00am</p></header><div class="content"><p>on Thu Jun 23 2016, Xiaodi Wu &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Thu, Jun 23, 2016 at 4:34 AM, Dmitri Gribenko<br>&gt; &lt;gribozavr at gmail.com&gt;<br>&gt; wrote:<br>&gt;<br>&gt;&gt; On Thu, Jun 23, 2016 at 2:00 AM, Xiaodi Wu<br>&gt;&gt; &lt;xiaodi.wu at gmail.com&gt; wrote:<br>&gt;&gt; &gt; On Thu, Jun 23, 2016 at 1:26 AM, David Sweeris via swift-evolution<br>&gt;&gt; &gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; &gt;&gt;<br>&gt;&gt; &gt;&gt;<br>&gt;&gt; &gt;&gt; &gt; On Jun 22, 2016, at 19:35, Dmitri Gribenko<br>&gt;&gt; &gt;&gt; &gt; &lt;gribozavr at gmail.com&gt;<br>&gt;&gt; wrote:<br>&gt;&gt; &gt;&gt; &gt;<br>&gt;&gt; &gt;&gt; &gt;&gt; On Wed, Jun 22, 2016 at 5:15 PM, David Sweeris<br>&gt;&gt; &gt;&gt; &gt;&gt; &lt;davesweeris at mac.com&gt;<br>&gt;&gt; &gt;&gt; &gt;&gt; wrote:<br>&gt;&gt; &gt;&gt; &gt;&gt; That&#39;s a really interesting idea. Is &quot;Syntax&quot; a placeholder, or is<br>&gt;&gt; that<br>&gt;&gt; &gt;&gt; &gt;&gt; the intended name?<br>&gt;&gt; &gt;&gt; &gt;<br>&gt;&gt; &gt;&gt; &gt; It is the best name we could come up with, we are open to better<br>&gt;&gt; &gt;&gt; &gt; suggestions.<br>&gt;&gt; &gt;&gt;<br>&gt;&gt; &gt;&gt; I guess it depends on the intended semantics of the &quot;namespace&quot;. If the<br>&gt;&gt; &gt;&gt; purpose is to be a container for the various LiteralConvertible<br>&gt;&gt; protocols,<br>&gt;&gt; &gt;&gt; then maybe something like `AcceptsLiteralType.Integer` might be better?<br>&gt;&gt; It&#39;s<br>&gt;&gt; &gt;&gt; a bit wordy, though.<br>&gt;&gt; &gt;<br>&gt;&gt; &gt;<br>&gt;&gt; &gt; I get what&#39;s being aimed at here, but I think the meaning of<br>&gt;&gt; &gt; `Syntax` in this context is indecipherable. IIUC, the point to be<br>&gt;&gt; &gt; conveyed by the term is that a literal has no type until it is<br>&gt;&gt; &gt; supplied as an argument to the initializer and becomes typed.<br>&gt;&gt;<br>&gt;&gt; The point of using &quot;Syntax&quot; is to emphasize that this protocol is for<br>&gt;&gt; integration with the language syntax.  The &quot;Syntax&quot; pseudo-namespace<br>&gt;&gt; groups protocols that provide a special kind of a capability --<br>&gt;&gt; changing the meaning of builtin language syntax.  This protocol is not<br>&gt;&gt; meant to be coded against, used in other APIs or handled by the code<br>&gt;&gt; in any other way except by being adopted (except maybe in the standard<br>&gt;&gt; library code itself).<br>&gt;&gt;<br>&gt;<br>&gt; This makes a lot of sense now after your expanded explanation. I still<br>&gt; think, though, that the name reads rather absurdly. Most charitably, your<br>&gt; types would conform to &quot;integer literal syntax,&quot; whatever that means.<br>&gt; Visually, it looks like your types &quot;conform to Syntax.&quot; <br></p><p><br>I dunno, this kind of construct is precedented.  Nobody thinks<br></p><p>    class MyDelegate : Foundation.SomeDelegate { ... }<br></p><p>makes it look like MyController conforms to Foundation.<br></p><p>&gt; Could I suggest maybe `SyntacticIntegration` or `SyntaxIntegrating`?<br>&gt; Something along those lines.<br></p><p>Doesn&#39;t that just use complex words where a simpler one would do?  I<br>don&#39;t understand how that helps.<br></p><p><br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ddb2e0cdc962616b23c8ddb344802f3a?s=50"></div><header><strong>Swift Package Manager, Static Linking</strong> from <string>McLaren Stanley</string> &lt;mclaren at uber.com&gt;<p>August 10, 2016 at 10:00:00am</p></header><div class="content"><p>Hi Folks,<br></p><p>Some Background:<br>I’m currently working on an iOS project that has a large number (~62) of dynamic frameworks. As a result this app incurs a relatively large penalty at runtime when the app bundled is initially loaded (~5 seconds on iPhone 6s, by our best estimates). Combining these frameworks is proving to be non-trivial, so I was hoping for an alternative solution to manage all of these modules. Since the Swift Package Manager was initially implemented by linking modules statically, it seemed like an obvious solution.<br></p><p>However, when reading the documentation/code and attempting this myself I found statically linking to be quite difficult. It seems like the command line interface “swift build” does in fact link modules at compile time, but it seems like it no longer does so via .a static libs as was originally stated in the documentation. It also seems difficult to configure the correct iOS architecture apart from manually passing in every Swift complier flag as a parameter. Using the generate-xcodeproj tool seemed very promising, but the biggest disadvantage with that tool is it forms packages into dynamic libraries which brings me back to the original problem.<br></p><p>Is there a clever way to use the Package Manager to reduce the number of dynamic frameworks in my app? Or am I going about this in completely the wrong way?<br></p><p>Thanks in advance,<br>McLaren<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>[Draft] Allow multiple conformances to the same protocol</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>June 10, 2016 at 10:00:00pm</p></header><div class="content"><p>Brent Royal-Gordon wrote:<br></p><p>&gt; Currently, StringInterpolationConvertible only offers an<br>&gt; `init&lt;T&gt;(stringInterpolationSegment: T)` initializer.<br>&gt; That means you absolutely *must* permit any type to be<br>&gt; interpolated into your type&#39;s string literals.<br></p><p>It can be explicitly marked unavailable.<br></p><p>extension LocalizedString : StringInterpolationConvertible {<br></p><p>    @available(*, unavailable)<br>    public init&lt;T&gt;(stringInterpolationSegment _: T) {<br>        fatalError()<br>    }<br></p><p>    public init(stringInterpolationSegment format: String) {<br>        self.init(format: format, values: [])<br>    }<br></p><p>    public init(stringInterpolationSegment value: AnyObject) {<br>        self.init(format: &quot;%@&quot;, values: [value])<br>    }<br>}<br></p><p>-- Ben<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

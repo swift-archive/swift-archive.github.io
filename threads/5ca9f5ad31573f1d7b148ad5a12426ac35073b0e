@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5f35d89acf8a49f09d9027d7b589cc6b?s=50"></div><header><strong>[Idea] Modification to Mirror struct to support dynamic reference cycle detection</strong> from <string>Uri Brecher</string> &lt;uri.brecher at gmail.com&gt;<p>July  5, 2016 at 08:00:00am</p></header><div class="content"><p>I would like to suggest the following modification to the<br>Mirror.DisplayStyle enum:<br></p><p>for the Class case I would add an associated value of type ReferenceType<br>(better naming is welcomed) which is yet another enum:<br></p><p>enum ReferenceType {<br>    case Strong, Weak, Unowned<br>}<br></p><p>enum Mirror.DisplayStyle {<br>...<br>   case Class(ReferenceType)<br>...<br>}<br></p><p>This modification could assist in building better tools for detection of<br>strong reference cycles which cause memory leaks.<br>The more general mathematical concept of a reference cycle is a &#39;strongly<br>connected component&#39; or SCC.<br></p><p>One possible tool could be an implementation of an algorithm to find all<br>SCCs in a graph of all strong references discoverable from a certain<br>working set (a set of immediately accessible references).<br>This algorithm can generate the following data:<br>1. count of SCC found (should be zero in order to avoid leaks)<br>2. size of largest SCC (size can be measured by either node count, edge<br>count or the sum of both)<br>3. gather all objects of an SCC into an Array&lt;AnyObject&gt;<br>4. gather all strong references of an SCC into an Array&lt;(AnyObject,<br>String)&gt; where a String would be a name of a stored property in the object.<br>Gathering this information periodically during a profiling session could<br>potentially assist developers in detecting the formation of SCC and maybe<br>even lead to finding the source of the problem.<br></p><p><br>The complexity of finding all SCC in a graph is O(m+n) time and space,<br>where m is object count and n is count of all strong object references.<br>So this tool has performance impact and is not advisable to run on a<br>production system.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160705/5ca93b0e/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

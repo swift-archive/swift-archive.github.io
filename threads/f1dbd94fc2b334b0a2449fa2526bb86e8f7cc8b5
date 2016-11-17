@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cee0974ef4ec169976342ae5c812d273?s=50"></div><header><strong>uppdate and read files on ubuntu</strong> from <string>Jonas Fredriksson</string> &lt;jonas.mb at gmail.com&gt;<p>December 29, 2015 at 10:00:00pm</p></header><div class="content"><p>hi<br></p><p>I&#39;m using swift on ubuntu and my first question is if there is any easy way<br>to upgrade to the latest release or do I have to download from swift.org<br>and reinstall each time?<br></p><p>second, to read a file I tried fopen from Glibc but i requires<br>&quot;UnsafePointer&lt;Int8&gt;&quot;. how do I declare that, ie var file:<br>UnsafePointer&lt;Int8&gt;?<br></p><p>thanks in advance<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151229/f1dbc8b5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>uppdate and read files on ubuntu</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>December 29, 2015 at 01:00:00pm</p></header><div class="content"><p>&gt; On Dec 29, 2015, at 1:22 PM, Jonas Fredriksson via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; second, to read a file I tried fopen from Glibc but i requires &quot;UnsafePointer&lt;Int8&gt;&quot;. how do I declare that, ie var file: UnsafePointer&lt;Int8&gt;?<br></p><p>You probably wouldn’t declare a variable of that type. Instead just pass a String for that parameter — the compiler will convert to a C string for you.<br></p><p>For now the best documentation comes from the Using Swift With Cocoa And Objective-C book, which has a section on plain C APIs:<br></p><p>	Constant Pointers<br>	When a function is declared as taking a UnsafePointer&lt;Type&gt; argument, it can accept any of the following:<br>	...<br>	* A String value, if Type is Int8 or UInt8. The string will automatically be converted to UTF8 in a buffer that lasts for the duration of the call.<br></p><p>Whether that’s appropriate for fopen() depends on whether the Linux filesystem APIs use UTF-8 encoding. (Sorry, I don’t know Linux well enough to say.) If they don’t, you’ll have trouble with filenames containing non-ASCII characters; in that case you’d need to write a function to encode the String into a byte array in the right encoding, and then pass that to fopen().<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151229/bfe22258/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

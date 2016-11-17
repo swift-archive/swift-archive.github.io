@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] More Powerful Constraints for Associated Types</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May  3, 2016 at 11:00:00am</p></header><div class="content"><p>on Mon May 02 2016, David Hart &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hi Doug,<br>&gt;<br>&gt; In the latest version of the proposal, which is now linked to a pull request, I<br>&gt; mentioned in the Detail Design section that the following syntax be<br>&gt; valid:<br></p><p>Total nitpick, but I just can&#39;t hold it in: I don&#39;t know why we&#39;re seeing<br>proposals with a section titled “Detail Design.”  The correct title is<br>“Detailed Design.”<br></p><p>letting-my-pedantic-flag-fly-ly y&#39;rs,<br>Dave<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3488bcf34d8c45d917ed27d67a0ffa45?s=50"></div><header><strong>[Proposal] More Powerful Constraints for Associated Types</strong> from <string>David Hart</string> &lt;david at hartbit.com&gt;<p>May  3, 2016 at 11:00:00pm</p></header><div class="content"><p>I know why: copy and paste :) Fixed btw.<br></p><p>&gt; On 03 May 2016, at 20:25, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Mon May 02 2016, David Hart &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; Hi Doug,<br>&gt;&gt; <br>&gt;&gt; In the latest version of the proposal, which is now linked to a pull request, I<br>&gt;&gt; mentioned in the Detail Design section that the following syntax be<br>&gt;&gt; valid:<br>&gt; <br>&gt; Total nitpick, but I just can&#39;t hold it in: I don&#39;t know why we&#39;re seeing<br>&gt; proposals with a section titled “Detail Design.”  The correct title is<br>&gt; “Detailed Design.”<br>&gt; <br>&gt; letting-my-pedantic-flag-fly-ly y&#39;rs,<br>&gt; Dave<br>&gt; <br>&gt; -- <br>&gt; Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

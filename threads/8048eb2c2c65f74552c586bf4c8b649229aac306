@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>libtool display warnings when trying to make lib archives of llvm &amp; swift</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>March  2, 2016 at 12:00:00pm</p></header><div class="content"><p>I am trying to make lib archives of llvm &amp;  swift and during the process<br>libtool produces below warning message:<br>libtool: warning same member name (xxxxx.cpp.o) in output file used for<br>input files: libx.a(xxxxx.cpp.o) and: liby.a(xxxxx.cpp.o) due to use of<br>basename, truncation and blank padding.<br></p><p>Does these cause any problem, is they any way I can rectify this or I have<br>to use individual libs for development.<br></p><p>Complete list:<br></p><p>*LLVM archive* produces 2 warning messages:<br>libtool: warning same member name (*Analysis*.cpp.o) in output file used<br>for input files: *libLLVMAnalysis*.a(Analysis.cpp.o) and:<br>*libLLVMCodeGen*.a(Analysis.cpp.o)<br>due to use of basename, truncation and blank padding<br></p><p>libtool: warning same member name (*Error*.cpp.o) in output file used for<br>input files: *libLLVMTableGen*.a(Error.cpp.o) and:<br>*libLLVMObject*.a(Error.cpp.o)<br>due to use of basename, truncation and blank padding<br></p><p>*Swift archive* produces 5 warning messages:<br>libtool: warning same member name (*CFG*.cpp.o) in output file used for<br>input files: *libswiftSILOptimizer*.a(CFG.cpp.o) and:<br>*libswiftSILOptimizer*.a(CFG.cpp.o)<br>due to use of basename, truncation and blank padding<br></p><p>libtool: warning same member name (*Mangle*.cpp.o) in output file used for<br>input files: *libswiftSIL*.a(Mangle.cpp.o) and: *libswiftAST*.a(Mangle.cpp.o)<br>due to use of basename, truncation and blank padding<br></p><p>libtool: warning same member name (*PrettyStackTrace*.cpp.o) in output file<br>used for input files: *libswiftBasic*.a(PrettyStackTrace.cpp.o) and:<br>*libswiftSIL*.a(PrettyStackTrace.cpp.o) due to use of basename, truncation<br>and blank padding<br></p><p>libtool: warning same member name (*PrettyStackTrace*.cpp.o) in output file<br>used for input files: *libswiftSIL*.a(PrettyStackTrace.cpp.o) and:<br>*libswiftSILOptimizer*.a(PrettyStackTrace.cpp.o) due to use of basename,<br>truncation and blank padding<br></p><p>libtool: warning same member name (*PrettyStackTrace*.cpp.o) in output file<br>used for input files: *libswiftSILOptimizer*.a(PrettyStackTrace.cpp.o) and:<br>*libswiftAST*.a(PrettyStackTrace.cpp.o) due to use of basename, truncation<br>and blank padding.<br></p><p>Thanks<br>Ramakrishna<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160302/8048c306/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

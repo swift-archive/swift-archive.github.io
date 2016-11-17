@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0116: Import Objective-C id as Swift Any type</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July 20, 2016 at 05:00:00pm</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0116-id-as-any.md<br></p><p>The review of &quot;SE-0116: Import Objective-C id as Swift Any type&quot; ran from Active review July 5...11. The proposal has been *accepted*, pending more implementation experience:  This proposal was very positively received by the community, and garnered a lot of feedback (which has already been incorporated into the proposal).  This proposal has significant implementation complexity, but the work to build it is nearing completion.  When this lands, there is some risk that we’ll need to revise the design in small ways due to unanticipated effects, but the core team believes it is the right overall design to aim for.<br></p><p>Thank you to Joe Groff for driving the design and discussion around this feature, as well as many people who are contributing to the implementation and design effort.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

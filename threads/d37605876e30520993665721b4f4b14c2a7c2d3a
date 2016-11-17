@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Purpose of validation-test/Reflection/reflect_*.swift</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 26, 2016 at 10:00:00pm</p></header><div class="content"><p>on Wed Oct 26 2016, Slava Pestov &lt;swift-dev-AT-swift.org&gt; wrote:<br></p><p>&gt; The tests are there to ensure the reflection output doesn’t<br>&gt; accidentally break or change. <br></p><p>Unless you have reason to think it will break or change *only* for some<br>particular stdlib types, and that reflecting the implementation details<br>of those types is somehow an important use-case, you can easily verify<br>that just as well by using some types that *aren&#39;t* in the standard<br>library.<br></p><p>&gt; However if you’re updating the layout of those types you need to<br>&gt; update the tests.<br>&gt;<br>&gt; Slava<br>&gt;<br>&gt;&gt; On Oct 26, 2016, at 5:41 PM, Michael Gottesman via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; On Oct 26, 2016, at 5:29 PM, Alexis via swift-dev &lt;swift-dev at swift.org<br>&gt; &lt;mailto:swift-dev at swift.org&gt;&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I’m not clear on what the reflection tests are attempting to<br>&gt;&gt;&gt; actually verify. Just that we don’t change the internal layout of<br>&gt;&gt;&gt; these types accidentally? We’re churning up the layouts of a lot of<br>&gt;&gt;&gt; the collections to get things all set up for ABI stability, which<br>&gt;&gt;&gt; means mechanically updating these tests to expect “whatever output<br>&gt;&gt;&gt; we now happen to output”.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; In Dave’s initial eager bridging stuff he left a comment indicating<br>&gt;&gt;&gt; that these are incorrectly relying on implementation<br>&gt;&gt;&gt; details. Without any context, I’m inclined to agree. The fact that<br>&gt;&gt;&gt; somewhere deep in the guts of String there lives an enum doesn’t<br>&gt;&gt;&gt; seem important to verify. (how big it is, and how many extra<br>&gt;&gt;&gt; inhabitants it has, does seem worth verifying longterm).<br>&gt;&gt; <br>&gt;&gt; I think this was originally done by Dave Farler.<br>&gt;&gt; <br>&gt;&gt; Michael<br>&gt;&gt; <br>&gt;&gt;&gt; _______________________________________________<br>&gt;&gt;&gt; swift-dev mailing list<br>&gt;&gt;&gt; swift-dev at swift.org &lt;mailto:swift-dev at swift.org&gt;<br>&gt;&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-dev mailing list<br>&gt;&gt; swift-dev at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

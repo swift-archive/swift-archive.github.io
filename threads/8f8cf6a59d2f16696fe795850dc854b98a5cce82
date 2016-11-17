@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>[Possible bug] Initialising multiple instance variables from a closure</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>June 30, 2016 at 02:00:00am</p></header><div class="content"><p>Currently you can initialise a class instance variable from a closure:<br></p><p>let textView : UITextView = {<br>		let t = UITextView()<br>		t.translatesAutoresizingMaskIntoConstraints = false<br>		t.autocapitalizationType = .none<br>		t.autocorrectionType = .no<br>		t.spellCheckingType = .no<br>		return t<br>	}()<br></p><p>However, it doesn’t seem to be possible to return and initialise multiple variables from a closure:<br></p><p>	let (toolbar : UIToolbar, aButton : UIBarButtonItem) = {        // ERROR: Type of expression is ambiguous without more context<br>		let toolbar = UIToolbar()<br>		let aButton = UIBarButtonItem()<br>		return (toolbar, aButton)<br>	}()<br></p><p>Is this something which, in theory should be supported?<br></p><p>Thanks<br></p><p>Karl<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>[Possible bug] Initialising multiple instance variables from a closure</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>June 30, 2016 at 03:00:00am</p></header><div class="content"><p>Oh, I figured it out. The syntax is a bit strange, but after enough attempts I ended up at this:<br></p><p>	let (toolbar, aButton) : (UIToolbar, UIBarButtonItem) = {<br>		let toolbar = UIToolbar()<br>		let aButton   = UIBarButtonItem()<br></p><p>		return (toolbar, aButton)<br>	}()<br></p><p>Seems to work ¯\_(ツ)_/¯<br></p><p>Karl<br></p><p>&gt; On 30 Jun 2016, at 02:57, Karl &lt;raziel.im+swift-users at gmail.com&gt; wrote:<br>&gt; <br>&gt; Currently you can initialise a class instance variable from a closure:<br>&gt; <br>&gt; let textView : UITextView = {<br>&gt; 		let t = UITextView()<br>&gt; 		t.translatesAutoresizingMaskIntoConstraints = false<br>&gt; 		t.autocapitalizationType = .none<br>&gt; 		t.autocorrectionType = .no<br>&gt; 		t.spellCheckingType = .no<br>&gt; 		return t<br>&gt; 	}()<br>&gt; <br>&gt; However, it doesn’t seem to be possible to return and initialise multiple variables from a closure:<br>&gt; <br>&gt; 	let (toolbar : UIToolbar, aButton : UIBarButtonItem) = {        // ERROR: Type of expression is ambiguous without more context<br>&gt; 		let toolbar = UIToolbar()<br>&gt; 		let aButton = UIBarButtonItem()<br>&gt; 		return (toolbar, aButton)<br>&gt; 	}()<br>&gt; <br>&gt; Is this something which, in theory should be supported?<br>&gt; <br>&gt; Thanks<br>&gt; <br>&gt; Karl<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8d00f5acbaa7d24e0900e5045462e008?s=50"></div><header><strong>Developing Server APIs for Swift</strong> from <string>Chris Bailey</string> &lt;BAILEYC at uk.ibm.com&gt;<p>October 25, 2016 at 06:00:00pm</p></header><div class="content"><p>A new project and work group has just been announced, aimed at providing a <br>framework for participants in the community with an interest in building <br>server applications and frameworks to come together to work on providing <br>new Swift APIs.<br>https://swift.org/blog/server-api-workgroup/<br></p><p>Whilst there is already strong participation from some of the more well <br>know web frameworks, including Kitura, Vapor, Perfect, and Zewo, <br>participation and contribution is open to everyone - whether that&#39;s having <br>a requirement or use case you&#39;d like to share, bugs you want to report <br>(once we have code!), code your willing to write, or just your thoughts on <br>what&#39;s needed.<br></p><p>Chris<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-server-dev/attachments/20161025/89b49b87/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7559ac465b184ec777f29d37c0e4b374?s=50"></div><header><strong>Question about SE-0057 &quot;Importing Objective-C Lightweight Generics&quot;</strong> from <string>Michael Peternell</string> &lt;michael.peternell at gmx.at&gt;<p>April 14, 2016 at 11:00:00pm</p></header><div class="content"><p>https://github.com/apple/swift-evolution/blob/master/proposals/0057-importing-objc-generics.md<br></p><p>How can Swift know if an Objective-C class implements +/- classForGenericArgumentAtIndex: at compile time? Does it look at the object code? Or does it look at the header file? Or maybe there is a third option?<br></p><p>I&#39;m asking, because this may lead to misunderstandings if the method needs to be there in the header file, but Objective-C programmers are not aware that they have to declare that method.<br></p><p>-Michael<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Question about SE-0057 &quot;Importing Objective-C Lightweight Generics&quot;</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>April 14, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; On Apr 14, 2016, at 2:06 PM, Michael Peternell via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0057-importing-objc-generics.md<br>&gt; <br>&gt; How can Swift know if an Objective-C class implements +/- classForGenericArgumentAtIndex: at compile time? Does it look at the object code? Or does it look at the header file? Or maybe there is a third option?<br>&gt; <br>&gt; I&#39;m asking, because this may lead to misunderstandings if the method needs to be there in the header file, but Objective-C programmers are not aware that they have to declare that method.<br></p><p>It needs to be present in the header at compile time.<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

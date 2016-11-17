@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/416326248cdf78864ebc09e05983f987?s=50"></div><header><strong>IUO type, treat nil as normal error, not fatal error</strong> from <string>Cao Jiannan</string> &lt;frogcjn_icloud at icloud.com&gt;<p>March 30, 2016 at 07:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I want to discuss the Implicitly Unwrapped Optional Type.<br></p><p>In Swift 1 and Swift2, when a variable declared as IUO type, its value should be non-nil. <br>If its value is nil, it will crash the program when read the value.<br></p><p>I  believe it is better to let developer catch this event, treat it as normal error, and can be caught.<br></p><p>Thanks!<br></p><p>Jiannan<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/aeab22e60ba7b7e2bd445775850448d1?s=50"></div><header><strong>IUO type, treat nil as normal error, not fatal error</strong> from <string>Radosław Pietruszewski</string> &lt;radexpl at gmail.com&gt;<p>March 30, 2016 at 05:00:00pm</p></header><div class="content"><p>I think it would be an interesting to have an optional type that has throwing semantics on errors (I wonder if the behaviors proposal would allow something like that), but IMHO this should be something else than IUO.<br></p><p>IUO is great for when you’re pretty darn sure a thing will never actually be nil on access, but can’t be statically guaranteed on initialization (e.g. @IBOutlets). Making it throw instead of crash would be annoying — worse than just using a regular optional — because you’d have to wrap every use in `do { try … }`<br></p><p>— Radek<br></p><p>&gt; On 30 Mar 2016, at 13:24, Cao Jiannan via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi all,<br>&gt; <br>&gt; I want to discuss the Implicitly Unwrapped Optional Type.<br>&gt; <br>&gt; In Swift 1 and Swift2, when a variable declared as IUO type, its value should be non-nil. <br>&gt; If its value is nil, it will crash the program when read the value.<br>&gt; <br>&gt; I  believe it is better to let developer catch this event, treat it as normal error, and can be caught.<br>&gt; <br>&gt; Thanks!<br>&gt; <br>&gt; Jiannan<br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

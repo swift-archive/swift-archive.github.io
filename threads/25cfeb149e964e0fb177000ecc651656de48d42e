@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>[Review] SE-0113: Add integral rounding functions to FloatingPoint</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>July  1, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; * What is your evaluation of the proposal?<br>+1.  I would like to see .awayFromZero added as an option as well.  It is occasionally useful, and it would provide symmetry.<br></p><p>I would also like to see rounding precision as well, but that can be added later, so don’t let it stop this proposal<br></p><p>&gt; * Is the problem being addressed significant enough to warrant a change to Swift?<br>I think it is within scope of building the FloatingPoint protocol. I would miss it if it wasn’t there...<br>&gt; * Does this proposal fit well with the feel and direction of Swift?<br>Yes, I like the use of an enum to specify the rounding type (as opposed to separate functions) with a common default.<br></p><p>&gt; * If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br>This is much nicer than separate free functions for each type of rounding (which is what pretty much everything else I have used has).  I have found the rounding options for NSDecimalNumber very useful in the past.<br>&gt; * How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>A quick read.<br></p><p>Thanks,<br>Jon<br></p><p><br>&gt; Hello Swift community,<br>&gt; <br>&gt; The review of &quot;SE-0113: Add integral rounding functions to FloatingPoint&quot; begins now and runs through July 5. The proposal is available here:<br>&gt; <br>&gt; 	https://github.com/apple/swift-evolution/blob/master/proposals/0113-rounding-functions-on-floatingpoint.md &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0113-rounding-functions-on-floatingpoint.md&gt;<br>&gt; <br>&gt; Reviews are an important part of the Swift evolution process. All reviews should be sent to the swift-evolution mailing list at<br>&gt; <br>&gt; 	https://lists.swift.org/mailman/listinfo/swift-evolution &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;<br>&gt; <br>&gt; or, if you would like to keep your feedback private, directly to the review manager.<br>&gt; <br>&gt; What goes into a review?<br>&gt; <br>&gt; The goal of the review process is to improve the proposal under review through constructive criticism and contribute to the direction of Swift. When writing your review, here are some questions you might want to answer in your review:<br>&gt; <br>&gt; 	* What is your evaluation of the proposal?<br>&gt; 	* Is the problem being addressed significant enough to warrant a change to Swift?<br>&gt; 	* Does this proposal fit well with the feel and direction of Swift?<br>&gt; 	* If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br>&gt; 	* How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>&gt; <br>&gt; More information about the Swift evolution process is available at<br>&gt; <br>&gt; 	https://github.com/apple/swift-evolution/blob/master/process.md &lt;https://github.com/apple/swift-evolution/blob/master/process.md&gt;<br>&gt; <br>&gt; Thank you,<br>&gt; <br>&gt; -Chris Lattner<br>&gt; Review Manager<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160701/25cfd42e/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

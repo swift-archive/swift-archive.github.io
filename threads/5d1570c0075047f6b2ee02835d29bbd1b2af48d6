@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17d2af4afb70023e28e655d17471a018?s=50"></div><header><strong>[semantic-arc] High Level Vision</strong> from <string>Michael Gottesman</string> &lt;mgottesman at apple.com&gt;<p>September 30, 2016 at 11:00:00pm</p></header><div class="content"><p>Hello everyone.<br></p><p>Below is an introductory high level proposal for Semantic ARC. It attempts to lay out the &quot;vision&quot; without going into too many details. The details will be provided in subsequent mini proposals.  The first mini proposal (High Level ARC Memory Operations) has been sent out in a separate thread for discussion on swift-dev.<br></p><p>A version in rendered markdown is provided here:<br></p><p>https://gottesmm.github.io/proposals/semantic-arc-high-level-vision.html<br></p><p>----<br></p><p># Preface<br></p><p>For Swift 4, we plan to introduce &quot;Semantic ARC&quot;, a major overhaul of ownership<br>in SIL. This document outlines the problems solved by &quot;Semantic ARC&quot;, how it<br>works, and an engineering plan for implementing it.<br></p><p># The Problem and the Goal<br></p><p>As defined today, SIL represents retain/release operations as independent<br>operations, without surfacing the relationships that would the most aggressive<br>optimizations and fast static verification. Semantic ARC enhances SIL to<br>preserve crucial information, allowing us to:<br></p><p>1. Quickly determine the source of any ARC errors from the optimizer and SILGen.<br>2. Implement a new, simpler ARC optimizer that will be faster and more<br>   maintainable.<br>3. Eliminate retain/release traffic more aggressively using semantic pairing<br>   information.<br>4. Lay the groundwork for the representation of other forms of ownership, such<br>   as move semantics, in SIL.<br></p><p># The Engineering Plan<br></p><p>The engineering plan involves the following steps:<br></p><p>1. Replace Low Level Dataflow ARC Operations with High Level SSA ARC operations.<br>2. Add ownership conventions to block arguments and terminators.<br>3. Implement a verifier that ensures all paired ownership operations have<br>   compatible conventions.<br>4. Implement an algorithm that verifies that all ownership operations are paired<br>   exactly once along paths through the program.<br>5. Represent Address Only Types using SSA values instead of Memory Locations.<br></p><p>Each of these steps will be described in detail by focused mini-proposals sent to swift-dev.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

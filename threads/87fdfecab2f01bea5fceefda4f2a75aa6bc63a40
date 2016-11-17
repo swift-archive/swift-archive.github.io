@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c60436f08b7b107f0bb0848c31297fa?s=50"></div><header><strong>Failing test due to network XML validation</strong> from <string>Alex Blewitt</string> &lt;alblue at apple.com&gt;<p>September 29, 2016 at 10:00:00am</p></header><div class="content"><p>There&#39;s a test which attempts to download an XML DTD from an external file, which fails when there&#39;s an intermittent network connection:<br></p><p>  Test Case &#39;TestNSArray.test_writeToFile&#39; started at 09:15:53.214<br>  I/O warning : failed to load external entity &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;<br>  .../swift-corelibs-foundation/TestFoundation/TestNSArray.swift:492: error: TestNSArray.test_writeToFile : failed - XMLDocument   failes to read / validate contenets<br></p><p>It&#39;s probably not a good idea to have remote DTD parsing enabled, especially for testing a write to file method. Plus, there&#39;s a spelling error or two :)<br></p><p>This happens because the XML document has &#39;validate&#39; called on it:<br></p><p>  let plistDoc = try XMLDocument(contentsOf: URL(fileURLWithPath: testFilePath!, isDirectory: false), options: [])<br>  try plistDoc.validate()<br></p><p>https://github.com/apple/swift-corelibs-foundation/blob/e05884bd835f6ee22e7c0b0484326d63c31d554a/TestFoundation/TestNSArray.swift#L485-L486 &lt;https://github.com/apple/swift-corelibs-foundation/blob/e05884bd835f6ee22e7c0b0484326d63c31d554a/TestFoundation/TestNSArray.swift#L485-L486&gt;<br></p><p>I don&#39;t think the validate call is adding anything here, because if it&#39;s invalid then the subsequent assert will fail, and we&#39;re just testing whether or not we can read the contents from file.<br></p><p>Should we remove the try/validate statement here?<br></p><p>Alex<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160929/87fd3a40/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

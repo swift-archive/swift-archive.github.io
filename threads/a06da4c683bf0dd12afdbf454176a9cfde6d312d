@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Fwd: How to bridge between CoreFoundation and SwiftFoundation on Linux?</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>September 21, 2016 at 06:00:00pm</p></header><div class="content"><p>&gt; On Sep 21, 2016, at 1:03 PM, Bouke Haarsma via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; The one that comes with SwiftFoundation (https://github.com/apple/swift-corelibs-foundation/tree/master/CoreFoundation).<br>&gt; <br>&gt; I think it should be a bug that CFReadStream cannot be bridged to (NS)InputStream, as otherwise there’s no way to intertwine Sockets (CFSockets) with SwiftFoundation. As the implementation already uses a CFReadStream internally (https://github.com/apple/swift-corelibs-foundation/blob/d3872cb094124d5dd189839505ae73e2fa717cfd/Foundation/NSStream.swift#L122), it would be a matter of adding an initializer. However the value is private, so adding the initializer cannot be done from an extension.<br></p><p>(including the list this time) AIUI, Core Foundation is an implementation detail of the corelibs implementation of Foundation. It isn&#39;t intended to be used directly from Swift code on Linux.<br></p><p>-Joe<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

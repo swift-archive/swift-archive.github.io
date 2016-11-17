@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>When to use argument labels (a new approach)</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  5, 2016 at 11:00:00am</p></header><div class="content"><p>on Fri Feb 05 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; Here are then the examples of good use cases:<br>&gt;&gt; <br>&gt;&gt; No First Argument Labels<br>&gt;&gt; <br>&gt;&gt; a.readFrom(u, ofType: b)          // yes, satisfies rules 1 and 2<br>&gt;&gt; a.readFrom(source: u, ofType: b)  // no, source is explicitly derived by “From”<br>&gt;&gt; <br>&gt;&gt; Keep First Argument Labels Labels<br>&gt;&gt; <br>&gt;&gt; a.read(u, ofType: b)          // no, it’s not clear what u’s role is<br>&gt;&gt; a.read(source: u, ofType: b)  // yes, the source being read is not clear, it could be stdin,<br>&gt;<br>&gt; Okay, but which should it be? `readFrom(_:...)` or `read(source:...)`?<br>&gt; These two APIs have very different flavors, and you seem to be saying<br>&gt; that either one is okay. That&#39;s not a very good thing if we&#39;re trying<br>&gt; to define what &quot;Swifty&quot; APIs look like.<br></p><p>One good way to make this determination, if the answer isn&#39;t obvious:<br>“which choice makes for simpler guidelines?”<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

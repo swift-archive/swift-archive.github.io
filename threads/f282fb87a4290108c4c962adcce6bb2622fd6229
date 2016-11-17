@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c0196d32c5877957590e3b9f6e74df09?s=50"></div><header><strong>#pragma message?</strong> from <string>Ron Olson</string> &lt;tachoknight at gmail.com&gt;<p>October 25, 2016 at 11:00:00am</p></header><div class="content"><p>Hi all-<br></p><p>I have an iOS project that has multiple schemes for determining which <br>backend server to talk to (dev/staging/prod) as well as some custom text <br>for the version label. I&#39;ve been using the -D flag during compiling to <br>invoke the right #if/#elseif/#endif pragmas in my Swift code, but I <br>admit I&#39;m always a bit apprehensive; is it *really* going to use the <br>prod URL? In C++ projects I&#39;d use a #pragma message to ensure I was <br>truly in a #if block but that doesn&#39;t seem to work with Swift.<br></p><p>Is there any way to put some harmless text in the compiler output so as <br>to assuage my fears that my compiled binary will be wrong?<br></p><p>Thanks,<br></p><p>Ron<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161025/f2826229/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

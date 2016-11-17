@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/52752079730726d693332706c65540b8?s=50"></div><header><strong>Help swift-clang on Windows crashes (2016-06-06)</strong> from <string>Sangjin Han</string> &lt;tinysun.net at gmail.com&gt;<p>June 15, 2016 at 08:00:00am</p></header><div class="content"><p>Hi, everyone.<br></p><p>I built clang compiler on Windows (MSVC) from apple/swift-clang and<br>apple/swift-llvm of github. That worked fine when used the tag<br>&#39;swift-DEVELOPMENT-SNAPSHOT-2016-05-09-a&#39;.<br></p><p>But, in case of recent snapshots of 2016-05-31, 2016-06-06, the compiler<br>couldn&#39;t compile even the standard headers.<br>The crashed sample source has only included &lt;string&gt;.<br>------------<br>#include &lt;string&gt;<br>------------<br></p><p>I factored the crashing part.<br></p><p>----BEGIN OF TestCode.cpp--------<br>template&lt;class T&gt;<br>class dummy {};<br></p><p>template&lt;class T&gt;<br>class Foo<br>{<br>public:<br>  virtual dummy&lt;int&gt; bar()<br>  {<br>    return dummy&lt;int&gt;();<br>  }<br>  virtual ~Foo() {}<br>};<br></p><p>template class Foo&lt;int&gt;;<br>----END-----<br></p><p>The compiler can generates the TestCode.ast with -emit-ast option, but can<br>not generates TestCode.obj.<br></p><p>I captured the output of the compiler.<br></p><p>clang  -fms-compatibility-version=19 -c TestCode.cpp<br></p><p>#0 0x00007ff6dc515d83<br>(C:\Work\swift_msvc\build\NinjaMSVC\llvm\Release\bin\clang.exe+0xaa5d83)<br>#1 0x00007ff6dc50d5f3<br>(C:\Work\swift_msvc\build\NinjaMSVC\llvm\Release\bin\clang.exe+0xa9d5f3)<br>.....<br>#24 0x00007ff6dd7e75ec<br>(C:\Work\swift_msvc\build\NinjaMSVC\llvm\Release\bin\clang.exe+0x1d775ec)<br>#25 0x00007ffd371a8102 BaseThreadInitThunk<br>(C:\WINDOWS\system32\KERNEL32.DLL+0x18102)<br>#26 0x00007ffd37c4c5b4 RtlUserThreadStart<br>(C:\WINDOWS\SYSTEM32\ntdll.dll+0x5c5b4)<br>clang.exe: error: clang frontend command failed due to signal (use -v to<br>see invocation)<br>clang version 3.9.0 (https://github.com/apple/swift-clang<br>cb7d619933534f63ae31a0a8c392bf2f681391c1) (<br>https://github.com/apple/swift-llvm<br>cec921ea635adf6f87febee5ad59d3bacb952ef9)<br>Target: x86_64-pc-windows-msvc<br>Thread model: posix<br>InstalledDir: C:\Work\swift_msvc\build\NinjaMSVC\llvm\Release\bin<br>clang.exe: note: diagnostic msg: PLEASE submit a bug report to<br>http://llvm.org/bugs/ and include the crash backtrace, preprocessed source,<br>and associated run script.<br>clang.exe: note: diagnostic msg:<br>********************<br></p><p>PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:<br>Preprocessed source(s) and associated run script(s) are located at:<br>clang.exe: note: diagnostic msg:<br>C:\Users\Han\AppData\Local\Temp\TestCode-69db08.cpp<br>clang.exe: note: diagnostic msg:<br>C:\Users\Han\AppData\Local\Temp\TestCode-69db08.sh<br>clang.exe: note: diagnostic msg:<br></p><p>********************<br></p><p><br>Han Sangjin<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160615/a1d85e7b/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

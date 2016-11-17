@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b181eb3b7d7ec7dc856908918ea14a1f?s=50"></div><header><strong>Russian version of &quot;The Swift Programming Language&quot;</strong> from <string>Ivan Akulov</string> &lt;info at swiftbook.ru&gt;<p>August 17, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi, my name is Ivan Akulov!<br></p><p>Today I finished translation of the “The Swift Programming Language” to the russian language. <br>Whole translation is available here: http://swiftbook.ru/doc/about-swift<br></p><p>I also made a github repo for you to send me issues:<br>https://github.com/IvanAkulov/The-Swift-Programming-Language-RUS<br></p><p>PDF version of the book will be complete in 10-15 days.<br></p><p>I really hope that you will find it useful.<br></p><p>Thank you for your attention!<br></p><p> 	<br>Ivan Akulov &lt;mailto:info at swiftbook.ru&gt;<br>SwiftBook.ru &lt;http://swiftbook.ru/&gt;, &lt;http://g.co/maps/wnbde&gt;<br>vk.com &lt;https://vk.com/swiftbook&gt;<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160817/3520d6c7/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/02283cbd427bd69db2ae4dcf8c4cfda4?s=50"></div><header><strong>Russian version of &quot;The Swift Programming Language&quot;</strong> from <string>gian enrico conti</string> &lt;ingconti at ingconti.com&gt;<p>August 17, 2016 at 05:00:00pm</p></header><div class="content"><p>interested in an ITALIAN tranlastion?<br></p><p><br>&gt; On 17 Aug 2016, at 16:27, Ivan Akulov via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; Hi, my name is Ivan Akulov!<br>&gt; <br>&gt; Today I finished translation of the “The Swift Programming Language” to the russian language. <br>&gt; Whole translation is available here: http://swiftbook.ru/doc/about-swift &lt;http://swiftbook.ru/doc/about-swift&gt;<br>&gt; <br>&gt; I also made a github repo for you to send me issues:<br>&gt; https://github.com/IvanAkulov/The-Swift-Programming-Language-RUS &lt;https://github.com/IvanAkulov/The-Swift-Programming-Language-RUS&gt;<br>&gt; <br>&gt; PDF version of the book will be complete in 10-15 days.<br>&gt; <br>&gt; I really hope that you will find it useful.<br>&gt; <br>&gt; Thank you for your attention!<br>&gt; <br>&gt;  	<br>&gt; Ivan Akulov &lt;mailto:info at swiftbook.ru&gt;<br>&gt; SwiftBook.ru &lt;http://swiftbook.ru/&gt;, &lt;http://g.co/maps/wnbde&gt;<br>&gt; vk.com &lt;https://vk.com/swiftbook&gt;<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org &lt;mailto:swift-dev at swift.org&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev &lt;https://lists.swift.org/mailman/listinfo/swift-dev&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160817/13c51c8d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

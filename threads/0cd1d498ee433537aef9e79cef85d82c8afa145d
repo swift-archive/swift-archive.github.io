@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>Swift 2.2 release process</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>January  5, 2016 at 06:00:00pm</p></header><div class="content"><p>I have posted a blog post to Swift.org that documents the official release process for Swift 2.2:<br></p><p>  https://swift.org/blog/swift-2-2-release-process/<br></p><p>Please feel free to email this list or me directly questions about the process.  In a nutshell:<br></p><p>Swift 2.2 is a mostly source-compatible release with Swift 2.1.<br>Swift 2.2 officially branches from master on January 13.<br>The exact release date is TBD, but Swift 2.2 will be in convergence for a few months and become final sometime in March to May of 2016.<br></p><p>Please see the post for more details.<br></p><p>Cheers,<br>Ted<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160105/0cd1145d/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

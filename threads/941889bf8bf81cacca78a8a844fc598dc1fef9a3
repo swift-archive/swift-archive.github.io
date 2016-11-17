@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Remove destructive consumption from Sequence</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 27, 2016 at 03:00:00pm</p></header><div class="content"><p>on Mon Jun 27 2016, Anton Zhilin &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Dave Abrahams via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt;<br>&gt;&gt; I should be clear up-front about the main problem I&#39;m trying to solve:<br>&gt;&gt; <br>&gt;&gt; Today, people see a beautiful, simple protocol (Sequence) to which many<br>&gt;&gt; things conform. They don&#39;t recognize that there&#39;s a semantic restriction<br>&gt;&gt; (assume you can make only a single-pass!) on it, so they write libraries<br>&gt;&gt; of functions that may make multiple passes over Sequences.  They test<br>&gt;&gt; their libraries with the most commonly-available Sequences, e.g. Arrays<br>&gt;&gt; and Ranges, which happen to be multi-pass.  Their tests pass!  But their<br>&gt;&gt; constraints are wrong, their whole model of how to write generic code<br>&gt;&gt; over sequences is wrong, and some of their code is wrong.<br>&gt;<br>&gt; This is a mistake that I see more often than I want to: designers of <br>&gt; development tools underestimate abilities of developers, and end up <br>&gt; restricting many of them.<br></p><p>In what way am I underestimating the abilities of developers?<br></p><p>&gt; My point is that we should impose minimal requirements on custom data<br>&gt; types. Quoting yourself:<br>&gt;<br>&gt;&gt; In this case, protocols used to interface with the language<br>&gt;&gt; at the lowest levels may be purely about syntax.<br>&gt;<br>&gt; So there should be a protocol for building into for-in loops that <br>&gt; requires only that the sequence should be iterable once. Currently, we <br>&gt; have Sequence for that. If we remove destructive consumption from <br>&gt; Sequence, then there should be a super-protocol SinglePassSequence or <br>&gt; Forinable (excuse the pun).<br></p><p>Yes.<br></p><p>&gt; But even if we do this, I still don&#39;t understand the intentions. If a<br>&gt; Sequence is multi-pass, then we can satisfy requirements of<br>&gt; Collection, as already noted in the discussion. Why should we keep<br>&gt; Sequence at all, then? Then let&#39;s remove it and rename<br>&gt; SinglePassSequence to Sequence???<br></p><p>This kinds of decisions are all part of the discussion.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

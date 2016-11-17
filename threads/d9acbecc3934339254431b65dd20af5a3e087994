@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/225242c158c149635596c786c8971fbc?s=50"></div><header><strong>[Draft] Mixins</strong> from <string>Niall Young</string> &lt;niall at iinet.net.au&gt;<p>April 22, 2016 at 10:00:00am</p></header><div class="content"><p>On Thu, 21 Apr 2016 James Froggatt &lt;conductator at ntlworld.com&gt; wrote:<br></p><p>&gt; Could traits be constructed from protocol extensions in this way, or otherwise end up competing with them if just some of these features were to be added? My concern is that adding traits as a separate language feature could put them in direct competition with protocol extensions.<br></p><p>They should definitely be some _form_ of protocol extension, just the rules around their consumption would be different to the current constraint of static vs. dynamic dispatch.<br></p><p>Traits could be a second example of the underlying Type behind Extensions, or Trait functionality could be added to Extensions directly in terms of how they are consumed, how conflicts are resolved, and how dynamic vs. static dispatch is handled, independent of any consumer-level requirements or rules.<br></p><p>--<br>Niall Young<br>niall at iinet.net.au<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

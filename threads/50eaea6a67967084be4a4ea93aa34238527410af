@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Rejected] SE-0123: Disallow coercion to optionals in operator arguments</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July 20, 2016 at 05:00:00pm</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0123-disallow-value-to-optional-coercion-in-operator-arguments.md<br></p><p>The review of &quot;SE-0123: Disallow coercion to optionals in operator arguments&quot; ran from July 12...19. The proposal has been *rejected*.<br></p><p>The majority of the feedback on this proposal was opposed to it.  While the goal of the proposal is laudable, SE-0121 eliminated the most surprising problem that this proposal aimed to address, and the rest of it (notably the ?? operator) can be addressed in other ways in the Swift 3 timeframe.  The core team recommends that the ?? case be handled by having the compiler produce a warning when the left side of the ?? operator is implicitly promoted to optional.  In the post-Swift 3 timeframe, we can investigate other broader options for solving this problem more generally (e.g. a new parameter attribute).<br></p><p>Thank you to Mark Lacey, Doug Gregor, and Jacob Bandes-Storch for driving this discussion forward.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

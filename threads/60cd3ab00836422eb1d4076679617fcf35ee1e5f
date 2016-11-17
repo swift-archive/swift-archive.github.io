@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/545980cbc54981200c367ddbac27954a?s=50"></div><header><strong>How to &#39;import&#39; 3rd-party frameworks and files when using the /usr/bin/swift REPL</strong> from <string>has</string> &lt;hengist.podd at nuggle.uk&gt;<p>September 23, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi folks,<br></p><p>I&#39;m working on a new &quot;AppleScript&quot; (Apple event) bridge, SwiftAutomation <br>&lt;https://bitbucket.org/hhas/swiftae&gt;, and while the code&#39;s done bar <br>cleaning and testing, I&#39;ve gotten stuck on how to write a step-by-step <br>tutorial for it.<br></p><p><br>As I understand it, the recommended way to provide user tutorials is as <br>one or more Playgrounds embedded within the Xcode project itself, as <br>that gives them automatic access to the project&#39;s framework products, <br>Source files, etc, and the tutorial text itself included as `//!` comments.<br></p><p>However, Playgrounds have one giant limitation: each time the user adds <br>or changes ONE line of code, ALL OF THE CODE in the playground is <br>automatically re-executed. That&#39;s not a problem when the code doesn&#39;t <br>have any external side-effects, but it&#39;s a deal killer here: repeatedly <br>sending a `make` command will spawn multiple extra TextEdit documents; <br>repeatedly sending a `delete` command could wipe too many files in <br>Finder, and so on. Switching the playground to manual execution doesn&#39;t <br>really help either, since the point of a step-by-step tutorial is to <br>enter one line at a time and see what it does before moving on to the <br>next step. So Playgrounds are a non-starter for this kind of use - <br>unless I&#39;ve missed something?<br></p><p><br>Luckily, Swift also provides an old-school interactive REPL at <br>`/usr/bin/swift`, which allows Swift code to be entered and executed in <br>traditional single-line mode, while also preserving any variable <br>assignments for reuse in later lines. Thus the user can safely `make` a <br>new TextEdit document on line 1, modify its contents on line 2, and save <br>and close it on line 3, and TextEdit will perform each of these steps <br>immediately and only once. However, I can&#39;t figure out how to make the <br>`swift ...` command do the following:<br></p><p>1. Import the `SwiftAutomation.framework` from my Xcode project (since <br>Swift 3 still doesn&#39;t allow us to build standalone frameworks for <br>installing into `~/Library`).<br></p><p>2. Read and compile additional Swift source files (`TextEditGlue.swift`, <br>`FinderGlue.swift`, etc) from my Xcode project, so that those files&#39; <br>classes are also available for use when the REPL starts.<br></p><p>Can the `swift` command do both these things (I don&#39;t mind if it takes a <br>couple seconds to launch while it compiles the glue files), and if it <br>can what is the magical incantation for doing so?<br></p><p><br>Many thanks,<br></p><p>has<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

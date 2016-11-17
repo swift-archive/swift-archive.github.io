@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5cb216f14329ffeb7bd3a6bed45277e5?s=50"></div><header><strong>what&#39;s ^ operator for</strong> from <string>Mr Bee</string> &lt;pak.lebah at yahoo.com&gt;<p>September 18, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi all, I wrote this in XCode Playground…<br>let i = 2^2print(i)<br>It runs fine without any errors and print 0, while I expect it to print 4 from 2 power by 2 or 2². Swift ebook and even Google gave me nothing on this.<br>What did I miss?<br>Thank you.<br>Regards,<br>–Mr Bee<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160918/8ffbb1df/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5cb216f14329ffeb7bd3a6bed45277e5?s=50"></div><header><strong>Bls: what&#39;s ^ operator for</strong> from <string>Mr Bee</string> &lt;pak.lebah at yahoo.com&gt;<p>September 18, 2016 at 12:00:00pm</p></header><div class="content"><p>Forget it. Just found the answer myself on Swift ebook. It&#39;s a bitwise xor operator. And there&#39;s no power operator in Swift. Sorry.<br></p><p>I&#39;ve looked for this for hours. Why did I find the answer after I asked here? Life. :)<br>–Mr Bee<br> <br></p><p>    Pada Minggu, 18 September 2016 19:41, Mr Bee &lt;pak.lebah at yahoo.com&gt; menulis:<br> <br></p><p> Hi all, I wrote this in XCode Playground…<br>let i = 2^2print(i)<br>It runs fine without any errors and print 0, while I expect it to print 4 from 2 power by 2 or 2². Swift ebook and even Google gave me nothing on this.<br>What did I miss?<br>Thank you.<br>Regards,<br>–Mr Bee<br></p><p><br>   <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160918/ad2ee0a6/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/02645fccf0e885c607f3d07a4abf4f95?s=50"></div><header><strong>what&#39;s ^ operator for</strong> from <string>Saagar Jha</string> &lt;saagar at saagarjha.com&gt;<p>September 18, 2016 at 05:00:00pm</p></header><div class="content"><p>The ^ operator performs a bitwise XOR &lt;https://en.wikipedia.org/wiki/Bitwise_operation#XOR&gt;. This is not the same as exponentiation.<br></p><p>Saagar Jha<br></p><p><br></p><p>&gt; On Sep 18, 2016, at 05:41, Mr Bee via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi all,<br>&gt;  <br>&gt; I wrote this in XCode Playground…<br>&gt; <br>&gt; let i = 2^2<br>&gt; print(i)<br>&gt; <br>&gt; It runs fine without any errors and print 0, while I expect it to print 4 from 2 power by 2 or 2². Swift ebook and even Google gave me nothing on this.<br>&gt; <br>&gt; What did I miss?<br>&gt; <br>&gt; Thank you.<br>&gt; <br>&gt; Regards,<br>&gt; <br>&gt; –Mr Bee<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160918/26609e6c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

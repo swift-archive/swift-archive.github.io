@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/80d5f6bd33e46727b56cb239d8672136?s=50"></div><header><strong>Swift closure memory problem</strong> from <string>Alon Muroch</string> &lt;alonmuroch at gmail.com&gt;<p>May 27, 2016 at 10:00:00am</p></header><div class="content"><p>Hi everyone !<br>Its my first time writing here so i hope i could contribute.<br></p><p>The following code seems to create a retain cycle that doesn&#39;t let<br>SomeClass1 to release. Am i missing something ?<br></p><p><br>​​Alon.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160527/58dd1c77/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: Screen Shot 2016-05-27 at 10.00.21 AM.png<br>Type: image/png<br>Size: 37745 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160527/58dd1c77/attachment.png&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a6a2eebe83a60a4b42395145484cda15?s=50"></div><header><strong>Swift closure memory problem</strong> from <string>Daniel Vollmer</string> &lt;lists at maven.de&gt;<p>May 27, 2016 at 10:00:00am</p></header><div class="content"><p>Hi Alon,<br></p><p>&gt; On 27 May 2016, at 09:01, Alon Muroch via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi everyone ! <br>&gt; Its my first time writing here so i hope i could contribute. <br></p><p>Your question would be more appropriate for the swift-users list. This list is mainly for developers of the Swift toolchain (e.g. the swift compiler) and not really for questions about writing (other) code in Swift.<br></p><p>	Daniel.<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3b3f5abbe48b7127e20fd69808c714bf?s=50"></div><header><strong>[Pitch] String prefix operator</strong> from <string>Charlie Monroe</string> &lt;charlie at charliemonroe.net&gt;<p>June 17, 2016 at 07:00:00am</p></header><div class="content"><p>Motivational example:<br></p><p>var urlString = self.urlString<br>if urlString.hasPrefix(&quot;//&quot;) {<br>	urlString = &quot;http:&quot; + urlString // urlString needs to be typed twice<br>}<br></p><p>While there is currently an easy way to append string using +=, there is no shortcut for prefixing a string. What I propose is adding a =+ operator for prefixing the string:<br></p><p>urlString =+ &quot;http:&quot;<br></p><p>Would anyone else find it useful?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>[Pitch] String prefix operator</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>June 17, 2016 at 04:00:00am</p></header><div class="content"><p>&gt; urlString =+ &quot;http:&quot;<br>&gt; <br>&gt; Would anyone else find it useful?<br></p><p>Well, I mean, maybe sometimes, in terms of expressiveness. But there are a few problems:<br></p><p>* It&#39;s kind of misleading, because this is very likely to be *far* less efficient than `+=`. Rather than appending to the existing string buffer, it will probably have to completely rebuild it.<br>* The whole expression is backwards. It probably *ought* to be something more like `&quot;http:&quot; =+ urlString`, but that looks funny because assignment always flows to the left. Perhaps it would be better to define a left-to-right assignment operator, like `-&gt;`, and then use `-&gt;+` for this, except that&#39;d be kind of ridiculous.<br></p><p>In theory, this construct would be equally useful for other non-commutative operators, like `-` and `/` in arithmetic. In practice, I&#39;ve never seen any language do this. It just doesn&#39;t seem to be an operation people need that often, from what I can tell.<br></p><p>&gt; var urlString = self.urlString<br>&gt; if urlString.hasPrefix(&quot;//&quot;) {<br>&gt; 	urlString = &quot;http:&quot; + urlString // urlString needs to be typed twice<br>&gt; }<br></p><p>Well, you *can* do this:<br></p><p>	urlString.replaceSubrange(urlString.startIndex ..&lt; urlString.startIndex, with: &quot;http:&quot;)<br></p><p>Okay, so maybe that&#39;s not better by itself. But with a couple extension methods, we can do better:<br></p><p>	extension String {<br>		mutating func insert(_ string: String, at index: Index) {<br>			replaceSubrange(index..&lt;index, with: string)<br>		}<br>		<br>		mutating func prepend(_ string: String) {<br>			insert(string, at: startIndex)<br>		}<br>	}<br></p><p>Now we have:<br></p><p>	urlString.prepend(&quot;http:&quot;)<br></p><p>Much better—and without the issues of `=+`.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

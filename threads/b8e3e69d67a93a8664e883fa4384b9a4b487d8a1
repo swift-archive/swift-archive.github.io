@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>NDAs, Open Source, and the Iron Curtain</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>December  3, 2015 at 06:00:00pm</p></header><div class="content"><p>Can we take it as a given that all language development is now out and in the clear and that, outside of specific dev-tool enhancements, we will transparently see the full progression of incorporated, proposed, and planned changes through this list, the repo, and the swift.org &lt;http://swift.org/&gt; site?<br></p><p>Thanks in advance for clarification. -- Erica<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151203/b8e3d8a1/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>NDAs, Open Source, and the Iron Curtain</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>December  4, 2015 at 03:00:00pm</p></header><div class="content"><p>&gt; On Dec 3, 2015, at 5:00 PM, Erica Sadun &lt;erica at ericasadun.com&gt; wrote:<br>&gt; <br>&gt; Can we take it as a given that all language development is now out and in the clear and that, outside of specific dev-tool enhancements, we will transparently see the full progression of incorporated, proposed, and planned changes through this list, the repo, and the swift.org &lt;http://swift.org/&gt; site?<br></p><p>Hi Erica,<br></p><p>Nothing on swift.org or github is protected by an swift or apple NDA, we intend to do swift language design, evolution, and implementation in the open.<br></p><p>On the topic of Xcode, as usual, Apple folks don’t talk about or commit about future tools plans.  Also, when you get an Xcode beta or final release from apple, you’re still subject to its terms.<br></p><p>-Chris<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151204/3e448eef/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

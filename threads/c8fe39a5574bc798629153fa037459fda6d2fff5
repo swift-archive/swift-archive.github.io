@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4460f00336ff1bbfde48dda5adb917e1?s=50"></div><header><strong>[Pitch] Make the first parameter in a function declaration follow the same rules as the others</strong> from <string>David Condrau</string> &lt;david.condrau at appart15.com&gt;<p>March  9, 2016 at 11:00:00pm</p></header><div class="content"><p>+10^10<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8083ad16248b8c031cc10d44f47aa442?s=50"></div><header><strong>[Pitch] Make the first parameter in a function declaration follow the same rules as the others</strong> from <string>T.J. Usiyan</string> &lt;griotspeak at gmail.com&gt;<p>March  9, 2016 at 07:00:00pm</p></header><div class="content"><p>+1 Glad we&#39;ve arrived here.<br></p><p>On Wed, Mar 9, 2016 at 6:53 PM, David Condrau via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; +10^10<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160309/a18e6ffc/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

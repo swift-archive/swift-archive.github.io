@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>Fwd: [Review] SE-0084: Allow trailing commas in parameter lists and tuples</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>May 11, 2016 at 04:00:00pm</p></header><div class="content"><p>Resending to the list (thanks, Vladimir!)<br></p><p>-Thorsten <br></p><p>Anfang der weitergeleiteten E‑Mail:<br></p><p>&gt; Von: &quot;Vladimir.S&quot; &lt;svabox at gmail.com&gt;<br>&gt; Datum: 11. Mai 2016 um 14:58:33 MESZ<br>&gt; An: Thorsten Seitz &lt;tseitz42 at icloud.com&gt;<br>&gt; Betreff: Re: [swift-evolution] [Review] SE-0084: Allow trailing commas in parameter lists and tuples<br>&gt; <br>&gt; Thorsten, as I understand, by mistake you sent the email directly to me :-) Please resend to the list.<br>&gt; <br>&gt;&gt; On 11.05.2016 15:49, Thorsten Seitz wrote:<br>&gt;&gt; -1 to the proposal<br>&gt;&gt; I agree with everything Vladimir said.<br>&gt;&gt; <br>&gt;&gt; -Thorsten<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; Am 11. Mai 2016 um 14:31 schrieb &quot;Vladimir.S via swift-evolution&quot;<br>&gt;&gt; &lt;swift-evolution at swift.org&gt;:<br>&gt;&gt; <br>&gt;&gt;&gt;&gt; * What is your evaluation of the proposal?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; -1. I support the opinion that dictionary/array is different &quot;thing&quot; than<br>&gt;&gt;&gt; parameters in functions/methods and parameters in tuples.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; * Is the problem being addressed significant enough to warrant a change<br>&gt;&gt;&gt;&gt; to Swift?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I don&#39;t think so. For me the proposal is not solving a problem in Swift,<br>&gt;&gt;&gt; not improving Swift.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;       * Does this proposal fit well with the feel and direction of Swift?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I don&#39;t think so. For me the proposal adds confusion to Swift, especially<br>&gt;&gt;&gt; for novice coders. Like &quot;why comma placed here.. are we expecting some<br>&gt;&gt;&gt; additional parameters here.. is it the same as variable arguments&quot; etc<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;   * If you have used other languages or libraries with a similar<br>&gt;&gt;&gt;&gt; feature, how do you feel that this proposal compares to those?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I wanted trailing commas for array/dictionary in other languages, but not<br>&gt;&gt;&gt; for functions/methods/tuples.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;       * How much effort did you put into your review? A glance, a quick<br>&gt;&gt;&gt;&gt; reading, or an in-depth study?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Read the proposal and opinions in mailing list.<br>&gt;&gt;&gt; _______________________________________________<br>&gt;&gt;&gt; swift-evolution mailing list<br>&gt;&gt;&gt; swift-evolution at swift.org &lt;mailto:swift-evolution at swift.org&gt;<br>&gt;&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160511/75cfd0f4/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

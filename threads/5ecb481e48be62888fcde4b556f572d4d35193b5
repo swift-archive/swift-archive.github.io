@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/708abe8093c1b67c209e6713070d0fd0?s=50"></div><header><strong>Status of building Swift 3.0 on RHEL variants</strong> from <string>Lane Schwartz</string> &lt;dowobeha at gmail.com&gt;<p>September 22, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I was wondering if anyone has successfully build Swift 3.0 from source on<br>RHEL, whether there are any gotchas I should know about before I give it a<br>try.<br></p><p>If found this (<br>http://stackoverflow.com/questions/34073701/install-swift-language-on-centos-red-hat),<br>which indicated that at that time Swift build system wasn&#39;t working on<br>RHEL, but that post is fairly old.<br></p><p>Thanks,<br>Lane<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160922/5ecb93b5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c0196d32c5877957590e3b9f6e74df09?s=50"></div><header><strong>Status of building Swift 3.0 on RHEL variants</strong> from <string>Ron Olson</string> &lt;tachoknight at gmail.com&gt;<p>September 22, 2016 at 02:00:00pm</p></header><div class="content"><p>Yes, I have the 3.0-RELEASE version, from source, running perfectly on a <br>Fedora 24 instance.<br></p><p>I started with https://github.com/corinnekrych/swift-rpm, but it&#39;s a bit <br>out of date and I had to clone it and update the script and spec with <br>some changes; there are still a couple of manual steps but the end <br>result is a working copy of Swift et al. every time.<br></p><p>I&#39;ll post to the group when I have the updated info,<br></p><p>Ron<br></p><p>On 22 Sep 2016, at 14:28, Lane Schwartz via swift-users wrote:<br></p><p>&gt; Hi,<br>&gt;<br>&gt; I was wondering if anyone has successfully build Swift 3.0 from source <br>&gt; on<br>&gt; RHEL, whether there are any gotchas I should know about before I give <br>&gt; it a<br>&gt; try.<br>&gt;<br>&gt; If found this (<br>&gt; http://stackoverflow.com/questions/34073701/install-swift-language-on-centos-red-hat),<br>&gt; which indicated that at that time Swift build system wasn&#39;t working on<br>&gt; RHEL, but that post is fairly old.<br>&gt;<br>&gt; Thanks,<br>&gt; Lane<br></p><p><br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160922/ed466429/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

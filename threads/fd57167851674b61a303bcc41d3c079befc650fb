@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>Argument labels</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>October 10, 2016 at 09:00:00pm</p></header><div class="content"><p>This goes beyond type significance as far as I can tell. <br></p><p>Bug report?<br></p><p>-- E<br></p><p>enum Sample { case foo(Int), bar(label: Int) }<br></p><p>let aFoo: Sample = .foo(1)<br>let aBar: Sample = .bar(label: 1) // requires label<br></p><p>if case let .foo(value) = aFoo { print(value) } // works<br>if case let .bar(value) = aBar { print(value) } // works<br>if case let .foo(label: value) = aFoo { print(value) } // works<br>if case let .bar(label: value) = aBar { print(value) } // works<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

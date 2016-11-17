@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9d9d4c769b20cd12b15f4e5b991b4ca5?s=50"></div><header><strong>SR-1406: Xcode crashing while indexing</strong> from <string>Timothy J. Wood</string> &lt;tjw at omnigroup.com&gt;<p>May 13, 2016 at 09:00:00am</p></header><div class="content"><p>I’m still hitting https://bugs.swift.org/browse/SR-1406 with the latest Swift 3 snapshot. To try to help track this down, I’ve build a local snapshot with a trimmed down version of `./utils/build-toolchain local.swift` (just removing the stuff that looked test related):<br></p><p>% ./utils/build-script --ios --tvos --watchos --lldb --llbuild --swiftpm --release-debuginfo --build-subdir=buildbot_osx --ios --tvos --watchos --assertions --no-swift-stdlib-assertions -- --lldb-no-debugserver --lldb-use-system-debugserver --lldb-build-type=Release --verbose-build --build-ninja --build-swift-static-stdlib --compiler-vendor=apple &#39;--swift-sdks=OSX;IOS;IOS_SIMULATOR;TVOS;TVOS_SIMULATOR;WATCHOS;WATCHOS_SIMULATOR&#39; --install-swift --install-lldb --install-llbuild --install-swiftpm --install-destdir=/Users/bungi/Source/Swift/swift/swift-nightly-install --darwin-install-extract-symbols --install-symroot=/Users/bungi/Source/Swift/swift/swift-nightly-symroot --install-prefix=/Library/Developer/Toolchains/swift-LOCAL-2016-05-13-a.xctoolchain/usr --reconfigure --installable-package=/Users/bungi/Source/Swift/swift/swift-LOCAL-2016-05-13-a-osx.tar.gz --swift-enable-ast-verifier=0 &#39;--swift-install-components=compiler;clang-builtin-headers;stdlib;sdk-overlay;license;sourcekit-xpc-service;swift-remote-mirror-headers&#39; &#39;--llvm-install-components=libclang;libclang-headers&#39; --installable-package=/Users/bungi/Source/Swift/swift/swift-LOCAL-2016-05-13-a-osx.tar.gz --symbols-package=/Users/bungi/Source/Swift/swift/swift-LOCAL-2016-05-13-a-osx-symbols.tar.gz --darwin-toolchain-bundle-identifier=local.swift.20160513 &#39;--darwin-toolchain-display-name=Local Swift Development Snapshot 2016-05-13&#39; &#39;--darwin-toolchain-display-name-short=Local Swift Development Snapshot&#39; --darwin-toolchain-name=swift-LOCAL-2016-05-13-a --darwin-toolchain-version=swift-LOCAL-2016-05-13-a --darwin-toolchain-alias=Local<br></p><p><br>Xcode then crashes here:<br></p><p>Thread 13:: Dispatch queue: com.apple.xcode.swift.indexer<br>0   sourcekitd                    	0x00000001143eaa50 abort + 32 (Signals.inc:440)<br>1   sourcekitd                    	0x00000001143eaa21 __assert_rtn + 81<br>2   sourcekitd                    	0x0000000114367fe0 sourcekitd_send_request + 912 (sourcekitd.cpp:186)<br>3   com.apple.dt.IDELanguageSupportCore	0x000000010f889bc7 -[IDEIndexSwiftDataSource issueSourceKitRequest:requestBlock:responseBlock:] + 235<br>4   com.apple.dt.IDELanguageSupportCore	0x000000010f88be33 __46-[IDEIndexSwiftDataSource generateDataForJob:]_block_invoke + 479<br>5   com.apple.dt.DVTFoundation    	0x0000000108681667 __DVTDispatchAsync_block_invoke + 293<br>6   libdispatch.dylib             	0x00007fff8e4f593d _dispatch_call_block_and_release + 12<br>7   libdispatch.dylib             	0x00007fff8e4ea40b _dispatch_client_callout + 8<br>8   libdispatch.dylib             	0x00007fff8e4ef03b _dispatch_queue_drain + 754<br>9   libdispatch.dylib             	0x00007fff8e4f5707 _dispatch_queue_invoke + 549<br>10  libdispatch.dylib             	0x00007fff8e4edd53 _dispatch_root_queue_drain + 538<br>11  libdispatch.dylib             	0x00007fff8e4edb00 _dispatch_worker_thread3 + 91<br>12  libsystem_pthread.dylib       	0x00007fff9bb294de _pthread_wqthread + 1129<br>13  libsystem_pthread.dylib       	0x00007fff9bb27341 start_wqthread + 13<br></p><p><br>This doesn’t seem particularly informative — does anyone have suggestions on extra logging/debug options to help track this down?<br></p><p>-tim<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

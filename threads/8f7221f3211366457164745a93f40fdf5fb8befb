@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>can module cache fulfils empty -sdk path. (iOS)</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>March 31, 2016 at 11:00:00am</p></header><div class="content"><p>Hi, I want to reduce the baggage &amp; compile time for system frameworks by<br>providing compiled framework pcm files.<br></p><p>does pcm files are enough for ClangImporter(it&#39;s ok if it still needs<br>sdk/include).<br></p><p>Every time I run swift compiler on iOS device/simulator to compile a simple<br>helloworld.swift file, it creates a new subdirectory with random name under<br>tmp directory and compiles system framework modules to pcm files.<br></p><p>Even the pcm file name contains random string along with framework name.<br></p><p>With all the above what workflow should I follow to ensure ClangImporter<br>gets what it wants without compiling modules i.e I mean to compile all the<br>modules to pcm files once[offline] and tell Clang/ClangImporter to use them.<br></p><p>It looks like *-fmodule-cache* flag is the one I have to use, but confused<br>about the pcm files containing random string.<br></p><p>Thanks<br>Ramakrishna<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160331/8f72befb/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>can module cache fulfils empty -sdk path. (iOS)</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>March 31, 2016 at 01:00:00pm</p></header><div class="content"><p>small correction to my question, The flag for swift is<br>*-module-cache-path * not<br> *-fmodule-cache.*<br></p><p>Thanks<br></p><p>Ramakrishna<br></p><p>On Thu, Mar 31, 2016 at 11:46 AM, Ramakrishna Mallireddy &lt;<br>ramakrishna.malli at gmail.com&gt; wrote:<br></p><p>&gt; Hi, I want to reduce the baggage &amp; compile time for system frameworks by<br>&gt; providing compiled framework pcm files.<br>&gt;<br>&gt; does pcm files are enough for ClangImporter(it&#39;s ok if it still needs<br>&gt; sdk/include).<br>&gt;<br>&gt; Every time I run swift compiler on iOS device/simulator to compile a<br>&gt; simple helloworld.swift file, it creates a new subdirectory with random<br>&gt; name under tmp directory and compiles system framework modules to pcm files.<br>&gt;<br>&gt; Even the pcm file name contains random string along with framework name.<br>&gt;<br>&gt; With all the above what workflow should I follow to ensure ClangImporter<br>&gt; gets what it wants without compiling modules i.e I mean to compile all the<br>&gt; modules to pcm files once[offline] and tell Clang/ClangImporter to use them.<br>&gt;<br>&gt; It looks like *-fmodule-cache* flag is the one I have to use, but<br>&gt; confused about the pcm files containing random string.<br>&gt;<br>&gt; Thanks<br>&gt; Ramakrishna<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160331/a072cc9a/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

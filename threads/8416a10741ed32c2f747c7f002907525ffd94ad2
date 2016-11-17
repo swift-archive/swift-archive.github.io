@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Default bounds subscript for BidirectionalCollection</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>June 28, 2016 at 09:00:00pm</p></header><div class="content"><p>I expected the following code to compile:<br></p><p>struct Wrapper&lt;Element&gt;: BidirectionalCollection {<br>    <br>    var elements: [Element]<br>    <br>    var startIndex: Int { return 0 }<br>    var endIndex: Int { return elements.count }<br>    <br>    func index(after index: Int) -&gt; Int { return index + 1 }<br>    func index(before index: Int) -&gt; Int { return index - 1 }<br>    <br>    subscript(position: Int) -&gt; Element {<br>        return elements[position]<br>    }<br>    <br>}<br></p><p>However, I got a long list of errors. I tried adding this:<br></p><p>extension Wrapper {<br>    <br>    subscript(bounds: Range&lt;Int&gt;) -&gt; BidirectionalSlice&lt;Wrapper&gt; {<br>        return BidirectionalSlice(base: self, bounds: bounds)<br>    }<br>    <br>}<br></p><p>But not Xcode shows an interesting error message: “Type `Wrapper&lt;Element&gt;.Index` does not conform to protocol `Comparable`”. Surely, Wrapper&lt;Element&gt;.Index is just Int which can be inferred from the startIndex property, for example. I tried setting the Index type explicitly:<br></p><p>struct Wrapper&lt;Element&gt;: BidirectionalCollection {<br>    typealias Index = Int<br>    ...<br>}<br></p><p>Now the code finally compiles. Bug?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160628/84164ad2/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>[Foundation] Remove/disable availability declarations on OSX? What to do with them?</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>May 18, 2016 at 01:00:00pm</p></header><div class="content"><p>I’m trying to fix Foundation on OSX (or am I doing something wrong? I was surprised to find it didn’t build)<br></p><p>I’ve run in to a problem, though: swift is telling me that certain APIs are not available:<br></p><p>&gt; Foundation/NSNumberFormatter.swift:19:70: error: &#39;ordinalStyle&#39; is only available on OS X 10.11 or newer<br>&gt; internal let kCFNumberFormatterOrdinalStyle = CFNumberFormatterStyle.ordinalStyle<br>&gt;                                                                      ^<br>&gt; Foundation/NSNumberFormatter.swift:19:70: note: add @available attribute to enclosing let<br>&gt; internal let kCFNumberFormatterOrdinalStyle = CFNumberFormatterStyle.ordinalStyle<br>&gt;                                                                      ^<br></p><p>That’s because the CoreFoundation headers have availability declarations on them.<br>It obviously doesn’t make sense for us to keep them (and for the resulting swift Foundation project to inherit them), because we’re building a toolchain and defining all of those symbols, not linking against the system versions.<br></p><p>So in order to build CoreFoundation/Foundation for OSX, we’d need to remove these declarations from the headers. Is there any problem with that? Are they synced to anything at Apple HQ?<br></p><p>Thanks<br></p><p>Karl<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/44b9c3e92a40313850fdbc2cb0abdef7?s=50"></div><header><strong>Generic type for a generic type?</strong> from <string>Jon Shier</string> &lt;jon at jonshier.com&gt;<p>September 20, 2016 at 05:00:00pm</p></header><div class="content"><p>Swifters:<br>	I’m running into a type inference problem when attempting to pass a generic type which is generic to a generic type to a function which expects a generic type. I’ll explain:<br></p><p>I have a function:<br>func add&lt;Observer: ProcedureObserver&gt;(observer: Observer) where Observer.Procedure == Procedure<br></p><p>Which I’m sending a parameter of type:<br></p><p>struct BlockObserver&lt;T: ProcedureProcotol&gt;: ProcedureObserver<br></p><p>Which has been provided a type through this function:<br></p><p>func networkProcedureProgressViewObserver&lt;T: URLRequestRoutable, U: Decodable&gt;() -&gt; BlockObserver&lt;NetworkProcedure&lt;T, U&gt;&gt; where U == U.DecodedType<br></p><p>However, calling add(observer: networkProcedureProgressViewObserver()) results in the error: Generic parameter ‘Observer’ could not be inferred. I’ve tried everything I can think of to help the inference but nothing works. Am I correct in thinking this is a limitation of the current generics system not being able to propagate the type information from NetworkProcedure&lt;T, U&gt; to BlockObserver&lt;NetworkProcedure&lt;T, U&gt;&gt; to the function?<br></p><p><br></p><p>Jon<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

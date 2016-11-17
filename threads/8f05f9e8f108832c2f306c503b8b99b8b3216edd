@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0e8516d3703e35b7df26986815b23e7a?s=50"></div><header><strong>[SE-0075] Teaching Namebinding About IfConfig Resolution</strong> from <string>Robert Widmann</string> &lt;devteam.codafi at gmail.com&gt;<p>November  6, 2016 at 09:00:00pm</p></header><div class="content"><p>Hello all,<br></p><p>For context, I spent the weekend seeing what I could do about SE-0075 &lt;https://bugs.swift.org/browse/SR-1560&gt;.  From the last conversation I had with Jordan (which is summed up in the linked JIRA ticket pretty well), this kind of operation is currently very expensive and hence not as simple a matter as just making Parse ask the ASTContext to load modules.  I wound up with a patch &lt;https://github.com/apple/swift/compare/master...CodaFi:fine-imported-goods&gt; that mostly divests Parse of the responsibility of resolving compilation condition blocks.  This defers the bulk of the resolution work to a walker in NameBinding (increasingly, a file becoming less and less about binding names!).  Problems arose when I thought about how best to resolve these condition clauses in the walker and I tried replicating the gist of what Parse was doing anyway. <br></p><p>For reference, when the parser encounters a #if in the middle of parsing a statement it parses the conditions and their bodies then evaluates them on the spot and reparents the freshly-parsed statements under the “active clause” to whatever enclosing aggregate statement they belong to (usually the top-level or a braced statement block).  For decls, the logic is a bit more convoluted due to the tangled web of callbacks in parseDecl, but it does much the same thing wherein active decls are reparented as members of the enclosing aggregate declaration.<br></p><p>From the Walker’s perspective, this means traversing the AST, evaluating any latent #if-conditions, and reparenting statements and declarations thereby “collapsing” the config (or marking it evaluated, etc.).  The approach in the NameBinding part of the patch is messy, but it works for simple cases.  It gets into trouble when in parse-as-library mode tries to reparent decls to the SourceFile itself because there is no longer a TopLevelCodeDecl they can be a part of.  The approach in the patch causes serious issues with decl scoping as the reparenting process doesn’t actually switch the scopes of top-level decls and they wind up being deallocated prematurely.  This Crashes The Compiler™.<br></p><p>I know there are more principled ways of approaching this, and I’m wondering what ideas anybody might have to help me get this resolved.  Implementing `canImport` on top of this patch is incredibly simple, so I’m hoping we can get the hard part out of the way to start staging things in sooner rather than later.<br></p><p>Thanks,<br></p><p>~Robert Widmann <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161106/8f056edd/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

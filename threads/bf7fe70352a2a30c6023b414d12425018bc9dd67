@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Change guarantee for GeneratorType.next() to always return nil past end</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March  7, 2016 at 06:00:00am</p></header><div class="content"><p>on Sun Mar 06 2016, Patrick Pijnappel &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; My intuition says the extra state &amp; branch needed for generators like<br>&gt; TakeWhile could very well be optimized away in most cases if you dont<br>&gt; make use of its post-nil behavior. Say TakeWhile is implemented as such:<br>&gt;<br>&gt; if done { return nil }<br>&gt; guard let element = base.next() where predicate(element) else {<br>&gt;   done = true<br>&gt;   return nil<br>&gt; }<br>&gt; return element<br>&gt;<br>&gt; If the generator is then used in the common case:<br>&gt;<br>&gt; let generator = TakeWhileGenerator(...)<br>&gt; while let element = generator.next() {<br>&gt;   foo(element)<br>&gt; }<br>&gt;<br>&gt; Should give us effectively:<br>&gt;<br>&gt; var base = ...<br>&gt; let predicate = ...<br>&gt; var done = false<br>&gt; while true {<br>&gt;   if done { break }<br>&gt;   guard let element = base.next() where predicate(element) else {<br>&gt;     done = true<br>&gt;     break<br>&gt;   }<br>&gt;   foo(element)<br>&gt; }<br>&gt;<br>&gt; The optimizer should see (or at least could see) `done` is never read after<br>&gt; it&#39;s written to (thus removing the assignment), and therefore<br>&gt; when checking the condition it can only be false (thus it can also be<br>&gt; removed).<br></p><p>That&#39;s a good point.  Kevin, what do you think?<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

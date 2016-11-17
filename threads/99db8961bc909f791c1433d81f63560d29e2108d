@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/367c0816b8cf72475c378e7c4177f7dc?s=50"></div><header><strong>&quot;where&quot; on a switch case with multiple items is misleading</strong> from <string>Lucas Neiva</string> &lt;lucas.neiva at ergon.ch&gt;<p>March 11, 2016 at 03:00:00pm</p></header><div class="content"><p>Requiring “where&quot; for all patterns seems like a good idea. I’ve run into this before.<br></p><p>Instinctively I tried to group using ( ), but then you’re matching tuples:<br></p><p>	case (a, b) where &lt;where-expression&gt;:<br></p><p>Having a way to apply the where-clause to all patterns would be nice. Maybe like this:<br></p><p>	case let a, b where all &lt;where-expression&gt;:<br></p><p>&gt; Consider:<br>&gt; <br>&gt; switch x {<br>&gt; case a, b where …: ...<br>&gt; }<br>&gt; <br>&gt; this currently means:<br>&gt; <br>&gt; switch x {<br>&gt; case a where true, b where …: ...<br>&gt; }<br>&gt; <br>&gt; Most people would probably think the “where&quot; applies to both a and b.<br>&gt; <br>&gt; To avoid this confusion, maybe if “where&quot; is used for one item then it should be required for all items in that case?<br>&gt; <br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

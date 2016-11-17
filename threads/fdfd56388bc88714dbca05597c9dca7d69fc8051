@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Why does Array subscript fail at runtime?</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>July 26, 2016 at 06:00:00pm</p></header><div class="content"><p>The Collection(Type) protocol requires a subscript that returns a non-optional, so it’s just not arrays. The idea is that a startIndex and endIndex are provided, after which you can guarantee that subscripting the collection with any index in the range startIndex ..&lt; endIndex is valid. This isn’t the case for dictionaries, for instance.<br></p><p>Using ! excessively is *not* a good idea. It will give people the idea that it’s okay to force unwrap optionals. Ideally, you’d never have to force unwrap because values shouldn’t be optional if you’re sure they contain a value (if you know that the array index is within range, for example).<br></p><p>&gt; Thanks to everyone who responded! Particularly Jose who provided links to<br>&gt; the Swift evolution discussion, one of which is still open, though deferred<br>&gt; from Swift 3. I&#39;m adding some thoughts to individual contents below, but my<br>&gt; original question was answered.<br>&gt; <br>&gt; Jeff, that makes sense after looking more closely at the source. I had<br>&gt; incorrectly assumed that the fatal error was happening in Swift code, but I<br>&gt; believe it is in the C++.<br>&gt; <br>&gt; Brent, I&#39;ve seen examples like that before, and I think I just might be<br>&gt; unable to see the forest for the trees. `map` seems like the clearly better<br>&gt; choice for the first two transformations. I haven&#39;t done any Cocoa<br>&gt; development, however, so I have no opinion to share there. In general,<br>&gt; though it does seem like `enumerated` should be adequate when people want<br>&gt; to have guaranteed values.<br>&gt; <br>&gt; Zhou, allowing clients to handle bad accesses would certainly not cause<br>&gt; bugs. In the worst case, developers would litter ! around their array<br>&gt; accesses, and the same crashes that existed before will continue. The fact<br>&gt; that something similar happens in other languages is similarly<br>&gt; unconvincing. There are languages where this is not the case (Elm).<br>&gt; <br>&gt; On Wed, Jul 20, 2016 at 10:07 PM H. Kofi Gumbs&lt;h.kofigumbs at gmail.com&gt;<br>&gt; wrote:<br>&gt; <br>&gt; &gt; Hello Swift community,<br>&gt; &gt; <br>&gt; &gt; Here&#39;s a philosophy I&#39;ve struggled with since I started learning Swift.<br>&gt; &gt; In general, it seems that failable function calls return `Optional`s;<br>&gt; &gt; however, `Array`s violate this rule by failing fast at runtime. I<br>&gt; &gt; understand that subscripts can&#39;t throw, so the only way to fail fast is to<br>&gt; &gt; do so at runtime. I also realize that there are many implementations of the<br>&gt; &gt; `array[safe: index]` that I could choose to use instead. However, I do not<br>&gt; &gt; understand why the default behavior is still to fail at runtime. Especially<br>&gt; &gt; given how they are often introduced as a beginner-friendly data structure.<br>&gt; &gt; Am I missing some language philosophy or major decision?<br>&gt; &gt; <br>&gt; &gt; Thanks<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

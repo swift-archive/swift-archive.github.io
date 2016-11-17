@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/16e62cebf0c65d7018b263d0f8be36c1?s=50"></div><header><strong>Adding compiler and linker arguments</strong> from <string>Steven Clukey</string> &lt;saclukey at live.com&gt;<p>October 18, 2016 at 03:00:00am</p></header><div class="content"><p>What do you all think about adding the ability to manually add compiler and linker flags in the package manifest? This can already done with the `-Xswiftc` and `-Xlinker` arguments on the command line, but I think it would nice to be able to set these a bit more permanently. A couple ways I figure this could be done are<br></p><p><br>1. Add the package directory to the pkg-config search path. Then the arguments can be set by a `.pc` file in the package<br></p><p>2. Add two arguments to the `Package` definition, one for the cc flags and one for the linker. Perhaps they&#39;d just be named &#39;Xswiftc&#39; and &#39;Xlinker&#39;, but other names may be better.<br></p><p><br>This maybe isn&#39;t very useful for package written in Swift, but for system modules and packages with C code I think it would be very helpful<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20161018/3cda3874/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

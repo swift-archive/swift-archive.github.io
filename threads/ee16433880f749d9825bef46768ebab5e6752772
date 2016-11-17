@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6f86cf7fd099f0ff570a4a8e1d5b2197?s=50"></div><header><strong>[Pitch]: Default values for enum associated values</strong> from <string>African Swift</string> &lt;africanswift at gmail.com&gt;<p>July 18, 2016 at 12:00:00pm</p></header><div class="content"><p>Swift enum cases with associated values are quite similar to function<br>parameters, except that currently flexible specification with enum<br>associated values, is only possible by using Parameter Objects.<br></p><p>The proposed solution is to enhance Swift enum associated values to support<br>default values in a functionally equivalent way to default parameters on<br>functions.<br></p><p>&lt;https://gist.github.com/AfricanSwift/bfeab7d930785ed5096939ce24bd6cbf#detailed-design&gt;Detailed<br>design<br></p><p>For example, let&#39;s say we define a person case with associated values for<br>firstname and surname:<br></p><p>enum ... {<br>   case person(firstname: String, surname: String)<br>}<br></p><p>... then down the line let&#39;s say we want to extend it with a person&#39;s<br>age,  however<br>unlike functions, we&#39;re left only with imperfect options:<br></p><p>   - break the API<br>   - create a new case, e.g. person2(firstname: String, surname: String,<br>   age: Int)<br>   - re-implement case with a parameter object<br></p><p>Pitch<br></p><p>Should it be possible to assign defaults to *enum associated values*, with<br>a functional equivalence to function default parameter values (flexible<br>API), for example:<br></p><p>enum ... {<br>   case person(firstname: String, surname: String, age: Int? = nil)<br>}<br></p><p>Summary<br></p><p>Support defaults for enum associated values: to ensure that all the places<br>where the *associated value case* was used would continue to work when new<br>parameters (associated values) are added.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160718/ee162772/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Pitch]: Default values for enum associated values</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July 18, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt; On Jul 18, 2016, at 12:49 PM, African Swift via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Swift enum cases with associated values are quite similar to function parameters, except that currently flexible specification with enum associated values, is only possible by using Parameter Objects. <br>&gt; <br></p><p>This is an additive proposal, thus out of scope for Swift 3.  Please wait for post-swift-3 planning to start, which is after August 1.<br></p><p>-Chris<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160718/82f17e1a/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

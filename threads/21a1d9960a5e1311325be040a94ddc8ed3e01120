@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/fab081724d16d497369e46fe76f20e12?s=50"></div><header><strong>Protocol doesn&#39;t conform to itself: Any workaround?</strong> from <string>Charles Srstka</string> &lt;cocoadev at charlessoft.com&gt;<p>May 30, 2016 at 06:00:00pm</p></header><div class="content"><p>So, the pitfall below seems to be fairly well-known, as I was able to find previous references to it on the list:<br></p><p>--<br></p><p>protocol P { func foo() }<br>struct S: P { func foo() { print(&quot;foo&quot;) } }<br></p><p>func doSomething&lt;C: CollectionType where C.Generator.Element: P&gt;(c: C) {<br>	for each in c {<br>		each.foo()<br>	}<br>}<br></p><p>let arr: [P] = [S()]<br></p><p>doSomething(arr) // error: cannot invoke &#39;doSomething&#39; with an argument list of type &#39;([P])’<br></p><p>--<br></p><p>And, of course, if we go the opposite way:<br></p><p>--<br></p><p>protocol P { func foo() }<br>struct S: P { func foo() { print(&quot;foo&quot;) } }<br></p><p>func doSomething&lt;C: CollectionType where C.Generator.Element == P&gt;(c: C) {<br>	for each in c {<br>		each.foo()<br>	}<br>}<br></p><p>let arr = [S()]<br></p><p>doSomething(arr) // error: cannot invoke &#39;doSomething&#39; with an argument list of type &#39;([S])’<br></p><p>--<br></p><p>My questions are twofold.<br></p><p>1. Is there any workaround to this issue that would let one declare a function that can take a collection whose element is anything that conforms to P, whether that be statically typed as P or its actual type, without either writing two versions of every API that takes a collection (and four versions of every API that takes two collections, eight versions of every API that takes three, etc.) or just giving up and accepting an array instead of a collection?<br></p><p>2. Are there any plans by the development team to address this issue?<br></p><p>Thanks,<br>Charles<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

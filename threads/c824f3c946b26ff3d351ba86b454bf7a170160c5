@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f233ac53bacbea93245b63865b3f66fc?s=50"></div><header><strong>Swift.PM, an unofficial registry of SwiftPM packages</strong> from <string>Robert S Mozayeni</string> &lt;dev at mzy.me&gt;<p>February 17, 2016 at 01:00:00pm</p></header><div class="content"><p>(Cross-posted from swift-dev)<br></p><p>The subject line says it all! I set up a list of the community’s SwiftPM packages (www.Swift.PM). Feel free to add packages you&#39;ve made, or even just packages you’ve seen and liked.<br></p><p>Happy Swifting!<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>Swift.PM, an unofficial registry of SwiftPM packages</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>February 17, 2016 at 11:00:00am</p></header><div class="content"><p>This is great Robert, thanks for building it.<br></p><p>&gt; (Cross-posted from swift-dev)<br>&gt; <br>&gt; The subject line says it all! I set up a list of the community’s SwiftPM packages (www.Swift.PM). Feel free to add packages you&#39;ve made, or even just packages you’ve seen and liked.<br>&gt; <br>&gt; Happy Swifting!<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f233ac53bacbea93245b63865b3f66fc?s=50"></div><header><strong>Swift.PM, an unofficial registry of SwiftPM packages</strong> from <string>Robert S Mozayeni</string> &lt;dev at mzy.me&gt;<p>February 17, 2016 at 10:00:00pm</p></header><div class="content"><p>👍<br></p><p>I’m also working on a Swift script that people can run on their machines that automates the process of creating new packages and tags. GitHub Pages doesn’t support plugins, so package tags have to be configured directly in the YAML, so this script will make things a lot more convenient.<br></p><p>&gt; On Feb 17, 2016, at 2:35 PM, Max Howell &lt;max.howell at apple.com&gt; wrote:<br>&gt; <br>&gt; This is great Robert, thanks for building it.<br>&gt; <br>&gt;&gt; (Cross-posted from swift-dev)<br>&gt;&gt; <br>&gt;&gt; The subject line says it all! I set up a list of the community’s SwiftPM packages (www.Swift.PM). Feel free to add packages you&#39;ve made, or even just packages you’ve seen and liked.<br>&gt;&gt; <br>&gt;&gt; Happy Swifting!<br>&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

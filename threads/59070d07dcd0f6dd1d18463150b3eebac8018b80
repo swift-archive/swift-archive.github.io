@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/88c2c19b265bd8d3d7ffaca381c0fdff?s=50"></div><header><strong>build swift-package-manager-0.1 Linux Swift 2.2</strong> from <string>CK TUNG</string> &lt;cktung at mac.com&gt;<p>April  6, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; <br>&gt; Hi<br>&gt; I try to build swift-package-manager-0.1 from source in raspberry pi, build success but with error on run as below<br>&gt; <br>&gt; $ swift build<br>&gt; Not implemented relocation type!<br>&gt; UNREACHABLE executed at /mnt/usbms/package-swift/llvm/lib/ExecutionEngine/RuntimeDyld/RuntimeDyldELF.cpp:453!<br>&gt; Stack dump:<br>&gt; 0.	Program arguments: /usr/bin/swift -frontend -interpret /home/pi/Package.swift -target armv7-unknown-linux-gnueabihf -disable-objc-interop -I /usr/lib/swift/pm -module-name Package -lPackageDescription <br>&gt; swift-build: ExitSignal<br>&gt; <br>&gt; Thanks <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160406/59078b80/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>Code coverage?</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>August 24, 2016 at 11:00:00pm</p></header><div class="content"><p>Has there been any thought put into generating code coverage reports for<br>the compiler? Or, are there some known steps community members could take<br>to help out (such as adding a flag to build-script which enables<br>-fprofile-arcs -ftest-coverage)?<br></p><p>I think it&#39;d be really interesting to see what&#39;s covered by the<br>(validation) tests and what isn&#39;t.<br></p><p>Jacob<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160824/fb4548c9/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8ae34e6aaf28c0e1fe929f36897d107e?s=50"></div><header><strong>Code coverage?</strong> from <string>Harlan Haskins</string> &lt;harlan at harlanhaskins.com&gt;<p>August 25, 2016 at 01:00:00pm</p></header><div class="content"><p>Luke Larson and I added a few things to support testing code coverage of the compiler.<br></p><p>You can build with<br></p><p>build-script -t --swift-analyze-code-coverage merged<br></p><p>which will rebuild the compiler with coverage instrumentation and run all the tests you&#39;ve selected with coverage enabled.<br></p><p>Once all the tests are done, you&#39;ll get a set of .profraw files in the swift-test-results directory. Just merge them together with <br></p><p>llvm-profdata merge *.profraw -o swiftc.profdata<br></p><p>and you can use llvm-cov to inspect that data.<br></p><p>Note: you&#39;ll need to build swift with an upstream version of llvm and clang, because there&#39;s a very recent &#39;pooled&#39; coverage system that we use.<br></p><p>You&#39;ll probably see that coverage is really low, somewhere around ~50%. It&#39;s that low because the coverage technically considers _all files_, including those from llvm and clang. Those files are, naturally, not tested by the Swift test suite, so they contribute a significant amount of &#39;un-covered&#39; areas.<br></p><p>When we isolate the Swift compiler&#39;s files, I found that coverage was somewhere around 79.45%<br></p><p>If you need any help, let me know! <br></p><p>-- Harlan<br></p><p>&gt; On Aug 25, 2016, at 2:46 AM, Jacob Bandes-Storch via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Has there been any thought put into generating code coverage reports for the compiler? Or, are there some known steps community members could take to help out (such as adding a flag to build-script which enables -fprofile-arcs -ftest-coverage)?<br>&gt; <br>&gt; I think it&#39;d be really interesting to see what&#39;s covered by the (validation) tests and what isn&#39;t.<br>&gt; <br>&gt; Jacob<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160825/20cb81ec/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/05044553584a1b38af362bd497b7797c?s=50"></div><header><strong>swiftpm linking problems</strong> from <string>Stepan Hruda</string> &lt;outgoing at stepan.technology&gt;<p>February 23, 2016 at 10:00:00am</p></header><div class="content"><p>Hello, I am having linking problems when using swiftpm, and I have burned enough time into this that I could use a nudge.<br></p><p>Sample reproduction:<br></p><p>I run swift build —init and swift build -v -Xcc -v. Here is the output:<br></p><p>https://gist.github.com/stepanhruda/53b6e3412160d5480fcb<br></p><p>This seems like the simplest configuration that should work, but swiftpm cannot find any of the swift symbols. I have tried reinstalling the entire toolchain and switching xcode-select to both Xcode 7.2 and the latest 7.3 beta. Any help would be appreciated.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160223/1ea6dff2/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>swiftpm linking problems</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>February 23, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; Hello, I am having linking problems when using swiftpm, and I have burned enough time into this that I could use a nudge.<br>&gt; <br>&gt; Sample reproduction:<br>&gt; <br>&gt; I run swift build —init and swift build -v -Xcc -v. Here is the output:<br>&gt; <br>&gt; https://gist.github.com/stepanhruda/53b6e3412160d5480fcb &lt;https://gist.github.com/stepanhruda/53b6e3412160d5480fcb&gt;<br>&gt; This seems like the simplest configuration that should work, but swiftpm cannot find any of the swift symbols. I have tried reinstalling the entire toolchain and switching xcode-select to both Xcode 7.2 and the latest 7.3 beta. Any help would be appreciated.<br>&gt; <br>For some reason your installation of Swift is not linking its own standard library.<br></p><p>We have a number of tickets open for this, here’s one:<br></p><p>    https://bugs.swift.org/browse/SR-151<br></p><p>So far we have not been able to diagnose what is wrong, please chime in on the ticket, include as much information as possible, especially the OS X version, your Xcode version(s) and how you installed the Swift toolchain.<br></p><p>Sorry and thanks.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160223/458f51e8/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Proposal] Make non-escaping closures the default</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 20, 2016 at 06:00:00pm</p></header><div class="content"><p>Trent Nadeau via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; https://github.com/tanadeau/swift-evolution/blob/make-noescape-<br>default/proposals/XXXX-make-noescape-default.md<br></p><p>-1 from me.<br></p><p>1. One must break API and ABI compatibility to add @escaping to an <br>existing function<br>2. @nonescaping case is actually quite as common as @escaping<br>3. Swift&#39;s lifetime system is not powerful enough, I&#39;ll explain below<br></p><p>Lazy map and filter will be marked as @escaping. Now consider the <br>following code:<br></p><p>func sum&lt;T&gt;(_ array: [T], transform: (T) -&gt; Int) -&gt; Int {<br>    return array.lazy.map(func).reduce(0, combine: +)<br>}<br></p><p>`transform` will be marked as @escaping, despite that `transform` never <br>actually escapes `sum`.<br></p><p>I believe that we should not accept nonescaping-by-default until we get <br>a powerful lifetime management system, as in Rust.<br></p><p>I think it makes sense to create a mini-proposal just for renaming of <br>@noescape to @nonescaping.<br></p><p>- Anton<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c69b8eb4df5af15923fd1647a8276890?s=50"></div><header><strong>[Proposal] Make non-escaping closures the default</strong> from <string>John McCall</string> &lt;rjmccall at apple.com&gt;<p>June 21, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On Jun 20, 2016, at 11:24 AM, Anton Zhilin via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; Trent Nadeau via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; <br>&gt;&gt; https://github.com/tanadeau/swift-evolution/blob/make-noescape-<br>&gt; default/proposals/XXXX-make-noescape-default.md<br>&gt; <br>&gt; -1 from me.<br>&gt; <br>&gt; 1. One must break API and ABI compatibility to add @escaping to an <br>&gt; existing function<br>&gt; 2. @nonescaping case is actually quite as common as @escaping<br>&gt; 3. Swift&#39;s lifetime system is not powerful enough, I&#39;ll explain below<br>&gt; <br>&gt; Lazy map and filter will be marked as @escaping. Now consider the <br>&gt; following code:<br>&gt; <br>&gt; func sum&lt;T&gt;(_ array: [T], transform: (T) -&gt; Int) -&gt; Int {<br>&gt;    return array.lazy.map(func).reduce(0, combine: +)<br>&gt; }<br>&gt; <br>&gt; `transform` will be marked as @escaping, despite that `transform` never <br>&gt; actually escapes `sum`.<br></p><p>This is a really good point.  In the short term, we can address this with an unsafe<br>nonescaping-to-escaping construct, but we&#39;ll need a more complete answer eventually.<br></p><p>John.<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0a2c0bcff308a97d2617cdba339914c6?s=50"></div><header><strong>New Swift Snapshots Available!</strong> from <string>Charles Lane</string> &lt;clane_47 at bellsouth.net&gt;<p>June 21, 2016 at 01:00:00pm</p></header><div class="content"><p>This is with Xcode 8 beta and the June 20 Development snapshot of swift 3.0. It works fine with the default 3.0 toolchain.<br></p><p><br>&gt; Are you using Xcode 7.3? The new toolchains only support Xcode 8 (because of SDK requirements and issues with Xcode 7&#39;s Clang).<br>&gt; <br>&gt; Jordan<br>&gt; <br>&gt; <br>&gt; &gt; On Jun 21, 2016, at 10:17, Daniel Dunbar via swift-users&lt;swift-users at swift.org(mailto:swift-users at swift.org)&gt;wrote:<br>&gt; &gt; Can you reduce the problem to a small test case? Please file a bug report onbugs.swift.org(http://bugs.swift.org/)for this, and include information on the last toolchain which worked.<br>&gt; &gt; <br>&gt; &gt; - Daniel<br>&gt; &gt; <br>&gt; &gt; &gt; On Jun 21, 2016, at 5:16 AM, Charles Lane via swift-users&lt;swift-users at swift.org(mailto:swift-users at swift.org)&gt;wrote:<br>&gt; &gt; &gt; I’m running macOS Sierra. When I set ios 10 as the deployment target, I get an error: Command failed due to signal: Illegal instruction: 4<br>&gt; &gt; &gt; It seems to build ok when using 9.3 or below as the build target.<br>&gt; &gt; &gt; <br>&gt; &gt; &gt; _______________________________________________<br>&gt; &gt; &gt; swift-users mailing list<br>&gt; &gt; &gt; swift-users at swift.org(mailto:swift-users at swift.org)<br>&gt; &gt; &gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; &gt; <br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-users mailing list<br>&gt; &gt; swift-users at swift.org(mailto:swift-users at swift.org)<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

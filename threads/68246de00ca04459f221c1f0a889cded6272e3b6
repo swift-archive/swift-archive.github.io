@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Swift 2.2] Require to revert Swift 3 migration behavior from Swift 2.2 branch</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>February  3, 2016 at 11:00:00am</p></header><div class="content"><p>Hi Ted,<br></p><p>This pull request identifies and removes some hacks in the 2.2 branch that are only there for Swift 3 migration, and pessimize or change the Swift 2.2 compiler:<br></p><p>	https://github.com/apple/swift/pull/1188<br></p><p>	- Doug<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>[Swift 2.2] Require to revert Swift 3 migration behavior from Swift 2.2 branch</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>February  3, 2016 at 06:00:00pm</p></header><div class="content"><p>Approved and pulled into swift-2.2-branch.<br></p><p>&gt; On Feb 3, 2016, at 11:13 AM, Douglas Gregor &lt;dgregor at apple.com&gt; wrote:<br>&gt; <br>&gt; Hi Ted,<br>&gt; <br>&gt; This pull request identifies and removes some hacks in the 2.2 branch that are only there for Swift 3 migration, and pessimize or change the Swift 2.2 compiler:<br>&gt; <br>&gt;    https://github.com/apple/swift/pull/1188<br>&gt; <br>&gt;    - Doug<br>&gt; <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160203/8105dc68/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

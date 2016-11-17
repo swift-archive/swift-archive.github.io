@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/279fa63eae4ac804b4dbdb83686797bf?s=50"></div><header><strong>[Pitch] Change custom operator rules to reserve operators for future use?</strong> from <string>Austin Zheng</string> &lt;austinzheng at gmail.com&gt;<p>June 29, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>Would there be any interest in a proposal to tighten the custom operator<br>naming rules in order to reserve operators for future language features?<br>This would be a source-breaking change, so it would fit the Swift 3<br>timeline.<br></p><p>The advantages of doing so:<br></p><p>- Future features benefit from more aesthetic and easier-to-use syntax if<br>they don&#39;t have to work around potential custom operator collisions. There<br>is a pretty big list of potential features that could benefit from such<br>syntax: Rust-style ownership/borrow-checking, variadic generics, a future<br>return of the tuple splat, sugar for boxing value types to give them<br>identity, etc.<br></p><p>The disadvantages of doing so:<br></p><p>- Developers who want to define custom operators (please distinguish this<br>from operator overloading, which would not be affected) will have a<br>slightly narrower space of options to choose from.<br></p><p>I personally don&#39;t feel all that broken up about potentially breaking<br>custom operator code in order to reserve room for future feature<br>development, especially since custom operators should be used sparingly to<br>begin with.<br></p><p>If people think this is a good idea, it would also be useful to figure out<br>exactly what sorts of operators we&#39;d want to reserve for future use, as<br>part of hammering out a formal proposal.<br></p><p>Thoughts?<br></p><p>Best,<br>Austin<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160629/e4655211/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

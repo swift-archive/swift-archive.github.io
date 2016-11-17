@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/435af17f3aa90d6972478647ff4d9629?s=50"></div><header><strong>Swift in GSoC 2016</strong> from <string>vivek pandya</string> &lt;vivekvpandya at gmail.com&gt;<p>December  4, 2015 at 01:00:00pm</p></header><div class="content"><p>Hello ,<br></p><p>Every year LLVM has participated in and benefited from Google Summer of<br>Code . As Swift is officially open source project , Is there any plan to<br>participate in GSoC 2016 ? Although Swift is very mature now but there may<br>some task that needs work and community is not able to start it for various<br>reasons. For example Implementing scientific calculation library so that<br>Swift can be used for Data Science  domain.<br>In case if community is interested then submission for mentoring<br>organization will begin on 8 February, 2016 19:00 UTC and dead line is 19<br>February 19:00 UTC .<br></p><p>Sincerely,<br>*Vivek Pandya*<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151204/0c0e3c23/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>Swift in GSoC 2016</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>December  4, 2015 at 09:00:00pm</p></header><div class="content"><p>This is definitely something that could benefit the Swift community.  This is something I’ll discuss with the core team.  Thanks for bringing this up.<br></p><p>&gt; On Dec 4, 2015, at 12:08 AM, vivek pandya &lt;vivekvpandya at gmail.com&gt; wrote:<br>&gt; <br>&gt; Hello ,<br>&gt; <br>&gt; Every year LLVM has participated in and benefited from Google Summer of Code . As Swift is officially open source project , Is there any plan to participate in GSoC 2016 ? Although Swift is very mature now but there may some task that needs work and community is not able to start it for various reasons. For example Implementing scientific calculation library so that Swift can be used for Data Science  domain. <br>&gt; In case if community is interested then submission for mentoring organization will begin on 8 February, 2016 19:00 UTC and dead line is 19 February 19:00 UTC . <br>&gt; <br>&gt; Sincerely,<br>&gt; Vivek Pandya<br>&gt; <br>&gt;  _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151204/523f71be/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

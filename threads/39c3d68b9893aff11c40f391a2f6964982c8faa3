@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6451ee8093c9cedc94f6c813b4dde2c5?s=50"></div><header><strong>Can&#39;t build corelibs-libdispatch on OS X</strong> from <string>Kevin Ballard</string> &lt;kevin at sb.org&gt;<p>August  2, 2016 at 02:00:00pm</p></header><div class="content"><p>I want to port https://github.com/apple/swift/pull/3923 to swift-corelibs-libdispatch but I can&#39;t figure out how to build swift-corelibs-libdispatch on OS X. Running `sh autogen.sh` results in<br></p><p>src/Makefile.am:9: error: Libtool library used but &#39;LIBTOOL&#39; is undefined<br>src/Makefile.am:9:   The usual way to define &#39;LIBTOOL&#39; is to add &#39;LT_INIT&#39;<br>src/Makefile.am:9:   to &#39;configure.ac&#39; and run &#39;aclocal&#39; and &#39;autoconf&#39; again.<br>src/Makefile.am:9:   If &#39;LT_INIT&#39; is in &#39;configure.ac&#39;, make sure<br>src/Makefile.am:9:   its definition is in aclocal&#39;s search path.<br></p><p>configure.ac does include LT_INIT, but I have no idea how to make sure its definition is in aclocal&#39;s search path.<br></p><p>I get the same problem with swift/utils/build-script --libdispatch.<br></p><p>-Kevin Ballard<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8d00f5acbaa7d24e0900e5045462e008?s=50"></div><header><strong>Can&#39;t build corelibs-libdispatch on OS X</strong> from <string>Chris Bailey</string> &lt;BAILEYC at uk.ibm.com&gt;<p>August  3, 2016 at 10:00:00am</p></header><div class="content"><p>Hi Kevin:<br></p><p>Unless something has changed very recently, Its not currently possible to <br>build swift-corelibs-libdispatch on OSX - the build process works on Linux <br>only.<br></p><p>Chris<br></p><p><br></p><p><br>From:   Kevin Ballard via swift-corelibs-dev <br>&lt;swift-corelibs-dev at swift.org&gt;<br>To:     swift-corelibs-dev at swift.org<br>Date:   02/08/2016 22:23<br>Subject:        [swift-corelibs-dev] Can&#39;t build corelibs-libdispatch on <br>OS X<br>Sent by:        swift-corelibs-dev-bounces at swift.org<br></p><p><br></p><p>I want to port https://github.com/apple/swift/pull/3923 to <br>swift-corelibs-libdispatch but I can&#39;t figure out how to build <br>swift-corelibs-libdispatch on OS X. Running `sh autogen.sh` results in<br></p><p>src/Makefile.am:9: error: Libtool library used but &#39;LIBTOOL&#39; is undefined<br>src/Makefile.am:9:   The usual way to define &#39;LIBTOOL&#39; is to add &#39;LT_INIT&#39;<br>src/Makefile.am:9:   to &#39;configure.ac&#39; and run &#39;aclocal&#39; and &#39;autoconf&#39; <br>again.<br>src/Makefile.am:9:   If &#39;LT_INIT&#39; is in &#39;configure.ac&#39;, make sure<br>src/Makefile.am:9:   its definition is in aclocal&#39;s search path.<br></p><p>configure.ac does include LT_INIT, but I have no idea how to make sure its <br>definition is in aclocal&#39;s search path.<br></p><p>I get the same problem with swift/utils/build-script --libdispatch.<br></p><p>-Kevin Ballard<br>_______________________________________________<br>swift-corelibs-dev mailing list<br>swift-corelibs-dev at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160803/c76f0fc1/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

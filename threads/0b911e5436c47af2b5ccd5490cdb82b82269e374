@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/009173d589176cfd9c8146cc49849ff6?s=50"></div><header><strong>[Discussion] Rename BitwiseOperations protocol</strong> from <string>Riley Testut</string> &lt;rileytestut at gmail.com&gt;<p>July  1, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>This is probably very minor, but I’m not sure the protocol name “BitwiseOperations” fits the Swift API Design Guidelines. Here’s what the guidelines have to say about protocol names:<br></p><p>Protocols that describe what something is should read as nouns (e.g. Collection).<br></p><p>Protocols that describe a capability should be named using the suffixes able, ible, or ing (e.g. Equatable, ProgressReporting).<br></p><p>From these two, BitwiseOperations appears to be (attempting) to follow the first rule, yet “BitwiseOperations” doesn’t really describe what the type is, but rather that it can do bitwise operations. The documentation itself even describes the protocol as “a type that supports standard bitwise arithmetic operators.&quot;<br></p><p>I propose we rename it to “BitwiseOperable”, or something similar. Again, a small change, but if this were to ever happen, I think Swift 3 is the time.<br></p><p>Riley Testut<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160701/0b91e374/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

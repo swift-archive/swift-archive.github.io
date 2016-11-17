@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0104: Protocol-oriented integers</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 27, 2016 at 04:00:00pm</p></header><div class="content"><p>on Fri Jun 24 2016, plx &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; +1 but with a few reservations.<br>&gt;<br>&gt; # Arithmetic<br>&gt;<br>&gt; What *are* the expected semantics of the operators? It seems like you<br>&gt; can’t assume much about a generic `Arithmetic` type, e.g. in a generic<br>&gt; context I can’t reliably assume even things like these:<br>&gt;<br>&gt; - `(x / y) * y == x` (or even “is close to&quot; x) <br>&gt; - `(x + x + … + x) / n ==  x` (for `x` added together `n` times)<br>&gt; - `((x + y) + z) == (x + (y + z))` (etc.)<br>&gt; - `(x + y) - y == x`(? I think...)<br>&gt;<br>&gt; …and so on; am I missing something? <br>&gt;<br>&gt; If `Arithmetic` is as lacking in semantics as it seems, then it feels<br>&gt; like one of those “bag of syntax” protocols that keep getting<br>&gt; mentioned as against the stdlib philosophy.<br></p><p>Well, this is a special case for two reasons:<br></p><p>1. Floating point is weird.  Technically, it doesn&#39;t obey any<br>   mathematical laws understandable by people whose name is not Steve<br>   Canon.  However, approximately nobody programs as though that&#39;s the<br>   case, because it would be impossible.  We program as though floating<br>   point types are idealized real numbers and then we deal with the fact<br>   that they&#39;re only a pretty good approximation as an afterthought at<br>   best.  Within the limits of that approximation, floating point fits<br>   into a set of laws governing Arithmetic... that we admittedly have<br>   not written down, but should.<br></p><p>2. The proper semantic breakdown of protocols in this area is too<br>   complex for most people to handle (you can find some figures in<br>   http://www.cs.indiana.edu/pub/techreports/TR638.pdf), and we&#39;re not<br>   sure yet which subset of these belongs in the standard library.<br></p><p><br>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

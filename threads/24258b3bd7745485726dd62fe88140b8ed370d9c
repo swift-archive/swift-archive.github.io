@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d2fcdd5a6abf7204973117f37a18671?s=50"></div><header><strong>NSTask and try!</strong> from <string>Bouke Haarsma</string> &lt;bouke at haarsma.eu&gt;<p>May 14, 2016 at 04:00:00pm</p></header><div class="content"><p>On 2016-05-14 09:05:08 +0000, James Lee via swift-corelibs-dev said:<br></p><p>&gt; Please excuse my ignorance, I have looked into the POSIX calls, but am <br>&gt; I right in assuming that the EBADF is due to the test calling to a file <br>&gt; that doesn&#39;t exist and that is just how OSX handles this case?<br></p><p>The problem on OSX was that closing the same FD in the child process <br>would result in the EBADF. The change in the error handling posted <br>before made the error more visible. The actual fix for OSX was to make <br>sure a single FD was closed only once. See also PR #363 <br>https://github.com/apple/swift-corelibs-foundation/pull/362, especially <br>https://github.com/apple/swift-corelibs-foundation/pull/363/commits/3fd0df28107847b7121f6cb2f823fbad9e2ddcff. <br></p><p><br>- Bouke<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160514/24250d9c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1d54deb32312ab6a282cde8637bc7077?s=50"></div><header><strong>NSTask and try!</strong> from <string>James Lee</string> &lt;james at jelee.co.uk&gt;<p>May 14, 2016 at 08:00:00pm</p></header><div class="content"><p>Cheers for the clarification. I will spend some time working through some of the other failures, should help me get to grips with it all :)<br></p><p>James<br></p><p>Sent from my iPhone<br></p><p>&gt; On 14 May 2016, at 15:02, Bouke Haarsma via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; On 2016-05-14 09:05:08 +0000, James Lee via swift-corelibs-dev said:<br>&gt; <br>&gt; <br>&gt; <br>&gt; Please excuse my ignorance, I have looked into the POSIX calls, but am I right in assuming that the EBADF is due to the test calling to a file that doesn&#39;t exist and that is just how OSX handles this case?<br>&gt; <br>&gt; <br>&gt; <br>&gt; The problem on OSX was that closing the same FD in the child process would result in the EBADF. The change in the error handling posted before made the error more visible. The actual fix for OSX was to make sure a single FD was closed only once. See also PR #363 https://github.com/apple/swift-corelibs-foundation/pull/362, especially https://github.com/apple/swift-corelibs-foundation/pull/363/commits/3fd0df28107847b7121f6cb2f823fbad9e2ddcff.<br>&gt; <br>&gt; <br>&gt; <br>&gt; - Bouke<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160514/80d5f6fc/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

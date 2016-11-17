@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/fab081724d16d497369e46fe76f20e12?s=50"></div><header><strong>Pitch: Small fix to where clauses in generics</strong> from <string>Charles Srstka</string> &lt;cocoadev at charlessoft.com&gt;<p>May 27, 2016 at 11:00:00am</p></header><div class="content"><p>Forgive me if this has already been proposed in one of the generics threads; I did a quick check and didn’t see anything.<br></p><p>Currently, the code below does not compile:<br></p><p>protocol P {}<br></p><p>struct S: P {}<br></p><p>extension SequenceType where Generator.Element: P {<br>	func foo() {}<br>}<br></p><p>func F(arr: [P]) {<br>	arr.foo() // error: using &#39;P&#39; as a concrete type conforming to protocol &#39;P&#39; is not supported<br>}<br></p><p>If one changes the where clause in the extension to say Generator.Element == P instead of : P, the above now works fine, but then the below does not:<br></p><p>protocol P {}<br></p><p>struct S: P {}<br></p><p>extension SequenceType where Generator.Element == P {<br>	func foo() {}<br>}<br></p><p>func F(arr: [S]) {<br>	arr.foo() // error: &#39;P&#39; is not convertible to &#39;S&#39;<br>}<br></p><p>It seems to me that the first example ought to work; if our constraint is that Generator.Element conforms to P, something typed as P itself should probably fit the requirement.<br></p><p>Charles<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

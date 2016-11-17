@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>[Proposal] Make non-escaping closures the default</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>June  6, 2016 at 03:00:00pm</p></header><div class="content"><p>Trent Nadeau wrote:<br></p><p>&gt; ### Imported C/Objective-C APIs<br>&gt;<br>&gt; Per the Core Team, most Cocoa closure/block parameters are escaping<br>&gt; (e.g., delegates). As such the Clang importer will automatically add<br>&gt; the `@escaping` annotation to closure/block parameters encountered in<br>&gt; imported Objective-C APIs unless they are explicitly marked with the<br>&gt; Clang `((noescape))` attribute. This will also be done with imported<br>&gt; C APIs with function pointer or block parameters.<br></p><p>&quot;SE-0012: Add @noescape to public library API&quot; has a list of Foundation<br>and CoreFoundation APIs, but that proposal is still awaiting scheduling.<br></p><p>&lt;https://github.com/apple/swift-evolution/blob/master/schedule.md&gt;<br></p><p>-- Ben<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8d9dbc0dfeb74eab8dd9bbd9cbd84680?s=50"></div><header><strong>[Proposal] Make non-escaping closures the default</strong> from <string>Jose Cheyo Jimenez</string> &lt;cheyo at masters3d.com&gt;<p>June 20, 2016 at 09:00:00am</p></header><div class="content"><p>That proposal was rejected because the swift evolution is not the correct vehicle to drive changes to Apple frameworks. <br></p><p><br></p><p>&gt; On Jun 6, 2016, at 8:33 AM, Ben Rimmington via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Trent Nadeau wrote:<br>&gt; <br>&gt;&gt; ### Imported C/Objective-C APIs<br>&gt;&gt; <br>&gt;&gt; Per the Core Team, most Cocoa closure/block parameters are escaping<br>&gt;&gt; (e.g., delegates). As such the Clang importer will automatically add<br>&gt;&gt; the `@escaping` annotation to closure/block parameters encountered in<br>&gt;&gt; imported Objective-C APIs unless they are explicitly marked with the<br>&gt;&gt; Clang `((noescape))` attribute. This will also be done with imported<br>&gt;&gt; C APIs with function pointer or block parameters.<br>&gt; <br>&gt; &quot;SE-0012: Add @noescape to public library API&quot; has a list of Foundation<br>&gt; and CoreFoundation APIs, but that proposal is still awaiting scheduling.<br>&gt; <br>&gt; &lt;https://github.com/apple/swift-evolution/blob/master/schedule.md&gt;<br>&gt; <br>&gt; -- Ben<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

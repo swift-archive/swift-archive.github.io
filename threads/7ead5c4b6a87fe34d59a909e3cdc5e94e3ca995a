@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>dispatch concurrent map: is this right?</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>October 30, 2016 at 09:00:00am</p></header><div class="content"><p>I had the need for a concurrent map recently. I had a part of a program which needed to read chunks of data and concurrently process them and assemble the results in an array. This isn’t necessarily as obvious as it sounds, because of arrays being value types. I came up with the following snippet which I’d like to check for correctness; it could also be helpful to others.<br></p><p>Perhaps this is something Dispatch should provide out-of-the-box?<br></p><p>- Karl<br></p><p><br>extension DispatchQueue {<br></p><p>  static func concurrentMap&lt;T&gt;(iterations: Int, execute block: (Int) -&gt; T) -&gt; [T] {<br>    var result = Array&lt;T&gt;()<br>    result.reserveCapacity(iterations)<br></p><p>    result.withUnsafeMutableBufferPointer { (results: inout UnsafeMutableBufferPointer&lt;T&gt;) in<br>      concurrentPerform(iterations: iterations) { idx in<br>        results[idx] = block(idx)<br>      }<br>    }<br></p><p>    return result<br>  }<br>}<br></p><p>extension Array {<br>  func concurrentMap&lt;T&gt;(execute block: (Element)-&gt;T) -&gt; [T] {<br>    return DispatchQueue.concurrentMap(iterations: count) { block(self[$0]) }<br>  }<br>}<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161030/7ead995a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>dispatch concurrent map: is this right?</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>October 30, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On 30 Oct 2016, at 09:15, Karl &lt;raziel.im+swift-users at gmail.com&gt; wrote:<br>&gt; <br>&gt; I had the need for a concurrent map recently. I had a part of a program which needed to read chunks of data and concurrently process them and assemble the results in an array. This isn’t necessarily as obvious as it sounds, because of arrays being value types. I came up with the following snippet which I’d like to check for correctness; it could also be helpful to others.<br>&gt; <br>&gt; Perhaps this is something Dispatch should provide out-of-the-box?<br>&gt; <br>&gt; - Karl<br></p><p>Ah one second, I was refactoring this and forgot to test it. Here’s the actual code:<br></p><p>extension DispatchQueue {<br></p><p>  static func concurrentMap&lt;T&gt;(iterations: Int, execute block: (Int) -&gt; T) -&gt; [T] {<br></p><p>    let __result = UnsafeMutableRawBufferPointer.allocate(count: iterations * MemoryLayout&lt;T&gt;.stride)<br>    defer { __result.deallocate() }<br>    let _result  = __result.baseAddress?.assumingMemoryBound(to: T.self)<br>    let result   = UnsafeMutableBufferPointer&lt;T&gt;(start: _result, count: iterations)<br>    concurrentPerform(iterations: iterations) { idx in<br>      result[idx] = block(idx)<br>    }<br>    return Array(result)<br>  }<br>}<br></p><p>extension Array {<br>  func concurrentMap&lt;T&gt;(execute block: (Element)-&gt;T) -&gt; [T] {<br>    return DispatchQueue.concurrentMap(iterations: count) { block(self[$0]) }<br>  }<br>}<br></p><p><br>Unfortunately I don’t think there’s a way to get an array to take over a +1 UnsafeMutableBufferPointer without copying.<br></p><p>- Karl<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161030/5193543b/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

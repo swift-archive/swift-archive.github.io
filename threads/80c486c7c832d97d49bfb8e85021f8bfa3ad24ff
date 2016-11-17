@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0eaab3d5d1d4428f74a711f724f2eb47?s=50"></div><header><strong>Binding NSTextField value to NSNumber</strong> from <string>Etan Kissling</string> &lt;kissling at oberon.ch&gt;<p>January  6, 2016 at 07:00:00pm</p></header><div class="content"><p>Hey there,<br></p><p>I have a model that contains an optional NSNumber.<br></p><p>@objc(Model) final class Model : NSObject {<br>    dynamic var someNumber: NSNumber?<br>}<br></p><p><br>I now bind such en object to an NSObjectController,<br>and bind the value binding of an NSTextField to the object controller&#39;s selection.someNumber key path.<br></p><p><br>After loading, the number is properly displayed.<br></p><p>(lldb) e/x someNumber!<br>(__NSCFNumber *) $R0 = 0x0000000000002a57<br></p><p>(lldb) e/d someNumber!.intValue<br>(Int32) $R1 = 42<br></p><p><br>However, when I change the entry, the number is replaced by a string.<br></p><p>(lldb) e/x someNumber!<br>(NSTaggedPointerString *) $R2 = 0x0000000000323425 &quot;42&quot;<br></p><p>(lldb) e/d someNumber!.intValue<br>(Int32) $R3 = 42<br></p><p>Now, stuff like ==, isEqualToNumber, and compare obviously no longer works.<br>-[NSTaggedPointerString isEqualToNumber:]: unrecognized selector sent to instance 0x303425<br></p><p><br></p><p>It seems like the NSNumber variable morphed into a NSString.<br></p><p><br></p><p><br>What&#39;s going on here?<br></p><p><br></p><p>Etan<br></p><p><br></p><p><br>PS: The NSTextField documentation clearly states that NSNumbers are supported to be bound as the value:<br></p><p>value<br>An NSString or NSNumber that is displayed as the content of the NSTextField.<br></p><p>Availability:<br>Available in OS X v10.3 and later.<br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160106/80c424ff/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: signature.asc<br>Type: application/pgp-signature<br>Size: 801 bytes<br>Desc: Message signed with OpenPGP using GPGMail<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160106/80c424ff/attachment.sig&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>Binding NSTextField value to NSNumber</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>January  6, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; On Jan 6, 2016, at 11:25 AM, Etan Kissling via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I now bind such en object to an NSObjectController, <br>&gt; and bind the value binding of an NSTextField to the object controller&#39;s selection.someNumber key path.<br></p><p>This is a Cocoa question, not a Swift question; a better place to ask is Apple’s cocoa-dev mailing list at http://lists.apple.com, or Apple’s developer forums.<br></p><p>(The quick answer is that NSTextField’s ‘value’ binding is by default an NSString, not an NSNumber. If you want it to be an NSNumber, you’ll need to attach a numeric NSFormatter to the text field. If you have further questions about this, send them to me off-list since this is an off-topic thread.)<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160106/79c9dfff/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

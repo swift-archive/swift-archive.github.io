@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Draft] Rationalizing Sequence end-operation names</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 23, 2016 at 08:00:00pm</p></header><div class="content"><p>• Renaming all methods which operate on more than one element at the <br>beginning/end to use &quot;prefix&quot; or &quot;suffix&quot;, not &quot;first&quot; or &quot;last&quot;<br></p><p>+1<br></p><p>• Renaming `index(of:/where:)` to `earliestIndex(…)` and `first(where:)` <br>to `earliest(where:)`<br></p><p>-1, because `index` is considered state-of-art. `first` does not exist in <br>all languages, but `earliest` is used nowhere.<br></p><p>• Renaming the `drop` methods to use `removing`<br></p><p>+0.5, because drop functions came from functional languages, but <br>removingPrefix is much more to-the-point than dropFirst.<br></p><p>• Redesigning `prefix(upTo:)`, `prefix(through:)` and `suffix(from:)` as <br>subscripts with &quot;partial&quot; ranges, like `people[..&lt;idx]` or perhaps <br>`people[nil..&lt;idx]`.<br></p><p>-1, because prefix and suffix are state-of-art again, plus they match the <br>theme you are proposing, while subscripts do not.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

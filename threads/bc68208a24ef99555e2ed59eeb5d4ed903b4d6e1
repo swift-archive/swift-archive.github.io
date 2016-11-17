@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Large Structs, and COW.</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 22, 2016 at 03:00:00pm</p></header><div class="content"><p>on Fri Jan 22 2016, Daniel Tartaglia &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; If I have a large struct with lots of sub-structs and I assign to just<br>&gt; one field of one of the sub-structs, will the system make a deep copy<br>&gt; of the struct or a shallow copy where the unmodified portions of the<br>&gt; object still point the same memory as the original struct?<br>&gt;<br>&gt; In other words, given this code:<br>&gt;<br>&gt; struct SubStruct {<br>&gt;     var a: Int = 0<br>&gt;     var b: Int = 0<br>&gt; }<br>&gt;<br>&gt; struct VeryLarge {<br>&gt;     var subStructA = SubStruct()<br>&gt;     var subStructB = SubStruct()<br>&gt;     var subStructC = SubStruct()<br>&gt;     // lots of other stuff<br>&gt; }<br>&gt;<br>&gt; func bar(var vl: VeryLarge) -&gt; VeryLarge {<br>&gt;     vl.subStructA.a = 5<br>&gt;     return vl<br>&gt; }<br>&gt;<br>&gt; let vl1 = VeryLarge()<br>&gt; let vl2 = bar(vl1)<br>&gt;<br>&gt; Will vl2.subStructB be a copy of vl1.subStructB, or an entirely new<br>&gt; object?<br></p><p>It will be entirely distinct memory, unless SubStruct was explicitly<br>built to use CoW or consists of parts that were built that way<br>(e.g. arrays).<br></p><p>&gt; I’m worried about performance when making small changes to large objects.<br></p><p>But that&#39;s a different issue, because Swift will in fact make in-place<br>mutations in most cases.  In the above code you&#39;re explicitly saying,<br>&quot;don&#39;t change vl1; make a copy and change that.&quot;  If you just say<br>vl1.subStructA.a = 5, there&#39;s normally no reason to worry.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9b667f2c07faf9d4f65628effe475382?s=50"></div><header><strong>WYSIWYG Swift</strong> from <string>Amir Michail</string> &lt;amichail at gmail.com&gt;<p>December 14, 2015 at 06:00:00pm</p></header><div class="content"><p>The idea is to have a WYSIWYG view of your source code that makes use of standard and custom visualizations and editors to allow you to see and interact with data in a nicer way.<br></p><p>For example, for a game, you might build a custom level editor extension to Swift that allows you to code your levels in a nicer WYSIWYG view that is less prone to errors and generally nicer to deal with. Maybe you could even play your game in this view thus blurring the distinction between coding and execution.<br></p><p>P.S. Google “intentional programming”.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9ea02b9a2f6e3d188e9e974e30d565e0?s=50"></div><header><strong>WYSIWYG Swift</strong> from <string>Riley Avron</string> &lt;ravron at dropbox.com&gt;<p>December 14, 2015 at 04:00:00pm</p></header><div class="content"><p>It seems to me that playgrounds are intended to fulfill this role. Even if<br>I misunderstand, and they aren&#39;t the tool for what you suggest, this<br>functionality would probably be best built outside the language and Stdlib<br>proper.<br></p><p><br>Riley<br></p><p>On 14 December 2015 at 15:29, Amir Michail via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; The idea is to have a WYSIWYG view of your source code that makes use of<br>&gt; standard and custom visualizations and editors to allow you to see and<br>&gt; interact with data in a nicer way.<br>&gt;<br>&gt; For example, for a game, you might build a custom level editor extension<br>&gt; to Swift that allows you to code your levels in a nicer WYSIWYG view that<br>&gt; is less prone to errors and generally nicer to deal with. Maybe you could<br>&gt; even play your game in this view thus blurring the distinction between<br>&gt; coding and execution.<br>&gt;<br>&gt; P.S. Google “intentional programming”.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151214/f8e2f38c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

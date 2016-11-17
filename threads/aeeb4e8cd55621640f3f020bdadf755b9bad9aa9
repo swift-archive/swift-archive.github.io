@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Accepted] SE-0086 &quot;Drop NS Prefix in Swift Foundation&quot;</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>July 13, 2016 at 09:00:00am</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0086-drop-foundation-ns.md<br></p><p>The review of SE-0086 &quot;Drop NS Prefix in Swift Foundation” ran from May 9…16, 2016. The proposal is *accepted*.<br></p><p>This proposal has evolved greatly from a single bullet item in the original proposal for improving the translation of Objective-C APIs (SE-0005: Better Translation of Objective-C APIs Into Swift &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0005-objective-c-name-translation.md&gt;). Discussion spawned the transformative work on Foundation value types (SE-0069: Mutability and Foundation Value Types &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0069-swift-mutability-for-foundation.md&gt;), and other improvements to the mapping of Objective-C APIs into Swift (e.g., SE-0033: Import Objective-C Constants as Swift Types &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0033-import-objc-constants.md&gt;, SE-0044: Import as Member &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0044-import-as-member.md&gt;, SE-0112: Improved NSError Bridging &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0112-nserror-bridging.md&gt;) have informed and improved this proposal.<br></p><p>Big thanks to Tony Parker and Philippe Hausler for driving this proposal (and Foundation in Swift) forward!<br></p><p>	- Doug<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160713/aeeb9aa9/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

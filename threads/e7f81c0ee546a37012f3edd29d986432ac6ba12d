@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2d569462ac92d4619342b1c5ff305043?s=50"></div><header><strong>Fwd: Union instead of Optional</strong> from <string>frogcjn at 163.com</string> &lt;frogcjn at 163.com&gt;<p>May 15, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; 2016-2-16 GMT+8 14:36:28<br>&gt; Hi all,<br>&gt; <br>&gt; I think the best way to solve the either problem is to separate it from generic. <br>&gt; Optional and Either shouldn’t work the same way of generic type. <br>&gt; It’s just a represent of multiple type in one location.<br>&gt; <br>&gt; Using an old friend, Union in C.<br>&gt; union {<br>&gt; 	case firstType<br>&gt; 	case secondType<br>&gt; }<br>&gt; <br>&gt; This is the final solution for the sub typing problem of optional.<br></p><p><br>It’s kind of same idea of TypeScipt 2, at 46:21 in this video.<br></p><p>https://channel9.msdn.com/Events/Build/2016/B881 &lt;https://channel9.msdn.com/Events/Build/2016/B881&gt;<br></p><p><br></p><p><br>&gt; <br>&gt; <br>&gt; <br>&gt; A  == union(A,A)<br>&gt; union(A,B) == union(B,A)<br>&gt; B == union(B,B)<br>&gt; <br>&gt; B is subtype of union(A,B)<br>&gt; A is subtype of union(A,B)<br>&gt; union(A,B,C) is subtype of union(A,B,C,D,…)<br>&gt; <br>&gt; suppose <br>&gt; a is subclass of A<br>&gt; b is subclass of B, then<br>&gt; 	union(a,B) is subtype of union(A,B)<br>&gt; 	union(A,b) is subtype of union(A,B)<br>&gt; 	union(a,b) is subtype of union(a,B)<br>&gt; 	union(a,b) is subtype of union(A,b)<br>&gt; <br>&gt; union can have as many case as possible. e.g., union(A,B,C,D,…)<br>&gt; <br>&gt; So the Optional&lt;UITableView&gt; should be union(UITableView, None)<br>&gt; and Optional&lt;MyTableVIew&gt; should be union(MyTableView, None), which is subclass of union(UITableView, None)<br>&gt; <br>&gt; This is a final rational solution. I think.<br>&gt; <br>&gt; -Jiannan<br>&gt; <br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160515/e7f8a12d/attachment-0001.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: ???? 2016-05-15 10.20.36.png<br>Type: image/png<br>Size: 423597 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160515/e7f8a12d/attachment-0001.png&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

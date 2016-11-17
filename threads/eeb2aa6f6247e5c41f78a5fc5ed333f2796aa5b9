@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 23, 2016 at 11:00:00am</p></header><div class="content"><p>on Sat Jan 23 2016, Marc Knaup &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; Proposal link: https://github.com/apple/swift-evolution/blob/master/proposals/0023-api-guidelines.md<br>&gt;<br>&gt; What is the rationale behind naming enumeration cases in upper camel case?<br>&gt;<br>&gt; *Follow case conventions:* names of types, protocols and enum cases are<br>&gt;&gt; UpperCamelCase. Everything else is lowerCamelCase.<br>&gt;<br>&gt; let a = NSComparisonResult.OrderedSame  // refers to a value, but is upper-case<br>&gt; let b = NSDate.distantFuture            // refers to a property/value, but is lower-case<br>&gt;<br>&gt;    - everything related to types (type names, protocol names, generic type<br>&gt;    parameter names) should be upper camel case<br>&gt;    - everything else (function names, property names, variable names, etc.)<br>&gt;    should be lower camel case<br>&gt;<br>&gt; This is already the current and the proposed recommendation with<br>&gt; enumeration cases being the only exception.<br>&gt; Enumeration cases are not types.<br></p><p>FWIW, I don&#39;t think that we have a defensible rationale, and feel<br>strongly that we should change this.  Of course, it&#39;s not up to me<br>alone...<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

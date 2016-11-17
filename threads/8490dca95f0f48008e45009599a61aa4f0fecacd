@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e5808a0a025bdb9530d2a77d8a4a5ffa?s=50"></div><header><strong>Problem exporting a custom 2.2 toolchain</strong> from <string>Marcel Rebouças</string> &lt;mscreboucas at gmail.com&gt;<p>August 11, 2016 at 01:00:00pm</p></header><div class="content"><p>Hello everybody,<br></p><p>I&#39;ve been trying to generate a custom toolchain from the version 2.2.1 to<br>use with Xcode 7. I download every repository needed to build, and set them<br>to the 2.2 branch (i.e. swift-2.2-branch).<br></p><p>Then, I used the command explained at the end of this thread:<br>https://github.com/apple/swift/pull/126, to build and install the toolchain.<br></p><p>I can build just fine with &quot;utils/build-script&quot;, however, when using the<br>command above with buildbot_osx, I end up with an error that seems to be<br>related to version consistency. My lldb, however, is also at the<br>swift-2.2-branch. The problems are shown in the images linked.<br></p><p>Any thoughts on how to fix/bypass this?<br></p><p>Thanks,<br>Marcel<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160811/8490cacd/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: Screen Shot 2016-08-11 at 10.16.44 AM.jpg<br>Type: image/jpeg<br>Size: 45506 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160811/8490cacd/attachment.jpg&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: Screen Shot 2016-08-11 at 10.16.29 AM.jpg<br>Type: image/jpeg<br>Size: 48983 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160811/8490cacd/attachment-0001.jpg&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Marking sort and sorted with rethrows</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>June  8, 2016 at 07:00:00pm</p></header><div class="content"><p>Of course, on performance of the normal case should never be compromised. So if making two overloads is the only way to ensure that, then that’s what it takes. But will the performance of the normal case really suffer if we only require a sorting algorithm to restore the array to an arbitrary permutation of the original array, in case of an error?<br></p><p>If the consensus is that the original order of the array should be restored, then the normal case would obviously suffer from it. But I think just making sure no elements are lost is way more important than ensuring that the order is preserved. After all, changing the order is what a sorting algorithm does, so the original order is probably not crucial. But if the elements might be lost, people might be encouraged to make a back-up of the array before sorting it, in case an error is thrown.<br></p><p>&gt; &gt; On Jun 8, 2016, at 7:52 AM, Brent Royal-Gordon&lt;brent at architechies.com&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; &gt; Is there a widely used comparison function that throws?<br>&gt; &gt; <br>&gt; &gt; Any comparison function that examines external data related to the instance:<br>&gt; &gt; <br>&gt; &gt; * Sorting filenames by the data in the corresponding files<br>&gt; &gt; * Instances backed by a database where actually loading the data could fail<br>&gt; &gt; * Etc.<br>&gt; Ok, instead of using rethrows, would it be a better overall design be to define two overloads, one that takes a throwing closure and one that doesn’t? This allows the throw-supporting implementation to be slower without punishing the normal case..<br>&gt; <br>&gt; -Chris<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

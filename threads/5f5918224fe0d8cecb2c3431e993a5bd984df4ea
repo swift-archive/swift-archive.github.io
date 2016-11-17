@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Should all GeneratorTypes also be SequenceTypes?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March 21, 2016 at 03:00:00pm</p></header><div class="content"><p>on Mon Mar 14 2016, Dmitri Gribenko &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Mon, Mar 14, 2016 at 4:42 PM, Haravikk via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; There are quite a lot of generator implementations that also<br>&gt;&gt; implement SequenceType (since it’s as simple as returning<br>&gt;&gt; self). Indeed, the AnyGenerator type conforms to SequenceType,<br>&gt;&gt; allowing any generator to be wrapped as a sequence, though I imagine<br>&gt;&gt; this comes with some overhead. So it got me thinking, why doesn’t<br>&gt;&gt; GeneratorType just require conformance to SequenceType?<br>&gt;<br>&gt; Because of compiler bugs.  <br></p><p>Ahem: not-yet-implemented features :-).<br></p><p>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

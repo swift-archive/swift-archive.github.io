@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce6825f55ba05353e3652d8989b6137?s=50"></div><header><strong>swift-package-manager support in CocoaPods</strong> from <string>Will Entriken</string> &lt;fulldecent at gmail.com&gt;<p>April 15, 2016 at 11:00:00am</p></header><div class="content"><p>Hello,<br></p><p>I am working with the CocoaPods project, which is a way to publish and get<br>exposure for Swift libraries.<br></p><p>Specifically I am working on the pod-template project which is the<br>recommended and supported way for all new library authors to model their<br>projects.<br></p><p>I hope that we can update this template to be simultaneously compatible<br>with Swift Package Manager so that libraries created using the pod-template<br>recommendations will immediately be available to Swift Package Manager<br>consumers.<br></p><p>For a lower bound on the installed base of pod-template users, please<br>search GitHub for this default text from pod-template.<br></p><p>&gt; &quot;To run the example project, clone the repo, and run&quot;<br></p><p>If anyone would please be able to assist with this, please follow this<br>issue at a minimum and help provide guidance in test casing and<br>implementing this goal.<br></p><p>&gt; https://github.com/CocoaPods/pod-template/issues/157<br></p><p>Thank you,<br></p><p>Will<br></p><p><br>William Entriken<br>267-738-4201<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160415/55721662/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

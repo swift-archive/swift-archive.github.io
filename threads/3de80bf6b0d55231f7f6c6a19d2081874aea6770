@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2306987b54d2acc4d18cc0c8cad26df6?s=50"></div><header><strong>Logo on swift.org</strong> from <string>Kilian Koeltzsch</string> &lt;me at kilian.io&gt;<p>December 10, 2015 at 04:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>this is probably not the ideal place for this request, but it&#39;d be<br>awesome if someone with the necessary access and files could update<br>https://swift.org/assets/images/swift.svg to remove a small error on the<br>right side of the Swift icon.<br></p><p>This is how it currently looks:<br>https://twitter.com/kiliankoe/status/673464058952196096<br></p><p>Thank you so much :)<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

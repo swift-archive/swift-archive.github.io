@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a51efe0c2993455701ed4757862e4b11?s=50"></div><header><strong>Path Swift</strong> from <string>Piero Sabino</string> &lt;piero.sa at icloud.com&gt;<p>December  7, 2015 at 01:00:00pm</p></header><div class="content"><p>Where I have to change the path of Swift?<br>Terminal or folder?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151207/5869d6b3/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Path Swift</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>December  7, 2015 at 11:00:00am</p></header><div class="content"><p>Hi, Piero. Sorry, I&#39;m not quite sure what you&#39;re asking. Can you provide more details about the behavior you&#39;re seeing, and what you&#39;d like it to do instead?<br></p><p>Jordan<br></p><p><br>&gt; On Dec 7, 2015, at 5:06, Piero Sabino via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Where I have to change the path of Swift?<br>&gt; Terminal or folder?<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151207/28ebd30b/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

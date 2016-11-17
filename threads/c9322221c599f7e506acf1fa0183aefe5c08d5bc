@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/86f0b76b19fe3a655fdaa6c8bd1f9f1e?s=50"></div><header><strong>[Idea] Wrap switch cases in curly braces</strong> from <string>Roth Michaels</string> &lt;roth at rothmichaels.us&gt;<p>July  7, 2016 at 04:00:00pm</p></header><div class="content"><p>On Thu, Jul 07 2016 at 04:33:17 PM, Xiaodi Wu via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; Fallthrough ceases to make much sense with braces, and it is a handy<br>&gt; feature of switch statements every so often.<br>&gt;<br>I assume you mean &quot;Fallthrough cases make much &#39;less&#39; sense with braces&quot;?<br>-- <br>Roth Michaels<br>roth at rothmichaels.us<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>[Idea] Wrap switch cases in curly braces</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>July  7, 2016 at 03:00:00pm</p></header><div class="content"><p>On Thu, Jul 7, 2016 at 3:41 PM, Roth Michaels via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Thu, Jul 07 2016 at 04:33:17 PM, Xiaodi Wu via swift-evolution &lt;<br>&gt; swift-evolution at swift.org&gt; wrote:<br>&gt; &gt; Fallthrough ceases to make much sense with braces, and it is a handy<br>&gt; &gt; feature of switch statements every so often.<br>&gt; &gt;<br>&gt; I assume you mean &quot;Fallthrough cases make much &#39;less&#39; sense with braces&quot;?<br>&gt;<br></p><p>Haha, more or less, yup.<br></p><p><br>&gt; --<br>&gt; Roth Michaels<br>&gt; roth at rothmichaels.us<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160707/7bd4ff47/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/566528c7f7c28c35c0c646d415943612?s=50"></div><header><strong>[Idea] Wrap switch cases in curly braces</strong> from <string>Taras Zakharko</string> &lt;taras.zakharko at uzh.ch&gt;<p>July  7, 2016 at 10:00:00pm</p></header><div class="content"><p>I always wrap my case blocks in curly braces. Personally, I agree with G.B. that the switch syntax seems inconsistent at best. While there are labels and limited form of goto in Swift, case labels don’t act anything like that. I’d prefer symmetry with if by having obligatory braces. <br></p><p>— Taras<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

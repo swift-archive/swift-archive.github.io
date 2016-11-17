@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/442c75edde23399054e742e0443975f9?s=50"></div><header><strong>Swift on RedHat</strong> from <string>John Smith</string> &lt;jsmith5pam at yahoo.com&gt;<p>April  8, 2016 at 10:00:00am</p></header><div class="content"><p>Does anyone know if there is a swift for RedHat distro available?<br></p><p>I tried to mash together some instructions for installing on ubuntu but have not been successful.<br></p><p>Thanks,<br>Bruce<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/24b7b1101d83ff34f8e1d8909f497821?s=50"></div><header><strong>Swift on RedHat</strong> from <string>Keith Sharp</string> &lt;kms at passback.co.uk&gt;<p>April  9, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt; On 8 Apr 2016, at 15:25, John Smith via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Does anyone know if there is a swift for RedHat distro available?<br>&gt; <br>&gt; I tried to mash together some instructions for installing on ubuntu but have not been successful.<br></p><p>There has been some work on getting Swift RPMs included in Fedora, and I guess by extension EPEL and hence RHEL and CentOS:<br></p><p>	https://bugzilla.redhat.com/show_bug.cgi?id=1295115<br></p><p>Keith.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c965d88fab90b7e85514d0e3011c3caf?s=50"></div><header><strong>Swift on RedHat</strong> from <string>Tim Hawkins</string> &lt;tim.thawkins at gmail.com&gt;<p>April 10, 2016 at 12:00:00am</p></header><div class="content"><p>I created a script to build it under fedora, which is very simular to rhel<br>.   It currently builds from HEAD, so it may or may not be broken from day<br>to day.<br></p><p>https://github.com/thawkins/fedora-swift<br>On Apr 9, 2016 11:06 PM, &quot;Keith Sharp via swift-users&quot; &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; &gt; On 8 Apr 2016, at 15:25, John Smith via swift-users &lt;<br>&gt; swift-users at swift.org&gt; wrote:<br>&gt; &gt;<br>&gt; &gt; Does anyone know if there is a swift for RedHat distro available?<br>&gt; &gt;<br>&gt; &gt; I tried to mash together some instructions for installing on ubuntu but<br>&gt; have not been successful.<br>&gt;<br>&gt; There has been some work on getting Swift RPMs included in Fedora, and I<br>&gt; guess by extension EPEL and hence RHEL and CentOS:<br>&gt;<br>&gt;         https://bugzilla.redhat.com/show_bug.cgi?id=1295115<br>&gt;<br>&gt; Keith.<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160410/45a93475/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

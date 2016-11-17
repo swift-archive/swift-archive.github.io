@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e7e554db1f80d7d6041d92edd5145698?s=50"></div><header><strong>A sample Rational number type</strong> from <string>Hooman Mehr</string> &lt;hooman at mac.com&gt;<p>September 30, 2016 at 07:00:00pm</p></header><div class="content"><p>For anybody who is interested: This gist &lt;https://gist.github.com/hooman/6e08c48e1e06ee19e06e5b09f664f9be&gt; contains a Rational number implementation for Swift 3.0. It is a single file that you can paste in a playground and take a look, or remove the last few lines and drop the file into your own module. The recommended way to create a rational number is specifying Rational type as in:<br></p><p>let r: Rational = 18/64<br>// or<br>let x = 5 + 2/3 as Rational<br></p><p>or use tolerance operator `±` to convert from floating point:<br></p><p>let r2 = 2.109±0.0005 // 2⁷⁄₆₄<br></p><p>Rational type conforms to AbsoluteValuable (hence Equatable, Comparable, ExpressibleByIntegerLiteral, SignedNumber), Strideable, and CustomStringConvertible.<br></p><p>It always uses fully-reduced representation for simplicity and clarity of comparisons and uses LCM (lowest common multiple) for addition &amp; subtraction to reduce the chance of overflow in the middle of computations. The disadvantage of these design choices are: It is not guaranteed to keep the nominator and denominator as specified during construction, and GCD / LCM computations reduce its performance. <br></p><p>The performance trade-off is not huge and is usually acceptable for typical rational number use cases. Preserving denominator can be addressed with a number formatter for rational numbers that I will add later. GCD is computed with Stein&#39;s algorithm (binary GCD algorithm).<br></p><p>Hooman<br></p><p> <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160930/06236783/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

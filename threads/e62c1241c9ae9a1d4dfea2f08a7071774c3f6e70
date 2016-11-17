@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>SE-0025: Scoped Access Level, next steps</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>March 15, 2016 at 03:00:00pm</p></header><div class="content"><p>My take at it:<br></p><p>access(global)<br>access(module)  // default<br>access(file)<br>access(scope)<br></p><p>Very uniform. Argument to `access` is visibility scope.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160315/e62c6e70/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/72cc28f12d423d7d87c5e20e8de0966c?s=50"></div><header><strong>SE-0025: Scoped Access Level, next steps</strong> from <string>Ilya Belenkiy</string> &lt;ilya.belenkiy at gmail.com&gt;<p>March 15, 2016 at 01:00:00pm</p></header><div class="content"><p>These names are very uniform, and the context is immediately clear, but<br>they are very long. The 2 most commonly used (and spelled out) would be<br>access(global) and access(scope), public and private are much shorter and<br>are well established terms of art.<br>On Tue, Mar 15, 2016 at 8:54 AM Антон Жилин &lt;swift-evolution at swift.org&gt;<br>wrote:<br></p><p>&gt; My take at it:<br>&gt;<br>&gt; access(global)<br>&gt; access(module)  // default<br>&gt; access(file)<br>&gt; access(scope)<br>&gt;<br>&gt; Very uniform. Argument to `access` is visibility scope.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160315/9f0af29a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>SE-0025: Scoped Access Level, next steps</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>March 15, 2016 at 05:00:00pm</p></header><div class="content"><p>I have to agree with you. Still &quot;module&quot; needs to be somewhere in the new<br>access level for internal, and if possible, &quot;file&quot; in private.<br></p><p>2016-03-15 16:07 GMT+03:00 Ilya Belenkiy &lt;ilya.belenkiy at gmail.com&gt;:<br></p><p>&gt; These names are very uniform, and the context is immediately clear, but<br>&gt; they are very long. The 2 most commonly used (and spelled out) would be<br>&gt; access(global) and access(scope), public and private are much shorter and<br>&gt; are well established terms of art.<br>&gt; On Tue, Mar 15, 2016 at 8:54 AM Антон Жилин &lt;swift-evolution at swift.org&gt;<br>&gt; wrote:<br>&gt;<br>&gt;&gt; My take at it:<br>&gt;&gt;<br>&gt;&gt; access(global)<br>&gt;&gt; access(module)  // default<br>&gt;&gt; access(file)<br>&gt;&gt; access(scope)<br>&gt;&gt;<br>&gt;&gt; Very uniform. Argument to `access` is visibility scope.<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160315/f254e22b/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

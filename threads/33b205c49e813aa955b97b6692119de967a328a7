@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>Getting a list of protocol conformers</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>November 15, 2016 at 07:00:00pm</p></header><div class="content"><p>I would like to be able to get, at runtime, an array of all types conforming to a particular protocol.  (Similarly, I would like to be able to get an array of all subtypes of a given type).  Is this in the generics manifesto?  If not, can it be added?  What is the timeframe?<br></p><p>It seems to me, that the compiler should actually already have this information, and it is just a matter of keeping it around when it is requested.  I could be wrong about that though...<br></p><p>Why do I want this?  It would make a lot of things like plug-ins and extensible factories possible (and much easier where they are possible).  For example, you could add a new type to a factory (without the factory having to be coupled to it) just by adhering to a protocol.  It would also make building a swift version of NSCoding much easier.<br></p><p>I have asked for other, more complicated, language features (e.g. handler funcs) to make those possible before, and I still want them (since I have used them in other languages and it was enormously powerful), but I realized that I should actually be able to make most of those features in a library myself (albeit a bit slower than the compiler could) if I am able to get a list of conforming types at runtime (and then call static methods on those types).<br></p><p>Also, if there is a way to do this now (even if it is slow), I would appreciate the help…<br></p><p>Thanks,<br>Jon<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8809800aec2460f291384b794d7e6f8f?s=50"></div><header><strong>Getting a list of protocol conformers</strong> from <string>Rick Mann</string> &lt;rmann at latencyzero.com&gt;<p>November 15, 2016 at 08:00:00pm</p></header><div class="content"><p>+1.<br></p><p>&gt; On Nov 15, 2016, at 19:53 , Jonathan Hull via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I would like to be able to get, at runtime, an array of all types conforming to a particular protocol.  (Similarly, I would like to be able to get an array of all subtypes of a given type).  Is this in the generics manifesto?  If not, can it be added?  What is the timeframe?<br>&gt; <br>&gt; It seems to me, that the compiler should actually already have this information, and it is just a matter of keeping it around when it is requested.  I could be wrong about that though...<br>&gt; <br>&gt; Why do I want this?  It would make a lot of things like plug-ins and extensible factories possible (and much easier where they are possible).  For example, you could add a new type to a factory (without the factory having to be coupled to it) just by adhering to a protocol.  It would also make building a swift version of NSCoding much easier.<br>&gt; <br>&gt; I have asked for other, more complicated, language features (e.g. handler funcs) to make those possible before, and I still want them (since I have used them in other languages and it was enormously powerful), but I realized that I should actually be able to make most of those features in a library myself (albeit a bit slower than the compiler could) if I am able to get a list of conforming types at runtime (and then call static methods on those types).<br>&gt; <br>&gt; Also, if there is a way to do this now (even if it is slow), I would appreciate the help…<br>&gt; <br>&gt; Thanks,<br>&gt; Jon<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p><br>-- <br>Rick Mann<br>rmann at latencyzero.com<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

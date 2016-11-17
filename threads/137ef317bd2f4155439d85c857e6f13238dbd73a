@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Change guarantee for GeneratorType.next() to always return nil past end</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March 24, 2016 at 01:00:00pm</p></header><div class="content"><p>on Thu Mar 17 2016, Kevin Ballard &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Wed, Mar 16, 2016, at 09:59 AM, Erica Sadun wrote:<br>&gt;&gt;<br>&gt;&gt;&gt; On Mar 16, 2016, at 10:41 AM, Joe Groff &lt;jgroff at apple.com&gt; wrote:<br>&gt;&gt;&gt;<br>&gt;&gt;&gt;&gt;<br>&gt;&gt;&gt;&gt; On Mar 16, 2016, at 8:24 AM, Erica Sadun via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt;&gt;&gt;<br>&gt;&gt;&gt;&gt; On Mar 8, 2016, at 7:29 PM, Kevin Ballard via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt;&gt;&gt;<br>&gt;&gt;&gt;&gt;&gt; One minor change to what I&#39;ve been proposing: Instead of merely<br>&gt;&gt;&gt;&gt;&gt; saying that it&#39;s implementation-defined, we should expressly say<br>&gt;&gt;&gt;&gt;&gt; that invoking next() after it has previously returned nil may<br>&gt;&gt;&gt;&gt;&gt; return nil or it may return an implementation-defined value, but<br>&gt;&gt;&gt;&gt;&gt; it should not fatalError() (unless some other GeneratorType<br>&gt;&gt;&gt;&gt;&gt; requirement has been violated). Which is to say, after a<br>&gt;&gt;&gt;&gt;&gt; GeneratorType has returned nil from next(), it should always be<br>&gt;&gt;&gt;&gt;&gt; safe to invoke next() again, it&#39;s just up to the particular<br>&gt;&gt;&gt;&gt;&gt; implementation to determine what value I get by doing that.<br>&gt;&gt;&gt;&gt;&gt;<br>&gt;&gt;&gt;&gt;&gt; -Kevin Ballard<br>&gt;&gt;&gt;&gt;<br>&gt;&gt;&gt;&gt; I&#39;m torn about sequences that end with nil and should continue<br>&gt;&gt;&gt;&gt; always return nil thereafter and<br>&gt;&gt;&gt;&gt; (pulling a name out of the air) &quot;samples&quot; that may return nil or non-<br>&gt;&gt;&gt;&gt; nil values over time. I&#39;d prefer there<br>&gt;&gt;&gt;&gt; to be two distinct contracts between an iterator and another<br>&gt;&gt;&gt;&gt; construct that may return an implementation-defined<br>&gt;&gt;&gt;&gt; value after nil.<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; If your sequence produces optional values, then the result of its<br>&gt;&gt;&gt; generator should be double-optional. If next() returns `.some(nil)`,<br>&gt;&gt;&gt; that would be a nil value in the sequence; if it returns `nil`,<br>&gt;&gt;&gt; that&#39;s the end.<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; -Joe<br>&gt;&gt;<br>&gt;&gt; The use case I was thinking of was real-world sampling, where there<br>&gt;&gt; was actually a value available or not.<br>&gt;&gt; Using double-optionals as a sequence would work for that. Since that<br>&gt;&gt; approach might be intuitively<br>&gt;&gt; obvious, maybe should be clarified through documentation?<br>&gt;<br>&gt; Double-optionals makes this pattern useless. The whole point of using<br>&gt; the Generator pattern here is so you can easily process all of the currently-<br>&gt; available &quot;samples&quot; and then hit nil and stop, and then later when you<br>&gt; try again you may or may not get more values. Using a generator that<br>&gt; returns a double-optional value, the generator would never actually<br>&gt; return nil directly, it would always return a .Some (either .Some(nil)<br>&gt; or .Some(value)), and at this point there&#39;s no reason to be using a<br>&gt; Generator at all over just having a method that samples it.<br></p><p>I don&#39;t see why you can&#39;t just create a new Iterator (neé GeneratorType)<br>for this purpose.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

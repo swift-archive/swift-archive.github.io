@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/962f80110d48adf790d390d230d492f2?s=50"></div><header><strong>Swift compiler failure, not code compile failure</strong> from <string>barney.cit</string> &lt;barney.cit at gmail.com&gt;<p>February  3, 2016 at 10:00:00am</p></header><div class="content"><p>I’ve got the latest 2.2 version on my machine (OS X 10.11, Xcode v 7.2.1). Previously calling Swift build would compile. Today When calling Swift build I get the message <br></p><p>invalid value &#39;Swift&#39; in &#39;--driver-mode=&#39;<br></p><p>I get this message regardless of the project I’m working on. I created the hello world project from the Swift.org page and got this message. I reinstalled the compiler and still get the same message. I upgraded Xcode to 7.2.1 and still got the same message.<br></p><p>Anyone else having this problem?<br></p><p>Anybody have an idea how I can get compiling again?<br></p><p>Thanks,<br></p><p><br>Lee<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160203/f46a7ff7/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Swift compiler failure, not code compile failure</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>February  3, 2016 at 10:00:00am</p></header><div class="content"><p>&quot;swift build&quot; should be lowercase. Please open a bug on bugs.swift.org to report this failure mode, though, it should at least give a sensible diagnostic.<br></p><p> - Daniel<br></p><p>&gt; On Feb 3, 2016, at 9:04 AM, barney.cit via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I’ve got the latest 2.2 version on my machine (OS X 10.11, Xcode v 7.2.1). Previously calling Swift build would compile. Today When calling Swift build I get the message <br>&gt; <br>&gt; invalid value &#39;Swift&#39; in &#39;--driver-mode=&#39;<br>&gt; <br>&gt; I get this message regardless of the project I’m working on. I created the hello world project from the Swift.org &lt;http://swift.org/&gt; page and got this message. I reinstalled the compiler and still get the same message. I upgraded Xcode to 7.2.1 and still got the same message.<br>&gt; <br>&gt; Anyone else having this problem?<br>&gt; <br>&gt; Anybody have an idea how I can get compiling again?<br>&gt; <br>&gt; Thanks,<br>&gt; <br>&gt; <br>&gt; Lee<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160203/1c03ac4b/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

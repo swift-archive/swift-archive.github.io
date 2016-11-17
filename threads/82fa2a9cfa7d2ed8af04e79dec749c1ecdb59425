@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5a72880ffed1a30cb9b8e3f372507145?s=50"></div><header><strong>Best way to solve ambiguous references to methods</strong> from <string>Rob Mayoff</string> &lt;mayoff at dqd.com&gt;<p>December  5, 2015 at 12:00:00pm</p></header><div class="content"><p>&gt;<br>&gt; So I was playing around with Sequences, and I came across a problem I<br>&gt; haven&#39;t been able to solve in a decent way. I’ve reduced it to a simpler<br>&gt; example here:<br>&gt; let array : [Int] = [1, 2, 3]<br>&gt; let mapArray = array.map { $0 }<br>&gt; let flatArray = mapArray.flatten() // Error!<br>&gt; This last line of code prints the following error:<br>&gt; let flatArray = mapArray.flatten() // Error!<br>&gt;                 ^~~~~~~~<br>&gt;<br></p><p>There are two problems here, but neither is an ambiguous method reference.<br>One problem is in the compiler: it&#39;s giving a less-than-helpful error<br>message. The other problem is in your code: your mapArray is an Array&lt;Int&gt;,<br>and Int isn&#39;t a SequenceType. All of the candidate flatten methods require<br>the sequence element type (in this case, Int) to be at least a<br>SequenceType. That is, flatten only works on a sequence of sequences.<br></p><p>This works:<br></p><p>let array: [Int] = [1, 2, 3]<br>let mapArray = array.map { [ $0 ] }<br>// Note that the closure above returns Array&lt;Int&gt;, not just Int.<br>// Therefore mapArray is Array&lt;Array&lt;Int&gt;&gt;.<br>let flatArray = mapArray.flatten()<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151205/82fa9425/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

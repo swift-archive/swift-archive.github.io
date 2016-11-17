@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dad1fc0d2023332e239a5c05e01fb577?s=50"></div><header><strong>CI outage tomorrow</strong> from <string>Nicole Jacque</string> &lt;nicole_jacque at apple.com&gt;<p>October 10, 2016 at 06:00:00pm</p></header><div class="content"><p>Hi All-<br></p><p>The CI bots on swift.org will be down temporarily, starting at 2 PM (California time) while we install the newest Xcode beta.  We’ll post a corresponding preview snapshot at that time as well. <br></p><p>Thanks!<br>Nicole<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>CI outage tomorrow</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>October 11, 2016 at 02:00:00pm</p></header><div class="content"><p>Reminder: <br></p><p>Starting update right now. <br></p><p>During the update, please don’t trigger pull request testing on GitHub. <br></p><p>Thanks, <br>Mishal Shah<br></p><p>&gt; On Oct 10, 2016, at 6:16 PM, Nicole Jacque via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi All-<br>&gt; <br>&gt; The CI bots on swift.org will be down temporarily, starting at 2 PM (California time) while we install the newest Xcode beta.  We’ll post a corresponding preview snapshot at that time as well. <br>&gt; <br>&gt; Thanks!<br>&gt; Nicole<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>CI outage tomorrow</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>October 11, 2016 at 03:00:00pm</p></header><div class="content"><p>Update completed. <br></p><p>Please download Xcode 8.1 beta 3 from https://developer.apple.com/download/<br></p><p>Thanks, <br>Mishal Shah<br>&gt; On Oct 11, 2016, at 2:14 PM, mishal_shah via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Reminder: <br>&gt; <br>&gt; Starting update right now. <br>&gt; <br>&gt; During the update, please don’t trigger pull request testing on GitHub. <br>&gt; <br>&gt; Thanks, <br>&gt; Mishal Shah<br>&gt; <br>&gt;&gt; On Oct 10, 2016, at 6:16 PM, Nicole Jacque via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hi All-<br>&gt;&gt; <br>&gt;&gt; The CI bots on swift.org will be down temporarily, starting at 2 PM (California time) while we install the newest Xcode beta.  We’ll post a corresponding preview snapshot at that time as well. <br>&gt;&gt; <br>&gt;&gt; Thanks!<br>&gt;&gt; Nicole<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-dev mailing list<br>&gt;&gt; swift-dev at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

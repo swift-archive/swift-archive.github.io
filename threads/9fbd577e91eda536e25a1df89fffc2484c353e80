@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5bfb729f6ac07e17c2326a7335a3f3be?s=50"></div><header><strong>NSGetEnviron and PR#400</strong> from <string>Yannick Heinrich</string> &lt;yannick.heinrich at gmail.com&gt;<p>June 10, 2016 at 11:00:00am</p></header><div class="content"><p>Hello,<br></p><p>I initiated the PR #400 in the package manager and I’m trying to implement<br>the last suggestion in this thread.<br></p><p>This is to recopy the current environment variables for git clone instead<br>of cherry-pick several specifics one.<br></p><p>I would like to use the _NSGetEnviron variable that should be defined in<br>Darwin but I don’t manage to reference it.<br></p><p>I tried:<br></p><p>return environ<br></p><p>return Darwin.environ<br></p><p>return libc.environ<br></p><p><br>I’m using the DEVELOPMENT-SNAPSHOT-2016-05-09-a toolchain.<br></p><p>Any tips on how to call this method from Swift ?<br></p><p>Regards<br></p><p>Yannick<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160610/9fbd3e80/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/05540cd6be96706f76aa66a4519f7db9?s=50"></div><header><strong>NSGetEnviron and PR#400</strong> from <string>Ankit Agarwal</string> &lt;ankit at ankit.im&gt;<p>June 10, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>There is no native method in swift to get the environment list right now<br>but you can use Foundation&#39;s NSProcessInfo<br>If you want an example:<br>https://github.com/apple/swift-package-manager/blob/master/Sources/Commands/SwiftTestTool.swift#L188<br></p><p>Thanks<br></p><p>On Fri, Jun 10, 2016 at 2:49 PM, Yannick Heinrich via swift-build-dev &lt;<br>swift-build-dev at swift.org&gt; wrote:<br></p><p>&gt; Hello,<br>&gt;<br>&gt; I initiated the PR #400 in the package manager and I’m trying to implement<br>&gt; the last suggestion in this thread.<br>&gt;<br>&gt; This is to recopy the current environment variables for git clone instead<br>&gt; of cherry-pick several specifics one.<br>&gt;<br>&gt; I would like to use the _NSGetEnviron variable that should be defined in<br>&gt; Darwin but I don’t manage to reference it.<br>&gt;<br>&gt; I tried:<br>&gt;<br>&gt; return environ<br>&gt;<br>&gt; return Darwin.environ<br>&gt;<br>&gt; return libc.environ<br>&gt;<br>&gt;<br>&gt; I’m using the DEVELOPMENT-SNAPSHOT-2016-05-09-a toolchain.<br>&gt;<br>&gt; Any tips on how to call this method from Swift ?<br>&gt;<br>&gt; Regards<br>&gt;<br>&gt; Yannick<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-build-dev mailing list<br>&gt; swift-build-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-build-dev<br>&gt;<br>&gt;<br></p><p><br>-- <br>Ankit<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160610/e1054bd7/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

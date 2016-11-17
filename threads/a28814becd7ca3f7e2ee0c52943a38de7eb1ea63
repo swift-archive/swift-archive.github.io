@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Move public AutoreleasingUnsafeMutablePointer API from StdlibCore -&gt; Objective C Overlay</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July 22, 2016 at 03:00:00pm</p></header><div class="content"><p>on Fri Jul 22 2016, Michael Gottesman &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jul 22, 2016, at 11:42 AM, Dave Abrahams via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Fri Jul 22 2016, Ben Rimmington<br>&gt;<br>&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt;&gt; On 21 Jul 2016, at 18:02, Michael Gottesman wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; This is a proposal to move AutoreleasingUnsafeMutablePointer from<br>&gt;&gt;&gt;&gt; StdlibCore to the Objective C overlay. The reason to do this is that<br>&gt;&gt;&gt;&gt; ideally StdlibCore would not have any code specific to ObjC in<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; it. This is a small step that we can take in this direction by<br>&gt;&gt;&gt;&gt; moving the public API of AutoreleasingUnsafeMutablePointer to the<br>&gt;&gt;&gt;&gt; ObjC overlay. The way that this would be done is that the<br>&gt;&gt;&gt;&gt; implementation for AutoreleasingUnsafeMutablePointer would remain in<br>&gt;&gt;&gt;&gt; StdlibCore, but we would add an underscore to make that API private<br>&gt;&gt;&gt;&gt; to the standard library. Then inside the ObjC overlay, we would<br>&gt;&gt;&gt;&gt; create a typealias to the internal API with the non-underscored name<br>&gt;&gt;&gt;&gt; (i.e. make the typealias the public API). Then at a later point in<br>&gt;&gt;&gt;&gt; time we can move the implementation. The reason why I am not<br>&gt;&gt;&gt;&gt; proposing to move the implementation today is that there are<br>&gt;&gt;&gt;&gt; dependencies in Array/Hashed Collections on<br>&gt;&gt;&gt;&gt; AutoreleasingUnsafeMutablePointer. Moving that code is a larger<br>&gt;&gt;&gt;&gt; project that is preconditioned on this proposal going in first as an<br>&gt;&gt;&gt;&gt; incremental step.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; If you want to move APIs which aren&#39;t cross-platform out of stdlib,<br>&gt;&gt;&gt; should there be a similar proposal for the PlaygroundQuickLook enum<br>&gt;&gt;&gt; and CustomPlaygroundQuickLookable protocol?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; &lt;https://github.com/apple/swift/blob/master/stdlib/public/core/Mirror.swift&gt;<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; &lt;https://github.com/apple/swift-xcode-playground-support&gt;<br>&gt;&gt; <br>&gt;&gt; That is a good question!  We don&#39;t have an obvious existing module into<br>&gt;&gt; which to move them, though, do we?<br>&gt;<br>&gt; This is just an incremental proposal. The playground work should be in<br>&gt; a different proposal so we keep this proposal focused.<br></p><p>+1<br></p><p>&gt; Michael<br>&gt;<br>&gt;&gt; <br>&gt;&gt; -- <br>&gt;&gt; Dave<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt; &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

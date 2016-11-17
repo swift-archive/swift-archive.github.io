@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/22fbc776216a1e2ecc5892e6df2a76a8?s=50"></div><header><strong>Generate Swift interface from Objective-C file using clang</strong> from <string>Ryan Wilson</string> &lt;ryanwils at gmail.com&gt;<p>July  6, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>In Xcode, I can generate a Swift interface for an Objective-C file by using<br>the assistant editor and selecting &quot;Generated Interface&quot; from the menu of<br>what to display.  How would I go about generating this using the tools in<br>the Swift repo from GitHub? I&#39;ve been digging around the code and have seen<br>ClangImporter but not sure if I&#39;m looking for the right thing.<br></p><p>Thanks,<br>Ryan<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160706/d24a0c0b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8dfc6932943f38e7a7de48be3194f13c?s=50"></div><header><strong>Generate Swift interface from Objective-C file using clang</strong> from <string>Michael Ilseman</string> &lt;milseman at apple.com&gt;<p>July  6, 2016 at 02:00:00pm</p></header><div class="content"><p>The best way I know of is the swift-ide-test tool, and you’ll see it being invoked by many of the ClangImporter tests.<br></p><p>&gt; On Jul 6, 2016, at 10:45 AM, Ryan Wilson via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi everyone,<br>&gt; <br>&gt; In Xcode, I can generate a Swift interface for an Objective-C file by using the assistant editor and selecting &quot;Generated Interface&quot; from the menu of what to display.  How would I go about generating this using the tools in the Swift repo from GitHub? I&#39;ve been digging around the code and have seen ClangImporter but not sure if I&#39;m looking for the right thing.<br>&gt; <br>&gt; Thanks,<br>&gt; Ryan<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/22fbc776216a1e2ecc5892e6df2a76a8?s=50"></div><header><strong>Generate Swift interface from Objective-C file using clang</strong> from <string>Ryan Wilson</string> &lt;ryanwils at gmail.com&gt;<p>July  7, 2016 at 01:00:00pm</p></header><div class="content"><p>Thank you! I&#39;ll take a look.<br></p><p>On Wed, 6 Jul 2016 at 17:33 Michael Ilseman &lt;milseman at apple.com&gt; wrote:<br></p><p>&gt; The best way I know of is the swift-ide-test tool, and you’ll see it being<br>&gt; invoked by many of the ClangImporter tests.<br>&gt;<br>&gt; &gt; On Jul 6, 2016, at 10:45 AM, Ryan Wilson via swift-users &lt;<br>&gt; swift-users at swift.org&gt; wrote:<br>&gt; &gt;<br>&gt; &gt; Hi everyone,<br>&gt; &gt;<br>&gt; &gt; In Xcode, I can generate a Swift interface for an Objective-C file by<br>&gt; using the assistant editor and selecting &quot;Generated Interface&quot; from the<br>&gt; menu of what to display.  How would I go about generating this using the<br>&gt; tools in the Swift repo from GitHub? I&#39;ve been digging around the code and<br>&gt; have seen ClangImporter but not sure if I&#39;m looking for the right thing.<br>&gt; &gt;<br>&gt; &gt; Thanks,<br>&gt; &gt; Ryan<br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-users mailing list<br>&gt; &gt; swift-users at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160707/38da7df4/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

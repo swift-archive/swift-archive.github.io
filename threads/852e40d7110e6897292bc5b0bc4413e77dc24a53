@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Contiguous Memory and the Effect of Borrowing on Safety</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>November  7, 2016 at 11:00:00am</p></header><div class="content"><p>on Sun Nov 06 2016, Hooman Mehr &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Nov 6, 2016, at 8:03 PM, Dave Abrahams via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; I had a brush with Julia &lt;http://julialang.org/ &lt;http://julialang.org/&gt;&gt; as well. Have you<br>&gt;&gt;&gt; looked at their work <br>&gt;&gt; <br>&gt;&gt; It&#39;s been a while, to be honest.<br>&gt;&gt; <br>&gt;&gt;&gt; and the recent reworking of their similar data structures?<br>&gt;&gt; <br>&gt;&gt; Links would be appreciated.<br>&gt;<br>&gt; Start with this blog post, if you haven’t already seen it:<br>&gt; http://julialang.org/blog/2016/03/arrays-iteration<br></p><p>Thanks!<br></p><p>* It&#39;s interesting that they seem to consider every important data<br>  structure to be some variety of array.<br></p><p>* “I in eachindex(A)” sounds like “for i in A.indices.”  But, as I<br>  presume they are traversing integer indices (or tuples thereof)<br>  that&#39;s really inadequate to deal with sparse arrays if you want<br>  optimal efficiency, since you end up needing to do (at minimum) a<br>  binary search to access the array elements.<br></p><p>  IMO, the MTL (https://en.wikipedia.org/wiki/Matrix_Template_Library)<br>  approach is better: use enhanced iterators that only traverse the<br>  non-zeroes and can report their coordinates in the underlying matrix.<br></p><p>I don&#39;t understand everything written in that post as I lack context<br>from that community, but my overall impression is that the problems<br>they&#39;re dealing with have well-known solutions and they&#39;re somewhat<br>hamstrung by the idea that indices are fundamentally integers (despite<br>the fact that they do mention the existence of arrays indexed by<br>non-integers).<br></p><p>I think one of the most interesting related areas that they don&#39;t cover<br>at all is explored in http://lafstern.org/matt/segmented.pdf (related<br>video: https://meetingcpp.com/index.php/tv15/items/20.html) which among<br>other things is applicable to ATLAS-style blocking techniques.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

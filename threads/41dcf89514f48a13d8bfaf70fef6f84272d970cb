@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0059: Update API Naming Guidelines and Rewrite Set APIs Accordingly</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  4, 2016 at 03:00:00pm</p></header><div class="content"><p>on Mon Apr 04 2016, Sean Heber &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; This has been a very long and complex thread, but have some of these<br>&gt; not-technically-mathy word pairs that have nice verb forms been<br>&gt; considered:<br>&gt;<br>&gt; union -&gt; combine / combining<br>&gt; intersection -&gt; intersect / intersecting<br>&gt; symmetricDifference -&gt; split / splitting<br></p><p>Yes, some of them have been considered.<br></p><p>&gt; Example:<br>&gt;<br>&gt; var allowedUsers = Set&lt;User&gt;()<br>&gt; allowedUsers.combine(standardUsers)<br>&gt; allowedUsers.combine(superUsers)<br>&gt;<br>&gt; var users = allUsers<br>&gt; users.intersect(allowedUsers)<br>&gt;<br>&gt; let users = allUsers.intersecting(allowedUsers)<br>&gt;<br>&gt; l8r<br>&gt; Sean<br>&gt;<br>&gt;&gt; On Apr 4, 2016, at 3:22 PM, Brent Royal-Gordon via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; Indeed, OED points out that modern usage is &quot;chiefly military.&quot; Probably an argument against its usage here.<br>&gt;&gt; <br>&gt;&gt; It seems to me that what you&#39;re sort of saying is &quot;replaceWith&quot;, but<br>&gt;&gt; that&#39;s kind of a mouthful. A quick thesaurus check suggests that the<br>&gt;&gt; only decent single-world alternative would be &quot;substitute&quot;, but that<br>&gt;&gt; sounds like a regex operation. I think this is a dead end.<br>&gt;&gt; <br>&gt;&gt; -- <br>&gt;&gt; Brent Royal-Gordon<br>&gt;&gt; Architechies<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

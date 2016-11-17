@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[pitch] Eliminate the &quot;T1 -&gt; T2&quot; syntax, require &quot;(T1) -&gt; T2&quot;</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 18, 2016 at 03:00:00pm</p></header><div class="content"><p>on Thu Apr 14 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; We currently accept function type syntax without parentheses, like:<br>&gt;<br>&gt;   Int -&gt; Float<br>&gt;   String -&gt; ()<br>&gt;<br>&gt; etc.  The original rationale aligned with the fact that we wanted to<br>&gt; treat all functions as taking a single parameter (which was often of<br>&gt; tuple type) and producing a tuple value (which was sometimes a tuple,<br>&gt; in the case of void and multiple return values).  However, we’ve long<br>&gt; since moved on from that early design point: there are a number of<br>&gt; things that you can only do in a parameter list now (varargs, default<br>&gt; args, etc), implicit tuple splat has been removed, and the compiler<br>&gt; has long ago stopped modeling function parameters this way.  Beyond<br>&gt; that, it eliminates one potential style war.<br>&gt;<br>&gt; Given all this, I think it makes sense to go for syntactic uniformity<br>&gt; between parameter list and function types, and just require<br>&gt; parenthesis on the argument list.  The types above can be trivially<br>&gt; written as:<br>&gt;<br>&gt;   (Int) -&gt; Float<br>&gt;   (String) -&gt; ()<br>&gt;<br>&gt; Thoughts?<br></p><p>+1, as I&#39;ve always said.<br></p><p>By everyone but the purely-functional-programming crowd, ()s are<br>associated with functions; it makes sense to see them in the type, and<br>the non-uniformity created by seeing A-&gt;B in the places it&#39;s allowed is<br>not balanced by a widespread drop in syntactic noise.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

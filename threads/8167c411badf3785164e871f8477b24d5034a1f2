@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>compiler-rt...Wait wat?</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>August 17, 2016 at 08:00:00am</p></header><div class="content"><p>I just noticed that if you do `utils/update-checkout --clone` it pulls<br>down `compiler-rt`. I have been building Swift from source on Linux for<br>awhile now. I&#39;ve never once checked out compiler-rt. Which makes me<br>wonder if that repository is even in use.<br></p><p>Here is the question: what is the compiler-rt repository used for? Is my<br>build not working as expected without compiler-rt?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8e77369a540cf4d35924683e176c7a9c?s=50"></div><header><strong>compiler-rt...Wait wat?</strong> from <string>Mark Lacey</string> &lt;mark.lacey at apple.com&gt;<p>August 17, 2016 at 08:00:00am</p></header><div class="content"><p>&gt; On Aug 17, 2016, at 5:48 AM, Ryan Lovelett via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I just noticed that if you do `utils/update-checkout --clone` it pulls<br>&gt; down `compiler-rt`. I have been building Swift from source on Linux for<br>&gt; awhile now. I&#39;ve never once checked out compiler-rt. Which makes me<br>&gt; wonder if that repository is even in use.<br>&gt; <br>&gt; Here is the question: what is the compiler-rt repository used for? Is my<br>&gt; build not working as expected without compiler-rt?<br></p><p>I believe it’s only required for ASAN-enabled builds.<br></p><p>Mark<br></p><p>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e0cf6ae15b5fae33e4627c33690ba81d?s=50"></div><header><strong>compiler-rt...Wait wat?</strong> from <string>Bob Wilson</string> &lt;bob.wilson at apple.com&gt;<p>August 17, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On Aug 17, 2016, at 5:48 AM, Ryan Lovelett via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I just noticed that if you do `utils/update-checkout --clone` it pulls<br>&gt; down `compiler-rt`. I have been building Swift from source on Linux for<br>&gt; awhile now. I&#39;ve never once checked out compiler-rt. Which makes me<br>&gt; wonder if that repository is even in use.<br>&gt; <br>&gt; Here is the question: what is the compiler-rt repository used for? Is my<br>&gt; build not working as expected without compiler-rt?<br></p><p>At least one reason is that the runtime support for code coverage testing is in compiler-rt. We want to be able to test Swift’s support for code coverage and we need the runtime library to be able to run those tests.<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

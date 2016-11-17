@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dad1fc0d2023332e239a5c05e01fb577?s=50"></div><header><strong>CI outage for SDK and source updates, and branching for Preview 4</strong> from <string>Nicole Jacque</string> &lt;nicole_jacque at apple.com&gt;<p>July 18, 2016 at 02:00:00pm</p></header><div class="content"><p>Hello All-<br></p><p>Tomorrow we will be temporarily bringing down the CI, starting around 10 AM, California time, in order to upgrade to the latest beta of Xcode 8 and the associated SDKs.  We will also be landing some source changes on both master and the swift-3.0-preview-3-branch.  These changes include updates required for the SDK update for Swift 3, as well as reverting some changes from the swift-3.0-preview-3-branch that were backed out in the process of converging and qualifying the preview branch.  (Those changes will remain on master, and will be rolled into the swift-3.0-preview-4-branch when it is cut.)  We expect the upgrade process to take several hours.  We’ll send out a message when the upgrade is complete.<br></p><p>At this time, we will also be cutting a swift-3.0-preview-4-branch.<br></p><p>As a reminder, once the upgrade is complete, if you are doing development on a Mac, the minimum required Xcode to build Swift from source will be the latest Xcode 8 beta.  The latest Xcode 8 beta can be downloaded at: https://developer.apple.com/download/ &lt;https://developer.apple.com/download/&gt;<br></p><p>Thanks!<br>Nicole<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160718/9e96eccd/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Closure identity (was Re: Compiler directive for current closure reference)</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>February 23, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Feb 23, 2016, at 3:09 PM, Brent Royal-Gordon &lt;brent at architechies.com &lt;mailto:brent at architechies.com&gt;&gt; wrote:<br>&gt; <br>&gt; What is the better discriminator here? Sure, you could make Observer into a class that contains a closure, but how does that make anything better? It&#39;s an extra object to track and manage; it&#39;s an impediment to using trailing closure syntax with `addObserver`; it&#39;s more state you could accidentally share; it&#39;s additional memory and additional reference counting.<br></p><p>You get all these problems already if you have to hold on to the closure object to remove it—you have to track and manage the closure object; you can&#39;t use trailing closure syntax with `addObserver` if you have to first assign the closure somewhere else; you could accidentally share the closure; referencing the closure will keep all its captured state alive, even if the observed object goes away.<br></p><p>-Joe<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160223/b11082a4/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

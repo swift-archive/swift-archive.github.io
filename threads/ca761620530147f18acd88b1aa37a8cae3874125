@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Add property for negation to Bool</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May 22, 2016 at 11:00:00am</p></header><div class="content"><p>on Sat May 21 2016, Антон Миронов &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I found negation operator (!) the least detectable among the code. So<br>&gt; I’ve decided to add property “not” to BooleanType (Swift 2.2) or<br>&gt; Boolean on 3.0 with extension:<br>&gt;<br>&gt; extension BooleanType {<br>&gt; 	var not: Bool { return !self.boolValue }<br>&gt; }<br>&gt;<br>&gt; This is code with negation operator:<br>&gt; 	return !self.lanes[position.y][currentLaneRange].contains(.Gap)<br>&gt;<br>&gt; As I sad before negation operation is hard to spot. Moreover at first<br>&gt; it looks like I’m trying to negate self for some reason.<br>&gt;<br>&gt; This is code with “not” property:<br>&gt; 	return self.lanes[position.y][currentLaneRange].contains(.Gap).not<br></p><p>I think having the “not” up at the front of the boolean condition is<br>useful.  Think about why this joke works:<br></p><p>    “I&#39;m a big fan of reference semantics...           NOT!”<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>[Proposal] Add property for negation to Bool</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>May 22, 2016 at 04:00:00pm</p></header><div class="content"><p>Fun as this conversation is, replacing &quot;!&quot; with &quot;not&quot; and other related<br>changes (&quot;&amp;&amp;&quot; replaced with &quot;and&quot;, etc.) represent a commonly proposed and<br>rejected change<br>&lt;https://github.com/apple/swift-evolution/blob/master/commonly_proposed.md&gt;,<br>and the rationale is given here<br>&lt;https://lists.swift.org/pipermail/swift-evolution/2015-December/000032.html&gt;<br>.<br></p><p><br>On Sun, May 22, 2016 at 1:15 PM, Dave Abrahams via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; on Sat May 21 2016, Антон Миронов &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; &gt; I found negation operator (!) the least detectable among the code. So<br>&gt; &gt; I’ve decided to add property “not” to BooleanType (Swift 2.2) or<br>&gt; &gt; Boolean on 3.0 with extension:<br>&gt; &gt;<br>&gt; &gt; extension BooleanType {<br>&gt; &gt;       var not: Bool { return !self.boolValue }<br>&gt; &gt; }<br>&gt; &gt;<br>&gt; &gt; This is code with negation operator:<br>&gt; &gt;       return !self.lanes[position.y][currentLaneRange].contains(.Gap)<br>&gt; &gt;<br>&gt; &gt; As I sad before negation operation is hard to spot. Moreover at first<br>&gt; &gt; it looks like I’m trying to negate self for some reason.<br>&gt; &gt;<br>&gt; &gt; This is code with “not” property:<br>&gt; &gt;       return self.lanes[position.y][currentLaneRange].contains(.Gap).not<br>&gt;<br>&gt; I think having the “not” up at the front of the boolean condition is<br>&gt; useful.  Think about why this joke works:<br>&gt;<br>&gt;     “I&#39;m a big fan of reference semantics...           NOT!”<br>&gt;<br>&gt; --<br>&gt; -Dave<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160522/ee20c2a7/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

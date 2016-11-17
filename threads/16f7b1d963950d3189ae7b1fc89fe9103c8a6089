@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f79a7909dfca0088f4fdc01f109f497e?s=50"></div><header><strong>program performance Ubuntu15.10 ?</strong> from <string>Isaac Gouy</string> &lt;igouy2 at yahoo.com&gt;<p>December 10, 2015 at 04:00:00pm</p></header><div class="content"><p>How should I compile Swift programs on Ubuntu 15.10 for best performance?<br></p><p>Like this?<br></p><p><br>   bin/swiftc &lt;source code file&gt; -Ounchecked -whole-module-optimization <br></p><p><br></p><p>What is performance with swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu15.10 currently expected to be like? Like Python? Like Java? Like C?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>program performance Ubuntu15.10 ?</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>December 10, 2015 at 09:00:00am</p></header><div class="content"><p>On Thu, Dec 10, 2015 at 8:33 AM, Isaac Gouy via swift-dev<br>&lt;swift-dev at swift.org&gt; wrote:<br>&gt; How should I compile Swift programs on Ubuntu 15.10 for best performance?<br>&gt;<br>&gt; Like this?<br>&gt;<br>&gt;<br>&gt;    bin/swiftc &lt;source code file&gt; -Ounchecked -whole-module-optimization<br>&gt;<br>&gt;<br>&gt;<br>&gt; What is performance with swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu15.10 currently expected to be like? Like Python? Like Java? Like C?<br></p><p>Unfortunately, it looks like we enabled extra assertions in the<br>snapshot builds, so performance measurements won&#39;t be representative:<br>https://bugs.swift.org/browse/SR-180<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

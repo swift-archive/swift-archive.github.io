@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>error: reference to &#39;va_list&#39; is ambiguous</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>May  4, 2016 at 02:00:00pm</p></header><div class="content"><p>While compiling foundation on ARM (Raspberry Pi 2) I running into a<br>perplexing issue.<br></p><p>When it goes to compile CFString the signature:<br></p><p>CFStringRef CFStringCreateWithFormatAndArguments(CFAllocatorRef alloc,<br>CFDictionaryRef formatOptions, CFStringRef format, va_list arguments)<br>CF_FORMAT_FUNCTION(3,0);<br></p><p>Fails to resolve with the error: reference to &#39;va_list&#39; is ambiguous.<br></p><p>The note from the compiler says:<br></p><p>/home/ryan/Source/build/Ninja-ReleaseAssert/swift-linux-armv7/lib/swift/clang/include/stdarg.h:30:27:<br>note: candidate found by name lookup is &#39;va_list&#39;<br>typedef __builtin_va_list va_list;<br>                          ^<br>/usr/include/stdio.h:79:20: note: candidate found by name lookup is<br>&#39;va_list&#39;<br>typedef _G_va_list va_list;<br></p><p>It would seem that va_list is being defined by multiple things in the<br>include path. This is unexpected because I would figure it would be<br>included in the system path for Clang.<br></p><p>Tips/tricks/pointers?<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

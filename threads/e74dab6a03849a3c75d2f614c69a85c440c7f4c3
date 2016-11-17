@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a0363a0549dd666b044b7674336b560c?s=50"></div><header><strong>Building a Swift package containing a module.modulemap and C files</strong> from <string>Ricardo N Olivieri</string> &lt;ricardo.olivieri at us.ibm.com&gt;<p>January 20, 2016 at 11:00:00am</p></header><div class="content"><p>Hello,<br></p><p>At this point in time, the Swift PM doesn’t handle C code. And though <br>Swift PM’s goal is not probably to compile C code, we are wondering about <br>the following scenario: A swift package that consists of the expected <br>Package.swift file, a module.modulemap file, and C files. In a situation <br>like this, the Swift package cannot be compiled by the Swift PM.<br></p><p><br>A possible solution for this could be to have an indication that the C <br>code present in the package should be compiled with the C compiler and a <br>way to specify what flags should be passed to the C compiler. For example, <br>the Package.swift file could include a directive to kick off a Ninja or <br>Makefile that is then responsible for compiling and linking the C code.  <br></p><p><br>Is this something that would or could be considered to be within scope of <br>the Swift PM? <br></p><p>Regards,<br>   Ricardo Olivieri<br>   Software Engineer<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160120/e74df4c3/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Building a Swift package containing a module.modulemap and C files</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>January 20, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Jan 20, 2016, at 9:03 AM, Ricardo N Olivieri via swift-build-dev &lt;swift-build-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello,<br>&gt; <br>&gt; At this point in time, the Swift PM doesn’t handle C code. And though Swift PM’s goal is not probably to compile C code, we are wondering about the following scenario: A swift package that consists of the expected Package.swift file, a module.modulemap file, and C files. In a situation like this, the Swift package cannot be compiled by the Swift PM.<br>&gt; <br>&gt; <br>&gt; A possible solution for this could be to have an indication that the C code present in the package should be compiled with the C compiler and a way to specify what flags should be passed to the C compiler. For example, the Package.swift file could include a directive to kick off a Ninja or Makefile that is then responsible for compiling and linking the C code.  <br>&gt; <br>&gt; <br>&gt; Is this something that would or could be considered to be within scope of the Swift PM? <br></p><p>Yes, certainly.<br></p><p>I have a proposal for initial support for this here:<br>  https://github.com/ddunbar/swift-evolution/blob/8c8272b423bdc26fe49f3d1a36ab13a3a976f519/proposals/NNNN-swiftpm-c-language-targets.md<br>and it is on the short list of things I want to work on, but I&#39;ve unfortunately been hit with a bunch of other distractions and sickness so it hasn&#39;t gotten much attention yet.<br></p><p> - Daniel<br></p><p>&gt; Regards,<br>&gt;   Ricardo Olivieri<br>&gt;   Software Engineer<br>&gt; _______________________________________________<br>&gt; swift-build-dev mailing list<br>&gt; swift-build-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-build-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160120/f8ca829e/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

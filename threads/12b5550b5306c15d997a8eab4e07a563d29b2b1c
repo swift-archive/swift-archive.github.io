@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Why does URL.checkResourceIsReachable() return a Bool?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>August  8, 2016 at 05:00:00pm</p></header><div class="content"><p>on Sun Aug 07 2016, Charles Srstka &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; -[NSURL checkResourceIsReachableAndReturnError:] has taken on several<br>&gt; forms in Swift during its development, sometimes returning a Boolean<br>&gt; and an error by reference, sometimes returning Void and using Swift’s<br>&gt; do/try/catch system. In Swift 3, though, it appears to do both, which<br>&gt; is weird:<br>&gt;<br>&gt; func checkResourceIsReachable() throws -&gt; Bool<br>&gt;<br>&gt; All the documentation has to say about this is:<br>&gt;<br>&gt; &quot;This method is currently applicable only to URLs for file system resources. For other URL types, false is returned.”<br>&gt;<br>&gt; It does not, however, say whether non-file URLs are the only thing<br>&gt; that can cause a return of ‘false’, so I don’t know whether I should<br>&gt; be checking the return value when checking a file URL or not. This<br>&gt; results in having to check both the return value *and* the catch block<br>&gt; each time, which is fairly awkward. I’m also not clear on why checking<br>&gt; reachability on a non-file URL can’t just return an error like it did<br>&gt; in the past.<br>&gt;<br>&gt; What’s the rationale behind this?<br></p><p>Hi Charles,<br></p><p>At least for now, discussion of the design of core libraries belongs on<br>swift-corelibs-dev, rather than swift-evolution.  That&#39;s where you&#39;ll<br>reach the people that can usefully respond.<br></p><p>HTH,<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

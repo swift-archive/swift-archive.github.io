@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1d54deb32312ab6a282cde8637bc7077?s=50"></div><header><strong>[swift-evolution] Proposal: Conforming NSDate to Comparable</strong> from <string>James Lee</string> &lt;james at jelee.co.uk&gt;<p>December 11, 2015 at 08:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I wanted to pick up on this as I have done some work on implementing the comparable protocol for NSDate in a PR (119)<br></p><p>I fully agree that comparable should be implemented generally when comparing dates I want to know if it is one case. The current implementation feels clunky to use, especially isEqualTo: <br></p><p>I can see points where getting the enum value can be valuable for instance a switch control flow and don&#39;t think the current API should be deprecated immediately, but using the comparable operators feels more readable and fits in more with swift&#39;s style.<br></p><p>Strideable also seems very fitting and having looked up the reference, would cover comparable and equatable as well. I also feel that there could be some sort of enum built that would return the TimeInterval value for the human readable version. For example advanceBy(.Day) would fit dateByAddingTimeInterval(86400)<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

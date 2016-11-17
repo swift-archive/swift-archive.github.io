@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a838c63b9093a77fb88231d65effa3b3?s=50"></div><header><strong>importing a *local* native dependency</strong> from <string>Drew Crawford</string> &lt;drew at sealedabstract.com&gt;<p>December 25, 2015 at 02:00:00am</p></header><div class="content"><p>I&#39;m trying to package a Swift library.  This Swift library is tightly coupled to a native library.  By &quot;tightly coupled&quot; here I really mean that only half the library is written in Swift, and the other half, as an implementation detail, is in some other language.<br></p><p>You *probably* do not have a build environment for this other language just lying around, so my plan (actually, my current practice) is to distribute binaries of the non-Swift part, just checked into source control, and then link against them with a module map.  Yes, I realize this isn&#39;t portable, but neither is anything else in this project, so I&#39;ll save that particular surprise for another day.<br></p><p>The trouble is, swiftpm wants there to be some &quot;other&quot; repo called `CFoo` containing only a modulemap with paths that point to... /usr/local I guess? &lt;https://github.com/apple/swift-package-manager/blob/master/Documentation/SystemModules.md&gt;  But <br></p><p>1.  There is no other repo<br>2.  You have not installed the non-Swift half of my library to /usr/local<br>3.  You do not want to link against &quot;some&quot; version of the binary blob you have lying around from times past.  You want to link against exactly the one I give you, because the work is versioned as a whole.<br></p><p>I see two solutions to this problem.<br></p><p># Non-URL dependencies<br></p><p>Behind this door, I can write a Package.swift like this:<br></p><p>let package = Package(<br>    name: &quot;Foo&quot;,<br>    dependencies: [<br>        .Package(path: &quot;CFoo&quot;),<br>    ],<br>)<br></p><p>The semantic of this is that Foo depends on a package CFoo that is merely a folder in the current repository (e.g., we do not need to clone it from somewhere else).<br></p><p>In my case CFoo would contain a module.map and a binary blob, but in the general case it is any arbitrary kind of package.<br></p><p>This solves my three problems since 1) There&#39;s only one repo, 2) The binary is located with repo-based paths, 3) You&#39;re linking against the particular CFoo distributed in the repository.<br></p><p># Custom include paths<br></p><p>Another possibility goes like this:<br></p><p>let package = Package(<br>    name: &quot;Foo&quot;,<br>    extraIncludePaths: [&quot;CFoo&quot;]<br>)<br></p><p>The semantic of this is that we pass `-I CFoo` to swiftc (e.g. that is emitted into `other-args` of llbuild.yaml)<br></p><p>In my case CFoo contains a module.map and a binary blob, but in the general case it contains any kind of header path that a package may want to import.<br></p><p>There are certainly other possibilities besides these two, I&#39;m just suggesting them because they seem straightforward based on my poking around in the sourcecode today.<br></p><p>I am happy to contrib either of these (or something else proposed) but would like to achieve consensus on a design instead of PRing by surprise.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20151225/66a1e576/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

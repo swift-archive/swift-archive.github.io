@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[Review] SE-0065 A New Model for Collections and Indices</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>April 27, 2016 at 09:00:00am</p></header><div class="content"><p>Am 27. April 2016 um 01:16 schrieb Dave Abrahams &lt;dabrahams at apple.com&gt;:<br></p><p><br></p><p>on Tue Apr 26 2016, Thorsten Seitz &lt;tseitz42-AT-icloud.com&gt; wrote:<br></p><p><br>Am 26. April 2016 um 01:16 schrieb Dave Abrahams via swift-evolution<br>&lt;swift-evolution at swift.org&gt;:<br></p><p><br>on Mon Apr 25 2016, Xiaodi Wu &lt;xiaodi.wu-AT-gmail.com&gt; wrote:<br></p><p><br>Quick thought:<br></p><p><br>Why are you reaching for the &quot;form...&quot; rule for the mutating methods when<br>there<br></p><p><br>are clear verb counterparts?<br></p><p><br>location: locate<br></p><p><br>successor: succeed<br></p><p><br>We&#39;re not using successor(i) anymore, as noted below, and furthermore<br>c.succeed(&amp;i) strongly implies the wrong meaning. I didn&#39;t consider<br>using<br></p><p><br>c. locate(...:&amp;i ... )<br></p><p><br>primarily because I never thought of it and nobody suggested it IIRC,<br>but I also don&#39;t see how it would work in a family with<br>c.location(after: i) et al. Suggestions?<br></p><p><br>What is wrong with<br></p><p><br>c.locate(after: i)<br></p><p><br>?<br></p><p>Just to start with, it doesn&#39;t form a noun phrase.<br></p><p><br>Ah, my bad, I had completely missed the point of the problem (somehow thinking in the old model, not realizing that `c` is the collection and `i` to be mutated instead of `c`).<br></p><p><br>Yeah, in that case I totally agree :-)<br></p><p><br>Sorry for the noise...<br></p><p><br></p><p>-Thorsten<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160427/d3d7c1d0/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

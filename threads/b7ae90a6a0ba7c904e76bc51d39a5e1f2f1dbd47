@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d47baf3a0f80c9fd13ece9c4b87c7fce?s=50"></div><header><strong>[Proposal] Powerful enumerations built upon protocols, structures and classes</strong> from <string>Marc Knaup</string> &lt;marc at knaup.koeln&gt;<p>December 15, 2015 at 11:00:00am</p></header><div class="content"><p>Dear community,<br></p><p>after working around several limitations of enumerations I had the thought<br>that it should be possible to represent their behavior using just<br>protocols, structures and classes.<br></p><p>Such an approach would have several benefits:<br></p><p>   - The enum/case syntax would simply be syntactic sugar for constructs<br>   you can also create using protocols, structures and classes which<br>   simplifies the type system since enumerations are no longer something<br>   special.<br>   - Enumerations gain a lot of additional functionality currently<br>   available only to protocols, structures and classes.<br>   - Enumerations and their cases have a less stronger coupling, allowing<br>   you for example to add an existing type as an additional case.<br>   - It becomes possible to refer to an enumeration case directly since<br>   it&#39;s now a type.<br>   - For the same reason enumeration cases can be constructed and passed<br>   around independently from their enumeration.<br>   - The same enumeration case could be used by multiple enumerations.<br>   - Enumerations can have very flexible initializers instead of just the<br>   default one for tuples when using Associated Values.<br>   - Enumerations defined in Swift 2.1 will still work with minimal<br>   migration.<br></p><p>On the other hand though there are still several open issues preventing<br>such an approach from being implementable. Most of them stem from current<br>limitations of protocols and generics as well as the lack of a<br>singleton-like construct for structures.<br></p><p>Since the proposal is rather extensive I already wrote an initial version<br>which outlines the changes, explains the pros and cons, solves as many<br>issues as possible already and lists all remaining issues to be solved.<br></p><p>The proposal also suggests extensions in other areas of the language in<br>order to overcome the several limitations of the language. These changes<br>may or may not be desirable and must also be evaluated carefully. If the<br>discussion indicates that these changes are also a good idea, then they<br>will be spun out to their own proposal making this one dependent on them.<br></p><p>I would love to hear your feedback and ideas for improvements.<br></p><p>https://github.com/fluidsonic/swift-evolution/blob/master/proposals/NNNN-powerful-enumerations-built-upon-protocols-structures-and-classes.md<br></p><p>Thank you,<br>  Marc<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151215/b7aebd47/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Proposal] Mixins</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>March  5, 2016 at 12:00:00am</p></header><div class="content"><p>I have created a pull request, because no suggestions have been added in<br>two days. Here it is:<br>https://github.com/apple/swift-evolution/pull/188<br></p><p>Link to the proposal:<br>https://github.com/Anton3/swift-evolution/blob/mixins/proposals/NNNN-mixins.md<br></p><p>I worry about syntax of renaming in &quot;Resolving conflicts&quot; section:<br>var y = B.x<br>func g(arg: Type) = B.f<br>But it&#39;s the best I can think of. Ideas are welcome, as always.<br>That said, I don&#39;t think it&#39;s a flaw strong enough not to start a review.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160305/82d70cf5/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

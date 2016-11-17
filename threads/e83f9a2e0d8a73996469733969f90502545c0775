@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Optimising Set&lt;String&gt; comparisons</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>November 13, 2016 at 09:00:00pm</p></header><div class="content"><p>guard a.isSubset(of: b) else { return false }<br></p><p>This should be the most efficient way to do what you’re trying to do.<br></p><p>&gt; Using Swift 3 I have a function that&#39;s called extremely frequently and is appearing regularly in Profiler runs. The function takes two Set&lt;String&gt;instances and simply attempts to determine whether all items from Set A are present in Set B (it&#39;s important to note that Set B may well contain additional items).<br>&gt; <br>&gt; I&#39;ve attempted to approach the problem in two ways:<br>&gt; <br>&gt; let diff = a.subtracting(b)<br>&gt; guard diff.count == 0 else { return false }<br>&gt; <br>&gt; <br>&gt; And also by simply iterating over the contents of Set A, like so:<br>&gt; <br>&gt; for item in a {<br>&gt; if !b.contains(item) {<br>&gt; return false<br>&gt; }<br>&gt; }<br>&gt; <br>&gt; <br>&gt; Both ultimately end up spending the majority of their time in String._compareDeterministicUnicodeCollaton(String) -&gt;Int. Which makes sense, given what I&#39;m doing - but ideally I&#39;d like to come up with a more efficient way of performing the above check. Swift&#39;s String representation is incredibly robust, but for my needs the strings could be adequately represented in ASCII encoding. I&#39;ve also considered storing and comparing the hashValue of the strings, to speed up comparisons...<br>&gt; <br>&gt; Hopefully this is an acceptable question for this mailing list. I&#39;m aware that this may not be a Swift-specific question and could well be solved with a more efficient data structure or approach, but I&#39;d really appreciate some input from more experienced Swift developers :-)_______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>Coerce NSData to Data</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>October 14, 2016 at 02:00:00pm</p></header><div class="content"><p>I&#39;m puzzeled by the behavior of the automatic coercion. Specifically<br>when something will work and when it will not. It at least has something<br>to do with the platform. That much I have tracked down.<br></p><p>I&#39;ve attached a file, bridge.swift, that on Linux will fail to compile<br>with the error: cannot convert value of type &#39;NSData&#39; to type &#39;Data&#39; in<br>coercion. However, on Darwin it compiles just fine.<br></p><p>(The contents of the file just incase it gets stripped)<br></p><p>import Foundation<br></p><p>let md = NSData(bytes: [0x0D, 0x0A, 0x0D, 0x0A], length: 4)<br>_ = md as Data<br></p><p>On Linux the `md` has a method `_bridgeToSwift()` that returns the<br>`Data` I am looking for. But of course, the Darwin version does not.<br></p><p>Which begs the question what is the cross-platform way of doing things?<br>I&#39;m hoping it is not `if #os(Linux)`...<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: bridge.swift<br>Type: application/octet-stream<br>Size: 94 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161014/792dc464/attachment.obj&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Coerce NSData to Data</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>October 14, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Oct 14, 2016, at 11:15 AM, Ryan Lovelett via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I&#39;m puzzeled by the behavior of the automatic coercion. Specifically<br>&gt; when something will work and when it will not. It at least has something<br>&gt; to do with the platform. That much I have tracked down.<br>&gt; <br>&gt; I&#39;ve attached a file, bridge.swift, that on Linux will fail to compile<br>&gt; with the error: cannot convert value of type &#39;NSData&#39; to type &#39;Data&#39; in<br>&gt; coercion. However, on Darwin it compiles just fine.<br>&gt; <br>&gt; (The contents of the file just incase it gets stripped)<br>&gt; <br>&gt; import Foundation<br>&gt; <br>&gt; let md = NSData(bytes: [0x0D, 0x0A, 0x0D, 0x0A], length: 4)<br>&gt; _ = md as Data<br>&gt; <br>&gt; On Linux the `md` has a method `_bridgeToSwift()` that returns the<br>&gt; `Data` I am looking for. But of course, the Darwin version does not.<br>&gt; <br>&gt; Which begs the question what is the cross-platform way of doing things?<br>&gt; I&#39;m hoping it is not `if #os(Linux)`...<br>&gt; &lt;bridge.swift&gt;_______________________________________________<br></p><p>The `as` bridging is generally an Objective-C bridging feature, and isn&#39;t present on Linux. On Linux, AIUI, you should use the value types as much as possible—this was a major motivation for the &quot;id-as-Any&quot; changes to the ObjC bridge on Apple platforms to enable that. Does Data have a regular initializer to construct from an NSData?<br></p><p>-Joe<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>Coerce NSData to Data</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>October 17, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; Does Data have a regular initializer to construct from an NSData?<br></p><p>It does. I&#39;ve gone ahead and refactored the code to just not use NSData.<br></p><p>Thanks!<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

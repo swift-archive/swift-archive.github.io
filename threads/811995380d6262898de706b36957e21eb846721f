@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0041: Updating Protocol Naming Conventions for Conversions</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May 19, 2016 at 03:00:00pm</p></header><div class="content"><p>on Wed May 18 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On May 18, 2016, at 1:58 PM, Matthew Johnson via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; On May 18, 2016, at 1:52 PM, Brent Royal-Gordon &lt;brent at architechies.com&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;<br>&gt;&gt;&gt;&gt;&gt; If we&#39;re doing this, I wonder if category 1 shouldn&#39;t just be<br>&gt;&gt;&gt;&gt; `Convertible`. This would preserve our `LiteralConvertible`<br>&gt;&gt;&gt;&gt; protocols with the same names (which, consistency issues aside,<br>&gt;&gt;&gt;&gt; seem perfectly cromulent), while shifting the `StringConvertible`<br>&gt;&gt;&gt;&gt; protocols over to the `Representable` category.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Do you really think &#39;Convertible&#39; is more clear than &#39;Initializable&#39;?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I don&#39;t think `Convertible` is clearer than `Initializable`, but I<br>&gt;&gt;&gt; think it rolls off the tongue better, is easier to spell, is more<br>&gt;&gt;&gt; compatible with non-initializer implementations, and in general<br>&gt;&gt;&gt; wins on a lot of squishy, subjective, hard-to-define axes.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Subjectively, I&#39;ve noticed that a lot of people *don&#39;t* think of<br>&gt;&gt;&gt; things like `Double(myFloat)` as being initializers; they think of<br>&gt;&gt;&gt; them as conversions. To those people, `Convertible` is probably the<br>&gt;&gt;&gt; right name.<br>&gt;&gt; <br>&gt;&gt; Thanks for elaborating.  I can see that perspective.  It does also<br>&gt;&gt; have the advantage of being the smallest change from current state.<br>&gt;&gt; <br>&gt;&gt; I certainly wouldn’t oppose this.  The most important thing IMO is that we agree on *something*.<br>&gt;<br>&gt; The whole discussion started because ArrayLiteralConvertible meant<br>&gt; &quot;can be initialized from Array literal&quot;, and not &quot;can be converted to<br>&gt; array literal&quot;, which is what nearly everyone this was presented to in<br>&gt; an informal study thought it meant.<br></p><p>Actually, it means “can be the type of an array literal.”  An array<br>literal is an expression, not an object.  Roughly speaking, the type<br>checker decides what type the array literal has by finding the<br>best-matching type that conform to the protocol, and the code generator<br>injects the necessary calls to the initializer.<br></p><p>&gt;<br>&gt;<br>&gt; -- E<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60e770307188a87bb704e227d647efc3?s=50"></div><header><strong>CentOS 7 / RHEL build?</strong> from <string>Steve Linberg</string> &lt;steve at silicongoblin.com&gt;<p>December  3, 2015 at 10:00:00pm</p></header><div class="content"><p>Has anyone built Swift for CentOS 7 yet, or RHEL? And/or will packages be available at some point?<br></p><p>I can lean into a source build this weekend, but if anyone?s already done it and cares to share tips / procedures / configs, I?m sure many folks would appreciate it.<br></p><p>-- <br>Steve Linberg, Chief Goblin<br>Silicon Goblin Technologies<br>http://silicongoblin.com<br>Be kind.  Remember, everyone you meet is fighting a hard battle.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151203/83e19a2c/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: smime.p7s<br>Type: application/pkcs7-signature<br>Size: 4033 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151203/83e19a2c/attachment.p7s&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>CentOS 7 / RHEL build?</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>December  3, 2015 at 11:00:00pm</p></header><div class="content"><p>Steve,<br></p><p>I know there are a number of people out there trying to make builds for<br>all the different distributions. I have been working on one for Arch<br>(https://github.com/RLovelett/swift-aur) that eventually I will<br>contribute back to the?AUR[1]. I point this out because there are few<br>patches that have had to be made to the source to get it compile.<br></p><p>Once I get it consistently compiling I&#39;ll see what hasn&#39;t been submitted<br>as either a bug or patch and submit accordingly.<br></p><p>As of right now the little things seem to be Python 2 vs 3 support and<br>hard coded paths to some headers. There are some larger issues that I&#39;m<br>still trying to figure out where the automated build scripts are not<br>linking pthreads and dl correctly. Like I said once I can consistently<br>reproduce it/fix it I&#39;ll submit upstream.<br></p><p>On Thu, Dec 3, 2015, at 10:35 PM, Steve Linberg wrote:<br>&gt; Has anyone built Swift for CentOS 7 yet, or RHEL? And/or will packages<br>&gt; be available at some point?<br>&gt;<br>&gt; I can lean into a source build this weekend, but if anyone?s already<br>&gt; done it and cares to share tips / procedures / configs, I?m sure many<br>&gt; folks would appreciate it.<br>&gt;<br>&gt;<br>&gt; --<br>&gt; Steve Linberg, Chief Goblin Silicon Goblin Technologies<br>&gt; http://silicongoblin.com Be kind. ?Remember, everyone you?meet is<br>&gt; fighting a hard battle.<br>&gt;<br>&gt; _________________________________________________<br>&gt; swift-users mailing list swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users Email had 1<br>&gt; attachment:<br></p><p><br>&gt;  * smime.p7s? 5k (application/pkcs7-signature)<br></p><p><br>Links:<br></p><p>  1. https://aur.archlinux.org/<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151203/2bfeba34/attachment-0001.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

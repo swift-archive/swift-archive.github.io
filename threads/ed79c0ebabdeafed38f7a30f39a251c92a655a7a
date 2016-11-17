@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3014c49b4302cff52354704df39354c6?s=50"></div><header><strong>Xcode Integration with Swift Package Manager (Almost there!)</strong> from <string>Daniel Opdyke</string> &lt;danopdyke at gmail.com&gt;<p>October 19, 2016 at 11:00:00am</p></header><div class="content"><p>Hey all,<br></p><p><br></p><p>I apologize if this has already been sent via the mailing list. I’ve been<br>researching this issues for a few days now, and am having a bit of trouble<br>understanding how to best integrate XCode projects with the Swift Package<br>Manager. I’m hoping that, if we’re able to find a solution, I can post this<br>somewhere for others who may be running into the same issue. For reference,<br>I’ve tried the solutions provided the following sites.<br></p><p><br></p><p>https://cjwirth.com/2016/03/07/using-xcode-and-spm-together/<br></p><p>https://honzadvorsky.com/articles/2016-02-25-14-00-3_steps_to_marry_xcode_with_swift_package_manager/<br></p><p>https://www.sitepoint.com/introducing-the-swift-package-manager/<br></p><p><br></p><p>I essentially have two projects: The first is a library with a third-party<br>dependency (Alamofire), and the second is an iOS application. After setting<br>up the Package.swift file for the library, I’ve run the “swift package<br>generate-xcodeproj” command, which has created an xcode project. I’ve<br>verified that this project builds correctly. The project has been checked<br>into a Git repo.<br></p><p><br></p><p>I then created a Package.swift file for the iOS app, and set the library<br>project as a dependency. When I run the “swift package fetch” command, it<br>pulls both the library project, as well as the Alamofire project, into my<br>Packages folder. However, if I attempt to bring the library project’s<br>xcodeproj into my iOS app’s workspace, I get compiler errors. It seems like<br>the library project is expecting the Alamofire source to be within the<br>*library’s<br>Packages*, as opposed to the iOS app’s Packages.<br></p><p><br></p><p>To visualize<br></p><p>+ iOS App<br></p><p>   + Packages<br></p><p>      + MyLib<br></p><p>         + Packages<br></p><p>            + Alamofire (folder without any source)<br></p><p>      + Alamofire<br></p><p><br></p><p>As a workaround, I’m able to navigate into the “MyLib” folder, and run<br>“swift package fetch”. This fetches the Alamofire source into the inner<br>Packages folder, but also results in the project having two version of the<br>source.<br></p><p><br></p><p>I’m guessing that this dependency flattening is intentional, and that my<br>problem is likely due to my misunderstanding of the intended workflow.<br></p><p><br></p><p>Thank you in advance for any help. I promise to return the favor ;).<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161019/ed795a7a/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Make the first parameter in a function declaration follow the same rules as the others</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March  9, 2016 at 02:00:00pm</p></header><div class="content"><p>on Wed Mar 09 2016, Tanner Nelson &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I would agree that in following the Swift.org API Design Guidelines I&#39;ve had to do a lot of `func foo(x x: Type)`.<br>&gt;<br>&gt; But simple functions like `.remove(element)` or `.append(element)`<br>&gt; that really don&#39;t need labels are ubiquitous and would need to be<br>&gt; changed to `_ x:`.<br>&gt;<br>&gt; I assume the goal is to have the default case be whatever developers<br>&gt; will use most commonly.<br></p><p>Actually, having the default case be the one that&#39;s most predictable and<br>easiest to use has a lot of merit.  I can&#39;t tell you the number of times<br>where I&#39;ve seen someone write<br></p><p>      func f(a: B, c: D)<br></p><p>when they&#39;ve really meant<br></p><p>      func f(a _: B, c: D)<br></p><p>because the first argument is treated differently.<br></p><p>If you want to have some fun, though, count the ratio of APIs with first<br>argument labels to APIs without them in the proposed SDK revisions ;-)<br></p><p>&gt;&gt; On Mar 9, 2016, at 3:15 PM, Jose Cheyo Jimenez via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; +1 Yes<br>&gt;&gt; <br>&gt;&gt; the current solution makes me wish we still have the # from swift 1 ;)<br>&gt;&gt; <br>&gt;&gt; 	func foo(x x: Int, y: Int) // Swift 2<br>&gt;&gt; 	func foo(#x: Int, y: Int) // Swift 1<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; On Mar 9, 2016, at 10:58 AM, Joe Groff via swift-evolution<br>&gt;&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt;&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Our accepted naming guidelines have embraced first argument labels<br>&gt;&gt;&gt; for functions and methods. This weakens our justification for<br>&gt;&gt;&gt; making the first parameter declaration in a `func` declaration<br>&gt;&gt;&gt; behave differently from the others, implicitly being unlabeled. It<br>&gt;&gt;&gt; seems pretty clear to me we should make all of the parameter<br>&gt;&gt;&gt; declarations behave uniformly:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; func foo(x: Int, y: Int) // Should declare foo(x:y:), instead of foo(_:y:)<br>&gt;&gt;&gt; func foo(_ x: Int, y: Int) // Explicitly declares foo(_:y:)<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; This would also make `init` and `func` parameters behave<br>&gt;&gt;&gt; consistently, which is nice. There may still be hope for our<br>&gt;&gt;&gt; keyword argument rules to one day be shorter than the Smalltalk<br>&gt;&gt;&gt; spec…<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; -Joe<br>&gt;&gt;&gt; _______________________________________________<br>&gt;&gt;&gt; swift-evolution mailing list<br>&gt;&gt;&gt; swift-evolution at swift.org<br>&gt;&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;<br>&gt;&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

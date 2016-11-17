@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1b852c5986959201d1f8eca105491072?s=50"></div><header><strong>Swift 3 equivalent of dispatch_barrier_async</strong> from <string>Eric Miller</string> &lt;hi at simple.gy&gt;<p>June 28, 2016 at 01:00:00pm</p></header><div class="content"><p>I tried searching github&#39;s swift-evolution for &quot;dispatch_barrier_async&quot;,<br>but don&#39;t see a mention of it.<br></p><p>Can I migrate this directly to swift 3, or do I need a larger refactor<br>involving serial queues?<br></p><p>```swift<br></p><p>let myConcurrentQueue = DispatchQueue(label: &quot;concurrentQ&quot;, attributes: .<br>concurrent)<br>dispatch_barrier_async(myConcurrentQueue) { ... }<br></p><p>```<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160628/139e74d6/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Swift 3 equivalent of dispatch_barrier_async</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>June 28, 2016 at 12:00:00pm</p></header><div class="content"><p>The new spelling is:<br></p><p>queue.async(flags: .barrier) { ... }<br></p><p> - Daniel<br></p><p>&gt; On Jun 28, 2016, at 12:24 PM, Eric Miller via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I tried searching github&#39;s swift-evolution for &quot;dispatch_barrier_async&quot;, but don&#39;t see a mention of it.<br>&gt; <br>&gt; Can I migrate this directly to swift 3, or do I need a larger refactor involving serial queues?<br>&gt; <br>&gt; ```swift<br>&gt; <br>&gt; let myConcurrentQueue = DispatchQueue(label: &quot;concurrentQ&quot;, attributes: .concurrent)<br>&gt; dispatch_barrier_async(myConcurrentQueue) { ... }<br>&gt; <br>&gt; ```<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160628/90463094/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

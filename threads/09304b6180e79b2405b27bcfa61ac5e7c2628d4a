@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>ed/ing, InPlace, Set/SetAlgebra naming resolution</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 11, 2016 at 05:00:00pm</p></header><div class="content"><p>on Thu Feb 11 2016, Greg Parker &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 11, 2016, at 3:54 PM, Xiaodi Wu via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; This is an interesting bit of historical perspective. Dave--may I ask<br>&gt;&gt; a naive question?<br>&gt;&gt; <br>&gt;&gt; The proposal as shown is extensive. Would it be within reach/easier to<br>&gt;&gt; pitch/feasible to implement a narrower set of changes to facilitate<br>&gt;&gt; naming convention only? Namely: alter Swift syntax to allow function<br>&gt;&gt; names to begin with &quot;=&quot; and adopt naming conventions that<br>&gt;&gt; mutating/non-mutating pairs of functions are named<br>&gt;&gt; =frobnicate()/frobnicate()? That would, it seems, go a long way.<br>&gt;<br>&gt; That would not be a small change. The strict separation between<br>&gt; operator characters and non-operator characters is deeply embedded<br>&gt; into Swift&#39;s grammar and compiler.<br></p><p>Well, considering that we have a (reverted) change in the Git tree that<br>implements the whole feature as specified, it might not be *that* hard,<br>unless the whole lexing/parsing system has been completely rebuilt since<br>then.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

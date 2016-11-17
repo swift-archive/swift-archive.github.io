@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d8625f9de9cf4fdfb449d22522779bb9?s=50"></div><header><strong>Build specific Target instead of all</strong> from <string>Stefan Bürk</string> &lt;stefan.buerk at impactmedia.de&gt;<p>January 31, 2016 at 11:00:00pm</p></header><div class="content"><p>﻿Okay thx .. then we are left with a service spamming way instead of a simple build cmd line argument to compile a single target ;) <br></p><p><br></p><p>My question was answered, but hopefully there will a nicer way in the future.<br></p><p><br></p><p>Mhh .. came up with an idea of a workaround, but seems to be a mess ... if it works. Have to test it these days if i find some time.<br></p><p><br></p><p><br></p><p>Maybe using following:<br></p><p><br></p><p>Sources/UtilOne/main.swift<br></p><p>Sources/UtilTwo/main.swift<br></p><p>...<br></p><p>...<br></p><p>Sources/UtilXXX/main.swift<br></p><p><br></p><p>﻿<br></p><p>Packages.swift is absent<br></p><p><br></p><p>Creating a CMakeLists.txt script ..<br></p><p><br></p><p>An creating an Package.swift based on the needed build target/Util with target setting, using swift build, deleting Package.swift, creating for the next util and so on ..<br></p><p><br></p><p><br></p><p><br>-----Ursprüngliche Nachricht-----<br>Von: David Turnbull &lt;dturnbull at gmail.com&gt;<br>Gesendet: Son 31 Januar 2016 22:33<br>An: Stefan Bürk &lt;stefan.buerk at impactmedia.de&gt;<br>CC: List, Swift - Community Users (swift-users at swift.org) &lt;swift-users at swift.org&gt;<br>Betreff: Re: [swift-users] Build specific Target instead of all<br></p><p>On Sun, Jan 31, 2016 at 12:10 PM, Stefan Bürk &lt;stefan.buerk at impactmedia.de &lt;mailto:stefan.buerk at impactmedia.de&gt; &gt; wrote:<br> <br></p><p> create XXX git repositories for each entry point looks a litle bit overdone.<br></p><p><br>I have git repositories with only three or four lines of significant code. That&#39;s what we have to do today. Sometimes I think this is a devious design to fill up GitHub with Swift projects.<br></p><p>-david<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160131/97afe641/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

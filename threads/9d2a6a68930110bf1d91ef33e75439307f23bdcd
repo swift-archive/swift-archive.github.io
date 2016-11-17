@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[RFC] New collections model: collections advance indices</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March  3, 2016 at 06:00:00pm</p></header><div class="content"><p>on Thu Mar 03 2016, Dmitri Gribenko &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Thu, Mar 3, 2016 at 9:56 AM, plx via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; # General Remarks: Great!<br>&gt;&gt;<br>&gt;&gt; Thanks for sharing this proposal; it&#39;s a big change, but will be a<br>&gt;&gt; big improvement once it&#39;s in place, and it&#39;s encouraging to see the<br>&gt;&gt; team is willing to undertake changes of such scale.<br>&gt;<br>&gt;&gt;<br>&gt;&gt; I&#39;m not sure how much discussion you&#39;ll actually manage to scare up<br>&gt;&gt; b/c the issues this proposal addresses are *not* common, but are<br>&gt;&gt; nevertheless rather significant when encountered.<br>&gt;&gt;<br>&gt;&gt; E.G.: it&#39;s nice to be able to create simple<br>&gt;&gt; chain/product/etc. collection-combinators which can, themselves, be<br>&gt;&gt; collections, without winding up with indices indices forced to<br>&gt;&gt; choose between *either* holding a back-reference to retrieve various<br>&gt;&gt; startIndex/endIndex values as-needed *or* carrying around a complete<br>&gt;&gt; set of all needed startIndex/endIndex values.<br>&gt;<br>&gt; Agreed!  We already have that problem in the lazy flatMap collection.<br>&gt;<br>&gt;&gt; I don’t have any negative feedback that isn’t subsumed by the next section.<br>&gt;&gt;<br>&gt;&gt; # Concern: Linearity Baked-In<br>&gt;&gt;<br>&gt;&gt; Even with this change, I have some concern that the proposed<br>&gt;&gt; protocol hierarchy from `Collection` onward feels like it has a<br>&gt;&gt; foreseeable lack of generality due to how strongly &quot;linear&quot; the<br>&gt;&gt; design wants `Collection` to be.<br>&gt;&gt;<br>&gt;&gt; Is this the right time to raise such concerns (e.g. in-scope for this discussion)?<br>&gt;<br>&gt; We can definitely dive into more details about this.  One thing that I<br>&gt; would want to understand is whether this non-linearity concept could<br>&gt; be added later without a re-design.<br>&gt;<br>&gt; Could you provide more information about the linearity issues that you<br>&gt; have in mind?  Are you thinking of something like Segmented Iterators<br>&gt; and Hierarchical Algorithms [1]?<br>&gt;<br>&gt; [1] http://lafstern.org/matt/segmented.pdf<br></p><p>Awesome paper; everybody should read it ;-)<br></p><p>Collections aren&#39;t necessarily about fundamentally linear structures,<br>but about *linearizable* structures.  If you want to build a system of<br>generic algorithms that work efficiently on all kinds of data<br>structures, flat linearity won&#39;t always be the most efficient<br>abstraction, but:<br></p><p>1. It&#39;s generally simpler to write linear algorithms (e.g. even copying<br>   from one hierarchical data structure to another with different<br>   intermediate segment boundaries can be hard to code).<br></p><p>2. You&#39;ll want the linear specialization for the leaves of your data<br>   structure regardless of what else you do, so having a linearized<br>   abstraction is important even if you&#39;re going to build a hierarchical<br>   one.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

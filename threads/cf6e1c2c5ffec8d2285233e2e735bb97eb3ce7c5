@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7b2fdba8077c8495b3caa6f36d0928da?s=50"></div><header><strong>Swift 3.0 Preview 1 Linux release and Foundation</strong> from <string>Marcin Krzyzanowski</string> &lt;marcin.krzyzanowski at gmail.com&gt;<p>June 14, 2016 at 11:00:00am</p></header><div class="content"><p>Hi,<br></p><p>Thank you for a great job on Swift 3 preview 1 release.<br>Today I noticed that Linux release and macOS release is quite different.<br>I thought that Linux and macOS release will have Foundation in it, but<br>Linux seems missing this part.<br>Maybe I&#39;m missing something but structures like &quot;Data&quot; (NSData<br>equivalent)) are missing on Linux (Ubuntu 14).<br></p><p>I&#39;m very interested in cross-platform code compatibility, and I had<br>this assumption that we can rely on stdlib and Foundation in Swift 3<br>releases.<br></p><p>Swift 3.0 Release Process document<br>https://swift.org/blog/swift-3-0-release-process/ mention that &quot;For<br>Linux, Swift 3 will also be the first release to contain the Swift<br>Core Libraries.&quot;<br></p><p>What I&#39;m missing?<br></p><p>Regards, Marcin.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/26b79a145193358c02392e186dccaaf2?s=50"></div><header><strong>Swift 3.0 Preview 1 Linux release and Foundation</strong> from <string>Jan Neumüller</string> &lt;nasan at slayers.de&gt;<p>June 14, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; On 14.06.2016, at 11:46, Marcin Krzyzanowski via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; Thank you for a great job on Swift 3 preview 1 release.<br>&gt; Today I noticed that Linux release and macOS release is quite different.<br>&gt; I thought that Linux and macOS release will have Foundation in it, but<br>&gt; Linux seems missing this part.<br>&gt; Maybe I&#39;m missing something but structures like &quot;Data&quot; (NSData<br>&gt; equivalent)) are missing on Linux (Ubuntu 14).<br>&gt; <br>&gt; I&#39;m very interested in cross-platform code compatibility, and I had<br>&gt; this assumption that we can rely on stdlib and Foundation in Swift 3<br>&gt; releases.<br>&gt; <br>&gt; Swift 3.0 Release Process document<br>&gt; https://swift.org/blog/swift-3-0-release-process/ mention that &quot;For<br>&gt; Linux, Swift 3 will also be the first release to contain the Swift<br>&gt; Core Libraries.&quot;<br>&gt; <br>&gt; What I&#39;m missing?<br>&gt; <br></p><p>It’s easy - This release isn’t finished. It’s not even beta, it is only a developer preview. I guess the completeness will get better with all following previews.<br></p><p>cu, Jan<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>Swift 3.0 Preview 1 Linux release and Foundation</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>June 14, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; Today I noticed that Linux release and macOS release is quite different.<br>&gt; I thought that Linux and macOS release will have Foundation in it, but<br>&gt; Linux seems missing this part.<br>&gt; Maybe I&#39;m missing something but structures like &quot;Data&quot; (NSData<br>&gt; equivalent)) are missing on Linux (Ubuntu 14).<br></p><p>About 15 minutes after you posted, Tony Parker announced that a branch with this work will be published later today, and they&#39;re hoping to merge it in the next couple weeks. So hang on!<br></p><p>&lt;https://lists.swift.org/pipermail/swift-corelibs-dev/Week-of-Mon-20160613/000734.html&gt;<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

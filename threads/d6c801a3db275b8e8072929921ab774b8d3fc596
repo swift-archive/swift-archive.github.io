@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Feature proposal: Range operator with step</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  5, 2016 at 04:00:00pm</p></header><div class="content"><p>on Tue Apr 05 2016, Stephen Canon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;     On Apr 5, 2016, at 3:22 PM, Erica Sadun via swift-evolution<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;         On Apr 5, 2016, at 4:17 PM, Dave Abrahams via swift-evolution<br>&gt;         &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;         on Tue Apr 05 2016, Erica Sadun<br>&gt;         &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;                 On Apr 5, 2016, at 1:54 PM, Dave Abrahams<br>&gt;             &lt;dabrahams at apple.com&gt; wrote:<br>&gt;             IMO this:<br>&gt;<br>&gt;             (-9...0).reverse()<br>&gt;<br>&gt;             is better than <br>&gt;<br>&gt;             stride(from: 0, to: -10, by: -1)<br>&gt;<br>&gt;             What do you think?<br>&gt;<br>&gt;             The latter better reflects an author&#39;s actual intent. The former<br>&gt;             depends on<br>&gt;             implementation details, which can be hazy, especially, around the<br>&gt;             edge cases. It<br>&gt;             is quicker to read, understand, and verify that the latter is what<br>&gt;             is<br>&gt;             meant.<br>&gt;<br>&gt;         Except that there seems to be some confusion over what &quot;to:&quot; means,<br>&gt;         right?<br>&gt;<br>&gt;     obviously (0..&lt;-10).by(-2) would be best.<br>&gt;<br>&gt; (0 ..&gt; -10).by(-2)?<br>&gt;<br>&gt; Maybe having another range operator is overkill, but ..&lt; seems pretty bonkers<br>&gt; here.<br></p><p>I can&#39;t see any excuse for putting the smaller number on the right.  If<br>one really needs the numbers in that order, then I agree a stride free<br>function is better.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

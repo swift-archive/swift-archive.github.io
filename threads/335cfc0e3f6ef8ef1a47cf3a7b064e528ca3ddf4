@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ab8ff5d36ad4f40d7905509956e5c706?s=50"></div><header><strong>Proposal: Improve switch control flow substituting fallthrough with a more safe one</strong> from <string>Jacopo Andrea Giola</string> &lt;swift-evolution at jacopo.giola.org&gt;<p>December  8, 2015 at 06:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I’m moving this discussion in its own thread because it’s sparked inside the proposal to removing the keyword altogether without a substitution, and the wrong subject may had lead people to overlook the discussion or don’t fully understand whats going on.<br></p><p>I’ve posted an updated gist with a first early draft of the proposal with some example here: https://gist.github.com/JGiola/f735212789bf2f697847 &lt;https://gist.github.com/JGiola/f735212789bf2f697847&gt;<br></p><p>Here a tl;dr version.<br></p><p>After ditching the proposal to remove fallthrough some of the old participant (included me) has started to lay down the idea to substitute the keyword with a more safe one.<br>The reasoning behind it is that fallthrough is obviously a relic from the C past for making the switch statement in line with the C-style one and easing the tradition of C/Obj-C code to swift without altering so much in the logic.<br></p><p>In Swift thou the switch statement is more powerful and in some cases the fallthrough behaviour can lead to runtime errors that I’ve tried to list in the draft with trivial examples.<br>The substitute keyword will accept a value that must be matched with one of the following cases inside the switch and if a where clause is attached to it it must be fulfilled, if none of the above can be met the execution will leave the switch. The default case will only be match if the keyword will be called with `default` avoiding the unintended behaviour of a catch all.<br></p><p>In doing so we will have the same behaviour of fallthrough but in a safe way because the optional where clause will be checked and not skipped as today, and if the case specified (the case not the where) can’t be found after the keyword declaration the compiler can be raise an error.<br>This error can be useful if for some reason the case declaration order inside the switch is modified and the code flow created by the new keyword is altered.<br></p><p>In addition to this two new safe behaviour we can have a third one for “free”. we can have two different cases falling inside a third one without entering inside each other as  with the fallthrough.<br></p><p>I hope that this evolution can be met with the same useful discussion that the old thread has sparked and that has made me rethink the implementation from the old “reswitch” that was brought up there.<br></p><p><br>p.s. for now the new keyword is nameless because I’m not a native english speaker and I can’t come up with some word that has the correct meaning and I’m obviously open to suggestions :)<br></p><p>- Jacopo<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151208/335cddf4/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

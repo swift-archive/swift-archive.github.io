@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/78c872606bb19b61a53f63236a1b4253?s=50"></div><header><strong>CoreMIDI (OS X + Swift)</strong> from <string>Jakob Stendahl</string> &lt;jakob.stendahl at outlook.com&gt;<p>January 25, 2016 at 07:00:00pm</p></header><div class="content"><p>Hi, i just can´t figure out how to structure a MIDI receiver. I want to receive MIDI signals from a keyboard or piano. Add/Remove them from arrays real time (Note + Velocity). But i just can´t figure out how it is supposed to be coded, or how the framework in general work. So, can any of you help me, and give me a starting point of how to receive the values, and select devices etc…<br></p><p>Thanks in advance!<br>Jakob S.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160125/5efd281a/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

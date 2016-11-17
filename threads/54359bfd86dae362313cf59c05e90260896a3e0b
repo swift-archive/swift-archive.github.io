@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>[Proposal] mapValues</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>April 17, 2016 at 06:00:00am</p></header><div class="content"><p>I am definitely +1 for adding the initializer in any case.  <br></p><p>I would like to see it (based on Nate’s suggestion) have a “merge&quot; parameter which takes a closure of (Key, Value, Value)throws-&gt;Value, which would be called to choose a value whenever a repeated key is encountered.  That parameter should have a default value which just traps.  That way the default behavior is to trap when a key is repeated, but it can still be overridden with a more appropriate behavior for the situation (e.g. keeping the first value, keeping the last, averaging them, etc…)<br></p><p>That said, I would still also like to see the functionality of mapValues (whatever it ends up being called) in the standard library.  It easily applies to 80-90% of my use cases, and allowing re-mapping of keys adds a lot of complexity which must be carefully considered (there is a lot more which can go wrong).  As swift is a practical language, it would be nice to have a quick and foolproof way to do this common task.<br></p><p>Thanks,<br>Jon<br></p><p><br>&gt; on Tue Apr 12 2016, Jonathan Hull &lt;swift-evolution at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;&gt; wrote:<br>&gt; <br>&gt; &gt; I would really like to see something like the following added to the standard<br>&gt; &gt; library:<br>&gt; &gt;<br>&gt; &gt; extension Dictionary {<br>&gt; &gt;<br>&gt; &gt; func mapValues&lt;U&gt;(transform:(Key,Value)-&gt;U)-&gt;[Key:U] {<br>&gt; &gt; var output:[Key:U] = [:]<br>&gt; &gt; for (k,v) in self {<br>&gt; &gt; output[k] = transform(k,v)<br>&gt; &gt; }<br>&gt; &gt; return output<br>&gt; &gt; }<br>&gt; &gt;<br>&gt; &gt; }<br>&gt; &gt;<br>&gt; &gt; It comes up enough that I have had to add it to pretty much every one of my<br>&gt; &gt; projects. I also don’t feel comfortable adding it to my frameworks, since I<br>&gt; &gt; figure a lot of people are also adding something like this to their projects,<br>&gt; &gt; and I don’t want to cause a conflict with their version. Prime candidate for the<br>&gt; &gt; standard library.<br>&gt; &gt;<br>&gt; &gt; I like calling it ‘mapValues&#39; as opposed to providing an override for map, since<br>&gt; &gt; it makes the specific behavior more clear. I would expect ‘map&#39; to possibly map<br>&gt; &gt; the keys as well (though there are issues where the new keys overlap). I suppose<br>&gt; &gt; you could just have a bunch of overrides for map if the compiler becomes good<br>&gt; &gt; enough at differentiating return types: (Value)-&gt;(Value), (Key,Value)-&gt;Value,<br>&gt; &gt; (Key, Value)-&gt;(Key,Value)<br>&gt; <br>&gt; I agree that we need a way to do this, and was surprised when what I<br>&gt; tried didn&#39;t work.  This should work:<br>&gt; <br>&gt;   Dictionary(d.lazy.map { (k, v) in (k, transform(v)) })<br>&gt; <br>&gt; We should have a proposal that makes the constructor work* if we don&#39;t<br>&gt; already have one.<br>&gt; <br>&gt; I&#39;m inclined against building specialized variants of basic algorithms<br>&gt; into particular collections, though.  Could be talked out of it if the<br>&gt; use-case is strong enough.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160417/54353e0b/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

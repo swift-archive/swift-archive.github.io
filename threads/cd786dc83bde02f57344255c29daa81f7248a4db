@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0006 Apply API Guidelines to the Standard Library</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 30, 2016 at 08:00:00pm</p></header><div class="content"><p>on Fri Jan 29 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; The &quot;too specific&quot; I&#39;m railing against is that naming guidance should<br>&gt; not depend on implementation details to<br>&gt; the point it creates Hungarian Swiftisms.<br></p><p>I think we agree on everything after &quot;that.&quot;  I just don&#39;t see how the<br>guidelines as written would do that.<br></p><p>&gt; -- E<br>&gt;<br>&gt;&gt; On Jan 29, 2016, at 1:20 PM, Dave Abrahams &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Fri Jan 29 2016, Erica Sadun &lt;erica-AT-ericasadun.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; For example, for &quot;HasNoun&quot;, I&#39;d go with something more like<br>&gt;&gt;&gt;&gt;&gt; NounContainingType or NounSupplier.<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; Non-Abrahams Dave writes: &quot;I like -Type for protocols that can only be<br>&gt;&gt;&gt;&gt;&gt; used a generic constraint, and -able/-ible for protocols that can be<br>&gt;&gt;&gt;&gt;&gt; “concrete” types.<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; And Canonical Dave replies: &quot;But that&#39;s not how they&#39;re used.  I&#39;d<br>&gt;&gt;&gt;&gt;&gt; have to rename Equatable and Comparable to follow that convention.&quot;<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; This is the big bit though and you didn&#39;t respond here, although it&#39;s<br>&gt;&gt;&gt; mostly that I&#39;m agreeing with you but what do you think about just<br>&gt;&gt;&gt; cutting out things that get too specific? (I say the same more or less<br>&gt;&gt;&gt; in the longer review email)<br>&gt;&gt; <br>&gt;&gt; I don&#39;t think that&#39;s going to fly.  One of the main purposes of these<br>&gt;&gt; API guidelines is to remove the overhead of having to figure out how to<br>&gt;&gt; name things, at least as much as possible.  Programmers and designers<br>&gt;&gt; have enough to think about.  Teams that accept strong and specific<br>&gt;&gt; coding guidelines can spend more time effectively applying their domain<br>&gt;&gt; expertise and less time bike-shedding trivial details.<br>&gt;&gt; <br>&gt;&gt; -- <br>&gt;&gt; -Dave<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

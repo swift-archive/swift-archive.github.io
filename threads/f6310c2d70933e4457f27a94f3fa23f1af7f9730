@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0055: Make unsafe pointer nullability explicit using Optional</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>March 31, 2016 at 12:00:00pm</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0055-optional-unsafe-pointers.md<br></p><p>The review of SE-0055 &quot;Make unsafe pointer nullability explicit using Optional&quot; ran from Mar 24…29, 2016. The proposal has been *accepted*:<br></p><p>The community and core team overall agree that it is best to make the null pointer processing more consistent (by eliminating types that can be nil, but which are not Optional).  While UnsafePointer is disliked by many in the community, it is a necessary part of working with C APIs (as one prominant example).  Making them work consistently with other types makes the language simpler and more predictable.  This approach also dovetails well with the Clang nullability attributes, which allow auditing of C pointers.<br></p><p>Thank you to Jordan Rose for proposing this, and driving forward the implementation effort!<br></p><p>-Chris Lattner<br>Review Manager<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

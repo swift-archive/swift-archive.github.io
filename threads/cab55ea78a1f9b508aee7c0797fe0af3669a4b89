@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/801cefac11cb70f2c5635a367c563cb6?s=50"></div><header><strong>(no subject)</strong> from <string>John Huang</string> &lt;pica.cat at gmail.com&gt;<p>December 22, 2015 at 10:00:00am</p></header><div class="content"><p>Dear swift team<br> <br>           When I was installed swift and start it on command line,  I try to input 1 + 1,  <br>I got error “opening import file for module ‘SwiftShims’: No such file or directory”<br>How to fix this error, thanks.<br></p><p><br>從 Windows 10 的郵件傳送<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151222/cab54b89/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>(no subject)</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>December 21, 2015 at 11:00:00pm</p></header><div class="content"><p>On Mon, Dec 21, 2015 at 6:45 PM, John Huang via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Dear swift team<br>&gt;<br>&gt;<br>&gt;<br>&gt;            When I was installed swift and start it on command line,  I try<br>&gt; to input 1 + 1,<br>&gt;<br>&gt; I got error “opening import file for module ‘SwiftShims’: No such file or<br>&gt; directory”<br>&gt;<br>&gt; How to fix this error, thanks.<br>&gt;<br></p><p>Hi John,<br></p><p>Could you provide more information?  Which OS are you running, how did you<br>install Swift (where did you unpack it, did you make any $PATH adjustments<br>etc.)?<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151221/974cc16c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

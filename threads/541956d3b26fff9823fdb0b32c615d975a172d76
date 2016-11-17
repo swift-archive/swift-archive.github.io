@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/68d21c811b4f037d9cbd43013319f9b4?s=50"></div><header><strong>Working on the new Internet Application Protocol?</strong> from <string>Muse M</string> &lt;james.lei65 at gmail.com&gt;<p>November  1, 2016 at 01:00:00am</p></header><div class="content"><p>Are there any plans to create new standard of IAP that design to reduce<br>complexity and improve performance?<br></p><p>http://tutorials.jenkov.com/iap/why-http2-and-websockets-are-not-enough.html#websockets-and-http2<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-server-dev/attachments/20161101/54192d76/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c60436f08b7b107f0bb0848c31297fa?s=50"></div><header><strong>Working on the new Internet Application Protocol?</strong> from <string>Alex Blewitt</string> &lt;alblue at apple.com&gt;<p>October 31, 2016 at 05:00:00pm</p></header><div class="content"><p>On 31 Oct 2016, at 17:10, Muse M via swift-server-dev &lt;swift-server-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Are there any plans to create new standard of IAP that design to reduce complexity and improve performance?<br>&gt; <br>&gt; http://tutorials.jenkov.com/iap/why-http2-and-websockets-are-not-enough.html#websockets-and-http2 &lt;http://tutorials.jenkov.com/iap/why-http2-and-websockets-are-not-enough.html#websockets-and-http2&gt;<br></p><p>I think the initial focus is likely to be on those protocols that are currently being used by other languages and environments, to bring parity in the implementation. These will build upon low level sockets and/or TCP and UDP streams, which would be necessary to contemplate implementing higher level protocols that aren&#39;t derivatives of HTTP.<br></p><p>Alex<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-server-dev/attachments/20161031/94eb6242/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

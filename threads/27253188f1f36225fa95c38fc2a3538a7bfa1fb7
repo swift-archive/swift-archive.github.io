@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0b616aaec5bc6698259658e0feff3786?s=50"></div><header><strong>addTarget calling wrong method on some device.</strong> from <string>c1708</string> &lt;poketo7878 at gmail.com&gt;<p>March  5, 2016 at 12:00:00am</p></header><div class="content"><p>Hi! <br></p><p>Currently I’m implementing my app in Swift with latest Xcode.<br></p><p>On my application’s UIViewController I wrote:<br></p><p><br>if (Util.isFeatureEnabled(Feature.X)) {<br>      let xButton = UIButton()<br>      self.xButton = xButton<br>      ….<br>      xButton.addTarget(self, “xButtonTouched:”…)<br>      view.addSubview(xButton)<br>}<br>let yButton = UIButton()<br>self.yButton = yButton<br>yButton.addTarget(self, “yButtonTouched:” …)<br>….<br>fun yButtonTouched(sender: UIButton) {<br>….<br>}<br></p><p><br>And I forget implement xButtonTouched function,<br>But feature-X is always disable(by some business reason),<br>so I think xButton never showed Up and Above code working correctly.<br>And working correctly on my device(iPhone 6 Plus) as expected.<br></p><p><br>But, I noticed on some others device(which include iPhone 6 Plus)<br>Get called xButtonTouched: when yButton Touched, and raise &quot;unrecognized selector sent to instance” error.<br></p><p>I can’t understand why this error happened. Is error depend on device? Or nasal demon?<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

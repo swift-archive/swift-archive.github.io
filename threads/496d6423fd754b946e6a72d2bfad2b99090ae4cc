@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/27ccc75b87666a9e2bfafcc5ee146771?s=50"></div><header><strong>Swift Playground</strong> from <string>Maclachlan Tysun</string> &lt;tysun.maclachlan at icloud.com&gt;<p>March 14, 2016 at 03:00:00pm</p></header><div class="content"><p>Good evening,<br></p><p>Today I was attempting to test complication and glance controllers in a playground and realized to my surprise that I could not import ClockKit / CLKComplicationDataSource into my playground at least for basic interaction logic.<br></p><p>It would be great if it was possible to interactively test the complication / glance controllers in the playground.<br></p><p>Could I make this a proposal for Swift Open Source since playgrounds are specifically for Swift? <br></p><p>Cheers<br></p><p>Tysun Maclachlan<br></p><p><br>hellotalk.com &lt;http://hellotalk.com/&gt;<br>@hellotalkapp<br>Shenzhen, China<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160314/496de4cc/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Swift Playground</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>March 16, 2016 at 09:00:00am</p></header><div class="content"><p>Hi, Tysun. I&#39;m afraid playgrounds are still considered an Xcode feature, not part of the Swift open source project. Requesting support for watchOS should be filed as a Radar (bugreport.apple.com).<br></p><p>Best,<br>Jordan<br></p><p>&gt; On Mar 14, 2016, at 15:16 , Maclachlan Tysun via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Good evening,<br>&gt; <br>&gt; Today I was attempting to test complication and glance controllers in a playground and realized to my surprise that I could not import ClockKit / CLKComplicationDataSource into my playground at least for basic interaction logic.<br>&gt; <br>&gt; It would be great if it was possible to interactively test the complication / glance controllers in the playground.<br>&gt; <br>&gt; Could I make this a proposal for Swift Open Source since playgrounds are specifically for Swift? <br>&gt; <br>&gt; Cheers<br>&gt; <br>&gt; Tysun Maclachlan<br>&gt; <br>&gt; <br>&gt; hellotalk.com &lt;http://hellotalk.com/&gt;<br>&gt; @hellotalkapp<br>&gt; Shenzhen, China<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160316/60529810/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

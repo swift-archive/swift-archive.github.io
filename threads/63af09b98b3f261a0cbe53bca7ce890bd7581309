@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c9c44262e8b58b758a3876b9d29c095?s=50"></div><header><strong>The great renaming and the state of new Unified Logging in Swift</strong> from <string>Georgios Moschovitis</string> &lt;george.moschovitis at icloud.com&gt;<p>September  3, 2016 at 07:00:00am</p></header><div class="content"><p>&gt;  Can it be corrected in Swift 4 (breaking changes etc…)?<br></p><p>Good question.<br>Maybe the core team should accept additional source-breaking changes in 3.x releases?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/73a38bb7bc9528e31098defe30e68ea4?s=50"></div><header><strong>The great renaming and the state of new Unified Logging in Swift</strong> from <string>Jean-Daniel Dupas</string> &lt;mailing at xenonium.com&gt;<p>September  3, 2016 at 06:00:00pm</p></header><div class="content"><p>&gt; Le 3 sept. 2016 à 06:43, Georgios Moschovitis via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt; <br>&gt;&gt; Can it be corrected in Swift 4 (breaking changes etc…)?<br>&gt; <br>&gt; Good question.<br>&gt; Maybe the core team should accept additional source-breaking changes in 3.x releases?<br></p><p><br>I think the framework API mapping itself is not part of the language and is handle by Apple directly (at least for Apple specifics frameworks). I don’t know if such changes are subject to the same policy.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d8867167dba9b648c6d0746a67bbc721?s=50"></div><header><strong>The great renaming and the state of new Unified Logging in Swift</strong> from <string>Goffredo Marocchi</string> &lt;panajev at gmail.com&gt;<p>September  3, 2016 at 05:00:00pm</p></header><div class="content"><p>I am still not clear how os_log is supposed to be used with Swift if you are not one of the elected ones that can ride his white horse straight into iOS 10+ only land of apps ;). In Objective-C I can use a macro, as wrapper functions are banned, but in Swift? Are availability checks every time I log the answer?<br></p><p>Sent from my iPhone<br></p><p>&gt; On 3 Sep 2016, at 17:28, Jean-Daniel Dupas via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt;&gt; Le 3 sept. 2016 à 06:43, Georgios Moschovitis via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Can it be corrected in Swift 4 (breaking changes etc…)?<br>&gt;&gt; <br>&gt;&gt; Good question.<br>&gt;&gt; Maybe the core team should accept additional source-breaking changes in 3.x releases?<br>&gt; <br>&gt; <br>&gt; I think the framework API mapping itself is not part of the language and is handle by Apple directly (at least for Apple specifics frameworks). I don’t know if such changes are subject to the same policy.<br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160903/f5a47fa3/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

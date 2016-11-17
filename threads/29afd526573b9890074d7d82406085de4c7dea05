@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0735d3bf1d76c0385258ac7a2a22d6fe?s=50"></div><header><strong>[Review] SE-0120: Revise &#39;partition&#39; Method Signature</strong> from <string>Károly Lőrentey</string> &lt;karoly at lorentey.hu&gt;<p>July 13, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt; 	* What is your evaluation of the proposal?<br></p><p>+1; I like the new design, and I think once in a blue moon I may <br>actually use the new API.<br></p><p>I remember looking up partition in the stdlib docs, sighing and moving <br>on once or twice. It seemed easier to write an explicit loop than to <br>hammer my problem into the shape of the old API.<br></p><p>Nitpick: In the &quot;Impact on Existing Code&quot;, the sample code for the <br>replacement ignores the return value.<br></p><p>&gt; 	* Is the problem being addressed significant enough to warrant a <br>&gt; change to Swift?<br></p><p>I guess so; although it is a fix for a super minor problem, the <br>proposed change is equally nonintrusive.<br></p><p>&gt; 	* Does this proposal fit well with the feel and direction of Swift?<br></p><p>Sure.<br></p><p>&gt; 	* If you have used other languages or libraries with a similar <br>&gt; feature, how do you feel that this proposal compares to those?<br></p><p>As Paul noted, Haskell and Ruby have nonmutating methods for the same <br>thing. It&#39;s fine to delay adding other variants for now.<br></p><p>&gt; 	* How much effort did you put into your review? A glance, a quick <br>&gt; reading, or an in-depth study?<br></p><p>Quick reading plus superficial research.<br></p><p>--<br>Karoly<br>@lorentey<br></p><p>On 2016-07-12 18:12:18 +0000, Chris Lattner via swift-evolution said:<br></p><p>&gt; Hello Swift community,<br>&gt; <br>&gt; The review of &quot;SE-0120: Revise ‘partition&#39; Method Signature&quot; begins now <br>&gt; and runs through July 19. The proposal is available here:<br>&gt; <br>&gt;  <br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0120-revise-partition-method.md <br>&gt; <br>&gt; <br>&gt; Reviews are an important part of the Swift evolution process. All <br>&gt; reviews should be sent to the swift-evolution mailing list at<br>&gt; <br>&gt; 	https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; or, if you would like to keep your feedback private, directly to the <br>&gt; review manager.<br>&gt; <br>&gt; What goes into a review?<br>&gt; <br>&gt; The goal of the review process is to improve the proposal under review <br>&gt; through constructive criticism and contribute to the direction of <br>&gt; Swift. When writing your review, here are some questions you might want <br>&gt; to answer in your review:<br>&gt; <br>&gt; 	* What is your evaluation of the proposal?<br>&gt; 	* Is the problem being addressed significant enough to warrant a <br>&gt; change to Swift?<br>&gt; 	* Does this proposal fit well with the feel and direction of Swift?<br>&gt; 	* If you have used other languages or libraries with a similar <br>&gt; feature, how do you feel that this proposal compares to those?<br>&gt; 	* How much effort did you put into your review? A glance, a quick <br>&gt; reading, or an in-depth study?<br>&gt; <br>&gt; More information about the Swift evolution process is available at<br>&gt; <br>&gt; 	https://github.com/apple/swift-evolution/blob/master/process.md<br>&gt; <br>&gt; Thank you,<br>&gt; <br>&gt; -Chris Lattner<br>&gt; Review Manager<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p><br>-- <br>Károly<br>@lorentey<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] More Powerful Constraints for Associated Types</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 25, 2016 at 03:00:00pm</p></header><div class="content"><p>on Mon Apr 25 2016, Dmitri Gribenko &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Sun, Apr 24, 2016 at 1:34 PM, David Hart via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; Currently, associated type declarations can only express simple inheritance<br>&gt;&gt; constraints and not the more sophisticated constraints available to generic<br>&gt;&gt; types with the where expression. Some designs, including many in the<br>&gt;&gt; Standard Library, require more powerful constraints for associated types to<br>&gt;&gt; be truly elegant. For example, the SequenceType protocol can be declared as<br>&gt;&gt; follows:<br>&gt;<br>&gt; I completely support this.  This feature will unblock many<br>&gt; improvements in the standard library.  Currently users of some<br>&gt; protocols have to carry extra constraints in their own type<br>&gt; signatures, but we should be able to hoist these constraints into the<br>&gt; protocol definiton.<br></p><p>+1<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

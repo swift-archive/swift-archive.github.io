@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/05f8c56375fced237d39b29846bba0d4?s=50"></div><header><strong>[Pitch] Unify preset static &quot;initializers&quot;</strong> from <string>Bas Thomas Broek</string> &lt;apple at basbroek.nl&gt;<p>June  3, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I was wondering the other day why &quot;static initializers&quot;, as I will call them, are not unified:<br></p><p>&gt; CGRect.zero<br>vs<br>&gt; UIColor.blackColor() - which will be UIColor.black() in Swift 3.<br></p><p>... which both do pretty much the same; they are used as convenience initialization for the specific type. I think their intent will be clearer though, when all of them either become static vars (as with CGRect.zero) or static funcs (as with UIColor.black()).<br></p><p>I, though, am not sure which would be the best option.<br></p><p>So I&#39;d like to ask you all two questions:<br></p><p>- Do you think these should be unified? Why (not)?<br>- If yes, should funcs or vars be used?<br></p><p>Thanks,<br></p><p>Bas<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

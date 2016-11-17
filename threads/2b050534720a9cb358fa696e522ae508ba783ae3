@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Making the value witness table reference relative</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>January 27, 2016 at 11:00:00am</p></header><div class="content"><p>I have a patch in the works that makes the nominal type descriptor and parent metadata references in type metadata relative:<br></p><p>https://github.com/apple/swift/compare/master...jckarter:relative-from-metadata<br></p><p>After this, the only remaining relocation in concrete value type metadata is for the value witness table. We should be able to make the value witness table reference relative too with little codegen cost: on x86, loading from the table can be done from an Index(%metadata, %relative_vwtable) address in the same code size as Index(%absolute_vwtable); on ARMv7/8, it takes an extra add, though that add can be hoisted and performed once per-type within a function. That seems like me like an acceptable cost to be able to make most concrete value types&#39; metadata read-only. However, dynamic linkers don&#39;t generally support relative relocations at load time, so we&#39;d lose the ability for compiler-emitted metadata to refer to standard value witness tables provided by the runtime for common layouts, at least not without some runtime instantiation work. (Same-shaped types within the same module could of course still share value witnesses.) Classes already require instantiation work (at least on Darwin, to interact with the ObjC runtime), so we could set up the relative reference to the runtime&#39;s common value witness table for classes during that instantiation. Generic metadata is similarly runtime-instantiated. Would we be willing to forgo runtime-provided value witness tables for concrete value types, or to introduce instantiation overhead on them?<br></p><p>-Joe<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

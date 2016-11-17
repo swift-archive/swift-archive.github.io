@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Limit checking syntax</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  8, 2016 at 11:00:00am</p></header><div class="content"><p>on Fri Apr 08 2016, &quot;Vladimir.S via swift-evolution&quot; &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On 08.04.2016 4:14, Harlan Haskins via swift-evolution wrote:<br>&gt;&gt; I’ve found that .contains works well for all my uses.<br>&gt;&gt;<br>&gt;&gt; (0..&lt;100).contains(x)<br>&gt;<br>&gt; Hmm.. Isn&#39;t next construction is much more readable?:<br>&gt;<br>&gt; x.in(0..&lt;100)<br></p><p>API guidelines prescribe this should read as an assertion about x, so:<br></p><p>     x.isContainedIn(0..&lt;100)<br></p><p>or <br></p><p>     x.isIn(0..&lt;100)<br></p><p>FWIW.<br></p><p>&gt; I think it is much more readable.<br>&gt; We are planning(in head) to verify &quot;if x value is in range from 0 up<br>&gt; to 99&quot;, so why we have to write &quot;for some range 0 to 9 let&#39;s check if<br>&gt; it contains our x value&quot;.<br>&gt; Our x is a subject of our check, not range (0..&lt;100).<br>&gt;<br>&gt; I.e. in my opinion -1 for &#39;in&#39; operator like suggested in initial message,<br>&gt; but +1 for .in method for integer to check against range<br>&gt; Any additional opinion?<br>&gt;<br>&gt; Vladimir<br>&gt; (P.S. Sorry for duplicate.)<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a0b362cd96d9f85beab1079ff37e3d19?s=50"></div><header><strong>Limit checking syntax</strong> from <string>Vladimir.S</string> &lt;svabox at gmail.com&gt;<p>April  8, 2016 at 10:00:00pm</p></header><div class="content"><p>100% Agree. IMO .isIn is perfect :-)<br>I think the main idea is to allow us to check bounds of some value(usually <br>integer) in nice and readable manner.<br></p><p>On 08.04.2016 21:21, Dave Abrahams via swift-evolution wrote:<br>&gt; API guidelines prescribe this should read as an assertion about x, so:<br>&gt;<br>&gt;       x.isContainedIn(0..&lt;100)<br>&gt;<br>&gt; or<br>&gt;<br>&gt;       x.isIn(0..&lt;100)<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

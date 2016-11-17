@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Fwd: [Swift CI] Build Still Failing: 0. OSS - LLDB Incremental - Ubuntu 14.04 (master) #2634</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>April  6, 2016 at 08:00:00pm</p></header><div class="content"><p>This one&#39;s still on Harlan or Manav: fallout from the argument label change.<br></p><p>Jordan<br></p><p><br>&gt; On Apr 6, 2016, at 19:36 , no-reply at swift.org &lt;mailto:no-reply at swift.org&gt; wrote:<br>&gt; <br>&gt; New issue found!<br>&gt; <br>&gt; [FAILURE] oss-lldb-incremental-linux-ubuntu-14_04 [#2634]<br>&gt; <br>&gt; Build URL:	https://ci.swift.org/job/oss-lldb-incremental-linux-ubuntu-14_04/2634/ &lt;https://ci.swift.org/job/oss-lldb-incremental-linux-ubuntu-14_04/2634/&gt;<br>&gt; Project:	oss-lldb-incremental-linux-ubuntu-14_04<br>&gt; Date of build:	Wed, 06 Apr 2016 19:18:55 -0700<br>&gt; Build duration:	17 min<br>&gt; Identified problems:<br>&gt; <br>&gt; Regression test failed: This build failed because a regression test in the test suite FAILed. Below is a list of all errors:<br>&gt; Indication 1 &lt;https://ci.swift.org//job/oss-lldb-incremental-linux-ubuntu-14_04/2634/consoleFull#-1471388656fca400bf-2f4a-462e-b517-e058d770b2d7&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-lldb-dev/attachments/20160406/6a65c929/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

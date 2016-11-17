@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0065 A New Model for Collections and Indices</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 13, 2016 at 03:00:00pm</p></header><div class="content"><p>on Mon Apr 11 2016, Nate Cook &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Proposal link:<br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0065-collections-move-indices.md<br>&gt;<br>&gt;     On Apr 11, 2016, at 2:59 PM, Dave Abrahams via swift-evolution<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     Thanks for your comments, Brent!<br>&gt;<br>&gt;     on Sun Apr 10 2016, Brent Royal-Gordon<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; The shift described in this proposal is extremely valuable and makes<br>&gt; implementing collections far more intuitive, as all the collection&#39;s logic lives<br>&gt; &quot;inside&quot; the collection itself. My only hesitation is with the naming of the<br>&gt; method that Brent also called out:<br>&gt;<br>&gt; ... snip ...<br>&gt;<br>&gt;                 func index(n: IndexDistance, stepsFrom i: Index) -&gt; Index<br>&gt;<br>&gt;         Oof, I am really not a fan of this name. `steps` is sort-of a label on<br>&gt;         the `n` parameter, but it&#39;s attached to `i`. <br>&gt;<br>&gt; Oof indeed! This is a very unusual method in the standard library, since we&#39;re<br>&gt; calling on one instance to perform an action on another. My problems with the<br>&gt; naming are twofold: <br>&gt;<br>&gt; (1) Collision with the index(of:) and index(where:) APIs<br>&gt; The existing methods are used for searching a collection, possibly finding a<br>&gt; matching index, possibly not. The new ones deterministically find an new index<br>&gt; at a prescribed distance, with important and slightly complicated preconditions.<br>&gt; These differences make the use and &quot;flavor&quot; of the two sets of methods distinct<br>&gt; enough that I think they should have different names.<br>&gt;<br>&gt; (2) Arguments are reversed<br>&gt; I think the ideal API for this would be index.advanced(by: 5, in: c), but I<br>&gt; prefer keeping the index-moving implementation in the collection, not the index.<br>&gt; I would favor any naming for this method that puts the index before the<br>&gt; distance, keeping the overall shape of the advanced(by:) method. c.advance(i,<br>&gt; by: 4) would be my pick.<br></p><p>Dmitri, Max, and I just talked this over and we think you&#39;re right on<br>both counts.  Having these “index” overloads appear in completion lists<br>alongside the ones that are there for use as high-level algorithms seems<br>wrong.  Also, since the method either returns a modified version of the<br>index or modifies the index in place, the index argument is “more<br>primary” and should come first.  Here&#39;s what we came up with:<br></p><p>     let j = location(i, offsetBy: 5)<br></p><p>     formLocation(&amp;i, offsetBy: -2)<br></p><p>Feedback welcome.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

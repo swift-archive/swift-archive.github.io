@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 27, 2016 at 10:00:00am</p></header><div class="content"><p>on Wed Jan 27 2016, David Owens II &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jan 26, 2016, at 1:32 PM, Dave Abrahams via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt;&gt; It all depends on what it does for the doc comment.  IMO there&#39;s nothing<br>&gt;&gt;&gt;&gt; wrong with “Inserts `newElement` before the `i`th element, or at the end<br>&gt;<br>&gt;&gt;&gt;&gt; if `i == count`”.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Hmm… we disagree on that point. If I need to go the documentation to<br>&gt;&gt;&gt; get basic clarification of the parameter, I’m not really sure what the<br>&gt;&gt;&gt; point of the label is then.<br>&gt;&gt; <br>&gt;&gt; I don&#39;t understand your point.  The argument label (“at”) appears at the<br>&gt;&gt; use-site.  The parameter name (“i”) appears only at the declaration<br>&gt;&gt; site.  I&#39;m saying the name of the parameter should be chosen to make the<br>&gt;&gt; documentation comment read well.  Are you arguing that it shouldn&#39;t?<br>&gt;&gt; <br>&gt;&gt; Or are you arguing that<br>&gt;&gt; <br>&gt;&gt;  /// Inserts `newElement` before the `i`th element, or at the end<br>&gt;&gt;  /// if `i == count`<br>&gt;&gt;  mutating func insert(newElement: Iterator.Element, at i: Int)<br>&gt;&gt; <br>&gt;&gt; would read better with a different name in place of `i`?<br>&gt;<br>&gt; Yes, if `i` here was `index`, then the API without the full doc<br>&gt; comment is much more readable. Just seeing the function signature<br>&gt; really offers no clarity of what the code is supposed to be doing when<br>&gt; `i` is used. We can guess, but I prefer more explicit over guessing.<br></p><p>? it&#39;s in the base name and argument labels, not to mention the types.<br>All the information available at the use-site, and more, is there in the<br>declaration.<br></p><p><br>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

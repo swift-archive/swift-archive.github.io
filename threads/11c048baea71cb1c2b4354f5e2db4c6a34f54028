@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Returned for revision] SE-0077: Improved	operator declarations</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 23, 2016 at 08:00:00pm</p></header><div class="content"><p>L. Mihalkovic via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; Has a meta-circular syntax been considered for the precedence group <br>definitions? Aside from limiting the<br>&gt; proliferation of new keywords, it would also make them discoverable by <br>reflection when the api gets added<br>&gt; in 4.0. My apologies if it was already discarded.<br>&gt; Regards<br>&gt; LM<br></p><p>Could you please explain what you mean by &quot;meta-circular syntax for the <br>precedence group definitions&quot;? An example?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/697f00e1b9be900f24cd1669cc931874?s=50"></div><header><strong>[Returned for revision] SE-0077: Improved operator declarations</strong> from <string>L. Mihalkovic</string> &lt;laurent.mihalkovic at gmail.com&gt;<p>June 24, 2016 at 05:00:00am</p></header><div class="content"><p>Inline<br>Regards<br>(From mobile)<br>&gt; On Jun 23, 2016, at 10:13 PM, Anton Zhilin via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; L. Mihalkovic via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; <br>&gt;&gt; Has a meta-circular syntax been considered for the precedence group<br>&gt; definitions? Aside from limiting the<br>&gt;&gt; proliferation of new keywords, it would also make them discoverable by<br>&gt; reflection when the api gets added<br>&gt;&gt; in 4.0. My apologies if it was already discarded.<br>&gt;&gt; Regards<br>&gt;&gt; LM<br>&gt; <br>&gt; Could you please explain what you mean by &quot;meta-circular syntax for the <br>&gt; precedence group definitions&quot;? An example?<br>=define it using existing swift constructs rather than by extending swift with new kwd looks like grp matches a struct. <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

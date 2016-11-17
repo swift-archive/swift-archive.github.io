@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Proposal: Add scan, takeWhile, dropWhile, and iterate to the stdlib</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 20, 2016 at 09:00:00am</p></header><div class="content"><p>on Wed Jan 13 2016, Kevin Ballard via swift-evolution &lt;swift-evolution-m3FHrko0VLzYtjvyW6yDsg-AT-public.gmane.org&gt; wrote:<br></p><p>&gt; &quot;suffixAfter&quot; sounds like the equivalent of dropFirst(_:), i.e. it<br>&gt; sounds like it should take a count of elements to skip. Similarly,<br>&gt; actually trying an expression that takes a predicate looks weird:<br>&gt;<br>&gt; seq.suffixAfter({ isspace($0) })<br>&gt;<br>&gt; Even knowing what it&#39;s supposed to do, it&#39;s hard for me to read that<br>&gt; expression in any sensible fashion.<br>&gt;<br>&gt; Also, I&#39;m not sure the &quot;noun phrase&quot; convention really makes sense for<br>&gt; SequenceType methods. They&#39;re not technically mutating methods, but single-<br>&gt; pass collections are in fact destructively mutated by Array-returning<br>&gt; sequence methods (and the methods that return SubSequence also<br>&gt; destructively mutate upon any access to the returned subsequence). Which<br>&gt; is to say, despite not being marked as &quot;mutating&quot;, they do in fact<br>&gt; behave like mutating methods for single-pass sequences. Which suggests<br>&gt; that verb phrases are perfectly fine.<br></p><p>The main problem with that reasoning is that every Collection is a<br>Sequence, and the vast majority of Sequences are in fact Collections (or<br>at least multi-pass).  So you end up with lots of verb phrases for<br>things that in reality are non-mutating.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

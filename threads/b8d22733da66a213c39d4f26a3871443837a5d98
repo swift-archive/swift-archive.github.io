@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0074: Implementation of Binary Search functions</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May 17, 2016 at 04:00:00pm</p></header><div class="content"><p>on Fri May 13 2016, Nate Cook &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;&gt; On May 13, 2016, at 9:36 AM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; on Mon May 09 2016, Nate Cook &lt;natecook-AT-gmail.com&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Yet another alternative would be to drop Set and Dictionary down a<br>&gt;&gt;&gt; level to a FiniteSequence protocol in between Sequence and<br>&gt;&gt;&gt; Collection. Basically none of the index-based collection APIs<br>&gt;&gt;&gt; (i.e. everything except `count` and `isEmpty`) make sense on sets and<br>&gt;&gt;&gt; dictionaries.<br>&gt;&gt; <br>&gt;&gt; Strongly disagreed.  Any read-only operation that makes sense on a<br>&gt;&gt; bidirectional collection makes sense on these data structures.<br>&gt;<br>&gt; I don&#39;t see how the methods that impose meaning on the order of a set<br>&gt; are useful. What does mySet.prefix(upTo: i) mean when I have no<br>&gt; control or dependable way of knowing which elements lie between<br>&gt; startIndex and i? mySet.first is useful, but it&#39;s meaning is more like<br>&gt; NSSet&#39;s anyObject.<br></p><p>If you want to process the elements of your set in parallel, you want to<br>break it down into equally-sized regions and distribute the work across<br>cores.  That&#39;s indexing and slicing.<br></p><p>&gt;&gt;&gt; index(where:) was marginally useful with dictionaries, but now that<br>&gt;&gt;&gt; Sequence is getting first(where:), née find(...), even that isn&#39;t<br>&gt;&gt;&gt; necessary.<br>&gt;&gt; <br>&gt;&gt;   s.remove(at: s.index(where: { $0 &lt; 1 }))<br>&gt;<br>&gt; Since Set&#39;s remove(at:) method is type-specific, it would need to be<br>&gt; rewritten as remove(where:). <br></p><p>That would mean “remove all elements satisfying this predicate,” to me.<br></p><p>&gt; This example is kind of my point, though - it removes the first<br>&gt; element less than 1, but only one such element, and there&#39;s no telling<br>&gt; which. That&#39;s not an operation I&#39;ve ever needed to perform on a set.<br>&gt;<br>&gt; To clarify, I don&#39;t think the current system is hurting Set and<br>&gt; Dictionary in any way. It&#39;s simply providing them with methods that<br>&gt; aren&#39;t very useful for that particular data structure.<br></p><p>I agree that because of Set&#39;s nature, some Collection algorithms are<br>less-applicable than they would otherwise be.  Does that mean Set isn&#39;t<br>fundamentally a Collection?  No it does not.  A Collection is a<br>multipass sequence with a representation of position.  Set definitely<br>has those properties.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5f8978dbb959b069613e2d027420615f?s=50"></div><header><strong>changes in the inliner</strong> from <string>Erik Eckstein</string> &lt;eeckstein at apple.com&gt;<p>April  1, 2016 at 11:00:00am</p></header><div class="content"><p>Hi,<br></p><p>I&#39;d like to give some more information about the inliner changes I landed this week.<br></p><p>The goal was to restrict inlining to improve code size while not degrade performance (too much).<br>This was mainly achieved by improving the heuristic for the inlining decisions.<br>Some of our optimizations are still not as inlining-indepenent as we want them to be. Therefore I had to do some fine-tuning in the stdlib (e.g. with the new onFastPath builtin).<br>There are a few minor regressions, but overall performance looks ok.<br></p><p>The code size reductions are approximately:<br>stdlib: 3%<br>Benchmarks_O: 9%<br>Two larger applications: 15%, 20%<br></p><p>Erik<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

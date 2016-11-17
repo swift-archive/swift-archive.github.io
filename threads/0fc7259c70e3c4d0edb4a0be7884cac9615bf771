@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Arrays and variadic parameters</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>July 29, 2016 at 02:00:00pm</p></header><div class="content"><p>I agree mostly with what you’re saying, but variadic parameters don’t actually require at least one element. `max` simply returns a non-optional because its function signature has three non-variadic parameters as well:<br></p><p>public func max&lt;T : Comparable&gt;(_ x: T, _ y: T, _ z: T, _ rest: T...) -&gt; T<br></p><p>&gt; This has been brought up and there was a proposal by Haravikk, but the discussion started almost mid-July and the deadline for all Swift 3 *implementation* was on Jul 27. So it didn&#39;t make it, but I think there will be enough discussion about it on Aug 1 and after (all discussion about features for future Swift releases is currently on hold until Aug 1).<br>&gt; <br>&gt; Unfortunately, the suggested behavior has an issue what to do when the array is empty. For example, you&#39;ve mentioned min and max - there are (as variadic) ensured to always be called with at least one value. When you use it with an array, there is no guarantee that the array contains any element. In such cases, what should the min/max do? Crash? Return +-infinity?<br>&gt; <br>&gt; Changing min/max to return an optional would be a solution, but I don&#39;t think a good one.<br>&gt; <br>&gt; Moreover, for this particular example, you already have min/max on arrays:<br>&gt; <br>&gt; let numbers = [23, 43, 12, 10]<br>&gt; numbers.minElement()<br>&gt; <br>&gt; &gt; On Jul 29, 2016, at 11:46 AM, Alexandre Lopoukhine via swift-evolution&lt;swift-evolution at swift.org&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; Hello all,<br>&gt; &gt; <br>&gt; &gt; I&#39;m not sure if this has been brought up before, or what the status of the issue is as of Swift 3, but I was wondering why there is no option to call a function that takes a variadic parameter argument with an array. Seen as the parameter essentially becomes an array, and is used as such in the function, I think that adding the ability to call it with one directly could be useful, with few downsides. This will, for example, allow you to use the built-in `min` and `max` functions on arrays.<br>&gt; &gt; <br>&gt; &gt; WDYT?<br>&gt; &gt; <br>&gt; &gt; – Sasha<br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-evolution mailing list<br>&gt; &gt; swift-evolution at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; <br>&gt; <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160729/0fc7f771/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

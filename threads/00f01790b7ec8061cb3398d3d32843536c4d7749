@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0735d3bf1d76c0385258ac7a2a22d6fe?s=50"></div><header><strong>[Idea] A 128-bit unsigned integer value type</strong> from <string>Károly Lőrentey</string> &lt;karoly at lorentey.hu&gt;<p>May 21, 2016 at 04:00:00pm</p></header><div class="content"><p>On 2016-05-17 14:30:36 +0000, Muse M via swift-evolution said:<br></p><p>&gt; Most programming languages does have 128-bit of type except Swift.<br></p><p>I don&#39;t think there is huge demand for a full-blown Int128 type in the <br>standard library, but it would be nice to have double-width <br>multiplication &amp; division methods in Swift&#39;s existing integer types. I <br>assume LLVM has intrinsics for this that compile down to single <br>instructions on x86_64.<br></p><p>This would speed up some 64-bit fixed-point operations with 128-bit <br>temporaries (such as Mach timestamp scaling arithmetic) and allow pure <br>Swift arbitrary-precision integer packages to provide faster operations.<br></p><p>I currently need to emulate full-width multiplication/division with <br>code such as this:<br></p><p> <br>https://github.com/lorentey/BigInt/blob/master/Sources/BigDigit.swift#L102-L177 <br></p><p><br>A 128/64=64 full-width division done this way requires 2 single-width <br>divisions and 6 multiplications. I&#39;d love to replace this with a single <br>full-width x86 DIV instruction.<br></p><p>-- <br>Károly<br>@lorentey<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

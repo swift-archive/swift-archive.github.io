@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2717968e5331016e1d8962e87c50a224?s=50"></div><header><strong>Building Static Binaries and Libs</strong> from <string>Joel Hughes</string> &lt;rudenoise at gmail.com&gt;<p>September  5, 2016 at 12:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>I hope that this is the right channel for this type of question?<br></p><p>I&#39;ve previously asked in swift-users about building a static binary, on<br>Linux, using:<br></p><p>swift build -Xswiftc -static-stdlib<br></p><p>It works for simple programs but fails on those importing Foundation.<br></p><p>I was pointed at this bug/feature-request and was thinking of taking it on<br>but might not have the time/skills to complete it:<br>https://bugs.swift.org/browse/SR-648<br></p><p>I&#39;ve pulled and built swift from master on the main repo and am going<br>through the steps to compile static lib (.a) files from the relevant<br>_corelibs_ and then adding them to my tool-chain.<br></p><p>Once I can do this I&#39;ll try and add them to the build process.<br></p><p>I&#39;m getting there wit libFoundation but have been having more difficulty<br>with libDispatch.<br></p><p>Are there any docs or example projects I could look at for this?<br></p><p>Thanks<br></p><p>Joel<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160905/7b5c367d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Building Static Binaries and Libs</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>September  5, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; On Sep 5, 2016, at 4:13 AM, Joel Hughes via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello,<br>&gt; <br>&gt; I hope that this is the right channel for this type of question?<br>&gt; <br>&gt; I&#39;ve previously asked in swift-users about building a static binary, on Linux, using:<br>&gt; <br>&gt; swift build -Xswiftc -static-stdlib<br>&gt; <br>&gt; It works for simple programs but fails on those importing Foundation.<br>&gt; <br>&gt; I was pointed at this bug/feature-request and was thinking of taking it on but might not have the time/skills to complete it: https://bugs.swift.org/browse/SR-648 &lt;https://bugs.swift.org/browse/SR-648&gt;<br>&gt; <br>&gt; I&#39;ve pulled and built swift from master on the main repo and am going through the steps to compile static lib (.a) files from the relevant _corelibs_ and then adding them to my tool-chain.<br>&gt; <br>&gt; Once I can do this I&#39;ll try and add them to the build process.<br>&gt; <br>&gt; I&#39;m getting there wit libFoundation but have been having more difficulty with libDispatch.<br>&gt; <br>&gt; Are there any docs or example projects I could look at for this?<br></p><p>I&#39;m not sure that we have any better docs than the source, unfortunately.<br></p><p>If you have specific questions you can always try asking those in the bug or on the appropriate mailing lists.<br></p><p> - Daniel<br></p><p>&gt; <br>&gt; Thanks<br>&gt; <br>&gt; Joel<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160905/0e736458/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

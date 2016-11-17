@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0110: Distinguish between single-tuple and multiple-argument function types</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July  6, 2016 at 08:00:00pm</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0110-distingish-single-tuple-arg.md<br></p><p>The second review of &quot;SE-0110: Distinguish between single-tuple and multiple-argument function types &quot; ran from June 30 ... July 4, 2016. The proposal has been *accepted*:<br></p><p>The community and core team agree that this proposal is the right thing to do, and many agree that this could probably have been treated as a bug fix on a previous proposal.<br></p><p>Thank you to Vladimir S. and Austin Zheng for driving this discussion forward!  I filed SR-2008 to track implementation work on this, this would be a great area for someone interested in the type checker to dive into the Swift compiler.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

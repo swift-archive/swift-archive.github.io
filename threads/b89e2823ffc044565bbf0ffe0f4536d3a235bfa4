@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9715063a6ee340566b99736000db1102?s=50"></div><header><strong>Swift-pm with swift 2.2</strong> from <string>Jay Buffington</string> &lt;me at jaybuff.com&gt;<p>January 27, 2016 at 03:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I see that when the swift 2.2 branch was created the package manager<br>was removed.  https://swift.org/blog/swift-2-2-release-process/<br>explains that the package manager won&#39;t be included with 2.2.<br></p><p>I would like to use the package manager with swift 2.2.  I expected to<br>be able to build swift-pm directly from the<br>https://github.com/apple/swift-package-manager repo, but that doesn&#39;t<br>seem to work any longer with the latest 2.2 snapshots- the README<br>references files that no longer exist in the snapshots.<br></p><p>Is it possible to divorce the build of swift-pm from the swift<br>language so that once a stable 2.2 is released I can use it with swift<br>pm?<br></p><p>Thanks,<br>Jay<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>Swift-pm with swift 2.2</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>January 27, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; Hi,<br>&gt; <br>&gt; I see that when the swift 2.2 branch was created the package manager<br>&gt; was removed.  https://swift.org/blog/swift-2-2-release-process/<br>&gt; explains that the package manager won&#39;t be included with 2.2.<br></p><p>It is included with the development snapshots.<br></p><p>&gt; I would like to use the package manager with swift 2.2.  I expected to<br>&gt; be able to build swift-pm directly from the<br>&gt; https://github.com/apple/swift-package-manager repo, but that doesn&#39;t<br>&gt; seem to work any longer with the latest 2.2 snapshots- the README<br>&gt; references files that no longer exist in the snapshots.<br></p><p>It should work, if you are using a release snapshot that doesn’t come with some of the things then you will need to build swift-llbuild first, then the README instructions are still correct.<br></p><p>I’ll update the README to detail this stuff as this is probably the 20th report of this confusion I have read today :(<br></p><p>&gt; Is it possible to divorce the build of swift-pm from the swift<br>&gt; language so that once a stable 2.2 is released I can use it with swift<br>&gt; pm?<br></p><p>I don’t understand.<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

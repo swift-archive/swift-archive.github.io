@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>[Swift CI] [LLDB] [swift-3.0-preview-3] LLDB test failing on Ubuntu 15.10</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>July 14, 2016 at 11:00:00am</p></header><div class="content"><p>Hi, <br></p><p>Can someone look at this test failure? It started after following commit. <br></p><p>https://ci.swift.org/view/swift-3.0-preview-3/job/oss-lldb-swift-3.0-preview-3-incremental-linux-ubuntu-15_10/23/console<br></p><p>[PCH/preamble] Make sure that if the preamble/PCH was serialized with (detail &lt;https://ci.swift.org/view/swift-3.0-preview-3/job/oss-lldb-swift-3.0-preview-3-incremental-linux-ubuntu-15_10/22/changes#detail&gt;)<br>[test] Add &amp;#039;env&amp;#039; to fix test failures in windows bots. (detail &lt;https://ci.swift.org/view/swift-3.0-preview-3/job/oss-lldb-swift-3.0-preview-3-incremental-linux-ubuntu-15_10/22/changes#detail&gt;)<br></p><p>======================================================================<br>FAIL: test_attach_to_process_by_name_gmodules (TestProcessAttach.ProcessAttachTestCase)<br>   Test attach by process name<br>----------------------------------------------------------------------<br>Traceback (most recent call last):<br>  File &quot;/home/buildnode/jenkins/workspace/oss-lldb-swift-3.0-preview-3-incremental-linux-ubuntu-15_10/lldb/packages/Python/lldbsuite/test/lldbtest.py&quot;, line 1503, in gmodules_test_method<br>    return attrvalue(self)<br>  File &quot;/home/buildnode/jenkins/workspace/oss-lldb-swift-3.0-preview-3-incremental-linux-ubuntu-15_10/lldb/packages/Python/lldbsuite/test/functionalities/process_attach/TestProcessAttach.py&quot;, line 47, in test_attach_to_process_by_name<br>    self.runCmd(&quot;process attach -n &quot; + exe_name)<br>  File &quot;/home/buildnode/jenkins/workspace/oss-lldb-swift-3.0-preview-3-incremental-linux-ubuntu-15_10/lldb/packages/Python/lldbsuite/test/lldbtest.py&quot;, line 1812, in runCmd<br>    msg if msg else CMD_MSG(cmd))<br>AssertionError: False is not True : Command &#39;process attach -n ProcessAttach&#39; returns successfully<br>Config=x86_64-/home/buildnode/jenkins/workspace/oss-lldb-swift-3.0-preview-3-incremental-linux-ubuntu-15_10/Ninja-DebugAssert/llvm-linux-x86_64/bin/clang-3.9<br>----------------------------------------------------------------------<br>Ran 6 tests in 115.176s<br></p><p>RESULT: FAILED (5 passes, 1 failures, 0 errors, 0 skipped, 0 expected failures, 0 unexpected successes)<br></p><p><br>===================<br>Test Result Summary<br>===================<br>Test Methods:       2808<br>Reruns:               16<br>Success:            1780<br>Expected Failure:    169<br>Failure:               0<br>Error:                 1<br>Exceptional Exit:      0<br>Unexpected Success:   42<br>Skip:                816<br>Timeout:               0<br>Expected Timeout:      0<br></p><p><br>Thanks, <br>Mishal Shah<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-lldb-dev/attachments/20160714/ad7846db/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

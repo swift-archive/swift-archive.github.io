@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/79cd2bdc2074f4e69eac60743fe785fc?s=50"></div><header><strong>dispatch_data_create() crashes with EXC_BAD_INSTRUCTION</strong> from <string>Daniel Eggert</string> &lt;danieleggert at me.com&gt;<p>April  2, 2016 at 12:00:00am</p></header><div class="content"><p>This code crashes for me with SwiftFoundation, but not with Darwin Foundation:<br></p><p>/// Turn `NSData` into `dispatch_data_t`<br>internal func createDispatchData(data: NSData) -&gt; dispatch_data_t {<br>    let c = data.copy() as! NSData<br>    let info = Unmanaged&lt;NSData&gt;.passRetained(c)<br>    let destructor = {<br>        info.release()<br>    }<br>    let q = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)!<br>    return dispatch_data_create(c.bytes, c.length, q, destructor)<br>}<br></p><p><br></p><p>I&#39;m not sure what to look for. The values being passed into dispatch_data_create() look sane.<br></p><p>Is this a red herring?<br></p><p><br></p><p>/Daniel<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160402/6932cc7f/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: Screen Shot 2016-04-01 at 20.42.04.png<br>Type: image/png<br>Size: 12187 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160402/6932cc7f/attachment.png&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: Screen Shot 2016-04-01 at 20.43.46.png<br>Type: image/png<br>Size: 18447 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160402/6932cc7f/attachment-0001.png&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b5fd288009b4b1fdeff3ac3e29c1222d?s=50"></div><header><strong>[swift-corelibs-foundation] Tests not showing in Xcode test navigator</strong> from <string>Dan Tugendraich</string> &lt;tugendraich at ustwo.com&gt;<p>September  1, 2016 at 09:00:00am</p></header><div class="content"><p>I have performed all the getting started steps in; https://github.com/apple/swift-corelibs-foundation/blob/swift-3.0-branch/Docs/GettingStarted.md<br>Everything seems to be working fine, I can build the SwiftFoundation target and I can run the TestFoundation target. But one of the tests are failing in the test-suite. But I have no way of checking which test and why because the test navigator window in Xcode is empty. It wants me to add a new target, but I want it to show the already existing test target ”TestFoundation”. Any ideas on how to achieve this?<br>Dan Tugendraich<br></p><p> &lt;http://www.ustwo.com/&gt;<br></p><p><br>Kärleksgatan 2, 211 45 Malmö &lt;http://www.ustwo.com/&gt;<br>+46 (0) 40 330 480 &lt;http://www.ustwo.com/&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160901/2a8a7ee9/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: ustwo_dad_navy.png<br>Type: image/png<br>Size: 4377 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160901/2a8a7ee9/attachment.png&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

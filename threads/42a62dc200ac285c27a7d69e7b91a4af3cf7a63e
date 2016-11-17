@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/74b2be3f33e2efebef65c9a48c32872a?s=50"></div><header><strong>Pitch: Guard for declaration</strong> from <string>Angelo Villegas</string> &lt;gelo.web at gmail.com&gt;<p>December 26, 2015 at 04:00:00pm</p></header><div class="content"><p>Hi Everyone,<br></p><p>Back in the ternary discussion, I kinda suggested the use of Guard but then I realised it’s not a replacement for ternary nor an alternative, it should not be, but may be a helpful addition to Swift.<br></p><p>let a | x &gt; 0 &amp;&amp; x &lt; 10 = “less than ten”<br>      | x &gt; 10 &amp;&amp; &lt; 100 = “less than a hundred”<br>      | x &gt; 100 = “more than a hundred”<br>      | otherwise = “probably a negative”<br></p><p>There’s someone who said that it’s reasonable in declarations and another said that he like to explore using the bar (or pipe) character (|).<br></p><p>The where clause should work well with declarations. For instance, consider a function which computes the number of solutions for a quadratic equation, ax^2 + bx + c = 0<br></p><p>let num | disc &gt; 0  = 2<br>        | disc == 0 = 1<br>        | otherwise = 0<br>        where<br>            disc = a2 + b + c<br>            where<br>                a = 2 * 1<br>                b = 2 + 3<br>                c = 6 / 2<br></p><p>I believe it may also help lessen the number of lines (in many cases) from using if-else-if and/or switch statements.<br></p><p>Anyway, I just thought to start a pitch. If people will like the idea we might give a proper proposal for the boolean guard.<br></p><p>- Angelo<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151226/42a6a63e/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

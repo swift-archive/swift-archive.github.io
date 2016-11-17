@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>How to be DRY on ranges and closed ranges?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 16, 2016 at 03:00:00pm</p></header><div class="content"><p>on Wed Oct 12 2016, Jean-Denis Muys &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; Hi,<br>&gt;<br>&gt; I defined this:<br>&gt;<br>&gt; func random(from r: Range&lt;Int&gt;) -&gt; Int {<br>&gt;     let from = r.lowerBound<br>&gt;     let to =  r.upperBound<br>&gt;<br>&gt;     let rnd = arc4random_uniform(UInt32(to-from))<br>&gt;     return from + Int(rnd)<br>&gt; }<br>&gt;<br>&gt; so that I can do:<br>&gt;<br>&gt; let testRandomValue = random(from: 4..&lt;8)<br>&gt;<br>&gt; But this will not let me do:<br>&gt;<br>&gt; let otherTestRandomValue = random(from: 4...10)<br>&gt;<br>&gt; The error message is a bit cryptic:<br>&gt;<br>&gt; “No ‘…’ candidate produce the expected contextual result type ‘Range&lt;Int&gt;’”<br>&gt;<br>&gt; What is happening is that 4…10 is not a Range, but a ClosedRange.<br>&gt;<br>&gt; Of course I can overload my function above to add a version that takes a ClosedRange.<br>&gt;<br>&gt; But this is not very DRY.<br>&gt;<br>&gt; What would be a more idiomatic way?<br></p><p>In our original design we had a common protocol to which open and closed<br>ranges conformed, and you could pass an instance of RangeProtocol.  That<br>was removed because the overall complexity was not a win, but I predict<br>it will come back for Swift 4:<br>https://github.com/apple/swift/pull/3737<br></p><p>But for what you want to do, you don&#39;t need anything that complicated:<br></p><p>protocol CompleteRange {<br>  associatedtype Bound : Comparable<br>  var lowerBound : Bound { get }<br>  var upperBound : Bound { get }<br>}<br></p><p>extension CountableRange : CompleteRange {}<br>extension CountableClosedRange : CompleteRange {}<br></p><p>import Darwin<br>func random&lt;R: CompleteRange&gt;(from r: R) -&gt; Int where R.Bound == Int, R: Collection {<br>  let rnd = arc4random_uniform(numericCast(r.count))<br>  return r.lowerBound + Int(rnd)<br>}<br></p><p>print(random(from: -5..&lt;5), random(from: -20...20))<br></p><p>Hope this helps,<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

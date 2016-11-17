@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ea125c5cd93ba84769387c17c973e2b3?s=50"></div><header><strong>Add @noescape to output parameter of &#39;UnicodeCodecType.encode&#39;</strong> from <string>rintaro ishizaki</string> &lt;fs.output at gmail.com&gt;<p>March  8, 2016 at 04:00:00pm</p></header><div class="content"><p>Currently, all callers of this method in the Standard Library<br>assume `output` parameter has @noescape semantics.<br>So, I think, we can/should mark it with @noescape.<br>Is there a reason why it isn&#39;t?<br></p><p>public protocol UnicodeCodecType {<br></p><p>    // ...<br></p><p>    static func encode(<br>        input: UnicodeScalar,<br>        @noescape output: (CodeUnit) -&gt; Void)<br>}<br></p><p>--<br>Rintaro Ishizaki<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Add @noescape to output parameter of &#39;UnicodeCodecType.encode&#39;</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>March  7, 2016 at 11:00:00pm</p></header><div class="content"><p>On Mon, Mar 7, 2016 at 11:21 PM, rintaro ishizaki via swift-evolution<br>&lt;swift-evolution at swift.org&gt; wrote:<br>&gt; Currently, all callers of this method in the Standard Library<br>&gt; assume `output` parameter has @noescape semantics.<br>&gt; So, I think, we can/should mark it with @noescape.<br>&gt; Is there a reason why it isn&#39;t?<br>&gt;<br>&gt; public protocol UnicodeCodecType {<br>&gt;<br>&gt;     // ...<br>&gt;<br>&gt;     static func encode(<br>&gt;         input: UnicodeScalar,<br>&gt;         @noescape output: (CodeUnit) -&gt; Void)<br>&gt; }<br></p><p>Hi,<br></p><p>There is no reason, this function should be @noescape.  A pull request<br>would be appreciated!<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

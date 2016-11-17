@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0485c3a3022de4a0ab1a7e02241b894f?s=50"></div><header><strong>Debian Jessie: SwiftShims no such file or directory</strong> from <string>Jason Pepas</string> &lt;jasonpepas at gmail.com&gt;<p>December  3, 2015 at 06:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I&#39;m attempting to get the Ubuntu 14.04 binary release running on Debian/jessie.<br></p><p>I&#39;ve installed the dependencies, and pulled in clang-3.6 from Debian/sid.<br></p><p>I&#39;m attempting to build the following file:<br></p><p><br>jpepas at debian:~$ cat foo.swift<br>let a = 1<br></p><p><br>Using the following command, and I get the following error:<br></p><p><br>jpepas at debian:~$ swiftc foo.swift<br>&lt;unknown&gt;:0: error: opening import file for module &#39;SwiftShims&#39;: No<br>such file or directory<br></p><p><br>Any ideas?<br></p><p>Thanks,<br>Jason Pepas<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

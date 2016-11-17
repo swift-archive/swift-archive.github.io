@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6148a7c7d3f414f24897267927bac002?s=50"></div><header><strong>No access to list of environment variables possible from within Swift</strong> from <string>Johannes Schriewer</string> &lt;hallo at dunkelstern.de&gt;<p>May 28, 2016 at 06:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>Currently there is no list of environment variables visible from within a Swift program.<br></p><p>You can use `getenv` and `setenv` from the C Standard library to access a variable of which you know the name, but sometimes that’s not enough.<br></p><p>One simple case is when using `posix_spawn` to execute a child-process. This API needs a list of environment variables to present to the child process. Usually (meaning in C) you could work around that by inheriting the environment by using `fork` but that’s not allowed in Swift.<br></p><p>So if you want a child process to inherit the environment you’ll have to have a list.<br></p><p>Foundation does use a CoreFoundation method to get that list as seen here:<br>https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSTask.swift#L226 &lt;https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSTask.swift#L226&gt;<br></p><p>If you want to stay in Swift there is no access.<br></p><p>So how can a C program get to the environment? That’s rather simple, there are 2 ways:<br>1. The (often ignored) third parameter to `main()` is a `char **env` which is just a list of all environment variables that ends with a `NULL` entry<br>2. Include `unistd.h` and use the exported variable `extern char **environ`<br></p><p>So what I would propose is just harnessing the third `main()` parameter and creating a new static computed property named `environment`, that is a dictionary of `[String:String]`, on the `Process` enum. There would be a bit of parsing because the environment list has the format `Key=Value` so the string would have to be split at the first equals character.<br></p><p>There is a Bug on the bugtracker: https://bugs.swift.org/browse/SR-1636 &lt;https://bugs.swift.org/browse/SR-1636&gt;<br>And I have built a patch already in a pull-request that was shot down recently: https://github.com/apple/swift/pull/2757 &lt;https://github.com/apple/swift/pull/2757&gt;<br></p><p>I tried to keep as closely as possible to the implementation of `argv`/`Process.arguments` as that comes from the same source as the environment list. The patch touches `SILGen.cpp`, `GlobalObjects.cpp/h` and of course `Process.swift` and was created as small as possible.<br></p><p>If you compile with that patch you’ll get access to `Process.environment`, which is static (does not change when using `setenv` to change or add a variable) and just contains a dictionary with the environment, and `Process.unsafeEnvp` which is like `unsafeArgv` the original representation of the value at it’s original location.<br></p><p>As this patch only adds another static variable it will not affect existing Swift programs.<br></p><p>Thanks for reading,<br>Johannes Schriewer<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160528/c5fb0a6d/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

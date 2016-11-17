@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a838c63b9093a77fb88231d65effa3b3?s=50"></div><header><strong>print buffering</strong> from <string>Drew Crawford</string> &lt;drew at sealedabstract.com&gt;<p>April  1, 2016 at 04:00:00pm</p></header><div class="content"><p>We noticed today when running a swift CLI program to a pipe that stdout is fully buffered (e.g. not unbuffered, not line-buffered).  So just now we committed unbuffering IO to a bunch of CLI programs.<br></p><p>Is this the right default behavior for Swift?<br></p><p>I realize this is a Cism with a long history, but I think an argument can be made that the Cism is surprising (in that: it surprised us). I think most Swift developers would assume &quot;print&quot; to be line-buffered.<br></p><p>Requiring programs to opt-in to linebuffering so they can work via pipe feels wrong to me.  Am I crazy?<br></p><p>Drew<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>print buffering</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>April  1, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Apr 1, 2016, at 2:52 PM, Drew Crawford via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; We noticed today when running a swift CLI program to a pipe that stdout is fully buffered (e.g. not unbuffered, not line-buffered).  So just now we committed unbuffering IO to a bunch of CLI programs.<br>&gt; <br>&gt; Is this the right default behavior for Swift?<br>&gt; <br>&gt; I realize this is a Cism with a long history, but I think an argument can be made that the Cism is surprising (in that: it surprised us). I think most Swift developers would assume &quot;print&quot; to be line-buffered.<br>&gt; <br>&gt; Requiring programs to opt-in to linebuffering so they can work via pipe feels wrong to me.  Am I crazy?<br></p><p>We coincidentally got a Radar about this a few days ago.<br></p><p>    func testExample() {<br>        print(&quot;foo&quot;)  // doesn&#39;t appear before the crash<br>        assert(false)<br>    }<br></p><p>Making print() less than fully buffered (either unconditionally or conditional on stdout being sufficiently terminal-like) ought to be reasonable. I mirrored the bug report to https://bugs.swift.org/browse/SR-1127 .<br></p><p><br>-- <br>Greg Parker     gparker at apple.com     Runtime Wrangler<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

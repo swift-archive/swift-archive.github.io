@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2d569462ac92d4619342b1c5ff305043?s=50"></div><header><strong>[Pitch] improve import sentence: allow import specific nested types</strong> from <string>frogcjn at 163.com</string> &lt;frogcjn at 163.com&gt;<p>September 29, 2016 at 01:00:00pm</p></header><div class="content"><p>Now Swift 3 allow us import specific enum/struct from module, but it only allow us import top-level declaration.<br></p><p>For example:<br></p><p>in MyFoudnation framework:<br></p><p>public struct Time {<br>    public struct DateOnly {}<br>}<br></p><p>in App target:<br>I can only<br> <br>import struct MyFoundation.Time<br></p><p>But I cannot <br></p><p>import struct MyFoundation.Time.DateOnly<br></p><p>So allow developer import nested types<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160929/89595289/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0e8516d3703e35b7df26986815b23e7a?s=50"></div><header><strong>[Pitch] improve import sentence: allow import specific nested types</strong> from <string>Robert Widmann</string> &lt;devteam.codafi at gmail.com&gt;<p>September 29, 2016 at 02:00:00am</p></header><div class="content"><p>2 concerns<br></p><p>1) This introduces an ambiguity in qualified import syntax about whether identifiers after the dot are sub-modules or sub-structures.<br></p><p>2) Rarely do you want to import a substructure without also importing the parent.  Often, APIs designed like there were built with this kind of use-case in mind, so it doesn&#39;t make any sense to be able to talk about a part without the whole.  Qualifying access to substructures is not tremendously burdensome and helps enforce modularity and readability in my opinion.  This expansion would harm that.<br></p><p>~Robert Widmann<br></p><p>2016/09/29 1:07、Cao Jiannan via swift-evolution &lt;swift-evolution at swift.org&gt; のメッセージ:<br></p><p>&gt; Now Swift 3 allow us import specific enum/struct from module, but it only allow us import top-level declaration.<br>&gt; <br>&gt; For example:<br>&gt; <br>&gt; in MyFoudnation framework:<br>&gt; <br>&gt; public struct Time {<br>&gt;     public struct DateOnly {}<br>&gt; }<br>&gt; <br>&gt; in App target:<br>&gt; I can only<br>&gt;  <br>&gt; import struct MyFoundation.Time<br>&gt; <br>&gt; But I cannot <br>&gt; <br>&gt; import struct MyFoundation.Time.DateOnly<br>&gt; <br>&gt; So allow developer import nested types<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160929/f3a9aad6/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

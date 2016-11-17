@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Should we rename &quot;class&quot; when referring to protocol conformance?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May 23, 2016 at 11:00:00am</p></header><div class="content"><p>on Sun May 22 2016, Matthew Johnson &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Are you sure that is Sean’s entire point? I take more away from it than that.<br>&gt; Look at slide 13 here:<br>&gt; https://github.com/boostcon/cppnow_presentations_2012/blob/master/fri/value_semantics/value_semantics.pdf<br>&gt;<br>&gt; “The shared structure also breaks our ability to reason locally about code”. <br>&gt;<br>&gt; But I know you agree with that as well as you indicated just up thread. <br>&gt;<br>&gt; It sounds like the only remaining point of possible disagreement is whether<br>&gt; “can’t reach shared mutable state” is a reasonable constraint to place on types<br>&gt; in generic code.<br></p><p>Here&#39;s what Sean sent me this morning:<br></p><p>&gt; Hi Dave,<br>&gt; <br>&gt; I&#39;ve now had several people send me this transcript. I&#39;m not seeing<br>&gt; <br>&gt; Although I&#39;m sure you know this - the short definition of regular is:<br>&gt; <br>&gt;   copies are equal and logically disjoint.<br>&gt; <br>&gt; Logically disjoint means that modifications to one copy do not modify<br>&gt; other copies. It does not mean &quot;no sharing&quot; - sharing of an immutable<br>&gt; part, a copy-on-write part (immutable when shared) or a part which is<br>&gt; outside the definition of equality (such as a cache) are all<br>&gt; allowed. We can write out all the axioms for a regular type if that<br>&gt; would help. I do not know what the axioms of a &quot;pure value&quot; are, or<br>&gt; how they would differ from this definition. Typically in functional<br>&gt; programming (where &quot;pure&quot; is used to refer to functions that have no<br>&gt; side effects) a value is not mutable and so the notion of disjoint<br>&gt; does not come into question and there is typically significant<br>&gt; sharing.<br>&gt; <br>&gt; For &quot;pure value&quot; to be a useful concept we need an instance of a<br>&gt; model, an algorithm that relies on the additional requirements, and<br>&gt; the axioms that define it. From the thread it seems as if the<br>&gt; definition is something like &quot;copies are equal and physically<br>&gt; disjoint.&quot; I&#39;m not sure if there is something else people are trying<br>&gt; to say along the lines that all parts are included in equality. I do<br>&gt; not see any compelling evidence in the description that there are<br>&gt; useful algorithms that rely on such attributes. Note that concepts are<br>&gt; about enabling additional algorithms, including for efficiency.<br>&gt; <br>&gt; [ Feel free to quote this back to the list - I can be easily reached<br>&gt; at sparent at adobe.com if people have questions instead of speculating<br>&gt; about what I did, or did not, mean in my talks. ]<br>&gt; <br>&gt; Sean<br></p><p>...and now, I really need to get back to work on *my* talk for WWDC.<br></p><p>Cheers,<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0005 Better Translation of Objective-C APIs Into Swift</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 27, 2016 at 11:00:00pm</p></header><div class="content"><p>on Wed Jan 27 2016, Radosław Pietruszewski &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;&gt; <br>&gt;&gt;&gt; Can I tell, at a call site, whether `respond(data: someData)` is<br>&gt;&gt;&gt; responding with someData, or responding to someData?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; That is, can I tell whether someData is the response, or instead is<br>&gt;<br>&gt;&gt;&gt; something from the request that the receiver will use to compute<br>&gt;&gt;&gt; the response?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; If I see `respondWith(someData)` or `respondWith(data: someData)`<br>&gt;&gt;&gt; or `respondWithData(someData)`, it&#39;s clear to me that someData is<br>&gt;&gt;&gt; the response, while a hypothetical call `respondTo(someData)` would<br>&gt;&gt;&gt; tell me that someData is the input to the response-computing<br>&gt;&gt;&gt; algorithm.<br>&gt;&gt; <br>&gt;&gt; I’d like to reiterate that my preference for cases like these would be:<br>&gt;&gt; <br>&gt;&gt; 	respond(withData data: Data)<br>&gt;&gt; <br>&gt;&gt; This way the action (function name) is still simplified to respond,<br>&gt;&gt; but the sentence structure remains for clarity, which I still think<br>&gt;&gt; is the best of both worlds.<br>&gt;<br>&gt; That seems very weird.<br>&gt;<br>&gt; I’d prefer<br>&gt;<br>&gt;    respondWith(data: Data)<br>&gt;<br>&gt; to “with” in the label.<br>&gt;<br>&gt; (But honestly it seems like an edge case for “with” here to have some<br>&gt; meaning aside from just being a separator. Unless there’s a reliable<br>&gt; heuristic to differentiate, `respond(data data: Data)` isn’t bad.)<br></p><p>I&#39;m pretty certain that the argument label is needless in this case.<br>respond(x) is perfectly grammatical with exactly the right meaning.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

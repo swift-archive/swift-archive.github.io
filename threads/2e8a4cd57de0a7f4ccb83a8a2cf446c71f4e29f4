@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0a2c0bcff308a97d2617cdba339914c6?s=50"></div><header><strong>Latest development code fails to build</strong> from <string>Charles Lane</string> &lt;clane_47 at bellsouth.net&gt;<p>April 13, 2016 at 01:00:00pm</p></header><div class="content"><p>Every time I try to build any app in Xcode 7.3 with the latest development snapshot (Apr 12), the build fails with this error:  `Command failed due to signal: Illegal instruction: 4`<br>Anyone else seeing this? The default and the 2.2.1 snapshot works fine.<br></p><p>Regards,<br>Chuck Lane<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Latest development code fails to build</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>April 13, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; On Apr 13, 2016, at 10:27 AM, Charles Lane via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Every time I try to build any app in Xcode 7.3 with the latest development snapshot (Apr 12), the build fails with this error:  `Command failed due to signal: Illegal instruction: 4`<br>&gt; Anyone else seeing this? The default and the 2.2.1 snapshot works fine.<br></p><p>Can you file a bug with your code that&#39;s causing the crash?<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

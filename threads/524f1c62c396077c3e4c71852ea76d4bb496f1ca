@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>SwiftPM Xcode project generation — merged</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>March 10, 2016 at 12:00:00pm</p></header><div class="content"><p>I have merged Xcode project generation into master.<br></p><p>To generate a project from a package:<br></p><p>    swift build --generate-xcodeproj<br></p><p>Or, the short-form:<br></p><p>    swift build -X<br></p><p>The above will work with the next available snapshot.<br></p><p>The project contains a dylib target per module and targets for any executables based on how it would build with SwiftPM normally.<br></p><p>There is an open list of TODO items in the Xcodeproj module directory: https://github.com/apple/swift-package-manager/tree/master/Sources/Xcodeproj<br></p><p>Max<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160310/524ff1ca/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

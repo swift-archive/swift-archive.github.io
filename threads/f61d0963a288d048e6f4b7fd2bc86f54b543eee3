@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e3903086ed803b3e3dadf2f0d68e6042?s=50"></div><header><strong>REPL</strong> from <string>Gage Morgan</string> &lt;gagemorgan at outlook.com&gt;<p>December  5, 2015 at 07:00:00pm</p></header><div class="content"><p>Re-sending due to Mailman Privacy message, hoping this isn&#39;t a duplicate:<br>Question: I do not own a mac. As I&#39;ve noticed, the debugger and REPL are coupled together. That said, is it possible to eventually use REPL to output Gtk+ windows using a future language binding in place of the Xcode playgrounds that are missing in Ubuntu? I&#39;m not a noob; this isn&#39;t my first time doing something with a language, but before I invest the time of my co-workers and I in Swift, I&#39;d like to know if it will ever be possible to use the Linux port to do real-time mocking up of apps in development similar to Xcode. I understand REPL is run from the CLI only, but if it can open windows in a language-bound toolkit like Gtk+ from that basic CLI, we will probably develop our own IDE to use Swift.  <br>Sent from Outlook<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-lldb-dev/attachments/20151205/f61deee3/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

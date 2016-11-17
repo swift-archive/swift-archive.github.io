@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0102: Remove @noreturn attribute and introduce an empty Never type</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>June 30, 2016 at 01:00:00pm</p></header><div class="content"><p>Proposal link: https://github.com/apple/swift-evolution/blob/master/proposals/0102-noreturn-bottom-type.md<br></p><p>Hello Swift Community,<br></p><p>The review of &quot;SE-0102: Remove @noreturn attribute and introduce an empty NoReturn type&quot; ran from June 21...27.   The core team *accepted* the proposal for Swift 3 with a revision to change the name of the type from “NoReturn” to “Never”.  <br></p><p>The feedback on the proposal was generally very positive from the community.  The only significant concern was from people who felt that merging the concept of “does not return” into the result type of the function conflates two concepts.  The core team feels that unifying these concepts overall reduces the surface area of the language by eliminating an obscure (but important) type system concept outright.<br></p><p>The other significant discussion was about the actual name for the “NoReturn” type.  The core team enjoyed the community idea of naming it “💥&quot; or ”🔃” but decided that the name lacked clarity.  Ultimately the core team agreed with the loud voice of the community that “Never” is the right name for this type.<br></p><p>Thank you to Joe Groff for driving this proposal forward!  I filed SR-1953 to track implementation of this feature.<br></p><p>-Chris<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

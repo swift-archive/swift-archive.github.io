@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Marking sort and sorted with rethrows</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June  5, 2016 at 04:00:00pm</p></header><div class="content"><p>on Sun Jun 05 2016, Tim Vermeulen &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Most standard library functions that take a closure allow that closure<br>&gt; to throw (and those functions are subsequently marked with<br>&gt; rethrows). sort and sorted are exceptions to this. I couldn’t find<br>&gt; this documented anywhere, but I assume this is because sorting can<br>&gt; happen in-place and it would be impossible to restore the array to its<br>&gt; original state without giving up performance. Correct me if I’m wrong.<br></p><p>The guarantee that a function completes successfully or has no effect is<br>called the “strong guarantee.”  There&#39;s nothing wrong, however, with<br>operations that only give the “basic guarantee”—that invariants are<br>preserved—which would leave the collection in an indeterminate state.<br></p><p>&gt; I’d like to propose that we let sort rethrow anyways, and leave the<br>&gt; array in an intermediate state (where the elements are in an arbitrary<br>&gt; order) when an error is thrown. As long as this is properly<br>&gt; documented, this shouldn’t lead to any confusion. <br></p><p>I have only one concern with this, which is that a completely<br>indeterminate state may not give us sufficient permission to detect and<br>prevent nonsense.  Should the compiler be allowed to refuse to compile<br>code that can be statically shown to use partially-modified state, and<br>the library allowed to mark any such state as unusable at runtime?<br></p><p>A cheap approximation of this kind of marking for Array might be to call<br>`clear(keepingCapacity: true)`, in debug builds only, when an error is<br>thrown through a mutating method.  That would (almost) ensure you had to<br>assign into or clear the array before doing anything with it.<br></p><p>When we first designed exception-safety for C++, details of the<br>standardization schedule made it important to reduce the model&#39;s<br>complexity to an absolute minimum, so we kept the idea of<br>unusable-until-reassigned state out of the picture.  But a simple model<br>that makes nonsense code legal is not really in keeping with Swift,<br>especially when we can detect the nonsense.<br></p><p>&gt; Best of all, it would allow sorted to rethrow as well in which there<br>&gt; is no room for confusion at all because it doesn’t mutate any of the<br>&gt; user’s variables.<br></p><p>Yes, about sorted there is no question whatsoever because there is no mutation.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

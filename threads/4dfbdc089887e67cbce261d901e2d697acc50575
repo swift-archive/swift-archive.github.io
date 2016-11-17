@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Review] SE-0105: Removing Where Clauses from For-In Loops</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 23, 2016 at 07:00:00pm</p></header><div class="content"><p>I must note that this `where` does not belong to `case`.<br>Compare:<br></p><p>for case x? where x &lt; 10 in y { ... }<br>for x in y where x &lt; 10 { ... }<br></p><p>First syntax is standard and won&#39;t go away. Second syntax is for-in <br>specific, and is considered inconsistent.<br></p><p>* What is your evaluation of the proposal?<br></p><p>+1, because it removes piece of grammar that is unprecedented in other <br>languages and that few people use.<br></p><p>* Is the problem being addressed significant enough to warrant a <br>change to Swift?<br></p><p>Yes.<br></p><p>* Does this proposal fit well with the feel and direction of <br>Swift?<br></p><p>Yes, especially with Swift 3!<br></p><p>* If you have used other languages or libraries with a similar <br>feature, how do you feel that this proposal compares to those?<br></p><p>N/A<br></p><p>* How much effort did you put into your review? A glance, a <br>quick reading, or an in-depth study?<br></p><p>Followed the thread.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

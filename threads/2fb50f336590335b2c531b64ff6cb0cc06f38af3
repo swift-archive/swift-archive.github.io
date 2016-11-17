@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0005 Better Translation of Objective-C APIs Into Swift</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 28, 2016 at 09:00:00am</p></header><div class="content"><p>on Thu Jan 28 2016, Haravikk &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On 27 Jan 2016, at 22:37, Douglas Gregor<br>&gt;&gt; &lt;dgregor at apple.com&gt; wrote:<br>&gt;&gt;&gt; On Jan 27, 2016, at 2:15 PM, Haravikk via swift-evolution<br>&gt;&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;<br>&gt;&gt;&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I’d like to reiterate that my preference for cases like these would be:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; 	respond(withData data: Data)<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; This way the action (function name) is still simplified to respond,<br>&gt;&gt;&gt; but the sentence structure remains for clarity, which I still think<br>&gt;&gt;&gt; is the best of both worlds.<br>&gt;&gt; <br>&gt;&gt; Observation: I’ve never seen anyone write Swift code this way, with<br>&gt;&gt; a proposition “with” on the first argument label. Have you?<br>&gt;<br>&gt; I do ;)<br>&gt;<br>&gt; One thing I really love about Swift’s external names is the ability to<br>&gt; make my function calls read a lot like natural language, but in doing<br>&gt; so actually clarify how a parameter is used, potentially eliminating<br>&gt; the need to consult documentation at all.<br>&gt;<br>&gt; Granted “with” may not be the best word, but in the example it implies<br>&gt; to me more that the data itself is being returned, rather than being<br>&gt; used to generate some kind of other response, whereas “data” on its<br>&gt; own might require me to check to be sure I’ve understand what the<br>&gt; function will do with that data.<br>&gt;<br>&gt; For example, I might declare methods like:<br>&gt;<br>&gt; 	func find(theSearchTerm needle:String, inTheString haystack:String) -&gt; Range&lt;String.Index&gt;<br>&gt; 	let match = matcher.find(theSearchTerm: “find me”, inTheString: “see if you can find me in this”)<br>&gt;<br>&gt; Still might not be the best example but hopefully it gives you the<br>&gt; idea. <br></p><p>Well, this is certainly a style we want the language to allow, but I&#39;m<br>just as certain it&#39;s not what we want the API guidelines to push people<br>toward...<br></p><p>&gt; Sometimes there’s verbosity for the sake of maintaining the pattern,<br>&gt; but the idea is to end up with self-documenting function<br>&gt; declarations. Of course I had SwiftDoc anyway for clarity and because<br>&gt; I’m an habitual documenter, but if a function can be understood purely<br>&gt; from how it’s used then that’s a good thing IMO. I should mention I’m<br>&gt; a huge fan of Applescript’s syntax (though I hate its performance).<br>&gt;<br>&gt; Of course I realise we’re talking about converting Objective-C<br>&gt; functions, but while I don’t like the overly long function names (I<br>&gt; prefer functions with a similar action to have the same name) I do<br>&gt; like that some of them are self-documenting thanks to the added<br>&gt; verbosity, and I’m just concerned that we might lose some of that, as<br>&gt; personally I try to keep my functions fairly descriptive in my own<br>&gt; code.<br></p><p>...and the goal is to have the importer emulate conformance to the<br>guidelines.  But regarding your concern about clarity, do you feel the<br>prose you wrote above is unclear?  I notice you didn&#39;t write<br></p><p>  I’m just [a feeling]: concerned that [the subject of that feeling]: we<br>  might [a consequence]: lose [the object of that consequence]: some of<br>  that.<br></p><p>To me, that seems analogous to <br></p><p>   find(theSearchTerm: x)<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

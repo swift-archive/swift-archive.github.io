@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6186ddb1eb3c1a9a722a87630834d036?s=50"></div><header><strong>Package manager and swiftdoc</strong> from <string>Luz Violeta</string> &lt;luzvioleta at zoho.com&gt;<p>December 13, 2015 at 11:00:00pm</p></header><div class="content"><p>Hello everyone ! o/<br></p><p>I&#39;ve been poking around with swift on Linux and suddenly I got<br>interested in how to write docs and generate appropriate<br>html/pdf/whatever files for consumers of a package.<br></p><p>I found in .build that a binary file *.swiftdoc is generated but I had<br>no idea if there&#39;s a tool available, specs or something to make it<br>usable ...<br></p><p>Any pointers? Ty for reading <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151213/066ed4a7/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/58e2591737c75b7700b11f23381b9590?s=50"></div><header><strong>Package manager and swiftdoc</strong> from <string>Rick Ballard</string> &lt;rballard at apple.com&gt;<p>January  5, 2016 at 06:00:00pm</p></header><div class="content"><p>Hi Luz,<br></p><p>We currently have no standard established for generating documentation for packages in a uniform way, but it&#39;s in our plans (https://github.com/apple/swift-package-manager/blob/master/Documentation/PackageManagerCommunityProposal.md#documentation-generation). Proposals are welcome for how to do this, via the swift evolution process (https://github.com/apple/swift-evolution/blob/master/process.md)<br></p><p>	- Rick<br></p><p>&gt; On Dec 13, 2015, at 6:11 PM, Luz Violeta via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello everyone ! o/<br>&gt; <br>&gt; I&#39;ve been poking around with swift on Linux and suddenly I got interested in how to write docs and generate appropriate html/pdf/whatever files for consumers of a package.<br>&gt; <br>&gt; I found in .build that a binary file *.swiftdoc is generated but I had no idea if there&#39;s a tool available, specs or something to make it usable ...<br>&gt; <br>&gt; Any pointers? Ty for reading <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160105/5b5e566b/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

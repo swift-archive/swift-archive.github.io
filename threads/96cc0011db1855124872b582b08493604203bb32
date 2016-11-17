@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/69f18347ff502c5dd47284ab144ff796?s=50"></div><header><strong>Installing swift toolchain issues</strong> from <string>Jeyaram Jeyaraj</string> &lt;jeyaram6 at gmail.com&gt;<p>May  4, 2016 at 11:00:00am</p></header><div class="content"><p>Hi All,<br></p><p>I&#39;m trying to follow the instructions here<br>https://github.com/apple/swift-corelibs-foundation/blob/master/Docs/GettingStarted.md<br></p><p>It indicates to install the current Swift toolchain and points to this link:<br>https://swift.org/download/#latest-development-snapshots<br></p><p>Now if I scroll down I see the instructions as:<br>Installation<br></p><p>   1.<br></p><p>   Download the latest package release &lt;https://swift.org/download&gt;.<br>   2.<br></p><p>   Run the package installer, which will install an Xcode toolchain into<br>   /Library/Developer/Toolchains/.<br></p><p>   An Xcode toolchain (.xctoolchain) includes a copy of the compiler, lldb,<br>   and other related tools needed to provide a cohesive development experience<br>   for working in a specific version of Swift.<br></p><p>but if I click on the link mentioned in #1, I get back to the top of the<br>page, it indicates I can install XCode 7.3.1 from the apple store (which I<br>already have installed), but I do not see the directory<br>/Library/Developer/Toolchains/. mentioned in step 2.<br></p><p>What am I doing wrong here? also If I go to preferences then navigate to<br>components -&gt; Toolchains, I don&#39;t see a installed xcode swift 2.2 snapshot.<br></p><p><br>Thanks.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160504/96ccbb32/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

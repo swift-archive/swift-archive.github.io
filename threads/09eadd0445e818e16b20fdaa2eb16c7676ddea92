@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ffe95d2e2584a3b4adda3ca0e19c375d?s=50"></div><header><strong>Compiling SIL with swiftc</strong> from <string>Luke Howard</string> &lt;lukeh at padl.com&gt;<p>December 31, 2015 at 09:00:00pm</p></header><div class="content"><p>Newbie question, is the following supposed to work?<br></p><p>$ ./swiftc -emit-sil -o lookup.sil lookup.swift<br>$ ./swiftc -parse-sil -o lookup lookup.sil<br></p><p>It fails with a gazillion errors:<br></p><p>lookup.sil:61:25: error: use of undeclared type &#39;SomeProtocol&#39;<br>  %23 = metatype $@thin SomeProtocol.Protocol<br>                        ^~~~~~~~~~~~<br>lookup.sil:62:3: error: expressions are not allowed at the top level<br>  %24 = metatype $@thick SomeProtocol.Protocol    // user: %25<br>  ^<br>lookup.sil:62:17: error: consecutive statements on a line must be separated by &#39;;&#39;<br>  %24 = metatype $@thick SomeProtocol.Protocol    // user: %25<br>                ^<br>                ;<br>...<br></p><p>almost as if it thinks it’s Swift.<br></p><p>— Luke<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151231/09eaea92/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Compiling SIL with swiftc</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>December 31, 2015 at 09:00:00am</p></header><div class="content"><p>&gt; On Dec 31, 2015, at 2:33 AM, Luke Howard via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Newbie question, is the following supposed to work?<br>&gt; <br>&gt; $ ./swiftc -emit-sil -o lookup.sil lookup.swift<br>&gt; $ ./swiftc -parse-sil -o lookup lookup.sil<br>&gt; <br>&gt; It fails with a gazillion errors:<br>&gt; <br>&gt; lookup.sil:61:25: error: use of undeclared type &#39;SomeProtocol&#39;<br>&gt;   %23 = metatype $@thin SomeProtocol.Protocol<br>&gt;                         ^~~~~~~~~~~~<br>&gt; lookup.sil:62:3: error: expressions are not allowed at the top level<br>&gt;   %24 = metatype $@thick SomeProtocol.Protocol    // user: %25<br>&gt;   ^<br>&gt; lookup.sil:62:17: error: consecutive statements on a line must be separated by &#39;;&#39;<br>&gt;   %24 = metatype $@thick SomeProtocol.Protocol    // user: %25<br>&gt;                 ^<br>&gt;                 ;<br>&gt; ...<br>&gt; <br>&gt; almost as if it thinks it’s Swift.<br></p><p>This should work. I think, though, that if you try to compile multiple files together, it currently parses them all as .swift files, which might explain the failure.<br></p><p>-Joe<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151231/55828506/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 24, 2016 at 03:00:00pm</p></header><div class="content"><p>on Sun Jan 24 2016, Charles Kissinger &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; This discussion of acronyms does raise a different issue, though. I<br>&gt;&gt; would suggest expanding the “Avoid abbreviations” section of the API<br>&gt;&gt; Design Guidelines a bit to make a clear distinction between<br>&gt;&gt; truncating words just to shorten identifiers (bad) and using common<br>&gt;&gt; acronyms (good). You don’t want people thinking they’re being<br>&gt;&gt; advised to do this:<br>&gt;&gt; <br>&gt;&gt; var hyperTextMarkupLanguageElement = HyperTextMarkupLanguageElement()<br>&gt;<br>&gt; Sorry, I think my over-the-top example completely undermined the point<br>&gt; I was trying to make. “HTML” and other common acronyms are clearly not<br>&gt; being discouraged in the current guideline. But there is no acronym so<br>&gt; obscure it can’t easily be found on the internet. So what<br>&gt; abbreviations are you discouraging? Truncations like Str or Len? Or is<br>&gt; this guideline really just about acronyms and not making up your own?<br>&gt; I just thought it could be more clear.<br></p><p>The use of initialisms like HTML falls under the &quot;term of art&quot; clause.<br>That is the common usage; probably at least 100x more people have an<br>idea what HTML is than have ever heard the phrase &quot;hypertext markup<br>language.&quot;<br></p><p>We could try to add a cross-reference to the guidelines every time a<br>countervailing concern might cause you to make a different choice.  I&#39;m<br>not sure wheter that would make the guidelines better, or just make them<br>too complex to understand (honestly not sure).<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

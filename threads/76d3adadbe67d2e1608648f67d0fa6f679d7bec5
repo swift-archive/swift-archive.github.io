@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 24, 2016 at 11:00:00am</p></header><div class="content"><p>on Sat Jan 23 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jan 23, 2016, at 1:23 PM, Dave Abrahams via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Sat Jan 23 2016, Thorsten Seitz<br>&gt;<br>&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; I never liked the convention of distinguishing between interfaces and<br>&gt;&gt;&gt; classes by prepending an „I“ for interfaces in other languages and I’m<br>&gt;&gt;&gt; not overly fond fond of the suffix „Type“ currently used in Swift<br>&gt;&gt;&gt; protocols.<br>&gt;&gt;&gt; This is the same as prefixing (or suffixing) variable names with<br>&gt;&gt;&gt; something to express their type, e.g. `String sName` or `int iLength`.<br>&gt;&gt;&gt; That’s what we have type information for. <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; And because of the substitution principle it should make no difference<br>&gt;&gt;&gt; whether I have a protocol or a struct or class. What is a<br>&gt;&gt;&gt; `CollectionType` vs. a `Collection`? Is it the type of a `Collection`,<br>&gt;&gt;&gt; i.e. a meta type? <br>&gt;&gt; <br>&gt;&gt; Yes, that was the original rationale, FWIW.<br>&gt;&gt; <br>&gt;&gt;&gt; Why not simply `Collection` if it describes what a collection is?  I<br>&gt;&gt;&gt; guess its often more the problem of finding a suitable different name<br>&gt;&gt;&gt; for the implementation <br>&gt;&gt; <br>&gt;&gt; Yeah, often we&#39;d have a collision with an associated type.<br>&gt;&gt; <br>&gt;&gt;&gt; and that’s why I sometimes wonder whether it<br>&gt;&gt;&gt; might make sense to give protocols their own namespace…<br>&gt;&gt; <br>&gt;&gt; Can&#39;t do that as long as we have protocols that can function as concrete<br>&gt;&gt; types (existentials).<br>&gt;<br>&gt; You&#39;ve noted before that this is a recipe for confusion, especially<br>&gt; if/when we ever extend existentials to cover protocols with Self<br>&gt; and/or associated type constraints. It&#39;s probably a better long-term<br>&gt; direction for the protocol type to be something you ask for (as<br>&gt; &quot;any&lt;Protocol&gt;&quot;, maybe), and for protocols to live in a separate<br>&gt; namespace.<br></p><p>Nice idea, but I&#39;m not it will work:<br></p><p>    protocol P { }<br>    class P { }<br>    struct X&lt;T: P&gt; { } // which P?<br></p><p>anyhow, I guess more discussion of that idea should be in a separate<br>thread.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

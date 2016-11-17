@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0067: Enhanced Floating Point Protocols</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 22, 2016 at 09:00:00am</p></header><div class="content"><p>on Fri Apr 22 2016, Stephen Canon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;     I’d be okay with Greg’s idea of changing the type to an enum. I’d also be<br>&gt;     okay with renaming this to a predicate, whatever the name ends up being.<br>&gt;     (“isSignBitSet”, “isSignNegative”, etc.)<br>&gt;<br>&gt; Making it a predicate is weird, because then the three properties making up the<br>&gt; number become `isSignBitSet`, `exponent`, and `significand`; one of these things<br>&gt; is not like the other ones. If `signBit: Bool` were ruled out, I would rather go<br>&gt; with Greg’s enum proposal.<br></p><p><br>This argument makes no sense to me.  A floating point number is made up<br>of three parts, and one part *is* not like the other ones.  Furthermore,<br>using an enum doesn&#39;t change that one (ahem) bit.<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d9b7c9b023237138ccb67df539f11b50?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0067: Enhanced Floating Point Protocols</strong> from <string>Stephen Canon</string> &lt;scanon at apple.com&gt;<p>April 22, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; On Apr 22, 2016, at 12:42 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; This argument makes no sense to me.  A floating point number is made up<br>&gt; of three parts, and one part *is* not like the other ones.<br></p><p>In what way is it different?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160422/c00f917d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0067: Enhanced Floating Point Protocols</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 22, 2016 at 11:00:00am</p></header><div class="content"><p>on Fri Apr 22 2016, Stephen Canon &lt;scanon-AT-apple.com&gt; wrote:<br></p><p>&gt;     This argument makes no sense to me. A floating point number is made up<br>&gt;     of three parts, and one part *is* not like the other ones.<br>&gt;<br>&gt; In what way is it different?<br></p><p>It&#39;s not a number.<br></p><p>-- <br>Dave<br></p></div></li></ul></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5a72880ffed1a30cb9b8e3f372507145?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0067: Enhanced Floating Point Protocols</strong> from <string>Rob Mayoff</string> &lt;mayoff at dqd.com&gt;<p>April 22, 2016 at 11:00:00am</p></header><div class="content"><p>(-1)^sign * significand * radix^exponent<br></p><p>Significand is not like the other two, I guess, since nothing is raised to<br>it as a power...<br></p><p>On Fri, Apr 22, 2016 at 11:42 AM, Dave Abrahams via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt;  A floating point number is made up<br>&gt; of three parts, and one part *is* not like the other ones.  Furthermore,<br>&gt; using an enum doesn&#39;t change that one (ahem) bit.<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160422/7cb71c2c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

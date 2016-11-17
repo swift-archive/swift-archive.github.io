@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6780924de59556b6f3bb57fe2d289937?s=50"></div><header><strong>[PROPOSAL]Return subclass type to a protocol where a superclass is defined without the need for associatedtype</strong> from <string>Yogev Sitton</string> &lt;yogev.sitton at gmail.com&gt;<p>April 18, 2016 at 01:00:00pm</p></header><div class="content"><p>I’m actually not sure what the next step is.<br>What is the official way to submit the proposal for the Swift team to consider?<br></p><p><br>&gt; &gt; Le 18 avr. 2016 à 12:01, Yogev Sitton&lt;yogev.sitton at gmail.com&gt;a écrit :<br>&gt; &gt; <br>&gt; &gt; I’m referring you to Ross O’Brien’s post:<br>&gt; &gt; As of Swift 2.2, if a variable has a closure type of e.g. () -&gt;Shape, a closure of type () -&gt;Circle would be considered a match. If a class implements &#39;func make() -&gt;Shape&#39;, a subclass implementing &#39;func make() -&gt;Circle&#39; has to override. However, if a protocol requires a &#39;func make() -&gt;Shape&#39;, a type implementing &#39;func make() -&gt;Circle&#39; isn&#39;t considered to be conforming. That does seem strange.<br>&gt; &gt; <br>&gt; &gt; Protocols behaves differently than closures and classes and I think they should behave the same.<br>&gt; All right, I get it.<br>&gt; <br>&gt; Shape, as a return type, is &quot;trampoline&quot; data that wraps any Shape value, when Circle is just a Circle. That&#39;s why the two functions () -&gt;Shape? and () -&gt;Circle? don&#39;t match today.<br>&gt; <br>&gt; But maybe they will eventually, thanks to your request!<br>&gt; <br>&gt; Gwendal<br>&gt; <br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

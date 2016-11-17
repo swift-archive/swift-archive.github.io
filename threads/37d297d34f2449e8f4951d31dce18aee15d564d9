@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>Use lowerCamelCase for @warn_unqualified_access attribute?</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>August 11, 2016 at 02:00:00pm</p></header><div class="content"><p>I noticed that the @warn_unqualified_access attribute in LibraryEvolution hasn&#39;t been updated to lowerCamelCase.<br></p><p>&lt;http://jrose-apple.github.io/swift-library-evolution/#methods&gt;<br></p><p>It&#39;s currently used by the `min` and `max` methods of Sequence, and the `print` methods in AppKit.<br></p><p>&lt;https://github.com/apple/swift/blob/0661f61/stdlib/public/core/SequenceAlgorithms.swift.gyb#L150-L166&gt;<br></p><p>&lt;https://github.com/apple/swift/blob/84cd5cc/lib/ClangImporter/ImportDecl.cpp#L6463-L6476&gt;<br></p><p>It doesn&#39;t have the UserInaccessible option, so can @warn_unqualified_access also be used in client code?<br></p><p>&lt;https://github.com/apple/swift/blob/173658a/include/swift/AST/Attr.def#L246-L247&gt;<br></p><p>-- Ben<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

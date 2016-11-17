@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/014ac433314c951433bba41efab08e36?s=50"></div><header><strong>Strange compilation error when calling required initializer on generic type parameter</strong> from <string>Christos Chryssochoidis</string> &lt;c.chryssochoidis at gmail.com&gt;<p>September 18, 2016 at 07:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I&#39;m using the new Xcode 8/Swift 3 and I&#39;m trying to figure out why the<br>first function in the snippet below compiles correctly, while the other one<br>does not.<br></p><p>import Foundation<br></p><p>import CoreData<br></p><p><br>protocol P {<br></p><p>    init?(i: Int)<br></p><p>}<br></p><p><br></p><p>class C {<br></p><p>    func f&lt;T: NSObject&gt;(i: Int) -&gt; T? where T: P {<br></p><p>        return T(i: i)  // compiles OK<br></p><p>    }<br></p><p><br></p><p>    func g&lt;T: NSManagedObject&gt;(i: Int) -&gt; T? where T: P {<br></p><p>        return T(i: i)  // doesn&#39;t compile: &quot;Incorrect argument label in<br>call<br></p><p>                 ^      // (have: &#39;i:&#39;, expected &#39;context:&#39;)<br></p><p>    }<br></p><p>}<br></p><p><br>Is this some bug of the Swift compiler or am I missing something about<br>NSManagedObject being different in some way from other classes?<br></p><p>Thanks very much for any help on this.<br></p><p><br>– Christos<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160918/29ffbef6/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

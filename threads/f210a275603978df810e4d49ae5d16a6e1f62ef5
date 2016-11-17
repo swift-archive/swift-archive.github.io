@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/569ed436467cf145f3bbdd0d53fbe115?s=50"></div><header><strong>[Swift 2.2] Fix regression with capturing class-constrained generic parameters</strong> from <string>Slava Pestov</string> &lt;spestov at apple.com&gt;<p>February 18, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi Joe,<br></p><p>There was a regression in 2.2 resulting from some changes to closure representation — rdar://problem/24470533:<br></p><p>https://github.com/apple/swift/pull/1359 &lt;https://github.com/apple/swift/pull/1359&gt;<br></p><p>The bug does not occur in 3.0 because some other changes exposed and forced us to fix the underlying issue with AbstractionPatterns not supporting interface types — I will just check in a test to master instead.<br></p><p>Slava<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160218/f2102ef5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/64e7c3f106cb83b50891f5dcccde198b?s=50"></div><header><strong>[Swift 2.2] Fix regression with capturing class-constrained generic parameters</strong> from <string>Joe Pamer</string> &lt;jpamer at apple.com&gt;<p>February 18, 2016 at 02:00:00pm</p></header><div class="content"><p>Looks good - approved for swift-2.2-branch.<br></p><p>Thanks!<br>- Joe<br></p><p>&gt; On Feb 18, 2016, at 2:41 PM, Slava Pestov &lt;spestov at apple.com&gt; wrote:<br>&gt; <br>&gt; Hi Joe,<br>&gt; <br>&gt; There was a regression in 2.2 resulting from some changes to closure representation — rdar://problem/24470533: &lt;rdar://problem/24470533:&gt;<br>&gt; <br>&gt; https://github.com/apple/swift/pull/1359 &lt;https://github.com/apple/swift/pull/1359&gt;<br>&gt; <br>&gt; The bug does not occur in 3.0 because some other changes exposed and forced us to fix the underlying issue with AbstractionPatterns not supporting interface types — I will just check in a test to master instead.<br>&gt; <br>&gt; Slava<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160218/2bff6bae/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

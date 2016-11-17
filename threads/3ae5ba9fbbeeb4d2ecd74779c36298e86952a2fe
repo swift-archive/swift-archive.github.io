@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c9c44262e8b58b758a3876b9d29c095?s=50"></div><header><strong>Pitch: URL(fileURLWithPath:) to URL(filePath:)</strong> from <string>Georgios Moschovitis</string> &lt;george.moschovitis at icloud.com&gt;<p>August  7, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; Right. We’ll have some limited ability to do source breaking changes in Swift 4, but we need to figure out how the mitigation strategy will work (in full detail) so we know exactly what sort of changes will work.<br></p><p>What about having additional source-breaking changes (like the one pitched here) in Swift 3.x versions?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a0a299ea776456e5b490c6af93682926?s=50"></div><header><strong>Pitch: URL(fileURLWithPath:) to URL(filePath:)</strong> from <string>Sebastian Hagedorn</string> &lt;sebastian at iosphere.de&gt;<p>August  7, 2016 at 10:00:00am</p></header><div class="content"><p>I&#39;d prefer to still allow the old signature, and raise either a deprecation warning, or introduce a new warning type. This would ensure you don&#39;t have to make all the changes the minute a new version of Swift/Xcode is released, without having to stick to an older version of the language itself. It&#39;s just the name after all.<br></p><p>Having a separate warning type for these would allow to easily hide (or disable) them while working on a more urgent issue first, or to hide these purely cosmetic warnings in CI builds.<br></p><p>It wouldn&#39;t have to be limited to the Swift 4 timeframe either but could provide a smooth transition whenever needed, similar to how it&#39;s done with the SDK updates, too.<br></p><p><br>On 07.08.2016, at 10:00, Georgios Moschovitis via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; Right. We’ll have some limited ability to do source breaking changes in Swift 4, but we need to figure out how the mitigation strategy will work (in full detail) so we know exactly what sort of changes will work.<br>&gt; <br>&gt; What about having additional source-breaking changes (like the one pitched here) in Swift 3.x versions?<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

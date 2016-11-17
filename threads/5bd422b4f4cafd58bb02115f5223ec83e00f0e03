@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2f092f32c4dec3bb4f8f293fadbbfe1d?s=50"></div><header><strong>Reading from Standard In</strong> from <string>Kyle Bashour</string> &lt;kylebshr+swift-evolution at gmail.com&gt;<p>December  7, 2015 at 12:00:00am</p></header><div class="content"><p>Hi Everyone,<br></p><p>I hope this is the best place to discuss this — if not, please point me in<br>the right direction! It seems like an appropriate topic for evolution<br>though.<br></p><p>According to my limited knowledge and basic research, Swift doesn&#39;t<br>currently have a simple way to read from standard input from the console.<br>The best solution I found was this StackOverflow solution<br>&lt;http://stackoverflow.com/questions/24046952/xcode-6-swift-read-standard-input-console-to-string&gt;,<br>but it doesn&#39;t seem to be implemented on Linux yet, and I think it should<br>be simpler than having to use NSFileHandle if Swift is to be used as a true<br>systems programming language.<br></p><p>Of course, if there is an easier way to do this, please let me know! Or a<br>reason why the SO solution is the best way to do this. Thanks for reading,<br>would love to hear thoughts on this. I also just joined the list, so if<br>this has already been discussed, apologies.<br></p><p>-- Kyle Bashour<br></p><p>@kylebshr<br>kylebashour.com<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151207/5bd40e03/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/279fa63eae4ac804b4dbdb83686797bf?s=50"></div><header><strong>Reading from Standard In</strong> from <string>Austin Zheng</string> &lt;austinzheng at gmail.com&gt;<p>December  6, 2015 at 09:00:00pm</p></header><div class="content"><p>Does the &#39;readline&#39; function (introduced in Swift 2.x) work for your purposes? http://swiftdoc.org/v2.1/func/readLine/ &lt;http://swiftdoc.org/v2.1/func/readLine/&gt;<br></p><p>Austin<br></p><p>&gt; On Dec 6, 2015, at 9:19 PM, Kyle Bashour via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi Everyone, <br>&gt; <br>&gt; I hope this is the best place to discuss this — if not, please point me in the right direction! It seems like an appropriate topic for evolution though. <br>&gt; <br>&gt; According to my limited knowledge and basic research, Swift doesn&#39;t currently have a simple way to read from standard input from the console. The best solution I found was this StackOverflow solution &lt;http://stackoverflow.com/questions/24046952/xcode-6-swift-read-standard-input-console-to-string&gt;, but it doesn&#39;t seem to be implemented on Linux yet, and I think it should be simpler than having to use NSFileHandle if Swift is to be used as a true systems programming language.<br>&gt; <br>&gt; Of course, if there is an easier way to do this, please let me know! Or a reason why the SO solution is the best way to do this. Thanks for reading, would love to hear thoughts on this. I also just joined the list, so if this has already been discussed, apologies. <br>&gt; <br>&gt; -- Kyle Bashour<br>&gt; <br>&gt; @kylebshr<br>&gt; kylebashour.com &lt;http://kylebashour.com/&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151206/8476cd0c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

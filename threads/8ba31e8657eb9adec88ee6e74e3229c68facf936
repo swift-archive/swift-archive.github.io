@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Pitch] Make `default` function parameter values more transparent</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 13, 2016 at 09:00:00pm</p></header><div class="content"><p>-1 to default parameters in protocols.<br></p><p>Default parameters fall into a bad category of function features.<br>Since I&#39;m bad at explaining things, I&#39;ll give an example.<br></p><p>protocol A {<br>    func call(block: @autoclosure () -&gt; ())<br>}<br>protocol B {<br>    func call(block: () -&gt; ())<br>}<br></p><p>Now it&#39;s impossible to conform to both of these protocols.<br></p><p>@noescape is good, because we can conform to both protocols with a<br>@noescape function.<br>`throws` is good, because we can conform to both protocols with a<br>non-throwing function.<br></p><p>On the other hand, consider a case with defaulted parameters:<br></p><p>protocol A {<br>    func foo(x: Int = 1)<br>}<br>protocol B {<br>    func foo(x: Int = 2)<br>}<br></p><p>It&#39;s impossible to conform to both protocols at once.<br>Therefore, default parameters is together with @autoclosure and on the<br>opposite side of @noescape and `throws`. That is, on &quot;ambiguous&quot; side.<br>I would prefer to have as few such features as possible.<br></p><p>- Anton<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160613/8ba3f936/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

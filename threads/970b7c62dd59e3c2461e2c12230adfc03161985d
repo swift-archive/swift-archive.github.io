@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>open/public protocol with not overridable default implementation in the future?</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>September 16, 2016 at 10:00:00am</p></header><div class="content"><p>I always wanted a way to make some protocol default implementations not overridable. Now Swift 3 got open vs. public behavior for classes. (Hopefully the inconsistency will be fixed soon and we’ll get open protocols as well.)<br></p><p>Imagine this scenario with open/public protocols.<br></p><p>// Module A<br>// `open protocol` means that in a diff. module I&#39;ll<br>// be able to conform to that protocol<br>open protocol Proto {}<br></p><p>extension Proto {<br>     // shouldn&#39;t this mean that the variable is not overridable  <br>     // from a different module? :)<br>     public var foo: Int { return 42 }<br>}<br></p><p>// Module B<br>struct A : Proto {<br>    // can I or can I not override `foo` from here?<br>}<br>I wonder if my thinking is correct here, or do we need something else to make extensions with default implementation to be fixed and not overridable?<br></p><p><br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160916/970b985d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>open/public protocol with not overridable default implementation in the future?</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>September 20, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; I always wanted a way to make some protocol default implementations not overridable. Now Swift 3 got open vs. public behavior for classes. (Hopefully the inconsistency will be fixed soon and we’ll get open protocols as well.)<br>&gt; <br>&gt; Imagine this scenario with open/public protocols.<br>&gt; <br>&gt; // Module A<br>&gt; // `open protocol` means that in a diff. module I&#39;ll<br>&gt; // be able to conform to that protocol<br>&gt; open protocol Proto {}<br>&gt; <br>&gt; extension Proto {<br>&gt;      // shouldn&#39;t this mean that the variable is not overridable  <br>&gt;      // from a different module? :)<br>&gt;      public var foo: Int { return 42 }<br>&gt; }<br>&gt; <br>&gt; // Module B<br>&gt; struct A : Proto {<br>&gt;     // can I or can I not override `foo` from here?<br>&gt; }<br>&gt; <br>&gt; I wonder if my thinking is correct here, or do we need something else to make extensions with default implementation to be fixed and not overridable?<br></p><p>Currently, a declaration of `A.foo` would not *override* `Proto.foo`, it would *shadow* it. Using `foo` on a variable of type `Proto` will always use `Proto`&#39;s implementation. That&#39;s why `A.foo`&#39;s declaration will not have the `override` keyword. It&#39;s a subtle distinction, but a really important one—if you&#39;re expecting a call to `Proto.foo` to instead go to `A.foo`, you&#39;re gonna have a bad time.<br></p><p>Personally, I think this is a bad idea, and I&#39;d like to see the compiler reject conformances which cause visible shadowing. But that&#39;s a different story. As long as we&#39;re allowing this shadowing to pass unremarked, it makes sense that `public` wouldn&#39;t prevent it.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

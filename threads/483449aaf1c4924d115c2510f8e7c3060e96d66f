@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>UnsafeMutablePointer on the stack?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October  2, 2016 at 05:00:00pm</p></header><div class="content"><p>on Sun Oct 02 2016, Jean-Denis Muys &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; Hi,<br>&gt;<br>&gt; I have some issues using the new raw memory API. For instance, let&#39;s<br>&gt; suppose I want to call the `SecRandomCopyBytes` API to generate a<br>&gt; cryptographically secure random 32-bit number. The difficulty is its 3rd<br>&gt; argument, which is declared as UnsafeMutablePointer&lt;UInt8&gt;. Here is a<br>&gt; function that does that:<br>&gt;<br>&gt; func entropicRandom() -&gt; UInt32 {<br>&gt;<br>&gt;     let randomWordPT = UnsafeMutablePointer&lt;UInt32&gt;.allocate(capacity: 1)<br>&gt;<br>&gt;     let _ = randomWordPT.withMemoryRebound(to: UInt8.self, capacity: 4) {<br>&gt; (p: UnsafeMutablePointer&lt;UInt8&gt;) -&gt; Int32 in<br>&gt;<br>&gt;         let result = SecRandomCopyBytes(kSecRandomDefault, MemoryLayout&lt;<br>&gt; UInt32&gt;.size, p)<br>&gt;<br>&gt;         return result<br>&gt;<br>&gt;     }<br>&gt;<br>&gt;     let randomInt32 = randomWordPT[0]<br>&gt;<br>&gt;     randomWordPT.deallocate(capacity: 1)<br>&gt;<br>&gt;     return randomInt32<br>&gt;<br>&gt; }<br>&gt;<br>&gt; apparently, the calls to allocate and then deallocate suggest that there is<br>&gt; some heap allocation happening behind the scene here, possibly malloc/free.<br>&gt; Is that correct?<br></p><p>Quite so.  <br></p><p>But what did you suppose allocate and deallocate did, if not dynamic<br>memory allocation?<br></p><p>&gt; If so, this is quite wasteful. Is there a way to use a local variable on<br>&gt; the stack to achieve the same result?<br></p><p>func entropicRandom() -&gt; UInt32 {<br>  var randomInt32: UInt32 = 0<br>  let byteCount = MemoryLayout.size(ofValue: randomInt32)<br></p><p>  withUnsafeMutablePointer(to: &amp;randomInt32) {<br>    $0.withMemoryRebound(to: UInt8.self, capacity: byteCount) {<br>      SecRandomCopyBytes(kSecRandomDefault, byteCount, $0)<br>    }<br>  }<br>  return randomInt32<br>}<br></p><p>HTH,<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

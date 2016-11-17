@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Empower String type with regular expression</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  1, 2016 at 08:00:00am</p></header><div class="content"><p>on Sun Jan 31 2016, John Randolph &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jan 31, 2016, at 7:39 PM, Chris Lattner via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; On Jan 31, 2016, at 8:32 AM, Patrick Gili via swift-evolution<br>&gt;<br>&gt;&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt;&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; There have been several threads that have discussed the notion of a<br>&gt;&gt;&gt; regular expression literals. However, I didn&#39;t see anyone putting<br>&gt;&gt;&gt; together a formal proposal, and hence I took the liberty to do<br>&gt;&gt;&gt; so. I would appreciate discussion and comments on the proposal:<br>&gt;&gt; <br>&gt;&gt; I am +1 on the concept of adding regex literals to Swift, but -1 on this proposal.<br>&gt;&gt; <br>&gt;&gt; Specifically, instead of introducing regex literals, I’d suggest<br>&gt;&gt; that you investigate introducing regex’s to the pattern grammar,<br>&gt;&gt; which is what Swift uses for matching already.  Regex’s should be<br>&gt;&gt; usable in the cases of a switch, for example.  Similarly, they<br>&gt;&gt; should be able to bind variables directly to subpatterns.<br>&gt;&gt; <br>&gt;&gt; Further, I highly recommend checking out Perl 6’s regular<br>&gt;&gt; expressions.  They are a community that has had an obsessive passion<br>&gt;&gt; for regular expressions, and in Perl 6 they were given the chance to<br>&gt;&gt; reinvent the wheel based on what they learned.  What they came up<br>&gt;&gt; with is very powerful, and pretty good all around.<br>&gt;<br>&gt; Perl 6’s regex implementation looks like a logical progression of the<br>&gt; grep style as we’ve come to know it over the years, but I’d really<br>&gt; like to see Swift go with something like the Verbal Expressions<br>&gt; approach.<br>&gt;<br>&gt; https://github.com/VerbalExpressions/SwiftVerbalExpressions<br>&gt;<br>&gt; All the power is there, but it’s far more readable.<br></p><p>It&#39;s more readable for a first-timer, but IMO not for anyone trying to<br>work with really complex regex&#39;s.  Can you imagine doing math or music<br>this way?  There&#39;s a reason people invent specialized notations.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

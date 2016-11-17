@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e01e37acbfad671da1b94a61cf819d82?s=50"></div><header><strong>[Idea] Add blockreturn keyword</strong> from <string>Kenny Leung</string> &lt;kenny_leung at pobox.com&gt;<p>February 17, 2016 at 11:00:00am</p></header><div class="content"><p>Hi All.<br></p><p>Floating another idea.<br></p><p>I often get “return blind” when looking at a method with blocks inside of it. I don’t know whether a return returns from the method or a block within that method. It would be nice to have a totally different keyword for blocks so I could distinguish the two.<br></p><p>-Kenny<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>[Idea] Add blockreturn keyword</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>February 17, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; I often get “return blind” when looking at a method with blocks inside of it. I don’t know whether a return returns from the method or a block within that method. It would be nice to have a totally different keyword for blocks so I could distinguish the two.<br></p><p>Without endorsing the idea, I&#39;ll suggest the `leave` keyword for this role.<br></p><p>Of course, this also kind of suggests that we ought to support non-local returns, which I don&#39;t think is realistic.<br></p><p>(Hmm. *Could* we support non-local returns from @noescape closures passed to rethrows functions?)<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>[Idea] Add blockreturn keyword</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>February 17, 2016 at 05:00:00pm</p></header><div class="content"><p>Some previous discussion in &quot;Pitch: @autoreleasepool attribute for loops&quot;:<br></p><p>http://comments.gmane.org/gmane.comp.lang.swift.evolution/2796<br></p><p>On Wed, Feb 17, 2016 at 3:05 PM, Brent Royal-Gordon via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; &gt; I often get “return blind” when looking at a method with blocks inside<br>&gt; of it. I don’t know whether a return returns from the method or a block<br>&gt; within that method. It would be nice to have a totally different keyword<br>&gt; for blocks so I could distinguish the two.<br>&gt;<br>&gt; Without endorsing the idea, I&#39;ll suggest the `leave` keyword for this role.<br>&gt;<br>&gt; Of course, this also kind of suggests that we ought to support non-local<br>&gt; returns, which I don&#39;t think is realistic.<br>&gt;<br>&gt; (Hmm. *Could* we support non-local returns from @noescape closures passed<br>&gt; to rethrows functions?)<br>&gt;<br>&gt; --<br>&gt; Brent Royal-Gordon<br>&gt; Architechies<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160217/e2a6066a/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

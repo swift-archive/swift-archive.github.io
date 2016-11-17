@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/49b46ce177271b8926ddb6017c3533ec?s=50"></div><header><strong>Looking for info on how Swift package developers handle breaking changes with other packages</strong> from <string>Chris Bogart</string> &lt;cbogart at andrew.cmu.edu&gt;<p>August 10, 2016 at 03:00:00pm</p></header><div class="content"><p>Hi, I&#39;m looking for some help from developers who write Swift packages<br>and/or Cocoapods. My research group is interested in the different choices<br>new package managers and repositories are making when designing their<br>ecosystems. Platforms like the Swift package manger, Node.js/NPM, Google&#39;s<br>go, and Rust/Cargo, are making somewhat different design choices from each<br>other, and they are very different from older packaging systems like CPAN.<br>We&#39;d like to know what the impact of those design choices are on how<br>developers deal with breaking changes among packages when they depend on<br>each other. We&#39;re particularly interested in contrasting the experiences of<br>people who use Cocoapods, and people who use the Swift package manager.<br></p><p>Could I ask people to take ~20 minutes of your time and fill out our survey<br>athttp://breakingapis.org/survey? I&#39;ll report back here when we&#39;ve analyzed<br>the results (or there&#39;s a sign up link to be notified when results are out<br>at http://breakingapis.org).<br></p><p>(If you don&#39;t develop Swift packages, but do use Cocoapods for other Apple<br>languages, or use other ecosystems entirely like NPM, PyPI, Hackage, we&#39;re<br>still interested -- just make a different &quot;software ecosystem&quot; choice on<br>the first page. The study is a comparison among ecosystems; Swift is one<br>point of comparison).<br></p><p><br>Thank you,<br></p><p>Chris Bogart<br></p><p>Institute for Software Research<br></p><p>Carnegie Mellon University<br></p><p>cbogart at cs.cmu.edu<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160810/ed959487/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

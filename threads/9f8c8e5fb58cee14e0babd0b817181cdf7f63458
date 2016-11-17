@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c60436f08b7b107f0bb0848c31297fa?s=50"></div><header><strong>Outstanding pull request for NSDecimal?</strong> from <string>Alex Blewitt</string> &lt;alblue at apple.com&gt;<p>October 20, 2016 at 03:00:00pm</p></header><div class="content"><p>I raised https://github.com/apple/swift-corelibs-foundation/pull/687 about a week ago for the final push implementing NSDecimal. It&#39;s still stuck in limbo - can someone add a @swift-ci please test to it, so that it can at least have the tests run and possibly committed?<br></p><p>I&#39;m concerned that it may need a rebase after https://github.com/apple/swift-corelibs-foundation/pull/694 which fixed a warning that I&#39;d introduced inadvertently and would like to ensure that it can be merged.<br></p><p>Thanks,<br></p><p>Alex<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

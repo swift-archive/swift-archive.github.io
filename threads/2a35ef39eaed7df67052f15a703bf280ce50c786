@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2528fb5d7194bf3f53574ad37999460d?s=50"></div><header><strong>Strong Reference Cycle</strong> from <string>Grzegorz Leszek</string> &lt;grzesiek.leszek at gmail.com&gt;<p>July  1, 2016 at 11:00:00pm</p></header><div class="content"><p>Hello Swift Community,<br></p><p>According to the Swift Programming Language Book:<br></p><p>“A strong reference cycle can also occur if you assign a closure to a<br>property of a class instance, and the body of that closure captures<br>the instance.”<br></p><p>Excerpt From: Apple Inc. “The Swift Programming Language.” iBooks.<br>https://itun.es/pl/jEUH0.l<br></p><p>Does it mean that example below is valid? ( no need to use capture list ):<br></p><p>import Swift<br></p><p>class A {}<br></p><p>class Foo {<br>    var object = A()<br>    func bar() {<br>        Bar().start {<br>            print(self.object)<br>        }<br>    }<br>}<br></p><p>class Bar {<br>    func start(completion: () -&gt; ()) {<br>        completion()<br>    }<br>}<br></p><p>As far as I understand, Leak will occur when class Bar stores<br>completion in the property. But are there any other edge cases ?<br></p><p>Regars,<br>Greg Leszek<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/957b675456a66c394945a7361aedd51d?s=50"></div><header><strong>Strong Reference Cycle</strong> from <string>Zhao Xin</string> &lt;owenzx at gmail.com&gt;<p>July  2, 2016 at 03:00:00pm</p></header><div class="content"><p>Bar() will be released as soon as start(:)&#39;s finishes execution. As there<br>is no strong reference to Bar() and the closure runs inside of  function<br>start(:).<br></p><p>steps:<br>Bar() created<br>execute Bar().start(:) with {print(self.object)}<br>pass closure {print(self.object)} to start(:)<br>closure runs inside of function start(:)<br>closure released after its execution<br>start(:) finished<br>Bar() released<br></p><p>Zhaoxin<br></p><p><br>On Sat, Jul 2, 2016 at 6:06 AM, Grzegorz Leszek via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Hello Swift Community,<br>&gt;<br>&gt; According to the Swift Programming Language Book:<br>&gt;<br>&gt; “A strong reference cycle can also occur if you assign a closure to a<br>&gt; property of a class instance, and the body of that closure captures<br>&gt; the instance.”<br>&gt;<br>&gt; Excerpt From: Apple Inc. “The Swift Programming Language.” iBooks.<br>&gt; https://itun.es/pl/jEUH0.l<br>&gt;<br>&gt; Does it mean that example below is valid? ( no need to use capture list ):<br>&gt;<br>&gt; import Swift<br>&gt;<br>&gt; class A {}<br>&gt;<br>&gt; class Foo {<br>&gt;     var object = A()<br>&gt;     func bar() {<br>&gt;         Bar().start {<br>&gt;             print(self.object)<br>&gt;         }<br>&gt;     }<br>&gt; }<br>&gt;<br>&gt; class Bar {<br>&gt;     func start(completion: () -&gt; ()) {<br>&gt;         completion()<br>&gt;     }<br>&gt; }<br>&gt;<br>&gt; As far as I understand, Leak will occur when class Bar stores<br>&gt; completion in the property. But are there any other edge cases ?<br>&gt;<br>&gt; Regars,<br>&gt; Greg Leszek<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160702/d6cb4477/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

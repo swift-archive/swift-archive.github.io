@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2a7aae865d8b141e427b2f5eae718128?s=50"></div><header><strong>get input from playground</strong> from <string>Bee</string> &lt;bee.ography at gmail.com&gt;<p>December  7, 2015 at 03:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I&#39;d like to read keyboard input from playground console. Swift doc gives me<br>readLine function. I tried it on Playground but it didn&#39;t accept any input<br>I entered from the keyboard. Screenshot attached.<br></p><p>The code:<br>// — start code —<br>var name: String<br>print(&quot;What&#39;s your name? &quot;, terminator: &quot;&quot;)<br>name = readLine(stripNewline: true)!<br>print(&quot;Hello, \(name)... good to see you!&quot;)<br>// — end code —<br></p><p>Tried it on:<br>- Macbook Pro with OS X El Capitan<br>- XCode 7 with Swift 2<br></p><p>Any help please? Thank you.<br></p><p>-- <br>-Bee-<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/090be57e/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: playground console input.png<br>Type: image/png<br>Size: 45440 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/090be57e/attachment.png&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/58e2591737c75b7700b11f23381b9590?s=50"></div><header><strong>get input from playground</strong> from <string>Rick Ballard</string> &lt;rballard at apple.com&gt;<p>December  7, 2015 at 10:00:00am</p></header><div class="content"><p>Hi Bee,<br></p><p>Swift.org downloadable toolchains don&#39;t work with Xcode Playgrounds; Playgrounds use the copy of Swift that ships with Xcode. Any questions you have about Playground usage are best asked at https://devforums.apple.com/community/tools/xcode/playgrounds.<br></p><p>Thanks,<br></p><p>	- Rick<br></p><p>&gt; On Dec 7, 2015, at 12:41 AM, Bee via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi all,<br>&gt; <br>&gt; I&#39;d like to read keyboard input from playground console. Swift doc gives me readLine function. I tried it on Playground but it didn&#39;t accept any input I entered from the keyboard. Screenshot attached.<br>&gt; <br>&gt; The code:<br>&gt; // — start code —<br>&gt; var name: String<br>&gt; print(&quot;What&#39;s your name? &quot;, terminator: &quot;&quot;)<br>&gt; name = readLine(stripNewline: true)!<br>&gt; print(&quot;Hello, \(name)... good to see you!&quot;)<br>&gt; // — end code — <br>&gt; <br>&gt; Tried it on:<br>&gt; - Macbook Pro with OS X El Capitan<br>&gt; - XCode 7 with Swift 2<br>&gt; <br>&gt; Any help please? Thank you.<br>&gt; <br>&gt; -- <br>&gt; -Bee-<br>&gt; <br>&gt;  &lt;playground console input.png&gt;_______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/530028df/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d4fb9162c777a5d6d0b1fb00893d709?s=50"></div><header><strong>Out of Scope Issues</strong> from <string>Haravikk</string> &lt;swift-evolution at haravikk.me&gt;<p>September 28, 2016 at 08:00:00am</p></header><div class="content"><p>During the Swift 3.0 cycle I had a couple of pull requests marked as out of scope for current release, and I was wondering what the procedure is for having them untagged for reconsideration? Or should I resubmit them?<br></p><p>The two in question were:<br>https://github.com/apple/swift-evolution/pull/366<br>https://github.com/apple/swift-evolution/pull/367<br></p><p>But there are other previously out of scope issues I&#39;m interested in as well.<br></p><p>Also, is there a description somewhere of exactly what&#39;s in scope for the next stage? The front-page for the swift-evolution github project seems to still be focused on Swift 3.0, is there a permanent description somewhere? I haven&#39;t been as active on the list lately so apologies if I&#39;ve just missed it!<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>Out of Scope Issues</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>September 29, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; On 28 Sep 2016, at 08:23, Haravikk wrote:<br>&gt; <br>&gt; Also, is there a description somewhere of exactly what&#39;s in scope for the next stage? The front-page for the swift-evolution github project seems to still be focused on Swift 3.0, is there a permanent description somewhere? I haven&#39;t been as active on the list lately so apologies if I&#39;ve just missed it!<br></p><p>&lt;https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160725/025676.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

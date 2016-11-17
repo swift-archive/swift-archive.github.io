@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f6b7154fd1d6a470d0b521a2e484bffc?s=50"></div><header><strong>Doxygen?</strong> from <string>Daniel Duan</string> &lt;daniel at duan.org&gt;<p>January 10, 2016 at 12:00:00am</p></header><div class="content"><p>Hi all,<br></p><p>There are a lot of doxygen style comments in Swift&#39;s source code. Some doxygen<br>related files are in the docs directory. But I seems not able to get the<br>documentation generated (I&#39;m not super familiar with doxygen).<br></p><p>What&#39;s the state of this? Is anyone using it to look and call-graph, etc? If<br>so, how?<br></p><p>- Daniel<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17d2af4afb70023e28e655d17471a018?s=50"></div><header><strong>Doxygen?</strong> from <string>Michael Gottesman</string> &lt;mgottesman at apple.com&gt;<p>January  9, 2016 at 08:00:00pm</p></header><div class="content"><p>I originally did this a long time ago, but it did not really take off and it might have bit rotted. Let me take a peak.<br>&gt; On Jan 9, 2016, at 4:22 PM, Daniel Duan via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi all,<br>&gt; <br>&gt; There are a lot of doxygen style comments in Swift&#39;s source code. Some doxygen<br>&gt; related files are in the docs directory. But I seems not able to get the<br>&gt; documentation generated (I&#39;m not super familiar with doxygen).<br>&gt; <br>&gt; What&#39;s the state of this? Is anyone using it to look and call-graph, etc? If<br>&gt; so, how?<br>&gt; <br>&gt; - Daniel<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17d2af4afb70023e28e655d17471a018?s=50"></div><header><strong>Doxygen?</strong> from <string>Michael Gottesman</string> &lt;mgottesman at apple.com&gt;<p>January  9, 2016 at 09:00:00pm</p></header><div class="content"><p>This should do it:<br></p><p>To git at github.com:apple/swift.git<br>   2f4bec9..6da11ce  master -&gt; master<br></p><p>Michael<br></p><p>&gt; On Jan 9, 2016, at 8:22 PM, Michael Gottesman via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I originally did this a long time ago, but it did not really take off and it might have bit rotted. Let me take a peak.<br>&gt;&gt; On Jan 9, 2016, at 4:22 PM, Daniel Duan via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hi all,<br>&gt;&gt; <br>&gt;&gt; There are a lot of doxygen style comments in Swift&#39;s source code. Some doxygen<br>&gt;&gt; related files are in the docs directory. But I seems not able to get the<br>&gt;&gt; documentation generated (I&#39;m not super familiar with doxygen).<br>&gt;&gt; <br>&gt;&gt; What&#39;s the state of this? Is anyone using it to look and call-graph, etc? If<br>&gt;&gt; so, how?<br>&gt;&gt; <br>&gt;&gt; - Daniel<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-dev mailing list<br>&gt;&gt; swift-dev at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/365ac1314d2eb5f5aa7f8ea71097e24f?s=50"></div><header><strong>Secure Coding Guideline and SWIFT 3.0 release</strong> from <string>Pandey, Sunil Y</string> &lt;sunil.pandey at genpact.digital&gt;<p>August 10, 2016 at 05:00:00am</p></header><div class="content"><p>Hi Team,<br></p><p>Can anybody please help me with my queries mentioned below:<br></p><p>1.   Do we have secure coding guidelines for SWIFT, please let me know<br></p><p> where can I find the same<br></p><p>2.  When can we expect formal *Swift 3.0 *release<br></p><p>3.  Is there any risk If we already have started using Swift 3.0 Dev Preview 1<br></p><p><br></p><p><br></p><p>Best Regards,<br></p><p>Sunil<br></p><p><br>______________________________________________________________________<br>This e-mail (and any attachments), is confidential and may be privileged. It may be read, copied and used only by intended recipients. Unauthorized access to this e-mail (or attachments) and disclosure or copying of its contents or any action taken in reliance on it is unlawful. Unintended recipients must notify the sender immediately by e-mail/phone &amp; delete it from their system without making any copies or disclosing it to a third person.<br>______________________________________________________________________<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160810/d9c39b82/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8dfc6932943f38e7a7de48be3194f13c?s=50"></div><header><strong>Secure Coding Guideline and SWIFT 3.0 release</strong> from <string>Michael Ilseman</string> &lt;milseman at apple.com&gt;<p>August 10, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Aug 9, 2016, at 10:42 PM, Pandey, Sunil Y via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi Team,<br>&gt; Can anybody please help me with my queries mentioned below:<br>&gt; 1.   Do we have secure coding guidelines for SWIFT, please let me know<br>&gt;  where can I find the same<br></p><p>The Swift open source project does not publish any such guidelines.<br></p><p>&gt; 2.  When can we expect formal *Swift 3.0 *release<br></p><p>Swift 3 is fully in convergence. There is no official date. Refer to Ted Kremenek’s &quot;Endgame for Swift 3” thread.<br></p><p>&gt; 3.  Is there any risk If we already have started using Swift 3.0 Dev Preview 1<br>&gt;  <br></p><p>What is risk for you?<br></p><p>&gt;  <br>&gt; Best Regards,<br>&gt; Sunil<br>&gt;  <br>&gt; <br>&gt; ______________________________________________________________________<br>&gt; This e-mail (and any attachments), is confidential and may be privileged. It may be read, copied and used only by intended recipients. Unauthorized access to this e-mail (or attachments) and disclosure or copying of its contents or any action taken in reliance on it is unlawful. Unintended recipients must notify the sender immediately by e-mail/phone &amp; delete it from their system without making any copies or disclosing it to a third person.<br>&gt; ______________________________________________________________________<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org &lt;mailto:swift-users at swift.org&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users &lt;https://lists.swift.org/mailman/listinfo/swift-users&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160810/a723f56f/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

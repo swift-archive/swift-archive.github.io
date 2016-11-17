@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3eada20d8d86f9b78ef64f570acd29e9?s=50"></div><header><strong>Swift functions and captured mutable data</strong> from <string>Nicholas Outram</string> &lt;nicholas.outram at icloud.com&gt;<p>July 27, 2016 at 06:00:00pm</p></header><div class="content"><p>I’m writing a summary of Swift functions in my iTunes U course. I just wanted to clear a few things as I can find no definitive information online to formally back up what I say.<br> <br>In my summary, I say something along these lines:<br> <br>“A reference to a function can be likened to a reference to a data structure, and in many ways is similar to an instance of a class. There is immutable program code, and state, some of which might be mutable. Therefore, in a multithreaded environment, you need to treat any function that captures and mutates data in the same way as shared mutable state in order to avoid creating race conditions”<br> <br>·   Is there a description of how a Swift function type is structured in memory? <br>·   Is it ‘reasonable’ to liken a function to a class instance in this way? (given this is only supposed to be an analogy). <br>·   Do I assume correctly about the dangers of capturing data in multithreaded code?<br> <br>Cheers<br> <br>Nick<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160727/da6a2b3f/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

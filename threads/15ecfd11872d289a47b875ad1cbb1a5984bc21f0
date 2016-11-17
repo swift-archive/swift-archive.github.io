@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Feature proposal: Range operator with step</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  8, 2016 at 11:00:00am</p></header><div class="content"><p>on Fri Apr 08 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Apr 6, 2016, at 3:32 PM, Dave Abrahams &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Wed Apr 06 2016, Erica Sadun &lt;erica-AT-ericasadun.com&gt; wrote:<br>&gt;&gt; <br>&gt;<br>&gt;&gt;&gt;    On Apr 6, 2016, at 3:25 PM, Dave Abrahams &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;    These all look reasonable to me.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;        Lastly, if you want the positive stride reversed, you&#39;d do just that:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;        (0 ... 9).striding(by: 2).reverse() == [8, 6, 4, 2, 0]<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;    Also reasonable.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;    -- <br>&gt;&gt;&gt;    Dave<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Unless there&#39;s a compelling reason to fight here, it looks like the<br>&gt;&gt;&gt; opinion against where I&#39;m standing is pretty overwhelming at least in<br>&gt;&gt;&gt; this subgroup. To simplify things going forward (and to avoid compiler<br>&gt;&gt;&gt; warnings, which as Dave A points out is probably an indication of bad<br>&gt;&gt;&gt; design more than bad users), I&#39;m willing to adopt in as well.<br>&gt;&gt; <br>&gt;&gt; Thanks.  In that case, I suggest that we entertain two separate<br>&gt;&gt; proposals:<br>&gt;&gt; <br>&gt;&gt; 1. add the .striding(by: n) method.<br>&gt;&gt; 2. add the other range operators.<br>&gt;&gt; <br>&gt;&gt; Though they both have obvious benefits, I expect #1 is a much easier<br>&gt;&gt; sell than #2, which is one good reason to separate them.<br>&gt;&gt; <br>&gt;&gt; -- <br>&gt;&gt; Dave<br>&gt;<br>&gt; I may have misunderstood the intent so I want to clarify: Dave, you&#39;d like to push on these<br>&gt; now (starting with #1) and not wait for the rest of the Range stuff to<br>&gt; come online, right?<br></p><p>I&#39;d like to make progress on #1. I think we should hold<br>the review until the new range stuff is reviewed (happening in the next<br>few days).  I&#39;m still slightly undecided about #2, but I think it<br>deserves its own distinct discussion in this list.  #2 might imply some<br>changes to the protocols we&#39;re introducing in the swift-3-indexing-model<br>branch/proposal, so it needs a little time to percolate here I think.<br></p><p>needing-to-get-back-to-proposal-writing-now&#39;ly yr&#39;s,<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

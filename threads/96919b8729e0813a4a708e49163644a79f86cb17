@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ff02650ece6b4cd550e358d61584dbb4?s=50"></div><header><strong>Swift and Vim</strong> from <string>John Regner</string> &lt;john at johnregner.com&gt;<p>February  5, 2016 at 06:00:00pm</p></header><div class="content"><p>Hi alex, <br></p><p>I think the vim plugin in the Swift repo is no longer being maintained. https://github.com/keith/swift.vim/issues/73<br></p><p>I think the handful of us using Vim with swift have been using Keith Smiley’s Swift.vim you can install it with your current vim plugin manager.<br></p><p>If you are attempting to build Xcode project you can use https://github.com/gfontenot/vim-xcode to connect to the xcodebuild command line tool. <br></p><p>Would be great if this could be integrated with SourceKit for autocomplete, future work. I know the emacs folks are having some success with integrating SourceKit https://github.com/nathankot/company-sourcekit.<br></p><p>Hope this helps, <br></p><p>John<br></p><p>&gt; Hi all,<br>&gt; <br>&gt; Firstly, I’d like to thank those that added support for Swift in vim in the public repo.<br>&gt; <br>&gt; 1. I am wondering if anyone knows how to pull only the vim plugin so it can be used with plugin managers like Vundle/neobundle/etc.?<br>&gt; <br>&gt; (I’ve read about git sparse checkout but it’s definitely not clear if thiswould work and I haven’t been able to get anything out of it).<br>&gt; <br>&gt; In case there’s no option, I’m wondering if it would be possible to split this under its own repo?<br>&gt; <br>&gt; 2. While I know Xcode is the recommended tool for working with Swift, I’m wondering if anyone is aware of any attempts of making the integration for vim smarter (code completion, etc.).<br>&gt; <br>&gt; thanks in advance<br>&gt; <br>&gt; :- alex_______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

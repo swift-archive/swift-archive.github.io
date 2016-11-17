@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Returned for revision] SE-0077: Improved operator declarations</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 25, 2016 at 03:00:00pm</p></header><div class="content"><p>Xiaodi Wu via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; I mean, we have `protocol IteratorProtocol`, so this is par for the <br>course!<br>&gt; precedencegroup RangePrecedence { ... }<br></p><p>Brandon sent me a bright idea: we should rename precedencegroup to <br>precedence. Compare:<br></p><p>precedence RangePrecedence { ... }<br>protocol IteratorProtocol { ... }<br></p><p>This is not totally new, but Precedence suffix and comparison to protocols <br>is what makes it shine. Anyone else like the idea?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>[Returned for revision] SE-0077: Improved operator declarations</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>June 25, 2016 at 04:00:00pm</p></header><div class="content"><p>Yes!<br>On Sat, Jun 25, 2016 at 11:33 Anton Zhilin via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Xiaodi Wu via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt;<br>&gt; &gt; I mean, we have `protocol IteratorProtocol`, so this is par for the<br>&gt; course!<br>&gt; &gt; precedencegroup RangePrecedence { ... }<br>&gt;<br>&gt; Brandon sent me a bright idea: we should rename precedencegroup to<br>&gt; precedence. Compare:<br>&gt;<br>&gt; precedence RangePrecedence { ... }<br>&gt; protocol IteratorProtocol { ... }<br>&gt;<br>&gt; This is not totally new, but Precedence suffix and comparison to protocols<br>&gt; is what makes it shine. Anyone else like the idea?<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160625/fd101874/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

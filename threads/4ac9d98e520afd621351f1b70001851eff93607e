@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/fd5bd4566ee1f286333b7dbf2df6fadb?s=50"></div><header><strong>Fwd: [swift-evolution] [Review] SE-0145: Package Manager Version Pinning</strong> from <string>Anders Bertelrud</string> &lt;anders at apple.com&gt;<p>November  1, 2016 at 10:00:00am</p></header><div class="content"><p>Hello swift-build-dev,<br></p><p>I just wanted to make sure that everyone on this list saw the Swift Evolution proposal for Package Manager Version Pinning that was sent to the swift-evolution list.  The proposal announcement is included below.<br></p><p>Kind regards,<br></p><p>Anders<br></p><p>&gt; Begin forwarded message:<br>&gt; <br>&gt; From: Anders Bertelrud via swift-evolution &lt;swift-evolution at swift.org&gt;<br>&gt; Subject: [swift-evolution] [Review] SE-0145: Package Manager Version Pinning<br>&gt; Date: October 31, 2016 at 14.23.35 PDT<br>&gt; To: swift-evolution &lt;swift-evolution at swift.org&gt;<br>&gt; Reply-To: Anders Bertelrud &lt;anders at apple.com&gt;<br>&gt; <br>&gt; Hello Swift community,<br>&gt; <br>&gt; The review of SE-0145 &quot;Package Manager Version Pinning&quot; begins now and runs through November 4. The proposal is available here:<br>&gt; <br>&gt; 	https://github.com/apple/swift-evolution/blob/master/proposals/0145-package-manager-version-pinning.md &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0145-package-manager-version-pinning.md&gt;<br>&gt; <br>&gt; Reviews are an important part of the Swift evolution process. All reviews should be sent to the swift-evolution mailing list at<br>&gt; <br>&gt; 	https://lists.swift.org/mailman/listinfo/swift-evolution &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;<br>&gt; <br>&gt; or, if you would like to keep your feedback private, directly to the review manager.<br>&gt; <br>&gt; What goes into a review?<br>&gt; <br>&gt; The goal of the review process is to improve the proposal under review through constructive criticism and contribute to the direction of Swift. When writing your review, here are some questions you might want to answer in your review:<br>&gt; <br>&gt; 	* What is your evaluation of the proposal?<br>&gt; 	* Is the problem being addressed significant enough to warrant a change to Swift?<br>&gt; 	* Does this proposal fit well with the feel and direction of Swift?<br>&gt; 	* If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br>&gt; 	* How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>&gt; <br>&gt; More information about the Swift evolution process is available at<br>&gt; <br>&gt; 	https://github.com/apple/swift-evolution/blob/master/process.md &lt;https://github.com/apple/swift-evolution/blob/master/process.md&gt;<br>&gt; <br>&gt; Thank you,<br>&gt; <br>&gt; Anders Bertelrud<br>&gt; Review Manager<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20161101/4ac9607e/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

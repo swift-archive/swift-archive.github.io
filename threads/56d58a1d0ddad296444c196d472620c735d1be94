@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4e782a34fe8fc292d44461373a52bc78?s=50"></div><header><strong>Memory Leak Indicated when Derived from NSObject</strong> from <string>Chris Chirogene</string> &lt;cchiroge at adobe.com&gt;<p>October 14, 2016 at 04:00:00pm</p></header><div class="content"><p>Xcode8 is showing a memory leak in instruments and the memory graph. I have narrowed it down to this: deriving from NSObject produces a leak indication. I have no idea why.<br>I need an NSObject to later use the @objc directive.<br>The Test instance stored in the mDict Dictionary is indicated as a leak in Xcode.<br>This is running as an iOS Single-View-Application project in the iPhone5s Simulator running iOS10.0<br>Here is the sample code:<br> <br>    import Foundation<br></p><p>    class Test: NSObject  // &lt;-- derived from NSObject produces leak indication below<br>    {<br>        static var cTest: Test! = nil<br>        var mDict: [String : Test] = Dictionary&lt;String, Test&gt;()<br></p><p>        static func test() -&gt; Void {<br>            cTest = Test()<br>            cTest.mDict[&quot;test&quot;] = Test() // &lt;-- alleged leak<br>        }<br>    }<br></p><p>    class Test  // &lt;-- NOT derived from NSObject, NO leak indication<br>    {<br>        static var cTest: Test! = nil<br>        var mDict: [String : Test] = Dictionary&lt;String, Test&gt;()<br></p><p>        static func test() -&gt; Void {<br>            cTest = Test()<br>            cTest.mDict[&quot;test&quot;] = Test() // &lt;-- NO leak<br>        }<br>    }<br></p><p>    // from AppDelegate didFinishLaunchingWithOptions<br>    // ...<br>        Test.test()<br>    // ...<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>swift-2.2-branch now under restrictive change control</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>February  1, 2016 at 05:00:00pm</p></header><div class="content"><p>We have reached the point in the release management of Swift 2.2 that the &#39;swift-2.2-branch&#39; branches in the various repositories are under restrictive change control.  This is part of the release management process for Swift 2.2 that was documented a blog post:<br></p><p>  https://swift.org/blog/swift-2-2-release-process<br></p><p>At this point changes going into the swift-2.2-branch will require specific approval from the release manager.<br></p><p>## swift-llvm, swift-clang, swift-lldb<br></p><p>The LLVM, Clang, and LLDB repositories are taking very little change.  Please contact the respective release manager directly about taking changes into those repositories for Swift 2.2.<br></p><p>## swift<br></p><p>For the &#39;swift&#39; repository, all changes will be staged into the swift-2.2-branch using a pull request.  This is for recording review of the change as well as vetting by CI before the change is merged into swift-2.2-branch.<br></p><p>To propose a change to be pulled in, please either (a) initiate a pull request yourself or (b) contact the release manager via email if the intent is to cherry pick a small set of changes from the master branch.<br></p><p>Emails should include &quot;[Swift 2.2]&quot; in the subject line.  For larger changes, the release manager may instruct you to create a pull request directly with the template of information.<br></p><p>Unless the scope of the change is obvious, please include in the pull request the template of information (&quot;Explanation&quot;, &quot;Scope&quot;, etc) as specified in the blog post.<br></p><p>Any questions?  Please contact the respective release manager directly.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

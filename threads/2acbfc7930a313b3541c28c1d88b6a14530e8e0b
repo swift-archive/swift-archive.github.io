@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2dee91b906841e8af2bda61d12fa1a00?s=50"></div><header><strong>mandatory &quot;?&quot; suffix for identifiers associated with optional types</strong> from <string>Tyler Mandry</string> &lt;tmandry at gmail.com&gt;<p>December  6, 2015 at 03:00:00pm</p></header><div class="content"><p>I agree with Adrian here – the problem IMO is the fact that you can do `x &lt;<br>5` *at all* if x is optional.<br></p><p>Allowing programmers to do `x? &lt; 5` still doesn&#39;t make clear what the<br>actual result of the operation will be if x is nil. In fact, I would<br>actually *expect* the result of the operation to be a Bool?, not a Bool<br>which is always false if x is nil.<br></p><p>-- <br>Tyler Mandry<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151206/2acb8e0b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8a24682926961206ad452d8455b09457?s=50"></div><header><strong>mandatory &quot;?&quot; suffix for identifiers associated with optional types</strong> from <string>thorsten at portableinnovations.de</string> &lt;thorsten at portableinnovations.de&gt;<p>December  6, 2015 at 11:00:00pm</p></header><div class="content"><p>+1. I also think that &lt; should not be defined for Optional.<br></p><p>-Thorsten <br></p><p>&gt; Am 06.12.2015 um 22:56 schrieb Tyler Mandry via swift-evolution &lt;swift-evolution at swift.org&gt;:<br>&gt; <br>&gt; I agree with Adrian here – the problem IMO is the fact that you can do `x &lt; 5` at all if x is optional.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151206/65f90155/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

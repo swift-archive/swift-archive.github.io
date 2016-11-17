@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/89e9af7c5754673419c8fac930319700?s=50"></div><header><strong>[Idea] Remove variadic parameters or pass an array of matching type through to the callee</strong> from <string>Russ Bishop</string> &lt;xenadu at gmail.com&gt;<p>February 26, 2016 at 02:00:00pm</p></header><div class="content"><p>We’ve been bitten by this bug now a couple of times where an open-ended variadic parameter ends up accepting an array as a single parameter rather than treating the array as having .count parameters. In some cases these are APIs we don’t control so it makes it difficult to have the compiler catch the errors.<br></p><p>I lean toward allowing a single parameter in the variadic position and with a compatible type to be passed-through to the callee because it means you can chain variadic parameters. It does prevent you from passing a Swift array if that’s the only parameter you need but in Swift we have many tools to solve that problem. <br></p><p>C# already allows this. In fact you declare the variadic as `params string[] someStrings` instead of using `…` so the decl syntax is explicit (but that’s another bikeshed). The benefit is that it’s obvious that passing a string array will pass-through to the callee and variadics can be seen simply as implicit array literals.<br></p><p>Russ<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>[Idea] Remove variadic parameters or pass an array of matching type through to the callee</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>February 26, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; On Feb 26, 2016, at 2:28 PM, Russ Bishop via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; We’ve been bitten by this bug now a couple of times where an open-ended variadic parameter ends up accepting an array as a single parameter rather than treating the array as having .count parameters. In some cases these are APIs we don’t control so it makes it difficult to have the compiler catch the errors.<br></p><p>This sounds like a bug. Do you have an example?<br></p><p>-Joe<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160226/c6fd9307/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

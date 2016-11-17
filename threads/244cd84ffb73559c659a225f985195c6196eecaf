@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>[pitch] rename &#39;guard&#39; to &#39;ensure&#39;</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>October 25, 2016 at 07:00:00pm</p></header><div class="content"><p>I don’t really mind the “guard” keyword after having used it hundreds of times, but it didn’t really make a lot of sense to me to start with (I’m not a native speaker). “ensure” definitely conveys the meaning better, in my opinion. I’d be in favor of this change.<br></p><p>I bet most people won’t think it’s worth it to to rename it now. It’s kind of a pain for people that come across articles mentioning guard, though Xcode could assist with this change. If “ensure” was current day syntax and someone would now propose to change it to “guard”, I’m almost certain nobody would really take them seriously (but that may just be my unfamiliarity with the English language).<br></p><p>&gt; I mentioned this in passing on adifferent thread(https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20161024/028371.html). Although it caused some slight confusion when I first learned the &#39;guard&#39; keyword, it was easy to overcome and I didn&#39;t think the issue was strong enough to warrant a change. However, after reading the other discussion on that thread (around the possibility of a &#39;matches&#39; keyword and how code is &quot;read out&quot; or &quot;internally verbalised&quot;), and seeing how passionate everyone here is about Swift, I&#39;m thinking that maybe it should be changed.<br>&gt; <br>&gt; The issue is that in English, &#39;guard&#39; has an inverted logical connotation to how it is used in Swift. For example, take this sentence:<br>&gt; <br>&gt; &quot;In some functions it&#39;s a good idea is to put some checks in place, in order to guard against invalid input values.&quot;<br>&gt; <br>&gt; Swift&#39;s &#39;guard&#39; keyword is toguardagainstinvalidvalues.<br>&gt; Or to put it another way, toensurethat we havevalidvalues.<br>&gt; <br>&gt; However, the way it reads in Swift, weguardthat we havevalidvalues.<br>&gt; <br>&gt; I fully understand and agree that it&#39;s better to state thetruecondition forvalidvalues here, usingelseto perform a contingency. And I understand why the word &#39;guard&#39; was picked (given the above example sentence). I just think that &#39;ensure&#39; would be better.<br>&gt; <br>&gt; ensure x&gt;0 else {<br>&gt; return<br>&gt; }<br>&gt; <br>&gt; ensure camp.isSafe else {<br>&gt; runForTheHills()<br>&gt; }<br>&gt; <br>&gt; ensure let thingy = object as? Thingy else {<br>&gt; return ExamineThingyResult.NotAThingy<br>&gt; }<br>&gt; <br>&gt; As I said, I thought it was too small a niggle to worry about, but seeing how people on here care so much about making Swift better, and the willingness to change things, I thought I&#39;d suggest it. Although it would be a breaking change, the code changes are easy.<br>&gt; <br>&gt; So what do people think? In particular it would be interesting to hear from non-native English speakers on this, did &#39;guard&#39; confuse you or did &#39;guard&#39; cause your understanding of the English word to be confused?<br>&gt; <br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

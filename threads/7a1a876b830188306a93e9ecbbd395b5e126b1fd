@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1f823d615b521ed15f1006b105c77900?s=50"></div><header><strong>Idea for Restricted &quot;Pseudo-Dynamic&quot; Typing</strong> from <string>David Sweeris</string> &lt;davesweeris at mac.com&gt;<p>January 12, 2016 at 03:00:00pm</p></header><div class="content"><p>(Disclaimer: This might actually just be a slightly disguised subset of the “allow non-type generic parameters” idea, depending on whether that includes stuff like this:<br>&gt; var foo = 2<br>&gt; var bar = Vector&lt;foo&gt;()<br>or if it only addresses this:<br>&gt; var bar = Vector&lt;2&gt;()<br>)<br></p><p>Building on “pure&quot; from: https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151214/003684.html &lt;https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151214/003684.html&gt;<br></p><p>Consider this function:<br>&gt; func @pure foo&lt;T,U,V&gt;(_: T.Type, _: U.Type) -&gt; V.Type {…}<br></p><p><br>Since @pure prevents foo from accessing global/static variables, since it can only call other @pure functions, and since its only parameters are themselves other types, then the return type of V must solely depend on the *types* T and U (and what can be gotten from T &amp; U using @pure functions). While this is not the same thing as “known at compile time”, it does (I think) guarantee that V can be deduced only using what is known about T and U *at compile time*. If the return value of such a function could used as a “proper” type (i.e., it could be used like “var bar: foo(Int.self, String.self)”, for instance), it wouldn’t so much remove the “types must be known at compile time” restriction, as it would give the programmer a powerful way to tell the compiler *how* to figure out what the type is.<br></p><p>The use case I’m thinking of is admittedly pretty narrow… I  personally want this feature to help with a work-around I’m using for Swift not having non-type generic parameters:<br>&gt; protocol IVAT { //Integer Value As Type<br>&gt; 	static var integerValue:Int {get} <br>&gt; }<br>&gt; struct _0 : IVAT { static let integerValue = 0 }<br>&gt; struct _1 : IVAT { static let integerValue = 1 }<br>&gt; struct _2 : IVAT { static let integerValue = 2 }<br>&gt; //…etc<br>&gt;  <br>&gt; struct Matrix&lt;M:IVAT, N:IVAT&gt; {<br>&gt; 	private var backing = [[Double]](count: M.integerValue, repeatedValue: [Double](count: N.integerValue, repeatedValue: 0.0))<br>&gt; 	subscript(row: Int, col: Int) -&gt; Double {}<br>&gt; }<br></p><p><br>If we allowed pure functions to return “usable” types, then Matrices could be joined like this:<br>&gt; func @pure + &lt;T: IVAT, U: IVAT, V: IVAT&gt; (_: T.Type, _: U.Type) -&gt; V.Type {<br>&gt; 	switch (T, U) {<br>&gt; 	case (_0, _0): return _0.self<br>&gt; 	case (_0, _1): return _1.self<br>&gt; 	…<br>&gt; 	default: return _0.self<br>&gt; }<br>&gt; // joins two matrices… join([[1,2],[3,4]], [[5],[6]]) would return [[1,2,5],[3,4,6]] <br>&gt; func join &lt;M:IVAT, N1:IVAT, N2:IVAT&gt; (lhs: Matrix&lt;M,N1&gt;, rhs: Matrix&lt;M, N2&gt;) -&gt; Matrix&lt;M, N1.self + N2.self&gt; {…}<br></p><p>Again, I realize the use case I’ve presented is pretty narrow (and one that’ll hopefully become a moot point later), but it seems like this would be a *very* expressive way to expand the power of generic types.<br></p><p>Anyway… Yay? Nay? Implementation-wise, my first thought is to embed the REPL in the generic specialization system then use the function in question as its input to extend the generic specialization system, but I don’t know if that’s the right place to handle it, let alone if that’s a feasible idea.<br></p><p>-Dave<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160112/7a1ab1fd/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

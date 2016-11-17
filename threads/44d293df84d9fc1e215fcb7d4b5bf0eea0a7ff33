@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/416326248cdf78864ebc09e05983f987?s=50"></div><header><strong>Swift Generic Subclass Type System Problem</strong> from <string>Cao Jiannan</string> &lt;frogcjn_icloud at icloud.com&gt;<p>February 16, 2016 at 11:00:00am</p></header><div class="content"><p>Hi all,<br>I want to discuss on optional generic sub-typing problem.<br></p><p><br>Here is a protocol type for some UIViewController,<br>protocol  SegueHandlerType {  <br>    var tableView: UITableView! { get }  <br>}  <br></p><p>so the UITableViewController can conform to the protocal<br>extension UITableViewController : SegueHandlerType {  <br>}  <br></p><p>It&#39;s great!<br>What if the tableView is a subclass UITableView?<br></p><p>like:<br>class MyTableView : UITableView {<br>}<br></p><p>MyTableViewController {  <br>      @IBOutlet var tableView: MyTableView!  <br>}  <br></p><p>Then <br>extension MyTableViewController:SegueHandlerType {  <br>  <br>}  <br>will trigger a compiler error.<br> <br>So the Optional needs a subclass system.<br>Or to say, that the template system needs a subclass system.<br> <br>Optional&lt;UITableView&gt; should be the super class of Optional&lt;MyTableView&gt;<br>Array&lt;UITableView&gt; should be the super class of Array&lt;MyTableView&gt;<br></p><p>https://forums.developer.apple.com/message/101646#101646 &lt;https://forums.developer.apple.com/message/101646#101646&gt;<br></p><p>Also, I think, if B is subclass of A<br>Either&lt;B,B&gt; is subclass of Either&lt;A,A&gt;, Either&lt;A,B&gt;, Either&lt;B,A&gt;<br>Either&lt;B,A&gt; is subclass of Either&lt;A,A&gt;<br>Either&lt;A,B&gt; is subclass of Either&lt;A,A&gt;<br></p><p><br></p><p>Thanks!<br></p><p>Jiannan, Cao<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160216/44d2ff33/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

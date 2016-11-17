@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0115: Rename Literal Syntax Protocols</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July  2, 2016 at 08:00:00am</p></header><div class="content"><p>on Sat Jul 02 2016, Anton Zhilin &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Matthew Johnson via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt;<br>&gt;&gt; &gt;&gt;&gt; protocol From&lt;T&gt; {<br>&gt;&gt; &gt;&gt;&gt;   init(_ from: T)<br>&gt;&gt; &gt;&gt;&gt; }<br>&gt;&gt; &gt;&gt; <br>&gt;&gt; &gt; With From definition given above, I would define <br>&gt; IntLiteralConvertible === <br>&gt;&gt; &gt; From&lt;Int&gt;, BoolLiteralConvertible === From&lt;Bool&gt;, etc. That means, <br>&gt; if you <br>&gt;&gt; &gt; conform to From&lt;T&gt; where T is one of Int, Bool, ... then the type <br>&gt; becomes <br>&gt;&gt; &gt; &quot;literal convertible&quot;.<br>&gt;&gt; <br>&gt;&gt; But that doesn&#39;t capture the semantics of these protocols.  See the <br>&gt; observations made by the library team<br>&gt;&gt; quoted in the motivation section as well as Dave Abrahams&#39; comments <br>&gt; quoted in the alternatives section. <br>&gt;&gt; None of this changes if we get generic protocols.  <br>&gt;&gt; <br>&gt;&gt; Protocols aren&#39;t just about the syntax, they are also about semantics.  <br>&gt; These protocols encode specific<br>&gt;&gt; and important semantics.<br>&gt;<br>&gt; But as some of them noted in the discussion, low-level protocols that <br>&gt; interact with language syntax can focus on syntax entirely. I&#39;ve not <br>&gt; seen this point supported by other team members, though.<br>&gt;<br>&gt; Personally, I don&#39;t see any semantics in LiteralConvertible protocols. <br>&gt; If a type can be initialized with another type, then we can call it a <br>&gt; conversion. And I can&#39;t imagine any case where e.g. Bool that came from <br>&gt; a literal should be treated differently from any other Bool.<br></p><p>Because there&#39;s no source type.  When you write a literal, you&#39;re not<br>converting *from* anything.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

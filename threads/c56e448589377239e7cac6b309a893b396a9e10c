@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Optional comparison operators</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July 12, 2016 at 05:00:00pm</p></header><div class="content"><p>on Tue Jul 12 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jul 11, 2016, at 11:22 PM, Mark Lacey &lt;mark.lacey at apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; If this is relating to implementation details of the standard<br>&gt;&gt;&gt; library, then it should be omitted from the proposal.  The<br>&gt;<br>&gt;&gt;&gt; following paragraph also makes sense to revise if you drop this:<br>&gt;&gt;&gt; &quot;Additionally the standard library has approximately a half a dozen<br>&gt;&gt;&gt; locations where optionals are compared to non-optional values which<br>&gt;&gt;&gt; will need to be updated to explicitly cast one operand to an<br>&gt;&gt;&gt; optional.”<br>&gt;&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; Thanks for the great feedback. I have most of it addressed, but I’m<br>&gt;&gt; not sure what you’re referring to with “If this is relating to<br>&gt;&gt; implementation details of the standard library…”? Do you mean the<br>&gt;&gt; functions I called out that need to be added?<br>&gt;&gt; <br>&gt;&gt; I can remove that, but I thought it was worth calling out despite<br>&gt;&gt; the fact that they are just overloads. If it’s not necessary to do<br>&gt;&gt; so, I’ll delete that section (although there aren’t many details<br>&gt;&gt; left in the “Detailed design” at that point).<br>&gt;<br>&gt; I’m referring to this part of the proposal:<br>&gt;<br>&gt; &quot;Additionally the standard library has approximately a half a dozen<br>&gt; locations where optionals are compared to non-optional values which<br>&gt; will need to be updated to explicitly cast one operand to an<br>&gt; optional.”<br>&gt;<br>&gt; I’m just saying that the internal implementation details of the<br>&gt; standard library are typically considered part of an evolution<br>&gt; proposal, only the public API impact.<br></p><p>Right; it&#39;s the standard library team&#39;s job to suffer for the sake of<br>our users :-).  If improving our APIs means work for us, that&#39;s no<br>problem.<br></p><p>That said, actually *implementing and testing* the proposal proves that<br>it is implementable, and observing its impact on the standard library<br>can provide useful information about the likely impact on user code.  A<br>pull request supporting any proposal is always appreciated and makes it<br>easier to accept. <br></p><p>hint-hint-ly y&#39;rs,<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

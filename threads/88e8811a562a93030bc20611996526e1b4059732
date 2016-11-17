@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>Bitshift operators</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>June 16, 2016 at 11:00:00am</p></header><div class="content"><p>Brent Royal-Gordon wrote:<br></p><p>&gt; While I was watching WWDC videos today, I noticed that there&#39;s<br>&gt; a bit of annoying boilerplate in OptionSet specifications, and<br>&gt; set out to get rid of it. Basically, what I&#39;d like to do is this:<br>&gt;<br>&gt; 	extension OptionSet where RawValue: Integer {<br>&gt; 	    init(bit bits: RawValue...) {<br>&gt; 	        self.init(rawValue: bits.reduce(0) { $0 | (1 &lt;&lt; $1) })<br>&gt; 	    }<br>&gt; 	}<br>&gt;<br>&gt; 	struct FooOptions: OptionSet {<br>&gt; 	    let rawValue: Int<br>&gt;<br>&gt; 	    static let bar = FooOptions(bit: 0)<br>&gt; 	    static let baz = FooOptions(bit: 1)<br>&gt; 	}<br>&gt;<br>&gt; However, this was thwarted by the fact that the &lt;&lt; operator is<br>&gt; not in Integer. Or BitwiseOperations. Or any protocol, in fact.<br></p><p>Alternatively, using binary integer literals:<br></p><p>	struct FooOptions: OptionSet {<br>	    let rawValue: Int<br></p><p>	    static let bar = Self(rawValue: 0b01)<br>	    static let baz = Self(rawValue: 0b10)<br>	}<br></p><p>Does the revised SE-0068 proposal allow this?<br></p><p>-- Ben<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

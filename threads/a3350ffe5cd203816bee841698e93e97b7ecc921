@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Reconsidering SE-0003 Removing var from Function Parameters and Pattern Matching</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 22, 2016 at 01:00:00pm</p></header><div class="content"><p>on Fri Jan 22 2016, David Waite &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; -1 for the reversal, because I have been burned by this myself.<br>&gt;<br>&gt; The var parameters, cases, and “if var” could all be interpreted as<br>&gt; either making a copy or having inout semantics. The problem is that<br>&gt; the syntax doesn’t make the behavior explicit. IMHO you should be<br>&gt; striving not for a reversal but for a counterproposal.<br></p><p>Hmm, so is this clear or surprising?<br></p><p>  var y = 0<br>  var x = y<br>  x += 1<br>  print(y)    // prints 0<br></p><p>If it&#39;s unsurprising, can you explain why it&#39;s different from var in<br>all the other contexts?<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d118cdf2fe31053bc7032466c4da282?s=50"></div><header><strong>Reconsidering SE-0003 Removing var from Function Parameters and Pattern Matching</strong> from <string>Craig Cruden</string> &lt;ccruden at novafore.com&gt;<p>January 23, 2016 at 05:00:00am</p></header><div class="content"><p>I would think the concept of having var on pattern matching at least to be…. problematic since the pattern matching variable would be part of what you are matching.  <br></p><p>I would actually prefer pattern matching to be able to infer (hoping) the let since it really looks like horrible clutter on the case statements with regards to pattern matching.<br></p><p><br></p><p>&gt; On 2016-01-23, at 4:14:54, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Fri Jan 22 2016, David Waite &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; -1 for the reversal, because I have been burned by this myself.<br>&gt;&gt; <br>&gt;&gt; The var parameters, cases, and “if var” could all be interpreted as<br>&gt;&gt; either making a copy or having inout semantics. The problem is that<br>&gt;&gt; the syntax doesn’t make the behavior explicit. IMHO you should be<br>&gt;&gt; striving not for a reversal but for a counterproposal.<br>&gt; <br>&gt; Hmm, so is this clear or surprising?<br>&gt; <br>&gt;  var y = 0<br>&gt;  var x = y<br>&gt;  x += 1<br>&gt;  print(y)    // prints 0<br>&gt; <br>&gt; If it&#39;s unsurprising, can you explain why it&#39;s different from var in<br>&gt; all the other contexts?<br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

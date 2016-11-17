@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>MemoryLayout for a value</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>August  4, 2016 at 04:00:00pm</p></header><div class="content"><p>on Thu Aug 04 2016, Dave Abrahams &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; on Thu Aug 04 2016, Dmitri Gribenko &lt;gribozavr-AT-gmail.com&gt; wrote:<br>&gt;<br>&gt;&gt; On Wed, Aug 3, 2016 at 7:28 PM, Xiaodi Wu via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; Could I suggest an alternative? It&#39;s conservative in that it mimics the<br>&gt;&gt;&gt; relationships we had before the proposal was implemented and also maintains<br>&gt;&gt;&gt; the simplicity of the caseless enum:<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; ```<br>&gt;&gt;&gt; extension MemoryLayout {<br>&gt;&gt;&gt;   static func size(ofValue _: T) -&gt; Int { return MemoryLayout.size }<br>&gt;&gt;&gt;   // etc.<br>&gt;&gt;&gt; }<br>&gt;&gt;&gt; ```<br>&gt;&gt;<br>&gt;&gt; I like this API.  I think given all the alternatives that we explored,<br>&gt;&gt; it is better than those.  I also think that it nicely avoids the<br>&gt;&gt; following issue with the proposed MemoryLayout.of(type(of:<br>&gt;&gt; someExpression)).size syntax.<br>&gt;&gt;<br>&gt;&gt; Imagine that you have a value whose static type differs from the<br>&gt;&gt; dynamic type.  For example, a protocol existential:<br>&gt;&gt;<br>&gt;&gt; protocol P {}<br>&gt;&gt; extension Int : P {}<br>&gt;&gt; var x: P = 10<br>&gt;&gt;<br>&gt;&gt; The question is, what does MemoryLayout.of(type(of: x)).size compute,<br>&gt;&gt; size of the existential box, or the size of an Int instance?  The<br>&gt;&gt; semantics of &#39;type(of:)&#39; are &quot;return the dynamic type&quot;, so the<br>&gt;&gt; straightforward conclusion is that MemoryLayout.of(type(of: x)).size<br>&gt;&gt; returns the size of the dynamic type instance, of Int.<br>&gt;&gt;<br>&gt;&gt; What actually happens is that &#39;type(of: x)&#39; returns a dynamic value of<br>&gt;&gt; &#39;Int.self&#39;, statically typed as &#39;P.Type&#39;.  So P gets deduced for the<br>&gt;&gt; generic parameter of MemoryLayout, and MemoryLayout.of(type(of:<br>&gt;&gt; x)).size returns the size of the protocol box.<br>&gt;&gt;<br>&gt;&gt; I think due to this complex interaction, using type(of:) might lead to<br>&gt;&gt; confusing code, and thus I like Xiaodi&#39;s approach better.<br>&gt;&gt;<br>&gt;&gt; Dmitri<br>&gt;<br>&gt; Okay, I&#39;m convinced; that&#39;s what we should do.<br></p><p>Xiaodi, not to put you on the spot or anything... but how would you like<br>to write a proposal and create a pull request for the changes to the<br>standard library? ;-)<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

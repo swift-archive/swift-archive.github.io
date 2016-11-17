@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c198ffcf0853e6011f58fdcdd32a111?s=50"></div><header><strong>Testing access level, final, and static</strong> from <string>Benjamin Spratling</string> &lt;bspratling at mac.com&gt;<p>September 21, 2016 at 05:00:00am</p></header><div class="content"><p>Howdy,<br>As I understand it, In Swift 3, a lack of encapsulation is testable, but specific keywords to protect a designed encapsulation can’t be introspected, and thus encapsulation is fragile, i.e. not protectable by unit tests.<br></p><p>For instance, we can write unit-tests that determine if a member&#39;s access level is at least a given level.  (by writing a test which accesses it at that level.)  However, we cannot test that it is less than, or exactly at a specific level.  A member of a large team could escalate an access level during development for a new feature, while the developer who wrote the original access level (and knows why it is not ok) is on vacation, then another developer unaware of the history could begin using it in an unexpected way, introducing bugs.  (I wish I invented this example.  Unfortunately, I witnessed it a few months after the fact.)  More interesting for Swift 4, a compiled module vendor could accidentally publish an API which could be used to violate encapsulation in an unexpected way in which the customer is not aware.  Let’s not pretend that hasn’t happened either.  Rumor sites thrive on it.<br></p><p>Similarly, I can test that a member is not “final&quot;, but I cannot write a test to ensure that it is “final”.<br></p><p>The same goes for “class” vs. “static”.  I can test that a class method is “class”, but I cannot compile a test that it is “static”, not “class”.<br></p><p>Finally, I can test that a property is a “var”, and has a setter, but I cannot compile a test that it is a “let”.<br></p><p>Being able to perform these tests seems as desirable to me as having these language features in the first place.  (I do, in principle, want a unit test for all the code I write, right?)  I’m certain that all of this information is available to the compiler, and that most of it is in the .swiftmodule and .swiftdoc files.  Perhaps the sil is the right data for such an analysis.  I simply want to raise the desire for such a feature as the team works on stabilizing the ABI.<br></p><p>I’m also curious what the community thinks whether testing these would work best by declaring explicit functions or references for each one in the test module, like AssertTrue(accessLevel(SomeClass.doSomething(_:)) == .private), or possibly in some kind of “DebugIntrospection” module not available &quot;on device&quot;.  Another option is to add a “AssertCantCompile” method which would verify that there is at least one compiler failure in some section of conjectural code.  That could test for anything we don’t think to enumerate. But it becomes unwieldy from a syntactic point of view, and if the conjectural code is in a string, then it ends up on the wrong side of the build.<br></p><p>-Ben Spratling<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

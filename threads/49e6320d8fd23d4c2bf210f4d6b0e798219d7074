@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ffe95d2e2584a3b4adda3ca0e19c375d?s=50"></div><header><strong>getCString question</strong> from <string>Luke Howard</string> &lt;lukeh at padl.com&gt;<p>December 27, 2015 at 05:00:00pm</p></header><div class="content"><p>In the implementation of getCString() in NSString.swift, it doesn’t appear to add the terminating NUL byte – is this a bug or am I missing something?<br></p><p>— Luke<br>--<br>www.lukehoward.com<br>soundcloud.com/lukehoward<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20151227/49e67074/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>getCString question</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>December 26, 2015 at 11:00:00pm</p></header><div class="content"><p>This probably is a bug. Additionally this seems to also be missing the NSCF callout as well.<br></p><p>&gt; On Dec 26, 2015, at 10:46 PM, Luke Howard via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; In the implementation of getCString() in NSString.swift, it doesn’t appear to add the terminating NUL byte – is this a bug or am I missing something?<br>&gt; <br>&gt; — Luke<br>&gt; --<br>&gt; www.lukehoward.com &lt;http://www.lukehoward.com/&gt;<br>&gt; soundcloud.com/lukehoward<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20151226/0fb95d70/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

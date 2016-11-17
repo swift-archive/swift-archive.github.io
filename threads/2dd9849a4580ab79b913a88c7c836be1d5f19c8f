@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6dbccdb14c9594946a01d146877040c1?s=50"></div><header><strong>build-toolchain fail with error on Ubuntu-15.10</strong> from <string>bhargav gurlanka</string> &lt;bhargav.grlnk at gmail.com&gt;<p>March 13, 2016 at 10:00:00pm</p></header><div class="content"><p>I&#39;m trying to build toolchain using `build-toolchain` command, but the<br>script is failing with error:<br></p><p><br>CMake Error at<br>/usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:138<br>(message):<br>  Could NOT find BSD (missing: BSD_INCLUDE_DIR BSD_LIBRARY)<br>Call Stack (most recent call first):<br>  /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:374<br>(_FPHSA_FAILURE_MESSAGE)<br>  cmake/modules/FindBSD.cmake:18 (find_package_handle_standard_args)<br>  stdlib/CMakeLists.txt:23 (find_package)<br></p><p><br>The complete log can be found here:<br>https://gist.github.com/bhargavg/107f48623d9c2f951835<br></p><p>I&#39;m using Ubuntu-15.10 server, running on VirtualBox.<br></p><p>Could someone please help?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160313/2dd99c8f/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>build-toolchain fail with error on Ubuntu-15.10</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>March 13, 2016 at 04:00:00pm</p></header><div class="content"><p>On Sun, Mar 13, 2016 at 10:08 AM, bhargav gurlanka via swift-build-dev<br>&lt;swift-build-dev at swift.org&gt; wrote:<br>&gt; I&#39;m trying to build toolchain using `build-toolchain` command, but the<br>&gt; script is failing with error:<br>&gt;<br>&gt;<br>&gt; CMake Error at<br>&gt; /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:138<br>&gt; (message):<br>&gt;   Could NOT find BSD (missing: BSD_INCLUDE_DIR BSD_LIBRARY)<br>&gt; Call Stack (most recent call first):<br>&gt;   /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:374<br>&gt; (_FPHSA_FAILURE_MESSAGE)<br>&gt;   cmake/modules/FindBSD.cmake:18 (find_package_handle_standard_args)<br>&gt;   stdlib/CMakeLists.txt:23 (find_package)<br></p><p>I think you might be missing libbsd.  Please run:<br></p><p>sudo apt-get install libbsd-dev<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

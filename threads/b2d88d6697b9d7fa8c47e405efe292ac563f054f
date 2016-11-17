@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ec6689b267447cdcd58fbe5d89332b25?s=50"></div><header><strong>swift tool project init command</strong> from <string>Lander Brandt</string> &lt;landerbrandt at gmail.com&gt;<p>December  5, 2015 at 12:00:00pm</p></header><div class="content"><p>On the Swift package manager page on swift.org &lt;http://swift.org/&gt; (https://swift.org/package-manager/#example-usage &lt;https://swift.org/package-manager/#example-usage&gt;) the requirements for creating a package/application are clearly outlined, but why not include a command in the swift tool for autogenerating the require? I did a quick look and didn’t see any existing discussion, so I apologize if this has already been discussed.<br></p><p>Example of the tool command: `swift init foo --type=(lib|app)`<br></p><p>Would create a new directory called “foo” with the following tree structure for a project of type app:<br></p><p>foo<br>├── Package.swift<br>├── Packages<br>├── README.md<br>└── main.swift<br></p><p>And for project of type lib:<br></p><p>foo<br>├── Package.swift<br>├── README.md<br>└── Sources<br>    └── Foo.swift<br></p><p>In both cases Package.swift would contain something basic like:<br></p><p>import PackageDescription<br></p><p>let package = Package(<br>    name: “Foo&quot;,<br>    dependencies: [<br>    ]<br>)<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151205/b2d8054f/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ab8ff5d36ad4f40d7905509956e5c706?s=50"></div><header><strong>swift tool project init command</strong> from <string>Jacopo Andrea Giola</string> &lt;swift-evolution at jacopo.giola.org&gt;<p>December  6, 2015 at 11:00:00am</p></header><div class="content"><p>+1 to this, but I&#39;m not sure that this mailing list is the right place to discuss evolution of the package manager.<br>I think you can directly send a pull request to the repository to be evaluated.<br></p><p>Sent from my iPad<br></p><p>&gt; On 05 Dec 2015, at 21:25, Lander Brandt via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; On the Swift package manager page on swift.org (https://swift.org/package-manager/#example-usage) the requirements for creating a package/application are clearly outlined, but why not include a command in the swift tool for autogenerating the require? I did a quick look and didn’t see any existing discussion, so I apologize if this has already been discussed.<br>&gt; <br>&gt; Example of the tool command: `swift init foo --type=(lib|app)`<br>&gt; <br>&gt; Would create a new directory called “foo” with the following tree structure for a project of type app:<br>&gt; <br>&gt; foo<br>&gt; ├── Package.swift<br>&gt; ├── Packages<br>&gt; ├── README.md<br>&gt; └── main.swift<br>&gt; <br>&gt; And for project of type lib:<br>&gt; <br>&gt; foo<br>&gt; ├── Package.swift<br>&gt; ├── README.md<br>&gt; └── Sources<br>&gt;     └── Foo.swift<br>&gt; <br>&gt; In both cases Package.swift would contain something basic like:<br>&gt; <br>&gt; import PackageDescription<br>&gt; <br>&gt; let package = Package(<br>&gt;     name: “Foo&quot;,<br>&gt;     dependencies: [<br>&gt;     ]<br>&gt; )<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151206/54d5e5de/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

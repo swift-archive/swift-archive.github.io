@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Review] SE-0102: Remove  &lt;at&gt; noreturn	attribute	and introduce an empty NoReturn type</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 22, 2016 at 01:00:00pm</p></header><div class="content"><p>Pyry Jahkola via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; On 22 Jun 2016, at 14:47, Charlie Monroe via swift-evolution &lt;swift-<br>evolution-m3FHrko0VLzYtjvyW6yDsg at public.gmane.org&gt; wrote:<br>&gt; <br>&gt; I can live with Never. But the proposed NoReturn is a single-case <br>solution and would eventually require a code-breaking change anyway were <br>the bottom type implemented under a different name.<br>&gt; <br>&gt; Excuse me, but it seems to me you might be missing one important point <br>about the proposal: there&#39;s going to be no “the” bottom type — any enum <br>with no cases would act as one if the proposal is accepted. The standard <br>library would just happen name one to stand as the preferred default.<br>&gt; In other words (unless I&#39;m mistaken), no compiler magic proposed about <br>a specific (`NoReturn` or `Never`) empty enum. All the proposed “magic” <br>would be about uninhabited types (link to specific section in the <br>proposal) as return types.<br>&gt; <br>&gt; — Pyry<br></p><p>I think a good design would still be to use a single &quot;main&quot; empty type <br>throughout the standard library.<br>Let&#39;s look at a silly example:<br></p><p>func swapReturnThrow&lt;T, E&gt;(block: () throws E -&gt; T) throws T -&gt; E where <br>T: ErrorType, E: ErrorType<br></p><p>If T is NoReturn or E is NoThrow then swapReturnThrow would return <br>NoThrow and throw NoReturn. These scoped empty types were pulled to a <br>scope where they make no sense.<br></p><p>This problem does not occur with a single &quot;main&quot; empty type. But then we <br>must decide on its name now.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

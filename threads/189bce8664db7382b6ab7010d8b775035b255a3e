@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4a54d295d58154ddad423defc2756c3f?s=50"></div><header><strong>Disable objc interop</strong> from <string>Scott Knight</string> &lt;knightsc at gmail.com&gt;<p>February 10, 2016 at 03:00:00pm</p></header><div class="content"><p>I&#39;ve been trying to look if there&#39;s a way with swift build or swiftc itself<br>to disable objective-c interoperability. I&#39;ve gotten as far as inspecting<br>the IR output with the disable-obc-interop flag with this command<br></p><p>swiftc -emit-ir -Xfrontend -disable-llvm-optzns -Xfrontend<br>-disable-objc-interop -O Sources/main.swift<br></p><p>But I haven&#39;t been able to figure out if there&#39;s a way to do this with<br>swift build. No matter what I do when I inspect the compiled binary<br></p><p>otool -L .build/debug/Test<br>.build/debug/Hello:<br>/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version<br>228.0.0)<br>/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version<br>1226.10.1)<br>@rpath/libswiftCore.dylib (compatibility version 0.0.0, current version<br>0.0.0)<br></p><p>libobjc is always linked in. I ran the emit-ir command above both with and<br>without disable-obc-interop and could see in the emitted IR that this line<br>was removed when using the disable-obc-interop flag<br></p><p>!7 = !{!&quot;-lobjc&quot;}<br></p><p>Is there something I&#39;m missing or is this just not supported currently? I<br>don&#39;t have a practical use case currently for this but was just curious to<br>better understand the swift runtime and internals.<br></p><p>Thanks,<br>Scott Knight<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160210/189b5a3e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Disable objc interop</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>February 10, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Feb 10, 2016, at 12:07 PM, Scott Knight via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I&#39;ve been trying to look if there&#39;s a way with swift build or swiftc itself to disable objective-c interoperability. I&#39;ve gotten as far as inspecting the IR output with the disable-obc-interop flag with this command<br>&gt; <br>&gt; swiftc -emit-ir -Xfrontend -disable-llvm-optzns -Xfrontend -disable-objc-interop -O Sources/main.swift <br>&gt; <br>&gt; But I haven&#39;t been able to figure out if there&#39;s a way to do this with swift build. No matter what I do when I inspect the compiled binary<br>&gt; <br>&gt; otool -L .build/debug/Test<br>&gt; .build/debug/Hello:<br>&gt; 	/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)<br>&gt; 	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1226.10.1)<br>&gt; 	@rpath/libswiftCore.dylib (compatibility version 0.0.0, current version 0.0.0)<br>&gt; <br>&gt; libobjc is always linked in. I ran the emit-ir command above both with and without disable-obc-interop and could see in the emitted IR that this line was removed when using the disable-obc-interop flag<br>&gt; <br>&gt; !7 = !{!&quot;-lobjc&quot;}<br>&gt; <br>&gt; Is there something I&#39;m missing or is this just not supported currently? I don&#39;t have a practical use case currently for this but was just curious to better understand the swift runtime and internals.<br></p><p>This is just a bug. In theory you should be able to just remove the emission of that autolink entry. However, not much energy has been put into supporting ObjC-less Swift on Darwin, so expect other problems.<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

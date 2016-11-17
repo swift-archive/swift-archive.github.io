@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c65faa002b79348ac10e1fb9c1a9ad83?s=50"></div><header><strong>CMake use in Swift</strong> from <string>Colin Cornaby</string> &lt;colin.cornaby at mac.com&gt;<p>December  3, 2015 at 10:00:00pm</p></header><div class="content"><p>We support tons of different platforms, but we&#39;ve traditionally use separate project files for each platform (VC projects/solutions for Windows, xcodeproj for Apple platforms, scripts or make for Linux, scripts for Android...) Recently our lower level teams have been agreeing that CMake is the best way forward to wrangle this mess, but some of our Apple platform devs have expressed concern that they don&#39;t know if the CMake output for Xcode will reliably pick good defaults compared to a?hand maintained Xcode project.<br></p><p>Our CMake proponents are very excited to see Swift using CMake as it gives us a prominent use case for CMake on Apple platforms. We&#39;ve seen CMake support previously in platforms like WebKit, but seeing it in Swift really got?people excited.<br></p><p>It would be great to have some sort of blog post on the Swift project&#39;s use of CMake, especially in it&#39;s build output for Mac/iOS, and if there have been any pitfalls or any custom work Apple has done under the Swift project to make this process cleaning. Material on supporting iOS in CMake especially seems lacking.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151203/b4af24b0/attachment-0001.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>CMake use in Swift</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>December  3, 2015 at 02:00:00pm</p></header><div class="content"><p>&gt; On Dec 3, 2015, at 2:20 PM, Colin Cornaby &lt;colin.cornaby at mac.com&gt; wrote:<br>&gt; <br>&gt; We support tons of different platforms, but we&#39;ve traditionally use separate project files for each platform (VC projects/solutions for Windows, xcodeproj for Apple platforms, scripts or make for Linux, scripts for Android...) Recently our lower level teams have been agreeing that CMake is the best way forward to wrangle this mess, but some of our Apple platform devs have expressed concern that they don&#39;t know if the CMake output for Xcode will reliably pick good defaults compared to a hand maintained Xcode project.<br>&gt; <br>&gt; Our CMake proponents are very excited to see Swift using CMake as it gives us a prominent use case for CMake on Apple platforms. We&#39;ve seen CMake support previously in platforms like WebKit, but seeing it in Swift really got people excited.<br></p><p>Hi Colin,<br></p><p>FWIW, we also use CMake in the LLVM family of projects, which Swift works very closely with.<br></p><p>-Chris<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

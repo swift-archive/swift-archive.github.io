@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0005 Better Translation of Objective-C APIs Into Swift</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 27, 2016 at 11:00:00pm</p></header><div class="content"><p>on Wed Jan 27 2016, Rob Mayoff &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;<br>&gt;&gt; -  func respondWith(data: Data)<br>&gt;&gt; +  func respond(data data: Data)<br>&gt;&gt;<br>&gt;&gt; This one is unusual. I don’t mind `respond(data: …)`, but generally<br>&gt;&gt; there’s a word to the right of “with”, and here the “with” was just to<br>&gt;&gt; imply the argument without naming it.<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; The original ObjC method name was “respondWithData:”. “Data” restates type<br>&gt;&gt; info, so SE-0023 stripped it off; this transformation makes it the first<br>&gt;&gt; argument label.<br>&gt;&gt;<br>&gt;<br>&gt; Can I tell, at a call site, whether `respond(data: someData)` is responding<br>&gt; with someData, or responding to someData?<br>&gt;<br>&gt; That is, can I tell whether someData is the response, <br></p><p>Yes, you can tell, in the same way that you know what role &quot;hello&quot; plays<br>in respond(&quot;hello&quot;).<br></p><p>&gt; or instead is something from the request that the receiver will use to<br>&gt; compute the response?<br>&gt;<br>&gt; If I see `respondWith(someData)` or `respondWith(data: someData)` or<br>&gt; `respondWithData(someData)`, it&#39;s clear to me that someData is the<br>&gt; response, <br></p><p>Heh, well to draw that conclusion you&#39;d have to know somehow that in<br>*this* API, unlike in so many others, “with” was not just being used as<br>a vacuous connector to allow “data” to be appended to the basename of<br>the method without being grammatically jarring.  While there are a few<br>APIs where that&#39;s the case, it seems the vast majority of “with” uses<br>are of the vacuous kind, so this might just end up needing annotation.<br></p><p>&gt; while a hypothetical call `respondTo(someData)` would tell me that<br>&gt; someData is the input to the response-computing algorithm.<br>&gt; _______________________________________________ swift-evolution<br>&gt; mailing list swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

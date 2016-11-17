@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bce64da43e291f2ce30987a83780502c?s=50"></div><header><strong>[stdlib] Replace `.Some(x)` and `.None` by `x` and `nil`, respectively</strong> from <string>Patrick Pijnappel</string> &lt;patrickpijnappel at gmail.com&gt;<p>December 13, 2015 at 12:00:00pm</p></header><div class="content"><p>The standard library already predominantly uses the latter form but still<br>contains regular usages of the former. For consistency and reduced clutter<br>I&#39;d propose to use the latter form throughout. The SIL for both forms is<br>identical. Also Optional&lt;T&gt; takes precedence over any other nil literal<br>convertibles, so no issues there. Are there any specific reason to use the<br>explicit forms?<br></p><p>Filed an issue (SR-212 &lt;https://bugs.swift.org/browse/SR-212&gt;) and pull<br>request (#470 &lt;https://github.com/apple/swift/pull/470&gt;).<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151213/054f2a0a/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

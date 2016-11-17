@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ad6af681931479541db39bb9f7ab4f61?s=50"></div><header><strong>How to specialize parent protocol&#39;s associatetype in sub-protocol?</strong> from <string>刘锋炜（kAzec）</string> &lt;kazecx at gmail.com&gt;<p>July 31, 2016 at 06:00:00pm</p></header><div class="content"><p>Hi Swift users,<br></p><p>I’m defining a sub-protocol inheriting from parent protocol with associatedtype, and I want to specialized the associatedtype to certain concrete type.<br></p><p>For example, <br></p><p>```swift<br>protocol Foo {<br>    associatedtype Bar<br>    <br>    static var bar: Bar { get }<br>}<br>    <br>protocol A: Foo {<br>    // I want `Bar` to be `Int`.<br>    static var a: Int { get }<br>    static var bar: Int { get }<br>}<br></p><p>extension A {<br>    typealias Bar = Int<br>}<br>```<br></p><p>I want any class/struct adopting protocol `A` having associatedtype `Bar` specialized to Int. However, I found that structs adopting `A` are still capable of override it.<br></p><p>```swift<br>extension A {<br>    static var bar: Int {<br>        return a<br>    }<br></p><p>    static func test() {<br>        print(bar)<br>    }<br>}<br></p><p>struct AStruct: A {<br>    static let a: Int = 0<br>    static let bar: Bool = false // Bar is now Bool<br>    // static let bar: Int now becomes invisible.<br>}<br></p><p>AStruct.test() // prints 0<br>```<br></p><p>The code above gave same result on both Swift 2.2(Xcode 7.3.1) and Swift 3.0(Xcode 8 beta 3).<br></p><p>It’s this expected behavior? Or am I&#39;m getting something wrong here? What about specializing parent’s associatedtype to certain generic type with newly introduced associatedtype? For example,<br></p><p>```swift<br>protocol B: Foo {<br>    associatedtype T<br>    static var bar: Array&lt;T&gt; { get }<br>}<br></p><p>extension B {<br>    typealias Bar = Array&lt;T&gt;<br>}<br>```<br></p><p>Any idea would be appreciated.<br></p><p>Thanks<br></p><p>Fengwei<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160731/72cb261c/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

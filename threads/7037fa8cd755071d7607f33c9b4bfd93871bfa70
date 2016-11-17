@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f9c95b0463cf51d7b12cca427e706118?s=50"></div><header><strong>true false vs yes no</strong> from <string>bishal ghimire</string> &lt;bishal.ghimire at gmail.com&gt;<p>February 14, 2016 at 12:00:00pm</p></header><div class="content"><p>Only thing that constantly reminds me that I am using Swift not Objective-C is YES/NO bool value.<br></p><p>Even after almost year of using Swift, I feel like Bool value should be Yes and No not true and false.<br>But as all other programming language follow true and false. I think its just matter of time before Objective-C developer get used to it.<br></p><p>&gt; I found using&amp;quot;true/false&amp;quot; Boolean values reduced the code readability from the&amp;quot;YES/NO&amp;quot; of objective-c code.<br>&gt; <br>&gt; I&amp;#39;m wondering if others also consider&amp;quot;yes/no&amp;quot; to be simply better.<br>&gt; <br>&gt; A few reasons:<br>&gt; <br>&gt; Yes and no are much more common in every day English. Their concepts and meanings are well understood to everyone with little question.<br>&gt; <br>&gt; Concepts of truthfulness and falsehood have a great deal of philosophical/moral baggage associated with them and can be very subjective. They are not used regularly in every day English. Philosophers spend ages debating what is&amp;quot;truth&amp;quot;, lawyers spend months arguing over who&amp;#39;s truth to believe and theologians are ever searching for&amp;quot;a deeper truth&amp;quot;.<br>&gt; <br>&gt; A code statement like isLightOn = yes makes perfect logical sense in English. isLightOn = true does not.<br>&gt; <br>&gt; Considering proposal SE-0005 point 5 is committing to using&amp;#39;is&amp;#39; bool variable names (e.g. isLightOn) should true/false be replaced with yes/no?<br>&gt; <br>&gt; I think it should.<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

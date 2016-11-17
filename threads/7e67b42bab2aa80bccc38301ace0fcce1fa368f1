@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b02f329e68331c543bea2cc5dfa01111?s=50"></div><header><strong>SPM - point dependcies to branches</strong> from <string>Anindha Parthy</string> &lt;anindha at gmail.com&gt;<p>June 20, 2016 at 06:00:00am</p></header><div class="content"><p>Hi,<br></p><p>I want to be able to point dependencies to branches or hashes. The open<br>source dependencies for my project don&#39;t have a tagged version that builds<br>for developer preview 1. It would save time to point at a branch.<br></p><p>Sorry if this point had been covered already, I wasn&#39;t quite sure where to<br>find feature proposals.<br></p><p>Thanks,<br></p><p>Anindha<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160620/7e6768f1/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>SPM - point dependcies to branches</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>June 20, 2016 at 08:00:00am</p></header><div class="content"><p>As you have noticed, we don&#39;t have support for this yet.<br></p><p>Most requests of this nature are currently in our bug tracker, for example:<br>  https://bugs.swift.org/browse/SR-666<br></p><p> - Daniel<br></p><p>&gt; On Jun 20, 2016, at 6:14 AM, Anindha Parthy via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; I want to be able to point dependencies to branches or hashes. The open source dependencies for my project don&#39;t have a tagged version that builds for developer preview 1. It would save time to point at a branch.<br>&gt; <br>&gt; Sorry if this point had been covered already, I wasn&#39;t quite sure where to find feature proposals.<br>&gt; <br>&gt; Thanks,<br>&gt; <br>&gt; Anindha<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

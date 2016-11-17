@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c14b8de3a00d0b57e1372600c83120cd?s=50"></div><header><strong>[Pitch] Permit self in type-inferred property initializers</strong> from <string>Marc Prud&#39;hommeaux</string> &lt;marc at glimpse.io&gt;<p>May  2, 2016 at 04:00:00pm</p></header><div class="content"><p>I propose that it should be possible to declare type-inferred properties that derive from the required properties of a class or struct.<br></p><p>struct SignedSequences&lt;S: SequenceType where S.Generator.Element : SignedIntegerType&gt; {<br>    let seq: S<br>    let absoluteEvens: self.seq.lazy.filter({ x in x % 2 == 0 }).map({ x in abs(x) })<br>    let positiveOdds: self.seq.lazy.filter({ x in x &gt; 0 }).filter({ x in x % 2 == 1 })<br>    let brutePrimes: self.positiveOdds.lazy.filter({ $0 &gt;= 2 }).filter({ s in (2..&lt;s).filter({ x in s % x == 0 }).isEmpty })<br></p><p>    init(sequence: S) {<br>        self.seq = sequence<br>    }<br>}<br></p><p>Currently, to accomplish this, you need to explicitly declare the types for each of the derived properties, which can be tedious, and which requires the separation of the declaration from the invariant logic.<br></p><p>struct SignedSequences&lt;S: SequenceType where S.Generator.Element : SignedIntegerType&gt; {<br>    let seq: S<br>    let absoluteEvens: LazyMapSequence&lt;LazyFilterSequence&lt;S&gt;, S.Generator.Element&gt;<br>    let positiveOdds: LazyFilterSequence&lt;LazyFilterSequence&lt;S&gt;&gt;<br>    let brutePrimes: LazyFilterSequence&lt;LazyFilterSequence&lt;LazyFilterSequence&lt;LazyFilterSequence&lt;S&gt;&gt;&gt;&gt;<br></p><p>    init(sequence: S) {<br>        self.seq = sequence<br>        self.absoluteEvens = seq.lazy.filter({ x in x % 2 == 0 }).map({ x in abs(x) })<br>        self.positiveOdds = seq.lazy.filter({ x in x &gt; 0 }).filter({ x in x % 2 == 1 })<br>        self.brutePrimes = positiveOdds.lazy.filter({ $0 &gt;= 2 }).filter({ s in (2..&lt;s).filter({ x in s % x == 0 }).isEmpty })<br>    }<br>}<br></p><p>This would just be a compiler enhancement, since the generated SIL would be identical in the two examples.<br></p><p>What do people think?<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160502/a261e9fe/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/16fe6fe5f5828f6d0fb477577daf6d14?s=50"></div><header><strong>Is SE-0088 (Modernize libdispatch for Swift 3 naming conventions) open for comments?</strong> from <string>Josh Osborne</string> &lt;stripes at me.com&gt;<p>May 13, 2016 at 12:00:00pm</p></header><div class="content"><p>I see the active review dates of May 10 to 17, but I don’t see any messages about it on here.<br></p><p>If comments are welcome at this time, read on.   If not, please remind me what the process is (and maybe read on anyway?)!<br></p><p>Interoperation:<br>  If I have an existing ObjC (or just C) code baae that uses dispatch_get_specific, how does it interoperate with Swift code and DispatchSpecificKey&lt;T&gt;?   How do I annotate my void* keys to bridge them into Swift?  (I don’t know of any library that used dispatch keys in API, but I do know of plenty that use them internally and it would hinder Swift migration to have an all-or-nothing migration here!)<br></p><p><br>Apparently Incomplete (perfectly understandable if I’m jumping the gun and commenting early):<br></p><p>DispatchGroup:<br>  I can see it has been renamed, and what the equivalent of dispatch_group_async is, but I don’t see dispatch_group_wait or dispatch_group_notify’s new names anywhere.<br></p><p>DispatchSemaphore:<br>  Again I see the new name, but I don’t see <br></p><p>Bikeshed:<br>  queue.asynchronously(…) oh dear god so much typing…um, I mean, er, “async is a term of art, and perfectly appropriate here”<br>  queue.synchronously(…) yeah, that is a lot of letters…and “sync” is a perfectly fine term of art, can we use it?<br></p><p>Color Me Impressed:<br>  “ all without adding runtime overhead” and we have the DispatchQueue.asynchronously taking 3 arguments with default values.   Can the Swift compiler really turn a call with all the arguments in the default state into a dispatch_async call without runtime overhead of checking for nil/.unspecified, and []?  (not “can” = “sure, someday”, but “yeah, it does that sort of thing, maybe even here”)<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

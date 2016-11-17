@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f6b7154fd1d6a470d0b521a2e484bffc?s=50"></div><header><strong>[Review] SE-0026 Abstract classes and methods</strong> from <string>Daniel Duan</string> &lt;daniel at duan.org&gt;<p>February 27, 2016 at 07:00:00am</p></header><div class="content"><p>&gt; 	• What is your evaluation of the proposal?<br></p><p>The proposal does not provide strong enough incentive for adding Abstract<br>Class. I&#39;m against the proposed change.<br></p><p>&gt; 	• Is the problem being addressed significant enough to warrant a change to<br>&gt; 	Swift?<br></p><p>No. The provided example in the incentive section, as noted by the proposal<br>itself, can be achieved with protocols and default implementations. The only<br>problem solved by this example, as well as abstract class as proposed, is that<br>of a shared property value (port number). IMHO, this problem should be<br>addressed by enhancing Swift&#39;s protocol.<br></p><p>&gt; 	• Does this proposal fit well with the feel and direction of Swift?  • If<br>&gt; 	you have used other languages or libraries with a similar feature, how do<br>&gt; 	you feel that this <br>proposal compares to those?<br></p><p>Abstract class encourages inheritance (can&#39;t use it without), which is only<br>natural if one assume that OOP is the correct paradigm for problems at hand.<br>But both industry and academia admits that, historically, OOP had been<br>over-hyped, abused beyond the domains it actually were useful. Will people be<br>creating a class just so they can write helloworld in the next decade or two?<br>I&#39;m sure some will, but I&#39;d like to imagine they have a good reason to do so,<br>not because &quot;it&#39;s the one true way to Swift&quot;.  Encouraging inheritance in<br>a language designed for next few decades seems bad.<br></p><p>Trends and feelings aside, perhaps it&#39;s worth noting that in programming<br>languages such as C++, abstract class, in a lot of use cases, serves as<br>a workaround for the lack of interface/protocol. It&#39;s a &quot;implementation<br>detail&quot; of single-argument polymorphism. Its other characteristic,<br>late-binding, can be achieved in Swift in other means. These are the<br>fundamental reasons why it&#39;s hard to produce a convincing example to justify<br>abstract class. <br></p><p>(Do we like more ways to do the same thing in Swift is a whole different<br>discussion. I lean towards no on this one).<br></p><p>&gt; 	• How much effort did you put into your review? A glance, a quick reading,<br>&gt; 	or an in-depth study?<br></p><p>I read the proposal.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

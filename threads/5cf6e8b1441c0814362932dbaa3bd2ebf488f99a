@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b44e6f73953e221952a6706badef3dd2?s=50"></div><header><strong>swift generics not generic enough?</strong> from <string>Baojun Wang</string> &lt;wangbj at gmail.com&gt;<p>April 25, 2016 at 11:00:00pm</p></header><div class="content"><p>Hi List,<br></p><p><br>I&#39;m very new to swift, and feel quite excited about the features provided<br>by swift.<br></p><p><br>when I tried below example in playground (many of them borrowed from<br>swiftz), I find some swift generics looks wired (to me)<br></p><p><br>(1) When use generics in extension, typealias can refer to generics defined<br>elsewhere<br></p><p>(2) types cannot be inferred types as it supposed to be<br></p><p>(3) No higher minded types, I found some discussion in the old mail thread,<br>will HKT be part of future swift?<br></p><p><br></p><p>// code snippet (using swift 2.2)<br></p><p><br>public struct K0 {}<br></p><p>public struct K1&lt;A&gt; {}<br></p><p><br>public protocol Functor{<br></p><p>    associatedtype A<br></p><p>    associatedtype B<br></p><p>    associatedtype FA = K1&lt;A&gt;<br></p><p>    associatedtype FB = K1&lt;B&gt;<br></p><p><br>    func fmap(f : A -&gt; B, _ fa : FA) -&gt; FB<br></p><p>}<br></p><p><br>public enum Maybe&lt;E&gt; {<br></p><p>    case Nothing<br></p><p>    case Just(E)<br></p><p>}<br></p><p><br>extension Maybe : Functor {<br></p><p>    public typealias A = E         // &lt;---- (1), where is E come from? In<br>extension Maybe, E isn&#39;t part of any context?<br></p><p>    public typealias B = Any<br></p><p>    public typealias FA = Maybe&lt;A&gt;<br></p><p>    public typealias FB = Maybe&lt;B&gt;<br></p><p><br></p><p>    public func fmap&lt;B&gt; (f : A -&gt; B, _ fa: FA) -&gt; Maybe&lt;B&gt; {<br></p><p>        switch(fa) {<br></p><p>        case .Nothing:<br></p><p>            return .Nothing<br></p><p>        case let (.Just(a)):<br></p><p>            return .Just(f(a))<br></p><p>        }<br></p><p>    }<br></p><p>}<br></p><p><br>public func fmap&lt;A, B&gt; (f : A -&gt; B, _ fa : Maybe&lt;A&gt;) -&gt; Maybe&lt;B&gt; {       //<br>&lt;----- lack of Higher minded type, thus every extension implements protocol<br>``Functor`` need this boilerplate?<br></p><p>    return fa.fmap(f, fa)<br></p><p>}<br></p><p><br>func succ (x : Int) -&gt; Int {<br></p><p>    return 1 + x<br></p><p>}<br></p><p><br>let x0 = .Nothing          // &lt;------- type error, cannot infer x0<br></p><p>let x1 = .Just(1)          // &lt;------- type error, cannot infer x1, which<br>is (Maybe Int)<br></p><p>let x2 : Maybe&lt;Int&gt; = .Just(1)<br></p><p>let x3 = fmap(succ, x2)<br></p><p><br>Thanks<br>baojun<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160425/5cf6f99a/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

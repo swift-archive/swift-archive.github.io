@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2679e7a28cb46e207a562ad4e7fc45fc?s=50"></div><header><strong>Should we rename &quot;class&quot; when referring to protocol conformance?</strong> from <string>James F</string> &lt;conductator at ntlworld.com&gt;<p>May  3, 2016 at 10:00:00pm</p></header><div class="content"><p>Agreed, AnyObject seems like all we need to limit protocols to reference types.<br></p><p>------------ Begin Message ------------ <br>Group: gmane.comp.lang.swift.evolution <br>MsgID: &lt;m2mvo7ow1s.fsf at fripp.apple.com&gt; <br></p><p><br>on Mon May 02 2016, David Sweeris &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I was just thinking that:<br>&gt;<br>&gt;    protocol Foo : reference {}<br>&gt;<br>&gt; might be more to the point than:<br>&gt;<br>&gt;    protocol Foo : class {}<br>&gt;<br>&gt; I know that itâ€™s currently a moot point because classes are the only*<br>&gt; reference-semantics type of type in Swift, but itâ€™s conceivable that there might<br>&gt; some day be others. Anyway, Iâ€™m not saying itâ€™s a big deal or anything, Iâ€™m just<br>&gt; trying to think of any source-breaking changes we might want to make before<br>&gt; Swift 3 drops, and this seems like an easy one.<br>&gt;<br>&gt; - Dave Sweeris<br>&gt;<br>&gt; * Iâ€™m not actually sure this is true. I have a very vague recollection about<br>&gt; some protocols getting reference semantics in certain circumstances, but the<br>&gt; memory is so hazy Iâ€™m not sure I trust it. Also I canâ€™t remember if the<br>&gt; â€œindirectâ€� keyword in enums affects the semantics.<br></p><p>Personally I have always felt â€œclassâ€� was an oddball special case here<br>that&#39;s unneeded because we have a perfectly good protocol that means the<br>same thing: AnyObject.<br></p><p>-- <br>Dave<br></p><p>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br>��››<br></p><p>------------- End Message ------------- <br></p><p><br></p><p>From James F<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

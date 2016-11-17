@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>Everyone with commit access can now initiate CI from pull requests</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>May  4, 2016 at 02:00:00pm</p></header><div class="content"><p>A change got rollout out to the continuous integration (CI) system last night that enables everyone with commit access (Apple and non-Apple contributors) to initiate CI from pull requests.  This has been something we&#39;ve desired since we rolled out CI-support in Swift pull requests, and I&#39;m thrilled to see it happen.<br></p><p>If you have commit access and find that you cannot initiate CI (e.g., &quot;@swift-ci test&quot;) please email me directly.<br></p><p>Please note that before initiating CI from pull requests, please take a look at the changes in the pull request first.  The CI system has finite resources, and we also want to avoid running pull requests with malicious changes on the CI system.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160504/a9024705/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>Build script and archival steps for the toolchain</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>June 21, 2016 at 12:00:00pm</p></header><div class="content"><p>I find myself building toolchains very often; with the scripts I am using I am immediately installing to the current Xcode toolchain locations and a considerable amount of time is being spent in creating a tarball of the toolchain (which I don’t really need, but I need all of the steps up-to that point).<br></p><p>I was thinking of adding a new flag to skip the tar command; I did not readily see a way to skip this step but do all of the rest. Is this something useful for others?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00464d59365595ecaebd19b44de312fa?s=50"></div><header><strong>Build script and archival steps for the toolchain</strong> from <string>Gwynne Raskind</string> &lt;gwynne at darkrainfall.org&gt;<p>June 21, 2016 at 03:00:00pm</p></header><div class="content"><p>On Linux I got rid of the tarball by yanking `installable-package=/blah/blah/blah` (appearing after a `dash-dash` of course) out of my build preset while leaving the `install-*` flags specified (incl. `install-destdir=/blah`), everything else seemed to still happen - does that work for macOS as well and still include the steps you need?? (I don’t have a checkout handy to test with.)<br></p><p>-- Gwynne Raskind<br></p><p><br></p><p>&gt; On Jun 21, 2016, at 14:45, Philippe Hausler via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I find myself building toolchains very often; with the scripts I am using I am immediately installing to the current Xcode toolchain locations and a considerable amount of time is being spent in creating a tarball of the toolchain (which I don’t really need, but I need all of the steps up-to that point).<br>&gt; <br>&gt; I was thinking of adding a new flag to skip the tar command; I did not readily see a way to skip this step but do all of the rest. Is this something useful for others?<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

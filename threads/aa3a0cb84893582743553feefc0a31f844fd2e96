@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Every non-trivial Swift function should throw, right?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March  5, 2016 at 10:00:00pm</p></header><div class="content"><p>on Sat Mar 05 2016, Erica Sadun &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; I&#39;m hopping in here ridiculously late, but wasn&#39;t someone going to<br>&gt; propose a vanilla universal stdlib error type along the lines of<br>&gt;<br>&gt; struct Error: ErrorType {<br>&gt;    let reason: String<br>&gt; }<br>&gt;<br>&gt; (preferably with auto-captured location context<br>&gt; (http://ericasadun.com/2015/08/27/capturing-context-swiftlang/<br>&gt; &lt;http://ericasadun.com/2015/08/27/capturing-context-swiftlang/&gt;) and a<br>&gt; custom mutable dictionary.)<br></p><p>I know some people around here really want us to standardize on NSError<br>for this purpose.  If you have good reasons why we shouldn&#39;t, now would<br>be a good time to develop those arguments.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>[swift-users] Every non-trivial Swift function should throw, right?</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>March  5, 2016 at 11:00:00pm</p></header><div class="content"><p>Wrong list for language discussions, but domain/code/userInfo aren&#39;t really Swifty.<br>It feels like we&#39;re tied down to a archaic construct just for the sake of consistency.<br></p><p>An error should answer the following questions:<br></p><p>* What went wrong?<br>* Where did it go wrong?<br>* What other information am I passing along about the circumstances of the error?<br></p><p>Which ties into my reason/context/errorInfo over domain/code/userInfo.<br></p><p>-- E, who has replaced -users with -evolution in the reply<br></p><p><br>&gt; On Mar 5, 2016, at 11:02 PM, Dave Abrahams via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Sat Mar 05 2016, Erica Sadun &lt;swift-users-AT-swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; I&#39;m hopping in here ridiculously late, but wasn&#39;t someone going to<br>&gt;&gt; propose a vanilla universal stdlib error type along the lines of<br>&gt;&gt; <br>&gt;&gt; struct Error: ErrorType {<br>&gt;&gt;   let reason: String<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; (preferably with auto-captured location context<br>&gt;&gt; (http://ericasadun.com/2015/08/27/capturing-context-swiftlang/<br>&gt;&gt; &lt;http://ericasadun.com/2015/08/27/capturing-context-swiftlang/&gt;) and a<br>&gt;&gt; custom mutable dictionary.)<br>&gt; <br>&gt; I know some people around here really want us to standardize on NSError<br>&gt; for this purpose.  If you have good reasons why we shouldn&#39;t, now would<br>&gt; be a good time to develop those arguments.<br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160305/701a0a18/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

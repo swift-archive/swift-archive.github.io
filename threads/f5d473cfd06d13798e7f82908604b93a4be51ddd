@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/674fead3bfff884c72fa02c35d68f258?s=50"></div><header><strong>XCTest</strong> from <string>James Campbell</string> &lt;james at supmenow.com&gt;<p>January 27, 2016 at 07:00:00pm</p></header><div class="content"><p>I would love to propose we add more BDD styled testability like RSpec<br>http://rspec.info/<br></p><p>It makes reading tests for specific behaviour easier to read as it can be<br>nested withoin contexts. Adding a first class mocking library would be<br>great since it is very hard to do this with Swift&#39;s static typing.<br></p><p>*___________________________________*<br></p><p>*James⎥Lead Engineer*<br></p><p>*james at supmenow.com &lt;james at supmenow.com&gt;⎥supmenow.com &lt;http://supmenow.com&gt;*<br></p><p>*Sup*<br></p><p>*Runway East *<br></p><p>*10 Finsbury Square*<br></p><p>*London*<br></p><p>* EC2A 1AF *<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160127/f5d41ddd/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f921fa5d507b31ef6984fd3d77ae710c?s=50"></div><header><strong>XCTest</strong> from <string>Brian Gesiak</string> &lt;modocache at gmail.com&gt;<p>January 27, 2016 at 02:00:00pm</p></header><div class="content"><p>Thanks for raising this issue, James!<br></p><p>Similar opinions were expressed by others when the Swift Evolution proposal<br>SE-0019, &quot;Swift Testing&quot;, was being discussed.<br></p><p>- Review of the proposal on the mailing list:<br>https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160111/006197.html<br>- Comments on the GitHub pull request to add the proposal:<br>https://github.com/apple/swift-evolution/pull/51<br></p><p>I think there was a general consensus that as long as the package manager&#39;s<br>testing support was generic enough, it would allow third-parties to build<br>testing frameworks in any style, including RSpec&#39;s. The accepted proposal<br>will initially only support XCTest, with consideration for third-party<br>framework support to come later. At that later point, I&#39;m sure RSpec-style<br>frameworks for Swift will emerge from the larger open-source community.<br></p><p>In the meantime, swift-corelibs-xctest&#39;s goal remains the same: API parity<br>with Objective-C XCTest. Adopting RSpec-style syntax is a non-goal for that<br>project.<br></p><p>- Brian Gesiak<br></p><p><br>On Wed, Jan 27, 2016 at 2:34 PM, James Campbell via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I would love to propose we add more BDD styled testability like RSpec<br>&gt; http://rspec.info/<br>&gt;<br>&gt; It makes reading tests for specific behaviour easier to read as it can be<br>&gt; nested withoin contexts. Adding a first class mocking library would be<br>&gt; great since it is very hard to do this with Swift&#39;s static typing.<br>&gt;<br>&gt; *___________________________________*<br>&gt;<br>&gt; *James⎥Lead Engineer*<br>&gt;<br>&gt; *james at supmenow.com &lt;james at supmenow.com&gt;⎥supmenow.com<br>&gt; &lt;http://supmenow.com&gt;*<br>&gt;<br>&gt; *Sup*<br>&gt;<br>&gt; *Runway East *<br>&gt;<br>&gt; *10 Finsbury Square*<br>&gt;<br>&gt; *London*<br>&gt;<br>&gt; * EC2A 1AF *<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160127/d8f69268/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

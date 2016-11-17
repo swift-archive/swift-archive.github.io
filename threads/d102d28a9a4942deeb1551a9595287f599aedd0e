@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Accepted with modifications] SE-0023 API Design Guidelines</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>March  3, 2016 at 01:00:00pm</p></header><div class="content"><p>The review of SE-0023 &quot;API Design Guidelines&quot; ran from January 22...February 5, 2016, with the discussion continuing long afterward. We were thrilled with the scope and depth of the community response to this proposal. The proposal is accepted with some significant modifications, detailed below. The resulting API Design Guidelines are on swift.org at https://swift.org/documentation/api-design-guidelines/<br></p><p>The most significant modification to the proposed guidelines is an expansion in the use of first argument labels. For example, while the originally proposed rules put most descriptions of the first argument in the base name, e.g.,<br></p><p>  x.moveFrom(x, to: y)           // bad: doesn&#39;t follow guidelines<br>  x.removeBoxesHavingLength(12)  // bad: doesn&#39;t follow guidelines<br></p><p>The accepted rules use argument labels instead:<br></p><p>  x.move(from: x, to: y)<br>  x.removeBoxes(havingLength: 12)<br></p><p>The specific, accepted rules for argument labels are available at https://swift.org/documentation/api-design-guidelines/#argument-labels<br></p><p>Replaced the &quot;Be Grammatical&quot; section with a clearer discussion about striving for fluent usage, specifically providing guidelines for naming initializer and factory methods and naming functions according to their side effects.<br></p><p>Enum cases are now lowerCamelCase, like all other non-types in the <br>language, e.g.,<br></p><p>  enum Optional&lt;Wrapped&gt; {<br>    case none<br>    case some(Wrapped)<br>  }<br></p><p>Initialisms at the beginning of a non-type name are now lowerCamelCased, e.g.,<br></p><p>  let htmlElement = HTMLElement()<br></p><p>Introduced a guideline to name closure parameters and tuple members where they appear in your API.<br></p><p>Numerous clarifications throughout, including improvements to the discussion of using argument labels to clarify the roles of parameters, choosing parameter names to clarify documentation, clarifications to the &quot;-ed/-ing&quot; rule, and so on.<br></p><p>Thank you!<br>Doug Gregor<br>Review Manager<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

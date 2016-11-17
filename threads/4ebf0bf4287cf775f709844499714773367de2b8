@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d159199cf75f783132c7274752896e3?s=50"></div><header><strong>Why does the print function respect a CustomStringConvertible extension on Optional?</strong> from <string>Ian Terrell</string> &lt;ian.terrell at gmail.com&gt;<p>May  1, 2016 at 09:00:00am</p></header><div class="content"><p>I sent this to swift-users a few days ago but no one bit. I figure maybe<br>someone here might have some insight into the internals for why this is<br>happening. :)<br></p><p>A coworker had the idea to get rid of the &quot;Optional(&quot;Bob&quot;)&quot; default string<br>value for Optional&lt;String&gt; by adding the following extension to Optional:<br></p><p>extension Optional: CustomStringConvertible {<br>    public var description: String {<br>        switch self {<br>        case .Some(let wrapped): return &quot;\(wrapped)&quot;<br>        case .None: return &quot;nil&quot;<br>        }<br>    }<br>}<br></p><p>But this shows the following behavior:<br></p><p>name.description<br>=&gt; &quot;Bob&quot;<br></p><p>String.init(name)<br>=&gt; &quot;Optional(\&quot;Bob\&quot;)&quot;<br></p><p>String(name) == name.description<br>=&gt; false<br></p><p>Ok. So I dug around the source and found that String.init&lt;T&gt; delegates<br>to _print_unlocked [0], where Optional is special cased at the top:<br></p><p>// Optional has no representation suitable for display; therefore,<br>// values of optional type should be printed as a debug<br>// string. Check for Optional first, before checking protocol<br>// conformance below, because an Optional value is convertible to a<br>// protocol if its wrapped type conforms to that protocol.<br>if _isOptional(value.dynamicType) {<br>  let debugPrintable = value as! CustomDebugStringConvertible<br>  debugPrintable.debugDescription.write(to: &amp;target)<br>  return<br>}<br></p><p>This seems non-ideal to me, but I understand that &quot;because an Optional<br>value is convertible to a protocol if its wrapped type conforms to that<br>protocol&quot; there&#39;s no easy way to tell if the Optional type itself conforms<br>to CustomStringConvertible.<br></p><p>The print function is documented as using String.init&lt;T&gt; and in the source<br>it appears to also be delegating to _print_unlocked. However, when I use<br>it, I see the extension provided description!<br></p><p>print(name)<br>// =&gt; &quot;Bob&quot;<br></p><p>I&#39;ve also confirmed it&#39;s actually the extension and not any other issue by<br>returning hardcoded values from the description method.<br></p><p>So: what gives? :)<br></p><p>Why does the print function respect a CustomStringConvertible extension on<br>Optional?<br></p><p>Thanks!<br>Ian<br></p><p><br></p><p>[0]:<br>https://github.com/apple/swift/blob/master/stdlib/public/core/OutputStream.swift#L177<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160501/4ebfe2b8/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

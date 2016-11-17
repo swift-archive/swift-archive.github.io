@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4ca02c0ca5c5d6a28bc48eebb3b000c7?s=50"></div><header><strong>Review on SE-0007 (Remove C-style for-loops with conditions and incrementers)</strong> from <string>Michael Henson</string> &lt;mikehenson at gmail.com&gt;<p>December  9, 2015 at 02:00:00am</p></header><div class="content"><p>Evaluation of the Proposal:<br></p><p>I agree, with caveats.<br></p><p>Is the problem significant enough to warrant a language change:<br>(and)<br>Does this proposal fit well:<br></p><p>Yes, given both the Swift goal of removing or reducing the opportunity for<br>programmer errors and the inclusion of Sequence and Generator as standard<br>language concepts.<br></p><p>How does the proposal compare to other languages or libraries:<br></p><p>I&#39;m coming from a background of 20+ years writing in C-like languages. I&#39;ve<br>only worked with Swift significantly since the release of Xcode 7.0, and<br>feel competent but not fluent in it so far.<br></p><p>My first reaction to the proposal was that I had a trivial counterexample.<br>Without C-like for loops, how would one do this?<br></p><p>for var i = 0; i &lt; collection.count; i += 2 {<br>   doAThing(collection[i])<br>}<br></p><p>All of the documentation I&#39;ve read so far (I double-checked) considers only<br>*consecutive* iteration over collections. The possibility of more advanced<br>iterations is only referred to briefly at the end of the Collection Types<br>section of The Swift Programming Language with a simple mention of the<br>.generate() method.<br></p><p>Even after reading the early discussions of this proposal in which .indices<br>and .stride(...) were mentioned, and thus having something specific to look<br>for, it took some work to find either of them in the Standard Library<br>reference.<br></p><p>If the expectation is that &quot;people new to programming&quot; should be able to<br>pick up this idea, I think the concepts behind Sequences, Generators, and<br>non-consecutive iteration will have to be given first-class status in the<br>language documentation.<br></p><p>Also, as an aside, off-by-one errors are still easy to get with a poor<br>choice of range operator. It might be more-or-less trivial to add a<br>compiler warning if it sees the &quot;...&quot; operator in the &#39;in&#39; clause of a<br>for-in construct versus trying to design the possibility out altogether.<br></p><p>How much effort did you put into the review:<br></p><p>I spent a good bit of this evening reading through the documentation and<br>these discussions. I worked through the idea of getting rid of all<br>&#39;for&#39;-like constructs in favor of Generator/.forEach() based alternatives<br>until break/continue semantics under for-in and their absence under<br>Generator.forEach() came up in the thread. Then I settled on the need to<br>shift the educational materials along with removing the old construct.<br></p><p>Mike Henson<br>mikehenson at gmail.com<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151209/bed4b822/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

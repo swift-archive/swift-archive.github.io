@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/abf891ba571d5a819ddf547917abe1e1?s=50"></div><header><strong>Reconsidering the (Element -&gt; T?) variant of SequenceType.flatMap</strong> from <string>Al Skipp</string> &lt;al_skipp at fastmail.fm&gt;<p>December  9, 2015 at 07:00:00pm</p></header><div class="content"><p>It’s ‘flatMap’, Jim, but not as we know it!<br></p><p>I’ve also noticed this override of flatMap has caused confusion. It’s not uncommon for people to see flatMap, think, what’s that then? One internet search later and they’re wiggling around in a can of monadic worms, but with the extra burden that this particular override doesn’t have the type signature of the ‘official’ flatMap. Compounding the confusion about monads seems like a rather cruel trick to play on the unwary. The function is certainly very useful, if only it had a different name.<br></p><p>Al<br></p><p>&gt; Hello, all! This SequenceType-implemented flatMap recently caused some confusion on my team:<br>&gt; <br>&gt; func flatMap&lt;T&gt;(@noescape transform: (Self.Generator.Element) throws -&gt; T?) rethrows -&gt; [T]<br>&gt; <br>&gt; I’m a big fan of this operator in various functional libraries, but I admit I was a bit surprised to see the “flatMap” terminology appear in the Swift stdlib in the first place—its naming is certainly a notch obscure!<br>&gt; <br>&gt; From the reactions of teammates in code reviews involving these methods, there was a significant difference in comprehensibility between the Element -&gt; [T] variant and the Element -&gt; T? variant. The former was easily explained by “it’s a map, followed by a flatten,” whereas the same explanation failed in the latter case.<br>&gt; <br>&gt; I expect that the inspiration came from Scala, where the equivalent definition has a transformer essentially of type  Element -&gt; GeneratorType&lt;T&gt;; separately, their optionals are implicitly convertible to (their equivalent of) GeneratorType. So, in the end, in Scala, you can effectively flatMap with an Element -&gt; T? transformer.<br>&gt; <br>&gt; But Optional doesn’t implement GeneratorType, and I’d (weakly) argue that it shouldn’t. And if we think about flatMap in the context of a monadic bind (I do, anyway!), it’s especially surprising that the transformer is operating in a different monadic context (Optional) than the receiver (SequenceType). Unless we made Optional adopt SequenceType, in which case we could consider the bind to be happening in that context.<br>&gt; <br>&gt; In conclusion, I argue that this overload is confusing both to folks unfamiliar with FP (because it doesn’t feel like Optionals can be flattened) and to folks familiar with FP (because it implies binding across monadic contexts).<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151209/ac022f46/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

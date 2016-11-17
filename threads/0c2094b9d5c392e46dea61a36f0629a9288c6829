@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  1, 2016 at 04:00:00pm</p></header><div class="content"><p>Thanks for your review, Ricardo!  Just one question below.<br></p><p>on Sun Jan 31 2016, Ricardo Parada &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Proposal link:<br>&gt;<br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0023-api-guidelines.md<br>&gt;<br>&gt; What is your evaluation of the proposal?<br>&gt; +1<br>&gt;<br>&gt; I read the guidelines and I like them a lot in general. I think they are a very good start. <br>&gt;<br>&gt; I have read the alternatives and disagreements in the discussion<br>&gt; threads.  However, in my opinion the guidelines still stand as the<br>&gt; winner. I find it better, simpler, more concise and better looking<br>&gt; than the alternatives discussed.<br>&gt;<br>&gt; For example the ed/ ing ending for non-mutable methods. This is a<br>&gt; convention I have used in java for a long time and I found it very<br>&gt; natural in general even when the English language may not cooperate as<br>&gt; it has been discussed by others. I got used to this convention very<br>&gt; quickly many years ago in libraries I use in java.<br></p><p>What do you do about non-mutating versions of &quot;split&quot; and &quot;union&quot; under<br>this pattern?<br></p><p>&gt; There is only one guideline that I think is not aligned with the<br>&gt; consensus I seem to pick up from the discussions. That is the use of<br>&gt; camel case for enum cases. After reading different opinions I am now<br>&gt; leaning towards saying that Enum cases should be lower camel case<br>&gt; given that they are values.  At first my opinion was the same as the<br>&gt; guideline. After reading the discussions and seeing examples I changed<br>&gt; my mind.<br>&gt;<br>&gt; Is the problem being addressed significant enough to warrant a change to Swift?<br>&gt; This will bring a lot of changes when applied. I think they are a good<br>&gt; start. I don&#39;t think it should cover all cases.<br>&gt;<br>&gt; I saw the loginWithUserName(_:password:) example and alternatives:<br>&gt; login(userName:password:), etc. I don&#39;t know if this is addressed in<br>&gt; the guidelines. I don&#39;t think this example falls under the weak type<br>&gt; first argument.  It would be nice to have some guidance here. I do not<br>&gt; know how to state it but I think in this case I would say<br>&gt; login(userName:password:) is better as it could be part of a family of<br>&gt; login() methods that take different parameters, i.e. credentials.<br></p><p>Then this is a second difference you have with the guidelines, as they<br>are currently written to discourage first argument labels in almost all<br>cases.<br></p><p>&gt; Does this proposal fit well with the feel and direction of Swift?<br>&gt; Definitely. I find the guidelines are concise, natural and easy to get used to. <br>&gt;<br>&gt; If you have used other languages or libraries with a similar feature,<br>&gt; how do you feel that this proposal compares to those?<br>&gt; I have used Java libraries for many years that use the ed ending for<br>&gt; non-mutable methods for example.<br>&gt;<br>&gt; How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>&gt; I read the proposal entirely and I have read the majority of responses in the mailing list. <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

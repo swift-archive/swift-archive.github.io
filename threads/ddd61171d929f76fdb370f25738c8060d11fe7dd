@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cf2e4441943974c6550424bb9fa45d6b?s=50"></div><header><strong>[Proposal]Simple pattern matching with Horspool algorithm</strong> from <string>Susan Cheng</string> &lt;susan.doggie at gmail.com&gt;<p>May 17, 2016 at 12:00:00pm</p></header><div class="content"><p>public extension CollectionType where Index : RandomAccessIndexType {<br></p><p><br></p><p>    @warn_unused_result<br></p><p>    func matchWith&lt;C : CollectionType where C.Index : BidirectionalIndexType,<br>C.Generator.Element == Generator.Element&gt;(pattern: C, @noescape<br>isEquivalent: (Generator.Element, Generator.Element) throws -&gt; Bool)<br>rethrows -&gt; Index? {<br></p><p><br></p><p>        let pattern_count = pattern.count.toIntMax()<br></p><p>        if count.toIntMax() &lt; pattern_count {<br></p><p>            return nil<br></p><p>        }<br></p><p>        let reverse_pattern = pattern.reverse()<br></p><p>        var cursor = startIndex.advancedBy(numericCast(pattern_count - 1))<br></p><p>        while cursor &lt; endIndex {<br></p><p>            let left = startIndex...cursor<br></p><p>            let pair = zip(left.reverse(), reverse_pattern)<br></p><p>            guard let not_match = try pair.firstOf({ try<br>!isEquivalent(self[$0],<br>$1) }) else {<br></p><p>                return cursor.advancedBy(numericCast(1 - pattern_count))<br></p><p>            }<br></p><p>            if let pos = try reverse_pattern.dropFirst().indexOf({ try<br>isEquivalent(self[not_match.0], $0) }) {<br></p><p>                let offset = reverse_pattern.startIndex.distanceTo(pos).<br>toIntMax()<br></p><p>                cursor = not_match.0.advancedBy(numericCast(offset), limit:<br>endIndex)<br></p><p>            } else {<br></p><p>                cursor = not_match.0.advancedBy(numericCast(pattern_count),<br>limit: endIndex)<br></p><p>            }<br></p><p>        }<br></p><p>        if try self.reverse().startsWith(reverse_pattern, isEquivalent:<br>isEquivalent) {<br></p><p>            return endIndex.advancedBy(numericCast(-pattern_count))<br></p><p>        }<br></p><p>        return nil<br></p><p>    }<br></p><p>}<br></p><p><br>public extension CollectionType where Index : RandomAccessIndexType,<br>Generator.Element : Equatable {<br></p><p><br></p><p>    @warn_unused_result<br></p><p>    func matchWith&lt;C : CollectionType where C.Index : BidirectionalIndexType,<br>C.Generator.Element == Generator.Element&gt;(pattern: C) -&gt; Index? {<br></p><p>        return self.matchWith(pattern) { $0 == $1 }<br></p><p>    }<br></p><p>}<br></p><p><br>with this simplify version of Horspool algorithm, it can speed up searching<br>in any random access CollectionType (better than brute force searching).<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160517/ddd6e7dd/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

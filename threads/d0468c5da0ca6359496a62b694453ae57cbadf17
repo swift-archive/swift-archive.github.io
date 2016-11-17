@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e828f637e91f7d986b7a79574dc0c45a?s=50"></div><header><strong>Psychology and sociology of Swift feature proposals.</strong> from <string>Amir Michail</string> &lt;a.michail at me.com&gt;<p>December 21, 2015 at 10:00:00am</p></header><div class="content"><p>Should proposals take into account psychology and sociology (e.g., peer pressure) so as to increase Swift adoption? <br></p><p>In particular, a feature may be objectively good (as demonstrated by statistically significant experiments) but most developers may think it is bad regardless. What should be done in that case?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Psychology and sociology of Swift feature proposals.</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>December 21, 2015 at 11:00:00am</p></header><div class="content"><p>&gt; On Dec 21, 2015, at 7:35 AM, Amir Michail via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Should proposals take into account psychology and sociology (e.g., peer pressure) so as to increase Swift adoption? <br>&gt; <br>&gt; In particular, a feature may be objectively good (as demonstrated by statistically significant experiments) but most developers may think it is bad regardless. What should be done in that case?<br></p><p>We want Swift to be adopted widely by a diverse audience. We don&#39;t want developers to reject it because they don&#39;t like it.<br></p><p>I see two possible solutions to that kind of design problem:<br></p><p>1. Add the feature anyway and educate developers, hoping to convince them that it&#39;s the right thing to do or at least accept that it is a necessary evil. Swift&#39;s String class does this. There are traditional string operations that are deliberately hard with Swift.String because they are not compatible with Unicode strings.<br></p><p>2. Change the feature so it is more palatable to developers who dislike it. Swift&#39;s nullability does this. We believe non-nullability should be used only when necessary. But Swift also has syntax additions like optional chaining and the `nil` identifier itself along with semantic additions like implicitly-unwrapped optional to make it fairly reasonable to use nullable references if you have to or want to do so. <br></p><p><br>-- <br>Greg Parker     gparker at apple.com     Runtime Wrangler<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0a2c0bcff308a97d2617cdba339914c6?s=50"></div><header><strong>Latest development code fails to build</strong> from <string>Charles Lane</string> &lt;clane_47 at bellsouth.net&gt;<p>April 13, 2016 at 07:00:00pm</p></header><div class="content"><p>Excellent! Thanks, I thought I was going crazy since I didn’t see any other reports about this. I assume we’ll see a new snapshot posted at some point then?<br></p><p>Regards,<br>Chuck Lane<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Latest development code fails to build</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>April 13, 2016 at 04:00:00pm</p></header><div class="content"><p>They come out roughly biweekly, although it depends on how stable the build is. If you hadn&#39;t seen already, there are older snapshots &lt;https://swift.org/download/#older-snapshots&gt; at the bottom of the page.<br></p><p>Jordan<br></p><p><br>&gt; On Apr 13, 2016, at 16:45, Charles Lane &lt;clane_47 at bellsouth.net&gt; wrote:<br>&gt; <br>&gt; Excellent! Thanks, I thought I was going crazy since I didn’t see any other reports about this. I assume we’ll see a new snapshot posted at some point then?<br>&gt; <br>&gt; Regards,<br>&gt; Chuck Lane<br>&gt; <br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160413/3b3efa9e/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

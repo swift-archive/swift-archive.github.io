@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0043: Declare variables in &#39;case&#39; labels with multiple patterns</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>March 23, 2016 at 08:00:00pm</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0043-declare-variables-in-case-labels-with-multiple-patterns.md<br></p><p>The review of SE-0043 &quot;Declare variables in &#39;case&#39; labels with multiple patterns&quot; ran from March 16...21, 2016. The proposal has been *accepted*:<br></p><p>This is a simple and clean extension to the pattern matching model in Swift, positively received by both the community at large and the core team.  <br></p><p>Thank you to Andrew Bennett for driving this forward, and thank you to Greg Titus for already implementing this in master (in PR1383)!<br></p><p>-Chris Lattner<br>Review Manager<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4027ca32415d9fecd483292ef8f98b02?s=50"></div><header><strong>[Accepted] SE-0043: Declare variables in &#39;case&#39; labels with multiple patterns</strong> from <string>Andrew Bennett</string> &lt;cacoyi at gmail.com&gt;<p>March 24, 2016 at 05:00:00pm</p></header><div class="content"><p>Yay! Thank you :)<br></p><p>On Thursday, 24 March 2016, Chris Lattner via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Proposal Link:<br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0043-declare-variables-in-case-labels-with-multiple-patterns.md<br>&gt;<br>&gt; The review of SE-0043 &quot;Declare variables in &#39;case&#39; labels with multiple<br>&gt; patterns&quot; ran from March 16...21, 2016. The proposal has been *accepted*:<br>&gt;<br>&gt; This is a simple and clean extension to the pattern matching model in<br>&gt; Swift, positively received by both the community at large and the core team.<br>&gt;<br>&gt; Thank you to Andrew Bennett for driving this forward, and thank you to<br>&gt; Greg Titus for already implementing this in master (in PR1383)!<br>&gt;<br>&gt; -Chris Lattner<br>&gt; Review Manager<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org &lt;javascript:;&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160324/90c27ddc/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

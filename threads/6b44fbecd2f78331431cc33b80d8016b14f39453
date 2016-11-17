@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>[Proposal] Remove force unwrapping in function signature.</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>June 11, 2016 at 10:00:00pm</p></header><div class="content"><p>Adrian Zubarev wrote:<br></p><p>&gt; Yes please, current Swift 3 Snapshot translated a lot of<br>&gt; C functions from not optionals to optionals just because<br>&gt; let and var works correctly on UnsafeMutablePointer’s.<br></p><p>I think this is due to:<br></p><p>* &quot;SE-0055: Making pointer nullability explicit&quot;<br>  &lt;https://github.com/apple/swift/pull/1878&gt;<br></p><p>* IUOs for code without &quot;nullability annotations&quot;<br>  &lt;https://developer.apple.com/swift/blog/?id=25&gt;<br></p><p>-- Ben<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

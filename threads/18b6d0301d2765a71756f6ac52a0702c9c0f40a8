@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e5bf5d39881b91eb515f07d65c57b1fa?s=50"></div><header><strong>Swift 3 version of creating a string from a pointer, length and encoding?</strong> from <string>John Brownie</string> &lt;john_brownie at sil.org&gt;<p>September 29, 2016 at 12:00:00pm</p></header><div class="content"><p>Next question in my migration. How do I do what this did in Swift 2.2?<br></p><p>let theData = String.init(bytes: data.memory, length: length, encoding: <br>NSUTF8StringEncoding)<br></p><p>The only initialisers that have a length are<br></p><p>init?(bytesNoCopy: UnsafeMutableRawPointer, length: Int, encoding: <br>String.Encoding, freeWhenDone: Bool)<br>init(utf16CodeUnitsNoCopy: UnsafePointer&lt;unichar&gt;, count: Int, <br>freeWhenDone: Bool)<br></p><p>Neither is applicable.<br></p><p>Do I need to push it into a Data object first, like this?<br></p><p>let theData = String.init(data: Data.init(bytes: data, length: length), <br>encoding: String.Encoding.utf8)<br></p><p>Or is there a better way that I&#39;ve missed (highly possible)?<br></p><p>John<br>-- <br>John Brownie<br>In Finland on furlough from SIL Papua New Guinea<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160929/18b640a8/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2bc666e29724cd3bdf46b6cbbe4a07bb?s=50"></div><header><strong>Swift 3 version of creating a string from a pointer, length and encoding?</strong> from <string>Quinn &quot;The Eskimo!&quot;</string> &lt;eskimo1 at apple.com&gt;<p>September 30, 2016 at 09:00:00am</p></header><div class="content"><p>On 29 Sep 2016, at 10:47, John Brownie via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>&gt; Or is there a better way that I&#39;ve missed (highly possible)?<br></p><p>I don’t think there’s anything significantly better.  The other two options I can think of:<br></p><p>* use the `UTF8` codec<br></p><p>* use NSString<br></p><p>NSString(bytes: bytes, length: length, encoding: String.Encoding.utf8.rawValue) as? String<br></p><p>Honestly, I think bouncing through `Data` is better.<br></p><p>Share and Enjoy<br>--<br>Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

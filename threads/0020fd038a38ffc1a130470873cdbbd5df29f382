@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>swift-3.0-branch to be made; details to be announced soon</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>April 27, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>We’re going to create a &quot;swift-3.0-branch&quot; branch across the various Swift repositories within the next couple days.  The branch will be used to provide a more stable baseline for producing qualified snapshots for Swift 3.  With a large number of Swift 3 changes having landed the idea is to provide more qualified downloads — probably called “developer previews” or something of that nature — that will be available for those interested in playing with Swift 3 but not wanting to pull just the latest snapshots from master.  I’ll post details on how this branch will be managed via a blog post in the next couple days.  For the time being, you can just ignore it — but I wanted to give everyone a heads up on why it was there.<br></p><p>Ted<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160427/0020f382/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

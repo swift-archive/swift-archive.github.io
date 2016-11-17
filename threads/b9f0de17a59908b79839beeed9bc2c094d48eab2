@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0089: Replace protocol&lt;P1, P2&gt; syntax with Any&lt;P1, P2&gt;</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June  5, 2016 at 01:00:00pm</p></header><div class="content"><p>on Wed May 25 2016, Matthew Johnson &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Sent from my iPad<br>&gt;<br>&gt;&gt; On May 25, 2016, at 12:10 PM, Jordan Rose via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt;&gt; On May 25, 2016, at 05:27, Brent Royal-Gordon via swift-evolution<br>&gt;&gt;&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; AFAIK an existential type is a type T with type parameters that<br>&gt;&gt;&gt;&gt; are still abstract (see for example<br>&gt;&gt;&gt;&gt; https://en.wikipedia.org/wiki/Type_system#Existential_types),<br>&gt;&gt;&gt;&gt; i.e. have not been assigned concrete values.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; My understanding is that, in Swift, the instance used to store<br>&gt;&gt;&gt; something whose concrete type is unknown (i.e. is still abstract),<br>&gt;&gt;&gt; but which is known to conform to some protocol, is called an<br>&gt;&gt;&gt; &quot;existential&quot;. Protocols with associated values cannot be packed<br>&gt;&gt;&gt; into normal existentials because, even though we know that the<br>&gt;&gt;&gt; concrete type conforms to some protocol, the associated types<br>&gt;&gt;&gt; represent additional unknowns, and Swift cannot be sure how to<br>&gt;&gt;&gt; translate uses of those unknown types into callable members. Hence,<br>&gt;&gt;&gt; protocols with associated types are sometimes called<br>&gt;&gt;&gt; &quot;non-existential&quot;.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; If I am misusing the terminology in this area, please understand<br>&gt;&gt;&gt; that that&#39;s what I mean when I use that word.<br>&gt;&gt; <br>&gt;&gt; We’re not consistent about it, but an “existential value” is a value<br>&gt;&gt; with protocol or protocol composition type. My mnemonic for this is<br>&gt;&gt; that all we know is that certain operations exist (unlike a generic<br>&gt;&gt; value, where we also have access to the type). John could explain it<br>&gt;&gt; more formally. We sometimes use “existentials” as a (noun) shorthand<br>&gt;&gt; for “existential value”.<br>&gt;&gt; <br>&gt;&gt; In the compiler source, all protocols and protocol compositions are<br>&gt;&gt; referred to as “existential types”, whether they have associated<br>&gt;&gt; types or not. Again, a protocol asserts the existence (and<br>&gt;&gt; semantics) of various operations, but nothing else about the<br>&gt;&gt; conforming type. (Except perhaps that it’s a class.) All protocols<br>&gt;&gt; are thus “existential types” whether or not the language supports<br>&gt;&gt; values having that type.<br>&gt;&gt; <br>&gt;&gt; It is incorrect to say that protocols with associated types (or<br>&gt;&gt; requirements involving Self) are “non-existential”.<br>&gt;<br>&gt; I haven&#39;t heard people using this term myself, but I imagine they<br>&gt; probably mean &quot;can&#39;t form an existential value with the protocol&quot;.<br>&gt; There certainly appears to be a lot of confusion in the community with<br>&gt; many not realizing that this is a temporary limitation of the<br>&gt; implementation, not a necessary fact.<br></p><p>As far as I know there is no known way to make protocols with Self<br>requirements usefully “existentiable,” or whatever you want to call it.<br>So unless I&#39;m missing something, in this respect, the limitation is not<br>temporary at all.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

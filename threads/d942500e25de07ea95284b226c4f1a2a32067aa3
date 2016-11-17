@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3e4acc351c34224514f9d58b08389390?s=50"></div><header><strong>Proposal: Keep var on Function Parameters and Pattern Matching</strong> from <string>Myles Schultz</string> &lt;myleslschultz at icloud.com&gt;<p>February  8, 2016 at 08:00:00pm</p></header><div class="content"><p>I very humbly agree with Francisco.  I feel that providing a warning when the var function parameter is not mutated or returned is a better option than cutting out the functionality entirely.  i don’t think that that a random mistake here or there constitutes removal of a feature.  Especially when Swift is a language that has redefined and continues to redefine what we expect from a modern language.<br></p><p>In light of that fact, I like to think of Swift’s functions/methods as a type that I have defined.  When I define a type I provide properties and I can use those properties in functions within that type.  A function’s parameter list, to me, is like a headline of the properties contained in that type.  And just like making a struct or class, some of those properties are constant, and some are variable.  The inout “property” of a function then is the odd one in that it’s like have a pointer to some other type’s property. Thus,<br></p><p>struct SomeType {<br></p><p>    let prop1: Type1    //  Two properties, one constant and one variable<br>    var prop2: Type2<br></p><p>    func someFunction(arg1: Type1, var arg2: Type, inout: Type2) {<br></p><p>        //  Do stuff<br></p><p>    }<br></p><p>}<br></p><p>Now, to make a point, I’ll pull out the function and declare it like a type (because in Swift functions are types).<br></p><p>func someFunction {<br></p><p>    let arg1:  Type1<br>    var arg2: Type2<br>    inout arg3: Type2  //  This “property” can, in a sense, point to prop1 or prop2 from SomeType to mutate that value<br></p><p>    //  Do stuff, declare functions, etc.<br></p><p>}<br></p><p>I realize the example is rather contrived and has it’s problems, but I hope it makes the point that if you think about let, var, and inout in this way, it’s not confusing at all.  I would also argue that this IS the way Swift begs you think about it’s function signatures.  Just like making a new instance of a type, like SomeType above, where you make a new copy of it, calling someFunction is like creating a new type with it’s own properties whose values are defined through the parameter list.  If there is confusion on this, then I think that calls for clearer documentation not deleting functionality.<br></p><p>Even if it only deletes one line of code<br></p><p>func someFunction(arg1: Type1, arg2: Type, inout: Type2) {<br></p><p>    var arg2 = arg2  //  This line of code<br></p><p>    …<br></p><p>}<br></p><p>I think, it is completely worth it!  It helps us rethink how we think about functions in Swift.  It helps us remember they are types that come with a list of properties we know we’re going to need to complete the process we are about to declare.  Capturing a list of values so that you can mutate them within a function is &quot;so C, so last decade” and just not necessary with Swift.<br></p><p>Again, I very humbly ask that the proposal to remove var from function parameter lists be revoke entirely though I do I understand it had previously already been acceptance.  Thank you your consideration.<br></p><p>Myles<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0065 A New Model for Collections and Indices</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 11, 2016 at 04:00:00pm</p></header><div class="content"><p>on Mon Apr 11 2016, Dave Abrahams &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Thanks for your comments, Brent!<br>&gt;<br>&gt; on Sun Apr 10 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt;&gt; 	https://github.com/apple/swift-evolution/blob/master/proposals/0065-collections-move-indices.md<br>&gt;&gt;<br>&gt;&gt; Some questions and comments:<br>&gt;&gt;<br>&gt;&gt;&gt; 		• Two for ranges that additionally conform to<br>&gt;&gt;&gt; RandomAccessCollection (requiring bounds that are Strideablewith<br>&gt;&gt;&gt; Stride conforming to Integer): CountableRange&lt;T&gt; and<br>&gt;&gt;&gt; CountableClosedRange&lt;T&gt;. These types can be folded into Range and<br>&gt;&gt;&gt; ClosedRange when Swift acquires conditional conformance capability.<br>&gt;&gt;<br>&gt;&gt; Does this mean that once we have conditional conformances,<br>&gt;&gt; HalfOpenRangeProtocol and ClosedRangeProtocol will most likely go<br>&gt;&gt; away?<br>&gt;<br>&gt; I&#39;m not sure, honestly.<br></p><p>Reconsidering, they aren&#39;t used anywhere else in the standard library so<br>I&#39;d say that is indeed likely.  In fact, something I&#39;m working on at the<br>moment may make it happen sooner than that ;-).  Stay tuned.<br>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>When to use argument labels, part DEUX</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  8, 2016 at 05:00:00am</p></header><div class="content"><p>on Mon Feb 08 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; Agree that basing the preposition location on whether there is a<br>&gt;&gt; default value is unfortunate. The problem is &quot;Zone&quot; is not<br>&gt;&gt; redundant/needless when calling it with the default value.<br>&gt;&gt; <br>&gt;&gt; copyWith()<br>&gt;&gt; <br>&gt;&gt; If I were asking &quot;what zone?&quot; Ok it&#39;s the default zone, but I&#39;m just asking &quot;with what?&quot;<br>&gt;<br>&gt; Honestly, I don&#39;t think `-copyWithZone:` is a good API to use as an<br>&gt; exemplar. It&#39;s a non-mutating method with an imperative name, which is<br>&gt; not usually done even in Objective-C, let alone Swift. <br></p><p>Arguably you can read it as a noun-phrase.<br></p><p>&gt; In fact, it&#39;s so unusual that it doesn&#39;t even have the same retaining<br>&gt; conventions as most other methods.<br></p><p>In Swift/under ARC it does.<br></p><p>&gt; I would consider special-casing `-copyWithZone:` to import as<br>&gt; `copied(to:)`. (The mutable variant should be `mutablyCopied(to:)`.)<br>&gt; `to` is used here because, when there *is* a zone in use, the new copy<br>&gt; is made in that zone. Alternatively, you could think of the zone as an<br>&gt; option, in which case it&#39;d be `copied(zone:)`. Plain `-copy` should<br>&gt; simply be hidden; it&#39;s a convenience wrapper around `-copyWithZone:`,<br>&gt; and one that&#39;s unnecessary if the zone argument carries a default<br>&gt; value.<br></p><p>Your points about copyWithZone being unusual are well-taken, but it<br>still presents a set of API naming issues that are fairly common.  If<br>you prefer, you can imagine that encodeWithCoder had a default argument.<br>Any method called xxxWithOptions would be a realistic example (though I<br>can&#39;t remember a specific one offhand), because all option sets are<br>getting an empty default.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

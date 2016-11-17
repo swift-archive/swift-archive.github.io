@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/58e2591737c75b7700b11f23381b9590?s=50"></div><header><strong>[Accepted] SE-0019 Swift Testing (Package Manager)</strong> from <string>Rick Ballard</string> &lt;rballard at apple.com&gt;<p>January 21, 2016 at 03:00:00pm</p></header><div class="content"><p>The second review of SE-0019 &quot;Swift Testing&quot; for the Swift Package Manager ran from Jan. 15th-19th, 2016. The proposal has been accepted. Support for the initial proposal was positive on the concept but mixed on the details, and the proposal was revised accordingly; the second review has received limited comments, but the comments were positive. Apple will start committing implementation for this proposal soon, though community pull requests are welcome; please discuss this on swift-build-dev at swift.org if you&#39;d like to help with the implementation.<br></p><p>The accepted review can be found at https://github.com/apple/swift-evolution/blob/master/proposals/0019-package-manager-testing.md &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0019-package-manager-testing.md&gt;.<br></p><p>This initial proposal includes support for using XCTest; we expect that adding generic support for other testing frameworks will be discussed in an upcoming proposal.<br></p><p>Thank you all for your comments.<br></p><p>	- Rick<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160121/e3da559c/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

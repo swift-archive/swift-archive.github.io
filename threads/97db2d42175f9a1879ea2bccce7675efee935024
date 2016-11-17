@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/fd5bd4566ee1f286333b7dbf2df6fadb?s=50"></div><header><strong>Calling all users of the `swift package generate-xcodeproj` feature...</strong> from <string>Anders Bertelrud</string> &lt;anders at apple.com&gt;<p>September 21, 2016 at 11:00:00am</p></header><div class="content"><p>Hello SwiftPM community,<br></p><p>Last week we landed a significant reworking of how SwiftPM generates Xcode project files (https://github.com/apple/swift-package-manager/pull/639).  These changes are on `master` and have not yet shipped in any release.<br></p><p>In addition to addressing most of the reported bugs (though not all limitations) of the Xcode project generation feature in SwiftPM, it also makes future fixes and improvements easier by making the code layered and testable.  There are further improvements that have landed on `master` since then, taking advantage of the cleaner layering.<br></p><p>We would like to pull these fixes into an upcoming Swift bug-fix release.  In order to reduce the risk of undetected regressions, we&#39;d like to ask anyone who uses the `swift package generate-xcodeproj` feature regularly to try it out on their packages using a snapshot of `master` (which can be downloaded from https://swift.org/download/#snapshots).  There are instructions for how to use a downloaded toolchain further down on the same page (at https://swift.org/download/#using-downloads).<br></p><p>Xcode projects do not need to be built using the same toolchain that generated it, so once the project has been generated, you can use it with whatever toolchain you normally use for your code (for example the default toolchain in Xcode).  Because the compiler in the downloaded snapshot is not a release build, it may be unsuitable for compiling your code; this is only a request to use it for the `swift package generate-xcodeproj` invocation itself.<br></p><p>We are particularly interested in any regressions in the project generation, but if there are new issues or issues that still aren&#39;t fixed, we&#39;d very much appreciate if you&#39;d take the time to file a JIRA at bugs.swift.org (using the `Package Manager` component).<br></p><p>Thanks!<br></p><p>Anders Bertelrud<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160921/97db5024/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

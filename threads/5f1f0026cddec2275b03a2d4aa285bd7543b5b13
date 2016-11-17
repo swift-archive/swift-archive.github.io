@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>Recursive protocol constraints</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>November  8, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>Just a heads-up that I’ve been working on the implementation of recursive protocol constraints &lt;https://github.com/apple/swift/blob/master/docs/GenericsManifesto.md#recursive-protocol-constraints-&gt; in master. For reference, this will eventually lead to allowing, e.g.,<br></p><p>	protocol Sequence {<br>	  associatedtype SubSequence: Sequence<br>	}<br></p><p>and similar, which will be a major simplification for the Swift standard library. There are a *lot* of places in the Swift compiler where we assume that we can enumerate the complete set of nested types from a type parameter, e.g., if S is a Sequence then we try to enumerate S.SubSequence, S.SubSequence.SubSequence, S.SubSequence.SubSequence.SubSequence, which will end badly. <br></p><p>To implement recursive protocol constraints, we need to find and eliminate all of these assumptions in the compiler. I’ve put up a gist here cataloging the ones I know about:<br></p><p>	https://gist.github.com/DougGregor/e7c4e7bb4465d6f5fa2b59be72dbdba6<br></p><p>The goal is to reduce this gist to nothing as we eliminate these assumptions. If you know of any other places that make such assumptions, please tell me!<br></p><p>	- Doug<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161108/5f1f5b13/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

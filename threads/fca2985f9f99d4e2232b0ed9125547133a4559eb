@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/268e1090c88890a4ed2387a4d22c661c?s=50"></div><header><strong>[proposal] default func ==(_:_:)</strong> from <string>J.E. Schotsman</string> &lt;jeschot at xs4all.nl&gt;<p>February  7, 2016 at 09:00:00pm</p></header><div class="content"><p>A nice way to enable developers to define an equality function based  <br>on the default equality operator (available per the current proposal)  <br>would be:<br></p><p>within the developer&#39;s definition of equality for type MyType the  <br>symbol == means the default equality operator (only for type MyType of  <br>course)<br></p><p>Then you can do:<br></p><p>func ==(lhs:MyType,rhs:MyTYpe)<br>  {<br>  var equal = false<br>  if lhs == rhs {equal = /*apply some additional test*/}<br>  return equal<br>  }<br></p><p>or<br></p><p>func ==(lhs:MyType,rhs:MyType)<br>  {<br>  var equal = false<br>  var lhsCopy = lhs<br>  var rhsCopy = rhs<br></p><p>  lhsCopy.uncomparedProperty1 = 0<br>  lhsCopy.uncomparedProperty2 = 0<br>  rhsCopy.uncomparedProperty1 = 0<br>  rhsCopy.uncomparedProperty2 = 0<br></p><p>  if lhsCopy == rhsCopy {equal =  <br>lhs.someMoreRelevantCalculatedProperty ==  <br>rhs.someMoreRelevantCalculatedProperty}<br></p><p>  return equal<br>  }<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

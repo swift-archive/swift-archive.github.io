@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2d569462ac92d4619342b1c5ff305043?s=50"></div><header><strong>Fwd: [Proposal] Union Type</strong> from <string>frogcjn at 163.com</string> &lt;frogcjn at 163.com&gt;<p>July  2, 2016 at 01:00:00am</p></header><div class="content"><p>My proposal begins on February, still in May. But may no make attention to you.<br>This proposal is more about how to change the way of thinking optional/either type. Change the way of using generic to construct optional/either type.<br></p><p><br>&gt; 下面是被转发的邮件：<br>&gt; <br>&gt; 发件人: Joe Groff &lt;jgroff at apple.com&gt;<br>&gt; 主题: 回复： [swift-evolution] [Proposal] Union Type<br>&gt; 日期: 2016年7月2日 GMT+8 01:03:17<br>&gt; 收件人: Cao Jiannan &lt;frogcjn at 163.com&gt;<br>&gt; 抄送: swift-evolution &lt;swift-evolution at swift.org&gt;<br>&gt; <br>&gt;&gt; <br>&gt;&gt; On Jul 1, 2016, at 2:08 AM, Cao Jiannan via swift-evolution &lt;swift-evolution at swift.org &lt;mailto:swift-evolution at swift.org&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; Hi all,<br>&gt;&gt; <br>&gt;&gt; I&#39;m now officially proposal the union type feature for Swift. Please see:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; https://github.com/frogcjn/swift-evolution/blob/master/proposals/xxxx-union-type.md &lt;https://github.com/frogcjn/swift-evolution/blob/master/proposals/xxxx-union-type.md&gt;<br>&gt;&gt; Introduction<br>&gt;&gt; <br>&gt;&gt; Add union type grammar, represents the type which is one of other types.<br>&gt;&gt; <br>&gt;&gt; var stringOrURL: String | URL = &quot;https://www.apple.com&quot;<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; I would be thankful if someone support this idea and give some advice. Thanks!<br>&gt; <br>&gt; We touch on this in the &quot;commonly proposed&quot; list:<br>&gt; <br>&gt; https://github.com/apple/swift-evolution/blob/master/commonly_proposed.md &lt;https://github.com/apple/swift-evolution/blob/master/commonly_proposed.md&gt;<br>&gt; <br>&gt; Disjunctions (logical ORs) in type constraints &lt;https://lists.swift.org/pipermail/swift-evolution-announce/2016-June/000182.html&gt;: These include anonymous union-like types (e.g. (Int | String) for a type that can be inhabited by either an integer or a string). &quot;[This type of constraint is] something that the type system cannot and should not support.&quot;<br>&gt; <br>&gt; <br>&gt; -Joe<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160702/93e6071e/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2e51f5d1f79b09442f62eef9702b8316?s=50"></div><header><strong>Simple text file I/O with Swift 3</strong> from <string>Ken Burgett</string> &lt;kenb at iotone.io&gt;<p>May 28, 2016 at 11:00:00am</p></header><div class="content"><p>Hi all,<br></p><p>I am trying to understand how Swift 3 File I/O works in a linux <br>environment.  I put together a trivial test program using what I<br>can glean from the few examples I can find.  See below.<br></p><p>===============================<br>import Glibc<br>import Foundation<br></p><p>let filename = Process.arguments[1]<br>let file_handle = fopen (filename, &quot;r&quot;)<br>let BUFSIZE = 1024<br>var buf     = [CChar](repeating:CChar(0), count:BUFSIZE)<br>while fgets(&amp;buf, Int32(BUFSIZE), file_handle) != nil<br>{<br>   print(buf)<br>}<br>exit(0)<br>===============================<br></p><p>The program runs, but produces a stream of integer arrays, each of 1024 <br>bytes.  I can see what appears to be ASCII character values in the <br>sample text, plus a lot of trailing zeros.  I suspect I haven&#39;t mapped <br>the bytes in buf to Strings, so how should that be done?<br>-- <br>Ken Burgett<br>Principal Software Engineer<br>Email: kenb at iotone.io<br>Office: 530.693.4449<br>Mobile: 831.332.6846<br>URL: www.iotone.co<br>-------------- next part --------------<br>An embedded and charset-unspecified text was scrubbed...<br>Name: main.swift<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160528/82302076/attachment.ksh&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2bc666e29724cd3bdf46b6cbbe4a07bb?s=50"></div><header><strong>Simple text file I/O with Swift 3</strong> from <string>Quinn &quot;The Eskimo!&quot;</string> &lt;eskimo1 at apple.com&gt;<p>May 30, 2016 at 09:00:00am</p></header><div class="content"><p>On 28 May 2016, at 19:05, Ken Burgett via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>&gt; print(buf)<br></p><p><br>The trick here is to replace the above line with:<br></p><p>    print(String(validatingUTF8: buf))<br></p><p>`fgets` sets up `buf` to hold a C string, so you have to convert it to a Swift string.  How do you do this depends on the encoding of the bytes.  If you expect the C string to be UTF-8, then `String(validatingUTF8:)` is the way to go.<br></p><p>IMPORTANT: This conversion can fail, which is why the above will print a bunch of optional strings, and you will have to decide what to your program should do when it does.<br></p><p>                   *                   *                   *<br></p><p>btw This question came up recently.  See the thread for other suggestions about how to handle it.<br></p><p>&lt;http://article.gmane.org/gmane.comp.lang.swift.user/1943&gt;<br></p><p>Share and Enjoy<br>--<br>Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

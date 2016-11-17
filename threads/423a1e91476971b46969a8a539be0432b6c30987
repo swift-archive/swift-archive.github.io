@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>[Draft] Change @noreturn to unconstructible return type</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>June  8, 2016 at 10:00:00am</p></header><div class="content"><p>Joe Groff wrote:<br></p><p>&gt; ## Impact on existing code<br>&gt;<br>&gt; The number of `@noreturn` functions in the wild is fairly small, and all of<br>&gt; them I can find return `Void`. It should be trivial to migrate<br>&gt; existing `@noreturn` functions to use `-&gt; NoReturn`.<br></p><p>Clang allows `_Noreturn` [C11] and `__attribute__((noreturn))` [GCC] functions<br>to have a non-void return type.<br></p><p>NSApplicationMain and UIApplicationMain have an integer return type, but they<br>never return. (There might be similar functions in other libraries). If these<br>functions could add `_Noreturn` without breaking binary compatibility, should<br>SE-0102 be rejected?<br></p><p>&gt; ### Naming `NoReturn`<br>&gt;<br>&gt; The best name for the standard library uninhabited type is up for debate.<br>&gt; `NoReturn` seems to me like the name most immediately obvious to most users<br>&gt; compared to these alternatives:<br></p><p>Would an `Unreachable` type name match the SIL and Clang terms?<br></p><p>&lt;https://github.com/apple/swift/blob/master/docs/SIL.rst#unreachable&gt;<br>&lt;http://clang.llvm.org/docs/LanguageExtensions.html#builtin-unreachable&gt;<br></p><p>If empty &quot;ad hoc enums&quot; were available, you wouldn&#39;t need to choose a name!<br></p><p>&lt;http://thread.gmane.org/gmane.comp.lang.swift.evolution/19210&gt;<br></p><p>Off-topic:<br></p><p>* Could &quot;incomplete struct types&quot; also be imported as empty enums?<br>* Would the Swift.OpaquePointer then become a generic type?<br></p><p>-- Ben<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

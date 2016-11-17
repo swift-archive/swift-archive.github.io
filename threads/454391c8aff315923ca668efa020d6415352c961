@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Analysis of case conventions for initialisms</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 12, 2016 at 08:00:00am</p></header><div class="content"><p>on Fri Feb 12 2016, Jessy Catterwaul &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; I take it you&#39;d be in favor of option 2 on that page, then?<br>&gt; No. I am in favor of the convention I typed:<br>&gt; uRL<br>&gt;<br>&gt;&gt;  No convention ever suggested “uRL”, and I can&#39;t imagine anyone writing that.  <br>&gt; It may be physically impossible to imagine so, at present.<br>&gt; https://www.youtube.com/watch?v=_00qkCCuWc0&amp;feature=youtu.be&amp;t=1156<br>&gt;<br>&gt;&gt; Can you?<br>&gt; Yes. The two I use most in code are (the members are real but the types aren&#39;t): <br>&gt;<br>&gt; let uRL: URL<br>&gt; let jSON: JSON<br>&gt;<br>&gt; URL is an initialism.<br>&gt; JSON is a hybrid initialis-acrony-m.<br>&gt; What’s important is not that something is an initialism, but:<br>&gt; 1. How it is spelled outside of code<br>&gt; 2. Whether it is an instance, a type, a protocol that defines one<br>&gt; member, or a protocol that defines multiple.<br>&gt;<br>&gt; We encode the information of whether something is an instance, or a<br>&gt; type, with casing. That’s ridiculous, but at least it’s easy, if your<br>&gt; types start with English letters. To minimize cognitive load:<br>&gt;<br>&gt; 1. Make the first letter lowercase regardless of whether you abbreviate to initialisms.<br>&gt; 2. Don’t start types with lowercase letters. Of Course IThings’ names<br>&gt; get ruined. If that’s considered a problem, then we should stop using<br>&gt; casing for type/instance, and impart better information via the IDE.<br></p><p>Oh!  Sorry, I didn&#39;t realize you were actually suggesting that; I<br>thought you meant it as a misinterpretation of one of the conventions<br>listed.<br></p><p>As I mentioned to Marco, if you&#39;d like to create an amended document<br>that accounts for that one, too, I&#39;d be happy to incorporate it.<br>However, note that I&#39;ve tried pretty hard to stay away from subjective<br>factors in the analysis; it would be good if you could do the same.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

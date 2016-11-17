@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a1abe86b70e18c7e3f4025a3062d7671?s=50"></div><header><strong>Fixing some build issues on master-next</strong> from <string>Vedant Kumar</string> &lt;vsk at apple.com&gt;<p>June 27, 2016 at 10:00:00am</p></header><div class="content"><p>Hi all,<br></p><p>Just as a heads-up, I&#39;ve got most of the build errors on master-next sorted out locally.<br></p><p>If you need to push something to the branch, please wait a bit so we don&#39;t end up duplicating work. I&#39;ll ping this thread when the branch is ready.<br></p><p>thanks,<br>vedant<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a1abe86b70e18c7e3f4025a3062d7671?s=50"></div><header><strong>Fixing some build issues on master-next</strong> from <string>Vedant Kumar</string> &lt;vsk at apple.com&gt;<p>June 27, 2016 at 11:00:00am</p></header><div class="content"><p>All done :).<br></p><p>8dd7d14 [stable-merge] [swift-llvm-opt] Pass RelocModel as an Optional<br>06756d2 [stable-merge] [IRGen] Fix what appears to be a typo<br>2111897 [stable-merge] [driver] Adopt new Error/Expected API<br>1409a44 [stable-merge] Adopt new setUnnamedAddr API<br>4a7ba9c [stable-merge] [IRGen] Adopt new coverage encoding API<br></p><p>vedant<br></p><p>&gt; On Jun 27, 2016, at 10:17 AM, Vedant Kumar via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi all,<br>&gt; <br>&gt; Just as a heads-up, I&#39;ve got most of the build errors on master-next sorted out locally.<br>&gt; <br>&gt; If you need to push something to the branch, please wait a bit so we don&#39;t end up duplicating work. I&#39;ll ping this thread when the branch is ready.<br>&gt; <br>&gt; thanks,<br>&gt; vedant<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

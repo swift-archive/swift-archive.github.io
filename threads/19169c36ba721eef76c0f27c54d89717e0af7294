@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/30175d3e57b46408dbe88a226e202417?s=50"></div><header><strong>Installing Package manager</strong> from <string>Cilia Vandenameele</string> &lt;cilia at pandora.be&gt;<p>March 16, 2016 at 04:00:00pm</p></header><div class="content"><p>Hello,<br>I&#39;m trying to install your package manager on my computer (MacBook Pro, OSX El Capitan 10.11.3)<br>to use in Xcode (7.2.1). I started from the Github page (https://github.com/apple/swift-package-manager &lt;https://github.com/apple/swift-package-manager&gt;),<br>but I really don&#39;t get it installed.<br>I downloaded the Developer snapshot and then tried &quot;swift build --help&quot; in my terminal, but I got the &quot;&lt;unknown&gt;:0: error: no such file or directory: &#39;build&#39;&quot; error.<br>I&#39;ve tried restarting Xcode, restarting my computer, deleting it and downloading it again, but no luck.<br>I&#39;ve searched the internet for answers, but find none. I get the feeling I&#39;m forgetting something important, or maybe I forgot an important step in the process? I really don&#39;t know, and I need this Package Manager to use in an tvOs project. Could you help me?<br></p><p>Greetings,<br>Cilia<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160316/19167294/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>Installing Package manager</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>March 16, 2016 at 11:00:00am</p></header><div class="content"><p>The swift in /usr/bin does not know about the swift toolchain you have installed.<br></p><p>You need to add the swift from the /usr/bin in your toolchain to the PATH first.<br></p><p>Once Xcode 7.3 lands you’ll be able to set TOOLCHAINS=swift as an environment variable and then you won’t need to set the PATH. <br></p><p><br>&gt; Hello,<br>&gt; I&#39;m trying to install your package manager on my computer (MacBook Pro, OSX El Capitan 10.11.3)<br>&gt; to use in Xcode (7.2.1). I started from the Github page (https://github.com/apple/swift-package-manager &lt;https://github.com/apple/swift-package-manager&gt;),<br>&gt; but I really don&#39;t get it installed.<br>&gt; I downloaded the Developer snapshot and then tried &quot;swift build --help&quot; in my terminal, but I got the &quot;&lt;unknown&gt;:0: error: no such file or directory: &#39;build&#39;&quot; error.<br>&gt; I&#39;ve tried restarting Xcode, restarting my computer, deleting it and downloading it again, but no luck.<br>&gt; I&#39;ve searched the internet for answers, but find none. I get the feeling I&#39;m forgetting something important, or maybe I forgot an important step in the process? I really don&#39;t know, and I need this Package Manager to use in an tvOs project. Could you help me?<br>&gt; <br>&gt; Greetings,<br>&gt; Cilia<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160316/a70e0bf4/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

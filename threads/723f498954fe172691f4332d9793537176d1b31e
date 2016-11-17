@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/46439321e8b5b5ba0944eef50e18c3a3?s=50"></div><header><strong>how to create an array by adding/removing from another array?</strong> from <string>Jean-Denis Muys</string> &lt;jdmuys at gmail.com&gt;<p>August 24, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>Using Swift 3, I am in a situation where I need to construct an output array step by step by picking (and possibly modifying) some item from an input array (“consuming” that item, i.e. removing it from the input array).<br></p><p>That very easy to do by mutating “var” variables, using the append() and remove(at:) methods.<br></p><p>However I was wondering if it was possible (preferable?) to do it in a more “functional” style. I was not able to find non-mutating variations of append and remove, which might have looked like:<br></p><p>let myNewArray =  existingArray.newArrayByAppending(element: someValue)<br>let myOtherNewArray =  existingArray.newArrayByRemovingElement(At: someIndex)<br></p><p>(method names intentionally chosen to be exceedingly verbose)<br></p><p>Did I miss something?<br>What would have been the best way to find the answer to such question on my own?<br></p><p>I tried using Dash (with the Swift 3 docSet), and the Xcode 8 beta 6 documentation window (in addition to several attempts using auto-complete).<br></p><p>What is the most idiomatic way to accomplish this simple thing?<br></p><p>Thanks,<br></p><p>Jean-Denis<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>how to create an array by adding/removing from another array?</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>August 24, 2016 at 08:00:00am</p></header><div class="content"><p>&gt; On Aug 24, 2016, at 7:07 AM, Jean-Denis Muys via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; However I was wondering if it was possible (preferable?) to do it in a more “functional” style.<br></p><p>Apple’s Foundation framework has Array.arrayByAddingObject (but not ByRemoving).<br></p><p>However, this would not be preferable (at least in performance) due to all the copying. Performance of appending n items would be O(n^2), for instance, vs. O(n) for appending in-place.<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160824/235d4dc0/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

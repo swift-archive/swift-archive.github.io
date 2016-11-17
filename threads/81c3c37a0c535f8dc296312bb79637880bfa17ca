@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8ae34e6aaf28c0e1fe929f36897d107e?s=50"></div><header><strong>CMake errors</strong> from <string>Harlan Haskins</string> &lt;harlan at harlanhaskins.com&gt;<p>December  9, 2015 at 12:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I can’t seem to get swift to build using cmake. When I run build-script -t, it exits prematurely with:<br></p><p>CMake Error: Error: generator : Ninja<br>Does not match the generator used previously: Unix Makefiles<br>Either remove the CMakeCache.txt file and CMakeFiles directory or choose a different binary directory.<br>utils/build-script: command terminated with a non-zero exit status 1, aborting<br></p><p>I’m using CMake from the binary distribution and a bootstrapped Ninja, but I get the same errors with CMake and Ninja from Homebrew.<br></p><p>Thanks,<br>Harlan Haskins <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151209/81c317ca/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

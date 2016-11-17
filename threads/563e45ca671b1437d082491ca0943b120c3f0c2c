@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a49c2b8a7e2ffa1339ac013f4cf9b6ff?s=50"></div><header><strong>Expression pattern cannot be a named tuple constant</strong> from <string>Neil Faiman</string> &lt;neil.swift at faiman.org&gt;<p>June 11, 2016 at 07:00:00pm</p></header><div class="content"><p>Swift 2.2 in Xcode 7.3.1.<br></p><p>Apparently you cannot use a named tuple constant as an expression pattern in a case label.<br></p><p>func test(x: Int, y: Int) -&gt; Int {<br>    let int_1 = 1<br>    switch x {<br>    case 0:<br>        return 0<br>    case int_1:<br>        return 1<br>    default:<br>        break<br>    }<br></p><p>    let int_1_1: (Int, Int) = (1, 1)<br>    switch (x, y) {<br>    case (0, 0):<br>        return 0<br>    case int_1_1:	// &lt;&lt;&lt;&lt;<br>        return 1<br>    default:<br>        return -1<br>    }<br>}<br></p><p>error: expression pattern of type &#39;(Int, Int)&#39; cannot match values of type &#39;(Int, Int)&#39;<br>    case int_1_1:<br>         ^~~~~~~<br></p><p>The error message is particularly amusing.<br></p><p>	- Neil Faiman<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

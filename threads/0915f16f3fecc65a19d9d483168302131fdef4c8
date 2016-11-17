@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0101: Reconfiguring sizeof and related functions into a unified MemoryLayout struct</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July 20, 2016 at 05:00:00pm</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0101-standardizing-sizeof-naming.md<br></p><p>The second review of &quot;SE-0101: Reconfiguring sizeof and related functions into a unified MemoryLayout struct&quot; ran from Active review July 12...19. The proposal has been *accepted*, with a revision to change “MemoryLayout” into an enum with no cases.  The overall feedback was very positive.  The core team did discuss a proposal to move the generic type to each member, but felt that that would increase the verbosity of using the API (since T.self would be required) and would lead to possible confusion in the API (because it wouldn’t be clear whether you were asking for the size of a type, or the size of its metatype).<br></p><p>Thank you to Erica Sadun and Dave Abrahams for driving this discussion forward.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

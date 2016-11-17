@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6c773f4d8ad47751cad54feadc0f68e9?s=50"></div><header><strong>EXT: Re: Swift to Javascript</strong> from <string>GE Power)</string> &lt;cavelle.benjamin at ge.com (Benjamin, Cavelle&gt;<p>June 22, 2016 at 02:00:00pm</p></header><div class="content"><p>Looks like a few folks have done it<br></p><p>http://www.shiftjs.com/#/home<br></p><p><br></p><p><br>Cheers,<br>-CB<br>cavelle at thecb4.io<br></p><p><br></p><p><br></p><p>On 16 /6 /22, 09:55, &quot;swift-users-bounces at swift.org on behalf of Maury<br>Markowitz via swift-users&quot; &lt;swift-users-bounces at swift.org on behalf of<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jun 22, 2016, at 12:44 AM, Mr Bee via swift-users<br>&gt;&gt;&lt;swift-users at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hi all, <br>&gt;&gt; <br>&gt;&gt; I wish I will be able write web app using Swift instead of JavaScript.<br>&gt;&gt;It would be wonderfull if we could develop desktop app, mobile app,<br>&gt;&gt;server-side app, and web app, all using Swift. It will be complete.<br>&gt;<br>&gt;Like this?<br>&gt;<br>&gt;https://urldefense.proofpoint.com/v2/url?u=http-3A__perfect.org&amp;d=CwIGaQ&amp;c<br>&gt;=IV_clAzoPDE253xZdHuilRgztyh_RiV3wUrLrDQYWSI&amp;r=FeZVJDXome_wfn75YinX6NqzkK8<br>&gt;2IbnES9ocZBB_QLA&amp;m=AFvS4J3WeIy-sTGCZ4qfSlpzuLTl9iV4gU-8m_7YA3s&amp;s=u84ODF2E6<br>&gt;Psfqyy_8kx3eP9oHAqfWwxTHp4NI65aVBc&amp;e=<br>&gt;https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_IBM-2DSwif<br>&gt;t_Kitura&amp;d=CwIGaQ&amp;c=IV_clAzoPDE253xZdHuilRgztyh_RiV3wUrLrDQYWSI&amp;r=FeZVJDXo<br>&gt;me_wfn75YinX6NqzkK82IbnES9ocZBB_QLA&amp;m=AFvS4J3WeIy-sTGCZ4qfSlpzuLTl9iV4gU-8<br>&gt;m_7YA3s&amp;s=ekeT6Ps2flCSL9CaLpquJZKv63ZJe-i_msNmbKgua7o&amp;e=<br>&gt;https://urldefense.proofpoint.com/v2/url?u=https-3A__realm.io_news_swift-2<br>&gt;Dsummit-2Djorge-2Dizquierdo-2Dtaylor-2Dhttp-2Dserver-2Dlibrary_&amp;d=CwIGaQ&amp;c<br>&gt;=IV_clAzoPDE253xZdHuilRgztyh_RiV3wUrLrDQYWSI&amp;r=FeZVJDXome_wfn75YinX6NqzkK8<br>&gt;2IbnES9ocZBB_QLA&amp;m=AFvS4J3WeIy-sTGCZ4qfSlpzuLTl9iV4gU-8m_7YA3s&amp;s=EfEA5WEu4<br>&gt;CkUejj5fVbEKLGeF17Vb_KNBIpAFGJMN5o&amp;e=<br>&gt;<br>&gt;_______________________________________________<br>&gt;swift-users mailing list<br>&gt;swift-users at swift.org<br>&gt;https://urldefense.proofpoint.com/v2/url?u=https-3A__lists.swift.org_mailm<br>&gt;an_listinfo_swift-2Dusers&amp;d=CwIGaQ&amp;c=IV_clAzoPDE253xZdHuilRgztyh_RiV3wUrLr<br>&gt;DQYWSI&amp;r=FeZVJDXome_wfn75YinX6NqzkK82IbnES9ocZBB_QLA&amp;m=AFvS4J3WeIy-sTGCZ4q<br>&gt;fSlpzuLTl9iV4gU-8m_7YA3s&amp;s=RNC2UhtHziktGlQzL_2DnVwfTrUixDHXMkIH5Frxjbo&amp;e=<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

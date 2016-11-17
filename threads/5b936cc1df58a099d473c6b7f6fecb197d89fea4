@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>Proposed changes to SE-0033 Import Objective-C Constants as Swift Types</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>June  7, 2016 at 02:00:00am</p></header><div class="content"><p>Michael Ilseman wrote:<br></p><p>&gt; The biggest issue with the proposal as written is with importing a typedef<br>&gt; as an enum. Enums do not allow us to control the underlying storage,<br>&gt; and thus we would constantly be paying a bridging cost in its use.<br>&gt; [...]<br>&gt; The second issue concerns importing bridged typedefs, e.g. NSString.<br>&gt; In that case, we want the underlying storage to be NSString,<br>&gt; but present it as a String to the users.<br></p><p>Could you import __attribute__((swift_wrapper(enum)) constants as follows:<br></p><p>public enum HKQuantityTypeIdentifier : String {<br>    case bodyMassIndex<br>    case bodyFatPercentage<br>    case height<br>    case bodyMass<br>    case leanBodyMass<br></p><p>    private static let _bodyMassIndex:     NSString<br>    private static let _bodyFatPercentage: NSString<br>    private static let _height:            NSString<br>    private static let _bodyMass:          NSString<br>    private static let _leanBodyMass:      NSString<br>}<br></p><p>-- Ben<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

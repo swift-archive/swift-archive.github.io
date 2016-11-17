@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/08da14be4096399c65ff2a8d866fe039?s=50"></div><header><strong>[Proposal] Property behaviors</strong> from <string>Seán Labastille</string> &lt;sean+swift-evolution at lsr.li&gt;<p>January 18, 2016 at 11:00:00pm</p></header><div class="content"><p>@Curt<br></p><p>I apologise for the poorly formatted response as I currently receive the list in digest (a mistake I have learned).<br></p><p>Your use case may be addressed by the __FUNCTION__ literal expression which could be defined as the property’s name when within a behaviour?<br>This has previously proven useful when defining associated objects, for example: (sel_getName(Selector(__FUNCTION__)))<br></p><p>Regards,<br></p><p>Seán<br></p><p>&gt; It would be very handy to have access to the property&#39;s name inside the behavior. As proposed, we have Self and self for referring to the type and instance of the container and newValue for referring to the new value in the core getter. A predefined local variable &quot;name&quot; of type String, bound to the name of the decorated property, would be handy for implementing things like Brent&#39;s backedByJSON behavior:<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

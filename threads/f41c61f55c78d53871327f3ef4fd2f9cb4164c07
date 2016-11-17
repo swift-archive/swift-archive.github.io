@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Accepted] SE-0008: Add a Lazy flatMap for Sequences of Optionals</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>December 23, 2015 at 03:00:00pm</p></header><div class="content"><p>The review of SE-0008 &quot;Add a Lazy flatMap for Sequences of Optionals&quot; ran from December 15–17, 2015. The proposal has been accepted for Swift 2.2.<br></p><p>	https://github.com/apple/swift-evolution/blob/master/proposals/0008-lazy-flatmap-for-optionals.md<br></p><p>Thank you to everyone who participated in the review process! We welcome an implementation of this proposal, which is tracked by<br></p><p>	https://bugs.swift.org/browse/SR-361<br></p><p>	- Doug<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20151223/f41c4c07/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>[Accepted] SE-0008: Add a Lazy flatMap for Sequences of Optionals</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>December 23, 2015 at 05:00:00pm</p></header><div class="content"><p>Congrats Oisin!!<br></p><p>-- E<br></p><p>&gt; On Dec 23, 2015, at 4:42 PM, Douglas Gregor via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; The review of SE-0008 &quot;Add a Lazy flatMap for Sequences of Optionals&quot; ran from December 15–17, 2015. The proposal has been accepted for Swift 2.2.<br>&gt; <br>&gt; 	https://github.com/apple/swift-evolution/blob/master/proposals/0008-lazy-flatmap-for-optionals.md &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0008-lazy-flatmap-for-optionals.md&gt;<br>&gt; <br>&gt; Thank you to everyone who participated in the review process! We welcome an implementation of this proposal, which is tracked by<br>&gt; <br>&gt; 	https://bugs.swift.org/browse/SR-361 &lt;https://bugs.swift.org/browse/SR-361&gt;<br>&gt; <br>&gt; 	- Doug<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151223/3506bde0/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d4fb9162c777a5d6d0b1fb00893d709?s=50"></div><header><strong>[Pre-proposal/Question] Exposing the Unboxing Capabilities of AnyIndex (and similar types)</strong> from <string>Haravikk</string> &lt;swift-evolution at haravikk.me&gt;<p>June  8, 2016 at 04:00:00pm</p></header><div class="content"><p>So I’m working on a kind of collection wrapper, and hoping to avoid having to expose the underlying type of the collection, by instead returning indices of AnyIndex. This works fine in one direction, but when it comes time to actually use these I have no means of unwrapping them into their original form, this has forced me to basically reimplement AnyIndex myself which seems like a lot of duplicated code.<br></p><p>For those that haven’t looked at the AnyIndex or similar implementation, there are two methods, _unbox() and _unsafeUnbox(), providing access to the underlying type, but these are only exposed internally, so aren’t usable outside of the guts of stdlib.<br></p><p>What I’m wondering is whether there are any strong reasons against exposing these publicly? It could make implementing many wrapper types a lot easier. I know the point of AnyIndex and similar is type-erasure, but with the new collection model we no longer call any methods of the type-erased wrappers themselves, but instead have to pass them around; without unboxing it’s essentially impossible for AnyIndex to be reused for new types, which kind of restricts them to stdlib only. This basically means that AnyIndex is really just a stdlib internal type for implementing the stdlib provided wrapping types, if we want to implement our own we have to create our own AnyFooIndex, which I’m not sure are as efficient (as stdlib also has access to a few other hidden methods for doing this).<br></p><p>If I could just unbox AnyIndex then I could reuse it, rather than reinventing the wheel as it were.<br></p><p><br>This may apply to other stdlib provided wrappers, but AnyIndex is the one that has stood out for me, as it seems like there’s no real purpose to me being able to wrap values as AnyIndex since there’s very little I can do with them, due to all the useful methods being internal only.<br></p><p>To clarify a bit, if we could unbox AnyIndex we could do something like the following (many methods omitted for brevity):<br></p><p>	struct AnyIndex : Comparable {<br>		func unbox&lt;T:Comparable&gt;() -&gt; T?<br>		func unsafeUnbox&lt;T:Comparable&gt;() -&gt; T<br>	}<br></p><p>	class MyCollectionBox&lt;Base:Collection&gt; : MyCollectionBoxBase&lt;Base.Iterator.Element&gt; {<br>		let base:Base; init(_ base:Base) { self.base = base }<br></p><p>		var startIndex:AnyIndex { return AnyIndex(base.startIndex) }<br>		subscript(index:Index) -&gt; Iterator.Element { return index.unsafeUnbox() } // method not available<br>		…<br>	}<br></p><p>Unless of course I’m doing it completely wrong for Swift 3, which is entirely possible. Anyway, I was hoping to discuss it, so a proposal can be considered to exposed unboxing methods for AnyIndex (and any other types people think should have these abilities).<br></p><p>I realise that perhaps there is a concern that unboxing could be misused, but I can’t really think of cases where you would try to, since values such as these are only useful when passed back to the type they came from, if you can think of a case where unboxing would be misused then feel free to share it!<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160608/de4c453b/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>gyb template for ZipSequence</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>November  9, 2016 at 09:00:00pm</p></header><div class="content"><p>on Wed Nov 09 2016, Alexander Momchilov &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; This stack overflow question<br>&gt; &lt;http://stackoverflow.com/q/40517760/3141234&gt; asks about using zip<br>&gt; with more than 3 sequences. I referred the OP to the generics<br>&gt; manifesto<br>&gt; &lt;https://github.com/apple/swift/blob/master/docs/GenericsManifesto.md#variadic-generics&gt;,<br>&gt; which describes the (current) lack of varadiac generics, which<br>&gt; prohibits the ability to express (in pure Swift) the ability to write<br>&gt; ZipSequence for an arbitrary number of sequences.<br>&gt;<br>&gt; I wrote up a (rough) gyb template for creating<br>&gt; ZipSequences. &lt;https://github.com/amomchilov/ZipNsequence/blob/master/ZipNSequence.swift.gyb&gt;<br>&gt; Is there any interest in adding something like this to the stdlib?<br></p><p>Yes, it&#39;s always been part of the (eventual) plan, so it&#39;s cool to see.<br>It&#39;s out of scope for phase 1 of the Swift 4 planning work, but when<br>phase 2 comes along you should submit a proposal!<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4bec62b7bae8a30100a5599916ab3dba?s=50"></div><header><strong>gyb template for ZipSequence</strong> from <string>Ben Cohen</string> &lt;ben_cohen at apple.com&gt;<p>November 10, 2016 at 07:00:00pm</p></header><div class="content"><p>It might be worth noting that, in the meantime, you can nest zips as a workaround without having to define zip for n-tuples:<br></p><p>let integers = [1, 2, 3, 4, 5]<br>let strings = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;]<br>let doubles = [1.0, 2.0, 3.0, 4.0, 5.0]<br></p><p>for (integer, (string, double)) in zip(integers, zip(strings, doubles)) {<br>    print(&quot;\(integer) \(string) \(double)&quot;)<br>}<br></p><p>&gt; On Nov 9, 2016, at 9:29 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Wed Nov 09 2016, Alexander Momchilov &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; This stack overflow question<br>&gt;&gt; &lt;http://stackoverflow.com/q/40517760/3141234&gt; asks about using zip<br>&gt;&gt; with more than 3 sequences. I referred the OP to the generics<br>&gt;&gt; manifesto<br>&gt;&gt; &lt;https://github.com/apple/swift/blob/master/docs/GenericsManifesto.md#variadic-generics&gt;,<br>&gt;&gt; which describes the (current) lack of varadiac generics, which<br>&gt;&gt; prohibits the ability to express (in pure Swift) the ability to write<br>&gt;&gt; ZipSequence for an arbitrary number of sequences.<br>&gt;&gt; <br>&gt;&gt; I wrote up a (rough) gyb template for creating<br>&gt;&gt; ZipSequences. &lt;https://github.com/amomchilov/ZipNsequence/blob/master/ZipNSequence.swift.gyb&gt;<br>&gt;&gt; Is there any interest in adding something like this to the stdlib?<br>&gt; <br>&gt; Yes, it&#39;s always been part of the (eventual) plan, so it&#39;s cool to see.<br>&gt; It&#39;s out of scope for phase 1 of the Swift 4 planning work, but when<br>&gt; phase 2 comes along you should submit a proposal!<br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161110/5b568403/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

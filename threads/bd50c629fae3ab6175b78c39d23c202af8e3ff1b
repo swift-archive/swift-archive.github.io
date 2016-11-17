@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Improving operator requirements in protocols</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May  2, 2016 at 01:00:00pm</p></header><div class="content"><p>on Mon May 02 2016, Tony Allevato &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Acknowledgments<br>&gt;<br>&gt; Thanks to Chris Lattner and Dave Abrahams for contributing to the early<br>&gt; discussions, particularly regarding the need to improve type checker performance<br>&gt; by genericizing protocol-based operators.<br></p><p>FWIW, I think you have omitted an important (maybe even the main)<br>argument for this arrangement, which is not type checker performance but<br>improved user experience by getting piles of overloads out of the global<br>namespace.<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e910871dda004717de19e83626308b5a?s=50"></div><header><strong>[Proposal] Improving operator requirements in protocols</strong> from <string>Tony Allevato</string> &lt;allevato at google.com&gt;<p>May  2, 2016 at 08:00:00pm</p></header><div class="content"><p>On Mon, May 2, 2016 at 1:30 PM Dave Abrahams via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; on Mon May 02 2016, Tony Allevato &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; &gt; Acknowledgments<br>&gt; &gt;<br>&gt; &gt; Thanks to Chris Lattner and Dave Abrahams for contributing to the early<br>&gt; &gt; discussions, particularly regarding the need to improve type checker<br>&gt; performance<br>&gt; &gt; by genericizing protocol-based operators.<br>&gt;<br>&gt; FWIW, I think you have omitted an important (maybe even the main)<br>&gt; argument for this arrangement, which is not type checker performance but<br>&gt; improved user experience by getting piles of overloads out of the global<br>&gt; namespace.<br></p><p><br>I suppose I was treating that as a side effect of the type checking<br>improvements (piles of overloads removed == faster type checking), but I<br>can update the proposal to call it out more specifically.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160502/fce50c79/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

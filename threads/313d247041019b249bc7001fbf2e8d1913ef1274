@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/89e9af7c5754673419c8fac930319700?s=50"></div><header><strong>[Idea] #suppress(warning-identifier)</strong> from <string>Russ Bishop</string> &lt;xenadu at gmail.com&gt;<p>March  8, 2016 at 10:00:00am</p></header><div class="content"><p>There are cases where I’d like to suppress a Swift compiler warning. Is there opposition to that idea from the core team or is it just something that hasn’t been looked at yet? (Forgive me if such a thing already exists and I just missed it)<br></p><p><br>My initial idea pre-bikeshedding:<br></p><p>#suppress(warning-identifier)<br>//some code<br>#unsuppress(warning-identifier)<br></p><p><br>The most common one I encounter is the trailing-closure syntax warning which can only be fixed by redesigning the API itself. I’ve also had to silence incorrect cast warnings (that are actually correct and execute just fine) by casting to Any first which is somewhat gross.<br></p><p><br>Russ<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06e1007412a9c7c2dc41297c9cf99a5d?s=50"></div><header><strong>[Idea] #suppress(warning-identifier)</strong> from <string>Shawn Erickson</string> &lt;shawnce at gmail.com&gt;<p>March  8, 2016 at 10:00:00pm</p></header><div class="content"><p>I would prefer something like...<br></p><p>    #warn(no-warning-identifier)<br>    ...<br>    #warn(warning-identifier)<br></p><p>..to keep the warning identifier behavior the same in code and on the<br>command line.<br></p><p>The ability to push and pop warning modifications (set of) could also make<br>sense.<br></p><p><br>On Tue, Mar 8, 2016 at 10:31 AM Russ Bishop via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; There are cases where I’d like to suppress a Swift compiler warning. Is<br>&gt; there opposition to that idea from the core team or is it just something<br>&gt; that hasn’t been looked at yet? (Forgive me if such a thing already exists<br>&gt; and I just missed it)<br>&gt;<br>&gt;<br>&gt; My initial idea pre-bikeshedding:<br>&gt;<br>&gt; #suppress(warning-identifier)<br>&gt; //some code<br>&gt; #unsuppress(warning-identifier)<br>&gt;<br>&gt;<br>&gt; The most common one I encounter is the trailing-closure syntax warning<br>&gt; which can only be fixed by redesigning the API itself. I’ve also had to<br>&gt; silence incorrect cast warnings (that are actually correct and execute just<br>&gt; fine) by casting to Any first which is somewhat gross.<br>&gt;<br>&gt;<br>&gt; Russ<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160308/439467a5/attachment-0001.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

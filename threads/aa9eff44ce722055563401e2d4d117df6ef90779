@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ef9cdd6c7cc98e3693729c8987973f95?s=50"></div><header><strong>Overriding computed properties with let constants?</strong> from <string>Roman Zhikharevich</string> &lt;rzhikharevich at icloud.com&gt;<p>April 23, 2016 at 02:00:00pm</p></header><div class="content"><p>I think, it could be a good idea to make computed properties overridable with let constants.<br></p><p>Something like this:<br></p><p>class Parent {<br>    var x: Int {<br>        let x = 42<br>        /*<br>         * Compute x...<br>         */<br>        return x<br>    }<br>}<br></p><p>class Child: Parent {<br>    /*<br>     * Sometimes you need to override computed properties with simple constants.<br>     * This is currently done like this.<br>     */<br>    //override var x: Int {return 7}<br>    <br>    /*<br>     * But this looks neater.<br>     * Currently this gives &quot;error: cannot override with a stored property &#39;x&#39;&quot;.<br>     */<br>    override let x = 7<br>}<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160423/aa9e0779/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

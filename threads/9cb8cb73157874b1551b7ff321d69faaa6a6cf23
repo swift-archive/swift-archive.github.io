@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9bfba345bd373f7b8874d58fed6372ff?s=50"></div><header><strong>Language Specification on Github?</strong> from <string>David Waite</string> &lt;david at alkaline-solutions.com&gt;<p>December  4, 2015 at 09:00:00am</p></header><div class="content"><p>Is there a possibility of the swift books (at least the core language and a html build process ) being turned into projects on github? I do have changes/fixes which I would suggest against the books if there was a process to do so - and humbly suggest that process mirror the rest of the project.<br></p><p>-DW<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: smime.p7s<br>Type: application/pkcs7-signature<br>Size: 4139 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151204/9cb8cf23/attachment.p7s&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Language Specification on Github?</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>December  5, 2015 at 09:00:00pm</p></header><div class="content"><p>&gt; On Dec 4, 2015, at 8:23 AM, David Waite &lt;david at alkaline-solutions.com&gt; wrote:<br>&gt; <br>&gt; Is there a possibility of the swift books (at least the core language and a html build process ) being turned into projects on github? I do have changes/fixes which I would suggest against the books if there was a process to do so - and humbly suggest that process mirror the rest of the project.<br></p><p>Hi David,<br></p><p>Are you referring to TSPL (https://swift.org/documentation/)?<br></p><p>Unfortunately, the input format for the book is non-standard and requires a bunch of internal infrastructure to master the book.  The Apple developer publications team is interested in fixing this at some point, but doesn’t have a timeline and has some other higher priority tasks.  In the meantime, I’d suggest filing radars against bugreporter.apple.com with suggested change.  It certainly isn’t an ideal process, but it is at least one that will work for now.<br></p><p>-Chris<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

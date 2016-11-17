@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3fb6d812724261c1ab041db0d41baebc?s=50"></div><header><strong>swift3 - Trying to get swift package example to work - Stack Overflow</strong> from <string>Dave Yost</string> &lt;Dave at Yost.com&gt;<p>November 11, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; http://stackoverflow.com/questions/40557767/trying-to-get-swift-package-example-to-work &lt;http://stackoverflow.com/questions/40557767/trying-to-get-swift-package-example-to-work&gt;<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161111/240401f2/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>swift3 - Trying to get swift package example to work - Stack Overflow</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>November 11, 2016 at 10:00:00pm</p></header><div class="content"><p>Hey Dave,<br></p><p>Thanks for pointing this out, we will take a look.<br></p><p> - Daniel<br></p><p>&gt; On Nov 11, 2016, at 3:35 PM, Dave Yost via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; http://stackoverflow.com/questions/40557767/trying-to-get-swift-package-example-to-work &lt;http://stackoverflow.com/questions/40557767/trying-to-get-swift-package-example-to-work&gt;<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161111/34053a63/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17f3e4010ef1b1ed65d4926cbb191b2f?s=50"></div><header><strong>Swift 3 and bytes</strong> from <string>Gerriet M. Denkmann</string> &lt;g at mdenkmann.de&gt;<p>September 25, 2016 at 06:00:00pm</p></header><div class="content"><p>Got:<br>var bitField : UnsafeMutablePointer&lt;UInt32&gt;  <br>bitField = UnsafeMutablePointer&lt; UInt32 &gt;.allocate(capacity: 912)<br></p><p>But now I want to read a certain range as bytes (not as UInt32);<br></p><p>let staP = bitField + 23<br>let endP = bitField + 99<br></p><p>let staB = UnsafeMutablePointer&lt;UInt8&gt;(staP)	← this does not work in Swift 3<br>let endB = UnsafeMutablePointer&lt;UInt8&gt;(endP)<br></p><p>let result = someFunction( from: staB, until: endB ) // does something for bytes staB ..&lt; endB<br></p><p>Xcode hints about “withMemoryRebound”, but I cannot figure out the correct syntax.<br></p><p>Gerriet<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d042be5dcfe90e649f760303af3e429?s=50"></div><header><strong>Swift 3 and bytes</strong> from <string>Jens Persson</string> &lt;jens at bitcycle.com&gt;<p>September 25, 2016 at 09:00:00pm</p></header><div class="content"><p>Use UnsafeMutableRawPointer.<br></p><p>On Sun, Sep 25, 2016 at 1:28 PM, Gerriet M. Denkmann via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Got:<br>&gt; var bitField : UnsafeMutablePointer&lt;UInt32&gt;<br>&gt; bitField = UnsafeMutablePointer&lt; UInt32 &gt;.allocate(capacity: 912)<br>&gt;<br>&gt; But now I want to read a certain range as bytes (not as UInt32);<br>&gt;<br>&gt; let staP = bitField + 23<br>&gt; let endP = bitField + 99<br>&gt;<br>&gt; let staB = UnsafeMutablePointer&lt;UInt8&gt;(staP)    ← this does not work in<br>&gt; Swift 3<br>&gt; let endB = UnsafeMutablePointer&lt;UInt8&gt;(endP)<br>&gt;<br>&gt; let result = someFunction( from: staB, until: endB ) // does something for<br>&gt; bytes staB ..&lt; endB<br>&gt;<br>&gt; Xcode hints about “withMemoryRebound”, but I cannot figure out the correct<br>&gt; syntax.<br>&gt;<br>&gt; Gerriet<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160925/7f93905d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

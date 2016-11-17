@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/674fead3bfff884c72fa02c35d68f258?s=50"></div><header><strong>Unable to do unnamed binding in swift</strong> from <string>James Campbell</string> &lt;james at supmenow.com&gt;<p>February  8, 2016 at 11:00:00am</p></header><div class="content"><p>In Swift 2.1 its possible to do the following:<br></p><p>if let _ = userInfo[&quot;msgIdenitifer&quot;] where application.applicationState == .<br>Active {<br></p><p>//Do something<br></p><p> }<br></p><p><br>But not:<br></p><p><br>switch(userInfo)<br></p><p>{<br></p><p>case let _ = userInfo[&quot;msgIdenitifer&quot;] where application.applicationState<br>== .Active:<br></p><p>//do something<br></p><p>break<br></p><p>}<br></p><p>*___________________________________*<br></p><p>*James⎥Lead Engineer*<br></p><p>*james at supmenow.com &lt;james at supmenow.com&gt;⎥supmenow.com &lt;http://supmenow.com&gt;*<br></p><p>*Sup*<br></p><p>*Runway East *<br></p><p>*10 Finsbury Square*<br></p><p>*London*<br></p><p>* EC2A 1AF *<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160208/468e7411/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d30e546d655d1c7ece0464791a9a90d5?s=50"></div><header><strong>Unable to do unnamed binding in swift</strong> from <string>Adrian Kashivskyy</string> &lt;adrian.kashivskyy at me.com&gt;<p>February  8, 2016 at 12:00:00pm</p></header><div class="content"><p>How can you switch a dictionary?<br></p><p>Regards,<br>Adrian Kashivskyy<br>Senior iOS Developer at Netguru<br></p><p>&gt; Wiadomość napisana przez James Campbell via swift-evolution &lt;swift-evolution at swift.org&gt; w dniu 08.02.2016, o godz. 12:01:<br>&gt; <br>&gt; In Swift 2.1 its possible to do the following:<br>&gt; <br>&gt; if let _ = userInfo[&quot;msgIdenitifer&quot;] where application.applicationState == .Active {<br>&gt; <br>&gt; //Do something<br>&gt; <br>&gt;  }<br>&gt; <br>&gt; <br>&gt; <br>&gt; But not:<br>&gt; <br>&gt; <br>&gt; <br>&gt; switch(userInfo)<br>&gt; <br>&gt; {<br>&gt; <br>&gt; case let _ = userInfo[&quot;msgIdenitifer&quot;] where application.applicationState == .Active:<br>&gt; <br>&gt; //do something<br>&gt; <br>&gt; break<br>&gt; <br>&gt; }<br>&gt; <br>&gt; ___________________________________<br>&gt; <br>&gt; James⎥Lead Engineer<br>&gt; <br>&gt; james at supmenow.com &lt;mailto:james at supmenow.com&gt;⎥supmenow.com &lt;http://supmenow.com/&gt;<br>&gt; Sup<br>&gt; <br>&gt; Runway East &gt; <br>&gt; <br>&gt; 10 Finsbury Square<br>&gt; <br>&gt; London<br>&gt; <br>&gt;  &gt; EC2A 1AF <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160208/c4895cd4/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

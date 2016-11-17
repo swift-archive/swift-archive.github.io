@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0065 A New Model for Collections and Indices</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 13, 2016 at 03:00:00pm</p></header><div class="content"><p>on Wed Apr 13 2016, Tony Parker &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Apr 13, 2016, at 12:57 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Wed Apr 13 2016, Dave Abrahams &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;<br>&gt;&gt;&gt;&gt; Reverse is the best opposite we have of advance, so it makes sense to<br>&gt;&gt;&gt;&gt; me. <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Oh, I get it.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Or we could use retreat. =) There are other pairs of words that work<br>&gt;&gt;&gt;&gt; as well, like “increment/decrement”. <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Yeah, unfortunately those carry an incorrect implication when the<br>&gt;&gt;&gt; indices are numbers, because, e.g. the collection might be offsetting<br>&gt;&gt;&gt; the number by 2 for each position.  One could of course argue that using<br>&gt;&gt;&gt; numbers that way as indices was a bad design choice.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I&#39;ll have to think about that idea again.  We considered and rejected it<br>&gt;&gt;&gt; for a reason, but it might not be a really strong one.  Thanks for<br>&gt;&gt;&gt; bringing it up.<br>&gt;&gt; <br>&gt;&gt; ...and having talked it over at lunch, now I remember why we rejected<br>&gt;&gt; it: there&#39;s no good way to make a nonmutating version.<br>&gt;&gt; <br>&gt;&gt;  let x = c.incremented(i)   // reads like an assertion about the past<br>&gt;&gt;  let y = c.incrementing(i)  // reads like it has side-effects and returns c, or<br>&gt;&gt;                             // a new version of c<br>&gt;&gt; <br>&gt;<br>&gt; In fact, it does return a new version* of c; just like this:<br>&gt;<br>&gt; let s2 = myString.appending(“foo”)<br>&gt;<br>&gt; *new version: the result is related to the argument<br></p><p>Uhh, that is *really* stretching the concept of “new version.”  By that<br>logic, every method that returns non-void is returning a new version of<br>the receiver.<br></p><p>&gt;<br>&gt;<br>&gt; This works out great:<br>&gt;<br>&gt; let next = c.incrementing(first)<br>&gt; c.increment(&amp;next)<br></p><p>It only works great if we give up the idea that there&#39;s supposed to be<br>some correspondence between how adding “ing” affects meaning in English<br>and how it affects meaning in our APIs.  If I say to you, “give me your<br>coat, emptying the pockets,” I expect to get a modified version of your<br>coat, not of what&#39;s in the pocket.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

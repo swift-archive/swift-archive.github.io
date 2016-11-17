@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Add `mapValues` method to Dictionary</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May 22, 2016 at 12:00:00pm</p></header><div class="content"><p>on Sat May 21 2016, Honza Dvorsky &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hi Brent,<br>&gt;<br>&gt; thanks, I should have caught that, unfortunately I don&#39;t know of a<br>&gt; nice way to search the mailing list, other than searching your own<br>&gt; inbox, which doesn&#39;t include messages from the time you weren&#39;t<br>&gt; subscribed - how do you do it?<br></p><p>Try the search box at the bottom of<br>http://news.gmane.org/gmane.comp.lang.swift.evolution<br></p><p>HTH,<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc38aef146f886571b3c445851add884?s=50"></div><header><strong>[Pitch] Add `mapValues` method to Dictionary</strong> from <string>Honza Dvorsky</string> &lt;jan.dvorsky at me.com&gt;<p>May 22, 2016 at 07:00:00pm</p></header><div class="content"><p>Thanks Dave, I have to learn how to use all these mailing list tools :)<br></p><p>Honza<br>On Sun, May 22, 2016 at 8:24 PM Dave Abrahams via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; on Sat May 21 2016, Honza Dvorsky &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; &gt; Hi Brent,<br>&gt; &gt;<br>&gt; &gt; thanks, I should have caught that, unfortunately I don&#39;t know of a<br>&gt; &gt; nice way to search the mailing list, other than searching your own<br>&gt; &gt; inbox, which doesn&#39;t include messages from the time you weren&#39;t<br>&gt; &gt; subscribed - how do you do it?<br>&gt;<br>&gt; Try the search box at the bottom of<br>&gt; http://news.gmane.org/gmane.comp.lang.swift.evolution<br>&gt;<br>&gt; HTH,<br>&gt;<br>&gt; --<br>&gt; -Dave<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160522/9cd19853/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

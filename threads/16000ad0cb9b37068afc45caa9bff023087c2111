@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/44330516abe967fb36e6fac4ec419b99?s=50"></div><header><strong>Is there an ABI conflict between Swift and C++ regarding multiple return values?</strong> from <string>Bryan Chan</string> &lt;bryan.chan at ca.ibm.com&gt;<p>March  8, 2016 at 05:00:00am</p></header><div class="content"><p>I have observed that swiftc on Linux assumes it can return tuples of at<br>most three integer-type elements in registers (rax, rdx and rcx, in that<br>order), while clang++ supports returning at most two integer-type values in<br>registers (rax and rdx), in accordance to the System V ABI. Doesn&#39;t this<br>cause a problem when a Swift function calls a C++ function that returns a<br>three-word struct indirectly while expecting the return values in<br>registers?<br></p><p>I ran into this issue when porting Swift to Linux s390x, in the<br>ManagedBufferPointer constructor which calls a runtime function written in<br>C++, and they follow conflicting ABIs. I worked around it by setting<br>target.MaxScalarsForDirectResult to 1 in SwiftTargetInfo, but I wonder if<br>this affects other architectures as well. Can any one shed some light on<br>this?<br></p><p>Thanks,<br>Bryan<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160308/16002111/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Is there an ABI conflict between Swift and C++ regarding multiple return values?</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>March  8, 2016 at 02:00:00am</p></header><div class="content"><p>On Tue, Mar 8, 2016 at 2:17 AM, Bryan Chan via swift-dev<br>&lt;swift-dev at swift.org&gt; wrote:<br>&gt; I have observed that swiftc on Linux assumes it can return tuples of at most<br>&gt; three integer-type elements in registers (rax, rdx and rcx, in that order),<br>&gt; while clang++ supports returning at most two integer-type values in<br>&gt; registers (rax and rdx), in accordance to the System V ABI. Doesn&#39;t this<br>&gt; cause a problem when a Swift function calls a C++ function that returns a<br>&gt; three-word struct indirectly while expecting the return values in registers?<br>&gt;<br>&gt; I ran into this issue when porting Swift to Linux s390x, in the<br>&gt; ManagedBufferPointer constructor which calls a runtime function written in<br>&gt; C++, and they follow conflicting ABIs. I worked around it by setting<br>&gt; target.MaxScalarsForDirectResult to 1 in SwiftTargetInfo, but I wonder if<br>&gt; this affects other architectures as well. Can any one shed some light on<br>&gt; this?<br></p><p>The Swift ABI is not guaranteed to match the C or C++ ABI for an<br>&quot;equivalent&quot; function.  We do take advantage in the runtime of some<br>cases that happen to match on platforms that we currently support, but<br>it is clear that there exist platforms where this assumption is<br>broken.<br></p><p>John McCall is currently implementing support for the Swift calling<br>convention in LLVM and Clang.  Once that lands, we would be able to<br>mark C functions in the runtime with an attribute to use the Swift<br>calling convention.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

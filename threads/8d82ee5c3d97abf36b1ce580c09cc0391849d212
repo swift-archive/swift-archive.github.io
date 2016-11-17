@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6fe87aed0d64cdbc46378bf7596a7553?s=50"></div><header><strong>Reflection/typeref_lowering.swift&#39; FAILED (but not on Swift CI)</strong> from <string>Andrew Trick</string> &lt;atrick at apple.com&gt;<p>July 21, 2016 at 09:00:00pm</p></header><div class="content"><p>Has anyone else seen this failure on darwin building the latest github/master?<br>commit d78012b03feaa5c946fd7d5254ff9492457f1874 (HEAD -&gt; master, public/master)<br></p><p>******************** TEST &#39;Swift :: Reflection/typeref_lowering.swift&#39; FAILED ********************<br>/s/sptr/swift/test/Reflection/typeref_lowering.swift:690:19: error: expected string not found in input<br>// CHECK-64-NEXT: (struct size=81 alignment=8 stride=88 num_extra_inhabitants=0<br>                  ^<br>&lt;stdin&gt;:331:1: note: scanning from here<br>(struct size=0 alignment=1 stride=0 num_extra_inhabitants=0)<br>^<br></p><p>For some reason, reflection thinks this struct is empty. I&#39;ve quadruple checked that my repo is clean and rebuilt a number of times, so I&#39;m curious if anyone else has run into it.<br></p><p>Andy<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

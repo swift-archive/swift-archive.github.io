@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-users] Replacement for NSNumber?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 11, 2016 at 12:00:00pm</p></header><div class="content"><p>on Mon Apr 11 2016, Ross O&#39;Brien &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Your pointing to two mutually exclusive protocols proves the point. If I want to<br>&gt; write a generic function for a numerical type which can be added, I can&#39;t just<br>&gt; require that the type conforms to IntegerArithmeticType because that excludes<br>&gt; all the floating point types. Protocols for various numerical functions, e.g.<br>&gt; NumericalArithmeticType, would be handy,<br></p><p>The upcoming proposals for integer and floating point protocols have a<br>common type called Arithmetic that serves this purpose.<br></p><p>&gt;<br>&gt;<br>&gt; On Mon, Apr 11, 2016 at 4:55 PM, Joanna Carter via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     &gt; It’s inconvenient that structs can’t inherit, and so things like Int and<br>&gt;     Double aren’t known as numbers. Should there be a Number protocol that<br>&gt;     encompasses all things number-like?<br>&gt;<br>&gt;     Taje a look at the IntegerType and FloatingPointType<br>&gt;<br>&gt;     --<br>&gt;     Joanna Carter<br>&gt;     Carter Consulting<br>&gt;<br>&gt;     (de mon iPhone)<br>&gt;<br>&gt;     _______________________________________________<br>&gt;     swift-evolution mailing list<br>&gt;     swift-evolution at swift.org<br>&gt;     https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

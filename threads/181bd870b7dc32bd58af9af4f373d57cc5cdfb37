@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0005 Better Translation of Objective-C APIs Into Swift</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 24, 2016 at 02:00:00pm</p></header><div class="content"><p>on Sun Jan 24 2016, Tim Hawkins &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Is the proposal going to improve support for &quot;c&quot; function import too,<br>&gt; or is it limited to objective-c?<br></p><p>This proposal is only about ObjC methods.<br></p><p>&gt; Im asking because there are currently some weaknesses in importing libs<br>&gt; like glibc etc on linux, like the lack of support for functions with<br>&gt; varadic arguments, ie ioctrl etc. Which requires any interfaces to said<br>&gt; functions to have &quot;c&quot; wrappers built for them, before they can be<br>&gt; imported.<br></p><p>Indeed, but it&#39;s a separable issue.  Let&#39;s keep the scope manageable :-)<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

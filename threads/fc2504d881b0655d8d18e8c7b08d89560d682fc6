@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Automating Partial Application via Wildcards</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  2, 2016 at 10:00:00am</p></header><div class="content"><p>on Tue Feb 02 2016, Gwendal Roué &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; What about nothing?<br>&gt;<br>&gt; let partial1 = f(arg1: 1, arg2:)<br></p><p>Other systems have used “_”, and, for reordering parameters, “_0”,<br>“_1”, ...<br></p><p>let partial1 = f(arg1: 1, arg2: _) // { f(arg1: 1, arg2: $0) }<br>let partial2 = f(arg1: _1, arg2: _0) // { f(arg1: $1, arg2: $0) }<br></p><p>&gt; Gwendal<br>&gt;<br>&gt;&gt; Le 2 févr. 2016 à 19:26, Gwendal Roué &lt;gwendal.roue at gmail.com&gt; a écrit :<br>&gt;&gt; <br>&gt;&gt; Any operator character would be bad, since the function may accept<br>&gt;&gt; it, as in `[1,2,3].reduce(1, combine: *)`<br>&gt;&gt; <br>&gt;&gt; Gwendal<br>&gt;&gt; <br>&gt;&gt;&gt; Le 2 févr. 2016 à 19:24, Erica Sadun via swift-evolution<br>&gt;&gt;&gt; &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; On Feb 2, 2016, at 11:20 AM, Chris Lattner<br>&gt;&gt;&gt;&gt; &lt;clattner at apple.com&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; On Feb 2, 2016, at 10:16 AM, Erica Sadun<br>&gt;&gt;&gt;&gt; &lt;erica at ericasadun.com&gt; wrote:<br>&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; One superficial comment on this: the use of _ here is a bad<br>&gt;&gt;&gt;&gt;&gt;&gt; idea.  _ already means something in expressions - “discard”, and<br>&gt;&gt;&gt;&gt;&gt;&gt; a closely related thing in declarations - “ignore”.<br>&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; Adding a third very different thing (placeholder to be filled in<br>&gt;&gt;&gt;&gt;&gt;&gt; later) seems like a really confusing thing to do.<br>&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; -Chris<br>&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; #?<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; # means “macro like” or “compiler synthesized”.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; -Chris<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; * would be bad, right? And naked ?-marks?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; -- E<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; _______________________________________________<br>&gt;&gt;&gt; swift-evolution mailing list<br>&gt;&gt;&gt; swift-evolution at swift.org<br>&gt;&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt; <br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

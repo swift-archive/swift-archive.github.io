@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[Pitch] merge types and protocols back	together with type&lt;Type, Protocol, ...&gt;</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>May 17, 2016 at 08:00:00am</p></header><div class="content"><p>Am 17. Mai 2016 um 08:55 schrieb Brent Royal-Gordon &lt;brent at architechies.com&gt;:<br></p><p><br>But don&#39;t you mean the union type of all possible Collection types when you write Any&lt;Collection&gt;?<br></p><p>No, I mean &quot;an existential capable of holding any Collection&quot;.<br></p><p><br>I agree but I think this is just a generalization of type unions as they are currently possible in Ceylon.<br></p><p><br></p><p>´A | B´ in Ceylon notation (or any&lt;A, B&gt; in proposed Swift notation) is a union type meaning a type capable of holding an A or a B.<br>Any&lt;Collection&gt; is a type capable of holding any Collection, i.e. something like `forall E. Collection where Element == E`. If I could enumerate all possible values for `E` then I could write this as an explicit type union (which would be very very long, of course :-)<br></p><p>Something like: (Collection where Element == Int) | (Collection where Element == String) | ...<br></p><p><br></p><p><br></p><p>If I write Any&lt;Equatable, Collection&gt;, I mean &quot;an existential capable of holding any Equatable Collection&quot;.<br></p><p><br>Which is a type union of Equatable and the existential representing any Collection.<br></p><p><br></p><p><br>If I write Any&lt;UITableViewCell, CounterDisplaying&gt;, I mean &quot;an existential capable of holding any CounterDisplaying UITableViewCell&quot;.<br></p><p><br>Which would be written as type union `UITableViewCell | CounterDisplaying` in Ceylon.<br></p><p><br></p><p>If I write Any&lt;Collection where .Element: Equatable&gt;, I mean &quot;an existential capable of holding any Collection with an Equatable Element&quot;.<br></p><p>If I write Any&lt;class&gt;, I mean &quot;An existential capable of holding any class instance&quot;.<br></p><p>If I write Any, I mean &quot;An existential capable of holding anything&quot;.<br></p><p>Union types have nothing to do with it.<br></p><p><br>IMHO they are a just special case where I can write down all types forming the union explicitly whereas an existential uses a type variable which can assume all types (or all types of a constrained subset).<br></p><p><br>Actually I like this generalization very much (although I think the type operators `|` and `&amp;` are much easier to read than `Any&lt;&gt;` and `All&lt;&gt;` but they don&#39;t generalize to existentials).<br></p><p><br></p><p>-Thorsten<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160517/b41a13f7/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

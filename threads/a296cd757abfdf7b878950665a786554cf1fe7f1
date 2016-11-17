@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Issues with 0005-Better Translation of Objective-C APIs Into Swift</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  2, 2016 at 05:00:00pm</p></header><div class="content"><p>on Tue Feb 02 2016, David Owens II &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 2, 2016, at 4:54 PM, Dave Abrahams via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; The following version of the API is significantly more clear with no<br>&gt;&gt;&gt; requirement of the variable names to be matched to the expectations of<br>&gt;<br>&gt;&gt;&gt; the API signature:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; let next = current.updating(proximity: p)<br>&gt;&gt; <br>&gt;&gt; Either of these, IMO, clarify that API much better:<br>&gt;&gt; <br>&gt;&gt;  let next = current.replacingProximityWith(p)<br>&gt;&gt;  let next = current.settingProximityTo(p)<br>&gt;&gt; <br>&gt;&gt; but so what?  The example started with a poor API; there are any number<br>&gt;&gt; of things one could do to improve it.<br>&gt;<br>&gt; The point was to highlight that the clarity should be coming from the<br>&gt; API, not the inputs to the API.<br></p><p>I don&#39;t think anyone disagrees with that. I do think if you imagine that<br>the inputs to the method are actively misleading you can make its name<br>arbitrarily complex in order to counteract that, which would ultimately<br>hurt the readability of real code that generally isn&#39;t maliciously<br>named.<br></p><p>&gt;&gt;&gt; Similarly,<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; let content = listItemView.text.trimming(characters: .whitespaceAndNewlines)<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; At least I have some context at the call site what the purpose of<br>&gt;&gt;&gt; .whitespaceAndNewlines.<br>&gt;&gt; <br>&gt;&gt; You wouldn&#39;t say &quot;go to the garden and trim the plant: rhododendrons&quot;.<br>&gt;&gt; It isn&#39;t necessary for comprehension.  Why do you feel characters: is<br>&gt;&gt; necessary here?<br>&gt;<br>&gt; Because unlike the English phrase, &quot;trimming&quot; does not have an<br>&gt; implicit object set based on the context of a string; what else would<br>&gt; you typically trim in a garden other than plant life? <br></p><p>What else would you trim from a string than characters?  I don&#39;t get the<br>difference.<br></p><p>&gt; I could naturally create an API that allows trimming by a line range<br>&gt; or string content, as an example.<br>&gt;<br>&gt; &quot;public func foo() {}&quot;.trimmed(text: &quot;public &quot;)<br>&gt; longContentWithKnownPreamble.trimmed(lines: 0..&lt;5)<br>&gt;<br>&gt; We could make these different APIs as opposed to overloads, though I&#39;m<br>&gt; not convinced that they are not simply different ways to trim content.<br></p><p>I&#39;m sure they *are* different ways to trim content.<br></p><p>I can&#39;t understand using &quot;trimmed&quot; the way you have above; it seems to<br>actively fight with the English language and does not strike me as clear.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

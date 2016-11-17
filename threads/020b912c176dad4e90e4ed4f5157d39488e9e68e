@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ceee3416184656c101818713f1885af0?s=50"></div><header><strong>swift without markup/cmark</strong> from <string>Jon Rafkind</string> &lt;jon.rafkind at hpe.com&gt;<p>January  8, 2016 at 09:00:00pm</p></header><div class="content"><p>I will be distributing swift as part of a commercial application, and have to disclose all third party libraries due to the open source requirements. The fewer components I have to deal with the better.<br></p><p>Also, I routinely have to mess with the swift build system to get it to find the cmark headers. In the most recent build I did I had to copy the cmark headers to lib/Markup, because Markup.cpp directly tries to #include &quot;cmark.h&quot;, but cmake does not have a variable to specify the location of the cmark include directory, it only has one for the lib directory.<br></p><p>On 01/08/2016 12:51 PM, Dmitri Gribenko wrote:<br></p><p>On Fri, Jan 8, 2016 at 10:36 PM, Rafkind, Jon via swift-dev<br>&lt;swift-dev at swift.org&gt;&lt;mailto:swift-dev at swift.org&gt; wrote:<br></p><p><br>I would like to build swift without support for its markup feature, and in turn leave out the cmark dependency. It looks like markup is used in a few places, such as AST/DocComment.cpp, a few files in IDE/, and PrintAsObjC/PrintAsObjC.cpp.<br></p><p>My initial guess to accomplish this is a new cmake variable, WANT_MARKUP, could be added that provides the define -DWANT_MARKUP, and the various code paths that use the Markup stuff can check for it using an #ifdef.<br></p><p>If I attempted such a thing would it have a chance to be accepted as a patch?<br></p><p><br></p><p>In general we try to limit the number of build configurations we<br>support.  What is the motivation for this one?  cmark is a small<br>library, as compared to, say, LLVM.<br></p><p>Dmitri<br></p><p><br></p><p>--<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>swift without markup/cmark</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>January  9, 2016 at 02:00:00am</p></header><div class="content"><p>On Fri, Jan 8, 2016 at 11:30 PM, Rafkind, Jon &lt;jon.rafkind at hpe.com&gt; wrote:<br>&gt; Also, I routinely have to mess with the swift build system to get it to find<br>&gt; the cmark headers. In the most recent build I did I had to copy the cmark<br>&gt; headers to lib/Markup, because Markup.cpp directly tries to #include<br>&gt; &quot;cmark.h&quot;, but cmake does not have a variable to specify the location of the<br>&gt; cmark include directory, it only has one for the lib directory.<br></p><p>Which system is that?  The build works correctly when build-script is used.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

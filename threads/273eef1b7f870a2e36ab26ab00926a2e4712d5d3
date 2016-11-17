@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Review] SE-0077 v2: Improved operator declarations</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>July  1, 2016 at 04:00:00pm</p></header><div class="content"><p>Joe Groff via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; To reiterate the core team&#39;s rationale, precedence groups ought to be a <br>relatively rare thing. Few users<br>&gt; ought to be defining new operators, fewer still new precedence groups. <br>Furthermore, the &#39;-Precedence&#39;<br>&gt; word clarifies the use site in an operator decl:<br>&gt; <br>&gt; 	infix operator ¶ : PilcrowPrecedence<br>&gt; <br>&gt; making it clear that the &#39;:&#39; is associating a precedence with the <br>operator. Since operator decls are<br>&gt; themselves hopefully rare as well, this added clarity should hopefully <br>save unfamiliar users a trip to<br>&gt; Stack Overflow.<br></p><p>Nice explanation, I start to agree that these suffixes are not just <br>necessary evil, but something that can really help.<br></p><p>I also don&#39;t know where to put it, so I will here.<br>I understand reasons for not taking &#39;precedence&#39; keyword, but still very <br>much like this variant. Together with -Precedence suffix, it can form <br>complete analogy with protocols.<br></p><p>I find the argument that precedence groups are less significant that <br>protocols not convincing enough. In APIs, we will still be able to use it, <br>as we can use &#39;protocol&#39; and &#39;default&#39; after dot without escaping.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

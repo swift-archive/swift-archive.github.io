@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9b5e7f229ebf32c8eca02e7cee0f379f?s=50"></div><header><strong>[Review] SE-0074: Implementation of Binary Search functions</strong> from <string>Nicola Salmoria</string> &lt;nicola.salmoria at gmail.com&gt;<p>May  4, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; * What is your evaluation of the proposal?<br></p><p>I support the idea, since binary search is obviously a very important<br>algorithm which would be important to have in the standard library.<br></p><p>I am, however, unsure about the implementation. The current proposal<br>suggests to add the new methods to the Collection protocol, leaving to the<br>caller the burden of ensuring that the collection is properly sorted, and<br>giving up on the opportunity of using types to enforce the invariant.<br></p><p>In addition, the whole idea of being sorted doesn&#39;t even make sense for many<br>Collections: e.g. a Dictionary can never be in a condition where calling a<br>sortedIndex() method would make sense, so it seems odd that the protocol<br>would allow it.<br></p><p>Another thing to notice is that the isOrderedBefore predicate passed to<br>sortedIndex() can&#39;t be arbitrary, but must be the same predicate used to<br>sort the collection in the first place. It would therefore seem natural for<br>the predicate to be part of the collection itself, and not be passed to<br>sortedIndex().<br></p><p>It seems to me that it would be more appropriate to have new<br>SortedCollection protocol, declaring the proposed methods. The sorted()<br>method of Collection would need to return a new type similar to Array but<br>conforming to the SortedCollection protocol. I&#39;m afraid I don&#39;t know how<br>in-place sort() could be handled efficiently.<br></p><p>Mind you, I&#39;m not sure if such an approach would actually be viable, but the<br>fact that the &quot;Alternatives considered&quot; section doesn&#39;t mention it makes me<br>think that the authors haven&#39;t fully evaluated the possibility.<br></p><p>&gt; * Is the problem being addressed significant enough to warrant a change to<br>Swift?<br></p><p>Yes, it&#39;s important for the standard library to provide common efficient<br>algorithms.<br></p><p>&gt; * Does this proposal fit well with the feel and direction of Swift?<br></p><p>For the reasons said above, I don&#39;t think it fits perfectly. However, if it<br>isn&#39;t possible to do better, this would be at least a first step.<br></p><p>&gt; * If you have used other languages or libraries with a similar feature,<br>how do you feel that this proposal compares to those?<br></p><p>I&#39;ve used the C++ counterparts that are referenced in the proposal. Very<br>recently, I worked on a project where an array violated the prerequisite of<br>being sorted, causing bugs. So my concerns stated above are very real and I<br>have personally run into them.<br></p><p>&gt; * How much effort did you put into your review? A glance, a quick reading,<br>or an in-depth study?<br></p><p>A quick reading and my past experience with this kind of algorithms.<br></p><p>--<br>Nicola<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

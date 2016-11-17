@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Idea] Repurpose Void</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 25, 2016 at 03:00:00pm</p></header><div class="content"><p>on Sat Apr 23 2016, Антон Жилин &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; SE-0066 disallows Void to be used on left side of function types.<br>&gt;<br>&gt; Some people, including me, argue that Void should be removed altogether,<br>&gt; because:<br>&gt; 1) () is more consistent with curried functions: (Int) -&gt; () -&gt; Double<br>&gt; 2) () follows functional programming traditions<br>&gt;<br>&gt; Now, why don&#39;t we repurpose Void to follow functional programming traditions as<br>&gt; well?<br>&gt; Its definition will look like:<br>&gt; enum Void { }<br>&gt;<br>&gt; Basically, Void is a type which cannot have values.<br>&gt; With it, we can eliminate at least two Swift special cases:<br>&gt;<br>&gt; 1. Noreturn functions<br>&gt;<br>&gt; func exit(code: Int = 0) -&gt; Void<br>&gt;<br>&gt; From this signature, it&#39;s obvious that `exit` cannot return normally<br>&gt;<br>&gt; 2. Rethrows<br>&gt;<br>&gt; func call&lt;T, U&gt;(block: () throws T -&gt; U) throws T -&gt; U<br>&gt;<br>&gt; Non-throwing functions are functions throwing Void.<br>&gt; So if T=Void, we get the non-throwing version of `call`.<br></p><p>Repurposing the name &quot;Void&quot; in this way would move Swift definitively<br>away from being a C-family language.  If we were to do that, we should<br>do it very consciously and with full awareness of the larger<br>implications.  I.e. this isn&#39;t just about one name.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

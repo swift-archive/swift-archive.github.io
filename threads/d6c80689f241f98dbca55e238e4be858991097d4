@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[proposal] Treat (case .Foo = bar) as a	Boolean expression</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>May 11, 2016 at 12:00:00pm</p></header><div class="content"><p>Am 11. Mai 2016 um 05:31 schrieb Chris Lattner via swift-evolution &lt;swift-evolution at swift.org&gt;:<br></p><p><br></p><p><br>On May 10, 2016, at 4:33 AM, Sam Dods via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br></p><p><br>I propose that (case .Foo = bar) should be treated as an expression with a Boolean value, so the result can be set to a variable or returned from a method.<br></p><p><br>I agree that this is an important use case that Swift doesn’t serve well right now, but I don’t think this is the right way to go.  <br></p><p><br>Considering the following enumeration:<br></p><p><br>enum Bar {<br>  case foo(name: String)<br>  case notFoo<br>  case unknownFoo<br>}<br></p><p><br>One of the things we’ve discussed in the past is that we could have enums automatically “synthesize” instance members for projecting cases as optional values or bools.  For example, the above enum could be compiled into the equivalent of:<br></p><p><br>extension Bar {<br>   func getAsFoo() -&gt; String? { … }<br>   var isNotFoo : Bool { … }<br>   var isUnknownFoo : Bool { … }<br>}<br></p><p><br>Then you could just use:<br></p><p><br>  if someBar.isUnknownFoo { … }<br>  if someBar.isFoo != nil { … }<br>  if let name = someBar. getAsFoo() {...  }<br>  someBar. getAsFoo()?.doThing() <br></p><p><br>I would strongly prefer pattern matching over magic methods, because of the following reasons:<br></p><p><br></p><p>(a) IMHO the latter are confusing because it is not clear and visible which methods have been created<br></p><p>(b) patterns allow IDE support for browsing usages of the various enums whereas browsing for a bunch of invisible automagically created methods is much more difficult and confusing<br>(c) I can&#39;t see a way of generating nice methods for accessing associated values (in various combinations) (see getAsFoo() example above and imagine a second or third parameter to Bar.foo)<br></p><p><br>-Thorsten<br></p><p><br></p><p><br></p><p><br>etc.  There is a question of naming, and getting the details right, of course.<br></p><p><br>-Chris<br>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160511/d6c897d4/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

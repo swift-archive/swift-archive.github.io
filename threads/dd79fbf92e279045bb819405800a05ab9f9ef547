@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/08b0997ccc1df9e1b32eeb049e9f2798?s=50"></div><header><strong>How to change the Swift REPL default prompt?</strong> from <string>RafałKowalski</string> &lt;rafal.kowalski at mac.com&gt;<p>October  3, 2016 at 03:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I&#39;ve been using the `swift-mode` and the Swift REPL under Emacs to<br>program in Swift.  Unfortunately, the Swift REPL doesn&#39;t expect a &quot;dumb<br>terminal&quot; and issues a lot of `ESC` terminal control sequences to format<br>its prompt nicely, e.g. `ESC [J` `ESC [1G ESC[J 1&gt; ESC [1G 1&gt; ESC [1G 1&gt;<br>ESC [6G`.  This is rather disturbing under Emacs.<br></p><p>Is there a way to set the Swift REPL prompt differently, similarly to<br>setting a Bash prompt?<br></p><p>https://www.gnu.org/software/bash/manual/bashref.html#Controlling-the-Prompt<br></p><p>cheers<br>--<br>-rafał<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

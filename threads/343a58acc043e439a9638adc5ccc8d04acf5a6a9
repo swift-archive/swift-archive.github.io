@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8809800aec2460f291384b794d7e6f8f?s=50"></div><header><strong>Thinking in Swift: Click handling</strong> from <string>Rick Mann</string> &lt;rmann at latencyzero.com&gt;<p>November 10, 2016 at 02:00:00pm</p></header><div class="content"><p>I&#39;m still just learning Swift, after decades of C++ and Objective-C(++). I&#39;ve written entire apps in Swift, but I don&#39;t &quot;think in Swift&quot; very well yet. So I&#39;m looking for advice on what classes, protocols, and extensions might be &quot;swifty&quot; in this example.<br></p><p>Background<br>----------<br>I&#39;m working on a new little app, a graphical 2D spline editor (mostly an experiment), written in Swift (for macOS, but the answer to this question need not be macOS-specific).<br></p><p>One of the things I have to do is handle the mouse in my drawing canvas. I have a View, and a Path. The Path contains all the information about the set of spline curves (anchor points and two control points per anchor, except on open ends where there is only one control point).<br></p><p>Let&#39;s say you can click and drag any anchor point or control point to move it. Releasing the mouse completes the operation.  A click on any other part of a Path would move the entire Path. The curve should update in real time as the drag happens.<br></p><p>One Approach<br>------------<br>A naive implementation would let the Path do all the heavy lifting:<br></p><p>• View gets a mouse-down event, passes it to each Path until one says it got the hit (the click occurred on the path, in an anchor point, or a control point).<br>• View marks that Path as &quot;active.&quot;<br>• Path marks the hit point (or entire self) as &quot;active.&quot;<br>• View gets mouse-moved event, passes it to active Path.<br>• Path adjusts active Point, or all points, based on event coordinates.<br>• View gets mouse-up event, passes it to active Path.<br>• Path completes moving points.<br>• View clears active Path.<br></p><p>I don&#39;t like this approach because it imbues the Path with a lot of knowledge about mouse events. Is there a better way? It&#39;s not quite enough to put it all in an extension, because there is state that must be kept for the drag operations.<br></p><p>I could make a separate object that handles all that state, but it would need to know a fair bit about the Path. That smells better to me, in that the relationship is one-way (the PathMouseHandler knows about the Path, but not vice-versa).<br></p><p>Now, what if I had more than just Path objects? Now I don&#39;t know what kind of MouseHandler I need until after the first click is processed.<br></p><p>Anyway, I&#39;m just curious about the best way to implement this *in Swift* (as opposed to say, C++).<br></p><p>Thanks!<br></p><p>-- <br>Rick Mann<br>rmann at latencyzero.com<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

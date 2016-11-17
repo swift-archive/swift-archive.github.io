@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>Swift Front-end C API</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>February 26, 2016 at 10:00:00pm</p></header><div class="content"><p>Does swift-clang parse swift code too.<br></p><p>Thanks<br>Ramakrishna<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160226/7e46502d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be09ed656d5d90501c958b001261f218?s=50"></div><header><strong>Swift Front-end C API</strong> from <string>Jeremy Pereira</string> &lt;jeremy.j.pereira at googlemail.com&gt;<p>February 29, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt; On 26 Feb 2016, at 17:49, Ramakrishna Mallireddy via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Does swift-clang parse swift code too.<br></p><p>No. Swift-clang is a clone of the official llvm clang repository with a few changes which I think are to enable Swift to interface with C and Objective-C better.<br></p><p>https://swift.org/source-code/#cloned-repositories<br></p><p>&gt; <br>&gt; Thanks<br>&gt; Ramakrishna<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Swift Front-end C API</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>March  1, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Feb 29, 2016, at 7:49 AM, Jeremy Pereira via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On 26 Feb 2016, at 17:49, Ramakrishna Mallireddy via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Does swift-clang parse swift code too.<br>&gt; <br>&gt; No. Swift-clang is a clone of the official llvm clang repository with a few changes which I think are to enable Swift to interface with C and Objective-C better.<br>&gt; <br>&gt; https://swift.org/source-code/#cloned-repositories<br></p><p>If you want to parse Swift code you should look at SourceKit in the Swift repository.<br></p><p><br>-- <br>Greg Parker     gparker at apple.com     Runtime Wrangler<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

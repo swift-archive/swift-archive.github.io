@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/34b9659227ea084bb09a8ba4a450a162?s=50"></div><header><strong>Support for pure setters</strong> from <string>Jessy Catterwaul</string> &lt;mr.jessy at gmail.com&gt;<p>February  4, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; I remain unconvinced that any method that starts with &quot;set&quot; without a matching getter could be turned into a &quot;good property setter&quot;. I&#39;m not sure who you&#39;re trying to convince with this metric.<br></p><p>Are there counterexamples? I do not have a memory of coming across something that began with “set”, and not thinking that what come after should have been a property or a subscript.<br></p><p><br>&gt; Maybe you should start by telling if you think that there can be a &quot;bad setter&quot;. For instance, can I replace a `sendResponse(String)` method that sends a string over the network with a `response` set-only property?<br></p><p>That’s “send response”, not “setResponse”. Without knowing more about that API, my inclination is to think it would correctly be titled<br></p><p>func send(response: String)<br></p><p><br>&gt; IMO, a good setter behaves like it&#39;s setting a variable, because this is exactly what the assignment operator suggests. That is:<br>&gt; you should be able to replace a sequence of writes to a setter by a single write with the last value and still have essentially the same end result;<br>&gt; you should be able to reorder setter operations and still essentially get the same end result.<br>&gt; <br>&gt; &quot;Essentially the same end result&quot; means that it&#39;s okay if the logging output is different or if you wasted cycles in the process.<br></p><p>Sounds good to me. I believe all the places that I’ve used set-only properties matched these guidelines.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

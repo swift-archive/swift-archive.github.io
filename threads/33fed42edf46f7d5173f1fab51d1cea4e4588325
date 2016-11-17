@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Workaround for generics not currently supporting conditional conformance to a protocol</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>November 16, 2016 at 07:00:00am</p></header><div class="content"><p>Not really, unfortunately. The standard library is littered with types because of exactly this (e.g. `MutableRangeReplaceableRandomAccessSlice`).<br></p><p>Conditional conformance can’t come fast enough!<br></p><p>&gt; Hi All,<br>&gt; <br>&gt; Does anyone have a good workaround for generics not currently supporting conditional conformance to a protocol. As stated in the Generics Manifesto something like this would be nice:<br>&gt; <br>&gt; extension Array: Equatable where Element: Equatable {<br>&gt; static func ==(lhs: Array, rhs: Array) -&gt;Bool { ... }<br>&gt; }<br>&gt; <br>&gt; But I would currently write a wrapper, something like:<br>&gt; <br>&gt; struct ArrayE&lt;T: Equatable&gt;{<br>&gt; var elements: [T]<br>&gt; }<br>&gt; extension ArrayE: Equatable {<br>&gt; static func ==(lhs: ArrayE, rhs: ArrayE) -&gt;Bool { ...}<br>&gt; }<br>&gt; <br>&gt; This can get unwieldy when there are a lot of conditional protocol extensions required, i.e. wrappers round wrappers.<br>&gt; <br>&gt; Is there a better way?<br>&gt; <br>&gt; Thanks for any tips,<br>&gt; <br>&gt; -- Howard._______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>named parameters - why hidden first?/proposal interest</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 21, 2016 at 12:00:00pm</p></header><div class="content"><p>on Thu Jan 21 2016, Charles Constant &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; say(&quot;hello&quot;)<br>&gt;&gt;<br>&gt;&gt; is a big improvement, which IMO perfectly illustrates why we want the<br>&gt;&gt; default as it is.<br>&gt;<br>&gt; Maybe so, but there just has to be some way to do this that doesn&#39;t bake<br>&gt; the design into the entirety of the Swift language. Is there some way Apple<br>&gt; could implement this that only affects Swift imports/exports with Obj-C?<br>&gt; Maybe there&#39;s not, but if there is, that seems like a better option.<br>&gt;<br>&gt; If Obj-C had never existed, would any sane person ever have suggested that<br>&gt; Swift treat the first parameter differently than the rest? It kinda makes<br>&gt; sense with Obj-C syntax, but it stands out like a sore thumb in Swift.<br></p><p>I disagree with your conclusion, but again, I&#39;m going to hold off<br>further discussion until the review period.  Please bring it up again<br>there and we can have a full exploration of the pros and cons of the<br>current approach.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

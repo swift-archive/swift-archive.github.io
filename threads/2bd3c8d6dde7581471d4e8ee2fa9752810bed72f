@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d048f41c6a1bb251ef820970a1ba511?s=50"></div><header><strong>[Pitch] Memberwise initialisers adopt the same access modifiers as the struct</strong> from <string>Ian Keen</string> &lt;iankeen82 at gmail.com&gt;<p>July 20, 2016 at 06:00:00pm</p></header><div class="content"><p>Not much to this one… I think the memberwise `init` should follow the same level of access as the struct. It appears to default to `internal` regardless of the struct access modifiers <br></p><p>Thoughts?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc3a9ea0c6c870343d9acb4ac3059cdc?s=50"></div><header><strong>[Pitch] Memberwise initialisers adopt the same access modifiers as the struct</strong> from <string>Matthew Johnson</string> &lt;matthew at anandabits.com&gt;<p>July 21, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; On Jul 20, 2016, at 8:15 PM, Ian Keen via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Not much to this one… I think the memberwise `init` should follow the same level of access as the struct. It appears to default to `internal` regardless of the struct access modifiers <br>&gt; <br>&gt; Thoughts?<br></p><p>There was an extensive discussion and review of a proposal I put forward early this year for improving memberwise initialization.  This topic has been deferred until after Swift 3 wraps up.  We’ll be revisiting it in the coming months.<br></p><p>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

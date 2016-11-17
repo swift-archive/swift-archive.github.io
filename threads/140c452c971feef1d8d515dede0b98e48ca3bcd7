@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/566528c7f7c28c35c0c646d415943612?s=50"></div><header><strong>Fwd: let type binding</strong> from <string>Taras Zakharko</string> &lt;taras.zakharko at uzh.ch&gt;<p>December 17, 2015 at 01:00:00pm</p></header><div class="content"><p>This would make the semantics of the language dramatically more complicated. In essence, what you suggest here is scope-dependent typing of variables. While interesting in principle (a static language with compile-type dynamic typing? yes please!), this is subtle but quite a big change to the language that can potentially open a can of worms elsewhere.  I believe one should carefully consider the ramifications first — and no, I don’t have any suggestions yet what these ramifications might be.  <br></p><p>Cheers, <br></p><p> Taras<br></p><p><br>&gt; Begin forwarded message:<br>&gt; <br>&gt; From: James Campbell via swift-evolution &lt;swift-evolution at swift.org&gt;<br>&gt; Subject: [swift-evolution] let type binding<br>&gt; Date: 17 December 2015 at 12:59:05 GMT+1<br>&gt; To: swift-evolution &lt;swift-evolution at swift.org&gt;<br>&gt; Reply-To: James Campbell &lt;james at supmenow.com&gt;<br>&gt; <br>&gt; Currently swift lets you to bind a value to let once:<br>&gt; <br>&gt; i.e <br>&gt; <br>&gt; let value: UIViewController<br>&gt; <br>&gt; if (condition)<br>&gt; {<br>&gt;    value = controllerA<br>&gt; }<br>&gt; else<br>&gt; {<br>&gt;   value = controllerB<br>&gt; }<br>&gt; <br>&gt; But currently I have to cast the variable within these blocks to access the property. It would be great if Swift could treat the let value as being the type of the object I am setting just for this closure/block (Obviously we can only set it to a value that matches the type above.)<br>&gt; <br>&gt; So I could literally go like this:<br>&gt; <br>&gt; let value: UIViewController<br>&gt; <br>&gt; if (condition)<br>&gt; {<br>&gt;    value = controllerA<br>&gt;    value.controllerAProperty = []<br>&gt; }<br>&gt; else<br>&gt; {<br>&gt;   value = controllerB<br>&gt;   value.controllerBProperty = []<br>&gt; }<br>&gt; <br>&gt; -- <br>&gt;  Wizard<br>&gt; james at supmenow.com &lt;mailto:james at supmenow.com&gt;<br>&gt; +44 7523 279 698<br>&gt;  _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151217/140cbcd7/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

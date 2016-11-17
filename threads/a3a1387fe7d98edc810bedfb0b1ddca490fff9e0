@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0735d3bf1d76c0385258ac7a2a22d6fe?s=50"></div><header><strong>[RFC] New collections model: collections advance indices</strong> from <string>Károly Lőrentey</string> &lt;karoly at lorentey.hu&gt;<p>March  8, 2016 at 03:00:00pm</p></header><div class="content"><p>On 2016-03-08 11:46:18 +0000, Pyry Jahkola via swift-evolution said:<br></p><p>&gt; On 08 Mar 2016, at 03:25, Dmitri Gribenko via swift-evolution <br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; What does everyone think about requiring indices to conform to<br>&gt; Hashable, in addition to the existing requirements for Equatable and<br>&gt; Comparable?<br>&gt; <br>&gt; Why impose such a restriction?<br>&gt; <br>&gt; I think it&#39;s better to just make any concrete index types (e.g. <br>&gt; DictionaryIndex&lt;K,V&gt;) in the standard library Hashable where possible. <br>&gt; People are still free to constrain their algorithms to `C : <br>&gt; CollectionType where C.Index : Hashable` whenever needed.<br></p><p>I agree with Pyry. I haven&#39;t come across an index that couldn&#39;t<br>easily conform to Hashable, but I&#39;d find it annoying to be forced<br>to write &amp; test a hashValue property whenever I create a new<br>index for private use in my own app. Hashable indices should perhaps<br>be a recommendation for reusable collections, rather than a hard<br>requirement.<br></p><p>&gt; Besides, in the proposed design, is it really necessary to make Index <br>&gt; also Comparable, or wouldn&#39;t Equatable be enough? Is it just a question <br>&gt; of convenience and failing to find an example of and index type that&#39;s <br>&gt; Equatable but not Comparable?<br></p><p>Having to implement Comparable indices on tree-based collections<br>does put constraints on the underlying tree structure: e.g., they&#39;ll<br>need to be augmented with subtree counts for O(1) comparisons. But<br>order statistic trees are a good idea anyway, and I find implementing<br>`&lt;` far less odious a requirement than `hashValue`. (More<br>straightforward to write, far easier to test.)<br></p><p>-- <br>Károly<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

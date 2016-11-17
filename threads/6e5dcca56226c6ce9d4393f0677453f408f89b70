@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ff884553e8061a725a64458afd710be3?s=50"></div><header><strong>Proposal: Add @noescape to the transform parameter of &#39;SequenceType.flatMap&#39;</strong> from <string>Meador Inge</string> &lt;meadori at gmail.com&gt;<p>December  7, 2015 at 09:00:00pm</p></header><div class="content"><p>Hi All,<br></p><p>I am taking a look at SR-126 [1], which proposes to add @noescape to the<br>transform parameters of &#39;SequenceType.flatMap&#39;.  This is consistent with<br>other methods in the Standard Library that take closure parameters.<br></p><p>Any objections?<br></p><p>-- Meador<br></p><p>[1] https://bugs.swift.org/browse/SR-126<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151207/6e5d9b70/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Proposal: Add @noescape to the transform parameter of &#39;SequenceType.flatMap&#39;</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>December  9, 2015 at 10:00:00pm</p></header><div class="content"><p>On Mon, Dec 7, 2015 at 7:44 PM, Meador Inge via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hi All,<br>&gt;<br>&gt; I am taking a look at SR-126 [1], which proposes to add @noescape to the<br>&gt; transform parameters of &#39;SequenceType.flatMap&#39;.  This is consistent with<br>&gt; other methods in the Standard Library that take closure parameters.<br>&gt;<br>&gt; Any objections?<br>&gt;<br></p><p>No objections so far :)<br></p><p>Seems like you should go ahead and write a formal proposal and submit a<br>pull request.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151209/caaae3da/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ff884553e8061a725a64458afd710be3?s=50"></div><header><strong>Proposal: Add @noescape to the transform parameter of &#39;SequenceType.flatMap&#39;</strong> from <string>Meador Inge</string> &lt;meadori at gmail.com&gt;<p>December 17, 2015 at 10:00:00am</p></header><div class="content"><p>On Thu, Dec 10, 2015 at 12:45 AM, Dmitri Gribenko &lt;gribozavr at gmail.com&gt;<br>wrote:<br></p><p>Seems like you should go ahead and write a formal proposal and submit a<br>&gt; pull request.<br>&gt;<br></p><p>Will do.  Thanks.<br></p><p>-- Meador<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151217/a49b6dbb/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

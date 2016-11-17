@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a51efe0c2993455701ed4757862e4b11?s=50"></div><header><strong>Hi</strong> from <string>Piero Sabino</string> &lt;piero.sa at icloud.com&gt;<p>December  3, 2015 at 09:00:00pm</p></header><div class="content"><p>Hi, it is possible to develop on Ubuntu 14.04 x86?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151203/8a847f7e/attachment-0001.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Hi</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>December  3, 2015 at 01:00:00pm</p></header><div class="content"><p>&gt; On Dec 3, 2015, at 1:49 PM, Piero Sabino &lt;piero.sa at icloud.com&gt; wrote:<br>&gt; <br>&gt; Hi, it is possible to develop on Ubuntu 14.04 x86?<br></p><p>Only x86_64 is officially supported.<br></p><p>-Joe<br></p><p>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151203/3101b3ef/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Hi</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>December  3, 2015 at 01:00:00pm</p></header><div class="content"><p>On Thu, Dec 3, 2015 at 1:49 PM, Piero Sabino &lt;piero.sa at icloud.com&gt; wrote:<br>&gt;<br>&gt; Hi, it is possible to develop on Ubuntu 14.04 x86?<br></p><p>Swift is only ported to x86_64 Linux right now, but we&#39;d welcome an x86 port.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

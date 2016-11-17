@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dbefca1948defb75c917225e62d321a5?s=50"></div><header><strong>Feature proposal: Range operator with step</strong> from <string>Hans Huck</string> &lt;gutgedacht at gmx.de&gt;<p>April 15, 2016 at 09:00:00pm</p></header><div class="content"><p>Brent Royal-Gordon via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; <br>&gt; &gt; for i in p1..&lt;p2 by x<br>&gt; &gt; <br>&gt; &gt; as syntactic sugar for and internally mapped to<br>&gt; &gt; <br>&gt; &gt; for i in (p1..&lt;p2).striding(by: x)<br>&gt; &gt; <br>&gt; &gt; Best of both worlds?<br>&gt; <br>&gt; Look. It is very, very unlikely that you will get people to add syntactic<br>&gt; sugar *just* for striding and *just* for the for loop. If this:<br>&gt; <br>&gt; 	for i in (1..&lt;10).striding(by: 2) { … }<br>&gt; <br>&gt; Is so ugly that we need special syntactic sugar for it, then so is this:<br>&gt; <br>&gt; 	(1..&lt;10).striding(by: 2).map { … }<br>&gt; <br></p><p>It&#39;s unnecessarily unwieldy, and I&#39;d prefer `.by(x)`, `.step(x)`, or even<br>`.stride(x)` over `.striding(by: x)` any day. I understand potential<br>reservations towards &quot;by&quot;, even though I don&#39;t share them, but these cannot<br>possibly apply to &quot;step&quot; or &quot;stride&quot;.<br></p><p>&gt; That means we would need an expression along the lines of:<br>&gt; <br>&gt; 	1..&lt;10 by 2<br>&gt; <br>&gt; Which could be used anywhere.<br>&gt;<br></p><p>That&#39;s where I disagree. You see, what I&#39;m trying to achieve here is not to<br>fight tooth and claw for an ever shorter step syntax in collections.<br></p><p>I just want to *get rid of an anomaly*, which imo justifies a new keyword<br>for a (heavily utilized) special case.<br></p><p>So far, you can fully use all core control structures in Swift without<br>resorting to methods/protocols, let alone noisy ones. While, While-Repeat,<br>If-Else, Switch, and (plain) For-In all work in a straight forward,<br>imperative, expected way, and that&#39;s highly desirable, because it&#39;s<br>intuitive and comes free of cognitive load.<br></p><p>But by removing (which btw I fully support) the C-style For-loop from the<br>language, suddenly one of the simplest and most primal tasks stands out<br>unpleasantly:<br></p><p>Counting from x to y with a step size of z -- which is the very application<br>the For-loop originally was created for.<br></p><p>Would you like to be forced to work with a While-loop like the one below?<br></p><p>while i.loop(initialize: 1, conditionlessorequal: 10, increaseby: 3)<br> <br>Yeah, me neither ;)<br></p><p>Again: I&#39;m not aiming at collection syntax in general; it just gets in the<br>line of fire, because the only remaining For-loop in Swift currently doesn&#39;t<br>know how to step through a sequence of numbers without making a fuss. <br></p><p>-- Hans<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

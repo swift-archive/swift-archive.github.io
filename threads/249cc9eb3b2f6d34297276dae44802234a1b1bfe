@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f921fa5d507b31ef6984fd3d77ae710c?s=50"></div><header><strong>[XCTest] 2016-02-03 snapshot output</strong> from <string>Brian Gesiak</string> &lt;modocache at gmail.com&gt;<p>February  5, 2016 at 10:00:00am</p></header><div class="content"><p>Hello all!<br></p><p>The swift-DEVELOPMENT-SNAPSHOT-2016-02-03-a snapshot of<br>swift-corelibs-xctest has some wonky output, described here:<br>https://github.com/apple/swift-corelibs-xctest/pull/45<br></p><p>&gt;From what I understand, snapshots don&#39;t represent a &quot;release&quot;, so they&#39;re<br>not expected to be perfect. Still, just a heads up in case we see some<br>emails about the output from users of the 02-03 snapshot.<br></p><p>As I mention in that pull request, I&#39;d like to incorporate<br>swift-corelibs-xctest tests into the Swift validation-test suite (<br>https://github.com/apple/swift-corelibs-xctest/pull/46 helps in that<br>regard). That should prevent test failures like this one from going<br>unnoticed for very long in the future.<br></p><p>- Brian Gesiak<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160205/249c1bfe/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

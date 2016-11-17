@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>ed/ing, InPlace, Set/SetAlgebra naming resolution</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 12, 2016 at 02:00:00pm</p></header><div class="content"><p>on Fri Feb 12 2016, Thorsten Seitz &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; intersect is a verb so it is fine for mutating.<br></p><p>Actually, it is a verb, but has the wrong sense.  If I have two disjoint<br>sets and I tell one to intersect the other, maybe I mean for it to add<br>an element from the other set so that they intersect.  The union<br>operation would actually satisfy that request.<br></p><p>&gt; <br>&gt; The noun intersection can then be used for the nonmutating variant.<br>&gt;<br>&gt; remove/merge/add/unite sound all good to me for for the mutating variant of union.<br>&gt;<br>&gt; -Thorsten <br>&gt;<br>&gt;&gt; Am 11.02.2016 um 20:19 schrieb Craig Cruden<br>&gt;&gt; &lt;ccruden at novafore.com&gt;:<br>&gt;&gt; <br>&gt;&gt; I was trying to think of a non mathematical term for intersect in a mutating manner….<br>&gt;&gt; <br>&gt;&gt; but that one is hard…. the only thing that came to mind was<br>&gt;&gt; “overlap” but I don’t think anyone would find it (maybe not a bad<br>&gt;&gt; thing :p )<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; On 2016-02-12, at 2:05:59, Craig Cruden<br>&gt;&gt;&gt; &lt;ccruden at novafore.com&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I was thinking of maybe:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; x.remove(x) for subtract (java mutable remove).  <br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; On 2016-02-12, at 2:00:41, Thorsten Seitz<br>&gt;&gt;&gt;&gt; &lt;tseitz42 at icloud.com&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Good idea!<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; -Thorsten<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; Am 11.02.2016 um 19:52 schrieb Craig Cruden<br>&gt;&gt;&gt;&gt;&gt; &lt;ccruden at novafore.com&gt;:<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; or x.merge(x) for mutating union.<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; On 2016-02-12, at 1:49:23, Thorsten Seitz via swift-evolution<br>&gt;&gt;&gt;&gt;&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; I’d like to repeat my suggestion:<br>&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; mutating (verbs):<br>&gt;&gt;&gt;&gt;&gt;&gt; x.intersect(x)<br>&gt;&gt;&gt;&gt;&gt;&gt; x.add(x)<br>&gt;&gt;&gt;&gt;&gt;&gt; x.subtract(x)<br>&gt;&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/db5e2fe903111a67076e0a6b97e635dd?s=50"></div><header><strong>Swift Initializer Generics</strong> from <string>Tyler Cloutier</string> &lt;cloutiertyler at aol.com&gt;<p>January 18, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I was wondering if there was a trick to get the following thing accomplished within the framework of Swift generics. I am using Surge &lt;https://github.com/mattt/Surge&gt;, a very nice and useful wrapper for the Accelerate framework. The problem is that I would like to extend the functionality of Surge in my own graphics library to include geometric constructs and I’ve run into an issue.<br></p><p>In order to use the appropriate Accelerate function call, Surge duplicates each function on the parameter types, either Float or Double. Ideally, I think there should be a better way to accomplish this with Swift generics, but perhaps that is a separate discussion. As an example consider dot product of Arrays (Vectors).<br></p><p>public func dot(x: [Float], y: [Float]) -&gt; Float {<br>    precondition(x.count == y.count, &quot;Vectors must have equal count&quot;)<br></p><p>    var result: Float = 0.0<br>    vDSP_dotpr(x, 1, y, 1, &amp;result, vDSP_Length(x.count))<br></p><p>    return result<br>}<br></p><p><br>public func dot(x: [Double], y: [Double]) -&gt; Double {<br>    precondition(x.count == y.count, &quot;Vectors must have equal count&quot;)<br></p><p>    var result: Double = 0.0<br>    vDSP_dotprD(x, 1, y, 1, &amp;result, vDSP_Length(x.count))<br></p><p>    return result<br>}<br></p><p>Consider, now, that I want to make a new function that uses one of these Surge functions. Am I correct in saying that I must define two functions, one for Float and one for Double? <br></p><p>func normalized(x: [Float]) -&gt; [Float] {<br>    return x / sum(x)<br>}<br></p><p>func normalized(x: [Double]) -&gt; [Double] {<br>    return x / sum(x)<br>}<br></p><p>Is there no way to get this done with generics? Writing the function with generic parameters yields the following error:<br></p><p>func normalized&lt;T where T: FloatingPointType, T: FloatLiteralConvertible&gt;(x: [T]) -&gt; [T] {<br>    return x / sum(x) // Error: Cannot invoke &#39;sum&#39; with an argument list of type &#39;([T])&#39;<br>}<br></p><p>Let’s assume, however that I go ahead and create two ‘normalized’ functions. I then want to create a new struct type call Plane. I would like to be able to construct a Plane using a normal vector and a point. Like so:<br></p><p>struct Plane&lt;T where T: FloatingPointType, T: FloatLiteralConvertible&gt; {<br>    let normal: [T]<br>    let distance: T<br>    <br>    init(normal: [T], point: [T]) {<br>        self.normal = normalized(normal) // Error: Ambiguous reference to member &#39;normalized&#39;<br>        self.distance = dot(normal, y: point) // Error: Cannot invoke &#39;dot&#39; with an argument list of type &#39;([T], y: [T])&#39;<br>    }<br>}<br></p><p>Yet as you can see there are still errors. In fact, as far as I can figure there is no way I can accomplish this last bit, no matter how much duplication I’m willing to tolerate. <br></p><p>Any help that anyone can provide would be much appreciated.<br></p><p>Thanks!<br></p><p>Tyler<br></p><p><br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160118/b61ce8db/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

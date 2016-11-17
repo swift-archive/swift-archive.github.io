@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Question about heterogeneous collections</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  4, 2016 at 01:00:00pm</p></header><div class="content"><p>on Fri Apr 01 2016, Maximilian Hünenberger &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; See inline<br>&gt;<br>&gt;&gt; Am 31.03.2016 um 20:14 schrieb Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt;:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; on Tue Mar 29 2016, Jason Sadler &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Hi folks,<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I have an issue with using a heterogeneous array of objects conforming<br>&gt;&gt;&gt; to a protocol - I want to write an extension on Array (or<br>&gt;&gt;&gt; CollectionType) that applies only when Element : MyProtocol, but I<br>&gt;&gt;&gt; can’t call methods in that extension from an instance of [MyProtocol]<br>&gt;&gt;&gt; because &quot;Using ‘MyProtocol&#39; as a concrete type conforming to protocol<br>&gt;&gt;&gt; ‘MyProtocol&#39; is not supported”<br>&gt;&gt; <br>&gt;&gt; Hint: write your extension so it applies when Element == MyProtocol instead.<br>&gt;&gt; <br>&gt;<br>&gt; Why don&#39;t we also imply `Element == MyProtocol` when using `Element:<br>&gt; MyProtocol` ?<br></p><p>Because Element == MyProtocol is more restrictive; it doesn&#39;t allow<br>arbitrary types that conform to—but are not—MyProtocol.<br></p><p>&gt;<br>&gt; Both extensions can have the exact same functions/implementation.<br>&gt; Am I missing something?<br>&gt; I currently don&#39;t see why we are forced to distinguish between homogeneous and heterogeneous Collections.<br>&gt;<br>&gt; Kind regards<br>&gt; - Maximilian<br>&gt;<br>&gt;&gt;&gt; (For more background, my full use case can be seen in this gist: https://gist.github.com/sadlerjw/2cc16b4375b02fe7f400)<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I’ve asked about this on swift-users<br>&gt;&gt;&gt; (https://lists.swift.org/pipermail/swift-users/Week-of-Mon-20160321/001560.html)<br>&gt;&gt;&gt; and got some good workarounds but no one was able to provide me with<br>&gt;&gt;&gt; information on any future plans in swift to address this issue -<br>&gt;&gt;&gt; whether that’s making protocols conform to themselves, or some other<br>&gt;&gt;&gt; improved approach to heterogeneous collections. I wonder if anyone<br>&gt;&gt;&gt; here can shed some light on this? (I’m new to the mailing lists,<br>&gt;&gt;&gt; sorry!)<br>&gt;&gt; <br>&gt;&gt; -- <br>&gt;&gt; Dave<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

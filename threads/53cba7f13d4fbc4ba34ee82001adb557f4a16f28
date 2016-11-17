@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/10d0339242a000b0b683ed1d5e25a110?s=50"></div><header><strong>Subtract a set of a subclass?</strong> from <string>Howard Lovatt</string> &lt;howard.lovatt at gmail.com&gt;<p>September  1, 2016 at 12:00:00pm</p></header><div class="content"><p>I am probably misunderstanding you, but it seems to work for me:<br></p><p>class A: Hashable, CustomStringConvertible {<br>    var hashValue: Int { return ObjectIdentifier(self).hashValue }<br>    var description: String { return &quot;A@\(hashValue)&quot; }<br>}<br>func ==(lhs: A, rhs: A) -&gt; Bool {<br>    return lhs.hashValue == rhs.hashValue<br>}<br>class B: A {<br>    override var description: String { return &quot;B@\(hashValue)&quot; }<br>}<br></p><p>let ca = A() // Common A to be removed<br>let ra = A() // Retained A<br>let cb = B() // Common B to be removed<br>let rb = B() // Retained B<br>let aa: Set&lt;A&gt; = [ca, ra] // Have spelt out the type of aa, but compiler<br>will infer correctly<br>let ab: Set&lt;A&gt; = [ca, cb] // Have spelt out the type of ab, but compiler<br>will infer correctly<br>let a = aa.subtracting(ab)<br>a.contains(ca) // false<br>a.contains(ra) // true<br></p><p>let bb: Set&lt;A&gt; = [cb, rb] // Have to spell out the type of bb, compiler<br>will infer Set&lt;B&gt;<br>let b = bb.subtracting(ab)<br>b.contains(cb) // false<br>b.contains(rb) // true<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160901/53cb6f28/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7321934b88ca8da079d7b89926501a9c?s=50"></div><header><strong>SwiftGL is now 100% pure Swift</strong> from <string>David Turnbull</string> &lt;dturnbull at gmail.com&gt;<p>December 13, 2015 at 04:00:00pm</p></header><div class="content"><p>Turns out it&#39;s possible to make an OpenGL loader entirely in Swift. So<br>SwiftGL is now a complete OpenGL loader without any dependencies. Over<br>30,000 lines of 100% pure Swift. Every OpenGL command and extension that&#39;s<br>in the spec as of today is supported.<br></p><p>I tested SwiftGL on OS X 10.11 and Ubuntu 14. It should work on all<br>versions of OS X and Linux that Swift runs on.<br></p><p>https://github.com/AE9RB/SwiftGL<br></p><p>We still need a GL math library and window manager for the open source<br>Swift. Please let me know if you want to work on either of these.<br></p><p>-david<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151213/8ca4f735/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

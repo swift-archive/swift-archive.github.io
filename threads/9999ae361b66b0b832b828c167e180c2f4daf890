@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5cb216f14329ffeb7bd3a6bed45277e5?s=50"></div><header><strong>where to get the spiral for playgrounds example?</strong> from <string>Mr Bee</string> &lt;pak.lebah at yahoo.com&gt;<p>September 29, 2016 at 07:00:00am</p></header><div class="content"><p>Hi,<br>I just realized that the official Swift page here: https://developer.apple.com/swift/ has a spiral drawing example for the Playgrounds (look at the first big picture on top of the page). It seems like an interesting example to play with, especially for my kids. <br>However, when I looked at the resource page, I found nothing about it. I tried to download some other examples, in case it&#39;s included with them, but I got nothing similar to it. I even tried to google it, but it found nothing too.<br>So, does anyone here know where to get that spiral drawing example?<br></p><p>Thank you.<br>Regards,<br>–Mr Bee<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160929/9999f890/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

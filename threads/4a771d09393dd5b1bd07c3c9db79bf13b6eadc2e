@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Bitshift operators</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 17, 2016 at 06:00:00pm</p></header><div class="content"><p>on Fri Jun 17 2016, Ben Rimmington &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; &lt;https://swift.org/documentation/api-design-guidelines/#type-conversion&gt;<br>&gt;<br>&gt;&gt; **In initializers that perform full-width type conversions, omit the<br>&gt;&gt; first argument label**, e.g. `Int64(someUInt32)`<br>&gt;<br>&gt; OptionSet could add `init(_ rawValue: RawValue)` to reduce boilerplate:<br>&gt;<br>&gt; 	struct FooOptions: OptionSet {<br>&gt; 	    let rawValue: Int<br>&gt;<br>&gt; 	    static let bar = Self(0b01)<br>&gt; 	    static let baz = Self(0b10)<br>&gt; 	}<br></p><p>Great idea; please submit a proposal!<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>Bitshift operators</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>June 18, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; On 18 Jun 2016, at 02:25, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; on Fri Jun 17 2016, Ben Rimmington &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; &lt;https://swift.org/documentation/api-design-guidelines/#type-conversion&gt;<br>&gt;&gt; <br>&gt;&gt;&gt; **In initializers that perform full-width type conversions, omit the<br>&gt;&gt;&gt; first argument label**, e.g. `Int64(someUInt32)`<br>&gt;&gt; <br>&gt;&gt; OptionSet could add `init(_ rawValue: RawValue)` to reduce boilerplate:<br>&gt;&gt; <br>&gt;&gt; 	struct FooOptions: OptionSet {<br>&gt;&gt; 	    let rawValue: Int<br>&gt;&gt; <br>&gt;&gt; 	    static let bar = Self(0b01)<br>&gt;&gt; 	    static let baz = Self(0b10)<br>&gt;&gt; 	}<br>&gt; <br>&gt; Great idea; please submit a proposal!<br>&gt; <br>&gt; -- <br>&gt; -Dave<br></p><p>On second thoughts, perhaps the current design is better. OptionSet changes the failable initializer (inherited from RawRepresentable) into a *nonfailable* initializer. But if we used `init(_ rawValue: RawValue)` in OptionSet, it would also still have the failable initializer (which could maybe have a default implementation).<br></p><p>The original FooOptions example is missing some required boilerplate: `init(rawValue: Int) { self.rawValue = rawValue }`. In the future, a *macro* could be used to hide the RawRepresentable requirements of option sets, making them as easy to read/write as enum cases.<br></p><p>-- Ben<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

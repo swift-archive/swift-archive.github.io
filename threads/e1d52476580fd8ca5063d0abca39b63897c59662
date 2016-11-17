@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Idea] Replace enumerate() with something more explicit</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 19, 2016 at 03:00:00pm</p></header><div class="content"><p>on Sun Apr 17 2016, Howard Lovatt &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Yes I am proposing something like protocol Subscriptable that defines the<br>&gt; subscript operation and indices and entries properties.<br></p><p>That sounds like a protocol that is just a bag of syntax without<br>semantic requirements, which—forgive my pretentious tone—goes against<br>the principles of generic programming on which the standard library was<br>founded.  We won&#39;t have a “plusable” for things you can apply the “+”<br>operator to, for similar reasons.<br></p><p>&gt; On Sunday, 17 April 2016, Brent Royal-Gordon<br>&gt; &lt;brent at architechies.com&gt; wrote:<br>&gt;<br>&gt;     &gt; With the above definition I would suggest a name change to entries, since<br>&gt;     a Dictionary&#39;s keys are not necessarily numbers, hence enumerate is<br>&gt;     misleading.<br>&gt;     &gt;<br>&gt;     &gt; Nothing for Set since it isn&#39;t subscriptable.<br>&gt;<br>&gt;     I think you&#39;re slightly confused. All Collections have an Index.<br>&gt;     Dictionary&#39;s Index is not its Key; it is an opaque type which references an<br>&gt;     entry in its internal table. Set also has an Index; again, it is an opaque<br>&gt;     type which references an entry in its internal table. Your `enumerate()` (or<br>&gt;     my `indexed()`) would return these opaque `Index`es on all of these types.<br>&gt;<br>&gt;     If you want Array to return `(Int, Element)`, Dictionary to return `(Key,<br>&gt;     Value)`, and Set to not have the operation at all, you&#39;re describing<br>&gt;     something ad-hoc and entirely disconnected from the Collection type.<br>&gt;<br>&gt;     --<br>&gt;     Brent Royal-Gordon<br>&gt;     Architechies<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

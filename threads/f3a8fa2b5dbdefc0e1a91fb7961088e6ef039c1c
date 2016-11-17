@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2d932a7cff4e614f7b268b11b3b362a7?s=50"></div><header><strong>String view leaking</strong> from <string>Alexandre Lopoukhine</string> &lt;superlopuh at gmail.com&gt;<p>January 13, 2016 at 07:00:00pm</p></header><div class="content"><p>Hello everyone,<br></p><p>I have a quick question that I haven’t found an answer to online. Do String.CharacterView, String.UTF8View, String.UTF16View or String.UnicodeView leak the original string? If I store lots of subranges of these, without keeping references to the original, will the originals remain in memory?<br></p><p>Thanks for your help.<br></p><p>Yours,<br></p><p>Sasha<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/674fead3bfff884c72fa02c35d68f258?s=50"></div><header><strong>String view leaking</strong> from <string>James Campbell</string> &lt;james at supmenow.com&gt;<p>January 13, 2016 at 06:00:00pm</p></header><div class="content"><p>A String is a Struct in Swift, so I believe it should be a copy.<br></p><p>*___________________________________*<br></p><p>*James⎥Lead Engineer*<br></p><p>*james at supmenow.com &lt;james at supmenow.com&gt;⎥supmenow.com &lt;http://supmenow.com&gt;*<br></p><p>*Sup*<br></p><p>*Runway East *<br></p><p>*10 Finsbury Square*<br></p><p>*London*<br></p><p>* EC2A 1AF *<br></p><p>On Wed, Jan 13, 2016 at 6:23 PM, Alexandre Lopoukhine via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Hello everyone,<br>&gt;<br>&gt; I have a quick question that I haven’t found an answer to online. Do<br>&gt; String.CharacterView, String.UTF8View, String.UTF16View or<br>&gt; String.UnicodeView leak the original string? If I store lots of subranges<br>&gt; of these, without keeping references to the original, will the originals<br>&gt; remain in memory?<br>&gt;<br>&gt; Thanks for your help.<br>&gt;<br>&gt; Yours,<br>&gt;<br>&gt; Sasha<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160113/1d6ddc9c/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>String view leaking</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>January 13, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Jan 13, 2016, at 10:23 AM, Alexandre Lopoukhine via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello everyone,<br>&gt; <br>&gt; I have a quick question that I haven’t found an answer to online. Do String.CharacterView, String.UTF8View, String.UTF16View or String.UnicodeView leak the original string? If I store lots of subranges of these, without keeping references to the original, will the originals remain in memory?<br>&gt; <br>&gt; Thanks for your help.<br></p><p>Yeah, slices of Strings or their views will reference a section of the original string. I believe the long-term plan is to change this behavior, so that String always references a complete buffer (like Array), and you have a separate StringSlice type for handling sections (like ArraySlice).<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

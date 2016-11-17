@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d2f357eddcdacbc304557ef9a8ba00ed?s=50"></div><header><strong>Strange Behavior With Closures</strong> from <string>bwm003 at gmail.com</string> &lt;bwm003 at gmail.com&gt;<p>May  5, 2016 at 01:00:00am</p></header><div class="content"><p>Hi Everyone,<br>I was playing around in Xcode 7.3 with this code...<br></p><p><br>*/***<br></p><p>* *  Represents a future value of type U, from a computation that has not<br>been done yet.*<br></p><p>* */*<br></p><p>*public struct Promise&lt;T, U&gt; {*<br></p><p>*    var futureValue: T -&gt; U*<br></p><p><br></p><p>*    public func then&lt;T,U,V&gt;(closure: U -&gt; V) -&gt; Promise&lt;T, V&gt; {*<br></p><p>*        return Promise&lt;T, V&gt;(futureValue: {*<br></p><p>*            input in*<br></p><p>*            let value = futureValue(input)*<br></p><p>*            return closure(value)*<br></p><p>*        })*<br></p><p>*    }*<br></p><p>*}*<br></p><p><br>and came across the following error:<br></p><p>*error: cannot invoke value of type &#39;T -&gt; U&#39; with argument list &#39;((T))&#39;*<br></p><p>Can someone explain what is going on here? It looks like my closure should<br>be accepting a value of T, but for some reason the types aren&#39;t matching up.<br>Thanks, Blake<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160505/f545301b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Strange Behavior With Closures</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>May  5, 2016 at 08:00:00am</p></header><div class="content"><p>&gt; On May 4, 2016, at 6:19 PM, bwm003--- via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi Everyone, <br>&gt; I was playing around in Xcode 7.3 with this code...<br>&gt; <br>&gt; /**<br>&gt; <br>&gt;  *  Represents a future value of type U, from a computation that has not been done yet.<br>&gt;  */<br>&gt; public struct Promise&lt;T, U&gt; {<br>&gt;     var futureValue: T -&gt; U<br>&gt;     <br>&gt;     public func then&lt;T,U,V&gt;(closure: U -&gt; V) -&gt; Promise&lt;T, V&gt; {<br>&gt;         return Promise&lt;T, V&gt;(futureValue: {<br>&gt;             input in<br>&gt;             let value = futureValue(input)<br>&gt;             return closure(value)<br>&gt;         })<br>&gt;     }<br>&gt; }<br>&gt; <br>&gt; <br>&gt; and came across the following error:<br>&gt; <br>&gt; error: cannot invoke value of type &#39;T -&gt; U&#39; with argument list &#39;((T))&#39;<br>&gt; <br>&gt; Can someone explain what is going on here? It looks like my closure should be accepting a value of T, but for some reason the types aren&#39;t matching up.<br></p><p>You&#39;ve shadowed Promise&lt;T, U&gt;&#39;s generic type parameters T and U with new T and U type parameters on `then`. Remove those, and this should work:<br></p><p>public struct Promise&lt;T, U&gt; {<br>    var futureValue: T -&gt; U<br>    <br>    public func then&lt;V&gt;(closure: U -&gt; V) -&gt; Promise&lt;T, V&gt; {<br>        return Promise&lt;T, V&gt;(futureValue: {<br>            input in<br>            let value = futureValue(input)<br>            return closure(value)<br>        })<br>    }<br>}<br></p><p>If you have time, we&#39;d appreciate a bug report about producing a better diagnostic here. We should warn or error when generic parameters are shadowed like this.<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

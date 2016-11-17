@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>Swift 3.0 Preview 1 and some important logistics for those working on Swift</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>June 13, 2016 at 06:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I am happy to announce that Preview 1 of Swift 3.0 has just been posted:<br></p><p>https://swift.org/blog/swift-3-0-preview-1-released &lt;https://swift.org/blog/swift-3-0-preview-1-released/&gt;<br>Downloads for Linux are available on Swift.org, and Preview 1 is included in Xcode 8 beta 1.<br></p><p>Important Logistics for those working on Swift<br></p><p>With Preview 1 out, a few important logistics will impact those contributing to the Swift project in the next couple days:<br></p><p>Currently building Swift from source only requires the latest GM version of Xcode — currently Xcode 7.3.1. However, because so much of Swift 3 is wrapped up in the new API Design Guidelines (specifically SE-0023 and SE-005, to name a few), a large part of the API naming changes in Swift 3 on Apple&#39;s platforms are actually tied to the latest SDKs for OS X, iOS, watchOS, and tvOS.  Consequently, we&#39;re going to bump the minimum required Xcode to build Swift from source — if you are doing development on a Mac — to the latest Xcode 8 beta.<br></p><p>By updating development to use the latest Apple SDKs, the Swift team at Apple can push back their diff of changes ASAP that has Swift working with the latest Apple SDKs.<br></p><p>Here&#39;s the timeline:<br></p><p>On Tuesday (around noon, California time ) we will be upgrading the continuous integration system to use Xcode 8 and the latest SDKs. We expect this will not take much time. Once continuous integration is updated, the Swift team at Apple will push back their diff of master that contains changes to get Swift working with the newer SDKs.<br></p><p>In order to make this transition seamless, we are going to lock the master branch during the time the continuous integration system is being upgraded.<br></p><p>We expect the continuous integration system to be down for a short while, but we are planning for up to four hours to have master locked. We&#39;re expecting much shorter than that. We will have proactively upgraded some of the machines prior to taking the whole system down, which is why we are optimistic the window of time should be short in practice.<br></p><p>Swift 2.3<br></p><p>In addition to Swift 3.0 Preview 1, I also want to announce Swift 2.3:<br></p><p>https://swift.org/blog/swift-2-3 &lt;https://swift.org/blog/swift-2-3/&gt;<br>This is a release of Swift that is pretty much the same as Swift 2.2.1, except for some changes to match with the newer Apple SDKs. We expect the vast majority of Swift 2.2 code to be completely compatible with Swift 2.3. However, because the new SDK includes nullability audits and other improvements that can break source compatibility for Swift code, we increased the version number to reflect the potential for source incompatibility. We will be posting the sources back tomorrow after the continuous integration system has been upgraded to use Xcode 8 on the Mac machines.<br></p><p>Ted<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160613/36a31948/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

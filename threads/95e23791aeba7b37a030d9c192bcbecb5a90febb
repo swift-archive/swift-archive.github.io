@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/674fead3bfff884c72fa02c35d68f258?s=50"></div><header><strong>let type binding</strong> from <string>James Campbell</string> &lt;james at supmenow.com&gt;<p>December 17, 2015 at 11:00:00am</p></header><div class="content"><p>Currently swift lets you to bind a value to let once:<br></p><p>i.e<br></p><p>let value: UIViewController<br></p><p>if (condition)<br>{<br>   value = controllerA<br>}<br>else<br>{<br>  value = controllerB<br>}<br></p><p>But currently I have to cast the variable within these blocks to access the<br>property. It would be great if Swift could treat the let value as being the<br>type of the object I am setting just for this closure/block (Obviously we<br>can only set it to a value that matches the type above.)<br></p><p>So I could literally go like this:<br></p><p>let value: UIViewController<br></p><p>if (condition)<br>{<br>   value = controllerA<br>   value.controllerAProperty = []<br>}<br>else<br>{<br>  value = controllerB<br>  value.controllerBProperty = []<br>}<br></p><p>-- <br> Wizard<br>james at supmenow.com<br>+44 7523 279 698<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151217/95e2febb/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

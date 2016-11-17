@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/91edbda84abc9230194850420e711c9a?s=50"></div><header><strong>What&#39;s the best replacement if &quot;Remove C-style for loops&quot;?</strong> from <string>nebulabox</string> &lt;nebulabox at gmail.com&gt;<p>March 17, 2016 at 08:00:00pm</p></header><div class="content"><p>I have several codes like the following:<br></p><p>for var i = 0; i &lt; myarr.count; i += n { // the step is NOT 1<br>   // many codes<br>}<br></p><p>I knew I could use the while loop, but it seems very ugly.<br>var i = 0<br>while i &lt; marr.count {<br>    // some codes<br></p><p>    i += n   // Sometimes it is easy to be missed<br>}<br></p><p><br>If no C-style for loop,  what&#39;s the best replacement for it ?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160317/de2a57c3/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c40db4457ab2c91a0d8006da31b177c6?s=50"></div><header><strong>What&#39;s the best replacement if &quot;Remove C-style for loops&quot;?</strong> from <string>Trent Nadeau</string> &lt;tanadeau at gmail.com&gt;<p>March 17, 2016 at 08:00:00am</p></header><div class="content"><p>The below should do what you want.<br></p><p>for i in 0.stride(to: myarr.count, by: n) {<br>    // do stuff with i<br>}<br></p><p>On Thu, Mar 17, 2016 at 8:48 AM, nebulabox via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I have several codes like the following:<br>&gt;<br>&gt; for var i = 0; i &lt; myarr.count; i += n { // the step is NOT 1<br>&gt;    // many codes<br>&gt; }<br>&gt;<br>&gt; I knew I could use the while loop, but it seems very ugly.<br>&gt; var i = 0<br>&gt; while i &lt; marr.count {<br>&gt;     // some codes<br>&gt;<br>&gt;     i += n   // Sometimes it is easy to be missed<br>&gt; }<br>&gt;<br>&gt;<br>&gt; If no C-style for loop,  what&#39;s the best replacement for it ?<br>&gt;<br>&gt;<br>&gt;<br>&gt;<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;<br></p><p><br>-- <br>Trent Nadeau<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160317/0cfeb994/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e0a5152b275c43b493a94b5a6a868905?s=50"></div><header><strong>What&#39;s the best replacement if &quot;Remove C-style for loops&quot;?</strong> from <string>Pyry Jahkola</string> &lt;pyry.jahkola at iki.fi&gt;<p>March 17, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; On 17 Mar 2016, at 14:48, nebulabox via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I have several codes like the following:<br>&gt; <br>&gt; for var i = 0; i &lt; myarr.count; i += n { // the step is NOT 1<br>&gt;    // many codes<br>&gt; }<br>&gt; <br>&gt; (…) If no C-style for loop,  what&#39;s the best replacement for it ?<br></p><p>The stride is what you&#39;re looking for:<br></p><p>for i in stride(from: 0, to: myarr.count, by: n) {<br>    // ...<br>}<br></p><p>In the current Swift release, you&#39;d construct it like this though:<br></p><p>for i in 0.stride(to: myarr.count, by: n) {<br>    // ...<br>}<br></p><p>— Pyry<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160317/ac61c93d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/006afe1f7d5e4f18190f2093dd2c5cac?s=50"></div><header><strong>[Completing Generics] Opening existentials — A use case: type-safe dependency injection container</strong> from <string>Adam Sharp</string> &lt;adsharp at me.com&gt;<p>March  5, 2016 at 06:00:00pm</p></header><div class="content"><p>&gt; One explicit way to allow such operations in a type-safe manner is to introduce an “open existential” operation of some sort, which extracts and gives a name to the dynamic type stored inside an existential. For example:<br>&gt; <br>&gt; 	if let storedInE1 = e1 openas T { // T is a the type of storedInE1, a copy of the value stored in e1<br>&gt; 	  if let storedInE2 = e2 as? T { // is e2 also a T?<br>&gt; 	    if storedInE1 == storedInE2 { … } // okay: storedInT1 and storedInE2 are both of type T, which we know is Equatable<br>&gt; 	  }<br>&gt; 	}<br></p><p>If I&#39;m not mistaken, this topic was in the &quot;maybe&quot; section, and I&#39;d like to offer a concrete use case.<br></p><p>A while back I attempted to extend `UIStoryboard` to be a type-safe dependency injection container. For example, given a protocol like this:<br></p><p>	protocol Presenter: class {<br>	  associatedtype Data // Don&#39;t worry too much about this name, it&#39;s probably overly generic<br></p><p>	  // Called by the dependency injection container after initialisation to inject the presented data.<br>	  func updateWithData(data: Data)<br>	}<br></p><p>And then a view controller could declare itself to be a `Presenter`:<br></p><p>	class ProfileViewController: Presenter {<br>	  typealias Data = Profile<br></p><p>	  private var profile: Profile?<br></p><p>	  func updateWithData(profile: Profile) {<br>	    self.profile = profile<br>	    updateDisplay()<br>	  }<br>	}<br></p><p>And then when setting up your storyboard, you would register various factory closures to fetch this data on demand:<br></p><p>	let storyboard = DIStoryboard(name: &quot;Profile&quot;, registerDependencies: { dependencies in<br>	  dependencies.add { () -&gt; Profile in<br>	    return profileCache.currentUserProfile<br>	  }<br>	})<br></p><p>To glue these pieces together, you&#39;d need a way to declare an existential type for the current view controller, and then match that against one of the registered factory functions:<br></p><p>	// DIStoryboard.swift<br>	private func updateViewController(viewController: UIViewController) {<br>	  if let &lt;P: Presenter&gt; presenter = viewController as? P {<br>	    // Now what? Possibly:<br>	    // 1. Iterate over each factory function<br>	    // 2. When I find a function () -&gt; P.Data, call it and pass the result to viewController.updateWithData()<br>	  }<br>	}<br></p><p>Is this a good idea, in general? I don&#39;t really know, because I couldn&#39;t really complete the experiment!<br></p><p>But I have a feeling that there might be other cases where opening existentials could allow for more type-safe code when wrapping UIKit functionality. Currently, Swift generics are completely incompatible with the way objects are unarchived from storyboards and nibs, and it feels like this feature _could_ help to bridge the gap. I have a feeling a lot of Swift users would like to bring more of Swift&#39;s type safety to their Cocoa code.<br></p><p>Anyway, I&#39;d love to hear some feedback about this idea!<br></p><p>–Adam<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

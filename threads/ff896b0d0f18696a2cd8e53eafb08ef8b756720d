@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Swiftier implementation of Measurement and Unit</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>August 10, 2016 at 03:00:00pm</p></header><div class="content"><p>on Wed Aug 10 2016, Joanna Carter &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I have spent some time working on a version of the Measurement and<br>&gt; Unit held in the apple/swift-corelibs-foundation section of<br>&gt; GitHub. How can I best find out if my efforts are worthwhile?<br></p><p>I&#39;m not sure how useful this is, because it&#39;s not really a comment on<br>your efforts, but... some of us think we know how this problem domain<br>*should* be addressed, and we know that Swift doesn&#39;t yet have the<br>necessary language facilities (integer generic parameters) to do the job<br>right.  The technique was described back in 1994 by Barton &amp; Nackman in<br>https://www.amazon.com/Scientific-Engineering-Introduction-Advanced-Techniques/dp/0201533936<br></p><p>HTH,<br>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9b667f2c07faf9d4f65628effe475382?s=50"></div><header><strong>Proposal: &quot;out&quot; variables</strong> from <string>Amir Michail</string> &lt;amichail at gmail.com&gt;<p>February 28, 2016 at 01:00:00pm</p></header><div class="content"><p>Although you could use a tuple of return values to pass data back from a function, doing so when you have many things to pass back is less than ideal.<br></p><p>These “out” variables provide an alternative to multiple return values and must be uninitialized in both the formal and actual parameter contexts.<br></p><p>Example:<br></p><p>func f(out x:Int, y:Int) {<br>	let z = x + 3 // error as x is uninitialized<br>	x = 2*y // ok<br>}<br></p><p>let x1:Int<br>f(&amp;x1, 2) // ok as x is uninitialized<br></p><p>let x2 = 3<br>f(&amp;x2, 2) // error as x much be uninitialized<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d68c97e8e2f1653b54c24493caf236ae?s=50"></div><header><strong>Proposal: &quot;out&quot; variables</strong> from <string>Stephen Celis</string> &lt;stephen.celis at gmail.com&gt;<p>February 28, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Feb 28, 2016, at 1:20 PM, Amir Michail via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Although you could use a tuple of return values to pass data back from a function, doing so when you have many things to pass back is less than ideal.<br></p><p>Why? Please provide an example of where this is &quot;less than ideal&quot; and how your solution would be more ideal.<br></p><p>In general:<br></p><p>- Non-toy example?<br>- Why is this better than using a tuple? Please justify with your example.<br>- Why is a new language feature, `out`, better than an `inout` function that runs an assertion for you?<br>- Why does this belong in the standard library and why can&#39;t you define it yourself?<br></p><p>Stephen<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

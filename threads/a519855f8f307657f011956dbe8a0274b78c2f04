@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4db4fede2f4e473341b873406b68e4e1?s=50"></div><header><strong>Third party license compatible libraries for JSON</strong> from <string>Geordie Jay</string> &lt;geojay at gmail.com&gt;<p>December  5, 2015 at 12:00:00am</p></header><div class="content"><p>I’m new to the concept of mailing lists so forgive me if this ends up in the wrong spot. I saw the current discussion about NSJSONSerialization and would like to add my 2c.<br></p><p><br>I recently decided to make a Non-Foundation (only standard library) replacement for NSJSONSerialization for the upcoming release of Swift as open source.<br></p><p><br>After a few iterations (I have rewritten the entire codebase about 3-4 times already). I am left with a result that is extremely fast with O(n) complexity (maybe the internal Int / Double initializers make it slower than this on certain inputs).<br></p><p><br>It is clean and modern, using a “JSON&quot; Protocol to encapsulate all possible values to be serialized / deserialized. I had tried using an enum in the past, but this ultimately turned out to be an uglier (as in readability), slower, and relatively inflexible way of doing things. The use of a protocol means a deserialized Array is literally already an Array, an Int is an Int etc.<br></p><p><br>Its current speed is approximately 75% of NSJSONSerialization, regardless of input size. Note however this is with inline String decoding to UTF16 via String.UnicodeScalarView (and looking in Time Profiler shows that this step takes approximately 50% of the running time). I have used no non-standard lib code here, which, if you all agree, I would change to use CoreFoundation classes where necessary. The result should be on par with NSJSONSerialization in speed (possibly better), but with an indiomatic and strongly-typed output built on an easy-to-reason-about Swift codebase.<br></p><p><br>https://github.com/ephemer/strongly-json/tree/QuickJSON<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20151205/a5192f04/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>mutating/non-mutating suggestion from a Rubyist</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 28, 2016 at 11:00:00am</p></header><div class="content"><p>on Thu Apr 28 2016, Pyry Jahkola &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Good that you brought the topic of &quot;fluent&quot; interfaces up. I don&#39;t see any<br>&gt; problem with explicit value type mutation and method chaining because fluent<br>&gt; interfaces are constrained to reference types by the language. Details below:<br>&gt;<br>&gt;     On 28 Apr 2016, at 03:44, Tyler Cloutier<br>&gt;     &lt;cloutiertyler at aol.com&gt; wrote:<br>&gt;<br>&gt;     How would this chain if I wanted to do something like:<br>&gt;<br>&gt;     let median = foo.calculateBigHugeArray().sort().medianValue()<br>&gt;<br>&gt;     and I want the sort to be done in place.<br>&gt;<br>&gt; I think I can guess what you wanted the above to mean but, mind you, the<br>&gt; in-place sort returns `()` so you wouldn&#39;t chain its result like that. On the<br>&gt; other hand, the above code already works using the non-mutating `.sort()` (to be<br>&gt; known as `.sorted()` in Swift 3), and—correct me if I&#39;m wrong—the compiler<br>&gt; probably optimises the copy away using copy-on-write anyway.<br></p><p>No, the compiler can&#39;t automatically turn non-mutating operations into<br>in-place operations.<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e0a5152b275c43b493a94b5a6a868905?s=50"></div><header><strong>mutating/non-mutating suggestion from a Rubyist</strong> from <string>Pyry Jahkola</string> &lt;pyry.jahkola at iki.fi&gt;<p>April 28, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; On 28 Apr 2016, Dave Abrahams wrote:<br>&gt; <br>&gt;&gt; I think I can guess what you wanted the above to mean but, mind you, the<br>&gt;&gt; in-place sort returns `()` so you wouldn&#39;t chain its result like that. On the<br>&gt;&gt; other hand, the above code already works using the non-mutating `.sort()` (to be<br>&gt;&gt; known as `.sorted()` in Swift 3), and—correct me if I&#39;m wrong—the compiler<br>&gt;&gt; probably optimises the copy away using copy-on-write anyway.<br>&gt; <br>&gt; No, the compiler can&#39;t automatically turn non-mutating operations into<br>&gt; in-place operations.<br></p><p>I&#39;m talking about `.sorted()` in particular. Its implementation &lt;https://github.com/apple/swift/blob/master/stdlib/public/core/CollectionAlgorithms.swift.gyb#L329-L335&gt; is essentially this:<br></p><p>    var result = ContiguousArray(self) // What if `self` is not used after this line?<br>    result.sort()<br>    return Array(result)<br></p><p>Depending on what `self ` is and how copy-on-write works, if `foo().sorted()` was called on a temporary (unique) Array returned by `foo()`, I believe the initialisation `ContiguousArray(self)` could be able to reuse `self._buffer` instead of making a copy. Whether it indeed does that, remains unclear to me, probably not &lt;https://github.com/apple/swift/blob/master/stdlib/public/core/Arrays.swift.gyb#L925-L930&gt;.<br></p><p>— Pyry<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160428/e43d435c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

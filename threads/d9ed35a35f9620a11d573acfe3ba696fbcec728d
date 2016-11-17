@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/52752079730726d693332706c65540b8?s=50"></div><header><strong>Swift 2.2 cygwin port</strong> from <string>Sangjin Han</string> &lt;tinysun.net at gmail.com&gt;<p>January 18, 2016 at 07:00:00am</p></header><div class="content"><p>Swift 2.2 cygwin port available!<br>(all features are not ported)<br></p><p>Download tar ball from https://github.com/tinysun212/swift-cygwin-bin<br></p><p>You can compile and run swift source like this.<br></p><p>  swiftc Hello.swift<br>  ./Hello<br></p><p>  OR<br></p><p>  swift Hello.swift<br></p><p>*REPL feature is not working yet.<br></p><p>You will need newest version of cygwin-64 and some package set.<br></p><p><br>Thanks,<br>Han Sangjin<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160118/d9ed728d/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>[Pitch] Allow nested protocol declarations</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>June 12, 2016 at 03:00:00pm</p></header><div class="content"><p>What is the status for this idea? I can’t find the proposal for this. :(<br></p><p><br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160612/be277ffa/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>[Pitch] Allow nested protocol declarations</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>June 12, 2016 at 09:00:00pm</p></header><div class="content"><p>If there is no proposal yet, I could write one. We should sketch out what we should consider for nested protocols. I’d love to see this feature in Swift 3. :)<br></p><p>Should this be allowed? I’m not sure what and what not we’ll see of generics in Swift 3.<br></p><p>// A&lt;Int&gt;.P1<br></p><p>class A&lt;T&gt; {<br>     <br>    protocol P1: class {}<br>}<br></p><p>// B&lt;Int&gt;.P2<br></p><p>class B&lt;T&gt; {}<br></p><p>extension B where T == Int {<br>     <br>    protocol P2: class {}<br>}  <br>For non-generics its a welcome addition:<br></p><p>// C.P3<br></p><p>class C {<br>     <br>    protocol P3 {}<br>}<br>In my project I’d use this like TCP.Data.Convertible where Convertible is the protocol sitting on my Data type.<br></p><p><br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br></p><p>Am 12. Juni 2016 um 15:13:41, Adrian Zubarev (adrian.zubarev at devandartist.com) schrieb:<br></p><p>What is the status for this idea? I can’t find the proposal for this. :(<br></p><p><br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160612/1f62a13a/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

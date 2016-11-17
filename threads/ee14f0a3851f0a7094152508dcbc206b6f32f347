@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1a53ccce8c32f6d656288e1937970d7f?s=50"></div><header><strong>[Review] Require self for accessing instance members</strong> from <string>Hirad Motamed</string> &lt;hiradm at gmail.com&gt;<p>December 16, 2015 at 03:00:00pm</p></header><div class="content"><p>* What is your evaluation of the proposal?<br></p><p>I am strongly opposed to this proposal.<br></p><p>* Is the problem being addressed significant enough to warrant a change to<br>Swift?<br></p><p>No. This can easily be addressed with a style-guide by programmers/teams<br>who think it&#39;s a significant problem. A lot of us have not encountered an<br>issue with the current behaviour. We end up with more concise code because<br>of it. Those who are worried about this behaviour can follow a practice of<br>adding `self.` in front of all their instance members. This is no different<br>from having confusingly named functions or variables.<br></p><p>* Does this proposal fit well with the feel and direction of Swift?<br></p><p>Yes in the sense that it errs on the side of greater safety. But leaning<br>too much in that direction can lead to unnecessary changes with very small<br>upsides. I don&#39;t think the problem is big enough to warrant a language<br>change.<br></p><p>* If you have you used other languages or libraries with a similar feature,<br>how do you feel that this proposal compares to those?<br></p><p>I have not, but I have enjoyed having `self.` be optional in the Swift code<br>I&#39;ve written so far.<br></p><p>* How much effort did you put into your review? A glance, a quick reading,<br>or an in-depth study?<br></p><p>I have quickly reviewed the arguments on the two sides by going through the<br>archives.<br></p><p>Hirad<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151216/ee14f347/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

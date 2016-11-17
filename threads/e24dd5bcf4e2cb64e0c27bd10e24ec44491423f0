@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/07fd59204e51d141632898356a6c1d00?s=50"></div><header><strong>[idea] Quick Help working for Keywords</strong> from <string>Jo Albright</string> &lt;me at jo2.co&gt;<p>June 15, 2016 at 06:00:00am</p></header><div class="content"><p>Creating a new thread for this, to gain more interest.<br></p><p>I am proposing that we extend Quick Help in Xcode to include keywords (with context). This will allow for quick access to information about the keyword. But more importantly, it allows us to teach developers about the keyword in its current context (example “in” will have different information inside for loops than when it is being used inside closures). And “return” can also have the context of what Type it should have next to it (including Void).<br></p><p>What would it take to implement this change to Quick Help?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>[idea] Quick Help working for Keywords</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>June 15, 2016 at 10:00:00am</p></header><div class="content"><p>On Wed, Jun 15, 2016 at 5:15 AM, Jo Albright via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Creating a new thread for this, to gain more interest.<br>&gt;<br>&gt; I am proposing that we extend Quick Help in Xcode to include keywords<br>&gt; (with context). This will allow for quick access to information about the<br>&gt; keyword. But more importantly, it allows us to teach developers about the<br>&gt; keyword in its current context (example “in” will have different<br>&gt; information inside for loops than when it is being used inside closures).<br>&gt; And “return” can also have the context of what Type it should have next to<br>&gt; it (including Void).<br>&gt;<br>&gt; What would it take to implement this change to Quick Help?<br></p><p><br>I&#39;d be enthusiastic to see an overall improvement in keyword support that<br>extends beyond Quick Help. I&#39;m not familiar with how much of this is<br>supported through SourceKit, but code completion features that are aware of<br>the basic grammar of the language would be, I think, helpful for a wide<br>array of users. For instance, wouldn&#39;t it be nice if `in` could be<br>suggested after typing `for i `? Or `while` after the closing brace for a<br>`repeat...while` loop?<br></p><p>And I think you&#39;ve also raised a great point about operators in the other<br>thread. They do have some keyword-like characteristics, and it&#39;d be great<br>if, say, their precedence and associativity could be visually evident while<br>writing. Wouldn&#39;t it be nice if the lhs and rhs for infix operators could<br>be highlighted when your caret is over the operator itself (almost like<br>parenthesis matching, but for the arguments of an infix operator)?<br></p><p><br>&gt;<br></p><p>_______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160615/4f42de29/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

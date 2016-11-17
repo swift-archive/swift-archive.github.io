@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9068c1ab42d694aa4dec9fd1a42bd8be?s=50"></div><header><strong>imageView does&#39;t show the image with Swift 3 and Xcode 8</strong> from <string>Yue Cui</string> &lt;cuiyue at msu.edu&gt;<p>October 19, 2016 at 04:00:00pm</p></header><div class="content"><p>I recently migrated my app to Swift 3 and Xcode 8.<br></p><p>The imageView didn&#39;t show the image if I re-open the app.<br></p><p>I used viewWillAppear() for this function. The code is as below:<br></p><p>let imageUrl: NSURL = NSURL(string: &quot;\(userDefaults.string(forKey:<br>&quot;avatar_url&quot;)!)&quot;)!<br>let imageData:NSData = NSData(contentsOf: imageUrl as URL)!<br>let logo = UIImage(data: imageData as Data)!<br>self.logoImage.image = logo<br></p><p>Any thoughts?<br></p><p>Thanks in advance.<br></p><p>Yue Cui<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

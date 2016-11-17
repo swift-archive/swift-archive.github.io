@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8809800aec2460f291384b794d7e6f8f?s=50"></div><header><strong>Spring and Baratine (Java frameworks)</strong> from <string>Rick Mann</string> &lt;rmann at latencyzero.com&gt;<p>October 25, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I&#39;m very excited for the formation of this area of development. While I might consider myself primarily a macOS and iOS app developer, I&#39;ve done my fair share of Java webserver development, as well as a lot of small embedded development. You can&#39;t make a non-trivial app these days without some kind of server-side support.<br></p><p>I realize the initial focus of this working group is fairly low-level support for server-side development, but in much the same way that Swift development is made richer by the availability of the robust Swift Standard Library, so to is web development.<br></p><p>In my estimation, the most current iterations of Spring.io, and the up-and-coming Baratine.io*, offer insights into powerful web development paradigms that I&#39;d like to see streamlined and Swiftified. While this group is avoiding such a high-level, it strikes me that thinking about the high level can greatly inform how the low-level APIs evolve.<br></p><p>One of the things that Java frameworks take advantage of is Java&#39;s rich introspective ability, and particularly lately use @Annotations as a way to simplify configuration and reduce boilerplate code. This typically expands into dynamic creation of proxy classes, and I&#39;m not sure how Swift&#39;s introspection and code-generation capabilities stack up. I know Java-style @Annotations are on the roadmap in some form, but not until after ABI stability.<br></p><p>Unfortunately, I think that means any Swift webapp framework will suffer problems similar to that of Spring: a clunky datafile-based configuration structure that becomes obsolete when more introspection features become available, creating a wealth of out-of-date instructional material online and a lot of technical debt.<br></p><p>Hopefully I&#39;m being overly pessimistic, and we&#39;re able to enjoy elegant, powerful, scalable web development in the near future.<br></p><p>In any case, I hope I can make a positive contribution.<br></p><p>-- <br>Rick Mann<br>rmann at latencyzero.com<br></p><p>*Baratine is incredibly performant and substantially relieves the developer from the persistence burden, but IMHO currently is quite verbose when it comes to implementing something like REST endpoints, and has a very steep learning (grokking?) curve.<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

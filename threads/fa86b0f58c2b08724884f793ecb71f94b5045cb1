@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Pitch] Richer function identifiers, simpler function types</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>April 28, 2016 at 09:00:00pm</p></header><div class="content"><p>Could you please publish it on Github? It is a bit difficult to read such<br>long posts in mailing lists.<br></p><p>1) I wouldn&#39;t like if ability to get function by name was removed.<br>Granted, it doesn&#39;t always work, but when it does, it&#39;s nice and concise.<br></p><p>2) SE-0066 and removal of tuple splat behaviour are caused by the fact that<br>Swift function argument lists are not tuples.<br>Inout, @noescape and others make sense only in function types.<br></p><p>Example:<br>(Int, Int) -&gt; Int  will be a function that takes two Ints<br>((Int, Int)) -&gt; Int  will be a function that takes one tuple<br>(((Int, Int))) -&gt; Int  will be the same as ((Int, Int)) -&gt; Int<br></p><p>3) Methods will be uncurried when used as closures.<br>Example:<br>[Int].map as ([Int], @noescape (Int) -&gt; Int) -&gt; [Int]<br></p><p>- Anton<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160428/fa865cb1/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

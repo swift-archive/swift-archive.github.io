@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Idea] Bringing the partial/total ordering distinction into Comparable</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 25, 2016 at 03:00:00pm</p></header><div class="content"><p>on Mon Apr 25 2016, Stephen Canon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;     On Apr 24, 2016, at 6:08 PM, Xiaodi Wu via swift-evolution<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     Something else to consider if you insist that all floating point values must<br>&gt;     be &quot;orderable&quot; would be how two NaNs are ordered if they have different<br>&gt;     payloads. As far as I&#39;m aware, that goes beyond what IEEE 754 has to say<br>&gt;     about total ordering of floating point values.<br>&gt;<br>&gt; The IEEE 754 totalOrder predicate is an honest-to-god total order on all<br>&gt; canonical members of a format (this includes ordering all NaNs by sign,<br>&gt; signalingness, and payload).<br></p><p>And that, almost by itself, is enough justification for us to use this<br>ordering for the result of &lt;=&gt; on floats.  The fact that this ordering<br>is consistent with the results of &lt; (for values that are ordered with<br>respect to &lt;) is a bonus.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

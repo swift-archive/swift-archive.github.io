@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 23, 2016 at 12:00:00pm</p></header><div class="content"><p>on Fri Jan 22 2016, David Owens II &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jan 22, 2016, at 4:12 PM, Ross O&#39;Brien &lt;narrativium at gmail.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; How would we apply this to delegate patterns?<br>&gt;&gt; For example, would we keep<br>&gt;&gt; tableview(tableView:cellForRowAtIndexPath:), or would we switch to<br>&gt;&gt; delegate(tableView:cellForRowAtIndexPath:) ?<br>&gt;&gt; Or perhaps better, for clarity over which protocol is being<br>&gt;&gt; conformed to / which property of the delegator is calling the<br>&gt;&gt; function:<br>&gt;&gt; dataSource(tableView:cellForRowAtIndexPath:),<br>&gt;&gt; delegate(tableView:didSelectRowAtIndexPath:)<br>&gt;<br>&gt; There would be no argument label for `tableView`; it’s a needless word<br>&gt; and there is a strong type information: it’s a TableView.<br>&gt;<br>&gt; Weak type information would be like “key path” below. Yes, it’s<br>&gt; String, but it’s actually a specially crafted string that takes the<br>&gt; form: “some.nested.values”. A string like “some+234+//23” is not going<br>&gt; to work.<br>&gt;<br>&gt; I’m also not really convinced that `removeAt(position: Int)` doesn’t<br>&gt; actually fall under both rules. The first parameter is a weak type; it<br>&gt; has rules associated with it (non-zero and less than collection<br>&gt; size). In the guidelines, it could be argued that it should be<br>&gt; `removeAtIndex(position: Int)`. I’d prefer the `removeAt(index<br>&gt; position: Int)` version. But, you can kinda make the weak type<br>&gt; argument for a lot of scenarios… It’s a little ambiguous to me.<br></p><p>Point taken.  We don&#39;t include “Index” becase removeAt with an Int<br>argument is just one realization of a protocol requirement where the<br>argument is an Index.  We could have said, “add type information to<br>compensate for the *possibility* of weak type information whenever you<br>are using a protocol&#39;s associated type, because in some cases the<br>concrete type may have other roles.”  However, the litmus test being<br>“what leads to better code at the use-site?”, I don&#39;t think we want to<br>do that, because its overall effect would be worse.<br></p><p>IMO-ly y&#39;rs,<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

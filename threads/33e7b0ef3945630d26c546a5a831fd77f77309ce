@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f921fa5d507b31ef6984fd3d77ae710c?s=50"></div><header><strong>xcodebuild hits &quot;error deserializing an individual record&quot; when building XCTest w/ Foundation</strong> from <string>Brian Gesiak</string> &lt;modocache at gmail.com&gt;<p>February 26, 2016 at 01:00:00am</p></header><div class="content"><p>Hello all!<br></p><p>I&#39;ve been stumped by a compiler assertion I&#39;m hitting in<br>https://github.com/apple/swift-corelibs-xctest/pull/43, and was wondering<br>if anyone could offer some insight.<br></p><p>The pull request has swift-corelibs-xctest depend upon<br>swift-corelibs-foundation (I&#39;ll refer to these as XCTest and Foundation in<br>this email).<br></p><p>On Linux, this works like a dream. All it takes is linking Foundation when<br>building XCTest:<br></p><p>$ swiftc -emit-library path/to/XCTest.o \<br>    -L path/to/Foundation \<br>    -lswiftGlibc -lswiftCore -lFoundation -lm<br></p><p>On OS X, I use an Xcode workspace that includes XCTest.xcodeproj and<br>Foundation.xcodeproj. In the &quot;Link Binary with Libraries&quot; step, I link<br>SwiftFoundation.framework. However, when compiling the project I encounter<br>the following stack trace:<br>https://gist.github.com/modocache/ad562405d19aa4ad6194<br></p><p>The problem appears to be in swift::ModuleFile::resolveCrossReference,<br>where an assertion is hit: &quot;error deserializing an individual record&quot;.<br>Looking at the resolveCrossReference method, it appears error() is called<br>when a BitstreamCursor encounters an entry that is not a kind<br>of lvm::BitstreamEntry::Record. I guess there&#39;s some sort of malformed<br>bitcode getting generated somewhere?<br></p><p>This is about as far as I&#39;ve gotten. I seem to recall a conversation in<br>https://github.com/apple/swift-corelibs-xctest/commit/6a1e7836e91940be94856bfda245deb125a66729#commitcomment-16253578,<br>in which people commented that Foundation is always built in Debug mode.<br>Could that be causing this?<br></p><p>Any advice would be much appreciated!<br></p><p>- Brian Gesiak<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160226/33e709ce/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

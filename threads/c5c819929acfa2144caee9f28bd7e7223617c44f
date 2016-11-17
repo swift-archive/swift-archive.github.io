@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6761b86fcf674411c42ea5d32bbf6e5?s=50"></div><header><strong>Performance degradation with 3.0.1(String comparison)</strong> from <string>Pushkar N Kulkarni</string> &lt;pushkar.nk at in.ibm.com&gt;<p>November  4, 2016 at 06:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161104/c5c8c44f/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17d2af4afb70023e28e655d17471a018?s=50"></div><header><strong>Performance degradation with 3.0.1(String comparison)</strong> from <string>Michael Gottesman</string> &lt;mgottesman at apple.com&gt;<p>November  6, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Nov 3, 2016, at 11:07 PM, Pushkar N Kulkarni via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello,<br>&gt; <br>&gt; A colleague of mine who&#39;s doing performance testing with some server-side Swift frameworks like Kitura, Perfect and Zewo found a 15-20% degradation with a simple &quot;Hello World&quot; benchmark, with the 3.0.1 previews on Linux. Analysis revealed it is related to the disabling of an optimisation around String comparison for Swift runtimes - this commit - apple/swift at ef974af &lt;https://github.com/apple/swift/commit/ef974af339996f63c72d54ec7ef53b625e5a1a76&gt;<br>&gt; <br>&gt; Do we have a plan to reimplement this optimisation for Swift runtimes in the future? Any more information about this would be highly appreciated. <br></p><p>Can you please provide a benchmark in a pull request that shows the performance degradation?<br></p><p>Michael<br></p><p>&gt; <br>&gt; Thank you!<br>&gt; <br>&gt; Pushkar N Kulkarni,<br>&gt; IBM Runtimes<br>&gt; <br>&gt; Simplicity is prerequisite for reliability - Edsger W. Dijkstra<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161106/d399ac3c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

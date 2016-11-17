@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b35b44357e4cca3a1de39ba1199c9ab5?s=50"></div><header><strong>Make the first parameter in a function declaration follow the same rules as the others</strong> from <string>ted van gaalen</string> &lt;tedvgiosdev at gmail.com&gt;<p>March 12, 2016 at 02:00:00am</p></header><div class="content"><p>if parameter names are obligatory, one could<br>remove the commas completely in the function call:<br></p><p>     foo(a: v1  b: 123.45 c: qwertyuiop)<br></p><p>or alternatively with commas only:<br></p><p>     foo( a v1, b 123.45, c 12 * 3 + 2)<br></p><p><br>TedvG<br></p><p><br></p><p><br></p><p>&gt; <br>&gt; Subject: Make the first parameter in a function declaration follow the same rules as the others<br>&gt; <br>&gt; When I started using Swift (on the whole a pleasant journey)<br>&gt; the most confusing thing to me was, and at times still is,  the parameter list,<br>&gt; <br>&gt; <br>&gt; I would prefer:<br>&gt; <br>&gt; -uniform for functions(…) AND init(…)<br>&gt; -every parameter must be used with its name/label. Always, no exceptions.<br>&gt; -no shortcuts. <br>&gt; -allow arbitrary parameter sequence.<br>&gt; which is possible and very easy to implement when you always have to use names.<br>&gt; -no trailing commas.<br>&gt; <br>&gt; Because you always have to specify parameter names/labels<br>&gt; it is easy to see (for the compiler) which parameters <br>&gt; are omitted.<br>&gt; <br>&gt; Omitting a parameter for which no default value was <br>&gt; specified is still an error. <br>&gt; <br>&gt; The confusing # and _  are no longer necessary. <br>&gt; <br>&gt; <br>&gt; ‘inout’ and  external and local parameter names behavior remain as they are.<br>&gt; <br>&gt; like so<br>&gt; <br>&gt;     func foo(inout a: Type, b: Type = 12.34, c: Type)    // b may be omitted<br>&gt; or<br>&gt;     func foo(a alocal: Type, b blocal: Type = 12.34, c: Type= 3.14159)    // b and c may be omitted    <br>&gt; <br>&gt; <br>&gt; Valid calls:<br>&gt; <br>&gt;    foo(a: v1, b: v2, c: v3)     // in sequence<br>&gt;    foo(c: v3, a: v1, b: v3)     // arbitrary parameter sequence is allowed.<br>&gt; <br>&gt;    foo(c: v13)              // parms a and b are not present: default values wil be taken  <br>&gt;                                   // or error if no default specified.<br>&gt; <br>&gt; Allow for more than 1 variadic parameter, why is this currently limited to one variadic parameter only? <br>&gt; <br>&gt;    foo(a: Type, b:Type…, c: Type…,d: Type)<br>&gt; <br>&gt; <br>&gt;   foo(v1,b: v2,c: v3) // this is an error: parameter name missing with first parameter.<br>&gt; <br>&gt; <br>&gt; It would end the confusion.<br>&gt; <br>&gt; <br>&gt; TedvG<br>&gt; <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160312/a2741dd9/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

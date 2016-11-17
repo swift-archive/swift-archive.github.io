@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dd033b3ed46d65c7d7394eab52d53e6b?s=50"></div><header><strong>Making protocol conformance inheritance controllable</strong> from <string>Evan Maloney</string> &lt;emaloney at gilt.com&gt;<p>December 11, 2015 at 12:00:00am</p></header><div class="content"><p>On Thu, 10 Dec 2015 18:04:02 -0800, Joe Groff &lt;jgroff at apple.com &lt;mailto:jgroff at apple.com&gt;&gt; wrote:<br></p><p>&gt; [...] I&#39;d like to float the idea that protocol conformances *not be* inherited by default. If you declare a class as conforming to a protocol, only exactly that class can be bound to a type parameter constrained by that protocol [...]<br></p><p>You just blew my mind.<br></p><p>&gt; This is undoubtedly a complication of the language, but I think it might let us more accurately model a lot of things people seem to want to do in practice with class hierarchies and protocols, and it simplifies the behavior of the arguably common case where inheritance of the conformance isn&#39;t desired. What do you all think?<br></p><p>Anything that raises the possibility of avoiding &quot;required init(coder: NSCoder) { fatalError() }&quot; all over my UIKit subclasses gets my support.<br></p><p>It&#39;s a bit radical, but the benefits as you&#39;ve described them outweigh the costs, IMO.<br></p><p>All the best,<br>E.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151211/bf4b4d0c/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

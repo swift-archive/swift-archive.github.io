@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/15ed660cd9d971062f9dd5084932a698?s=50"></div><header><strong>Proposal: Add scan, takeWhile, dropWhile, and iterate to the stdlib</strong> from <string>David Rönnqvist</string> &lt;david.ronnqvist at gmail.com&gt;<p>April  7, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; &gt; On Jan 10, 2016, at 10:20 PM, Kevin Ballard via swift-evolution&lt;swift-evolution at swift.org&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; When the proposal is &quot;we have a bunch of functions that match functions used in other languages, lets add a few more from the same category of functions that we missed&quot;, does there really need to be much explanation beyond &quot;they&#39;re useful in the other languages that have them, they&#39;d be useful for the same reasons in Swift”?<br>&gt; I agree with what you’re saying, but the flip-side is: how do we scope what we accept into the standard library? Just existing in some other language doesn’t mean that we should (automatically) accept new standard library functionality.<br>&gt; <br>&gt; I’m not arguing for or against your proposal, just trying to say that this rationale isn’t enough to justify adding things to the Swift standard library.<br>&gt; <br>&gt; -Chris<br>&gt; <br></p><p>I agree with both of you: that these are useful additions, but also that it’s important to know where to draw the line.<br></p><p>Sorry if this is not the place for this discussion (my first post in this mailing list):<br>I feel that one way of moving this discussion forward is by looking more generally at what justifies adding new functionality that is similar to existing functionality.<br></p><p>One part of that discussion is how the new additions would serve the broader goals of the language.<br></p><p> - Is this a style that the standard library wants to encourage?<br> - Why (to serve what goal) was the existing functionality added in the first place?<br> - Does this addition continue to serve some of the goals of that addition? <br>For this proposal it would be useful to know a little bit more about the original discussion about woking with sequences in a functional manner and adding `map`, `filter`, `reduce` etc. to the standard library in the first place, since the proposed additions also relate to woking with sequences in a functional manner<br>For this proposal it might also be helpful knowing some of the reasoning behind adding `prefix`, `suffix`, `dropFirst`, and `dropLast`, since the proposed additions have similar functionality.<br></p><p>Another part of that discussion is how the new functionality relates to the existing. <br></p><p>If the new is more is more general than the existing, then what other useful additions could be implemented with this new? It might be interesting to reverse the question and ask if the existing would be added if the new proposed function already existed.<br></p><p>If the new is a specialization of something existing, then is it something that many developers will end up implementing themselves? I would see this as a good reason to implement it in the standard library. Even more so if there is a high risk that individual implementations will have subtle differences in behavior or a high risk of bugs in the individual implementations. <br></p><p>David<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5b29429fbe1f7344462ca5d6f1c2ba5e?s=50"></div><header><strong>About Translation Swift.org</strong> from <string>Yoshinori Kobayashi</string> &lt;yoshiiikoba at gmail.com&gt;<p>February 29, 2016 at 03:00:00pm</p></header><div class="content"><p>Hi<br>My name is yoshiii.<br></p><p>I want to translate Swift.org.<br>I want to translate it into  Japanese.<br></p><p>How should  I carry it out ?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160229/cf68028b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2bc666e29724cd3bdf46b6cbbe4a07bb?s=50"></div><header><strong>About Translation Swift.org</strong> from <string>Quinn &quot;The Eskimo!&quot;</string> &lt;eskimo1 at apple.com&gt;<p>February 29, 2016 at 08:00:00am</p></header><div class="content"><p>On 29 Feb 2016, at 06:21, Yoshinori Kobayashi via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>&gt; I want to translate it into  Japanese.<br></p><p>I don&#39;t know what the rules are here, but I do know that it&#39;s recently been discussed on swift-dev.  <br></p><p>&lt;https://lists.swift.org/pipermail/swift-dev/Week-of-Mon-20160111/000777.html&gt;<br></p><p>&lt;https://lists.swift.org/pipermail/swift-dev/Week-of-Mon-20160118/000856.html&gt;<br></p><p>Share and Enjoy<br>--<br>Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

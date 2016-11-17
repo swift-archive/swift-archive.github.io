@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Proposal Draft: Optional Upgrading Assignment.</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  4, 2016 at 12:00:00am</p></header><div class="content"><p>on Thu Feb 04 2016, Paul Ossenbruggen &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Draft Proposal feedback welcome.<br>&gt;<br>&gt; ## Introduction<br>&gt;<br>&gt; Currently to make a optional from a value the type name must be repeated:<br>&gt;<br>&gt; 	let x = “Some Value”<br>&gt; 	let y : String? = x<br>&gt;<br>&gt; This takes away some of the advantage of type inference because the<br>&gt; very next line I must specify the type.<br></p><p>These work:<br></p><p>let y: Optional = x<br>let z = Optional(x)<br></p><p><br>&gt; ## Proposal<br>&gt;<br>&gt; I propose the following syntax:<br>&gt;<br>&gt; 	let y? = x<br>&gt;<br>&gt; This binds a new optional y which wraps the same value of x. It<br>&gt; follows the same conventions as var and let that currently exist in<br>&gt; the language.<br>&gt;<br>&gt; The advantages: this is easier to read, more compact, and lets type<br>&gt; inference determine the type.<br>&gt;<br>&gt; If let and other conditionals would not support this syntax and<br>&gt; optionals of optionals is not supported. So let x?? = y would not<br>&gt; result in an optional optional. Also if y was an optional it would not<br>&gt; let you upgrade that.<br>&gt;<br>&gt; ## Detailed Design<br>&gt;<br>&gt; The grammar: <br>&gt;<br>&gt; 	let optionalValue? = value<br>&gt;<br>&gt; This would not make sense in the if let, (guard let) context because<br>&gt; if let unwraps the value, so this would be an error.<br>&gt;<br>&gt; This should not conflict with pattern matching as that requires the case keyword. <br>&gt;<br>&gt; Wrapping optional in an optional is an error. <br>&gt;<br>&gt; ## Impact on existing code<br>&gt;<br>&gt; The current syntax will continue to exist so it will have no impact on existing code. <br>&gt;<br>&gt; ## Alternatives Considered<br>&gt;<br>&gt; None. <br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

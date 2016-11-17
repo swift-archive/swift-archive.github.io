@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/674fead3bfff884c72fa02c35d68f258?s=50"></div><header><strong>SignedNumberType</strong> from <string>James Campbell</string> &lt;james at supmenow.com&gt;<p>January  6, 2016 at 11:00:00pm</p></header><div class="content"><p>What is the purpose of this type ? Why don&#39;t we have<br></p><p>UnsignedNumberType<br></p><p>-- <br> Wizard<br>james at supmenow.com<br>+44 7523 279 698<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160106/7118563a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>SignedNumberType</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January  6, 2016 at 03:00:00pm</p></header><div class="content"><p>The numeric protocols were not really designed; their main purpose is currently to facilitate some very weak code sharing in the standard library.  We’re currently working on fixing that, though, as I noted in other messages.<br></p><p>&gt; On Jan 6, 2016, at 3:00 PM, James Campbell via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; What is the purpose of this type ? Why don&#39;t we have <br>&gt; UnsignedNumberType<br>&gt; <br>&gt; <br>&gt; -- <br>&gt;  Wizard<br>&gt; james at supmenow.com &lt;mailto:james at supmenow.com&gt;<br>&gt; +44 7523 279 698<br>&gt;  _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-Dave<br></p><p><br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160106/b90ea9ef/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/10d0339242a000b0b683ed1d5e25a110?s=50"></div><header><strong>SignedNumberType</strong> from <string>Howard Lovatt</string> &lt;howard.lovatt at gmail.com&gt;<p>January  7, 2016 at 10:00:00am</p></header><div class="content"><p>Great to hear that there is a fix on the way.<br></p><p>On Thursday, 7 January 2016, Dave Abrahams via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; The numeric protocols were not really designed; their main purpose is<br>&gt; currently to facilitate some very weak code sharing in the standard<br>&gt; library.  We’re currently working on fixing that, though, as I noted in<br>&gt; other messages.<br>&gt;<br>&gt; On Jan 6, 2016, at 3:00 PM, James Campbell via swift-evolution &lt;<br>&gt; swift-evolution at swift.org<br>&gt; &lt;javascript:_e(%7B%7D,&#39;cvml&#39;,&#39;swift-evolution at swift.org&#39;);&gt;&gt; wrote:<br>&gt;<br>&gt; What is the purpose of this type ? Why don&#39;t we have<br>&gt;<br>&gt; UnsignedNumberType<br>&gt;<br>&gt; --<br>&gt;  Wizard<br>&gt; james at supmenow.com &lt;javascript:_e(%7B%7D,&#39;cvml&#39;,&#39;james at supmenow.com&#39;);&gt;<br>&gt; +44 7523 279 698<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; &lt;javascript:_e(%7B%7D,&#39;cvml&#39;,&#39;swift-evolution at swift.org&#39;);&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;<br>&gt; -Dave<br>&gt;<br>&gt;<br>&gt;<br>&gt;<br></p><p>-- <br>  -- Howard.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160107/f29e6b5d/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

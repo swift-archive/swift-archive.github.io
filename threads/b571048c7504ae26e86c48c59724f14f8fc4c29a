@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/eb8a8144f770c28da3b092a65291a4f3?s=50"></div><header><strong>Glibc tgmath implementation</strong> from <string>Timothy Chagnon</string> &lt;tachagnon at gmail.com&gt;<p>February  2, 2016 at 06:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I wanted to try to fix a problem I reported on swift-users@ and in SR-638<br>&lt;https://bugs.swift.org/browse/SR-638&gt; where Glibc doesn&#39;t have a tgmath<br>overlay.  This means that, for example, sin(Float(1.23)) works on Darwin<br>but won&#39;t compile on Linux.<br></p><p>As an experiment, I tried just symlinking the Darwin tgmath to Glibc and<br>fixing some things to make it compile and test. You can take a look here:<br>https://github.com/tchagnon/swift/commit/742eff3914f2a62e799980523badaca4eeee95fe<br></p><p>I ran into a couple issues that I had questions about or couldn&#39;t figure<br>out:<br></p><p>1. What&#39;s the best way for tgmath.swift.gyb to be shared between both<br>Darwin and Glibc? Move it to a common location and symlink? Would it be<br>better to have a common Math module? It would be a lot nicer if I could<br>just import Math instead of the preprocessor block to switch between<br>Darwin/Glibc.<br></p><p>2. @_silgen_name doesn&#39;t appear to work on Linux. I get linker errors or<br>hidden symbol `_swift_Glibc_ilogb&#39; isn&#39;t defined if I try to set up an<br>extern function in Misc.c. Is this known? How do I work around this to<br>avoid the ambiguous overloading in the case of ilogb(CDouble) -&gt; CInt.<br></p><p>Thanks,<br>Tim<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160202/b571c29a/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

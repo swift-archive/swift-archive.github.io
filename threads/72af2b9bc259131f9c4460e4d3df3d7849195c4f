@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/268e1090c88890a4ed2387a4d22c661c?s=50"></div><header><strong>minimum deployment target</strong> from <string>J.E. Schotsman</string> &lt;jeschot at xs4all.nl&gt;<p>November 14, 2016 at 11:00:00am</p></header><div class="content"><p>Hello,<br></p><p>I have some code that is used in both a project with minimum deployment target 10.9 and a project with minimum deployment target 10.11.<br>If I check for availability of API’s on the 10.9 project I get warnings on the 10.11 project saying these checks are unnecessary.<br>Can I conditionalize this check somehow?<br></p><p>Jan E.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/957b675456a66c394945a7361aedd51d?s=50"></div><header><strong>minimum deployment target</strong> from <string>Zhao Xin</string> &lt;owenzx at gmail.com&gt;<p>November 14, 2016 at 07:00:00pm</p></header><div class="content"><p>Maybe you should ask this question in<br>https://forums.developer.apple.com/welcome<br></p><p>Zhaoxin<br></p><p>On Mon, Nov 14, 2016 at 6:26 PM, J.E. Schotsman via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Hello,<br>&gt;<br>&gt; I have some code that is used in both a project with minimum deployment<br>&gt; target 10.9 and a project with minimum deployment target 10.11.<br>&gt; If I check for availability of API’s on the 10.9 project I get warnings on<br>&gt; the 10.11 project saying these checks are unnecessary.<br>&gt; Can I conditionalize this check somehow?<br>&gt;<br>&gt; Jan E.<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161114/f276e3cc/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>ObjC generic containers and ObjectiveCBridgeable conformance</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>April 27, 2016 at 10:00:00am</p></header><div class="content"><p>Importing ObjC generics is currently disabled for the bridged container classes, NSArray, NSDictionary, and NSSet. To enable generics for these types, we need to figure out what to do about their interaction with ObjectiveCBridgeable container bridging. The mapping from generic Swift value type to generic ObjC class is nontrivial, since the element type may itself be bridged—Array&lt;String&gt; bridges to NSArray&lt;NSString&gt;, whereas Array&lt;NSFileHandle&gt; would bridge to NSArray&lt;NSFileHandle&gt;. We&#39;d need multiple constrained conformances to be able to accurately model this relationship at compile time. Absent that functionality, I can think of a couple of approaches in the short term:<br></p><p>1) Do nothing, and import NSArray and friends as nongeneric types.<br>2) Import NSArray and friends as generic, and define the ObjectiveCBridgeable relationship in terms of their upper bound type, so that Array&lt;T&gt; bridges to NSArray&lt;AnyObject&gt;, Dictionary&lt;T,U&gt; to NSDictionary&lt;NSCopying, AnyObject&gt;, and so on.<br>3) Do (2), but also do additional special-case bridging in the compiler (again), to insert unchecked conversions from the upper bound types like NSArray&lt;AnyObject&gt; to the appropriate generic type NSArray&lt;T&gt;.<br></p><p>Are there any other approaches I&#39;m missing?<br></p><p>-Joe<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>ObjC generic containers and ObjectiveCBridgeable conformance</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>April 29, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt; On Apr 27, 2016, at 10:23 AM, Joe Groff &lt;jgroff at apple.com&gt; wrote:<br>&gt; <br>&gt; Importing ObjC generics is currently disabled for the bridged container classes, NSArray, NSDictionary, and NSSet. To enable generics for these types, we need to figure out what to do about their interaction with ObjectiveCBridgeable container bridging. The mapping from generic Swift value type to generic ObjC class is nontrivial, since the element type may itself be bridged—Array&lt;String&gt; bridges to NSArray&lt;NSString&gt;, whereas Array&lt;NSFileHandle&gt; would bridge to NSArray&lt;NSFileHandle&gt;. We&#39;d need multiple constrained conformances to be able to accurately model this relationship at compile time. Absent that functionality, I can think of a couple of approaches in the short term:<br>&gt; <br>&gt; 1) Do nothing, and import NSArray and friends as nongeneric types.<br>&gt; 2) Import NSArray and friends as generic, and define the ObjectiveCBridgeable relationship in terms of their upper bound type, so that Array&lt;T&gt; bridges to NSArray&lt;AnyObject&gt;, Dictionary&lt;T,U&gt; to NSDictionary&lt;NSCopying, AnyObject&gt;, and so on.<br>&gt; 3) Do (2), but also do additional special-case bridging in the compiler (again), to insert unchecked conversions from the upper bound types like NSArray&lt;AnyObject&gt; to the appropriate generic type NSArray&lt;T&gt;.<br></p><p>I had (3) in mind.<br></p><p>However, the value of having generic NSArray/NSSet/NSDictionary in Swift is outweighed by the implementation cost of doing tis, especially because it is very likely we will never be able to accurately model the relationship at compile time.<br></p><p>&gt; Are there any other approaches I&#39;m missing?<br></p><p><br>I can’t think of any other approaches.<br></p><p>	- Doug<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

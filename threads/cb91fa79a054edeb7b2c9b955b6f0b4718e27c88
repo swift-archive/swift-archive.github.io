@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Accepted] SE-0066: Standardize function type argument syntax to require parentheses</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>May  5, 2016 at 11:00:00pm</p></header><div class="content"><p>Proposal link: https://github.com/apple/swift-evolution/blob/master/proposals/0066-standardize-function-type-syntax.md<br></p><p>Hello Swift community,<br></p><p>The review of SE-0066 “Standardize function type argument syntax to require parentheses” ran from April 25...May 2, 2016. The proposal is accepted for Swift 3.<br></p><p>There was a significant amount of feedback on the proposal, with a fairly common theme of “lukewarm acceptance.” A number of community members were sad to see this familiar syntactic shortcut go away, but acknowledge that it fits well with recent directions, e.g., the elimination of the implicit tuple splat behavior (SE-0029 &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0029-remove-implicit-tuple-splat.md&gt;). The core team acknowledges that the ability to elide parentheses is not actively harmful to the language, but felt that it was better to have consistency around function types (always have parentheses) than provide a relatively small syntactic shortcut for higher-order functions. The core team did not feel that this proposal needed to include required parentheses within closures, which have their own fairly specific grammar.<br></p><p>	- Doug, Review Manager<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160505/cb917c88/attachment.html&gt;<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

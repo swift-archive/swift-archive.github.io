@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>[Draft] Fix a typo in two String methods</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>July 23, 2016 at 03:00:00pm</p></header><div class="content"><p>World&#39;s shortest proposal:<br></p><p><br>*Introduction*<br></p><p>In `String`, the methods `nulTerminatedUTF8` and `nulTerminatedUTF8CString`<br>have the word &quot;null&quot; misspelled<br></p><p>*Motivation*<br></p><p>There is a typo<br></p><p>*Proposed solution*<br></p><p>Fix the typo<br></p><p>*Impact on existing code*<br></p><p>Emit a fix-it for existing code<br></p><p>*Alternatives considered*<br></p><p>Keep on spelling &quot;nul&quot; without the second &quot;l&quot;<br></p><p>*Acknowledgments*<br></p><p>Thanks to Andrew Trick for confirming that the existing spelling is bizarre<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160723/95fc79c1/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>[Draft] Fix a typo in two String methods</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>July 23, 2016 at 01:00:00pm</p></header><div class="content"><p>+1<br></p><p>On Sat, Jul 23, 2016 at 1:41 PM, Xiaodi Wu via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; World&#39;s shortest proposal:<br>&gt;<br>&gt;<br>&gt; *Introduction*<br>&gt;<br>&gt; In `String`, the methods `nulTerminatedUTF8` and<br>&gt; `nulTerminatedUTF8CString` have the word &quot;null&quot; misspelled<br>&gt;<br>&gt; *Motivation*<br>&gt;<br>&gt; There is a typo<br>&gt;<br>&gt; *Proposed solution*<br>&gt;<br>&gt; Fix the typo<br>&gt;<br>&gt; *Impact on existing code*<br>&gt;<br>&gt; Emit a fix-it for existing code<br>&gt;<br>&gt; *Alternatives considered*<br>&gt;<br>&gt; Keep on spelling &quot;nul&quot; without the second &quot;l&quot;<br>&gt;<br>&gt; *Acknowledgments*<br>&gt;<br>&gt; Thanks to Andrew Trick for confirming that the existing spelling is bizarre<br>&gt;<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160723/16816098/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

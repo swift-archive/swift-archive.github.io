@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c56b98ce889653412aa0f3d6ab6a0263?s=50"></div><header><strong>Starter Project</strong> from <string>Sergey Bolshedvorsky</string> &lt;sergey at bolshedvorsky.com&gt;<p>December  8, 2015 at 07:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I’m looking for a starter project on swift. Something what would be useful and what would allow me to dive into the code. I could take one of the JIRA tickets. Do not want to fix typos. :)<br></p><p>Sergey<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ff884553e8061a725a64458afd710be3?s=50"></div><header><strong>Starter Project</strong> from <string>Meador Inge</string> &lt;meadori at gmail.com&gt;<p>December  8, 2015 at 01:00:00pm</p></header><div class="content"><p>On Tue, Dec 8, 2015 at 1:03 PM, Sergey Bolshedvorsky via swift-dev &lt;<br>swift-dev at swift.org&gt; wrote:<br></p><p>Hi everyone,<br>&gt;<br>&gt; I’m looking for a starter project on swift. Something what would be useful<br>&gt; and what would allow me to dive into the code. I could take one of the JIRA<br>&gt; tickets. Do not want to fix typos. :)<br>&gt;<br></p><p>Did you look at the unassigned start bugs?<br></p><p>https://bugs.swift.org/issues/?jql=labels%20%3D%20StarterBug%20AND%20assignee%20in%20(EMPTY)<br></p><p>You might want to cross check those with the mailing list and see if there<br>has been discussion about them already.<br></p><p>Cheers,<br></p><p>Meador<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151208/f4e3bd96/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>

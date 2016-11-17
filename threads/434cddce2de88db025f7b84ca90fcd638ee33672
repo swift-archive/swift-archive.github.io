@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Swift Mailing List Archive</title>
-    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg" height="70">
       </header>
 
       <p class="alert alert-info" role="alert"></p>
@@ -23,7 +23,7 @@
     </div> <!-- /container -->
     <main role="main">
 <div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Deferred] SE-0132: Rationalizing Sequence end-operation names</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July 27, 2016 at 03:00:00pm</p></header><div class="content"><p>Proposal link: https://github.com/apple/swift-evolution/blob/master/proposals/0132-sequence-end-ops.md<br></p><p>Hello Swift Community,<br></p><p>The review of &quot;SE-0132: Rationalizing Sequence end-operation names&quot; ran from July 24...26. The proposal is *deferred* from Swift 3.  <br></p><p>This is a very large proposal very late in the Swift 3 schedule.  It has some clearly good pieces to it, but also many parts that are controversial with the community, and requires more design and iteration than time permits.  It is best to defer this and make a change when we have something truly great, giving the benefit of proper time to design and evaluate the proposal.<br></p><p>Thank you to Brent Royal-Gordon and Dave Abrahams for driving this discussion.  When the goals and parameters of Swift 4 are established, we should pick up this thread and see what makes sense to do here.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div></li></ul></div>    </main>
-    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js"></script>
   </body>
   <footer>
     <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
