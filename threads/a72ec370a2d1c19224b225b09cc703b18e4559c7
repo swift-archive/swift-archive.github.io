@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/537cdf5303cfb8f536e251c89042cbfd?s=50"></div><header><strong>Requiring blocks (universally)</strong> from <string>Saleem Abdulrasool</string> &lt;compnerd at compnerd.org&gt;<p>June 24, 2016 at 11:00:00am</p></header><div class="content"><p>Hi,<br></p><p>The blocks runtime itself is pretty tiny, and works across various targets<br>already, so including it is not too onerous.  As such, Id like to propose<br>enabling blocks across all the targets.<br></p><p>This make it easier to then import code on targets which have optional<br>blocks support.  For most users, this would be a transparent change, but<br>would mean that the clang importer goes through a more similar path across<br>the various targets.<br></p><p>-- <br>Saleem Abdulrasool<br>compnerd (at) compnerd (dot) org<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160624/a72e59c7/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Requiring blocks (universally)</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>June 24, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; On Jun 24, 2016, at 11:05 AM, Saleem Abdulrasool via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; The blocks runtime itself is pretty tiny, and works across various targets already, so including it is not too onerous.  As such, Id like to propose enabling blocks across all the targets.<br>&gt; <br>&gt; This make it easier to then import code on targets which have optional blocks support.  For most users, this would be a transparent change, but would mean that the clang importer goes through a more similar path across the various targets.<br></p><p>It&#39;s a little trickier than that. We only support Swift refcounting object headers on non-Darwin platforms, since there&#39;s no universal objc_retain implementation to fall back to. Blocks don&#39;t use Swift-compatible refcounting with the current runtime.<br></p><p>-Joe<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/569ed436467cf145f3bbdd0d53fbe115?s=50"></div><header><strong>Requiring blocks (universally)</strong> from <string>Slava Pestov</string> &lt;spestov at apple.com&gt;<p>June 24, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; On Jun 24, 2016, at 11:23 AM, Joe Groff via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On Jun 24, 2016, at 11:05 AM, Saleem Abdulrasool via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hi,<br>&gt;&gt; <br>&gt;&gt; The blocks runtime itself is pretty tiny, and works across various targets already, so including it is not too onerous.  As such, Id like to propose enabling blocks across all the targets.<br>&gt;&gt; <br>&gt;&gt; This make it easier to then import code on targets which have optional blocks support.  For most users, this would be a transparent change, but would mean that the clang importer goes through a more similar path across the various targets.<br>&gt; <br>&gt; It&#39;s a little trickier than that. We only support Swift refcounting object headers on non-Darwin platforms, since there&#39;s no universal objc_retain implementation to fall back to. Blocks don&#39;t use Swift-compatible refcounting with the current runtime.<br></p><p>It’s a bit more subtle than that. I think IRGen now does the right thing if a value is statically known to be a block, emitting calls to the block-specific refcounting entry points on both platforms:<br></p><p>https://github.com/apple/swift/commit/aa40f206cb993846c3c211219e54ec246a62a384 &lt;https://github.com/apple/swift/commit/aa40f206cb993846c3c211219e54ec246a62a384&gt;<br></p><p>However, on Darwin we can cast a block to AnyObject, and use the unknown reference counting entry points on these values. On Linux, AnyObject still uses Swift-native reference counting, and thus is not bitwise-compatible with blocks. So as long as this is not an issue, you can go ahead and use blocks on Linux.<br></p><p>We’ve talked about hacking the blocks runtime to use Swift reference counting on Linux, but this is a non-trivial change.<br></p><p>Saleem, please give it a shot and let us know if you run into any problems!<br></p><p>&gt; <br>&gt; -Joe<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160624/60010bbb/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

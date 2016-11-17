@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0107: UnsafeRawPointer API</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July  5, 2016 at 03:00:00pm</p></header><div class="content"><p>on Tue Jul 05 2016, Andrew Trick &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jul 2, 2016, at 10:10 PM, Brent Royal-Gordon via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; I have a pile of naming quibbles; rather than describe them all in<br>&gt;&gt; prose (which turned into a mess), I&#39;ve annotated parts of the &quot;Full<br>&gt;&gt; UnsafeRawPointer API&quot; section in a gist:<br>&gt;&gt; &lt;https://gist.github.com/brentdax/8f4ed4decafc1d18c4441092baa13cfe<br>&gt;&gt; &lt;https://gist.github.com/brentdax/8f4ed4decafc1d18c4441092baa13cfe&gt;&gt;.<br>&gt;&gt; <br>&gt;<br>&gt; I mostly agree with Brent&#39;s naming suggestions below. Anyone else want to weigh in?<br>&gt; https://github.com/apple/swift-evolution/pull/410<br></p><p>Comments made on that page.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

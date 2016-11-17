@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6780924de59556b6f3bb57fe2d289937?s=50"></div><header><strong>[Proposal]Make .map return the calling collection type</strong> from <string>Yogev Sitton</string> &lt;yogev.sitton at gmail.com&gt;<p>April 12, 2016 at 11:00:00am</p></header><div class="content"><p>Map is great for transforming an array of objects - it is very useful and I use it a lot.<br>I would love to use Map with Dictionaries and other collections as well.<br></p><p>As an example - let’s say I have a dictionary [String : Person] - that maps a person to an ID.<br>I want to use the map function a get a [String : String] - a dictionary that maps a person’s name to an ID.<br>Currently - the map method is defined to always return an array so that is not possible to do.<br></p><p>Obviously there are a lot of ways to accomplish the same task - but it would be very nice to be able to use map for other types than Array.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>[Proposal]Make .map return the calling collection type</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>April 12, 2016 at 02:00:00am</p></header><div class="content"><p>On Tue, Apr 12, 2016 at 1:55 AM, Yogev Sitton via swift-evolution<br>&lt;swift-evolution at swift.org&gt; wrote:<br>&gt; Map is great for transforming an array of objects - it is very useful and I use it a lot.<br>&gt; I would love to use Map with Dictionaries and other collections as well.<br>&gt;<br>&gt; As an example - let’s say I have a dictionary [String : Person] - that maps a person to an ID.<br>&gt; I want to use the map function a get a [String : String] - a dictionary that maps a person’s name to an ID.<br>&gt; Currently - the map method is defined to always return an array so that is not possible to do.<br></p><p>Hi,<br></p><p>We can discuss adding special-case functions to individual collections<br>where it makes sense, but it does not make sense to do it for<br>collections in general, please see<br>https://github.com/apple/swift/blob/master/docs/StdlibRationales.rst#high-order-functions-on-collections-return-arrays<br>for the rationale.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

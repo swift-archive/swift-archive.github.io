@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Pitch: only allow capture of inout parameters in @noescape closures</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 28, 2016 at 02:00:00pm</p></header><div class="content"><p>on Thu Jan 28 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I think the time has come for us to limit the implicit capture of<br>&gt; &#39;inout&#39; parameters to @noescape closures. In the early days before<br>&gt; @noescape, we designed a semantics for capturing &quot;inout&quot; parameters<br>&gt; that attempted to balance the constraints on inout with the usability<br>&gt; of higher-order functions. Inout parameters don&#39;t pass a first-class<br>&gt; reference as in other languages, but instead provide a limited lease<br>&gt; to mutate a property for the duration of a call; this means closures<br>&gt; can&#39;t extend the lifetime of that lease, so closures instead capture<br>&gt; the local mutable copy of the inout parameter. This gives the expected<br>&gt; behavior as long as closures over an inout parameter never escape<br>&gt; their original scope, but leads to surprises as soon as those closures<br>&gt; escape. This unintuitive behavior has made several &quot;Swift gotchas&quot;<br>&gt; lists. Now that we can explicitly mark closures as not escaping, I<br>&gt; think we should prevent &#39;inout&#39; parameters from being implicitly<br>&gt; captured by escapable closures. There are several ways we can still<br>&gt; support today&#39;s behavior:<br>&gt;<br>&gt; - Encourage people to write the local copy themselves, if that&#39;s what they want:<br>&gt;<br>&gt; func foo(inout x: Int) {<br>&gt;   var localX = x; defer { x = localX }<br>&gt;<br>&gt;   // Asynchronously mutate localX, then wait for it to finish<br>&gt;   dispatch_async { mutate(&amp;localX) }<br>&gt;   dispatch_sync {}<br>&gt; }<br></p><p>+1<br></p><p>As the author of the current semantics, I can say with confidence that<br>if we&#39;d had @noescape at our disposal originally we would never have<br>done this.<br></p><p>&gt; - You can explicitly capture an immutable copy:<br>&gt;<br>&gt; func foo(inout x: Int) {<br>&gt;   // We don&#39;t need to mutate or observe mutations on x in the async job<br>&gt;   dispatch_async {[x] in doStuffWithoutMutating(x) }<br>&gt; }<br>&gt;<br>&gt; and/or we could introduce a new explicit capture kind for the current behavior:<br>&gt;<br>&gt; func foo(inout x: Int) {<br>&gt;   // Explicitly capture the &#39;inout&#39; mutable shadow copy of x<br>&gt;   dispatch_async {[inout x] in mutate(&amp;x) }<br>&gt;   dispatch_sync { }<br>&gt; }<br></p><p>-1.  Let&#39;s not complicate the language for this rare case.<br></p><p>&gt; Making it explicit should make the behavior less surprising when it<br>&gt; occurs. We should able to provide fixits to migrate code that relies<br>&gt; on the current behavior as well. What do you all think?<br>&gt;<br>&gt; -Joe<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

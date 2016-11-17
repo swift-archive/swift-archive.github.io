@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/327f6348f4b9ebcd974ffc80188da2bc?s=50"></div><header><strong>Lazy var and deinit</strong> from <string>Alexandr.moq</string> &lt;alex at moqod.com&gt;<p>April 21, 2016 at 01:00:00pm</p></header><div class="content"><p>Should SWIFT initialize a variable in deinit method if it has not been initialized? <br></p><p>For example: <br>```swift<br>class A {<br>	lazy var b = B()<br>	deinit {<br>		b.clean()<br>	}<br>}<br>var a = A()<br>a.b.doSomething() //1: variable was created<br>a = A() //2: &quot;clean&quot; method was called for &quot;b&quot; variable<br>a = A() //3: instance of A from step 2 should killed and &quot;deinit&quot; method is called. In this method &quot;b&quot; variable will be created, &quot;clean&quot; will be called and &quot;b&quot; will be killed. So, is it ok or better if swift doesn’t create lazy variables in deinit if variable is not created yet<br>```<br>To be honest, I don’t know which topic I should use. Because I don’t know, it’s propose, bug or something else.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c69b8eb4df5af15923fd1647a8276890?s=50"></div><header><strong>Lazy var and deinit</strong> from <string>John McCall</string> &lt;rjmccall at apple.com&gt;<p>April 21, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Apr 21, 2016, at 2:29 AM, Alexandr.moq via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; Should SWIFT initialize a variable in deinit method if it has not been initialized? <br>&gt; <br>&gt; For example: <br>&gt; ```swift<br>&gt; class A {<br>&gt; 	lazy var b = B()<br>&gt; 	deinit {<br>&gt; 		b.clean()<br>&gt; 	}<br>&gt; }<br>&gt; var a = A()<br>&gt; a.b.doSomething() //1: variable was created<br>&gt; a = A() //2: &quot;clean&quot; method was called for &quot;b&quot; variable<br>&gt; a = A() //3: instance of A from step 2 should killed and &quot;deinit&quot; method is called. In this method &quot;b&quot; variable will be created, &quot;clean&quot; will be called and &quot;b&quot; will be killed. So, is it ok or better if swift doesn’t create lazy variables in deinit if variable is not created yet<br>&gt; ```<br>&gt; To be honest, I don’t know which topic I should use. Because I don’t know, it’s propose, bug or something else. <br></p><p>It&#39;s probably a question for swift-evolution more than -dev; moving there.<br></p><p>The behavior you&#39;re seeing is a product of the current straightforward rule for what it means to access a lazy property.  I think complicating that rule to say something like &quot;direct accesses in deinit produce an optional T instead of calling the initializer&quot; would be... well, defensible, but a poor idea overall.  It would be a better language approach to allow some way to access the underlying optional storage of the property at any point in the program.  That should be easily done with the property behaviors feature when it lands, so I don&#39;t think we need anything else here.<br></p><p>John.<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Lazy var and deinit</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>April 24, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Apr 21, 2016, at 2:29 AM, Alexandr.moq via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Should SWIFT initialize a variable in deinit method if it has not been initialized? <br>&gt; <br>&gt; For example: <br>&gt; ```swift<br>&gt; class A {<br>&gt; 	lazy var b = B()<br>&gt; 	deinit {<br>&gt; 		b.clean()<br>&gt; 	}<br>&gt; }<br>&gt; var a = A()<br>&gt; a.b.doSomething() //1: variable was created<br>&gt; a = A() //2: &quot;clean&quot; method was called for &quot;b&quot; variable<br>&gt; a = A() //3: instance of A from step 2 should killed and &quot;deinit&quot; method is called. In this method &quot;b&quot; variable will be created, &quot;clean&quot; will be called and &quot;b&quot; will be killed. So, is it ok or better if swift doesn’t create lazy variables in deinit if variable is not created yet<br>&gt; ```<br></p><p>I’m not exactly sure what the question is here, but the correct behavior in this case is for the call to “b.clean()” to trigger the lazy initialization of b if it hasn’t already been initialized.  There is no “short circuit” that would prevent this from happening just because this is a deinit.<br></p><p>Also, it is frequently requested, but there is currently no way to check to see if a lazy property has been touched or not.<br></p><p>-Chris<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

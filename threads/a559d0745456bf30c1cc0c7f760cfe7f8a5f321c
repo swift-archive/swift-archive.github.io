@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>Trouble assigning an array of C pointers to a C struct field</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>April 10, 2016 at 05:00:00pm</p></header><div class="content"><p>I’m bridging a C API (that I wrote) to Swift; I’ve got most of it together, but I’m stuck on one part, where I can’t get the bridging code to compile without errors no matter how I write it.<br></p><p>The basic problem is I’ve got a dynamically-allocated opaque C pointer type (C4Key*), and there’s a struct in the C API with a field that points to a C array of these, plus a count. In Swift I have an array of these pointers, typed as [COpaquePointer], and I want to point the struct field to it.<br></p><p>Here’s the relevant bit of the C API:<br></p><p>    typedef struct c4Key C4Key; // opaque type<br></p><p>    C4Key* c4key_new(void);<br></p><p>    typedef struct {<br>        // ...<br>        const C4Key **keys;<br>        size_t keysCount;<br>    } C4QueryOptions;<br></p><p>In my Swift code I have:<br></p><p>        var opt = C4QueryOptions()<br>        var keyHandles: [COpaquePointer] = wrappedKeys.map {$0.handle}<br>        // Attempt 1, error is “Cannot assign [COpaquePointer] to COpaquePointer”:<br>        opt.keys = &amp;keyHandles<br>        // Attempt 2, error is &quot;cannot assign value of type &#39;UnsafePointer&lt;[COpaquePointer]&gt;&#39; (aka &#39;UnsafePointer&lt;Array&lt;COpaquePointer&gt;&gt;&#39;) to type &#39;UnsafeMutablePointer&lt;COpaquePointer&gt;&#39;&quot;<br>        withUnsafePointer(&amp;keyHandles) { keysPtr in<br>            opt.keys = keysPtr<br>            DoSomethingWith(opt)<br>        }<br></p><p>It’s definitely a type-checking problem; I can’t convince the compiler to give me a pointer to the elements of the array as a COpaquePointer. Any clues?<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160410/a559321c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>Trouble assigning an array of C pointers to a C struct field</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>April 10, 2016 at 05:00:00pm</p></header><div class="content"><p>The rubber-duckie effect strikes again! A few minutes after posting about my problem I figured out the answer:<br></p><p>        withUnsafeMutablePointer(&amp;keyHandles[0]) { keysPtr in<br>            opt.keys = keysPtr<br>            DoSomethingWith(opt)<br>        }<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160410/2400eb32/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

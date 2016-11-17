@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>undefined symbol: _TFC10Foundation8NSNumberg25customPlaygroundQuickLookOs19PlaygroundQuickLook</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>August 11, 2016 at 05:00:00pm</p></header><div class="content"><p>on Thu Aug 11 2016, Philippe Hausler &lt;swift-dev-AT-swift.org&gt; wrote:<br></p><p>&gt; Looks like that is a dirty build.<br>&gt;<br>&gt; I think we should probably just delete the support in<br>&gt; swift-corelibs-foundation entirely for now until a stable interface<br>&gt; can be decided (and also delete the tests for them in<br>&gt; swift-corelibs-foundation).<br>&gt;<br>&gt; This can easily be added back in with little effort (and probably updated to the latest expositions to match the overlay)<br>&gt;<br>&gt; The failure looks like it is linking against an out of date version of<br>&gt; Foundation that was previously built without the symbols named as<br>&gt; expected.<br></p><p>Well, I think the symbols are back to their original names now, so you<br>might want to hold off and let things settle in the testing<br>infrastructure.<br></p><p>&gt;<br>&gt;<br>&gt;&gt; On Aug 11, 2016, at 4:40 PM, Jordan Rose via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; +Foundation-Michael (and Tony). One more test to update? Problem with clean builds?<br>&gt;&gt; <br>&gt;&gt; Jordan<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; On Aug 11, 2016, at 16:15, Daniel Dunbar via swift-dev &lt;swift-dev at swift.org &lt;mailto:swift-dev at swift.org&gt;&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Is anyone investigating this failure on the CI bots:<br>&gt;&gt;&gt; --<br>&gt;&gt;&gt; /home/buildnode/jenkins/workspace/oss-swift-incremental-RA-linux-ubuntu-15_10/buildbot_incremental/foundation-linux-x86_64/TestFoundation/TestFoundation: symbol lookup error: /home/buildnode/jenkins/workspace/oss-swift-incremental-RA-linux-ubuntu-15_10/buildbot_incremental/foundation-linux-x86_64/TestFoundation/TestFoundation: undefined symbol: _TFC10Foundation8NSNumberg25customPlaygroundQuickLookOs19PlaygroundQuickLook<br>&gt;&gt;&gt; --<br>&gt;&gt;&gt; it has been showing up on and off all day<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Latest example:<br>&gt;&gt;&gt;   https://ci.swift.org/job/oss-swift-incremental-RA-linux-ubuntu-15_10/7246/console &lt;https://ci.swift.org/job/oss-swift-incremental-RA-linux-ubuntu-15_10/7246/console&gt;<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;  - Daniel<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; _______________________________________________<br>&gt;&gt;&gt; swift-dev mailing list<br>&gt;&gt;&gt; swift-dev at swift.org &lt;mailto:swift-dev at swift.org&gt;<br>&gt;&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-dev mailing list<br>&gt;&gt; swift-dev at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

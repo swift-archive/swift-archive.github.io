@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 24, 2016 at 05:00:00pm</p></header><div class="content"><p>on Sat Jan 23 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; This all looks good to me (aside from the linguistic problems with<br>&gt; verb conjugation I&#39;ve raised in another subthread). However, I think<br>&gt; these naming guidelines lead us to reconsider our default argument<br>&gt; labeling rules for &#39;func&#39; declarations again, as David Owens and<br>&gt; others have suggested. The stated goal of the current language rule is<br>&gt; to guide people into good API design following our conventions, but I<br>&gt; don&#39;t think it succeeds in serving that purpose. If you follow the<br>&gt; guidelines, the argument labels for your secondary arguments generally<br>&gt; end up becoming prepositional phrases, which make for poor variable<br>&gt; names, <br></p><p>Hi Joe, <br></p><p>Like Doug, I disagree that we guide you into using prepositional phrases<br>for secondary arguments.  But I really want to address the &quot;poor<br>variable names&quot; part of what you said.  It&#39;s true, as far as it goes,<br>but one thing nobody knows is that there are a few more guidelines<br>planned that didn&#39;t make it out in time for the review.  One goes<br>something like this:<br></p><p>   Choose parameter names to serve your documentation comment. These<br>   names are not API, but they still matter.  Well-chosen names allow<br>   the summary to read smoothly and to fully-describe the API in just a<br>   few words.<br></p><p>The main audience for the argument label is the reader of the use-site,<br>while the main audience for the parameter name is the reader of the<br>documentation and declaration.  Therefore, they should often be<br>distinct, and whether an argument label makes a good parameter name is<br>mostly immaterial.<br></p><p>&gt; and you&#39;re naturally guided to giving the argument an explicit<br>&gt; descriptive binding name:<br>&gt;<br>&gt; func perform(stuff: Stuff, with: Thing) {<br>&gt;   with.apply(stuff) // &#39;with&#39; is a weird variable name<br>&gt; }<br>&gt;<br>&gt; func perform(stuff: Stuff, with thing: Thing) {<br>&gt;   thing.apply(stuff) // &#39;thing&#39; is better<br>&gt; }<br>&gt;<br>&gt; The shorthand thus doesn&#39;t save the good API citizen from much<br>&gt; work. <br></p><p>True!<br></p><p>&gt; On the other hand, a developer who&#39;s unaware or uninterested in the<br>&gt; guidelines and is just trying to C or Java in Swift gets argument<br>&gt; labels by default that neither follow the guidelines nor meet their<br>&gt; expectation:<br>&gt;<br>&gt; func atan2(y: Double, x: Double) -&gt; Double { ... }<br>&gt;<br>&gt; atan2(10, 10) // Why doesn&#39;t this work?<br>&gt; atan2(10, x: 10) // Nobody wants this<br>&gt;<br>&gt; And when staring down potentially dozens or hundreds of compile errors<br>&gt; at various mismatched use sites, <br></p><p>That apocalyptic-sounding scenario went by too fast for me to imagine<br>how it actually arises.  Care to spell that out?<br></p><p>&gt; they&#39;re unlikely to reconsider their API naming choice, and will<br>&gt; instead do the minimal amount of work to get their code to compile by<br>&gt; suppressing the argument label. The language hasn&#39;t led this developer<br>&gt; to better conventional API design either.<br>&gt;<br>&gt; I can think of a couple possible modifications to the language rule<br>&gt; that could help reduce the surprise factor, and still lead people to<br>&gt; good API design:<br></p><p>I&#39;m all for having a discussion of different language rules, but let&#39;s<br>keep them in a separate thread, please!<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

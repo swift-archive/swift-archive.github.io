@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>named parameters</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 22, 2016 at 03:00:00pm</p></header><div class="content"><p>on Fri Jan 22 2016, Tino Heth &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;&gt; UIView.insertSubview(_:,belowSubview:) and<br>&gt;&gt; UIView.insertSubview(_:,aboveSubview:) beg to differ. As do<br>&gt;&gt; UIView.convertPoint(_:,toView:) and<br>&gt;&gt; UIView.convertPoint(_:,fromView:). Need more examples? Take a look<br>&gt;&gt; at UITableViewDelegate.<br>&gt;&gt; <br>&gt;&gt; Agreed. I&#39;m quite happy that Swift labels are effectively part of<br>&gt;&gt; the method name and therefore consistently applied. Long parameter<br>&gt;&gt; lists are easy to get lost in.<br>&gt;<br>&gt; That&#39;s exactly my opinion: Labels help us — the computer doesn&#39;t care<br>&gt; weather a function has a meaningful name or is called as &quot;f231(4,<br>&gt; true)&quot;<br>&gt; Especially because of the benefit of labels, it&#39;s imho not necessary<br>&gt; that the compiler enforces their use… but I think it&#39;s actually<br>&gt; annoying to be forced to skip labels:<br>&gt;<br>&gt; func printPowWithBase(base: Double, exponent: Double) {<br>&gt; 	print(pow(base, exponent))<br>&gt; }<br>&gt; printPowWithBase(2, exponent: 3)<br>&gt;<br>&gt; Easy to understand, works as expected — but would it hurt if<br>&gt;<br>&gt; printPowWithBase(base: 2, exponent: 3)<br>&gt;<br>&gt; would be accepted as well? Sure, &quot;base:&quot; is redundant, but who cares?<br></p><p>I do. This kind of cruft adds up, and makes code much harder to read.<br>Also, FWIW, I would like calls to a given method to look the same in<br>most contexts.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e941adb360692446106cebd7f6d2a1a3?s=50"></div><header><strong>named parameters</strong> from <string>Charles Constant</string> &lt;charles at charlesism.com&gt;<p>January 22, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt; but I think it&#39;s actually annoying to be forced to skip labels<br></p><p>The most important thing for me is that it work the *same* way for every<br>argument index, of both methods and initializers. I&#39;m much less concerned<br>abut whether the default for those is &quot;explicit&quot; (which I do prefer) or<br>&quot;hidden.&quot;<br></p><p>As long as it works the same:<br>- I can add new arguments to a function definition without hassle (i.e.:<br>without editing what was previously the first argument)<br>- I can copy and paste arguments between an init and a method (i.e.:<br>without having to add or &quot;_&quot; all the labels)<br>- I can avoid the regular &quot;doh!&quot; moments I still have (after 1.5 years of<br>writing Swift daily) where I wind up with something like swap( a, b: b )<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160122/d14d2391/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1f823d615b521ed15f1006b105c77900?s=50"></div><header><strong>named parameters</strong> from <string>David Sweeris</string> &lt;davesweeris at mac.com&gt;<p>January 22, 2016 at 11:00:00pm</p></header><div class="content"><p>Plus, functions who’s signatures differ only by the argument labels would become inherently ambiguous if the labels were optional.<br></p><p>- Dave Sweeris<br></p><p>&gt; On Jan 22, 2016, at 15:36, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Fri Jan 22 2016, Tino Heth &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; Especially because of the benefit of labels, it&#39;s imho not necessary<br>&gt;&gt; that the compiler enforces their use… but I think it&#39;s actually<br>&gt;&gt; annoying to be forced to skip labels:<br>&gt;&gt; <br>&gt;&gt; func printPowWithBase(base: Double, exponent: Double) {<br>&gt;&gt; 	print(pow(base, exponent))<br>&gt;&gt; }<br>&gt;&gt; printPowWithBase(2, exponent: 3)<br>&gt;&gt; <br>&gt;&gt; Easy to understand, works as expected — but would it hurt if<br>&gt;&gt; <br>&gt;&gt; printPowWithBase(base: 2, exponent: 3)<br>&gt;&gt; <br>&gt;&gt; would be accepted as well? Sure, &quot;base:&quot; is redundant, but who cares?<br>&gt; <br>&gt; I do. This kind of cruft adds up, and makes code much harder to read.<br>&gt; Also, FWIW, I would like calls to a given method to look the same in<br>&gt; most contexts.<br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

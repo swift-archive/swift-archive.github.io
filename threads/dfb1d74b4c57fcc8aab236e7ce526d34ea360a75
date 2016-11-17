@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ad759d1806c218eb2f2b68034c9c28b0?s=50"></div><header><strong>File IO in Swift for Linux</strong> from <string>John Myers</string> &lt;myersj at shawanoschools.com&gt;<p>May 20, 2016 at 08:00:00pm</p></header><div class="content"><p>I&#39;ve just finished reading a very spirited debate on the merits<br>of streaming versus reading in an entire file.  I&#39;m convinced that both are<br>ideal depending on the situation.  Thank you for the responses I received<br>on my original post.  I had tried previously on StackOverflow, having<br>joined just for that purpose, but found myself censured and &#39;put on hold&#39;<br>for asking a poor question, so I certainly enjoy and appreciate your guy&#39;s<br>help and support.  Yesterday I discovered what I consider to be an elegant<br>solution (because of it&#39;s simplicity and that I comprehend the code) on the<br>sample code of the IBM BlueMix playground website.  I include it here in<br>only slightly modified form.  They didn&#39;t have a &#39;create file&#39; version, but<br>I can work on trying to come up with that when I get a chance.  (Or, any of<br>you can suggest that reverse version).  Here it is... (I did test it, and<br>it works)<br></p><p>/* Opens a file and prints it to the<br>   console. Shows how file input can be done in swift.<br>   From IBM BlueMix Swift Playground sample code selections.<br>*/<br></p><p>#if os(OSX) || os(iOS) || os(watchOS) || os(tvOS)<br>    import Darwin<br>#else<br>    import Glibc<br>#endif<br></p><p>let stream = fopen(&quot;Resources/sampleIn.txt&quot;, &quot;r&quot;)<br></p><p>var s = &quot;&quot;<br>while (true) {<br>    let c = fgetc(stream)<br>    if c == -1 {<br>        break<br>    }<br>    s = String(Character(UnicodeScalar(UInt32(c))))<br>    print(s, terminator:&quot;&quot;)<br></p><p>}<br></p><p>Thanks!<br>John<br></p><p><br>-- <br>John Myers<br>Mathematics and Computer Science Teacher<br>Math Department Chair<br>Shawano Community High School<br>220 County Road B<br>Shawano, WI 54166<br>------------------------------------------------------------------<br>myersj at shawanoschools.com<br>(715) 526-2175 ext 2114<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160520/dfb10a75/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

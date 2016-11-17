@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5db80630abdbef749e968ed6efd7cfe9?s=50"></div><header><strong>[Review] SE-0042 Flattening the function type of unapplied method references</strong> from <string>jazzbox)</string> &lt;jazzbox at 7zz.de (Bernd Ohr&gt;<p>March 21, 2016 at 12:00:00pm</p></header><div class="content"><p>Sorry for being late!<br></p><p>I am not quite sure!<br></p><p>Although I believe that this is a step in the right direction (inout parameters), I would like to see a more general approach where the unapplied method reference produces not one but ALL possible references!<br></p><p>That means that taking the unspecified reference gives an error when there are two ore more possible solutions (definitions are taken from Joe Groff&#39;s proposal):<br></p><p>let f0 = Type.instanceMethod // Error: Type.instanceMethod is ambiguous<br></p><p>Further type specification makes the assignment unambigous:<br></p><p>let f1: (Type, y: Int) -&gt; Int = Type.instanceMethod // OK<br></p><p>let f2: (Type) -&gt; (y: Int) -&gt; Int = Type.instanceMethod // OK<br></p><p>let f3: (y: Int) -&gt; (Type) -&gt; Int = Type.instanceMethod // OK??<br></p><p>Functions like map and reduce then will select the appropriate reference automatically.<br></p><p><br>However, I must admit that this idea arose rather from a theoretical consideration...<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

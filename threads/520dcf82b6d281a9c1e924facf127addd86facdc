@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3eda59ff6b1a13ff04f0d3d3c38520e1?s=50"></div><header><strong>Unexpected Optional unwrapping in generic fn</strong> from <string>Michael Gardner</string> &lt;gardnermj at gmail.com&gt;<p>May 15, 2016 at 04:00:00pm</p></header><div class="content"><p>I&#39;m having trouble understanding why the following code is trying to unwrap an Optional.<br></p><p>////////<br></p><p>class Proxy&lt;T&gt; {<br>	var value:T<br>	init(_ value:T) {<br>		self.value = value<br>	}<br>}<br></p><p>func setter&lt;T&gt;(p:Proxy&lt;T&gt;) -&gt; Any? -&gt; () {<br>	return {p.value = $0 as! T}<br>}<br></p><p>var i = Proxy&lt;Int?&gt;(0), s = setter(i)<br></p><p>s(2)<br>i.value // =&gt; 2<br>s(nil) // =&gt; fatal error: unexpectedly found nil while unwrapping an Optional value<br></p><p>////////<br></p><p>My understanding is that since T is `Int?` here, the setter should be doing (nil as! Int?), which doesn&#39;t cause an error. What am I missing?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Unexpected Optional unwrapping in generic fn</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>May 16, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On May 15, 2016, at 4:13 PM, Michael Gardner via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I&#39;m having trouble understanding why the following code is trying to unwrap an Optional.<br>&gt; <br>&gt; ////////<br>&gt; <br>&gt; class Proxy&lt;T&gt; {<br>&gt; 	var value:T<br>&gt; 	init(_ value:T) {<br>&gt; 		self.value = value<br>&gt; 	}<br>&gt; }<br>&gt; <br>&gt; func setter&lt;T&gt;(p:Proxy&lt;T&gt;) -&gt; Any? -&gt; () {<br>&gt; 	return {p.value = $0 as! T}<br>&gt; }<br>&gt; <br>&gt; var i = Proxy&lt;Int?&gt;(0), s = setter(i)<br>&gt; <br>&gt; s(2)<br>&gt; i.value // =&gt; 2<br>&gt; s(nil) // =&gt; fatal error: unexpectedly found nil while unwrapping an Optional value<br>&gt; <br>&gt; ////////<br>&gt; <br>&gt; My understanding is that since T is `Int?` here, the setter should be doing (nil as! Int?), which doesn&#39;t cause an error. What am I missing?<br></p><p>You&#39;re right, it should be able to successfully cast a `nil` Any? to a nil `Int?. This is a bug. If you have time, could you write up a report on bugs.swift.org?<br></p><p>-Joe<br></p><p><br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

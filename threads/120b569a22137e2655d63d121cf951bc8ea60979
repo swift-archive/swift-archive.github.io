@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6409dc6ff0eb23eaecae0c3b14bcd0ad?s=50"></div><header><strong>Recent llvm Intrinsics lookup updates</strong> from <string>Harlan Haskins</string> &lt;hhaskins at apple.com&gt;<p>March 11, 2016 at 05:00:00pm</p></header><div class="content"><p>Hey all,<br></p><p>There were some huge improvements in LLVM’s intrinsics lookup that dramatically reduce object file size and compile time.<br></p><p>Specifically, llvm/IR/Intrinsics.h gained lookupLLVMIntrinsicByName, which replaces 44k lines of tablegen’d code in llvm/IR/Intrinsics.gen with a binary search. It seems to have reduced object size by 400KB and compile time by about 35s. We include Intrinsics.gen in lib/AST/Builtins.cpp.<br></p><p>We should look into cherry-picking those changes into apple/swift-llvm to see if we can benefit from those compile time and size improvements.<br></p><p>The relevant SVN revisions are r258757, r258774, r258871, r258875, and r258897.<br></p><p>— Harlan<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160311/120b0979/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ecb50a99bf3b4cc0249312945dce7115?s=50"></div><header><strong>Recent llvm Intrinsics lookup updates</strong> from <string>Ben Langmuir</string> &lt;blangmuir at apple.com&gt;<p>March 11, 2016 at 05:00:00pm</p></header><div class="content"><p>&gt; On Mar 11, 2016, at 5:21 PM, Harlan Haskins via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hey all,<br>&gt; <br>&gt; There were some huge improvements in LLVM’s intrinsics lookup that dramatically reduce object file size and compile time.<br>&gt; <br>&gt; Specifically, llvm/IR/Intrinsics.h gained lookupLLVMIntrinsicByName, which replaces 44k lines of tablegen’d code in llvm/IR/Intrinsics.gen with a binary search. It seems to have reduced object size by 400KB and compile time by about 35s. We include Intrinsics.gen in lib/AST/Builtins.cpp.<br>&gt; <br>&gt; We should look into cherry-picking those changes into apple/swift-llvm to see if we can benefit from those compile time and size improvements.<br>&gt; <br>&gt; The relevant SVN revisions are r258757, r258774, r258871, r258875, and r258897.<br></p><p>Can we  just wait until stable is merged forward (+Michael G who has been handling these merges)?  That will pick these up “for free” rather than trying to cherry-pick them out of order.<br></p><p>&gt; <br>&gt; — Harlan<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160311/a71c2cd4/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6409dc6ff0eb23eaecae0c3b14bcd0ad?s=50"></div><header><strong>Recent llvm Intrinsics lookup updates</strong> from <string>Harlan Haskins</string> &lt;hhaskins at apple.com&gt;<p>March 11, 2016 at 07:00:00pm</p></header><div class="content"><p>Should just be fine, though it&#39;ll necessitate source changes in Builtins.cpp.<br></p><p>-- Harlan<br></p><p>&gt; On Mar 11, 2016, at 5:31 PM, Ben Langmuir via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On Mar 11, 2016, at 5:21 PM, Harlan Haskins via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hey all,<br>&gt;&gt; <br>&gt;&gt; There were some huge improvements in LLVM’s intrinsics lookup that dramatically reduce object file size and compile time.<br>&gt;&gt; <br>&gt;&gt; Specifically, llvm/IR/Intrinsics.h gained lookupLLVMIntrinsicByName, which replaces 44k lines of tablegen’d code in llvm/IR/Intrinsics.gen with a binary search. It seems to have reduced object size by 400KB and compile time by about 35s. We include Intrinsics.gen in lib/AST/Builtins.cpp.<br>&gt;&gt; <br>&gt;&gt; We should look into cherry-picking those changes into apple/swift-llvm to see if we can benefit from those compile time and size improvements.<br>&gt;&gt; <br>&gt;&gt; The relevant SVN revisions are r258757, r258774, r258871, r258875, and r258897.<br>&gt; <br>&gt; Can we  just wait until stable is merged forward (+Michael G who has been handling these merges)?  That will pick these up “for free” rather than trying to cherry-pick them out of order.<br>&gt; <br>&gt;&gt; <br>&gt;&gt; — Harlan<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-dev mailing list<br>&gt;&gt; swift-dev at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160311/627023a7/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

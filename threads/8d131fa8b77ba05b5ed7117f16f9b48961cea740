@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a8cb0cb6a2406ee9d85ea72f7c040697?s=50"></div><header><strong>[Review] SE-0117: Default classes to be non-subclassable publicly</strong> from <string>Jakub Suder</string> &lt;jakub.suder at gmail.com&gt;<p>July  7, 2016 at 01:00:00am</p></header><div class="content"><p>&gt; What is your evaluation of the proposal?<br></p><p>Strong -1 from me.<br></p><p>I agree that subclassing library classes that were not explicitly planned<br>to be subclassed might sometimes lead to bugs. But just because a technique<br>or feature of a language allows you to sometimes make mistakes, it doesn&#39;t<br>mean it should be completely disallowed. By this logic, we&#39;d have to remove<br>all instances of &quot;!&quot; any anything related to pointers from Swift. It&#39;s<br>possible for a feature to allow you to shoot yourself in the foot, and<br>still be useful at the same time.<br></p><p>We&#39;ve removed things like C-style for loops or &quot;if object {&quot; shorthand from<br>Swift, because we have cleaner ways of achieving the same goals in a<br>different way, so it was safe to remove them without making the language<br>less powerful. But here we would be removing a feature for which there is<br>no workaround. If I need to override some methods from a binary library or<br>SDK that I use in my app (e.g. Crashlytics, Zendesk - yes, these are ObjC<br>libraries, but I&#39;m speaking about the future), in order to work around some<br>bugs, customize or adapt the behavior to my app (e.g. UI styling,<br>copywriting, i18n), then there&#39;s no other way to do achieve this, other<br>than rewriting the whole thing from scratch. Even if I do have access to<br>the source code, keeping your extensions in a subclass in your app is a<br>much cleaner solution that hacking the library code directly (and getting<br>merge conflicts later). One day, Apple system frameworks will also be<br>written in Swift, and this change will make it harder to use them.<br></p><p>Of course, the above is only a problem if the class hasn&#39;t been marked as<br>subclassable. But I&#39;m afraid that in most cases it won&#39;t be, even if it<br>could be, simply because:<br></p><p>1) the author hasn&#39;t foreseen I&#39;d need this (how could they foresee every<br>possible use case and requirement? if they had known what I&#39;m going to<br>need, I wouldn&#39;t need to write a subclass in the first place)<br></p><p>2) or, more likely, they just didn&#39;t remember about this feature or didn&#39;t<br>realize at all that they need to add this subclassable keyword to make this<br>possible. Or they did, but they forgot to add it to some new code.<br></p><p>The proposed &#39;subclassable&#39; and &#39;overridable&#39; keywords would also introduce<br>a lot of noise to the library code, if the author wanted to make most or<br>all of their code extensible. A single &#39;open&#39; keyword would be preferred,<br>and adding it only to the class and not the methods (marking class as open<br>makes whole class and its methods non-final) would be even better, since it<br>would make it more likely library authors would actually use it (though<br>still only a &quot;lesser evil&quot;).<br></p><p>As for the performance aspect - I don&#39;t think a minor speedup should be a<br>reason to remove a useful feature from the language, it would be most<br>likely a case of premature optimization. If necessary, you can always mark<br>a critical class as final if profiling shows that it&#39;s being called all the<br>time, and leave all the other classes open by default.<br></p><p><br>&gt; Is the problem being addressed significant enough to warrant a change to<br>Swift?<br></p><p>I don&#39;t think the problem is significant, and I&#39;m afraid the proposed<br>solution is worse than the problem itself.<br></p><p>&gt; Does this proposal fit well with the feel and direction of Swift?<br></p><p>I don&#39;t feel qualified to answer this.<br></p><p>&gt; If you have used other languages or libraries with a similar feature, how<br>do you feel that this proposal compares to those?<br></p><p>I&#39;ve used Ruby and JavaScript for many years each, and ObjC for a few<br>years. In my opinion, all three give the developer much more power when it<br>comes to using code in creative and unplanned ways when that&#39;s what you<br>need to achieve your goals, than Swift does currently. That&#39;s especially<br>the case with the first two - ObjC already felt too restrictive in many<br>ways for me.<br></p><p>&gt; How much effort did you put into your review? A glance, a quick reading,<br>or an in-depth study?<br></p><p>I&#39;ve read the proposal and skimmed through the responses thread.<br></p><p>Kuba<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160707/8d13a740/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

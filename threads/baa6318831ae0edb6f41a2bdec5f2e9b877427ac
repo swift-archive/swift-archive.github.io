@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b35b44357e4cca3a1de39ba1199c9ab5?s=50"></div><header><strong>multi-line string literals.</strong> from <string>ted van gaalen</string> &lt;tedvgiosdev at gmail.com&gt;<p>April 24, 2016 at 11:00:00pm</p></header><div class="content"><p>let purpleRain =        // in remembrance to one of my favorite artists.<br>  “What’s wrong with concatenating string constants with “ +<br>  “plus-signs, like in this example? \n\n“                            +<br>  “I am quite happy with doing it this way. ”                   +<br>  “No problem, kind regards\n”                                   +<br>  “TedvG” <br></p><p>(not so active here in the coming 2-3 weeks.<br>In the process of moving from<br>www.illmensee.de  to  www.speyer.de )<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d90466f6a63f45386adb0f33d3879e52?s=50"></div><header><strong>multi-line string literals.</strong> from <string>John Holdsworth</string> &lt;mac at johnholdsworth.com&gt;<p>April 24, 2016 at 10:00:00pm</p></header><div class="content"><p>This isn’t the best argument but they can be very slow to compile :(<br></p><p>&gt; On 24 Apr 2016, at 22:52, Ted F.A. van Gaalen &lt;tedvgiosdev at gmail.com&gt; wrote:<br>&gt; <br>&gt; let purpleRain =        // in remembrance to one of my favorite artists.<br>&gt;  “What’s wrong with concatenating string constants with “ +<br>&gt;  “plus-signs, like in this example? \n\n“                            +<br>&gt;  “I am quite happy with doing it this way. ”                   +<br>&gt;  “No problem, kind regards\n”                                   +<br>&gt;  “TedvG” <br>&gt; <br>&gt; (not so active here in the coming 2-3 weeks.<br>&gt; In the process of moving from<br>&gt; www.illmensee.de  to  www.speyer.de )<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

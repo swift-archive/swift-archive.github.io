@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c8bc65b07027beac76b917624be47611?s=50"></div><header><strong>Robotics with Swift</strong> from <string>Jon Hoffman</string> &lt;hoffman.jon at gmail.com&gt;<p>May  8, 2016 at 09:00:00pm</p></header><div class="content"><p>Is there anyone interested in robotics with Swift?  I created a Swift library named SwiftyBones (https://github.com/hoffmanjon/SwiftyBones &lt;https://github.com/hoffmanjon/SwiftyBones&gt; ) for the BeagleBone Black to connect to the Digital GPIO, Analog IN and PWM pins and was interested in feedback on the library by anyone that is familiar with programming single board computers like the BeagleBone Black or Raspberry PI.  I am especially interested in feedback on the modular design and if it helps or hinders development.  I do have a shell script on the SwiftyBones github page that helps with compiling projects that has multiple source files.<br></p><p>To see how SwiftyBones can be used for robotics, I created a reference project using the SwiftBones library.  The github page is here:  https://github.com/hoffmanjon/SwiftyBones_BuddyBot &lt;https://github.com/hoffmanjon/SwiftyBones_BuddyBot&gt; .  To see the robot in action (definitely a work in progress) you can see the video on the latest blog post:  http://myroboticadventure.blogspot.com/2016/05/the-first-robot-programmed-in-swift.html &lt;http://myroboticadventure.blogspot.com/2016/05/the-first-robot-programmed-in-swift.html&gt; <br></p><p>Thanks, <br></p><p>Jon<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160508/38fd6c42/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/279fa63eae4ac804b4dbdb83686797bf?s=50"></div><header><strong>Robotics with Swift</strong> from <string>Austin Zheng</string> &lt;austinzheng at gmail.com&gt;<p>May  8, 2016 at 06:00:00pm</p></header><div class="content"><p>This is great news! I have a BBB and a RC truck I&#39;ve been meaning to build<br>a robot out of this summer, and this gives me an option to interface with<br>the hardware besides the Python interface.<br></p><p>Brad Larson (https://twitter.com/bradlarson) works at a company called<br>SonoPlot that makes robots for research applications, and I believe he&#39;s<br>written a few blog posts on how switching to Swift made the software<br>driving those robots more robust (e.g.<br>http://www.sunsetlakesoftware.com/2014/12/02/why-were-rewriting-our-robotics-software-swift<br>)<br></p><p>Austin<br></p><p>On Sun, May 8, 2016 at 6:14 PM, Jon Hoffman via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Is there anyone interested in robotics with Swift?  I created a Swift<br>&gt; library named SwiftyBones (https://github.com/hoffmanjon/SwiftyBones )<br>&gt; for the BeagleBone Black to connect to the Digital GPIO, Analog IN and PWM<br>&gt; pins and was interested in feedback on the library by anyone that is<br>&gt; familiar with programming single board computers like the BeagleBone Black<br>&gt; or Raspberry PI.  I am especially interested in feedback on the modular<br>&gt; design and if it helps or hinders development.  I do have a shell script on<br>&gt; the SwiftyBones github page that helps with compiling projects that has<br>&gt; multiple source files.<br>&gt;<br>&gt; To see how SwiftyBones can be used for robotics, I created a reference<br>&gt; project using the SwiftBones library.  The github page is here:<br>&gt; https://github.com/hoffmanjon/SwiftyBones_BuddyBot .  To see the robot in<br>&gt; action (definitely a work in progress) you can see the video on the latest<br>&gt; blog post:<br>&gt; http://myroboticadventure.blogspot.com/2016/05/the-first-robot-programmed-in-swift.html<br>&gt;<br>&gt;<br>&gt; Thanks,<br>&gt;<br>&gt; Jon<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160508/f12ba551/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

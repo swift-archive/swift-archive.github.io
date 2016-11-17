@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0067: Enhanced Floating Point Protocols</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 26, 2016 at 03:00:00pm</p></header><div class="content"><p>on Tue Apr 26 2016, Tony Allevato &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Sun, Apr 24, 2016 at 2:57 AM Nicola Salmoria via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     &gt; &gt; func isEqual(to other: Self) -&gt;Bool<br>&gt;     &gt; &gt; func isLess(than other: Self) -&gt;Bool<br>&gt;     &gt; &gt; func isLessThanOrEqual(to other: Self) -&gt;Bool<br>&gt;     &gt;<br>&gt;     &gt; I&#39;m still not sure why these are methods instead of operators.<br>&gt;<br>&gt;     I think this is an *excellent* choice, and I hope it is the first step to<br>&gt;     completely removing operators from protocols.<br>&gt;<br>&gt;     IMHO throwing operators into protocols is inconsistent and confusing. Having<br>&gt;     regular methods and a single generic version of the operator that calls down<br>&gt;     on the type’s methods is clearer and guarantees that generic code can avoid<br>&gt;     ambiguities by calling the methods directly, instead of having to rely only<br>&gt;     on heavily overloaded global operators.<br>&gt;<br>&gt; I personally disagree on this point. To me, a protocol describes a set of<br>&gt; requirements for a type to fulfill, which includes things other than methods.<br>&gt; Just as a protocol can define initializers, properties, and associated types<br>&gt; that a type must define in order to conform, it makes sense that a protocol<br>&gt; would also define which operators a conforming type must support.<br>&gt;<br>&gt; Introducing a mapping between names and operators poses a few problems:<br>&gt;<br>&gt; – IMO, they are overly verbose and add noise to the definition. This makes the<br>&gt; language look less clean (I&#39;m getting visions of NSDecimalNumber).<br>&gt; – They expose two ways to accomplish the same thing (writing `x.isEqual(to: y)`<br>&gt; and `x == y`).<br>&gt; – Do certain operators automatically get mapped to method names with appropriate<br>&gt; signatures across all types, or does a conforming type still have to provide<br>&gt; that mapping by implementing the operators separately? If it&#39;s the latter,<br>&gt; that&#39;s extra work for the author of the type writing the protocol. If it&#39;s the<br>&gt; former, does it make sense to automatically push these operators for all types?<br>&gt; Should any type that has an `add` method automatically get `+` as a synonym as<br>&gt; well? That may not be desirable.<br>&gt;<br>&gt; I&#39;m very supportive of the floating-point protocol proposal in general, but I<br>&gt; feel the arithmetic and comparison operations should be exposed by operators<br>&gt; alone and not by methods, where there is a suitable operator that has the<br>&gt; intended meaning.<br></p><p>The main reasons to route through a single generic operator<br>implementation are:<br></p><p>* User experience; we want to cut down the number of overloads of any<br>  operator to a manageable set, in part because they live in the global<br>  namespace.  When you look at a list of functions in the global<br>  namespace, seeing fifty instances of `func +` is not helpful.<br></p><p>* Type checker speed.  Having all of these overloads around has<br>  historically put a strain on the type checker and made compilation<br>  slow.  That may be less true today than it once was, though.<br></p><p><br>HTH,<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

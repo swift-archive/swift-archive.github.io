@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[proposal] Either in the Swift Standard Library</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 26, 2016 at 10:00:00pm</p></header><div class="content"><p>on Mon Jan 25 2016, Kevin Ballard &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Then we are fundamentally at odds, because I am categorically opposed<br>&gt; to any solution that does not have specific meaning attached to the<br>&gt; two variants. Either is an awful type that only serves to make APIs<br>&gt; harder to understand, and literally every non-trivial usage of Either<br>&gt; I’ve actually seen in practice, it has been used exactly the way<br>&gt; Result&lt;T&gt; would naturally be defined (where “trivial” means usage in<br>&gt; any kind of actual API, as opposed to sample code or scratch functions<br>&gt; using Either to prototype something that, if turned into actual API,<br>&gt; would replace the usage of Either with a more well-defined enum). And<br>&gt; the existence of Either only serves to encourage people to use it,<br>&gt; which produces an overall negative effect on the quality of APIs.<br>&gt;<br>&gt; -Kevin Ballard<br></p><p>I think I agree with Kevin.  Unlike Kevin, I don&#39;t have much real<br>experience with code using an Either type to draw on, so I can&#39;t say<br>this with quite as much conviction, but I&#39;ve always felt that, if there<br>is a use-case for Either, it&#39;s certainly *not* &quot;return-value-or-error,&quot;<br>which ought to have a more descriptive name and implication of<br>semantics.<br></p><p><br>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

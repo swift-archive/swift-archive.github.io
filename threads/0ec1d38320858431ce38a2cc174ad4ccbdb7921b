@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0059: Update API Naming Guidelines and Rewrite Set APIs Accordingly</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  4, 2016 at 08:00:00am</p></header><div class="content"><p>on Sun Apr 03 2016, Michel Fortin &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; What is your evaluation of the proposal?<br>&gt;<br>&gt; I don&#39;t like &quot;form&quot; as a prefix. To me there is no difference between<br>&gt; `union` and `formUnion`: both sounds functional-style, and actually<br>&gt; the second one perhaps a bit more to my ears. There&#39;s basically two<br>&gt; dictionary definitions of &quot;form&quot;:<br>&gt;<br>&gt; 1. &quot;bring together parts or combine to create (something)&quot; which to me<br>&gt; implies a new value is created, and<br>&gt; 2. &quot;make or fashion into a certain shape or form&quot; which would imply<br>&gt; that the material you start with is transformed, which is apparently<br>&gt; the intended meaning and also the reverse meaning from the above.<br></p><p>When you tell a group of people to “form a circle,” you&#39;re asking them<br>to assume the shape of a circle, not to create a new identity.  That&#39;s<br>the way I view “formUnion.”<br></p><p>&gt; I mean, doesn&#39;t this make sense as an API?<br>&gt;<br>&gt; 	let donut = baker.formDonut(dough) // non-mutating<br></p><p>Not if you account for the rule that verb phrases and side-effects are<br>always linked.<br></p><p>&gt; Perhaps instead of &quot;form&quot; we could use &quot;become&quot; as a prefix when the<br>&gt; operation is naturally described by a noun. That would seem less<br>&gt; ambiguous to me:<br>&gt;<br>&gt; 	a.becomeUnion(b)<br>&gt; 	a.becomeIntersection(b)<br>&gt; 	a.becomeSuccessor(b)<br>&gt;<br>&gt; It&#39;s a bit passive, but I find it fits well when the operation is a<br>&gt; noun.<br></p><p>The latter one doesn&#39;t work at all for the actual use case.  It sounds<br>like you&#39;re telling a to become the successor of b.  In fact, it&#39;s <br></p><p>     someCollection.formSuccessor(&amp;someIndex)<br></p><p>which is updating someIndex to point at its successor position.<br></p><p>&gt; And there&#39;s no way the term lends itself to non-mutating cases without<br>&gt; things becoming nonsensical:<br>&gt;<br>&gt; 	let donut = baker.becomeDonut(dough) // non-mutating?<br></p><p>I agree that is more unambiguous.<br></p><p>&gt;&gt; Is the problem being addressed significant enough to warrant a change to Swift?<br>&gt;<br>&gt; I&#39;m still not entirely convinced any of this is better than the<br>&gt; `InPlace` suffix we had before. `InPlace` might be ugly visually and<br>&gt; grammatically, but seems to be the clearest at expressing the intent.<br>&gt;<br>&gt;&gt; Does this proposal fit well with the feel and direction of Swift?<br>&gt;<br>&gt; There is no question that using a verb instead of the `InPlace` suffix<br>&gt; makes things fits better with the other API guidelines.<br>&gt;<br>&gt;&gt; If you have used other languages or libraries with a similar<br>&gt;&gt; feature, how do you feel that this proposal compares to those?<br>&gt;<br>&gt; N/A<br>&gt;<br>&gt;&gt; How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>&gt;<br>&gt; Read the guideline and API diffs, thought about a few alternative wording, looked in my dictionary.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

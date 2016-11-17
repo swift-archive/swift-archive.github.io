@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6761b86fcf674411c42ea5d32bbf6e5?s=50"></div><header><strong>NSRegularExpression.escapedPatternForString() unimplemented on Linux</strong> from <string>Pushkar N Kulkarni</string> &lt;pushkar.nk at in.ibm.com&gt;<p>February 26, 2016 at 11:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160226/a4b24fda/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>NSRegularExpression.escapedPatternForString() unimplemented on Linux</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>February 26, 2016 at 07:00:00am</p></header><div class="content"><p>To be honest I just didn’t get around to implementing that specific method in my initial implementation. There is a CF function that does that which could be wired up to provide a nearly identical backing to it. <br></p><p>CFStringRef _CFRegularExpressionCreateEscapedPattern(CFStringRef pattern)<br></p><p>should give you a good starting point to implement the NSRegularExpression side that should follow the same logic as the objective-c version.<br></p><p>&gt; On Feb 26, 2016, at 3:28 AM, Pushkar N Kulkarni via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello, <br>&gt; <br>&gt; I have a query regarding NSRegularExpression. I can see that the class method escapedPatternForString(),  that escapes all characters in a string which could be treated as metacharacters, is unimplemented as per the latest dev snapshot for Linux.<br>&gt; <br>&gt; Welcome to Swift version 3.0-dev (LLVM f95d47afa7, Clang f66c5bb67b, Swift b745691a38). Type :help for assistance.<br>&gt; <br>&gt;   1&gt; import Foundation<br>&gt; <br>&gt;   2&gt; NSRegularExpression.escapedPatternForString(&quot;a+b&quot;)<br>&gt; <br>&gt; fatal error: escapedPatternForString is not yet implemented: file Foundation/NSRegularExpression.swift, line 84<br>&gt; <br>&gt; <br>&gt; However, I see that this method is available on Swift 2.2-dev for OS X. <br>&gt; <br>&gt; Could someone please tell me the rationale behind having it unimplemented for Linux? Were there any Linux-specific obstacles implementing it? We would be glad to contribute here.<br>&gt; <br>&gt; Thanks in advance.<br>&gt; <br>&gt; Pushkar N Kulkarni<br>&gt; IBM Runtimes<br>&gt;  <br>&gt;  <br>&gt; &quot;Any sufficiently advanced technology is indistinguishable from magic.&quot; - Arthur Clarke<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160226/f3f48866/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6761b86fcf674411c42ea5d32bbf6e5?s=50"></div><header><strong>NSRegularExpression.escapedPatternForString() unimplemented on Linux</strong> from <string>Pushkar N Kulkarni</string> &lt;pushkar.nk at in.ibm.com&gt;<p>February 29, 2016 at 12:00:00pm</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160229/8aa69e71/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

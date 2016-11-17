@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>When to use argument labels, part DEUX</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 13, 2016 at 10:00:00am</p></header><div class="content"><p>on Sat Feb 13 2016, Radosław Pietruszewski &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;&gt;&gt;&gt; but I want to make sure if I interpret the proposed guidelines right.<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; 	func actionForCommand(command: UIKeyCommand) -&gt; String? {<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; This should become “actionFor(command: c)” — which isn’t an obvious<br>&gt;<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; That looks like a call, in which case the API above doesn&#39;t allow an<br>&gt;&gt;&gt;&gt; argument label.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I’m sorry — I got confused — what do you mean here?<br>&gt;&gt; <br>&gt;&gt; Sorry, I didn&#39;t notice that you both transitioned from declaring<br>&gt;&gt; (actionForCommand(_)) to calling (actionFor(command:)) *and* changed the<br>&gt;&gt; API at the same time.<br>&gt;&gt; <br>&gt;&gt; So, I would say the guidelines say the call should look like:<br>&gt;&gt; <br>&gt;&gt;    b.action(for: c)<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; It should be `createAttribute(tag: t, data: d)`. <br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Again that looks like a call, so for the above declaration it would be<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;     createAttribute(t, d)<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; Alternatively, it could be `attributeFor(tag: t, data: d)` — I could<br>&gt;&gt;&gt;&gt;&gt; go either way.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Why “for?” Can you explain the semantics of this method (or show a BCDC)?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; This is a initializer-like helper method that instantiates a<br>&gt;&gt;&gt; SecKeychainAttribute from passed parameters.<br>&gt;&gt; <br>&gt;&gt; If it&#39;s a factory, I think guidelines prescribe the call should look like:<br>&gt;&gt; <br>&gt;&gt;   makeAttribute(tag: t, data: d)<br>&gt;<br>&gt; So that’s interesting, because there’s a difference in convention<br>&gt; between a factory/initializer-like function:<br>&gt;<br>&gt; 	makeFoo(this:, that:)<br>&gt;<br>&gt; and a getter/finder-like function:<br>&gt;<br>&gt; 	foo(withThis:, that:)<br></p><p>Yes, that&#39;s the intention.  When the distinction makes no difference,<br>you should treat the function like a getter/finder, IIUC.<br></p><p>&gt; I think that (in particular the difference in the treatment of<br>&gt; argument labels) is the part that makes me most uncomfortable about<br>&gt; the latest draft. Perhaps it isn’t such a big deal, since you usually<br>&gt; don’t see the two next to each other, and as was noted, most<br>&gt; finder-like functions only come with a single parameter, while<br>&gt; initializers and factory methods very commonly have many parameters...<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

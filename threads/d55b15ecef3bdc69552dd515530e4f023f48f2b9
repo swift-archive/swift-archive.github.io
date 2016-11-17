@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>swift-llvm IR vs llvm IR</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>March 30, 2016 at 07:00:00pm</p></header><div class="content"><p>Does swift-llvm IR add any new IR to llvm or it&#39;s the same llvm IR.<br></p><p>Thanks<br>Ramakrishna<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160330/d55bf2b9/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>swift-llvm IR vs llvm IR</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>March 30, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Mar 30, 2016, at 6:46 AM, Ramakrishna Mallireddy via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Does swift-llvm IR add any new IR to llvm or it&#39;s the same llvm IR.<br></p><p>It’s the same LLVM IR. The difference between the LLVM in the swift-llvm repository<br></p><p>	https://github.com/apple/swift-llvm/tree/upstream-with-swift<br></p><p>and the official LLVM repository is tiny.<br></p><p>	- Doug<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>swift-llvm IR vs llvm IR</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>March 31, 2016 at 11:00:00am</p></header><div class="content"><p>Thanks Douglas,<br></p><p>does<br>https://github.com/apple/swift-llvm/blob/upstream-with-swift/docs/LangRef.rst,<br> reflect those tiny changes that llvm-swift made. if it just the same llvm<br>lang ref then is there any doc/ref for llvm-swift changes.<br></p><p>Thanks<br>Ramakrishna<br></p><p>On Wed, Mar 30, 2016 at 10:01 PM, Douglas Gregor &lt;dgregor at apple.com&gt; wrote:<br></p><p>&gt;<br>&gt; &gt; On Mar 30, 2016, at 6:46 AM, Ramakrishna Mallireddy via swift-users &lt;<br>&gt; swift-users at swift.org&gt; wrote:<br>&gt; &gt;<br>&gt; &gt; Does swift-llvm IR add any new IR to llvm or it&#39;s the same llvm IR.<br>&gt;<br>&gt; It’s the same LLVM IR. The difference between the LLVM in the swift-llvm<br>&gt; repository<br>&gt;<br>&gt;         https://github.com/apple/swift-llvm/tree/upstream-with-swift<br>&gt;<br>&gt; and the official LLVM repository is tiny.<br>&gt;<br>&gt;         - Doug<br>&gt;<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160331/0ada638b/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

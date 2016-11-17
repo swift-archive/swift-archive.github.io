@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>[Swift CI] LLDB test failing</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>August 10, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi, <br></p><p>Can someone please look into LLDB test failure? This is currently blocking development snapshot from being built. <br></p><p>https://ci.swift.org/job/oss-lldb-incremental-osx/4496/console<br></p><p>=============<br>Issue Details<br>=============<br>FAIL: test_swift_expression_errors_dsym (lang/swift/expression/errors/TestExpressionErrors.py)<br>FAIL: test_swift_expression_errors_dwarf (lang/swift/expression/errors/TestExpressionErrors.py)<br>FAIL: test_swift_expression_errors_gmodules (lang/swift/expression/errors/TestExpressionErrors.py)<br>FAIL: test_with_dsym (lang/swift/variables/error_type/TestSwiftErrorType.py)<br>FAIL: test_with_dwarf (lang/swift/variables/error_type/TestSwiftErrorType.py)<br>FAIL: test_with_gmodules (lang/swift/variables/error_type/TestSwiftErrorType.py)<br></p><p>Changes which might have introduced this issue: <br>https://ci.swift.org/job/oss-lldb-incremental-osx/4493/changes#detail<br>Summary<br>	• [swiftc (45 vs. 5156)] Add crasher in (details)<br>	• StdlibUnittest: change Minimal~Class types to actually be classes (details)<br>	• stdlib: add tests for AnyHashable.base, and make test names uniform (details)<br>	• stdlib: AnyHashable: add a fixme (details)<br>	• stdlib: add (XFAIL&#39;ed) tests for errors and NSErrors in AnyHashable (details)<br>	• StdlibUnittest: add an `allowBrokenTransitivity` flag to (details)<br>	• runtime: make _SwiftNativeNSError use the Hashable conformance, if (details)<br>	• runtime: hide contents of SwiftValue.h from non-objc runtime build (details)<br>	• runtime: make SwiftValue use the Hashable conformance, if available (details)<br>	• stdlib: coding style and doc comment fixes (details)<br>	• runtime: move two AnyHashable-related entrypoints to (details)<br>	• stdlib: make AnyHashable(SwiftValue) unbox the value (details)<br>	• [Sema][NFC] Use the name of the Decl instead of &quot;None&quot; (details)<br>	• Add a changelog entry for SE-120 (details)<br>	• Add a changelog entry for SE-124 (details)<br>	• Add a changelog entry for SE-125 (details)<br>	• [syntax-map] Fix array-of-object-literal syntax map, argument label (details)<br>	• Add a changelog for SE-128 (details)<br></p><p>Thanks, <br>Mishal Shah<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160810/baf076b7/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

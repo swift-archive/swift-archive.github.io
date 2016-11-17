@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/936a6a8c18cd1a181cae5de7b818a24d?s=50"></div><header><strong>print() behavior difference, working as designed.</strong> from <string>Dru Satori</string> &lt;dru at druware.com&gt;<p>December 17, 2015 at 03:00:00pm</p></header><div class="content"><p>While working on making some adjustments to code that has been developed for OSX/iOS that would allow it to be portable to Linux, we are seeing a behavior that is causing some confusion. I’m not sure it is a bug, it may well be working as designed.<br></p><p>At issue the following code: (where value is an UnsafeMutablePointer&lt;void&gt; containing a pointer to a MacOSRomanStringEncoding of the string ‘hello’)<br></p><p>let data : NSData = NSData.init(bytes:value, length:len)<br>		let s : String = String.init(data:data,<br>			encoding:NSMacOSRomanStringEncoding)!<br>		print(&quot;Value: \(s)&quot;)<br></p><p><br></p><p>On OSX, this results in a print of:<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7572ff765cfe8ae5277b3a106538708b?s=50"></div><header><strong>print() behavior difference, working as designed.</strong> from <string>@lbutlr</string> &lt;kremels at kreme.com&gt;<p>December 17, 2015 at 10:00:00am</p></header><div class="content"><p>Are the NS classes ported to Linux?<br></p><p>-- <br>This is my signature. There are many like it, but this one is mine.<br></p><p>&gt; On Dec 17, 2015, at 08:27, Dru Satori via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; let data : NSData = NSData.init(bytes:value, length:len)<br>&gt;      let s : String = String.init(data:data,<br>&gt;          encoding:NSMacOSRomanStringEncoding)!<br>&gt;      print(&quot;Value: \(s)&quot;)<br>&gt; <br>&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/936a6a8c18cd1a181cae5de7b818a24d?s=50"></div><header><strong>print() behavior difference, working as designed.</strong> from <string>Dru Satori</string> &lt;dru at druware.com&gt;<p>December 17, 2015 at 05:00:00pm</p></header><div class="content"><p>Some of the Foundation classes. NSData is tagged as ‘mostly implemented’<br></p><p><br></p><p><br>On 12/17/15, 12:17 PM, &quot;swift-users-bounces at swift.org on behalf of @lbutlr via swift-users&quot; &lt;swift-users-bounces at swift.org on behalf of swift-users at swift.org&gt; wrote:<br></p><p>&gt;Are the NS classes ported to Linux?<br>&gt;<br>&gt;-- <br>&gt;This is my signature. There are many like it, but this one is mine.<br>&gt;<br>&gt;&gt; On Dec 17, 2015, at 08:27, Dru Satori via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; let data : NSData = NSData.init(bytes:value, length:len)<br>&gt;&gt;      let s : String = String.init(data:data,<br>&gt;&gt;          encoding:NSMacOSRomanStringEncoding)!<br>&gt;&gt;      print(&quot;Value: \(s)&quot;)<br>&gt;&gt; <br>&gt;&gt; <br>&gt;_______________________________________________<br>&gt;swift-users mailing list<br>&gt;swift-users at swift.org<br>&gt;https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

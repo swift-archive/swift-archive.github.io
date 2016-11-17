@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pre-proposal] Replace [Foo] With CollectionType</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May 27, 2016 at 01:00:00pm</p></header><div class="content"><p>on Fri May 27 2016, Xiaodi Wu &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Firstly, the syntax is about to get a lot cleaner. Soon, your example will be:<br>&gt;<br>&gt; func doSomething&lt;<br>&gt; S: Sequence, T: Sequence, U: Sequence<br>&gt;&gt;(foos: S, bars: T, bazzes: U)<br>&gt; where S.Element == Foo, T.Element == Bar, U.Element == Baz<br>&gt;<br>&gt; Second, this syntax shows necessary complexity. Case in point: an array is a<br>&gt; Collection with randomly accessible elements, yet in your example you chose<br>&gt; SequenceType (aka Sequence). An instance of a type conforming to Sequence may or<br>&gt; may not have randomly accessible elements, it may or may not be consumed after<br>&gt; one pass, it may or may not have copy-on-write behavior, <br></p><p>I know it&#39;s not really the point you&#39;re making, but “has copy-on-write<br>behavior” is not something we capture in a protocol constraint, and<br>it probably shouldn&#39;t be.<br></p><p>&gt; and it may or may not be laid out contiguously in memory (which is not<br>&gt; guaranteed for all arrays but is for arrays with elements of primitive<br>&gt; type)--and that&#39;s if it&#39;s entirely held in memory at all.<br>&gt;<br>&gt; By writing out the function declaration the way it&#39;s shown above, it&#39;s clear<br>&gt; what considerations that function will have to take into account. Assuming that<br>&gt; it can operate on arbitrary sequences just like it can an array is a recipe for<br>&gt; a lot of pain.<br>&gt;<br>&gt; On Fri, May 27, 2016 at 12:05 Charles Srstka via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;         On May 27, 2016, at 9:31 AM, plx via swift-evolution<br>&gt;         &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;         For the Sequence/Collection it’s a lot of work for IMHO a rather minor<br>&gt;         convenience, but for more-complex type associated-type relationships it<br>&gt;         could start to pay its own way.<br>&gt;<br>&gt;     Is it really that minor, though? For something so commonly encountered as<br>&gt;     methods that take sequences/collections, this:<br>&gt;<br>&gt;     func doSomething(foos: [Foo], bars: [Bar], bazzes: [Baz])<br>&gt;<br>&gt;     is not only a whole lot easier to type, but is worlds clearer to read than:<br>&gt;<br>&gt;     func doSomething&lt;S: SequenceType, T: SequenceType, U: SequenceType where<br>&gt;     S.Generator.Element == Foo, T.Generator.Element == Bar, U.Generator.Element<br>&gt;     == Baz&gt;(foos: S, bars: T, bazzes: U)<br>&gt;<br>&gt;     Not only is the latter line intimidating to look at as is, but it separates<br>&gt;     the contained type from the parameters themselves. Given how unwieldy this<br>&gt;     second form is, it seems almost certain that the former line will be used<br>&gt;     more frequently in the real world.<br>&gt;<br>&gt;     Charles<br>&gt;<br>&gt;     _______________________________________________<br>&gt;     swift-evolution mailing list<br>&gt;     swift-evolution at swift.org<br>&gt;     https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

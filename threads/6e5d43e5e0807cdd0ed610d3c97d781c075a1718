@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f57fe615642ebcde84881eddd2b47176?s=50"></div><header><strong>Range&lt;UInt64&gt;.count can abort</strong> from <string>Jens Alfke</string> &lt;jens at couchbase.com&gt;<p>April 15, 2016 at 11:00:00pm</p></header><div class="content"><p>I’m writing some code that deals with ranges of “sequence numbers”, which are consecutively-assigned positive 64-bit integers, thus Range&lt;UInt64&gt; in Swift. I’m having trouble handling half-open ranges with no maximum, which are very commonly used for representing all items created since a certain time.<br></p><p>The trouble is, if I represent these with Ranges whose endIndex is UInt64.max, those ranges tend to bomb:<br></p><p>let r: Range&lt;UInt64&gt; = 5..&lt;UInt64.max<br>r.count   // FATAL ERROR<br></p><p>The problem is that Range.count’s type is Element.Distance, and UInt64.Distance is a typealias of … Int. Huh? It’s pretty clear that the distance between two UInt64s can’t be represented by a signed Int64. Why isn’t Distance UInt64?<br></p><p>(I’m guessing it’s because Distance needs to be signed, to represent backwards distances? But that’s not needed for Ranges, of course.)<br></p><p>It’s sort of worrisome that Swift will let me create a valid Range value that nonetheless bombs when accessed! I think I’m going to stop using Range for working with sequence numbers :/<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160415/6e5d1718/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

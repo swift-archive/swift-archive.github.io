@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Discussion] Enum Leading Dot Prefixes</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 11, 2016 at 10:00:00pm</p></header><div class="content"><p>on Thu Feb 11 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; https://gist.github.com/erica/e0b8a3a22ab716a19db4 &lt;https://gist.github.com/erica/e0b8a3a22ab716a19db4&gt;<br>&gt;<br>&gt; Requiring Leading Dot Prefixes for Enum Instance Member Implementations<br>&gt;<br>&gt; Proposal: TBD<br>&gt; Author(s): Erica Sadun &lt;http://github.com/erica&gt;, Chris Lattner &lt;https://github.com/lattner&gt;<br>&gt; Status: TBD<br>&gt; Review manager: TBD<br>&gt;  &lt;https://gist.github.com/erica/e0b8a3a22ab716a19db4#introduction&gt;Introduction<br>&gt;<br>&gt; Enumeration cases are essentially static not instance type members. Unlike static members in structures and classes, enumeration cases can be mentioned in initializers and instance methods without referencing a fully qualified type. This makes little sense. In no other case can an instance implementation directly access a static member. This proposal introduces a rule that requires leading dots or fully qualified references (EnumType.caseMember) to provide a more consistent developer experience to clearly disambiguate static cases from instance members. <br>&gt;<br>&gt;  &lt;https://gist.github.com/erica/e0b8a3a22ab716a19db4#motivation&gt;Motivation<br>&gt;<br>&gt; Swift infers the enclosing type for a case on a developer&#39;s behalf when the use is unambiguously of a single enumeration type. Inference enables you to craft switch statements like this:<br>&gt;<br>&gt; switch Coin() {<br>&gt; case .Heads: print(&quot;Heads&quot;)<br>&gt; case .Tails: print(&quot;Tails&quot;)<br>&gt; }<br></p><p>FYI, after considering the feedback here along with other factors, the<br>API guidelines working group decided a few days ago to make enum cases<br>lowerCamelCase like other values.  Sorry I failed to announce that<br>earlier.<br></p><p>&gt; A leading dot has become a conventional shorthand for &quot;enumeration case&quot; across the language. When used internally in enum implementations, a leading dot is not required, nor is a type name to access the static case member. The following code is legal in Swift.<br>&gt;<br>&gt; enum Coin {<br>&gt;     case Heads, Tails<br>&gt;     func printMe() {<br>&gt;         switch self {<br>&gt;         case Heads: print(&quot;Heads&quot;)  // no leading dot<br>&gt;         case .Tails: print(&quot;Tails&quot;) // leading dot<br>&gt;         }<br>&gt;<br>&gt;         if self == Heads {          // no leading dot<br>&gt;             print(&quot;This is a head&quot;)<br>&gt;         }<br>&gt;<br>&gt;         if self == .Tails {         // leading dot<br>&gt;             print(&quot;This is a tail&quot;)<br>&gt;         }<br>&gt;     }<br>&gt;<br>&gt;     init() {<br>&gt;         let cointoss = arc4random_uniform(2) == 0<br>&gt;         self = cointoss ? .Heads : Tails // mix and match leading dots<br>&gt;     }<br>&gt; }<br>&gt; This quirk produces a language inconsistency that can confuse developers and contravenes the guiding Principle of Least Astonishment. We propose to mandate a leading dot. This will bring case mentions into lock-step with the conventions used to reference them outside of enumeration type implementations.<br>&gt;<br>&gt;  &lt;https://gist.github.com/erica/e0b8a3a22ab716a19db4#detail-design&gt;Detail Design<br>&gt;<br>&gt; Under this rule, the compiler will require a leading dot for all case members. The change will not affect other static members, which require fully qualified references from instance methods and infer self from static methods.<br>&gt;<br>&gt; enum Coin {<br>&gt;     case Heads, Tails<br>&gt;     static func doSomething() { print(&quot;Something&quot;) }<br>&gt;     static func staticFunc() { doSomething() } // does not require leading dot<br>&gt;     static func staticFunc2() { let foo = .Tails } // requires leading dot<br>&gt;     func instanceFunc() { self.dynamicType.doSomething() } // requires full qualification<br>&gt;     func otherFunc() { if self == .Heads ... } // requires leading dot, also initializers<br>&gt;<br>&gt;     /// ...<br>&gt; } <br>&gt;  &lt;https://gist.github.com/erica/e0b8a3a22ab716a19db4#alternatives-considered&gt;Alternatives Considered<br>&gt;<br>&gt; Other than leaving the status quo, the language could force instance members to refer to cases using a fully qualified type, as with other static members.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

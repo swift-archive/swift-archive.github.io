@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Discussion][Expericment] D-like slicing syntax</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 21, 2016 at 03:00:00am</p></header><div class="content"><p>on Sat Feb 20 2016, Daniel Duan &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hi all,<br>&gt;<br>&gt; A while ago there&#39;s a thread on adding Python&#39;s slicing syntax here:<br>&gt; http://thread.gmane.org/gmane.comp.lang.swift.evolution/124/focus=261<br>&gt;<br>&gt; From it, a brief summary of the issues in Python&#39;s slicing syntax:<br>&gt;<br>&gt; 1. light syntax may suggest O(1) operation complexity to some.<br></p><p>Slicing is always O(1) in swift, so that&#39;s a desirable property.<br></p><p>&gt; 2. negative index imposes runtime overhead<br>&gt; 3. negative index masks fencepost errors (`foo(m-n)` supprises if you assume<br>&gt;    m &gt; n)<br></p><p>Yes.<br></p><p>&gt; D&#39;s slicing syntax (https://dlang.org/d-array-article.html) was brought up as<br>&gt; an alternative. It does a better job in suggesting &quot;unusual&quot; operation (if you<br>&gt; treat subscripting with an index as normal). I attached a rudimentary<br>&gt; implementation of it at the end. It&#39;s in not way aimed at being complete or<br>&gt; ending up in stdlib. Hopefully, being able to play with it will generate more<br>&gt; discussion on this topic :)<br>&gt;<br>&gt; // (if you prefer a gist: https://gist.github.com/dduan/5c54df865fdd7b6b7548)<br>&gt; //<br>&gt; // Incomplete:<br>&gt; //   &#39;%&#39; replaces the more ideal &#39;$&#39; (the latter can&#39;t be in name of<br>&gt; // operator)<br></p><p>You don&#39;t need it to be an operator; you can just define a var called $<br>and create operator overloads for + and - that let you build the<br>expressions you want.<br></p><p>&gt; <br>&gt; // where a open ended range is in the design, `nil` is used its place<br>&gt; // force casting between Index.Distance and &#39;Int&#39; <br>&gt; // only on CollectionType, but a version for string is not hard to add<br></p><p>Why not just make<br></p><p>    x[..&lt;$-2]<br></p><p>work?  You can create unary overloads for ..&lt;<br></p><p><br>&gt; public struct Offset { let value: Int }<br>&gt;<br>&gt; prefix operator %+ {}<br>&gt; prefix operator %- {}<br>&gt;<br>&gt; prefix func %+(offset: Int) -&gt; Offset {<br>&gt;     return Offset(value: offset)<br>&gt; }<br>&gt; prefix func %-(offset: Int) -&gt; Offset {<br>&gt;     return Offset(value: -offset)<br>&gt; }<br>&gt;<br>&gt; internal func normalize(start: Int?, end: Int?, total: Int) -&gt; (Int, Int) {<br>&gt;     var actualStart = start ?? 0<br>&gt;     var actualEnd = end ?? total<br>&gt;     actualStart = actualStart &lt; 0 ? total + actualStart : actualStart<br>&gt;     actualEnd = actualEnd &lt; 0 ? total + actualEnd : actualEnd<br>&gt; //  uncomment the following for a much more forgiving index behavior<br>&gt; //  actualStart = actualStart &lt; 0 ? 0 : actualStart<br>&gt; //  actualEnd = actualEnd &lt; 0 ? 0 : actualEnd<br>&gt; //  let safeEnd = min(actualEnd, total)<br>&gt; //  return (min(actualStart, safeEnd), safeEnd)<br>&gt;     return (actualStart, actualEnd)<br>&gt; }<br>&gt;<br>&gt; extension CollectionType {<br>&gt;     public subscript(start:Offset?, end:Offset?) -&gt; Self.SubSequence {<br>&gt;         let (safeStart, safeEnd) = normalize(<br>&gt;             start?.value, end: end?.value, total: self.count as! Int)<br>&gt;         let safeStartIndex = startIndex.advancedBy(<br>&gt;             safeStart as! Self.Index.Distance)<br>&gt;         let safeEndIndex = startIndex.advancedBy(<br>&gt;             safeEnd as! Self.Index.Distance)<br>&gt;         return self[safeStartIndex..&lt;safeEndIndex]<br>&gt;     }<br>&gt;<br>&gt;     public subscript(index: Offset) -&gt; Self.Generator.Element {<br>&gt;         let (safeStart, _) = normalize(<br>&gt;             index.value, end: 0, total: self.count as! Int)<br>&gt;         return self[startIndex.advancedBy(safeStart as! Self.Index.Distance)]<br>&gt;     }<br>&gt; }<br>&gt;<br>&gt; let s = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br>&gt;<br>&gt;             // equavelent in Swift            Python     Result<br>&gt; s[%+2]      // s[s.startIndex.advancedBy(2)]  s[2]       2<br>&gt; s[%-2]      // s[s.endIndex.advancedBy(-2)]   s[-2]      8<br>&gt; s[%+2, %-3] // s.dropFirst(2).dropLast(3)     s[2:-2]    [2, 3, 4, 5, 6]<br>&gt; s[%-5, nil] // s.dropFirst(s.count - 5)       s[-5:]     [5, 6, 7, 8, 9]<br>&gt; s[nil, %-8] // s.dropLast(8)                  s[:-8]     [0, 1]<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

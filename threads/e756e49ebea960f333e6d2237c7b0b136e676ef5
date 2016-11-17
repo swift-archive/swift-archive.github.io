@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/169f08d9daad26bd620adb82fffff289?s=50"></div><header><strong>Swift Package Manager</strong> from <string>Raminder Sodhi</string> &lt;sodramin at ca.ibm.com&gt;<p>September 20, 2016 at 08:00:00pm</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160920/e7566ef5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Swift Package Manager</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>September 20, 2016 at 02:00:00pm</p></header><div class="content"><p>Yes, this is intentional.<br></p><p>We don&#39;t have a strategy yet for dealing with package-specific individual compilation flags like this.<br></p><p>In the meantime, you can try using a system module package instead, and manually defining OPENSSL_LOAD_CONF inside a header within the system module package before you import the actual OpenSSL headers.<br></p><p> - Daniel<br></p><p>&gt; On Sep 20, 2016, at 1:35 PM, Raminder Sodhi via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt;  <br>&gt; The swift package manger seems consider the -DOPENSSL_LOAD_CONF as a non-whitelisted flag.<br>&gt; As a result, I get<br>&gt; nonWhitelistedFlags(&quot;Non whitelisted flags found: [\&quot;-DOPENSSL_LOAD_CONF\&quot;] in pc file openssl&quot;)<br>&gt;  <br>&gt; Is this flag supposed to be non whitelisted ?<br>&gt;  <br>&gt; Seems relevant to be by reading upon this:<br>&gt; https://wiki.openssl.org/index.php/Library_Initialization#OPENSSL_config &lt;https://wiki.openssl.org/index.php/Library_Initialization#OPENSSL_config&gt;<br>&gt;  <br>&gt;  <br>&gt; Raminder Sodhi<br>&gt; E-mail: sodramin at ca.ibm.com &lt;mailto:sodramin at ca.ibm.com&gt;<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160920/af080e30/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

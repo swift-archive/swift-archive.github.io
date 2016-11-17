@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/01c828c6eedd53b8e6a6432170a6dc31?s=50"></div><header><strong>[Proposal] Allow protocols to require functions with default parameter values.</strong> from <string>Vatsal Manot</string> &lt;vatsal.manot at yahoo.com&gt;<p>January 16, 2016 at 02:00:00pm</p></header><div class="content"><p>Currently, the following the code fails with multiple errors:<br></p><p>protocol Protocol<br>{<br>    typealias Argument<br>    <br>    func function(argument: Argument = default)<br>}<br></p><p>I propose that we allow protocols to require functions with default parameter values. I can’t see any disadvantages to this, and the change would only be additive.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/957b675456a66c394945a7361aedd51d?s=50"></div><header><strong>[Proposal] Allow protocols to require functions with default parameter values.</strong> from <string>Zhao Xin</string> &lt;owenzx at gmail.com&gt;<p>January 16, 2016 at 11:00:00pm</p></header><div class="content"><p>Hi Vatsal,<br></p><p>Can you make a formal proposal on this? I think this idea is valuable and<br>should be discussed formally.<br></p><p>I think this can solved this<br>&lt;https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160111/006811.html&gt;<br>too.<br></p><p>A formal proposal is like this<br>&lt;https://github.com/apple/swift-evolution/blob/master/proposals/0020-if-swift-version.md&gt;<br>.<br></p><p>You can learn how to do it here &lt;https://github.com/apple/swift-evolution&gt;.<br></p><p>zhaoxin<br></p><p>On Sat, Jan 16, 2016 at 5:23 PM, Vatsal Manot via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Currently, the following the code fails with multiple errors:<br>&gt;<br>&gt; protocol Protocol<br>&gt; {<br>&gt;     typealias Argument<br>&gt;<br>&gt;     func function(argument: Argument = default)<br>&gt; }<br>&gt;<br>&gt; I propose that we allow protocols to require functions with default<br>&gt; parameter values. I can’t see any disadvantages to this, and the change<br>&gt; would only be additive.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160116/24e8e549/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

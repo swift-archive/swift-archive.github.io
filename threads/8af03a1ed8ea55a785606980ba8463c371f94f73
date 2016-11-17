@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0e8516d3703e35b7df26986815b23e7a?s=50"></div><header><strong>[Proposal] Tuple Extensions</strong> from <string>Robert Widmann</string> &lt;devteam.codafi at gmail.com&gt;<p>May  4, 2016 at 04:00:00pm</p></header><div class="content"><p>Forwarding this reply to the list because I hit the wrong button.<br></p><p>&gt; Begin forwarded message:<br>&gt; <br>&gt; From: Robert Widmann &lt;devteam.codafi at gmail.com&gt;<br>&gt; Subject: Re: [swift-evolution] [Proposal] Tuple Extensions<br>&gt; Date: May 4, 2016 at 4:45:21 PM EDT<br>&gt; To: Joe Groff &lt;jgroff at apple.com&gt;<br>&gt; <br>&gt; Isn’t this assuming that tuples extensions would only come in one flavor?  There will always be cases where you need to limit an extension to a finite arity (for me, Swiftz needs a proper Bifunctor instance for tuples), something that a variadic tuple extension could not support (at least, not according anything I’ve read proposed).  When the time comes to support the infinitary version of these extensions, it’s not that the runtime will carry around the crud left over from the old hat finite version, it’s that the runtime will support both finitary and infinitary tuple extensions.<br>&gt; <br>&gt;&gt; On May 4, 2016, at 11:47 AM, Joe Groff &lt;jgroff at apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; On May 3, 2016, at 10:06 PM, Robert Widmann &lt;devteam.codafi at gmail.com&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Once-and-for-all implementations come in many flavors.  For now, we have clear interest in making a limited subset of possible tuples properly Comparable.  This will also make it easier to implement extensions to specific arities now and serve as a base for variadic generics if that is the path we take.  I could certainly see Future Swift™ allowing this to sit side-by-side with the finite version in this proposal, couldn&#39;t you?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; extension (T...) : Equatable where T.Element : Equatable { }<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; func == &lt;T : Equatable&gt;(l : (T...), r : (T...)) -&gt; Bool { /* .. */ }<br>&gt;&gt; <br>&gt;&gt; One problem with introducing variadics later would be that, if we ship the specific-arity conformances in an ABI-stable standard library, we&#39;re stuck carrying those extensions around forever for backward compatibility.<br>&gt;&gt; <br>&gt;&gt; -Joe<br>&gt;&gt; <br>&gt;&gt;&gt; ~Robert Widmann<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; 2016/05/04 0:54、Joe Groff &lt;jgroff at apple.com&gt; のメッセージ:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; On May 3, 2016, at 9:52 PM, Robert Widmann &lt;devteam.codafi at gmail.com&gt; wrote:<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; Trouble is that I don&#39;t want variadic generics without corresponding support from the type system which is untenable without HKTs (see last paragraph of proposal).  C++&#39;s variadic implementation of std::tuple is not elegant to my mind, and would have no place in a library I could think of writing.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; I think we&#39;d keep tuples as a builtin type. Variadics would just let you implement Equatable/Hashable/etc. once for all tuple arities. I don&#39;t see why we&#39;d need HKTs for that.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; -Joe<br>&gt;&gt; <br>&gt; <br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160504/8af04f73/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: signature.asc<br>Type: application/pgp-signature<br>Size: 801 bytes<br>Desc: Message signed with OpenPGP using GPGMail<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160504/8af04f73/attachment.sig&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

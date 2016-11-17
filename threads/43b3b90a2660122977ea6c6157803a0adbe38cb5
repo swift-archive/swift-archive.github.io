@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4ca02c0ca5c5d6a28bc48eebb3b000c7?s=50"></div><header><strong>Remove forEach?</strong> from <string>Michael Henson</string> &lt;mikehenson at gmail.com&gt;<p>December 12, 2015 at 05:00:00pm</p></header><div class="content"><p>Rather than starting with extra keywords, what about adding an internal<br>enum to the SequenceType and the forEach method signature:<br></p><p>protocol SequenceType {<br>  enum Result {<br>    case Break<br>    case Continue<br>  }<br></p><p>  ...<br></p><p>  func forEach(@noescape body: (Generator.Element) throws -&gt; Result?)<br>rethrows<br></p><p>  ...<br>}<br></p><p>Then, in code:<br></p><p>sequence.forEach {<br>  x in<br></p><p>  if x.noMoreWork {<br>    return .Break<br>  }<br>  if x.notTheOneWeWant {<br>    return .Continue<br>  }<br></p><p>  print(&quot;Hooray, \(x)!&quot;)<br></p><p>  return nil<br>}<br></p><p>Given that Sequence and Generator/Iterator types are so tightly bound to<br>the language syntax, it might be reasonable to add some syntactic sugar on<br>top of this mechanism so that &quot;break&quot; and &quot;continue&quot; turn into the right<br>return values.<br></p><p>Futher, if there were also a &quot;default return value&quot; concept for functions,<br>we wouldn&#39;t even have to worry about explicitly returning nil.<br></p><p>func getAThingOrNot() -&gt; Thing? = nil {<br>  if let thing = weCanGetAThing() {<br>    return thing<br>  }<br></p><p>  // implicitly returns nil<br>}<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151212/43b38cb5/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

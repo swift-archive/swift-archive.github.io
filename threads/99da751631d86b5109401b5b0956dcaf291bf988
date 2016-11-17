@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/da3fd8376948cf47648a5db4e5e5398e?s=50"></div><header><strong>Linux version of Swift doesn&#39;t build</strong> from <string>Shyamal Chandra</string> &lt;shyamalc at icloud.com&gt;<p>July 20, 2016 at 12:00:00am</p></header><div class="content"><p>Hi,<br></p><p>Why did you create a Linux version of Swift when it doesn&#39;t even build properly?<br></p><p>Apple ‎Swift‬ Programming Language source code cannot even build<br>properly with a major error in 16.04 of Ubuntu Linux. Why make an<br>open-source version for Linux when it is not even supported by anyone?<br></p><p>Why have a build-script when it is not even documented well enough?<br></p><p>https://bugs.swift.org/browse/SR-1998<br></p><p>Could you explain?<br>Thanks!<br></p><p>Best,<br></p><p>Shyamal Chandra<br>shyamalc at gmail.com<br>Linkedin: http://www.linkedin.com/in/shyamalc<br>Phone: 620-719-9064<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160720/99daf988/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/34cd360a799c6cbf3ddcd69e6498b77f?s=50"></div><header><strong>Linux version of Swift doesn&#39;t build</strong> from <string>Farhan Ahmed</string> &lt;inshany at gmail.com&gt;<p>July 19, 2016 at 09:00:00pm</p></header><div class="content"><p>Hi Shyamal,<br></p><p>Have you tried running the build script with the -h option, like so:<br></p><p>$ ./swift/utils/build-script -h<br></p><p>This will give you all of the options and intro to how to use the build script. I don’t use Ubuntu, so I can’t say why Swift won’t build on Ubuntu, but I was able to build it on Fedora 23 and now building it on ArchLinux.<br></p><p>Best,<br>Farhan<br></p><p>&gt; On Jul 19, 2016, at 5:49 PM, Shyamal Chandra via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; Why did you create a Linux version of Swift when it doesn&#39;t even build properly?<br>&gt; <br>&gt; Apple ‎Swift‬ Programming Language source code cannot even build<br>&gt; properly with a major error in 16.04 of Ubuntu Linux. Why make an<br>&gt; open-source version for Linux when it is not even supported by anyone?<br>&gt; <br>&gt; Why have a build-script when it is not even documented well enough?<br>&gt; <br>&gt; https://bugs.swift.org/browse/SR-1998 &lt;https://bugs.swift.org/browse/SR-1998&gt;<br>&gt; <br>&gt; Could you explain?<br>&gt; Thanks!<br>&gt; <br>&gt; Best,<br>&gt; <br>&gt; Shyamal Chandra<br>&gt; shyamalc at gmail.com<br>&gt; Linkedin: http://www.linkedin.com/in/shyamalc<br>&gt; Phone: 620-719-9064<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160719/0109bcc3/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0087: Rename lazy to @lazy</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>May 18, 2016 at 11:00:00am</p></header><div class="content"><p>&gt;<br>&gt; &gt; Swift&#39;s rule for attribues/keywords is that keywords usually modify type<br>&gt; of variable; attributes do not.<br>&gt; [citation needed]<br>&gt; As far as I can tell, this is not true at all. Most declaration modifiers<br>&gt; do *not* change the type of anything; as far as I can tell, only<br>&gt; `mutating`, `nonmutating`, and possibly `optional` do. Meanwhile, several<br>&gt; attributes—particularly `@noescape` and `@autoclosure`—*do* change the<br>&gt; type. So where is this belief coming from?<br></p><p><br>When I wrote &quot;modify type&quot;, I did not mean distinction between declaration<br>and type modifiers.<br></p><p>For example, if  @autoclosure  was used as  @autoclosure Int , then I&#39;d say<br>that it &quot;changes&quot; its base type.<br>On the other hand, I&#39;d say that  @autoclosure () -&gt; Int  &quot;keeps&quot; its base<br>type.<br></p><p>In the same sense, `lazy` does not have any visible changes on type of its<br>property.<br>On the other hand, `weak` effectively changes property type from T to T?<br>`unowned` effectively changes T to T!<br></p><p>The main driver was actually property behaviours proposal, and I think the<br>discussion stopped at attribute syntax being most appropriate.<br>If that changes later, and property behaviours is accepted, we will have to<br>move @lazy, along with @NSCopying and others, to the new syntax.<br></p><p>- Anton<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160518/fae069d6/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

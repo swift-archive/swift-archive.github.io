@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e7de8e3d982bbf3901abbcc3a38d0fab?s=50"></div><header><strong>testing guidance</strong> from <string>Scott Guyer</string> &lt;saguyer at gmail.com&gt;<p>February  8, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi folks,<br></p><p>  I&#39;ve tried to determine the current best practice for managing projects<br>with tests. I figure I would just ask ...<br></p><p>Scenario: I have a project with a code module and a test module. I need it<br>to run on both macosx (darwin) as well as Linux.<br></p><p>Using swiftpm on Linux works fine. It fails on macosx (the error is that an<br>underlying dependency for XCTest cannot be loaded). What I read is that<br>corelibs-xctest was not meant to be run on Darwin. I&#39;m coming to the<br>conclusion that I should have a .xcodeproj with a framework target and test<br>target for Darwin testing. Leaving the swiftpm approach for Linux only.<br></p><p>Does that sound about right?<br></p><p>Thanks!<br>-Scott<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160208/042b3a7e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3a0ae72b2f6bdc4476f1fcb63396e717?s=50"></div><header><strong>testing guidance</strong> from <string>Jean-Pierre Simard</string> &lt;jp at jpsim.com&gt;<p>February  8, 2016 at 04:00:00pm</p></header><div class="content"><p>I think this question is better suited for the swift-users mailing list,<br>but I&#39;ll answer here since that&#39;s where you posted this.<br></p><p>The solution I&#39;ve found is full of caveats, but it does run tests with<br>swift-corelibs-xctest on Darwin.<br></p><p>The trick is to build your unit tests as an executable target with your<br>main module as a dependency, and to add swift-corelibs-xctest as a<br>dependency:<br></p><p>import PackageDescription<br></p><p>let package = Package(<br>  name: &quot;MyPackage&quot;,<br>  targets: [<br>    Target(name: &quot;MyPackage&quot;),<br>    Target(name: &quot;MyPacakgeTests&quot;,<br>      dependencies: [.Target(name: &quot;MyPackage&quot;)]),<br>  ],<br>  dependencies: [<br>    .Package(url: &quot;https://github.com/norio-nomura/swift-corelibs-xctest&quot;,<br>majorVersion: 0),<br>  ]<br>)<br></p><p>Note that the XCTest git URL used here isn&#39;t the official one, since it<br>doesn&#39;t yet have an SPM-compatible version tag. So you can fork it and add<br>a tag like Norio did (0.1.0-test). Then you can run your tests by running swift<br>build followed by .build/Debug/MyPackageTests.<br></p><p>However, please note that by doing this, you&#39;re introducing a target with a<br>local dependency, which means that others won&#39;t be able to use your package<br>as a dependency due to SR-688 &lt;https://bugs.swift.org/browse/SR-688&gt;.<br></p><p>I&#39;m testing my projects on Darwin in both Xcode and SPM, using Darwin<br>XCTest in Xcode, and swift-corelibs-xctest in SPM.<br></p><p>You can see the approach we take (including testing on Travis) in<br>SourceKitten &lt;https://github.com/jpsim/SourceKitten&gt; and SwiftLint<br>&lt;https://github.com/realm/SwiftLint&gt;. The relevant files are Package.swift,<br>Makefile and .travis.yml.<br></p><p>I&#39;m hoping that others can share nicer solutions to this as well, but in<br>the meantime, hopefully this gets you unstuck.<br>JP<br></p><p>On Mon, Feb 8, 2016 at 11:12 AM, Scott Guyer via swift-corelibs-dev &lt;<br>swift-corelibs-dev at swift.org&gt; wrote:<br></p><p>&gt; Hi folks,<br>&gt;<br>&gt;   I&#39;ve tried to determine the current best practice for managing projects<br>&gt; with tests. I figure I would just ask ...<br>&gt;<br>&gt; Scenario: I have a project with a code module and a test module. I need it<br>&gt; to run on both macosx (darwin) as well as Linux.<br>&gt;<br>&gt; Using swiftpm on Linux works fine. It fails on macosx (the error is that<br>&gt; an underlying dependency for XCTest cannot be loaded). What I read is that<br>&gt; corelibs-xctest was not meant to be run on Darwin. I&#39;m coming to the<br>&gt; conclusion that I should have a .xcodeproj with a framework target and test<br>&gt; target for Darwin testing. Leaving the swiftpm approach for Linux only.<br>&gt;<br>&gt; Does that sound about right?<br>&gt;<br>&gt; Thanks!<br>&gt; -Scott<br>&gt;<br>&gt;<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160208/7bd0b27e/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

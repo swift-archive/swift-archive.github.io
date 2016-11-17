@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b35b44357e4cca3a1de39ba1199c9ab5?s=50"></div><header><strong>[Review] SE-0117: Default classes to be non-subclassable publicly</strong> from <string>ted van gaalen</string> &lt;tedvgiosdev at gmail.com&gt;<p>July  6, 2016 at 07:00:00pm</p></header><div class="content"><p>&gt; 	* What is your evaluation of the proposal?<br></p><p><br>With all due respect, what is proposed here is imho completely unnecessary<br>and needlessly complicates Swift further. <br></p><p>- in Object oriented development, subclassing should be encouraged, not limited.<br> if one desires a class not to be subclassed simply add the modifier “final”<br></p><p>Using “final” (as in Java or C++) or “sealed” (as in C#) is imho the best way to do it.<br></p><p><br>&gt; 	* Is the problem being addressed significant enough to warrant a change to Swift?<br></p><p>No !  <br></p><p>&gt; 	* Does this proposal fit well with the feel and direction of Swift?<br></p><p>This is a subjective domain. can’t answer that.  Anyway, it’s against the basic principles of OOD/OOP<br></p><p>&gt; 	* If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br></p><p>N/A<br></p><p>&gt; 	* How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br></p><p>I’ve read the proposal...<br></p><p><br>My opinion is based upon years of experience with OOP languages like Smalltalk, Java, Delphi Pascal, Objective C and C++ <br></p><p>Kind Regards, now from speyer.de. <br></p><p>Ted<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

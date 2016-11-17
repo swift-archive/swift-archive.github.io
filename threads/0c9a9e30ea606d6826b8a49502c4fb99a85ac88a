@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>Problem with COW optimization</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>September 18, 2016 at 10:00:00am</p></header><div class="content"><p>Dear Swift community,<br></p><p>currently I’m building a value type XML library which is baked behind the scene with a reference type to manage graph traversing between nodes. I also like to COW optimize the xml graph, but I run into one single problem atm.<br></p><p>Image this xml tree:<br></p><p>&lt;root&gt;<br>    &lt;item/&gt;<br>&lt;/root&gt;<br>It’s just a root element with one single child. As for value types it should be totally fine to do something like this:<br></p><p>// The given xml tree<br>var root = XML.Element(name: &quot;root&quot;)<br>let item = XML.Element(name: &quot;item&quot;)<br>root.add(item)<br></p><p>// The problematic behavior<br>root.add(root)<br>If this would be a simple value type without any references behind the scenes you could imagine that the result of the last code line will look like this:<br></p><p>&lt;root&gt;<br>    &lt;item/&gt;<br>    &lt;root&gt;<br>        &lt;item/&gt;<br>    &lt;/root&gt;<br>&lt;/root&gt;<br>Basically we copied the whole tree and added it as the second child into the original root element.<br></p><p>As for COW optimization this is a problem, just because the passed root is a copy of a struct that contains the exact same reference as the original root element. isKnownUniquelyReferenced(&amp;self.reference) will result in false inside the add method.<br></p><p>Is there any chance I could force my program to decrease the reference counter of that last item after I’m sure I don’t need it?!<br></p><p>A few more details: inside the add method I’m always cloning the passed reference just because graphs aren’t that trivial and otherwise I could possibly end up with a cycle graph, which would be really bad. After that job I’m sure that I don’t need the passed reference anymore and I need a way to escape from it.<br></p><p>I’d appreciate any suggestions and help. :)<br></p><p><br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160918/0c9ac88a/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

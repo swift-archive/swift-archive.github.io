@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Analysis of case conventions for initialisms</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 12, 2016 at 04:00:00pm</p></header><div class="content"><p>on Fri Feb 12 2016, Charles Kissinger &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 12, 2016, at 2:45 PM, Jordan Rose via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; On Feb 12, 2016, at 8:58, Dave Abrahams via swift-evolution<br>&gt;<br>&gt;&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt;&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; on Fri Feb 12 2016, David Waite<br>&gt;&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt;&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Just to make things more complex, I’d like to point out I’ve used yet<br>&gt;&gt;&gt;&gt; another style myself in the past, #2 with elements of #1 which I’ll<br>&gt;&gt;&gt;&gt; refer to as #4 for the purposes of this mail. (2 &lt;&lt; 1). Note that I<br>&gt;&gt;&gt;&gt; have bad grammar, thus I may mess up initialism vs acronym <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; The only reason the initialism/acronym distinction is important is that<br>&gt;&gt;&gt; the former are much more common and the latter don&#39;t have the<br>&gt;&gt;&gt; “mispronounced as a word instead of spelled out” problem.<br>&gt;&gt; <br>&gt;&gt; I maintain that this is not relevant. Pronouncing &quot;URL&quot; as &quot;erl&quot;,<br>&gt;&gt; &quot;OS&quot; as &quot;oss&quot;, &quot;SQL&quot; as &quot;sequel&quot;, &quot;PNG&quot; as &quot;ping&quot;, or &quot;GIF&quot; as<br>&gt;&gt; &quot;?iff&quot; doesn&#39;t affect how they&#39;re spelled, capitalized, lowercased,<br>&gt;&gt; or uppercased. &quot;Radar&quot; and &quot;scuba&quot; show that it might matter after<br>&gt;&gt; long exposure, but it doesn&#39;t change the rules now. And then there<br>&gt;&gt; are mixes, like &quot;JPEG&quot; (pronounced &quot;jay-peg&quot;, not &quot;j&#39;peg&quot;).<br>&gt;<br>&gt; It’s perhaps worth pointing out that the capitalization conventions<br>&gt; for acronyms differ in different parts of the English-speaking<br>&gt; world. For instance, I believe most British publications refer to Nasa<br>&gt; and Nato (if their style guides are to be believed anyway), while<br>&gt; Americans generally only use NASA and NATO.<br>&gt;<br>&gt; And just to add to the confusion, the all-lowercase form of ‘pdf’ has<br>&gt; already entered common use even though it’s an initialism:<br>&gt; http://www.theguardian.com/guardian-observer-style-guide-a<br></p><p>As with html; that happens as soon as it becomes a common file<br>extension.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

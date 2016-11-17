@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8c33d850bed05ec4dc071ab386d23142?s=50"></div><header><strong>Trouble with function class variables</strong> from <string>Doug Hill</string> &lt;fitz at breaqz.com&gt;<p>June 15, 2016 at 06:00:00pm</p></header><div class="content"><p>I’m just starting to learn Swift and attempting to do some functional-style programming. Specifically I’m learning how to create generic algorithms that can be reused for many different types.<br>What I’m attempting to do is create a new object, passing functions to the initializer. The class would store these functions as properties and then use them for functional-style algorithms.<br></p><p>The problem is I’m running into weird compiler errors/messages that I’m trying to figure out. I&#39;m hoping someone here can give me some pointers on what these errors mean, and most likely what I’m doing wrong.<br></p><p>	  Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31) Target: x86_64-apple-macosx10.9<br></p><p>// =====================================================================<br>class Gen&lt;InputKeyType, InputValueType, OutputKeyType, OutputValueType&gt; {<br>    typealias func1Type = (numberRecords:InputKeyType, userRecord: InputValueType ) -&gt; (OutputKeyType, OutputValueType)<br></p><p>    var afunc: func1Type<br></p><p>    init( inFunc: func1Type ) {<br>        afunc = inFunc<br>    }<br>}<br></p><p>var g: Gen&lt;Int, (Int, Int), Int, (Int, Int)&gt; =<br>    Gen( inFunc: { (numberRecords: Int, userRecord: (Int, Int)) -&gt; (Int, (Int, Int)) in<br>                var b: Int = numberRecords<br>                var (age, numFriends) = userRecord<br>                print( (age), (numFriends) )<br>                return (age, (numFriends, 1))<br>            }<br>    )<br>// =====================================================================<br></p><p>What I get as output from the Swift compiler are these confusing messages. I included some print statements that hopefully gives some more info about what’s happening.<br></p><p>g: Gen&lt;Int, (Int, Int), Int, (Int, Int)&gt; = {<br>  afunc = 0x00000001012024d0 $__lldb_expr7`partial apply forwarder for reabstraction thunk helper from @callee_owned (@unowned Swift.Int, @unowned Swift.Int, @unowned Swift.Int) -&gt; (@unowned (Swift.Int, (Swift.Int, Swift.Int))) to @callee_owned (@in Swift.Int, @in (Swift.Int, Swift.Int)) -&gt; (@out (Swift.Int, (Swift.Int, Swift.Int))) at repl6.swift<br>}<br></p><p>print( (g) )<br>Gen&lt;Swift.Int, (Swift.Int, Swift.Int), Swift.Int, (Swift.Int, Swift.Int)&gt;<br></p><p>print( (g.aFunc) )<br>repl.swift:48:9: error: value of type &#39;Gen&lt;Int, (Int, Int), Int, (Int, Int)&gt;&#39; has no member &#39;aFunc&#39;<br>        ^ ~~~~~<br></p><p>There’s a good chance I’m doing something wrong but I don’t know how to figure out what that problem is. Any ideas?<br></p><p>Thanks.<br></p><p>Doug<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160615/d280a929/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

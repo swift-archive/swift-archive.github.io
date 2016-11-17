@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e2303da56647c283b6d8e58d5831faca?s=50"></div><header><strong>Foundation Thread exhaustion on Linux</strong> from <string>Joseph Bell</string> &lt;joe at iachieved.it&gt;<p>June 26, 2016 at 05:00:00pm</p></header><div class="content"><p>Howdy,<br></p><p>I&#39;ve opened https://bugs.swift.org/browse/SR-1908 against Thread (NSThread)<br>in Foundation.  I noticed several weeks ago while working with it on a<br>Raspberry Pi 3 that Thread.start() eventually doesn&#39;t actually start a<br>thread.  This was found a lot faster on the Pi 3 than on a largish x86<br>server.<br></p><p>Anyone familiar with the Thread.swift implementation in<br>https://github.com/apple/swift-corelibs-foundation, I&#39;d love your<br>assessment of whether my code (in SR-1908) is correct or whether I&#39;m<br>missing a crucial call to free up resources.  I thought Thread.exit() would<br>do this for me.<br></p><p>Joe<br></p><p><br>-- <br>Joseph Bell<br>http://dev.iachieved.it/iachievedit/<br>@iachievedit<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160626/90593fb3/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1cf189f1dc2613ba3f5c3967576ae16d?s=50"></div><header><strong>[Review] SE-0084: Allow trailing commas in parameter lists and tuples</strong> from <string>Doug McKenna</string> &lt;doug at mathemaesthetics.com&gt;<p>May 11, 2016 at 03:00:00pm</p></header><div class="content"><p>In all this discussion of trailing commas, there is a use-case that&#39;s not been discussed, which is whether or not a trailing comma after the last of a list of comma-separated items (typically on separate lines) makes it easier to write a program that outputs Swift code declaring that list.  It does.<br></p><p>If such a trailing comma is going to raise a syntax error, and one writes a loop for a set of listed items that will print those listed items, one either has to special case the first item to not be preceded by a &quot;,\n&quot;, and print all subsequent items prefixed with a &quot;,\n&quot;; or one has to end all items except the last with a &quot;,\n&quot;.  Either way is a pain, adds an extra test to the loop, and likely will be implemented erroneously the first time.<br></p><p>Code that is written by other code always has a strong incentive to avoid raising any compiler error/warnings, and so tends not to be read as much by humans who might think there&#39;s a missing item after the last extra comma.<br></p><p>How about a syntax warning/error for only those trailing commas that end a line that contains a previous comma serving the same syntactic function at the same syntactic level?<br></p><p><br>Doug McKenna<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[Review] SE-0084: Allow trailing commas in parameter lists and tuples</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>May 12, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; Am 11.05.2016 um 23:12 schrieb Douglas McKenna via swift-evolution &lt;swift-evolution at swift.org&gt;:<br>&gt; <br>&gt; In all this discussion of trailing commas, there is a use-case that&#39;s not been discussed, which is whether or not a trailing comma after the last of a list of comma-separated items (typically on separate lines) makes it easier to write a program that outputs Swift code declaring that list.  It does.<br>&gt; <br>&gt; If such a trailing comma is going to raise a syntax error, and one writes a loop for a set of listed items that will print those listed items, one either has to special case the first item to not be preceded by a &quot;,\n&quot;, and print all subsequent items prefixed with a &quot;,\n&quot;; or one has to end all items except the last with a &quot;,\n&quot;.  Either way is a pain, adds an extra test to the loop, and likely will be implemented erroneously the first time.<br></p><p>I would expect that loop to be abstracted away so that special case has to be written only once. You would probably like indentation for nesting as well in the generated code, so there is already reason to write a little helper (let’s call it IndentingWriter) or maybe use a full blown framework for pretty printing (e.g. like Haskell’s Text.PrettyPrint, see https://downloads.haskell.org/~ghc/latest/docs/html/libraries/pretty-1.1.2.0/Text-PrettyPrint.html).<br></p><p>-Thorsten<br></p><p><br>&gt; <br>&gt; Code that is written by other code always has a strong incentive to avoid raising any compiler error/warnings, and so tends not to be read as much by humans who might think there&#39;s a missing item after the last extra comma.<br>&gt; <br>&gt; How about a syntax warning/error for only those trailing commas that end a line that contains a previous comma serving the same syntactic function at the same syntactic level?<br>&gt; <br>&gt; <br>&gt; Doug McKenna<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

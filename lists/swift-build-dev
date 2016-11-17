@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="container">
+  <h2>swift-build-dev</h2>
+  <p>Discussion of the implementation of the Swift package manager and low level build system.</p>
+
+  <ul>
+    <li>
+<a href="/threads/7313582c25077814883202df57a9a82f9133768e">SR-22: build fails when following the &quot;getting started&quot; on Ubuntu 14.04 (https://bugs.swift.org/browse/SR-22)</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/ec65b1f52cd6a7de85038fc8ad97b2d846a299ac">package manager test failing on Ubuntu 14.04</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/32b28aa29bbfa84c5640c4e7c956add6a275694b">Version update and clean option</a>      &mdash; <em>王巍</em>
+    </li>
+    <li>
+<a href="/threads/676252778a93c4e682e4c398434ecaf35b9d8051">Accessing types in a &quot;parent&quot; module</a>      &mdash; <em>Paul Young</em>
+    </li>
+    <li>
+<a href="/threads/341ca5981c8e0462cf365c29e09ba48fb84a08a8">Dependency consistency within package major version</a>      &mdash; <em>Simon Pilkington</em>
+    </li>
+    <li>
+<a href="/threads/a23b88483f51b13392755a553db786e13170758a">Project init command</a>      &mdash; <em>Lander Brandt</em>
+    </li>
+    <li>
+<a href="/threads/ae769ebe845fe180ba9eea1bf8ca89fb293450a0">Git Branch support</a>      &mdash; <em>Ankit Agarwal</em>
+    </li>
+    <li>
+<a href="/threads/d2834f42ac1761811bb68edfcb6419fdcd40ad24">Git Branch support</a>      &mdash; <em>Ankit Agarwal</em>
+    </li>
+    <li>
+<a href="/threads/acfd71bb71e9adcac14227b27b260fedcc59d772">Table &quot;rule_dependencies&quot; reference to &quot;rule_info&quot;?</a>      &mdash; <em>Quan Yong Zhai</em>
+    </li>
+    <li>
+<a href="/threads/71033cb57b92180682af77c40f88cc1fbb9f1b58">Hello SPM</a>      &mdash; <em>Eloy Durán</em>
+    </li>
+    <li>
+<a href="/threads/fc4900cf64df810264f44e8111984e7182850408">Possible useful tools</a>      &mdash; <em>Eloy Durán</em>
+    </li>
+    <li>
+<a href="/threads/382768c49f6541029a1b9d0050b31531ae603e81">Strategy for building libraries supporting multiple platforms or flavors</a>      &mdash; <em>Dan Thorpe</em>
+    </li>
+    <li>
+<a href="/threads/0516f409db33d66a3ded9cddef9e446006c8ea8b">Proposal: Extract POSIX module from swift-package-manager</a>      &mdash; <em>Adam Sharp</em>
+    </li>
+    <li>
+<a href="/threads/a0d825887d43cf477867bba48d996f92bce00d84">Canvasing Opinions About Testing</a>      &mdash; <em>Max Howell</em>
+    </li>
+    <li>
+<a href="/threads/b5cd65eff969f79b818cad9b7f3fd42104e775f7">FYI: Swift-based Manifest proposal doc</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/6820dfd46b06304c62ffe2cc078ab006177472da">C dependencies</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/f6b472d009a53c3be7ba3572ec7fb2b27b5b5acb">Can&#39;t build swiftpm (SPM) Project after installing new swift-2.2-SNAPSHOT-2015-12-10-a</a>      &mdash; <em>Kostiantyn Koval</em>
+    </li>
+    <li>
+<a href="/threads/9603e061567cdbe16d6373c6fa84d8a561f65352">Canvasing Opinions About Testing</a>      &mdash; <em>Joshua Scott Emmons</em>
+    </li>
+    <li>
+<a href="/threads/6ebfd44ded42b2b370705dc41e5de1bccdb0adf2">Canvasing Opinions About Testing</a>      &mdash; <em>Joshua Scott Emmons</em>
+    </li>
+    <li>
+<a href="/threads/0198eea8e17cb759a87b107ec421edac3a719646">Proposal for Package Manager Testing Infrastruture</a>      &mdash; <em>Max Howell</em>
+    </li>
+    <li>
+<a href="/threads/56ddecc640cff6594ad54d8e490b4a07b8fafaa1">How to specify system header dependencies</a>      &mdash; <em>Evan Maloney</em>
+    </li>
+    <li>
+<a href="/threads/ba4a4b2b97063e81d7794c6d2e8bebd254d2fdf1">Proposal: Git Branch and ref support for dependencies in Swift Package Manager</a>      &mdash; <em>Ankit Agarwal</em>
+    </li>
+    <li>
+<a href="/threads/3f6811aef1fd5dc9510be972dcf649c11c95819b">Xcode autocomplete and jump to def for the package manager project</a>      &mdash; <em>Valentin Radu</em>
+    </li>
+    <li>
+<a href="/threads/199c94d6b8b35090f34b5b16c628c433173bed66">swift build error</a>      &mdash; <em>杨晖</em>
+    </li>
+    <li>
+<a href="/threads/18445317824f9e91edf51c8cdbdd7fe6159d9575">Source vs Sources</a>      &mdash; <em>Evan Maloney</em>
+    </li>
+    <li>
+<a href="/threads/2fe3702b9b96f3ca306e028ed3bb34e5cbb665e3">Customizing location of source directory</a>      &mdash; <em>Misha Manulis</em>
+    </li>
+    <li>
+<a href="/threads/b72b87572bf4e0f63f1ac687e2465613de696f7e">swift package manager.</a>      &mdash; <em>ricardo duarte</em>
+    </li>
+    <li>
+<a href="/threads/66a13ee9e073bf8d3bf9e8666fc817a8c0b5e576">importing a *local* native dependency</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/ba5e30ca04f36aba9c619e467c7bd0c8341599c6">Should SPM include paths in DYLD_LIBRARY_PATH while compiling?</a>      &mdash; <em>Ankit Agarwal</em>
+    </li>
+    <li>
+<a href="/threads/dd193e57e236877db5f7e91d65a1642178dff7f7">Building Swift Package Manager on ARM</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/a863dfd576d5d408b5b08cc68305306d6af8b88c">Where to ask questions about package manager directory structure?</a>      &mdash; <em>Bill Burgar</em>
+    </li>
+    <li>
+<a href="/threads/e368b2ce14e7b2b522586d3bb27d97a906bcd8c3">protocol for third-party testing frameworks</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/43dfcbf77045f2fe7361edb00f8a156a6a632400">Should Version be StringLiteralConvertible?</a>      &mdash; <em>Ling Wang</em>
+    </li>
+    <li>
+<a href="/threads/fac573aa4270c537f94af2ce052918412d0cb571">[swiftpm] Add proposal for C language support</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/fa2b9f4a73e4470b3109706e899093d5cf63c545">extra compiler / linker options (PR #75)</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/2909845369c9d6c6702bc4def0b4e9323f995b6d">[Review] SE-0019 Swift Testing (Package Manager)</a>      &mdash; <em>Rick Ballard</em>
+    </li>
+    <li>
+<a href="/threads/825e834640d0480296fa26c74995017bbd082828">SwiftPM Boostrap Crash</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/264c224b8d36d374f778e76ba3109f993f65011d">Name from Swift Package Manager</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/5fdd1e609243f30f60fb80eb3374b798ddbe1aba">[swift-evolution] [Proposal] Applying local git patches</a>      &mdash; <em>Valentin Radu</em>
+    </li>
+    <li>
+<a href="/threads/95eabc4e4ff77be697ccdc512cee40849d2897ac">[Review] SE-0019 Swift Testing (Package Manager)</a>      &mdash; <em>Rick Ballard</em>
+    </li>
+    <li>
+<a href="/threads/e74dab6a03849a3c75d2f614c69a85c440c7f4c3">Building a Swift package containing a module.modulemap and C files</a>      &mdash; <em>Ricardo N Olivieri</em>
+    </li>
+    <li>
+<a href="/threads/ab59d74881a9b84f43eeafff157e84c3c0abe282">Swift development workflow</a>      &mdash; <em>Phat le tan</em>
+    </li>
+    <li>
+<a href="/threads/e3da943a8ad84f617a1f994c1bc6bf974c4a559c">[Accepted] SE-0019 Swift Testing (Package Manager)</a>      &mdash; <em>Rick Ballard</em>
+    </li>
+    <li>
+<a href="/threads/b535c004145136a811b402d20bbcfa689f2c3e2e">Swift Package Manager - Support for downloading/installing external dependencies that a Swift Package may have</a>      &mdash; <em>Ricardo N Olivieri</em>
+    </li>
+    <li>
+<a href="/threads/b89e2823ffc044565bbf0ffe0f4536d3a235bfa4">Swift-pm with swift 2.2</a>      &mdash; <em>Jay Buffington</em>
+    </li>
+    <li>
+<a href="/threads/5b5bd6bf6434702dfb25f8e39083d53d859288d8">[Review] SE-0038 Package Manager C Language Target Support</a>      &mdash; <em>Rick Ballard</em>
+    </li>
+    <li>
+<a href="/threads/3915d709b3005ec073181fd3829550178944c175">Testing support has been integrated</a>      &mdash; <em>Max Howell</em>
+    </li>
+    <li>
+<a href="/threads/9f2cd7e371e140a0eb68a10ed71b14ff3bff6c8a">SwiftPM Xcode Integration</a>      &mdash; <em>Max Howell</em>
+    </li>
+    <li>
+<a href="/threads/6702ce7efc5548535c44308384932d2fd3d13c82">[announce] Mailing lists down (postmortem)</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/2e6d760c762159f5362e875891e55b6348e1fa44">[Accepted] SE-0038 Package Manager C Language Target Support</a>      &mdash; <em>Rick Ballard</em>
+    </li>
+    <li>
+<a href="/threads/16e4535df1c2720fe7d6280ad07bf0470d2f83ce">SwiftPM - More layout options for sources/tests folders</a>      &mdash; <em>bhargav gurlanka</em>
+    </li>
+    <li>
+<a href="/threads/524f1c62c396077c3e4c71852ea76d4bb496f1ca">SwiftPM Xcode project generation — merged</a>      &mdash; <em>Max Howell</em>
+    </li>
+    <li>
+<a href="/threads/2dd9849a4580ab79b913a88c7c836be1d5f19c8f">build-toolchain fail with error on Ubuntu-15.10</a>      &mdash; <em>bhargav gurlanka</em>
+    </li>
+    <li>
+<a href="/threads/2821e6dcab19024f0b4f408919725e96fe43b02e">SwiftPM bootstrap and gold linker</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/62490a80580537279747d53e4e7a4efebd2940ec">Proposal Discussion Thread: SwiftPM: Locking and Overriding Dependencies</a>      &mdash; <em>Max Howell</em>
+    </li>
+    <li>
+<a href="/threads/8b1c709a92b66287ebda5c5f11d650283ea6e8f7">[Discussion Starter] Package post-clone script</a>      &mdash; <em>Honza Dvorsky</em>
+    </li>
+    <li>
+<a href="/threads/007d6d8c680186321bdacd32c400e7a13974498c">How to depend on a specified Pre-release version of package with the Swift Package Manager</a>      &mdash; <em>Martha JP</em>
+    </li>
+    <li>
+<a href="/threads/7e4c72f2941996b78116eaea04d14e8424a73751">swift-build missing in xcode 7.3?</a>      &mdash; <em>George King</em>
+    </li>
+    <li>
+<a href="/threads/32e12e6910493ac288562b021e8b5403e867e53e">swift-build missing in xcode 7.3?</a>      &mdash; <em>Kyle Jessup</em>
+    </li>
+    <li>
+<a href="/threads/1f68919a30013940b4b2054fc44a8897e30ef93e">How to depend on a specified Pre-release version of package with the Swift Package Manager</a>      &mdash; <em>Martha JP</em>
+    </li>
+    <li>
+<a href="/threads/33538382009c0237520dd04f6c1613848f7e2c0f">Swift Package Manager and Namespacing</a>      &mdash; <em>Shams, Saad</em>
+    </li>
+    <li>
+<a href="/threads/faad63a5449ca4b3aebdf6ca2d8571eb2d5e4095">[Draft] SwiftPM: Adding development package as a dependency</a>      &mdash; <em>Ankit Agarwal</em>
+    </li>
+    <li>
+<a href="/threads/80e149dcfa2a8ea1be9162f117e666053c79c17b">SwiftPM: How to use `$ swift build --fetch`</a>      &mdash; <em>Martha JP</em>
+    </li>
+    <li>
+<a href="/threads/25308c3e5ac8c64b7a8581a96366fb4160cc10c8">Revisiting package conflicts</a>      &mdash; <em>Erica Sadun</em>
+    </li>
+    <li>
+<a href="/threads/c557728949adef3a796822f89eeb71fef5354307">Questions about the SwiftPM `--update`</a>      &mdash; <em>Martha JP</em>
+    </li>
+    <li>
+<a href="/threads/e1cffd91bb8112e02ca57bcc2628dcb8b21afe1d">[Review] SE-0063: SwiftPM System Module Search Paths</a>      &mdash; <em>Anders Bertelrud</em>
+    </li>
+    <li>
+<a href="/threads/2298db133aac3119362437877c7708f4ff1a216b">Failing Ubuntu 14.04 Build</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/9b1748989c2fd1828354852402aaefcfbbad4de1">[SwiftPM] [swift-build] Question about invalid module name error</a>      &mdash; <em>Martha JP</em>
+    </li>
+    <li>
+<a href="/threads/6f68de59888a44ee53e70c77b32c357ce0d90dce">[Accepted] SE-0063: SwiftPM System Module Search Paths</a>      &mdash; <em>Anders Bertelrud</em>
+    </li>
+    <li>
+<a href="/threads/c4d953a1cf42f56653a5e5ec486999312c248cd3">[build debug.yaml] The changes occurred by executing the &quot;quote&quot; method</a>      &mdash; <em>Martha JP</em>
+    </li>
+    <li>
+<a href="/threads/cce527ae3d21de08a174289ce9557249485a9ef8">Allowing further module organization</a>      &mdash; <em>Max Howell</em>
+    </li>
+    <li>
+<a href="/threads/bd24d0e76021e0a11c5c5eb927a8964ad6a431d3">RFC: Swift Package Manager -- Editable Packages Proposal</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/77d4a4f50927a228e660307fd540244d58219aff">[SwiftPM] Add option to dump a package’s dependency tree</a>      &mdash; <em>Honza Dvorsky</em>
+    </li>
+    <li>
+<a href="/threads/fa8bef5c731ecd78b50ea9de5e7fbbeb19ee34b2">[Review] SE-0082: Package Manager Editable Packages</a>      &mdash; <em>Anders Bertelrud</em>
+    </li>
+    <li>
+<a href="/threads/184fe629574936c7ac08de4a2ba73c7847f2c6dc">Building SwiftPM with (Swift)Foundation</a>      &mdash; <em>Bouke Haarsma</em>
+    </li>
+    <li>
+<a href="/threads/ff09c7fc3a2c045398b3be268d5d6fa9a0eefd7b">[swift-evolution] [Review] SE-0085: Package Manager Command Names</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/7ecd813fd43c22be446450e43de026ce08454c9a">POSIX, Foundation, and layering</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/62e3f7a68e980d01127e63f7c1783fddc0434308">More layering changes...</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/1a591ab1f28c95b1865f57284d6da27b56b0a3c6">[Pitch] Deeper Xcode Integration for SwiftPM</a>      &mdash; <em>Adrian Zubarev</em>
+    </li>
+    <li>
+<a href="/threads/996fecbcf529a67677b24c0394b9cdbe8355a30b">swift test undefined reference error</a>      &mdash; <em>G J</em>
+    </li>
+    <li>
+<a href="/threads/b6f989e198a31dc820987f45351527c021079b90">Package Manager command line option clean-up</a>      &mdash; <em>Anders Bertelrud</em>
+    </li>
+    <li>
+<a href="/threads/ed56b81b8baac0a364b8f78c038356edd7030d47">[SwiftPM] [swift-build] How to use C module in Swift REPL</a>      &mdash; <em>bhargav gurlanka</em>
+    </li>
+    <li>
+<a href="/threads/0de355c45621468be9a518e8fe9250e80522be3f">iOS target generation</a>      &mdash; <em>Paulo Faria</em>
+    </li>
+    <li>
+<a href="/threads/c80b0514b231d5423ac27793b362c36dc83ff278">[RFC] Toolchain based build process</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/ea5a7da3708eedc46242f4412b16b5b5386ebb93">Building custom toolchain</a>      &mdash; <em>bhargav gurlanka</em>
+    </li>
+    <li>
+<a href="/threads/05f4b0b6b69f32282a07f34fe0f0763e26cec7c8">lifecycle hooks/scripts in swift package manager</a>      &mdash; <em>Vadim Eisenberg</em>
+    </li>
+    <li>
+<a href="/threads/913dc795ad13d4049d52ec49e66b820efd0c3186">Swift Package Manager Slack Team</a>      &mdash; <em>Ankit Agarwal</em>
+    </li>
+    <li>
+<a href="/threads/c84a6346b64fe2e636c5bd090569c8a2fd13de98">Hard-Coded Paths in glibc.modulemap</a>      &mdash; <em>Shao Miller</em>
+    </li>
+    <li>
+<a href="/threads/66293f5aa077515cc97bfb748cb542bf3a6c9607">Swift Build Missing LD_LIBRARY_PATH</a>      &mdash; <em>Shao Miller</em>
+    </li>
+    <li>
+<a href="/threads/9fbd577e91eda536e25a1df89fffc2484c353e80">NSGetEnviron and PR#400</a>      &mdash; <em>Yannick Heinrich</em>
+    </li>
+    <li>
+<a href="/threads/951c9510521719a152cd30866b255ac5d1417f25">swift test --build-path</a>      &mdash; <em>Kyle Jessup</em>
+    </li>
+    <li>
+<a href="/threads/6e219030d64938a4f8949ecfcc6db138f31935ed">SwiftPM PackageVersions</a>      &mdash; <em>Kostiantyn Koval</em>
+    </li>
+    <li>
+<a href="/threads/4a0665daaadf5fb68a404054a7c589a10c0684c1">Proposal: SwiftPM Target Access Control</a>      &mdash; <em>Ankit Agarwal</em>
+    </li>
+    <li>
+<a href="/threads/2ff6f3d33a2e0ebc911ad8a68980063c04f885f2">Draft proposal: &quot;Test Executables&quot;</a>      &mdash; <em>George King</em>
+    </li>
+    <li>
+<a href="/threads/5fafd8aa6f4249cdeca8ce64cb9997937d1db44a">FYI: Change to require Package name</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/cafc618540da17978f005324b7f8c4d14fa085fb">Proposal: SwiftPM Test Naming Conventions</a>      &mdash; <em>Anders Bertelrud</em>
+    </li>
+    <li>
+<a href="/threads/49edd060c08d0857fe65c05de05847f8711c8589">[Review] SE-0129: Package Manager Test Naming Conventions</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/b6a87862a27483b0bd315acbc663e323bed50b05">Performance testing via SwiftPM and XCTest</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/588c19ccf625865c0d26026ef824d0bd41873b5b">FYI: `swift test` requiring all build flags</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/fd282ffc9605064a87fda2a0696245524d5eb2c0">Proposal: SwiftPM Support for Language Versions</a>      &mdash; <em>Anders Bertelrud</em>
+    </li>
+    <li>
+<a href="/threads/e92c78ffd18032b542bfb1f51fffb51098ab1813">[Accepted] SE-0129: Package Manager Test Naming Conventions</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/e06a857f0e880542e1be0d67b61f0248aae54f33">[Review] SE-0135: Package Manager Support for Differentiating Packages by Swift version</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/c961ec6f8493e5b7b13b667422f6185959d730bc">Release build performance tests in SwiftPM</a>      &mdash; <em>Ankit Agarwal</em>
+    </li>
+    <li>
+<a href="/threads/4ddd45766ae7d8326d7e6ccbe6454bb7d149659d">[Accepted] SE-0135: Package Manager Support for Differentiating Packages by Swift version</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/72f5807abb1a44bedce3d7e6cadcbd4aaf24d51f">Build Linux app on Mac Os X</a>      &mdash; <em>jasonk at apps4u.com.au</em>
+    </li>
+    <li>
+<a href="/threads/f58c97952c4d3414fb85488f5510e6aff68ad0f9">JIRA workflow: &quot;Resolved&quot; -&gt; &quot;Verify&quot;?</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/578ca121c1254ff2ed4208422755df84f119d328">Test failures on s390x</a>      &mdash; <em>Vivian Kong</em>
+    </li>
+    <li>
+<a href="/threads/9982a79190780fcea36b99ef523bc2cb0ad6c781">Swift Package Manager 3.0 Project Status</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/e3aa4557364ae3e2ff978a3beb24d0bb391bf46e">Test-only dependencies</a>      &mdash; <em>Paul Cantrell</em>
+    </li>
+    <li>
+<a href="/threads/27b22640be870d33803cb61f71ed69146d02c7c0">Mailing list flakiness</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/da65cedee09d49a9930b2d830ea3757de74767a3">Gradle 3.0</a>      &mdash; <em>Siamak Ashrafi</em>
+    </li>
+    <li>
+<a href="/threads/c124e8db522902fa258c6d124f09f8809ddce41b">SwiftPM XCS setup</a>      &mdash; <em>Ankit Aggarwal</em>
+    </li>
+    <li>
+<a href="/threads/bf88bf66be2e982dd080ac027cfbb870f662ee5c">Building fully static binaries on Linux</a>      &mdash; <em>Simon Evans</em>
+    </li>
+    <li>
+<a href="/threads/2b16149bea64cfce7c92324f4d3ba0eb1d9d3b63">swiftpm macOS target override</a>      &mdash; <em>Keith Smiley</em>
+    </li>
+    <li>
+<a href="/threads/97db2d42175f9a1879ea2bccce7675efee935024">Calling all users of the `swift package generate-xcodeproj` feature...</a>      &mdash; <em>Anders Bertelrud</em>
+    </li>
+    <li>
+<a href="/threads/09c7167955c50dfe6f427cd209a890073488b646">Proposal: Package Manager Version Pinning</a>      &mdash; <em>Ankit Aggarwal</em>
+    </li>
+    <li>
+<a href="/threads/3cdab42473486729a7b6cb3bb9e9ca43fbf13874">Adding compiler and linker arguments</a>      &mdash; <em>Steven Clukey</em>
+    </li>
+    <li>
+<a href="/threads/fbd2d9385941541d9411d1aa5738305f9cd08e38">Apple Quality Engineering opportunity for SwiftPM</a>      &mdash; <em>Rick Ballard</em>
+    </li>
+    <li>
+<a href="/threads/dc4f17d71a5588afc0bad7b942cb5a07ef2ba610">Local tool configuration</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/af09b7564a2eb020c746feccbc8b885d302caa8b">Missing dependency in testing</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/4ac9d98e520afd621351f1b70001851eff93607e">Fwd: [swift-evolution] [Review] SE-0145: Package Manager Version Pinning</a>      &mdash; <em>Anders Bertelrud</em>
+    </li>
+    <li>
+<a href="/threads/d62f6e9948f1fa7a490053302d4b4259a1d4b8d4">Test only dependencies</a>      &mdash; <em>Gordon Fontenot</em>
+    </li>
+    <li>
+<a href="/threads/0b54628e19cfcca13afe27b8d4c9554907bad8fe">Cannot debug SwiftPM package in Xcode</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/2338ce000cbbd979cd2d4b914ac6b32070de59d0">Local tool configuration</a>      &mdash; <em>Paulo Faria</em>
+    </li>
+    <li>
+<a href="/threads/a4cbf16e5d473dbdb199ebbbc89afe717286d124">Draft SwiftPM proposal: Multi-package repositories</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/e8cbc49acbedc31d6a1f1ce1d82f102b84f55e33">Draft proposal: Package Manager Product Definitions</a>      &mdash; <em>Anders Bertelrud</em>
+    </li>
+  </ul>
+</div>
+    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

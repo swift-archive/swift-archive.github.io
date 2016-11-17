@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/81d7858265d7defae7eb6a9de330ab04?s=50"></div><header><strong>How to start a new translation project of The Swift Programming Language manual.</strong> from <string>Francesco Vino</string> &lt;francesco.vino at tin.it&gt;<p>September 21, 2016 at 07:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I’m an italian computer science teacher and I’d like to start the translation in italian language of The Swift Programming Language.<br>How can I do it? Is already there an italian translation on?<br></p><p>Thank you for any help.<br></p><p>Francesco Vino<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160921/cacdc9e3/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/23bb59b802aac41afdf8ffffae1040d5?s=50"></div><header><strong>How to start a new translation project of The Swift Programming Language manual.</strong> from <string>Alex Martini</string> &lt;amartini at apple.com&gt;<p>September 23, 2016 at 04:00:00pm</p></header><div class="content"><p>On Sep 21, 2016, at 10:48 AM, Francesco Vino wrote:<br></p><p>&gt; Hi,<br>&gt; <br>&gt; I’m an italian computer science teacher and I’d like to start the translation in italian language of The Swift Programming Language.<br>&gt; How can I do it? Is already there an italian translation on?<br>&gt; <br>&gt; Thank you for any help.<br>&gt; <br>&gt; Francesco Vino<br></p><p>Hi Francesco --<br></p><p>You can use the English version of &quot;The Swift Programming Language&quot; as a source for your translation.  It&#39;s published here:<br></p><p>	https://swift.org/documentation/#the-swift-programming-language<br></p><p>If you save a copy of the ePub locally, then when the book is updated, you can download the new ePub version and compare the files to see what changed.  (For example, using a tool like diff or FileMerge.)  That will tell you what new content needs to be translated.<br></p><p>You can look at how the Chinese translation was done here (although most of the discussion is in Chinese also):<br></p><p>	https://github.com/numbbbbb/the-swift-programming-language-in-chinese<br></p><p>This past swift-dev thread might also be helpful:<br></p><p>	https://lists.swift.org/pipermail/swift-dev/Week-of-Mon-20160104/000733.html<br></p><p>-- Alex<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/02283cbd427bd69db2ae4dcf8c4cfda4?s=50"></div><header><strong>How to start a new translation project of The Swift Programming Language manual.</strong> from <string>gian enrico conti</string> &lt;ingconti at ingconti.com&gt;<p>September 24, 2016 at 07:00:00am</p></header><div class="content"><p>i asked the same 3 weeks ago, but no prob, <br>I will be happy to help francesco<br></p><p>@francesco:<br>my direct contact is:<br></p><p>ingconti at ingconti.com &lt;mailto:ingconti at ingconti.com&gt;<br></p><p><br>&gt; On 24 Sep 2016, at 01:34, Alex Martini via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; On Sep 21, 2016, at 10:48 AM, Francesco Vino wrote:<br>&gt; <br>&gt;&gt; Hi,<br>&gt;&gt; <br>&gt;&gt; I’m an italian computer science teacher and I’d like to start the translation in italian language of The Swift Programming Language.<br>&gt;&gt; How can I do it? Is already there an italian translation on?<br>&gt;&gt; <br>&gt;&gt; Thank you for any help.<br>&gt;&gt; <br>&gt;&gt; Francesco Vino<br>&gt; <br>&gt; Hi Francesco --<br>&gt; <br>&gt; You can use the English version of &quot;The Swift Programming Language&quot; as a source for your translation.  It&#39;s published here:<br>&gt; <br>&gt; 	https://swift.org/documentation/#the-swift-programming-language<br>&gt; <br>&gt; If you save a copy of the ePub locally, then when the book is updated, you can download the new ePub version and compare the files to see what changed.  (For example, using a tool like diff or FileMerge.)  That will tell you what new content needs to be translated.<br>&gt; <br>&gt; You can look at how the Chinese translation was done here (although most of the discussion is in Chinese also):<br>&gt; <br>&gt; 	https://github.com/numbbbbb/the-swift-programming-language-in-chinese<br>&gt; <br>&gt; This past swift-dev thread might also be helpful:<br>&gt; <br>&gt; 	https://lists.swift.org/pipermail/swift-dev/Week-of-Mon-20160104/000733.html<br>&gt; <br>&gt; -- Alex<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160924/48b4660b/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

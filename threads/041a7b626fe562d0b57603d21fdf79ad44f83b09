@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dc0180c1b9aff52f5d42a1ca6bd1f184?s=50"></div><header><strong>Swift Class Encoding Standard?</strong> from <string>Thomas Catterall</string> &lt;me at swizzlr.co&gt;<p>October 27, 2016 at 03:00:00pm</p></header><div class="content"><p>Swift Foundation has an incomplete implementation of NSClassFromString/NSStringFromClass (link: https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSObjCRuntime.swift#L230-L282 &lt;https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSObjCRuntime.swift#L230-L282&gt;) due to a lack of a standardised method of encoding nested Swift classes, nor other Swift types.<br></p><p>I would think that given<br></p><p>module Contacts<br></p><p>class Person {<br>	struct Address {<br>		class Postcode {}<br>	}<br>}<br></p><p>Postcode would be encoded as Contacts.Person.Address.Postcode. Since it is not possible to have two different types with the same identifier in the same namespace (i.e. an enum/a class/a struct with the same name at the same declaration level) the encoding would similarly be simple. May I proceed under that assumption or are there ABI stability issues I have yet to consider?<br></p><p>Tom<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161027/041a3b09/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Swift Class Encoding Standard?</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>October 27, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Oct 27, 2016, at 6:54 AM, swizzlr via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Swift Foundation has an incomplete implementation of NSClassFromString/NSStringFromClass (link: https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSObjCRuntime.swift#L230-L282) due to a lack of a standardised method of encoding nested Swift classes, nor other Swift types.<br>&gt; <br>&gt; I would think that given<br>&gt; <br>&gt; module Contacts<br>&gt; <br>&gt; class Person {<br>&gt; 	struct Address {<br>&gt; 		class Postcode {}<br>&gt; 	}<br>&gt; }<br>&gt; <br>&gt; Postcode would be encoded as Contacts.Person.Address.Postcode. Since it is not possible to have two different types with the same identifier in the same namespace (i.e. an enum/a class/a struct with the same name at the same declaration level) the encoding would similarly be simple. May I proceed under that assumption or are there ABI stability issues I have yet to consider?<br></p><p>Yeah, that eventually ought to work. We&#39;re in the middle of setting up the layout of Swift metadata to make this kind of dynamic lookup easier to support.<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

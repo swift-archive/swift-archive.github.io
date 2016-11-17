@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e01e37acbfad671da1b94a61cf819d82?s=50"></div><header><strong>TWISt-shout newletter 2016-01-04</strong> from <string>Kenny Leung</string> &lt;kenny_leung at pobox.com&gt;<p>January  4, 2016 at 10:00:00am</p></header><div class="content"><p>Hi All.<br></p><p>Let’s kick off 2016 with the first This Week In Swift newsletter. You can find it here:<br></p><p>https://github.com/pepperdog/TWISt-shout/blob/master/2016/TWISt-shout-2016-01-04.md<br></p><p>You will need to be logged into GitHub to view the code commits.<br></p><p>Any comments, suggestions, updates, or omissions are greatly appreciated.<br></p><p>-Kenny<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e01e37acbfad671da1b94a61cf819d82?s=50"></div><header><strong>TWISt-shout newletter 2016-01-04</strong> from <string>Kenny Leung</string> &lt;kenny_leung at pobox.com&gt;<p>January  4, 2016 at 10:00:00am</p></header><div class="content"><p>Sorry, you do not need to be logged in. The links were broken. Now fixed.<br></p><p>-Kenny<br></p><p><br>&gt; On Jan 4, 2016, at 10:27 AM, Kenny Leung via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi All.<br>&gt; <br>&gt; Let’s kick off 2016 with the first This Week In Swift newsletter. You can find it here:<br>&gt; <br>&gt; https://github.com/pepperdog/TWISt-shout/blob/master/2016/TWISt-shout-2016-01-04.md<br>&gt; <br>&gt; You will need to be logged into GitHub to view the code commits.<br>&gt; <br>&gt; Any comments, suggestions, updates, or omissions are greatly appreciated.<br>&gt; <br>&gt; -Kenny<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

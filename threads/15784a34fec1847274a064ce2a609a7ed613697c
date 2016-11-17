@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0a88a27755600d9f1c1ce00e3c209a38?s=50"></div><header><strong>Name disambiguation of computed property/function with same type defined in extensions</strong> from <string>Brad Hilton</string> &lt;brad.hilton.nw at gmail.com&gt;<p>June  4, 2016 at 07:00:00pm</p></header><div class="content"><p>+1. I agree that this could be a problem, especially if you’re importing a lot of similar modules.  I like the `from` keyword, as I feel that is consistent with the language grammer. My vote would be for proposal #4.<br></p><p>&gt; Hello, everyone.<br>&gt; <br>&gt; I want to discuss the problem of name ambiguity when a computed property or function is defined with the same name and type in different modules. Currently there’s no way to disambiguate the implementation in use cases similar to the one contained in the gist below.<br>&gt; <br>&gt; https://gist.github.com/paulofaria/f48d0b847a0fb7c125d163d0e349500a<br>&gt; <br>&gt; The gist also contains some informal proposals. The idea is to create a formal proposal based on the discussion that shall follow.<br>&gt; <br>&gt; Cheers,<br>&gt; Paulo _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

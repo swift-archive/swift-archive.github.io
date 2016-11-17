@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/54f387ccfb4a55e7bfe3d8c80cb25afe?s=50"></div><header><strong>SE-0080: Failable Numeric Conversion Initializers</strong> from <string>William Shipley</string> &lt;wjs at mac.com&gt;<p>May  5, 2016 at 12:00:00am</p></header><div class="content"><p>My quibble with this proposal (which should go through in one form or another) is that the initializers don’t throw.<br></p><p>I know that this was discussed before, but was this before &quot;try?” was introduced to Swift? Because to me this seems cleaner (with init(exact value: Float) throws)<br></p><p>    let x = try? Int(exact: someFloat)<br></p><p>Than this (with init?(exact value: Float))<br></p><p>    let x = Int(exact: someFloat)<br></p><p><br>Let me be clear I’m not saying no initializers should ever be optional, just that with numeric conversions, it seems like the common case is that we got some bad data, and I like the “try?” syntax for noting, “Hey, this would mean something bad has happened.”<br></p><p>I also like ‘throws&#39; because it could return something sensible so we could debug the bad input, whereas just returning ‘nil’ doesn’t really tell me why the conversion didn’t occur. In the example given (parsing through a json file) I’d much rather be able to tell the user “Warning, your file is corrupt: 4372498293429387283497824 is too big for your current net worth!” than “ Warning, your file is corrupt: 4372498293429387283497824 is somehow not good enough but I can’t really tell you why.”<br></p><p>-W<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160505/105a860c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc3a9ea0c6c870343d9acb4ac3059cdc?s=50"></div><header><strong>SE-0080: Failable Numeric Conversion Initializers</strong> from <string>Matthew Johnson</string> &lt;matthew at anandabits.com&gt;<p>May  5, 2016 at 07:00:00am</p></header><div class="content"><p>Sent from my iPad<br></p><p>&gt; On May 5, 2016, at 2:42 AM, William Shipley via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; My quibble with this proposal (which should go through in one form or another) is that the initializers don’t throw.<br>&gt; <br>&gt; I know that this was discussed before, but was this before &quot;try?” was introduced to Swift? Because to me this seems cleaner (with init(exact value: Float) throws)<br>&gt; <br>&gt;     let x = try? Int(exact: someFloat)<br>&gt; <br>&gt; Than this (with init?(exact value: Float))<br>&gt; <br>&gt;     let x = Int(exact: someFloat)<br>&gt; <br>&gt; <br>&gt; Let me be clear I’m not saying no initializers should ever be optional, just that with numeric conversions, it seems like the common case is that we got some bad data, and I like the “try?” syntax for noting, “Hey, this would mean something bad has happened.”<br>&gt; <br>&gt; I also like ‘throws&#39; because it could return something sensible so we could debug the bad input, whereas just returning ‘nil’ doesn’t really tell me why the conversion didn’t occur. In the example given (parsing through a json file) I’d much rather be able to tell the user “Warning, your file is corrupt: 4372498293429387283497824 is too big for your current net worth!” than “ Warning, your file is corrupt: 4372498293429387283497824 is somehow not good enough but I can’t really tell you why.”<br></p><p>This is what the original proposal did and the exact reason why it did things that way (including try? to recover the optional).  However, there is a pattern followed by the Apple folks and the standard library that if something can only fail in exactly one obvious way (out of range / not Representable in this case) that it should fail with an optional rather than throwing.  I changed the proposal to follow this pattern which will probably also have slightly better performance in cases where the optional is sufficient. <br></p><p>Once the core functionality is present in the standard library it&#39;s easy enough to wrap it with something that throws and captures whatever details we require in the process.<br></p><p>&gt; <br>&gt; -W<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160505/d3c1fb22/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

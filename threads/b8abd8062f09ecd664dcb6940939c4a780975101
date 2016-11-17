@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/86f0b76b19fe3a655fdaa6c8bd1f9f1e?s=50"></div><header><strong>AVFoundation Source Code</strong> from <string>Roth Michaels</string> &lt;roth at rothmichaels.us&gt;<p>July  8, 2016 at 11:00:00am</p></header><div class="content"><p>On Fri, Jul 08 2016 at 04:31:20 AM, Leo geng via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; Has AVFoundation been already open source? If yes, Could you give me a<br>&gt; url about it?<br></p><p>It hasn&#39;t, and I&#39;m not sure that is part of the plan.<br></p><p>So far, the open source libraries versions of Apple libraries available<br>in Swift are:<br></p><p>- swift-corelibs-libdispatch<br>- swift-corelibs-foundation<br>- swift-corelibs-xctest<br></p><p>-- <br>Roth Michaels<br>roth at rothmichaels.us<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

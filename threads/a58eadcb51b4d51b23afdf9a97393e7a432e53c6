@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/89eb995deda391a820c2235e4561188c?s=50"></div><header><strong>Remove some unecessary contribution friction</strong> from <string>drkibitz</string> &lt;info at drkibitz.com&gt;<p>March 13, 2016 at 06:00:00pm</p></header><div class="content"><p>After spending some time getting some up to try to get involved with the<br>swift dev community, I thought my experience would merit this message.<br></p><p>First of all, I understand that open sourcing a project as large as this at<br>a large company is a balancing act between the usage of the common access<br>points that the open source community uses often, and the closed tools the<br>company provides. There are certain tools and processes that make more<br>sense than others to keep full control, and I have a few issues regarding<br>this.<br></p><p>My big issue here, are these mailing lists. There are already so much<br>processes around contribution, it&#39;s too difficult to just get in touch with<br>someone over an official channel. The only option I found were these<br>mailing lists. Is Mailman the best solution here, or is the idea that these<br>list are at least something, while the core team continues to investigate<br>potentially better solutions? There are so many better tools available<br>these days, and I would very much recommend to usage of any one of them<br>that removes friction... Gitter or Slack to name a couple.<br></p><p>Secondly, I think having a bug tracking system while all of the code is<br>already on GitHub is kind of moot, or at least confusing. What is the<br>separation between GitHub issues, pull requests, and Jira? Is Jira really<br>being used as a bug tracking system, or more of a project management tool?<br>I would recommend just using, or at least pushing the GitHub features over<br>what Jira provides. This is coming from someone that has been fighting with<br>back and forth Jira and GitHub Enterprise usage over the past 5+ years. If<br>Jira provides something internally that GitHub doesn&#39;t, then use it, but do<br>not force it on the community, it&#39;s confusing.<br></p><p>Third but not least, I know for a fact that Jenkins has GitHub OAuth<br>capability, and I would be curious if Jira, and maybe even Mailman has<br>something similar. If a contributor could sign in to all of these 3+<br>systems with their GitHub account, that would make a high impact in the<br>amount of people that touch this community.<br></p><p>Thanks,<br>-d<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160313/a58e53c6/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

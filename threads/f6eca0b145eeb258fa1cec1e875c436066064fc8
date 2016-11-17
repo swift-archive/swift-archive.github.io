@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e841a2a33b72c728c55ff99200275784?s=50"></div><header><strong>[Review] SE-0122: Use colons for subscript declarations</strong> from <string>James Froggatt</string> &lt;james.froggatt at me.com&gt;<p>July 21, 2016 at 10:00:00am</p></header><div class="content"><p>Marking the return value is certainly a direction we could go, but my reasoning in this proposal was that ‘-&gt; inout’ is semantically equivalent to the colon, as it exists today for computed properties.<br>I think this the result of this proposal will set the precedent for if/when we do add this feature, and personally I&#39;d prefer the cleaner syntax of the colon.<br></p><p>------------ Begin Message ------------ <br>Group: gmane.comp.lang.swift.evolution <br>MsgID: &lt;E901B7CF-2640-4C6F-BC5B-0483D45D2AE2 at architechies.com&gt; <br></p><p>&gt;On Jul 20, 2016, at 12:58 PM, Garth Snyder via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; However, the current notation of -&gt; Type being used to declare an input parameter to set {} just strikes me as weird and wrong. The symbol -&gt; means “returns a” or “yields”. Since we’re declaring a type that might be either inbound or outbound, the neutral : is more appropriate.<br></p><p>If, as seems likely for lens support, we eventually supported inout functions:<br></p><p>func foo(x: Int) -&gt; inout String {<br>get { return myStr }<br>set { myStr = newValue }<br>}<br></p><p>Would you feel differently about having `:` on subscript returns? Or would you want to use `:` on inout functions, too?<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p><p>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br>:<br></p><p>------------- End Message ------------- <br></p><p><br></p><p>From James F<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

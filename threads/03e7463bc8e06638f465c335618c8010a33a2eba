@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/957b675456a66c394945a7361aedd51d?s=50"></div><header><strong>Can I do dynamic casting?</strong> from <string>Zhao Xin</string> &lt;owenzx at gmail.com&gt;<p>August 25, 2016 at 04:00:00pm</p></header><div class="content"><p>Is that possible to do dynamic casting?<br></p><p>My code:<br></p><p>import Foundation<br></p><p><br>let array = [1,2,3,4,5]<br></p><p>let dictionary:[String:Any] = [&quot;numbers&quot;:array]<br></p><p><br>if let value = dictionary[&quot;numbers&quot;] {<br></p><p>    let type = type(of: value)<br></p><p>    print(type) // Array&lt;Int&gt;<br></p><p>    let numbers = value as! Array&lt;Int&gt; // [1, 2, 3, 4, 5]<br></p><p>    //let numbers2 = value as! type // error: use of undeclared type &#39;type&#39;<br></p><p>}<br></p><p>As you can see, the dynamic casting leads an error. Is there a way to do<br>this? Thanks.<br></p><p><br>Zhaoxin<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160825/03e72eba/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

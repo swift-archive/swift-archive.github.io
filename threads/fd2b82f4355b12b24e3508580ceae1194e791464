@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 23, 2016 at 12:00:00pm</p></header><div class="content"><p>on Fri Jan 22 2016, Rob Mayoff &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;<br>&gt;&gt; Where this rule feels clumsy to me is in code such as<br>&gt;&gt;<br>&gt;&gt; func loginWithUsername(username: String, password: String) -&gt; Bool<br>&gt;&gt;<br>&gt;&gt; vs.<br>&gt;&gt;<br>&gt;&gt; func login(username: String, password: String) -&gt; Bool<br>&gt;&gt;<br>&gt;&gt; But maybe it just takes some time to get used to the style.<br>&gt;&gt;<br>&gt;<br>&gt; You&#39;re right that loginWithUsername is clumsy, since the first argument is<br>&gt; probably an expression like &quot;username&quot; or &quot;usernameField.text&quot; or somesuch.<br>&gt; But I would much prefer<br>&gt;<br>&gt;     func loginAs(username: String, password: String) -&gt; Bool<br>&gt;<br>&gt; because it reads like something I&#39;d actually say. Consider telling a<br>&gt; coworker &quot;log in as &#39;mayoff&#39;, password &#39;bikeshed&#39;&quot;.<br></p><p>  loginAs(&quot;mayoff&quot;, password: secret)<br></p><p>[Note that writing out the use-site is crucial for evaluating the<br>effects of these guidelines.  Declarations are not as important]<br></p><p>Great point.  One of the things that kept happening when we were<br>bikeshedding these guidelines was that in many cases where we thought an<br>exception (i.e. complication) in the rules was needed to handle some<br>special case, there was a way of solving the problem within the<br>(simpler) rules if you just spent a little longer thinking about it.<br></p><p>Here&#39;s another wrinkle: to make it sound like something you&#39;d say,<br>though, wouldn&#39;t you want &quot;withPassword?&quot;<br></p><p>So the question is, which leads to better use-sites?<br></p><p>  loginAs(&quot;mayoff&quot;, withPassword: secret)<br></p><p>  login(username: &quot;mayoff&quot;, password: secret)<br></p><p>? I think the former wins.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0fc40f95a5c6b063df44b3bc136d764b?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0023 API Design Guidelines</strong> from <string>Haravikk</string> &lt;swift-evolution at haravikk.com&gt;<p>January 23, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; On 23 Jan 2016, at 20:19, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Fri Jan 22 2016, Rob Mayoff &lt;swift-evolution at swift.org &lt;mailto:swift-evolution at swift.org&gt;&gt; wrote:<br>&gt; <br>&gt; So the question is, which leads to better use-sites?<br>&gt; <br>&gt;  loginAs(&quot;mayoff&quot;, withPassword: secret)<br>&gt; <br>&gt;  login(username: &quot;mayoff&quot;, password: secret)<br>&gt; <br>&gt; ? I think the former wins.<br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org &lt;mailto:swift-evolution at swift.org&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;<br>What about:<br></p><p>login(as: “mayoff”, withPassword: secret)<br>login(withUsername: “mayoff”, andPassword: secret)<br></p><p>Personally I like the latter, but then I really like AppleScript’s crazy level of natural language style syntax, e.g- set eachDesktop’s picture to theDesktopPicture =D<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160123/86f2fb47/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

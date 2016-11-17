@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>Extend FloatingPoint with tau!</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>June 30, 2016 at 03:00:00am</p></header><div class="content"><p>+1<br></p><p>Lots of win for very small effort.<br>&gt; Hello community,<br>&gt; <br>&gt; Tau day &lt;http://tauday.com/ &lt;http://tauday.com/&gt;&gt; was yesterday, and reminded me that we forgot to provide a `tau` next to `FloatingPoint`’s `pi` property. How about we write a proposal to brind this forward-thinking constant to a forward-thinking language?<br>&gt; <br>&gt; Proposal: Extend `FloatingPoint` with tau<br>&gt; <br>&gt;   /// The mathematical constant tau = 6.28318...<br>&gt;   ///<br>&gt;   /// Extensible floating-point types might provide additional APIs to obtain<br>&gt;   /// this value to caller-specified precision.<br>&gt;   static var tau: Self { get } <br>&gt; <br>&gt; David.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160630/8e11c807/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ec5a599777854c540fd102ef4691fe10?s=50"></div><header><strong>Extend FloatingPoint with tau!</strong> from <string>Rimantas Liubertas</string> &lt;rimantas at gmail.com&gt;<p>June 30, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; Lots of win for very small effort.<br>&gt;<br></p><p>&quot;Lots&quot; like in not having to type &quot;2 *&quot;?<br></p><p>-1 from me.<br></p><p><br>Best regards,<br>Rimantas<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160630/c7f8d99b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9bfba345bd373f7b8874d58fed6372ff?s=50"></div><header><strong>Extend FloatingPoint with tau!</strong> from <string>David Waite</string> &lt;david at alkaline-solutions.com&gt;<p>June 30, 2016 at 09:00:00am</p></header><div class="content"><p>-1<br></p><p>Tau, unlike pi, is not a commonly understood mathematical constant.  Even in the realm of mathematics, tau is used to represent multiple concepts and other constants, such as the golden ratio. <br></p><p>Finally, tau is easily computed from pi and should not result in a loss of precision. This makes it an excellent candidate for addition via an extension for third party code which desires it and understands what &quot;tau&quot; means in their domain<br></p><p>-DW<br>Sent with my Thumbs<br></p><p>&gt; On Jun 30, 2016, at 6:02 AM, Rimantas Liubertas via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; Lots of win for very small effort.<br>&gt; <br>&gt; &quot;Lots&quot; like in not having to type &quot;2 *&quot;?<br>&gt; <br>&gt; -1 from me.<br>&gt; <br>&gt; <br>&gt; Best regards,<br>&gt; Rimantas<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160630/96632c74/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

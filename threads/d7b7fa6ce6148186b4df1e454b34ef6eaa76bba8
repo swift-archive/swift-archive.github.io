@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e2828bff9d06d558695c0fe8fa046f1b?s=50"></div><header><strong>Async I/O in Rust Tokio</strong> from <string>Benedikt Terhechte</string> &lt;terhechte at me.com&gt;<p>October 26, 2016 at 04:00:00pm</p></header><div class="content"><p>Hey,<br></p><p>I’m a huge fan of server-side Swift and I feel that there is a lot of potential for Swift to grow in this area. So I’m really looking forward to the outcome of this discussion.<br></p><p>I’m also a passive observer in the world of Rust, and one thing that recently really impressed was their async I/O library “Tokio”. It is a fairly low level implementation of async I/O and futures in order to be able to build all kinds of networking implementations on top of it:<br></p><p>&quot;Tokio is an async I/O stack in Rust running the full gamut in terms of what it provides. At the very bottom you&#39;ll find the tokio-core crate with a bare-bones event loop and Future spawning. Near the top you&#39;ll find the tokio-proto crate with generic implementations of protocol details like pipelining and multiplexing used to serve requests to the Service trait intokio-service inspired by Finagle.”<br></p><p>https://github.com/tokio-rs/tokio<br></p><p>What I find particularly interesting here is the architecture of Tokio and the broad applications this low level library offers for high level frameworks. Also, the performance seems to be extraordinary good.<br></p><p>I wanted mainly to raise awareness for this implementation to see if there’s something interest we could learn from it. I remember that Rust did a lot of experimentation in the async I/O area until they implemented Tokio.<br></p><p>Cheers,<br>Benedikt<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

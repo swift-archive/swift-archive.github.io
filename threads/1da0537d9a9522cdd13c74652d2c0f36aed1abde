@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cfd87c8fd79d74d253c74458a867d376?s=50"></div><header><strong>Static vs dynamic linkage of libedit/libuuid on Linux</strong> from <string>Jason Barrett Prado</string> &lt;jason.prado at gmail.com&gt;<p>March  3, 2016 at 03:00:00pm</p></header><div class="content"><p>I built swift/swiftc for Linux x86-64 and I noticed that the binaries have<br>a dependency on libedit and libuuid. The other shared libraries needed by<br>swift are fairly standard on Linux systems it seems, but these<br>libedit/libuuid are not on the systems I&#39;d like to run this binary on.<br></p><p>Is there a reason they got dynamically linked? Can I force them to be<br>statically linked, or would you accept a patch that did so?<br></p><p>The shared library dependencies from readelf:<br> 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]<br> 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]<br> 0x0000000000000001 (NEEDED)             Shared library: [libedit.so.0]<br> 0x0000000000000001 (NEEDED)             Shared library: [libuuid.so.1]<br> 0x0000000000000001 (NEEDED)             Shared library: [librt.so.1]<br> 0x0000000000000001 (NEEDED)             Shared library: [libtinfo.so.5]<br> 0x0000000000000001 (NEEDED)             Shared library: [libz.so.1]<br> 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]<br> 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]<br> 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]<br> 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]<br> 0x0000000000000001 (NEEDED)             Shared library:<br>[ld-linux-x86-64.so.2]<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160303/1da0abde/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

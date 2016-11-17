@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/365ac1314d2eb5f5aa7f8ea71097e24f?s=50"></div><header><strong>Query: Code-obfuscation Techniques</strong> from <string>Pandey, Sunil Y</string> &lt;sunil.pandey at genpact.digital&gt;<p>September  6, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>Can somebody please help me in getting the more appropriate way of doing Code-obfuscation.<br>How to obfuscate API names and pretty much everything so that once we give build(ipa file) so nobody can extract and see which kind of API&#39;s, techniques and methods have been used? Most affective code obfuscation technique in swift?<br></p><p><br>Best Regards,<br>Sunil<br></p><p>______________________________________________________________________<br>This e-mail (and any attachments), is confidential and may be privileged. It may be read, copied and used only by intended recipients. Unauthorized access to this e-mail (or attachments) and disclosure or copying of its contents or any action taken in reliance on it is unlawful. Unintended recipients must notify the sender immediately by e-mail/phone &amp; delete it from their system without making any copies or disclosing it to a third person.<br>______________________________________________________________________<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160906/591382a2/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

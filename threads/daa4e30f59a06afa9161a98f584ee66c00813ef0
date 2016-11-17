@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Returned for revision] SE-0050: Decoupling Floating Point Strides from Generic Implementations</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May 31, 2016 at 10:00:00am</p></header><div class="content"><p>on Mon May 30 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; The core team believes that the existing strideable API cannot efficiently and correctly handle all the real-world use cases one would want.  However, a multiplication-based implementation similar to the one proposed in SE-0050 (but potentially extended) seems sufficiently general to solve the existing use cases as well as solve the floating point error accumulation issue.  Once the design of this iterates on swift-evolution, it would be great to see a revised version of this proposal.<br>&gt;<br>&gt; Can you give any indication of what&#39;s wrong with the proposed API?<br></p><p>For example, a multiplication-based implementation like the one proposed<br>for floating point could be made to work for all the current models of<br>Strideable in the standard library, but it would not generalize<br>efficiently to handling arbitrary-precision integers or complex numbers<br>or even to efficiently striding over Float.  We believe such a protocol<br>should be designed, and we fundamentally disagree with the proposal&#39;s<br>claim that abstracting over integers and floating point is wrong.<br></p><p>Until we have the right API design for Strideable, we believe the<br>accumulating problem can be fixed without changing Strideable&#39;s public<br>API, e.g. by adding underscored protocol requirements for which we can<br>provide specialized implementations using protocol extensions<br>constrained to Stride : FloatingPointType.  We look forward to accepting<br>a pull request to make this change, which doesn&#39;t require an evolution<br>proposal, and we expect that change to usefully inform the question of<br>how to change Strideable.<br></p><p>&gt;<br>&gt; Personally, what bothered me about it is that it seems too float-specific. The way I would design it is to add multiplication to Strideable:<br>&gt;<br>&gt; 	public protocol Strideable: Comparable {<br>&gt; 		typealias Stride: SignedNumber<br>&gt;<br>&gt; 		func distance(to other: Self) -&gt; Stride<br>&gt; 		func advanced(by stride: Stride) -&gt; Self<br>&gt;<br>&gt; 		static func scale(_ stride: Stride, by multiplier: Stride) -&gt; Stride<br>&gt; 	}<br>&gt;<br>&gt; And then have a refined protocol for types like Int which are safe to repeatedly advance:<br>&gt;<br>&gt; 	/// An AccumulatingStrideable is a Strideable which guarantees that:<br>&gt; 	///<br>&gt; 	///	(0..&lt;10).reduce(value) { val, _ in val.advanced(by: stride) } == value.advanced(by: T.scale(stride, by: 10))<br>&gt; 	/// <br>&gt; 	/// In other words, the result of repeatedly advancing any value by any stride *n* times is exactly equal to the <br>&gt; 	/// result of advancing it once by that stride scaled up *n* times.<br>&gt; 	public protocol AccumulatingStrideable: Strideable {}<br>&gt;<br>&gt; Then you have two forms of `stride(from:to:by:)`:<br>&gt;<br>&gt; 	public func stride&lt;T: Strideable&gt;(from start: T, to end: T, by stride: T.Stride) -&gt; StrideTo&lt;T&gt;<br>&gt; 	public func stride&lt;T: AccumulatingStrideable&gt;(from start: T, to end: T, by stride: T.Stride) -&gt; AccumulatingStrideTo&lt;T&gt;<br>&gt;<br>&gt; Obviously there are many designs we could consider along these lines, and I don&#39;t want to get bogged down in the details of choosing one at this point. What I&#39;m asking is, is this the general *kind* of design you&#39;re looking for compared to SE-0050, one which is not specific to FloatingPoint types? Or are you looking for a redesign which addresses different issues from these?<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

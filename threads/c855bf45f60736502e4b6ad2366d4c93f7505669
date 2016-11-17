@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>Guaranteed closure execution</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>January 29, 2016 at 12:00:00pm</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160129/c8555669/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a06dd7924588141b9c907543798c2524?s=50"></div><header><strong>Guaranteed closure execution</strong> from <string>Gwendal Roué</string> &lt;gwendal.roue at gmail.com&gt;<p>January 29, 2016 at 01:00:00pm</p></header><div class="content"><p>Yes, Thorsten.<br></p><p>Brent: I’m sorry if the title of the thread is not precise enough. The goal here is to let such a closure guarantee variable initialisation, as below:<br></p><p>	func f(@noescape(once) closure: () -&gt; ()) {<br>	    closure()<br>	}<br></p><p>	let x: Int  // Not initialized<br>	f { x = 1 }<br>	print(x)    // Guaranteed to be initialized<br></p><p>Such closure can not escape. Hence @noescape(once), not @once.<br></p><p>dispatch_sync() is often cited in this mailing list, and we all want that it declares its argument as @noescape. Now it would be even better if it would declare it as @noescape(once).<br></p><p>Gwendal<br></p><p><br>&gt; Le 29 janv. 2016 à 13:11, Thorsten Seitz &lt;tseitz42 at icloud.com&gt; a écrit :<br>&gt; <br>&gt; But if the closure can escape it is difficult to guarantee that it is executed at all (e.g. in your examples such as dispatch_async).<br>&gt; <br>&gt; -Thorsten<br>&gt; <br>&gt; Am 29. Januar 2016 um 11:58 schrieb Brent Royal-Gordon via swift-evolution &lt;swift-evolution at swift.org&gt;:<br>&gt; <br>&gt;&gt;&gt; You are right Jacob, a modifier `@noescape(once)` would be better, as it would help compiler distinguish between assignment and initialization of captured variables.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; The utility of such a new feature is maybe tiny, but clear: it extends the opportunities to declare variables before initializing them. The Swift 1 to 2 transition has already extended those opportunities, so we’re just following an existing trend, here.<br>&gt;&gt; <br>&gt;&gt; I actually think that `once` is orthogonal to `noescape`. There are a *lot* of closures that are not noescape, but are called exactly once, such as dispatch_async and most completion handlers.<br>&gt;&gt; <br>&gt;&gt; -- <br>&gt;&gt; Brent Royal-Gordon<br>&gt;&gt; Architechies<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160129/c6356b89/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

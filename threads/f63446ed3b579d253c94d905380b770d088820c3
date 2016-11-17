@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/23b4a25e7e03fd38ce64637cb7eed263?s=50"></div><header><strong>[Review] SE-0018 Flexible Memberwise Initialization</strong> from <string>Alex Burke</string> &lt;alexjeffburke at gmail.com&gt;<p>January 10, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>Please forgive the intrusion - I&#39;m somewhat of a lurker but I&#39;ve been<br>following Swift evolution and particularly this discussion with interest. I<br>primarily write in other languages (JS and Python) but see Swift as finally<br>allowing me to pick up native app development.<br></p><p>* what is your evaluation of the proposal?<br></p><p>I write a lot of JavaScript and have introduced a good few bugs in due to<br>typos when assigning variables in initializing functions. I think anything<br>that reduces the boilerplate is a win.<br></p><p>That being said, I take seriously the concern about reordering the<br>variables and that breaking previous synthesised initializer functions. The<br>way of getting around this in JS is to pass down a dictionary of arguments,<br>but that&#39;s is a bit of a hack around the language. Python is much better<br>here, with the **kwargs calling convention - but most importantly, Python 3<br>introduced keyword only args (anything after an * in the function<br>definition) that *cannot* be called positionally.<br></p><p>I think something like would go a significant way to addressing concerns<br>about initializers created by this proposal.<br></p><p>* is the problem being addressed significant enough?<br></p><p>As mentioned above, repetitive boilerplate is a source of bugs and as<br>someone mentioned previously you become blind to things once repeated<br>enough.<br></p><p>* does this proposal fit well with swift?<br></p><p>Reducing boilerplate by using all the tools such as the compiler and type<br>information seems to be a very Swift approach.<br></p><p>* compared to other languages<br></p><p>As mentioned, I think the closet language level feature is actually<br>Python calling conventions for functions, and that is something I think<br>becomes generally an incredibly useful feature.<br></p><p>* effort in review<br></p><p>I have tried to follow all the discussion and have read the proposal. As I<br>say I&#39;m somewhat of a Swift outsider but have have an interest in language<br>design. Of the alternatives presented, I think the tuple assignment to<br>&#39;members&#39; has merit in the calling convention, but I&#39;d argue against a<br>special internal property unless it was merely something like a special<br>tuple that on assignment updated the instance properties of the object. But<br>it was that line of thinking that led to Python keyword only args which I<br>think is more flexible.<br></p><p>Thanks for your time and hope this is useful, Alex J Burke,<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160110/f63420c3/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

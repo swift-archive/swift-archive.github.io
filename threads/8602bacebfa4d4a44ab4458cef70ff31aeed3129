@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c9c44262e8b58b758a3876b9d29c095?s=50"></div><header><strong>[pitch] &quot;import&quot; declaration, support for comma-separated modules</strong> from <string>Georgios Moschovitis</string> &lt;george.moschovitis at icloud.com&gt;<p>October 18, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; I&#39;d almost always prefer to have another three lines of a protocolvisible, than three lines of imports. <br></p><p>Maybe you just need an editor that can fold the imports (e.g. JetBrains)<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/46439321e8b5b5ba0944eef50e18c3a3?s=50"></div><header><strong>[pitch] &quot;import&quot; declaration, support for comma-separated modules</strong> from <string>Jean-Denis Muys</string> &lt;jdmuys at gmail.com&gt;<p>October 18, 2016 at 10:00:00am</p></header><div class="content"><p>I don&#39;t agree with the line of reasoning that goes something like that:<br></p><p>&quot;Event though you have &lt;some legitimate reason&gt;, I want to forbid every one<br>from using additive feature X because I don&#39;t like it, given &lt;some other<br>legitimate reason&gt;&quot;<br></p><p>I also don&#39;t understand why this would impede qualified import syntax. What<br>is wrong with:<br></p><p>import func Framework.someMethod, func OtherFramework.someOtherMethod<br></p><p>So far for me this is +1.<br></p><p>Because additive, not in scope for phase 1 of Swift 4, though, as most of<br>the topics on this list recently.<br></p><p>On 18 October 2016 at 08:01, Georgios Moschovitis via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; &gt; I&#39;d almost always prefer to have another three lines of a<br>&gt; protocolvisible, than three lines of imports.<br>&gt;<br>&gt; Maybe you just need an editor that can fold the imports (e.g. JetBrains)<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161018/de9fffd3/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

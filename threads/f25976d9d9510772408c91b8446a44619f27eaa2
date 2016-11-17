@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9161e358d4d5ebac8c6d1bcf346a9465?s=50"></div><header><strong>Will Swift 3.0 be part of the OS</strong> from <string>Xuan Liu</string> &lt;liuxuan30 at gmail.com&gt;<p>July 29, 2016 at 09:00:00am</p></header><div class="content"><p>Hi there,<br></p><p>I remember it is mentioned (or I am wrong) in WWDC that swift 3.0 will be<br>part of the OS, rather than packaged with single apps?<br></p><p>Can someone help? Thanks.<br></p><p>------------------<br>Thanks,<br>Xuan Liu<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160729/f259eaa2/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2024f9524b1e51a54c4251abf0c34f50?s=50"></div><header><strong>Will Swift 3.0 be part of the OS</strong> from <string>Saagar Jha</string> &lt;saagarjha28 at gmail.com&gt;<p>July 28, 2016 at 08:00:00pm</p></header><div class="content"><p>IIRC it will be part of the system once the ABI is stabilized (which it should be with Swift 3).<br></p><p>Saagar Jha<br></p><p><br></p><p>&gt; On Jul 28, 2016, at 18:39, Xuan Liu via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi there,<br>&gt; <br>&gt; I remember it is mentioned (or I am wrong) in WWDC that swift 3.0 will be part of the OS, rather than packaged with single apps?<br>&gt; <br>&gt; Can someone help? Thanks.<br>&gt;  <br>&gt; ------------------<br>&gt; Thanks,<br>&gt; Xuan Liu<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160728/635977e0/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1b54c2d366bbc31b41cf7dcbc77324f9?s=50"></div><header><strong>Will Swift 3.0 be part of the OS</strong> from <string>Keith Smiley</string> &lt;k at keith.so&gt;<p>July 28, 2016 at 08:00:00pm</p></header><div class="content"><p>ABI stability is no longer happening with Swift 3. See: http://ericasadun.com/2016/05/16/winding-down-swift-3-0-abi-stability-deferred/<br></p><p>--<br>Keith Smiley<br></p><p>&gt; On Jul 28, 2016, at 20:02, Saagar Jha via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; IIRC it will be part of the system once the ABI is stabilized (which it should be with Swift 3).<br>&gt; <br>&gt; Saagar Jha<br>&gt; <br>&gt; <br>&gt; <br>&gt;&gt; On Jul 28, 2016, at 18:39, Xuan Liu via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hi there,<br>&gt;&gt; <br>&gt;&gt; I remember it is mentioned (or I am wrong) in WWDC that swift 3.0 will be part of the OS, rather than packaged with single apps?<br>&gt;&gt; <br>&gt;&gt; Can someone help? Thanks.<br>&gt;&gt;  <br>&gt;&gt; ------------------<br>&gt;&gt; Thanks,<br>&gt;&gt; Xuan Liu<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-users mailing list<br>&gt;&gt; swift-users at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160728/e2fa10a6/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

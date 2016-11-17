@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/30aa7afb91d7cf736566fa69a4459a07?s=50"></div><header><strong>SwiftPM XCS setup</strong> from <string>Ankit Aggarwal</string> &lt;ankit_aggarwal at apple.com&gt;<p>September  9, 2016 at 09:00:00am</p></header><div class="content"><p>First bot which builds OSS SwiftPM is live on https://pacman.apple.com/xcode &lt;https://pacman.apple.com/xcode&gt; , It will trigger an integration on every commit.<br></p><p>Right now I&#39;ve put latest toolchain from swift.org &lt;http://swift.org/&gt; but it needs to be automated to update the toolchain.<br>I can either add a bot which checks and install new toolchains before every integration or create a bot which does the same every day or so. Which do you think makes more sense?<br></p><p>I&#39;ll setup another bot which builds and tests SwiftPM from stash but what swift is that support to use? Will using OSS toolchain on it be ok?<br></p><p>For automerging to active train branch, once a stash SwiftPM integration passes it can merge the commits to that branch (which will trigger another bot to test that branch).<br></p><p><br>- Ankit<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160909/c124e41b/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: signature.asc<br>Type: application/pgp-signature<br>Size: 842 bytes<br>Desc: Message signed with OpenPGP using GPGMail<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160909/c124e41b/attachment.sig&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/30aa7afb91d7cf736566fa69a4459a07?s=50"></div><header><strong>SwiftPM XCS setup</strong> from <string>Ankit Aggarwal</string> &lt;ankit_aggarwal at apple.com&gt;<p>September  9, 2016 at 10:00:00am</p></header><div class="content"><p>Sorry this was meant to for our internal team for local CI setup.<br>My apologies, please ignore this.<br></p><p>- Ankit<br></p><p>&gt; On 09-Sep-2016, at 9:59 AM, Ankit Aggarwal via swift-build-dev &lt;swift-build-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; First bot which builds OSS SwiftPM is live on https://pacman.apple.com/xcode &lt;https://pacman.apple.com/xcode&gt; , It will trigger an integration on every commit.<br>&gt; <br>&gt; Right now I&#39;ve put latest toolchain from swift.org &lt;http://swift.org/&gt; but it needs to be automated to update the toolchain.<br>&gt; I can either add a bot which checks and install new toolchains before every integration or create a bot which does the same every day or so. Which do you think makes more sense?<br>&gt; <br>&gt; I&#39;ll setup another bot which builds and tests SwiftPM from stash but what swift is that support to use? Will using OSS toolchain on it be ok?<br>&gt; <br>&gt; For automerging to active train branch, once a stash SwiftPM integration passes it can merge the commits to that branch (which will trigger another bot to test that branch).<br>&gt; <br>&gt; <br>&gt; - Ankit<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-build-dev mailing list<br>&gt; swift-build-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-build-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160909/007304eb/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: signature.asc<br>Type: application/pgp-signature<br>Size: 842 bytes<br>Desc: Message signed with OpenPGP using GPGMail<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160909/007304eb/attachment.sig&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

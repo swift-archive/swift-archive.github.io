@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0125: Remove NonObjectiveCBase and isUniquelyReferenced</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July 20, 2016 at 07:00:00am</p></header><div class="content"><p>on Wed Jul 20 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jul 20, 2016, at 6:53 AM, Dave Abrahams &lt;dave at boostpro.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; There is; it&#39;s basically impossible to implement reliably given the<br>&gt;&gt; state of Objective-C reference-counting.  I&#39;ll let Greg Parker explain<br>&gt;&gt; the details, as he has many times to me (but I don&#39;t retain them as well<br>&gt;&gt; as he does).<br>&gt;<br>&gt; I don&#39;t necessarily need to know them (although I&#39;d be curious to hear).<br>&gt;<br>&gt; I think something that implies the possibility of false negatives,<br>&gt; like `isKnownUniquelyReferenced(_:)` or (flipping the sense of the<br>&gt; return value) `mayBeShared(_:)`, is probably the best strategy. Or, if<br>&gt; COW is the only use case we want to support, <br></p><p>It&#39;s not the only use case for ManagedBuffer[Pointer], if that&#39;s what<br>you mean.<br></p><p>&gt; we could even call it something along the lines of<br>&gt; `needsCopyBeforeMutating(_:)`, which would strongly imply it was<br>&gt; unsuitable for any other purpose.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Marking sort and sorted with rethrows</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>June  5, 2016 at 08:00:00pm</p></header><div class="content"><p>Most standard library functions that take a closure allow that closure to throw (and those functions are subsequently marked with rethrows). sort and sorted are exceptions to this. I couldn’t find this documented anywhere, but I assume this is because sorting can happen in-place and it would be impossible to restore the array to its original state without giving up performance. Correct me if I’m wrong.<br></p><p>I’d like to propose that we let sort rethrow anyways, and leave the array in an intermediate state (where the elements are in an arbitrary order) when an error is thrown. As long as this is properly documented, this shouldn’t lead to any confusion. Best of all, it would allow sorted to rethrow as well in which there is no room for confusion at all because it doesn’t mutate any of the user’s variables.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d4fb9162c777a5d6d0b1fb00893d709?s=50"></div><header><strong>Marking sort and sorted with rethrows</strong> from <string>Haravikk</string> &lt;swift-evolution at haravikk.me&gt;<p>June  5, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; On 5 Jun 2016, at 19:14, Tim Vermeulen via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Most standard library functions that take a closure allow that closure to throw (and those functions are subsequently marked with rethrows). sort and sorted are exceptions to this. I couldn’t find this documented anywhere, but I assume this is because sorting can happen in-place and it would be impossible to restore the array to its original state without giving up performance. Correct me if I’m wrong.<br>&gt; <br>&gt; I’d like to propose that we let sort rethrow anyways, and leave the array in an intermediate state (where the elements are in an arbitrary order) when an error is thrown. As long as this is properly documented, this shouldn’t lead to any confusion. Best of all, it would allow sorted to rethrow as well in which there is no room for confusion at all because it doesn’t mutate any of the user’s variables.<br></p><p>This sounds reasonable; worst case with in-place sorting is that the collection was sorted in one order, and is only partially sorted in a new one, but the exception and your handling of it should be able to account for this.<br></p><p>It will require documentation to be clear that sorting methods should take care not to leave anything incomplete if a closure throws; most algorithms should be fine since they usually just test the closure then swap two values afterwards (where necessary) so there’s nothing really to interrupt, but anything that uses some kind of buffering may need to be redesigned to ensure there’s a fallback to ensure no elements are ever lost.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160605/9627f2f6/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>non-mutating func that still mutates a struct, compiler not aware</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>August  6, 2016 at 07:00:00am</p></header><div class="content"><p>on Sat Aug 06 2016, Raphael Sebbe &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt;&gt; Those UnsafeMutablePointer&lt;T&gt;(…) calls aren’t correct. When an array is<br>&gt;&gt; implicitly converted to a pointer in Swift, the pointer is only valid for<br>&gt;&gt; the *immediate* call that it’s being passed to. In this case, that’s the<br>&gt;&gt; UnsafeMutablePointer initializer, and after that the pointer is invalid. So<br>&gt;&gt; it’s possible that either the same space is being reused for both pointers,<br>&gt;&gt; or that it’s *not* uniquing the array because it thinks it only has to<br>&gt;&gt; make an UnsafePointer&lt;T&gt;, or both.<br>&gt;&gt;<br>&gt;&gt; As Brent says, passing the arrays directly to the method using inout<br>&gt;&gt; semantics (&amp;) should get you the behavior you want.<br>&gt;&gt;<br>&gt;&gt; (Yes, there should be a diagnostic for this. I’m pretty sure we have a bug<br>&gt;&gt; already, so no need to file. The Swift 3 pointer APIs make this a little<br>&gt;&gt; harder to do by accident, too.)<br></p><p>If you want to be safe in the general case, use <br></p><p>  a.withUnsafe[Mutable]BufferPointer { let p = $0.baseAddress; ... }<br></p><p>which will force the pointer to remain valid through the execution of<br>the entire closure.  Yes, it&#39;s syntactically a *lot* heavier than just<br>passing &amp;a, but it doesn&#39;t break without warning when some maintainer<br>comes along and passes &amp;a through a function.<br></p><p>We ought to prevent the &amp;a -&gt; UnsafeMutablePointer conversion trick from<br>working except when calling imported C APIs directly.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

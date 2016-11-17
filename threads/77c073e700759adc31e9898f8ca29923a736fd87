@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Idea] Syntactic sugar for using methods	as	functions</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 27, 2016 at 09:00:00pm</p></header><div class="content"><p>Charlie Monroe via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; This will only get you an array of closures:<br>&gt; <br>&gt; let bars = foos.map(Foo.getBar) // [() -&gt; Int, () -&gt; Int, () -&gt; Int]<br>&gt; bars[0]   // () -&gt; Int<br>&gt; bars[0]() // 1<br></p><p>Just checked:<br></p><p>struct A {<br>    func a() -&gt; Int { return 0 }<br>}<br>print(A.a.dynamicType)  //=&gt; (A) -&gt; (()) -&gt; Int<br></p><p>Wut?<br></p><p>First of all, (()) -&gt; Int should mean function with one parameter, since <br>tuple splat behaviour is going to be removed.<br></p><p>Then, with uncurrying proposal, A.a.dynamicType should be (A) -&gt; Int, <br>because both self and other parameters are now passed together.<br></p><p>My guess is that both accepted proposals are still not implemented. Once <br>it&#39;s done, we will get (A.a)(A()) == 0 and [A(), A()].map(A.a) == [0, 0]<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4b25144c09555e7d5b5e288469e011ef?s=50"></div><header><strong>[Idea] Syntactic sugar for using methods as functions</strong> from <string>Félix Cloutier</string> &lt;felixcca at yahoo.ca&gt;<p>June 27, 2016 at 09:00:00pm</p></header><div class="content"><p>Wow. I did not see that coming!<br></p><p>Either way, I agree that Foo.bar works, but then again, so does Enum.value and we give that one a free pass. Beyond &quot;it&#39;s not how it works right now&quot;, I don&#39;t really have any serious argument against the feature. I&#39;d like to have that at some point.<br></p><p>Félix<br></p><p>&gt; Le 27 juin 2016 à 14:07:46, Anton Zhilin via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt; <br>&gt; Charlie Monroe via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; <br>&gt;&gt; This will only get you an array of closures:<br>&gt;&gt; <br>&gt;&gt; let bars = foos.map(Foo.getBar) // [() -&gt; Int, () -&gt; Int, () -&gt; Int]<br>&gt;&gt; bars[0]   // () -&gt; Int<br>&gt;&gt; bars[0]() // 1<br>&gt; <br>&gt; Just checked:<br>&gt; <br>&gt; struct A {<br>&gt;    func a() -&gt; Int { return 0 }<br>&gt; }<br>&gt; print(A.a.dynamicType)  //=&gt; (A) -&gt; (()) -&gt; Int<br>&gt; <br>&gt; Wut?<br>&gt; <br>&gt; First of all, (()) -&gt; Int should mean function with one parameter, since <br>&gt; tuple splat behaviour is going to be removed.<br>&gt; <br>&gt; Then, with uncurrying proposal, A.a.dynamicType should be (A) -&gt; Int, <br>&gt; because both self and other parameters are now passed together.<br>&gt; <br>&gt; My guess is that both accepted proposals are still not implemented. Once <br>&gt; it&#39;s done, we will get (A.a)(A()) == 0 and [A(), A()].map(A.a) == [0, 0]<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160627/b2418b95/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

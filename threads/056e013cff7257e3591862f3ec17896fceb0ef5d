@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8dd38b1c9ce7ee1eec6b29918b4eab0e?s=50"></div><header><strong>Help potential developers get up to speed Print Thread</strong> from <string>Naren Dasan</string> &lt;naren at narendasan.com&gt;<p>December 14, 2015 at 01:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>  <br></p><p>I know that some open source groups label tasks or bugs as &quot;good-starter-<br>issues&quot; so that new developers have an easier time being getting up to speed.<br></p><p>Could we possibly do something similar for the Swift group (as in a Jira<br>Label/Filter) to get people comfortable in the swift codebase?  <br>  <br>Thanks,<br></p><p>Naren<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151214/056eef5d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Help potential developers get up to speed Print Thread</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>December 14, 2015 at 01:00:00pm</p></header><div class="content"><p>Hi, Naren. We actually have such a label—&quot;StarterBug &lt;https://bugs.swift.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=labels+=+StarterBug&gt;&quot;—but we haven&#39;t really been using it in a principled way yet, nor have we (the Swift team at Apple) set aside time to deliberately populate it. It&#39;s definitely a good idea, though, so thanks for bringing it up!<br></p><p>Jordan<br></p><p>&gt; On Dec 14, 2015, at 13:43, Naren Dasan via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi, <br>&gt; <br>&gt; I know that some open source groups label tasks or bugs as &quot;good-starter-issues&quot; so that new developers have an easier time being getting up to speed. <br>&gt; Could we possibly do something similar for the Swift group (as in a Jira Label/Filter) to get people comfortable in the swift codebase?<br>&gt; <br>&gt; Thanks,<br>&gt; Naren <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151214/5e02a8aa/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e841a2a33b72c728c55ff99200275784?s=50"></div><header><strong>Throws, rethrows and declaration-modifiers in function declarations</strong> from <string>James Froggatt</string> &lt;james.froggatt at me.com&gt;<p>July 19, 2016 at 09:00:00pm</p></header><div class="content"><p>Closures can throw too. The ability to throw is part of the function type. Keywords preceding ‘func’ relate to the method, as a ‘container’ entity for the function, rather than the function itself.<br></p><p>I agree the syntax is odd, the keyword should probably come after the arrow.<br></p><p>Relatedly, what happened to the follow up proposal to change @discardableResult to an @discardable annotation on the return type? As it is, closure properties can&#39;t have discardable results.<br></p><p>------------ Begin Message ------------ <br>Group: gmane.comp.lang.swift.evolution <br>MsgID: &lt;1468950690.1969779.670846257.58EFBDA2 at webmail.messagingengine.com&gt; <br></p><p>Hello,<br></p><p>I&#39;m currently reading the updated Swift 3 preview book, and was<br>wondering about the `throws` and `rethrows` keywords.<br></p><p>In a function declaration, all the keywords are at the beginning, except<br>for `throws` and `rethrows`, which areâ¦ oddly placed.<br></p><p>In the grammar:<br></p><p>```<br>*function-declaration *â *function-head[1] Â­function-name[2]Â­ **generic-parameter-clause[3]Â­*optÂ­*function-<br>signature[4]Â­ **function-body[5]Â­*optÂ­<br>*function-head *â *attributes[6]Â­*optÂ­*declaration-<br>modifiers[7]Â­*optÂ­funcÂ­<br>*function-signature *â *parameter-clause[8]Â­*throwsÂ­optÂ­*function-<br>result[9]Â­*optÂ­<br>*function-signature *â *parameter-clause[10]Â­*rethrowsÂ­*function-<br>result[11]Â­*optÂ­<br>```<br>Is there a reason to have throws and rethrows at this specific position,<br>instead of declaration-modifiers?<br></p><p>ie.:<br></p><p>This:<br></p><p>```<br>func send() throws -&gt; String {}<br>```<br></p><p>Becomes:<br></p><p>```<br>throwing func send() -&gt; String {}<br>rethrowing func send() -&gt; String {}<br>```<br></p><p>Like:<br></p><p>```<br>mutating func send() -&gt; String {}<br>```<br></p><p>Or:<br></p><p>```<br>throw func send() -&gt; String {}<br>rethrow func send() -&gt; String {}<br>```<br></p><p>Like: <br></p><p>```<br>override func send() -&gt; String {}<br>```<br></p><p>(You can also see the weird difference between `override` and<br>`mutating`, one using the -ing suffix, the other being infinitive)<br></p><p>Am I missing something? I find that these keywords break the flow of the<br>function declaration, separating the parameters and the return type,<br>which is never done anywhere else.<br></p><p>Thanks.<br></p><p>--<br>Matthieu Oger<br>Pixelnest Studio[12]<br>Â <br></p><p>Links:<br></p><p>  1. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/swift/grammar/function-head<br>  2. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/swift/grammar/function-name<br>  3. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/GenericParametersAndArguments.html#//apple_ref/swift/grammar/generic-parameter-clause<br>  4. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/swift/grammar/function-signature<br>  5. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/swift/grammar/function-body<br>  6. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Attributes.html#//apple_ref/swift/grammar/attributes<br>  7. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/swift/grammar/declaration-modifiers<br>  8. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/swift/grammar/parameter-clause<br>  9. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/swift/grammar/function-result<br>  10. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/swift/grammar/parameter-clause<br>  11. https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/swift/grammar/function-result<br>  12. http://pixelnest.io/<br></p><p><br></p><p>------------- End Message ------------- <br></p><p><br></p><p>From James F<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

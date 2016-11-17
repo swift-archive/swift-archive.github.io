@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[Pitch] merge types and protocols back	together with type&lt;Type, Protocol, ...&gt;</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>May 17, 2016 at 08:00:00am</p></header><div class="content"><p>I totally agree. Being able to work properly with existentials (and the other generics stuff from the generics manifesto) is more important for Swift than adding something like Ceylon&#39;s union and intersection types (even though I am a fan of them :-)<br></p><p><br></p><p>-Thorsten<br></p><p><br></p><p><br>Am 17. Mai 2016 um 09:09 schrieb Austin Zheng &lt;austinzheng at gmail.com&gt;:<br></p><p><br>This is the proposal I&#39;d like to see go before review, and the one I think is closest in spirit to the generics roadmap.<br></p><p>Things like adding union types, and rewriting Swift&#39;s type system to look like Scala&#39;s, have very little to do with better representations of existentials, and belong in a follow-up proposal.<br></p><p>Austin<br></p><p><br>On May 16, 2016, at 11:55 PM, Brent Royal-Gordon via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br></p><p><br>But don&#39;t you mean the union type of all possible Collection types when you write Any&lt;Collection&gt;?<br></p><p><br>No, I mean &quot;an existential capable of holding any Collection&quot;.<br></p><p><br>If I write Any&lt;Equatable, Collection&gt;, I mean &quot;an existential capable of holding any Equatable Collection&quot;.<br></p><p><br>If I write Any&lt;UITableViewCell, CounterDisplaying&gt;, I mean &quot;an existential capable of holding any CounterDisplaying UITableViewCell&quot;.<br></p><p><br>If I write Any&lt;Collection where .Element: Equatable&gt;, I mean &quot;an existential capable of holding any Collection with an Equatable Element&quot;.<br></p><p><br>If I write Any&lt;class&gt;, I mean &quot;An existential capable of holding any class instance&quot;.<br></p><p><br>If I write Any, I mean &quot;An existential capable of holding anything&quot;.<br></p><p><br>Union types have nothing to do with it.<br></p><p><br>--<br>Brent Royal-Gordon<br>Architechies<br></p><p><br>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br></p><p>https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160517/3b25ddd7/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

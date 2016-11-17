@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>Pitch: &quot;while&quot; clause on for-loops</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>December 31, 2015 at 12:00:00am</p></header><div class="content"><p>Currently, for-loops admit a &quot;where&quot; clause:<br></p><p>    for x in seq *where* cond {<br>        ...<br>    }<br></p><p>    behaves like<br></p><p>    for x in seq {<br>        if !cond { continue }<br>        ...<br>    }<br></p><p><br>I&#39;d be interested in a &quot;while&quot; clause:<br></p><p>    for x in seq *while* cond {<br>        ...<br>    }<br></p><p>    would behave like<br></p><p>    for x in seq {<br>        if !cond { break }<br>        ...<br>    }<br></p><p><br>This is one area where C-style for-loops would have provided a clean<br>solution (combining multiple conditions with &amp;&amp;), but once they&#39;re removed<br>any extra conditions will have to move inside the loop.<br></p><p>Pros:<br>- It&#39;s a simple way to express a common piece of control flow that<br>otherwise requires negation and another set of braces.<br>- Its meaning is easy to understand.<br></p><p>Cons:<br>- It&#39;s a new feature.<br>- Naming might cause confusion with while-loops.<br></p><p>Open questions:<br>- How/could it be combined with &quot;where&quot; clauses? Would order matter?<br>- Does anyone else care?<br></p><p><br>Thanks,<br>Jacob<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151231/717eb68f/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Pitch: &quot;while&quot; clause on for-loops</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>December 31, 2015 at 11:00:00am</p></header><div class="content"><p>&gt; On Dec 31, 2015, at 12:42 AM, Jacob Bandes-Storch via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Currently, for-loops admit a &quot;where&quot; clause:<br>&gt; <br>&gt;     for x in seq where cond {<br>&gt;         ...<br>&gt;     }<br>&gt; <br>&gt;     behaves like<br>&gt; <br>&gt;     for x in seq {<br>&gt;         if !cond { continue }<br>&gt;         ...<br>&gt;     }<br>&gt; <br>&gt; <br>&gt; I&#39;d be interested in a &quot;while&quot; clause:<br>&gt; <br>&gt;     for x in seq while cond {<br>&gt;         ...<br>&gt;     }<br>&gt; <br>&gt;     would behave like<br>&gt; <br>&gt;     for x in seq {<br>&gt;         if !cond { break }<br>&gt;         ...<br>&gt;     }<br>&gt; <br>&gt; <br>&gt; This is one area where C-style for-loops would have provided a clean solution (combining multiple conditions with &amp;&amp;), but once they&#39;re removed any extra conditions will have to move inside the loop.<br>&gt; <br>&gt; Pros:<br>&gt; - It&#39;s a simple way to express a common piece of control flow that otherwise requires negation and another set of braces.<br>&gt; - Its meaning is easy to understand.<br>&gt; <br>&gt; Cons:<br>&gt; - It&#39;s a new feature.<br>&gt; - Naming might cause confusion with while-loops.<br>&gt; <br>&gt; Open questions:<br>&gt; - How/could it be combined with &quot;where&quot; clauses? Would order matter?<br>&gt; - Does anyone else care?<br></p><p>My 2c: it is adding complexity and potential for confusion for very little gain. Also, “where” and “while” are structurally different, because while isn’t a modifier that occurs in many other places.  Adding “where” to for loops was justified by a push to improve pattern matching in swift.<br></p><p>-Chris<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151231/c433f08f/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

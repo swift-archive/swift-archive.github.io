@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2a7aae865d8b141e427b2f5eae718128?s=50"></div><header><strong>More verbose logical operators</strong> from <string>Bee</string> &lt;bee.ography at gmail.com&gt;<p>December  4, 2015 at 11:00:00am</p></header><div class="content"><p>Hi all,<br></p><p>Swift is said to be a verbose and easy to read programming language.<br>However, I see Swift is still using cryptic symbols for logical operators.<br></p><p>! for not<br>|| for or<br>&amp;&amp; for and<br></p><p>Here I propose a new logical operators that are more swiftish.<br></p><p>&#39;not&#39; for not<br>&#39;or&#39; for or<br>&#39;and&#39; for and<br></p><p>So, instead of:<br></p><p>if !foo1 || foo2 &amp;&amp; foo3 { ? }<br></p><p>we could write it as:<br></p><p>if not foo1 or foo2 and foo3 { ? }<br></p><p>which is much more readable because it&#39;s less cryptic.<br></p><p>What do you think?<br></p><p>Thank you.<br></p><p>Regards,<br></p><p>-- <br>-Bee-<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151204/34885f80/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6ab7ae85b84ebb323fab427b11500742?s=50"></div><header><strong>More verbose logical operators</strong> from <string>Keith Smiley</string> &lt;keithbsmiley at gmail.com&gt;<p>December  3, 2015 at 09:00:00pm</p></header><div class="content"><p>There was another post about this earlier today as well:<br></p><p>https://lists.swift.org/pipermail/swift-evolution/2015-December/000032.html<br></p><p>--<br>Keith Smiley<br></p><p>On 12/04, Bee wrote:<br>&gt; Hi all,<br>&gt;<br>&gt; Swift is said to be a verbose and easy to read programming language.<br>&gt; However, I see Swift is still using cryptic symbols for logical operators.<br>&gt;<br>&gt; ! for not<br>&gt; || for or<br>&gt; &amp;&amp; for and<br>&gt;<br>&gt; Here I propose a new logical operators that are more swiftish.<br>&gt;<br>&gt; &#39;not&#39; for not<br>&gt; &#39;or&#39; for or<br>&gt; &#39;and&#39; for and<br>&gt;<br>&gt; So, instead of:<br>&gt;<br>&gt; if !foo1 || foo2 &amp;&amp; foo3 { ? }<br>&gt;<br>&gt; we could write it as:<br>&gt;<br>&gt; if not foo1 or foo2 and foo3 { ? }<br>&gt;<br>&gt; which is much more readable because it&#39;s less cryptic.<br>&gt;<br>&gt; What do you think?<br>&gt;<br>&gt; Thank you.<br>&gt;<br>&gt; Regards,<br>&gt;<br>&gt; --<br>&gt; -Bee-<br></p><p>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2a7aae865d8b141e427b2f5eae718128?s=50"></div><header><strong>More verbose logical operators</strong> from <string>Bee</string> &lt;bee.ography at gmail.com&gt;<p>December  4, 2015 at 12:00:00pm</p></header><div class="content"><p>Oh, I see. Too bad actually.<br></p><p>I&#39;m sorry for not knowing that. I&#39;m a new member here.<br></p><p><br>On Fri, Dec 4, 2015 at 12:01 PM, Keith Smiley &lt;keithbsmiley at gmail.com&gt;<br>wrote:<br></p><p>&gt; There was another post about this earlier today as well:<br>&gt;<br>&gt; https://lists.swift.org/pipermail/swift-evolution/2015-December/000032.html<br>&gt;<br>&gt; --<br>&gt; Keith Smiley<br>&gt;<br>&gt; On 12/04, Bee wrote:<br>&gt; &gt; Hi all,<br>&gt; &gt;<br>&gt; &gt; Swift is said to be a verbose and easy to read programming language.<br>&gt; &gt; However, I see Swift is still using cryptic symbols for logical<br>&gt; operators.<br>&gt; &gt;<br>&gt; &gt; ! for not<br>&gt; &gt; || for or<br>&gt; &gt; &amp;&amp; for and<br>&gt; &gt;<br>&gt; &gt; Here I propose a new logical operators that are more swiftish.<br>&gt; &gt;<br>&gt; &gt; &#39;not&#39; for not<br>&gt; &gt; &#39;or&#39; for or<br>&gt; &gt; &#39;and&#39; for and<br>&gt; &gt;<br>&gt; &gt; So, instead of:<br>&gt; &gt;<br>&gt; &gt; if !foo1 || foo2 &amp;&amp; foo3 { ? }<br>&gt; &gt;<br>&gt; &gt; we could write it as:<br>&gt; &gt;<br>&gt; &gt; if not foo1 or foo2 and foo3 { ? }<br>&gt; &gt;<br>&gt; &gt; which is much more readable because it&#39;s less cryptic.<br>&gt; &gt;<br>&gt; &gt; What do you think?<br>&gt; &gt;<br>&gt; &gt; Thank you.<br>&gt; &gt;<br>&gt; &gt; Regards,<br>&gt; &gt;<br>&gt; &gt; --<br>&gt; &gt; -Bee-<br>&gt;<br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-evolution mailing list<br>&gt; &gt; swift-evolution at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;<br></p><p><br>-- <br>-Bee-<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151204/022393ee/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

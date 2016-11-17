@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Late Pitch] Deprecations, Moves, and Renames</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>August 12, 2016 at 01:00:00pm</p></header><div class="content"><p>on Fri Aug 12 2016, Ben Rimmington &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On 9 Aug 2016, at 20:09, Dave Abrahams wrote:<br>&gt;&gt; <br>&gt;&gt; Deprecate the ExpressibleByStringInterpolation protocol with a<br>&gt;&gt; message indicating that its design is expected to change.  We know<br>&gt;&gt; this protocol to be mis-designed<br>&gt;&gt; (https://bugs.swift.org/browse/SR-1260) and limited<br>&gt;&gt; (https://bugs.swift.org/browse/SR-2303), but there&#39;s no time to fix it<br>&gt;&gt; for Swift 3.  If we knew what the new design should look like, we<br>&gt;&gt; might be able to calculate that the current API is supportable in a<br>&gt;&gt; forward-compatible way (as we do for Comparable).  Unfortunately, we<br>&gt;&gt; do not.<br>&gt;<br>&gt; Can the deprecation of ExpressibleByStringInterpolation be reverted next year,<br>&gt; if a backwards-compatible design is proposed for Swift 4.0?<br></p><p>Yes, that&#39;s the plan, even if a backwards-compatible design isn&#39;t<br>proposed.  The reason to deprecate it now is that we&#39;re not sure a<br>backwards-compatible design will be possible.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>[Late Pitch] Deprecations, Moves, and Renames</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>August 12, 2016 at 11:00:00pm</p></header><div class="content"><p>&gt; On 12 Aug 2016, at 21:03, Dave Abrahams wrote:<br>&gt; <br>&gt;&gt; on Fri Aug 12 2016, Ben Rimmington wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; On 9 Aug 2016, at 20:09, Dave Abrahams wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Deprecate the ExpressibleByStringInterpolation protocol with a<br>&gt;&gt;&gt; message indicating that its design is expected to change.  We know<br>&gt;&gt;&gt; this protocol to be mis-designed<br>&gt;&gt;&gt; (https://bugs.swift.org/browse/SR-1260) and limited<br>&gt;&gt;&gt; (https://bugs.swift.org/browse/SR-2303), but there&#39;s no time to fix it<br>&gt;&gt;&gt; for Swift 3.  If we knew what the new design should look like, we<br>&gt;&gt;&gt; might be able to calculate that the current API is supportable in a<br>&gt;&gt;&gt; forward-compatible way (as we do for Comparable).  Unfortunately, we<br>&gt;&gt;&gt; do not.<br>&gt;&gt; <br>&gt;&gt; Can the deprecation of ExpressibleByStringInterpolation be reverted next year,<br>&gt;&gt; if a backwards-compatible design is proposed for Swift 4.0?<br>&gt; <br>&gt; Yes, that&#39;s the plan, even if a backwards-compatible design isn&#39;t<br>&gt; proposed.  The reason to deprecate it now is that we&#39;re not sure a<br>&gt; backwards-compatible design will be possible.<br></p><p>The only downside is when manually converting to current Swift syntax:<br></p><p>1. ⚠️ &#39;StringInterpolationConvertible&#39; is deprecated: <br>    renamed to &#39;ExpressibleByStringInterpolation&#39;<br></p><p>2. ☑️ Fix-it: Use &#39;ExpressibleByStringInterpolation&#39; instead<br></p><p>3. ⚠️ &#39;ExpressibleByStringInterpolation&#39; is deprecated: <br>    it will be replaced or redesigned in Swift 4.0.  <br>    Instead of conforming to &#39;ExpressibleByStringInterpolation&#39;, <br>    consider adding an &#39;init(_:String)&#39;<br></p><p>-- Ben<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

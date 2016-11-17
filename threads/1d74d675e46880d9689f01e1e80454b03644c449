@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/144e26b9f7749e920181eb040b6b8126?s=50"></div><header><strong>KVO Context Param</strong> from <string>Tyler Stromberg</string> &lt;tylers at mac.com&gt;<p>October  6, 2016 at 02:00:00pm</p></header><div class="content"><p>Hey everyone,<br></p><p>One of the things that came up in a code review today was the type of KVO&#39;s context param. If you look at the function signature it gets imported as UnsafeMutableRawPointer?. Is there ever a need to mutate this parameter, and if not can we change it to be UnsafeRawPointer? instead?<br></p><p>We commonly define a constant (e.g. kvoContext = 0) to pass in, but in Swift we have to make it mutable (which we&#39;d rather not do). Is there another workaround? How is everyone else handling this? (We avoid KVO whenever possible, but some APIs require it.)<br></p><p>Thanks,<br></p><p>-Tyler<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161006/1d74c449/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

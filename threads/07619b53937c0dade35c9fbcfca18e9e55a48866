@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ceee3416184656c101818713f1885af0?s=50"></div><header><strong>swift without markup/cmark</strong> from <string>Jon Rafkind</string> &lt;jon.rafkind at hpe.com&gt;<p>January  9, 2016 at 12:00:00am</p></header><div class="content"><p>I&#39;ve tried on linux and osx. I&#39;m sure the build works with the provided build scripts, but right now I am doing a more traditional build where I build each component, install it to some local place, then reference the local paths in the next component that needs it. This is the typical workflow of many open source projects.<br></p><p>In theory, the build should be independent of the actual paths to dependencies, and instead rely on things such as pkg-config or llvm-config to get the right paths.<br></p><p>On 01/08/2016 04:08 PM, Dmitri Gribenko wrote:<br></p><p>On Fri, Jan 8, 2016 at 11:30 PM, Rafkind, Jon &lt;jon.rafkind at hpe.com&gt;&lt;mailto:jon.rafkind at hpe.com&gt; wrote:<br></p><p><br>Also, I routinely have to mess with the swift build system to get it to find<br>the cmark headers. In the most recent build I did I had to copy the cmark<br>headers to lib/Markup, because Markup.cpp directly tries to #include<br>&quot;cmark.h&quot;, but cmake does not have a variable to specify the location of the<br>cmark include directory, it only has one for the lib directory.<br></p><p><br></p><p>Which system is that?  The build works correctly when build-script is used.<br></p><p>Dmitri<br></p><p><br></p><p>--<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>swift without markup/cmark</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>January  9, 2016 at 03:00:00am</p></header><div class="content"><p>On Sat, Jan 9, 2016 at 2:39 AM, Rafkind, Jon &lt;jon.rafkind at hpe.com&gt; wrote:<br>&gt; I&#39;ve tried on linux and osx. I&#39;m sure the build works with the provided<br>&gt; build scripts, but right now I am doing a more traditional build where I<br>&gt; build each component, install it to some local place, then reference the<br>&gt; local paths in the next component that needs it. This is the typical<br>&gt; workflow of many open source projects.<br></p><p>I want to warn you that by doing that you are stepping into<br>unsupported land, and you might build a compiler that does not work,<br>or works slowly, and libraries that work slowly or fail in unusual<br>ways.  Please read the last paragraph of `./utils/build-script<br>--help`.<br></p><p>If you have unusual build requirements, I would strongly recommend to<br>factor them into build-script.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

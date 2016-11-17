@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Draft]: Introducing a striding(by:) method on 3.0 ranges</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 10, 2016 at 10:00:00am</p></header><div class="content"><p>on Sun Apr 10 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; I can’t imagine any scenario in which getting the step&#39;s sign wrong wouldn’t just be a typo.<br>&gt;<br>&gt; Well, it could be an error if you derive the stride by subtracting two<br>&gt; numbers, and the second number is unexpectedly larger than the<br>&gt; first. Of course, that makes it a *bug*, not a typo.<br>&gt;<br>&gt;&gt; Why not just assign it the correct sign during the init function?<br>&gt;&gt; (0 ... 6).striding(by: 2) // [0, 2, 4, 6], end &gt; start, so stride = by<br>&gt;&gt; (6 ... 0).striding(by: 2) // [6, 4, 2, 0], start &gt; end, so stride = -by<br>&gt;<br>&gt; One reason not to do it this way is that, if we extend `striding(by:)`<br>&gt; to other collections, they will not be as easy to walk backwards<br>&gt; through as this. You will have to do something like<br>&gt; `collection.reversed().striding(by:)` which will be a hassle.<br></p><p>IMO that is an acceptable result for collections that are not<br>bidirectional, just as in Swift 2 you can&#39;t measure the distance between<br>two ForwardIndex&#39;es that are in the wrong order.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

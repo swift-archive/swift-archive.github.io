@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dad1fc0d2023332e239a5c05e01fb577?s=50"></div><header><strong>Reminder: CI upgrade today</strong> from <string>Nicole Jacque</string> &lt;nicole_jacque at apple.com&gt;<p>June 14, 2016 at 10:00:00am</p></header><div class="content"><p>Hello All-<br></p><p>Just a reminder that we will be bringing down the CI starting today at noon, California time, to upgrade to Xcode 8 and the associated SDKs.  We will also be locking master during the upgrade as we will be pushing back changes for both Swift 3 and Swift 2.3.  We have staged as much of the upgrade as possible, so we are hoping for a short downtime, however, it is possible it may take several hours.  (We have planned for up to four.) We’ll send out a message when the upgrade is complete.<br></p><p>At this time, we will also be cutting a swift-3.0-preview-2-branch.<br></p><p>As a reminder, once the upgrade is complete, if you are doing development on a Mac, the minimum required Xcode to build Swift from source will be the latest Xcode 8 beta.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160614/6bd27e92/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

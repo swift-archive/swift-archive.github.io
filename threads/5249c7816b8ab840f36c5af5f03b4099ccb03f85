@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cc377023711b064682f44cd33e75e536?s=50"></div><header><strong>Is there a need for a Decimal type?</strong> from <string>Dale Buckley</string> &lt;dalebuckley86 at gmail.com&gt;<p>February 13, 2016 at 10:00:00pm</p></header><div class="content"><p>That’s a very interesting link and it’s nice to know that some kind of Decimal type already been considered, I had no idea. <br></p><p>I can see why it’s been pushed back to a Swift 4 feature though, I would imagine the concentration is all about making the core of the language work as well as possible on Apple platforms first, and then thinking about the missing parts later. It’s just unfortunate that linux based systems have to rely on 3rd party solutions for now when it seems inevitable that the type will get added in at some point. But I guess Swift is still such a young language and it&#39;ll takes a while to catch up in some more &quot;boring&quot; areas.<br></p><p><br></p><p>&gt; Cc:Dale Buckley&lt;dalebuckley86 at gmail.com&gt;<br>&gt; Subject:[swift-evolution] Is there a need for a Decimal type?<br>&gt; Date:13 February 2016 at 20:30:27 GMT<br>&gt; <br>&gt; <br>&gt; <br>&gt; &gt; On 13 Feb 2016, at 19:51, Dale Buckley via swift-evolution&lt;swift-evolution at swift.org&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; We all know the problems with floating point types, they are well documented and well understood by developers everywhere. We know when to use them and (hopefully) when not to use them and if you are working with financial values on a Foundation based platform you know to not use a floating point type and to use NSDecimalNumber instead.<br>&gt; &gt; <br>&gt; &gt; My question is this; should there be an equivalent NSDecimalNumber type built into Swift that can be used for precision sensitive decimal values where floating point types can’t be used?<br>&gt; &gt; <br>&gt; &gt; Maybe the answer isn’t an ‘equivalent’ as such, it would probably have a modern twist so I can see it looking like something else entirely, but the point still stands.<br>&gt; &gt; <br>&gt; &gt; I feel like there is a need for this, it’s not a new problem and has been solved many times over in other languages such as Objective-C (NSDecimalNumber) and Java (BigDecimal) etc. Yet as it stands we seem to be lacking an equivalent solution in Swift. It shouldn’t be left for an external library to solve, it’s one of those things that need to be built into the language.<br>&gt; &gt; <br>&gt; &gt; What are peoples thoughts on this?<br>&gt; Relevant (and because I remember it since Steve was replying to my message at the time):<br>&gt; <br>&gt; https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160104/005782.html<br>&gt; <br>&gt; &gt; &gt; On Jan 7, 2016, at 12:40 PM, Mark Glossop via swift-evolution&lt;swift-evolution at swift.org&gt;wrote:<br>&gt; &gt; &gt; <br>&gt; &gt; &gt; Sidebar on decimal numerics since they&#39;re relevant to support for currency units - would be nice to know if the &quot;new&quot; IEEE 754 (2008) Decimal floating-point types are in the Swift roadmap?<br>&gt; &gt; &gt; My suspicion is that any support for them will only come from upstream in LLVM as a first-class type [quad precision/binary128 is supported as the fp128 type; but no decimal floating-point types at present] - so looks like any fixed-point decimal support in the interim would need to be provided by hacking int types, but if anyone wants to chime in... :-)<br>&gt; &gt; <br>&gt; &gt; Decimal FP is somewhere in the hazy far-future hypothetical roadmap. It’s actually far more useful than (software) Binary128; implemented in software the performance delta between the two is fairly narrow on modern CPU architectures (except possibly for division), and having a decimal FP type available would be quite nice.<br>&gt; &gt; <br>&gt; &gt; There’s a lot of lower-hanging fruit to chip away on first, however.<br>&gt; &gt; – Steve<br>&gt; So - it&#39;s in the &quot;far-future hypothetical roadmap&quot;. I&#39;ve taken that to mean somewhere past Swift 4, whenever that drops.<br>&gt; <br>&gt; In the meantime you might check out PONS which was mentioned a few days ago: https://github.com/dankogai/swift-pons - haven&#39;t tried it myself yet, but it appears to be an option for BigNums and Rational types (&quot;decimal&quot; types being a subset of Rational functionality.)<br>&gt; <br>&gt; FWIW a number of other prior posts that mention dedicated decimal types:<br>&gt; <br>&gt; https://www.google.com.au/search?q=decimal+AND+type+site:https://lists.swift.org/pipermail/swift-evolution/<br>&gt; <br>&gt; HTH,<br>&gt; M.<br>&gt; --<br>&gt; Mark Glossop<br>&gt; E: lists at cueballcentral.com<br>&gt; TW: http://twitter.com/Cueball_AU<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0735d3bf1d76c0385258ac7a2a22d6fe?s=50"></div><header><strong>[Review] SE-0117: Default classes to be non-subclassable publicly</strong> from <string>Károly Lőrentey</string> &lt;karoly at lorentey.hu&gt;<p>July 10, 2016 at 01:00:00am</p></header><div class="content"><p>On 2016-07-09 22:01:38 +0000, Károly Lőrentey via swift-evolution said:<br></p><p>&gt;&gt; <br>&gt;&gt; On 2016. Jul 9., at 22:55, Goffredo Marocchi &lt;panajev at gmail.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Why have they not &quot;fixed&quot; this issue with Java 6/7/8 if it is bad to <br>&gt;&gt; have the current setup by default? Why C++ x09/x11/x14 is also not <br>&gt;&gt; making everything sealed/unsubclassable by default?<br>&gt; <br>&gt; I&#39;d wager a guess that the strong desire not to break source <br>&gt; compatibility with existing code explains why Java and C++ are stuck <br>&gt; forever with suboptimal defaults. Some members of this list have a bit <br>&gt; of background in C++ language design (understatement of the day!); <br>&gt; perhaps they know more.<br></p><p>Quick P.S.: I just remembered that JetBrains&#39; Kotlin exists, and it <br>made final classes the default:<br></p><p>&quot;By default, all classes in Kotlin are final, which corresponds to <br>Effective Java, Item 17: ‘Design and document for inheritance or else <br>prohibit it’.&quot;<br>	-- https://kotlinlang.org/docs/reference/classes.html#inheritance<br></p><p>They even quote the same authority as I did! &lt;3<br></p><p>It seems to have worked out fine in practice, except for some bad <br>interactions with some standard Java packages -- which I do not expect <br>to be an issue in our case.<br></p><p>-- <br>Károly<br>@lorentey<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

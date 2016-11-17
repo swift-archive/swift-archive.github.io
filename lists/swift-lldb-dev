@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="container">
+  <h2>swift-lldb-dev</h2>
+  <p>Discussion of the implementation of the Swift REPL and LLDB.</p>
+
+  <ul>
+    <li>
+<a href="/threads/225fbd7fa148bce0a4a92f73c13bb348aaf0fbc8">Failed to build OS X toolchain package broken due to commit b08610b</a>      &mdash; <em>Mishal Shah</em>
+    </li>
+    <li>
+<a href="/threads/ccfee126b2a5c7acfab4d67ded55699a7a4c974f">Embedding REPL in an application?</a>      &mdash; <em>Perry E. Metzger</em>
+    </li>
+    <li>
+<a href="/threads/ec7e9f860491f7f2bae16312651a4c48ab86a0d3">REPL questions</a>      &mdash; <em>Todd Fiala</em>
+    </li>
+    <li>
+<a href="/threads/c2b29845c13b792b272b00347179a1e435c1404f">REPL</a>      &mdash; <em>Gage Morgan</em>
+    </li>
+    <li>
+<a href="/threads/f61d0963a288d048e6f4b7fd2bc86f54b543eee3">REPL</a>      &mdash; <em>Gage Morgan</em>
+    </li>
+    <li>
+<a href="/threads/c0af6f7b1501d77fb95985635f3ec687a1894889">Hello Perry,</a>      &mdash; <em>Gage Morgan</em>
+    </li>
+    <li>
+<a href="/threads/cb4f45cdd65ab2758e0e06fc34be853462f96c66">test posting</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/8cc347dc127f6b0b41830b473ee6f354f8d801cc">swift-lldb master merge update</a>      &mdash; <em>Todd Fiala</em>
+    </li>
+    <li>
+<a href="/threads/6a6588519b025d6c9229fcc659f17c87cd6ac929">Fwd: [Swift CI] Build Still Failing: 0. OSS - LLDB Incremental - Ubuntu 14.04 (master) #2634</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/09b101a6de93f4d0e0d78e105942d0f67cdfd736">REPL missing required module &#39;SwiftGlibc&#39;</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/ad7820a1b5a303ebb4301d299f0b6655fdbc46db">[Swift CI] [LLDB] [swift-3.0-preview-3] LLDB test failing on Ubuntu 15.10</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/ab86d6b4ae1e81c41e1a69ff3df0bb2391ea8de2">Broken swift master REPL tests - Ubuntu - mine</a>      &mdash; <em>Todd Fiala</em>
+    </li>
+    <li>
+<a href="/threads/5f91f65454b601585244a3da943d23c6bfe21a81">Mysterious failure in lldbsuite.test.lldbtest.TestREPLThrowReturn</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/882b55e8a11883a692d2f9a282f5dec8a34fbe15">Test timing out</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/981ca8c24f1ba57f26d1e14f1a90ab268a9942e5">Issues with LLDB and modules</a>      &mdash; <em>Dmitry Shevchenko</em>
+    </li>
+    <li>
+<a href="/threads/6284e1493ade0c585011d09f6b9c0c7f71d8f07c">lit changes ready for your review.</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/a55d6b592b200b087049cf48ef431f032c1206b6">Building and running swift-lldb from Xcode not working :(</a>      &mdash; <em>Rex Fenley</em>
+    </li>
+    <li>
+<a href="/threads/44893726cac8bf1fb52e389e8514e30b623777e8">Swift LLDB Feature Support</a>      &mdash; <em>Jessie Serrino</em>
+    </li>
+    <li>
+<a href="/threads/9970cc317fae09ce998efec5eee54209273273b8">Cannot use swift REPL from stand alone lldb build</a>      &mdash; <em>Rex Fenley</em>
+    </li>
+    <li>
+<a href="/threads/0aced3ca49de5617073fb69602d0a6f924a8d851">Cannot use swift REPL from stand alone lldb build</a>      &mdash; <em>Dmitry Shevchenko</em>
+    </li>
+    <li>
+<a href="/threads/4d319ff6dd7590bbb309975f33e349fa89dfd001">Support for the Swift calling convention in lldb</a>      &mdash; <em>Arnold</em>
+    </li>
+  </ul>
+</div>
+    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

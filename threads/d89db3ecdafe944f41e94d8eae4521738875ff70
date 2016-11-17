@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>[stdlib] CString.swift initializers</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>February 25, 2016 at 05:00:00pm</p></header><div class="content"><p>The new initializers in &quot;CString.swift&quot; have a precondition:<br></p><p>&gt; public init(cString: UnsafePointer&lt;CChar&gt;) {<br>&gt;     _precondition(cString != nil, &quot;cString must not be nil&quot;)<br>&gt; }<br>&gt; <br>&gt; public init?(validatingUTF8 cString: UnsafePointer&lt;CChar&gt;) {<br>&gt;     _precondition(cString != nil, &quot;cString must not be nil&quot;)<br>&gt; }<br></p><p>&lt;https://github.com/apple/swift/blob/swift-3-api-guidelines/stdlib/public/core/CString.swift&gt;<br></p><p>The old `String.fromCString` function was convenient for wrapping inessential C function calls, if the `nil` coalescing operator can provide a fallback:<br></p><p>&gt; let message =<br>&gt;     String.fromCString(sqlite3_errmsg(handle)) ??<br>&gt;     String.fromCString(sqlite3_errstr(result)) ?? &quot;&quot;<br></p><p>I also think the `validatingUTF8` argument label is misleading, because neither initializer allows ill-formed UTF-8 data to be copied.<br></p><p>If the precondition is removed, it should be possible to combine the initializers:<br></p><p>&gt; /// Create a new `String` by copying the nul-terminated UTF-8 data<br>&gt; /// referenced by a `cString`.<br>&gt; ///<br>&gt; /// Fails if the `cString` is `NULL`; or if it contains ill-formed code<br>&gt; /// units and no repairing has been requested. Otherwise replaces<br>&gt; /// ill-formed code units with replacement characters (U+FFFD).<br>&gt; public init?(<br>&gt;   cString: UnsafePointer&lt;CChar&gt;,<br>&gt;   repairingInvalidCodeUnits isRepairing: Bool = true<br>&gt; ) {<br>&gt;   guard let (result, _) = String.decodeCString(<br>&gt;     UnsafePointer(cString),<br>&gt;       as: UTF8.self,<br>&gt;       repairingInvalidCodeUnits: isRepairing) else {<br>&gt;     return nil<br>&gt;   }<br>&gt;   self = result<br>&gt; }<br></p><p>-- Ben<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>[stdlib] CString.swift initializers</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>February 25, 2016 at 01:00:00pm</p></header><div class="content"><p>On Thu, Feb 25, 2016 at 9:45 AM, Ben Rimmington via swift-evolution<br>&lt;swift-evolution at swift.org&gt; wrote:<br>&gt; The new initializers in &quot;CString.swift&quot; have a precondition:<br>&gt;<br>&gt;&gt; public init(cString: UnsafePointer&lt;CChar&gt;) {<br>&gt;&gt;     _precondition(cString != nil, &quot;cString must not be nil&quot;)<br>&gt;&gt; }<br>&gt;&gt;<br>&gt;&gt; public init?(validatingUTF8 cString: UnsafePointer&lt;CChar&gt;) {<br>&gt;&gt;     _precondition(cString != nil, &quot;cString must not be nil&quot;)<br>&gt;&gt; }<br>&gt;<br>&gt; &lt;https://github.com/apple/swift/blob/swift-3-api-guidelines/stdlib/public/core/CString.swift&gt;<br>&gt;<br>&gt; The old `String.fromCString` function was convenient for wrapping inessential C function calls, if the `nil` coalescing operator can provide a fallback:<br>&gt;<br>&gt;&gt; let message =<br>&gt;&gt;     String.fromCString(sqlite3_errmsg(handle)) ??<br>&gt;&gt;     String.fromCString(sqlite3_errstr(result)) ?? &quot;&quot;<br></p><p>It is a part of a long-term strategy to make UnsafePointer<br>non-nullable.  Nullable pointers will be modeled as optional pointers.<br>So this code would look like this, assuming that sqlite3 is returning<br>optional (nullable) pointers:<br></p><p>let message = sqlite3_errmsg(handle).map { String.fromCString($0) } ??<br>sqlite3_errstr(result).map { String.fromCString($0) }<br></p><p>&gt; I also think the `validatingUTF8` argument label is misleading, because neither initializer allows ill-formed UTF-8 data to be copied.<br></p><p>That&#39;s what the &#39;validating&#39; label is saying -- we&#39;re validating the<br>input and rejecting invalid inputs.<br></p><p>The non-failable initializer accepts ill-formed UTF-8, and repairs it.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>[stdlib] CString.swift initializers</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>February 26, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; On 25 Feb 2016, at 21:02, Dmitri Gribenko &lt;gribozavr at gmail.com&gt; wrote:<br>&gt; <br>&gt; It is a part of a long-term strategy to make UnsafePointer<br>&gt; non-nullable.  Nullable pointers will be modeled as optional pointers.<br></p><p>Thanks, that also explains why the no-argument initializers were removed from unsafe pointer types.<br></p><p>-- Ben<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

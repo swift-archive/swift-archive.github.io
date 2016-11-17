@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f921fa5d507b31ef6984fd3d77ae710c?s=50"></div><header><strong>[xctest] New dependency upon corelibs-foundation</strong> from <string>Brian Gesiak</string> &lt;modocache at gmail.com&gt;<p>March  8, 2016 at 11:00:00pm</p></header><div class="content"><p>Hello all!<br></p><p>Just now I pushed support for asynchronous test expectations to<br>corelibs-xctest. Yay!<br></p><p>This adds a new dependency, between corelibs-xctest and<br>corelibs-foundation. What does this mean for you?<br></p><p>- If you&#39;re a contributor to corelibs-xctest: Please use the new<br>&#39;--foundation-build-dir&#39; parameter when invoking the project<br>build_script.py directly. See the README for details. The Swift<br>utils/build-script works just as before.<br></p><p>- If you&#39;re a contributor to swift-package-manager: Please use the new<br>&#39;--foundation&#39; parameter when invoking Utilities/bootstrap to test the<br>project. The Swift utils/build-script works just as before.<br></p><p>- If you&#39;re using corelibs-xctest via the swift-package-manager: The &#39;swift<br>test&#39; command works just as before.<br></p><p>- If you&#39;re using corelibs-xctest outside of the swift-package-manager:<br>When invoking executables that run XCTMain(), you&#39;ll need to (1) link<br>XCTest, (2) link Foundation, and (3) include the Foundation and<br>CoreFoundation public headers. For example, here&#39;s the swiftc invocation we<br>use to compile and run the corelibs-xctest functional tests:<br></p><p>    swiftc \<br>        -Xlinker -rpath -Xlinker /path/to/xctest-linux-x86_64 \<br>        -L /path/to/xctest-linux-x86_64 \<br>        -I /path/to/xctest-linux-x86_64 \<br>        -Xlinker -rpath -Xlinker<br>/path/to/foundation-linux-x86_64/Foundation \<br>        -L /path/to/foundation-linux-x86_64/Foundation \<br>        -I /path/to/foundation-linux-x86_64/Foundation \<br>        -I /path/to/foundation-linux-x86_64/Foundation/usr/lib/swift<br></p><p>Please email this list or file issues on https://bugs.swift.org if you have<br>any comments, questions, or problems. Thanks--and enjoy asynchronous<br>testing! :)<br></p><p>- Brian Gesiak<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160308/69b3af35/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

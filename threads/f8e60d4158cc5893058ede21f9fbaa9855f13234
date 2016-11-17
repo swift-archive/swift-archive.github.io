@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ed9a0d8cd44b62539b141f6c10405db1?s=50"></div><header><strong>SE-0064 Property Selectors and KVO</strong> from <string>Rob Napier</string> &lt;robnapier at gmail.com&gt;<p>June  4, 2016 at 10:00:00am</p></header><div class="content"><p>Currently KVO requires hard-coding strings to check the keypath. Does<br>SE-0064 cover returning a string when a string is required? For example:<br></p><p>override func observeValueForKeyPath(keyPath: String?,<br></p><p>                                     ofObject object: AnyObject?,<br></p><p>                                     change: [String : AnyObject]?,<br></p><p>                                     context: UnsafeMutablePointer&lt;Void&gt;) {<br></p><p>    if let changingThing = object as? Thing,<br></p><p>           keyPath = keyPath where changingThing === thing {<br></p><p><br>        switch keyPath {<br></p><p>        case &quot;thingWatched&quot;: ...<br></p><p><br>I&#39;d like to replace that last line with:<br></p><p>        case #selector(Thing.thingWatched):<br></p><p>Or something similarly non-stringy.<br></p><p>Alternately, this comes back to your &quot;Referencing Objective-C key-paths&quot;<br>proposal, but I&#39;m wondering if 0064 already covers this case.<br></p><p>-Rob<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160604/f8e63234/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3488bcf34d8c45d917ed27d67a0ffa45?s=50"></div><header><strong>SE-0064 Property Selectors and KVO</strong> from <string>David Hart</string> &lt;david at hartbit.com&gt;<p>June  5, 2016 at 08:00:00pm</p></header><div class="content"><p>#selector(Thing.thingWatched) won&#39;t work because it expects a function. As thingWatched is a property, it doesn&#39;t know if you want to reference the getter or setter. SE-0064 lets you reference those explicitly. In this case, you could write NSStringFromSelector(#selector(getter: Thing.thingWatched)), which is far from elegant. SE-0062 is there to fix that: #keyPath(Thing.thingWatched) will return the correct string.<br></p><p>Sent from my iPhone<br>&gt; On 04 Jun 2016, at 16:18, Rob Napier &lt;robnapier at gmail.com&gt; wrote:<br>&gt; <br>&gt; Currently KVO requires hard-coding strings to check the keypath. Does SE-0064 cover returning a string when a string is required? For example:<br>&gt; <br>&gt; override func observeValueForKeyPath(keyPath: String?, <br>&gt;                                      ofObject object: AnyObject?, <br>&gt;                                      change: [String : AnyObject]?,<br>&gt;                                      context: UnsafeMutablePointer&lt;Void&gt;) {<br>&gt;     if let changingThing = object as? Thing, <br>&gt;            keyPath = keyPath where changingThing === thing {<br>&gt; <br>&gt;         switch keyPath {<br>&gt;         case &quot;thingWatched&quot;: ...<br>&gt; <br>&gt; I&#39;d like to replace that last line with:<br>&gt; <br>&gt;         case #selector(Thing.thingWatched):<br>&gt; <br>&gt; Or something similarly non-stringy.<br>&gt; <br>&gt; Alternately, this comes back to your &quot;Referencing Objective-C key-paths&quot; proposal, but I&#39;m wondering if 0064 already covers this case.<br>&gt; <br>&gt; -Rob<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160605/89dd4976/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

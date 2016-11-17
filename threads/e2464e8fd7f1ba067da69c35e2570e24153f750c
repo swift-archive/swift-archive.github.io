@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d19d52745553f78f2a1fb39e93aacbf3?s=50"></div><header><strong>DispatchQueue extension</strong> from <string>Nick Brook</string> &lt;nrbrook at gmail.com&gt;<p>October  6, 2016 at 08:00:00pm</p></header><div class="content"><p>I have an extension on DispatchQueue and I have Objective-C code which uses my swift code, so the DispatchQueue extension is exported to the Swift objective-c header as<br></p><p>@interface OS_dispatch_queue<br></p><p>However, Xcode 8.0 and 8.2b2 both error ‘Cannot find interface declaration for ‘OS_dispatch_queue’’. I’ve reported this as a bug, but is there any way I can stop the code being exported to objective-c in the interim?<br></p><p>Thanks<br></p><p>Nick<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161006/e246750c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2bc666e29724cd3bdf46b6cbbe4a07bb?s=50"></div><header><strong>DispatchQueue extension</strong> from <string>Quinn &quot;The Eskimo!&quot;</string> &lt;eskimo1 at apple.com&gt;<p>October  7, 2016 at 08:00:00am</p></header><div class="content"><p>On 6 Oct 2016, at 20:20, Nick Brook via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>&gt; I have an extension on DispatchQueue and I have Objective-C code which uses my swift code, so the DispatchQueue extension is exported to the Swift objective-c header as<br>&gt; <br>&gt; @interface OS_dispatch_queue<br>&gt; <br>&gt; However, Xcode 8.0 and 8.2b2 both error ‘Cannot find interface declaration for ‘OS_dispatch_queue’’. I’ve reported this as a bug, but is there any way I can stop the code being exported to objective-c in the interim?<br></p><p>I tried replicating this myself and couldn’t.  Specifically, in Xcode 8.0:<br></p><p>1. I created a command line tool project<br></p><p>2. added `test.swift`, which looks like this:<br></p><p>import Foundation<br></p><p>extension DispatchQueue {<br>    func foo() {<br>    }<br>}<br></p><p>extension NSCoder {<br>    func bar() {<br>    }<br>}<br></p><p>3. added an Objective-C class which imported &lt;xxx-Swift.h&gt;, where `xxx` is the target name<br></p><p>It built just fine.  Looking at &lt;xxx-Swift.h&gt;, I see `bar` generates code like this:<br></p><p>@interface NSCoder (SWIFT_EXTENSION(xxst))<br>- (void)bar;<br>@end<br></p><p>but I see no reference to `foo` or `OS_dispatch_queue`.  What am I missing here?<br></p><p>Other than your bug number (-:  Please post that.<br></p><p>Share and Enjoy<br>--<br>Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4792fc8fc44c8c5549e81f21860f6c39?s=50"></div><header><strong>SIL to IR lowering</strong> from <string>Rebecca Chen</string> &lt;rebeccachentoronto at gmail.com&gt;<p>September  8, 2016 at 04:00:00pm</p></header><div class="content"><p>I was wondering where the SIL to IR lowering code is in the Swift source<br>code.  I am specifically looking for the code that lowers the function<br>return types.   For example, from Int to i64.<br></p><p>Any hints would be appreciated.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160908/757ff993/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>SIL to IR lowering</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>September  9, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Sep 8, 2016, at 1:17 PM, Rebecca Chen via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I was wondering where the SIL to IR lowering code is in the Swift source code. <br></p><p>That’s the responsibility of IRGen:<br></p><p>	https://github.com/apple/swift/tree/master/lib/IRGen<br></p><p>&gt; I am specifically looking for the code that lowers the function return types.   For example, from Int to i64.  <br></p><p><br>Technically, Int is a struct type defined in the standard library that looks like this:<br></p><p>	struct Int {<br>	  var _value: Builtin.Int64<br>	}<br></p><p>The lowering of a builtin integer type to an LLVM type is here:<br></p><p>	https://github.com/apple/swift/blob/master/lib/IRGen/GenType.cpp#L1256<br></p><p>	- Doug<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/569ed436467cf145f3bbdd0d53fbe115?s=50"></div><header><strong>SIL to IR lowering</strong> from <string>Slava Pestov</string> &lt;spestov at apple.com&gt;<p>September 13, 2016 at 01:00:00am</p></header><div class="content"><p>&gt; On Sep 9, 2016, at 9:27 AM, Douglas Gregor via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On Sep 8, 2016, at 1:17 PM, Rebecca Chen via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; I was wondering where the SIL to IR lowering code is in the Swift source code. <br>&gt; <br>&gt; That’s the responsibility of IRGen:<br>&gt; <br>&gt; 	https://github.com/apple/swift/tree/master/lib/IRGen<br>&gt; <br>&gt;&gt; I am specifically looking for the code that lowers the function return types.   For example, from Int to i64.  <br></p><p>The one place that Int is lowered to i64 is when lowering C function signatures. This is done in IRGen/GenClangType.cpp. There’s a visitor that walks SIL types to produce corresponding Clang types when expanding the signature of a C function declaration or call.<br></p><p>Slava<br></p><p>&gt; <br>&gt; <br>&gt; Technically, Int is a struct type defined in the standard library that looks like this:<br>&gt; <br>&gt; 	struct Int {<br>&gt; 	  var _value: Builtin.Int64<br>&gt; 	}<br>&gt; <br>&gt; The lowering of a builtin integer type to an LLVM type is here:<br>&gt; <br>&gt; 	https://github.com/apple/swift/blob/master/lib/IRGen/GenType.cpp#L1256<br>&gt; <br>&gt; 	- Doug<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

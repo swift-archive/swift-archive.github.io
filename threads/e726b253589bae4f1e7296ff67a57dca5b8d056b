@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>Casting Bug Swift</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>February 26, 2016 at 12:00:00am</p></header><div class="content"><p>IMO, the only buggy thing here is that compiler does not complain about an<br>obvious (for humans) memory corruption.<br></p><p>Have you heard about &quot;fruits-apples-oranges&quot; problem with covariance? I<br>first learned it from C++, but it holds in pretty much all languages.<br>Consider the following type hierarchy:<br></p><p>class Fruit {<br>    func tell() { print(&quot;I&#39;m a Fruit!&quot;) }<br>}<br>class Apple : Fruit {<br>    override func tell() { print(&quot;I&#39;m an Apple!&quot;) }<br>}<br>class Orange : Fruit {<br>    override func tell() { print(&quot;I&#39;m an Orange!&quot;) }<br>}<br></p><p>Now imagine that covariance in generics was allowed. I will also use<br>generic notation for arrays here.<br></p><p>var apples: Array&lt;Apple&gt; = []<br>apples.append(Apple())<br></p><p>var fruits: Array&lt;Fruit&gt; = apples   // can we allow this?<br></p><p>fruits.append(Orange())<br>apples[0].tell()   //=&gt; I&#39;m an Orange!<br></p><p>We obviously don&#39;t want this to happen.<br>So we decide to automatically create an empty Array&lt;Fruit&gt; and call<br>append() with all casted elements of the initial array whenever arrays are<br>casted:<br></p><p>var fruits: Array&lt;Fruit&gt; = copyThatArray(apples) as Array&lt;Fruit&gt;<br></p><p>Now people will come and ask, why can&#39;t I do the same with Set&lt;Fruit&gt;? With<br>Box&lt;Fruit&gt; from that library? But everything works on Array&lt;Fruit&gt;! Why??<br></p><p>And so I end my story with conclusion that we should not allow covariant<br>generics in any form.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160226/e726056b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Casting Bug Swift</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>February 25, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Feb 25, 2016, at 1:01 PM, Антон Жилин via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Now imagine that covariance in generics was allowed. I will also use generic notation for arrays here.<br>&gt; <br>&gt; var apples: Array&lt;Apple&gt; = []<br>&gt; apples.append(Apple())<br>&gt; <br>&gt; var fruits: Array&lt;Fruit&gt; = apples   // can we allow this?<br>&gt; <br>&gt; fruits.append(Orange())<br>&gt; apples[0].tell()   //=&gt; I&#39;m an Orange!<br>&gt; <br>&gt; We obviously don&#39;t want this to happen.<br>&gt; So we decide to automatically create an empty Array&lt;Fruit&gt; and call append() with all casted elements of the initial array whenever arrays are casted:<br>&gt; <br>&gt; var fruits: Array&lt;Fruit&gt; = copyThatArray(apples) as Array&lt;Fruit&gt;<br>&gt; <br>&gt; Now people will come and ask, why can&#39;t I do the same with Set&lt;Fruit&gt;? With Box&lt;Fruit&gt; from that library? But everything works on Array&lt;Fruit&gt;! Why??<br>&gt; <br>&gt; And so I end my story with conclusion that we should not allow covariant generics in any form.<br></p><p>This is a problem for reference-semantics arrays, but Swift&#39;s arrays have value semantics. `var fruits: Array&lt;Fruit&gt; = apples` creates a copy of the array, so adding Oranges to `fruits` doesn&#39;t affect `apples`.<br></p><p>-Joe<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160225/6ad51645/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

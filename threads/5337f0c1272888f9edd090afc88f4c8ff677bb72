@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7559ac465b184ec777f29d37c0e4b374?s=50"></div><header><strong>[Idea] Passing an Array to Variadic Functions</strong> from <string>Michael Peternell</string> &lt;michael.peternell at gmx.at&gt;<p>April 19, 2016 at 09:00:00pm</p></header><div class="content"><p>Regarding the original proposal:<br></p><p>I like the idea. I think it would be nice to allow the application of variadic args from an array. The syntax I could think of is:<br></p><p>let args = [&quot;World&quot;]<br>printf(&quot;Hello %s&quot;, *args)<br></p><p>So, &quot;*&quot; just converts &quot;[a,b,c]&quot; into &quot;a,b,c&quot;, that&#39;s the idea. What do you think? (I don&#39;t suggest that this should also be used for dynamically dispatching overloaded methods, but if it would work, I would not complain ;) .) Syntactically, it is no breaking change, and could also be introduced after Swift 3 has been released. From the perspective of the ABI, I don&#39;t know.<br></p><p>Regarding the removal of varargs:<br>No way, -100 from me. Just because you don&#39;t like a feature, doesn&#39;t mean it should be banned. I, for example don&#39;t like certain { curly brace } styles, but that doesn&#39;t mean that I would be happy if the only curly brace style that the language allows would be my style. Maybe my tastes change in a year or two. And for things like `sprintf`, I think variadic args are really helpful. In Objective-C, I use them for example for logging, having a function signature like NSString&#39;s stringWithFormat:. In that case, having to put a @[ bracket ] around all log arguments would be bad. And writing LogMe(@&quot;it&#39;s done.&quot;, @[]) looks weird too!<br></p><p>-Michael<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

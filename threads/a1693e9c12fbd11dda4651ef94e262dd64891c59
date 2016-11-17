@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Ban the top value in Int/UInt</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 19, 2016 at 09:00:00am</p></header><div class="content"><p>on Wed Oct 19 2016, Guoye Zhang &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; 在 2016年10月19日，07:10，Jeremy Pereira &lt;jeremy.j.pereira at googlemail.com&gt; 写道：<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; On 18 Oct 2016, at 19:17, Guoye Zhang via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Currently, Swift Int family and UInt family have compact<br>&gt;&gt;&gt; representations that utilize all available values, which is<br>&gt;&gt;&gt; inherited from C. However, it is horribly inefficient to implement<br>&gt;&gt;&gt; optional integers. It takes double the space to store [Int?] than<br>&gt;&gt;&gt; to store [Int] because of alignment.<br>&gt;&gt; <br>&gt;&gt; Is this a general problem with Swift? Are lots of people complaining that they are running out of<br>&gt; space for their Optional&lt;Int&gt; arrays?<br>&gt;&gt; <br>&gt; It&#39;s just that a common data type wasting almost half the space seems<br>&gt; inefficient. I guess this is also the reason why they didn&#39;t adopt<br>&gt; optional integers widely in stdlib.<br></p><p>For the record, we made no explicit choice to avoid optional integers.<br>We&#39;d use them wherever it was appropriate.<br></p><p>&gt;&gt;&gt; <br>&gt;&gt;&gt; I propose to ban the top value in Int/UInt which is 0xFFFF... in<br>&gt;&gt;&gt; hex. Int family would lose its smallest value, and UInt family<br>&gt;&gt;&gt; would lose its largest value. Top value is reserved for nil in<br>&gt;&gt;&gt; optionals. An additional benefit is that negating an Int would<br>&gt;&gt;&gt; never crash.<br>&gt;&gt; <br>&gt;&gt; Well the “top value” for signed ints would have to be 0x8000... not<br>&gt;&gt; 0xffff... which is the representation of -1. The top value for<br>&gt;&gt; unsigned ints cannot be banned because unsigned integers are often<br>&gt;&gt; used as bit fields either directly or in OptionSets.<br>&gt;&gt; <br>&gt;&gt; Furthermore, how would the semantics of &amp;+ and &amp;- be affected? What<br>&gt;&gt; about the performance of those two operators?<br>&gt;&gt; <br>&gt; I was originally going for the symmetry between Int and UInt as in<br>&gt; compatible bit patterns. Now that I think of it, UInt is commonly used<br>&gt; for bitwise operations, and it doesn&#39;t make sense to optimize for<br>&gt; &quot;UInt?&quot; which is uncommon. So I agree that 0x80... is better.<br>&gt;<br>&gt; Int performance would surely suffer because of current instruction<br>&gt; sets, but Int? would improve.<br>&gt;<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; So what do you think? Can we break C compatibility a bit for better Swift types?<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; Well it’s not just C compatibility, it’s underlying processor<br>&gt;&gt; compatibility. And actually, yes, I think C compatibility is vastly<br>&gt;&gt; more important than being able to make your [Int?] arrays smaller<br>&gt;&gt; considering that full 2’s complement numbers is what the OS calls<br>&gt;&gt; and libc calls are expecting.<br>&gt;&gt; <br>&gt; Yes, that is also the result Joe said of their previous internal<br>&gt; discussion. Anyway, I know this is improbable, and I&#39;m just glad that<br>&gt; this possibility is considered.<br>&gt;<br>&gt; - Guoye<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

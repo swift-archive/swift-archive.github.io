@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/268e1090c88890a4ed2387a4d22c661c?s=50"></div><header><strong>[pitch]:generate == function</strong> from <string>J.E. Schotsman</string> &lt;jeschot at xs4all.nl&gt;<p>January 19, 2016 at 02:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>I find myself writing a lot of  func ==(_:_:)  stuff lately.<br>I wonder if Swift could generate these automatically for a struct  <br>declared Equatable whose stored properties are all Equatable?<br></p><p>Jan E.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4b25144c09555e7d5b5e288469e011ef?s=50"></div><header><strong>[pitch]:generate == function</strong> from <string>Félix Cloutier</string> &lt;felixcca at yahoo.ca&gt;<p>January 19, 2016 at 11:00:00am</p></header><div class="content"><p>memberwise func ==? (if memberwise init does make it)<br></p><p>Félix<br></p><p>&gt; Le 19 janv. 2016 à 08:17:40, Jan E. Schotsman via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt; <br>&gt; Hello,<br>&gt; <br>&gt; I find myself writing a lot of  func ==(_:_:)  stuff lately.<br>&gt; I wonder if Swift could generate these automatically for a struct declared Equatable whose stored properties are all Equatable?<br>&gt; <br>&gt; Jan E.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160119/8eb85611/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

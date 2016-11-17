@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9c0f50ce3c2cac2c2f9beb80c18d8e6f?s=50"></div><header><strong>QualityOfService for concurrentPerform in Swift 3</strong> from <string>Daniel Müllenborn</string> &lt;damuellen at aol.com&gt;<p>September 27, 2016 at 11:00:00pm</p></header><div class="content"><p>I do not understand why this works, but when you create a queue in the line before. It will be used.<br></p><p>Like in this example:<br></p><p>let queue = DispatchQueue.global(qos: .default)<br>DispatchQueue.concurrentPerform(iterations: n)<br></p><p><br></p><p>&gt; Hmm, I didn’t realize that concurrentPerform doesn’t allow you to pass in your own queue…this looks like an oversight to me. Maybe someone with more experience with libdispatch could explain?<br>&gt; <br>&gt; Saagar Jha<br>&gt; <br>&gt; <br>&gt; <br>&gt; &gt; On Sep 25, 2016, at 09:13, Gerriet M. Denkmann&lt;g at mdenkmann.de(mailto:g at mdenkmann.de)&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; &gt; On 25 Sep 2016, at 23:08, Saagar Jha&lt;saagar at saagarjha.com(mailto:saagar at saagarjha.com)&gt;wrote:<br>&gt; &gt; &gt; <br>&gt; &gt; &gt; You might be looking for the DispatchQoS.QoSClass enum.<br>&gt; &gt; &gt; <br>&gt; &gt; &gt; Saagar Jha<br>&gt; &gt; <br>&gt; &gt; Probably. But how to make concurrentPerform use any of these enums?<br>&gt; &gt; <br>&gt; &gt; Gerriet.<br>&gt; &gt; <br>&gt; &gt; <br>&gt; &gt; <br>&gt; &gt; &gt; <br>&gt; &gt; &gt; &gt; On Sep 25, 2016, at 05:19, Gerriet M. Denkmann via swift-users&lt;swift-users at swift.org(mailto:swift-users at swift.org)&gt;wrote:<br>&gt; &gt; &gt; &gt; <br>&gt; &gt; &gt; &gt; In ObjC:<br>&gt; &gt; &gt; &gt; <br>&gt; &gt; &gt; &gt; dispatch_queue_t queue = dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_HIGH, 0 );<br>&gt; &gt; &gt; &gt; dispatch_apply( nbrThreads, queue, ^void(size_t idx) …<br>&gt; &gt; &gt; &gt; <br>&gt; &gt; &gt; &gt; In Swift 3:<br>&gt; &gt; &gt; &gt; DispatchQueue.concurrentPerform( iterations: nbrThreads) …<br>&gt; &gt; &gt; &gt; <br>&gt; &gt; &gt; &gt; How can one specify the DISPATCH_QUEUE_PRIORITY or QualityOfService to be used by concurrentPerform?<br>&gt; &gt; &gt; &gt; <br>&gt; &gt; &gt; &gt; Gerriet.<br>&gt; &gt; &gt; &gt; <br>&gt; &gt; &gt; &gt; _______________________________________________<br>&gt; &gt; &gt; &gt; swift-users mailing list<br>&gt; &gt; &gt; &gt; swift-users at swift.org(mailto:swift-users at swift.org)<br>&gt; &gt; &gt; &gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; &gt; &gt; <br>&gt; &gt; <br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

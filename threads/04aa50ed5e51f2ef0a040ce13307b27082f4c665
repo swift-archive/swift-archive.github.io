@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Review] SE-0030 Property Behaviors</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>February 21, 2016 at 09:00:00pm</p></header><div class="content"><p>I like the direction in which the proposal is moving, but I still have some<br>concerns about syntax.<br></p><p>0.<br>Thinking about it, behaviours don&#39;t really need to be full-fledged types.<br>Brent gave examples, for me the most convincing one was that property `var<br>x: lazy&lt;Int&gt;` doesn&#39;t really seem to be implementing protocol requirement<br>`var x: Int { get }`.<br></p><p>1.<br>I love the suggested attribute-like syntax `@lazy var x: Int = 42`.<br>Brackets `var [lazy] x: Int` is a precedent syntax, and we want to avoid<br>that if possible.<br>The position of @lazy also feels right, as well as motivation behind that.<br></p><p>2.<br>What&#39;s the point of `: Value {` part in behaviour declaration?<br>One of the purposes was disambiguating, which of the generic parameter we<br>are&quot;.<br>If we don&#39;t want generic notation, then I see no reason for that.<br>So we have `public var behaviour lazy&lt;T&gt; { ... }`<br></p><p>3.<br>Just `initialValue` in the body seems odd. I suggest `attribute<br>initialValue() -&gt; Value`, alternatives are welcome.<br></p><p>4.<br>How will the `var` part be used?<br>Are we going to allow `let` behaviours? We can always create a `let`<br>behaviour by duplicating our initial behaviour and modifying as needed.<br>For example, `@lazy let x: Int` can be emulated with `@immutableLazy var x:<br>Int`. In this case, we can replace the name by something better.<br>So, isn&#39;t it duplicating functionality? If we decide not to have `let`<br>behaviours then we will just have to remove that `var` in declaration.<br>So we have `public behaviour lazy&lt;T&gt; { ... }` which is completely in line<br>with structs and whatsnot.<br></p><p>Suggestions for &quot;future directions&quot;:<br></p><p>5.<br>We should be able to auto-derive types for variables with behaviours.<br>First of all, I don&#39;t see any reason why we can&#39;t: `@lazy var x = 42` is,<br>obviously, the same as `@lazy var x: Int = 42`<br>Then, all existing variables can have their types deduced. If we can write<br>`var x = 42` then why can&#39;t we write `@lazy var x = 42`?<br></p><p>6.<br>Member functions.<br>The ground for them is already prepared, actually.<br>I suggest the (obvious) syntax `x. at lazy.clear()` for calling functions of<br>behaviour and `x. at lazy.storage` for accessing variables of behaviour.<br></p><p>7.<br>Access control of member functions.<br>Why not define access control modifiers on members of behaviour to mean the<br>same as if they were applied to members of the enclosing type?<br>For example, `private var storage: Value?` would be accessible in the same<br>file as enclosing type as `x. at lazy.storage`.<br></p><p>Regarding time issues, are we going to get another week for review? I<br>support the proposal as a whole, but details are changing &quot;on the fly&quot;.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160221/04aac665/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

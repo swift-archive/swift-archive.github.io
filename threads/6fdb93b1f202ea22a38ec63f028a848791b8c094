@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>[Swift 2.2] Extract Version value out of optional when parsing _compiler_version</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>February  6, 2016 at 06:00:00pm</p></header><div class="content"><p>Hi Joe,<br></p><p>This patch fixes the build when SWIFT_COMPILER_VERSION.  That macro is<br>set in all production builds of the compiler.<br></p><p>https://github.com/apple/swift/pull/1225<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/64e7c3f106cb83b50891f5dcccde198b?s=50"></div><header><strong>[Swift 2.2] Extract Version value out of optional when parsing _compiler_version</strong> from <string>Joe Pamer</string> &lt;jpamer at apple.com&gt;<p>February  6, 2016 at 09:00:00pm</p></header><div class="content"><p>Thanks, Dmitri!<br></p><p><br>This change is approved. I&#39;ve accepted your pull request.<br></p><p><br>- Joe<br></p><p><br>On 02/06/16 06:56 PM, Dmitri Gribenko  &lt;gribozavr at gmail.com&gt; wrote: <br>&gt; <br>&gt; Hi Joe,<br>&gt; <br>&gt; This patch fixes the build when SWIFT_COMPILER_VERSION. That macro is<br>&gt; set in all production builds of the compiler.<br>&gt; <br>&gt; https://github.com/apple/swift/pull/1225<br>&gt; <br>&gt; Dmitri<br>&gt; <br>&gt; -- <br>&gt; main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>&gt; (j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br>&gt; <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160206/af626f90/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

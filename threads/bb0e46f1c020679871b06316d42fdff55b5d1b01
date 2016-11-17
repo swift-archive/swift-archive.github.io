@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cd6d1410c7e22000c7ec7943b39eed32?s=50"></div><header><strong>If let syntactic sugar</strong> from <string>Massimo Frasson</string> &lt;maxfrax at gmail.com&gt;<p>February  4, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I find myself writing a lot of times &quot;if let” to unwrap optional values. In particular I do as follows:<br></p><p>var something: Type?<br></p><p>func foo() -&gt; Void {<br>  if let something = something {<br>    doStuff(something)	//just an example<br>  }<br>}<br></p><p>As you can see I usually keep the same variable name and the variable scoping does the rest.<br>I think it could be a cool syntactic sugar getting the same result as the code above omitting “something =“.<br>Let me be more clear: if you don’t specify the name of the unwrapped variable, swift does the unwrapping for you, keeping the same variable name.<br></p><p>So the code above would be:<br></p><p>var something: Type?<br></p><p>func foo() -&gt; Void {<br>  if let something  {<br>    doStuff(something)<br>  }<br>}<br></p><p>Let me know what you think and also if you have questions.<br></p><p>Best regards, <br>Massimo Frasson<br>iOS Developer, Belka srl<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d118cdf2fe31053bc7032466c4da282?s=50"></div><header><strong>If let syntactic sugar</strong> from <string>Craig Cruden</string> &lt;ccruden at novafore.com&gt;<p>February  4, 2016 at 10:00:00pm</p></header><div class="content"><p>Ceylon does something like that - but it is more readable / understandable IMHO.  <br></p><p>It uses “if exists something” and then something inside the scope of the if is unwrapped for use.  No new variable, it reads almost exactly as it is.  <br></p><p>&gt; <br>&gt; So the code above would be:<br>&gt; <br>&gt; var something: Type?<br>&gt; <br>&gt; func foo() -&gt; Void {<br>&gt;  if let something  {<br>&gt;    doStuff(something)<br>&gt;  }<br>&gt; }<br>&gt; <br>&gt; Let me know what you think and also if you have questions.<br>&gt; <br>&gt; Best regards, <br>&gt; Massimo Frasson<br>&gt; iOS Developer, Belka srl<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/566528c7f7c28c35c0c646d415943612?s=50"></div><header><strong>If let syntactic sugar</strong> from <string>Taras Zakharko</string> &lt;taras.zakharko at uzh.ch&gt;<p>February  4, 2016 at 04:00:00pm</p></header><div class="content"><p>There are two (or even three) active discussions about this very topic ;)<br></p><p>— Taras<br></p><p>&gt; On 04 Feb 2016, at 16:22, Craig Cruden via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; Ceylon does something like that - but it is more readable / understandable IMHO.  <br>&gt; <br>&gt; It uses “if exists something” and then something inside the scope of the if is unwrapped for use.  No new variable, it reads almost exactly as it is.  <br>&gt; <br>&gt;&gt; <br>&gt;&gt; So the code above would be:<br>&gt;&gt; <br>&gt;&gt; var something: Type?<br>&gt;&gt; <br>&gt;&gt; func foo() -&gt; Void {<br>&gt;&gt; if let something  {<br>&gt;&gt;   doStuff(something)<br>&gt;&gt; }<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; Let me know what you think and also if you have questions.<br>&gt;&gt; <br>&gt;&gt; Best regards, <br>&gt;&gt; Massimo Frasson<br>&gt;&gt; iOS Developer, Belka srl<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org &lt;mailto:swift-evolution at swift.org&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160204/3be59b19/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

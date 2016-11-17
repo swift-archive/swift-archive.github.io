@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Conventionalizing stride semantics</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March  3, 2016 at 07:00:00am</p></header><div class="content"><p>on Tue Mar 01 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Please disregard previous reply. Just realized, what about 10..&gt;1 by -1?  upTo: doesn&#39;t work there.<br></p><p>“Toward” doesn&#39;t work either unless the stride amount matches.<br></p><p>&gt;&gt; On Mar 1, 2016, at 10:52 AM, Dmitri Gribenko &lt;gribozavr at gmail.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; On Mon, Feb 29, 2016 at 5:14 PM, Erica Sadun via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; Style 1: [start, end) by interval<br>&gt;&gt;&gt; This style is currently called to. I propose to rename it towards as each<br>&gt;&gt;&gt; value works towards end. The final value in the progression is less than end<br>&gt;&gt; <br>&gt;&gt; The current usage of &#39;through&#39; seems unambiguous to me.  &#39;to&#39; could be<br>&gt;&gt; improved by using &#39;upTo&#39; instead.<br>&gt;&gt; <br>&gt;&gt; stride(from: 1, upTo: 10, by: 1) // [1, 10)<br>&gt;&gt; <br>&gt;&gt; &#39;upTo&#39; is already precedented in Collection.prefix(upTo:).<br>&gt;&gt; <br>&gt;&gt; Dmitri<br>&gt;&gt; <br>&gt;&gt; -- <br>&gt;&gt; main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>&gt;&gt; (j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

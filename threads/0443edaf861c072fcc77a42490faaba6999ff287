@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d0270498e20bd573441f1f48f2e425cf?s=50"></div><header><strong>Studying the evolution of the Swift project</strong> from <string>Gustavo Henrique Lima Pinto</string> &lt;gustavohenrique.86 at gmail.com&gt;<p>June  6, 2016 at 11:00:00pm</p></header><div class="content"><p>Hi there,<br></p><p>I&#39;m a researcher studying software evolution. As part of my current<br>research, I&#39;m studying the implications of open-sourcing a proprietary<br>software, for instance, if the project succeed in attracting newcomers.<br>Swift was in my list.<br></p><p>To further analyze the impacts of Swift’s migration, we analyzed the git<br>log commit history of your project in terms of _number of contributions_,<br>_number of newcomers_, and _number of contributors per month_. The<br>following figure presents a temporal perspective regarding these three<br>measures.<br>[image: Inline image 1]<br>Given the numbers presented in the graphic, we would like to ask Swift<br>developers the following questions:<br></p><p>1. What motivated the project to open its source code at Github? How do you<br>evaluate the benefits of this migration?<br>2. Does this snapshot make sense? Did you find any inconsistency on the<br>data?<br>3. Do you have any internal policy to promote/attract/retain newcomers? If<br>so, do them succeed?<br>4. Did you expect a high number of newcomers joining the project right<br>after it became open-source?<br>5. Although several developers that joined the project placed their very<br>first contribution in a very short amount of time, most of them did not<br>keep contributing in the following days. Why do you believe this happens?<br></p><p>Thanks in advance for your collaboration,<br></p><p>Gustavo Pinto, PhD<br>http://www.gustavopinto.org<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160606/0443f287/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: swift.png<br>Type: image/png<br>Size: 20776 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160606/0443f287/attachment.png&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

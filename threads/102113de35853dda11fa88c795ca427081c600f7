@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/68526725538a292194a2c39df8ef8d59?s=50"></div><header><strong>TSPL ePub in source format for translation projects</strong> from <string>Ion Jaureguialzo Sarasola</string> &lt;ion at jaureguialzo.com&gt;<p>June  6, 2016 at 12:00:00pm</p></header><div class="content"><p>Hello, I was planning to start a translation project to have and Spanish<br>version of The Swift Programming Language ePub.<br></p><p>I&#39;ve put together some scripts that use pandoc and some regex to extract<br>the text and make a conversion to Markdown format, to make it easier to<br>edit and manage the translation job (<br>https://github.com/ijaureguialzo/el-lenguaje-de-programacion-swift). It&#39;s<br>not perfect and much of the inline markup is lost in the conversion process.<br></p><p>The problem is I&#39;m afraid the work will have to be redone with Swift 3<br>release, and would like to know if there is any plan/rumor/idea/hope to<br>release the documentation in source form, so translation projects could be<br>built around it more easily.<br></p><p><br>Thanks a lot in advance.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160606/102100f7/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

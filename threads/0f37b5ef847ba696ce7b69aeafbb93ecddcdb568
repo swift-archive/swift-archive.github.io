@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3a28b53f05e7f3067fb104cb78fbb585?s=50"></div><header><strong>Run just 1 test function in Package Manager</strong> from <string>Kostiantyn Koval</string> &lt;konstantin.koval1 at gmail.com&gt;<p>January 13, 2016 at 08:00:00am</p></header><div class="content"><p>Hi<br></p><p>Is it possible to just run 1 test function from command line. <br>Now I can run only all test at once (with that function below) but when developing I would like to run jest one, like I can do it in Xcode.<br>./Utilities/bootstrap --build-tests <br></p><p>Best Regards,<br>Kostiantyn<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Run just 1 test function in Package Manager</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>January 13, 2016 at 10:00:00am</p></header><div class="content"><p>FYI, this is probably better directed to swift-build-dev since it is specific to the package manager development.<br></p><p>There isn&#39;t such a way currently, and I&#39;m not sure if the Linux XCTest makes available the features needed for that yet... if so, we could presumably add that support to the bootstrap script.<br></p><p> - Daniel<br></p><p>&gt; On Jan 12, 2016, at 11:36 PM, Kostiantyn Koval via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi<br>&gt; <br>&gt; Is it possible to just run 1 test function from command line. <br>&gt; Now I can run only all test at once (with that function below) but when developing I would like to run jest one, like I can do it in Xcode.<br>&gt; ./Utilities/bootstrap --build-tests <br>&gt; <br>&gt; Best Regards,<br>&gt; Kostiantyn<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

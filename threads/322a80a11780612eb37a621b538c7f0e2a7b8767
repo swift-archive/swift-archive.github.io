@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>Data reflection metadata?</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>October 13, 2016 at 09:00:00am</p></header><div class="content"><p>In a recent-ish post on swift-evolution &lt;https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160926/027337.html&gt;, Chris Lattner mentioned:<br></p><p>&gt; …the extensive work on data reflection metadata that was put into Swift 3.  It is key to enabling the Xcode 8 memory visualization / debugger feature, and is a fundamental building block for a data reflection API.  In fact, if I recall correctly, a 3rd party framework already build a custom data reflection API around this metadata already (Zewo?).<br></p><p><br>Could someone point to some info about this? I’m very interested in it. <br></p><p>(I did look up Zewo — a server-side Swift web framework — but didn’t see anything relevant in it, so Chris may have been thinking of another project.)<br></p><p>—Jens<br></p><p>PS: I’m posting here and not swift-evolution because (a) I don’t subscribe to that list, and (b) this is apparently stuff that exists right now, not in the future.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161013/322a8767/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/279fa63eae4ac804b4dbdb83686797bf?s=50"></div><header><strong>Data reflection metadata?</strong> from <string>Austin Zheng</string> &lt;austinzheng at gmail.com&gt;<p>October 13, 2016 at 09:00:00am</p></header><div class="content"><p>You probably want to check out this repo: https://github.com/Zewo/Reflection &lt;https://github.com/Zewo/Reflection&gt;<br></p><p>It&#39;s clever stuff. Really, really reliant on implementation details of the runtime to function, so I&#39;d be loathe to use it in any sort of production application, but as a proof of concept it shines.<br></p><p>Hope that helps,<br>Austin<br></p><p>&gt; On Oct 13, 2016, at 9:13 AM, Jens Alfke via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; In a recent-ish post on swift-evolution &lt;https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160926/027337.html&gt;, Chris Lattner mentioned:<br>&gt; <br>&gt;&gt; …the extensive work on data reflection metadata that was put into Swift 3.  It is key to enabling the Xcode 8 memory visualization / debugger feature, and is a fundamental building block for a data reflection API.  In fact, if I recall correctly, a 3rd party framework already build a custom data reflection API around this metadata already (Zewo?).<br>&gt; <br>&gt; <br>&gt; Could someone point to some info about this? I’m very interested in it. <br>&gt; <br>&gt; (I did look up Zewo — a server-side Swift web framework — but didn’t see anything relevant in it, so Chris may have been thinking of another project.)<br>&gt; <br>&gt; —Jens<br>&gt; <br>&gt; PS: I’m posting here and not swift-evolution because (a) I don’t subscribe to that list, and (b) this is apparently stuff that exists right now, not in the future.<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161013/f2bfa279/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Data reflection metadata?</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>October 13, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On Oct 13, 2016, at 9:19 AM, Austin Zheng via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; You probably want to check out this repo: https://github.com/Zewo/Reflection<br>&gt; <br>&gt; It&#39;s clever stuff. Really, really reliant on implementation details of the runtime to function, so I&#39;d be loathe to use it in any sort of production application, but as a proof of concept it shines.<br></p><p>&gt;From what I&#39;ve seen, they&#39;re groveling our runtime metadata records, which are definitely subject to change without notice. I wouldn&#39;t recommend following their example, since we actively want to change the layout of things they&#39;re hardcoding. What Chris was referring to was the &quot;remote mirror&quot; library, which is used to support the Xcode 8 memory debugger, and is also in the long-term what we want to migrate in-process reflection facilities like the Mirror type to. The `swift-reflection-test` and `swift-reflection-dump` tools in the Swift compiler codebase might help give you a sense of what&#39;s currently available:<br></p><p>https://github.com/apple/swift/blob/master/tools/swift-reflection-test<br>https://github.com/apple/swift/tree/master/tools/swift-reflection-dump<br></p><p>-Joe<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

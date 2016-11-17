@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Int32.divideWithOverflow</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>November  9, 2016 at 09:00:00pm</p></header><div class="content"><p>on Wed Nov 09 2016, Peter W A Wood &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; I am using Swift to generate some tests with overflowing 32-bit<br>&gt; integers. I have used the Int32.&lt;op&gt;WithOverflow functions but have<br>&gt; come across a problem dividing Int32.min by -1 with overflow. I get an<br>&gt; overflow error:<br>&gt;<br>&gt;     error: division &#39;-2147483648 / -1&#39; results in an overflow<br>&gt;     Int32.divideWithOverflow(Int32.min, -1)<br>&gt;<br>&gt; Is this the expected behaviour?<br></p><p>Yes.<br></p><p>   -Int64(Int32.min) &gt; Int64(Int32.max)<br></p><p>which is to say that the result of the division can&#39;t be expressed as<br>an Int32.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e2303da56647c283b6d8e58d5831faca?s=50"></div><header><strong>Ubuntu .deb packages available</strong> from <string>Joseph Bell</string> &lt;joe at iachieved.it&gt;<p>January  1, 2016 at 07:00:00pm</p></header><div class="content"><p>In the spirit of providing a temporary solution to the request to<br>https://bugs.swift.org/browse/SR-116, I&#39;ve been posting .deb packages for<br>Ubuntu 14.04 and 15.10 on an S3 repository.<br></p><p>The following commands will add the repository to allow installation of<br>swift-2.2:<br></p><p>wget -qO- http://dev.iachieved.it/iachievedit.gpg.key | sudo apt-key add -<br></p><p>Ubuntu 14.04:<br>echo &quot;deb http://iachievedit-repos.s3.amazonaws.com/ trusty main&quot; | sudo<br>tee --append /etc/apt/sources.list<br></p><p>Ubuntu 15.10:<br>echo &quot;deb http://iachievedit-repos.s3.amazonaws.com/ wily main&quot; | sudo tee<br>--append /etc/apt/sources.list<br></p><p>sudo apt-get update<br>apt-get install swift-2.2<br></p><p>I typically try to get an updated package out there shortly after the .tgz<br>are released by Apple, but these are built on my own and are not a<br>repackaging of the Apple binaries.<br></p><p>At some point for SR-116 the real answer is to not use a PPA or my<br>repositories but work with Debian and Ubuntu to get a full package<br>maintainer.  In the meantime, these are for anyone to enjoy.<br></p><p>Joe<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160101/f01ceaa4/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

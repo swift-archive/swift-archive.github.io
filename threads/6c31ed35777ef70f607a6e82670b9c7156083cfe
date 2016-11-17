@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7c69fda4fff0bee2acda215d02d79422?s=50"></div><header><strong>[Request] Variadic parameters as arguments in closures</strong> from <string>Ramon Gilabert</string> &lt;ramon.gilabert.llop at gmail.com&gt;<p>March 11, 2016 at 12:00:00pm</p></header><div class="content"><p>Hello everybody,<br></p><p>This is my first request or suggestion, so don’t really know if this is the format you are looking for. I’ve been searching lately to build the perfect API for a soon to be open source project.<br></p><p>Such project has a different set of functions that have different views as parameters, based on the number of views, the closure that the function will give back to you will have different arguments, (one view returns one argument in the closure). After putting a variadic argument I wanted to do the same for closures since the API reads much nicer and I don’t have to duplicate code to cover all the cases.<br></p><p>From a code point of view it makes sense that it behaves like that, you have a variadic parameter and inside the function it behaves as an array, the same way, you have different variadic parameters in the closure and inside such implementation you have an array. Even though this is nice, I think the best case scenario to not have to repeat code would be to parse in the compiler in a smart way, meaning, if the argument is a variadic component, then $0 will be the first argument of the variadic array, $1 the second one and so on.<br></p><p>This way API’s like:<br></p><p>https://github.com/robb/Cartography/blob/master/Cartography/Constrain.swift<br></p><p>Could be simplified into just one method with variadic functions without having the user to deal with an array in their end.<br></p><p>Going to attach a bit of code from the Apple documentation, retouched a bit: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html<br></p><p>```<br>func divideTwo(numbers: Double…, solutions: (Double…) -&gt; Void) {<br>  var results: [Double] = []<br>  for number in numbers {<br>results.append(number / 2)<br>  }<br>	<br>    solutions(results)<br>}<br></p><p>  // In their end.<br> <br>  divideTwo(2, 4) {<br>    print($0)<br>    print($1)<br>  }<br>```<br></p><p>This would only behave like this in the case where a variadic argument is given back as a parameter in the closure.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160311/6c313cfe/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

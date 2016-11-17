@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6451ee8093c9cedc94f6c813b4dde2c5?s=50"></div><header><strong>Determining if a crash is a known issue?</strong> from <string>Kevin Ballard</string> &lt;kevin at sb.org&gt;<p>December  9, 2015 at 01:00:00pm</p></header><div class="content"><p>When I get a crash in Swift, is there any easy way to figure out if it&#39;s already a known crasher? I know there&#39;s a bunch of test cases in validation-test/compiler_crashers{,_2}/ which I assume are all existing crashers. Short of reading through them for similar-looking code, is there some solution? Ideally I&#39;d be able to take the stack trace for my crash and correlate it against stack traces for the known crashers.<br></p><p>-Kevin Ballard<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Determining if a crash is a known issue?</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>December  9, 2015 at 02:00:00pm</p></header><div class="content"><p>&gt; On Dec 9, 2015, at 1:56 PM, Kevin Ballard via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; When I get a crash in Swift, is there any easy way to figure out if it&#39;s already a known crasher?<br></p><p>Not that I know of.<br></p><p><br>&gt; I know there&#39;s a bunch of test cases in validation-test/compiler_crashers{,_2}/ which I assume are all existing crashers.<br></p><p>They are not. They are crashes collected by https://github.com/practicalswift/swift-compiler-crashes . Some were discovered by users, most were discovered by automated fuzzers, and there are often duplicates among them.<br></p><p><br>-- <br>Greg Parker     gparker at apple.com     Runtime Wrangler<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

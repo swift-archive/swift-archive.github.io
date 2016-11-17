@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Accepted, pending implementation] SE-0054: Abolish ImplicitlyUnwrappedOptional type</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 21, 2016 at 05:00:00pm</p></header><div class="content"><p>on Thu Apr 21 2016, Chris Willmore &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I evaluated the effects of this proposal on five projects written in Swift<br>&gt; against Foundation and other well-audited OS X and iOS Objective-C APIs. The<br>&gt; only changes that had to be made were the result of Objective-C API in the<br>&gt; project itself that had not yet been annotated with nullability information. In<br>&gt; addition, it ended up revealing a programming error in one project where a<br>&gt; property had been unintentionally inferred to have IUO type. I presented these<br>&gt; results at the Swift core team review meeting.<br>&gt;<br>&gt; Jordan Rose expressed some concern that this sampling of projects didn’t really<br>&gt; say anything about the effect of these changes on projects that depend on<br>&gt; unaudited API, especially the Linux case. So I investigated the effect of this<br>&gt; proposal on building swiftpm, which makes extensive use of POSIX C API. It ended<br>&gt; up requiring ten new uses of the ! operator (out of 14k lines of Swift) to get<br>&gt; building again; they were all return values from C API (ctime_r, getcwd, getenv,<br>&gt; strerror, realpath) that had been saved to intermediate variables. Jordan<br>&gt; observes that most of the cases are better expressed with “if let” or “guard<br>&gt; let” statements anyway.<br>&gt;<br>&gt; We have concluded that we should move forward with implementing the<br>&gt; proposal.<br></p><p>NICE!<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

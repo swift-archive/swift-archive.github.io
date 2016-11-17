@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/708abe8093c1b67c209e6713070d0fd0?s=50"></div><header><strong>How to create an uninitialized pointer in Swift 3</strong> from <string>Lane Schwartz</string> &lt;dowobeha at gmail.com&gt;<p>September 15, 2016 at 11:00:00pm</p></header><div class="content"><p>In Swift 2.2, I could do the following:<br></p><p>var cublasHandle : COpaquePointer = nil<br>let status = cublasCreate_v2(&amp;cublasHandle)<br></p><p>Where cublasCreate_v2 is a C function that takes a pointer, and then<br>initializes some memory at that address.<br></p><p>I haven&#39;t been able to figure out an equivalent in Swift 3. Any<br>suggestions, especially to documentation, would be greatly appreciated.<br></p><p>Thanks,<br>Lane<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160915/a4ae2047/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/389ea0cf26e2a2d4646bf580da2fb6b5?s=50"></div><header><strong>How to create an uninitialized pointer in Swift 3</strong> from <string>Martin R</string> &lt;martinr448 at gmail.com&gt;<p>September 16, 2016 at 09:00:00am</p></header><div class="content"><p>In Swift 3, COpaquePointer was renamed to OpaquePointer, and nullable pointers are represented by optionals:<br></p><p>  SE-0055 – Make unsafe pointer nullability explicit using Optional<br>  https://github.com/apple/swift-evolution/blob/master/proposals/0055-optional-unsafe-pointers.md<br></p><p>So the following should work in Swift 3:<br></p><p>  var cublasHandle: OpaquePointer?<br>  let status = cublasCreate_v2(&amp;cublasHandle)<br></p><p>Martin<br></p><p>&gt; On 15 Sep 2016, at 23:38, Lane Schwartz via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; In Swift 2.2, I could do the following:<br>&gt; <br>&gt; var cublasHandle : COpaquePointer = nil<br>&gt; let status = cublasCreate_v2(&amp;cublasHandle)<br>&gt; <br>&gt; Where cublasCreate_v2 is a C function that takes a pointer, and then initializes some memory at that address.<br>&gt; <br>&gt; I haven&#39;t been able to figure out an equivalent in Swift 3. Any suggestions, especially to documentation, would be greatly appreciated.<br>&gt; <br>&gt; Thanks,<br>&gt; Lane<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/708abe8093c1b67c209e6713070d0fd0?s=50"></div><header><strong>How to create an uninitialized pointer in Swift 3</strong> from <string>Lane Schwartz</string> &lt;dowobeha at gmail.com&gt;<p>September 16, 2016 at 06:00:00pm</p></header><div class="content"><p>Thank you so much. That&#39;s exactly what I needed!<br></p><p>Lane<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160916/81445936/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Fix lazy filter</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 19, 2016 at 03:00:00pm</p></header><div class="content"><p>on Sun Jun 19 2016, Haravikk &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On 19 Jun 2016, at 14:50, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Sun Jun 19 2016, Kevin Lundberg &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; this seems more like a bug fix to me than a language change. Does it<br>&gt;&gt;&gt; need to go through evolution?<br>&gt;&gt; <br>&gt;&gt; It&#39;s not a bug.  Measuring the length of the source before allocating<br>&gt;&gt; the destination array is usually a big win when compared to repeatedly<br>&gt;&gt; growing the array&#39;s memory and copying all its elements.<br>&gt;<br>&gt; I think I agree that it’s a bug; as stated in the proposal the current<br>&gt; behaviour allows .underestimatedCount to consume the entire sequence<br></p><p>If that&#39;s true, it&#39;s a documentation bug.  underestimatedCount is<br>supposed to be a nondestructive estimate of the sequence&#39;s length, and<br>if the sequence is not known to be multipass, it always returns 0.<br></p><p>&gt; because sequences are potentially destructive (so its only possible to<br>&gt; guarantee access to each element once). Actually, the fact that this<br>&gt; hasn’t been discovered sooner suggests the current tests don’t include<br>&gt; the use of destructive sequences, which may need to be considered too,<br>&gt; as all Sequence methods should work correctly with both destructive<br>&gt; and non-destructive sequences.<br>&gt;<br>&gt; So yeah, I think having lazy sequences of this type return 0 for<br>&gt; underestimateCount is the right solution for the time being.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

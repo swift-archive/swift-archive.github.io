@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0142: Permit where clauses to constrain associated types</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>September 25, 2016 at 03:00:00am</p></header><div class="content"><p>on Fri Sep 23 2016, Douglas Gregor &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; What is your evaluation of the proposal?<br></p><p>It&#39;s ought to be obvious, but +1; when can I have it?<br></p><p>&gt; Is the problem being addressed significant enough to warrant a change<br>&gt; to Swift?<br></p><p>Indeed.<br></p><p>&gt; Does this proposal fit well with the feel and direction of Swift?  <br></p><p>Yes.<br></p><p>&gt; If you have used other languages or libraries with a similar feature,<br>&gt; how do you feel that this proposal compares to those?  <br></p><p>I haven&#39;t, except maybe Haskell.<br></p><p>&gt; How much effort did you put into your review? A glance, a quick<br>&gt; reading, or an in-depth study?  <br></p><p>All that and more.<br></p><p>Cheers,<br>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8083ad16248b8c031cc10d44f47aa442?s=50"></div><header><strong>[Review] SE-0142: Permit where clauses to constrain associated types</strong> from <string>T.J. Usiyan</string> &lt;griotspeak at gmail.com&gt;<p>September 25, 2016 at 11:00:00am</p></header><div class="content"><p>What is your evaluation of the proposal?<br>    +1<br>Is the problem being addressed significant enough to warrant a change to<br>Swift?<br>    Yes. A thousand times yes.<br>Does this proposal fit well with the feel and direction of Swift?<br>    Yes.<br>If you have used other languages or libraries with a similar feature, how<br>do you feel that this proposal compares to those?<br>    It compares well. Same type requirements for generic parameters are<br>sorely missed though.<br>How much effort did you put into your review? A glance, a quick reading, or<br>an in-depth study?<br>    I&#39;ve followed the discussion closely and given input a couple times.<br></p><p>More information about the Swift evolution process is available at<br></p><p>On Sun, Sep 25, 2016 at 6:39 AM, Dave Abrahams via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; on Fri Sep 23 2016, Douglas Gregor &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; &gt; What is your evaluation of the proposal?<br>&gt;<br>&gt; It&#39;s ought to be obvious, but +1; when can I have it?<br>&gt;<br>&gt; &gt; Is the problem being addressed significant enough to warrant a change<br>&gt; &gt; to Swift?<br>&gt;<br>&gt; Indeed.<br>&gt;<br>&gt; &gt; Does this proposal fit well with the feel and direction of Swift?<br>&gt;<br>&gt; Yes.<br>&gt;<br>&gt; &gt; If you have used other languages or libraries with a similar feature,<br>&gt; &gt; how do you feel that this proposal compares to those?<br>&gt;<br>&gt; I haven&#39;t, except maybe Haskell.<br>&gt;<br>&gt; &gt; How much effort did you put into your review? A glance, a quick<br>&gt; &gt; reading, or an in-depth study?<br>&gt;<br>&gt; All that and more.<br>&gt;<br>&gt; Cheers,<br>&gt; --<br>&gt; -Dave<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160925/459a60de/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/11df0828473d6c162b9c8572c37f9146?s=50"></div><header><strong>Build multiple executable targets</strong> from <string>Marco Feltmann</string> &lt;coding at marcofeltmann.de&gt;<p>February 23, 2016 at 06:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I&#39;d like to play around with Open Source Swift on Arch Linux.<br>I&#39;ve been an Mac OS X developer for almost a decade now and an iOS developer for a long time and I was distracted by the Swift-Cocoa-Integration, so I&#39;m gladly willing to give pure Swift a try.<br></p><p>Unfortunately I&#39;m unable to get a XCTestCase executed and running.<br></p><p>According to the Swift Build System documentation my subdirectory `test` is ignored by the build system.<br>According to the XCTest Library documentation I need to generate an own testing executable that has to be run manually.<br></p><p>That&#39;s good news and I was able to implement the documented XCTMain() into my `main.swift` and executing worked.<br>But it isn&#39;t the best idea to remove the real executable for the sake of a testing executable.<br>Both should exist side-by-side, especially in TDD.<br></p><p>How can I create multiple executable targets, so a `swift build` will generate both `Executable` and `ExecutableTests` for me?<br></p><p>I could wait for the `swift test` command in Swift 3.0, but I&#39;d like to start right away with 2.2-dev.<br></p><p>Oh, and I really want to use Linux for this. Xcode works fine for me, but I&#39;m not willing to swift-up my Mac.<br></p><p>Cheers<br>Marco<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>Build multiple executable targets</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>February 23, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; Hi everyone,<br>&gt; <br>&gt; I&#39;d like to play around with Open Source Swift on Arch Linux.<br>&gt; I&#39;ve been an Mac OS X developer for almost a decade now and an iOS developer for a long time and I was distracted by the Swift-Cocoa-Integration, so I&#39;m gladly willing to give pure Swift a try.<br>&gt; <br>&gt; Unfortunately I&#39;m unable to get a XCTestCase executed and running.<br>&gt; <br>&gt; According to the Swift Build System documentation my subdirectory `test` is ignored by the build system.<br>&gt; According to the XCTest Library documentation I need to generate an own testing executable that has to be run manually.<br>&gt; <br>&gt; That&#39;s good news and I was able to implement the documented XCTMain() into my `main.swift` and executing worked.<br>&gt; But it isn&#39;t the best idea to remove the real executable for the sake of a testing executable.<br>&gt; Both should exist side-by-side, especially in TDD.<br>&gt; <br>&gt; How can I create multiple executable targets, so a `swift build` will generate both `Executable` and `ExecutableTests` for me?<br>&gt; <br>&gt; I could wait for the `swift test` command in Swift 3.0, but I&#39;d like to start right away with 2.2-dev.<br>&gt; <br>&gt; Oh, and I really want to use Linux for this. Xcode works fine for me, but I&#39;m not willing to swift-up my Mac.<br></p><p>I suggest waiting for the next development snapshot which will have `swift test` integrated.<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

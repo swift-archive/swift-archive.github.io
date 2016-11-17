@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>Swift compatibility with Clang C API</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>March  1, 2016 at 07:00:00pm</p></header><div class="content"><p>Quoting from cfe-dev list message,<br></p><p><br>*&quot; As some of you may have heard, Swift has gone open-source over at<br>swift.org &lt;http://swift.org&gt; &lt;http://swift.org/ &lt;http://swift.org/&gt;&gt;.<br>Swift makes heavy use of Clang for its (Objective-)C interoperability,<br>including loading Clang modules to map (Objective-)C APIs into Swift<br>via Swift’s “Clang importer” and using Clang’s CodeGen to handle C ABI<br>issues (record layout, calling conventions) and use C inline functions<br>directly from Swift [*].<br></p><p>As an out-of-tree language front-end dependent on Clang, we have a<br>clone of the llvm.org &lt;http://llvm.org&gt; &lt;http://llvm.org/<br>&lt;http://llvm.org/&gt;&gt; Clang repository over on GitHub at<br>github.com/apple/swift-clang &lt;http://github.com/apple/swift-clang&gt;<br>&lt;http://github.com/apple/swift-clang<br>&lt;http://github.com/apple/swift-clang&gt;&gt;. We merge regularly and try to<br>minimize our differences with llvm.org &lt;http://llvm.org&gt;<br>&lt;http://llvm.org/ &lt;http://llvm.org/&gt;&gt;&#39;s Clang—for more information on<br>how we’re handling this, see swift.org/contributing/#llvm-and-swift<br>&lt;http://swift.org/contributing/#llvm-and-swift&gt;<br>&lt;http://swift.org/contributing/#llvm-and-swift<br>&lt;http://swift.org/contributing/#llvm-and-swift&gt;&gt;. &quot;*<br></p><p><br></p><p>Does swift maps its c++ internal apis to Clang C API, by this I mean<br>using swift &amp; clang libs, can one use Clang C API for AST generation.<br>Or one has to write their own wrappers around swift c++ API&#39;s to use<br>it in swift code.<br></p><p><br>Thanks<br></p><p>Ramakrishna<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160301/96de8820/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

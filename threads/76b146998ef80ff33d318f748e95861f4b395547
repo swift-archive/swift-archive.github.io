@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7b322f7cba0c5d2ed8aab562e3198acb?s=50"></div><header><strong>Possible bug with arithmetic optional comparison ?</strong> from <string>Yaman JAIOUCH</string> &lt;yjaiouch at gmail.com&gt;<p>May 24, 2016 at 11:00:00am</p></header><div class="content"><p>nil == 0 // false<br>nil &lt; 0 // true<br>nil &gt; 0 // false<br></p><p>Is this a potential bug or an intended behavior ?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160524/76b15547/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0e8516d3703e35b7df26986815b23e7a?s=50"></div><header><strong>[swift-dev] Possible bug with arithmetic optional comparison ?</strong> from <string>Robert Widmann</string> &lt;devteam.codafi at gmail.com&gt;<p>May 24, 2016 at 09:00:00am</p></header><div class="content"><p>Behaves as intended, albeit counterintuitively.<br></p><p>[~ indicates appropriate coercion]<br></p><p>1) (nil : Optional&lt;T ~ Int&gt;) == (0 : Int ~ Optional&lt;Int&gt;) false because nil is the lower bound of all possible integers.<br>2) (nil : Optional&lt;T ~ Int&gt;) &lt; (0 : Int ~ Optional&lt;Int&gt;) true for reasons above<br>3) (nil : Optional&lt;T ~ Int&gt;) &gt; (0 : Int ~ Optional&lt;Int&gt;) false for reason above.<br></p><p>~Robert Widmann<br></p><p>2016/05/24 2:27、Yaman JAIOUCH via swift-dev &lt;swift-dev at swift.org&gt; のメッセージ:<br></p><p>&gt; nil == 0 // false<br>&gt; nil &lt; 0 // true<br>&gt; nil &gt; 0 // false<br>&gt; <br>&gt; Is this a potential bug or an intended behavior ?<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>Request: Multiple Bool signatures</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>March 25, 2016 at 04:00:00pm</p></header><div class="content"><p>I am looking for examples of method/function signatures that use multiple Boolean flags, e.g.<br></p><p>func generateContact(withAddress: Bool, withEmail: Bool, withPhone: Bool) -&gt; Customer // not my code<br></p><p>If you have app code or library code around that you can check, I would greatly appreciate if you can share signatures with me or just generally comment on how often this pattern shows up in your daily life. I am specifically looking for: use of two or more separate Boolean parameters passed as flags. <br></p><p>I would also welcome examples of option sets that replaced Boolean flags with a note as to whether that option set type is used elsewhere in your app.<br></p><p>I am following up to an action item that Brent Royal-Gordon mentioned on-list a while back but I want real supporting motivating code evidence before I move forward with a draft proposal.<br></p><p>Feel free to email me off-list. Thank you,  -- Erica<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160325/776c67f3/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/47e3aeeaf151d4f51ee15fc7871bf584?s=50"></div><header><strong>Request: Multiple Bool signatures</strong> from <string>Rudolf Adamkovič</string> &lt;salutis at me.com&gt;<p>March 28, 2016 at 09:00:00pm</p></header><div class="content"><p>FYI, looking at my code, the most common use-case is:<br></p><p>func setSomething(something: Bool, animated: Bool)<br></p><p>R+<br></p><p>Sent from my iPhone<br></p><p>&gt; On 25 Mar 2016, at 23:33, Erica Sadun via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I am looking for examples of method/function signatures that use multiple Boolean flags, e.g.<br>&gt; <br>&gt; func generateContact(withAddress: Bool, withEmail: Bool, withPhone: Bool) -&gt; Customer // not my code<br>&gt; <br>&gt; If you have app code or library code around that you can check, I would greatly appreciate if you can share signatures with me or just generally comment on how often this pattern shows up in your daily life. I am specifically looking for: use of two or more separate Boolean parameters passed as flags. <br>&gt; <br>&gt; I would also welcome examples of option sets that replaced Boolean flags with a note as to whether that option set type is used elsewhere in your app.<br>&gt; <br>&gt; I am following up to an action item that Brent Royal-Gordon mentioned on-list a while back but I want real supporting motivating code evidence before I move forward with a draft proposal.<br>&gt; <br>&gt; Feel free to email me off-list. Thank you,  -- Erica<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160328/1917c893/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

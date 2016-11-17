@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Making some RawRepresentable things bridge to ObjC as their raw value</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October  1, 2016 at 08:00:00am</p></header><div class="content"><p>on Fri Sep 30 2016, Russ Bishop &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Sep 29, 2016, at 11:45 AM, Douglas Gregor via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; <br>&gt;<br>&gt;&gt; Personally, I consider the first one to be a fairly-low-risk<br>&gt;&gt; extension to SE-0139 that’s borderline bug-fix. We already know that<br>&gt;&gt; those types have weak numeric representations in Objective-C because<br>&gt;&gt; they come from Objective-C, so losing some of the type info by<br>&gt;&gt; bridging to Objective-C is (IMO) falls out of having strong types in<br>&gt;&gt; Swift for weaker types in Objective-C.<br>&gt;&gt; <br>&gt;&gt; The second one makes me a little nervous, I think because it weakens<br>&gt;&gt; typing for types defined in Swift. These types don’t naturally have<br>&gt;&gt; Objective-C counterparts, so if we’re going to weaken the types, it<br>&gt;&gt; feels like we should only do so via some explicit conformance (e.g.,<br>&gt;&gt; to a publicly-available form of _ObjectiveCBridgeable).<br>&gt;&gt; <br>&gt;&gt; 	- Doug<br>&gt;&gt; <br>&gt;<br>&gt; I’m up for reviving the ObjectiveCBridgeable proposal :)<br></p><p>Okay, but IMO the API of that protocol is wrong.  Any public interface<br>should look something like _CustomObjectiveCBridgeable per<br>https://github.com/apple/swift/commit/87944ed2449ec7314ed8690b8894ce96ad339ebf#diff-9b6ea5442068d139aa4193a59b6e4b91<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>[Pitch] Making some RawRepresentable things bridge to ObjC as their raw value</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>October  2, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Oct 1, 2016, at 8:45 AM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; I’m up for reviving the ObjectiveCBridgeable proposal :)<br>&gt; <br>&gt; Okay, but IMO the API of that protocol is wrong.  Any public interface<br>&gt; should look something like _CustomObjectiveCBridgeable per<br>&gt; https://github.com/apple/swift/commit/87944ed2449ec7314ed8690b8894ce96ad339ebf#diff-9b6ea5442068d139aa4193a59b6e4b91<br></p><p>Do you mind providing some color on this design? It seems to me that the proposal&#39;s ObjectiveCBridgeable design was both more idiomatic and permitted more behavior (particularly by allowing lazy collection bridging), whereas this design&#39;s only benefit seems to be that it abstracts away the specific &quot;policy&quot; (but that would prevent lazy bridging or other behavior differences between different policies). Why is this one better?<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

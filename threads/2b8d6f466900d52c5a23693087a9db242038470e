@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/835a02e14abc997b2c9c9a65f1d70732?s=50"></div><header><strong>lldb not working when C module includes a header outside of it&#39;s /include dir</strong> from <string>Andrey Fidrya</string> &lt;af at zabiyaka.com&gt;<p>November  9, 2016 at 10:00:00pm</p></header><div class="content"><p>Hi All,<br></p><p>When C module includes a header outside of module&#39;s include/ directory and<br>not residing in /usr/local/include or /usr/include, lldb stops showing variable<br>values for the entire application.<br></p><p>I&#39;ve created a ticket with a test project and additional details in the bug tracker,<br>any help is appreciated:<br>https://bugs.swift.org/browse/SR-3169 &lt;https://bugs.swift.org/browse/SR-3169&gt;<br></p><p>Andrey<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161109/2b8d470e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/835a02e14abc997b2c9c9a65f1d70732?s=50"></div><header><strong>lldb not working when C module includes a header outside of it&#39;s /include dir</strong> from <string>Andrey Fidrya</string> &lt;af at zabiyaka.com&gt;<p>November 10, 2016 at 10:00:00pm</p></header><div class="content"><p>Hi All,<br></p><p>Update: I&#39;ve found that debugging works if C module is in a separate repository. So, this problem is only present if there are two modules in Sources/ dir of the same repo. It doesn&#39;t matter if headers are located in /usr/local/include or in other location.<br></p><p>Andrey<br></p><p><br>&gt; On 09 Nov 2016, at 22:48, Andrey Fidrya &lt;af at zabiyaka.com&gt; wrote:<br>&gt; <br>&gt; Hi All,<br>&gt; <br>&gt; When C module includes a header outside of module&#39;s include/ directory and<br>&gt; not residing in /usr/local/include or /usr/include, lldb stops showing variable<br>&gt; values for the entire application.<br>&gt; <br>&gt; I&#39;ve created a ticket with a test project and additional details in the bug tracker,<br>&gt; any help is appreciated:<br>&gt; https://bugs.swift.org/browse/SR-3169 &lt;https://bugs.swift.org/browse/SR-3169&gt;<br>&gt; <br>&gt; Andrey<br>&gt; <br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161110/f5833e29/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/52cd4e8dbbba27ff1ea5fa122af8bd56?s=50"></div><header><strong>lldb not working when C module includes a header outside of it&#39;s /include dir</strong> from <string>Jim Ingham</string> &lt;jingham at apple.com&gt;<p>November 10, 2016 at 12:00:00pm</p></header><div class="content"><p>Could you put the working example in the bug as well?<br></p><p>Jim<br></p><p>&gt; On Nov 10, 2016, at 11:39 AM, Andrey Fidrya via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi All,<br>&gt; <br>&gt; Update: I&#39;ve found that debugging works if C module is in a separate repository. So, this problem is only present if there are two modules in Sources/ dir of the same repo. It doesn&#39;t matter if headers are located in /usr/local/include or in other location.<br>&gt; <br>&gt; Andrey<br>&gt; <br>&gt; <br>&gt;&gt; On 09 Nov 2016, at 22:48, Andrey Fidrya &lt;af at zabiyaka.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hi All,<br>&gt;&gt; <br>&gt;&gt; When C module includes a header outside of module&#39;s include/ directory and<br>&gt;&gt; not residing in /usr/local/include or /usr/include, lldb stops showing variable<br>&gt;&gt; values for the entire application.<br>&gt;&gt; <br>&gt;&gt; I&#39;ve created a ticket with a test project and additional details in the bug tracker,<br>&gt;&gt; any help is appreciated:<br>&gt;&gt; https://bugs.swift.org/browse/SR-3169<br>&gt;&gt; <br>&gt;&gt; Andrey<br>&gt;&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

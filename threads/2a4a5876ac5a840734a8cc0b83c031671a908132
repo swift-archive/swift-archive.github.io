@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/10d0339242a000b0b683ed1d5e25a110?s=50"></div><header><strong>Workaround for generics not currently supporting conditional conformance to a protocol</strong> from <string>Howard Lovatt</string> &lt;howard.lovatt at gmail.com&gt;<p>November 16, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi All,<br></p><p>Does anyone have a good workaround for generics not currently supporting<br>conditional conformance to a protocol. As stated in the Generics Manifesto<br>something like this would be nice:<br></p><p>  extension Array: Equatable where Element: Equatable {<br>        static func ==(lhs: Array, rhs: Array) -&gt; Bool { ... }<br>    }<br></p><p>But I would currently write a wrapper, something like:<br></p><p>    struct ArrayE&lt;T: Equatable&gt; {<br>        var elements: [T]<br>    }<br>    extension ArrayE: Equatable {<br>        static func ==(lhs: ArrayE, rhs: ArrayE) -&gt; Bool { ...  }<br>    }<br></p><p>This can get unwieldy when there are a lot of conditional protocol<br>extensions required, i.e. wrappers round wrappers.<br></p><p>Is there a better way?<br></p><p>Thanks for any tips,<br></p><p>  -- Howard.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161116/2a4a8132/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

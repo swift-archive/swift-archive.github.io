@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a838c63b9093a77fb88231d65effa3b3?s=50"></div><header><strong>Trouble minimizing test case: code completion</strong> from <string>Drew Crawford</string> &lt;drew at sealedabstract.com&gt;<p>December 12, 2015 at 12:00:00am</p></header><div class="content"><p>I&#39;m experiencing a bug where code completion from an OSX framework target is not available in its test target.  I&#39;m trying to report this in the tracker, but I&#39;m having trouble minimizing the test case.<br></p><p>Where I&#39;m at:<br></p><p>I have minimized the project down to 800LOC, but it is still too big to post publicly (or even privately, really).  The problem seems to be that minimizing further prevents the bug from occurring at all.  Even small minimizations, like removing a comment, seem to lose the bug.<br></p><p>My (completely unsubstantiated) theory is that I am hitting some kind of &quot;exponential cliff&quot;, where code completion is some O(f(n)) for f a very bad function, but by reducing the n just a few lines of code, f(n) becomes computable again.<br></p><p>I&#39;m wondering if anyone has other suggestions for minimizing the test case, or other diagnostic data that may shed light, as I am at a dead end here.<br></p><p>Drew<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Trouble minimizing test case: code completion</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>December 11, 2015 at 11:00:00pm</p></header><div class="content"><p>&gt; On Dec 11, 2015, at 10:43 PM, Drew Crawford via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I&#39;m experiencing a bug where code completion from an OSX framework target is not available in its test target.  I&#39;m trying to report this in the tracker, but I&#39;m having trouble minimizing the test case.<br>&gt; <br>&gt; Where I&#39;m at:<br>&gt; <br>&gt; I have minimized the project down to 800LOC, but it is still too big to post publicly (or even privately, really).  The problem seems to be that minimizing further prevents the bug from occurring at all.  Even small minimizations, like removing a comment, seem to lose the bug.<br>&gt; <br>&gt; My (completely unsubstantiated) theory is that I am hitting some kind of &quot;exponential cliff&quot;, where code completion is some O(f(n)) for f a very bad function, but by reducing the n just a few lines of code, f(n) becomes computable again.<br>&gt; <br>&gt; I&#39;m wondering if anyone has other suggestions for minimizing the test case, or other diagnostic data that may shed light, as I am at a dead end here.<br></p><p>File the bug report with what you have. An 800 line demonstration is better than no demonstration at all. <br></p><p>In the bug report you can describe the reductions that you tried that didn&#39;t work. That might help whoever gets it next.<br></p><p><br>-- <br>Greg Parker     gparker at apple.com     Runtime Wrangler<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

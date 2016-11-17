@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/006afe1f7d5e4f18190f2093dd2c5cac?s=50"></div><header><strong>Proposal: Extract POSIX module from swift-package-manager</strong> from <string>Adam Sharp</string> &lt;adsharp at me.com&gt;<p>December  8, 2015 at 09:00:00am</p></header><div class="content"><p>Hi,<br></p><p>What do you think about about the idea of extracting the POSIX module out into a new project, say swift-posix?<br></p><p>I&#39;m very excited about Swift becoming a viable language for writing tools and scripting. To that end, I think it would be extremely valuable to have a standard Swift module for interacting with the system and the shell.<br></p><p>Currently it&#39;s possible for me to add SPM as a dependency in a package, and import the POSIX module myself. However it would be great for the community to be able to contribute fixes or new features if they&#39;re generally useful, and those changes may be orthogonal to the direction of SPM itself. In the future it may also be valuable to be able to consider new abstractions over the POSIX layer that would be breaking changes for SPM---thus, a separate package could have its own semantic version, enabling that kind of evolution.<br></p><p>SPM is off to an excellent start in my opinion. Congratulations to the team!<br></p><p>–Adam<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>Proposal: Extract POSIX module from swift-package-manager</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>December  8, 2015 at 03:00:00pm</p></header><div class="content"><p>&gt; Hi,<br>&gt; <br>&gt; What do you think about about the idea of extracting the POSIX module out into a new project, say swift-posix?<br>&gt; <br>&gt; I&#39;m very excited about Swift becoming a viable language for writing tools and scripting. To that end, I think it would be extremely valuable to have a standard Swift module for interacting with the system and the shell.<br>&gt; <br>&gt; Currently it&#39;s possible for me to add SPM as a dependency in a package, and import the POSIX module myself. However it would be great for the community to be able to contribute fixes or new features if they&#39;re generally useful, and those changes may be orthogonal to the direction of SPM itself. In the future it may also be valuable to be able to consider new abstractions over the POSIX layer that would be breaking changes for SPM---thus, a separate package could have its own semantic version, enabling that kind of evolution.<br></p><p>I will keep this suggestion in mind, but primarily I am concerned because the SwiftPM must bootstrap itself from a system where it is not already installed, thus splitting modules into separate packages will add complexity to our build process.<br></p><p>However once we support scripting with the ability to use packages I agree that the POSIX module will be useful.<br></p><p>&gt; SPM is off to an excellent start in my opinion. Congratulations to the team!<br></p><p>Thanks :)<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

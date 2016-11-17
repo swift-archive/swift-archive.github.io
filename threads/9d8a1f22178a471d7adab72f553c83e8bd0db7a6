@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Revision] SE-0034 - Disambiguating Line Control Statements from Debugging Identifiers</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>March 12, 2016 at 01:00:00pm</p></header><div class="content"><p>#sourceLocation(file: &quot;foo&quot;, line: 42)    // Set logical position.<br>#sourceLocation()                                // Reset logical position.<br></p><p>I fully support renaming of the first directive, but have a tiny concern<br>about the second one.<br>Does sourceLocation name reflect its purpose? Maybe resetSourceLocation or<br>something like that?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160312/9d8ab7a6/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>[Revision] SE-0034 - Disambiguating Line Control Statements from Debugging Identifiers</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>March 14, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Mar 12, 2016, at 2:17 AM, Антон Жилин via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; #sourceLocation(file: &quot;foo&quot;, line: 42)    // Set logical position.<br>&gt; #sourceLocation()                                // Reset logical position.<br>&gt; <br>&gt; I fully support renaming of the first directive, but have a tiny concern about the second one.<br>&gt; Does sourceLocation name reflect its purpose? Maybe resetSourceLocation or something like that?<br></p><p>Perhaps<br>    #sourceLocation(reset)<br></p><p>which provides space for other potential future constructs<br>    #sourceLocation(push)<br>    #sourceLocation(file:&quot;foo&quot;, line: 42)<br>    …<br>    #sourceLocation(pop)<br></p><p><br>-- <br>Greg Parker     gparker at apple.com &lt;mailto:gparker at apple.com&gt;     Runtime Wrangler<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160314/fa210acf/attachment-0001.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

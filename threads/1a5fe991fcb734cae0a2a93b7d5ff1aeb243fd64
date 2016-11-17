@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/706baf09e574d70814e4af2d54a315e0?s=50"></div><header><strong>[Draft] Allow declaration of abstract functions and properties on classes</strong> from <string>Vinicius Vendramini</string> &lt;vinivendra at gmail.com&gt;<p>February 26, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; &gt; &gt; The other problem with the protocol-based solution is that it leads to conceptual leakage. The protocol you need to declare lives outside the class(es) that need it.<br>&gt; &gt; &gt; <br>&gt; &gt; &gt; The ActivityViewControlling protocol is now available universally, even though it&#39;s interface is only relevant to a certain portion the class hierarchy.<br></p><p>There wouldn’t really be a conceptual leakage. If we treat the protocol as a replacement for the abstract class, we see that both implementations amount to pretty much the same thing.<br></p><p>If before we wanted an abstract class MyController, subclassed as MyControllerA and MyControllerB, we could ‘substitute’ it (using Brent’s suggestions) with MyProtocol. <br></p><p>MyProtocol would have the same (universal) scope as MyController, so users could reference the generic MyProtocol at will (and not have to specify individual subclasses).<br></p><p>In a similar manner, we don’t think of MyControllerA and MyControllerB so much as subclasses of my controller anymore, but as implementations of MyProtocol. If we ever “forget” to add protocol conformance, the issue would be instantly found at compile time, since the new subclasses would be incompatible with all references to MyProtocol in our code and would also lack the possible extensions provided by MyProtocol.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

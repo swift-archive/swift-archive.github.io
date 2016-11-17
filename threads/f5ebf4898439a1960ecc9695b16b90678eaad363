@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/21b948de13528f8cef6668ca658c33d0?s=50"></div><header><strong>NSOperationQueue</strong> from <string>swift3 at nsobject.net</string> &lt;swift3 at nsobject.net&gt;<p>July 10, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi! Swift-Corelibs-dev:<br></p><p>I was wondering if NSOperationQueue will be added to the Foundation<br>(I didn&#39;t see it), or should I inquire about this on the swift-evolution<br>list if its a planned feature?<br></p><p>Thanks for your time and assistance!<br></p><p>-JNS<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>NSOperationQueue</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>July 10, 2016 at 10:00:00am</p></header><div class="content"><p>Hi JNS,<br></p><p>We do want OperationQueue and friends to be part of swift-corelibs-foundation. What’s held us back so far is the lack of libdispatch support on Linux. That’s still making progress, so I hope we can tackle this one pretty soon.<br></p><p>- Tony<br></p><p>&gt; On Jul 10, 2016, at 10:01 AM, JNS via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi! Swift-Corelibs-dev:<br>&gt; <br>&gt; I was wondering if NSOperationQueue will be added to the Foundation<br>&gt; (I didn&#39;t see it), or should I inquire about this on the swift-evolution<br>&gt; list if its a planned feature?<br>&gt; <br>&gt; Thanks for your time and assistance!<br>&gt; <br>&gt; -JNS<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

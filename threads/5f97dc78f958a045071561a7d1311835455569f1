@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4090ad26a70acd97d197ac8b732a520c?s=50"></div><header><strong>[Review] SE-0117: Default classes to be non-subclassable publicly</strong> from <string>David Beck</string> &lt;david at davidbeck.co&gt;<p>July  7, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; * What is your evaluation of the proposal?<br></p><p>I’m on board with solving the problems outlined here. In particular, continuing to make Swift safe and fast by default and extending access and features as needed. And I am mostly on board with the solution proposed here.<br></p><p>I have 2 big concerns:<br></p><p>1) Unlike most changes to the language, the problems from this change will not be immediately evident. While a module author typically uses their module in at least 1 project of their own, they don’t see the usage point for most of their API. This change will likely cause a long process of updates for modules going back and forth between updating the module and the app that uses it.<br></p><p>2) As the proposal is written, we are introducing 2 new terms into the language that are not that different from what we already have (final and public/internal/private). I would really like to see these terms merged to limit the vocabulary of the language. Personally I am in favor of public(extensible) for both classes and methods.<br></p><p>&gt; * Is the problem being addressed significant enough to warrant a change to Swift?<br></p><p>Yes. In particular, giving the language the ability to fine tune what can and cannot be overridden is very helpful.<br></p><p>&gt; * Does this proposal fit well with the feel and direction of Swift?<br></p><p>Yes. The biggest argument I’ve seen against this behavior is that we need to be able to fix Apple’s frameworks for them. But the direction of Swift is away from doing this (having final available at all, no method swizzling etc.) and for good reason.<br></p><p>&gt; * If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br></p><p>There was an interesting discussion somewhat related to this on the latest Bike Shed (http://bikeshed.fm/70) coming from the perspective of Ruby developers.<br></p><p>&gt; * How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br></p><p>I’ve read through the final proposal and have also given it occasional thought over the weeks building up to the proposal. I’ve also read a handful of responses.<br></p><p><br>David Beck<br>http://davidbeck.co<br>http://twitter.com/davbeck<br>http://facebook.com/davbeck<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160707/5f9769f1/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

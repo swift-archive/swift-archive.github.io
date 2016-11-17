@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Is there a need for a Decimal type?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 15, 2016 at 07:00:00am</p></header><div class="content"><p>on Sat Feb 13 2016, Jonathan Tang &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; General +1, but I&#39;m wondering if a better development process would be to<br>&gt; release this as an open-source library, get some adoption, respond to<br>&gt; user-feedback, and then propose to integrate that library into the stdlib.<br>&gt; You can iterate much faster in a library than in the language standard, and<br>&gt; APIs usually end up being a lot cleaner when designed in response to user<br>&gt; feedback than when designed by committee.  (Particularly when the library<br>&gt; in question is fairly domain-specific.)<br></p><p>+1.  That process is well-suited to *many* of the things people would<br>like to see in the standard library.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/49f329a0267f5a1773a77017882a82a8?s=50"></div><header><strong>Is there a need for a Decimal type?</strong> from <string>Rainer Brockerhoff</string> &lt;rainer at brockerhoff.net&gt;<p>February 15, 2016 at 02:00:00pm</p></header><div class="content"><p>On 2/15/16 13:58, Dave Abrahams via swift-evolution wrote:<br>&gt; <br>&gt; on Sat Feb 13 2016, Jonathan Tang &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; General +1, but I&#39;m wondering if a better development process would be to<br>&gt;&gt; release this as an open-source library, get some adoption, respond to<br>&gt;&gt; user-feedback, and then propose to integrate that library into the stdlib.<br>&gt;&gt; You can iterate much faster in a library than in the language standard, and<br>&gt;&gt; APIs usually end up being a lot cleaner when designed in response to user<br>&gt;&gt; feedback than when designed by committee.  (Particularly when the library<br>&gt;&gt; in question is fairly domain-specific.)<br>&gt; <br>&gt; +1.  That process is well-suited to *many* of the things people would<br>&gt; like to see in the standard library.<br></p><p>Excellent comment, a Decimal type would be good to have at some point<br>down the road, if it&#39;s presented in the suggested way.<br></p><p>For whoever will try do write such a library, a few comments.<br></p><p>In a former life I had to write some financial packages (some of them in<br>Assembler, others in C) and there were no suitable libraries — this<br>because we had to consider hyperinflation — the local currency could at<br>times need over 15 significant digits just for values seen in the<br>average payroll.<br></p><p>The usual trick was to store values as big integers with implicit<br>decimal point 2 (or sometimes, 6) places to the left.<br></p><p>NSDecimal and NSDecimalNumber seem to use decimal floating point; that<br>gets around exact representation of 0.1 and similar values, but it could<br>suffer loss of significance just like binary floats would, so it might<br>not be a good idea to port them.<br></p><p>-- <br>Rainer Brockerhoff  &lt;rainer at brockerhoff.net&gt;<br>Belo Horizonte, Brazil<br>&quot;In the affairs of others even fools are wise<br>In their own business even sages err.&quot;<br>http://brockerhoff.net/blog/<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

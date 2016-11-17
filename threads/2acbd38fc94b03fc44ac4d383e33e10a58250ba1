@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8d92e9730c561c120200f34e7e50ed46?s=50"></div><header><strong>Where did “powl” go?</strong> from <string>Jeff Kelley</string> &lt;slaunchaman at gmail.com&gt;<p>July  5, 2016 at 01:00:00pm</p></header><div class="content"><p>Hello all,<br></p><p>	I’m using Xcode 8.0 and Swift 3 on OS X 10.11, and I’m trying to use powl in an OS X Playground. I see the definition of the pow-related functions in math.h here:<br></p><p>extern float powf(float, float);<br>extern double pow(double, double);<br>extern long double powl(long double, long double);<br></p><p>But the Swift-imported version at Darwin.C.math looks like this:<br></p><p>public func powf(_: Float, _: Float) -&gt; Float<br>public func pow(_: Double, _: Double) -&gt; Double<br></p><p>Where did powl go?<br></p><p><br>Jeff Kelley<br></p><p>SlaunchaMan at gmail.com | @SlaunchaMan &lt;https://twitter.com/SlaunchaMan&gt; | jeffkelley.org &lt;http://jeffkelley.org/&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160705/2acb0ba1/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

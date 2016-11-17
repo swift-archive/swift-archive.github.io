@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2d172fa3c47108d84ee35a68e8d675c1?s=50"></div><header><strong>[Pitch] Allow sub-protocols to define typealiases for protocols&#39; associatedtypes</strong> from <string>Ross O&#39;Brien</string> &lt;narrativium+swift at gmail.com&gt;<p>June  6, 2016 at 09:00:00pm</p></header><div class="content"><p>Given a protocol with an associated type:<br></p><p>protocol Foo<br>{<br>  associatedtype Bar<br>}<br></p><p>it should be possible to define a protocol conforming to Foo, for which Bar<br>can be typealiased:<br></p><p>protocol IntFoo : Foo<br>{<br>  typealias Bar = Int<br>}<br></p><p>such that all conformers to IntFoo now have an associatedtype Bar being Int<br>without having to define it themselves. At present IntFoo cannot declare a<br>typealias (as this generates a warning that typealias has been deprecated),<br>but can declare an &#39;associatedtype Bar = Int&#39; which types conforming to<br>IntFoo have to repeat to consider it properly declared. This re-declaration<br>is redundant.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160606/63945e70/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>[Pitch] Allow sub-protocols to define typealiases for protocols&#39; associatedtypes</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>June  6, 2016 at 09:00:00pm</p></header><div class="content"><p>Wouldn&#39;t this be covered under SE-0092?<br>On Mon, Jun 6, 2016 at 15:59 Ross O&#39;Brien via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Given a protocol with an associated type:<br>&gt;<br>&gt; protocol Foo<br>&gt; {<br>&gt;   associatedtype Bar<br>&gt; }<br>&gt;<br>&gt; it should be possible to define a protocol conforming to Foo, for which<br>&gt; Bar can be typealiased:<br>&gt;<br>&gt; protocol IntFoo : Foo<br>&gt; {<br>&gt;   typealias Bar = Int<br>&gt; }<br>&gt;<br>&gt; such that all conformers to IntFoo now have an associatedtype Bar being<br>&gt; Int without having to define it themselves. At present IntFoo cannot<br>&gt; declare a typealias (as this generates a warning that typealias has been<br>&gt; deprecated), but can declare an &#39;associatedtype Bar = Int&#39; which types<br>&gt; conforming to IntFoo have to repeat to consider it properly declared. This<br>&gt; re-declaration is redundant.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160606/8521a96c/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Pitch] Allow sub-protocols to define typealiases for protocols&#39; associatedtypes</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>June  6, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; On Jun 6, 2016, at 1:59 PM, Ross O&#39;Brien via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Given a protocol with an associated type:<br>&gt; <br>&gt; protocol Foo<br>&gt; {<br>&gt;   associatedtype Bar<br>&gt; }<br>&gt; <br>&gt; it should be possible to define a protocol conforming to Foo, for which Bar can be typealiased:<br>&gt; <br>&gt; protocol IntFoo : Foo<br>&gt; {<br>&gt;   typealias Bar = Int<br>&gt; }<br>&gt; <br>&gt; such that all conformers to IntFoo now have an associatedtype Bar being Int without having to define it themselves. At present IntFoo cannot declare a typealias (as this generates a warning that typealias has been deprecated), but can declare an &#39;associatedtype Bar = Int&#39; which types conforming to IntFoo have to repeat to consider it properly declared. This re-declaration is redundant.<br></p><p>The “More Powerful Constraints for Associated Types” proposal provides a better way to accomplish this:<br></p><p>	https://github.com/apple/swift-evolution/pull/284<br></p><p>	- Doug<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bbd75a080f2cf3ee75f548bd2fd67d02?s=50"></div><header><strong>operator or wrapper for NSLocalizedString</strong> from <string>Kwanghoon Choi</string> &lt;eyerama at icloud.com&gt;<p>June 23, 2016 at 11:00:00pm</p></header><div class="content"><p>Dear community<br></p><p>I think NSLocalizedString is little old. Mostly knows what is this.<br></p><p>Sure, everyone of swift user can make operator or some kind convenient functions. But always, native supports will be better choice.<br></p><p>I suggest operator or wrapper for NSLocalizedString like #selector(…)<br></p><p>Ex)<br>#string(_ forLocalizableKey: String, forLocale: NSLocale? = nil)<br></p><p>Thanks<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

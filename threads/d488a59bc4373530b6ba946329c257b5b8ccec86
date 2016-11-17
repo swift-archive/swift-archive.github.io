@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e01e37acbfad671da1b94a61cf819d82?s=50"></div><header><strong>[Administrative] Update proposals with Accepted/Rejected status</strong> from <string>Kenny Leung</string> &lt;kenny_leung at pobox.com&gt;<p>February 29, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi All.<br></p><p>I’ve noticed that when proposals are accepted or rejected, there is nothing inside the proposal that indicates it.<br></p><p>Also, it would be nice if the blurb in the announcement email (like this one: http://article.gmane.org/gmane.comp.lang.swift.evolution/7735) was put into the proposal to provide further clarification and prevent future rehashing of a subject.<br></p><p>I can also take care of this as part of the newsletter editing if you like.<br></p><p>-Kenny<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Administrative] Update proposals with Accepted/Rejected status</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>February 29, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; On Feb 29, 2016, at 12:54 PM, Kenny Leung via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi All.<br>&gt; <br>&gt; I’ve noticed that when proposals are accepted or rejected, there is nothing inside the proposal that indicates it.<br>&gt; <br>&gt; Also, it would be nice if the blurb in the announcement email (like this one: http://article.gmane.org/gmane.comp.lang.swift.evolution/7735) was put into the proposal to provide further clarification and prevent future rehashing of a subject.<br></p><p>It would be great to improve this, please send in PRs!  :-)<br></p><p>-Chris<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

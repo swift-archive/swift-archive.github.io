@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Heads up] Upcoming review of API Design Guidelines, Standard Library API, and Clang Importer changes</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>January 14, 2016 at 09:00:00am</p></header><div class="content"><p>Hi all,<br></p><p>One of the major goals of Swift 3 is to introduce a set of API Design Guidelines for Swift and to apply those guidelines to both the Standard Library APIs and to imported (Objective-)C APIs. This initiative is described in more detail in the blog entry at<br></p><p>	https://swift.org/blog/swift-3-api-design/ &lt;https://swift.org/blog/swift-3-api-design/&gt;<br></p><p>We are going to initiate a public review of this work starting next Wednesday (January 20th) and running through the end of the month. The scale of the effort is far larger than anything else we’ve handled in the evolution process, comprising three related pieces:<br></p><p>	* API Design Guidelines: https://swift.org/documentation/api-design-guidelines.html &lt;https://swift.org/documentation/api-design-guidelines.html&gt; (TODO: create a skeleton proposal in swift-evolution to link to)<br>	* Standard library API changes: https://github.com/apple/swift-evolution/blob/master/proposals/0006-apply-api-guidelines-to-the-standard-library.md &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0006-apply-api-guidelines-to-the-standard-library.md&gt;<br>	* Clang importer changes: https://github.com/apple/swift-evolution/blob/master/proposals/0005-objective-c-name-translation.md &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0005-objective-c-name-translation.md&gt;<br></p><p>We’ll handle this as three separate reviews (one per document) running concurrently. The concurrency is important because there is a lot of interplay between the different moving parts (e.g., an API change in the standard library will correspond to a particular guideline, or an importer rule implements a particular guideline, etc.). Yet, there is likely to be specific per-document feedback, and we benefit from having separate discussion threads.<br></p><p>We’re still getting all of the pieces together for the review, and these documents will change up until the public review period begins. Feel free to browse through the documents and the other references mentioned in the blog. However, we request that everyone hold off on discussion of the documents until the public review begins, so that we’re all talking about the exact same documents, and that you familiarize yourself with all three documents before participating in the public review of any of them (because they are so closely linked).<br></p><p>	Cheers,<br>	Doug<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160114/856c6b35/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

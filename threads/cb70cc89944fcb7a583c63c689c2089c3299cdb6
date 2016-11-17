@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ac6593beac2a4da1e518e5001dbb2adc?s=50"></div><header><strong>How do you run individual tests?</strong> from <string>Michael Buckley</string> &lt;michael at buckleyisms.com&gt;<p>December  5, 2015 at 04:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I have successfully run the swift test suites by passing the -T flag to<br>utils/build_script, and I am wondering if there is any way to run an<br>individual test by name, or even just run a single file.<br></p><p>Forgive me if the answer to this question is already documented somewhere.<br>I have read through all the documentation I could find in the git<br>repository, and checked out the lit documentation on llvm.org.<br></p><p>As a concrete example, let&#39;s say I added a test<br>to validation-test/stdlib/UnicodeTrie.swift.gyb, and I&#39;m doing test-first<br>development, so I expect this test to fail until I implement the fix for<br>it. I now want to run just this test to ensure that it does indeed fail.<br></p><p>The lyt documentation seems to indicate that I can pass it a filename to<br>test, but when I point it to that file, it states that it can only test<br>files in a build directory, and I cannot find this file in the build<br>directory. Additionally, docs/Testing.rst mentions that tests can be run<br>using the check-swift* tools in the build directory, but I cannot find<br>these tools in the build directory.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151205/cb70cdb6/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8e77369a540cf4d35924683e176c7a9c?s=50"></div><header><strong>How do you run individual tests?</strong> from <string>Mark Lacey</string> &lt;mark.lacey at apple.com&gt;<p>December  5, 2015 at 05:00:00pm</p></header><div class="content"><p>&gt; On Dec 5, 2015, at 4:56 PM, Michael Buckley via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; I have successfully run the swift test suites by passing the -T flag to utils/build_script, and I am wondering if there is any way to run an individual test by name, or even just run a single file.<br>&gt; <br>&gt; Forgive me if the answer to this question is already documented somewhere. I have read through all the documentation I could find in the git repository, and checked out the lit documentation on llvm.org &lt;http://llvm.org/&gt;.<br></p><p>docs/Testing.rst line 95 shows the way that I use lit to run individual tests or tests under a directory:<br></p><p>    % ${LLVM_SOURCE_ROOT}/utils/lit/lit.py -sv --param swift_site_config=${SWIFT_BUILD_ROOT}/test-iphonesimulator-i386/lit.site.cfg ${SWIFT_SOURCE_ROOT}/test/Parse/<br></p><p>For example, if you build with build-script -r you should be able to run test/SILPasses/mem2reg.sil with:<br></p><p>../llvm/utils/lit/lit.py -sv --param swift_site_config=../build/Ninja-RelWithDebInfoAssert/swift-macosx-x86_64/test-macosx-x86_64/lit.site.cfg test/SILPasses/mem2reg.sil<br></p><p>As you can imagine this is quite long so I have an alias set up to provide the initial arguments to lit.py (in particular pointing to the swift_site_config).<br></p><p>Mark<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151205/ca152587/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

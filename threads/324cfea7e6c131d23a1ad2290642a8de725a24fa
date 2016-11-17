@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9b667f2c07faf9d4f65628effe475382?s=50"></div><header><strong>Proposal: Unicode visualization annotations in declarations.</strong> from <string>Amir Michail</string> &lt;amichail at gmail.com&gt;<p>January 16, 2016 at 02:00:00pm</p></header><div class="content"><p>Example source:<br></p><p>let alpha/𝛼 = 5<br>print(“alpha=\(alpha)”)<br></p><p>An IDE/editor that understands these visualization annotations would show this source as:<br></p><p>let alpha/𝛼 = 5<br>print(“alpha=\(𝛼)”)<br></p><p>Moving the cursor over 𝛼 would tell you in the status bar that this is a visualization for “alpha”.<br></p><p>Note that in the source, the unicode character only appears in the visualization annotation. <br></p><p>Here’s another example:<br></p><p>enum Suit { case Heart/♡, Diamond/♢, Spade/♠︎, Club/♣︎ }<br>let x = Suit.Heart<br></p><p>In an IDE/editor that supports visualization annotations, the following would be shown:<br></p><p>enum Suit { case Heart/♡, Diamond/♢, Spade/♠︎, Club/♣︎ }<br>let x = Suit.♡<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160116/324c24fa/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1696913cf1335685a75e63e11b459ae3?s=50"></div><header><strong>Proposal: Unicode visualization annotations in declarations.</strong> from <string>Sune Foldager</string> &lt;cyano at me.com&gt;<p>January 18, 2016 at 06:00:00pm</p></header><div class="content"><p>What do we gain by this? Swift is a modern language with unicode source file support. If you use those, it may sometimes mean it’s difficult to edit programs on a more limited system, but<br></p><p>a) You don’t have to use those symbols in your own code.<br>b) Is that concern really worth adding extra syntax for, like this?<br></p><p>I don’t think so myself.<br></p><p>-Sune<br></p><p>&gt; On 16 Jan 2016, at 20:51, Amir Michail via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Example source:<br>&gt; <br>&gt; let alpha/𝛼 = 5<br>&gt; print(“alpha=\(alpha)”)<br>&gt; <br>&gt; An IDE/editor that understands these visualization annotations would show this source as:<br>&gt; <br>&gt; let alpha/𝛼 = 5<br>&gt; print(“alpha=\(𝛼)”)<br>&gt; <br>&gt; Moving the cursor over 𝛼 would tell you in the status bar that this is a visualization for “alpha”.<br>&gt; <br>&gt; Note that in the source, the unicode character only appears in the visualization annotation. <br>&gt; <br>&gt; Here’s another example:<br>&gt; <br>&gt; enum Suit { case Heart/♡, Diamond/♢, Spade/♠︎, Club/♣︎ }<br>&gt; let x = Suit.Heart<br>&gt; <br>&gt; In an IDE/editor that supports visualization annotations, the following would be shown:<br>&gt; <br>&gt; enum Suit { case Heart/♡, Diamond/♢, Spade/♠︎, Club/♣︎ }<br>&gt; let x = Suit.♡<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160118/8092d041/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

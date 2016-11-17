@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a0b362cd96d9f85beab1079ff37e3d19?s=50"></div><header><strong>[Discussion] func/closure parameters and tuples</strong> from <string>Vladimir.S</string> &lt;svabox at gmail.com&gt;<p>June 21, 2016 at 09:00:00pm</p></header><div class="content"><p>I wanted to ask if the below behavior of compiler/parser is bug or it is <br>&#39;feature&#39; and &#39;by design&#39; and we will not change this :<br></p><p>1. I was not expecting this will compile :<br></p><p>let ft1 : (Int,Int) -&gt; Void = { x in print(x.0, x.1)}<br></p><p>ft1(1, 2)<br></p><p>the type of ft1 is definitely not the same as closure<br></p><p><br>2. The same. But this crashes compiler at compile time(if I understand <br>correctly) :<br></p><p>let ft2 : (Int,Int) -&gt; Void = { x in print(x) }<br></p><p>ft2(1, 2)<br></p><p>----------<br>Unhandled conversion from exploded tuple<br>...<br>...<br>1.	While emitting reabstraction thunk in SIL function <br>@_TTRXFo_iP___XFo_dSidSi__&lt;unknown&gt;:0: error: unable to execute command: <br>Aborted<br>&lt;unknown&gt;:0: error: compile command failed due to signal (use -v to see <br>invocation)<br>----------<br></p><p><br>3. Was expecting closure will require a single argument, which is tuple; <br>but it accepts even just x, y<br></p><p>typealias IntInt = (Int,Int)<br></p><p>func foo(block: (IntInt) -&gt; Void) {<br>     let z : IntInt = (1,2)<br>     block(z)<br>}<br></p><p>foo { x in print(x)} // ok<br>foo { x, y in print(x,y)}<br>foo { (x, y) in print(x, y)}<br></p><p>I&#39;m not sending two values to closure, I send one instance which is tuple.<br></p><p><br>Shouldn&#39;t we add consistency in Swift regarding allowed argumets of closure <br>if tuple is required as parameter?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a0b362cd96d9f85beab1079ff37e3d19?s=50"></div><header><strong>[Discussion] func/closure parameters and tuples</strong> from <string>Vladimir.S</string> &lt;svabox at gmail.com&gt;<p>June 22, 2016 at 02:00:00pm</p></header><div class="content"><p>Even more &#39;stranges&#39; :<br></p><p>typealias BinaryIntOp_v1 = (Int, Int) -&gt; Int<br>typealias BinaryIntOp_v2 = ((Int, Int)) -&gt; Int<br></p><p>print(BinaryIntOp_v2.self) // Prints ((Int, Int)) -&gt; Int  why?<br>print(BinaryIntOp_v2.self) // Prints ((Int, Int)) -&gt; Int<br></p><p>let areRepresentingTheSameType = BinaryIntOp_v1.self == BinaryIntOp_v2.self <br>// (alt-click the &quot;==&quot; and read doc.)<br>print(areRepresentingTheSameType) // Prints true<br></p><p>let add_v1: BinaryIntOp_v1 = (+)<br>let add_v2: BinaryIntOp_v2 = (+) // Or both could have been eg: { return $0 <br>+ $1 }<br></p><p>let ra = add_v1(1, 2)<br>let rb = add_v2((1, 2)) // NOTE: Needs these extra parens (otherwise error: <br>&quot;Extra argument in call&quot;)<br></p><p>let rc = (add_v1 as BinaryIntOp_v2)((1, 2)) // NOTE: I am type casting <br>these to an identical type ...<br>let rd = (add_v2 as BinaryIntOp_v1)(1, 2)   // ... in order to swap which <br>one of them need extra parens ...<br></p><p><br>I believe we should fix this inconsistency before Swift 3.0 is released as <br>this could be source-breaking changes. Opinions?<br></p><p><br>On 21.06.2016 21:28, Vladimir.S wrote:<br>&gt; I wanted to ask if the below behavior of compiler/parser is bug or it is<br>&gt; &#39;feature&#39; and &#39;by design&#39; and we will not change this :<br>&gt;<br>&gt; 1. I was not expecting this will compile :<br>&gt;<br>&gt; let ft1 : (Int,Int) -&gt; Void = { x in print(x.0, x.1)}<br>&gt;<br>&gt; ft1(1, 2)<br>&gt;<br>&gt; the type of ft1 is definitely not the same as closure<br>&gt;<br>&gt;<br>&gt; 2. The same. But this crashes compiler at compile time(if I understand<br>&gt; correctly) :<br>&gt;<br>&gt; let ft2 : (Int,Int) -&gt; Void = { x in print(x) }<br>&gt;<br>&gt; ft2(1, 2)<br>&gt;<br>&gt; ----------<br>&gt; Unhandled conversion from exploded tuple<br>&gt; ...<br>&gt; ...<br>&gt; 1.    While emitting reabstraction thunk in SIL function<br>&gt; @_TTRXFo_iP___XFo_dSidSi__&lt;unknown&gt;:0: error: unable to execute command:<br>&gt; Aborted<br>&gt; &lt;unknown&gt;:0: error: compile command failed due to signal (use -v to see<br>&gt; invocation)<br>&gt; ----------<br>&gt;<br>&gt;<br>&gt; 3. Was expecting closure will require a single argument, which is tuple;<br>&gt; but it accepts even just x, y<br>&gt;<br>&gt; typealias IntInt = (Int,Int)<br>&gt;<br>&gt; func foo(block: (IntInt) -&gt; Void) {<br>&gt;     let z : IntInt = (1,2)<br>&gt;     block(z)<br>&gt; }<br>&gt;<br>&gt; foo { x in print(x)} // ok<br>&gt; foo { x, y in print(x,y)}<br>&gt; foo { (x, y) in print(x, y)}<br>&gt;<br>&gt; I&#39;m not sending two values to closure, I send one instance which is tuple.<br>&gt;<br>&gt;<br>&gt; Shouldn&#39;t we add consistency in Swift regarding allowed argumets of closure<br>&gt; if tuple is required as parameter?<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

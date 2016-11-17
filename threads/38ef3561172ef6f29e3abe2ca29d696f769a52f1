@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/458cc4059a92afaf1bfec9ddb54c450c?s=50"></div><header><strong>SequenceType Binary Search Implementation</strong> from <string>Lorenzo Racca</string> &lt;lorenzo.racca at live.it&gt;<p>March 11, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi all, <br></p><p>I’m kinda new to this, so here’s my idea.<br>The other day I was building an app and had to search through a pretty big array (some 100M entries), and noticed the library function “array.contains” slowed everything down a lot. So i searched on GitHub the code and found out that &quot;SequenceType.contains” uses Linear Search. I know that Binary Search works way better with sorted arrays (which was my situation) so here it is, why not add it to the std lib? <br>I noticed it because I moved from C# where such a function is present. And I believe there is one in Java too.<br></p><p>I was working and I already figured out an algorithm that could really be just pasted into SequenceType.swift and make it easy for everyone. I even started benchmarking it and really, it would make a big difference. This is my code as of now:<br></p><p> extension CollectionType where Generator.Element : Comparable {<br>    /// Returns `true` if `element` is in `self`.<br>    /// Collection must be sorted.<br>    @warn_unused_result<br>    public func binarySearch(element: Generator.Element) -&gt; Bool {<br>        if let result = _customContainsEquatableElement(element) {<br>            return result<br>        }<br>        <br>        var left = startIndex<br>        var right = endIndex<br>        <br>        while (left != right) {<br>            let mid = left.advancedBy(left.distanceTo(right) / 2)<br>            let value = self[mid]<br></p><p>            if (value == element) {<br>                return true<br>            }<br>            if ( value &lt; element) {<br>                left = mid.advancedBy(1)<br>            }<br>            if (value &gt; element) {<br>                right = mid<br>            }<br>        }<br>        return false<br>    }<br>}<br></p><p>Now I don’t know whether this would be accepted, useful or just even right. I don’t have the permission to pull commits to the rep, so I don’t even really know how to make it an official proposal. <br></p><p>Any thoughts on this?<br></p><p>Lorenzo Racca<br>+39 345 9294756<br>lorenzo.racca at live.it<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160311/38ef52f1/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>SequenceType Binary Search Implementation</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>March 11, 2016 at 09:00:00am</p></header><div class="content"><p>On Fri, Mar 11, 2016 at 8:11 AM, Lorenzo Racca via swift-dev<br>&lt;swift-dev at swift.org&gt; wrote:<br>&gt; Now I don’t know whether this would be accepted, useful or just even right.<br>&gt; I don’t have the permission to pull commits to the rep, so I don’t even<br>&gt; really know how to make it an official proposal.<br></p><p>Hi Lorenzo,<br></p><p>The absence of binary searches is a known blank spot in the library,<br>and I&#39;m glad that you are interested in fixing this.<br></p><p>We have a bug that tracks this issue: https://bugs.swift.org/browse/SR-368<br></p><p>Since this is an API change, we need to follow the Swift evolution<br>process [1].  I would appreciate if you could lead the conversation!<br>The way to word the initial email would be to present the proposed API<br>(not the implementation), and doc comments that explain the semantics.<br></p><p>Some specific advice for designing this API:<br></p><p>- Please familiarize yourself with C++ binary_search, lower_bound,<br>upper_bound, and equal_range APIs.  I&#39;m not saying that these are the<br>best APIs for Swift, but these specific formulations have proven to be<br>useful in C++.<br></p><p>- Make sure you have overloads for &#39;Generator.Element : Comparable&#39;<br>case as well as unconstrained overloads, where the comparison<br>predicate is supplied as a function parameter.<br></p><p>- Think about returning an boolean flag, returning the element, and<br>returning the element&#39;s index.  Which is the most primitive one that<br>others can be built on top with?  Which ones do we need to make<br>commonly-written code read well without extra complexity?<br></p><p>[1] https://github.com/apple/swift-evolution/blob/master/process.md<br></p><p>Thank you for tackling this problem!<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c23a24dd9f358575e9764f1a535e2ce0?s=50"></div><header><strong>URLSession tests</strong> from <string>Mike Ferenduros</string> &lt;mike.ferenduros at gmail.com&gt;<p>September 17, 2016 at 12:00:00pm</p></header><div class="content"><p>Hello!<br>I was looking for a way to contribute, and I ran into a URLSession issue,<br>so I started fleshing out the test module for it:<br>https://github.com/mike-ferenduros/swift-corelibs-foundation/blob/more-urlsession-tests/TestFoundation/TestNSURLSession.swift<br></p><p>It doesn&#39;t cover all of the API yet, but it does trap a bunch of issues.<br>But it&#39;s my first time contributing to a large, public project so I&#39;m a bit<br>nervous about ploughing ahead with it... is there any chance someone could<br>take a quick look and let me know if I&#39;m on the right track, or need to<br>fundamentally change or scrap it?<br></p><p>Also, I&#39;m not sure about the etiquette of submitting failing tests (of<br>which there are quite a few :p )<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160917/10c78e81/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6761b86fcf674411c42ea5d32bbf6e5?s=50"></div><header><strong>URLSession tests</strong> from <string>Pushkar N Kulkarni</string> &lt;pushkar.nk at in.ibm.com&gt;<p>September 17, 2016 at 03:00:00pm</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160917/a2b917cf/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c23a24dd9f358575e9764f1a535e2ce0?s=50"></div><header><strong>URLSession tests</strong> from <string>Mike Ferenduros</string> &lt;mike.ferenduros at gmail.com&gt;<p>September 17, 2016 at 04:00:00pm</p></header><div class="content"><p>Ah yep, I was wondering about relying on external services... will take a<br>look.<br></p><p>SR 2675-2682 filed, will see if any of them are easy fixes (probably at<br>least a few are just curl options)<br></p><p>On Sat, 17 Sep 2016 at 18:05 Pushkar N Kulkarni &lt;pushkar.nk at in.ibm.com&gt;<br>wrote:<br></p><p>&gt; Hi Mike,<br>&gt;<br>&gt; The tests look great and exhaustive to me. I just wish to mention here<br>&gt; that we&#39;ve experienced hangs in CI tests while connecting to some external<br>&gt; URLs in the past (you can see a few tests commented out in the current<br>&gt; TestNSURLSession for that reason).  It was then recommended, by Tony, that<br>&gt; we have a loopback server to test URLSession<br>&gt; &lt;https://github.com/apple/swift-corelibs-foundation/pull/613&gt;. Having<br>&gt; said that, I can&#39;t be sure that the httpbin urls, that you use, will cause<br>&gt; the same issues :-)<br>&gt;<br>&gt; Also, it&#39;d be great if you could file JIRA reports/PRs for the failures<br>&gt; you see. Thanks!<br>&gt;<br>&gt; Pushkar N Kulkarni,<br>&gt; IBM Runtimes<br>&gt;<br>&gt; *Simplicity is prerequisite for reliability - Edsger W. Dijkstra*<br>&gt;<br>&gt;<br>&gt;<br>&gt; -----swift-corelibs-dev-bounces at swift.org wrote: -----<br>&gt; To: swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt;<br>&gt; From: Mike Ferenduros via swift-corelibs-dev<br>&gt; Sent by: swift-corelibs-dev-bounces at swift.org<br>&gt; Date: 09/17/2016 05:34PM<br>&gt; Subject: [swift-corelibs-dev] URLSession tests<br>&gt;<br>&gt;<br>&gt; Hello!<br>&gt; I was looking for a way to contribute, and I ran into a URLSession issue,<br>&gt; so I started fleshing out the test module for it:<br>&gt;<br>&gt; https://github.com/mike-ferenduros/swift-corelibs-foundation/blob/more-urlsession-tests/TestFoundation/TestNSURLSession.swift<br>&gt;<br>&gt; It doesn&#39;t cover all of the API yet, but it does trap a bunch of issues.<br>&gt; But it&#39;s my first time contributing to a large, public project so I&#39;m a bit<br>&gt; nervous about ploughing ahead with it... is there any chance someone could<br>&gt; take a quick look and let me know if I&#39;m on the right track, or need to<br>&gt; fundamentally change or scrap it?<br>&gt;<br>&gt; Also, I&#39;m not sure about the etiquette of submitting failing tests (of<br>&gt; which there are quite a few :p )<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160917/69e08317/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

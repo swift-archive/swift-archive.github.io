@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6fe87aed0d64cdbc46378bf7596a7553?s=50"></div><header><strong>@_specialize attribute</strong> from <string>Andrew Trick</string> &lt;atrick at apple.com&gt;<p>March 17, 2016 at 04:00:00pm</p></header><div class="content"><p>I&#39;d like to let people know that I&#39;m introducing an @_specialize(...)<br>function attribute. See https://github.com/apple/swift/pull/1725 &lt;https://github.com/apple/swift/pull/1725&gt;.<br>Feedback is welcome. Just keep in mind that for now this is only an<br>internal attribute. It is not yet a language change and has no impact<br>on API. The intention of this work is to provide an underlying capability<br>that we can build on in several ways (see below).<br></p><p>&lt;snip Generics.rst&gt;<br>An internal @_specialize function attribute allows devlopers to force<br>full specialization by listing concrete type names corresonding to the<br>function&#39;s generic signature. A function&#39;s generic signature is a<br>concatenation of its generic context and the function&#39;s own generic<br>type parameters.::<br></p><p>  struct S&lt;T&gt; {<br>    var x: T<br>    @_specialize(Int, Float)<br>    mutating func exchangeSecond&lt;U&gt;(u: U, _ t: T) -&gt; (U, T) {<br>      x = t<br>      return (u, x)<br>    }<br>  }<br></p><p>  // Substitutes: &lt;T, U&gt; with &lt;Int, Float&gt; producing:<br>  // S&lt;Int&gt;::exchangeSecond&lt;Float&gt;(u: Float, t: Int) -&gt; (Float, Int)<br></p><p>@_specialize currently acts as a hint to the optimizer, which<br>generates type checks and code to dispatch to the specialized routine<br>without affecting the signature of the generic function. The<br>intention is to support efforts at evaluating the performance of<br>specialized code. The performance impact is not guaranteed and is<br>likely to change with the optimizer. This attribute should only be<br>used in conjunction with rigorous performance analysis. Eventually,<br>a similar attribute could be defined in the language, allowing it to be<br>exposed as part of a function&#39;s API. That would allow direct dispatch<br>to specialized code without type checks, even across modules.<br>&lt;/snip Generics.rst&gt;<br></p><p>In the future, we can build on this work in several ways:<br>- cross module dispatch directly to specialized code<br>- dynamic dispatch directly to specialized code<br>- automated specialization based on broader hints<br>- partial specialization<br>- and so on…<br></p><p>Andy<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160317/3d3f5695/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

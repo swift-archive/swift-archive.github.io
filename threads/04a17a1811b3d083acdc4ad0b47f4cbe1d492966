@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e35f18d9e5584b48a7cf5550f905522f?s=50"></div><header><strong>[Review] SE-0018 Flexible Memberwise Initialization</strong> from <string>Federico Zanetello</string> &lt;zntfdr at gmail.com&gt;<p>January  8, 2016 at 07:00:00pm</p></header><div class="content"><p>&gt; What is your evaluation of the proposal?<br>Since the &quot;Proposed solution&quot; section is about the automatic model, I give<br>my +1.<br></p><p>In my opinion, the automatic model is a big step forward from the current<br>state already,<br>the opt-in model would introduce properties modifiers and/or attributes<br>that I don&#39;t feel<br>necessary.<br>In the lights of that, I would advise against most of the &quot;Future<br>enhancements&quot; section,<br>with the sole exception of the @default attribute (using the first bare<br>approach, not the<br>second one with an attribute argument: it&#39;s cleaner and it fixes the main<br>problem already).<br></p><p>​&gt;​ Is the problem being addressed significant enough to warrant a change<br>to Swift?<br>​&gt;​ Does this proposal fit well with the feel and direction of Swift?<br>​Yes to both, I was surprised when I found out that the default memberwise<br>initializer<br>in Swift was a very basic, struct-only thing: I was contemplating such a<br>proposal<br>myself, even though Matthew put much more thought and crafted something<br>deeper<br>than what I had in mind.<br></p><p>​&gt; If you have you used other languages or libraries with a similar<br>feature, how do you feel that this proposal compares to those?<br>Not applicable.<br></p><p>&gt; How much effort did you put into your review? A glance, a quick reading,<br>or an in-depth study?​<br>I did my homework: in-depth study of the official proposal and read every<br>single thread<br>about it.<br></p><p>This is my first time participating in a Swift Evolution and I&#39;m doing so<br>because I&#39;m really<br>interested in this implementation (as stated in a previous answer, I was<br>contemplating<br>the same proposal myself, unaware of the ongoing newsletter discussion).<br></p><p>-Federico Zanetello<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160108/04a12966/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

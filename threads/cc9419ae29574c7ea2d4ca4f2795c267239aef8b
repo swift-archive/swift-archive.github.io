@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/79d9ba388d6b6cf4ec7310cad9fa8c8a?s=50"></div><header><strong>Using locally built toolchain in Xcode</strong> from <string>Rob Allen</string> &lt;rob at akrabat.com&gt;<p>May  4, 2016 at 07:00:00am</p></header><div class="content"><p>Hi,<br></p><p>I&#39;ve used swift/utils/build-toolchain to create a toolchain from the tip of master. To use this in Xcode, I think it needs to be signed. How do I do this?<br></p><p><br>Regards,<br></p><p>Rob...<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Using locally built toolchain in Xcode</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>May  4, 2016 at 10:00:00am</p></header><div class="content"><p>You don&#39;t actually need to sign the toolchain; it just needs an Info.plist. Dmitri, Mishal, is there any reason the build-toolchain script doesn&#39;t provide one?<br></p><p>Jordan<br></p><p><br>&gt; On May 3, 2016, at 23:43, Rob Allen via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; I&#39;ve used swift/utils/build-toolchain to create a toolchain from the tip of master. To use this in Xcode, I think it needs to be signed. How do I do this?<br>&gt; <br>&gt; <br>&gt; Regards,<br>&gt; <br>&gt; Rob...<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Using locally built toolchain in Xcode</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>May  4, 2016 at 10:00:00am</p></header><div class="content"><p>The other thing needed is to put it somewhere Xcode will find it, either in the system Library or the user local Library Toolchains directory.<br></p><p>I personally do this by having a symlink from:<br>  ~/Library/Developer/Toolchains/swift-dev.xctoolchain<br>to a version I build up with Swift (with an Info.plist) inside of the Swift build directory.<br></p><p>This allows me to do<br>  TOOLCHAINS=swift-dev swift ...<br>for many of my workflows.<br></p><p> - Daniel<br></p><p>&gt; On May 4, 2016, at 10:22 AM, Jordan Rose via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; You don&#39;t actually need to sign the toolchain; it just needs an Info.plist. Dmitri, Mishal, is there any reason the build-toolchain script doesn&#39;t provide one?<br>&gt; <br>&gt; Jordan<br>&gt; <br>&gt; <br>&gt;&gt; On May 3, 2016, at 23:43, Rob Allen via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hi,<br>&gt;&gt; <br>&gt;&gt; I&#39;ve used swift/utils/build-toolchain to create a toolchain from the tip of master. To use this in Xcode, I think it needs to be signed. How do I do this?<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; Regards,<br>&gt;&gt; <br>&gt;&gt; Rob...<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-dev mailing list<br>&gt;&gt; swift-dev at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/79d9ba388d6b6cf4ec7310cad9fa8c8a?s=50"></div><header><strong>Using locally built toolchain in Xcode</strong> from <string>Rob Allen</string> &lt;rob at akrabat.com&gt;<p>May  4, 2016 at 07:00:00pm</p></header><div class="content"><p>Thanks.<br></p><p>Looking at my tar.gz file, it does have the Info.plist in there. <br></p><p>I&#39;ve copied a freshly untar&#39;d version into  Library/Developer/Toolchains and Xcode has recognised it. No idea what happened the first time - I probably did something wrong… <br></p><p>Regards,<br></p><p>Rob...<br></p><p><br>&gt; On 4 May 2016, at 18:22, Jordan Rose &lt;jordan_rose at apple.com&gt; wrote:<br>&gt; <br>&gt; You don&#39;t actually need to sign the toolchain; it just needs an Info.plist. Dmitri, Mishal, is there any reason the build-toolchain script doesn&#39;t provide one?<br>&gt; <br>&gt; Jordan<br>&gt; <br>&gt; <br>&gt;&gt; On May 3, 2016, at 23:43, Rob Allen via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hi,<br>&gt;&gt; <br>&gt;&gt; I&#39;ve used swift/utils/build-toolchain to create a toolchain from the tip of master. To use this in Xcode, I think it needs to be signed. How do I do this?<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; Regards,<br>&gt;&gt; <br>&gt;&gt; Rob...<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-dev mailing list<br>&gt;&gt; swift-dev at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt; <br></p><p>-- <br>Development thoughts at http://akrabat.com<br>Daily Jotter for Mac OS X at http://dailyjotter.com<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

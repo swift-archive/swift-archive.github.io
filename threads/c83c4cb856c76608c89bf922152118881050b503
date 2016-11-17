@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/51a7f56fa7f1156514571e8314b03bfa?s=50"></div><header><strong>How to view which tests are fail</strong> from <string>Sahil Wasan</string> &lt;sahilprofile at gmail.com&gt;<p>December  5, 2015 at 08:00:00pm</p></header><div class="content"><p>Hi Swift Team<br></p><p>I am using this utils/build-script -RT command to runt tests. My question<br>is<br>1) At the end test is failing(4 test) but I do not know which tests are<br>failing and what is reason.<br>2) Can I use Xcode to debug the swift code. Is it possible. I have created<br>project with<br>utils/build-script -X --skip-build -- --reconfigure<br></p><p>But I can not able to compile the code. I am getting compiler error while<br>running the code.<br>3)Is it possible to test the code with xcode.<br></p><p>Thanks<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151205/c83cb503/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dbc48a135881e122fea26cf27760d11a?s=50"></div><header><strong>How to view which tests are fail</strong> from <string>Mish Awadah</string> &lt;mawadah at apple.com&gt;<p>December  7, 2015 at 10:00:00am</p></header><div class="content"><p>&gt; On Dec 5, 2015, at 7:08 AM, Sahil Wasan &lt;sahilprofile at gmail.com&gt; wrote:<br>&gt; <br>&gt; Hi Swift Team<br>&gt; <br>&gt; I am using this utils/build-script -RT command to runt tests. My question is <br>&gt; 1) At the end test is failing(4 test) but I do not know which tests are failing and what is reason.<br></p><p>What’s the output at the end of the testing?<br></p><p>&gt; 2) Can I use Xcode to debug the swift code. Is it possible. I have created project with <br>&gt; utils/build-script -X --skip-build -- --reconfigure<br>&gt; <br>&gt; But I can not able to compile the code. I am getting compiler error while running the code. <br></p><p>Please show us your error.<br></p><p>&gt; 3)Is it possible to test the code with xcode.<br></p><p>If I am not mistaken, no it is not. The tests are lit-based and not XCTest.<br></p><p>Best,<br>Mish<br></p><p>&gt; <br>&gt; Thanks<br>&gt;  _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151207/f55ada07/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

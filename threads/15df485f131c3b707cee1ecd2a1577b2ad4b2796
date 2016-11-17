@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Passing an optional first argument to sequence(first:next:)</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>August 27, 2016 at 05:00:00am</p></header><div class="content"><p>&gt; &gt; On Aug 20, 2016, at 02:26, Tim Vermeulen&lt;tvermeulen at me.com(mailto:tvermeulen at me.com)&gt;wrote:<br>&gt; &gt; What you’re saying makes sense, and I might not have brought this up in the first place if `first.map { sequence(first: $0, next: next } ?? []` worked. The main annoyance is that the best solution (currently) seems to be to copy the source code and make a change.<br>&gt; &gt; <br>&gt; &gt; (cc-ing Jordan Rose because of a related swift-users thread) This might be a bit of a stretch, but can’t Swift upcast sequences to AnySequence implicitly, like is done with AnyHashable? That would make `first.map { sequence(first: $0, next: next } ?? []` instantly valid, I think. There’s also something to be said for consistency between type erasers. (I’m not necessarily talking about Swift 3)<br>&gt; Sorry to let this sit. I really would not want to implement this by upcasting to AnySequence. That would be tremendously inefficient.<br></p><p>Maybe I misunderstood, but when would that be inefficient? Most of all, implicit upcasting to AnySequence would make functions that return AnySequence cleaner. That’s unrelated to the sequence(first:next:) issue, but it certainly wouldn’t be any less efficient than explicit casting to AnySequence.<br></p><p>As for the sequence(first:next:) thing, implicit casting to AnySequence would allow us to write `first.map { sequence(first: $0, next: next) } ?? []` without having to wrap both operands in an AnySequence explicitly. That wouldn’t just help for this particular case, but in any situation where you want to iterate over an optional sequence - I usually see people “fix” that with `optionalSequence?.forEach {  }`, but I think most people would rather write `for element in optionalSequence ?? [] { }` instead. But maybe this is what you were referring to when you said it’d be very inefficient?<br></p><p>In any case, this topic isn’t really relevant in this time period, as it’s purely additive. As you pointed out, so is the `sequence(first:next:)` suggestion (mostly); would it be better if I brought this up again at a later time?<br></p><p>&gt; In general, AnyHashable is special because of dictionary literals, where the same thing would have to be specified over and over again. That’s not true here. (And we weren’t even going to do it for AnyHashable originally.)<br>&gt; <br>&gt; I’m mildly in favor of the very original form of this proposal,<br>&gt; <br>&gt; &gt; func sequence(first: T?, next: @escaping (T) -&gt;T?) -&gt;UnfoldFirstSequence&lt;T&gt;<br>&gt; It’s also very nearly an additive change; the only existing code that would change meaning is that IUOs would not cause traps. (And the contrived examples with almost no type information, where the user iscurrentlytrying to infer T = Optional&lt;X&gt;and return a sequence of Optional&lt;X&gt;.)<br>&gt; Jordan_______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

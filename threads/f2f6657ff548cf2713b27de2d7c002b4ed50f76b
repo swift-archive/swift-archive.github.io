@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e828f637e91f7d986b7a79574dc0c45a?s=50"></div><header><strong>Should be able to initialize list of lists with 2d static data without unexpected errors.</strong> from <string>Amir Michail</string> &lt;a.michail at me.com&gt;<p>December  6, 2015 at 04:00:00pm</p></header><div class="content"><p>It’s very irritating trying to initialize a list of lists with static data and unpredictably encountering expression too complex errors.<br></p><p>One could then try to incrementally initialize such a list of lists with append for each row say.<br></p><p>Such initialization with simple 2d static data should never result in an expression too complex error.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Should be able to initialize list of lists with 2d static data without unexpected errors.</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>December  6, 2015 at 02:00:00pm</p></header><div class="content"><p>&gt; On Dec 6, 2015, at 1:26 PM, Amir Michail via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; It’s very irritating trying to initialize a list of lists with static data and unpredictably encountering expression too complex errors.<br>&gt; <br>&gt; One could then try to incrementally initialize such a list of lists with append for each row say.<br>&gt; <br>&gt; Such initialization with simple 2d static data should never result in an expression too complex error.<br></p><p>&quot;Too complex” errors are not an evolution issue, they are an implementation issue.  Please feel free to submit PR’s to help improve the implementation!<br></p><p>-Chris<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

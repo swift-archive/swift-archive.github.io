@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>[Pitch] Removing the empty initialiser requirement from RangeReplaceableCollection</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>July 11, 2016 at 11:00:00pm</p></header><div class="content"><p>&gt; on Wed Jul 06 2016, Tim Vermeulen&lt;swift-evolution at swift.org&gt;wrote:<br>&gt; <br>&gt; &gt; This is a follow up from this swift-users thread: https://lists.swift.org/pipermail/swift-users/Week-of-Mon-20160704/002489.html<br>&gt; &gt; <br>&gt; &gt; As it stands, RangeReplaceableCollection requires an implementation<br>&gt; &gt; for init(), which is used in the default implementations of (as far as<br>&gt; &gt; I can tell) init(_:), init(repeating:count:) and<br>&gt; &gt; removeAll(keepingCapacity:). The latter of these methods should be<br>&gt; &gt; implementable with removeSubrange(_:) instead.<br>&gt; You can&#39;t implement `removeAll(keepingCapacity: false)` with<br>&gt; `removeSubrange(_:)`. How do you propose to provide the other default<br>&gt; implementations?<br></p><p>You’re right, I didn’t think that through properly. My first thought was a copy constructor for collections in general, but as you pointed out, this wouldn’t be efficient for this purpose. An “empty copy constructor” would be better, which could be either a static method, an instance method, a computed property or an initialiser. I’d probably opt for the computed property (it will always run in O(1) anyways, I think), but it doesn’t really matter.<br></p><p>&gt; &gt; I would like to propose to *remove* all three initialisers from this<br>&gt; &gt; protocol, because it makes it impossible for some collections to<br>&gt; &gt; conform to it that need extra data for its initialisation, but are<br>&gt; &gt; otherwise perfectly capable of having arbitrary subranges replaced by<br>&gt; &gt; elements from another collection.<br>&gt; I agree with the goal, but I&#39;d like to see an implementation before I<br>&gt; agree that it&#39;s acheivable.<br>&gt; <br>&gt; &gt; Those three initialisers could<br>&gt; &gt; either move to a new protocol or simply not be part of any protocol.<br>&gt; &gt; <br>&gt; &gt; <br>&gt; &gt; On a similar note, I’d like to have all initialisers of SetAlgebra removed as well, but that might need its own review.<br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-evolution mailing list<br>&gt; &gt; swift-evolution at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; --<br>&gt; Dave<br>&gt; <br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e828f637e91f7d986b7a79574dc0c45a?s=50"></div><header><strong>Proposal: Allow comparisons of arrays possibly containing nil</strong> from <string>Amir Michail</string> &lt;a.michail at me.com&gt;<p>January  1, 2016 at 12:00:00pm</p></header><div class="content"><p>Example:<br></p><p>[Int?]([1,2,nil]) == [Int?]([1,2,nil])<br></p><p>This currently results in: “binary operator &#39;==&#39; cannot be applied to two &#39;[Int?]&#39; operands&quot;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8083ad16248b8c031cc10d44f47aa442?s=50"></div><header><strong>Proposal: Allow comparisons of arrays possibly containing nil</strong> from <string>T.J. Usiyan</string> &lt;griotspeak at gmail.com&gt;<p>January  1, 2016 at 02:00:00pm</p></header><div class="content"><p>Does this work for now?<br></p><p>func ==&lt;T : Equatable&gt;(lhs:[T?], rhs: [T?]) -&gt; Bool {<br>    let zipped = Zip2Sequence(lhs, rhs)<br></p><p>    return zipped.reduce(true) { (old, tuple) in<br>        old &amp;&amp; (tuple.0 == tuple.1)<br>    }<br>}<br></p><p><br>On Fri, Jan 1, 2016 at 12:32 PM, Amir Michail via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Example:<br>&gt;<br>&gt; [Int?]([1,2,nil]) == [Int?]([1,2,nil])<br>&gt;<br>&gt; This currently results in: “binary operator &#39;==&#39; cannot be applied to two<br>&gt; &#39;[Int?]&#39; operands&quot;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160101/86fcce73/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

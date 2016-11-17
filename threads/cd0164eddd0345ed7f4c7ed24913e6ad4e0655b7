@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/094f3e16a9a1276cde39096860496ad8?s=50"></div><header><strong>Storing ObjC NSDictionary as Swift [NSObject:AnyObject] leaks memory</strong> from <string>Joshua Scott Emmons</string> &lt;skia at skia.net&gt;<p>January 21, 2016 at 03:00:00pm</p></header><div class="content"><p>Say you have something like the following (or just grab the attached project: https://dl.dropboxusercontent.com/u/364098/DictionaryLeak.zip)<br></p><p><br>//SwiftModel.swift<br>class SwiftModel : NSObject {<br>  let prop: [NSObject:AnyObject]<br>  init(dict: [NSObject:AnyObject]){<br>    prop = dict<br>  }<br>}<br></p><p>//MyViewController.m<br>- (void)viewDidLoad {<br>  [super viewDidLoad];<br></p><p>  NSDictionary *dict = @{@&quot;Thing&quot; : @&quot;Stuff&quot;}; //Leaks!<br>  SwiftModel *model = [[SwiftModel alloc] initWithDict:dict];<br>  [self setSwiftModel: model];<br>}<br></p><p>Running this in Instruments (Xcode 7.2 7C68) reports a leak:<br></p><p>Is this actually leaking? Or is this just Instruments loosing track of what&#39;s actually holding on to the NSDictionary once it&#39;s bridged to swift-world?<br></p><p>Or am I completely overlooking some important concepts somewhere along the line? :) <br></p><p>Cheers,<br>-jemmons<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160121/cd0155b7/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: Screen Shot 2016-01-21 at 3.27.47 PM.png<br>Type: image/png<br>Size: 60665 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160121/cd0155b7/attachment.png&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Storing ObjC NSDictionary as Swift [NSObject:AnyObject] leaks memory</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>January 27, 2016 at 07:00:00pm</p></header><div class="content"><p>Hi, jemmons. I managed to reproduce this in pure Swift code, and then changed it so that the Swift dictionary got released. In the latter version, no leaks were reported, so I think it&#39;s just a problem with our tools. (This isn&#39;t too surprising; the internals of a Swift Dictionary use some of the known-zero bits in the storage pointer to store flags, like &quot;this dictionary came from Cocoa&quot;.)<br></p><p>I&#39;ne filed a bug report with the Instruments team. Thanks for bringing this up!<br></p><p>Jordan<br></p><p><br>&gt; On Jan 21, 2016, at 13:36 , Joshua Scott Emmons via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Say you have something like the following (or just grab the attached project: https://dl.dropboxusercontent.com/u/364098/DictionaryLeak.zip &lt;https://dl.dropboxusercontent.com/u/364098/DictionaryLeak.zip&gt;)<br>&gt; <br>&gt; <br>&gt; //SwiftModel.swift<br>&gt; class SwiftModel : NSObject {<br>&gt;   let prop: [NSObject:AnyObject]<br>&gt;   init(dict: [NSObject:AnyObject]){<br>&gt;     prop = dict<br>&gt;   }<br>&gt; }<br>&gt; <br>&gt; //MyViewController.m<br>&gt; - (void)viewDidLoad {<br>&gt;   [super viewDidLoad];<br>&gt; <br>&gt;   NSDictionary *dict = @{@&quot;Thing&quot; : @&quot;Stuff&quot;}; //Leaks!<br>&gt;   SwiftModel *model = [[SwiftModel alloc] initWithDict:dict];<br>&gt;   [self setSwiftModel: model];<br>&gt; }<br>&gt; <br>&gt; Running this in Instruments (Xcode 7.2 7C68) reports a leak:<br>&gt; &lt;Screen Shot 2016-01-21 at 3.27.47 PM.png&gt;<br>&gt; Is this actually leaking? Or is this just Instruments loosing track of what&#39;s actually holding on to the NSDictionary once it&#39;s bridged to swift-world?<br>&gt; <br>&gt; Or am I completely overlooking some important concepts somewhere along the line? :) <br>&gt; <br>&gt; Cheers,<br>&gt; -jemmons<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160127/aedcdf3a/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

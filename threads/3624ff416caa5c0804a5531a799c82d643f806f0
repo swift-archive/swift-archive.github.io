@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/91c88f3ed8bc9a8164f281098c03059b?s=50"></div><header><strong>Swift now functional (on FreeBSD)</strong> from <string>Davide Italiano</string> &lt;dccitaliano at gmail.com&gt;<p>January 20, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi,<br>this is a quick heads-up for all the people interested in running<br>swift on FreeBSD.<br>I committed several fixes in the swift repo, but there was a bug in<br>FreeBSD runtime linker (rtld) which prevented swift (and the repl) to<br>work correctly in all but very basic scenarios.<br>After some discussion, and review, the rtld patch finally was<br>committed to FreeBSD-CURRENT.<br>https://svnweb.freebsd.org/base?view=revision&amp;revision=294373<br></p><p>The only version supported for now is FreeBSD 11-CURRENT. The next<br>FreeBSD snapshot (which will come out next week) will contain the fix.<br>There are plans to merge back this commit to the stable branch at some<br>point, but that won&#39;t happen for FreeBSD 10.3, sorry.<br></p><p>This means that swift is somewhat usable for FreeBSD. There are a<br>*lot* of failures in the test suite but I guess it&#39;s about time to set<br>up a buildbot to catch at least regression failures.<br></p><p>Any feedback is greatly appreciated.<br></p><p>Thanks,<br></p><p>--<br>Davide<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Swift now functional (on FreeBSD)</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>January 20, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Jan 20, 2016, at 12:06 PM, Davide Italiano via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; this is a quick heads-up for all the people interested in running<br>&gt; swift on FreeBSD.<br>&gt; I committed several fixes in the swift repo, but there was a bug in<br>&gt; FreeBSD runtime linker (rtld) which prevented swift (and the repl) to<br>&gt; work correctly in all but very basic scenarios.<br>&gt; After some discussion, and review, the rtld patch finally was<br>&gt; committed to FreeBSD-CURRENT.<br>&gt; https://svnweb.freebsd.org/base?view=revision&amp;revision=294373<br>&gt; <br>&gt; The only version supported for now is FreeBSD 11-CURRENT. The next<br>&gt; FreeBSD snapshot (which will come out next week) will contain the fix.<br>&gt; There are plans to merge back this commit to the stable branch at some<br>&gt; point, but that won&#39;t happen for FreeBSD 10.3, sorry.<br>&gt; <br>&gt; This means that swift is somewhat usable for FreeBSD. There are a<br>&gt; *lot* of failures in the test suite but I guess it&#39;s about time to set<br>&gt; up a buildbot to catch at least regression failures.<br>&gt; <br>&gt; Any feedback is greatly appreciated.<br></p><p>Great work, congrats!  It is fantastic to see this progress,<br></p><p>-Chris<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

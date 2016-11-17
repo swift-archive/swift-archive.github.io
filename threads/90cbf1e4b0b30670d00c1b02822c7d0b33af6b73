@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ce8dede6e43b84aded70f6cdd9449e71?s=50"></div><header><strong>Swift request list</strong> from <string>Vladimir Goncharov</string> &lt;vladgon at gmail.com&gt;<p>June  4, 2016 at 02:00:00pm</p></header><div class="content"><p>Dear swift team I would like to propose the following features to the Swift which could be easily added IMHO<br>Reflection support get/set proper by name, method invocation etc.<br>Option to get property name from variable could be useful for parsing JSON etc. e.g. self.lastName.dynamicPropertyName should be === “moduleName.Customer.lastName” as well as similar for methods<br>Option to mark the entire Class or section as dynamic vs single property/method <br>Proxy support for simple AOP at least method interception, Objective C has it so if Swift class is marked as Dynamic then it could support it as well<br>Annotations support @Service(...), @XYZ(...) with ability to use runtime reflection<br>Similar to Scala or swift Struct support for property declaration via init in classes e.g. init(firstName:String, lastName:String) should implicitly declare the above properties<br></p><p>This could be some overhead for iOs deployment if at all but since Swift is an open source now and could be potentially (most likely) used as the server side language those feature could be very helpful to support IOC, JSON parsing and serialization, logging, mocking etc..<br></p><p>Regards,<br>--Vladimir<br></p><p><br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160604/90cb6b73/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

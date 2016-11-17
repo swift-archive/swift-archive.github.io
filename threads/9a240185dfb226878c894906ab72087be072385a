@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/46439321e8b5b5ba0944eef50e18c3a3?s=50"></div><header><strong>clang builtins from Swift?</strong> from <string>Jean-Denis Muys</string> &lt;jdmuys at gmail.com&gt;<p>October  3, 2016 at 03:00:00am</p></header><div class="content"><p>Hi,<br></p><p>Xcode seems to think that [some] builtins can be used from Swift. It<br>autocompletes popcount for example, and command-clicking the function opens<br>a bona fide interface file, with the following declaration (among others):<br></p><p>public func __builtin_popcount(_: UInt32) -&gt; Int32<br></p><p>However, when I try to compile code that uses that function, I get an<br>unresolved identifier compiler error.<br></p><p>I guess I need to import some module, but which one?<br></p><p>Generally speaking, how to find in which module some symbol is defined?<br></p><p>Thanks,<br></p><p>Jean-Denis<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161003/9a24385a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>clang builtins from Swift?</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>October  3, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Oct 2, 2016, at 6:24 PM, Jean-Denis Muys via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; Xcode seems to think that [some] builtins can be used from Swift. It autocompletes popcount for example, and command-clicking the function opens a bona fide interface file, with the following declaration (among others):<br>&gt; <br>&gt; public func __builtin_popcount(_: UInt32) -&gt; Int32<br>&gt; <br>&gt; However, when I try to compile code that uses that function, I get an unresolved identifier compiler error.<br>&gt; <br>&gt; I guess I need to import some module, but which one?<br></p><p>Huh, that is odd.  It should not be made available to Swift code like that.  Please file a jira or radar ticket, thank you!<br></p><p>-Chris<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161003/934738f5/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9140f988b44a15b303192ba932355dcc?s=50"></div><header><strong>Query on mapping kCFNumberCharType to kCFNumberSInt8Type</strong> from <string>Gayathri Bhaskaran</string> &lt;gabhaska at in.ibm.com&gt;<p>October 27, 2016 at 03:00:00pm</p></header><div class="content"><p>Hello<br></p><p>As per<br>https://github.com/apple/swift-corelibs-foundation/blob/master/CoreFoundation/NumberDate.subproj/CFNumber.c#L432<br></p><p>It is observed that kCFNumberCharType  is mapped to kCFNumberSInt8Type. Is<br>there any reason why kCFNumberCharType  is mapped to kCFNumberSInt8Type ?<br></p><p>Does it make sense to map kCFNumberCharType to kCFNumberCharType itself ?<br>Any inputs on this is appreciated.<br></p><p><br>Regards<br>Gayathri Bhaskaran<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20161027/6a0b0eb6/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>Query on mapping kCFNumberCharType to kCFNumberSInt8Type</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>October 27, 2016 at 09:00:00am</p></header><div class="content"><p>Hi Gayathri,<br></p><p>The first entry in that table is the “canonical fixed width type”. We want char to be 8 bits, so we use the SInt8 there. If you look at the places where we use the canonical type it expects it to be one of a more limited set of values.<br></p><p>- Tony<br></p><p>&gt; On Oct 27, 2016, at 3:26 AM, Gayathri Bhaskaran via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello<br>&gt; <br>&gt; As per https://github.com/apple/swift-corelibs-foundation/blob/master/CoreFoundation/NumberDate.subproj/CFNumber.c#L432 &lt;https://github.com/apple/swift-corelibs-foundation/blob/master/CoreFoundation/NumberDate.subproj/CFNumber.c#L432&gt;<br>&gt; <br>&gt; It is observed that kCFNumberCharType is mapped to kCFNumberSInt8Type. Is there any reason why kCFNumberCharType is mapped to kCFNumberSInt8Type ?<br>&gt; <br>&gt; Does it make sense to map kCFNumberCharType to kCFNumberCharType itself ? Any inputs on this is appreciated. <br>&gt; <br>&gt; <br>&gt; Regards<br>&gt; Gayathri Bhaskaran<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20161027/c3a3254e/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

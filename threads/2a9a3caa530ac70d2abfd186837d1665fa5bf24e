@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Draft][Proposal] Formalized Ordering</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July 25, 2016 at 12:00:00am</p></header><div class="content"><p>on Sun Jul 24 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jul 24, 2016, at 9:06 PM, Pyry Jahkola via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Another possible choice would be to return .descending whenever<br>&gt;&gt; either of the comparands were NaN, while also making &lt;, &gt;, &lt;=, and<br>&gt;&gt; &gt;= return false in such cases. Then we wouldn&#39;t see<br>&gt;&gt; preconditionFailures but instead produced bogus results from sort,<br>&gt;&gt; partition etc. That&#39;s the tradeoff Haskell has chosen for its<br>&gt;&gt; `compare` function over Double, FWIW.<br>&gt;<br>&gt; That&#39;s essentially what we currently have. I think we&#39;d like to fix<br>&gt; it.<br>&gt;<br>&gt; Honestly, I think the most natural result is that calls like `sort()`<br>&gt; and `max()` ignore NaNs—for instance, an Array&lt;Double&gt; might have<br>&gt; fewer elements if you sort it. <br></p><p>That would be deeply surprising and would create a programming model<br>that was almost impossible to work with.  I could not support a result<br>like that.<br></p><p>&gt; That seems to be the behavior implied by<br>&gt; `FloatingPoint.maximum/minimum(_:_:)`. <br></p><p>That elements are dropped from a collection when it is sorted?  How do<br>you figure?<br></p><p>&gt; However, it is still possible to access and use the total ordering if<br>&gt; you need it.<br>&gt;<br>&gt; This sort of suggests we should have two levels of comparisons:<br>&gt;<br>&gt; * `===` and `&lt;===&gt;` are total.<br>&gt;<br>&gt; * `==` and `&lt;=&gt;` may not work on, or may conflate, some values.<br></p><p>This has really gone off the rails, guys.  There are no generic<br>algorithms that rely on an under-all-circumstances-substitutability<br>property, so we shouldn&#39;t encode it into a protocol.<br></p><p>Also, think about what “under all circumstances” really means: it means<br>that there are no implementation details, because it is possible for<br>code with access rights to inspect them.  It means that no class<br>instances can ever be substitutable for other instances, because of<br>ObjectIdentity.  It becomes absurd really quickly.<br></p><p>&gt; How to actually accomplish this is a more difficult question. The<br>&gt; simplest solution might be something like:<br>&gt;<br>&gt; 	protocol Equatable {<br>&gt; 		static func === (…) -&gt; Bool<br>&gt; 		static func == (…) -&gt; Bool<br>&gt; 	}<br>&gt; 	extension Equatable {<br>&gt; 		static func == (…) -&gt; Bool {<br>&gt; 			return lhs === rhs<br>&gt; 		}<br>&gt; 	}<br>&gt;<br>&gt; 	protocol Comparable: Equatable {<br>&gt; 		/// Total ordering which works on and distinguishes<br>&gt; between all values of the type.<br>&gt; 		static func &lt;===&gt; (…) -&gt; Ordering<br>&gt;<br>&gt; 		/// &quot;Friendly&quot; ordering which may conflate or not work<br>&gt; on some values of the type.<br>&gt; 		/// <br>&gt; 		/// - Precondition: Neither `lhs` nor `rhs` returns<br>&gt; `true` from `isAberration`.<br>&gt; 		static func &lt;=&gt; (…) -&gt; Ordering<br>&gt;<br>&gt; 		/// If true, this instance should be ignored when<br>&gt; using the &lt;=&gt; operator.<br>&gt; 		var isAberration: Bool { get }<br>&gt; 	}<br>&gt; 	extension Comparable {<br>&gt; 		static func === (…) -&gt; Bool {<br>&gt; 			return (lhs &lt;===&gt; rhs) == .same<br>&gt; 		}<br>&gt; 		static func == (…) -&gt; Bool {<br>&gt; 			return (lhs &lt;=&gt; rhs) == .same<br>&gt; 		}<br>&gt; 		static func &lt;=&gt; (…) -&gt; Ordering {<br>&gt; 			return lhs &lt;===&gt; rhs<br>&gt; 		}<br>&gt; 		var isAberration: Bool {<br>&gt; 			return true<br>&gt; 		}<br>&gt; 	}<br>&gt;<br>&gt; However, this means that sorting requires two functions, not one (or<br>&gt; that, when using a custom sorting function, you must separately<br>&gt; pre-filter the aberrations from your data set). An alternative would<br>&gt; be to introduce a PartialOrdering type:<br>&gt;<br>&gt; 	enum PartialOrdering {<br>&gt; 		case ordered (Ordering)<br>&gt; 		case leftUnordered<br>&gt; 		case bothUnordered<br>&gt; 		case rightUnordered<br>&gt; 	}<br>&gt; 	// As above, except...<br>&gt; 	protocol Comparable: Equatable {<br>&gt; 		...<br>&gt;<br>&gt; 		/// &quot;Friendly&quot; ordering which may not work on some<br>&gt; values of the type.<br>&gt; 		/// <br>&gt; 		/// - Precondition: Neither `lhs` nor `rhs` returns<br>&gt; `true` from `isAberration`.<br>&gt; 		static func &lt;=&gt; (…) -&gt; PartialOrdering<br>&gt; 	}<br>&gt;<br>&gt; This wouldn&#39;t necessarily handle the `-0.0 == +0.0` case well,<br>&gt; though. That *could* be handled with extra cases meaning &quot;equal but<br>&gt; ordered&quot;, but this is looking messier and messier.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

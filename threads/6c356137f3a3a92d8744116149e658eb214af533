@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/503220368e284e974ffb41f5a9ff36ac?s=50"></div><header><strong>Build swift from the source</strong> from <string>inbox only</string> &lt;inboxonly4 at gmail.com&gt;<p>December  7, 2015 at 09:00:00pm</p></header><div class="content"><p>I have a 2 questions:<br>1. How do I build swift from the source ?<br>2. How do I do the path thingie so I can run executable from the terminal<br>using just &quot;swift&quot; ?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/6c35f533/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dbc48a135881e122fea26cf27760d11a?s=50"></div><header><strong>Build swift from the source</strong> from <string>Mish Awadah</string> &lt;mawadah at apple.com&gt;<p>December  7, 2015 at 11:00:00am</p></header><div class="content"><p>&gt; On Dec 7, 2015, at 11:26 AM, inbox only via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I have a 2 questions:<br>&gt; 1. How do I build swift from the source ?<br></p><p>The answer to this is in the README (https://github.com/apple/swift)<br></p><p>&gt; 2. How do I do the path thingie so I can run executable from the terminal using just &quot;swift” ?<br></p><p>The answer to this is in the Download guide (https://swift.org/download/#linux)<br></p><p>specifically:<br></p><p>Add the Swift toolchain to your path as follows:<br></p><p>$ export PATH=/path/to/usr/bin:&quot;${PATH}&quot;<br>You can now execute the swift command to run the REPL or build Swift projects.<br></p><p>- mish<br></p><p>&gt;  _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/9e49e70b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/503220368e284e974ffb41f5a9ff36ac?s=50"></div><header><strong>Build swift from the source</strong> from <string>inbox only</string> &lt;inboxonly4 at gmail.com&gt;<p>December  7, 2015 at 09:00:00pm</p></header><div class="content"><p>1.I&#39;ve build swift couple of time and I&#39;ve thought that I did it wrong<br>because I couldn&#39;t find the executables.<br>2.Know I&#39;ve just understanded how dumb can I be.I&#39;ve run that command but<br>I&#39;ve never thought that I need to change it.I think someone should explain<br>that for dummies like me.<br>Couple of facepalms :[/<br>Thank you.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/f6db5323/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

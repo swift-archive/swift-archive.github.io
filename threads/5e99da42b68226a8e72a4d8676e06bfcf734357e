@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Question] Types of functions</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>October  5, 2016 at 06:00:00pm</p></header><div class="content"><p>// Swift 2.2print([Int].append.dynamicType)  //=&gt; inout Array&lt;Int&gt; -&gt;<br>Int -&gt; ()print(print.dynamicType)  //=&gt; (Array&lt;protocol&lt;&gt;&gt;, String,<br>String) -&gt; ()<br>// Swift 3print(type(of: [Int].append))  //=&gt; (inout Array&lt;Int&gt;) -&gt;<br>(Int) -&gt; ()print(type(of: print))  //=&gt; ((Array&lt;Any&gt;, String, String))<br>-&gt; ()<br></p><p>Question #1: Methods are still curried. If I’m not mistaken, there was an<br>accepted proposal that uncurries methods. Is it going to be implemented for<br>Swift 4 Stage 1?<br></p><p>Question #2: Why nested tuple in type of print? Is it just a formatter bug,<br>or… do functions still take tuples under the hood? If so, then perhaps,<br>implementation needs to be modified to actually use new model, and not just<br>make it look like it does.<br>​<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161005/5e99357e/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

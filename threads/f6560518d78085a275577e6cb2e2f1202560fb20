@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7f7e9955dea9aa3a2b30db8e2b5c6f81?s=50"></div><header><strong>[Proposal] Property behaviors</strong> from <string>Berik Visschers</string> &lt;berik at visschers.nu&gt;<p>December 18, 2015 at 01:00:00am</p></header><div class="content"><p>Property behaviors would allow for much more then two-phase init and flexibility on lazy. Libraries (standard or custom) would gain declarative ways of providing deep integration in other types; And, although that can be really cool, it also worries me. I&#39;ll exaggerate to make a point:<br></p><p>person.name = &quot;Berik&quot; // animates a UILabel update, updates a database record, sends an HTTP PUT, and, oh right; it does not update the name property. <br></p><p>This kind of side effects are possible with dynamic setters already, but property behaviors allow them to become more common. The fact that swift code generally has few side affects is a great feature. I&#39;m basically asking for careful consideration. <br></p><p>Allowing &quot;let&quot; properties to be dynamic seems counter intuitive to me. On the one hand, using &quot;var&quot; for a two-phase initialized constant property is ugly, but allowing &quot;let&quot; variables to change over time seems too much of a sacrifice of consistency.  <br></p><p>Berik<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>[Proposal] Property behaviors</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>December 21, 2015 at 05:00:00pm</p></header><div class="content"><p>I think the ship has sailed on &quot;Swift code generally has few side effects&quot;. Computed properties already imply there may be arbitrary computation behind property access. And if you mean &quot;side effects&quot; in the mutation / IO sense, I don&#39;t think this is any worse than what we already have. Swift does not pretend to be a pure &lt;https://en.wikipedia.org/wiki/Purely_functional&gt; language.<br></p><p>As to &#39;let&#39; specifically, this actually has semantic effects: a property marked as &#39;let&#39; will never change its value over its lifetime, enabling certain optimizations. On the other hand, as someone else pointed out on another thread, if the behavior for a &#39;let&#39; property required mutation (say, for non-boxed lazy initialization), you&#39;d be in trouble, since you can&#39;t modify the containing value.<br></p><p>Jordan<br></p><p>&gt; On Dec 17, 2015, at 16:46 , Berik Visschers via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; Property behaviors would allow for much more then two-phase init and flexibility on lazy. Libraries (standard or custom) would gain declarative ways of providing deep integration in other types; And, although that can be really cool, it also worries me. I&#39;ll exaggerate to make a point:<br>&gt; <br>&gt; person.name = &quot;Berik&quot; // animates a UILabel update, updates a database record, sends an HTTP PUT, and, oh right; it does not update the name property. <br>&gt; <br>&gt; This kind of side effects are possible with dynamic setters already, but property behaviors allow them to become more common. The fact that swift code generally has few side affects is a great feature. I&#39;m basically asking for careful consideration. <br>&gt; <br>&gt; Allowing &quot;let&quot; properties to be dynamic seems counter intuitive to me. On the one hand, using &quot;var&quot; for a two-phase initialized constant property is ugly, but allowing &quot;let&quot; variables to change over time seems too much of a sacrifice of consistency.  <br>&gt; <br>&gt; Berik<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151221/5a2ac92d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

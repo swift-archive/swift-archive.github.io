@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dbefca1948defb75c917225e62d321a5?s=50"></div><header><strong>Feature proposal: Range operator with step</strong> from <string>Hans Huck</string> &lt;gutgedacht at gmx.de&gt;<p>June  6, 2016 at 06:00:00pm</p></header><div class="content"><p>Thorsten Seitz via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; <br>&gt; &gt; Am 03.05.2016 um 13:42 schrieb Hans Huck via swift-evolution<br>&lt;swift-evolution &lt;at&gt; swift.org&gt;:<br>&gt; &gt; <br>&gt; &gt; Thorsten Seitz via swift-evolution &lt;swift-evolution &lt;at&gt; ...&gt; writes:<br>&gt; &gt;&gt; <br>&gt; &gt;&gt; -1<br>&gt; &gt;&gt; <br>&gt; &gt;&gt; I don&#39;t see the need for special syntax where a method can be easily used<br>&gt; &gt; and is more general.<br>&gt; &gt;&gt; <br>&gt; &gt;&gt; -Thorsten <br>&gt; &gt;&gt; <br>&gt; &gt; <br>&gt; &gt; That, dear Thorsten, is a non-argument. Why? Let&#39;s see, how about &quot;I don&#39;t<br>&gt; &gt; see the need for a For-loop where a While-loop can be easily used and is<br>&gt; &gt; more general.“<br>&gt; <br>&gt; I meant „more general“ in the sense of allowing reuse (of these methods)<br>in other contexts and of<br>&gt; allowing more powerful abstractions (in this case expressed by simple<br>methods on sequences) to be used easily.<br>&gt;<br>Yup. And that&#39;s exactly what a While-loop does in comparison to a classic<br>For-loop: it allows reuse in other and more general contexts, because it&#39;s a<br>superset in terms of functionality. So do we get rid of the latter? Of<br>course not, because iterating up and down is used so abundantly that it&#39;s<br>well worth a special case syntax.<br></p><p>And the special case of a &quot;step&quot; syntax is justified on the same grounds as<br>implementing a For-loop as a special case of a While-loop: you technically<br>don&#39;t need it, but it saves you a significant amount of redundant typing and<br>cognitive load.<br></p><p><br>&gt; For the same reason I would not rate Swift’s for-loop as more general than<br>Scala’s for-loop which is<br>&gt; more akin to Haskell’s monadic do-notation. More basic or more low level,<br>yes, but not more general.<br>&gt; <br>&gt; -Thorsten<br>&gt;<br>What may that possibly have got to do with the question at hand? Nobody<br>wants a &quot;more general&quot; For-loop in Swift, quite the opposite in fact: we&#39;ve<br>just removed (due to it being a fully-fledged While-loop instead of just a<br>subset) the highly general C-style For-loop from the language.<br></p><p>You can have and keep your &quot;powerful abstraction&quot; in the form of &quot;for<br>(0..&lt;10).striding(by:2)&quot;; all we ask for is to also provide &quot;for i in 0..&lt;10<br>step 2&quot; and map it to the former internally.<br></p><p>The fashionable propensity towards smothering even the most basic and<br>iterative tasks with OOP boilerplate is exceedingly annoying. Let&#39;s keep<br>simple things simple, shall we?<br></p><p>-- Hans<br></p><p> <br>&gt; &gt; <br>&gt; &gt; The &quot;special syntax&quot; summarized below by Vladimir is absolutely justified,<br>&gt; &gt; because<br>&gt; &gt; <br>&gt; &gt; a) Zipf&#39;s Law and<br>&gt; <br>&gt; &gt; b) forcing people to use convoluted OOP notation for basic, iterative tasks<br>&gt; &gt; is simply offensive.<br>&gt; <br>&gt; &gt; <br>&gt; &gt; -- Hans<br>&gt; &gt; <br>&gt; &gt; <br>&gt; &gt;&gt;&gt; Am 18.04.2016 um 17:28 schrieb Vladimir.S via swift-evolution<br>&gt; &gt; &lt;swift-evolution &lt;at&gt; swift.org&gt;:<br>&gt; &gt;&gt;&gt; <br>&gt; &gt;&gt;&gt; On 15.04.2016 3:57, Hans Huck via swift-evolution wrote:<br>&gt; &gt;&gt;&gt;&gt; Anyway, why not just make it .step() then, like in Ruby?<br>&gt; &gt;&gt;&gt;&gt; <br>&gt; &gt;&gt;&gt;&gt; Instead of a &quot;by&quot; keyword, I&#39;d be happy with syntactic sugar in the<br>&gt; &gt; form of<br>&gt; &gt;&gt;&gt;&gt; <br>&gt; &gt;&gt;&gt;&gt; for i in p1..&lt;p2 step x<br>&gt; &gt;&gt;&gt; <br>&gt; &gt;&gt;&gt; As for &#39;step&#39; word: It seems like for now IMO this is the best<br>&gt; &gt; suggestion : very explicit, anyone knows what<br>&gt; &gt;&gt; &quot;step&quot; means especially in context of loop, clear that &quot;step&quot; belongs to<br>&gt; &gt; for-in construction(not to<br>&gt; &gt;&gt; range itself).<br>&gt; &gt;&gt;&gt; <br>&gt; &gt;&gt;&gt; for i in 0..&lt;10 step 2 {<br>&gt; &gt;&gt;&gt; }<br>&gt; &gt;&gt;&gt; <br>&gt; &gt;&gt;&gt; for i in 0..&lt;10 step -2 {<br>&gt; &gt;&gt;&gt; }<br>&gt; &gt;&gt;&gt; <br>&gt; &gt;&gt;&gt; for i in 0.1..&lt;10.5 step 0.5 {<br>&gt; &gt;&gt;&gt; }<br>&gt; &gt;&gt;&gt; <br>&gt; &gt;&gt;&gt; all are mapped to needed ranges/intervals under the hood<br>&gt; &gt;&gt;&gt; Do you want some custom Range-specific methods to provide steps for loop<br>&gt; &gt; - no problems, use what you need.<br>&gt; &gt;&gt; But don&#39;t force any of us to use (0..&lt;10).striding(by:2) for myriads of<br>&gt; &gt; simple loops in our code.<br>&gt; &gt;&gt;&gt; <br>&gt; &gt;&gt;&gt; I want to see such constructions in our Swift. Who is with me ? :)<br>&gt; &gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

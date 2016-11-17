@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Returned for revision] SE-0077: Improved operator declarations</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 28, 2016 at 11:00:00am</p></header><div class="content"><p>on Thu Jun 23 2016, Xiaodi Wu &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Wed, Jun 22, 2016 at 10:24 PM, Joe Groff via swift-evolution &lt;<br>&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt; Proposal link:<br>&gt;&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0077-operator-precedence.md<br>&gt;&gt;<br>&gt;&gt; Hello Swift Community,<br>&gt;&gt;<br>&gt;&gt; The review of SE-0077: &quot;Improved operator declarations&quot; ran from May<br>&gt;&gt; 17...23. On June 22, 2016, the core team decided to *return* the first<br>&gt;&gt; version of this proposal for revision. The core design proposed is a clear<br>&gt;&gt; win over the Swift 2 design, but the core team feels that revisions are<br>&gt;&gt; necessary for usability and consistency with the rest of the language:<br>&gt;&gt;<br>&gt;&gt; - The proposed associativity(left) and precedence(&lt;) syntax for<br>&gt;&gt; precedence group attributes doesn’t have a precedent elsewhere in Swift.<br>&gt;&gt; Furthermore, it isn’t clear which relationship &lt; and &gt; correspond to in<br>&gt;&gt; the precedence syntax. The core team feels that it’s more in the character<br>&gt;&gt; of Swift to use colon-separated “key-value” syntax, with associativity,<br>&gt;&gt; strongerThan, and weakerThan keyword labels:<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; precedencegroup Foo {<br>&gt;&gt;<br>&gt;&gt;   associativity: left<br>&gt;&gt;<br>&gt;&gt;   strongerThan: Bar<br>&gt;&gt;<br>&gt;&gt;   weakerThan: Bas<br>&gt;&gt;<br>&gt;&gt; }<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; -If “stronger” and “weaker” relationships are both allowed, that would<br>&gt;&gt; enable different code to express precedence relationships in different,<br>&gt;&gt; potentially confusing ways. To promote consistency and clarity, the core<br>&gt;&gt; team recommends the following restriction: Relationships between precedence<br>&gt;&gt; groups defined within the same module must be expressed exclusively in<br>&gt;&gt; terms of strongerThan. weakerThan can only be used to extend<br>&gt;&gt; the precedence graph relative to another module’s groups, subject to the<br>&gt;&gt; transitivity constraints already described in the proposal. This enforces a<br>&gt;&gt; consistent style internally within modules defining operators.<br>&gt;&gt;<br>&gt;&gt;<br>&gt; This definitely looks cleaner, but the terminology &quot;stronger&quot; and &quot;weaker&quot;<br>&gt; is pretty non-standard. Typically, precedence is said to be above or below<br>&gt; (equivalently, over or under, higher or lower) or, alternatively, before or<br>&gt; after. <br></p><p>Although I was the one who suggested “stronger/weaker”, on reflection I<br>think “higher/lower” are the most standard terms here.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

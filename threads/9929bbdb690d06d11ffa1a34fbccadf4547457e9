@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d57a57d8807ebc70e24b46f6d9e3a36?s=50"></div><header><strong>A place where community meets: Swift news aggregator proposal</strong> from <string>Dmitri Pavlutin</string> &lt;dpavlutin at gmail.com&gt;<p>November 14, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi Swift enthusiasts!<br></p><p>My name is Dmitri Pavlutin. I&#39;m a Swift enthusiast too!<br></p><p>I blog about Swift and JavaScript languages at https://rainsoft.io.<br></p><p>When I publish articles about Swift, one drawback (compared to<br>JavaScript situation) is the limited number of places where I can<br>share new articles. Such situation negatively affects the propagation<br>of new content about Swift.<br></p><p>In case of JavaScript, I have a big number of sites where to share. I<br>can submit to http://www.echojs.com/, https://jslive.com/,<br>http://javascriptkicks.com/ and https://www.javascript.com/news.<br>These sites bring a lot of benefits for bloggers (easier to gain<br>traffic), readers (much easier to discover valuable content) and as<br>result the popularity of JavaScript language itself.<br>echojs.com actually generates traffic to my blog comparable to twitter.com.<br></p><p>Swift should implement the same efficient strategy.<br>In my view, an aggregator (for Swift content only) brings the<br>following benefits:<br>- Easier for developers to find quality information about the language:<br>   * Newest articles, tutorials, books publishing, etc;<br>   * Language evolution announcements: new versions, hot proposals, etc;<br>   * Swift community news: conferences, meetups;<br>   * Promote the high-rated posts to top, by implement a voting system<br>(the way http://echojs.com does)<br>- Easier for bloggers to share their content and reach wider audience;<br>as result it stimulates to write more content about Swift;<br>Beneficial side effects:<br>- The backend side application must be written in Swift using Kitura,<br>Perfect or alternative;<br>- The application should be open sourced;<br>- Put efforts on code quality and performance. This should serve a<br>demonstration how comfortable Swift is for backend development.<br></p><p>The motto: &quot;On Swift, about Swift, for Swift developers!&quot;<br></p><p>Let&#39;s start the brainstorming:<br>- What do you think about the benefits of such a project?<br>- Why such an aggregator is better (or worse) than existing<br>alternatives like https://www.reddit.com/r/swift/?<br>- Maybe such a project is already in development. Do you know some?<br>- Swift needs you! Do you wish to participate?<br></p><p>Thank you, Dmitri.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6e0bf2aabb9fc16782586e834dc6e2d7?s=50"></div><header><strong>try? shouldn&#39;t work on non-method-call</strong> from <string>Braeden Profile</string> &lt;jhaezhyr12 at gmail.com&gt;<p>August 18, 2016 at 07:00:00pm</p></header><div class="content"><p>I do think that the status quo is good for try? precedence and such, but how about the original problem? The code was hard to work with because it used a double nested Optional.  If you really don’t care about the reason that code failed, then a single optional should be returned.  There’s this:<br></p><p>if let rawA = try? couldFailButWillNot(),<br>   let a = rawA as? Int<br>{<br>    print(a)<br>}<br></p><p>…but it seems overly verbose.  I think it would be easier if the standard library included flatMap()’s companion, flattened() Optional&lt;Optional&lt;T&gt;&gt;, much like the existing flatMap() and flatten() of Array&lt;Array&lt;T&gt;&gt;.  Unfortunately, this isn’t really possible:<br></p><p>extension Optional where Wrapped == Optional&lt;T&gt;<br>{<br>    func flattened() -&gt; Wrapped<br>    {<br>        if let wrapped = self<br>            { return wrapped }<br>        else<br>            { return nil }<br>    }<br>}<br></p><p>if let a = (try? couldFailButWillNot() as? Int).flattened() {<br>    print(a)<br>}<br></p><p>…as the compiler complains that “T” is unresolved and that you can’t constrain an extension with a generic type—or any non-protocol type, for that matter.  A free flattened() function would work, but wouldn’t be very clean or intuitive.  flatMap works for now, but isn’t great:<br></p><p>if let a = (try? couldFailButWillNot() as? Int)?.flatMap({$0}) {<br>    print(a)<br>}<br></p><p>I guess that feature will have to wait until Swift 4.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160818/3e9d78ab/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

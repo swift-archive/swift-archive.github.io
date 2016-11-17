@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[Proposal Draft] automatic protocol forwarding</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>December 30, 2015 at 06:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151230/7284972a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc3a9ea0c6c870343d9acb4ac3059cdc?s=50"></div><header><strong>[Proposal Draft] automatic protocol forwarding</strong> from <string>Matthew Johnson</string> &lt;matthew at anandabits.com&gt;<p>December 30, 2015 at 08:00:00am</p></header><div class="content"><p>Sent from my iPad<br></p><p>&gt; On Dec 30, 2015, at 12:52 AM, Thorsten Seitz &lt;tseitz42 at icloud.com&gt; wrote:<br>&gt; <br>&gt; Thanks for proposing this, Matthew!<br>&gt; <br>&gt; Am 30. Dezember 2015 um 03:05 schrieb Matthew Johnson via swift-evolution &lt;swift-evolution at swift.org&gt;:<br>&gt; <br>&gt;&gt;&gt;&gt;&gt; * Why the method-based conversion syntax for return values, rather than something a little more like a property declaration?<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;  var number: Int<br>&gt;&gt;&gt;&gt;&gt;  forward IntegerType to number {<br>&gt;&gt;&gt;&gt;&gt;   static return(newValue: Int) {<br>&gt;&gt;&gt;&gt;&gt;    return NumberWrapper(newValue)<br>&gt;&gt;&gt;&gt;&gt;   }<br>&gt;&gt;&gt;&gt;&gt;   return(newValue: Int) {<br>&gt;&gt;&gt;&gt;&gt;    return NumberWrapper(newValue)<br>&gt;&gt;&gt;&gt;&gt;   }<br>&gt;&gt;&gt;&gt;&gt;  }<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; This is actually a really good idea to consider!  I didn’t consider something like this mostly because I didn’t think of it.  I’m going to seriously consider adopting an approach along these lines.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Great.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; One possible advantage of the approach I used is that the initializer may already exist for other reasons and you would not need to do any extra work.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; True. But it may also exist and *not* do what you want in the forwarding case. It&#39;s easier to explicitly use the right initializer than it is to work around the forwarding system implicitly using the wrong one.<br>&gt;&gt; <br>&gt;&gt; Right, I am generally leaning pretty strongly towards changing the proposal to use a solution similar to what you suggest.<br>&gt; <br>&gt; <br>&gt; That&#39;s great. I was about to suggest something similar (like having to name the conversion functions used in the forward clause) when I read Brent&#39;s proposal which is much more elegant, so I&#39;d like to support that. Making this explicit without some &quot;implicit magic&quot; is truely important.<br></p><p>Yes, I am definitely going in this direction.  I want to think it over a bit more and will update the proposal soon.<br></p><p>&gt; <br>&gt; The one thing I&#39;m missing is some real-life examples which would be really helpful to consider this proposal properly (Dave Abrahams already pointed this out).<br></p><p>I&#39;m working on this right now.  I was really looking forward to feedback on the solution so I decided to share a draft before the motivation was fully written.  Maybe that was a mistake, or at least should have been called out more clearly.<br></p><p>&gt; <br>&gt; -Thorsten<br>&gt; <br>&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

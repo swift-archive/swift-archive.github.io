@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c8bc65b07027beac76b917624be47611?s=50"></div><header><strong>Swift for Linux tutorials</strong> from <string>Jon Hoffman</string> &lt;hoffman.jon at gmail.com&gt;<p>February  3, 2016 at 04:00:00pm</p></header><div class="content"><p>I wrote two tutorials to help developers get started with Swift for Linux and thought I would share them with the group.<br></p><p>Swift for Linux part 1 – Building Applications &lt;http://masteringswift.blogspot.com/2016/01/swift-for-linux-part-1-building.html&gt;: <br>In this first post we will look at several examples that will demonstrate how to write and build applications with the Swift port for Linux.  We will also create a shell scripts that we can use to create the directory structure and minimum files needed to use Swift’s package manager to build our applications.<br></p><p>Swift for Linux part 2 – Using C libraries with Swift &lt;http://masteringswift.blogspot.com/2016/02/swift-for-linux-part-2-using-c.html&gt;:  <br>Swift developers coming from Apple’s iOS and OS X environments are use to using the Cocoa and Cocoa Touch frameworks however these frameworks are not available in the Linux environment.  When we develop Linux applications and utilities with Swift we need to use the system libraries provided by the Linux environment.  In this post will look at how we can use these system libraries with our Swift code to build useful applications and utilities.  <br></p><p>In this post we will look at the Glibc module that Apple provides for us which includes the majority of the Linux Standard Library.  We will also look at how we could create our own modules to add additional system libraries not included in the Glibc module.  To demonstrate the concepts discussed we will conclude this post by building a simple command line utility that will list the IP addresses of the device that it is run on.<br></p><p><br></p><p>Jon<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160203/907a30d5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/957b675456a66c394945a7361aedd51d?s=50"></div><header><strong>Swift for Linux tutorials</strong> from <string>Zhao Xin</string> &lt;owenzx at gmail.com&gt;<p>February  4, 2016 at 09:00:00am</p></header><div class="content"><p>Thank you. I have shared the two posts to my twitter account.<br></p><p>zhaoxin<br></p><p>On Thu, Feb 4, 2016 at 5:44 AM, Jon Hoffman via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; I wrote two tutorials to help developers get started with Swift for Linux<br>&gt; and thought I would share them with the group.<br>&gt;<br>&gt; Swift for Linux part 1 – Building Applications<br>&gt; &lt;http://masteringswift.blogspot.com/2016/01/swift-for-linux-part-1-building.html&gt;<br>&gt; :<br>&gt; *In this first post we will look at several examples that will demonstrate<br>&gt; how to write and build applications with the Swift port for Linux.  We will<br>&gt; also create a shell scripts that we can use to create the directory<br>&gt; structure and minimum files needed to use Swift’s package manager to build<br>&gt; our applications.*<br>&gt;<br>&gt; Swift for Linux part 2 – Using C libraries with Swift<br>&gt; &lt;http://masteringswift.blogspot.com/2016/02/swift-for-linux-part-2-using-c.html&gt;:<br>&gt;<br>&gt;<br>&gt; *Swift developers coming from Apple’s iOS and OS X environments are use to<br>&gt; using the Cocoa and Cocoa Touch frameworks however these frameworks are not<br>&gt; available in the Linux environment.  When we develop Linux applications and<br>&gt; utilities with Swift we need to use the system libraries provided by the<br>&gt; Linux environment.  In this post will look at how we can use these system<br>&gt; libraries with our Swift code to build useful applications and utilities.  *<br>&gt;<br>&gt; *In this post we will look at the Glibc module that Apple provides for us<br>&gt; which includes the majority of the Linux Standard Library.  We will also<br>&gt; look at how we could create our own modules to add additional system<br>&gt; libraries not included in the Glibc module.  To demonstrate the concepts<br>&gt; discussed we will conclude this post by building a simple command line<br>&gt; utility that will list the IP addresses of the device that it is run on.*<br>&gt;<br>&gt;<br>&gt; Jon<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160204/b90644cf/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

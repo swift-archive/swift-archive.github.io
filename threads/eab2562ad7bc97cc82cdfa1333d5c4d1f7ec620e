@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c53218a6524f4d644b6a75a4441ea631?s=50"></div><header><strong>merging Swift 3 branches into master</strong> from <string>Max Moiseev</string> &lt;moiseev at apple.com&gt;<p>March  8, 2016 at 03:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>As you all are probably aware, we’ve done a lot of work on API Naming Guidelines recently. Standard Library has changed significantly to adopt new names. swiftpm, swift-corelibs-foundation, swift-corelibs-xctest, and swift-lldb have also been ported to Swift 3.<br></p><p>The work has been tracked in separate branches so far, and now it’s time to merge them all into master. We are planning to perform this merge in coming days.<br></p><p>Please raise your concerns, should you have any.<br></p><p>max<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06e1007412a9c7c2dc41297c9cf99a5d?s=50"></div><header><strong>merging Swift 3 branches into master</strong> from <string>Shawn Erickson</string> &lt;shawnce at gmail.com&gt;<p>March  8, 2016 at 11:00:00pm</p></header><div class="content"><p>On Tue, Mar 8, 2016 at 3:11 PM Max Moiseev via swift-dev &lt;<br>swift-dev at swift.org&gt; wrote:<br></p><p>&gt; Hi,<br>&gt;<br>&gt; As you all are probably aware, we’ve done a lot of work on API Naming<br>&gt; Guidelines recently. Standard Library has changed significantly to adopt<br>&gt; new names. swiftpm, swift-corelibs-foundation, swift-corelibs-xctest, and<br>&gt; swift-lldb have also been ported to Swift 3.<br>&gt;<br>&gt; The work has been tracked in separate branches so far, and now it’s time<br>&gt; to merge them all into master. We are planning to perform this merge in<br>&gt; coming days.<br>&gt;<br>&gt; Please raise your concerns, should you have any.<br></p><p><br>It may be good to reduce the number of outstanding PRs? It is highly likely<br>that a good number will run afoul of these changes. ...of course the effort<br>to fix up things may be best distributed to those with the outstanding PRs.<br></p><p>I say the sooner the &quot;pain&quot; is absorbed the better.<br></p><p>-Shawn<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160308/fb1181aa/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

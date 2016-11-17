@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be44340af8bbbae7c2070515ef4129a9?s=50"></div><header><strong>lifecycle hooks/scripts in swift package manager</strong> from <string>Vadim Eisenberg</string> &lt;VADIME at il.ibm.com&gt;<p>June  3, 2016 at 09:00:00am</p></header><div class="content"><p>Hello,<br></p><p>A question - are there any plans to support lifecycle hooks/scripts in <br>swift package manager ?<br></p><p>According to the community proposal:<br>https://github.com/apple/swift-package-manager/blob/master/Documentation/PackageManagerCommunityProposal.md#support-for-other-build-systems <br></p><p><br>&quot;We are considering supporting hooks for the Swift Package Manager to call <br>out to other build systems, and/or to invoke shell scripts.&quot;<br></p><p>This way, swift package manager will become a build automation tool, <br>similar to npm and maven. npm seems like the most similar tool to swift <br>package manager. It has &quot;scripts&quot; property - <br>https://docs.npmjs.com/misc/scripts:<br></p><p>&quot;npm supports the &quot;scripts&quot; property of the package.json script, for the <br>following scripts: pre/post install, pre/post test. etc.&quot;<br></p><p>Using lifecycle scripts can facilitate build automation of swift projects, <br>for example it can enable code generation. LinuxMain.swift and allTests <br>fields can be generated automatically during the build process.<br></p><p>Before lifecycle scripts are supported, for build automation swift package <br>manager has to be used with some build automation tool like make, and the <br>build automation information is spread between Package.swift and Makefile <br>files.<br></p><p>Best Regards,<br>Vadim Eisenberg<br></p><p><br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160603/05f4c7c8/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

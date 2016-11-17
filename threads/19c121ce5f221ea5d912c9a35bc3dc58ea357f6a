@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Re-clone the cmark repository</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>December 14, 2015 at 02:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>We have made the swift-cmark repository an actual GitHub fork of the<br>upstream cmark repository.<br></p><p>When running build-script, you might see a message like this:<br></p><p>&lt;&lt;&lt;&lt;<br>You have an old copy of the cmark repository.<br></p><p>You need to remove it and clone again:<br></p><p> $ rm -rf &lt;src&gt;/cmark<br> $ &lt;src&gt;/swift/utils/update-checkout --clone<br>&gt;&gt;&gt;&gt;<br></p><p>Please run those commands and they will bring your repository up to<br>date.  Sorry for the disruption.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

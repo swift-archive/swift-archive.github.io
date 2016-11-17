@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d2fcdd5a6abf7204973117f37a18671?s=50"></div><header><strong>Canonical way to cast C structs</strong> from <string>Bouke Haarsma</string> &lt;bouke at haarsma.eu&gt;<p>September 12, 2016 at 09:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>Inside my CFSocketCallBack a pointer to a sockaddr is provided wrapped in a CFData structure. The sockaddr could be either a sockaddr_in (IPv4) or sockaddr_in6 (IPv6) struct. In order to discover which struct you’re dealing with, the attribute sa_family can be inspected. In C this would look something like this:<br></p><p>struct sockaddr_storage sa;<br></p><p>switch (((sockaddr*)&amp;sa)-&gt;sa_family)<br>{<br>    case AF_INET:<br>        inet_ntop(AF_INET, &amp;(((sockaddr_in*)&amp;sa)-&gt;sin_addr), ...);<br>        break;<br>    case AF_INET6:<br>        inet_ntop(AF_INET6, &amp;(((sockaddr_in6*)&amp;sa)-&gt;sin6_addr), ...);<br>        break;<br>}<br>(from: http://stackoverflow.com/a/13167913)<br></p><p>Wheras to do this in Swift 3, the only way I found thus far is this:<br></p><p>var generic = CFDataGetBytePtr(data).withMemoryRebound(to: sockaddr.self, capacity: 1) {<br>    return $0.pointee<br>}<br>switch generic.sa_family {<br>case sa_family_t(AF_INET):<br>    let ipv4 = withUnsafePointer(to: &amp;generic) {<br>        $0.withMemoryRebound(to: sockaddr_in.self, capacity: 1) {<br>            $0.pointee<br>        }<br>    }<br>    //...<br>case sa_family_t(AF_INET6):<br>    let ipv6 = withUnsafePointer(to: &amp;generic) {<br>        $0.withMemoryRebound(to: sockaddr_in6.self, capacity: 1) {<br>            $0.pointee<br>        }<br>    }<br>    //...<br>default:<br>    //…<br>}<br></p><p>This looks very ugly with all the closures and ``withMemoryRebound``. Is there a better way to do this? I think there should be something more “Swifty”.<br></p><p>—<br>Bouke<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160912/8c6313ff/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

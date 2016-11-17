@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="container">
+  <h2>swift-dev</h2>
+  <p>Discussion of the Swift compiler, low-level runtime, standard library, and SourceKit.</p>
+
+  <ul>
+    <li>
+<a href="/threads/4f8ed80331edaadc5a031cad5ef8f9eca0c53997">test of swift-dev@swift.org</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/6c2eb5f092eb11d953796a27cbf5d5d5663e01d0">Develop ios apps on Ubuntu</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/0e3543a95f1dcff0adff5f06e9bd808b878a8c38">SIL proposal: remove multiple results from SILValue</a>      &mdash; <em>Erik Eckstein</em>
+    </li>
+    <li>
+<a href="/threads/1800e1976d1f799bbf8ffcc5538334fed2bf48f3">Compile Error - Arch Linux</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/9cb8cb73157874b1551b7ff321d69faaa6a6cf23">Language Specification on Github?</a>      &mdash; <em>David Waite</em>
+    </li>
+    <li>
+<a href="/threads/e1b7a3e137e1766ab6822aac8e7e1a1fa010b928">Bootstrapping Swift compiler</a>      &mdash; <em>Atsuki Demizu</em>
+    </li>
+    <li>
+<a href="/threads/0b9c73a203871c3b54e5ef8e77aada10aaccfeb0">Support for arm-linux cross-compilation</a>      &mdash; <em>Cody Krieger</em>
+    </li>
+    <li>
+<a href="/threads/944cdb97bb7e925b3ea275f871fca4e0dc4d13a0">Develop apps with swift 2 on ubuntu 14.04 LTS x86_32 bit</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/0c0eabee40bc3c5e843d7e4e89a2f901755d3c23">Swift in GSoC 2016</a>      &mdash; <em>vivek pandya</em>
+    </li>
+    <li>
+<a href="/threads/f89e6fdacb8fd45d9e33133257716ca789b12866">SIL Inspector</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/44fe87921cc8828dbca4f7106b0a0fbea78cba4d">Feasibility of Swift for Arduino</a>      &mdash; <em>Matthijs Hollemans</em>
+    </li>
+    <li>
+<a href="/threads/4e9ded7a9ed93fa3cfa575e368c7a3ecc235e0bd">Optional to String conversion</a>      &mdash; <em>Andrew Trick</em>
+    </li>
+    <li>
+<a href="/threads/877aaedf30bc97eaa0e0b04447e30313b5befdb8">Merge-commit noise?</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/501be9b3fd952379b053313d87b58f51fb23e28d">Quick and dirty support for Linux i386 (32-bit)</a>      &mdash; <em>Nick Wellnhofer</em>
+    </li>
+    <li>
+<a href="/threads/624e1a98d4c226f4751c04cbc6a77ce15ce7b660">RFC: Adding Optional variants of == for collections to the std lib</a>      &mdash; <em>Paul Young</em>
+    </li>
+    <li>
+<a href="/threads/27c9d57862f1d80586dcd0cce3e6d66bd969116c">enquiry</a>      &mdash; <em>Shaheen Sharafudheen</em>
+    </li>
+    <li>
+<a href="/threads/7bb979dca3622670d97f15e10de997edd998d939">Starter project: convert RST files to Markdown</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/0339a166eb833119d9b763e219f48fc40405dc0f">Roll-out of deprecating ++ and --</a>      &mdash; <em>Matthijs Hollemans</em>
+    </li>
+    <li>
+<a href="/threads/a0dd6ff6001eaf76107deeb559fc93b91c7a0bc3">Starter project: Convert release notes into something useful</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/0fde21a2eb6c275ec3f3f67a1a29c0a695e7ac61">Swift on ARM processor</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/cb70cc89944fcb7a583c63c689c2089c3299cdb6">How do you run individual tests?</a>      &mdash; <em>Michael Buckley</em>
+    </li>
+    <li>
+<a href="/threads/dc1408e969fb42b1c6bbf36d100ef84e44199b21">Install Swift on Ubuntu 14.04 LTS</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/c83c4cb856c76608c89bf922152118881050b503">How to view which tests are fail</a>      &mdash; <em>Sahil Wasan</em>
+    </li>
+    <li>
+<a href="/threads/f02449d15f8f85c5390ee50f97791a78c4077587">Problems caused by &quot;is&lt;ErrorType&gt;&quot;</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/fb257a490d6d06d5e66bd6ed8f7bd542186640fb">Promises</a>      &mdash; <em>Dale Buckley</em>
+    </li>
+    <li>
+<a href="/threads/3dd235fe0c0368b5302fd2bf4043551331005800">Starter project: Remove old mirrors</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/7dc0e0606db6f51b180a37c281c6d67dd78a700a">Starter project: Convert release notes into something useful</a>      &mdash; <em>Radosław Pietruszewski</em>
+    </li>
+    <li>
+<a href="/threads/3da59a5902c5b131cf1f169a0d1761eb52b86ebd">Starter project: SR-2: Build configuration directives can not wrap switch cases</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/161d5c04e51b748634caf520a9d222b28b04ae70">I can&#39;t install swift on ubuntu 14.04 lts</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/e614bc1e5e8d2f280fcff46e0cbfa2563cea4476">I can&#39;t install swift on ubuntu 14.04 lts.</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/2052084a4a0261cc388eed94a84de67e571e1222">Radar numbers in FIXME comments</a>      &mdash; <em>Joe Ranieri</em>
+    </li>
+    <li>
+<a href="/threads/a021262e7665df75c96b5f54aa85579c22e1c2de">Verify failed</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/a78d8e1f7fd0a2e52468b27141f85b773971def0">Swift REPL don&#39;t functions on Ubuntu 14.04 LTS</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/50ef90b8783f848d5e20e7579896355088ad5656">Starter project: Port Swift to RHEL 7 / CentOS 7 / Scientific Linux 7</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/ea6599048c6e1429897394b21e20c203ef3499ec">Starter project: Prepare/host pre-built Swift binary packages for different Linux distributions</a>      &mdash; <em>Roman Levenstein</em>
+    </li>
+    <li>
+<a href="/threads/c8baff599ce75bddc6091daf0df371bf86d25383">Continuous Integration on Swift.org projects</a>      &mdash; <em>Brad Erickson</em>
+    </li>
+    <li>
+<a href="/threads/5869432e994a32e16adbb33b93e7d776a767d6b3">Path Swift</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/40f98fde8a801574910827cdb87237233335e329">Starter project: API to upgrade AnySequence to Any*Collection</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/ecae4f8599e966736c76f7ad92f96097c92a99bd">Starter bug: Sequence.flatMap() is missing a @noescape</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/1e362c9b0f996da6cc573456ccc007fee6b67f7f">Build error on OS X.</a>      &mdash; <em>Alexandros Salazar</em>
+    </li>
+    <li>
+<a href="/threads/3210c316b610caef191e816f33b26a68af8db7ad">Starter project: Initializers for converting UnsafePointers to integers</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/ac13781dc4ce3b1274573364a780440054e4fce5">Path Swift</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/1689e7b1e64b4b422e60667396d01978ea04eb57">Swift Path</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/0de6a4553a2bb7cef222311a5cec1c7f08c188ec">swift path</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/a3d46325d927aebdb02c13d50a591150b798ec98">Swift Path</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/4e132944aedd845b7af3d3dbf5eafbff14c2c0b5">Swift Path</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/c4285fec329d744bb6ff85a6702227909d379d4e">Email address</a>      &mdash; <em>Simon Westerlund</em>
+    </li>
+    <li>
+<a href="/threads/8a91a8533e5387adf4ca6f0c6d3ace63131a2d90">Path Swift</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/da9b48a45060b6e1998013dfffee07288df58883">How to view which tests are fail</a>      &mdash; <em>Sahil Wasan</em>
+    </li>
+    <li>
+<a href="/threads/b3e7bf7fb2715f45093d25140f7b1b9991a77ad5">Trying to work out how default parameters work</a>      &mdash; <em>Brent Royal-Gordon</em>
+    </li>
+    <li>
+<a href="/threads/33490cb989962b3095cc471f3e86832ae4dad27f">Swift path</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/0daae66d7a3f754efd04be31e5eb12b323ccae8f">Swift Path</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/4188fd982e323d32049f86e9133bfe10e3539dbe">Questions about _Reflectable and CustomReflectable</a>      &mdash; <em>Austin Zheng</em>
+    </li>
+    <li>
+<a href="/threads/7d70841477b5e6a595cf63a745de5be3a86407f2">Porting Swift from x86_64 to x86_32</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/685ce90bc0e200968ccea207ed75e44146b11570">Starter Project</a>      &mdash; <em>Sergey Bolshedvorsky</em>
+    </li>
+    <li>
+<a href="/threads/c935ecb4ffd9240ea5b71730ed86e673ae7db587">[SR-40] Port Swift to Arm progress / question</a>      &mdash; <em>William Dillon</em>
+    </li>
+    <li>
+<a href="/threads/169a1ca0f8c71741f8b8f0347cbd1616802554c2">Proof-of-concept port of Swift for Android</a>      &mdash; <em>Zhuowei Z</em>
+    </li>
+    <li>
+<a href="/threads/fc98ef811d10e3d624fd2c6f7494c64843208b24">Optionals in swift-clang</a>      &mdash; <em>Seth Friedman</em>
+    </li>
+    <li>
+<a href="/threads/e0182c9178c8c390ae2572c9f8ed1c44b2166914">Allowing extensions of bound generic types</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/48395e5e644a2d9f32c96512117a72cb58617f60">What is the state of cryptography in Swift</a>      &mdash; <em>Travis Beech</em>
+    </li>
+    <li>
+<a href="/threads/61563bec9e87413cd1175e7c29f3a313f84245eb">Question about implementation of closure capture lists</a>      &mdash; <em>Greg Titus</em>
+    </li>
+    <li>
+<a href="/threads/507f2b5c318917d1bfdac5a68ae18590c06dbd3d">Determining if a crash is a known issue?</a>      &mdash; <em>Kevin Ballard</em>
+    </li>
+    <li>
+<a href="/threads/4830f1a318b55cacdeb643d9796d3e5e35e9a5e1">Inconsistent trapping for Bit</a>      &mdash; <em>Patrick Pijnappel</em>
+    </li>
+    <li>
+<a href="/threads/a3e886d103a93a6a81ab41b39d51f7f996469625">Build and install custom toolchain?</a>      &mdash; <em>Kevin Ballard</em>
+    </li>
+    <li>
+<a href="/threads/9ae566b4d2f73f48295de15399d5b2e0f136f89e">[RFC] SIL syntax for debug information Part 1: Variables</a>      &mdash; <em>Adrian Prantl</em>
+    </li>
+    <li>
+<a href="/threads/1f88e57ae3c8e18ca0390b19a6a524c7ed42ec08">Initialization of default values</a>      &mdash; <em>Matthew Johnson</em>
+    </li>
+    <li>
+<a href="/threads/47152d446b3fb7ec17bcc1266a1f64de4799c3c9">SILVerifier: Should SuperMethodInst&#39;s result type be the same type as the referenced member?</a>      &mdash; <em>David Farler</em>
+    </li>
+    <li>
+<a href="/threads/e121752fec02ff059737bef1b6c9db48d139e818">Radar and bugs.swift.org</a>      &mdash; <em>Frederick Kellison-Linn</em>
+    </li>
+    <li>
+<a href="/threads/39c1c3a08be119dff93ad7883e1feb1c9b4d0e7e">Beginner&#39;s questions about building Swift from source etc.</a>      &mdash; <em>Jens Persson</em>
+    </li>
+    <li>
+<a href="/threads/0e3fcc8d61ac7c4cded88ec3cf5b4ccdeabdfce5">problems with linking .tbd frameworks in test suite</a>      &mdash; <em>Alex Lew</em>
+    </li>
+    <li>
+<a href="/threads/519312d627a15ac90d8c611965a6f5f1daca05fc">Possibility to makes classes partial as C# language</a>      &mdash; <em>Kévin Machado</em>
+    </li>
+    <li>
+<a href="/threads/f88bc4d4d394b4edcd92fd6d978172e686921847">preset: buildbot_linux_1404/1510 are the same</a>      &mdash; <em>Brad Erickson</em>
+    </li>
+    <li>
+<a href="/threads/16f7b1d963950d3189ae7b1fc89fe9103c8a6089">program performance Ubuntu15.10 ?</a>      &mdash; <em>Isaac Gouy</em>
+    </li>
+    <li>
+<a href="/threads/316e5d680580e23d513037cf83c6c867b91fda91">Ubuntu build error</a>      &mdash; <em>Gabe Shahbazian</em>
+    </li>
+    <li>
+<a href="/threads/1700250627c5717992a267ffb033142034557a52">Thread safety of weak properties</a>      &mdash; <em>Mike Ash</em>
+    </li>
+    <li>
+<a href="/threads/e39d267675d31dfbfb0207f82e0f74702c34010a">Protocol declaration inside a class</a>      &mdash; <em>Виктор Шаманов</em>
+    </li>
+    <li>
+<a href="/threads/5fc627eedcab0f2a205c975a4b504076eba6ba22">Shouldn&#39;t the optimizer make this manual loop-unrolling unnecessary?</a>      &mdash; <em>Jens Persson</em>
+    </li>
+    <li>
+<a href="/threads/a0c1817c7146d67d80a5e4348391155fedf6ac4f">Fwd: [swift-users] hasSuffix(_:) and .hasPrefix(_:) String methods missing on Linux</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/48d876069466fbf041bd5b3861219ff9a41924c9">Location of &quot;indirect&quot; declaration modifier</a>      &mdash; <em>Marc Knaup</em>
+    </li>
+    <li>
+<a href="/threads/0b7c33e6e88c7544d0bdf02fcdd97398fb2edd20">Proof-of-concept port of Swift for Android</a>      &mdash; <em>Geordie Jay</em>
+    </li>
+    <li>
+<a href="/threads/abdd0b4bc436d00055cc979a76d98f7c3dc6fbdb">New Swift 2.2 Toolchain snapshot - Dec 10, 2015</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/734638240617c4d4f39a6b33ebb85c822efcec8e">Proof-of-concept port of Swift for Android</a>      &mdash; <em>Geordie Jay</em>
+    </li>
+    <li>
+<a href="/threads/fb09da159fd02078fe5325bcb583b3fc369b2221">[stdlib] Array.description calls debugDescription on its contents</a>      &mdash; <em>Wojciech Czekalski</em>
+    </li>
+    <li>
+<a href="/threads/80ea99713e99e3745ae4b3c024c24469c0b5b7b2">Trouble minimizing test case: code completion</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/a303b165c982d341b29516fdb07b028053b9714f">Pointers vs. References?</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/ba1095a90f0557eec163251c73b627fa03b31427">Swift&#39;s code in VSCode</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/b84b43324feef3245c005f3423ae0bd3bb777da0">Porting swift to FreeBSD</a>      &mdash; <em>Davide Italiano</em>
+    </li>
+    <li>
+<a href="/threads/fd0438278cb430be50e97948e59f91ebbdd76bd2">Starter project: increase test coverage on Linux</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/0915f859882ffa497ae946f5f7b76cb0880550d6">Building on Fedora</a>      &mdash; <em>Brad Erickson</em>
+    </li>
+    <li>
+<a href="/threads/054f4885f69abe06ce62bd71fd66946a08762a0a">[stdlib] Replace `.Some(x)` and `.None` by `x` and `nil`, respectively</a>      &mdash; <em>Patrick Pijnappel</em>
+    </li>
+    <li>
+<a href="/threads/422cbe02a082e16b2840519e887acb6282eeeca1">[Starter Project] Teach SILParser how to parse switch_enum of undef.</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/7660ca1c14d750cf0b56a37c577932f82365030d">Running only one unit test through build-script?</a>      &mdash; <em>Austin Zheng</em>
+    </li>
+    <li>
+<a href="/threads/d44cd3e2a4e7ec8250e94cbe42780b8d913e2b55">Porting Swift to Linux aarch64 (arm64)</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/19c121ce5f221ea5d912c9a35bc3dc58ea357f6a">Re-clone the cmark repository</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/1bfa62c4d6b2777d574eef47ec27a1e17bee86a0">This little program currently compiles fine, but should it?</a>      &mdash; <em>Jens Persson</em>
+    </li>
+    <li>
+<a href="/threads/f127023ddfc32c610a5a10c0acafdf170e75666a">buildbot configuration + etc</a>      &mdash; <em>Travis Tilley</em>
+    </li>
+    <li>
+<a href="/threads/176a030d1c7774c290ef45537656cdff90937f92">Breaking change in lexing operators next to comments</a>      &mdash; <em>Jesse Rusak</em>
+    </li>
+    <li>
+<a href="/threads/d4aa6c1af7650c3c83e0397495bd51ea356d2c7c">Issues linking a C library module using swift build</a>      &mdash; <em>Valentin Radu</em>
+    </li>
+    <li>
+<a href="/threads/d1db566d1b929d626f9af9085b6750925aaf665c">Building Foundation on FreeBSD</a>      &mdash; <em>Davide Italiano</em>
+    </li>
+    <li>
+<a href="/threads/907093be8f9af8e18972713338e54bea5f91dafa">`withUnsafePointer` mutates `self`</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/0a3220f37c3154d0275f4800e63912c7219ddcb0">iOS apps with Swift in Ubuntu</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/e193c36921943371b1890e06dbc5786e8293b27e">Swift on Ubuntu x86_32</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/cbd9130b3db3521b88d0cc03382a0719e4c618c6">The Swift Programming Language Translations</a>      &mdash; <em>Vinicius Vendramini</em>
+    </li>
+    <li>
+<a href="/threads/c4f78411d47bd1b386e4ad211381b510ae1f3979">bugs.swift.org usage</a>      &mdash; <em>William Dillon</em>
+    </li>
+    <li>
+<a href="/threads/c8c5896dcfe5b05d7979588e9b7575d1f60d019b">FYI: Apple holiday shutdown</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/9c41f39ba7319ff816202ddc373877366539042a">The Swift Programming Language - GERMAN</a>      &mdash; <em>Dominic Frei</em>
+    </li>
+    <li>
+<a href="/threads/2e5234f290596953a73a5b64ff010b38742a6cd5">SwiftAndroid: Statically linking libicu and/or the stdlib?</a>      &mdash; <em>Geordie Jay</em>
+    </li>
+    <li>
+<a href="/threads/1e870fadf7d8e2bf36dff25d0ca2c27e84bcf673">metatype of Int</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/55f4e8741afe609a86fa5a7caa82ea4b43101370">Request: Swift for Linux ARM 32 Support</a>      &mdash; <em>Dallas Brown</em>
+    </li>
+    <li>
+<a href="/threads/d06050194f1355b0668a4571665ae73beb69e78c">swift_retainCount in CoreFoundation</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/da63c0e5472c4fb5e88ce877fb678d1b345730bb">Scala updated equivalent</a>      &mdash; <em>Alexandre Lopoukhine</em>
+    </li>
+    <li>
+<a href="/threads/9d2a4a0dbd5db018badcdd98485dfad0799a8958">Implementing hasPrefix and hasSuffix</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/6521bbccd02f133114ac30804effc095855c8c1c">New Swift 2.2 Toolchain snapshot - Dec 22, 2015</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/db6f9cb8628da4179f8c6232c5dd3f0090d2be3a">Compiling on RHEL 7</a>      &mdash; <em>Jeremy Fergason</em>
+    </li>
+    <li>
+<a href="/threads/b29322f2f25e7a3afc212dc7a283ad47650a7645">Combining native and ObjC swift_class_getInstanceExtents entry points</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/f195459e0d46146dd3ba89d84983f0a4042878bd">LLDB Invalid address (32 bit arm)</a>      &mdash; <em>William Dillon</em>
+    </li>
+    <li>
+<a href="/threads/34b54fefb3fc7175dcaf5ecd27411f1bc7618d8d">swift_retainCount in CoreFoundation</a>      &mdash; <em>Philippe Hausler</em>
+    </li>
+    <li>
+<a href="/threads/813867a1e532af51aefebf0214b3f7bf80743b08">Official Docker Image &amp; &quot;Blessing&quot;s of Community Platforms</a>      &mdash; <em>Thomas Catterall</em>
+    </li>
+    <li>
+<a href="/threads/eb9413dcf83bb7e32cc609e91865139e2f122e9e">Distinguishing classes from value types/ObjC bridged types?</a>      &mdash; <em>Austin Zheng</em>
+    </li>
+    <li>
+<a href="/threads/017819b4d2a43e4354f46b06851fc06c5109d645">SIL: &quot;unowned&quot; the calling convention and &quot;unowned&quot; the variable ownership convention</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/611dd602b1adf17f7d8c0edb46fbb4ac0b3877de">Should we remove _customContainsEquatableElement from stdlib?</a>      &mdash; <em>Ling Wang</em>
+    </li>
+    <li>
+<a href="/threads/bc9fd62e91040b42938f808a38beb9204ffd1b5b">ExistentialMetatypeType assertion failure on Linux</a>      &mdash; <em>Luke Howard</em>
+    </li>
+    <li>
+<a href="/threads/42b9930e435fc2922796b011faa67ff38cb6a7fb">Where are @_attributes documented?</a>      &mdash; <em>Ling Wang</em>
+    </li>
+    <li>
+<a href="/threads/fe2622a0bb32d69adf556e72e5aca6fd33bdae2f">Linker script on Linux</a>      &mdash; <em>Luke Howard</em>
+    </li>
+    <li>
+<a href="/threads/409f51070b309cec3a2cb1b6516d66b39e35d127">Current master is failing on 3 tests</a>      &mdash; <em>Kevin Ballard</em>
+    </li>
+    <li>
+<a href="/threads/22341282bb20dafbdd8d32e5efa8003f438f0fb9">Swift bugs related to SR-88</a>      &mdash; <em>Austin Zheng</em>
+    </li>
+    <li>
+<a href="/threads/51b4673d233e5115f56610843f60a69d4c6a2301">Radar and bugs.swift.org</a>      &mdash; <em>Keith Smiley</em>
+    </li>
+    <li>
+<a href="/threads/b3bbf73a6d2d4c593b6d47321b4e4ae7b5838c95">Swift vim support</a>      &mdash; <em>Keith Smiley</em>
+    </li>
+    <li>
+<a href="/threads/550363f5cbee25924bb8d8a81b1822ec37eae304">Warning when &quot;overriding&quot; an extension method that&#39;s not in the protocol</a>      &mdash; <em>Jesse Rusak</em>
+    </li>
+    <li>
+<a href="/threads/23fe2350fc88369bdb229136eb5076fdee8a4831">New Swift 2.2 Toolchain snapshot - Dec 31, 2015</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/09eadd0445e818e16b20fdaa2eb16c7676ddea92">Compiling SIL with swiftc</a>      &mdash; <em>Luke Howard</em>
+    </li>
+    <li>
+<a href="/threads/169a7d1a1ab71121505efd4fd4b8f491f5a35b7e">Build failure in LLDB</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/f01c6995139eb37c3e90fcb1a0d21cbf2976eaa4">Ubuntu .deb packages available</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/f136aea01de756c4ac3875de4e81ba6934d72c7c">Understanding runtime entry points</a>      &mdash; <em>Austin Zheng</em>
+    </li>
+    <li>
+<a href="/threads/b2bf94900df6c86f77d3e12d8930cba0415ae231">TWISt-shout newletter 2016-01-04</a>      &mdash; <em>Kenny Leung</em>
+    </li>
+    <li>
+<a href="/threads/dda6527dcf9dc245cc242f3b566d47f29fe6706e">clang version requirements?</a>      &mdash; <em>Tom Gall</em>
+    </li>
+    <li>
+<a href="/threads/d116e7576f0cd69b4593a14031832d52f43ce1a6">Testing fails in GYBUnicodeDataUtils.py</a>      &mdash; <em>Tom Gall</em>
+    </li>
+    <li>
+<a href="/threads/8b81f9cec41cbe7a8e2b9061aad539fb2b8e6367">How to remove Swift Dev snapshot (OS X)</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/d6e2bf8e95699021067be66aedc7925b97913cc6">C Macros and Variadic functions</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/0cd1d498ee433537aef9e79cef85d82c8afa145d">Swift 2.2 release process</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/3c47eb02884ec473474d69cab9aa361197ff3ee3">Compiling into /usr/lib64 instead of /usr/lib</a>      &mdash; <em>Jeremy Fergason</em>
+    </li>
+    <li>
+<a href="/threads/2f27efa9a768f46013bed146ac60dd75194d00de">Documentation</a>      &mdash; <em>James Campbell</em>
+    </li>
+    <li>
+<a href="/threads/d361ca5a513f3aa4629065cdadaa083d93c35d96">Cross compiling Swift for 32 bit Linux from 64 bit Ubuntu</a>      &mdash; <em>vivek pandya</em>
+    </li>
+    <li>
+<a href="/threads/f564be3b2d6378c03fc59f0adc9e4d05460414b3">how to write package.swift if i want to use dependency file in local?</a>      &mdash; <em>qi bo</em>
+    </li>
+    <li>
+<a href="/threads/cc9679c8c71eb60c047b12782ee08dae18dea781">New Swift 2.2 Toolchain snapshot - Jan 06, 2016</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/85513f3cef0343e7d9bd2ba6dd2d3e9460a7ba94">Introduce to a quality korean translation project</a>      &mdash; <em>Lee Yongkyu</em>
+    </li>
+    <li>
+<a href="/threads/f0cd9e7978be83796707d2071ace23b1e9516904">stdlib tests under FreeBSD</a>      &mdash; <em>Davide Italiano</em>
+    </li>
+    <li>
+<a href="/threads/9182e6ea054699a4251b1964eeb54a7f8a67330b">Emitting redundant protocol conformances to support type lookup</a>      &mdash; <em>Luke Howard</em>
+    </li>
+    <li>
+<a href="/threads/ffc8d1b3e178b2ec9954a4a545ff8303bd3dc3e2">swift without markup/cmark</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/020b912c176dad4e90e4ed4f5157d39488e9e68e">swift without markup/cmark</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/07619b53937c0dade35c9fbcfca18e9e55a48866">swift without markup/cmark</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/fef1731e43fcd4ea353c466cd2da866c5bbbbc0f">Heads up: Enforcement of StdlibUnittest runAllTests()</a>      &mdash; <em>Greg Parker</em>
+    </li>
+    <li>
+<a href="/threads/8d8b6e1c9ce05cd990fc208be54d8b9be6a741e6">console error</a>      &mdash; <em>zhaoliang</em>
+    </li>
+    <li>
+<a href="/threads/24c33fc954950defde9d8b51815d13a708bfe63b">Doxygen?</a>      &mdash; <em>Daniel Duan</em>
+    </li>
+    <li>
+<a href="/threads/8abe539966430e816b7e50d9582bdb4a65a03db8">SourceKit limits on Swift refactoring</a>      &mdash; <em>Zhao Xin</em>
+    </li>
+    <li>
+<a href="/threads/9f4b9da8e2b289d45745c075aa0dddeb0d68b77f">Doxygen?</a>      &mdash; <em>Daniel Duan</em>
+    </li>
+    <li>
+<a href="/threads/34e46c41abcdc9ca5507ccc446e76a99f0077beb">Swift C enum Case Mapping</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/5818ecd169f783cc0a233b7bf7ec4dd57de0b581">Glibc struct sigaction and sigaction</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/bd5c9b0bbd36559c9b3ae660985963028f2b7b32">TWISt-shout newsletter 2016-01-11</a>      &mdash; <em>Kenny Leung</em>
+    </li>
+    <li>
+<a href="/threads/89539575c751376411ab65a35ec5faf854e3d3f4">Help: Get Generic Pattern Detail From TypeDecl in AST</a>      &mdash; <em>Daniel Duan</em>
+    </li>
+    <li>
+<a href="/threads/00f5718c7f9ce138a5c2f574ccf092d24a1dcf90">Categorization of warnings in Swift</a>      &mdash; <em>Michael Ilseman</em>
+    </li>
+    <li>
+<a href="/threads/7cf11a0023d7c6c7f4586adc45cde2fc854f81e7">Translation of Swift.org in Chinese</a>      &mdash; <em>John Lin</em>
+    </li>
+    <li>
+<a href="/threads/6dca4c1d6e0312d4245a14a2a66441ee4994dc17">utf-8 issues in gyb and line-directive</a>      &mdash; <em>Lukas Stabe</em>
+    </li>
+    <li>
+<a href="/threads/0f9029da70830c576414440ac6c7e86f2a54c081">New Swift 2.2 Toolchain snapshot - Jan 11, 2016</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/d80ba5da8d72d3a009b051b2efdbb4e918d035b0">Swift 2.2 branch created</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/29e2fe61f08ba3183f6dfa4e203ca76b96eb392a">[Draft Proposal] Refactor SILParser::parseSILInstruction</a>      &mdash; <em>Sergey Bolshedvorsky</em>
+    </li>
+    <li>
+<a href="/threads/ae4bf3412b00ed09f120bffd3baa429fe59f1ea1">Making SwiftShims.swiftmodule</a>      &mdash; <em>Darren Mo</em>
+    </li>
+    <li>
+<a href="/threads/130d33ff432443a23955d3091b55fdb196ac76b3">[RFC] Moving to gold linker</a>      &mdash; <em>William Dillon</em>
+    </li>
+    <li>
+<a href="/threads/0d79fdf34732f8bd85e61f93cb14eaadb2413f54">Unable to use IOBluetooth framework with Swift 2.2</a>      &mdash; <em>Matt Rajca</em>
+    </li>
+    <li>
+<a href="/threads/6adc7cced8bb828f8fcba028600972ee8913cf15">Swift Build Failing Testcases</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/67b85ca70a573f8c05738f2502bf56b9bf8f777b">Shrinking the heap object header</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/9567e30ea746874dd22fbca6ead1d82d140b8702">Build Failures for Swift Repos</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/a95318a9349a4c3e7297c6d6b023db0919d5e35b">Help debugging equal-but-unequal archetypes in SILGen/emitMemberInitializers</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/d09140a77e87faefeed1e1b5561458c63a4351c0">Memory leak in SourceKitService since using Swift name lookup tables by default</a>      &mdash; <em>Pascal Urban</em>
+    </li>
+    <li>
+<a href="/threads/5f256c3d61599675714df8ab8c310111af35cfcf">This Week In Swift newsletter 2016-01-18</a>      &mdash; <em>Kenny Leung</em>
+    </li>
+    <li>
+<a href="/threads/7319a73fe2fa927a005c9ac480ac3b7efcdf44d7">@owned vs @guaranteed convention for &#39;self&#39; in nonmutating value type methods</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/edec8734422d419f0d81a515a402e92a62ae48d6">Cross-compile for Android armv7 from OSX</a>      &mdash; <em>Geordie Jay</em>
+    </li>
+    <li>
+<a href="/threads/ffd271f41d3b43128227657334c3f6d84981b19c">Swift AST documentation</a>      &mdash; <em>Kostiantyn Koval</em>
+    </li>
+    <li>
+<a href="/threads/c73bafac26091add30a898d8cca4cd56edcf0c93">Want to Contribute in Swift</a>      &mdash; <em>Manish Bisht</em>
+    </li>
+    <li>
+<a href="/threads/878b6ba7072559ccb178bad1cb0425ad863a67e0">Implementation of property behaviors</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/3624ff416caa5c0804a5531a799c82d643f806f0">Swift now functional (on FreeBSD)</a>      &mdash; <em>Davide Italiano</em>
+    </li>
+    <li>
+<a href="/threads/04645c2b5cd7047d48c22ac129b46a5fe6a53589">Changing how nominal type descriptors store type names</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/52cafe7f35e8bbf38d3611fbf4b97f390495695f">New snapshots available! (and snapshot name format change)</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/3e92a447fa3e57a0e002a46bb646db58075e14bd">snapshot build breakage</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/7aec0a276d02dea127f903f2ad430d1e31cc32d9">Moving generic metadata pattern cache out-of-line</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/7344398ead1b20af8a7638eef3bcf99f773ed9e2">snapshot build hang (TestNSNotificationCenter.test_removeObserver)</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/d218f31ea119d5b082372c7bba168ac6a543997e">Reducing StdlibUnittest compile time</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/2b050534720a9cb358fa696e522ae508ba783ae3">Making the value witness table reference relative</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/10f26e6bcdfdafb9c46304d4763090e2878b125e">Swift 2.2 review request: SE-0022 #selector implementation</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/428e37708c978a7734118e2710b938c380cf9c22">Build failure? &quot;LLVM ERROR: Cannot represent a subtraction with a weak symbol&quot;</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/fa300b5aeb0b4642c5326f865af45584503caa99">PointerIntPair alignment</a>      &mdash; <em>William Dillon</em>
+    </li>
+    <li>
+<a href="/threads/e507c6a4bd70329de1830adae83c7f2357f65dff">GSOC 2016 proposal</a>      &mdash; <em>Manish Bisht</em>
+    </li>
+    <li>
+<a href="/threads/57f8289e8b23fdb65ada8b2ae966cf819f8d2f6b">incremental compilation</a>      &mdash; <em>Erik Eckstein</em>
+    </li>
+    <li>
+<a href="/threads/cf93033d540bfc72699f4765e11eb3ce5589d3cd">Disallowing weak struct properties</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/3011f4b5456ba3813c33a8991406ac7e0af9fa97">Swift Continuous Integration now available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/ffb98fb675a014e7680865162ffb17975f534f58">This Week In Swift 2016-02-01</a>      &mdash; <em>Kenny Leung</em>
+    </li>
+    <li>
+<a href="/threads/70b65ec7e3dd1a8a57a616a3dd53dedbfcd4145c">Using Objective C class in Swift (open source, Linux)</a>      &mdash; <em>Iliya Trub</em>
+    </li>
+    <li>
+<a href="/threads/c9f4425b5203ec66a82c0ecdeb5d2d8a8ccf1162">swift-2.2-branch now under restrictive change control</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/333c054d74cfca8d1a68c63089d4c735e9661be0">2.1.1 git version</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/6e393c4f1c49880016306b4b68c9d7a871e2e543">2.1.1 git version</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/06b4d4b66f1fcbc372ac400a213ddc753e02d846">[Swift 2.2] Request to merge SE-0022: #selector expression</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/f1cbbe74a19329064ba80ab8a9a465a660c45b2f">[Swift 2.2] Request to merge pull request: Perform a dynamic method call if a class has objc ancestry</a>      &mdash; <em>Arnold</em>
+    </li>
+    <li>
+<a href="/threads/222727d0444723482f6dcc60336645131dc50f93">Stable Merge later this week</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/d0937c038d60b3b51fe8235abd0927653a096194">Pure/isUniquelyReferenced and C libraries</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/aad9e52d0dcaf75e4e2eb547d0914613883366bf">[Swift 2.2] Request to merge code completion for #selector</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/63d0def6b76ddb6003e90d14ab656087d0e595a5">[Swift 2.2] Request to merge a build-script fix</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/b571048c7504ae26e86c48c59724f14f8fc4c29a">Glibc tgmath implementation</a>      &mdash; <em>Timothy Chagnon</em>
+    </li>
+    <li>
+<a href="/threads/6e974368522ee0f8dafb44d801b080664ebb2976">[Swift 2.2] Request to merge code completion fix for keywords as argument labels</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/68246de00ca04459f221c1f0a889cded6272e3b6">[Swift 2.2] Require to revert Swift 3 migration behavior from Swift 2.2 branch</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/eb71e4e7114e021541d671457745fa974d45e8bd">`@swift-ci Please test` not working for swift-corelibs-foundation</a>      &mdash; <em>Philippe Hausler</em>
+    </li>
+    <li>
+<a href="/threads/242af7b079bd47961bbcc413c4dcf0b8abf2fdb4">2.1.1 git version</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/e32842fa5275ec6c594f92d23898189c4a0dfec4">[Swift 2.2] Patches for __FILE__ symbols</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/45b4f6c3f2a9e15dd21d625843b0df23cdbbc1fc">[Swift 2.2] Fix for UTF8 BOM lexing</a>      &mdash; <em>Trent Nadeau</em>
+    </li>
+    <li>
+<a href="/threads/680d164959dee2236414357466b5d79dec2b03a6">New Swift snapshots available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/6fb14aef1fe071f0801af48c09a6dc5910103b02">[Swift 2.2] CGPath cannot be found</a>      &mdash; <em>Thomas Krajacic</em>
+    </li>
+    <li>
+<a href="/threads/676e2ba583ae3a73f8a1ad9dd77c52a53a2c0149">missing tag</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/e256eadb6c55fe59cf9710cb8339bc93cbd69627">Joe Pamer to substitute as release manager for Swift 2.2 next week (Feb 6-13)</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/6fdb93b1f202ea22a38ec63f028a848791b8c094">[Swift 2.2] Extract Version value out of optional when parsing _compiler_version</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/b3b70d1668ccde2aa2815a9b62177fa0035d6357">Unable to build documentation using make command in docs directory</a>      &mdash; <em>ankit goel</em>
+    </li>
+    <li>
+<a href="/threads/6ce5b52f439e39c8b4a63677a914e77f636160e7">Documentation for Int and UInt is misleading</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/77b83e04ab38b3cb4c84c1043c07fe56c3fee725">TWISt-shout Newsletter 2016-02-08</a>      &mdash; <em>Kenny Leung</em>
+    </li>
+    <li>
+<a href="/threads/e6aca422bde9981fff406a2d6e272b26dcb5871e">Documentation for Int and UInt is misleading</a>      &mdash; <em>Ole Begemann</em>
+    </li>
+    <li>
+<a href="/threads/8a8b1bee2c80109938f46ab740a77c792f44fa5e">[Suggestion] swift/utils/update-checkout should keep llvm/clang up-to-date</a>      &mdash; <em>Kevin Ballard</em>
+    </li>
+    <li>
+<a href="/threads/dc9b1025b1d5e7717b70f5e10bbd5c12835f09b1">Fwd: [RFC] &quot;Library Evolution Support in Swift (&#39;Resilience&#39;)&quot;</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/674bf816358da557a5cdc0779b816cc6aa497d38">[Swift 2.2] IRGen: Don&#39;t try to bind witness tables for archetype protocol requirements that don&#39;t need them.</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/630cb651272015526a4f1f7ee2191ac5670a9bfc">[Swift 2.2] [PrintAsObjC] Use @objc name for enums in enum references</a>      &mdash; <em>Kevin Ballard</em>
+    </li>
+    <li>
+<a href="/threads/07a75fbf283b4477425a070be8ebd90ac9ae3336">New Swift snapshots available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/4a4f57c97697bba11535259eeaab80b42eb34b62">&quot;no such module XCTest&quot;</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/48bec9af06f5b312b4ba27a0870275ff354199d7">Swift 2.2 regression bug: Using generic parameter as a generic argument in the same clause</a>      &mdash; <em>Alex Hoppen</em>
+    </li>
+    <li>
+<a href="/threads/4e8036b80fd476a7a0bd7b74d683e838761fb074">[RFC] SIL syntax for debug information Part 2: Scopes and Locations</a>      &mdash; <em>Adrian Prantl</em>
+    </li>
+    <li>
+<a href="/threads/08b039c0a275917d521c9ec010fa4936b3a21608">A large number of stdlib/Slice validation tests appear to be failing</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/189bce8664db7382b6ab7010d8b775035b255a3e">Disable objc interop</a>      &mdash; <em>Scott Knight</em>
+    </li>
+    <li>
+<a href="/threads/c51d1482ed93e55636d180d82612ec14a41843f5">clang/clang.order: file not recognized: File truncated</a>      &mdash; <em>David P Grove</em>
+    </li>
+    <li>
+<a href="/threads/0c0e7b98136a4a58eb40c4320ee89293baf210b2">Using Objective C class in Swift (open source, Linux)</a>      &mdash; <em>Iliya Trub</em>
+    </li>
+    <li>
+<a href="/threads/ba62df23278901e5231942dd529c7e4c63f94714">Turning on -Wshadow</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/f200ef835bc9c989a6ddc76a91dcd81551502717">Hello!/Obs. Language Elements/extent Swift for loops/Tuples init. APL in Swift</a>      &mdash; <em>ted van gaalen</em>
+    </li>
+    <li>
+<a href="/threads/7d2be38733b3e8d4c6945972e496f4dfc5710b8e">So, you&#39;re affected by a Swift bug...</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/0264635bd7fabf1ba7ef1a868f2cc910602a5313">importer questions</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/b9cf6ac6a3302ea2cfbfe027a67e3610db342885">Helping out with larger-scope items?</a>      &mdash; <em>Austin Zheng</em>
+    </li>
+    <li>
+<a href="/threads/f16d2da13910134750b06efde2f20f4f426fcad5">Helping out with larger-scope items?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/560939b45f6152aeaa75bbdd0185a426743da422">[Swift 2.2] Fix allowing initializers in protocol extensions to satisfy initializer requirements</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/8d78ed2be279c98e58c556bf33af66d1131b59ea">Cross-compiling with Toolchain files</a>      &mdash; <em>Tom Birch</em>
+    </li>
+    <li>
+<a href="/threads/81b55c6f9117e8f3c6a6286c496b756315a879fc">Swift.PM, an unofficial registry of SwiftPM packages</a>      &mdash; <em>Robert S Mozayeni</em>
+    </li>
+    <li>
+<a href="/threads/ceebec09a9c702bef3f1bf01ecb990465d271498">Why do open_existential instructions use a unique type per call site?</a>      &mdash; <em>Nadav Rotem</em>
+    </li>
+    <li>
+<a href="/threads/6a1d7a89ee0e2c21753620231f170366f386b4bd">[Swift 2.2] Revert &quot;Runtime: Remove retainCount entry points.&quot;</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/f210a275603978df810e4d49ae5d16a6e1f62ef5">[Swift 2.2] Fix regression with capturing class-constrained generic parameters</a>      &mdash; <em>Slava Pestov</em>
+    </li>
+    <li>
+<a href="/threads/34779e31450a7102b70204de54a6453f0e68dcca">Right list?</a>      &mdash; <em>Erica Sadun</em>
+    </li>
+    <li>
+<a href="/threads/5b7f54e469fec8eaeae016d75f2a21b5e1410322">UnsafeMutablePointer.init()</a>      &mdash; <em>Guillaume Lessard</em>
+    </li>
+    <li>
+<a href="/threads/62291bb1cc041e5b30376b46ba397edb522b05a9">Helping out with larger-scope items?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/846a08778bf007bf89a779c15139504f88a287a1">UnsafeMutablePointer.init()</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/136afcb3ee22c6480fb6f23c756bc5e91ff8aa37">C-style For Loops</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/6628ee650226cea1103bdb190f693ae730464f65">determine if decl comes from ObjC header</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/1eba2ef75663e4f9dcfa54849b1927d9d3dfc2f3">determine if decl comes from ObjC header</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/649fcbf94989f7d2830f38139eb647190bb00ebf">Issues when building swift using GNU 2.26 related to protected symbols</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/6c1e2dbdb62348bbc8e3fb33ae3b76642b21638a">SR-122 / CollectionsMoveIndices.swift Prototype</a>      &mdash; <em>Shawn Erickson</em>
+    </li>
+    <li>
+<a href="/threads/cbe04bbb453e6294d87d36787dbc6db863f23692">[Swift CI] [Master] Swift iPhone simulator i386 test failing</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/23494fec2a655ddecd0c3154432126ed6ddcda36">Type metadata and identity</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/91ba2c4c21ea9209bfc6b8c59f71bbf604dc8a6e">about NSDictionary question</a>      &mdash; <em>张辉</em>
+    </li>
+    <li>
+<a href="/threads/2150e7757b8e5a0724953d31ff33cc14bb9e8a95">New Swift snapshots available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/77b0f5f6660cf4514600eeefa3fca0099f01888c">feedback on alternatives for importing libdispatch types into Swift on Liunx</a>      &mdash; <em>David P Grove</em>
+    </li>
+    <li>
+<a href="/threads/7987a682c8b1d6ced6ef5e9362401844a32f9554">build failure: DISPATCH_QUEUE_OVERCOMMIT</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/4110f620de06fc6f6fe209a1aab1811a83c44684">pthread_mutex vs std::mutex</a>      &mdash; <em>Sangjin Han</em>
+    </li>
+    <li>
+<a href="/threads/63151c38db26965081e8667eb64c6174f97eefdf">FixKind::ForceOptional</a>      &mdash; <em>Daniel Duan</em>
+    </li>
+    <li>
+<a href="/threads/6ac5abbb8a6e1c2d9888314d9f1289ea477eef34">Endianness Protcol</a>      &mdash; <em>Alsey Miller</em>
+    </li>
+    <li>
+<a href="/threads/5a2f4459bc49f2d9b03a8539f24c72aa7db03301">expanding Swift commit access</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/8cda61f38fb6e137688ea758ab68b7231ed32eea">The proper way to get all visible protocols in a decl context</a>      &mdash; <em>Haichuan Wang</em>
+    </li>
+    <li>
+<a href="/threads/a27af01f848c39f5c5218ac46ef337daa90c1367">Build Error: Relocation R_X86_64_PC32</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/ccbcde3245e57e8b8b9e31740ded1239e1aeaf0e">Debugging with Xcode not working?</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/62421cba8143b44515285970e313308a40fe887e">Having 64-bit swift_retain/release ignore all negative pointer values</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/0b7b9b49e434fb4e13df5d3029c0967450009244">Very slow Set&lt;String&gt;(arrayOfStrings) for some arrayOfStrings</a>      &mdash; <em>Jens Persson</em>
+    </li>
+    <li>
+<a href="/threads/18fe1abf59b9b8c7e87a1bbcb494a7b59874bcda">Failure when generating Xcode project</a>      &mdash; <em>Alex Hoppen</em>
+    </li>
+    <li>
+<a href="/threads/a963a883dc873376367edb07093abaac7c0b39cb">Definite initialization implementation for property behaviors</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/0e2dd3f9cd9dd895ae078f62e7be5072ea9068de">missing SwiftShims when building Swift</a>      &mdash; <em>Bryan Chan</em>
+    </li>
+    <li>
+<a href="/threads/370db8bd6579e9f42eedf8ae2e1e0954ef41fb14">Very slow Set&lt;String&gt;(arrayOfStrings) for some arrayOfStrings</a>      &mdash; <em>Daniel Duan</em>
+    </li>
+    <li>
+<a href="/threads/8ce176fe575d6542de6e753ff7245c6fd3e5126a">Generic Subscripting</a>      &mdash; <em>Stephen Celis</em>
+    </li>
+    <li>
+<a href="/threads/665e8c3511c10cecdbaa82cda0a3fc47baac5429">How should NSArray&lt;void(^)(void)&gt;* be imported?</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/1da0537d9a9522cdd13c74652d2c0f36aed1abde">Static vs dynamic linkage of libedit/libuuid on Linux</a>      &mdash; <em>Jason Barrett Prado</em>
+    </li>
+    <li>
+<a href="/threads/5ec78003a6709e0edacf882eada2ea1b0e1c6ea3">Is there an underlying reason why optional protocol requirements need @objc?</a>      &mdash; <em>Simon Pilkington</em>
+    </li>
+    <li>
+<a href="/threads/fee87c3ca15b6af079726772597dbff15b6efa96">Is there an underlying reason why optional protocol requirements need @objc?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/7306218217cb5f8b4101c9a1df429bd486a26263">There should be no reserved words (keywords) ?</a>      &mdash; <em>ted van gaalen</em>
+    </li>
+    <li>
+<a href="/threads/33f893784572c87840dfd1eaa9ebf9adb4a0e14a">ASTContext::getUInt32Decl, continuation of github pull 1534</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/049c1eaf02d54c86b32a04f47ccd3e65f1da96ad">Generic typealiases</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/16000ad0cb9b37068afc45caa9bff023087c2111">Is there an ABI conflict between Swift and C++ regarding multiple return values?</a>      &mdash; <em>Bryan Chan</em>
+    </li>
+    <li>
+<a href="/threads/c81d23b7a132b95ec8e33dfebeb7ab3be07eb283">The swift didn&#39;t conform the calling convention for ppc64le</a>      &mdash; <em>bluedream</em>
+    </li>
+    <li>
+<a href="/threads/eab2562ad7bc97cc82cdfa1333d5c4d1f7ec620e">merging Swift 3 branches into master</a>      &mdash; <em>Max Moiseev</em>
+    </li>
+    <li>
+<a href="/threads/66ec54246ee3b9dcad8b1ff4a1fae2d23771fef7">Generic typealiases</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/a06695da8e1335f01f2529117f873454a69e69fb">[idle] COW wrapper in 30 lines</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/e2652855598eff08b633f32ffeeb95a0a93c733b">[idle] COW wrapper in 30 lines</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/3f04a8018f18fa9a2193fb6f88c80a02b2688f63">Enabling Whole Module Optimizations by default for Release builds</a>      &mdash; <em>Nadav Rotem</em>
+    </li>
+    <li>
+<a href="/threads/38ef3561172ef6f29e3abe2ca29d696f769a52f1">SequenceType Binary Search Implementation</a>      &mdash; <em>Lorenzo Racca</em>
+    </li>
+    <li>
+<a href="/threads/120b569a22137e2655d63d121cf951bc8ea60979">Recent llvm Intrinsics lookup updates</a>      &mdash; <em>Harlan Haskins</em>
+    </li>
+    <li>
+<a href="/threads/44e8eaa299c2407e2a97a85a6543cba62fd14b41">Branch purpose reference?</a>      &mdash; <em>William Dillon</em>
+    </li>
+    <li>
+<a href="/threads/5448edd254568110e8331d5bab6bacd1419779e7">Support only ninja built from source</a>      &mdash; <em>Wojciech Czekalski</em>
+    </li>
+    <li>
+<a href="/threads/d051d762a0295530e25ff82a9e921c0548706519">Developing Swift in Xcode</a>      &mdash; <em>Kenny Leung</em>
+    </li>
+    <li>
+<a href="/threads/496d6423fd754b946e6a72d2bfad2b99090ae4cc">Swift Playground</a>      &mdash; <em>Maclachlan Tysun</em>
+    </li>
+    <li>
+<a href="/threads/9e888d7f8586b66caf93aeb89cbf53189043ff6a">Starter bug: SR-946 Unify mutexes in the Swift runtime.</a>      &mdash; <em>Greg Parker</em>
+    </li>
+    <li>
+<a href="/threads/0802b2ee02182822b9ca6fb59f41fab1ba4a8417">Cortex M0</a>      &mdash; <em>Tanner Nelson</em>
+    </li>
+    <li>
+<a href="/threads/b518fe1bf047db75321a199bed5720c67d2950b3">[Discussion] New refcount representation</a>      &mdash; <em>Greg Parker</em>
+    </li>
+    <li>
+<a href="/threads/632a5bc67b9e32155058aa36bc12d6e722a60046">Issue cross compiling swift-llvm for iOS from OS X</a>      &mdash; <em>Andrew Hyatt</em>
+    </li>
+    <li>
+<a href="/threads/cc50521287634b90eeb9bc88dae2f9b3eb63c684">help with looking up Foundation.NSString</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/ee76278ef1e1bccfa1c6c41b7e19747761d51deb">Crash while compiling a getter</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/3d3f0338a2cf16a5c3492ae58d0a75c7d0a45695">@_specialize attribute</a>      &mdash; <em>Andrew Trick</em>
+    </li>
+    <li>
+<a href="/threads/3664028ef9f868934cf1694f753063dbd608607e">Issue cross compiling swift-llvm for iOS from OS X</a>      &mdash; <em>Andrew Hyatt</em>
+    </li>
+    <li>
+<a href="/threads/18e57e9e4dd89d0eccffc0c685723eafc108dd07">Cross compilation for linux failed on Mac</a>      &mdash; <em>Iliya Trub</em>
+    </li>
+    <li>
+<a href="/threads/9325fb5beb2f812a8c42153a5ba7258e1487dd49">Why no FloatingPointArithmeticType and DefaultInitializable protocols in stdlib?</a>      &mdash; <em>Jens Persson</em>
+    </li>
+    <li>
+<a href="/threads/48e44983e4ca1b38833a2144b969a59e30f046fa">protocol conformance table problems / print doesn&#39;t work in a statically-linked executable</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/960d3f4ff1e5659c0a2e1bf1a398c67c7c01a6ee">Advice on SR-580?</a>      &mdash; <em>Timothy Wood</em>
+    </li>
+    <li>
+<a href="/threads/d152bce33f1864b3f96deafe7c3109717d4b3ec4">Building swift-llvm fails when using build-script to cross compile due to multiple -isysroot arguments being in CFLAGS</a>      &mdash; <em>Andrew Hyatt</em>
+    </li>
+    <li>
+<a href="/threads/290beb185294d4252688a8caad741b68ce697634">Swift 2.2 released!</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/75704d696035d2f5c800ff44d181a99840fba3d4">Returning more than two scalars from C code</a>      &mdash; <em>Bryan Chan</em>
+    </li>
+    <li>
+<a href="/threads/69dfa2117fd5cd205fb9b4b9c81ad61fb6e4daee">Swift 2.2 Release functions on Ubuntu 14.04 x86</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/a76251a5657ee8e4e2f6411983114b13e37b484c">large dictionary literal overflows swiftc stack</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/8df051a76754f68b9ed84a637d079fc36fdffede">large dictionary literal overflows swiftc stack</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/605ffcddb398edd05439a2179c606d6e5769685a">large dictionary literal overflows swiftc stack</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/35b0af881e427f39f4702f1170d3c276d8ed062f">large dictionary literal overflows swiftc stack</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/f873405545f08a54a454faeb2ae2016e8391b959">large dictionary literal overflows swiftc stack</a>      &mdash; <em>Kyle Jessup</em>
+    </li>
+    <li>
+<a href="/threads/4ee4036fa2ae75ca2f84fa51a8496447f3edc11a">large dictionary literal overflows swiftc stack</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/7571a128073126c9d11c641c64a94b50ecb592fd">Build errors</a>      &mdash; <em>George King</em>
+    </li>
+    <li>
+<a href="/threads/f3b2e7b248dcb23233501c995815bfc0f6af107e">Role of Brace-Stmt in Swift AST</a>      &mdash; <em>Toni Suter</em>
+    </li>
+    <li>
+<a href="/threads/fb151ecf70e41c8f0ea874e5ff6073e7f58f4383">long double usage in swift</a>      &mdash; <em>Saleem Abdulrasool</em>
+    </li>
+    <li>
+<a href="/threads/49e10d9898a40a817bad67b66c24eaed115d3232">[WIP] New pull request triggers</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/c158800d7712570e793d3cf1c07cae69bef06a66">large dictionary literal overflows swiftc stack</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/d86f54a0f8c9d0ee97cd450a261e404bfb668cd1">New Swift development snapshots available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/d1c1060c19f0f7680ac596d42c8d059e72f04bf0">Error with SwiftGlibs building for arm-linux</a>      &mdash; <em>Iliya Trub</em>
+    </li>
+    <li>
+<a href="/threads/aea4dedbadbc03f4af872d12f70f5f110ded5ef3">The Swift Programming Language (Japanese translation, GitHub project)</a>      &mdash; <em>Martha JP</em>
+    </li>
+    <li>
+<a href="/threads/052b4e413e5059e95d0d0084d46746782676384a">The build system is ignoring swift-install-components when cross compiling</a>      &mdash; <em>Andrew Hyatt</em>
+    </li>
+    <li>
+<a href="/threads/ee70a8a7aae2274d38b3632c4cfb1d09da8dc69b">SR-34</a>      &mdash; <em>Xuejun Yang</em>
+    </li>
+    <li>
+<a href="/threads/10933f97f39299f9acc1dc2bc764af67bfb7a438">Web browser extension for SR-nnn links?</a>      &mdash; <em>Greg Parker</em>
+    </li>
+    <li>
+<a href="/threads/5e87908aa4abf8d3429dc410f73f23451263e0de">Swift kernel hacking, compiler options and target triples</a>      &mdash; <em>Simon Evans</em>
+    </li>
+    <li>
+<a href="/threads/79d4fc920f452af3df00562197a91569bb102b4e">Requiring Xcode 7.3 to build Swift master for Apple platforms?</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/732240dc07878fee135474e743652fbde4b9b8b7">Pull requests for Swift 2.2.1</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/f3d2d743588395d4e1fae104111e38b4d660f1df">Swift CI updated with Xcode 7.3</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/d1a47181a13f74841978a1292534e2b4e9618b27">ObjC Interoperability under armv7--linux-gnueabi</a>      &mdash; <em>Iliya Trub</em>
+    </li>
+    <li>
+<a href="/threads/ec65255bb0e458a23a380ebb6855999e112e31e5">Swift incremental compile profiling</a>      &mdash; <em>Samantha John</em>
+    </li>
+    <li>
+<a href="/threads/886809668b3383ea82bf85b8ece5eeeea2a1a995">Error with SwiftGlibs building for arm-linux</a>      &mdash; <em>Iliya Trub</em>
+    </li>
+    <li>
+<a href="/threads/9cffd0ad5aa137e1be641fed23e9eaa494379d67">isUniquelyReferenced issues</a>      &mdash; <em>Patrick Pijnappel</em>
+    </li>
+    <li>
+<a href="/threads/420025cb729fd9489b40cc06d38fd62806256335">changes in the inliner</a>      &mdash; <em>Erik Eckstein</em>
+    </li>
+    <li>
+<a href="/threads/b1f5efdc864115aca0483fe6238b2fffe47f0d76">print buffering</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/5e8d77a593783f877ba0a98c025ea04f6cae4ff3">[FAILURE] Swift Linux Package (Ubuntu 15.10) [#885]</a>      &mdash; <em>Mishal Shah</em>
+    </li>
+    <li>
+<a href="/threads/fafbe0fea3453da8960d851b6ae2d7820629aebe">[SR-710][RFC] Automatically detecting XCTest test methods on Linux: Reflection? SourceKit?</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/a6aa57bb9f79dab48fd44c61786e68d69f50a634">Requiring Xcode 7.3 to build Swift master for Apple platforms?</a>      &mdash; <em>Grant Paul</em>
+    </li>
+    <li>
+<a href="/threads/f5c629a8f832eb48aca5ca02b481553847d00783">CoerceAndExpand switch warnings after latest clang/llvm stable merge</a>      &mdash; <em>David Farler</em>
+    </li>
+    <li>
+<a href="/threads/0e4f690bf83d09fc57487005c11272a785929281">Policy on the use of clang-format</a>      &mdash; <em>Omeed Safaee-Rad</em>
+    </li>
+    <li>
+<a href="/threads/2b28d80f02294be86fefb4c2b4f5e397c8e189eb">Swiftpm CI failure on OSX due to watchkit</a>      &mdash; <em>Ankit Agarwal</em>
+    </li>
+    <li>
+<a href="/threads/f01d891693a7241478ae4dc584b675a545cf0356">swift (ABI) and Windows</a>      &mdash; <em>Saleem Abdulrasool</em>
+    </li>
+    <li>
+<a href="/threads/4aa64661f57dd5d77a7f2d9094a5f364cafe0350">changes in the inliner</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/34cfa139d3a368c40878cf9bc153fb9ab23c139c">Why are we re-linking?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/d84cf9914e1e1fd3872722b5a1884029bf0e387b">quick, spot the UB in this code:</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/33f35bb20e9cf33273348f2caf244e53c4116b28">Building Toolchain Fails</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/b7284b1044b21390d73bb2d59e3ec7cd168f0147">A type-checking performance case study</a>      &mdash; <em>John McCall</em>
+    </li>
+    <li>
+<a href="/threads/b4facdc53f5de92705b1b57319b11283b58792b7">Help needed: SE-0035 design detail</a>      &mdash; <em>Daniel Duan</em>
+    </li>
+    <li>
+<a href="/threads/480e57718f595cdf3853b66880fdfd7932aca950">[Swift CI] Failure: Swift Package - OS X (master)</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/ee9bba3756d94aa4515b6ea9e4115ccacef95ce6">What&#39;s the best way to handle failing SourceKit tests?</a>      &mdash; <em>Michael Buckley</em>
+    </li>
+    <li>
+<a href="/threads/f95d1248d300e01429a392e0766809bbcaa439c1">Help needed: SE-0035 design detail</a>      &mdash; <em>Daniel Duan</em>
+    </li>
+    <li>
+<a href="/threads/8b920f4be8a4a387655ce199f17c1998e810b835">New Swift snapshots available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/a98999cfbf0f22927a55a91d3073e1377d5bbb96">Help Needed: SR-1023 - Driver Design Question</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/bcf6e659d69e6a3acfc1fbb4c3d364373cd1dd93">repl/test-repl-glibc.py Failure on Ubuntu</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/86c27bf9016cc06f766ee6fbba1e9f808110a934">stale PRs</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/bdaf513bda3559ef1d81d83872931ff2c4cee6f3">R_ARM_GOT_PREL error when building Swift on Pi from source</a>      &mdash; <em>Timothy J. Wood</em>
+    </li>
+    <li>
+<a href="/threads/089c6d626e11d874758b08baf930823c83d5cc30">Random failure when building Swift on Pi</a>      &mdash; <em>Timothy Wood</em>
+    </li>
+    <li>
+<a href="/threads/7607802eba881af63df9e7e1887b3e6109155a2c">Potential Bug in SE-0029 (Remove implicit tuple splat behavior from function applications)</a>      &mdash; <em>David Sweeris</em>
+    </li>
+    <li>
+<a href="/threads/708324eb319ee32859b4da50959f904a3c7dc5d4">SIMD in open source Swift?</a>      &mdash; <em>Geordie Jay</em>
+    </li>
+    <li>
+<a href="/threads/f9908ed5cb3f6dba0b2f1799f8e88db3fca0c616">Build failure for Linux: &quot;No such module: SwiftGlibc&quot;</a>      &mdash; <em>Karl Wagner</em>
+    </li>
+    <li>
+<a href="/threads/4c16144a8423285c2bd27a9ad36c6f6d9f2d09a1">CLion for Swift Compiler Development</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/ec14df227f7e6f69bad8ed472da6fc38cd7d561d">Importing .swift file into REPL?</a>      &mdash; <em>Austin Zheng</em>
+    </li>
+    <li>
+<a href="/threads/fbb972d04ffebf1c98fcae12460af45040db6f19">&quot;does not conform to protocol&quot; --&gt; Tell me what to add</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/018964c87bb5d8e386f2e1ab75340e76ccc05dc7">Swift port to Windows : Offering help!</a>      &mdash; <em>Joel Van Eenwyk</em>
+    </li>
+    <li>
+<a href="/threads/4ac6785f9500a3fc8ac071573c6a12a54d5f3e0d">Proposal for Swift and Ubuntu releases</a>      &mdash; <em>Todd Fiala</em>
+    </li>
+    <li>
+<a href="/threads/264567ed9d4661c0c888af782b694fb5413e75aa">Lazy var and deinit</a>      &mdash; <em>Alexandr.moq</em>
+    </li>
+    <li>
+<a href="/threads/6c5c800ca50be6f1c3c9c4ef967afd2c9c3a61ed">Starter bug: SR-1286 Incorrect memory management in PotentialArchetype::getNestedType</a>      &mdash; <em>Greg Parker</em>
+    </li>
+    <li>
+<a href="/threads/c180436ffba8404568e6f68a5035f832155ffd5c">test-repl-glibc failure</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/d0a9ea90da53f500be6dc8a97abf0877301681a6">Including `FileCheck` in downloadable toolchains</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/a072391020e61362bd3f70aec27e7e0d9ba16059">RFC: &quot;Near-miss&quot; checking for defaulted protocol requirements</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/be7e6788cf4484de48e85082bd1f9e8caab7fdf7">Libraries written in Objective-C in Swift 3</a>      &mdash; <em>Mike Berg</em>
+    </li>
+    <li>
+<a href="/threads/8e6ca02794d0c22936d273db446ef978157fe23d">Help with SR-1052: Handling generic return values</a>      &mdash; <em>Trent Nadeau</em>
+    </li>
+    <li>
+<a href="/threads/53578958ac71f6ab4f76ba62f3d3b11c7de3debe">ASan runtime does not come first</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/2065d48d801d5660e377eee5214009a9c2536f66">build error: INSTALL cannot find readline.so</a>      &mdash; <em>Rob Allen</em>
+    </li>
+    <li>
+<a href="/threads/7603eb2d140b4ff6046a3b68097c297236299a4d">New Swift snapshots available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/15771810717c62e7da9e1f5edb223e1449c478a0">[Compiler] Help IR gen in targetting MSVC</a>      &mdash; <em>Sangjin Han</em>
+    </li>
+    <li>
+<a href="/threads/0144702bcad95e7ee798deaa0cddc1886c269bfb">hmap files</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/6175f3626899ec2b0b04773f838f7a8a3952f058">hmap files</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/29335f69e88d151d06f4b70ddb97f0c0d99cba2a">ObjC generic containers and ObjectiveCBridgeable conformance</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/0020fd038a38ffc1a130470873cdbbd5df29f382">swift-3.0-branch to be made; details to be announced soon</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/4ebf0bf4287cf775f709844499714773367de2b8">Why does the print function respect a CustomStringConvertible extension on Optional?</a>      &mdash; <em>Ian Terrell</em>
+    </li>
+    <li>
+<a href="/threads/91e569613e4aebfe775f9f6d87c151f8718c7904">New Swift snapshots available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/c4216e2f205ba378880a131e386a6a0f466c65fa">Swift CI - Planned Maintenance Outage on May 4th 2016</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/cc9419ae29574c7ea2d4ca4f2795c267239aef8b">Using locally built toolchain in Xcode</a>      &mdash; <em>Rob Allen</em>
+    </li>
+    <li>
+<a href="/threads/a902453c20e9590240aeede37d4a0907f0594705">Everyone with commit access can now initiate CI from pull requests</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/7468d0842bf61b7192f37e8d4287b1532586f4c7">Building SwiftPM with Foundation</a>      &mdash; <em>Bouke Haarsma</em>
+    </li>
+    <li>
+<a href="/threads/87ea85df5fcdb52ccecc00a8905cdc269b2a25f7">[Swift CI][OS X] Test failures</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/a4f2fadbea59c7e424e574fa7aabf95b0ccc958a">Linux test failure</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/203704306fb0f0a4969b6ee2415e48dc8b79dd1c">Swift 3.0 release process</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/f89b4c45f12d0d9c1e7734865c88f903004798e3">[RFC] UnsafeBytePointer API for In-Memory Layout</a>      &mdash; <em>Andrew Trick</em>
+    </li>
+    <li>
+<a href="/threads/e41f4df2a36454b1afa7c1ea4aec08b261c3038d">Consider removing the space in Swift AST dump&#39;s &quot;decl&quot; attribute?</a>      &mdash; <em>Minsheng Liu</em>
+    </li>
+    <li>
+<a href="/threads/253308876955f9c1f2cdd6a0c135349aae993924">LazyFilterCollection is not a Collection</a>      &mdash; <em>Rob Napier</em>
+    </li>
+    <li>
+<a href="/threads/1c4605d7baea6bb8c58893323ecbdca015666a4c">New Swift snapshots available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/58bdfea580bcbb858cd69e5be85bd46f13d364a2">Cross-compiling (nearly) everything for RPi from OSX</a>      &mdash; <em>Karl</em>
+    </li>
+    <li>
+<a href="/threads/e17f8db54c6349b542282739a0d48e1527493b3d">Swift compiler plugins</a>      &mdash; <em>Jorge Bernal</em>
+    </li>
+    <li>
+<a href="/threads/b8411ebde16f99fa1f8ee39e19ab165774e9f3d4">Broken development snapshot</a>      &mdash; <em>Mikio Takeuchi</em>
+    </li>
+    <li>
+<a href="/threads/2e0bbf3ad2254681f543ffcd91df592ce21df598">What do to when stdlib guidelines conflict with proposal?</a>      &mdash; <em>Russ Bishop</em>
+    </li>
+    <li>
+<a href="/threads/081dab567a56d5b8e2c458d1585d6fda60f4d6e7">Support for building without the stdlib</a>      &mdash; <em>Vedant Kumar</em>
+    </li>
+    <li>
+<a href="/threads/b811652cb2953ea12cd84483f74a97da9f0f1cf0">How to run the tests out-of-tree?</a>      &mdash; <em>Karl</em>
+    </li>
+    <li>
+<a href="/threads/b7dd1631e27248267d22b9d08226da300d16dbb8">swift-3.0-preview-1-branch has been cut</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/8d542d1e483df567e66dd6b899852e1f4d0cde2d">SR-1406: Xcode crashing while indexing</a>      &mdash; <em>Timothy J. Wood</em>
+    </li>
+    <li>
+<a href="/threads/72f464ca4b1156402dfd42e06225012dd2a3b868">please assign GitHub milestones for pull requests for swift-3.0-preview-1</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/4e2bf398bdf128766735cf6c3c80e7c57a7a617f">Requiring gold linker for Linux targets?</a>      &mdash; <em>Saleem Abdulrasool</em>
+    </li>
+    <li>
+<a href="/threads/3bd507508e27f05fd381b2658f06a5542f824616">How to export something similar to an xctoolchain for another platform</a>      &mdash; <em>Andrew Hyatt</em>
+    </li>
+    <li>
+<a href="/threads/8497b6897f6d2c4953f606dbde4ca3baacf707c5">Argument unused warnings</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/6c5d334554a042af47073611c96b9fbbc1f8a707">Automator service: &quot;View Public Swift Commit&quot;</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/8408c4a5d372d32e3d5acc4170898b303d234011">[Foundation] Remove/disable availability declarations on OSX? What to do with them?</a>      &mdash; <em>Karl</em>
+    </li>
+    <li>
+<a href="/threads/8c20988c3234874f0d321d8b43d8ed188aee9ca2">Relative Pointers and Windows ARM</a>      &mdash; <em>Saleem Abdulrasool</em>
+    </li>
+    <li>
+<a href="/threads/9040dd6ed79220813db73abe133a93fa0846e91c">CoreFoundation for Windows</a>      &mdash; <em>Sangjin Han</em>
+    </li>
+    <li>
+<a href="/threads/c5fb6bbdb88dee008eda1f4ed201ef140fb6831b">build-script -x freezing?</a>      &mdash; <em>Geoffrey Wiseman</em>
+    </li>
+    <li>
+<a href="/threads/076d4569f05c774b53ac77aa5e7c1df753fcd41e">SwiftGlibc: Use VFS overlay instead of -fmodule-map-file</a>      &mdash; <em>rintaro ishizaki</em>
+    </li>
+    <li>
+<a href="/threads/8e5cee6422e4b4a0f105f5b209e4dcb11e5b7211">Generic protocol conformance bug</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/76b146998ef80ff33d318f748e95861f4b395547">Possible bug with arithmetic optional comparison ?</a>      &mdash; <em>Yaman JAIOUCH</em>
+    </li>
+    <li>
+<a href="/threads/44753c166724c63e6ef3a47b46f597441a9e774e">Fwd: Swift AST documentation</a>      &mdash; <em>Tim Bodeit</em>
+    </li>
+    <li>
+<a href="/threads/4c5148e8b580db27fc48041c160a15e170fe4295">AST – Understanding @lvalue</a>      &mdash; <em>Tim Bodeit</em>
+    </li>
+    <li>
+<a href="/threads/58dd3bb619c629e59b8be263c0fea5b8911a1c77">Swift closure memory problem</a>      &mdash; <em>Alon Muroch</em>
+    </li>
+    <li>
+<a href="/threads/e7679699c373acaaf9ef5b5ff7e6b5a4ecb444da">Swift 3.0 Preview 1 Snapshots available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/114bd5876b26480c895f5693e52d53278fd3fb22">Swift compile times comparison: frameworks vs. non-frameworks</a>      &mdash; <em>Samantha John</em>
+    </li>
+    <li>
+<a href="/threads/3c1b7f7053ec2069c1fc9962711405b3c8fdbbbf">Benchmarks build failure</a>      &mdash; <em>Patrick Pijnappel</em>
+    </li>
+    <li>
+<a href="/threads/79870098bc9d06ca568e85502b4c608d2b6b7464">New Swift snapshots available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/2daeb751642004e2a01d9832a67eb1e3cc48010a">Delaying the enforcement of &quot;.self&quot; out of Swift 3?</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/5457b9eda1a7066904e1b2e1ec2846170041b597">need help with GLibc module map problem</a>      &mdash; <em>David P Grove</em>
+    </li>
+    <li>
+<a href="/threads/102113de35853dda11fa88c795ca427081c600f7">TSPL ePub in source format for translation projects</a>      &mdash; <em>Ion Jaureguialzo Sarasola</em>
+    </li>
+    <li>
+<a href="/threads/2e09f5995857cf06f4b74fe48a8fab606e7209ed">Compiler crash: AST verification error: archetype Element not allowed in this context</a>      &mdash; <em>Kenny Leung</em>
+    </li>
+    <li>
+<a href="/threads/6fa45a189c16ec17436e99566a0e748f18c272be">NSProxy dynamic casting to Swift or ObjC class behaves differently</a>      &mdash; <em>Yavuz Nuzumlalı</em>
+    </li>
+    <li>
+<a href="/threads/460c3f336db497ff1469f43c538a3cd61171c9b3">Fwd: [swift-evolution] [Draft] Change @noreturn to unconstructible return type</a>      &mdash; <em>L. Mihalkovic</em>
+    </li>
+    <li>
+<a href="/threads/e5f31225c19188230b44289d77ebad7160c39d42">Fwd: [swift-evolution] [Draft] Change @noreturn to unconstructible return type</a>      &mdash; <em>L. Mihalkovic</em>
+    </li>
+    <li>
+<a href="/threads/f477d64ea5009e1b6e64755313300b8f5e81b20d">VS Code language protocol</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/573a5ce58f1e56f6122f26f78801b208ff2b6c56">Help needed: Removing inout shadow copy from SILGen</a>      &mdash; <em>Daniel Duan</em>
+    </li>
+    <li>
+<a href="/threads/2ded27c31bafca594a65ee92cccba15fcfab2535">Standard shared libraries with executable stack</a>      &mdash; <em>Jongsu Kim</em>
+    </li>
+    <li>
+<a href="/threads/36a33607bcba9e0bd93e9a5ce5b3d9eab5691948">Swift 3.0 Preview 1 and some important logistics for those working on Swift</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/175ae52bf452ede8631a7db6a4029fb562307315">Open-source toolchains for Playgrounds (iOS, Xcode 8)</a>      &mdash; <em>Karl</em>
+    </li>
+    <li>
+<a href="/threads/6bd262b689378f09ba30b65c1c321e091ac97e92">Reminder: CI upgrade today</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/fc9b5ab1bb0996b805ca85adf7b2abced4a5b525">CI upgrade still in progress</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/ffc11b5a8c3caf01f3edbea566cb4ced48d8edfc">Problem in parsing SIL</a>      &mdash; <em>Mikio Takeuchi</em>
+    </li>
+    <li>
+<a href="/threads/be3b7c7d57d0943ddfa8a093f3f86fbd02683fbe">CI Upgrade complete</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/c68e7df6acd5cbadbc0aa50614cf1da587025a83">Error running build-script -R?</a>      &mdash; <em>Austin Zheng</em>
+    </li>
+    <li>
+<a href="/threads/a1d814aac1491d5b627fb8f9b753a976c74f5e7b">Help swift-clang on Windows crashes (2016-06-06)</a>      &mdash; <em>Sangjin Han</em>
+    </li>
+    <li>
+<a href="/threads/65186163dd00319ca48370b503ebf08f2229fa28">swift-3.0-preview-2-branch has been cut</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/2bd7e311cd642ad34f4113ed0f70d1dd42aca262">The Swift Programming Language (Malay Translation)</a>      &mdash; <em>Natthan Leong</em>
+    </li>
+    <li>
+<a href="/threads/d54c2d7e23d2db9c3b8b8b2bc9aa55187c0de176">New Swift Snapshots Available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/a53623b09a01bc5e827d03eb10563e7466bab033">Build script and archival steps for the toolchain</a>      &mdash; <em>Philippe Hausler</em>
+    </li>
+    <li>
+<a href="/threads/db5448c9cfc42924c9d46cc90a15a075c83d428a">Swift merge commits no diff</a>      &mdash; <em>Vassil Vassilev</em>
+    </li>
+    <li>
+<a href="/threads/ee4b0710a78f223cf4a6d145d3a39b65b2cc5240">Extracting documentation from stdlib</a>      &mdash; <em>George King</em>
+    </li>
+    <li>
+<a href="/threads/175dd9daa4578ec12b73066af90726f3b871bc31">Swift 3 on Linux</a>      &mdash; <em>Fabio Balancin</em>
+    </li>
+    <li>
+<a href="/threads/64d5912dabf76994d98a8afbf924161af8ce77dc">Random() in the standard library</a>      &mdash; <em>James Andrews</em>
+    </li>
+    <li>
+<a href="/threads/a72ec370a2d1c19224b225b09cc703b18e4559c7">Requiring blocks (universally)</a>      &mdash; <em>Saleem Abdulrasool</em>
+    </li>
+    <li>
+<a href="/threads/6220078b8141b2f0beff2e5175f7b791ec2b2e8c">Ubuntu 14.04 Swift master build failure</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/d4c76659d76cd720d6e129fd0acb127692c848cf">Descriptive Protocol non-conformance errors</a>      &mdash; <em>Sean Alling</em>
+    </li>
+    <li>
+<a href="/threads/63d1843c07b7e6840735d4c9164fdc865b044f80">swift --version output changed</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/a8c347c14bd6912d853b2ada0ac5b1ecbcbb2e60">Set of &quot;no less than one&quot; member enforced by the compiler</a>      &mdash; <em>Gwynne Raskind</em>
+    </li>
+    <li>
+<a href="/threads/905979db787082ad116c4940d5c9d6bc865d3fb3">Foundation Thread exhaustion on Linux</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/c1b0a8b9f9c7f557fec7d8d14729821ed94b8b43">Fixing some build issues on master-next</a>      &mdash; <em>Vedant Kumar</em>
+    </li>
+    <li>
+<a href="/threads/5c8378b2e6c046823b93e3a3bafd193b0f43e1fa">Swift 3.0 Preview 1 Branch and Tag Updated</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/ded28a6489e4672a003ff7003b44ffe8fffd859d">Handling Windows C library Matrix</a>      &mdash; <em>Saleem Abdulrasool</em>
+    </li>
+    <li>
+<a href="/threads/96abab4249a759c77738b0d31e94314d00d45a59">[RFC] Requiring CMake 3.4.3 by Prerequisite.</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/d5645d03598e2d84d98b984ecd187adc13e766f2">Master-Next bots are now on the public ci</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/cc6fdaa5f3271f8c68bbb8e64ff0a214d302fe4a">Bridging Python Packages to Swift</a>      &mdash; <em>Muhammad Tahir Vali</em>
+    </li>
+    <li>
+<a href="/threads/2720efaf409c71699ea693cda024fc2fadabcd96">COFF indirect addressing and protocol conformance tables ABI issues</a>      &mdash; <em>Saleem Abdulrasool</em>
+    </li>
+    <li>
+<a href="/threads/10660a136c4dfc1a2eb8849390e550b327c556e8">Unmanaged API flip flop</a>      &mdash; <em>Kyle Jessup</em>
+    </li>
+    <li>
+<a href="/threads/d50479042a8a139f9c4cd3b3306862146020ef57">SE-0095: SIL syntax and Any.self problem</a>      &mdash; <em>Josef Willsher</em>
+    </li>
+    <li>
+<a href="/threads/88b96437fdae06313403251e6acb53a6b2231248">CI outage for SDK and source updates, and branching for Preview 3</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/61764b9fd1d1e45d462b95509e81f77d45121951">Fixit for trailing closures</a>      &mdash; <em>Xi Ge</em>
+    </li>
+    <li>
+<a href="/threads/10e454447b69e7e22c6deec72111d4f57aebef04">Fixits</a>      &mdash; <em>Erica Sadun</em>
+    </li>
+    <li>
+<a href="/threads/17d0db82dabeee3d47a4036528d501b25e4a6251">id-as-Any and ObjC generic parameters</a>      &mdash; <em>John McCall</em>
+    </li>
+    <li>
+<a href="/threads/cbeeb31497cdb1ad4a4a9e697fdcd105bf47684c">Unsupported imported target type MODULE_LIBRARY</a>      &mdash; <em>Minsheng Liu</em>
+    </li>
+    <li>
+<a href="/threads/e28063377712ac6239f53289c81832a0e89a4dab">[RFC] Finer grained OS checks</a>      &mdash; <em>Saleem Abdulrasool</em>
+    </li>
+    <li>
+<a href="/threads/42780e001e737c35a3e9f60087aeb507d56d7c3c">Optimal Work Flow</a>      &mdash; <em>Lau Bao</em>
+    </li>
+    <li>
+<a href="/threads/493968f45677eac48ff8d8322ec5e58fd9640951">Type inference of functions with more than one statement</a>      &mdash; <em>Ross LeBeau</em>
+    </li>
+    <li>
+<a href="/threads/87da5f02d4f4fcc0c22c1a50f52e733222b17c77">Build issue on amd64</a>      &mdash; <em>Richard Neese</em>
+    </li>
+    <li>
+<a href="/threads/065cb43aea2bc4d719dafeb6723d92e60caf2c8d">Bugs not reproducible on master</a>      &mdash; <em>Alex Hoppen</em>
+    </li>
+    <li>
+<a href="/threads/e7d69df3485975b55a82f1bd971ab75bfa7388e1">Array with associatedtype protocol pattern</a>      &mdash; <em>4 bottiglie g</em>
+    </li>
+    <li>
+<a href="/threads/d7d399937f41809bef9f7d90c3502d0e175280aa">Obj C -&gt; Swift conversion</a>      &mdash; <em>Ford Prefect</em>
+    </li>
+    <li>
+<a href="/threads/45b1eadc177e004a437b5646d6074bd6ef64aa31">[Swift CI] [swift-3.0-preview-3] TEST &#39;Swift :: Runtime/weak-reference-racetests-dispatch.swift&#39; FAILED</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/e6db90b574e5868e9dd1103dc2dd50f88262ae14">Implementation of swift&#39;s value types</a>      &mdash; <em>Johannes Neubauer</em>
+    </li>
+    <li>
+<a href="/threads/eb19e4b3d12800204ee65b20cbfb780d43aebbc8">Endgame for Swift 3</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/a2ca0118c6e3d938c57219dbbdfd00dc8ac9ed31">Endgame for Swift 3</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/84eeb43e2ff628ef1b4fdcf5bb86f1fcf276a568">1_stdlib/NSSetAPI.swift fails verifying open archetypes</a>      &mdash; <em>Andrew Trick</em>
+    </li>
+    <li>
+<a href="/threads/89586ec054d037e0c1e6f220f6395d94dbd8bcca">OSS Swift CI, test-simulator fails to build</a>      &mdash; <em>Andrew Trick</em>
+    </li>
+    <li>
+<a href="/threads/1345bef3c88abfc659a310569156e30519cdb580">Putting an app on the Android Play Store using Swift</a>      &mdash; <em>Geordie Jay</em>
+    </li>
+    <li>
+<a href="/threads/8438f7829cc9bc76f9b34f6050b776df4e3fda24">C API Annotations outside of original header?</a>      &mdash; <em>Geordie Jay</em>
+    </li>
+    <li>
+<a href="/threads/9e96d244ec5bbc5a8377f3080f801bd132d0eccd">CI outage for SDK and source updates, and branching for Preview 4</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/3470c4376074f648c981548c6f62d63ac068c112">[Swift CI] Build Failing: OSS - Swift Incremental RA - OS X (master) #5294</a>      &mdash; <em>Bob Wilson</em>
+    </li>
+    <li>
+<a href="/threads/a8f926eef7a86bd6c04d269668fac572a8bbea19">Turns out Incremental builds were not actually incremental</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/c2841d90d6e4d00e1a4da2829bb2cb8ec7837cfe">CI and source pushback update</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/10b1152d936e5db9e857c5012a086c9ce9dd50c0">Turns out Incremental builds were not actually incremental</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/06e3579cfa0f1468e18aa98255278fc0818340ad">Could not find a package configuration file provided by &quot;Clang&quot;</a>      &mdash; <em>Erica Sadun</em>
+    </li>
+    <li>
+<a href="/threads/21b6d3df293fdb80662fc7aeb82c45bf00820ba2">CI trigger request</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/b7cd9e9e2f61b64b5c4f7307fde39ab24e02c84a">Standard Library not built in release mode with -R in build script</a>      &mdash; <em>Ankit Agarwal</em>
+    </li>
+    <li>
+<a href="/threads/8d82ee5c3d97abf36b1ce580c09cc0391849d212">Reflection/typeref_lowering.swift&#39; FAILED (but not on Swift CI)</a>      &mdash; <em>Andrew Trick</em>
+    </li>
+    <li>
+<a href="/threads/49dfacc8b4c74ed7fd8f7e1e18e578daa11369f1">PR testing failing on test/IDE/print_omit_needless_words.swift</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/91a9da9185dfe0b40a2155e5a1ff5575d4b1c2c7">new code owner for the SIL optimizer</a>      &mdash; <em>Bob Wilson</em>
+    </li>
+    <li>
+<a href="/threads/99512f5e170b100291dcba83a872aeb5ba739037">New Swift Snapshots Available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/da05bc0cd70417d80bdeac70576f2590d162231e">Branching swift-3.0-preview-5-branch</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/c8bb6ce3dbc8d32a15d4d8da2d49e7a9cd26a35e">speculative branch being cut</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/585c6c7e61588e49baf37bb721f68332a33c1b1a">CI stabilization tomorrow</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/2a77fc1b0a23abb75dba842644269b673e343e16">CI stabilization update</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/c20406c9dc308e5ff53c217020fa087bb54473fe">Implementing SE-0111: Remove type system significance of function argument labels</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/0580a384dae71fc9624fdd169aedc6e1347eba6f">[SE-0134] Source-breaking proposal implementation</a>      &mdash; <em>Xiaodi Wu</em>
+    </li>
+    <li>
+<a href="/threads/36f44a223d5aa74e6e72fc978232c2e4a01b1ef2">CI Update: Bots are blue, master is unlocked!</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/9b6b35dc3d7d1d7723945d0924bc2e7defb79a68">Anyone running build-toolchain on linux?</a>      &mdash; <em>Andrew Trick</em>
+    </li>
+    <li>
+<a href="/threads/a16e44a406741c1a4ca54b71acb53c71fc8b1624">Anyone fixing TestNSJSONSerialization?</a>      &mdash; <em>Andrew Trick</em>
+    </li>
+    <li>
+<a href="/threads/b0111aae473745a72dc10ba4080de560d59ca30e">Initial smoke test PR message confusion</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/aa269f9d18f454541698b0191e8e87142e68162c">SE-0042: Flattening the function type of unapplied method references</a>      &mdash; <em>Janek Spaderna</em>
+    </li>
+    <li>
+<a href="/threads/c6469a7f9aa5d9fd5c9619ff66bf503144ccd814">clang: warning: argument unused during compilation: &#39;-MMD&#39;</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/7e4bc3a4c05c7fbcd96f0ec0779db428be9e588a">[Swift 4] Organizing source stability</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/9e9ddc42a037ca7e192ca163457caf32462e628e">Is developer snapshot 2016-07-29 broken?</a>      &mdash; <em>Charles Lane</em>
+    </li>
+    <li>
+<a href="/threads/b9778d1e026bd9ae9409c16fadc9ff3e7310c56f">Is developer snapshot 2016-07-29 broken?</a>      &mdash; <em>Jens Persson</em>
+    </li>
+    <li>
+<a href="/threads/ef2e2e43a83ecef6a1efea9782963c0a5be11c06">Shipping sourcekitd-test/repl with Swift</a>      &mdash; <em>Keith Smiley</em>
+    </li>
+    <li>
+<a href="/threads/9335613d430448c89b07e63e1f8ffe8273237702">Question about SourceKit structure output</a>      &mdash; <em>Eugene Gubin</em>
+    </li>
+    <li>
+<a href="/threads/2999b5e6d7e9bb9fb4b8d924ae560df16e09ebdd">Swift Pull Request: Github Connection issues</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/d241fd22badab0807cd3eb4f9938c05766a092ee">CI outage for SDK and source updates</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/177f9f5442052e053e83b1e3a6109fd758eeecbe">dispatch_block_t is imported wrong, breaks barrier blocks (SR-2246)</a>      &mdash; <em>Kevin Ballard</em>
+    </li>
+    <li>
+<a href="/threads/d642bfb0840515185952d3c42c5bef77a9978eb4">Failure in optimized tests</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/049ef1b5a2c2ce5efcc27acdf7fa944a596f7b68">build-toolchain failing on OS X 10.12</a>      &mdash; <em>David Liu</em>
+    </li>
+    <li>
+<a href="/threads/3e450d649fda1c0c8177a4bd41fb8b27932d59a0">swift-corelibs-foundation failing in object conversion when building on Darwin host</a>      &mdash; <em>Philippe Hausler</em>
+    </li>
+    <li>
+<a href="/threads/80d4b2a23af222da786ba1837bed510f592e7d8d">How to get the digest</a>      &mdash; <em>Adrian Brink</em>
+    </li>
+    <li>
+<a href="/threads/aad0118abb97f3a6c37fcc2a8ccf88af3957ce74">What exactly does it mean for a Swift pointer to be initialized?</a>      &mdash; <em>Jens Persson</em>
+    </li>
+    <li>
+<a href="/threads/5534ce7fc92d5800162c246d6ff8521a29ca4165">What exactly does it mean for a Swift pointer to be initialized?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/bf28339fac149de1455f1d19833851b7339ec94d">What exactly does it mean for a Swift pointer to be initialized?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/c36b68ae2a120bfc319138c6b23b0bb0d8917dd0">linux long tests failing due to JUnit issue?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/e06bc9e3ebd6e1f5dd725d54b34b6a5f40691e86">Build failure on s390x</a>      &mdash; <em>Vivian Kong</em>
+    </li>
+    <li>
+<a href="/threads/6670bdc89a91f05d77b4151c10f5f8a69d553d62">CI outage for SDK and source updates tomorrow</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/9c4041accd880cda84999e78e0613fbafb70c7dd">[SourceKit] Include sourcekitd.h in distributed toolchain</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/05bccf13defc60b4a93f550a320f37989076d511">[swift-3.0-branch] Fix typo in `sourcekitd-test` error handler response</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/7ea9b3e07fee92897c84e9d70899ea9ae34edb03">Timeouts on Linux bots?</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/baf07fbda9c040bb4a15689524086a7fa0ad76b7">[Swift CI] LLDB test failing</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/565d4aada6abcc7db92c706f21b8e4a369cfd841">undefined symbol: _TFC10Foundation8NSNumberg25customPlaygroundQuickLookOs19PlaygroundQuickLook</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/cfaeeb296a9fad4ee8e74ffda677c2388de92fe4">MemoryError in SIL/parse_stdlib_X.sil tests when building toolchain on Ubuntu 15.10</a>      &mdash; <em>Jean-Pierre Simard</em>
+    </li>
+    <li>
+<a href="/threads/b59f24f1e6550c84cf12b5f8c5c08bdba2ca6cb3">undefined symbol: _TFC10Foundation8NSNumberg25customPlaygroundQuickLookOs19PlaygroundQuickLook</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/01c4581aca63f34705d46ee3f81904cab3d3f75c">swift-3.0-branch is the convergence branch for Swift 3</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/2a62b9261a6206212f69dcc0a45298e9abc1c22e">preview 5 package-tests failure</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/d6a81ebeba3791f24948d04f92df59713e08ffe7">CI outage for SDK and source updates tomorrow</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/d5466873bb74f85dd303053ef949940079c59eb0">New Swift Snapshots Available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/8167c411badf3785164e871f8477b24d5034a1f2">compiler-rt...Wait wat?</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/3520f73b203a0e9c1d5f5905f55b9667a83fd6c7">Russian version of &quot;The Swift Programming Language&quot;</a>      &mdash; <em>Ivan Akulov</em>
+    </li>
+    <li>
+<a href="/threads/52c789f1a777e8a3bdeef69d16bce4d2c08d1eca">New Swift Snapshots Available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/4cde2f751bbb25eaa73c0fbc83bbde649871d94c">SE-0111 related question</a>      &mdash; <em>Benjamin G</em>
+    </li>
+    <li>
+<a href="/threads/831b279b6bcb4188963f7d37b046c0d476130288">Llvm Toolchain packaging</a>      &mdash; <em>Patrice Kouame</em>
+    </li>
+    <li>
+<a href="/threads/a26c163b81a95738ccaea9803f22dd8ea9b37e27">available to translate swift 3.0 to Italian...</a>      &mdash; <em>gian enrico conti</em>
+    </li>
+    <li>
+<a href="/threads/522bf98101eb5516f45ab697cc825c2a9e13f14a">Question about size of Character type</a>      &mdash; <em>Ole Begemann</em>
+    </li>
+    <li>
+<a href="/threads/879b762a4ed98e4d31ef64f9ef5c485900d05d6f">Centos 7.2 Building SwiftPM Error &quot;error: invalid inferred toolchain&quot;</a>      &mdash; <em>SonWa</em>
+    </li>
+    <li>
+<a href="/threads/6eb1a0cc5615e8ca69d77123994d3bc14043c813">New Swift Snapshots Available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/317ee9f69fce524dbab5d45e800726a27aaf9dff">Question about dump-ast and logging the output to file</a>      &mdash; <em>Marcel Rebouças</em>
+    </li>
+    <li>
+<a href="/threads/a88a21c92eafbe4f75844f887dfd378aed1b266d">__swift__</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/2134fbe1d11ac3d189ffaa32fff59a90373f8c0c">New Swift Snapshots Available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/fb457be5f35022d24f637d83b6006766332848c9">Code coverage?</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/a863665a331d74b3423ea55057dbcc0cec9eff59">=?iso-8859-1?q?Centos_7=2E2_Building_SwiftPM_Error=22?= =?iso-8859-1?q?error=3A_invalid=09inferred_toolchain=22?=</a>      &mdash; <em>SonWa</em>
+    </li>
+    <li>
+<a href="/threads/cd5bd12b71628cfac5dfa05a699269a7ec19b2c9">Swift CI: Pull Request Check Status</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/64696439f9b5595f3f7d9414f7ecd27e579a175d">Reflection: typeref_lowering test case on Linuxone</a>      &mdash; <em>Raminder Sodhi</em>
+    </li>
+    <li>
+<a href="/threads/622681b532dfc8de17246d2a35fc23da6029f714">New Swift Snapshots Available!</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/7394a41a326ed5591b070cd7ad95bfb6daa50e4c">Why are BinaryFloatingPoint&#39;s RawSignificand and RawExponent different type?</a>      &mdash; <em>Jens Persson</em>
+    </li>
+    <li>
+<a href="/threads/343b5f2e1a3cde778e21895279981ad1761ebbbb">Swift&#39;s handling of function types</a>      &mdash; <em>Jens Persson</em>
+    </li>
+    <li>
+<a href="/threads/123bc9f3e9d46825339ae23c9d045361089a319c">Linux Foundation test failure</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/bedbc8bb1ea294b44f65b0246f392d1ace0d5548">ERROR: test_breakpoint_callback_dwarf</a>      &mdash; <em>SonWa</em>
+    </li>
+    <li>
+<a href="/threads/dc83045c08c3b9a09868b63b59fbf3825d19c096">Updating llvm/clang stable branches</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/71c0b8503bf490e878d2fab441bfdd62d36b55be">compile sourcekit for ios</a>      &mdash; <em>Philipp Seibel</em>
+    </li>
+    <li>
+<a href="/threads/4c955e0cd05d0a3de3327c87e5e44c3256a29e63">Adding a singleton to swift</a>      &mdash; <em>Vedant Kumar</em>
+    </li>
+    <li>
+<a href="/threads/8608621bddaf3f31f7514c5b84edb2497b18d1d0">What about concurrency?</a>      &mdash; <em>Антон Миронов</em>
+    </li>
+    <li>
+<a href="/threads/7b5cfad44aaefe42d8d7d5e9b005d0475f20367d">Building Static Binaries and Libs</a>      &mdash; <em>Joel Hughes</em>
+    </li>
+    <li>
+<a href="/threads/2ccc3da76250724c5018d301d86a5c0d81302357">Implementation of Type Erasers</a>      &mdash; <em>Chris Eidhof</em>
+    </li>
+    <li>
+<a href="/threads/42e8af519cf0116d4c3144c20a8d26ddcaebb58c">Advice on adding PGO support</a>      &mdash; <em>Vedant Kumar</em>
+    </li>
+    <li>
+<a href="/threads/56d219f05941ea062b08b72a490830c8efc21f71">[SIL] Deconstructing partial_apply</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/067338bb0fb42eaff37e6c207a0dad2450fa990e">Linux Swift: Strange bug found in a simple arithmetic</a>      &mdash; <em>louislepegue</em>
+    </li>
+    <li>
+<a href="/threads/530d3bd12ecf771042c66c6d9b21ac4632282197">Code reformatting the swift-lldb repo, master and master-next branches</a>      &mdash; <em>Todd Fiala</em>
+    </li>
+    <li>
+<a href="/threads/7ac346eb2e1fb181e7f11813635fbd619c1e26f6">CI outage for SDK and source updates tomorrow</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/eb8ee6cdfdab1733c1d746db6386533b793d96f6">Compile an old version of Swift from source</a>      &mdash; <em>Daniel Martín</em>
+    </li>
+    <li>
+<a href="/threads/de8673ad81853c06b3d375d42882707ef4143211">Xcode 8 GM: Compiler segfaults on ExpressibleByArrayLiteral</a>      &mdash; <em>Ole Begemann</em>
+    </li>
+    <li>
+<a href="/threads/757f2d727c52a6cabf2309fcdc3988cedc98f993">SIL to IR lowering</a>      &mdash; <em>Rebecca Chen</em>
+    </li>
+    <li>
+<a href="/threads/bd64847adcf6366c81db292c5ebf2729bdd92332">Cross Repository Testing with Swift CI</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/b0db6ae013f683d1ce6e8ab841054a53a118ab20">CI outage</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/04763537cd9a2ae2e9765b3eb67ac0f7dcc49db9">Swift 2.3 branch build broken</a>      &mdash; <em>Matt Rajca</em>
+    </li>
+    <li>
+<a href="/threads/86e6627280c6f8ca18beefc8825cc79f9313ad3f">Flaky test - objc_nonnull_lie_hack</a>      &mdash; <em>Slava Pestov</em>
+    </li>
+    <li>
+<a href="/threads/a3d5a43098ca24d49a6ddab8ff970ea74226ce87">(no subject)</a>      &mdash; <em>Denise Marie Martinez Martinez</em>
+    </li>
+    <li>
+<a href="/threads/f5497b5cb261b531333f4be475618c952e20129a">Linux: Build process not finding my ICU</a>      &mdash; <em>Eric Wing</em>
+    </li>
+    <li>
+<a href="/threads/bb97244fe509046e443c708e98f67401c6a12e1c">Android: Build error: No such module &quot;SwiftGlibc&quot;</a>      &mdash; <em>Eric Wing</em>
+    </li>
+    <li>
+<a href="/threads/5a886d791c4d8cf6d4417f77a4a1870feb282d44">why are we accepting switch statements with duplicate conditions?</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/b61c74db1c46326934cc36400a1ed9f919264a37">Adding kqueue lib to libdispatch test Makefile</a>      &mdash; <em>Ron Olson</em>
+    </li>
+    <li>
+<a href="/threads/c1b25df4877d91d0aa9a42c161be95872cdfce4a">Debian/Ubuntu Package</a>      &mdash; <em>Paulo Faria</em>
+    </li>
+    <li>
+<a href="/threads/fe9d4565fa064bbc0c4257b3e3a4949e106a5e54">Swift 3.0 on Linux x86_32 bit</a>      &mdash; <em>Piero Sabino</em>
+    </li>
+    <li>
+<a href="/threads/bae66901f9672c271094c22db882bd01511bb63c">Implementation of Type Erasers</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/f4c26833f5b5e117d8b8988202e662f1822c49d8">NSXMLNode.swift: error: integer literal overflows when stored into Int</a>      &mdash; <em>Eric Wing</em>
+    </li>
+    <li>
+<a href="/threads/a7c314536e8caa7c92b1511858c7fdc6b5c7eb97">Compiling on FreeBSD</a>      &mdash; <em>K Staring</em>
+    </li>
+    <li>
+<a href="/threads/0f045de2b589d419c26e7f46d31e0c4ef57118fc">&#39;SwiftShims&#39;: no such file or directory</a>      &mdash; <em>Eric Wing</em>
+    </li>
+    <li>
+<a href="/threads/bc2262ce4c9ab0335f614bbdca0025167ab85f75">More Swift 3 Raspberry Pi 2 build problems</a>      &mdash; <em>Eric Wing</em>
+    </li>
+    <li>
+<a href="/threads/4a0fc2f8ec29763ee111002470f42506f6c2c562">Extending Swift&#39;s continuous integration</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/5d078028551ff79ed1a9cb1c8858e1c4d1cfcad0">Rebinding UnsafePointer makes it mutable</a>      &mdash; <em>Martin R</em>
+    </li>
+    <li>
+<a href="/threads/905be29073c1e579c832df56d0b90a3ce1ac2cd3">Specify Xcode command line tools when building Swift?</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/3009d4d796b73b45a78724990dd65b48cd8cc6b8">Are there any Swift/LLVM optimizations I could be assigned to?</a>      &mdash; <em>Eddie Santos</em>
+    </li>
+    <li>
+<a href="/threads/0de5e0fe27a4e6c1e5108a449e55e70b62c9fe0f">&#39;SwiftShims&#39;: no such file or directory</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/cfec1c4d2ce53e3ed57ea365bc2f6797c300302d">&#39;SwiftShims&#39;: no such file or directory</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/417775da385b1a2bf32e06eb579ee38b5be46843">Needs better error msg?</a>      &mdash; <em>Flamedoge</em>
+    </li>
+    <li>
+<a href="/threads/e756e49ebea960f333e6d2237c7b0b136e676ef5">Swift Package Manager</a>      &mdash; <em>Raminder Sodhi</em>
+    </li>
+    <li>
+<a href="/threads/a047657f264eaae0cd55f2484e9c72d39622e8a0">Swift CI PR builder dispatch linux failure</a>      &mdash; <em>Ankit Aggarwal</em>
+    </li>
+    <li>
+<a href="/threads/f27eb9deaa55defbf152fa5655d0f058e9712690">CI outage tomorrow</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/2ce880e3cb345abac1d9a5c461e23274813955ae">Ubuntu 16.04 Bots on ci.swift.org</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/cacdd9697cb3c36a702caeaabefcf9e4b952c9e3">How to start a new translation project of The Swift Programming Language manual.</a>      &mdash; <em>Francesco Vino</em>
+    </li>
+    <li>
+<a href="/threads/88127e1d9ed5758b84f5bacdcecd3b7d6a597130">Separating ./docs into several folders</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/0b97c38a89b9656f73e04807f23cc37b046b708a">Major SwiftPM compile time regression</a>      &mdash; <em>Daniel Dunbar</em>
+    </li>
+    <li>
+<a href="/threads/beb31f1f30c9dd3ac152dcdd7df8c0e87beaf04b">Android: wrong ld (linker) keeps being invoked</a>      &mdash; <em>Eric Wing</em>
+    </li>
+    <li>
+<a href="/threads/e6ed39521b3720d5f77fcd00fe75a43e3519aea0">ccache and/or distcc for swift</a>      &mdash; <em>Oscar Bonilla</em>
+    </li>
+    <li>
+<a href="/threads/2ec4a7d61343d82fc06617d51dfedea26bc644b3">Swift 3.0.1 Preview 2 branch</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/5d1570c0075047f6b2ee02835d29bbd1b2af48d6">[semantic-arc] High Level Vision</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/55696e56f6255620a8d9ae2fd96d63e793902667">[semantic-arc][proposal] High Level ARC Memory Operations</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/1d4e91e93556f91807d8a1921bf5f1a829ecfdf7">Representing &quot;address-only&quot; values in SIL</a>      &mdash; <em>John McCall</em>
+    </li>
+    <li>
+<a href="/threads/0f06e34d81f71a39e44d6a1fa1bb390b0a74295e">RPM builder for Swift 3 (Fedora/RHL)</a>      &mdash; <em>Ron Olson</em>
+    </li>
+    <li>
+<a href="/threads/9d8eaf7b59aeb1cd302fdf50be6db18a3d714b7d">Does it make sense to fold FreeBSD specific patches to Swift into the upstream codebase?</a>      &mdash; <em>Brendan Sechter</em>
+    </li>
+    <li>
+<a href="/threads/d1ecea892b017b4fc5305f2262765fc3d07296cd">Differences between Xcode official toolchains and tagged releases from repository</a>      &mdash; <em>Daniel Martín</em>
+    </li>
+    <li>
+<a href="/threads/7766ddc39474ebe3d1465655b69d41815112a5e3">swiftCore dependencies on Foundation</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/136d51f1f83a6c427a390bf84e7ccb63d4d23bf3">CI outage tomorrow</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/5cdc9570840134079ed9890afe1abc42a1fa3b25">Reporting/Debugging Slow Swift Compile Time</a>      &mdash; <em>Ben Asher</em>
+    </li>
+    <li>
+<a href="/threads/53bc5bd3616d487bbe045817fe3cb86ef447d8a9">Differences between Xcode official toolchains and tagged releases from repository</a>      &mdash; <em>Xavier Jurado</em>
+    </li>
+    <li>
+<a href="/threads/31c5820694538cff52c728711c06555ef4d873ed">preprocessor and warnings for deprecated APIs...</a>      &mdash; <em>Martine Habib</em>
+    </li>
+    <li>
+<a href="/threads/9f7035d97aa9771c7a8611fb94d25363315f2131">Starter bug: SR-2875 Emit objc_allocWithZone(cls) instead of [cls allocWithZone:nil]</a>      &mdash; <em>Greg Parker</em>
+    </li>
+    <li>
+<a href="/threads/1d74d675e46880d9689f01e1e80454b03644c449">KVO Context Param</a>      &mdash; <em>Tyler Stromberg</em>
+    </li>
+    <li>
+<a href="/threads/32dca5a8c6681cb3e40abaf12443181a2f96f85b">KVO Context Param</a>      &mdash; <em>Tyler Stromberg</em>
+    </li>
+    <li>
+<a href="/threads/1467b00e5708dcd26e1654dc22b3ffbfd9c32c07">(Re-)compiling the stdlib</a>      &mdash; <em>Christian Hoffmann</em>
+    </li>
+    <li>
+<a href="/threads/dfbfc19d48ab5a7257324096094b484879899c54">DispatchQueue function in Swift 3.0</a>      &mdash; <em>Yue Cui</em>
+    </li>
+    <li>
+<a href="/threads/f6b6721592d3970b28bd5c649c7fbc6efb05dd9c">The Legend of the Toll-Free Swift -&gt; ObjC Collection Bridge</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/12009c29c5a43b512aadc2a6096a93bdb7239dd7">The Legend of the Toll-Free Swift -&gt; ObjC Collection Bridge</a>      &mdash; <em>Alexis</em>
+    </li>
+    <li>
+<a href="/threads/46ca28e9b71a3bac855ccf6e1f8c233871cba81e">@swift-ci now supports clean workspace for &quot;smoke test&quot; and &quot;test and merge&quot;</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/2b1a9d72f1d22e4224d6e1fcc3bf7530b0cff4a9">[discussion notes] SIL address types and borrowing</a>      &mdash; <em>Andrew Trick</em>
+    </li>
+    <li>
+<a href="/threads/0b28283971209b1733c0ceef807e9de97328996d">State of Swift on Linux/ARM</a>      &mdash; <em>Ron Olson</em>
+    </li>
+    <li>
+<a href="/threads/8d868a82a251446bccdc565158b26c8415fb659c">CI outage tomorrow</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/ea46eab586f26866cb42a03ed2168ec0b0cdf7c5">copy-on-write proposal</a>      &mdash; <em>Erik Eckstein</em>
+    </li>
+    <li>
+<a href="/threads/0d2aa564b387edfcda102bfc0392257c847a0d88">Validating ABI consistency between runtime C++ and standard library Swift code</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/efa847102ce2743b7be4059fc100b9b22fcb3a61">Is SE-0138 UnsafeRawBufferPointer included in Xcode 8 beta 3?</a>      &mdash; <em>Norio Nomura</em>
+    </li>
+    <li>
+<a href="/threads/f65846ed8273ad35d689d2ffc30a77beae2b3c10">Dictionary Collision Resolution Guarantees</a>      &mdash; <em>Alexis</em>
+    </li>
+    <li>
+<a href="/threads/5fa4079a22845a7eb4b2581b412cf0093a58d575">Dictionary Collision Resolution Guarantees</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/6d69336a12865f2032a9f00dfc11c16a500ece38">builtin command for invoking a subset of the tests</a>      &mdash; <em>Alexis</em>
+    </li>
+    <li>
+<a href="/threads/4131dc621483e1bcd3b75df21a62fae33188691c">Ubuntu 16.10 Bots on ci.swift.org</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/eb075b10de8ed1baa95e494b9498583cc20f01fc">[proposa] High Level ARC Value Operations</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/d21c763c6ce4e1f9ca7155a98134bcb2cd968b9b">Validating ABI consistency between runtime C++ and standard library Swift code</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/9be334de12312ccc4b848689743e45c2cffbcc59">Having 64-bit swift_retain/release ignore all negative pointer values</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/5bd8ac40d48d8ab1bb3533e6ed581fe48b365c7c">copy-on-write proposal</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/813a71401fbff43774b26c8ee02c770b9324454c">copy-on-write proposal</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/0febfafe28d653ad7b91938a78aced7f9c179c9f">Swiftc and -parse-sil?</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/c5079c627b7aa75fdf0020ce8867f79ac645364a">[Swift CI] Maintenance on Oct 18th</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/bc0d07bc7fd72872aff54b12f0c9ee06841b0a4f">smoke test not very smoky?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/76bdcedcf95df976c8c9897940b095492af9f4c1">smoke test not very smoky?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/a47c68b4485bdf7a1f96a7390bccd8387a0b8ea3">copy-on-write proposal</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/44da2adf2d84a29f2714b03756323c434456dc46">smoke test not very smoky?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/1323dd1a0ff9f9f85a4caba60ee53af4271125a5">PR Tests Failing</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/82cd90d5f1572b5c6dcc0c7e729a621d6601fa6b">imageView does&#39;t show the image with Swift 3 and Xcode 8</a>      &mdash; <em>Yue Cui</em>
+    </li>
+    <li>
+<a href="/threads/b0f76e4e9dd4da4b04d0711fc55e20c9adc3a3b7">Making the sign of NaNs unspecified to enable enum layout optimization</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/11b6e2991f6a0d56d59e6b51cdebfd3c22fb8eba">PR test failure (libkqueue)</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/efcd3fa243e66d2eb393a13de2559c23e14b3ab2">PRs not triggering with @swift-ci</a>      &mdash; <em>Michael Gottesman</em>
+    </li>
+    <li>
+<a href="/threads/b334b9c1d952a2d25892bae2999a2297af6befaa">Cleaning up stale branches?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/001ef99c321044ca62f4e196b3a6283698794f58">Cleaning up stale branches?</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/85dd9c3da9a58e05f878c5208e154846c7fa4bdd">Advice dealing with SILGen for switch statements w/ multiple binding patterns</a>      &mdash; <em>Greg Titus</em>
+    </li>
+    <li>
+<a href="/threads/8d3c31f7e6c6a2369ce8221a917b755202c1c810">Inability to leverage privacy in the stdlib</a>      &mdash; <em>Alexis</em>
+    </li>
+    <li>
+<a href="/threads/b76cb1062c37cf7164746a6a4afe84a636a79981">CI upgrade today</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/f282fb87a4290108c4c962adcce6bb2622fd6229">#pragma message?</a>      &mdash; <em>Ron Olson</em>
+    </li>
+    <li>
+<a href="/threads/10ffa56c3845a45258cee7629233d917c7d75af2">problems building swift-3.0-RELEASE</a>      &mdash; <em>Jon Rafkind</em>
+    </li>
+    <li>
+<a href="/threads/b8ee230b9bafbd0b37144d66cf3277c92bd771c6">Stack dump of the compiler?</a>      &mdash; <em>rintaro ishizaki</em>
+    </li>
+    <li>
+<a href="/threads/a9831343afbf2b5d922c582557b210e4ec0f7f98">Purpose of validation-test/Reflection/reflect_*.swift</a>      &mdash; <em>Alexis</em>
+    </li>
+    <li>
+<a href="/threads/d37605876e30520993665721b4f4b14c2a7c2d3a">Purpose of validation-test/Reflection/reflect_*.swift</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/47d1380aac15f6a20d6970023c1d238b0dc103c2">swift-3.0-branch and 3.0.2</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/041a7b626fe562d0b57603d21fdf79ad44f83b09">Swift Class Encoding Standard?</a>      &mdash; <em>Thomas Catterall</em>
+    </li>
+    <li>
+<a href="/threads/f36a005c06ec789679cb582bcd2cadf3aff5a068">Inability to leverage privacy in the stdlib</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/aed063b8020ff225340f0eab3904ebdfb72bcdda">SE-0047 - Defaulting non-Void functions so they warn on unused results</a>      &mdash; <em>Jody Schofield</em>
+    </li>
+    <li>
+<a href="/threads/acb9219eb9f1ccddba7952b12eada6c01a751d69">Continuation-based versus nested-function-based materializeForSet</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/a23ef9117dfed2afab81603bc5b314f5cd491f74">Swift Class Encoding Standard?</a>      &mdash; <em>Thomas Catterall</em>
+    </li>
+    <li>
+<a href="/threads/d818c2a977c7d496aa8719760f3cbf3f79fab389">swift-3.0-branch linux PR builder failure</a>      &mdash; <em>Ankit Aggarwal</em>
+    </li>
+    <li>
+<a href="/threads/7f1774c8eb70ed16cb467239860c6b70dbf5dd81">Inability to leverage privacy in the stdlib</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/8fe0aa470c1bfe7b93138263bff85376226b4828">Pure Cocoa NSNumbers and AnyHashable</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/2b793fc7b35bca09e4d50d5e51a672ca6b632d4a">Compilation performance</a>      &mdash; <em>Graydon Hoare</em>
+    </li>
+    <li>
+<a href="/threads/f63c0eac81eb150cb7ea451386bcded6a18c2813">Minimal clang to support swift?</a>      &mdash; <em>William Dillon</em>
+    </li>
+    <li>
+<a href="/threads/5362aa645b3f27000a670452c8165b192672a580">libxml/parser.h not found?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/402280503b74d79b24fbc873485e384d33c0a39c">libxml/parser.h not found?</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/c5c819929acfa2144caee9f28bd7e7223617c44f">Performance degradation with 3.0.1(String comparison)</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/1b5c2cd2d97d90af610602522d981bd39d4fcd5d">Planned Maintenance: Today at 12pm</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/75cce2a7653c37fb66c408b8a317d30d74c8ee1e">Initializing constant object graph with cycles</a>      &mdash; <em>Антон Миронов</em>
+    </li>
+    <li>
+<a href="/threads/1a0270745712079d88afabcdeb313b33fb5e458f">Swift CI Linux Pull Request on Ubuntu 16.04</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/3b5e3f880f15f6fc8339a1bf309beb0a2128c8a1">Casting shadow protocols</a>      &mdash; <em>Alexis</em>
+    </li>
+    <li>
+<a href="/threads/6bc1805327f7d74da05d7c72fa7eb41bbf62f9a1">Casting shadow protocols</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/8f05f9e8f108832c2f306c503b8b99b8b3216edd">[SE-0075] Teaching Namebinding About IfConfig Resolution</a>      &mdash; <em>Robert Widmann</em>
+    </li>
+    <li>
+<a href="/threads/27d2c8a556c8aaa3970fba25526f7a75aa975ade">Removed Ubuntu 14.04 and 15.10 CI and pre-built package support</a>      &mdash; <em>Todd Fiala</em>
+    </li>
+    <li>
+<a href="/threads/9fe66dc8c70c1e7fa346f44eddc8565d4512fc22">Recent automerges break clang build</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/e239cda17f2c20e6638b610d9f19da81ac21fa8e">PVS-Studio static analysis results for the Swift project</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/9cc2aab76e1e8d837de2e2b777f11336e8dd0385">[Swift CI] [FAILURE] oss-swift_tools-RA_stdlib-RDA_test-macos-resilience [#5]</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/e71737e2976c09cd159ba4ec66c67b593a305f09">Associated type inference fun with RandomAccessCollection</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/f9e8ce0b12409c9b451ec5f180d6dc9973fbc6d6">Glibc.swift: error: no such module &#39;SwiftGlibc&#39;</a>      &mdash; <em>Eric Wing</em>
+    </li>
+    <li>
+<a href="/threads/c055462c179aadbd8576100304adb9e414c77f45">Associated type inference fun with RandomAccessCollection</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/22a68b44c858504db4cfa1a543f6790e3483dc88">Associated type inference fun with RandomAccessCollection</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/5f1f0026cddec2275b03a2d4aa285bd7543b5b13">Recursive protocol constraints</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/1ed15533f3c47cb820e2eb05969e66a1e4514c09">[Swift CI] Build Failure: OSS - Swift Package - Ubuntu 16.10 (master) #84</a>      &mdash; <em>no-reply at swift.org</em>
+    </li>
+    <li>
+<a href="/threads/1bea7af39c6655c50f19572769e6f13c2925a503">[Swift CI] Build Failure: OSS - Swift Package - Ubuntu 16.04 (master) #154</a>      &mdash; <em>no-reply at swift.org</em>
+    </li>
+    <li>
+<a href="/threads/3c43d7c15111b4f927515884188401c2c718ba3a">Type Pun in Test Suite</a>      &mdash; <em>Alexis</em>
+    </li>
+    <li>
+<a href="/threads/55a0defdef1799a8b30ab9f79a5439b84948d6e6">Compiler crash: is this a bug in Swift or Xcode?</a>      &mdash; <em>Nevin Brackett-Rozinsky</em>
+    </li>
+    <li>
+<a href="/threads/da0b383dcb1d66d3aae983dbdc56384f5d7a3e15">CI upgrade tomorrow</a>      &mdash; <em>Nicole Jacque</em>
+    </li>
+    <li>
+<a href="/threads/328a41233676be50142bf8e96d62e5c55f5e8c06">Planned Outage - Nov 15th 2016 at 11pm PST</a>      &mdash; <em>mishal_shah</em>
+    </li>
+    <li>
+<a href="/threads/4d1cb466c50862f2462ff23e41563ece466fd736">Swift compiler assertion failure: Assertion `LastArgWritten &gt;= adjustedArg.size()&#39; failed</a>      &mdash; <em>Eric Wing</em>
+    </li>
+    <li>
+<a href="/threads/9415675a9f1939678aef7dfd65c162db88f4adb7">Autoconf needed for builds?</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/1d3c3ea96a96f47914105ca1873e41546db1c799">High-level SIL Optimization: How do I get a FuncRef from the stdlib?</a>      &mdash; <em>Ben Ng</em>
+    </li>
+  </ul>
+</div>
+    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

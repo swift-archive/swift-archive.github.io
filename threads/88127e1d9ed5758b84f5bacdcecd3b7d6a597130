@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17d2af4afb70023e28e655d17471a018?s=50"></div><header><strong>Separating ./docs into several folders</strong> from <string>Michael Gottesman</string> &lt;mgottesman at apple.com&gt;<p>September 22, 2016 at 02:00:00pm</p></header><div class="content"><p>Over time as the project grows, we are going to need more documentation around CI/policy. Right now we just throw both CI/design docs/policy things into ./docs. This makes the docs less organized and less discoverable. My feeling is we would want to separate the docs into:<br></p><p>./design - This would include design documentation and the proposals folder. This would include things like the Generics Manifesto.<br>./infrastructure - This would include information about the CI, policy information related to reverting llvm/clang commits<br>./compiler-internals - This would contain documentation of compiler internals. SIL.rst is an example of what this would contain.<br></p><p>Thoughts?<br></p><p>Michael<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>Separating ./docs into several folders</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>September 23, 2016 at 01:00:00am</p></header><div class="content"><p>Can we get swift.org hosted on GitHub Pages, and then make these documents<br>part of the main site? :-)<br>On Thu, Sep 22, 2016 at 2:59 PM Michael Gottesman via swift-dev &lt;<br>swift-dev at swift.org&gt; wrote:<br></p><p>&gt; Over time as the project grows, we are going to need more documentation<br>&gt; around CI/policy. Right now we just throw both CI/design docs/policy things<br>&gt; into ./docs. This makes the docs less organized and less discoverable. My<br>&gt; feeling is we would want to separate the docs into:<br>&gt;<br>&gt; ./design - This would include design documentation and the proposals<br>&gt; folder. This would include things like the Generics Manifesto.<br>&gt; ./infrastructure - This would include information about the CI, policy<br>&gt; information related to reverting llvm/clang commits<br>&gt; ./compiler-internals - This would contain documentation of compiler<br>&gt; internals. SIL.rst is an example of what this would contain.<br>&gt;<br>&gt; Thoughts?<br>&gt;<br>&gt; Michael<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160923/306d0803/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17d2af4afb70023e28e655d17471a018?s=50"></div><header><strong>Separating ./docs into several folders</strong> from <string>Michael Gottesman</string> &lt;mgottesman at apple.com&gt;<p>September 22, 2016 at 07:00:00pm</p></header><div class="content"><p>&gt; On Sep 22, 2016, at 6:45 PM, Jacob Bandes-Storch &lt;jtbandes at gmail.com&gt; wrote:<br>&gt; <br>&gt; Can we get swift.org &lt;http://swift.org/&gt; hosted on GitHub Pages, and then make these documents part of the main site? :-)<br></p><p>That is a different topic, no? ; p.<br></p><p>&gt; On Thu, Sep 22, 2016 at 2:59 PM Michael Gottesman via swift-dev &lt;swift-dev at swift.org &lt;mailto:swift-dev at swift.org&gt;&gt; wrote:<br>&gt; Over time as the project grows, we are going to need more documentation around CI/policy. Right now we just throw both CI/design docs/policy things into ./docs. This makes the docs less organized and less discoverable. My feeling is we would want to separate the docs into:<br>&gt; <br>&gt; ./design - This would include design documentation and the proposals folder. This would include things like the Generics Manifesto.<br>&gt; ./infrastructure - This would include information about the CI, policy information related to reverting llvm/clang commits<br>&gt; ./compiler-internals - This would contain documentation of compiler internals. SIL.rst is an example of what this would contain.<br>&gt; <br>&gt; Thoughts?<br>&gt; <br>&gt; Michael<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org &lt;mailto:swift-dev at swift.org&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev &lt;https://lists.swift.org/mailman/listinfo/swift-dev&gt;<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160922/e5f7b4f7/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/50e8e47785d3e1e5f42de4d87cb4797b?s=50"></div><header><strong>Protocol-Oriented Number System</strong> from <string>Dan Kogai</string> &lt;dankogai at gmail.com&gt;<p>February 11, 2016 at 07:00:00am</p></header><div class="content"><p>Folks,<br></p><p>Hi.  I just joined the list because I found this:<br></p><p>https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151214/002445.html<br></p><p>&gt; Related:  I have been working for some time on a rewrite of all the integer types and protocols &lt;<br>&gt; https://github.com/apple/swift/blob/master/test/Prototypes/Integers.swift.gyb&gt;.  One goal of this effort is to enable operations on mixed integer types, which as you can see is partially completed.  In-place arithmetic (anInt32 += aUInt64) is next.  Another important goal is to make the integer protocols actually useful for writing generic code, instead of what they are today: implementation artifacts used only for code sharing.  As another litmus test of the usefulness of the resulting protocols, the plan is to implement BigInt in terms of the generic operations defined on integers, and make BigInt itself conform to those protocols.<br></p><p>Not knowing this, I started writing what I call Protocol-Oriented Number System in Swift, or PONS for short.<br></p><p>&lt;https://github.com/dankogai/swift-pons&gt;<br></p><p>In PONS, BigInt is implemented exactly that way, purely in Swift.<br></p><p>Suppose you have:<br></p><p>    func fib&lt;T:POInteger&gt;(n:T)-&gt;T {<br>        if n &lt; T(2) { return n }<br>        var (a, b) = (T(0), T(1))<br>        for _ in 2...n {<br>            (a, b) = (b, a+b)<br>        }<br>        return b<br>    }<br></p><p>You get this.<br></p><p>    let F11 = fib(11 as Int8)       // 89 as Int8<br>    let F13 = fib(13 as UInt8)      // 233 as UInt8<br>    let F23 = fib(23 as Int16)      // 28657 as Int16<br>    let F24 = fib(24 as UInt16)     // 46368 as UInt16<br>    let F46 = fib(46 as Int32)      // 1836311903 as Int32<br>    let F47 = fib(47 as UInt32)     // 2971215073 as UInt32<br>    let F92 = fib(92 as Int64)      // 7540113804746346429 as Int64<br>    let F93 = fib(93 as UInt64)     // 12200160415121876738 as UInt64<br></p><p>and of course,<br></p><p>    let F666 = fib(666 as BigInt)<br></p><p>and F666 = 6859356963880484413875401302176431788073214234535725264860437720157972142108894511264898366145528622543082646626140527097739556699078708088 as BigInt .  Yup.  Swift swallows the beast(&#39;s number) so easily.<br></p><p>It contains playground that lets you see it for yourself.<br></p><p>Because the 0th raison d&#39;être of PONS is to bring protocol-oriented programming to numbers, BigInt is just a part of it.  It also comes with Rational with numerator and denominator in any signed integer and Complex either in integers (aka Gaussian integer) or &quot;real&quot; numbers -- not only Double and Float but also Rational.<br></p><p>Working on PONS is about 93.75% joy and 6.25% agony, with that 6.25% from swiftc puking Signal 11 (that happens rather often when I move codes from actual types to protocol extensions :-).<br></p><p>As for BigInt, it is far from the fastest arbitrary-precision integer on Earth but fast enough for my needs.  For one thing it can tell M127 (also happens to be Int128.max should it come) is a prime instantly.  Don&#39;t you dare try that on ruby with &#39;require &quot;prime&quot;&#39; then &quot;(2**127-1).prime?&quot; :-?<br></p><p>And thanks to protocols it can be the denominator of Rational so I can go not just as big as I like but also as small as I like.<br></p><p>My heart aches a little to learn that the future Swift will definitely make PONS obsolete yet I am far more glad to report that Swift 2.1 already passed your -- our litmus test.  You got to see for yourself how beautiful litmus paper can be.<br></p><p>Dan the &quot;Crusty&quot; Swift Programmer<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

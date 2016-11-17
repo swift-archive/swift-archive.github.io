@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09c952095f9b655c760c88e4333bc420?s=50"></div><header><strong>Segfault: 11 only when running tests (XCode 8, Swift 2.3)</strong> from <string>Thomas Abend</string> &lt;thomas at gethopscotch.com&gt;<p>October  6, 2016 at 09:00:00am</p></header><div class="content"><p>Since moving a mixed Swift and Objective-c project to XCode 8 with Swift<br>2.3, I have been getting a &quot;Command failed due to signal: Segmentation<br>fault: 11&quot; error every time I run my tests after making a change in any of<br>the test files.<br></p><p>When I click on the error for more information I see:<br></p><p>&lt;module-includes&gt;:1:9: note: in file included from &lt;module-includes&gt;:1:<br>#import &quot;Headers/Utilities.h&quot;<br>    ^<br>/Users/.../Utilities.framework/Headers/Utilities.h:18:9: error:<br>include of non-modular header inside framework module &#39;Utilities&#39;<br>#import &lt;Utilities/NSString+Utilities.h&gt;<br>^<br></p><p>And basically just a bunch of similar errors following that ending in:<br></p><p>&lt;unknown&gt;:0: error: could not build Objective-C module &#39;Utilities&#39;<br></p><p>Utilities in this case is a framework that I made. All of the headers in<br>the Utilities.h file are imported with angle brackets and the headers are<br>marked as public.<br></p><p>After it segfaults, it will run properly until I make a change to the test<br>file. It only has this issue when testing, not when building or running.<br></p><p>Other things I&#39;ve tried:<br></p><p>   - Changing the framework and tests to allow non modular includes<br>   - Enabling/disabling bitcode<br></p><p>Any help would be appreciated.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161006/979b3e45/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Segfault: 11 only when running tests (XCode 8, Swift 2.3)</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>October  6, 2016 at 10:00:00am</p></header><div class="content"><p>Can you double-check that all of your Utilities headers are Public or Private headers (not Project)? You can check this under the Build Phases tab for the framework target.<br></p><p>If that doesn&#39;t do it, we can probably help more with a bug report, if you&#39;re willing to share your project.<br></p><p>Jordan<br></p><p><br>&gt; On Oct 6, 2016, at 6:47, Thomas Abend via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Since moving a mixed Swift and Objective-c project to XCode 8 with Swift 2.3, I have been getting a &quot;Command failed due to signal: Segmentation fault: 11&quot; error every time I run my tests after making a change in any of the test files.<br>&gt; <br>&gt; When I click on the error for more information I see:<br>&gt; <br>&gt; &lt;module-includes&gt;:1:9: note: in file included from &lt;module-includes&gt;:1: <br>&gt; #import &quot;Headers/Utilities.h&quot;<br>&gt;     ^<br>&gt; /Users/.../Utilities.framework/Headers/Utilities.h:18:9: error: include of non-modular header inside framework module &#39;Utilities&#39;<br>&gt; #import &lt;Utilities/NSString+Utilities.h&gt;<br>&gt; ^<br>&gt; And basically just a bunch of similar errors following that ending in:<br>&gt; <br>&gt; &lt;unknown&gt;:0: error: could not build Objective-C module &#39;Utilities&#39;<br>&gt; Utilities in this case is a framework that I made. All of the headers in the Utilities.h file are imported with angle brackets and the headers are marked as public.<br>&gt; <br>&gt; After it segfaults, it will run properly until I make a change to the test file. It only has this issue when testing, not when building or running.<br>&gt; <br>&gt; Other things I&#39;ve tried:<br>&gt; <br>&gt; Changing the framework and tests to allow non modular includes<br>&gt; Enabling/disabling bitcode<br>&gt; Any help would be appreciated.<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161006/8c1d61d2/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

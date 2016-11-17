@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7559ac465b184ec777f29d37c0e4b374?s=50"></div><header><strong>[idea] Make functions with @noescape syntax behave like control structures</strong> from <string>Michael Peternell</string> &lt;michael.peternell at gmx.at&gt;<p>April 22, 2016 at 09:00:00pm</p></header><div class="content"><p>I have an idea that touches the Swift compiler, Xcode and the debugger. I&#39;m not sure if any language support is needed for this feature, or if it is just a debugging issue, or just an Xcode issue.<br></p><p>THE PROBLEM<br></p><p>What often irritates me with closure literals, is that you cannot easily step into them. For example:<br></p><p>11 =&gt; for(i=0; i&lt;10; i++) {<br>12        print(&quot;i = \(i)&quot;)<br>13    }<br>14<br>15    print(&quot;done&quot;)<br></p><p>When the debugger is in line 11 and I press &quot;Step Over&quot;, it goes to line 12. Then to line 13, then to line 11, then to line 12, ..., then to line 15. This is fine.<br></p><p>On the other hand:<br></p><p>23 =&gt; myLoopFromFunction(0, 10) {i in<br>24        print(&quot;i = \(i)&quot;)<br>25    }<br>26    <br>27    print(&quot;done&quot;)<br></p><p>When the debugger is in line 23 and I press &quot;Step Over&quot;, the execution will continue up until line 27. If I want to go to line 24, I have to press the &quot;Step Into&quot; button. If Debug-symbols are enabled for the myLoopFromFunction, this might even work somehow nicely. When having this problem, I usually put a breakpoint into line 24 and press the &quot;Step Over&quot; button. This will put me into line 24. When I reach line 25 I press continue, which will bring me either back to line 24 or it will forward me to line 27.<br></p><p>Even though that particular for-loop and the myLoopFromFunction have exactly the same semantics, the debugging experience is so much nicer with the for-loop. This argument extends to all kinds of @noescape closures, IMO. E.g. to a &#39;withLock&#39; function, to a &#39;makeTransactionWithDatabase&#39; function, etc. Stepping into the @noescape closure is usually what we want.<br></p><p>THE PROPOSAL<br></p><p>Whenever you &quot;step over&quot; a function that takes a @noescape closure as the last parameter, and that parameter is specified as a closure literal with the syntax shown in line 23 (after the closing parenthesis), the debugger should behave as if the function were a control structure.<br></p><p>This is feasible: E.g. Xcode could add a hidden breakpoint to the beginning of the closure, and tell LLDB to &quot;step over&quot;.<br></p><p>I think the feature should be limited to @noescape closures, because I think they are exactly the ones which are used when you want control-structure-like behavior. Or at least I can&#39;t think of a realistic counter example. (Except for functions like dispatch_sync(), which *does* take a close which cannot escape, but the block is not declared as @noescape, so it would not benefit from the proposal.)<br></p><p>ALTERNATIVES<br></p><p>Are there any?<br></p><p>What do you think?<br></p><p>-Michael<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

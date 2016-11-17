@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>Swift 2.2 released!</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>March 21, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I am very pleased to announce the release of Swift 2.2!  This is the first release of Swift since Swift became an open source project.  Swift 2.2 began it’s convergence in mid-January when it branched from master, and since then is had taken curated changes (bug fixes and some language changes) that were aligned with the goals of the release.<br></p><p>We have an official release announcement on the Swift.org blog:<br></p><p>  https://swift.org/blog/swift-2-2-released/<br></p><p><br>Being a minor release, the purpose of Swift 2.2 was to be a transition point between Swift 2 and Swift 3.  Swift 2.2 went through a release process that will be a prototype for future Swift releases.  The release process was described here:<br></p><p>  https://swift.org/blog/swift-2-2-release-process/<br></p><p><br>While Swift 2.2 contains support for Swift on Linux, support for that platform in Swift 2.2 should still be considered relatively new.  The Package Manager is not included in this release, nor are the Swift Core Libraries.<br></p><p>Qualification for Swift 2.2 was based on regression tests (run in continuous integration), users reporting issues with downloadable Swift 2.2 packages, and seeding of the Swift 2.2 compiler in Xcode 7.3 seeds.  In the future I’d like to beef up our qualification processes around Linux, including more extensive testing of the compiler and LLDB.  Any feedback from the community is welcome on how we can improve it.<br></p><p>The swift-2.2-branch release branch will remain “open” under the same release manager process of Swift 2.2.  The branch can take targeted fixes in the chance that we decide to release a Swift 2.2 dot release.  This would largely be driven by feedback from users.<br></p><p>The final tag in GitHub for the release (for the impacted repositories) is ‘swift-2.2-RELEASE’.<br></p><p>Cheers,<br>Ted<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160321/d1692019/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

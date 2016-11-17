@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/80d5f6bd33e46727b56cb239d8672136?s=50"></div><header><strong>Swift closure memory problem</strong> from <string>Alon Muroch</string> &lt;alonmuroch at gmail.com&gt;<p>May 27, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi everyone !<br>Its my first time writing here so i hope i could contribute.<br></p><p>The following code seems to create a retain cycle that doesn&#39;t let<br>SomeClass1 to release. Am i missing something ?<br></p><p><br>​​Alon.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160527/863fd512/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: Screen Shot 2016-05-27 at 10.00.21 AM.png<br>Type: image/png<br>Size: 37745 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160527/863fd512/attachment.png&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Swift closure memory problem</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>May 27, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On May 27, 2016, at 3:57 AM, Alon Muroch via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi everyone ! <br>&gt; Its my first time writing here so i hope i could contribute. <br>&gt; <br>&gt; The following code seems to create a retain cycle that doesn&#39;t let SomeClass1 to release. Am i missing something ?<br>&gt; <br>&gt; &lt;Screen Shot 2016-05-27 at 10.00.21 AM.png&gt;<br>&gt; ​​Alon.<br></p><p>What are you passing as `topClosure`?<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

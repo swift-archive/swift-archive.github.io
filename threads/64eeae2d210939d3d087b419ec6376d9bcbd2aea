@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[Review] SE-0089: Replace protocol&lt;P1,	P2&gt; syntax with Any&lt;P1, P2&gt;</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>May 25, 2016 at 01:00:00pm</p></header><div class="content"><p>https://github.com/apple/swift-evolution/blob/master/proposals/0095-any-as-existential.md<br></p><p>   * What is your evaluation of the proposal?<br></p><p><br>+1. This proposal is a first step for generalized existentials.<br></p><p><br>-1 for Any&lt;&gt;<br></p><p>+1 for any&lt;&gt;<br></p><p>Reason: any&lt;&gt; is not a generic type and in the order of the type parameters supplied to any&lt;&gt; is not important which is very different from generic argument lists<br></p><p><br></p><p>An alternative might by a completely different syntax not using angled brackets which enclose type parameter lists, e.g. any[P, Q] or Any[P, Q] or P &amp; Q.<br></p><p>The latter makes it difficult to add constraints which are essential for extending this to existentials.<br></p><p>Of course constraints could just be appended, e.g. `P &amp; Q where ...` which might have to be enclosed in parenthesis in some situations.<br></p><p><br></p><p>-Thorsten<br></p><p><br></p><p>   * Is the problem being addressed significant enough to warrant a change to Swift?<br></p><p><br>Yes. Generalized existentials are very important for Swift and this is an enabler.<br></p><p><br></p><p>     * Does this proposal fit well with the feel and direction of Swift?<br></p><p><br>Yes.<br></p><p><br></p><p>     * If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br></p><p><br>Ceylon uses &quot;&amp;&quot; as type operator for type intersections which is effectively the same as any&lt;&gt;, i.e. in Ceylon you would write `P &amp; Q` instead of `any&lt;P, Q&gt;`.<br></p><p>The drawback there is that it might be more difficult to add constraints.<br></p><p><br></p><p><br> * How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br></p><p><br>In depth study and participation in the discussion.<br></p><p><br>-Thorsten<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160525/64ee2aea/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

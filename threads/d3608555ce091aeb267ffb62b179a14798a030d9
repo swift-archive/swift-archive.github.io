@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4b25144c09555e7d5b5e288469e011ef?s=50"></div><header><strong>[Review] Require self for accessing instance members</strong> from <string>Félix Cloutier</string> &lt;felixcca at yahoo.ca&gt;<p>December 17, 2015 at 02:00:00am</p></header><div class="content"><p>I missed the original thread, but I couldn&#39;t resist participating in the bike shed exercise (no disrespect meant; it&#39;s just that given that we&#39;re all expert typers, we all have an opinion on how much we should type). Sorry!<br></p><p># What is your evaluation of the proposal?<br></p><p>I vote to reject.<br></p><p># Is the problem being addressed significant enough to warrant a change to Swift?<br></p><p>I&#39;m just a youngin&#39; and I haven&#39;t faced as many bugs as some of you veterans have, but of all the bugs that I have bitter memories of, none has ever been caused by the language not enforcing the use of `self`. So far, reading people&#39;s opinions, no one has convinced me that omitting `self` in the general case is harmful.<br></p><p>A lot of people have already said that this is a problem better left to tools or processes. I absolutely agree with them. Using a different highlight for members and locals is a possible solution (that is, I believe, already implemented); having in-house style rules is another (always use `self`, prefix members with `m_`, etc).<br></p><p># Does this proposal fit well with the feel and direction of Swift?<br></p><p>I don&#39;t think so. As many people have said already, Swift holds terseness dear, and one reason that Swift feels more terse than Objective-C is that `self` may be omitted.<br></p><p>Many people, me included, do not think that the issue is significant. People who do think that it is have tools at their disposal to help them. If this proposal is accepted, however, people who like saving 5 characters per member use have no possible mechanism to recover the lost terseness.<br></p><p># If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br></p><p>The language I use the most is C++ and it allows me to omit `this-&gt;`. I can&#39;t remember any hard bug caused by it. However, this requirement exists in Python, and I routinely forget to write `self`. The problems are usually quickly discovered and fixed, and would be even easier to spot in Swift given its nature, but it seems to me that I encounter more issues when `self` is required than when it isn&#39;t.<br></p><p># How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br></p><p>I read the proposal and a good chunk of this week&#39;s discussion.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

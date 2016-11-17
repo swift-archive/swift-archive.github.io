@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Removing the empty initialiser requirement from RangeReplaceableCollection</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July  7, 2016 at 06:00:00pm</p></header><div class="content"><p>on Thu Jul 07 2016, Haravikk &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On 7 Jul 2016, at 15:57, Karl via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; I believe the idea of RRC is that all you need to implement is the<br>&gt;&gt; empty initialiser and replaceSubrange(), and everything else<br>&gt;&gt; (e.g. Append, insert) is implemented in terms of those. Even the<br>&gt;<br>&gt;&gt; initialiser which takes existing collection just initialises and<br>&gt;&gt; empty one and appends the existing collection (I.e. Calling<br>&gt;&gt; replaceSubrange).<br>&gt;&gt; <br>&gt;&gt; If I understand you correctly, it will not be possible to initialise<br>&gt;&gt; a generic RRC any more, will it? Because that RRC may need<br>&gt;&gt; additional information (e.g. A maximum buffer size if it stores its<br>&gt;&gt; data in multiple discrete buffers) which you can’t provide<br>&gt;&gt; generically.<br>&gt;&gt; <br>&gt;&gt; Maybe we could have a true copy-constructor instead? That is,<br>&gt;&gt; replace init&lt;C:Collection&gt;(_:) with init(_: Self), so that it could<br>&gt;&gt; take any additional arguments from that other instance?<br>&gt;<br>&gt; A copying initialiser could work, but it should probably have a<br>&gt; parameter for the type of copy to create (empty, shallow copy and deep<br>&gt; copy for example), as I suspect it&#39;s the empty copy that<br>&gt; RangeReplaceableCollection needs more than anything. Otherwise it<br>&gt; shouldn&#39;t need initialisers on the protocol. This however is something<br>&gt; that could (and should) be moved out into its own protocol I think,<br>&gt; with RangeReplaceableCollection simply conforming that.<br></p><p>Maybe RRC should have:<br></p><p>      func emptyCopy() -&gt; Self<br></p><p>?<br>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>[Pitch] Removing the empty initialiser requirement from RangeReplaceableCollection</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>July  9, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; On 8 Jul 2016, at 03:18, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Thu Jul 07 2016, Haravikk &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt;&gt; On 7 Jul 2016, at 15:57, Karl via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I believe the idea of RRC is that all you need to implement is the<br>&gt;&gt;&gt; empty initialiser and replaceSubrange(), and everything else<br>&gt;&gt;&gt; (e.g. Append, insert) is implemented in terms of those. Even the<br>&gt;&gt; <br>&gt;&gt;&gt; initialiser which takes existing collection just initialises and<br>&gt;&gt;&gt; empty one and appends the existing collection (I.e. Calling<br>&gt;&gt;&gt; replaceSubrange).<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; If I understand you correctly, it will not be possible to initialise<br>&gt;&gt;&gt; a generic RRC any more, will it? Because that RRC may need<br>&gt;&gt;&gt; additional information (e.g. A maximum buffer size if it stores its<br>&gt;&gt;&gt; data in multiple discrete buffers) which you can’t provide<br>&gt;&gt;&gt; generically.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Maybe we could have a true copy-constructor instead? That is,<br>&gt;&gt;&gt; replace init&lt;C:Collection&gt;(_:) with init(_: Self), so that it could<br>&gt;&gt;&gt; take any additional arguments from that other instance?<br>&gt;&gt; <br>&gt;&gt; A copying initialiser could work, but it should probably have a<br>&gt;&gt; parameter for the type of copy to create (empty, shallow copy and deep<br>&gt;&gt; copy for example), as I suspect it&#39;s the empty copy that<br>&gt;&gt; RangeReplaceableCollection needs more than anything. Otherwise it<br>&gt;&gt; shouldn&#39;t need initialisers on the protocol. This however is something<br>&gt;&gt; that could (and should) be moved out into its own protocol I think,<br>&gt;&gt; with RangeReplaceableCollection simply conforming that.<br>&gt; <br>&gt; Maybe RRC should have:<br>&gt; <br>&gt;      func emptyCopy() -&gt; Self<br>&gt; <br>&gt; ?<br>&gt; -- <br>&gt; Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p><br>Perhaps we should have a shallow-copy protocol for Collections in general? <br></p><p>I was using the initialiser to create a copy, but that’s not really anything to do with a “range-replaceable collection” and there may be non-RRCs which you want to take shallow copies of for similar composition guarantees.<br></p><p>Karl<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

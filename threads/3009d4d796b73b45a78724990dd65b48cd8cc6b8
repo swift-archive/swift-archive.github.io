@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7183e460abfb84d668e408c32631abd4?s=50"></div><header><strong>Are there any Swift/LLVM optimizations I could be assigned to?</strong> from <string>Eddie Santos</string> &lt;easantos at ualberta.ca&gt;<p>September 19, 2016 at 07:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>Are there any moderately do-able optimizations that can be done in the<br>Swift compiler that have not been done yet?<br></p><p>I am a masters student at the University of Alberta in Dr. J. Nelson<br>Amaral&#39;s compiler optimization course, and I am searching for a project<br>that can be reasonably completed in two months&#39; time. Contributing to<br>Swift&#39;s compiler seems like a great choice! I am also open to making<br>improvements to LLVM in general, though the point of this project is to get<br>my feet wet in static analysis -- I&#39;m not an expert yet.<br></p><p>I&#39;m interested in anything character encodings, strings and unicode, but<br>that limits my options in terms of *compiler optimizations*. I can also<br>look into profile-guided optimizations in LLVM [Profile], but I wanna know<br>who&#39;s got dibs before I start off on my own.<br></p><p>Your input is welcome.<br></p><p>[Profile]: http://llvm.org/OpenProjects.html#profileguided<br></p><p>Regards,<br>Eddie<br>--<br>Eddie Antonio Santos<br>M.Sc. Student and Teaching Assistant<br>Department of Computing Science<br>University of Alberta<br>easantos at ualberta.ca<br>http://eddieantonio.ca/<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160919/3009c6b8/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5f8978dbb959b069613e2d027420615f?s=50"></div><header><strong>Are there any Swift/LLVM optimizations I could be assigned to?</strong> from <string>Erik Eckstein</string> &lt;eeckstein at apple.com&gt;<p>September 21, 2016 at 08:00:00pm</p></header><div class="content"><p>Hi Eddie,<br></p><p>&gt; On Sep 19, 2016, at 6:10 PM, Eddie Santos via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi all,<br>&gt; <br>&gt; Are there any moderately do-able optimizations that can be done in the Swift compiler that have not been done yet?<br>&gt; <br>&gt; I am a masters student at the University of Alberta in Dr. J. Nelson Amaral&#39;s compiler optimization course, and I am searching for a project that can be reasonably completed in two months&#39; time. Contributing to Swift&#39;s compiler seems like a great choice!<br></p><p>Cool! Welcome!<br></p><p>&gt; I am also open to making improvements to LLVM in general, though the point of this project is to get my feet wet in static analysis -- I&#39;m not an expert yet.<br>&gt; <br>&gt; I&#39;m interested in anything character encodings, strings and unicode, but that limits my options in terms of *compiler optimizations*. I can also look into profile-guided optimizations in LLVM [Profile], but I wanna know who&#39;s got dibs before I start off on my own.<br>&gt; <br></p><p>There are two things which I have in mind:<br></p><p>1) You could look at optimizing character literals. Try to compile the following code and you’ll see what I mean.<br></p><p>func foo() -&gt; Character {<br>  return Character(&quot;x&quot;)<br>}<br></p><p>2) Vedant has started working on PGO for swift. When the basic infrastructure is in place you could work on using PGO data in various SIL optimizations.<br></p><p><br>Erik<br></p><p><br></p><p>&gt; Your input is welcome.<br>&gt; <br>&gt; [Profile]: http://llvm.org/OpenProjects.html#profileguided &lt;http://llvm.org/OpenProjects.html#profileguided&gt;<br>&gt; <br>&gt; Regards,<br>&gt; Eddie<br>&gt; --<br>&gt; Eddie Antonio Santos<br>&gt; M.Sc. Student and Teaching Assistant<br>&gt; Department of Computing Science<br>&gt; University of Alberta<br>&gt; easantos at ualberta.ca &lt;mailto:easantos at ualberta.ca&gt;<br>&gt; http://eddieantonio.ca/ &lt;http://eddieantonio.ca/&gt;_______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160921/f392b003/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2d569462ac92d4619342b1c5ff305043?s=50"></div><header><strong>Swift Generic Subtype Problem</strong> from <string>frogcjn at 163.com</string> &lt;frogcjn at 163.com&gt;<p>February 16, 2016 at 11:00:00am</p></header><div class="content"><p>Hi all,<br>I want to discuss on a problem  about optional generic sub-typing.<br></p><p>This is my suggesion.<br></p><p>if B is subclass of A<br>Either&lt;B,B&gt; is subclass of Either&lt;A,A&gt;, Either&lt;A,B&gt;, Either&lt;B,A&gt;<br>Either&lt;B,A&gt; is subclass of Either&lt;A,A&gt;<br>Either&lt;A,B&gt; is subclass of Either&lt;A,A&gt;<br></p><p><br>Why? Let’s see an example code in a real project:<br></p><p><br></p><p>Here is a protocol type for some UIViewController,<br>protocol  SegueHandlerType {  <br>    var tableView: UITableView! { get }  <br>}  <br></p><p>so the UITableViewController can conform to the protocal<br>extension UITableViewController : SegueHandlerType {  <br>}  <br></p><p>It&#39;s great!<br>What if the tableView is a subclass UITableView?<br>like:<br>class MyTableView : UITableView {<br>}<br></p><p>MyTableViewController {  <br>      @IBOutlet var tableView: MyTableView!  <br>}  <br></p><p>Then <br>extension MyTableViewController:SegueHandlerType {  <br>  <br>}  <br>will trigger a compiler error.<br> <br>So the Optional needs a subclass system.<br>Or to say, that the template system needs a subclass system.<br> <br>Optional&lt;UITableView&gt; should be the super type of Optional&lt;MyTableView&gt;<br>Array&lt;UITableView&gt; should be the super type of Array&lt;MyTableView&gt;<br></p><p>https://forums.developer.apple.com/message/101646#101646 &lt;https://forums.developer.apple.com/message/101646#101646&gt;<br></p><p><br></p><p>Thanks!<br></p><p>Jiannan, Cao<br></p><p><br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160216/49bac1a2/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0e8516d3703e35b7df26986815b23e7a?s=50"></div><header><strong>Swift Generic Subtype Problem</strong> from <string>Robert Widmann</string> &lt;devteam.codafi at gmail.com&gt;<p>February 15, 2016 at 11:00:00pm</p></header><div class="content"><p>OK, so you have covariance covered, now what about contravariance?  Surely a structure like this<br></p><p>struct Arrow&lt;A, B&gt; {<br>  let unArrow : A -&gt; B<br>}<br></p><p>should be contravariant in its first argument and covariant in its second.<br></p><p>~Robert Widmann<br></p><p>2016/02/15 22:48、Cao Jiannan via swift-evolution &lt;swift-evolution at swift.org&gt; のメッセージ:<br></p><p>&gt; <br>&gt; Hi all,<br>&gt; I want to discuss on a problem  about optional generic sub-typing.<br>&gt; <br>&gt; This is my suggesion.<br>&gt; <br>&gt; if B is subclass of A<br>&gt; Either&lt;B,B&gt; is subclass of Either&lt;A,A&gt;, Either&lt;A,B&gt;, Either&lt;B,A&gt;<br>&gt; Either&lt;B,A&gt; is subclass of Either&lt;A,A&gt;<br>&gt; Either&lt;A,B&gt; is subclass of Either&lt;A,A&gt;<br>&gt; <br>&gt; <br>&gt; Why? Let’s see an example code in a real project:<br>&gt; <br>&gt; <br>&gt; <br>&gt; Here is a protocol type for some UIViewController,<br>&gt; protocol  SegueHandlerType {  <br>&gt;     var tableView: UITableView! { get }  <br>&gt; }  <br>&gt; <br>&gt; so the UITableViewController can conform to the protocal<br>&gt; extension UITableViewController : SegueHandlerType {  <br>&gt; }  <br>&gt; <br>&gt; It&#39;s great!<br>&gt; What if the tableView is a subclass UITableView?<br>&gt; like:<br>&gt; class MyTableView : UITableView {<br>&gt; }<br>&gt; <br>&gt; MyTableViewController {  <br>&gt;       @IBOutlet var tableView: MyTableView!  <br>&gt; }  <br>&gt; <br>&gt; Then <br>&gt; extension MyTableViewController:SegueHandlerType {  <br>&gt;   <br>&gt; }  <br>&gt; will trigger a compiler error.<br>&gt;  <br>&gt; So the Optional needs a subclass system.<br>&gt; Or to say, that the template system needs a subclass system.<br>&gt;  <br>&gt; Optional&lt;UITableView&gt; should be the super type of Optional&lt;MyTableView&gt;<br>&gt; Array&lt;UITableView&gt; should be the super type of Array&lt;MyTableView&gt;<br>&gt; <br>&gt; https://forums.developer.apple.com/message/101646#101646<br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>&gt; Thanks!<br>&gt; <br>&gt; Jiannan, Cao<br>&gt; <br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160215/dd9aceed/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dad1fc0d2023332e239a5c05e01fb577?s=50"></div><header><strong>swift-3.0-branch is the convergence branch for Swift 3</strong> from <string>Nicole Jacque</string> &lt;nicole_jacque at apple.com&gt;<p>August 11, 2016 at 11:00:00pm</p></header><div class="content"><p>Hi All-<br></p><p>You may have noticed that last week, as usual, we cut a new branch —  swift-3.0-branch —  from master when we did the CI update and pushback of source changes.  Due to an oversight, I missed mentioning the branch info in my email. (my apologies!)<br></p><p>This will be our final preview and release branch for the Swift 3 release, and is being used to converge the Swift 3 release from now until it is declared ‘GM&#39;.  Any changes that are required for Swift 3 should be nominated for inclusion via pull request against the swift-3.0-branch branch. <br></p><p>Thanks!<br>nicole<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160811/01c4f75c/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

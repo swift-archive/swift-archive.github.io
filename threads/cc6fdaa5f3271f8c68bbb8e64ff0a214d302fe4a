@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/75f8396d91a35711f910866c8791c4df?s=50"></div><header><strong>Bridging Python Packages to Swift</strong> from <string>Muhammad Tahir Vali</string> &lt;tahir.vali13 at gmail.com&gt;<p>July  2, 2016 at 03:00:00pm</p></header><div class="content"><p>Hey everyone,<br></p><p>I lack the experience the rest of the people in this list probably have<br>being an undergraduate student but I would love to participate in this<br>language because I see its potential.<br></p><p>With that being said, one of the biggest advantages python has is its<br>immersive number of packages that is appealing to anyone that writes<br>scripts. Swift is evolving into a scripting language as well but it lacks<br>the libraries python has.<br></p><p>I suppose its worth bridging python packages with swift until Swift is<br>grown up to take over the world :D<br></p><p>Can anyone help me figure out how thats done ?<br></p><p>-- <br>Best Regards,<br></p><p>Muhammad T. Vali<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160702/cc6ffe4a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>Bridging Python Packages to Swift</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>July  2, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; I lack the experience the rest of the people in this list probably have being an undergraduate student but I would love to participate in this language because I see its potential.<br>&gt; <br>&gt; With that being said, one of the biggest advantages python has is its immersive number of packages that is appealing to anyone that writes scripts. Swift is evolving into a scripting language as well but it lacks the libraries python has. <br>&gt; <br>&gt; I suppose its worth bridging python packages with swift until Swift is grown up to take over the world :D<br>&gt; <br>&gt; Can anyone help me figure out how thats done ?  <br></p><p>I&#39;m no Pythonista, but this is where I&#39;d start: &lt;https://docs.python.org/3/extending/index.html&gt; Swift and Python can both call into C, so pretty much any bridge between the two is going to start by using Python&#39;s C API to embed a Python interpreter in a Swift library.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8d9dbc0dfeb74eab8dd9bbd9cbd84680?s=50"></div><header><strong>Bridging Python Packages to Swift</strong> from <string>Jose Cheyo Jimenez</string> &lt;cheyo at masters3d.com&gt;<p>July  2, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi Muhammad,<br></p><p>I am not an expert either but here is what I would do if I were you. <br></p><p>Go look at xamarin/ mono open source project to see how they bind objc and Java libraries to c#. Once you understand that then you would need a version of python (cpython or another typed Python version) that you are able to expose to swift (probably using llvm). I believe there are a bunch of projects that expose libraries like .net, c++ to python but I am not familiar with projects going the other way around. <br></p><p>Another way could be to figure out a way to expose the python script to c. (Python to c source to source translation possibly ). Swift is able to import c code but it is not pretty; you would have to build a nice wrapper around it using swift. <br></p><p>Needless to say, I think that is a lot of work that people just won&#39;t do. If I needed a python library in swift, I would just rewrite it in swift. <br></p><p>There are probably other ways. Good luck.   <br></p><p>&gt; On Jul 2, 2016, at 12:17 PM, Muhammad Tahir Vali via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hey everyone,<br>&gt; <br>&gt; I lack the experience the rest of the people in this list probably have being an undergraduate student but I would love to participate in this language because I see its potential.<br>&gt; <br>&gt; With that being said, one of the biggest advantages python has is its immersive number of packages that is appealing to anyone that writes scripts. Swift is evolving into a scripting language as well but it lacks the libraries python has. <br>&gt; <br>&gt; I suppose its worth bridging python packages with swift until Swift is grown up to take over the world :D<br>&gt; <br>&gt; Can anyone help me figure out how thats done ?  <br>&gt; <br>&gt; -- <br>&gt; Best Regards,<br>&gt; <br>&gt; Muhammad T. Vali<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160702/0680685f/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

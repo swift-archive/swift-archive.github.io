@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f241ad255534358619a250840f6c8ba4?s=50"></div><header><strong>SwiftPM: How to verify that PKG_CONFIG_PATH is being used</strong> from <string>Jerry Carter</string> &lt;jerry at jerrycarter.org&gt;<p>September 29, 2016 at 02:00:00pm</p></header><div class="content"><p>Newbie question.  How can I tell that PKG_CONFIG_PATH is being respected?<br></p><p>I am using Swift 3.0 (swiftlang-800.0.49) under OS X.  I do not have pkg-config installed.  I have specified the PKG_CONFIG_PATH environment variable and have validated the .pc files at that location.  The project builds but the resulting binary links to a different library — according to otool, the path is /usr/lib rather than that specified in my .pc file.  I’ve tried ’swift build -v’ and do not see the directory that I specified using PKG_CONFIG_PATH.<br></p><p>Not sure what to try next.  Thanks.<br></p><p>-=- Jerry<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/05540cd6be96706f76aa66a4519f7db9?s=50"></div><header><strong>SwiftPM: How to verify that PKG_CONFIG_PATH is being used</strong> from <string>Ankit Agarwal</string> &lt;ankit at ankit.im&gt;<p>September 29, 2016 at 11:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>SwiftPM finds the first matching .pc file in the list of search paths,<br>unfortunately the environment variable PKG_CONFIG_PATH was last in the<br>list. It was corrected in this commit:<br>https://github.com/apple/swift-package-manager/commit/ac0479653032ded2efa1d71ab290d5b8d66c0e82<br>Can you try with a recent snapshot and check if the environment variable is<br>being respected?<br></p><p>On Thu, Sep 29, 2016 at 11:35 PM, Jerry Carter via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; Newbie question.  How can I tell that PKG_CONFIG_PATH is being respected?<br>&gt;<br>&gt; I am using Swift 3.0 (swiftlang-800.0.49) under OS X.  I do not have<br>&gt; pkg-config installed.  I have specified the PKG_CONFIG_PATH environment<br>&gt; variable and have validated the .pc files at that location.  The project<br>&gt; builds but the resulting binary links to a different library — according to<br>&gt; otool, the path is /usr/lib rather than that specified in my .pc file.<br>&gt; I’ve tried ’swift build -v’ and do not see the directory that I specified<br>&gt; using PKG_CONFIG_PATH.<br>&gt;<br>&gt; Not sure what to try next.  Thanks.<br>&gt;<br>&gt; -=- Jerry<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br></p><p><br></p><p>-- <br>Ankit<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160929/ea8bbe28/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

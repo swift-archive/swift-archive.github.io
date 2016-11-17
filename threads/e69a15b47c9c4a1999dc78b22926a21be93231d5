@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Feature proposal: Range operator with step</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  6, 2016 at 02:00:00pm</p></header><div class="content"><p>on Wed Apr 06 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Apr 6, 2016, at 2:17 PM, Xiaodi Wu &lt;xiaodi.wu at gmail.com&gt; wrote:<br>&gt;&gt; Prohibiting StrideTo with floating-point ranges altogether would be<br>&gt;&gt; distressing. IMO, it&#39;s plenty distressing that backwards<br>&gt;&gt; floating-point StrideTo as it currently exists might go away.<br>&gt;<br>&gt; I wouldn&#39;t suggest doing so. I&#39;m just saying that for a half-open interval, there is no max value<br>&gt; so it makes no sense mathematically to have a first value and a<br>&gt; negative step. <br></p><p>I don&#39;t agree.  It seems to me that striding downwards over a half-open<br>range r should always begin with r.upperBound - s (modulo any necessary<br>adjustments to avoid FP error), where -s is the stride amount.  Why is<br>that mathematical nonsense?<br></p><p>Another point to consider: striding is also a sensible operation over<br>collections, and some ranges are collections.  The stride semantics must<br>coincide in those cases.  I expect that constraint narrows down the<br>reasonable semantic choices considerably.<br></p><p>&gt; You&#39;re not so restricted with:<br>&gt;<br>&gt; * positive steps<br>&gt; * closed intervals<br>&gt;<br>&gt; -- E<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ece55ca3fe50dca9c70bcd914acb48a5?s=50"></div><header><strong>Feature proposal: Range operator with step</strong> from <string>Matthew Judge</string> &lt;matthew.judge at gmail.com&gt;<p>April  6, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; On Apr 6, 2016, at 17:00, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Wed Apr 06 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt;&gt; On Apr 6, 2016, at 2:17 PM, Xiaodi Wu &lt;xiaodi.wu at gmail.com&gt; wrote:<br>&gt;&gt;&gt; Prohibiting StrideTo with floating-point ranges altogether would be<br>&gt;&gt;&gt; distressing. IMO, it&#39;s plenty distressing that backwards<br>&gt;&gt;&gt; floating-point StrideTo as it currently exists might go away.<br>&gt;&gt; <br>&gt;&gt; I wouldn&#39;t suggest doing so. I&#39;m just saying that for a half-open interval, there is no max value<br>&gt;&gt; so it makes no sense mathematically to have a first value and a<br>&gt;&gt; negative step.<br>&gt; <br>&gt; I don&#39;t agree.  It seems to me that striding downwards over a half-open<br>&gt; range r should always begin with r.upperBound - s (modulo any necessary<br>&gt; adjustments to avoid FP error), where -s is the stride amount.  Why is<br>&gt; that mathematical nonsense?<br>&gt; <br>This doesn&#39;t seem intuitive to me at all.<br></p><p>I can think of three interpretations of &#39;(lBound..&lt;uBound).striding(by:-step)&#39;:<br>- start at max value in range that is less than &#39;uBound&#39;<br>- start at &#39;bound - step&#39; (your suggestion)<br>- start where-ever is needed to end exactly at lBound<br></p><p>None of these interpretations seem intuitive to me.<br></p><p>I agree with Erica that the start point when striding should be an inclusive bound. A negative stride should only work with a closed range (or &#39;&lt;..&#39; if it is defined).<br></p><p>&gt; Another point to consider: striding is also a sensible operation over<br>&gt; collections, and some ranges are collections.  The stride semantics must<br>&gt; coincide in those cases.  I expect that constraint narrows down the<br>&gt; reasonable semantic choices considerably.<br>&gt; <br>&gt;&gt; You&#39;re not so restricted with:<br>&gt;&gt; <br>&gt;&gt; * positive steps<br>&gt;&gt; * closed intervals<br>&gt;&gt; <br>&gt;&gt; -- E<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; -- <br>&gt; Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

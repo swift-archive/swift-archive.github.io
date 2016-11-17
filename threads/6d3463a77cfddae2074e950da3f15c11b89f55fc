@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/26d71c7de68c6c95b1375a7989f0004b?s=50"></div><header><strong>[Proposal] Struct syntax for requesting a copy with an ivar set to an explicit value</strong> from <string>Grant Sheldon</string> &lt;gsheld at gmail.com&gt;<p>July 21, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I am hoping to get some feedback on a new proposal:<br></p><p>https://gist.github.com/gsheld/542a57c1ca5efe87892a28759215283e<br></p><p>The basic idea is to expose syntax that would make it trivial to create a<br>copy of a Struct instance with an ivar set to a particular value. The<br>&quot;proposal&quot; I&#39;ve linked above will give examples and some motivation for the<br>suggestion. It is a simple gist and not in any way ready for a PR.<br></p><p>Let me know what you think! I&#39;m curious to know if this bit of syntactic<br>sugar would have value for any of you.<br></p><p>Best wishes,<br></p><p>-- <br>Grant Sheldon<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160721/6d3455fc/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8149b5bd66abbc94babfda2995153481?s=50"></div><header><strong>[Proposal] Struct syntax for requesting a copy with an ivar set to an explicit value</strong> from <string>Nevin Brackett-Rozinsky</string> &lt;nevin.brackettrozinsky at gmail.com&gt;<p>July 21, 2016 at 07:00:00pm</p></header><div class="content"><p>As an additive proposal this is out of scope for Swift 3. Discussion of<br>additive proposals resumes August 1.<br></p><p>This functionality has been discussed on-list before, especially regarding<br>a global “with” function. I believe Erica Sadun has a particularly elegant<br>implementation.<br></p><p>Nevin<br></p><p><br>On Thu, Jul 21, 2016 at 7:08 PM, Grant Sheldon via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hi all,<br>&gt;<br>&gt; I am hoping to get some feedback on a new proposal:<br>&gt;<br>&gt; https://gist.github.com/gsheld/542a57c1ca5efe87892a28759215283e<br>&gt;<br>&gt; The basic idea is to expose syntax that would make it trivial to create a<br>&gt; copy of a Struct instance with an ivar set to a particular value. The<br>&gt; &quot;proposal&quot; I&#39;ve linked above will give examples and some motivation for the<br>&gt; suggestion. It is a simple gist and not in any way ready for a PR.<br>&gt;<br>&gt; Let me know what you think! I&#39;m curious to know if this bit of syntactic<br>&gt; sugar would have value for any of you.<br>&gt;<br>&gt; Best wishes,<br>&gt;<br>&gt; --<br>&gt; Grant Sheldon<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160721/6414f631/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

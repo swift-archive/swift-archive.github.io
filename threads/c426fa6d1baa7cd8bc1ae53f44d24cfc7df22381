@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Rejected] SE-0084: Allow trailing commas in parameter lists and tuples</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>May 25, 2016 at 08:00:00pm</p></header><div class="content"><p>Proposal link: https://github.com/apple/swift-evolution/blob/master/proposals/0084-trailing-commas.md<br></p><p>Hello Swift Community,<br></p><p>The review of SE-0084: &quot;Allow trailing commas in parameter lists and tuples&quot; ran from May 10…16, 2016. The proposal is *rejected* for Swift 3.  <br></p><p>The feedback from the community was quite divided on this topic: many people contributed to the discussion thread with some people agreeing and some disagreeing.<br></p><p>Swift currently accepts a trailing comma in array and dictionary collection literals, for three reasons:  evolution of a project often adds and removes elements to the collection over time, these changes do not alter the type of the collection (so those changes are typically spot changes), and the closing sigil of the collection (a right square bracket) is often placed on the line *following* the elements of the collection.  Because of these properties, accepting a trailing comma in a collection literal can help reduce spurious diffs when elements are added or removed.<br></p><p>That said, these properties do not translate to other comma separated lists in Swift, such as variable bindings in a var/let declaration, parameter lists or tuples.  For parameter lists and tuples (the specific topic of the proposal), the trailing terminator of the list is typically placed on the same line as the other elements.  Further, changes to add or remove an element to a parameter list or tuple element list change the type of the tuple or the signature of the call, meaning that there is almost always changes in other parts of the code to allow the change to build.  Finally, the core team does not want to encourage or endorse a coding style that puts the terminating right parenthesis on a line following the arguments to that call.<br></p><p>Thank you to Grant Paul and Erica Sadun for driving this discussion and proposal forward.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>[Rejected] SE-0084: Allow trailing commas in parameter lists and tuples</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>May 25, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; On May 25, 2016, at 9:37 PM, Chris Lattner via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; Swift currently accepts a trailing comma in array and dictionary collection literals, for three reasons:  evolution of a project often adds and removes elements to the collection over time, these changes do not alter the type of the collection (so those changes are typically spot changes), and the closing sigil of the collection (a right square bracket) is often placed on the line *following* the elements of the collection.  Because of these properties, accepting a trailing comma in a collection literal can help reduce spurious diffs when elements are added or removed.<br>&gt; <br>&gt; That said, these properties do not translate to other comma separated lists in Swift, such as variable bindings in a var/let declaration, parameter lists or tuples.  For parameter lists and tuples (the specific topic of the proposal), the trailing terminator of the list is typically placed on the same line as the other elements.  Further, changes to add or remove an element to a parameter list or tuple element list change the type of the tuple or the signature of the call, meaning that there is almost always changes in other parts of the code to allow the change to build.  Finally, the core team does not want to encourage or endorse a coding style that puts the terminating right parenthesis on a line following the arguments to that call.<br></p><p><br>To be honest, I was hoping the core team might agree that they be allowed just at call-sites, where changes would not propagate to other parts of the code but allow the easy inclusion and exclusion of defaulted arguments. <br></p><p>Sad to see this one go down but gratified that it got a fair consideration. Thank you again, -- E<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

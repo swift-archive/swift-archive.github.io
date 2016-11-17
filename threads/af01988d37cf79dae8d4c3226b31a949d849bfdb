@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>CharacterSet vs Set&lt;Character&gt;</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October  2, 2016 at 11:00:00am</p></header><div class="content"><p>on Sun Oct 02 2016, Jean-Denis Muys &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; I was playing with CharacterSet, and I came up with:<br>&gt;<br>&gt; let vowels = CharacterSet(charactersIn: &quot;AEIOU&quot;)<br></p><p>Yeah, because CharacterSet is a set of UnicodeScalars, not a set of<br>Character.  That should probably get fixed somehow.  I suggest filing a<br>radar against Foundation.<br></p><p>&gt; let char: Character = &quot;E&quot;<br>&gt;<br>&gt; vowels.contains(char)<br>&gt;<br>&gt; That last line doesn&#39;t compile: I get &quot;*cannot convert value of type<br>&gt; &#39;Character&#39; to expected argument type &#39;UnicodeScalar&#39;*&quot;<br>&gt;<br>&gt; The problem is, I could not find a simple way to convert from a character<br>&gt; to a unicodeScalar. The best I found is the very ugly:<br>&gt;<br>&gt; vowels.contains(String(char).unicodeScalars[String(char).unicodeScalars.<br>&gt; startIndex])<br>&gt;<br>&gt; Did I miss anything? <br></p><p>  vowels.contains(String(char).unicodeScalars.first!)<br></p><p>&gt; Does it have to be that horrific?<br></p><p>For now, I&#39;m afraid I don&#39;t have anything better for you.  I very much<br>hope to improve String usability substantially for Swift 4.<br></p><p>&gt; If so, I find using Set much better:<br>&gt;<br>&gt; let vowelsSet: Set&lt;Character&gt; = Set(&quot;AEIOU&quot;.characters)<br>&gt;<br>&gt; vowelsSet.contains(char)<br>&gt;<br>&gt; I must have missed something. Any suggestion welcome<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

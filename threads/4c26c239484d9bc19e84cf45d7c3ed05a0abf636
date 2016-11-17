@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2e51f5d1f79b09442f62eef9702b8316?s=50"></div><header><strong>Mapping C semantics to Swift</strong> from <string>Ken Burgett</string> &lt;kenb at iotone.io&gt;<p>May 19, 2016 at 10:00:00am</p></header><div class="content"><p>I would like to know if a struct in Swift has any guarantee of <br>contiguity, like a struct in C.  I am attempting to port a C program <br>that makes many assumptions about the underlying semantics of C structs, <br>and does things like overlaying an array over the struct using a cast, <br>and then performs and cryptographic hashing of the entire struct by <br>treating it as an array.<br></p><p>1.  I a Swift struct contiguous?<br></p><p>2.  If 1 above is true, can I somehow cast an array over the struct?<br></p><p>-- <br>Ken Burgett<br>Principal Software Engineer<br>Email: kenb at iotone.io<br>Office: 530.693.4449<br>Mobile: 831.332.6846<br>URL: www.iotone.co<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Mapping C semantics to Swift</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>May 19, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On May 19, 2016, at 10:00 AM, Ken Burgett via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I would like to know if a struct in Swift has any guarantee of contiguity, like a struct in C.  I am attempting to port a C program that makes many assumptions about the underlying semantics of C structs, and does things like overlaying an array over the struct using a cast, and then performs and cryptographic hashing of the entire struct by treating it as an array.<br>&gt; <br>&gt; 1.  I a Swift struct contiguous?<br>&gt; <br>&gt; 2.  If 1 above is true, can I somehow cast an array over the struct?<br></p><p>Swift structs have unspecified layout. If you depend on a specific layout, you should define the struct in C and import it into Swift for now.<br></p><p>-Joe<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>Mapping C semantics to Swift</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>May 20, 2016 at 12:00:00am</p></header><div class="content"><p>An working example,<br></p><p>let fm = NSFileManager.defaultManager()<br></p><p>  var mh = mach_header()   // Defined as C struct, &lt;mach-o/loader.h&gt;<br></p><p>  var lc = load_command()  // Defined as C struct &lt;mach-o/loader.h&gt;<br></p><p>  var location = 0<br></p><p>  if let data = fm.contentsAtPath(&quot;home/user/projects/some.o&quot;) {<br></p><p>    data.getBytes(&amp;mh, length: sizeof(mach_header))<br></p><p>    location += sizeof(mach_header)<br></p><p>    data.getBytes(&amp;lc, range: NSRange(location: location, length: sizeof(<br>load_command)) )<br></p><p>    location += sizeof(load_command)<br></p><p>}<br></p><p>-Rk<br></p><p>On Thu, May 19, 2016 at 10:52 PM, Joe Groff via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; &gt; On May 19, 2016, at 10:00 AM, Ken Burgett via swift-users &lt;<br>&gt; swift-users at swift.org&gt; wrote:<br>&gt; &gt;<br>&gt; &gt; I would like to know if a struct in Swift has any guarantee of<br>&gt; contiguity, like a struct in C.  I am attempting to port a C program that<br>&gt; makes many assumptions about the underlying semantics of C structs, and<br>&gt; does things like overlaying an array over the struct using a cast, and then<br>&gt; performs and cryptographic hashing of the entire struct by treating it as<br>&gt; an array.<br>&gt; &gt;<br>&gt; &gt; 1.  I a Swift struct contiguous?<br>&gt; &gt;<br>&gt; &gt; 2.  If 1 above is true, can I somehow cast an array over the struct?<br>&gt;<br>&gt; Swift structs have unspecified layout. If you depend on a specific layout,<br>&gt; you should define the struct in C and import it into Swift for now.<br>&gt;<br>&gt; -Joe<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160520/4979b634/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

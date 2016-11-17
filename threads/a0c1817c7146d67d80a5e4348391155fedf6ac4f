@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b3d3a2cce932eca144b8c13a63966404?s=50"></div><header><strong>Fwd: [swift-users] hasSuffix(_:) and .hasPrefix(_:) String methods missing on Linux</strong> from <string>Alex Blewitt</string> &lt;alex.blewitt at gmail.com&gt;<p>December 11, 2015 at 12:00:00pm</p></header><div class="content"><p>There’s a FIXME and a radar (18878343) in the source for StringLegacy:<br></p><p>https://github.com/apple/swift/blob/master/stdlib/public/core/StringLegacy.swift#L98<br></p><p>Can the information be re-created as a SwiftBug instead? <br></p><p>Alex<br></p><p>&gt; Begin forwarded message:<br>&gt; <br>&gt; From: Alex Blewitt &lt;alex.blewitt at gmail.com&gt;<br>&gt; Subject: Re: [swift-users] hasSuffix(_:) and .hasPrefix(_:) String methods missing on Linux<br>&gt; Date: 11 December 2015 11:48:02 GMT<br>&gt; To: Alessandro Morgantini &lt;gpz500 at technologist.com&gt;<br>&gt; Cc: swift-users at swift.org<br>&gt; <br>&gt; They may come as extensions from NSString, which Swift doesn’t have fully implemented on Linux yet.<br>&gt; <br>&gt; Alex<br>&gt; <br>&gt;&gt; On 11 Dec 2015, at 11:18, Alessandro Morgantini via swift-users &lt;swift-users at swift.org &lt;mailto:swift-users at swift.org&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hello to everyone!<br>&gt;&gt; I&#39;m a very newbie to Swift, I&#39;m doing first experiments on Linux &amp; Mac and I have the following issue: if I call the hasSuffix(_:) or the hasPrefix(_:) methods on a String instance, I obtain the following error:<br>&gt;&gt; <br>&gt;&gt; $ swiftc prova.swift<br>&gt;&gt; prova.swift:110:4: error: value of type &#39;String&#39; has no member &#39;hasSuffix&#39;<br>&gt;&gt; if pippo.hasSuffix(&quot;ao&quot;) {<br>&gt;&gt;    ^~~~~ ~~~~~~~~~<br>&gt;&gt; <br>&gt;&gt; Same code works well on OS X.<br>&gt;&gt; I&#39;m using Ubuntu 14.04 with required dependencies (clang and libicu-dev) installed.<br>&gt;&gt; Any idea?<br>&gt;&gt; <br>&gt;&gt; Cheers, Alessandro<br>&gt;&gt; <br>&gt;&gt; -- <br>&gt;&gt; Ing. Alessandro Morgantini - http://www.morgantini.org/ &lt;http://www.morgantini.org/&gt;<br>&gt;&gt; Email: gpz500 at technologist.com &lt;mailto:gpz500 at technologist.com&gt;<br>&gt;&gt; Cell.: +39-347 761 1221 - Fax: +39-390 347 761 1221<br>&gt;&gt;  _______________________________________________<br>&gt;&gt; swift-users mailing list<br>&gt;&gt; swift-users at swift.org &lt;mailto:swift-users at swift.org&gt;<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; <br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151211/a0c1ac4f/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

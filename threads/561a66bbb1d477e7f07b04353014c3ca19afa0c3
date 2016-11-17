@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8809800aec2460f291384b794d7e6f8f?s=50"></div><header><strong>Java-style annotations (attributes?)</strong> from <string>Rick Mann</string> &lt;rmann at latencyzero.com&gt;<p>September 27, 2016 at 05:00:00pm</p></header><div class="content"><p>I did a little googling, but didn&#39;t find this specific question being asked. I&#39;ve had the question in my head for a while now, so I apologize if I already brought this up.<br></p><p>Will Swift ever support introspectable Java-style annotations? I think the current syntactic construct is called an Attribute, but they&#39;d be customizable, created in much the same way as classes are.<br></p><p>They provide a very convenient way to provide plug-ins to a containing environment. For example, web servers are often built in Java using these techniques. You define a (plain) class that represents a service, whose methods represent individual request endpoints:<br></p><p>@Service(root=&quot;/my/sub/webapp/&quot;)<br>class<br>MyWebapp<br>{<br>    @Get(path=&quot;users/{id}/&quot;)<br>    func getUsers(@Param(&quot;id&quot;) userID inUserID: Int)<br>	-&gt; [String:AnyObject]?<br>    {<br>	//  return dictionary for user with ID inUserID<br>    }<br>}<br></p><p>The container uses introspection to find all classes annotated with &quot;Service.&quot; It pulls the values of the parameters out of the Service annotation using introspection. It then does a similar thing on the methods in the Service class, etc.<br></p><p>Is there any work being done along these lines?<br></p><p><br>-- <br>Rick Mann<br>rmann at latencyzero.com<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Java-style annotations (attributes?)</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>September 27, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; On Sep 27, 2016, at 5:02 PM, Rick Mann via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I did a little googling, but didn&#39;t find this specific question being asked. I&#39;ve had the question in my head for a while now, so I apologize if I already brought this up.<br>&gt; <br>&gt; Will Swift ever support introspectable Java-style annotations? I think the current syntactic construct is called an Attribute, but they&#39;d be customizable, created in much the same way as classes are.<br></p><p>Hi Rick,<br></p><p>This is something that many people are aware of and is commonly requested.  It isn’t on the short-term todo list (which is oriented around ABI stability at the moment) but is something that many folks are interested in adding at some point.<br></p><p>-Chris<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8809800aec2460f291384b794d7e6f8f?s=50"></div><header><strong>Java-style annotations (attributes?)</strong> from <string>Rick Mann</string> &lt;rmann at latencyzero.com&gt;<p>September 28, 2016 at 03:00:00am</p></header><div class="content"><p>&gt; On Sep 27, 2016, at 20:24 , Chris Lattner &lt;clattner at apple.com&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On Sep 27, 2016, at 5:02 PM, Rick Mann via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; I did a little googling, but didn&#39;t find this specific question being asked. I&#39;ve had the question in my head for a while now, so I apologize if I already brought this up.<br>&gt;&gt; <br>&gt;&gt; Will Swift ever support introspectable Java-style annotations? I think the current syntactic construct is called an Attribute, but they&#39;d be customizable, created in much the same way as classes are.<br>&gt; <br>&gt; Hi Rick,<br>&gt; <br>&gt; This is something that many people are aware of and is commonly requested.  It isn’t on the short-term todo list (which is oriented around ABI stability at the moment) but is something that many folks are interested in adding at some point.<br></p><p>Thank you, that&#39;s great news.<br></p><p>In case you&#39;re interested, this is why I want it. I&#39;d really like to see Baratine re-implemented in pure Swift:<br></p><p>	http://baratine.io<br></p><p>If you can spare the time, I highly recommend checking out the Getting Started. It&#39;s revolutionary for web services.<br></p><p><br>-- <br>Rick Mann<br>rmann at latencyzero.com<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

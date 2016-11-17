@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>[Review] SE-0065 A New Model for Collections and Indices</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>May  3, 2016 at 12:00:00am</p></header><div class="content"><p>&gt; Hello Swift community,<br>&gt; <br>&gt; The review of &quot;A New Model for Collections and Indices&quot; begins now and runs through April 18th. The proposal is available here:<br>&gt; <br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0065-collections-move-indices.md&lt;https://github.com/apple/swift-evolution/blob/master/proposals/0055-optional-unsafe-pointers.md&gt;<br>&gt; <br>&gt; Reviews are an important part of the Swift evolution process. All reviews should be sent to the swift-evolution mailing list at:<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution&lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;<br>&gt; or, if you would like to keep your feedback private, directly to the review manager.<br>&gt; <br>&gt; <br>&gt; What goes into a review?<br>&gt; <br>&gt; The goal of the review process is to improve the proposal under review through constructive criticism and, eventually, determine the direction of Swift. When writing your review, here are some questions you might want to answer in your review:<br>&gt; <br>&gt; * What is your evaluation of the proposal?<br>&gt; * Is the problem being addressed significant enough to warrant a change to Swift?<br>&gt; * Does this proposal fit well with the feel and direction of Swift?<br>&gt; * If you have you used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br>&gt; * How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>&gt; <br>&gt; More information about the Swift evolution process is available at<br>&gt; <br>&gt; https://github.com/apple/swift-evolution/blob/master/process.md&lt;https://github.com/apple/swift-evolution/blob/master/process.md&gt;<br>&gt; <br>&gt; Thank you,<br>&gt; <br>&gt; -Chris Lattner<br>&gt; Review Manager<br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>&gt; <br></p><p>So, just confirming that the following is going to change:<br></p><p>—————<br>var string    = &quot;test&quot;<br>let origLen   = 4<br>let indexOne  = string.startIndex<br></p><p>string.appendContentsOf(&quot;ANOTHERTEST&quot;)<br></p><p>let indexTwo = indexOne.advancedBy(origLen, limit: string.endIndex)<br></p><p>assert(indexTwo&lt;string.endIndex)<br>indexTwo.successor()                           //&lt;--- fatal error: cannot increment endIndex<br>—————<br></p><p>Is this a consequence of the index needing to know its originating string for successor() purposes?<br>Once this is implemented, will String.Index be portable across string instances (presuming you bounds-check them, as I did above)?<br></p><p>Thanks<br></p><p>Karl<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>[Review] SE-0065 A New Model for Collections and Indices</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>May  2, 2016 at 06:00:00pm</p></header><div class="content"><p>On Mon, May 2, 2016 at 3:08 PM, Karl via swift-evolution<br>&lt;swift-evolution at swift.org&gt; wrote:<br>&gt; So, just confirming that the following is going to change:<br>&gt;<br>&gt; —————<br>&gt; var string    = &quot;test&quot;<br>&gt; let origLen   = 4<br>&gt; let indexOne  = string.startIndex<br>&gt;<br>&gt; string.appendContentsOf(&quot;ANOTHERTEST&quot;)<br>&gt;<br>&gt; let indexTwo = indexOne.advancedBy(origLen, limit: string.endIndex)<br>&gt;<br>&gt; assert(indexTwo&lt;string.endIndex)<br>&gt; indexTwo.successor()                           //&lt;--- fatal error: cannot increment endIndex<br>&gt; —————<br></p><p>Hi Karl,<br></p><p>Yes, this code would start working.<br></p><p>&gt; Is this a consequence of the index needing to know its originating string for successor() purposes?<br></p><p>That would be a plausible explanation, but I think that would be too<br>simple to be true :)  This code should even work in the current model,<br>but the current (buggy) behavior is caused by String indices keeping<br>an extra strong reference to the underlying storage, so the mutation<br>actually detaches the index from the updated string storage.<br></p><p>&gt; Once this is implemented, will String.Index be portable across string instances (presuming you bounds-check them, as I did above)?<br></p><p>Yes, within the prefix that was common to all strings and was created<br>in a common mutation history.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

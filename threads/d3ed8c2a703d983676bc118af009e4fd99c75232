@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ad20eef820edc466c0d298a8a5f74460?s=50"></div><header><strong>[Proposal] Enums with stored properties</strong> from <string>Mateusz Malczak</string> &lt;mateusz at malczak.info&gt;<p>October  8, 2016 at 08:00:00pm</p></header><div class="content"><p>Hi all,<br>I would like to know you opinion on one feature I feel would be a real<br>&#39;nice to have&#39; extension to currently available enumeration type. Which is<br>an enumeration type with stored properties. It is sometimes useful to store<br>some extra informations along with enumeration cases. Idea here is to add<br>possibility to define an enumeration type with stored, immutable,<br>properties, defined at compile time for all cases. In opposition to<br>currently available associated values, stored properties should be constant<br>values stored as a part of enumeration case. Proposed feature would be<br>treated as a new feature along the associated values and raw values.<br></p><p>Please take a look at an example to illustrate this:<br>```swift<br>enum Format {<br>    case SMALL(30, 30)<br>    case MEDIUM(60, 60)<br>    case LARGE(120, 120)<br>    var width: Double<br>    var height: Double<br>    init(width: Double, height: Double) {<br>        self.width = width<br>        self.height = height<br>    }<br>}<br>```<br></p><p>Similar feature is currently available for example in Java (<br>http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html).<br></p><p>Currently there are at least tree ways to solve this limitation.<br></p><p>1. use enumeration type with custom struct as a rawValue cons:<br>a lot of additional code to define structs and implement<br>`ExpressibleByStringLiteral`<br>not really possible for more complex types, where a complex string parser<br>would be required<br></p><p>example:<br>```swift<br>struct FormatStruct: ExpressibleByStringLiteral, Equatable {<br>    var width: Int = 0<br>    var height: Int = 0<br>    public init(width: Int, height: Int) {<br>        self.width = width<br>        self.height = height<br>    }<br>    public init(stringLiteral value: String) {<br>        let set = CharacterSet(charactersIn: &quot;x&quot;)<br>        let values = value.components(separatedBy: set)<br>        if let width = Int(values[0]), let height = Int(values[1]) {<br>            self.init(width: width, height: height)<br>        } else {<br>            self.init(width: 0, height: 0)<br>        }<br>    }<br>    init(extendedGraphemeClusterLiteral value: String){<br>        self.init(stringLiteral: value)<br>    }<br>    init(unicodeScalarLiteral value: String) {<br>        self.init(stringLiteral: value)<br>    }<br>    static func ==(lhs: FormatStruct, rhs: FormatStruct) -&gt; Bool {<br>        return (lhs.width == rhs.width) &amp;&amp; (lhs.height == rhs.height)<br>    }<br>    static let A = FormatStruct(width: 30, height: 30)<br>}<br>enum Format: FormatStruct {<br>    case SMALL = &quot;30x30&quot;<br>    case MEDIUM = &quot;60x60&quot;<br>    case LARGE = &quot;120x120&quot;<br>    var width: Int {<br>        return rawValue.width<br>    }<br>    var height: Int {<br>        return rawValue.height<br>    }<br>}<br>```<br></p><p>2. static struct values to mimic enumeration type<br>cons:<br>enum should be used to define a closed set of possible values<br></p><p>example:<br>```swift<br>struct Format: ExpressibleByStringLiteral, Equatable {<br>    var width: Int = 0<br>    var height: Int = 0<br>    public init(width: Int, height: Int) {<br>        self.width = width<br>        self.height = height<br>    }<br>    static let SMALL = FormatStruct(width: 30, height: 30)<br>    static let MEDIUM = FormatStruct(width: 60, height: 60)<br>    static let LARGE = FormatStruct(width: 120, height: 120)<br>}<br>```<br></p><p>3. define enum with getters<br>cons:<br>additional, repeated `switch` clauses in getters<br></p><p>example:<br>```swift<br>enum Format2 { case SMALL case MEDIUM case LARGE var width: Int { switch<br>self { case .SMALL: return 30 case .MEDIUM: return 60 case .LARGE: return<br>120 } } var height: Int { switch self { case .SMALL: return 30 case<br>.MEDIUM: return 60 case .LARGE: return 120 } } }<br>```<br></p><p>What is your opinion on this feature? Or maybe that was not implemented for<br>some reason - if so can I get an few word of explaination what was the<br>motivation for not adding this to the language?<br></p><p>best regards<br>--<br>| Mateusz Malczak<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161008/d3ed5232/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

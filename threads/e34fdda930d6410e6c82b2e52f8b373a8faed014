@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>For-loop revisited</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 25, 2016 at 06:00:00pm</p></header><div class="content"><p>on Thu Feb 25 2016, ted van gaalen &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; (btw: If I don&#39;t put () around -60 , then the compiler complains with<br>&gt; &quot;Unary operator &#39;-&#39; cannot be applied to an operand of type &#39;StrideTo&lt;Double&gt;&#39; &quot;<br>&gt; Could this be a compiler error? Shouldn&#39;t it first instantiate or evaluate the <br>&gt; numerical object,before glueing the .stride()  to it? ) <br></p><p>Please file a bug report!<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e0a5152b275c43b493a94b5a6a868905?s=50"></div><header><strong>For-loop revisited</strong> from <string>Pyry Jahkola</string> &lt;pyry.jahkola at iki.fi&gt;<p>February 26, 2016 at 10:00:00am</p></header><div class="content"><p>On 26 Feb 2016, at 04:26, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; on Thu Feb 25 2016, ted van gaalen &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; (btw: If I don&#39;t put () around -60 , then the compiler complains with<br>&gt;&gt; &quot;Unary operator &#39;-&#39; cannot be applied to an operand of type &#39;StrideTo&lt;Double&gt;&#39; &quot;<br>&gt;&gt; Could this be a compiler error? Shouldn&#39;t it first instantiate or evaluate the <br>&gt;&gt; numerical object,before glueing the .stride()  to it? ) <br>&gt; <br>&gt; Please file a bug report!<br></p><p><br>Doesn&#39;t seem like a bug to me. In general, we want to allow an expression like -rect.width to return the negative width, and not apply the unary operator to rect first. Same goes to -array.reduce(0, combine: +), for example.<br></p><p>Hence, member access and function application bind tighter than prefix operators.<br></p><p>— Pyry<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160226/8652f16a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>For-loop revisited</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 26, 2016 at 08:00:00am</p></header><div class="content"><p>&gt; On Feb 26, 2016, at 12:42 AM, Pyry Jahkola &lt;pyry.jahkola at iki.fi&gt; wrote:<br>&gt; <br>&gt; On 26 Feb 2016, at 04:26, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org &lt;mailto:swift-evolution at swift.org&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; on Thu Feb 25 2016, ted van gaalen &lt;swift-evolution at swift.org &lt;mailto:swift-evolution at swift.org&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; (btw: If I don&#39;t put () around -60 , then the compiler complains with<br>&gt;&gt;&gt; &quot;Unary operator &#39;-&#39; cannot be applied to an operand of type &#39;StrideTo&lt;Double&gt;&#39; &quot;<br>&gt;&gt;&gt; Could this be a compiler error? Shouldn&#39;t it first instantiate or evaluate the <br>&gt;&gt;&gt; numerical object,before glueing the .stride()  to it? ) <br>&gt;&gt; <br>&gt;&gt; Please file a bug report!<br>&gt; <br>&gt; <br>&gt; Doesn&#39;t seem like a bug to me. In general, we want to allow an expression like -rect.width to return the negative width, and not apply the unary operator to rect first. Same goes to -array.reduce(0, combine: +), for example.<br>&gt; <br>&gt; Hence, member access and function application bind tighter than prefix operators.<br></p><p>You&#39;re right, thanks.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160226/a62fe57b/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

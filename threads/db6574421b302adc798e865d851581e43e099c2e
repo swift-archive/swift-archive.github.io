@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Review] SE-0102: Remove @noreturn attribute and introduce an empty NoReturn type</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 24, 2016 at 04:00:00pm</p></header><div class="content"><p>https://github.com/apple/swift-evolution/blob/master/proposals/0102-<br>noreturn-bottom-type.md<br></p><p>I can think of at least one example of using Never.<br>Suppose Stream protocol that returns a value at the end:<br></p><p>protocol Stream {<br>    associatedtype Element<br>    associatedtype Result<br></p><p>    mutable func next() -&gt; Either&lt;Element, Result&gt;<br>}<br></p><p>Result can be used for information why the stream has stopped.<br>Calling next() after it returns Result is undefined behaviour.<br></p><p>You can easily see that Iterator is a special case of Stream<br>with Result = ().<br></p><p>Algorithms on IteratorWithResult should not drop the result:<br></p><p>func forEach&lt;S&gt;(stream: inout S,<br>                block: (S.Element) -&gt; ())<br>                -&gt; S.Result<br>                where S: Stream<br></p><p>We can split our Stream nicely:<br></p><p>func split&lt;S&gt;(stream: inout S,<br>              take: Int)<br>              -&gt; TakePrefixStream<br>              where S: Stream<br></p><p>TakePrefixStream.Result is also a Stream, so to process two parts of <br>stream differently, we do:<br></p><p>split(s, take: 10).forEach(calledOnFirstTen).forEach(calledOnOthers)<br></p><p>In the same spirit, we can split a stream into 3 or N parts.<br>Note that split itself does not take any elements from the Stream,<br>everything is lazy.<br></p><p>You&#39;ve already noticed where Never has its place.<br>If a stream is infinite, we use Result = Never.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/697f00e1b9be900f24cd1669cc931874?s=50"></div><header><strong>[Review] SE-0102: Remove @noreturn attribute and introduce an empty NoReturn type</strong> from <string>L. Mihalkovic</string> &lt;laurent.mihalkovic at gmail.com&gt;<p>June 24, 2016 at 06:00:00pm</p></header><div class="content"><p>Although i understand the intention, there are existing designs in other languages offering proven better alternatives. So i would not leave thinking that a compelling case for &#39;Never&#39; has been made.<br></p><p>&gt; On Jun 24, 2016, at 6:01 PM, Anton Zhilin via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0102-<br>&gt; noreturn-bottom-type.md<br>&gt; <br>&gt; I can think of at least one example of using Never.<br>&gt; Suppose Stream protocol that returns a value at the end:<br>&gt; <br>&gt; protocol Stream {<br>&gt;    associatedtype Element<br>&gt;    associatedtype Result<br>&gt; <br>&gt;    mutable func next() -&gt; Either&lt;Element, Result&gt;<br>&gt; }<br>&gt; <br>&gt; Result can be used for information why the stream has stopped.<br>&gt; Calling next() after it returns Result is undefined behaviour.<br>&gt; <br>&gt; You can easily see that Iterator is a special case of Stream<br>&gt; with Result = ().<br>&gt; <br>&gt; Algorithms on IteratorWithResult should not drop the result:<br>&gt; <br>&gt; func forEach&lt;S&gt;(stream: inout S,<br>&gt;                block: (S.Element) -&gt; ())<br>&gt;                -&gt; S.Result<br>&gt;                where S: Stream<br>&gt; <br>&gt; We can split our Stream nicely:<br>&gt; <br>&gt; func split&lt;S&gt;(stream: inout S,<br>&gt;              take: Int)<br>&gt;              -&gt; TakePrefixStream<br>&gt;              where S: Stream<br>&gt; <br>&gt; TakePrefixStream.Result is also a Stream, so to process two parts of <br>&gt; stream differently, we do:<br>&gt; <br>&gt; split(s, take: 10).forEach(calledOnFirstTen).forEach(calledOnOthers)<br>&gt; <br>&gt; In the same spirit, we can split a stream into 3 or N parts.<br>&gt; Note that split itself does not take any elements from the Stream,<br>&gt; everything is lazy.<br>&gt; <br>&gt; You&#39;ve already noticed where Never has its place.<br>&gt; If a stream is infinite, we use Result = Never.<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

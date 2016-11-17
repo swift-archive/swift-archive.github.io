@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Returned for revision] SE-0077: Improved operator declarations</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 23, 2016 at 03:00:00pm</p></header><div class="content"><p>Ross O&#39;Brien via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; The naming suggestion: why not simply &#39;precedes&#39; and &#39;succeeds&#39;? This <br>avoids the conjoined words problem. Then you&#39;re just writing <br>&#39;Multiplication { succeeds: Exponentiation, precedes: Addition }&#39;.<br></p><p>I still believe that `above` and `below` are clearer.<br></p><p>&gt; Suppose wanted to define C&#39;s precedence so its operation preceded both A <br>and B, or succeeded both A and B. Does that require an explicit <br>declaration of which of A or B takes precedence? If not, would this be <br>legal?:<br>&gt; &#39;precedencegroup C { strongerThan: A, strongerThan: B }&#39;<br></p><p>Any number of strongerThan and weakerThan relationships should be legal.<br>Order of these relationships does not matter. We model them as edges of a <br>DAG of all declared operators.<br></p><p>There will be no problems during parsing. For example,<br>https://en.wikipedia.org/wiki/Shunting-yard_algorithm<br>only requests equality and less-than relationships between two operators.<br></p><p>- Anton<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8083ad16248b8c031cc10d44f47aa442?s=50"></div><header><strong>[Returned for revision] SE-0077: Improved operator declarations</strong> from <string>T.J. Usiyan</string> &lt;griotspeak at gmail.com&gt;<p>June 23, 2016 at 12:00:00pm</p></header><div class="content"><p>If we chose something other than strongerThan and weakerThan, I would<br>really like to see something like<br></p><p> evaluateBefore, evaluateAfter<br>foundBefore, foundAfter<br>lookupBefore, lookupAfter<br></p><p><br>On Thu, Jun 23, 2016 at 11:32 AM, Anton Zhilin via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Ross O&#39;Brien via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt;<br>&gt; &gt; The naming suggestion: why not simply &#39;precedes&#39; and &#39;succeeds&#39;? This<br>&gt; avoids the conjoined words problem. Then you&#39;re just writing<br>&gt; &#39;Multiplication { succeeds: Exponentiation, precedes: Addition }&#39;.<br>&gt;<br>&gt; I still believe that `above` and `below` are clearer.<br>&gt;<br>&gt; &gt; Suppose wanted to define C&#39;s precedence so its operation preceded both A<br>&gt; and B, or succeeded both A and B. Does that require an explicit<br>&gt; declaration of which of A or B takes precedence? If not, would this be<br>&gt; legal?:<br>&gt; &gt; &#39;precedencegroup C { strongerThan: A, strongerThan: B }&#39;<br>&gt;<br>&gt; Any number of strongerThan and weakerThan relationships should be legal.<br>&gt; Order of these relationships does not matter. We model them as edges of a<br>&gt; DAG of all declared operators.<br>&gt;<br>&gt; There will be no problems during parsing. For example,<br>&gt; https://en.wikipedia.org/wiki/Shunting-yard_algorithm<br>&gt; only requests equality and less-than relationships between two operators.<br>&gt;<br>&gt; - Anton<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160623/c8e438ed/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7abf2ce34651dd5e97cd97b16ce21bae?s=50"></div><header><strong>[Returned for revision] SE-0077: Improved operator declarations</strong> from <string>Guillaume Lessard</string> &lt;glessard at tffenterprises.com&gt;<p>June 23, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On 23 juin 2016, at 09:32, Anton Zhilin via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Ross O&#39;Brien via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; <br>&gt;&gt; The naming suggestion: why not simply &#39;precedes&#39; and &#39;succeeds&#39;? This <br>&gt; avoids the conjoined words problem. Then you&#39;re just writing <br>&gt; &#39;Multiplication { succeeds: Exponentiation, precedes: Addition }&#39;.<br>&gt; <br>&gt; I still believe that `above` and `below` are clearer.<br></p><p>How about `before` and `after`, then?<br></p><p>(altitude is not precedence)<br></p><p>This truly is a precedence relationship, and expressing it using height relationships isn’t particularly useful. What we need to express is that when there is possible ambiguity between two operators, which one should be used first? Obviously, it’s the one that comes “before”, or perhaps the one that “precedes” the other.<br></p><p>Cheers,<br>Guillaume Lessard<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

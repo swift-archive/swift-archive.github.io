@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c78187ddebbbaaa01f814fa1c2dd9773?s=50"></div><header><strong>Protocol declaration inside a class</strong> from <string>Виктор Шаманов</string> &lt;wiruzx at gmail.com&gt;<p>December 11, 2015 at 12:00:00am</p></header><div class="content"><p>Happy Friday everyone!<br></p><p>I wonder why the protocol declaration should be only at the file scope?<br>Is this a design choice or limitation of the current implementation?<br></p><p>I think, ability to declare protocols inside the other declarations would<br>improve readability and code-organization.<br></p><p>For example, instead of:<br></p><p>protocol UITableViewDelegate {<br>...<br>}<br></p><p>class UITableView {<br>    var delegate: UITableViewDelegate?<br>}<br></p><p><br>we would write:<br></p><p>class UITableView {<br></p><p>    protocol Delegate {<br>    ...<br>    }<br></p><p><br>    var delegate: Delegate?<br>}<br></p><p><br>Thanks<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151211/e39d010a/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

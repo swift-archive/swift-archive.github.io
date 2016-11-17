@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Discussion] API Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 16, 2016 at 12:00:00pm</p></header><div class="content"><p>on Fri Oct 14 2016, Zach Waldowski &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; The base name of the function describes its core purpose.<br>&gt;<br>&gt; There is no ambiguity instructing an Array to &quot;append&quot; something, but<br>&gt; there is context needed: &quot;what are we appending? The contents of the<br>&gt; newElements parameter.&quot; <br></p><p>That&#39;s because there&#39;s a distinction between appending the newElements<br>paramter (as a single new element on an array of Any) and appending its<br>elements.<br></p><p>&gt; But there is ambiguity asking URL to &quot;give me a new URL by<br>&gt; appending&quot;. Appending what?<br></p><p>Actually, no, you are passing an argument.  That&#39;s what&#39;s being<br>appended.  If there&#39;s only one reasonable way to append a String to a<br>URL, no noun should be needed.  If there&#39;s some ambiguity as to the<br>semantics, that might justify the &quot;pathComponent:&quot; label.<br></p><p>&gt; Similarly, telling a collection to &quot;replace&quot;. Replace what?<br>&gt;<br>&gt; A rule of thumb my team has applied is to put the parameter parens where<br>&gt; you would have put `with` in ObjC. This is instructive for your<br>&gt; questions as well. &quot;URLByAppendingWithPathComponent&quot; and<br>&gt; &quot;replaceWithSubrange&quot; wouldn&#39;t make sense, but &quot;appendWithContentsOf&quot;<br>&gt; does.<br>&gt;<br>&gt; Cheers!<br>&gt;   Zachary Waldowski<br>&gt;   zach at waldowski.me<br>&gt;<br>&gt; On Thu, Oct 13, 2016, at 10:30 PM, Charlie Monroe via swift-evolution<br>&gt; wrote:<br>&gt;&gt; Hi there,<br>&gt;&gt; <br>&gt;&gt; I am really grateful for the API guidelines that were created as part of<br>&gt;&gt; Swift 3, however, I&#39;m having trouble with distinguishing which part of<br>&gt;&gt; the method name should be already an argument. To illustrate this, here<br>&gt;&gt; are two examples:<br>&gt;&gt; <br>&gt;&gt; // On Array<br>&gt;&gt; public mutating func append(contentsOf newElements: S)<br>&gt;&gt; <br>&gt;&gt; // On Foundation.URL<br>&gt;&gt; public func appendingPathComponent(_ pathComponent: String) -&gt; URL<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; Is there a particular reason why it&#39;s not<br>&gt;&gt; <br>&gt;&gt; public func appending(pathComponent: String) -&gt; URL<br>&gt;&gt; <br>&gt;&gt; ?<br>&gt;&gt; <br>&gt;&gt; In my opinion the entire stdlib and Foundation is full of such<br>&gt;&gt; discrepancies which make it hard to decide when you name your own methods<br>&gt;&gt; since there are preceding cases in the language itself (or Foundation)<br>&gt;&gt; that go both ways.<br>&gt;&gt; <br>&gt;&gt; The same goes for why don&#39;t the replace methods (this is on String)<br>&gt;&gt; follow the same - when there is append(contentsOf:):<br>&gt;&gt; <br>&gt;&gt; public mutating func replaceSubrange(_ bounds: ClosedRange&lt;String.Index&gt;,<br>&gt;&gt; with newElements: String)<br>&gt;&gt; <br>&gt;&gt; instead of<br>&gt;&gt; <br>&gt;&gt; public mutating func replace(subrange bounds: ClosedRange&lt;String.Index&gt;,<br>&gt;&gt; with newElements: String)<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; I know there was an extensive discussion about this here when the stdlib<br>&gt;&gt; names were discussed. And given that these would be breaking changes, I<br>&gt;&gt; don&#39;t necessarily want to start a lengthy discussion about renaming those<br>&gt;&gt; again - I&#39;m just wondering what are the reasons behind this and what<br>&gt;&gt; should be the correct naming conventions.<br>&gt;&gt; <br>&gt;&gt; Thanks!<br>&gt;&gt; <br>&gt;&gt; Charlie<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

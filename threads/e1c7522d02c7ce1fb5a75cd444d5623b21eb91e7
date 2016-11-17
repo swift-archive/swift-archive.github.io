@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e5808a0a025bdb9530d2a77d8a4a5ffa?s=50"></div><header><strong>swiftc and CocoaPods modules</strong> from <string>Marcel Rebouças</string> &lt;mscreboucas at gmail.com&gt;<p>May  9, 2016 at 11:00:00am</p></header><div class="content"><p>Hello all,<br></p><p>I&#39;m trying to run the swiftc (a modified one) command in a project folder<br>in order to compile all .swift files. It is currently working as follows:<br></p><p>xcrun -sdk iphoneos build/Ninja-DebugAssert/swift-macosx-x86_64/bin/swiftc<br>-dump-ast -target armv7-apple-ios7.0 **/*.swift<br></p><p><br>Right now, it is able to find and compile all .swift files in the<br>directories and subdirectories, and is able to import modules such as UIKit.<br></p><p><br>However, I can&#39;t find a way to make it work with modules added through<br>CocoaPods. This generates an error like:<br></p><p><br>*Example/Source/DetailViewController.swift:23:8: **error: **no such module<br>&#39;Alamofire&#39;*<br></p><p><br>Any thoughts?<br></p><p><br>Thanks,<br></p><p>Marcel<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160509/e1c791e7/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e5808a0a025bdb9530d2a77d8a4a5ffa?s=50"></div><header><strong>swiftc and CocoaPods modules</strong> from <string>Marcel Rebouças</string> &lt;mscreboucas at gmail.com&gt;<p>May 11, 2016 at 01:00:00pm</p></header><div class="content"><p>I just realized the text formatting is wrong, sorry for that.<br></p><p>2016-05-09 11:17 GMT-03:00 Marcel Rebouças &lt;mscreboucas at gmail.com&gt;:<br></p><p>&gt; Hello all,<br>&gt;<br>&gt; I&#39;m trying to run the swiftc (a modified one) command in a project folder<br>&gt; in order to compile all .swift files. It is currently working as follows:<br>&gt;<br>&gt; xcrun -sdk iphoneos build/Ninja-DebugAssert/swift-macosx-x86_64/bin/swiftc<br>&gt; -dump-ast -target armv7-apple-ios7.0 **/*.swift<br>&gt;<br>&gt;<br>&gt; Right now, it is able to find and compile all .swift files in the<br>&gt; directories and subdirectories, and is able to import modules such as UIKit.<br>&gt;<br>&gt;<br>&gt; However, I can&#39;t find a way to make it work with modules added through<br>&gt; CocoaPods. This generates an error like:<br>&gt;<br>&gt;<br>&gt; *Example/Source/DetailViewController.swift:23:8: **error: **no such<br>&gt; module &#39;Alamofire&#39;*<br>&gt;<br>&gt;<br>&gt; Any thoughts?<br>&gt;<br>&gt;<br>&gt; Thanks,<br>&gt;<br>&gt; Marcel<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160511/8b8e97c9/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

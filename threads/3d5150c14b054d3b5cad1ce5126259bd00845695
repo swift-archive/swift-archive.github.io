@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/86faaff6b90699a5dda6b5cddcc36f97?s=50"></div><header><strong>LLDB module import paths</strong> from <string>Dmitry Shevchenko</string> &lt;dmishe at google.com&gt;<p>August 22, 2016 at 09:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>We build Swift code in a location different from where sources live and<br>having a bunch of issues with LLDB in such a setup.<br></p><p>One of the problems is LLDB not being able to import the modules referenced<br>from binaries we build:<br>error: Error in auto-import:<br>failed to get module &#39;&lt;module name&gt;&#39; from AST context<br></p><p>It looks like LLDB gets module search paths from a few sources:<br></p><p>1. The compiler command line stored into DWARF. We could add a -I flag<br>here, like SPM does, but our paths are all relative. And Xcode starts LLDB<br>with CWD = /. This does not work in principle.<br></p><p>2. There&#39;s the target.swift-module-search-paths setting. But it does not<br>work in my experimentation, I suspect this is because it feeds into<br>framework search paths, as evidenced here<br>https://github.com/apple/swift-lldb/blob/master/source/Symbol/SwiftASTContext.cpp#L2009.<br>Is that a bug or intentional?<br></p><p>3. Anything else? Is there a flag similar to -compilation-dir flag on GDB<br>that would root all of the relative paths found in DWARF/modules to a<br>specific path?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160822/3d515695/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/86faaff6b90699a5dda6b5cddcc36f97?s=50"></div><header><strong>LLDB module import paths</strong> from <string>Dmitry Shevchenko</string> &lt;dmishe at google.com&gt;<p>August 23, 2016 at 08:00:00pm</p></header><div class="content"><p>Hm actually it looks like the code I mentioned in (2) is not even executed<br>in this case. The flow goes through if (module) {} block and does not care<br>about target.swift-module-search-paths.<br></p><p>On Mon, Aug 22, 2016 at 5:08 PM Dmitry Shevchenko &lt;dmishe at google.com&gt; wrote:<br></p><p>&gt; Hello,<br>&gt;<br>&gt; We build Swift code in a location different from where sources live and<br>&gt; having a bunch of issues with LLDB in such a setup.<br>&gt;<br>&gt; One of the problems is LLDB not being able to import the modules<br>&gt; referenced from binaries we build:<br>&gt; error: Error in auto-import:<br>&gt; failed to get module &#39;&lt;module name&gt;&#39; from AST context<br>&gt;<br>&gt; It looks like LLDB gets module search paths from a few sources:<br>&gt;<br>&gt; 1. The compiler command line stored into DWARF. We could add a -I flag<br>&gt; here, like SPM does, but our paths are all relative. And Xcode starts LLDB<br>&gt; with CWD = /. This does not work in principle.<br>&gt;<br>&gt; 2. There&#39;s the target.swift-module-search-paths setting. But it does not<br>&gt; work in my experimentation, I suspect this is because it feeds into<br>&gt; framework search paths, as evidenced here<br>&gt; https://github.com/apple/swift-lldb/blob/master/source/Symbol/SwiftASTContext.cpp#L2009.<br>&gt; Is that a bug or intentional?<br>&gt;<br>&gt; 3. Anything else? Is there a flag similar to -compilation-dir flag on GDB<br>&gt; that would root all of the relative paths found in DWARF/modules to a<br>&gt; specific path?<br>&gt;<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160823/5b328054/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

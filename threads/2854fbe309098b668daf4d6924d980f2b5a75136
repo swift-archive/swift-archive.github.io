@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[META] Re-invigorating the compiler directive discussion</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>March 15, 2016 at 01:00:00pm</p></header><div class="content"><p>These directives (including current os thingy) don&#39;t have # in front of<br>them. I think there is inconsistency here.<br></p><p>Consider:<br></p><p>#if 2 + 3 == 5<br>//...<br>#end<br></p><p>let v: Bool = #os(iOS)<br></p><p>#if #os(iOS)<br>//...<br>#end<br></p><p>I mean, #os and its suggested look-a-likes are not normal functions and so<br>should have # in front of them. #if has orthogonal responsibilities.<br></p><p>- Anton<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160315/28545136/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

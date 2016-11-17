@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2e51f5d1f79b09442f62eef9702b8316?s=50"></div><header><strong>Printing large hexadecimal values</strong> from <string>Ken Burgett</string> &lt;kenb at iotone.io&gt;<p>May 25, 2016 at 10:00:00am</p></header><div class="content"><p>I really shouldn&#39;t have to ask this question for a variety of other <br>languages, but print format conversion in Swift a black box to me.<br></p><p>I wish to print a 64-bit unsigned integer as 8 hexadecimal digits, and I <br>can&#39;t find any documentation on this.  Please advise.<br></p><p>-- <br>Ken Burgett<br>Principal Software Engineer<br>Email: kenb at iotone.io<br>Office: 530.693.4449<br>Mobile: 831.332.6846<br>URL: www.iotone.co<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>Printing large hexadecimal values</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>May 25, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On May 25, 2016, at 10:16 AM, Ken Burgett via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I wish to print a 64-bit unsigned integer as 8 hexadecimal digits, and I can&#39;t find any documentation on this.  Please advise.<br></p><p>print(String(format: “%llx”, n))		// typed from memory<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160525/c836f4a9/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a6729e3608691552bd1c61373d0e5b08?s=50"></div><header><strong>Printing large hexadecimal values</strong> from <string>Kevin Nattinger</string> &lt;swift at nattinger.net&gt;<p>May 25, 2016 at 11:00:00am</p></header><div class="content"><p>“%08x” to zero-pad to 8 characters, “%08X&quot; for uppercase A–F<br></p><p>% cat main.swift<br>import Foundation<br>let n = 10597059<br>print(String(format: &quot;%x&quot;, n))<br>print(String(format: &quot;%08x&quot;, n))<br>print(String(format: &quot;%08X&quot;, n))<br>% swift main.swift<br>a1b2c3<br>00a1b2c3<br>00A1B2C3<br>%<br></p><p>&gt; On May 25, 2016, at 10:54 AM, Jens Alfke via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On May 25, 2016, at 10:16 AM, Ken Burgett via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; I wish to print a 64-bit unsigned integer as 8 hexadecimal digits, and I can&#39;t find any documentation on this.  Please advise.<br>&gt; <br>&gt; print(String(format: “%llx”, n))		// typed from memory<br>&gt; <br>&gt; —Jens<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8017f0115137a99cc6c2896595e2e4ae?s=50"></div><header><strong>Printing large hexadecimal values</strong> from <string>Barry Gilhuly</string> &lt;bgilhuly at redmaples.ca&gt;<p>May 25, 2016 at 01:00:00pm</p></header><div class="content"><p>String() has a format: init variant:<br></p><p>                 let myNum = 0x85f3<br>                 let numString = String(format:&quot;%08x&quot;, myNum)<br>                 print( &quot;The number is: \(numString)&quot;)<br></p><p>// prints:  The number is: 000085f3<br></p><p>Although, in playground (7.3.1, swift 2.2) this doesn&#39;t work quite right:<br>// prints: The number is: (&quot;%08x&quot;, 34291)\n&quot;<br></p><p><br></p><p>On 5/25/16 1:16 PM, Ken Burgett via swift-users wrote:<br>&gt; I really shouldn&#39;t have to ask this question for a variety of other <br>&gt; languages, but print format conversion in Swift a black box to me.<br>&gt;<br>&gt; I wish to print a 64-bit unsigned integer as 8 hexadecimal digits, and <br>&gt; I can&#39;t find any documentation on this.  Please advise.<br>&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

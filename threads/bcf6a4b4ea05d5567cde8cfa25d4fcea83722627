@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>[Idea] Specialising based on function parameter values</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>July 30, 2016 at 05:00:00pm</p></header><div class="content"><p>I’ve had this idea floating around my head for a little while, and I’m not sure if it’s either really interesting or totally absurd.<br>Sorry if it’s not time for ideas like this yet. It’s not really a “proposal”, but it would be ABI-related I think.<br></p><p>So, the idea: The compiler can generate variations of functions where it statically substitutes a type for a placeholder name. Would it also be possible to statically generate a variation of a function if a parameter is a certain value?<br></p><p>I have some code which scans a sequence of bytes. The bytes may be in UTF-8, UTF-16 or UTF-32, and any endianness flavour thereof. Fortunately, the scanner is looking for a ASCII-compatible characters which have the same value (albeit a different size) in each encoding, so this can be implemented as a generic function based on the type of the CodeUnit (UInt8/16/32 respectively). Something roughly like this:<br></p><p>&gt; @_specialize(UInt8)<br>&gt; @_specialize(UInt16)<br>&gt; @_specialize(UInt32)<br>&gt; func scanCharacters&lt;U:UnsignedInteger&gt;(from bytes: [UInt8], hasMismatchedEndianness: Bool) -&gt; ... {<br>&gt; <br>&gt; 	var byteIterator = bytes.makeIterator()<br>&gt; 	while let nextByte = byteIterator.next() {<br>&gt; <br>&gt; 		var codeUnit : U<br>&gt; 		// The compiler will statically optimise this branching away because generics.<br>&gt; 		if size(of: U.self) == 1 { <br>&gt; 			codeUnit = numericCast(nextByte)<br>&gt; 		}<br>&gt; 		else {<br>&gt; 			codeUnit = consumeCodeUnit(withInitialByte: nextByte, source: byteIterator)<br>&gt; 			// Even when marking this _slowPath(), there is a significant overhead.<br>&gt; 			if hasMismatchedEndianness {    <br>&gt; 				codeUnit = codeUnit.byteSwapped<br>&gt; 			}<br>&gt; 		}<br>&gt; <br>&gt; 		// Process the code-unit<br>&gt; 	}<br>&gt; }<br></p><p><br>However, we still have a problem with this endianness flag. All it requires is that after we consume an entire CodeUnit from the buffer, that we byte-swap it before checking its value. I don’t want to duplicate the entire function code to deal with this one variation in parameter value, but this is a very hot code-path and the branching overhead is significant.<br></p><p>So I would like to tell the compiler that we branch a lot on `hasMismatchedEndianness`, so it can generate and optimise variations of the function while keeping the abstraction level high and the maintenance burden low. There are lots of contexts where this could be useful - not just your typical Boolean switches, but Optionals, too. Even general value-types with specific values that are heavily branched against could benefit from these kinds of optimisations.<br></p><p><br>Thoughts? Would something like this be possible/valuable?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/831ba6eb600af4a6587f263373921bb2?s=50"></div><header><strong>[Idea] Specialising based on function parameter values</strong> from <string>Tino Heth</string> &lt;2th at gmx.de&gt;<p>July 30, 2016 at 07:00:00pm</p></header><div class="content"><p>Hi Karl,<br></p><p>I started a discussion about such a concept (afair under the label &quot;compile-time parameters&quot;), and &quot;completing generics&quot; talks about it as well.<br>Although I think it is quite fundamental (Swift has no arrays of fixed size(!)), and shouldn&#39;t be that hard to implement, I&#39;m not sure if it will fit into Swift 4.<br></p><p>- Tino<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

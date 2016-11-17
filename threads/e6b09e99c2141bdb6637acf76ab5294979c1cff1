@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Draft][Proposal] Formalized Ordering</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July 22, 2016 at 11:00:00am</p></header><div class="content"><p>on Thu Jul 21 2016, Xiaodi Wu &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Thu, Jul 21, 2016 at 10:23 PM, Jose Cheyo Jimenez via swift-evolution &lt;<br>&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; On Jul 21, 2016, at 7:15 PM, Duan via swift-evolution &lt;<br>&gt;&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;<br>&gt;&gt; Great proposal. I want to second that areSame may mislead user to think<br>&gt;&gt; this is about identity.<br>&gt;&gt;<br>&gt;&gt; I like areEquivalent() but there may be better names.<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; what about areEqual() ?<br>&gt;&gt;<br>&gt;<br>&gt; As Robert mentioned above, the point here is explicitly to distinguish<br>&gt; equivalence from equality.<br></p><p>Which suggests maybe we should rename the protocol.<br></p><p>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; Daniel Duan<br>&gt;&gt; Sent from my iPhone<br>&gt;&gt;<br>&gt;&gt; On Jul 21, 2016, at 6:32 PM, Robert Widmann via swift-evolution &lt;<br>&gt;&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; On Jul 21, 2016, at 6:19 PM, Xiaodi Wu &lt;xiaodi.wu at gmail.com&gt; wrote:<br>&gt;&gt;<br>&gt;&gt; This is nice. Is `areSame()` being proposed because static `==` is the<br>&gt;&gt; status quo and you&#39;re trying to make the point that `==` in the future need<br>&gt;&gt; not guarantee the same semantics?<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; Yep!  Equivalence and equality are strictly very different things.<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; Nit: I think the more common term in stdlib would be `areEquivalent()`. Do<br>&gt;&gt; you think `same` in that context (independent of the word &quot;ordering&quot;) might<br>&gt;&gt; erroneously suggest identity?<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; There is room for improvement here.  Keep ‘em coming.<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; On Thu, Jul 21, 2016 at 8:11 PM, Robert Widmann via swift-evolution &lt;<br>&gt;&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;<br>&gt;&gt;&gt; Hello Swift Community,<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; Harlan Haskins, Jaden Geller, and I have been working on a proposal to<br>&gt;&gt;&gt; clean up the semantics of ordering relations in the standard library.  We<br>&gt;&gt;&gt; have a draft that you can get as a gist.<br>&gt;&gt;&gt; &lt;https://gist.github.com/CodaFi/f0347bd37f1c407bf7ea0c429ead380e&gt;  Any<br>&gt;&gt;&gt; feedback you might have about this proposal helps - though please keeps<br>&gt;&gt;&gt; your comments on Swift-Evolution and not on the gist.<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; Cheers,<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; ~Robert Widmann<br>&gt;&gt;&gt;<br>&gt;&gt;&gt;<br>&gt;&gt;&gt;<br>&gt;&gt;&gt;<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; _______________________________________________<br>&gt;&gt;&gt; swift-evolution mailing list<br>&gt;&gt;&gt; swift-evolution at swift.org<br>&gt;&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;&gt;<br>&gt;&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;<br>&gt;&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

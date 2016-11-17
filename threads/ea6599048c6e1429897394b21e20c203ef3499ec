@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8f1a9db0e26bb3e069fa7a0932e3cd85?s=50"></div><header><strong>Starter project: Prepare/host pre-built Swift binary packages for different Linux distributions</strong> from <string>Roman Levenstein</string> &lt;rlevenstein at apple.com&gt;<p>December  7, 2015 at 12:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>The swift.org &lt;http://swift.org/&gt; site provides pre-built binaries for Ubuntu already, but their are tarballs and not in the DEB format, which is the preferred way to install packages on Debian-based systems.<br>RPM-based Linux distributions would need packages in the RPM format.<br></p><p>It would be nice if someone would take care and prepare/host pre-built Swift packages for different Linux distributions, so that they can be installed in a regular way used by a given Linux distribution. In the ideal case, it would be nice to have something like stable packages and nightly builds.<br></p><p>https://bugs.swift.org/browse/SR-116 &lt;https://bugs.swift.org/browse/SR-116&gt;<br></p><p>-Roman<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151207/ea6599ec/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

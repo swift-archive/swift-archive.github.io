@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/389ea0cf26e2a2d4646bf580da2fb6b5?s=50"></div><header><strong>No hex dump anymore in Data description</strong> from <string>Martin R</string> &lt;martinr448 at gmail.com&gt;<p>August 29, 2016 at 04:00:00pm</p></header><div class="content"><p>Done: https://bugs.swift.org/browse/SR-2514 .<br></p><p>Martin<br>(Resent as text mail. I apologize for the previous HTML-only mail.)<br></p><p>2016-08-29 10:51 GMT+02:00 Quinn &quot;The Eskimo!&quot; via swift-users<br>&lt;swift-users at swift.org&gt;:<br>&gt;<br>&gt; On 27 Aug 2016, at 07:45, Martin R via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt; Is it intentional that the description method of Data returns only the number of bytes, but not a hex dump of the contents (as NSData did)?<br>&gt;<br>&gt; It doesn’t really matter if it was intentional or not; if it’s annoying then you should file a bug about it anyway.  [I’d file my own but it’d go into Radar and you wouldn’t be able to see it )-: ]<br>&gt;<br>&gt; Share and Enjoy<br>&gt; --<br>&gt; Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>&gt; Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

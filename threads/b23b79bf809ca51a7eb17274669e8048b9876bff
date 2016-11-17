@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1d54deb32312ab6a282cde8637bc7077?s=50"></div><header><strong>NSDate Comparable &amp; Equatable</strong> from <string>James Lee</string> &lt;james at jelee.co.uk&gt;<p>December 11, 2015 at 07:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I raised PR 119 yesterday with a comment from Tony Parker about a discussion currently going on about this.<br></p><p>I seem to have missed out on this and currently not sure of the status on this.<br></p><p>Cheers<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>NSDate Comparable &amp; Equatable</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>December 11, 2015 at 12:00:00pm</p></header><div class="content"><p>Hi James,<br></p><p>Here’s the start of the thread in the archives:<br></p><p>https://lists.swift.org/pipermail/swift-corelibs-dev/Week-of-Mon-20151130/000077.html<br></p><p>- Tony<br></p><p>&gt; On Dec 11, 2015, at 11:46 AM, James Lee via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi all,<br>&gt; <br>&gt; I raised PR 119 yesterday with a comment from Tony Parker about a discussion currently going on about this.<br>&gt; <br>&gt; I seem to have missed out on this and currently not sure of the status on this.<br>&gt; <br>&gt; Cheers<br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

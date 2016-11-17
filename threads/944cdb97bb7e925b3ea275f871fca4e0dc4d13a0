@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a51efe0c2993455701ed4757862e4b11?s=50"></div><header><strong>Develop apps with swift 2 on ubuntu 14.04 LTS x86_32 bit</strong> from <string>Piero Sabino</string> &lt;piero.sa at icloud.com&gt;<p>December  4, 2015 at 01:00:00pm</p></header><div class="content"><p>It is possible that Swift 2 functions on Ubuntu 14.04 LTS x86_32?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151204/944c13a0/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>Develop apps with swift 2 on ubuntu 14.04 LTS x86_32 bit</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>December  4, 2015 at 09:00:00am</p></header><div class="content"><p>There is a thread that Chris Lattner already responded to on this topic<br>(tried to find it be it eludes me currently). It might not be on this<br>exact mailing list.<br></p><p>My understanding is that x86_64 is currently the only thing supported.<br>That the Apple devs are not going to be working on x86 support, due to<br>lack of bandwidth and other higher priorities, and that the community is<br>free to provide it. However patches related to making it work on that,<br>and other, architectures are welcome.<br></p><p>On Fri, Dec 4, 2015, at 08:36 AM, Piero Sabino wrote:<br>&gt; It is possible that Swift 2 functions on Ubuntu 14.04 LTS x86_32?<br>&gt;<br>&gt; _________________________________________________<br>&gt; swift-dev mailing list swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151204/ae486279/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Develop apps with swift 2 on ubuntu 14.04 LTS x86_32 bit</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>December  4, 2015 at 06:00:00am</p></header><div class="content"><p>&gt; On Dec 4, 2015, at 6:23 AM, Ryan Lovelett &lt;swift-dev at ryan.lovelett.me&gt; wrote:<br>&gt; <br>&gt;&gt; On Fri, Dec 4, 2015, at 08:36 AM, Piero Sabino wrote:<br>&gt;&gt; It is possible that Swift 2 functions on Ubuntu 14.04 LTS x86_32?<br>&gt; <br>&gt; There is a thread that Chris Lattner already responded to on this topic (tried to find it be it eludes me currently). It might not be on this exact mailing list.<br>&gt;  <br>&gt; My understanding is that x86_64 is currently the only thing supported. That the Apple devs are not going to be working on x86 support, due to lack of bandwidth and other higher priorities, and that the community is free to provide it. However patches related to making it work on that, and other, architectures are welcome.<br></p><p>Note that Swift does support additional architectures on other Apple platforms (32- and 64-bit ARM for iOS and i386 for iOS simulator). Adding x86_32 Linux should be easier than adding a brand new OS or architecture would be.<br></p><p><br>-- <br>Greg Parker     gparker at apple.com &lt;mailto:gparker at apple.com&gt;     Runtime Wrangler<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151204/3fa8e469/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

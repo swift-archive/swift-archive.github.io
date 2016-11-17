@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>API Guidelines Update</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 17, 2016 at 10:00:00am</p></header><div class="content"><p>on Tue Feb 16 2016, Trent Nadeau &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I like.<br>&gt;<br>&gt; Minor grammar fix: Remove the comma in &quot;declared only once, but used<br>&gt; repeatedly&quot; in the first rule.<br></p><p>Thanks!<br></p><p>FYI, for the future, pull requests work great :-)<br></p><p>&gt; On Tue, Feb 16, 2016 at 9:31 PM, Dave Abrahams via swift-evolution &lt;<br>&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt;<br>&gt;&gt; I&#39;ve updated the API guidelines document to account for the review<br>&gt;&gt; feedback and other issues.  Please see<br>&gt;&gt; http://apple.github.io/swift-internals/api-design-guidelines/<br>&gt;&gt; (presentation view)<br>&gt;&gt; and<br>&gt;&gt;<br>&gt;&gt; https://github.com/apple/swift-internals/blob/gh-pages/api-design-guidelines/index.md<br>&gt;&gt; (source and commit history)<br>&gt;&gt;<br>&gt;&gt; --<br>&gt;&gt; -Dave<br>&gt;&gt;<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c40db4457ab2c91a0d8006da31b177c6?s=50"></div><header><strong>API Guidelines Update</strong> from <string>Trent Nadeau</string> &lt;tanadeau at gmail.com&gt;<p>February 17, 2016 at 01:00:00pm</p></header><div class="content"><p>I saw that that Markdown file wasn&#39;t on master so I didn&#39;t think a PR was<br>appropriate. I just looked, and it appears that gh-pages is the only branch<br>there.<br></p><p>On Wed, Feb 17, 2016 at 1:01 PM, Dave Abrahams via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; on Tue Feb 16 2016, Trent Nadeau &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; &gt; I like.<br>&gt; &gt;<br>&gt; &gt; Minor grammar fix: Remove the comma in &quot;declared only once, but used<br>&gt; &gt; repeatedly&quot; in the first rule.<br>&gt;<br>&gt; Thanks!<br>&gt;<br>&gt; FYI, for the future, pull requests work great :-)<br>&gt;<br>&gt; &gt; On Tue, Feb 16, 2016 at 9:31 PM, Dave Abrahams via swift-evolution &lt;<br>&gt; &gt; swift-evolution at swift.org&gt; wrote:<br>&gt; &gt;<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; I&#39;ve updated the API guidelines document to account for the review<br>&gt; &gt;&gt; feedback and other issues.  Please see<br>&gt; &gt;&gt; http://apple.github.io/swift-internals/api-design-guidelines/<br>&gt; &gt;&gt; (presentation view)<br>&gt; &gt;&gt; and<br>&gt; &gt;&gt;<br>&gt; &gt;&gt;<br>&gt; https://github.com/apple/swift-internals/blob/gh-pages/api-design-guidelines/index.md<br>&gt; &gt;&gt; (source and commit history)<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; --<br>&gt; &gt;&gt; -Dave<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; _______________________________________________<br>&gt; &gt;&gt; swift-evolution mailing list<br>&gt; &gt;&gt; swift-evolution at swift.org<br>&gt; &gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; &gt;&gt;<br>&gt;<br>&gt; --<br>&gt; -Dave<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br></p><p><br></p><p>-- <br>Trent Nadeau<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160217/8949daf7/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

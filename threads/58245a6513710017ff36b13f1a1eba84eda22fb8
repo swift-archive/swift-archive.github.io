@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c65faa002b79348ac10e1fb9c1a9ad83?s=50"></div><header><strong>KVO/KVC in Swift</strong> from <string>Colin Cornaby</string> &lt;colin.cornaby at mac.com&gt;<p>December  3, 2015 at 10:00:00pm</p></header><div class="content"><p>For our application projects, I&#39;ve certainly been keeping an eye on alternatives (we&#39;re still very early in our Swift transition.) But for applications we&#39;re only working on Cocoa platforms, so the need for an alternative hasn&#39;t been as pressing (we&#39;re just continuing to use KVC/KVO using NSObject subclasses.)<br></p><p>As an API developer as well, I&#39;m a little hesitant to commit to any of the alternatives. There is a lot of advantages in assuming a developer using your API on an Apple platform is familiar with Cocoa (and going forward, that a Swift developer is familiar with Foundation), and any new construct?you add outside of that simply adds more learning overhead. There&#39;s also the possibility that the dependency we use is incompatible with a version inside the user&#39;s application (which can be dealt with, just a little messy.) This also isn&#39;t an issue for us at this point (without ABI stability we can&#39;t ship a closed source library without a lot of pain, and we&#39;re still only supporting Cocoa platforms.)<br></p><p>One of the reasons I&#39;d love to see Apple lead on this is that I&#39;d like to see it as a language paradigm all of our developers will be familiar with. Open source Swift means that we could dramatically expand our developer base of our API to other platforms, but it also means we need to be able to get away from Cocoa functionality.<br></p><p>Glad to see it&#39;s on the list of things to do, but also glad to see ABI stability being discussed so much. ABI stability is the biggest stop-ship for us for porting our SDKs to Swift. :)<br></p><p>On Dec 03, 2015, at 01:19 PM, Adrian Kashivskyy &lt;adrian.kashivskyy at me.com&gt; wrote:<br></p><p>Colin,<br></p><p>Until KVC/KVO is supported, you may be interested in using constructs like Observable&lt;T&gt;. Here are some illustrative libraries that make use of it: SwiftBond/Bond,?slazyk/Observable-Swift.<br></p><p>Pozdrawiam ? Regards,<br>Adrian Kashivskyy<br></p><p>Wiadomo?? napisana przez Chris Lattner &lt;clattner at apple.com&gt; w dniu 03.12.2015, o godz. 22:00:<br>On Dec 3, 2015, at 12:49 PM, Colin Cornaby &lt;colin.cornaby at mac.com&gt; wrote:<br>I looked through the Swift Foundation this morning to see if there was evidence of KVO/KVC, but I didn&#39;t find any. Apologies if I missed anything. I&#39;m assuming KVO/KVC is still incompatible with pure Swift, but I was looking for evidence that maybe something had been added in NSObject.<br>..<br></p><p>Are there any plans to add anything like KVO or KVC to pure Swift, with maybe something the bridges to Obj-C KVO?<br></p><p>Hi Colin,<br></p><p>This is one of *many* things that we are interested in working on some day, but we need to stay focused on shorter term goals (like getting to ABI stability) to make sure we are successful with those. ?If you?re working on Apple platforms, Swift does interoperate with the Objective-C KVO implementation, using the ?dynamic&quot; keyword.<br></p><p>-Chris<br></p><p>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151203/58242fb8/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

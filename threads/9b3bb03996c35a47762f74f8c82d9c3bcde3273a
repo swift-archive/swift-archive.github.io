@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/835a02e14abc997b2c9c9a65f1d70732?s=50"></div><header><strong>Nil coalescing operator precedence</strong> from <string>Andrey Fidrya</string> &lt;af at zabiyaka.com&gt;<p>June 12, 2016 at 09:00:00am</p></header><div class="content"><p>Nil coalescing operator has very low precedence and it&#39;s very easy to forget the parentheses.<br>It&#39;s tempting to write something like this:<br></p><p>let result = v1 ?? 0 + v2 ?? 0<br></p><p>Which will resolve to<br></p><p>let result = v1 ?? (0 + v2 ?? 0)<br></p><p>An example of incorrect code from real project which went unnoticed for some time:<br></p><p>let allParameters: [String: Any?] =<br>  defaultParameters[&quot;sendMessage&quot;] ?? [:] +<br>  parameters +<br>  [&quot;chat_id&quot;: chat_id, &quot;text&quot;: text]<br></p><p>Unlike ternary operator I can hardly think of a case when someone would want to use ?? in expression like:<br>a + b ?? c + d meaning (a + b) ?? (c + d) <br></p><p>This seems to be a source of errors in other languages as well, for example:<br>http://www.codeproject.com/Tips/721145/Beware-The-null-coalescing-operator-is-low-in-the<br></p><p>I propose to consider raising it&#39;s precedence or requiring parentheses if ?? is used with multiple statements.<br></p><p>--<br>Andrey Fidrya<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3b3f5abbe48b7127e20fd69808c714bf?s=50"></div><header><strong>Nil coalescing operator precedence</strong> from <string>Charlie Monroe</string> &lt;charlie at charliemonroe.net&gt;<p>June 13, 2016 at 06:00:00am</p></header><div class="content"><p>+1 on this.<br></p><p>&gt; On Jun 12, 2016, at 8:01 AM, Andrey Fidrya via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Nil coalescing operator has very low precedence and it&#39;s very easy to forget the parentheses.<br>&gt; It&#39;s tempting to write something like this:<br>&gt; <br>&gt; let result = v1 ?? 0 + v2 ?? 0<br>&gt; <br>&gt; Which will resolve to<br>&gt; <br>&gt; let result = v1 ?? (0 + v2 ?? 0)<br>&gt; <br>&gt; An example of incorrect code from real project which went unnoticed for some time:<br>&gt; <br>&gt; let allParameters: [String: Any?] =<br>&gt;  defaultParameters[&quot;sendMessage&quot;] ?? [:] +<br>&gt;  parameters +<br>&gt;  [&quot;chat_id&quot;: chat_id, &quot;text&quot;: text]<br>&gt; <br>&gt; Unlike ternary operator I can hardly think of a case when someone would want to use ?? in expression like:<br>&gt; a + b ?? c + d meaning (a + b) ?? (c + d) <br>&gt; <br>&gt; This seems to be a source of errors in other languages as well, for example:<br>&gt; http://www.codeproject.com/Tips/721145/Beware-The-null-coalescing-operator-is-low-in-the<br>&gt; <br>&gt; I propose to consider raising it&#39;s precedence or requiring parentheses if ?? is used with multiple statements.<br>&gt; <br>&gt; --<br>&gt; Andrey Fidrya<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0065 A New Model for Collections and Indices</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 14, 2016 at 10:00:00am</p></header><div class="content"><p>on Wed Apr 13 2016, plx &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;     On Apr 13, 2016, at 5:36 PM, Dave Abrahams via swift-evolution<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     on Wed Apr 13 2016, plx<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     Seriously, just because Swift has Optionals and they&#39;re useful for<br>&gt;     safety in some scenarios (compared with allowing everything to be<br>&gt;     nullable) does not mean that it&#39;s going to be “Swiftier” to apply a<br>&gt;     similar pattern everywhere.<br>&gt;<br>&gt; This reminds me of something I was going to ask about earlier and forgot. <br>&gt;<br>&gt; Coming from other languages, I’ve definitely brought with me an assumption that<br>&gt; “make invalid states unrepresentable (except where unavoidable)” is the right<br>&gt; way to go, with deviations from that rule requiring scrutiny.<br>&gt;<br>&gt; Is that outlook actually something the core team considers “Swift-y” or not,<br>&gt; though? <br></p><p>That seems very consistent with our outlook.  <br></p><p>Note, however, that a nil optional does not represent an invalid state.<br>An invalid state is one in which locally-known invariants are broken.<br>When I say <br></p><p>     let a = Int(&quot;foobaz&quot;)<br></p><p>and a is nil, that&#39;s a valid representation of the fact that &quot;foobaz&quot;<br>doesn&#39;t parse as an Int.<br></p><p>Part of what this comes down to is whether you&#39;re willing to call some<br>uses of an API wrong (i.e. impose preconditions).  Some people are very<br>reluctant to do that, but I am not.  It benefits both efficiency and the<br>ability to reason about code.<br></p><p>&gt; The connection to the point you’re making here and the question is that adopting<br>&gt; this design style *will* lead to lots of optionals in lots of places.<br>&gt;<br>&gt;         use an enum to reintroduce that value when necessary—than to `!`.<br>&gt;<br>&gt;         I don’t think the above is an *improvement* over the proposal, but it’s<br>&gt;         a route<br>&gt;         that could have been taken.<br>&gt;<br>&gt;     I believe it would be hard to make such a design work at all, and if you<br>&gt;     could make it work I think you&#39;d end up with exactly the problem this<br>&gt;     proposal aims to solve: references inside indices. So, I don&#39;t think<br>&gt;     it&#39;s even a possibility, really.<br>&gt;<br>&gt;         To help illustrate the claim, here’s a strawman “safe” API—for<br>&gt;         illustration<br>&gt;         only, not advocacy!—that would be safer and thus perhaps more “Swift-y”:<br>&gt;<br>&gt;         I think there&#39;s a prevalent misunderstanding (IOW, I don&#39;t mean to<br>&gt;         single out this post or this poster) about what “safe” means in Swift<br>&gt;         and what the features of a Swifty API are and should be. This<br>&gt;         is a big topic worthy of much more time than I can devote here, but<br>&gt;         here&#39;s a thought to start with:<br>&gt;<br>&gt;         A Swifty API helps you reason effectively about the correctness of your<br>&gt;         code, and in part that means we provide enough preconditions on<br>&gt;         arguments to avoid complicating result types, and code to handle<br>&gt;         results, with optional-ness.<br>&gt;<br>&gt;         -- <br>&gt;         Dave<br>&gt;<br>&gt;         _______________________________________________<br>&gt;         swift-evolution mailing list<br>&gt;         swift-evolution at swift.org<br>&gt;         https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;         _______________________________________________<br>&gt;         swift-evolution mailing list<br>&gt;         swift-evolution at swift.org<br>&gt;         https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;     -- <br>&gt;     Dave<br>&gt;<br>&gt;     _______________________________________________<br>&gt;     swift-evolution mailing list<br>&gt;     swift-evolution at swift.org<br>&gt;     https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

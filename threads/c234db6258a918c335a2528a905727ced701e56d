@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e828f637e91f7d986b7a79574dc0c45a?s=50"></div><header><strong>&quot;if case&quot; syntax is ugly</strong> from <string>Amir Michail</string> &lt;a.michail at me.com&gt;<p>December  5, 2015 at 08:00:00am</p></header><div class="content"><p>Maybe instead of: if case 1...3 = x { … }<br></p><p>You could have: if x case 1..3 { … }<br></p><p>And loops could be handled similarly: for x case 1..3 in z { … }<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>&quot;if case&quot; syntax is ugly</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>December  5, 2015 at 08:00:00am</p></header><div class="content"><p>&gt; On Dec 5, 2015, at 5:14 AM, Amir Michail &lt;a.michail at me.com&gt; wrote:<br>&gt; <br>&gt; Maybe instead of: if case 1...3 = x { … }<br>&gt; <br>&gt; You could have: if x case 1..3 { … }<br>&gt; <br>&gt; And loops could be handled similarly: for x case 1..3 in z { … }<br></p><p>Hi Amir,<br></p><p>It is hard to understand how your proposal would work.  Could you suggest a change to the formal grammar, which is described in the TSPL (https://swift.org/documentation/)?<br></p><p>-Chris<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

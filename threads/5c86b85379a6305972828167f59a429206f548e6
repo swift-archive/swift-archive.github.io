@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>Command failed due to signal: Illegal instruction: 4</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>February 26, 2016 at 10:00:00pm</p></header><div class="content"><p>I&#39;m trying to compile some code that interacts with FFmpeg and for the<br>most part have been making progress. Until I added some AVFilter code.<br>Now it is failing to compile with the error: &quot;Command failed due to<br>signal: Illegal instruction: 4&quot;.<br></p><p>The log Xcode provided of the build error is attached. All of the source<br>code that was used to trigger the error can be found here<br>(https://git.lovelett.me/castable/live) on a branch called &quot;swift&quot;.<br></p><p> Should I file a bug for this or am I doing something wrong?<br></p><p>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: swift.log<br>Type: application/octet-stream<br>Size: 14415 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160226/5c8648e6/attachment.obj&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>Command failed due to signal: Illegal instruction: 4</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>February 28, 2016 at 09:00:00am</p></header><div class="content"><p>On Fri, Feb 26, 2016, at 10:17 PM, Ryan Lovelett via swift-users wrote:<br>&gt; I&#39;m trying to compile some code that interacts with FFmpeg and for the<br>&gt; most part have been making progress. Until I added some AVFilter code.<br>&gt; Now it is failing to compile with the error: &quot;Command failed due to<br>&gt; signal: Illegal instruction: 4&quot;.<br>&gt; <br>&gt; The log Xcode provided of the build error is attached. All of the source<br>&gt; code that was used to trigger the error can be found here<br>&gt; (https://git.lovelett.me/castable/live) on a branch called &quot;swift&quot;.<br>&gt; <br>&gt;  Should I file a bug for this or am I doing something wrong?<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; Email had 1 attachment:<br>&gt; + swift.log<br>&gt;   19k (application/octet-stream)<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d70fcf5ed1663dcaa9a68145abd470d5?s=50"></div><header><strong>Command failed due to signal: Illegal instruction: 4</strong> from <string>Ryan Lovelett</string> &lt;ryan at lovelett.me&gt;<p>February 28, 2016 at 09:00:00am</p></header><div class="content"><p>(Sorry for the blank email spam)<br></p><p>On Fri, Feb 26, 2016, at 10:17 PM, Ryan Lovelett via swift-users wrote:<br>&gt; I&#39;m trying to compile some code that interacts with FFmpeg and for the<br>&gt; most part have been making progress. Until I added some AVFilter code.<br>&gt; Now it is failing to compile with the error: &quot;Command failed due to<br>&gt; signal: Illegal instruction: 4&quot;.<br>&gt; <br>&gt; The log Xcode provided of the build error is attached. All of the source<br>&gt; code that was used to trigger the error can be found here<br>&gt; (https://git.lovelett.me/castable/live) on a branch called &quot;swift&quot;.<br></p><p>I&#39;ve gotten an even more succinct example of this failure.<br></p><p>class Test {<br>    let thing: UnsafeMutablePointer&lt;AVFilterGraph&gt;<br></p><p>    init() {<br>        self.thing = avfilter_graph_alloc()<br>    }<br>}<br></p><p>I&#39;m trying to debug this. I have downloaded the debugging symbols is<br>that what I would use to determine a root cause for this? If so could<br>anyone give me a short introduction into how I&#39;d use them?<br></p><p>&gt; <br>&gt;  Should I file a bug for this or am I doing something wrong?<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; Email had 1 attachment:<br>&gt; + swift.log<br>&gt;   19k (application/octet-stream)<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

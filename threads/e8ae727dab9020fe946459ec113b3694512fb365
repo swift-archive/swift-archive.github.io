@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/78b45a835031f4ce03a6653b3262b5d3?s=50"></div><header><strong>[Proposal] XCTFail should be @noreturn</strong> from <string>Alexander Momchilov</string> &lt;alexandermomchilov at gmail.com&gt;<p>June  8, 2016 at 06:00:00pm</p></header><div class="content"><p>Because XCTFail() isn&#39;t annotated @noreturn, it isn&#39;t sufficient in a guard statement<br></p><p>guard var b = a as? B else {<br>	XCTFail(&quot;Result wasn&#39;t castable to B&quot;)<br>	return //this is redundant<br>}<br></p><p>This could be broken down into a XCTAssertTrue(a is B) statement, followed by a forced cast, but that seems redundant.<br></p><p>I realize that continueAfterFailure exists to make the test cases continue even after failures. This complicates the solution beyond just adding the @noreturn annotation.<br></p><p>The only solution I can think of happens to be the simplest: add a new variation of XCTFail() that ignores continueAfterFailure, such as XCTAlwaysFail()<br></p><p>A true solution would be for the @noreturn attribute to be conditional… the compiler would somehow need to be aware of the continueAfterFailure property&#39;s value. I don&#39;t know how that could be done.<br></p><p>Thoughts?<br></p><p><br>- Regards,<br>        Alexander Momchilov<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160608/e8aeb365/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

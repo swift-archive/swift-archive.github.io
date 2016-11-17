@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0c95e1c099887eaa1f47934d54bd673b?s=50"></div><header><strong>SE-0059: Update API Naming - leading dot prefix for enum instances.</strong> from <string>John Heerema</string> &lt;jheerema at ucalgary.ca&gt;<p>April  1, 2016 at 08:00:00pm</p></header><div class="content"><p>If I may, I would like to express support for NOT making this change.<br></p><p>One of Swift&#39;s really nice features is its ability to remove unnecessary syntactic cruft in cases where the context makes it possible for the compiler to infer a type or name. It&#39;s one of Swift&#39;s best features, and I would hate to see it chipped away.<br></p><p>I feel that Swift&#39;s existing syntax is superior to the proposal to require a leading dot prefix for enum instances. The simple reasons are readability, flexibility, and brevity. Swift is already smart enough to let developers skip the tedious qualification of enums in many cases.<br></p><p>If someone feels that a leading dot for enum cases  inside enum implementations makes their code clearer, there is nothing stopping them from doing so, and encouraging others to follow their lead. If the vast majority of developers voluntarily started doing so, I might even support this proposal. I don&#39;t think they will though.<br></p><p>Making a dot prefix mandatory here I feel, chips away at one of Swift&#39;s rather nice features, without a clear benefit.<br></p><p>In general, making things mandatory, rather than a matter of  stylistic choice, is unlikely to endear the language to developers - and I&#39;d really like to see Swift succeed in a big way.<br></p><p>Thanks,<br>Dr. J. Heerema<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160401/d219201b/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

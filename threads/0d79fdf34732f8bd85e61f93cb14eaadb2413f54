@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c59566581aec1048feb329242f73ce08?s=50"></div><header><strong>Unable to use IOBluetooth framework with Swift 2.2</strong> from <string>Matt Rajca</string> &lt;matt.rajca at me.com&gt;<p>January 14, 2016 at 02:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>After installing the Swift 2.2 toolchain (and running it with Xcode 7.2), I found I am unable to compile any OS X projects that use the IOBluetooth framework. Namely, I get a “&#39;IOBluetoothDevice&#39; is ambiguous for type lookup in this context” error when merely trying to declare a variable of type `IOBluetoothDevice`:<br></p><p>import Cocoa<br>import IOBluetooth<br></p><p>@NSApplicationMain<br>class AppDelegate: NSObject, NSApplicationDelegate {<br>	@IBOutlet weak var window: NSWindow!<br>	<br>	var device: IOBluetoothDevice?<br>	~~~~~~~~~~~~~~~~~~~~~~~~<br>}<br></p><p>This is a regression from Swift 2.1 and reproduces in a clean project with no other frameworks or source files beyond what’s in the code snippet above.<br></p><p>It’d be great if someone could look at this: https://bugs.swift.org/browse/SR-545<br></p><p>Thanks,<br></p><p>— Matt<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160114/0d793f54/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

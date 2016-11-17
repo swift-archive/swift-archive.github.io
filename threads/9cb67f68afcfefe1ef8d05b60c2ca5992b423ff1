@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 26, 2016 at 10:00:00am</p></header><div class="content"><p>on Sat Jan 23 2016, Marc Knaup &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; What is the rationale behind naming enumeration cases in upper camel<br>&gt; case?<br></p><p>Apparently, among those to whom that convention feels right, it&#39;s<br>because enums in Swift are often used to express what in ObjC would be<br>global constants, and on Apple platforms those global constants have<br>&quot;always&quot; started with an uppercase letter.  So if we want to change the<br>way it&#39;s done, that&#39;s the point-of-view we need to grapple with.<br></p><p>&gt; *Follow case conventions:* names of types, protocols and enum cases are<br>&gt;&gt; UpperCamelCase. Everything else is lowerCamelCase.<br>&gt;<br>&gt; let a = NSComparisonResult.OrderedSame  // refers to a value, but is<br>&gt; upper-case<br>&gt; let b = NSDate.distantFuture            // refers to a property/value, but<br>&gt; is lower-case<br>&gt;<br>&gt;    - everything related to types (type names, protocol names, generic type<br>&gt;    parameter names) should be upper camel case<br>&gt;    - everything else (function names, property names, variable names, etc.)<br>&gt;    should be lower camel case<br>&gt;<br>&gt; This is already the current and the proposed recommendation with<br>&gt; enumeration cases being the only exception.<br>&gt; Enumeration cases are not types.<br>&gt;<br>&gt; On Fri, Jan 22, 2016 at 10:02 PM, Douglas Gregor via swift-evolution &lt;<br>&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt; Hello Swift community,<br>&gt;&gt;<br>&gt;&gt; The review of SE-0023&quot;API Design Guidelines&quot; begins now and runs through<br>&gt;&gt; January 31, 2016. The proposal is available here:<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0023-api-guidelines.md<br>&gt;&gt;<br>&gt;&gt; Reviews are an important part of the Swift evolution process. All reviews<br>&gt;&gt; should be sent to the swift-evolution mailing list at<br>&gt;&gt;<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;<br>&gt;&gt; or, if you would like to keep your feedback private, directly to the<br>&gt;&gt; review manager. When replying, please try to keep the proposal link at the<br>&gt;&gt; top of the message:<br>&gt;&gt;<br>&gt;&gt; Proposal link:<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0023-api-guidelines.md<br>&gt;&gt;<br>&gt;&gt; Reply text<br>&gt;&gt;<br>&gt;&gt; Other replies<br>&gt;&gt;<br>&gt;&gt; &lt;https://github.com/apple/swift-evolution#what-goes-into-a-review-1&gt;What<br>&gt;&gt; goes into a review?<br>&gt;&gt;<br>&gt;&gt; The goal of the review process is to improve the proposal under review<br>&gt;&gt; through constructive criticism and, eventually, determine the direction of<br>&gt;&gt; Swift. When writing your review, here are some questions you might want to<br>&gt;&gt; answer in your review:<br>&gt;&gt;<br>&gt;&gt;    - What is your evaluation of the proposal?<br>&gt;&gt;    - Is the problem being addressed significant enough to warrant a<br>&gt;&gt;    change to Swift?<br>&gt;&gt;    - Does this proposal fit well with the feel and direction of Swift?<br>&gt;&gt;    - If you have used other languages or libraries with a similar<br>&gt;&gt;    feature, how do you feel that this proposal compares to those?<br>&gt;&gt;    - How much effort did you put into your review? A glance, a quick<br>&gt;&gt;    reading, or an in-depth study?<br>&gt;&gt;<br>&gt;&gt; More information about the Swift evolution process is available at<br>&gt;&gt;<br>&gt;&gt; https://github.com/apple/swift-evolution/blob/master/process.md<br>&gt;&gt;<br>&gt;&gt; Thank you,<br>&gt;&gt;<br>&gt;&gt; -Doug Gregor<br>&gt;&gt;<br>&gt;&gt; Review Manager<br>&gt;&gt;<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;<br>&gt;&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

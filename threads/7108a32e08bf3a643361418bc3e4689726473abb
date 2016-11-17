@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/54f387ccfb4a55e7bfe3d8c80cb25afe?s=50"></div><header><strong>SE-0045 Add scan, prefix(while:), drop(while:), and unfold to the stdlib</strong> from <string>William Shipley</string> &lt;wjs at mac.com&gt;<p>April 30, 2016 at 02:00:00am</p></header><div class="content"><p>func drop(@noescape while predicate: (Self.Iterator.Element) throws -&gt; Bool) rethrows -&gt; Self.SubSequence<br>  func prefix(@noescape while predicate: (Self.Iterator.Element) throws -&gt; Bool) rethrows -&gt; Self.SubSequence<br></p><p><br>Now I may just be a simple country hyper-chicken, but so I don’t know if there are other languages that inspired the names of these functions, but it ruffles my feathers that we have the words “drop” and “prefix” for two functions that are kind of symmetric, instead of symmetric words like “drop” and “keep” or “prefix” and “suffix”.<br></p><p>Not that I’m in love with those particular examples, I’m just saying I’d like it if there were some symmetry in the words that suggested the symmetry of the functions. But, again, maybe these are, like, some standard terms that I just missed out on and everyone would hate it if we didn’t use the standard name, like if we renamed “cos()” to “adjacentOverHypotenuse()”.<br></p><p>Ba-kawk,<br>-Wil<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160430/71083abb/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6451ee8093c9cedc94f6c813b4dde2c5?s=50"></div><header><strong>SE-0045 Add scan, prefix(while:), drop(while:), and unfold to the stdlib</strong> from <string>Kevin Ballard</string> &lt;kevin at sb.org&gt;<p>April 30, 2016 at 02:00:00pm</p></header><div class="content"><p>Precedent suggests that they should be named either drop/take, or<br>possibly skip/take. But Swift chose drop/prefix already (we have<br>dropFirst and dropLast already in the stdlib), which is why this<br>proposal is following the same terminology.<br> <br>-Kevin<br> <br>On Sat, Apr 30, 2016, at 02:29 AM, William Shipley via swift-evolution wrote:<br>&gt;   func drop(@noescape while predicate: (Self.Iterator.Element) throws<br>&gt;   -&gt; Bool) rethrows -&gt; Self.SubSequence  func prefix(@noescape while<br>&gt;   predicate: (Self.Iterator.Element) throws -&gt; Bool) rethrows -&gt;<br>&gt;   Self.SubSequence<br>&gt;<br>&gt;<br>&gt;<br>&gt; Now I may just be a simple country hyper-chicken, but so I don’t know<br>&gt; if there are other languages that inspired the names of these<br>&gt; functions, but it ruffles my feathers that we have the words “drop”<br>&gt; and “prefix” for two functions that are kind of symmetric, instead of<br>&gt; symmetric words like “drop” and “keep” or “prefix” and “suffix”.<br>&gt;<br>&gt; Not that I’m in love with those particular examples, I’m just saying<br>&gt; I’d like it if there were some symmetry in the words that suggested<br>&gt; the symmetry of the functions. But, again, maybe these are, like, some<br>&gt; standard terms that I just missed out on and everyone would hate it if<br>&gt; we didn’t use the standard name, like if we renamed “cos()” to<br>&gt; “adjacentOverHypotenuse()”.<br>&gt;<br>&gt; Ba-kawk,<br>&gt; -Wil<br>&gt; _________________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br> <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160430/2413209b/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ac691f30c820a07c4f3f0495c484281c?s=50"></div><header><strong>No prefix habit</strong> from <string>Martin Delille</string> &lt;martin at phonations.com&gt;<p>June 29, 2016 at 08:00:00am</p></header><div class="content"><p>Since I&#39;m new to Swift, I&#39;m reading a lot of tutorial/example code and I<br>realized people use non prefixed variable name, ie:<br></p><p>class WindowController: NSWindowController {<br>    ....<br>}<br></p><p>Is it a good practice since Swift 3 tends to ban the &quot;NS&quot; prefix from its<br>core class?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160629/0a73de4b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e9b374b9587bd8da1a1a027c8716ac0d?s=50"></div><header><strong>No prefix habit</strong> from <string>Rod Brown</string> &lt;rodney.brown6 at icloud.com&gt;<p>June 29, 2016 at 06:00:00pm</p></header><div class="content"><p>The issue here is not so much “banning” as that the reasons for the prefix aren’t relevant in Swift.<br></p><p>In Obj-C, there are no namespaces, so to avoid collisions, frameworks are prefixed with letters to ensure separation. Apple reserved NS, UI and some others for their frameworks and recommended that devs use 3 letter prefixes.<br></p><p>These reasons are not apparent in Swift due to implicit namespacing from modules.<br></p><p>You can feel free to drop prefixes for clarity in Swift.<br></p><p>- Rod<br></p><p>&gt; On 29 Jun 2016, at 6:01 PM, Martin Delille via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Since I&#39;m new to Swift, I&#39;m reading a lot of tutorial/example code and I realized people use non prefixed variable name, ie:<br>&gt; <br>&gt; class WindowController: NSWindowController {<br>&gt;     ....<br>&gt; }<br>&gt; <br>&gt; Is it a good practice since Swift 3 tends to ban the &quot;NS&quot; prefix from its core class?<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

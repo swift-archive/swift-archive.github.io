@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/07c4543f0620d82f93b702884036a4c8?s=50"></div><header><strong>#pragma</strong> from <string>isidoro carlo ghezzi</string> &lt;isidoro.ghezzi at icloud.com&gt;<p>September  5, 2016 at 08:00:00am</p></header><div class="content"><p>I have this code:<br>```<br>let tuple = (<br>MARK: 1,<br>EXPLODE: true,<br>DO_SOMETHINGS_UNDEFINED: true<br>)<br>```<br></p><p>If I comment it, because I want to exclude that code to be compiled:<br></p><p>```<br>// let tuple = (<br>// MARK: 1,<br>// EXPLODE: true,<br>// DO_SOMETHINGS_UNDEFINED: true<br>// )<br>```<br></p><p>what will happen to the IDE?<br>Commenting that code, I didn&#39;t mean to give strange instructions to the IDE.<br></p><p>Isidoro.<br></p><p>On Sep 05, 2016, at 07:16 AM, Marinus van der Lugt &lt;rien at starbase55.com&gt; wrote:<br></p><p><br>I understand that maybe a compiler shouldn&#39;t lose time handling `#pragma options`, but giving semantics to source comment, I think it can be dangerous and misunderstood.<br></p><p>Could you elaborate what could be dangerous or misunderstood?<br></p><p>Rien.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160905/c4130bb0/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/eddffe5cd2c817d61892d77edf66b6b2?s=50"></div><header><strong>#pragma</strong> from <string>Rien</string> &lt;Rien at Balancingrock.nl&gt;<p>September  5, 2016 at 10:00:00am</p></header><div class="content"><p>Ah :-)<br>Yes that could lead to unexpected behaviour of the IDE.<br>However I would not qualify that as dangerous. The code is indeed excluded as was the intention.<br>Re-introducing the #pragma for that purpose seems a bit OTT to me.<br></p><p>Rien.<br></p><p>&gt; On 05 Sep 2016, at 10:37, isidoro carlo ghezzi &lt;isidoro.ghezzi at icloud.com&gt; wrote:<br>&gt; <br>&gt; I have this code:<br>&gt; ```<br>&gt; let tuple = (<br>&gt; MARK: 1,<br>&gt; EXPLODE: true,<br>&gt; DO_SOMETHINGS_UNDEFINED: true<br>&gt; )<br>&gt; ```<br>&gt; <br>&gt; If I comment it, because I want to exclude that code to be compiled:<br>&gt; <br>&gt; ```<br>&gt; // let tuple = (<br>&gt; // MARK: 1,<br>&gt; // EXPLODE: true,<br>&gt; // DO_SOMETHINGS_UNDEFINED: true<br>&gt; // )<br>&gt; ```<br>&gt; <br>&gt; what will happen to the IDE?<br>&gt; Commenting that code, I didn&#39;t mean to give strange instructions to the IDE.<br>&gt; <br>&gt; Isidoro.<br>&gt; <br>&gt; On Sep 05, 2016, at 07:16 AM, Marinus van der Lugt &lt;rien at starbase55.com&gt; wrote:<br>&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I understand that maybe a compiler shouldn&#39;t lose time handling `#pragma options`, but giving semantics to source comment, I think it can be dangerous and misunderstood.<br>&gt;&gt; <br>&gt;&gt; Could you elaborate what could be dangerous or misunderstood?<br>&gt;&gt; <br>&gt;&gt; Rien.<br>&gt;&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>#pragma</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>September  5, 2016 at 12:00:00pm</p></header><div class="content"><p>AFAIK, if one would extend Swift beyond its &quot;official&quot; specification,<br>it could be done using #-directives and @-attributes, like Swift<br>playgrounds use #imageLiteral(...) and friends. It&#39;s somewhat equivalent to<br>pragmas of C++. On the other hand, things that are not understood by target<br>compiler, but are features of an IDE, are done using comments. Fair enough?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160905/31cbf385/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

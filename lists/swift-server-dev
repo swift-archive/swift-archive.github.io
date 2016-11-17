@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="container">
+  <h2>swift-server-dev</h2>
+  <p>Discussion of the implementation of the Server APIs</p>
+
+  <ul>
+    <li>
+<a href="/threads/342e347a19eedbc75dbdf328a0ebd2fe47998ca3">Database API/Framework</a>      &mdash; <em>Ron Olson</em>
+    </li>
+    <li>
+<a href="/threads/9668dda40980fff78362ba5a21b286e3bbd65050">Spring and Baratine (Java frameworks)</a>      &mdash; <em>Rick Mann</em>
+    </li>
+    <li>
+<a href="/threads/5595366dbab69777f5b439ff70f058907bce16c0">Lib dispatch and Edge</a>      &mdash; <em>Tyler Cloutier</em>
+    </li>
+    <li>
+<a href="/threads/89b47496786bdfa2ee0cd5667ab74547a6659b87">Developing Server APIs for Swift</a>      &mdash; <em>Chris Bailey</em>
+    </li>
+    <li>
+<a href="/threads/73d682d5e8641e651fd66fb182e0c1d45d3b6ec9">Re: Database API/Framework</a>      &mdash; <em>Brent Royal-Gordon</em>
+    </li>
+    <li>
+<a href="/threads/43f333dbe61ef428f86df32fa5152f7c27e4c18a">[Bug] Foundation.URL should support semicolon(; ) appearing in URL path</a>      &mdash; <em>frogcjn at 163.com</em>
+    </li>
+    <li>
+<a href="/threads/8124938e007b60db212afc799830cdf3e345b46d">Why not rely on existing models?</a>      &mdash; <em>Yoann Gini</em>
+    </li>
+    <li>
+<a href="/threads/d7b7fa6ce6148186b4df1e454b34ef6eaa76bba8">Async I/O in Rust Tokio</a>      &mdash; <em>Benedikt Terhechte</em>
+    </li>
+    <li>
+<a href="/threads/abb27b988b4e40276f7726c66459bb780b9b2b55">[Bug] Foundation.URL should support semicolon(; ) appearing in URL path</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/7910c1ede06ff8376f79d5afd9eaf8a6aa21ff20">Why not rely on existing models?</a>      &mdash; <em>Michael Chiu</em>
+    </li>
+    <li>
+<a href="/threads/9c1e9a7c3cb1058763e4b53d60edec5b7b9fc5ae">Sockets API</a>      &mdash; <em>Michael Chiu</em>
+    </li>
+    <li>
+<a href="/threads/b6f657c9402d0cc3c001c34b722f4ad010b0bbd7">Posix Module</a>      &mdash; <em>Helge Heß</em>
+    </li>
+    <li>
+<a href="/threads/92ec4ae885468602536b3cc6522de1a11b943b60">Zero-copy/Zero memory allocation networking</a>      &mdash; <em>Muse M</em>
+    </li>
+    <li>
+<a href="/threads/bfa11f1b7f01472e880544299fcd792ca84f4a04">Netty would be a good framework to look at</a>      &mdash; <em>Andrew Akira Toulouse</em>
+    </li>
+    <li>
+<a href="/threads/26d9c35ac891aed9c30b811d51324b05f68fb797">回复：swift-server-dev Digest, Vol 1, Issue 4 About Sockets API</a>      &mdash; <em>a</em>
+    </li>
+    <li>
+<a href="/threads/19892fd2b0a009416309715b6117cfab43971e27">Dispatch + Blocking Calls</a>      &mdash; <em>Darren Mo</em>
+    </li>
+    <li>
+<a href="/threads/541956d3b26fff9823fdb0b32c615d975a172d76">Working on the new Internet Application Protocol?</a>      &mdash; <em>Muse M</em>
+    </li>
+    <li>
+<a href="/threads/6498c464353f7aea20f35de98d8cac2858bc680f">Server APIs Project - next steps</a>      &mdash; <em>Chris Bailey</em>
+    </li>
+    <li>
+<a href="/threads/706c2fa3e4dacb8b1b437d4d574f9e4839ca4689">Server APIs: networking and security kick-off meetings</a>      &mdash; <em>Chris Bailey</em>
+    </li>
+    <li>
+<a href="/threads/7c04616797e49aeefa43a6f62127bd7acd6ce429">Proposal for a standard Darwin/Glibc module</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/ca92e734e26907b811847a7ce77440a7f1e5283c">Server APIs: Networking kick-off meeting at 5pm UK, 1pm EST, 10am PST on Friday 4th</a>      &mdash; <em>Chris Bailey</em>
+    </li>
+    <li>
+<a href="/threads/141c394a10e51f2de2dbf27d06507a15cbf31ef3">Another way of designing server side</a>      &mdash; <em>Michael Chiu</em>
+    </li>
+    <li>
+<a href="/threads/bec9919c74f62e2a20e566bde03abfeb93528823">Another way of designing server side</a>      &mdash; <em>Антон Миронов</em>
+    </li>
+    <li>
+<a href="/threads/988596256566c8d4e47a949b028c55aad8b33647">HTTP Parser</a>      &mdash; <em>James Lei</em>
+    </li>
+  </ul>
+</div>
+    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/05540cd6be96706f76aa66a4519f7db9?s=50"></div><header><strong>Using Github&#39;s Atom as a Swift IDE for Linux and Mac</strong> from <string>Ankit Agarwal</string> &lt;ankit at ankit.im&gt;<p>December 12, 2015 at 10:00:00pm</p></header><div class="content"><p>Hey<br></p><p>I wrote a tiny atom plugin which enables building and debugging<br>swift packages (using SPM) from inside atom.<br>Here is the blog post with tutorial<br>https://medium.com/@Aciid/hacking-atom-to-create-a-swift-ide-that-runs-on-linux-and-mac-c7d9520a0fac#.ytedt4uh9<br></p><p><br>-- <br>Ankit<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151212/d8f760ef/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8b9f0c10986385f3c7f50615d6176be3?s=50"></div><header><strong>Using Github&#39;s Atom as a Swift IDE for Linux and Mac</strong> from <string>Pierre Monod-Broca</string> &lt;pierre at monod-broca.fr&gt;<p>December 14, 2015 at 10:00:00am</p></header><div class="content"><p>Oh great ! Thanks for sharing !<br></p><p>-- <br>Pierre<br></p><p>&gt; Le 12 déc. 2015 à 18:28, Ankit Agarwal via swift-users &lt;swift-users at swift.org&gt; a écrit :<br>&gt; <br>&gt; Hey<br>&gt; <br>&gt; I wrote a tiny atom plugin which enables building and debugging swift packages (using SPM) from inside atom. <br>&gt; Here is the blog post with tutorial <br>&gt; https://medium.com/@Aciid/hacking-atom-to-create-a-swift-ide-that-runs-on-linux-and-mac-c7d9520a0fac#.ytedt4uh9 &lt;https://medium.com/@Aciid/hacking-atom-to-create-a-swift-ide-that-runs-on-linux-and-mac-c7d9520a0fac#.ytedt4uh9&gt;<br>&gt; <br>&gt; <br>&gt; -- <br>&gt; Ankit<br>&gt; <br>&gt; <br>&gt;  _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151214/d26780e5/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

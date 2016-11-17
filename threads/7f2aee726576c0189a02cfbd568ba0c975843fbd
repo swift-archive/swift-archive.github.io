@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[META] Re: Mailman?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March 15, 2016 at 04:00:00pm</p></header><div class="content"><p>on Tue Mar 15 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Mar 15, 2016, at 3:27 AM, Adrian Kashivskyy &lt;adrian.kashivskyy at me.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Joe, what are the Core Team&#39;s requirements for a possible forum software to start a discussion?<br>&gt;&gt; <br>&gt;&gt; The issues you expressed may be solved by not giving moderation<br>&gt;&gt; access to community members on such a forum, much like in Mailman.<br>&gt;<br>&gt; I can&#39;t speak for the whole core team, but my preferences would be for<br>&gt; something that supports offline access well, like a mailing list, can<br>&gt; sync read and replied state across clients, like IMAP, but still<br>&gt; provides low-barrier web access and easy permalinking, like a web<br>&gt; forum.<br></p><p>It&#39;s not everybody&#39;s cup of tea, but I can hook you up with<br>Emacs/Gnus...<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>[META] Re: Mailman?</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>March 15, 2016 at 05:00:00pm</p></header><div class="content"><p>&gt; On Mar 15, 2016, at 4:47 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Tue Mar 15 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt;&gt; On Mar 15, 2016, at 3:27 AM, Adrian Kashivskyy &lt;adrian.kashivskyy at me.com&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Joe, what are the Core Team&#39;s requirements for a possible forum software to start a discussion?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; The issues you expressed may be solved by not giving moderation<br>&gt;&gt;&gt; access to community members on such a forum, much like in Mailman.<br>&gt;&gt; <br>&gt;&gt; I can&#39;t speak for the whole core team, but my preferences would be for<br>&gt;&gt; something that supports offline access well, like a mailing list, can<br>&gt;&gt; sync read and replied state across clients, like IMAP, but still<br>&gt;&gt; provides low-barrier web access and easy permalinking, like a web<br>&gt;&gt; forum.<br>&gt; <br>&gt; It&#39;s not everybody&#39;s cup of tea, but I can hook you up with<br>&gt; Emacs/Gnus...<br></p><p>That wouldn&#39;t really help with the web accessibility or state syncing. Or with avoiding RSI.<br></p><p>-Joe<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[META] Re: Mailman?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March 16, 2016 at 11:00:00am</p></header><div class="content"><p>on Tue Mar 15 2016, Joe Groff &lt;jgroff-AT-apple.com&gt; wrote:<br></p><p>&gt;&gt; On Mar 15, 2016, at 4:47 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Tue Mar 15 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;<br>&gt;&gt;&gt;&gt; On Mar 15, 2016, at 3:27 AM, Adrian Kashivskyy &lt;adrian.kashivskyy at me.com&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Joe, what are the Core Team&#39;s requirements for a possible forum software to start a discussion?<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; The issues you expressed may be solved by not giving moderation<br>&gt;&gt;&gt;&gt; access to community members on such a forum, much like in Mailman.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I can&#39;t speak for the whole core team, but my preferences would be for<br>&gt;&gt;&gt; something that supports offline access well, like a mailing list, can<br>&gt;&gt;&gt; sync read and replied state across clients, like IMAP, but still<br>&gt;&gt;&gt; provides low-barrier web access and easy permalinking, like a web<br>&gt;&gt;&gt; forum.<br>&gt;&gt; <br>&gt;&gt; It&#39;s not everybody&#39;s cup of tea, but I can hook you up with<br>&gt;&gt; Emacs/Gnus...<br>&gt;<br>&gt; That wouldn&#39;t really help with the web accessibility <br></p><p>http://news.gmane.org/gmane.comp.lang.swift-evolution<br></p><p>&gt; or state syncing. <br></p><p>Yeah, that&#39;s doable.  You have an iCloud drive account.<br></p><p>&gt; Or with avoiding RSI.<br></p><p>Sure it would; there are menus in Emacs, and one can set up<br>less-strenuous bindings.<br></p><p>-- <br>-Dave<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

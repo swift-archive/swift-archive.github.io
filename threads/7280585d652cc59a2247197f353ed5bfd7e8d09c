@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edef19574627937bf1cfb218aef49fcc?s=50"></div><header><strong>Reading from stdin</strong> from <string>Natthan Leong</string> &lt;kar.joon at icloud.com&gt;<p>February  7, 2016 at 09:00:00pm</p></header><div class="content"><p>Hi there,<br></p><p>Coming from C++ with std::cin, why isn’t the reading of stdin for Swift a function as easy swift-y as print(_:)?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160207/7280d09c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Reading from stdin</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>February  8, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Feb 7, 2016, at 9:38 PM, Natthan Leong via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi there,<br>&gt; <br>&gt; Coming from C++ with std::cin, why isn’t the reading of stdin for Swift a function as easy swift-y as print(_:)?<br></p><p>The Swift standard library does provide readLine(), which is the analog for print.<br></p><p>-Chris<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160208/802dc13f/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

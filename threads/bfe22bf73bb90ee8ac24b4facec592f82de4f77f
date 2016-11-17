@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b2f47d083afa4931ca8897e95f0cb4ab?s=50"></div><header><strong>Proposal: Allow Getters and Setters to Throw</strong> from <string>Morten Bek Ditlevsen</string> &lt;bek at termestrup.dk&gt;<p>March 12, 2016 at 12:00:00pm</p></header><div class="content"><p>Brent Royal-Gordon &lt;brent at ...&gt; writes:<br></p><p>When reading this excellent proposal in December, my colleagues and I had just<br>had a discussion about the very same topic.<br></p><p>I am bumping because I think it would be a great addition to the language - and <br>since I have not seen the same proposal discussed in other threads.<br>Please excuse me if the topic has already been discussed elsewhere.<br></p><p>A very quick summary of the thread:<br>Basically Nikolai Vazquez proposes that getters and setters can be marked <br>as &#39;throws&#39;.<br>Chris Lattner responds that he thinks that the feature does not need a formal <br>proposal, since the lack of the feature is an implementation detail.<br>Jordan Rose notes that there are subtleties of the feature that would be good to <br>discuss in a formal proposal.<br></p><p>I would like to try and summarise the comments so far into a formal proposal <br>- although the internal optimisations of swiftc regarding inout parameters is <br>beyond my knowledge.<br></p><p>Any comments on whether the feature is a good idea - or whether a<br>formal proposal is the next step to take?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/08e0e501c1b7f3d2ee6d0ed52f560702?s=50"></div><header><strong>Proposal: Allow Getters and Setters to Throw</strong> from <string>Richard Ross</string> &lt;richardross at fb.com&gt;<p>March 14, 2016 at 10:00:00pm</p></header><div class="content"><p>+1 A formal proposal would be awesome. This would be a great feature to the language.<br>--<br>Richard<br></p><p>&gt; On Mar 12, 2016, at 4:59 AM, Morten Bek Ditlevsen via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Brent Royal-Gordon &lt;brent at ...&gt; writes:<br>&gt; <br>&gt; When reading this excellent proposal in December, my colleagues and I had just<br>&gt; had a discussion about the very same topic.<br>&gt; <br>&gt; I am bumping because I think it would be a great addition to the language - and <br>&gt; since I have not seen the same proposal discussed in other threads.<br>&gt; Please excuse me if the topic has already been discussed elsewhere.<br>&gt; <br>&gt; A very quick summary of the thread:<br>&gt; Basically Nikolai Vazquez proposes that getters and setters can be marked <br>&gt; as &#39;throws&#39;.<br>&gt; Chris Lattner responds that he thinks that the feature does not need a formal <br>&gt; proposal, since the lack of the feature is an implementation detail.<br>&gt; Jordan Rose notes that there are subtleties of the feature that would be good to <br>&gt; discuss in a formal proposal.<br>&gt; <br>&gt; I would like to try and summarise the comments so far into a formal proposal <br>&gt; - although the internal optimisations of swiftc regarding inout parameters is <br>&gt; beyond my knowledge.<br>&gt; <br>&gt; Any comments on whether the feature is a good idea - or whether a<br>&gt; formal proposal is the next step to take?<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://urldefense.proofpoint.com/v2/url?u=https-3A__lists.swift.org_mailman_listinfo_swift-2Devolution&amp;d=CwIGaQ&amp;c=5VD0RTtNlTh3ycd41b3MUw&amp;r=Ezje1IF3xGXfUMfsj4fBc7oM7BcJys1dhQ6psfXzLMU&amp;m=9a5UK9m7tDsJdUS2Z_mLPI3NTxiyAGccVhtiwBCUI3o&amp;s=7UfO0mdMczc0ncEtu_aVTQsEJSc9OVmidpKDj8QUmiI&amp;e=<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

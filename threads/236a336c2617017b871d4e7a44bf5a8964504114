@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 26, 2016 at 10:00:00am</p></header><div class="content"><p>on Sat Jan 23 2016, Trent Nadeau &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; While enum cases may not be types from a compiler perspective, I think they<br>&gt; are from a user&#39;s level.<br>&gt;<br>&gt; Consider:<br>&gt;<br>&gt; enum MyError: ErrorType {<br>&gt;     case FileError(fileName: String)<br>&gt;     case SocketError(ipAddr: String, port: Int16)<br>&gt; }<br>&gt;<br>&gt; From a compiler perspective, it&#39;s a tagged union (one type), but for a user<br>&gt; this is a set of disjoint types that happen to share the same space and<br>&gt; have exhaustiveness checking, etc. It&#39;s a much more efficient and<br>&gt; convenient version of multiple structs or tuples.<br></p><p>I don&#39;t understand how you can say MyError.FileError is a type from the<br>user&#39;s perspective; they don&#39;t work in most of the places you&#39;d expect a<br>type to work. For example, you can&#39;t declare this function:<br></p><p>      func f(x: MyError.FileError) {}<br></p><p>The fact that some people are viewing these things as a kind of type<br>only makes me more motivated to change the naming convention, because<br>it&#39;s clear that whatever passing similarity they may have to types,<br>combined with the current naming convention, is strongly misleading.<br></p><p>&gt; On Sat, Jan 23, 2016 at 1:49 PM, Joe Groff &lt;jgroff at apple.com&gt; wrote:<br>&gt;<br>&gt;&gt;<br>&gt;&gt; &gt; On Jan 23, 2016, at 10:24 AM, Trent Nadeau &lt;tanadeau at gmail.com&gt; wrote:<br>&gt;&gt; &gt;<br>&gt;&gt; &gt; I think it makes sense for enum cases to be UpperCamelCase as they can<br>&gt;&gt; be thought of as scoped types (singleton types in the case of cases with no<br>&gt;&gt; associated types).<br>&gt;&gt;<br>&gt;&gt; They aren&#39;t, though. I don&#39;t see much value in setting false expectations.<br>&gt;&gt;<br>&gt;&gt; -Joe<br>&gt;&gt;<br>&gt;&gt;<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cb639bf23446015169a290e4aab5b4d8?s=50"></div><header><strong>Requiring Xcode 7.3 to build Swift master for Apple platforms?</strong> from <string>Grant Paul</string> &lt;grp at fb.com&gt;<p>April  4, 2016 at 04:00:00am</p></header><div class="content"><p>The latest available version of the Darwin linker (ld64) on opensource.apple.com is the version from Xcode 7.0. It would be great if Swift master didn’t depend on new linker functionality until a newer version of the linker source is available with the fix, so Swift could be compiled with from-source toolchains.<br></p><p>Grant<br></p><p>&gt; Xcode 7.3 included a fix for the Apple linker that&#39;s necessary to support some of the metadata format changes we&#39;re making in Swift 3. I have some workarounds in place that I&#39;d like to remove since they suppress linker coalescing of some constant strings. Would anyone object to us requiring using Xcode 7.3 to develop Swift for OS X and other Apple platforms? If not, we could conditionalize the workarounds behind a flag, though that&#39;s additional complexity and testing surface I&#39;d like to avoid.<br>&gt; <br>&gt; -Joe<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>Requiring Xcode 7.3 to build Swift master for Apple platforms?</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>April  5, 2016 at 10:00:00pm</p></header><div class="content"><p>Hi Grant,<br></p><p>On OS X generally speaking we plan on staying with the latest released tools.  It simplifies the development model and allows the project to take advantage of advances in the toolchain.  Unless there is a strong compelling reason, we don&#39;t wish to hold Swift development back when there are released versions of the tools that provide necessary functionality to move Swift forward.<br></p><p>The other pragmatic reality is that it takes bandwidth and resources to actively maintain that Swift works on older toolchains.  Within Apple, we&#39;re always working on the next generation of the tools as well, and as Swift develops we are actively working on maintaining Swift working on the latest released Xcode but also the one in development.  Supporting an older Xcode would be something I don&#39;t think we reasonably could support.<br></p><p>Is your main objection here based on principle that Swift should be able to be always built from from-source toolchains on Darwin, or something else?<br></p><p>Ted<br></p><p>&gt; On Apr 3, 2016, at 9:34 PM, Grant Paul via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; The latest available version of the Darwin linker (ld64) on opensource.apple.com is the version from Xcode 7.0. It would be great if Swift master didn’t depend on new linker functionality until a newer version of the linker source is available with the fix, so Swift could be compiled with from-source toolchains.<br>&gt; <br>&gt; Grant<br>&gt; <br>&gt;&gt; Xcode 7.3 included a fix for the Apple linker that&#39;s necessary to support some of the metadata format changes we&#39;re making in Swift 3. I have some workarounds in place that I&#39;d like to remove since they suppress linker coalescing of some constant strings. Would anyone object to us requiring using Xcode 7.3 to develop Swift for OS X and other Apple platforms? If not, we could conditionalize the workarounds behind a flag, though that&#39;s additional complexity and testing surface I&#39;d like to avoid.<br>&gt;&gt; <br>&gt;&gt; -Joe<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Revisiting SE-0041 Names</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 22, 2016 at 01:00:00pm</p></header><div class="content"><p>on Wed Jun 22 2016, David Sweeris &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jun 22, 2016, at 1:55 PM, Dmitri Gribenko via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; On Wed, Jun 22, 2016 at 11:04 AM, Erica Sadun via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;<br>&gt;&gt; Hi Erica,<br>&gt;&gt; <br>&gt;&gt; I would like to re-state the feedback from Dave Abrahams, Max Moiseev<br>&gt;&gt; and me from the last time this was discussed.  Unfortunately I can&#39;t<br>&gt;&gt; find the exact email, so I can&#39;t provide a link.<br>&gt;&gt; <br>&gt;&gt; - The &quot;literal&quot; protocols are not about conversion, they are about<br>&gt;&gt; adopting a certain syntax provided by the language.  &quot;Convertible&quot; in<br>&gt;&gt; the name is a red herring: a type can&#39;t be convertible from an integer<br>&gt;&gt; literal because there is no &quot;IntegerLiteral&quot; entity in the type<br>&gt;&gt; system.  The literal *becomes* typed as the corresponding literal type<br>&gt;&gt; (e.g., Int or String), and as far as the user at the call site is<br>&gt;&gt; concerned, there is no visible conversion (even if one is happening<br>&gt;&gt; behind the scenes).<br>&gt;&gt; <br>&gt;&gt; Our suggestion was to focus on the &quot;adopting the syntax&quot; part.  We<br>&gt;&gt; suggested moving the &quot;literal convertible&quot; protocols into a<br>&gt;&gt; pseudo-namespace &quot;Syntax&quot;.  It could be implemented like this:<br>&gt;&gt; <br>&gt;&gt; protocol _IntegerLiteralSyntax {}<br>&gt;&gt; enum Syntax {<br>&gt;&gt;  typealias IntegerLiteral = _IntegerLiteralSyntax<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; And used like this:<br>&gt;&gt; <br>&gt;&gt; struct Int : Syntax.IntegerLiteral {}<br>&gt;&gt; <br>&gt;&gt; - For protocols that are representing conversions between types that<br>&gt;&gt; actually exist in the library, there is not enough precedent yet to<br>&gt;&gt; make a general conclusion and standardize a pattern.<br>&gt;<br>&gt; I’m not sure I understand… In this example, has<br>&gt; “IntegerLiteralConvertible” been renamed to “_IntegerLiteralSyntax”?<br></p><p>Yes, that&#39;s the idea.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

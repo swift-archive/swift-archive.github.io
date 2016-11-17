@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e841a2a33b72c728c55ff99200275784?s=50"></div><header><strong>[Pitch] New enum syntax.</strong> from <string>James Froggatt</string> &lt;james.froggatt at me.com&gt;<p>May  6, 2016 at 03:00:00pm</p></header><div class="content"><p>This is quite forward thinking, but since now is the time for breaking changes, I think it&#39;s an idea worth sharing.<br></p><p>It&#39;s recently been accepted that enum cases are values, not types, yet this is a questionable conclusion: their associated values are parameterised, unlike the main value-storage mechanisms which currently exist in the language properties and variables.<br>However, parameterisation has precedent in Swift, for types. I propose promoting enum cases back to types, and giving them an appropriate parameterisation syntax: Case&lt;Type, Type&gt;.<br></p><p>Suppose, in the future, we add parameters to generic types which may hold a value. By extension, it would make sense to add support for pattern matching, so the following would be possible:<br></p><p><br>struct Example&lt;let T: Int&gt; {} //Placeholder syntax for a value parameter.<br></p><p>let exampleType: Example.Type = Example&lt;5&gt; //No .self needed, as I believe this is soon to be removed.<br></p><p>switch exampleType {<br></p><p>case Example&lt;0...10&gt;: print(&quot;between 0 and 10&quot;)<br></p><p>case let Example&lt;v&gt; where v &gt; 10: print(&quot;greater than ten&quot;)<br></p><p>case let Example&lt;v&gt; where v &lt; 0: print(&quot;negative: \(v)&quot;)<br></p><p>case Example&lt;let v&gt;: print(&quot;other: \(v)&quot;)<br></p><p>}<br></p><p><br>I propose enums could be considered an extension of this idea, and each case is analogous to a nested type with generic parameters. The enum is a specialised construct for this kind of pattern matching; it resembles a metatype of its nested types, hence a variable of type Enum stores a value of Enum.Case.<br></p><p>The proposed syntax for enums would look like this:<br></p><p><br>enum Optional&lt;T&gt; {<br>	case Some&lt;let T&gt;, //Placeholder syntax for a value parameter.<br>	None<br>}<br></p><p><br>This is not a major change from the current syntax for enums, and it eliminates the currently exceptional use of round brackets for stored-value parameterisation from the language, in favour of a syntax consistent with that of type parameterisation.<br></p><p>This proposal has two major syntax changes:<br>Returning to using UpperCamelCase for enum cases, and making them analogous to nested types.<br>Replacement of round brackets, (), in favour of angle brackets, &lt;&gt;, for parameterisation of enum cases.<br>This could be a simple bracket replacement, which could optionally be revised in the future to match future value parameterisation of types, as shown above with the example &lt;let T&gt; syntax.<br>Alternatively, a value-parameterisation syntax could be chosen now, used for enums, and later be extended to types.<br></p><p>Thanks for reading. Thoughts?<br></p><p><br>PS: An alternative value parameterisation I considered when writing this proposal was Type&lt;T = Int&gt; and .Some&lt;=T&gt;, but using ‘let’ seemed more readable, and reflects pattern matching, so I used that for my examples.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160506/889d2cf8/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

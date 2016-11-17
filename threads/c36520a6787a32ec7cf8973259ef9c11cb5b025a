@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Set-uniqueness of instances with distinct hashValue</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 23, 2016 at 11:00:00am</p></header><div class="content"><p>on Sun Oct 23 2016, milos &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; Given an array of instances of a `Hashable` value type, all equal<br>&gt; according to `Equatable` protocol, but with distinct `hashValue`s, <br></p><p>Equal hashables must have the same hashValue.  If you violate this rule,<br>all bets are off.  As the doc says:<br></p><p>  A hash value, provided by a type&#39;s hashValue property, is an integer<br>  that is the same for any two instances that compare equally. That is,<br>  for two instances a and b of the same type, if a == b then a.hashValue<br>  == b.hashValue. <br></p><p>https://developer.apple.com/reference/swift/hashable<br></p><p><br>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

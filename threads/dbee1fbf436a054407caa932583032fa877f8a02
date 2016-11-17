@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/94c2e12d389e7354531339f1637aafd1?s=50"></div><header><strong>[SE-0011] Re-considering the replacement keyword for &quot;typealias&quot;</strong> from <string>Kyle Carson</string> &lt;kyleacarson at gmail.com&gt;<p>December 23, 2015 at 04:00:00pm</p></header><div class="content"><p>All of the options I&#39;ve seen suffer from a common problem:  The order of parameters isn&#39;t obvious.  If we use an additional keyword we can have a more readable syntax.<br></p><p>Example using &quot;associate&quot; and &quot;with&quot;:<br></p><p>associate *NewType* with *ExistingType*<br></p><p>Positives:<br>- Extremely clear, readable<br>- Relatively short syntax<br></p><p>Possible Negatives:<br>- May not be easy to Google<br>- Do multiple keywords fits Swift&#39;s general style?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>[SE-0011] Re-considering the replacement keyword for &quot;typealias&quot;</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>December 23, 2015 at 02:00:00pm</p></header><div class="content"><p>&gt; All of the options I&#39;ve seen suffer from a common problem:  The order of parameters isn&#39;t obvious.  If we use an additional keyword we can have a more readable syntax.<br>&gt; <br>&gt; Example using &quot;associate&quot; and &quot;with&quot;:<br>&gt; <br>&gt; associate *NewType* with *ExistingType*<br></p><p>I don&#39;t understand what you&#39;re suggesting here. What is `ExistingType`? Does this go inside the `protocol` block or outside?<br></p><p>For illustration, perhaps you can translate this into your syntax:<br></p><p>	public protocol GeneratorType {<br>	    typealias Element<br>	    public mutating func next() -&gt; Self.Element?<br>	}<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6bab59a4fee6a3c2697717acb34d647c?s=50"></div><header><strong>Swift3 rewriting for XCTest APIs</strong> from <string>Mike Ferris</string> &lt;mferris at apple.com&gt;<p>April 15, 2016 at 09:00:00am</p></header><div class="content"><p>Swift3 rewriting for XCTest APIs<br></p><p>For the most part, the automatic heuristics seem to be doing the right things for Xcode’s XCTest.  We have identified a few cases where we should perhaps discuss doing a little extra. Almost everything seems like it imports reasonably according to the API guidelines (https://swift.org/documentation/api-design-guidelines/ &lt;https://swift.org/documentation/api-design-guidelines/&gt;). The few cases that we think need tweaking are detailed here.<br></p><p>These are the changes from how the API imports automatically that we are considering. I would love to hear any comments or suggestions.<br></p><p>addTest[Run]()<br></p><p>There’s a glitch in the importer that is making XCTestSuioteRun’s addTestRun: import as addTest. We’re tracking this as a bug in the importer. In the meantime, I would fix this in Xcode’s XCTest explicitly.<br></p><p>	Existing imported method<br>	XCTestSuiteRun.addTest(testRun: XCTestRun)  <br></p><p>	Suggested new name<br>	XCTestSuiteRun.addTestRun(testRun: XCTestRun)<br></p><p>Bound(by: vs. (boundBy:<br></p><p>Here, the importer just isn&#39;t smart enough to detect that the prepositional phrase that really identifies the argument is &quot;boundBy&quot;, not &quot;by”. We’re also tracking this as a possible thing to fix in the importer. In the meantime, I would fix this in Xcode’s XCTest explicitly.<br></p><p>	Existing imported method<br>	XCUIElementQuery.elementBound(by index: UInt) -&gt; XCUIElement<br></p><p>	Suggested new name<br>	XCUIElementQuery.element(boundBy index: UInt) -&gt; XCUIElement<br></p><p>Query &quot;matching...&quot;<br></p><p>This next little family is a bit more subtle. The first two have a noun which just restates the type, so by the guidelines we would remove them. Technically the last one&#39;s noun is a role, not a type and so what the importer is doing is correct. But it feels inconsistent if we remove the type names but leave that one alone. To make it a little more consistent, the suggestion is to move identifier inside the parens as a required label so all these related functions have the same &quot;outside the parens&quot; part of their names.<br></p><p>	Existing imported method<br>	XCUIElementQuery.matchingPredicate(predicate: NSPredicate) -&gt; XCUIElementQuery<br>	XCUIElementQuery.matchingType(elementType: XCUIElementType, identifier: String?) -&gt; XCUIElementQuery<br>	XCUIElementQuery.matchingIdentifier(identifier: String) -&gt; XCUIElementQuery<br></p><p>	Suggested new name<br>	XCUIElementQuery.matching(predicate: NSPredicate) -&gt; XCUIElementQuery<br>	XCUIElementQuery.matching(elementType: XCUIElementType, identifier: String?) -&gt; XCUIElementQuery<br>	XCUIElementQuery.matching(identifier identifier: String) -&gt; XCUIElementQuery<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160415/9bed1f6c/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0065 A New Model for Collections and Indices</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 11, 2016 at 12:00:00pm</p></header><div class="content"><p>on Sun Apr 10 2016, Jacob Bandes-Storch &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Minor questions after initial read-through:<br>&gt;<br>&gt; - Should the comment on {index,formIndex}(_:stepsFrom:) say what happens if the<br>&gt; resulting index would be out of bounds? <br></p><p>I don&#39;t think we should ever specify what happens when preconditions are<br>violated.  That brings into question how to evaluate the correctness of<br>a program.  If the behavior is specified, the program has every right to<br>depend on that behavior, and then it&#39;s meaningless to say “you violated a<br>precondition, so the program is broken.”<br></p><p>&gt; Can these functions return Optional values, or can they be `throws`?<br></p><p>No, precondition violations should never be treated as conditions from<br>which execution can continue.<br></p><p>&gt; - Can {index,formIndex}(_:stepsFrom:) be combined with the limitedBy: versions,<br>&gt; such that the limit is an optional parameter with default value nil? For<br>&gt; example:<br></p><p>No, due to language limitations: you can&#39;t put default arguments in<br>protocol requirements.<br></p><p>&gt;<br>&gt;<br>&gt; public func index(n: IndexDistance, stepsFrom i: Index, limitedBy limit: Index?<br>&gt; = nil)<br>&gt;<br>&gt; Jacob<br>&gt;<br>&gt; On Sun, Apr 10, 2016 at 2:45 PM, Chris Lattner via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;         On Apr 10, 2016, at 2:41 PM, Chris Lattner<br>&gt;         &lt;clattner at apple.com&gt; wrote:<br>&gt;<br>&gt;         Hello Swift community,<br>&gt;<br>&gt;         The review of &quot;A New Model for Collections and Indices&quot; begins now and<br>&gt;         runs through April 18th. The proposal is available here:<br>&gt;<br>&gt;     The correct link is:<br>&gt;     https://github.com/apple/swift-evolution/blob/master/proposals/0065-collections-move-indices.md<br>&gt;<br>&gt;     -Chris<br>&gt;<br>&gt;         Reviews are an important part of the Swift evolution process. All<br>&gt;         reviews should be sent to the swift-evolution mailing list at:<br>&gt;         https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;         or, if you would like to keep your feedback private, directly to the<br>&gt;         review manager.<br>&gt;<br>&gt;         What goes into a review?<br>&gt;<br>&gt;         The goal of the review process is to improve the proposal under review<br>&gt;         through constructive criticism and, eventually, determine the direction<br>&gt;         of Swift. When writing your review, here are some questions you might<br>&gt;         want to answer in your review:<br>&gt;<br>&gt;         * What is your evaluation of the proposal?<br>&gt;         * Is the problem being addressed significant enough to warrant a change<br>&gt;         to Swift?<br>&gt;         * Does this proposal fit well with the feel and direction of Swift?<br>&gt;         * If you have you used other languages or libraries with a similar<br>&gt;         feature, how do you feel that this proposal compares to those?<br>&gt;         * How much effort did you put into your review? A glance, a quick<br>&gt;         reading, or an in-depth study?<br>&gt;<br>&gt;         More information about the Swift evolution process is available at<br>&gt;<br>&gt;         https://github.com/apple/swift-evolution/blob/master/process.md<br>&gt;<br>&gt;         Thank you,<br>&gt;<br>&gt;         -Chris Lattner<br>&gt;         Review Manager<br>&gt;<br>&gt;     _______________________________________________<br>&gt;     swift-evolution mailing list<br>&gt;     swift-evolution at swift.org<br>&gt;     https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

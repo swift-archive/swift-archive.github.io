@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Manifesto] Completing Generics</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March  4, 2016 at 08:00:00am</p></header><div class="content"><p>on Thu Mar 03 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;&gt; The choice of Equatable as an example for opening existentials is<br>&gt; an<br>&gt;&gt;&gt; interesting one here, because it&#39;s one of the few cases I can think<br>&gt; of<br>&gt;&gt;&gt; where differing dynamic types is actually fully defined: they&#39;re<br>&gt; not<br>&gt;&gt;&gt; equal. In ObjC we express that by starting every -isEqual:<br>&gt;&gt;&gt; implementation with if (![other isKindOfClass:[self class]]) {<br>&gt; return<br>&gt;&gt;&gt; NO; }, which while clunky and easy to forget, does neatly express<br>&gt; the<br>&gt;&gt;&gt; desired semantics with no burden at the callsite.<br>&gt;&gt; <br>&gt;&gt; It&#39;s a reasonable default, but it&#39;s not necessarily the right<br>&gt;&gt; implementation for every type.  One could imagine Polygons comparing<br>&gt;&gt; equal to Squares, for example.<br>&gt;<br>&gt; If the &quot;open&quot; operation is sophisticated enough, when it&#39;s faced with<br>&gt; mismatched concrete types but they both conform to a protocol with a<br>&gt; existential that meets the requirements, it could return that<br>&gt; existential.<br>&gt;<br>&gt; That would mean that, in this scenario:<br>&gt;<br>&gt; 	protocol Shape: Equatable { ...}<br>&gt;<br>&gt; 	protocol Polygonal: Shape {<br>&gt; 		var vertices: [Vertex]<br>&gt; 	}<br>&gt; 	struct Square: Polygonal { ... }<br>&gt; 	struct Polygon: Polygonal { ... }<br>&gt;<br>&gt; You could add this:<br>&gt;<br>&gt; 	extension Any&lt;Polygonal&gt;: Equatable {}<br></p><p>If you could extend just the existential, yes, that could work.  I don&#39;t<br>think this requires any “opening” though, and it&#39;s not taking advantage<br>of the default behavior for equatables of different types, which is my<br>point.<br></p><p>&gt; 	func == (lhs: Any&lt;Polygonal&gt;, rhs: Any&lt;Polygonal&gt;) -&gt; Bool {<br>&gt; 		for (lhsVertex, rhsVertex) in zip(lhs.vertices,<br>&gt; rhs.vertices) {<br>&gt; 			if lhsVertex != rhsVertex {<br>&gt; 				return false<br>&gt; 			}<br>&gt; 		}<br>&gt; 		return true<br></p><p>I think you&#39;d need to sort the vertices or something, but I get the point.<br></p><p>&gt; <br>&gt; 	}<br>&gt;<br>&gt; And then, if `==(_: Any&lt;Equatable&gt;, _: Any&lt;Equatable&gt;)` were passed a<br>&gt; Square and a Polygon, opening the `Any&lt;Equatable&gt;`s would give you a<br>&gt; pair of `Any&lt;Polygonal&gt;`s.<br>&gt;<br>&gt; This is obviously more complex than simply opening the existential,<br>&gt; matching its concrete type against a requirement, and extracting the<br>&gt; original value if it matches—it&#39;s looking at the concrete types of N<br>&gt; existentials, simultaneously matching them *all* against a requirement<br>&gt; to find a more specific type they can all be cast to, and then<br>&gt; performing that cast. To do its job, it would need to see all of the<br>&gt; operands at the same time and evaluate them together to find a type<br>&gt; that would fit all of them.<br>&gt;<br>&gt; That&#39;s what I was trying to get at when I wrote this example earlier<br>&gt; in the thread:<br>&gt;<br>&gt; 	func == (e1: Any&lt;Equatable&gt;, e2: Any&lt;Equatable&gt;) -&gt; Bool {<br>&gt; 		guard let concreteE1&lt;T: Equatable&gt; = e1 as? T,<br>&gt; concreteE2 = e2 as? T else {<br>&gt; 			return false<br>&gt; 		}<br>&gt;<br>&gt; 		return concreteE1 == concreteE2<br>&gt; 	}<br>&gt;<br>&gt; If both parameters were `Square`s, then `T` would be a `Square`. But<br>&gt; if one was a `Square` and the other a `Polygon`, `T` could be an<br>&gt; `Any&lt;Polygonal&gt;`. Because you are simultaneously matching both values,<br>&gt; you don&#39;t have to try the match both ways, and the operation is free<br>&gt; to return a more specific protocol existential if that&#39;s the best it<br>&gt; can do.<br></p><p>Ah... finding a unique possible common equatable type sounds both<br>inefficient and like it could fail at runtime due to ambiguity.  I&#39;d be<br>at least very cautious about creating a system like that.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

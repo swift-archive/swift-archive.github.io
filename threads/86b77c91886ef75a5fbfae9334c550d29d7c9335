@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Rejected] SE-0030 Property Behaviors</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>February 23, 2016 at 11:00:00pm</p></header><div class="content"><p>The review of SE-0030 “Property Behaviors” ran from February 10...23, 2016. The proposal in its current form is rejected:<br></p><p>	https://github.com/apple/swift-evolution/blob/master/proposals/0030-property-behavior-decls.md<br></p><p>The core team believes that property behaviors are a worthwhile feature for Swift, but it’s clear from the discussion that we as a community have not yet converged on a design we are willing to commit to. It is therefore too early to accept a proposal for this feature. We encourage the author to continue refining the design and providing new proposal drafts for discussion, and will schedule another public review when it looks like we are closer to converging on a single design.<br></p><p>	Doug Gregor<br>	Review Manager<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160223/86b79335/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

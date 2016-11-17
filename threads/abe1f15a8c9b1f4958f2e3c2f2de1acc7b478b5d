@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>Proposal: Remove the underscore and `in`for	`for` loop</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>July  2, 2016 at 01:00:00pm</p></header><div class="content"><p>Diego Barros via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; for 1...10 {<br>&gt; // do something 10 times<br>&gt; }<br></p><p>Firstly, this should be delayed to post-Swift 3.<br>Secondly, I tend to vote for generalization and simplification of Swift <br>syntax. For example, I voted to replace &#39;default&#39; with &#39;case _&#39;. In this <br>case, I also prefer more general syntax. -1 from me.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d4fb9162c777a5d6d0b1fb00893d709?s=50"></div><header><strong>Proposal: Remove the underscore and `in`for `for` loop</strong> from <string>Haravikk</string> &lt;swift-evolution at haravikk.me&gt;<p>July  3, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; On 2 Jul 2016, at 14:19, Anton Zhilin via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Diego Barros via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; <br>&gt;&gt; for 1...10 {<br>&gt;&gt; // do something 10 times<br>&gt;&gt; }<br>&gt; <br>&gt; Firstly, this should be delayed to post-Swift 3.<br>&gt; Secondly, I tend to vote for generalization and simplification of Swift <br>&gt; syntax. For example, I voted to replace &#39;default&#39; with &#39;case _&#39;. In this <br>&gt; case, I also prefer more general syntax. -1 from me.<br></p><p>Does this idea apply in the same way? While &quot;for _ in foo&quot; and &quot;for foo&quot; would be equivalent, usually the underscore is used to indicate intent to avoid mistakes, which is why we wouldn&#39;t to be able to just use &quot;case&quot; on its own to represent match all, as it could be a case statement that the user didn&#39;t finish, the underscore in this case makes it clear that yes, what the user wants to do is ignore the element(s) themselves.<br></p><p>However, unlike the switch case, for omitting the underscore to represent a mistake you&#39;d have to:<br>Forget the underscore<br>Forget the &quot;in&quot; keyword<br>Use a variable that should have been shadowed but wasn&#39;t, resulting in a subtle error.<br>I specify number 3 because if you use a variable that doesn&#39;t exist it will produce an obvious error. While the three are possible, they seem highly unlikely in combination.<br></p><p><br>That said, there is an argument to be made that this change would be inconsistent with using a result:<br></p><p>	foo.someMethod()		// warning, unused result<br>	let _ = foo.someMethod()	// result explicitly ignored<br></p><p>I&#39;d possibly argue that a sequence is implicitly meant to have its results used, so they should be explicitly ignored for consistency&#39;s sake.<br></p><p><br>So… I like the short-form, but I like consistency, so I think I&#39;ve manoeuvred myself into being a +0.1 or so ;)<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160703/048c6548/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

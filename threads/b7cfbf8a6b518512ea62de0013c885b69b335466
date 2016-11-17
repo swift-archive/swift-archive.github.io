@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b7513b7d11e2aa623380d671875fa080?s=50"></div><header><strong>Data withUnsafeBytes</strong> from <string>Chris McIntyre</string> &lt;cmcintyre3600 at gmail.com&gt;<p>September  3, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi guys, <br></p><p>I’m either missing a subtlety in regards to closures or I found a bug with the type inference system in Xcode 8 Beta 6. Thought I’d run it by you.<br></p><p>I’m trying to use Data’s method withUnsafeBytes(_:). It’s declared as:<br></p><p><br>func withUnsafeBytes&lt;ResultType, ContentType&gt;(_ body: (UnsafePointer&lt;ContentType&gt;) throws -&gt; ResultType) rethrows -&gt; ResultType<br></p><p>The Swift Language book states that closure syntax uses the following form:<br></p><p><br>{ (parameters) -&gt; returntype in<br>    statements<br>}<br></p><p>So, at the most basic implementation, I tried the following:<br></p><p>let tryThis = items.withUnsafeBytes {<br>    (bytes) -&gt; Int in<br>    <br>    return 1<br>}<br></p><p>And I get the error Declared closure result &#39;Int&#39; is incompatible with contextual type ‘ResultType’.<br></p><p>Xcode suggests I change Int to ResultType, but that just gives me the error that I’m using an undeclared type. <br></p><p>Am I getting the syntax wrong or Xcode getting confused?<br></p><p>Thanks a lot. <br></p><p>—<br>Chris McIntyre<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160903/b7cf5466/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d0efc09d023fa0569a2479c9dcfd4620?s=50"></div><header><strong>Data withUnsafeBytes</strong> from <string>Ole Begemann</string> &lt;ole at oleb.net&gt;<p>September  4, 2016 at 09:00:00pm</p></header><div class="content"><p>The compiler has no way of inferring the type of the generic ContentType <br>parameter because you&#39;re not using that parameter anywhere in the body <br>of the closure that could give the compiler a hint. So you have to <br>provide the type manually by explicitly annotating the type of the <br>closure&#39;s parameter.<br></p><p>For example, if you want to treat `items` as a series of `UInt8` values:<br></p><p>     let tryThis = items.withUnsafeBytes {<br>         (bytes: UnsafePointer&lt;UInt8&gt;) -&gt; Int in<br>         return 1<br>     }<br></p><p>I agree the compiler diagnostic should probably be better, though.<br></p><p>Ole<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4b97a78250297d1c3ec6a929af7800d2?s=50"></div><header><strong>Data withUnsafeBytes</strong> from <string>Chris McIntyre</string> &lt;nothingwasdelivered at gmail.com&gt;<p>September  4, 2016 at 09:00:00pm</p></header><div class="content"><p>That makes sense. I think I&#39;ve gotten so used to the type system magically figuring out what I want, combined with the error message pointing to the return type that this just went right over my head. <br></p><p>--<br>Chris McIntyre<br></p><p>&gt; On Sep 4, 2016, at 3:59 PM, Ole Begemann via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; The compiler has no way of inferring the type of the generic ContentType parameter because you&#39;re not using that parameter anywhere in the body of the closure that could give the compiler a hint. So you have to provide the type manually by explicitly annotating the type of the closure&#39;s parameter.<br>&gt; <br>&gt; For example, if you want to treat `items` as a series of `UInt8` values:<br>&gt; <br>&gt;    let tryThis = items.withUnsafeBytes {<br>&gt;        (bytes: UnsafePointer&lt;UInt8&gt;) -&gt; Int in<br>&gt;        return 1<br>&gt;    }<br>&gt; <br>&gt; I agree the compiler diagnostic should probably be better, though.<br>&gt; <br>&gt; Ole<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160904/d2098813/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

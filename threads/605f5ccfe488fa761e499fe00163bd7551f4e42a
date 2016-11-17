@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Accepted] SE-0028 Modernizing Swift&#39;s Debugging Identifiers (__LINE__, etc)</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  4, 2016 at 04:00:00pm</p></header><div class="content"><p>on Thu Feb 04 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 4, 2016, at 11:17 AM, Dave Abrahams<br>&gt;&gt; &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; On Feb 4, 2016, at 9:29 AM, Chris Lattner<br>&gt;<br>&gt;&gt;&gt; &lt;clattner at apple.com<br>&gt;&gt;&gt; &lt;mailto:clattner at apple.com&gt;&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; On Feb 4, 2016, at 7:03 AM, Erica Sadun via swift-evolution<br>&gt;&gt;&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt;&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt;&gt;&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; On Feb 4, 2016, at 1:24 AM, Dave Abrahams via swift-evolution<br>&gt;&gt;&gt;&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt;&gt;&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt;&gt;&gt;&gt; wrote:<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; I&#39;m afraid we&#39;ll ultimately need to solve this some other way than by<br>&gt;&gt;&gt;&gt;&gt; choosing a different name.  We&#39;re eventually going to end up with<br>&gt;&gt;&gt;&gt;&gt; something meaning #sourceLocation (modulo capitalization) and that&#39;s<br>&gt;&gt;&gt;&gt;&gt; obviously (IMO) going to be the right name for both entities.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I don’t agree with you Dave, these are certainly related, but also<br>&gt;&gt;&gt; very different operations.<br>&gt;&gt; <br>&gt;&gt; They both represent source locations. <br>&gt;<br>&gt; No, they don’t, at least not in the same way.  The directive only<br>&gt; contains the file and line.  The expressions can produce the column<br>&gt; and function.<br>&gt;<br>&gt; These are related, but different.<br></p><p>OK.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

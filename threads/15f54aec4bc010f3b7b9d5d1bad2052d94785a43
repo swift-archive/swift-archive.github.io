@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0f6c0c3d6dec7c92ed0ec0e47e802c9a?s=50"></div><header><strong>Community Proposal: &quot;This Week In Swift&quot; newsletter</strong> from <string>John Muchow</string> &lt;jwmuchow at gmail.com&gt;<p>December 24, 2015 at 12:00:00pm</p></header><div class="content"><p>I can certainly see where a dedicated newsletter would be ideal if the<br>objective is a detailed look at the week&#39;s activity.<br></p><p>On the other hand, if an overview in bullet form would be of interest, I<br>would certainly be willing to include a section in the weekly open source<br>newsletter I&#39;ve been publishing. An example of the format of a bulleted<br>list is shown near the bottom of newsletter below:<br></p><p>http://swiftsandbox.io/issues/1<br></p><p>(This isn&#39;t intended to be a plug for the newsletter; it&#39;s just an offer to<br>help.)<br></p><p>John<br></p><p>&gt; On Dec 22, 2015, at 10:29 PM, Kevin Ballard via swift-evolution<br>&lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; During the development of Rust prior to v1.0, one of the things that<br>really helped with keeping up with changes (both in the language and in the<br>stdlib) was Corey Richardson&#39;s weekly newsletter/blog titled This Week In<br>Rust. Since 1.0, that was actually turned into its own website at<br>https://this-week-in-rust.org and appears to still be going strong<br>(although I assume someone else has taken over responsibility at this<br>point).<br>&gt;<br>&gt; What Corey did with This Week In Rust was he went through all the pull<br>requests that were merged in the past week, found the &quot;important&quot; ones, and<br>compiled a list of one-line summaries that linked to each PR in question.<br>He made sure to call out any breaking changes (this was pre-1.0 so there<br>were breaking changes almost every week) as well as anything that seemed<br>like it would be of interest to people looking for a weekly summary. He<br>also listed RFCs (Rust&#39;s equivalent for our swift-evolution proposals) as<br>well as any interesting news from the community (such as new projects or<br>libraries). This weekly newsletter was posted on his blog and also posted<br>on the Rust mailing list. I&#39;m really not sure where he got all the time to<br>do this (I believe he was studying at University at the time), and I don&#39;t<br>know how much time it actually took, but it was widely regarded as being<br>extremely helpful.<br>&gt;<br>&gt; I&#39;d really love to see someone with enough time on their hands start up<br>something similar for Swift. This would include interesting or important<br>changes to the language/stdlib as well as news about proposals (e.g.<br>newly-submitted ones, ones up for review in the coming week, the<br>accepted/rejected resolution of them, and finally news about when<br>implementations get merged in). Ideally, Apple would actually pay someone<br>to do this, but I suspect it&#39;s unlikely that there&#39;s anyone involved with<br>Swift at Apple that has the time for something like this. And of course I<br>don&#39;t have time for this myself (that&#39;s why I want the newsletter, so I can<br>make sure I don&#39;t miss anything important!).<br>&gt;<br>&gt; -Kevin Ballard<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151224/15f55a43/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

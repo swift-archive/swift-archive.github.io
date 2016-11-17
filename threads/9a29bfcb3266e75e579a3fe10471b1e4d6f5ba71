@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4b3b33f77a1215e7338bfea30585045c?s=50"></div><header><strong>Permutations</strong> from <string>Daryle Walker</string> &lt;darylew at mac.com&gt;<p>June 17, 2016 at 12:00:00pm</p></header><div class="content"><p>I’ve seen the WWDC 2016 Keynote and State of the Platforms videos.  I haven’t seen any others so I don’t spoil myself before typing my ideas down.  Apologies if this has already been covered.<br></p><p>I saw that the “PermutationGenerator” type is being retired in Swift 3.  It inspired me to see how I can implement such a type:<br></p><p>//=====<br>/// Permutations generator, adapted from a Java class that mentioned its source as &lt;http://www.cut-the-knot.org/Curriculum/Combinatorics/JohnsonTrotter.shtml&gt;.  Inspired by checking that Swift 3 will not have/retain such a type.<br>struct PermutationsGenerator&lt;Index: ForwardIndexType&gt;: GeneratorType {<br></p><p>    /// postconditions: The first `self.next` returns an array of the indices in order.<br>    init(indices: Range&lt;Index&gt;)<br></p><p>    mutating func next() -&gt; [Index]?<br></p><p>}<br>//=====<br></p><p>Use like:<br></p><p>//=====<br>func doSomething&lt;C: CollectionType&gt;(collection: C) {<br>    var g = PermutationsGenerator(collection.indices)<br>    while let p = g.next() {<br>        doSomethingToo(p.map { collection[$0] })<br>    }<br>}<br>//=====<br></p><p>So the first call to “next” returns “Array(indices)” and subsequent calls return scrambled versions of that array.  There will be “factorial(indices.count)” versions returned.  (For an empty range or one with one valid element, there will be only 0! == 1! == 1 valid return.)<br></p><p>Then I looked further.  This is NOT what the existing “PermutationGenerator” does.  In fact, the type is being retired for this very reason.  The type actually returns a subset of collection, possibly in a scrambled order (i.e. a permutation).  Some questions:<br></p><p>1. Is the functionality of the existing “PermutationGenerator” being moved to another type?<br>2. Would my type be suitable to add to the standard library?  Would the name need to be changed?  (The name is appropriate, but it’s just one letter different from a depreciated type.)<br></p><p>— <br>Daryle Walker<br>Mac, Internet, and Video Game Junkie<br>darylew AT mac DOT com <br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160617/9a29ba71/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>Permutations</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>June 17, 2016 at 12:00:00pm</p></header><div class="content"><p>On Jun 17, 2016, at 10:42 AM, Daryle Walker via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I’ve seen the WWDC 2016 Keynote and State of the Platforms videos.  I haven’t seen any others so I don’t spoil myself before typing my ideas down.  Apologies if this has already been covered.<br>&gt; <br>&gt; I saw that the “PermutationGenerator” type is being retired in Swift 3.  It inspired me to see how I can implement such a type:<br>&gt; <br>&gt; 1. Is the functionality of the existing “PermutationGenerator” being moved to another type?<br>&gt; 2. Would my type be suitable to add to the standard library?  Would the name need to be changed?  (The name is appropriate, but it’s just one letter different from a depreciated type.)<br></p><p>If they were writing Swift from scratch today, it would not be on my personal list of types Swift should add in the standard library. <br></p><p>Permuting a collection&#39;s indices isn&#39;t that typical a task, and when it does apply I think there are better ways to do this than a dedicated stdlib type. It&#39;s easy to add shuffling and take by-n or take m copies with just a few lines of code that don&#39;t generalize well. There&#39;s also GameplayKit support for Cocoa/touch devs that work well w/ the new indexing model. <br></p><p>I know there&#39;s also been interest in striding over collections, not sure where that stands right now.<br></p><p>-- E<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

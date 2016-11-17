@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[proposal] Either in the Swift Standard Library</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 26, 2016 at 11:00:00pm</p></header><div class="content"><p>on Mon Jan 25 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jan 25, 2016, at 10:27 PM, Developer via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Are you opposed to the name or the semantics?<br>&gt;&gt; <br>&gt;&gt; I will not accept a revision that reduces the level of abstraction<br>&gt;&gt; of the current proposal.  I will, however, accept name changes.<br>&gt;&gt; Result, though, I believe is out of the question.  It strongly<br>&gt;&gt; implies a common but pointed set of semantics that discourage<br>&gt;&gt; thinking of this type as data and more as an alternative to throws.<br>&gt;&gt; I do not wish to emphasize the error case, or the theoretical case,<br>&gt;&gt; I wish to encourage the general case.  We must remember that despite<br>&gt;&gt; Rust&#39;s success, they do not have to live alongside an exceptions<br>&gt;&gt; mechanism like Either does.<br>&gt;<br>&gt; Here is my concern: Swift enums should be good enough that we don’t<br>&gt; need an Either type.  If defining your own custom enum is hard or bad,<br>&gt; then we should fix that.<br>&gt;<br>&gt; There are a number of concepts floating around that would make enums<br>&gt; better in various ways.  One specific one would be to synthesize<br>&gt; optional accessors that line up with enum cases.<br>&gt;<br>&gt; What will the advantage of Either be once enums get even more fully baked?<br></p><p>There&#39;s one thing something like Either does that &quot;defining an enum<br>type&quot; doesn&#39;t: you can use one in a generic signature with dependent<br>argument types, e.g.<br></p><p>     func f&lt;T,U&gt;(_: Bool, x: T, y: U) -&gt; SomethingLikeEither&lt;T,U&gt;<br></p><p>*Yes* you can always use a generic enum to define SomethingLikeEither,<br>but then each user that wants to do this has a hoop to jump through, and<br>the community doesn&#39;t have a common type that interoperates everywhere<br>we need something like Either.  Imagine that we didn&#39;t have tuples in<br>the language and we didn&#39;t define a generic &quot;Cons&quot; struct in the<br>standard library for people to build their own tuples out of.<br></p><p>Now, I don&#39;t think any of this is a big enough cost to make it worth<br>putting SomethingLikeEither (with no implied semantics attached) in the<br>standard library, and product types are much more generally useful than<br>sum types are, so I think it&#39;s great that we have tuples.  But to be<br>totally fair, we have to acknowledge that something like Either has<br>value, even after Enums become easier to use.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

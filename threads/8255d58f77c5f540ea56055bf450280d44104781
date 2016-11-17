@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0104: Protocol-oriented integers</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 27, 2016 at 04:00:00pm</p></header><div class="content"><p>on Thu Jun 23 2016, Remy Demarest &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I would also like to know why bit shifting and bit-wise and, or and<br>&gt; xor operations are limited to FixedWidthInteger. I would think that a<br>&gt; variable-length integer would be able to handle these operations in a<br>&gt; predictable way consistent with the protocol. Wouldn&#39;t it?<br></p><p>The semantics of left shift on fixed width integers is that high bits<br>are discarded.  How do you define that operation for variable-width<br>integers?  Can you write a meaningful generic algorithm that uses a left<br>shift on both variable- and fixed-width integers?  Similar arguments<br>apply to the bit-inverse operation.<br></p><p>It&#39;s possible that variable-width integers can implement some subset of<br>the bitwise operations in a sensible way, but until someone works out<br>exactly what that subset is, how it behaves, and why it&#39;s useful, I<br>don&#39;t think we want to lock that into any other protocols than<br>FixedWidthInteger.<br></p><p>Remember, variable-width integers can still support all the operations<br>you care to implement.  It&#39;s just that their semantics will in some<br>cases be subtly different from those of fixed-width integers.<br></p><p>&gt;&gt; Le 22 juin 2016 à 23:23, Félix Cloutier via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt;&gt; <br>&gt;&gt; Do we lose the ability to create a signed integer from an unsigned bit pattern?<br>&gt;&gt; <br>&gt;&gt; Is there a way to get an optional initializer that returns `nil` if the operand can&#39;t be represented?<br>&gt;&gt; <br>&gt;&gt; What is the cost of heterogeneous comparison?<br>&gt;&gt; <br>&gt;&gt; Félix<br>&gt;&gt; <br>&gt;&gt;&gt; Le 22 juin 2016 à 22:42:00, David Waite via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; In addition to the technical review, I would like to point out that<br>&gt;&gt;&gt; the definition of Arithmetic appears to be missing some underscores<br>&gt;&gt;&gt; in add/adding/subtract/subtracting<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; 	https://github.com/apple/swift-evolution/blob/master/proposals/0104-improved-integers.md<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; 	* What is your evaluation of the proposal?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I’m so glad this work is being done!<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; For Integer, does the presence of signBit indicate an expectation<br>&gt;&gt;&gt; that signed Integers will have a two&#39;s complement representation?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; For FixedWidthInteger#dividedWithOverflow/remainderWithOverflow,<br>&gt;&gt;&gt; under what situations would you have an overflow? I could only come<br>&gt;&gt;&gt; up with something like Int.min.dividedWithOverflow(-1).<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; 	* Is the problem being addressed significant enough to warrant a change to Swift?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Yes, oh yes.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; 	* Does this proposal fit well with the feel and direction of Swift?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; It looks like a significant improvement. <br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; 	* How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I combed the proposal for questions, although most were answered by the time I hit the end.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; -DW<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; _______________________________________________<br>&gt;&gt;&gt; swift-evolution mailing list<br>&gt;&gt;&gt; swift-evolution at swift.org<br>&gt;&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

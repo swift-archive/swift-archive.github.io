@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/92986d4d0e7edc94494b2e1478228204?s=50"></div><header><strong>Requiring self. to access properties and methods</strong> from <string>Florian Reinhart</string> &lt;florian at bottledsoftware.de&gt;<p>December  7, 2015 at 06:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I prefer prefixing property (and method) access with self. in my code. This makes it immediately obvious if a variable is local to the function or actually a property of the instance.<br></p><p>I assume this has already been discussed and would like to know why it was decided to not require self for property and method access.<br></p><p>—Florian<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/57885cfd0c4b4db16653e76d9e6f0266?s=50"></div><header><strong>Requiring self. to access properties and methods</strong> from <string>Johan Jensen</string> &lt;jj at johanjensen.dk&gt;<p>December  7, 2015 at 07:00:00pm</p></header><div class="content"><p>It has already been brought up in the (multiple) mail chains named &quot;Proposal:<br>Re-instate mandatory self for accessing instance properties and functions<br>&lt;https://lists.swift.org/pipermail/swift-evolution/2015-December/000209.html&gt;<br>&quot;.<br>You can find more threads and replies to that discussion at<br>https://lists.swift.org/pipermail/swift-evolution/.<br></p><p>—Johan<br></p><p>On Mon, Dec 7, 2015 at 6:21 PM, Florian Reinhart via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hi all,<br>&gt;<br>&gt; I prefer prefixing property (and method) access with self. in my code.<br>&gt; This makes it immediately obvious if a variable is local to the function or<br>&gt; actually a property of the instance.<br>&gt;<br>&gt; I assume this has already been discussed and would like to know why it was<br>&gt; decided to not require self for property and method access.<br>&gt;<br>&gt; —Florian<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151207/dff89d0c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

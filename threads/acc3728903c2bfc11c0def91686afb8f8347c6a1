@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3488bcf34d8c45d917ed27d67a0ffa45?s=50"></div><header><strong>Fix API disparities between Darwin and Corelibs Foundation</strong> from <string>David Hart</string> &lt;david at hartbit.com&gt;<p>June 25, 2016 at 12:00:00am</p></header><div class="content"><p>If the goal is to have Darwin and Corelibs Foundation as API compatible as possible, I think the Foundation team at Apple should start introducing some of the rare API changes back into Darwin Foundation before the final release of iOS 10 and macOS Sierra.<br></p><p>For example, it&#39;s currently impossible to initialize a Thread object with the same code on both platforms. Darwin has a target+action initializer and Corelibs has a closure initializer. As Corelibs can not have the target+action initializer, the only solution is to have Darwin implement the closure initializer.<br></p><p>This is just one example and I guess they are more out there.<br></p><p>Comments? How do we proceed?<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

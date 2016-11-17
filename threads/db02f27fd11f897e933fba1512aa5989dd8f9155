@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 22, 2016 at 03:00:00pm</p></header><div class="content"><p>on Fri Jan 22 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;       + When a mutating method is described by a verb, name its<br>&gt;       non-mutating counterpart according to the “ed/ing” rule,<br>&gt;       e.g. the non-mutating versions of x.sort() and x.append(y) are<br>&gt;       x.sorted() and x.appending(y).<br>&gt;<br>&gt; This is a nice rule in theory, but English fights it with the full<br>&gt; fury of its irregularity. There are a lot of common operations whose<br>&gt; past tense shares a spelling with the infinitive—&#39;split&#39;, &#39;cut&#39;,<br>&gt; &#39;read&#39;, and &#39;cast&#39; immediately come to mind. How do you handle naming<br>&gt; non-mutating versions of these operations? Conjugating other irregular<br>&gt; verbs also imposes a barrier on developers whose first language is not<br>&gt; English.<br></p><p>Agreed.  There are also operations that are not naturally verbs.  That&#39;s<br>why we still haven&#39;t changed unionInPlace in SetAlgebraType, for<br>example.  The “InPlace” suffix convention is the best thing I&#39;ve come up<br>with for handling these scenarios.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5af07e950f10c7c1df1c44bed055c1eb?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Daniel Steinberg</string> &lt;daniel at dimsumthinking.com&gt;<p>January 22, 2016 at 06:00:00pm</p></header><div class="content"><p>What I like about the inPlace suffix is<br></p><p>(1)  it makes it clear that a mutating variant is being used and<br>(2) the bulk of inPlace pushes us in the direction of non-mutating versions.<br></p><p><br>In early Swift I believe the names were sort and sorted and I could never remember which is which (yes, of course the signature makes that clear) but sort vs sortInPlace seems more clear to me as a consumer of an API.<br></p><p>That said, once a naming convention is settled - it will be easy enough to reason about as the guidelines will be clear.<br></p><p>Daniel <br></p><p><br>&gt; On Jan 22, 2016, at 6:17 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Fri Jan 22 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt;      + When a mutating method is described by a verb, name its<br>&gt;&gt;      non-mutating counterpart according to the “ed/ing” rule,<br>&gt;&gt;      e.g. the non-mutating versions of x.sort() and x.append(y) are<br>&gt;&gt;      x.sorted() and x.appending(y).<br>&gt;&gt; <br>&gt;&gt; This is a nice rule in theory, but English fights it with the full<br>&gt;&gt; fury of its irregularity. There are a lot of common operations whose<br>&gt;&gt; past tense shares a spelling with the infinitive—&#39;split&#39;, &#39;cut&#39;,<br>&gt;&gt; &#39;read&#39;, and &#39;cast&#39; immediately come to mind. How do you handle naming<br>&gt;&gt; non-mutating versions of these operations? Conjugating other irregular<br>&gt;&gt; verbs also imposes a barrier on developers whose first language is not<br>&gt;&gt; English.<br>&gt; <br>&gt; Agreed.  There are also operations that are not naturally verbs.  That&#39;s<br>&gt; why we still haven&#39;t changed unionInPlace in SetAlgebraType, for<br>&gt; example.  The “InPlace” suffix convention is the best thing I&#39;ve come up<br>&gt; with for handling these scenarios.<br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

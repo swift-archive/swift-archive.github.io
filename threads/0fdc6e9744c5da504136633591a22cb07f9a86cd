@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f2602cf02202a0b5b4ece6ace2f1d65a?s=50"></div><header><strong>typealias in a protocol: can only be used as generic constraint?</strong> from <string>Jonathan Bailey</string> &lt;jon889 at me.com&gt;<p>December 28, 2015 at 11:00:00pm</p></header><div class="content"><p>In the following code, I get an error on the line indicated (4th from the bottom) that &quot;Protocol &#39;APIEndPoint&#39; can only be used as a generic constraint because it has Self or associated type requirements” I understand this is because the APIEndPoint protocol contains a type alias. However I don’t understand why this means it can’t be used as a type? I simply want the init method I’m defining to be able to accept any object/enum that conforms to the APIEndPoint protocol.<br></p><p>protocol API {<br>    static var baseUrl : String { get };<br>}<br></p><p>protocol APIEndPoint {<br>    typealias ParentAPI : API<br>    var path: String { get }<br>    func urlString() -&gt; String<br>}<br>extension APIEndPoint {<br>    func urlString() -&gt; String {<br>        return ParentAPI.baseUrl + path;<br>    }<br>}<br></p><p>extension NSURL {<br>    convenience init(instance:APIEndPoint) { //error here<br>        self.init(string:instance.urlString())!<br>    }<br>}<br></p><p>If I change that line to `convenience init&lt;T:APIEndPoint&gt;(instance:T) {`then there is no problem.<br></p><p>Also if I split the APIEndPoint protocol in 2, like so:<br></p><p>protocol APIEndPointBase {<br>    var path: String { get }<br>    func urlString() -&gt; String<br>}<br>protocol APIEndPoint : APIEndPointBase {<br>    typealias ParentAPI : API<br>}<br></p><p><br>Then the change the line with the error to:<br></p><p>convenience init(instance:APIEndPointBase) {<br></p><p>then there is also no error.<br></p><p>The ability to work around this error makes it seem like the error is pointless. Even if I used the ParentAPI typealias with the protocol definition, I don’t see why I can’t use it as I have in the first code segment. Why does having Self or associated type requirements mean that the protocol can only be used as a generic constraint?<br></p><p>Apologies if I have posted this incorrectly, this is the first time I’ve used a mailing list<br></p><p>Jonathan<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151228/0fdc86cd/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>typealias in a protocol: can only be used as generic constraint?</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>December 29, 2015 at 12:00:00am</p></header><div class="content"><p>&gt; On Dec 28, 2015, at 3:43 PM, Jonathan Bailey via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; In the following code, I get an error on the line indicated (4th from the bottom) that &quot;Protocol &#39;APIEndPoint&#39; can only be used as a generic constraint because it has Self or associated type requirements” I understand this is because the APIEndPoint protocol contains a type alias. However I don’t understand why this means it can’t be used as a type?<br></p><p>I finally understand the reason, after reading [a draft of] objc.io&#39;s Advanced Swift book. You can’t use such a protocol as a type because if the aliased type appears in the API, it won’t be consistent between different objects that conform to the protocol but have different aliased types. For example, if a protocol Foo has a method foo() that returns a typealias T, then different objects conforming to Foo will return different types from their foo() methods, so there’s no type-safe way to represent that return value.<br></p><p>In your case you’ve got a typealias but you’re not using it in the protocol’s API. It looks like it’s just internally used inside the implementation of the urlString method. You can probably change your code around to get the same effect without using a typealias. Make baseURL a regular non-static method of API, then just have a property of APIEndpoint of type API.<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151229/d3996e77/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

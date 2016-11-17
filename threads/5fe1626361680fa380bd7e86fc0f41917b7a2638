@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/aea2e26d03f169b1ad6008a77bab533f?s=50"></div><header><strong>Hi, About centos7.x source compiler error &#39;no such module &#39;SwiftGlibc&#39;&#39;</strong> from <string>SonWa</string> &lt;six at sonwa.cn&gt;<p>August 19, 2016 at 07:00:00am</p></header><div class="content"><p>Hi,<br>Swift 3.0 Preview 6 code to run &quot;./swift/utils/update-checkout --clone&quot; by the script download.<br>I have a new trouble,Centos 7.x run &quot;./swift/utils/build-script -R&quot; source code compiled is OK.<br> But, run &quot;./swift/utils/build-script --preset=buildbot_linux installable_package=/tmp/swift.tar.gz install_destdir=/tmp/swift-install&quot; is error.<br> <br></p><p>=======================↓↓↓error↓↓↓============================<br> <br>[558/624] Compiling /usr/local/src/build/buildbot_linux/swift-linux-x86_64/stdlib/public/Platform/linux/x86_64/Glibc.o<br> <br>FAILED: stdlib/public/Platform/linux/x86_64/Glibc.o lib/swift/linux/x86_64/Glibc.swiftmodule lib/swift/linux/x86_64/Glibc.swiftdoc <br> <br>cd /usr/local/src/build/buildbot_linux/swift-linux-x86_64/stdlib/public/Platform &amp;&amp; /usr/bin/cmake -E make_directory /usr/local/src/build/buildbot_linux/swift-linux-x86_64/stdlib/public/Platform/linux/x86_64 &amp;&amp; /usr/bin/cmake -E make_directory /usr/local/src/build/buildbot_linux/swift-linux-x86_64/./lib/swift/linux/x86_64 &amp;&amp; /usr/local/src/swift/utils/line-directive /usr/local/src/swift/stdlib/public/Platform/Glibc.swift /usr/local/src/swift/stdlib/public/Platform/Platform.swift /usr/local/src/swift/stdlib/public/Platform/TiocConstants.swift /usr/local/src/build/buildbot_linux/swift-linux-x86_64/stdlib/public/Platform/8/tgmath.swift -- /usr/local/src/build/buildbot_linux/swift-linux-x86_64/./bin/swiftc -c -sdk / -target x86_64-unknown-linux-gnu -resource-dir /usr/local/src/build/buildbot_linux/swift-linux-x86_64/./lib/swift -O -I /usr/local/src/build/buildbot_linux/swift-linux-x86_64/./lib/swift/linux/x86_64 -module-cache-path /usr/local/src/build/buildbot_linux/swift-linux-x86_64/./module-cache -no-link-objc-runtime -autolink-force-load -module-link-name swiftGlibc -force-single-frontend-invocation -parse-as-library -emit-module -emit-module-path /usr/local/src/build/buildbot_linux/swift-linux-x86_64/./lib/swift/linux/x86_64/Glibc.swiftmodule -o /usr/local/src/build/buildbot_linux/swift-linux-x86_64/stdlib/public/Platform/linux/x86_64/Glibc.o /usr/local/src/swift/stdlib/public/Platform/Glibc.swift /usr/local/src/swift/stdlib/public/Platform/Platform.swift /usr/local/src/swift/stdlib/public/Platform/TiocConstants.swift /usr/local/src/build/buildbot_linux/swift-linux-x86_64/stdlib/public/Platform/8/tgmath.swift<br> <br>/usr/local/src/swift/stdlib/public/Platform/Glibc.swift:13:19: error: no such module &#39;SwiftGlibc&#39;<br> <br>@_exported import SwiftGlibc // Clang module<br> <br>                  ^<br> <br>ninja: build stopped: subcommand failed.<br> <br>./swift/utils/build-script: fatal error: command terminated with a non-zero exit status 1, aborting<br> <br>./swift/utils/build-script: fatal error: command terminated with a non-zero exit status 1, aborting<br></p><p>=======================↑↑↑error↑↑↑============================<br></p><p><br></p><p><br>How to solve this problem?Requesting for help.<br></p><p>Thank you!<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160819/5fe12638/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

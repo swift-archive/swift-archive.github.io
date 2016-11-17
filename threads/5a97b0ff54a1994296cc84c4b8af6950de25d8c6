@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/265868676ac8f12472cc3cc0fc59d827?s=50"></div><header><strong>Review on SE-0007 (Remove C-style for-loops with conditions and incrementers)</strong> from <string>Nicky Gerritsen</string> &lt;nickygerritsen at me.com&gt;<p>December  8, 2015 at 07:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>Just wanted to give my opinion on this proposal :). Let’s go through it following the suggested questions.<br></p><p>What is your evaluation of the proposal?<br>I am 100% in favor of doing this. I think Erica makes good points and clearly explains what the impact on existing code is. In my opinion this impact is not too big, because - as Erica suggests - I believe only people coming from languages that have the C-style for-loop use it and only when starting with Swift.<br>Now that ++ and — are gone, I think it is indeed a good time to get rid of this C-style for-loop as well.<br></p><p>Furthermore, Erica typed &quot;using familiar constants and control structures. The for-loop mimics C and limits the effort needed to master this control flow.”. But I think that people who come from a C-style language have enough skills to know how loops work and can easily adapt their code to the for-in syntax.<br></p><p>Is the problem being addressed significant enough to warrant a change to Swift?<br>Yes I think that this will make the language less “cluttered” and it will probably also make the language implementation easier.<br></p><p>Does this proposal fit well with the feel and direction of Swift?<br>As already stated by others and by Erica, the C-style for-loop does not feel “Swifty” at all and removing it will thus be good for the direction of Swift.<br></p><p>If you have you used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br>I can’t really think of another language I used from the top of my mind that did not have a C-style for-loop, sorry.<br></p><p>How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>I read the proposal thoroughly and also read other peoples remarks on it. Furthermore I did some digging in our code and found one spot where I used the C-style for loop, which I trivially rewrote to use ..&lt;<br></p><p>Conclusion<br>Get rid of it ;). Furthermore, great job to Erica for putting her time into this proposal :).<br></p><p>Regards,<br></p><p>Nicky<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151208/5a97d8c6/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

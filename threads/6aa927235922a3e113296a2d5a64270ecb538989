@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b660eecceda60138f137d353b8289925?s=50"></div><header><strong>Design and performance of Vector2/3/4 and Matrix</strong> from <string>Janosch Hildebrand</string> &lt;jnosh at jnosh.com&gt;<p>December 19, 2015 at 01:00:00am</p></header><div class="content"><p>&gt; On 19 Dec 2015, at 00:12, David Turnbull &lt;dturnbull at gmail.com &lt;mailto:dturnbull at gmail.com&gt;&gt; wrote:<br>&gt; <br>&gt; On Fri, Dec 18, 2015 at 2:31 PM, Janosch Hildebrand via swift-users &lt;swift-users at swift.org &lt;mailto:swift-users at swift.org&gt;&gt; wrote:<br>&gt; You will also want to have this code in the same module that is using this type.<br>&gt; If you&#39;re using these types from another module you&#39;re limited to unspecialized generics which are (unsurprisingly) very slow.<br>&gt; <br>&gt; This is becoming clear. Hopefully these patterns can be optimized across modules eventually. <br></p><p>Agreed. I think we&#39;ll eventually want some way to &quot;inline&quot; dependencies with the package manager to treat them as one target for optimization purposes. The standard library is fancier even and can essentially specializes and inlines most of it&#39;s code into yours when you use it but I don&#39;t know if we&#39;ll get those abilities for our own modules at some point.<br></p><p>For now you can use @transparent (or @_transparent for Swift 2.2) to force-inline functions across module boundaries but that&#39;s it as far as I know.<br></p><p>&gt; It&#39;s easy enough to write a pre-processor that expands the generics into four specializations. But it doesn&#39;t solve everything so not a priority.<br>&gt;  <br>&gt; And since you probably need to drop generics anyway it might make sense to simply wrap the respective GLKit types on OS X and iOS for the GLFloat variants as they are already highly optimized. I have some wrappers for the GLKMatrix and GLKVector types lying around in my own OpenGL wrapper (incidentally also named SwiftGL ;-)) which might save you some typing if you&#39;re interested...<br>&gt; <br>&gt; I&#39;m trailblazing cross-platform OpenGL in Swift. Given there&#39;s only one other platform, the key question is, &quot;Does it work on Linux?&quot;<br></p><p>If you only care about having a simple cross-platform library, doing a simple implementation by yourself is fine. Also Swift (well, LLVM) is also pretty good at auto-vectorization so you get decent results for custom vector/matrix types.<br></p><p>However OpenGL-related code is usually pretty performance sensitive and the math parts doubly so, so I&#39;d recommend wrapping some appropriate libraries instead of writing your own...<br></p><p>Now if you find a nice cross-platform C library you could wrap that, C++ (for example http://glm.g-truc.net/0.9.7/api/index.html &lt;http://glm.g-truc.net/0.9.7/api/index.html&gt;) also works but then you&#39;d also have to write a C wrapper first :-(<br></p><p>Now on the Apple side, the Accelerate, GLKit and simd modules contain vector and matrix types/functions but these are OS X and iOS only...<br>Using a single cross platform library is obviously simpler but using these on the Apple platforms would remove the need for a separate dependency there and they are likely well optimized for the target architectures.<br></p><p>&gt; Is your SwiftGL online somewhere? A cursory search didn&#39;t yield anything. <br></p><p>No. I mostly just wrapped the OpenGL symbols I needed and experimented with some other additions but as a whole it wasn&#39;t really in a state to be published. I don&#39;t know if it&#39;d be much use to you but if you&#39;re interested l I can give you the code in whatever form is most convenient for you :-)<br></p><p>&gt; -david (https://github.com/AE9RB/SwiftGL &lt;https://github.com/AE9RB/SwiftGL&gt;)<br></p><p>- Janosch<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151219/6aa98989/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/63be6c2a94298d366a2747edfac0bf0e?s=50"></div><header><strong>custom attribute in userland (annotation).</strong> from <string>Axel Etcheverry</string> &lt;axel at etcheverry.biz&gt;<p>June  9, 2016 at 12:00:00am</p></header><div class="content"><p>Hello Swift Community,<br></p><p>This is my first proposal...<br></p><p>What do you think to add custom attributes in Swift?<br></p><p>Example of use: https://gist.github.com/euskadi31/2e15d21bc718b6f02f3497ad3e0a531d &lt;https://gist.github.com/euskadi31/2e15d21bc718b6f02f3497ad3e0a531d&gt;<br></p><p>For recovery of the attributes in the runtime, we could go through reflection or in the compilation phase and accessible via a property or method.<br></p><p>-- <br>Best regards,<br>Axel Etcheverry<br>CTO at Kokoroe<br></p><p>Phone : +33(6) 84 15 57 52<br>Website : www.kokoroe.co &lt;https://www.kokoroe.co/&gt;<br></p><p><br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160609/a4c8368a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>custom attribute in userland (annotation).</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>June  8, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; What do you think to add custom attributes in Swift?<br>&gt; <br>&gt; Example of use: https://gist.github.com/euskadi31/2e15d21bc718b6f02f3497ad3e0a531d<br>&gt; <br>&gt; For recovery of the attributes in the runtime, we could go through reflection or in the compilation phase and accessible via a property or method.<br></p><p>Swift&#39;s current reflection APIs are massively underpowered to support this feature. For instance, there is no way to list or retrieve types, methods, initializers, subscripts, or most of the other things you would want to attach attributes to. Even property access is extremely limited—you can only list the names and values of all properties on a specific instance. Designing this would have to come before the sort of custom attributes you want, because there&#39;s simply no way to access the attributes without them.<br></p><p>You may be interested in the property behaviors proposal: &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0030-property-behavior-decls.md&gt; This would introduce a broadly similar feature for properties, though it would work in a different way: Rather than annotating entities with information you could discover through a reflection API, property behaviors would install custom getters and setters which could call into functionality provided by the instance, use storage private to the behavior, and offer per-property customization hooks along the lines of `willSet` and `didSet`.<br></p><p>Unfortunately, the proposal was sent back for revision, and at this point the team&#39;s focus is shifting towards implementing already-approved changes and polishing existing features as we get closer to release. I&#39;m just a guy, not a member of the core team, but I&#39;m guessing nothing in this space will be seriously considered before planning for Swift 4 begins.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0006 Apply API Guidelines to the Standard Library</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 30, 2016 at 09:00:00pm</p></header><div class="content"><p>on Sat Jan 30 2016, Goffredo Marocchi &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On 30 Jan 2016, at 02:47, Alex Migicovsky via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; IMO the ‘like’ suffix makes it sound like the conforming type to<br>&gt;&gt; Collectionlike is like a Collection, but not exactly a Collection.<br>&gt;<br>&gt; and isn&#39;t this the point of protocols? To decouple the behaviour you<br>&gt; expose/the contract you make from what you actually are/how you are<br>&gt; implemented?<br></p><p>The point is that conforming to a protocol is supposed to be a strong<br>declaration about not just syntax, but semantics.  You could read my<br>posts in this 14-year-old thread<br>&lt;http://www.gossamer-threads.com/lists/python/python/133396#133396&gt;<br>(geez, now I feel ancient) if you want to understand what I mean.<br></p><p>&gt;&gt; Maybe there’s another suffix that works but I don’t think this one conveys the right information.<br>&gt;&gt; <br>&gt;&gt; - Alex<br>&gt;&gt; <br>&gt;&gt;&gt;&gt; On Jan 29, 2016, at 6:43 PM, Brent Royal-Gordon via<br>&gt;&gt;&gt;&gt; swift-evolution<br>&gt;&gt;&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Count me among those who liked the ‘Type’ suffix for protocols though.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I wonder if we can&#39;t change it to a -`like` suffix. Applying that to 2.1 stdlib gives you:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; AnyCollectionlike<br>&gt;&gt;&gt; BidirectionalIndexlike<br>&gt;&gt;&gt; BitwiseOperationslike<br>&gt;&gt;&gt; Booleanlike<br>&gt;&gt;&gt; CVarArglike<br>&gt;&gt;&gt; Collectionlike<br>&gt;&gt;&gt; Errorlike<br>&gt;&gt;&gt; FloatingPointlike<br>&gt;&gt;&gt; ForwardIndexlike<br>&gt;&gt;&gt; Generatorlike<br>&gt;&gt;&gt; IntegerArithmeticlike<br>&gt;&gt;&gt; Integerlike<br>&gt;&gt;&gt; Intervallike<br>&gt;&gt;&gt; LazyCollectionlike<br>&gt;&gt;&gt; LazySequencelike<br>&gt;&gt;&gt; MirrorPathlike<br>&gt;&gt;&gt; MutableCollectionlike<br>&gt;&gt;&gt; OptionSetlike<br>&gt;&gt;&gt; OutputStreamlike<br>&gt;&gt;&gt; RandomAccessIndexlike<br>&gt;&gt;&gt; RangeReplaceableCollectionlike<br>&gt;&gt;&gt; ReverseIndexlike<br>&gt;&gt;&gt; Sequencelike<br>&gt;&gt;&gt; SetAlgebralike<br>&gt;&gt;&gt; SignedIntegerlike<br>&gt;&gt;&gt; SignedNumberlike<br>&gt;&gt;&gt; UnicodeCodeclike<br>&gt;&gt;&gt; UnsignedIntegerlike<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Not all of these are perfect, but in some cases that&#39;s because they<br>&gt;&gt;&gt; should arguably be -able protocols (BitwiseOperationsType -&gt;<br>&gt;&gt;&gt; BitwiseOperable).<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; -- <br>&gt;&gt;&gt; Brent Royal-Gordon<br>&gt;&gt;&gt; Architechies<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; _______________________________________________<br>&gt;&gt;&gt; swift-evolution mailing list<br>&gt;&gt;&gt; swift-evolution at swift.org<br>&gt;&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

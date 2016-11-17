@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0065 A New Model for Collections and Indices</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 12, 2016 at 03:00:00pm</p></header><div class="content"><p>on Tue Apr 12 2016, Nate Cook &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;     On Apr 12, 2016, at 4:15 AM, Dmitri Gribenko via swift-evolution<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     On Mon, Apr 11, 2016 at 9:56 PM, Brent Royal-Gordon via<br>&gt;     swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     (On the other hand, it might be that I&#39;m conceiving of the purpose of<br>&gt;         `limitedBy` differently from you—I think of it as a safety measure, but<br>&gt;         you may be thinking of it specifically as an automatic truncation<br>&gt;         mechanism.)<br>&gt;<br>&gt;     Hi Brent,<br>&gt;<br>&gt;     Could you explain what kind of safety do you have in mind? Swift will<br>&gt;     guarantee memory safety even if you attempt to advance an index past<br>&gt;     endIndex using the non-limiting overload.<br>&gt;<br>&gt; One challenge that I&#39;ve run into is that the `limitedBy` methods throw away one<br>&gt; bit of information—namely, did I move as far as I requested or not? <br></p><p>You&#39;re right, Nate.  I think we&#39;ll try to fix that in the next iteration.<br></p><p>&gt; Example:<br>&gt;<br>&gt; let j = c.index(10, stepsFrom: i, limitedBy: c.endIndex)<br>&gt;<br>&gt; There&#39;s no way to interpolate the answer to that question efficiently in a<br>&gt; non-random-access collection. If `j` is equal to `c.endIndex`, that could be<br>&gt; because `c.endIndex` is ten steps after `i` *or* because the limit kicked in,<br>&gt; and without checking `c.distance(from: i, to: j)` there&#39;s no way to know for<br>&gt; sure.<br>&gt;<br>&gt; If the `limitedBy` methods returned an optional index, we&#39;d get all the<br>&gt; information that the index-moving algorithm finds (let&#39;s hear it for the Law of<br>&gt; Useful Return!). With that API, we could decide whether to use the returned<br>&gt; index or not:<br>&gt;<br>&gt; // Use the resulting index no matter what:<br>&gt; let i = c.index(10, stepsFrom: c.startIndex, limitedBy: c.endIndex) ??<br>&gt; c.endIndex<br>&gt; let prefix = c.prefix(upTo: i)<br>&gt;<br>&gt; // Only use the result if it wasn&#39;t limited:<br>&gt; if let j = c.index(10, stepsFrom: i, limitedBy: c.endIndex) {<br>&gt; let sub = c[i..&lt;j] // sub.count == 10<br>&gt; } else {<br>&gt; // not enough elements...<br>&gt; }<br>&gt;<br>&gt; // &quot;Safe&quot; successor:<br>&gt; if let j = c.index(1, stepsFrom: i, limitedBy: c.endIndex) {<br>&gt; // ...<br>&gt; }<br>&gt;<br>&gt; Nate<br>&gt;<br>&gt;     Dmitri<br>&gt;<br>&gt;     -- <br>&gt;     main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>&gt;     (j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko<br>&gt;     &lt;gribozavr at gmail.com&gt;*/<br>&gt;     _______________________________________________<br>&gt;     swift-evolution mailing list<br>&gt;     swift-evolution at swift.org<br>&gt;     https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Discussion]: Renaming #line, the line control statement</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 11, 2016 at 01:00:00pm</p></header><div class="content"><p>on Thu Feb 11 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Feb 8, 2016, at 10:45 AM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; A more flexible grammar was suggested, however, as Kevin Ballard<br>&gt;&gt;&gt; pointed out, &quot;This feature isn&#39;t something end users are going to<br>&gt;&gt;&gt; use. And it&#39;s not something that will ever reasonably apply to<br>&gt;&gt;&gt; anything except #file and #line. This feature is only ever intended to<br>&gt;&gt;&gt; be used by tools that auto-generate source files. The most important<br>&gt;<br>&gt;&gt;&gt; concerns here really should just be that whatever we use is trivial to<br>&gt;&gt;&gt; generate correctly by even the simplest of tools and is readable. And<br>&gt;&gt;&gt; since this won&#39;t ever apply to anything beyond #file and #line,<br>&gt;&gt;&gt; there&#39;s no need to try to generalize this feature at all.&quot;<br>&gt;&gt; <br>&gt;&gt; +1 for the idea, but...<br>&gt;&gt; <br>&gt;&gt; I don&#39;t think we should make this change without also making the feature<br>&gt;&gt; useful for things like gyb, which has to use its own home-brew line<br>&gt;&gt; directive machinery because #line is AFAIK currently useless for any<br>&gt;&gt; known application.  The way it currently works you can only put the<br>&gt;&gt; directive at grammatical boundaries in the program where #if would also<br>&gt;&gt; work.  For #if this is a feature, but for #resetfilecontext it&#39;s a bug.<br>&gt;&gt; <br>&gt;&gt; Isn&#39;t it the case that making this feature useful would require a lot<br>&gt;&gt; more than the simple syntactic shuffle being proposed here?<br>&gt;<br>&gt; I completely disagree with this approach.  Making the existing feature<br>&gt; “more useful” is orthogonal from repainting it.  Getting the paint<br>&gt; right is a high priority for Swift 3, but making it “more useful” is<br>&gt; low priority.<br></p><p>Fair enough.  I suppose as long as it&#39;s useless any further changes<br>won&#39;t break much code anyhow ;-)<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

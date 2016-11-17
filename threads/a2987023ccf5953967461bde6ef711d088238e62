@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Proposal] Remove eager `map` and `filter`</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 19, 2016 at 03:00:00pm</p></header><div class="content"><p>1. Make sure that<br></p><p>Array(sequence.lazy.map { ... })   and   sequence.map { ... }<br>Array(sequence.lazy.filter { ... })   and   sequence.filter { ... }<br></p><p>are just as fast (with -O). &quot;Fix lazy filter&quot; proposal should help with<br>this.<br></p><p>2. Remove eager `map` and `filter`<br></p><p>3. Remove `lazy` property<br></p><p>sequence.map { ... }  will call lazy `map`, which is at least as fast as<br>eager version<br></p><p>4. Re-add `array` property to LazySequence<br></p><p>So that we can more easily convert to multipass sequence when needed.<br></p><p>- Anton<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160619/a2988e62/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>[Proposal] Remove eager `map` and `filter`</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>June 19, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; 1. Make sure that<br>&gt; <br>&gt; Array(sequence.lazy.map { ... })   and   sequence.map { ... }<br>&gt; Array(sequence.lazy.filter { ... })   and   sequence.filter { ... }<br>&gt; <br>&gt; are just as fast (with -O). &quot;Fix lazy filter&quot; proposal should help with this.<br>&gt; <br>&gt; 2. Remove eager `map` and `filter`<br>&gt; <br>&gt; 3. Remove `lazy` property<br>&gt; <br>&gt; sequence.map { ... }  will call lazy `map`, which is at least as fast as eager version<br>&gt; <br>&gt; 4. Re-add `array` property to LazySequence<br>&gt; <br>&gt; So that we can more easily convert to multipass sequence when needed.<br></p><p>The first three Swift 1 betas were this way; then the lazy higher-order functions were changed to the current design, apparently because the all-lazy solution was confusing. (It&#39;s also worth noting that if we had only lazy versions, they could not take @noescape.) So I don&#39;t really think this is going to fly.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/50dd35c1aca57b8fe4a19911c44fa584?s=50"></div><header><strong>Want to Contribute in Swift</strong> from <string>Manish Bisht</string> &lt;manish.bisht490 at gmail.com&gt;<p>January 18, 2016 at 11:00:00pm</p></header><div class="content"><p>Hello Developers,<br></p><p>I am Manish Bisht. I am in second year of my engineering in Information<br>Technology. I want to provide the code for Swift. I have created many<br>projects outside of my college projects. You can see all at https<br>&lt;https://github.com/manishbisht&gt;:// &lt;https://github.com/manishbisht&gt;<br>github.com &lt;https://github.com/manishbisht&gt;/manishbisht<br>&lt;https://github.com/manishbisht&gt;. I am familiar with many languages some of<br>them are HTML, CSS, JavaScript, PHP, C/C++, Java, and I am<br>currently learning Python also.<br></p><p>Also apart from my college hours i have also started my own startup with<br>Run4Offers (http:// &lt;http://www.run4offers.com/&gt;www.run4offers.com/<br>&lt;http://www.run4offers.com/&gt;)<br></p><p>I have also interested in Graphics Designing also. I have the knowledge of<br>Adobe Photoshop, Adobe Illustrator and Adobe In Design. I have created many<br>images of various festivals for my College Entrepreneurship Cell(TOPAZ).<br></p><p>This is all about about me.<br></p><p>I am new to open source communities. I want to work on the projects<br>that can make world wide impact which Swift does. So I have selected<br>Swift and want to start contributing to it. Can anyone please help me<br>in contributing to Swift.<br></p><p>Hope to see you soon :)<br></p><p>Thanks :)<br></p><p>Manish Bisht<br>Founder/CEO<br>Run4Offers.com<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160118/c73b0c93/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/30e4ca9ef73f6a84d52c26952c180bcd?s=50"></div><header><strong>Want to Contribute in Swift</strong> from <string>Jeff Hajewski</string> &lt;jeff.hajewski at gmail.com&gt;<p>January 18, 2016 at 12:00:00pm</p></header><div class="content"><p>Hey Manish,<br></p><p>Check out bugs.swift.org and search for filed bugs that have the label<br>&quot;StarterBug&quot;. These are bugs that have been filed and categorized as bugs<br>that would be a good place to get your feet wet. Additionally, check out<br>the page on contributing at Swift.org (https://swift.org/contributing/).<br></p><p>Thanks,<br>Jeff<br></p><p>On Mon, Jan 18, 2016 at 12:33 PM, Manish Bisht via swift-dev &lt;<br>swift-dev at swift.org&gt; wrote:<br></p><p>&gt; Hello Developers,<br>&gt;<br>&gt; I am Manish Bisht. I am in second year of my engineering in Information<br>&gt; Technology. I want to provide the code for Swift. I have created many<br>&gt; projects outside of my college projects. You can see all at https<br>&gt; &lt;https://github.com/manishbisht&gt;:// &lt;https://github.com/manishbisht&gt;<br>&gt; github.com &lt;https://github.com/manishbisht&gt;/manishbisht<br>&gt; &lt;https://github.com/manishbisht&gt;. I am familiar with many languages some<br>&gt; of them are HTML, CSS, JavaScript, PHP, C/C++, Java, and I am<br>&gt; currently learning Python also.<br>&gt;<br>&gt; Also apart from my college hours i have also started my own startup with<br>&gt; Run4Offers (http:// &lt;http://www.run4offers.com/&gt;www.run4offers.com/<br>&gt; &lt;http://www.run4offers.com/&gt;)<br>&gt;<br>&gt; I have also interested in Graphics Designing also. I have the knowledge of<br>&gt; Adobe Photoshop, Adobe Illustrator and Adobe In Design. I have created many<br>&gt; images of various festivals for my College Entrepreneurship Cell(TOPAZ).<br>&gt;<br>&gt; This is all about about me.<br>&gt;<br>&gt; I am new to open source communities. I want to work on the projects<br>&gt; that can make world wide impact which Swift does. So I have selected<br>&gt; Swift and want to start contributing to it. Can anyone please help me<br>&gt; in contributing to Swift.<br>&gt;<br>&gt; Hope to see you soon :)<br>&gt;<br>&gt; Thanks :)<br>&gt;<br>&gt; Manish Bisht<br>&gt; Founder/CEO<br>&gt; Run4Offers.com<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160118/83b26e94/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

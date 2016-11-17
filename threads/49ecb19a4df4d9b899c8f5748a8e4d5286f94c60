@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>guard let x = x</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>October 28, 2016 at 07:00:00pm</p></header><div class="content"><p>I think we should just have an “Unwrappable” protocol with a function/property that gets called by the statement.  Then types can just define it for themselves based on whatever makes sense.<br></p><p>That, or Xiaodi’s idea for union types (since I really want union types)<br></p><p>Thanks,<br>Jon <br></p><p>&gt; &gt; On Oct 28, 2016, at 5:55 PM, Kevin Nattinger &lt;swift at nattinger.net &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;&gt; wrote:<br>&gt; &gt; <br>&gt; &gt;&gt; <br>&gt; &gt;&gt; On Oct 28, 2016, at 4:45 PM, Erica Sadun via swift-evolution &lt;swift-evolution at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt; &lt;mailto:swift-evolution at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;&gt;&gt; wrote:<br>&gt; &gt;&gt; <br>&gt; &gt;&gt; <br>&gt; &gt;&gt;&gt; On Oct 28, 2016, at 5:00 PM, Huon Wilson &lt;huon at apple.com &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt; &lt;mailto:huon at apple.com &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;&gt;&gt; wrote:<br>&gt; &gt;&gt;&gt; <br>&gt; &gt;&gt;&gt; <br>&gt; &gt;&gt;&gt;&gt; On Oct 28, 2016, at 15:34, Erica Sadun via swift-evolution &lt;swift-evolution at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt; &lt;mailto:swift-evolution at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;&gt;&gt; wrote:<br>&gt; &gt;&gt;&gt;&gt;  &lt;https://gist.github.com/erica/db9ce92b3d23cb20799460f603c0ae7c#detailed-design &lt;https://gist.github.com/erica/db9ce92b3d23cb20799460f603c0ae7c#detailed-design&gt;&gt;Detailed Design<br>&gt; &gt;&gt;&gt;&gt; <br>&gt; &gt;&gt;&gt;&gt; unwrap can be used with any one-value enumeration. The unwrapped value is bound to the same symbol as the associated type.<br>&gt; &gt;&gt;&gt;&gt; <br>&gt; &gt;&gt;&gt;&gt; enum TypeName&lt;T, U&gt; { case anycase(T), anothercase(U) }<br>&gt; &gt;&gt;&gt;&gt; <br>&gt; &gt;&gt;&gt;&gt; // First and second are type `TypeName`<br>&gt; &gt;&gt;&gt;&gt; let first = TypeName.anyCase(value1)<br>&gt; &gt;&gt;&gt;&gt; let second = TypeName. anothercase(value2)<br>&gt; &gt;&gt;&gt;&gt; <br>&gt; &gt;&gt;&gt;&gt; guard unwrap first else { ... }<br>&gt; &gt;&gt;&gt;&gt; // first is now shadowed as type T<br>&gt; &gt;&gt;&gt;&gt; <br>&gt; &gt;&gt;&gt;&gt; guard unwrap second else { ... }<br>&gt; &gt;&gt;&gt;&gt; // second is now shadowed as type U<br>&gt; &gt;&gt;&gt;&gt;  &lt;https://gist.github.com/erica/db9ce92b3d23cb20799460f603c0ae7c#impact-on-existing-code &lt;https://gist.github.com/erica/db9ce92b3d23cb20799460f603c0ae7c#impact-on-existing-code&gt;&gt;<br>&gt; &gt;&gt;&gt; How does the compiler decide whether to succeed on anycase or succeed on anothercase respectively? In general, the compiler only statically knows that first &amp; second are of type TypeName, not anything about which case (they could be passed in as function parameters, or returned by an opaque function e.g. `let x = OtherLibrary.returnsTypeName(); guard unwrap x else { … }`), and thus the variant to unwrap has to be chosen based only on that piece of information.<br>&gt; &gt;&gt;&gt; <br>&gt; &gt;&gt;&gt; It seems to me that doing this either has to be restricted to enums with an “obvious” choice for unwrapping, like Optional, or rely on a sort of forward-looking type inference that Swift doesn’t currently use to deduce the unwrapped type based on how the value is used later (and I’m not sure that works in all cases, e.g. what if T == U for the TypeName example).<br>&gt; &gt;&gt; <br>&gt; &gt;&gt; It succeeds on any one-item case and fails on any non-item case.<br>&gt; &gt; <br>&gt; &gt; I think he meant this:<br>&gt; &gt; <br>&gt; &gt; enum TypeName&lt;T, U&gt; { case anycase(T), anothercase(U) }<br>&gt; &gt; <br>&gt; &gt; func foo&lt;T, U&gt;(instance: TypeName&lt;T, U&gt;) {<br>&gt; &gt; 	guard unwrap instance else { ... }<br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; What type does instance have? <br>&gt; <br>&gt; Fair enough. How about: An unwrappable enumeration must have at most one generic type so the compiler can guarantee at compile time that the type is unambiguous if the unwrapping succeeds<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161028/49ec4c60/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e9b374b9587bd8da1a1a027c8716ac0d?s=50"></div><header><strong>[Review #2] SE-0117: Default classes to be	non-subclassable publicly</strong> from <string>Rod Brown</string> &lt;rodney.brown6 at icloud.com&gt;<p>July 16, 2016 at 07:00:00am</p></header><div class="content"><p>Review link: <br>https://github.com/apple/swift-evolution/blob/master/proposals/0117-non-public-subclassable-by-default.md<br></p><p><br>* What is your evaluation of the proposal?<br>+1 for the implementation. +0.5 for the concept. I think this is a clean interface for what open should be, and am glad at the simplification. This seems very &quot;Swifty&quot;, and much better than the first proposal. I&#39;m concerned that this may be over-limiting developers, and while everything looks great in theory, I am concerned that this may not be a good decision for real-world development. That said, I also think there are real wins in the ability to at a later date finalise a class for performance reasons, and provides clear structure for how a subclass is designed be used.<br></p><p> * Is the problem being addressed significant enough to warrant a change to Swift?<br>I think that sorting out our inheritance story for public frameworks is important if we are going to start seeing public Swift Frameworks in the wild more often.<br></p><p> * Does this proposal fit well with the feel and direction of Swift?<br>Yes.<br></p><p> * If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br>I haven&#39;t. I&#39;ve used Obj-C a lot. The ability to fix some issues with patching leads me to be concerned that we are overly restricting things here.<br></p><p> * How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>I&#39;ve been following the threads since this discussion started months back, in discussions recently over it, and have read thoroughly both reviews.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160716/60e2462e/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

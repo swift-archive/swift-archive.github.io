@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>multi-line string literals.</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May  3, 2016 at 12:00:00pm</p></header><div class="content"><p>on Sat Apr 30 2016, David Waite &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; In my opinion, one problem is that we don’t have a reference to a<br>&gt; laundry or wish list of what features we would like around string<br>&gt; literals in the language. Without evaluating a proposal against all of<br>&gt; those features (moves forward, doesn’t impact, creates later issues<br>&gt; for) it is hard to evaluate.<br></p><p>+1, thank you!<br></p><p>&gt; My guess here at an exhaustive list:<br>&gt;<br>&gt; Main goals:<br>&gt; - reduce the impact on readability when dealing with certain kinds of string literals<br>&gt; - reduce the amount of editing needed when inserting/referencing text from an external source to be used as a string literal<br>&gt;<br>&gt; Specific tasks/asks:<br>&gt; - for large string literals, reduce the amount of editing needed to span multiple lines<br>&gt; - for strings literals meant to represent multi-line text, allow the visual newline to be used rather than an encoding<br>&gt; 	(note: this may mean in the first case newlines are considered<br>&gt; formatting of the literal, while in the second they are considered<br>&gt; part of the represented text)<br>&gt; - with string literals spanning multiple lines, allow for the author<br>&gt; to indent the literal to match flow with surrounding code without<br>&gt; impacting the represented text<br>&gt; - allow for text with double quotes to be represented in a string literal without requiring those quotes to be escaped<br>&gt; - have the ability to disable all/most escape interpretation to reduce impact on readability of certain text<br>&gt; - take into account that regular expressions, when added, will likely<br>&gt; require different escaping rules than text string literals<br>&gt;<br>&gt; Approach-specific<br>&gt; - if allowing for inline blocks of strings delimited by start/end points e.g. here docs, data segments<br>&gt; 	- if the block end is on its own line, control whether that newline is part of the represented text<br>&gt;<br>&gt; -DW<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4e40d3058defa1eaaa61ed5aa88d2be5?s=50"></div><header><strong>Include sqrt and remainder into FloatingPoint protocol as built in functions as required by IEEE754</strong> from <string>Björn Forster</string> &lt;bjoern.forster at googlemail.com&gt;<p>July  1, 2016 at 02:00:00pm</p></header><div class="content"><p>The IEEE754 standard requires a standard conform floating point<br>implementation besides add,mul,sub,div and rounding functions and lots of<br>other things also to provide sqrt and remainder as builtin function.<br>Shouldn&#39;t be sqrt and remainder (or mod) also be added to the FloatingPoint<br>protocol now that also the rounding functions might be added with SE-0113:<br>Add integral rounding functions to FloatingPoint<br>&lt;https://github.com/apple/swift-evolution/blob/master/proposals/0113-rounding-functions-on-floatingpoint.md&gt;<br>?<br></p><p>Kind Regards,<br>Björn<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160701/d865e0df/attachment-0001.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>Include sqrt and remainder into FloatingPoint protocol as built in functions as required by IEEE754</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>July  1, 2016 at 03:00:00pm</p></header><div class="content"><p>As mentioned in the other thread, these are already accepted for inclusion<br>as part of SE-0067.<br>On Fri, Jul 1, 2016 at 10:35 Björn Forster &lt;swift-evolution at swift.org&gt;<br>wrote:<br></p><p>&gt; The IEEE754 standard requires a standard conform floating point<br>&gt; implementation besides add,mul,sub,div and rounding functions and lots of<br>&gt; other things also to provide sqrt and remainder as builtin function.<br>&gt; Shouldn&#39;t be sqrt and remainder (or mod) also be added to the FloatingPoint<br>&gt; protocol now that also the rounding functions might be added with SE-0113:<br>&gt; Add integral rounding functions to FloatingPoint<br>&gt; &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0113-rounding-functions-on-floatingpoint.md&gt;<br>&gt; ?<br>&gt;<br>&gt; Kind Regards,<br>&gt; Björn<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160701/6269ed78/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

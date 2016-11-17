@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0118: Closure Parameter Names and Labels</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July  8, 2016 at 11:00:00am</p></header><div class="content"><p>on Thu Jul 07 2016, Taras Zakharko &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; 	* What is your evaluation of the proposal?<br>&gt;<br>&gt; In general +1, except maybe the change of to isOrderedBefore: by: in<br>&gt; sort-related functions. I fear that the new label makes it less clear<br>&gt; that the ordering relation is that of strict precedence. It can be<br>&gt; particularly confusing for people used to other APIs.<br></p><p>Here&#39;s the way I rationalize that to myself, FWIW:<br></p><p>`isOrderedBefore` was mostly a hint for the *author* of the call, to<br>make sure they didn&#39;t use something like `&lt;=`.  We help the author by<br>building the strictness requirement into the *name* of the parameter,<br>where it will show up in code completion.  For the *reader* of the call,<br>once the author gets the call right, it&#39;s not particularly helpful to<br>know that strictness was a requirement, and what&#39;s required to convey<br>that information is heavy enough that it harms readability.  Now, you<br>could argue that for *maintainers* without code completion or easy<br>access to the documentation, the label was helpful.  Personally, I felt<br>that sort of specificity just ended up being “overly fussy,” but it&#39;s<br>nuanced.<br></p><p>&gt;<br>&gt;&gt; 	* Is the problem being addressed significant enough to warrant a change to Swift?<br>&gt;<br>&gt; Well, in the end its an arbitrary decision. Either one works on practice. Personally, I don’t see the issue as being very significant. <br>&gt;<br>&gt;&gt; 	* Does this proposal fit well with the feel and direction of Swift?<br>&gt;<br>&gt; Yes, it follows the spirit of the naming guidelines<br>&gt;<br>&gt;&gt; 	* If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br>&gt;&gt; 	* How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>&gt;<br>&gt; A glance<br>&gt;<br>&gt;&gt; On 06 Jul 2016, at 01:10, Chris Lattner via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Hello Swift community,<br>&gt;&gt; <br>&gt;&gt; The review of &quot;SE-0118: Closure Parameter Names and Labels&quot; begins now and runs through July 11. The proposal is available here:<br>&gt;&gt; <br>&gt;&gt; 	https://github.com/apple/swift-evolution/blob/master/proposals/0118-closure-parameter-names-and-labels.md<br>&gt;&gt; <br>&gt;&gt; Reviews are an important part of the Swift evolution process. All reviews should be sent to the swift-evolution mailing list at<br>&gt;&gt; <br>&gt;&gt; 	https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt; <br>&gt;&gt; or, if you would like to keep your feedback private, directly to the review manager.<br>&gt;&gt; <br>&gt;&gt; What goes into a review?<br>&gt;&gt; <br>&gt;&gt; The goal of the review process is to improve the proposal under<br>&gt;&gt; review through constructive criticism and contribute to the<br>&gt;&gt; direction of Swift. When writing your review, here are some<br>&gt;&gt; questions you might want to answer in your review:<br>&gt;&gt; <br>&gt;&gt; 	* What is your evaluation of the proposal?<br>&gt;&gt; 	* Is the problem being addressed significant enough to warrant a change to Swift?<br>&gt;&gt; 	* Does this proposal fit well with the feel and direction of Swift?<br>&gt;&gt; 	* If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br>&gt;&gt; 	* How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br>&gt;&gt; <br>&gt;&gt; More information about the Swift evolution process is available at<br>&gt;&gt; <br>&gt;&gt; 	https://github.com/apple/swift-evolution/blob/master/process.md<br>&gt;&gt; <br>&gt;&gt; Thank you,<br>&gt;&gt; <br>&gt;&gt; -Chris Lattner<br>&gt;&gt; Review Manager<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

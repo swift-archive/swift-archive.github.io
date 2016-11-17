@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0fa74cc7b10064b73bc97cf98f6ca492?s=50"></div><header><strong>Make UUID conform to RawRepresentable</strong> from <string>Alsey Miller</string> &lt;colemancda at me.com&gt;<p>June 20, 2016 at 07:00:00pm</p></header><div class="content"><p>I’m the developer of PureSwift/SwiftFoundation on GitHub, and I originally wrote that library after WWDC 2015 because I did not expect Apple to release an Open Source version of Foundation, and also because Foundation in Swift 2.2 was class based, and not struct based. Now in Swift 3 that is all changing (for the better), and I plan to deprecate my library, but there is one semantic that takes advantage of the Swift guidelines that the new Swift 3.0 Foundation in Xcode 8 doesn’t. UUID seems a natural candidate for conforming to RawRepresentable. Please check out the link below, and you can see how it naturally fits.<br></p><p>https://github.com/PureSwift/SwiftFoundation/blob/develop/Sources/SwiftFoundation/UUID.swift<br></p><p>	Coleman,<br></p><p><br></p><p><br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160620/311192ae/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>Make UUID conform to RawRepresentable</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>June 21, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; On 21 Jun 2016, at 01:53, Alsey Miller via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I’m the developer of PureSwift/SwiftFoundation on GitHub, and I originally wrote that library after WWDC 2015 because I did not expect Apple to release an Open Source version of Foundation, and also because Foundation in Swift 2.2 was class based, and not struct based. Now in Swift 3 that is all changing (for the better), and I plan to deprecate my library, but there is one semantic that takes advantage of the Swift guidelines that the new Swift 3.0 Foundation in Xcode 8 doesn’t. UUID seems a natural candidate for conforming to RawRepresentable. Please check out the link below, and you can see how it naturally fits.<br>&gt; <br>&gt; https://github.com/PureSwift/SwiftFoundation/blob/develop/Sources/SwiftFoundation/UUID.swift<br></p><p>Your library uses RawRepresentable for String conversion, but LosslessStringConvertible (if SE-0089 is accepted) could also do this.<br></p><p>Then the RawRepresentable.RawValue could be `uuid_t` (equivalent to your ByteValue tuple) instead.<br></p><p>NOTE: &lt;http://thread.gmane.org/gmane.comp.lang.swift.evolution/20879/focus=20965&gt;<br></p><p>-- Ben<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>Make UUID conform to RawRepresentable</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>June 21, 2016 at 03:00:00pm</p></header><div class="content"><p>RawRepresentable is often used for open enums imported from c/objc so I am not certain that is the right semantics.<br></p><p>Sent from my iPhone<br></p><p>&gt; On Jun 21, 2016, at 1:19 PM, Ben Rimmington via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On 21 Jun 2016, at 01:53, Alsey Miller via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; I’m the developer of PureSwift/SwiftFoundation on GitHub, and I originally wrote that library after WWDC 2015 because I did not expect Apple to release an Open Source version of Foundation, and also because Foundation in Swift 2.2 was class based, and not struct based. Now in Swift 3 that is all changing (for the better), and I plan to deprecate my library, but there is one semantic that takes advantage of the Swift guidelines that the new Swift 3.0 Foundation in Xcode 8 doesn’t. UUID seems a natural candidate for conforming to RawRepresentable. Please check out the link below, and you can see how it naturally fits.<br>&gt;&gt; <br>&gt;&gt; https://github.com/PureSwift/SwiftFoundation/blob/develop/Sources/SwiftFoundation/UUID.swift<br>&gt; <br>&gt; Your library uses RawRepresentable for String conversion, but LosslessStringConvertible (if SE-0089 is accepted) could also do this.<br>&gt; <br>&gt; Then the RawRepresentable.RawValue could be `uuid_t` (equivalent to your ByteValue tuple) instead.<br>&gt; <br>&gt; NOTE: &lt;http://thread.gmane.org/gmane.comp.lang.swift.evolution/20879/focus=20965&gt;<br>&gt; <br>&gt; -- Ben<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

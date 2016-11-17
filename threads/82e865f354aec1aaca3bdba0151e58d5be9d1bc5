@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/960ce0d42ca874f25b0b58904d3f941b?s=50"></div><header><strong>_swift_abortRetainUnowned when capturing @objc class as unowned</strong> from <string>Tadeas Kriz</string> &lt;tadeas at brightify.org&gt;<p>December 23, 2015 at 12:00:00pm</p></header><div class="content"><p>Hey,<br></p><p>I am experiencing this strange crashing when capturing an instance of a<br>@objc class (written in swift, but annotated with @objc and subclass of<br>NSObject). It happens when the closure is being assigned and not when<br>called, so the problem is not that the captured value would get deallocated<br>and then the closure called. It happens randomly, sometimes it crashes<br>sooner, sometimes later. I was experiencing this bug in earlier versions of<br>Swift (I think it was Swift 1.2), but now I&#39;m using 2.1 and getting this<br>crash too.<br></p><p>It works well when I change `[unowned x]` to `[weak x]` and then access it<br>by force unwrapping `x!.doSomething()` which leads me to believe it is a<br>bug in Swift, rather than in my code. However before opening a ticket at<br>bugs.swift.org, I wanted to get more eyes on this to make sure I&#39;m not<br>missing anything.<br></p><p>It was also mentioned here:<br>http://www.codeproject.com/Articles/791304/Resolving-strong-references-between-Swift-and-Obje<br>here:<br>https://www.reddit.com/r/swift/comments/3vhwmj/unowned_bug_in_closure_causes_attempted_to_retain/<br>and here:<br>https://forums.developer.apple.com/thread/9873<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151223/82e81bc5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17d2af4afb70023e28e655d17471a018?s=50"></div><header><strong>_swift_abortRetainUnowned when capturing @objc class as unowned</strong> from <string>Michael Gottesman</string> &lt;mgottesman at apple.com&gt;<p>December 23, 2015 at 12:00:00pm</p></header><div class="content"><p>&gt; On Dec 23, 2015, at 6:31 AM, Tadeas Kriz via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hey,<br>&gt; <br>&gt; I am experiencing this strange crashing when capturing an instance of a @objc class (written in swift, but annotated with @objc and subclass of NSObject). It happens when the closure is being assigned and not when called, so the problem is not that the captured value would get deallocated and then the closure called. It happens randomly, sometimes it crashes sooner, sometimes later. I was experiencing this bug in earlier versions of Swift (I think it was Swift 1.2), but now I&#39;m using 2.1 and getting this crash too.<br>&gt; <br>&gt; It works well when I change `[unowned x]` to `[weak x]` and then access it by force unwrapping `x!.doSomething()` which leads me to believe it is a bug in Swift, rather than in my code. However before opening a ticket at bugs.swift.org &lt;http://bugs.swift.org/&gt;, I wanted to get more eyes on this to make sure I&#39;m not missing anything.<br></p><p>Do you have a small test case? Can you file a bug?<br></p><p>Michael<br></p><p>&gt; <br>&gt; It was also mentioned here:<br>&gt; http://www.codeproject.com/Articles/791304/Resolving-strong-references-between-Swift-and-Obje &lt;http://www.codeproject.com/Articles/791304/Resolving-strong-references-between-Swift-and-Obje&gt;<br>&gt; here:<br>&gt; https://www.reddit.com/r/swift/comments/3vhwmj/unowned_bug_in_closure_causes_attempted_to_retain/ &lt;https://www.reddit.com/r/swift/comments/3vhwmj/unowned_bug_in_closure_causes_attempted_to_retain/&gt;<br>&gt; and here:<br>&gt; https://forums.developer.apple.com/thread/9873 &lt;https://forums.developer.apple.com/thread/9873&gt;<br>&gt;  _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151223/6f71d1f9/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

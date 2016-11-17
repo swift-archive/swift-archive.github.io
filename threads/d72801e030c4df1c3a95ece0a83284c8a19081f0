@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4ca02c0ca5c5d6a28bc48eebb3b000c7?s=50"></div><header><strong>Proposal: Remove implicit tuple splat behavior from function applications</strong> from <string>Michael Henson</string> &lt;mikehenson at gmail.com&gt;<p>February  5, 2016 at 07:00:00pm</p></header><div class="content"><p>After splatting is removed, what will happen in cases where function<br>arguments are implicitly converted to tuples, as in this code (in the<br>repl)?<br></p><p>  3&gt; func compose&lt;A,B,C&gt;(f:(A)-&gt;B, g:(B)-&gt;C) -&gt; (A)-&gt;C {<br>  4.     return { (_ arg: A) in<br>  5.         return g(f(arg))<br>  6.     }<br>  7. }<br>  8&gt;<br>  9&gt;<br> 10&gt; func f(a: Int, b: String) -&gt; String {<br> 11.     return &quot;Composed!&quot;<br> 12. }<br> 13&gt;<br> 14&gt; func g(x: String) -&gt; Int {<br> 15.     return x.characters.count<br> 16. }<br> 17&gt;<br> 18&gt; let c = compose(f, g:g)<br>c: (Int, b: String) -&gt; Int = 0x00007ffff7ff28d0<br> 19&gt;<br> 20&gt; c<br>$R0: (Int, b: String) -&gt; Int = 0x00007ffff7ff28d0<br> 21&gt;<br> 22&gt; c((9,b:&quot;Wat&quot;))<br>$R1: Int = 9<br> 23&gt;<br> 24&gt; c(9, b:&quot;Wat&quot;)<br>repl.swift:24:8: error: extra argument &#39;b&#39; in call<br>c(9, b:&quot;Wat&quot;)<br>       ^~~~~<br></p><p>Mike<br></p><p>&gt;* On Jan 31, 2016, at 5:00 PM, Kevin Ballard via swift-evolution &lt;swift-evolution at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;&gt; wrote:<br>*&gt; &gt;* +1 in general, though I do wonder how this change will affect<br>generic code. For example, if I have a function that returns a tuple,<br>and another function that takes an argument list matching the same<br>tuple type, can I still use generic functions like map() to call the<br>second function with the tuple from the first? I&#39;m hoping the answer<br>is &quot;yes&quot;, because the type of a function doesn&#39;t distinguish between<br>functions that take multiple arguments vs functions that take a single<br>argument of tuple type and so passing functions around as first-class<br>values should be fine. Although I imagine this change will still<br>prevent me from writing a closure like { funcOfTwoArgs($0) } which is<br>unfortunate, but would be solved by a subsequent proposal to add an<br>explicit splat operator.<br>*<br>Yes, AFAIK, generic code isn’t affected by the proposed change.  Type<br>checking of generic code is modular, not aware of the concrete types<br>the generic is instantiated with.<br></p><p>-Chris<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160205/d72881f0/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b3d3a2cce932eca144b8c13a63966404?s=50"></div><header><strong>VS Code language protocol</strong> from <string>Alex Blewitt</string> &lt;alex.blewitt at gmail.com&gt;<p>June  8, 2016 at 02:00:00pm</p></header><div class="content"><p>There is an increasing number of languages and IDEs supporting VS Code’s language agnostic server protocol.<br></p><p>https://github.com/Microsoft/vscode-languageserver-protocol/wiki/Protocol-Implementations<br></p><p>Alex<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>VS Code language protocol</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>June  9, 2016 at 04:00:00pm</p></header><div class="content"><p>On Wed, Jun 8, 2016, at 09:33 AM, Alex Blewitt via swift-dev wrote:<br>&gt; There is an increasing number of languages and IDEs supporting VS Code’s<br>&gt; language agnostic server protocol.<br>&gt; <br>&gt; https://github.com/Microsoft/vscode-languageserver-protocol/wiki/Protocol-Implementations<br></p><p>While it is unclear from that email what your suggestion goal is. I can<br>say that this is something I had been looking into. I was originally<br>looking to use libIDE to generate something that would conform to this<br>protocol.<br></p><p>Though it now looks like SourceKit is coming to Linux so I&#39;m in a<br>holding pattern to see what comes of that.<br></p><p>Long-story short I think this would be a great way to get some IDEs<br>besides Xcode for platforms besides OS X.<br></p><p>Out of curiosity have you started working on something?<br></p><p>&gt; <br>&gt; Alex<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d4e52c8c225598ff284e7eb192dde623?s=50"></div><header><strong>VS Code language protocol</strong> from <string>Argyrios Kyrtzidis</string> &lt;kyrtzidis at apple.com&gt;<p>June 22, 2016 at 02:00:00pm</p></header><div class="content"><p>This is very interesting, I opened a JIRA feature to keep track, and I’ve put some thoughts on how we could go about supporting this.<br>https://bugs.swift.org/browse/SR-1878 &lt;https://bugs.swift.org/browse/SR-1878&gt;<br></p><p>Any feedback is welcome!<br></p><p>&gt; On Jun 9, 2016, at 1:13 PM, Ryan Lovelett via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; On Wed, Jun 8, 2016, at 09:33 AM, Alex Blewitt via swift-dev wrote:<br>&gt;&gt; There is an increasing number of languages and IDEs supporting VS Code’s<br>&gt;&gt; language agnostic server protocol.<br>&gt;&gt; <br>&gt;&gt; https://github.com/Microsoft/vscode-languageserver-protocol/wiki/Protocol-Implementations<br>&gt; <br>&gt; While it is unclear from that email what your suggestion goal is. I can<br>&gt; say that this is something I had been looking into. I was originally<br>&gt; looking to use libIDE to generate something that would conform to this<br>&gt; protocol.<br>&gt; <br>&gt; Though it now looks like SourceKit is coming to Linux so I&#39;m in a<br>&gt; holding pattern to see what comes of that.<br>&gt; <br>&gt; Long-story short I think this would be a great way to get some IDEs<br>&gt; besides Xcode for platforms besides OS X.<br>&gt; <br>&gt; Out of curiosity have you started working on something?<br>&gt; <br>&gt;&gt; <br>&gt;&gt; Alex<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-dev mailing list<br>&gt;&gt; swift-dev at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160622/905d1b83/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

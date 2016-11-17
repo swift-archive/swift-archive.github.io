@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Discussion]: Deprecate !-Unwrapping of Optionals</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 29, 2016 at 02:00:00pm</p></header><div class="content"><p>on Mon Feb 29 2016, Jacob Bandes-Storch &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; unsafeUnwrap already exists, though with a slightly different meaning (no<br>&gt; check is performed in -O builds).  I think it may be turning into an<br>&gt; &quot;unsafelyUnwrapped&quot; property in the future.<br>&gt;<br>&gt; Generally I&#39;m +1 on this. I do share others&#39; concerns about things like<br>&gt; playgrounds and xibs.<br>&gt;<br>&gt; I suppose the existence of xibs requires us to keep the<br>&gt; ImplicitlyUnwrappedOptional type if we don&#39;t want to require people use &quot;if<br>&gt; let&quot; *everywhere*, unless we somehow move the setting of IBOutlets into a<br>&gt; special throwing initializer.<br>&gt;<br>&gt; For writing quick code in playgrounds, something like &quot;.unsafelyUnwrapped&quot;<br>&gt; is probably fine, if a bit wordy. Or if, as Dave Sweeris suggests, you make<br>&gt; &quot;unwrap() throws&quot;, then playgrounds can just use &quot;try! x.unwrap()&quot; for<br>&gt; unwrapping. (Or did you want to propose removing try! too?)<br></p><p>The problem with making unwrap() throws is that throwing is for<br>recoverable errors, but the intended use case for &quot;!&quot; is for situations<br>where it would be a program bug if unwrapping failed, and bugs are not<br>recoverable.<br></p><p>&gt; Jacob<br>&gt;<br>&gt; On Mon, Feb 29, 2016 at 1:26 PM, Developer via swift-evolution &lt;<br>&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt; I was thinking something more like<br>&gt;&gt;<br>&gt;&gt; func unsafeUnwrap&lt;T&gt;(opt : Optional&lt;T&gt;) -&gt; T {<br>&gt;&gt;     switch opt {<br>&gt;&gt;         case let .Some(val):<br>&gt;&gt;             return val<br>&gt;&gt;         default:<br>&gt;&gt;              fatalError(&quot;Unexpectedly found nil while unwrapping optional<br>&gt;&gt; value&quot;)<br>&gt;&gt;     }<br>&gt;&gt; }<br>&gt;&gt;<br>&gt;&gt; Bang doesn&#39;t go away, it just becomes more obvious that you&#39;re making a<br>&gt;&gt; leap of logic (as it were).<br>&gt;&gt;<br>&gt;&gt; ~Robert Widmann<br>&gt;&gt;<br>&gt;&gt; 2016/02/29 15:59、davesweeris at mac.com のメッセージ:<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; On Feb 29, 2016, at 2:24 PM, Developer via swift-evolution &lt;<br>&gt;&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;<br>&gt;&gt; And for those cases there will be a standard library function or something<br>&gt;&gt; more obvious than bang to make up for the deprecated operator.  Force<br>&gt;&gt; unwrapping will not go away (that&#39;s a terribly unproductive idea), but the<br>&gt;&gt; goal is to make a dangerous operation more obvious[ly dangerous].<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; Like this?<br>&gt;&gt; enum OptionalUnwrappingError : ErrorType {<br>&gt;&gt;     case unexpectedlyFoundNil<br>&gt;&gt; }<br>&gt;&gt; enum Optional&lt;T&gt; {<br>&gt;&gt;     typealias Wrapped = T<br>&gt;&gt;     case None<br>&gt;&gt;     case Some(Wrapped)<br>&gt;&gt;     ...<br>&gt;&gt;     func unwrap() throws -&gt; Wrapped {<br>&gt;&gt;         switch self {<br>&gt;&gt;         case .None: throw OptionalError.unexpectedlyFoundNil<br>&gt;&gt;         case .Some(let value): return value<br>&gt;&gt;         }<br>&gt;&gt;     }<br>&gt;&gt; }<br>&gt;&gt;<br>&gt;&gt; It’s hard to get more obvious than the compiler complaining that you<br>&gt;&gt; haven’t wrapped a throwing function in a try block<br>&gt;&gt;<br>&gt;&gt; - Dave Sweeris<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;<br>&gt;&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

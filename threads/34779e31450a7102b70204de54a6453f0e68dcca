@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>Right list?</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>February 19, 2016 at 01:00:00pm</p></header><div class="content"><p>Is this the right list to ask about enhancing the Swift Package PackageDescription? I&#39;d like to add a Package <br>property to namespace packages by origin, and to add aliases in Swift for renaming imports.<br></p><p>More details here if you&#39;d like to read further: http://ericasadun.com/2016/02/08/naming-your-swift-packages/ &lt;http://ericasadun.com/2016/02/08/naming-your-swift-packages/&gt;<br>I&#39;m skipping them now because I&#39;m not yet sure I&#39;ve arrived at the right email list.<br></p><p>Thanks in advance, -- Erica<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160219/3477dcca/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3a28b53f05e7f3067fb104cb78fbb585?s=50"></div><header><strong>Right list?</strong> from <string>Kostiantyn Koval</string> &lt;konstantin.koval1 at gmail.com&gt;<p>February 20, 2016 at 09:00:00pm</p></header><div class="content"><p>In my opinion adding an origin to a Manifest file won’t solve the problem for 100%. <br>There could be a situation when 2 person would specify the same origin. Example<br>    origin: “com.erica”<br></p><p>The Github, Bitbucket (and others) takes care of providing unique user and repo names. <br>Reusing those would be more secure in my opinion.<br>In that case we don’t need to add any parameter to Manifest file and follow more convention style approach<br></p><p>Best Regard, Kostiantyn<br></p><p><br>&gt; On 19 Feb 2016, at 21:00, Erica Sadun via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Is this the right list to ask about enhancing the Swift Package PackageDescription? I&#39;d like to add a Package <br>&gt; property to namespace packages by origin, and to add aliases in Swift for renaming imports.<br>&gt; <br>&gt; More details here if you&#39;d like to read further: http://ericasadun.com/2016/02/08/naming-your-swift-packages/ &lt;http://ericasadun.com/2016/02/08/naming-your-swift-packages/&gt;<br>&gt; I&#39;m skipping them now because I&#39;m not yet sure I&#39;ve arrived at the right email list.<br>&gt; <br>&gt; Thanks in advance, -- Erica<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160220/e44e262d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

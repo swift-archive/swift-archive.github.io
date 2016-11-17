@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4b71446f16b41699f6c7054983fc59a9?s=50"></div><header><strong>Origin of Swift name</strong> from <string>Richard Yeh</string> &lt;rcyeh at richardcyeh.com&gt;<p>January 18, 2016 at 01:00:00pm</p></header><div class="content"><p>How did Swift come to be named? What were other potential names that were<br>discarded?<br></p><p>Cordially,<br>Richard<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160118/62631307/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/094f3e16a9a1276cde39096860496ad8?s=50"></div><header><strong>Origin of Swift name</strong> from <string>Joshua Scott Emmons</string> &lt;skia at skia.net&gt;<p>January 19, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; How did Swift come to be named?<br></p><p>I&#39;m not in a position to know, but I&#39;d always assumed it was because not only are Swifts among the fastest birds on the planet, but they&#39;re also very economical fliers, able to make tiny adjustments to the structure of their wings to optimize each beat.<br></p><p>They also have great &quot;up time&quot;. An Alpine Swift currently holds the record for longest sustained non-stop flight by any bird — over 200 days!<br></p><p><br>Cheers,<br>-jemmons<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Origin of Swift name</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>January 19, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Jan 18, 2016, at 1:09 PM, Richard Yeh via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; How did Swift come to be named? What were other potential names that were discarded?<br></p><p>Chris started the project at the height of the Occupy movement. It was his small rebellion against the banking establishment to make &quot;Swift code&quot; an ambiguous term.<br></p><p>-Joe<br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br>(PS this is a joke)<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Origin of Swift name</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>January 19, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Jan 19, 2016, at 1:24 PM, Joe Groff via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; On Jan 18, 2016, at 1:09 PM, Richard Yeh via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; How did Swift come to be named? What were other potential names that were discarded?<br>&gt; <br>&gt; Chris started the project at the height of the Occupy movement. It was his small rebellion against the banking establishment to make &quot;Swift code&quot; an ambiguous term.<br>&gt; <br>&gt; (PS this is a joke)<br></p><p>Chris secretly writes Tom Swift fan fiction. &quot;Tom Swift and His New Programming Language&quot; is his favorite.<br></p><p><br></p><p>(PS this is also a joke)<br></p><p><br>-- <br>Greg Parker     gparker at apple.com     Runtime Wrangler<br></p></div></li></ul></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>Origin of Swift name</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>January 20, 2016 at 04:00:00pm</p></header><div class="content"><p>I believe it went something like &quot;Someone come up with a name and make it fast&quot;<br></p><p><br></p><p>Speedy and quick are both crappy names for programming languages.<br></p><p>If they hadn&#39;t gone with Swift, I&#39;m sure we&#39;d be programming in Rapid.<br></p><p>-- E<br></p><p><br></p><p><br></p><p>p.s. yeah, mine too.<br></p><p>&gt; On Jan 18, 2016, at 2:09 PM, Richard Yeh via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; How did Swift come to be named? What were other potential names that were discarded?<br>&gt; <br>&gt; Cordially,<br>&gt; Richard<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160120/94a2aa91/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: Screen Shot 2016-01-20 at 4.21.31 PM.png<br>Type: image/png<br>Size: 28273 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160120/94a2aa91/attachment.png&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

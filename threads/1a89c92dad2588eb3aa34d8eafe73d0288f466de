@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e3d999f42d1aa9fd563d06eb56bcf742?s=50"></div><header><strong>Concrete Collection/Generator protocol and type</strong> from <string>Stefan Urbanek</string> &lt;stefan.urbanek at gmail.com&gt;<p>December  9, 2015 at 10:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I would like to have various kinds of generators and eventually their collection counterparts of a concrete type, say Card. This is an example with generators to illustrate my intention. <br></p><p>typealias Card = Int<br>typealias Predicate = Int<br></p><p>protocol CardGenerator: GeneratorType {<br>    typealias Element = Card<br>    // + some common functions to the protocol<br>}<br></p><p>class ConcreteGenerator: CardGenerator {<br>    typealias Element = Card<br></p><p>    // some complex element fetching, some implicit filtering and transforms are here<br>    func next() -&gt; Element? { return nil }<br>}<br></p><p>class FilteredGenerator: CardGenerator {<br>    typealias Element = Card<br>    let predicate: Predicate<br></p><p>    init(predicate: Predicate) {<br>        self.predicate = predicate<br>    }<br></p><p>    // some complex element fetching, multiple filters and transforms are here<br>    func next() -&gt; Element? { return nil }<br>}<br></p><p>func select(predicate:Predicate?) → CardGenerator {<br>    if predicate != nil {<br>        return FilteredGenerator(predicate:predicate!)<br>    }<br>    else {<br>        return ConcreteGenerator()<br>    }<br>}<br></p><p>I am getting:<br></p><p>&quot;error: protocol &#39;CardGenerator&#39; can only be used as a generic constraint because it has Self or associated type requirements”<br></p><p>How can I have a non-generic collection or generator protocol with specific element type tied to the protocol?<br></p><p><br>Thanks,<br></p><p>Stefan<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

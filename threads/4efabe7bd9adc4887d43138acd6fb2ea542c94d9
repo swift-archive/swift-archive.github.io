@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>When to use argument labels (a new approach)</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  4, 2016 at 11:00:00am</p></header><div class="content"><p>on Thu Feb 04 2016, Charles Constant &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; Why isn&#39;t &quot;to&quot; more predictable than &quot;toPoint?&quot;  It&#39;s certainly more<br>&gt;&gt; universal.<br>&gt;<br>&gt; Function arguments can be unordered, if they have default values. A<br>&gt; contrived example here...<br>&gt;<br>&gt; func rename( from nameA=&quot;index&quot;, from extA=&quot;html&quot;, to nameB=&quot;converted&quot;, to<br>&gt; extB=&quot;shtml&quot; )<br>&gt;<br>&gt; Maybe I&#39;m confused, but that seems like it has to be illegal at worst, and<br>&gt; confusing at best. But if you don&#39;t consistently use &quot;from&quot; and &quot;to&quot; then<br>&gt; you&#39;re back to making special rules about everything.<br></p><p>I think it&#39;s a confusing and probably bad API no matter how you choose<br>those labels.<br></p><p>  file.rename(from: (&quot;index&quot;, &quot;html&quot;), to: (&quot;converted&quot;, &quot;shtml&quot;))<br></p><p>&gt; It wouldn&#39;t matter if every argument has a unique Type, or if you take the<br>&gt; time to create structs or tuples to bundle every piece of data together<br>&gt; about &quot;from&quot; or about &quot;with&quot; etc. Maybe that&#39;s usually the case, but it&#39;s<br>&gt; nice to have freedom to be lazy.<br></p><p>Let me be clear: these API guidelines are *not* going to optimize for<br>churning out APIs without careful consideration; it&#39;s thoroughly<br>incompatible with their mission.  If you want that freedom, you&#39;re free<br>to ignore the guidelines.  Sorry to be blunt, but that&#39;s how it is.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e941adb360692446106cebd7f6d2a1a3?s=50"></div><header><strong>When to use argument labels (a new approach)</strong> from <string>Charles Constant</string> &lt;charles at charlesism.com&gt;<p>February  4, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt;<br>&gt; Let me be clear: these API guidelines are *not* going to optimize for<br>&gt; churning out APIs without careful consideration; it&#39;s thoroughly<br>&gt; incompatible with their mission.  If you want that freedom, you&#39;re free<br>&gt; to ignore the guidelines.  Sorry to be blunt, but that&#39;s how it is.<br></p><p><br>Long day? :) No worries.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160204/ac0c6fa6/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

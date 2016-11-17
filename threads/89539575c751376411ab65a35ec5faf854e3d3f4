@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f6b7154fd1d6a470d0b521a2e484bffc?s=50"></div><header><strong>Help: Get Generic Pattern Detail From TypeDecl in AST</strong> from <string>Daniel Duan</string> &lt;daniel at duan.org&gt;<p>January 11, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>Working on a swiftc crash in the type checker, I’m having a hard time with getting generic type pattern in the AST. For example, say we have parsed:<br></p><p>struct Y&lt;T&gt; {}<br>struct X&lt;T, U&gt; {<br>  let a: Y&lt;T&gt;<br>  let b: Y&lt;U&gt;<br>}<br></p><p><br>In the AST, the type of member “a” would be  “Y&lt;T&gt;&quot;. But I can’t figure out how to inspect the inner “T” from the TypeDecl instance that represents a’s type.<br></p><p>What am I missing here?<br></p><p>- Daniel<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>Help: Get Generic Pattern Detail From TypeDecl in AST</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>January 11, 2016 at 02:00:00pm</p></header><div class="content"><p>You might find BoundGenericType useful:<br></p><p>https://github.com/apple/swift/blob/5aa40dd0aa057591398339c77df91a976ae35c72/include/swift/AST/Types.h#L1438<br></p><p>Jacob Bandes-Storch<br></p><p>On Mon, Jan 11, 2016 at 2:31 PM, Daniel Duan via swift-dev &lt;<br>swift-dev at swift.org&gt; wrote:<br></p><p>&gt; Hi all,<br>&gt;<br>&gt; Working on a swiftc crash in the type checker, I’m having a hard time with<br>&gt; getting generic type pattern in the AST. For example, say we have parsed:<br>&gt;<br>&gt; struct Y&lt;T&gt; {}<br>&gt; struct X&lt;T, U&gt; {<br>&gt;   let a: Y&lt;T&gt;<br>&gt;   let b: Y&lt;U&gt;<br>&gt; }<br>&gt;<br>&gt;<br>&gt; In the AST, the type of member “a” would be  “Y&lt;T&gt;&quot;. But I can’t figure<br>&gt; out how to inspect the inner “T” from the TypeDecl instance that represents<br>&gt; a’s type.<br>&gt;<br>&gt; What am I missing here?<br>&gt;<br>&gt; - Daniel<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160111/e42363a2/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f6b7154fd1d6a470d0b521a2e484bffc?s=50"></div><header><strong>Help: Get Generic Pattern Detail From TypeDecl in AST</strong> from <string>Daniel Duan</string> &lt;daniel at duan.org&gt;<p>January 11, 2016 at 03:00:00pm</p></header><div class="content"><p>BoundGenericType::getGenericArgs() is exactly what I was looking for. Thanks Jacob!<br></p><p>&gt; On Jan 11, 2016, at 2:34 PM, Jacob Bandes-Storch &lt;jtbandes at gmail.com&gt; wrote:<br>&gt; <br>&gt; You might find BoundGenericType useful:<br>&gt; <br>&gt; https://github.com/apple/swift/blob/5aa40dd0aa057591398339c77df91a976ae35c72/include/swift/AST/Types.h#L1438 &lt;https://github.com/apple/swift/blob/5aa40dd0aa057591398339c77df91a976ae35c72/include/swift/AST/Types.h#L1438&gt;<br>&gt; <br>&gt; Jacob Bandes-Storch<br>&gt; <br>&gt; On Mon, Jan 11, 2016 at 2:31 PM, Daniel Duan via swift-dev &lt;swift-dev at swift.org &lt;mailto:swift-dev at swift.org&gt;&gt; wrote:<br>&gt; Hi all,<br>&gt; <br>&gt; Working on a swiftc crash in the type checker, I’m having a hard time with getting generic type pattern in the AST. For example, say we have parsed:<br>&gt; <br>&gt; struct Y&lt;T&gt; {}<br>&gt; struct X&lt;T, U&gt; {<br>&gt;   let a: Y&lt;T&gt;<br>&gt;   let b: Y&lt;U&gt;<br>&gt; }<br>&gt; <br>&gt; <br>&gt; In the AST, the type of member “a” would be  “Y&lt;T&gt;&quot;. But I can’t figure out how to inspect the inner “T” from the TypeDecl instance that represents a’s type.<br>&gt; <br>&gt; What am I missing here?<br>&gt; <br>&gt; - Daniel<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org &lt;mailto:swift-dev at swift.org&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev &lt;https://lists.swift.org/mailman/listinfo/swift-dev&gt;<br>&gt; <br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160111/52b6bcf4/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

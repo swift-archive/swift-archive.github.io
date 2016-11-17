@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c155243169db74a7787bab9d57a1c3d6?s=50"></div><header><strong>Swift DispatchSource not working</strong> from <string>Darren Mo</string> &lt;darren.mo at me.com&gt;<p>July  2, 2016 at 05:00:00pm</p></header><div class="content"><p>I am trying to catch SIGWINCH (terminal window size changed) in Swift 3 (Xcode 8). The following code should exit with a status of 1 when it receives SIGWINCH. But it never exits.<br></p><p>```swift<br>// compile with `xcrun -sdk macosx swiftc sigwinch.swift`<br></p><p>import Darwin<br>import Dispatch<br></p><p>let source = DispatchSource.signal(signal: SIGWINCH, queue: DispatchQueue.main)<br>source.setEventHandler {<br>   exit(1)<br>}<br>source.resume()<br></p><p>dispatchMain()<br>```<br></p><p>The equivalent Objective-C code works as expected.<br></p><p>```objc<br>// compile with `xcrun -sdk macosx clang sigwinch.m`<br></p><p>#import &lt;dispatch/dispatch.h&gt;<br>#import &lt;signal.h&gt;<br>#import &lt;stdlib.h&gt;<br></p><p>int main() {<br>   dispatch_source_t source = dispatch_source_create(DISPATCH_SOURCE_TYPE_SIGNAL,<br>                                                     SIGWINCH,<br>                                                     0,<br>                                                     dispatch_get_main_queue());<br>   dispatch_source_set_event_handler(source, ^{<br>      exit(1);<br>   });<br>   dispatch_resume(source);<br></p><p>   dispatch_main();<br>}<br>```<br></p><p>What am I doing wrong?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160702/7b0e0754/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

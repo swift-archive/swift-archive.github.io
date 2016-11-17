@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c9af48ea2cb5900dcad503ffc43d5082?s=50"></div><header><strong>Making Foundation classes easier for Swift development</strong> from <string>Ryan Breaker</string> &lt;ryan at breaker.rocks&gt;<p>February  1, 2016 at 01:00:00pm</p></header><div class="content"><p>Hello Swift team and contributors!<br></p><p>I have been wondering about how existing Foundation classes, structs, and such types will be eventually adapted for use in Swift; I understand that, for example, the “NS”-prefix will be removed sometime in Swift 3. What I have been working with most recently has been NSFileManager and its `attributesOfItemAtPath` method which returns a type of [String: AnyObject]. Due to the nature of this, I’ve had to do some digging into the existing corelib-foundation source of NSFileManager to see how each item is assigned and which ones are guaranteed to be set and which ones I should be cautious of (e.g. could be nil).<br></p><p>So that said, are there any plans or thoughts on either changing current types, such as the return type of the aforementioned method, or adding new types to supplement things like this better? For the time being I have written my own small Swift module &lt;https://github.com/RyanBreaker/SwiftFileAttributes&gt; for handling this easier, but I can’t help but feel edgy about it with all the explicit optional unwrapping.<br></p><p>Thanks,<br>Ryan Breaker<br>ryan at breaker.rocks &lt;mailto:ryan at breaker.rocks&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160201/fa394775/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>Making Foundation classes easier for Swift development</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>February  1, 2016 at 11:00:00am</p></header><div class="content"><p>Hi Ryan,<br></p><p>I don’t have anything concrete yet, but we are taking a very close look at the effect of dropping NS on items in the global namespace. I think it’s pretty clear we will need to do something to make the scope of those constants clearer once the prefix is gone.<br></p><p>- Tony<br></p><p>&gt; On Feb 1, 2016, at 11:00 AM, Ryan Breaker via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello Swift team and contributors!<br>&gt; <br>&gt; I have been wondering about how existing Foundation classes, structs, and such types will be eventually adapted for use in Swift; I understand that, for example, the “NS”-prefix will be removed sometime in Swift 3. What I have been working with most recently has been NSFileManager and its `attributesOfItemAtPath` method which returns a type of [String: AnyObject]. Due to the nature of this, I’ve had to do some digging into the existing corelib-foundation source of NSFileManager to see how each item is assigned and which ones are guaranteed to be set and which ones I should be cautious of (e.g. could be nil).<br>&gt; <br>&gt; So that said, are there any plans or thoughts on either changing current types, such as the return type of the aforementioned method, or adding new types to supplement things like this better? For the time being I have written my own small Swift module &lt;https://github.com/RyanBreaker/SwiftFileAttributes&gt; for handling this easier, but I can’t help but feel edgy about it with all the explicit optional unwrapping.<br>&gt; <br>&gt; Thanks,<br>&gt; Ryan Breaker<br>&gt; ryan at breaker.rocks &lt;mailto:ryan at breaker.rocks&gt;<br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160201/5323ce83/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b281e721f8cbea65ab93ef72bd034a70?s=50"></div><header><strong>Type based reference cycle detection</strong> from <string>Darko Damjanovic</string> &lt;darkodamjanovic at me.com&gt;<p>February 28, 2016 at 04:00:00pm</p></header><div class="content"><p>The one thing which I would need most when working with Swift would be type based reference cycle detection during compile time. I have discussed a similar topic already in the developer forums a long time ago and also received some response from one of the Apple Developers. (I think it was Douglas Gregor from this list but I can&#39;t find the thread anymore) The answer at this time was that type based reference cycle detection is problematic, but I can not remember the reason anymore. I think the reason was: it is too general and would generate many false positives.<br></p><p>Currently I am working for almost one whole year on a Swift project. (iOS) I have written a few thousands lines of code and of course also experienced some memory leaks. And literally all of them happened in their most basic form:<br></p><p>    class A {<br>    	let myB: B?<br>    }<br>    <br>    class B {<br>       let myA: A?<br>    }    <br>    <br>Which is basically used by the delegate pattern. I understand that cycle detection in a complex graph of objects is not reasonable during compile time. And there are also many cases which can only be found during runtime. I understand also the disadvantages of full runtime-garbage collection. But this is not what I need. The only thing which I miss most is a simple warning of the compiler when type A and B have strong references to each other. (if more is possible - even better)<br></p><p>For example this tool is doing it already: http://j2objc.org/docs/Cycle-Finder-Tool.html<br></p><p>If I am still on the wrong track then I would love to know why. Thanks.<br></p><p>- Darko<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

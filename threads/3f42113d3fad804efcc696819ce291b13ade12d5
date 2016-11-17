@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0089:	Replace protocol&lt;P1, P2&gt; syntax with Any&lt;P1, P2&gt;</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>May 25, 2016 at 10:00:00am</p></header><div class="content"><p>I&#39;d like to reiterate that an existential is a protocol with self type requirements and/or associated types that have not been assigned. Protocols without self type requirements or associated types are *not* existentials!<br></p><p><br></p><p>(Neither would be protocols where all associated types have been assigned (this makes only sense for associated types inherited from another protocol and is currently not possibly in Swift if I am not mistaken)).<br></p><p><br></p><p>We should not confuse this.<br></p><p><br></p><p>-Thorsten<br></p><p><br></p><p><br>Am 25. Mai 2016 um 12:23 schrieb Brent Royal-Gordon via swift-evolution &lt;swift-evolution at swift.org&gt;:<br></p><p><br>However, I believe this would have a significant advantage: it would clarify the distinction between an existential and a constraint. It would more clearly mark where you are taking on the abstraction overhead of an existential. It would also improve the non-existential type situation: in the short term, it would make it clearer where uses of associated type protocols like `Comparable` would not be permitted; in the long term, once we have type-erased existentials for those protocols, it would make it clearer when type erasure was in effect.<br></p><p>Sorry to self-reply, but I had some additional thoughts on this.<br></p><p>Swift&#39;s type system has a logical hierarchy of types. A type&#39;s supertypes include any protocols it conforms to, and then the protocols they conform to, ultimately rooted at Any. Additionally, a class&#39;s supertypes include its superclass, and then its superclass, and so on up to a root class, and then AnyObject, and finally Any once more. And of course, Any&lt;…&gt; lets you build composite types out of several protocols which fit into this framework: Any&lt;Foo, Bar&gt; is a subtype of both Foo and Bar and a supertype of any type which conforms to both Foo and Bar.<br></p><p>At an implementation level, however, this is only partially true. A class can be transformed into its superclass, all the way up to AnyObject, without any change in memory representation. But once you enter the world of protocols, everything changes. To cast to a protocol, you must place the instance in an existential, a different instance with a different memory layout. This can have significant performance consequences; for example, it&#39;s the reason you can&#39;t use `as` to convert an array of instances to an array of some protocol they all belong to.<br></p><p>Requiring the use of `Any&lt;…&gt;` to mark any existential would help reinforce this distinction. It would give users a better understanding of what their code was actually doing and why they might not be able to do things like make certain seemingly sensible casts.<br></p><p>(Although technically, this would seem to imply that AnyObject&#39;s future equivalent should *not* require an Any&lt;&gt;. Hmm.)<br></p><p>--<br>Brent Royal-Gordon<br>Architechies<br></p><p>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160525/3f4212d5/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

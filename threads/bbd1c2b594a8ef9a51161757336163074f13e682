@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2a7aae865d8b141e427b2f5eae718128?s=50"></div><header><strong>WebSwift</strong> from <string>Bee</string> &lt;bee.ography at gmail.com&gt;<p>December 13, 2015 at 09:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>Just want to share my little experiment with Swift on Linux. WebSwift is my<br>version of IBM Swift SandBox (an online Swift runner). But, unlike IBM&#39;s<br>SandBox, my WebSwift is able to accept input. You may check it out at:<br></p><p>http://beeography.koding.io/webswift.cgi<br></p><p>Have fun! :)<br></p><p>Best regards,<br></p><p>-- <br>-Bee-<br></p><p>PS. WebSwift is written using FreePascal v.3.0 ;)<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151213/bbd1e682/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

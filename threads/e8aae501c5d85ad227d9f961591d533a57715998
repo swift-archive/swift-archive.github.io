@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>Taking advantage of our character space</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>October  7, 2016 at 04:00:00pm</p></header><div class="content"><p>This is a quick one.  It would be nice to take advantage of all the wonderful characters that swift can use.  Not only unicode, but some of the less-used ASCII as well.<br></p><p>In particular, I would like to see:<br></p><p>1) Allow the ‘π’ character as a FloatingPoint literal.  We can use CGFloat.pi and Double.pi right now, and I am not asking to replace that (since depending on the nationality of your keyboard, it can be simple or difficult to type), but π just reads much better. Would be good to have it as an option.  It would also be nice to be able to combine it with numbers in the literal (e.g. 2π)<br></p><p>2) Allow ≤, ≥, ≠ for less than or equal, greater than or equal, and not equals.  This was one of the first extensions I made when I began using swift.  I would really like to be able to use it in frameworks as well.  Again, it doesn’t need to replace &lt;=, &gt;=, !=, it just adds polish and readability for those who want to use it.  You can even use my extension on comparable if you so desire.<br></p><p>When I brought this up before there was push-back because it would &quot;clutter the namespace&quot;.  I don’t think that is a valid argument though because any other use of the symbols π, ≤, ≥, and ≠ would be downright confusing. If you are creating a variable named ‘π’ and sticking something other than pi in it, that is just asking for trouble.  Same with the operations.  May as well use them for the one thing they make sense for…<br></p><p>Also, little touches are what make a language enjoyable.<br></p><p>Thanks,<br>Jon<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>Taking advantage of our character space</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>October  7, 2016 at 09:00:00pm</p></header><div class="content"><p>On Fri, Oct 7, 2016 at 6:22 PM, Jonathan Hull via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; This is a quick one.  It would be nice to take advantage of all the<br>&gt; wonderful characters that swift can use.  Not only unicode, but some of the<br>&gt; less-used ASCII as well.<br>&gt;<br>&gt; In particular, I would like to see:<br>&gt;<br>&gt; 1) Allow the ‘π’ character as a FloatingPoint literal.  We can use<br>&gt; CGFloat.pi and Double.pi right now, and I am not asking to replace that<br>&gt; (since depending on the nationality of your keyboard, it can be simple or<br>&gt; difficult to type), but π just reads much better. Would be good to have it<br>&gt; as an option.  It would also be nice to be able to combine it with numbers<br>&gt; in the literal (e.g. 2π)<br>&gt;<br>&gt; 2) Allow ≤, ≥, ≠ for less than or equal, greater than or equal, and not<br>&gt; equals.  This was one of the first extensions I made when I began using<br>&gt; swift.  I would really like to be able to use it in frameworks as well.<br>&gt; Again, it doesn’t need to replace &lt;=, &gt;=, !=, it just adds polish and<br>&gt; readability for those who want to use it.  You can even use my extension on<br>&gt; comparable if you so desire.<br>&gt;<br>&gt; When I brought this up before there was push-back because it would<br>&gt; &quot;clutter the namespace&quot;.  I don’t think that is a valid argument though<br>&gt; because any other use of the symbols π, ≤, ≥, and ≠ would be downright<br>&gt; confusing. If you are creating a variable named ‘π’ and sticking something<br>&gt; other than pi in it, that is just asking for trouble.  Same with the<br>&gt; operations.  May as well use them for the one thing they make sense for…<br>&gt;<br>&gt; Also, little touches are what make a language enjoyable.<br>&gt;<br></p><p>I can certainly see why it would be enjoyable to have these aliases.<br>However, it&#39;d be rather a niche thing. IMO, the reason for avoiding their<br>addition to the standard library isn&#39;t just some aversion to &quot;cluttering&quot;<br>the namespace, as though another person might come along and want to use<br>Greek letter pi for some other purpose, but rather that a smaller API<br>surface area is straightforwardly easier to maintain than a larger one, and<br>these aren&#39;t obvious wins that merit additional API.<br></p><p><br>&gt; Thanks,<br>&gt; Jon<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161007/61da509f/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

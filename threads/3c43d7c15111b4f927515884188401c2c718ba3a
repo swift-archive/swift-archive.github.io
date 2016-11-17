@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6b81089e81d6bb1e14b5adb746725de1?s=50"></div><header><strong>Type Pun in Test Suite</strong> from <string>Alexis</string> &lt;abeingessner at apple.com&gt;<p>November  9, 2016 at 08:00:00pm</p></header><div class="content"><p>Just stumbled across this mock NSDictionary implementation in the test suite:<br></p><p>https://github.com/apple/swift/blob/a1dbe066adf826b27dd8e71234ba7e8ce2b26b73/validation-test/stdlib/Dictionary.swift#L1260-L1306 &lt;https://github.com/apple/swift/blob/a1dbe066adf826b27dd8e71234ba7e8ce2b26b73/validation-test/stdlib/Dictionary.swift#L1260-L1306&gt;<br></p><p>It appears to be violating strict aliasing, but I’d just like to verify it with y’all since it’s a classic example of type punning that the average programmer expects to work, and will generally work in practice™. Good learning opportunity!<br></p><p>Notable lines:<br></p><p><br></p><p>  struct Keys {<br>    var key0: AnyObject = TestObjCKeyTy(10)<br>    var key1: AnyObject = TestObjCKeyTy(20)<br>    var key2: AnyObject = TestObjCKeyTy(30)<br>    var key3: AnyObject = TestObjCKeyTy(40)<br>  }<br></p><p>  var keys = [ Keys() ]<br></p><p>…<br></p><p>    if theState.state == 0 {<br>      theState.state = 1<br>      theState.itemsPtr = AutoreleasingUnsafeMutablePointer(keys._baseAddressIfContiguous)<br>      theState.mutationsPtr = _fastEnumerationStorageMutationsPtr<br>      state.pointee = theState<br>      return 4<br>    }<br></p><p><br>This appears to be casting a pointer to a struct Keys (containing 4 AnyObjects) to a pointer to AnyObject, declaring that it’s an array of 4 AnyObjects. So this is broken in three ways:<br></p><p>* Strict aliasing violation; just plain UB.<br></p><p>* There’s nothing that actually guarantees an instance of Keys is allocated inline like this, right? The compiler could decide it’s profitable for all instances of this type to be boxed. Or even random fields to be boxed?<br></p><p>* It could also choose to reorder the fields and insert padding however it pleases.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161109/3c43ba3a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Type Pun in Test Suite</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>November 10, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Nov 9, 2016, at 17:30, Alexis via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Just stumbled across this mock NSDictionary implementation in the test suite:<br>&gt; <br>&gt; https://github.com/apple/swift/blob/a1dbe066adf826b27dd8e71234ba7e8ce2b26b73/validation-test/stdlib/Dictionary.swift#L1260-L1306 &lt;https://github.com/apple/swift/blob/a1dbe066adf826b27dd8e71234ba7e8ce2b26b73/validation-test/stdlib/Dictionary.swift#L1260-L1306&gt;<br>&gt; <br>&gt; It appears to be violating strict aliasing, but I’d just like to verify it with y’all since it’s a classic example of type punning that the average programmer expects to work, and will generally work in practice™. Good learning opportunity!<br>&gt; <br>&gt; Notable lines:<br>&gt; <br>&gt; <br>&gt; <br>&gt;   struct Keys {<br>&gt;     var key0: AnyObject = TestObjCKeyTy(10)<br>&gt;     var key1: AnyObject = TestObjCKeyTy(20)<br>&gt;     var key2: AnyObject = TestObjCKeyTy(30)<br>&gt;     var key3: AnyObject = TestObjCKeyTy(40)<br>&gt;   }<br>&gt; <br>&gt;   var keys = [ Keys() ]<br>&gt; <br>&gt; …<br>&gt; <br>&gt;     if theState.state == 0 {<br>&gt;       theState.state = 1<br>&gt;       theState.itemsPtr = AutoreleasingUnsafeMutablePointer(keys._baseAddressIfContiguous)<br>&gt;       theState.mutationsPtr = _fastEnumerationStorageMutationsPtr<br>&gt;       state.pointee = theState<br>&gt;       return 4<br>&gt;     }<br>&gt; <br>&gt; <br>&gt; This appears to be casting a pointer to a struct Keys (containing 4 AnyObjects) to a pointer to AnyObject, declaring that it’s an array of 4 AnyObjects. So this is broken in three ways:<br>&gt; <br>&gt; * Strict aliasing violation; just plain UB.<br>&gt; <br>&gt; * There’s nothing that actually guarantees an instance of Keys is allocated inline like this, right? The compiler could decide it’s profitable for all instances of this type to be boxed. Or even random fields to be boxed?<br>&gt; <br>&gt; * It could also choose to reorder the fields and insert padding however it pleases.<br></p><p>I agree with all three lines. Good catch. Can we get Andy’s Swift Type Sanitizer online? :-)<br></p><p>Jordan<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161110/0900334a/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

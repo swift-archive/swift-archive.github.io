@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Protocol non-conformance clause</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May  1, 2016 at 05:00:00pm</p></header><div class="content"><p>on Fri Apr 29 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Gmane is down as far as my browser is concerned and I haven&#39;t found anything by<br>&gt; Googling.<br>&gt;<br>&gt; Given the following:<br>&gt;<br>&gt; protocol A {func foo()}<br>&gt; protocol B {} // empty protocol<br>&gt;<br>&gt; extension A where Self:B {<br>&gt; func foo() {<br>&gt; print(&quot;Self is B&quot;)<br>&gt; }<br>&gt; }<br>&gt;<br>&gt; // Works<br>&gt; struct S1: A, B {}<br>&gt; S1().foo()<br>&gt;<br>&gt; Is there a way to produce a similar extension that exempts any type that<br>&gt; conforms to B?<br></p><p>Here&#39;s one horrible answer:<br></p><p>  protocol A {<br>    func foo()<br>  }<br></p><p>  protocol B {} // empty protocol<br>  extension B {<br>    func foo() {<br>      fatalError(&quot;uncallable&quot;)<br>    }<br>  }<br></p><p>  extension A  {<br>    func foo() {<br>      print(&quot;Self is not B&quot;)<br>    }<br>  }<br></p><p>  // Works<br>  struct S0: A {<br>    func foo() {<br>      print(&quot;Self is S0&quot;)<br>    }<br>  }<br>  S0().foo()<br></p><p>  // Fails<br>  struct S1: A, B {}<br>  S1().foo()<br></p><p>I&#39;m sure there are other awful things one could do, too. :-)<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

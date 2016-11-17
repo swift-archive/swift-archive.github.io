@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8667c86c3fa7cc873eca1533c7ebd5d2?s=50"></div><header><strong>swift-build missing in xcode 7.3?</strong> from <string>Kyle Jessup</string> &lt;kjessup.lists at gmail.com&gt;<p>March 22, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt; swift-build is not part of Xcode 7.3. To use SwiftPM with Xcode 7.x you will need to download a Swift 3 toolchain from https://swift.org<br></p><p>Related to updating the toolchains, I couldn’t run swift build with the more recent snapshot, running into the following:<br></p><p>dyld: Library not loaded: @rpath/libswiftCore.dylib&quot; on swift-DEVELOPMENT-SNAPSHOT-2016-03-16-a<br></p><p>This correct the issue:<br></p><p>https://gist.github.com/norio-nomura/96201467ffd37c077f7c<br></p><p>-Kyle<br></p><p>&gt; &gt; On Mar 22, 2016, at 12:10 PM, George King via swift-build-dev&lt;swift-build-dev at swift.org&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; Hi, not sure if this is the right place to ask this question, but I&#39;m trying to get started with the package manager and Xcode 7.3 does not appear to have come with the swift-build executable. Is my installation broken, is or is anyone else seeing the same thing?<br>&gt; &gt; <br>&gt; &gt; I downloaded Xcode 7.3 from the app store yesterday: &quot;Version 7.3 (7D175)&quot;.<br>&gt; &gt; <br>&gt; &gt; Here&#39;s what I see:<br>&gt; &gt; <br>&gt; &gt; gwk ~ $ swift --version<br>&gt; &gt; Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)<br>&gt; &gt; Target: x86_64-apple-macosx10.9<br>&gt; &gt; gwk ~ $ swift build<br>&gt; &gt; error: unable to invoke subcommand: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-build (No such file or directory)<br>&gt; &gt; gwk ~ $ which swift<br>&gt; &gt; /usr/bin/swift<br>&gt; &gt; gwk ~ $ ls /usr/bin/swift*<br>&gt; &gt; /usr/bin/swift /usr/bin/swiftc<br>&gt; &gt; gwk ~ $ ls /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift*<br>&gt; &gt; /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift<br>&gt; &gt; /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-compress<br>&gt; &gt; /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-demangle<br>&gt; &gt; /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-stdlib-tool<br>&gt; &gt; /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-update<br>&gt; &gt; /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc<br>&gt; &gt; <br>&gt; &gt; Thanks,<br>&gt; &gt; George<br>&gt; &gt; <br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-build-dev mailing list<br>&gt; &gt; swift-build-dev at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-build-dev<br>&gt; <br>&gt; <br>&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>swift-build missing in xcode 7.3?</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>March 22, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt;&gt; swift-build is not part of Xcode 7.3. To use SwiftPM with Xcode 7.x you will need to download a Swift 3 toolchain from https://swift.org &lt;https://swift.org/&gt;<br>&gt; <br>&gt; Related to updating the toolchains, I couldn’t run swift build with the more recent snapshot, running into the following:<br>&gt; <br>&gt; dyld: Library not loaded: @rpath/libswiftCore.dylib&quot; on swift-DEVELOPMENT-SNAPSHOT-2016-03-16-a<br></p><p><br>Here’s the ticket for this bug: https://bugs.swift.org/browse/SR-975<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160322/ab1b3be6/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

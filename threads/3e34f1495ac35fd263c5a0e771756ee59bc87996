@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6663c1a74243994e4940dbf4747454cc?s=50"></div><header><strong>How to include swift test resource files?</strong> from <string>Edward Connell</string> &lt;ewconnell at gmail.com&gt;<p>November 10, 2016 at 09:00:00am</p></header><div class="content"><p>Swift test builds and runs the package Tests. My tests require data files<br>such as images to run.<br>With an Xcode project we can Copy Bundle Resources in the Build Phases to<br>include the necessary files.<br></p><p>How do we do this with swift test, or swift build?<br></p><p>I thought about a hack to manually copy the resource files, but since<br>&quot;swift test&quot; builds and runs the tests as a single action there doesn&#39;t<br>seem to be an opportunity.<br></p><p>How do we include package resources during build and test?<br></p><p>Thanks, Ed<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161110/3e347996/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>How to include swift test resource files?</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>November 10, 2016 at 09:00:00am</p></header><div class="content"><p>We do not yet have any kind of story for resources.<br></p><p>If you just need data during tests, what you can do is just rely on the tests being run in an environment which has access to the source, so you can use Swift&#39;s `#file` to derive the location of your test artifacts from the current source file path.<br></p><p>This is kind of a hack, but it works. Example:<br>  https://github.com/apple/swift-package-manager/blob/master/Sources/TestSupport/misc.swift#L38<br></p><p> - Daniel<br></p><p>&gt; On Nov 10, 2016, at 9:29 AM, Edward Connell &lt;ewconnell at gmail.com&gt; wrote:<br>&gt; <br>&gt; Swift test builds and runs the package Tests. My tests require data files such as images to run. <br>&gt; With an Xcode project we can Copy Bundle Resources in the Build Phases to include the necessary files.<br>&gt; <br>&gt; How do we do this with swift test, or swift build?<br>&gt; <br>&gt; I thought about a hack to manually copy the resource files, but since &quot;swift test&quot; builds and runs the tests as a single action there doesn&#39;t seem to be an opportunity.<br>&gt; <br>&gt; How do we include package resources during build and test?<br>&gt; <br>&gt; Thanks, Ed<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

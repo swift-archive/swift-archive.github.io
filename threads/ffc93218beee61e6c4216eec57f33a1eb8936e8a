@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8809800aec2460f291384b794d7e6f8f?s=50"></div><header><strong>Closure typing changed in Swift 3</strong> from <string>Rick Mann</string> &lt;rmann at latencyzero.com&gt;<p>September  9, 2016 at 02:00:00pm</p></header><div class="content"><p>I have some code that implements an HTTP server. You use it like this:<br></p><p>server[&quot;/some/path&quot;] =<br>{ inReq in<br>    return .ok(.json([&quot;key&quot; : &quot;value&quot;]))<br>}<br></p><p>&quot;.ok&quot; is a case in the HttpResponse enum.<br></p><p>The subscript on &quot;server&quot; above looks like this:<br></p><p>class HttpServer {<br>    typealias Handler = (HttpRequest) -&gt; HttpResponse<br></p><p>    subscript (path: String) -&gt; Handler?<br>    {<br>        get { return nil }<br>        set ( newValue )<br>        {<br>            ...store in dictionary of path:Handler...<br>        }<br>    }<br>}<br></p><p>Unfortunately, in Swift 3, I get &quot;Cannot assign value of type &#39;(_) -&gt; _&#39; to type &#39;HttpServer.Handler?&#39;&quot;<br></p><p>It seems the type inference is working differently? I tried { (inReq: HttpRequest) in ... }, but I got the same error with a slightly different type signature.<br></p><p>Can anyone tell me what&#39;s changed?<br></p><p>TIA,<br></p><p>-- <br>Rick Mann<br>rmann at latencyzero.com<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8809800aec2460f291384b794d7e6f8f?s=50"></div><header><strong>Closure typing changed in Swift 3</strong> from <string>Rick Mann</string> &lt;rmann at latencyzero.com&gt;<p>September  9, 2016 at 08:00:00pm</p></header><div class="content"><p>I figured it out. The real problem is that .json accepts AnyObject, and the Dictionary is not AnyObject (not sure what this change is, since it worked in Swift 2). Anyway, that confused the type inference, which resulted in the red herring error message about the closure assignment.<br></p><p><br>&gt; On Sep 9, 2016, at 14:34 , Rick Mann via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I have some code that implements an HTTP server. You use it like this:<br>&gt; <br>&gt; server[&quot;/some/path&quot;] =<br>&gt; { inReq in<br>&gt;   return .ok(.json([&quot;key&quot; : &quot;value&quot;]))<br>&gt; }<br>&gt; <br>&gt; &quot;.ok&quot; is a case in the HttpResponse enum.<br>&gt; <br>&gt; The subscript on &quot;server&quot; above looks like this:<br>&gt; <br>&gt; class HttpServer {<br>&gt;   typealias Handler = (HttpRequest) -&gt; HttpResponse<br>&gt; <br>&gt;   subscript (path: String) -&gt; Handler?<br>&gt;   {<br>&gt;       get { return nil }<br>&gt;       set ( newValue )<br>&gt;       {<br>&gt;           ...store in dictionary of path:Handler...<br>&gt;       }<br>&gt;   }<br>&gt; }<br>&gt; <br>&gt; Unfortunately, in Swift 3, I get &quot;Cannot assign value of type &#39;(_) -&gt; _&#39; to type &#39;HttpServer.Handler?&#39;&quot;<br>&gt; <br>&gt; It seems the type inference is working differently? I tried { (inReq: HttpRequest) in ... }, but I got the same error with a slightly different type signature.<br>&gt; <br>&gt; Can anyone tell me what&#39;s changed?<br>&gt; <br>&gt; TIA,<br>&gt; <br>&gt; -- <br>&gt; Rick Mann<br>&gt; rmann at latencyzero.com<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p><br>-- <br>Rick<br></p><p><br></p><p><br>-- <br>Rick Mann<br>rmann at latencyzero.com<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Closure typing changed in Swift 3</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>September 12, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Sep 9, 2016, at 8:05 PM, Rick Mann via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I figured it out. The real problem is that .json accepts AnyObject, and the Dictionary is not AnyObject (not sure what this change is, since it worked in Swift 2). Anyway, that confused the type inference, which resulted in the red herring error message about the closure assignment.<br></p><p>What changed is Objective-C bridging. Previously the compiler could convert Dictionary to NSDictionary to AnyObject. Now that path is no longer implicitly available.<br></p><p><br>-- <br>Greg Parker     gparker at apple.com &lt;mailto:gparker at apple.com&gt;     Runtime Wrangler<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160912/521a37a4/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/424a3f4fec228fa9e2ad948ca70f1791?s=50"></div><header><strong>CGContext endPage method ambiguous (two candidates) Swift 3/Xcode 8</strong> from <string>davelist at mac.com</string> &lt;davelist at mac.com&gt;<p>June 16, 2016 at 04:00:00pm</p></header><div class="content"><p>I&#39;ve got a project I had been working on using Swift2.2 and decided to migrate to Swift3 (using Xcode 8 beta) before the project gets any bigger. I successfully migrated everything except I have a CGContext for writing to a PDF and calls the endPage() method. For that the compiler responds with &quot;ambiguous use of endPage()&quot; and claims to find two candidates for it.<br></p><p>Is there a work around for this?<br></p><p>I submitted it via bugreport.apple.com (# 26815976) but is there a better place to report this?<br></p><p>Also, while the app won&#39;t be ready to release until after iOS 10 is released, I would like to start TestFlight beta testing it before that. After doing the conversion, I remembered that you can&#39;t submit builds with beta versions of Xcode to the AppStore. Does this also apply to TestFlight betas? I hope not given that Apple is strongly encouraging everyone to convert their code to Swift 3, but I suspect that is the policy.<br></p><p>Thanks,<br>Dave Reed<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>CGContext endPage method ambiguous (two candidates) Swift 3/Xcode 8</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>June 17, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Jun 16, 2016, at 1:49 PM, Dave Reed via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I&#39;ve got a project I had been working on using Swift2.2 and decided to migrate to Swift3 (using Xcode 8 beta) before the project gets any bigger. I successfully migrated everything except I have a CGContext for writing to a PDF and calls the endPage() method. For that the compiler responds with &quot;ambiguous use of endPage()&quot; and claims to find two candidates for it.<br>&gt; <br>&gt; Is there a work around for this?<br></p><p>This came up in the WWDC labs this week too. One possible workaround is to wrap the original CGPDFContextEndPage function in your bridging header, then call the wrapper function from Swift.<br></p><p>-Joe<br></p><p>&gt; I submitted it via bugreport.apple.com (# 26815976) but is there a better place to report this?<br>&gt; <br>&gt; Also, while the app won&#39;t be ready to release until after iOS 10 is released, I would like to start TestFlight beta testing it before that. After doing the conversion, I remembered that you can&#39;t submit builds with beta versions of Xcode to the AppStore. Does this also apply to TestFlight betas? I hope not given that Apple is strongly encouraging everyone to convert their code to Swift 3, but I suspect that is the policy.<br>&gt; <br>&gt; Thanks,<br>&gt; Dave Reed<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/424a3f4fec228fa9e2ad948ca70f1791?s=50"></div><header><strong>CGContext endPage method ambiguous (two candidates) Swift 3/Xcode 8</strong> from <string>davelist at mac.com</string> &lt;davelist at mac.com&gt;<p>June 17, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; On Jun 17, 2016, at 12:28 PM, Joe Groff &lt;jgroff at apple.com&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On Jun 16, 2016, at 1:49 PM, Dave Reed via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; I&#39;ve got a project I had been working on using Swift2.2 and decided to migrate to Swift3 (using Xcode 8 beta) before the project gets any bigger. I successfully migrated everything except I have a CGContext for writing to a PDF and calls the endPage() method. For that the compiler responds with &quot;ambiguous use of endPage()&quot; and claims to find two candidates for it.<br>&gt;&gt; <br>&gt;&gt; Is there a work around for this?<br>&gt; <br>&gt; This came up in the WWDC labs this week too. One possible workaround is to wrap the original CGPDFContextEndPage function in your bridging header, then call the wrapper function from Swift.<br>&gt; <br>&gt; -Joe<br>&gt; <br></p><p>I’ve never mixed Objective-C/C and Swift in the same project but I think I find some documentation online for doing this. Unfortunately, my call to endPage is in a framework and it appears frameworks cannot use bridging headers (got the error &quot;using bridging headers with framework targets is unsupported”).<br></p><p>I guess I’ll have to wait for this to be fixed before I can use that part of the app again. Not a major crisis since I’m still a few months away from it being done (which is why I made the change to Swift 3 now). Hopefully it will get fixed reasonably soon since I suspect it’s some sort of minor typo.<br></p><p>Thanks,<br>Dave<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

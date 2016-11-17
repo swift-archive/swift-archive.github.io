@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>generic function called recursively not compiling</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>August  7, 2016 at 04:00:00pm</p></header><div class="content"><p>on Thu Aug 04 2016, Ray Fix &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; I filed rdar://27700622 &lt;rdar://27700622&gt; and attached a playground.<br>&gt; Any workaround magic I can do here?<br>&gt;<br>&gt; func quickSort&lt;Element: Comparable&gt;(_ input: [Element]) -&gt; [Element] {<br>&gt;     if input.count &lt; 2 {<br>&gt;         return input<br>&gt;     }<br>&gt;     let pivot = input.first!<br>&gt;     let left = input.dropFirst().filter { $0 &lt;= pivot }<br>&gt;     let right = input.dropFirst().filter { $0 &gt; pivot }<br>&gt;<br>&gt;     // Does not compile with (Swift 3pre) Xcode 8 b1,2,3,4<br>&gt;     // Does compile with (Swift 2.2) Xcode 7.3<br>&gt;     return quickSort(left) + [pivot] + quickSort(right)<br>&gt; }<br>&gt;<br>&gt; quickSort([3,5,1,2])<br>&gt;<br>&gt; Error:<br>&gt; //Playground execution failed: error: quicksort.playground:11:22: error: cannot convert value of type &#39;[Element]&#39; to expected argument type &#39;[_]&#39;<br>&gt; //return quickSort(left) + [pivot] + quickSort(right)<br>&gt; //                 ^~~~<br>&gt;<br>Hi Ray,<br></p><p>I don&#39;t know why, but the type checker is obviously falling over here.<br>This works around it:<br></p><p>  return quickSort(left) as [Element] + [pivot] + quickSort(right) <br>                         ^^^^^^^^^^^^<br></p><p>HTH,<br>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

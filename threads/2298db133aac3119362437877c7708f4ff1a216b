@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e2303da56647c283b6d8e58d5831faca?s=50"></div><header><strong>Failing Ubuntu 14.04 Build</strong> from <string>Joseph Bell</string> &lt;joe at iachieved.it&gt;<p>April  8, 2016 at 10:00:00am</p></header><div class="content"><p>Howdy.<br></p><p>I&#39;ve been looking at a build failure the past few days and haven&#39;t made<br>heads or tails of what&#39;s going on.  This is only occurring on the 14.04<br>build (15.10 passes), and it&#39;s occurring with the REPL integration test:<br></p><p>build/buildbot_linux/none-swift_package_sandbox/usr/bin/swift<br>Welcome to Swift version 3.0-dev (LLVM 752e1430fc, Clang 3987718dae, Swift<br>8e439904e2). Type :help for assistance.<br>  1&gt; import Glibc<br>error: repl.swift:1:8: error: missing required module &#39;SwiftGlibc&#39;<br>import Glibc<br>       ^<br></p><p><br>At first I thought I needed to do a clean build, then when that didn&#39;t work<br>I built a brand new 14.04 VM and cleanroom built with only those apt-get<br>installs necessary.  Has anyone built Swift from the ground up lately on<br>14.04 using the buildbot_linux preset?  I kick things off with:<br></p><p>#!/bin/bash<br>pushd `dirname $0` &gt; /dev/null<br>WHERE_I_AM=`pwd`<br>popd &gt; /dev/null<br>INSTALL_DIR=${WHERE_I_AM}/install<br>PACKAGE=${WHERE_I_AM}/swift.tar.gz<br>LSB_RELEASE=`lsb_release -rs  | tr -d .`<br>rm -rf $INSTALL_DIR $PACKAGE<br>./swift/utils/build-script --preset=buildbot_linux_${LSB_RELEASE}<br>install_destdir=${INSTALL_DIR} installable_package=${PACKAGE}<br></p><p>Joe<br></p><p>---<br>http://dev.iachieved.it/iachievedit/<br>@iachievedit<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160408/2298216b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e2303da56647c283b6d8e58d5831faca?s=50"></div><header><strong>Failing Ubuntu 14.04 Build</strong> from <string>Joseph Bell</string> &lt;joe at iachieved.it&gt;<p>April  8, 2016 at 02:00:00pm</p></header><div class="content"><p>Accidentally (I believe) posted to swift-build-dev.<br></p><p>I do indeed see the error on 15.10 as well now with &quot;missing required<br>module &#39;SwiftGblic&#39;&quot;, for whatever reason the swift binary being built<br>cannot do a simple &#39;import Glibc&#39; without this error coming out:<br></p><p>Welcome to Swift version 3.0-dev (LLVM 752e1430fc, Clang 3987718dae, Swift<br>de4868a72f). Type :help for assistance.<br>  1&gt; import Glibc<br>error: repl.swift:1:8: error: missing required module &#39;SwiftGlibc&#39;<br>import Glibc<br></p><p><br>On Fri, Apr 8, 2016 at 10:18 AM, Joseph Bell &lt;joe at iachieved.it&gt; wrote:<br></p><p>&gt; Howdy.<br>&gt;<br>&gt; I&#39;ve been looking at a build failure the past few days and haven&#39;t made<br>&gt; heads or tails of what&#39;s going on.  This is only occurring on the 14.04<br>&gt; build (15.10 passes), and it&#39;s occurring with the REPL integration test:<br>&gt;<br>&gt; build/buildbot_linux/none-swift_package_sandbox/usr/bin/swift<br>&gt; Welcome to Swift version 3.0-dev (LLVM 752e1430fc, Clang 3987718dae, Swift<br>&gt; 8e439904e2). Type :help for assistance.<br>&gt;   1&gt; import Glibc<br>&gt; error: repl.swift:1:8: error: missing required module &#39;SwiftGlibc&#39;<br>&gt; import Glibc<br>&gt;        ^<br>&gt;<br>&gt;<br>&gt; At first I thought I needed to do a clean build, then when that didn&#39;t<br>&gt; work I built a brand new 14.04 VM and cleanroom built with only those<br>&gt; apt-get installs necessary.  Has anyone built Swift from the ground up<br>&gt; lately on 14.04 using the buildbot_linux preset?  I kick things off with:<br>&gt;<br>&gt; #!/bin/bash<br>&gt; pushd `dirname $0` &gt; /dev/null<br>&gt; WHERE_I_AM=`pwd`<br>&gt; popd &gt; /dev/null<br>&gt; INSTALL_DIR=${WHERE_I_AM}/install<br>&gt; PACKAGE=${WHERE_I_AM}/swift.tar.gz<br>&gt; LSB_RELEASE=`lsb_release -rs  | tr -d .`<br>&gt; rm -rf $INSTALL_DIR $PACKAGE<br>&gt; ./swift/utils/build-script --preset=buildbot_linux_${LSB_RELEASE}<br>&gt; install_destdir=${INSTALL_DIR} installable_package=${PACKAGE}<br>&gt;<br>&gt; Joe<br>&gt;<br>&gt; ---<br>&gt; http://dev.iachieved.it/iachievedit/<br>&gt; @iachievedit<br>&gt;<br></p><p><br></p><p>-- <br>---<br>http://dev.iachieved.it/iachievedit/<br>@iachievedit<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160408/25575c62/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

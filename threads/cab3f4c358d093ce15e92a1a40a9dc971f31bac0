@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5e393bcde3a003bb7c1525c8e9877f2a?s=50"></div><header><strong>Proposal: SwiftPM Target Access Control</strong> from <string>Tanner Nelson</string> &lt;me at tanner.xyz&gt;<p>July  7, 2016 at 05:00:00pm</p></header><div class="content"><p>Really happy to see this proposal. It will cut build times for packages that use my library significantly.<br></p><p>The only point I would bring up is about using a `Bool` for `isPrivate`. This obviously only gives us 2 levels of access control. Something like this would give more flexibility:<br></p><p>enum AccessControl {<br>    case .public<br>    case .private<br>}<br></p><p>Target(name: &quot;SampleCLI&quot;, dependencies: [&quot;FooCore&quot;], access: .private)<br></p><p>Packages could possibly want more fine grained control over the access control. e.g, Package Foo wants only packages that directly depend on Foo to receive a module, but not packages that depend on a package Bar that depends on Foo. This would be much easier to add as an additional case to the `enum AccessControl` but impossible to add for `isPrivate: Bool`<br></p><p>Thanks Ankit for the great proposal!<br>Tanner<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160707/cab3bac0/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/05540cd6be96706f76aa66a4519f7db9?s=50"></div><header><strong>Proposal: SwiftPM Target Access Control</strong> from <string>Ankit Agarwal</string> &lt;ankit at ankit.im&gt;<p>July  8, 2016 at 01:00:00pm</p></header><div class="content"><p>I agree with Tanner, an AccessControl enum clearly defines the access of a<br>target and provides flexibility for future.<br></p><p>On Fri, Jul 8, 2016 at 3:17 AM, Tanner Nelson &lt;me at tanner.xyz&gt; wrote:<br></p><p>&gt; Really happy to see this proposal. It will cut build times for packages<br>&gt; that use my library significantly.<br>&gt;<br>&gt; The only point I would bring up is about using a `Bool` for `isPrivate`.<br>&gt; This obviously only gives us 2 levels of access control. Something like<br>&gt; this would give more flexibility:<br>&gt;<br>&gt; enum AccessControl {<br>&gt;     case .public<br>&gt;     case .private<br>&gt; }<br>&gt;<br>&gt; Target(name: &quot;SampleCLI&quot;, dependencies: [&quot;FooCore&quot;], access: .private)<br>&gt;<br>&gt;<br>&gt; Packages could possibly want more fine grained control over the access<br>&gt; control. e.g, Package Foo wants only packages that *directly* depend on<br>&gt; Foo to receive a module, but not packages that depend on a package Bar that<br>&gt; depends on Foo. This would be much easier to add as an additional case to<br>&gt; the `enum AccessControl` but impossible to add for `isPrivate: Bool`<br>&gt;<br>&gt; Thanks Ankit for the great proposal!<br>&gt; Tanner<br>&gt;<br></p><p><br></p><p>-- <br>Ankit<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160708/941eba5c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

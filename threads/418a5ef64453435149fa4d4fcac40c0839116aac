@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Add Binary Search functions to SequenceType</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 29, 2016 at 02:00:00pm</p></header><div class="content"><p>on Fri Apr 29 2016, Haravikk &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Actually, the binary search proposal settled on a definition of a partition<br>&gt; point method (and probably a partition method as well) that provides the real<br>&gt; implementation details anyway, so these could go ahead as-is. <br></p><p>That&#39;s what I had in mind.<br></p><p>&gt; You’re right that the search methods themselves may prefer to wait,<br>&gt; since .sort() will likely change to reflect the new strict ordering<br>&gt; operator, in which case it makes sense to delay those to be<br>&gt; consistent, but partitioning should be unaffected.<br>&gt;<br>&gt;     On 28 Apr 2016, at 13:03, Jeff Hajewski via swift-evolution<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     Thanks for bringing this back into the spotlight Pyry. A few of us have been<br>&gt;     working on this issue here:<br>&gt;<br>&gt;     https://github.com/lorenzoracca/Swift-binary-search<br>&gt;<br>&gt;     However we have sort of stalled as we have been unable to come up with a<br>&gt;     unary approach that Dave suggested using just Bool return values. And of<br>&gt;     course, as you say, the three case order enum would make this a trivial<br>&gt;     problem.<br>&gt;<br>&gt;     I guess the question is, do we move forward without a unary implementation<br>&gt;     and update if/when we get a three case Order enum or do we wait on a three<br>&gt;     case Order enum and implement a fully generic version once?<br>&gt;<br>&gt;     Jeff<br>&gt;<br>&gt;     On Thu, Apr 28, 2016 at 7:36 AM, Pyry Jahkola<br>&gt;     &lt;pyry.jahkola at iki.fi&gt; wrote:<br>&gt;<br>&gt;         Bringing up this topic because it became relevant with Brent<br>&gt;         Royal-Gordon&#39;s &quot;[Idea] Bringing the partial/total ordering distinction<br>&gt;         into Comparable&quot;.<br>&gt;<br>&gt;         If the `&lt;=&gt;` operator with a return type of a three-case `enum Order`,<br>&gt;         you can fully define the most generic versions of binary searches as:<br>&gt;<br>&gt;         lowerBound(compare: Self.Collection.Element -&gt; Order) -&gt; Index<br>&gt;<br>&gt;         etc.<br>&gt;<br>&gt;             On 29 Mar 2016, at 13:43, Jeff Hajewski via swift-evolution<br>&gt;             &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;             I&#39;ve responded below, but just for the sake of being explicit, this<br>&gt;             is roughly <br>&gt;             the signature for lowerBound, upperBound, and binarySearch I have in <br>&gt;             mind based on your comments of a unary predicate:<br>&gt;<br>&gt;             lowerBound(isOrderedBelow: Self.Collection.Element -&gt; Bool) -&gt; Index<br>&gt;             upperBound(isOrderedBelow: Self.Collection.Element -&gt; Bool) -&gt; Index<br>&gt;             binarySearch(isOrderedBelow: Self.Collection.Element -&gt; Bool) -&gt;<br>&gt;             Bool<br>&gt;<br>&gt;             That&#39;s the general structure - the key is that the exact same<br>&gt;             predicate is<br>&gt;             used in all signatures. The predicate would be defined along the<br>&gt;             lines of<br>&gt;             a binary predicate where one of the parameters is fixed as the<br>&gt;             search value.<br>&gt;             The unary predicate could be formed along the lines of:<br>&gt;<br>&gt;             let binaryPred = { $0 &lt; $1 }<br>&gt;             let unnaryPred = binaryPred($0, value)<br>&gt;<br>&gt;             where value is the search value. The main point of illustrating that<br>&gt;             is that<br>&gt;             once the unary predicate is defined, we can&#39;t change the position of<br>&gt;             the<br>&gt;             search value within the predicate like they do in the C++<br>&gt;             implementation.<br>&gt;<br>&gt;         You&#39;re right, there&#39;s no way a Bool-returning unary comparator could<br>&gt;         allow you to implement anything but lowerBound. With a three-value<br>&gt;         result, however, you&#39;ve got all you need.<br>&gt;<br>&gt;         I&#39;ve shamelessly plugged before but for the sake of proving a point,<br>&gt;         I&#39;ll do it once more: I think this little library we did works as a good<br>&gt;         starting point for a stdlib binary search API:<br>&gt;         https://github.com/knomi/Allsorts/blob/master/Allsorts/BinarySearch.swift<br>&gt;<br>&gt;         — Pyry<br>&gt;<br>&gt;     _______________________________________________<br>&gt;     swift-evolution mailing list<br>&gt;     swift-evolution at swift.org<br>&gt;     https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

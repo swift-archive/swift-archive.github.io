@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/fccaae7d8c34340d41508370ca291d0e?s=50"></div><header><strong>Running Swift on Ubuntu 12.04</strong> from <string>Projjol Banerji</string> &lt;probaner23 at gmail.com&gt;<p>December 13, 2015 at 12:00:00am</p></header><div class="content"><p>Hi,<br>I&#39;m running a linux box with Ubuntu 12.04 on it and as none of the official<br>builds are for this particular version, I was wondering whether it would be<br>possible to run Swift on 12.04.<br>&gt;From what I&#39;ve tried, installing libicu52 throws an error as the<br>repositories for 12.04 don&#39;t have it.<br>Is there a workaround to this? If not, would 12.04 be supported at any<br>point?<br></p><p>Thanks,<br>Projjol<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151213/a474c4e5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Running Swift on Ubuntu 12.04</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>December 12, 2015 at 03:00:00pm</p></header><div class="content"><p>On Sat, Dec 12, 2015 at 10:54 AM, Projjol Banerji via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Hi,<br>&gt; I&#39;m running a linux box with Ubuntu 12.04 on it and as none of the<br>&gt; official builds are for this particular version, I was wondering whether it<br>&gt; would be possible to run Swift on 12.04.<br>&gt; From what I&#39;ve tried, installing libicu52 throws an error as the<br>&gt; repositories for 12.04 don&#39;t have it.<br>&gt; Is there a workaround to this? If not, would 12.04 be supported at any<br>&gt; point?<br>&gt;<br></p><p>I think your only option is building from source, but I&#39;m sure you will hit<br>rough edges (we already had to work around broken std::regex in Ubuntu<br>14.04).<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151212/4bd9393b/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

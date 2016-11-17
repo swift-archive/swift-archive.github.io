@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Discussion][Expericment] D-like slicing syntax</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 29, 2016 at 02:00:00pm</p></header><div class="content"><p>on Sat Feb 27 2016, Daniel Duan &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Dave Abrahams via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt;<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Sat Feb 20 2016, Daniel Duan &lt;swift-evolution &lt;at&gt; swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;<br>&gt;&gt; Why not just make<br>&gt;&gt; <br>&gt;&gt;     x[..&lt;$-2]<br>&gt;&gt; <br>&gt;&gt; work?  You can create unary overloads for ..&lt;<br>&gt;<br>&gt; Hi Dave, I took another stab at it today. The code is in the following link as<br>&gt; well as end of this email:<br>&gt; https://gist.github.com/dduan/fcd33a09fae4640fc83c<br>&gt;<br>&gt; This implementation is almost good IMO :)<br></p><p>What&#39;s the case that keeps it from actually being good?<br></p><p>&gt; struct Dollar {}<br>&gt;<br>&gt; let $ = Dollar()<br>&gt;<br>&gt; struct BInt: IntegerLiteralConvertible {<br>&gt;     let bool: Bool<br>&gt;     let int: UInt<br>&gt;     func relativeTo(total: Int) -&gt; Int {<br>&gt;         return bool ? total - Int(int) : Int(int)<br>&gt;     }<br>&gt;     init(_ b: Bool, _ n: UInt) {<br>&gt;         bool = b<br>&gt;         int = n<br>&gt;     }<br>&gt;     init(integerLiteral value: Int) {<br>&gt;         bool = false<br>&gt;         int = UInt(value)<br>&gt;     }<br>&gt; }<br>&gt;<br>&gt; func -(h: Dollar, d: UInt) -&gt; BInt { return BInt(true, d) }<br>&gt;<br>&gt; typealias IncompleteRange = (BInt?, BInt?)<br>&gt;<br>&gt; prefix operator ..&lt; {}<br>&gt; prefix func ..&lt;(end: BInt) -&gt; IncompleteRange {<br>&gt;     return (nil, end)<br>&gt; }<br>&gt;<br>&gt; postfix operator ..&lt; {}<br>&gt; postfix func ..&lt;(start: BInt) -&gt; IncompleteRange {<br>&gt;     return (start, nil)<br>&gt; }<br>&gt; prefix operator ... {}<br>&gt; prefix func ...(end: BInt) -&gt; IncompleteRange {<br>&gt;     return (nil, BInt(end.bool, end.int+1))<br>&gt; }<br>&gt; postfix operator ... {}<br>&gt; postfix func ...(start: BInt) -&gt; IncompleteRange {<br>&gt;     return (start, nil)<br>&gt; }<br>&gt;<br>&gt; func ..&lt;(start: BInt, end: BInt) -&gt; IncompleteRange {<br>&gt;     return (start, end)<br>&gt; }<br>&gt;<br>&gt; func ...(start: BInt, end: BInt) -&gt; IncompleteRange {<br>&gt;     return (start, BInt(end.bool, end.int+1))<br>&gt; }<br>&gt;<br>&gt; internal func normalize(range: IncompleteRange, total: Int) -&gt; (Int, Int) {<br>&gt;     var actualStart = range.0 == nil ? 0 : range.0!.relativeTo(total)<br>&gt;     var actualEnd = range.1 == nil ? total : range.1!.relativeTo(total)<br>&gt;     actualStart = actualStart &lt; 0 ? total + actualStart : actualStart<br>&gt;     actualEnd = actualEnd &lt; 0 ? total + actualEnd : actualEnd<br>&gt;     return (actualStart, actualEnd)<br>&gt; }<br>&gt;<br>&gt; extension CollectionType {<br>&gt;     subscript(halfRange: IncompleteRange) -&gt; Self.SubSequence {<br>&gt;         let (safeStart, safeEnd) = normalize(<br>&gt;             halfRange,<br>&gt;             total: self.count as! Int<br>&gt;         )<br>&gt;         let safeStartIndex = startIndex.advancedBy(<br>&gt;             safeStart as! Self.Index.Distance)<br>&gt;         let safeEndIndex = startIndex.advancedBy(<br>&gt;             safeEnd as! Self.Index.Distance)<br>&gt;         return self[safeStartIndex..&lt;safeEndIndex]<br>&gt;     }<br>&gt; }<br>&gt;<br>&gt; let s = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br>&gt;<br>&gt; // all of these expression results in [6, 7, 8, 9]<br>&gt; s[6...]<br>&gt; s[($-4)...]<br>&gt; s[6..&lt;s.count]<br>&gt; s[6..&lt;$-0]<br>&gt; s[$-4...9]<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

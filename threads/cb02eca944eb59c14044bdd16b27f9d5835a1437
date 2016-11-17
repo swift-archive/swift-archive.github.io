@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e828f637e91f7d986b7a79574dc0c45a?s=50"></div><header><strong>Optional precondition after else and #else</strong> from <string>Amir Michail</string> &lt;a.michail at me.com&gt;<p>December  8, 2015 at 08:00:00am</p></header><div class="content"><p>For example:<br></p><p>if a &gt; 0 {<br>….<br>} else a &lt; -5 {<br>…<br>}<br></p><p>This would be the same as:<br></p><p>if a &gt; 0 {<br>….<br>} else {<br>  precondition(a &lt; -5)<br>…<br>}<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d30e546d655d1c7ece0464791a9a90d5?s=50"></div><header><strong>Optional precondition after else and #else</strong> from <string>Adrian Kashivskyy</string> &lt;adrian.kashivskyy at me.com&gt;<p>December  9, 2015 at 12:00:00am</p></header><div class="content"><p>How is this different from `else if`? 😄<br></p><p>&gt; if a &gt; 0 {<br>&gt; 	...<br>&gt; } else if a &lt; -5 {<br>&gt; 	...<br>&gt; }<br></p><p>Pozdrawiam – Regards,<br>Adrian Kashivskyy<br></p><p>&gt; Wiadomość napisana przez Amir Michail via swift-evolution &lt;swift-evolution at swift.org&gt; w dniu 08.12.2015, o godz. 14:47:<br>&gt; <br>&gt; For example:<br>&gt; <br>&gt; if a &gt; 0 {<br>&gt; ….<br>&gt; } else a &lt; -5 {<br>&gt; …<br>&gt; }<br>&gt; <br>&gt; This would be the same as:<br>&gt; <br>&gt; if a &gt; 0 {<br>&gt; ….<br>&gt; } else {<br>&gt;  precondition(a &lt; -5)<br>&gt; …<br>&gt; }<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151209/2d7cd923/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Optional precondition after else and #else</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>December  8, 2015 at 03:00:00pm</p></header><div class="content"><p>My first thought was that at first glance I&#39;d get this confused with &quot;else if&quot;. Obviously that doesn&#39;t change semantics in correct code, but it does seem a little subtle.<br></p><p>My second thought was &quot;precondition or assert?&quot; (i.e. &quot;is the check enabled in release builds?&quot;) and that convinced me that this wasn&#39;t really worth the added complexity. It&#39;s a neat idea, but I think the language becomes more complex because of it without sufficient gain.<br></p><p>Jordan<br></p><p>&gt; On Dec 8, 2015, at 5:47, Amir Michail via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; For example:<br>&gt; <br>&gt; if a &gt; 0 {<br>&gt; ….<br>&gt; } else a &lt; -5 {<br>&gt; …<br>&gt; }<br>&gt; <br>&gt; This would be the same as:<br>&gt; <br>&gt; if a &gt; 0 {<br>&gt; ….<br>&gt; } else {<br>&gt;  precondition(a &lt; -5)<br>&gt; …<br>&gt; }<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e828f637e91f7d986b7a79574dc0c45a?s=50"></div><header><strong>Optional precondition after else and #else</strong> from <string>Amir Michail</string> &lt;a.michail at me.com&gt;<p>December  8, 2015 at 06:00:00pm</p></header><div class="content"><p>&gt; On Dec 8, 2015, at 6:34 PM, Jordan Rose &lt;jordan_rose at apple.com&gt; wrote:<br>&gt; <br>&gt; My first thought was that at first glance I&#39;d get this confused with &quot;else if&quot;. Obviously that doesn&#39;t change semantics in correct code, but it does seem a little subtle.<br>&gt; <br>&gt; My second thought was &quot;precondition or assert?&quot; (i.e. &quot;is the check enabled in release builds?&quot;) and that convinced me that this wasn&#39;t really worth the added complexity. It&#39;s a neat idea, but I think the language becomes more complex because of it without sufficient gain.<br></p><p>I think “assert&quot; should be removed from the language.<br></p><p>&gt; <br>&gt; Jordan<br>&gt; <br>&gt;&gt; On Dec 8, 2015, at 5:47, Amir Michail via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; For example:<br>&gt;&gt; <br>&gt;&gt; if a &gt; 0 {<br>&gt;&gt; ….<br>&gt;&gt; } else a &lt; -5 {<br>&gt;&gt; …<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; This would be the same as:<br>&gt;&gt; <br>&gt;&gt; if a &gt; 0 {<br>&gt;&gt; ….<br>&gt;&gt; } else {<br>&gt;&gt; precondition(a &lt; -5)<br>&gt;&gt; …<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

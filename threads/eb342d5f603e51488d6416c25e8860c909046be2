@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1966627b418931a036bad98003d0b65d?s=50"></div><header><strong>Measuring time accurately on Linux</strong> from <string>Michal Kalinowski</string> &lt;michal.kalinowski at icloud.com&gt;<p>May 15, 2016 at 01:00:00pm</p></header><div class="content"><p>It&#39;s my first time posting to users mailing list so hello everyone.<br></p><p>I&#39;m currently optimizing code of my server written in Swift. To do that reliably I want to be able to measure how long it takes to execute specific methods.<br></p><p>On OSX I&#39;m using mach_absolute_time() that I&#39;ve wrapped in a struct for easier interaction and it works fine. Now I&#39;d like to do the same tests on a copy of my actual platform that runs Ubuntu 15.10.<br></p><p>Mach0 library that I use is not available on Linux, instead I could use gettimeofday or clock_gettime. For that I would have to expose time.h to my swift code, however I&#39;m unsure how to do it exactly.<br>I have started putting my timing struct in a swift package as a first step. Now I&#39;m stuck and here are my questions:<br>    * How exactly do I use clang&#39;s modulemap with package manager?<br>    * How do I make modulemap include time.h only on Linux?<br>    * Is it necessary to include full path to time.h header or I can omit it in case of system headers?<br></p><p>Here is a link to my package for future reference (no linux code there for now).<br>https://github.com/michalkalinowski-/Timer<br></p><p>Also, if anyone is aware of a package that uses C library in place of OSX C method to work cross-platform please let me know. It would be a great guidance for me as I have a very vague idea of how package manager and C libs import work.<br></p><p>Regards,<br>M. Kalinowski<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160515/eb346be2/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

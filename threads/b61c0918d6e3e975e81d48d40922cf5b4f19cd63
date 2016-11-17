@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6484714d340af91813539b51926b50fd?s=50"></div><header><strong>Swift Core Crypto</strong> from <string>Travis Beech</string> &lt;tbeech at unwiredrevolution.com&gt;<p>December  9, 2015 at 05:00:00pm</p></header><div class="content"><p>I know this is not in scope for Swift 3.0 but has there been any talk about including cryptographic APIs into the core language runtime? In my opinion this has been a serious deficit of the language so far, many other languages include cryptographic APIs  as part of their runtime. Developers need libraries they can trust when it comes to crypto, and using some third party library found on Github I don’t think is a good solution. Bridging in the C based CommonCrypto is a workaround but adds complexity especially when you’re trying to build a framework to be used by others.<br></p><p>Travis Beech | Principal Developer | Unwired Revolution<br>Optimizing Operations for Mobile and Distributed Systems<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151209/b61ccd63/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>Swift Core Crypto</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>December  9, 2015 at 12:00:00pm</p></header><div class="content"><p>&gt; I know this is not in scope for Swift 3.0 but has there been any talk about including cryptographic APIs into the core language runtime?<br></p><p>Not yet. I think the idea is that new systems like this should be implemented as community-driven libraries, and eventually the team may adopt some important ones into Corelibs.<br></p><p>Personally, I’d be interested to see what a crypto library looks like when you expect people to flatMap it over their data!<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6484714d340af91813539b51926b50fd?s=50"></div><header><strong>Swift Core Crypto</strong> from <string>Travis Beech</string> &lt;tbeech at unwiredrevolution.com&gt;<p>December  9, 2015 at 11:00:00pm</p></header><div class="content"><p>Not sure what you meant by flatMap, but I would expect a set of API’s to perform encryption\decryption of data, HMAC hashing, etc. Pretty much API’s available in most modern languages without having to jump through hoops. I think if we expect developers to create safe, secure software it needs to be much easier to do so.<br></p><p>Travis Beech | Principal Developer | Unwired Revolution<br>Optimizing Operations for Mobile and Distributed Systems<br></p><p><br></p><p><br></p><p><br></p><p><br></p><p>On 12/9/15, 12:06 PM, &quot;Brent Royal-Gordon&quot; &lt;brent at architechies.com&gt; wrote:<br></p><p>&gt;&gt; I know this is not in scope for Swift 3.0 but has there been any talk about including cryptographic APIs into the core language runtime?<br>&gt;<br>&gt;Not yet. I think the idea is that new systems like this should be implemented as community-driven libraries, and eventually the team may adopt some important ones into Corelibs.<br>&gt;<br>&gt;Personally, I’d be interested to see what a crypto library looks like when you expect people to flatMap it over their data!<br>&gt;<br>&gt;-- <br>&gt;Brent Royal-Gordon<br>&gt;Architechies<br>&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

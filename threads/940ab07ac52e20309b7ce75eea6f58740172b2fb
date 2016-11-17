@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5c9df42e3c293e3cdb5f3e1b34d44ef9?s=50"></div><header><strong>[Review] SE-0018 Flexible Memberwise Initialization</strong> from <string>Step C</string> &lt;schristopher at bignerdranch.com&gt;<p>January 10, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt;<br>&gt;<br>&gt;<br>&gt; The review of &quot;Flexible Memberwise Initialization&quot; begins now and runs<br>&gt; through January 10th. The proposal is available here:<br>&gt;<br>&gt;<br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0018-flexible-memberwise-initialization.md<br>&gt;<br></p><p> &lt;snip&gt;<br></p><p>&gt;         * What is your evaluation of the proposal?<br>&gt;<br> A slightly hesitant +1. I think there may be a more general approach that<br>would have benefits across the language, although that approach would still<br>need several specific accommodations to work for init. I’m not sure a<br>comparable solution would land anywhere better in the complexity space,<br>though it could probably provide a less narrow set of advantages.<br></p><p>        * Is the problem being addressed significant enough to warrant a<br>&gt; change to Swift?<br>&gt;<br> Yes. Initialization is fundamental to Swift, and as it stands right now<br>there is too much boilerplate. I believe this proposal carefully worked<br>through the space of attempting to minimize need for boilerplate in enough<br>common cases without requiring too much special knowledge.<br></p><p>        * Does this proposal fit well with the feel and direction of Swift?<br>&gt;<br>I think so, overall. It strikes a pretty good balance. I am reluctant to<br>make teaching initialization any more difficult, but I looked through the<br>proposal yet again with an eye towards how I would teach this new feature<br>along with everything else and I believe it is manageable (and in fact not<br>as high a cost as I assumed previously). I don’t think most of the future<br>possible directions will be needed or beneficial, but the proposal as it<br>stands today does not complicate the language overly much from my<br>perspective, relative to its benefits. I do wish some of the ideas on a<br>more general solution had come up earlier and had time to be more fully<br>explored. Using a broader feature with specialization for init would be the<br>best possible improvement  in fitting with Swift that I could imagine.<br></p><p>In the end I think this is a good and very well thought through proposal on<br>memberwise initialization. I think it strikes a very good balance on<br>capability vs additional complexity, with the caveat that I think it is a<br>bit too narrow and we should have explored a more general variadic args<br>capability to underly this feature earlier. However I’m not sure we should<br>hold up this proposal based on that hypothetical, especially since much of<br>the initialization-specific capabilities would still need to be addressed.<br></p><p><br>&gt;         * If you have you used other languages or libraries with a similar<br>&gt; feature, how do you feel that this proposal compares to those?<br>&gt;<br>Nothing comes to mind that would be comparable.<br></p><p>        * How much effort did you put into your review? A glance, a quick<br>&gt; reading, or an in-depth study?<br>&gt;<br>I’ve followed the entire discussion(s) on Swift-Evolution, and read the<br>proposal several times. I went through some of our Swift codebase, and<br>thought through the impact on our Initialization lecture and materials.<br></p><p>- Step<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160110/940ab2fb/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

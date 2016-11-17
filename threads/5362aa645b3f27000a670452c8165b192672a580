@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>libxml/parser.h not found?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>November  3, 2016 at 12:00:00pm</p></header><div class="content"><p>Anyone know what this is about?<br></p><p>/Users/dave/src/s/swift/utils/build-script --distcc &#39;--lit-args=--distribute -sv&#39; --build-args=-v --skip-build-ios-device --skip-build-tvos-device --skip-build-compiler-rt --swift-stdlib-build-type=Debug --swift-stdlib-enable-assertions=1 --skip-build-benchmarks --release-debuginfo --debug-swift-stdlib --swift-stdlib-build-type=Debug --swift-stdlib-enable-assertions=1 --test --<br></p><p>...<br>/Users/Shared/dabrahams/s/llvm/tools/clang/tools/c-index-test/c-index-test.c:15:10: fatal error: &#39;libxml/parser.h&#39; file not found<br>#include &lt;libxml/parser.h&gt;<br>         ^<br>1 error generated.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ceeb0579acf2f3be5ce60be6488c1a23?s=50"></div><header><strong>libxml/parser.h not found?</strong> from <string>Doug Coleman</string> &lt;doug_coleman at apple.com&gt;<p>November  3, 2016 at 01:00:00pm</p></header><div class="content"><p>Looks like clang/CMakeLists.txt looks for libxml2:<br></p><p>find_package(LibXml2 2.5.3 QUIET)<br>if (LIBXML2_FOUND)<br>  set(CLANG_HAVE_LIBXML 1)<br>endif()<br></p><p>Perhaps you have the libxml2 library but not the libxml headers?<br></p><p>Doug<br></p><p><br>&gt; On Nov 3, 2016, at 12:54 PM, Dave Abrahams via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; Anyone know what this is about?<br>&gt; <br>&gt; /Users/dave/src/s/swift/utils/build-script --distcc &#39;--lit-args=--distribute -sv&#39; --build-args=-v --skip-build-ios-device --skip-build-tvos-device --skip-build-compiler-rt --swift-stdlib-build-type=Debug --swift-stdlib-enable-assertions=1 --skip-build-benchmarks --release-debuginfo --debug-swift-stdlib --swift-stdlib-build-type=Debug --swift-stdlib-enable-assertions=1 --test --<br>&gt; <br>&gt; ...<br>&gt; /Users/Shared/dabrahams/s/llvm/tools/clang/tools/c-index-test/c-index-test.c:15:10: fatal error: &#39;libxml/parser.h&#39; file not found<br>&gt; #include &lt;libxml/parser.h&gt;<br>&gt;         ^<br>&gt; 1 error generated.<br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

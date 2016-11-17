@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6d70beba8e58cc088810acde9a89808a?s=50"></div><header><strong>Shorthand Optional Notation proposal</strong> from <string>Pranjal Satija</string> &lt;pranjal.satija at icloud.com&gt;<p>January 11, 2016 at 09:00:00pm</p></header><div class="content"><p>Hey there,<br></p><p>I have a proposal I’d like to ask you guys to look at before I try to submit it as a formal proposal on the GitHub repository. Before I write a complete draft with a detailed explanation of everything, I’d like to validate my idea a bit. Would it be beneficial to have a shorthand Optional operator in Swift? Currently, when initializing a variable with a non-optional value, the only way to make it optional is by using an explicit type, like this:<br></p><p>let myOptionalString: String? = “str”<br></p><p>This syntax can be cumbersome, especially for types with longer names. Now, there’s a force unwrap operator in Swift that allows you to put an optional value into a variable that’s expecting a non-optional type, like this:<br></p><p>let myForceUnwrappedValue = SomeInitializer()! <br></p><p>So, to match, and to make things shorter, do you think there should be an operator that allows developers to achieve the same effect, but without an explicit type? Like this:<br></p><p>let myOptionalString = “str”?<br></p><p>Could you guys let me know what you think? Thanks for the help!<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/957b675456a66c394945a7361aedd51d?s=50"></div><header><strong>Shorthand Optional Notation proposal</strong> from <string>Zhao Xin</string> &lt;owenzx at gmail.com&gt;<p>January 12, 2016 at 12:00:00pm</p></header><div class="content"><p>You can always use<br></p><p>let myOptionalString = Optional(“str”)<br></p><p>instead.<br></p><p>Or use the code below<br></p><p>postfix operator / { }<br></p><p>postfix func / (value:String) -&gt; String? {<br>    return Optional(value)<br>}<br></p><p>let string = &quot;str&quot;/<br>print(string) // Optional(&quot;str&quot;)<br></p><p>I try to use ? to replace /. It doesn&#39;t work. As the compiler try to think<br>? { } as a tuple instead of an operator.<br></p><p>I also tried to replace String with T. It seams that you can not use<br>operator function with generics.<br></p><p>zhaoxin<br></p><p>On Tue, Jan 12, 2016 at 10:29 AM, Pranjal Satija via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hey there,<br>&gt;<br>&gt; I have a proposal I’d like to ask you guys to look at before I try to<br>&gt; submit it as a formal proposal on the GitHub repository. Before I write a<br>&gt; complete draft with a detailed explanation of everything, I’d like to<br>&gt; validate my idea a bit. Would it be beneficial to have a shorthand Optional<br>&gt; operator in Swift? Currently, when initializing a variable with a<br>&gt; non-optional value, the only way to make it optional is by using an<br>&gt; explicit type, like this:<br>&gt;<br>&gt; let myOptionalString: String? = “str”<br>&gt;<br>&gt; This syntax can be cumbersome, especially for types with longer names.<br>&gt; Now, there’s a force unwrap operator in Swift that allows you to put an<br>&gt; optional value into a variable that’s expecting a non-optional type, like<br>&gt; this:<br>&gt;<br>&gt; let myForceUnwrappedValue = SomeInitializer()!<br>&gt;<br>&gt; So, to match, and to make things shorter, do you think there should be an<br>&gt; operator that allows developers to achieve the same effect, but without an<br>&gt; explicit type? Like this:<br>&gt;<br>&gt; let myOptionalString = “str”?<br>&gt;<br>&gt; Could you guys let me know what you think? Thanks for the help!<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br></p><p><br></p><p>-- <br></p><p>Owen Zhao<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160112/ed3ebc08/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

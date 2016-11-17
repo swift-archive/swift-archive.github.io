@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e3903086ed803b3e3dadf2f0d68e6042?s=50"></div><header><strong>Binding Regular C Functions (Gtk, Cairo, etc.)</strong> from <string>Gage Morgan</string> &lt;gagemorgan at outlook.com&gt;<p>December  8, 2015 at 02:00:00am</p></header><div class="content"><p>For any project: How is a C to Swift function binding created? I&#39;d like to know how to import C functions to Swift. Once I can do this successfully, I&#39;ll be all set. <br></p><p>Sent from Outlook<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151208/5339a37d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dbc48a135881e122fea26cf27760d11a?s=50"></div><header><strong>Binding Regular C Functions (Gtk, Cairo, etc.)</strong> from <string>Mish Awadah</string> &lt;mawadah at apple.com&gt;<p>December  7, 2015 at 06:00:00pm</p></header><div class="content"><p>Please see the reference at https://github.com/apple/swift-package-manager/blob/master/Documentation/SystemModules.md &lt;https://github.com/apple/swift-package-manager/blob/master/Documentation/SystemModules.md&gt;<br></p><p>- mish<br></p><p>&gt; On Dec 7, 2015, at 6:33 PM, Gage Morgan via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; For any project: How is a C to Swift function binding created? I&#39;d like to know how to import C functions to Swift. Once I can do this successfully, I&#39;ll be all set. <br>&gt; <br>&gt; Sent from Outlook &lt;http://aka.ms/Ox5hz3&gt;<br>&gt;  _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/2650d69a/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

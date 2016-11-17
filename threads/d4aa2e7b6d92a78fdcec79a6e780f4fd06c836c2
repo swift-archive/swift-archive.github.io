@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Enhanced existential types proposal discussion</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May 19, 2016 at 03:00:00pm</p></header><div class="content"><p>on Wed May 18 2016, Thorsten Seitz &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; Am 18.05.2016 um 06:52 schrieb Austin Zheng via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt;:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; <br>&gt;<br>&gt;&gt;&gt; On Tue, May 17, 2016 at 1:25 PM, Matthew Johnson &lt;matthew at anandabits.com&gt; wrote:<br>&gt;&gt;&gt;&gt;&gt;  <br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; Within the angle brackets are zero or more &#39;clauses&#39;. Clauses<br>&gt;&gt;&gt;&gt;&gt;&gt; are separated by semicolons. (This is so commas can be used in<br>&gt;&gt;&gt;&gt;&gt;&gt; where constraints, below. Better ideas are welcome. Maybe it&#39;s<br>&gt;&gt;&gt;&gt;&gt;&gt; not necessary; we can use commas exclusively.)<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; I’m not a fan of the semicolon idea.  I don’t see any reason for<br>&gt;&gt;&gt;&gt;&gt; this.  The `where` keyword separates the protocol list from the<br>&gt;&gt;&gt;&gt;&gt; constraints just fine.  The list on either side should be able to<br>&gt;&gt;&gt;&gt;&gt; use commas with no problem (or line breaks if that proposal goes<br>&gt;&gt;&gt;&gt;&gt; through).<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; I&#39;m leaning towards getting rid of the commas, but would like to<br>&gt;&gt;&gt;&gt; write out a few &#39;dummy&#39; examples to see if there are any<br>&gt;&gt;&gt;&gt; readability issues that arise.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Replaced with what?  Whitespace separation?  I suppose that might<br>&gt;&gt;&gt; work for the protocol list but it feels inconsistent with the rest<br>&gt;&gt;&gt; of Swift.  Commas plus (hopefully) the alternative of newline seem<br>&gt;&gt;&gt; like the right direction to me.<br>&gt;&gt; <br>&gt;&gt; Sorry, I completely misspoke (mistyped?). I meant I want to get rid<br>&gt;&gt; of the semicolons and use commas. I&#39;ve come to the conclusion that<br>&gt;&gt; there are no readability issues, protocol&lt;&gt; already uses commas, and<br>&gt;&gt; semicolons used in this manner don&#39;t have a precedent anywhere else<br>&gt;&gt; in the language.<br>&gt;<br>&gt; Shouldn&#39;t there be just a single `where` in the whole `Any&lt;&gt;` clause,<br>&gt; separating the constraints on the type itself from the constraints on<br>&gt; associated types?<br></p><p>Normally any type of constraint is allowed after `where`, e.g.<br></p><p>struct X&lt;T : Collection where T : Equatable&gt; {}<br></p><p>FWIW.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

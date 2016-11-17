@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a1abe86b70e18c7e3f4025a3062d7671?s=50"></div><header><strong>Adding a singleton to swift</strong> from <string>Vedant Kumar</string> &lt;vsk at apple.com&gt;<p>September  1, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I&#39;m experimenting with swift and would like to add a singleton to the compiler<br>in a way that&#39;s visible to SILGen. It seemed that CompilerInstance would be the<br>right place to store it, but I don&#39;t see a way to access the CI from SILGen. My<br>first question is: what&#39;s the best place to put this singleton?<br></p><p>While I was looking at CompilerInstance, I noticed that we&#39;re doing something<br>strange in its setup() method:<br></p><p>  // FrontendTool.cpp<br>  if (Instance.setup(Invocation)) { ... }<br>  ...<br>  Invocation.getDiagnosticOptions();<br></p><p>This code is copying a CompilerInvocation into a CompilerInstance, modifying it<br>within CompilerInstance::setup(), and then using the original (unmodified)<br>CompilerInvocation. I don&#39;t think this is causing any bugs, but it is a bit<br>confusing. My second question is: which invocation is the &quot;right&quot; one: the<br>unmodifed one, the modified one, or both? It seems like the CompilerInstance<br>should either own an invocation or just have a reference to one.<br></p><p>thanks!<br>vedant<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

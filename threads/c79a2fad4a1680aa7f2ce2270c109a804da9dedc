@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0074: Implementation of Binary Search functions</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May 17, 2016 at 04:00:00pm</p></header><div class="content"><p>on Tue May 10 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On May 6, 2016, at 3:16 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; I am posting this review on behalf of Dmitri Gribenko, Max Moiseev, and<br>&gt;&gt; myself.<br>&gt;<br>&gt;&gt; <br>&gt;&gt; on Tue May 03 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; Hello Swift community,<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; The review of &quot;SE-0074: Implementation of Binary Search functions&quot;<br>&gt;&gt;&gt; begins now and runs through May 9. The proposal is available here:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; 	https://github.com/apple/swift-evolution/blob/master/proposals/0074-binary-search.md<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Reviews are an important part of the Swift evolution process. All<br>&gt;&gt;&gt; reviews should be sent to the swift-evolution mailing list at<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; 	https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; or, if you would like to keep your feedback private, directly to the review manager.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; What goes into a review?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; The goal of the review process is to improve the proposal under review<br>&gt;&gt;&gt; through constructive criticism and contribute to the direction of<br>&gt;&gt;&gt; Swift. When writing your review, here are some questions you might<br>&gt;&gt;&gt; want to answer in your review:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; 	* What is your evaluation of the proposal?<br>&gt;&gt; <br>&gt;&gt; We think binary searches are fundamental and important, and want to see<br>&gt;&gt; them added.  However, we don&#39;t agree with the form of the current<br>&gt;&gt; proposal.  In particular, we think:<br>&gt;&gt; <br>&gt;&gt; * Operations that depend on sorted-ness and use binary predicates should<br>&gt;&gt;  not be available on all Collections; they&#39;re too easy to misuse,<br>&gt;&gt;  they&#39;re hard to name well, and as Nicola Salmoria has noted, they<br>&gt;&gt;  would not make any sense at all for a Set&lt;T&gt;.<br>&gt;&gt; <br>&gt;&gt; * They should be scoped to a kind of collection that bundles<br>&gt;&gt;  the predicate with the elements, e.g.<br>&gt;&gt; <br>&gt;&gt;    let x = Sorted([3, 4, 1, 5, 2], &gt;)          // stores a sorted copy of the array<br>&gt;&gt;    let y = Sorted(preSorted: 0..&lt;100, &lt;)  // stores a copy of the range<br>&gt;&gt; <br>&gt;&gt;  Maybe there should also be protocols for this; CountableRange&lt;T&gt; would<br>&gt;&gt;  already already conform to the immutable version.  We might want a<br>&gt;&gt;  mutable form of the protocol for sorted collections with<br>&gt;&gt;  insertion/removal methods.  This whole area needs more design.<br>&gt;<br>&gt; I worry that attaching these methods to a strongly-typed `Sorted`<br>&gt; wrapper limits their appeal. It&#39;s useful to be able to binary-search<br>&gt; through data in a standard container that&#39;s known to be sorted, or<br>&gt; over a subregion of the data that&#39;s sorted. While you can of course<br>&gt; cobble together a Sorted(Slice(container[sortedRange])), that&#39;s pretty<br>&gt; inconvenient. Is misapplying binary search algorithms to unsorted data<br>&gt; a big problem in practice in C++?<br></p><p>No, but:<br></p><p>1. Algorithms on collections in C++ are not methods that you&#39;d find by<br>   code completion.<br></p><p>2. We have stronger naming conventions than C++ does, such that we&#39;re<br>   inclined to stick the word “sorted” into the names of all the<br>   algorithms that have a sortedness precondition.  There are a few of<br>   them; e.g. don&#39;t forget unique().  The resulting design gets pretty ugly.<br></p><p>3. The idea of a collection that maintains its sorted order is a<br>   powerful one that has been useful in practice<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

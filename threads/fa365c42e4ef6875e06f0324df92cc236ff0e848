@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/658c9756e470ce529d5e2ce0e5af681f?s=50"></div><header><strong>String manipulation (replacingOccurrences) in Linux swift</strong> from <string>Carlos Barrera Hernandez</string> &lt;carlosbarrera_bcn at yahoo.es&gt;<p>May 26, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I’m currently using swift to build a project, and have found a pretty hard to bypass roadBlock.<br></p><p>The main workflow of the project is<br>- Read a csv file<br>- Extract the values of the rows and columns<br>- Process data extracted from file<br>- Write some results to another file<br></p><p>Pretty simple and straightforward. Got it working on OSX with 2016-05-09 (a) toolchain without problems, using the CSV parser from https://github.com/Daniel1of1/CSwiftV with the minimal modifications to compile with swift 3.<br></p><p>But i need it to compile and work with linux ubuntu.<br>I prepared a work environment with the instructions in https://www.raywenderlich.com/122189/introduction-to-open-source-swift-on-linux<br>and it works and compiles swift code wonderfully, even installed the same snapshot of the swift toolchain to make it all happy.<br></p><p>The problem i found is some of the string functionality i need for the csv parser to work, is not working ok in linux.<br>- String.replacingOccurences(of: stringToFind, with: stringToPutInstead)<br>does not work the same in both environments.<br></p><p>i have a csv file obtainable from https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients<br>That contains the pattern “\r\n” and i need it to be replaced with “\n” to later on process the rest of the file.<br></p><p>the code i use is:<br></p><p>        #if os(Linux)<br>            print(&quot;Let&#39;s change those carriage returns...&quot;)<br>            processedString = string.replacingOccurrences(of: &quot;\r\n&quot;, with: &quot;\n&quot;)<br>        #else<br>            processedString = string.replacingOccurrences(of: &quot;\r\n&quot;, with: &quot;\n&quot;)<br>        #endif<br>And it compiles flawlessly in linux, but when it’s time to execute, it throws an error message like:<br>Let&#39;s change those carriage returns...<br>Illegal instruction (core dumped)<br>I tried escaping the pattern ( “\\r\\n”) and it does not throw the error, but neither replaces the code<br>When i tried executing the same code in the Linux virtual machine in the REPL environment, the sequence of events was:<br></p><p> 1&gt; import Foundation<br>  2&gt; let path = &quot;/vagrant/credit_card.csv&quot; <br>path: String = &quot;/vagrant/credit_card.csv&quot;<br>  3&gt; let text = NSString(contentsOfFile: path as String, encoding: NSUTF8StringEncoding) <br>text: Foundation.NSString = {<br>  Foundation.NSObject = {}<br>  _cfinfo = {<br>    info = 1920<br>    pad = 0<br>  }<br>  _storage = &quot;ID,LIMIT_BAL,SEX,EDUCATION,MARRIAGE,AGE,PAY_0,PAY_2,PAY_3,PAY_4,PAY_5,PAY_6,BILL_AMT1,BILL_AMT2,BILL_AMT3,BILL_AMT4,BILL_AMT5,BILL_AMT6,PAY_AMT1,PAY_AMT2,PAY_AMT3,PAY_AMT4,PAY_AMT5,PAY_AMT6,default payment next month\r\n1,20000,2,2,1,24,2,2,-1,-1,-2,-2,3913,3102,689,0,0,0,0,689,0,0,0,0,1\r\n2,120000,2,2,2,26,-1,2,0,0,0,2,2682,1725,2682,3272,3455,3261,0,1000,1000,1000,0,2000,1\r\n3,90000,2,2,2,34,0,0,0,0,0,0,29239,14027,13559,14331,14948,15549,1518,1500,1000,1000,1000,5000,0\r\n4,50000,2,2,1,37,0,0,0,0,0,0,46990,48233,49291,28314,28959,29547,2000,2019,1200,1100,1069,1000,0\r\n5,50000,1,2,1,57,-1,0,-1,0,0,0,8617,5670,35835,20940,19146,19131,2000,36681,10000,9000,689,679,0\r\n6,50000,1,1,2,37,0,0,0,0,0,0,64400,57069,57608,19394,19619,20024,2500,1815,657,1000,1000,800,0\r\n7,500000,1,1,2,29,0,0,0,0,0,0,367965,412023,445007,542653,483003,473944,55000,40000,38000,20239,13750,13770,0\r\n8,100000,2,2,2,23,0,-1,-1,0,0,-1,11876,380,601,221,-159,567,380,601,0,581,1687,1542,0\r\n9,140000,2,3,1,28,0,0,2,0,0,0,11285,14096,12108,12211,11793,&quot;...<br>}<br>  4&gt; var tmp = text.replacingOccurrences(of: &quot;\r\n&quot;, with: &quot;\n&quot;)<br>tmp: String = {<br>  _core = {<br>    _baseAddress = &lt;extracting data from value failed&gt;<br></p><p>    _countAndFlags = &lt;extracting data from value failed&gt;<br></p><p>    _owner = &lt;extracting data from value failed&gt;<br></p><p>  }<br>}<br>Execution interrupted. Enter code to recover and continue.<br>Enter LLDB commands to investigate (type :help for assistance.)<br></p><p>And i found myself without more options to know what’s happening.<br></p><p>Is it a bug i need to report? is there something i’m missing?<br></p><p>What would really be a blessing, is something akin to the xcode swift documentation that covered the linux equivalence of commands.<br></p><p>I know is a young project yet, but it really needs to improve the docs for Linux development to be viable. ( and a GUI like Xcode too ;) )<br></p><p>If anyone knows anything that can help, i’d be gratefull.<br></p><p>Carlos Barrera<br>shadowcharly at gmail.com<br></p><p> <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160526/fa36e848/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0131: Add AnyHashable to the standard library</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July 26, 2016 at 10:00:00am</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0131-anyhashable.md<br></p><p>The review of &quot;SE-0131: Add AnyHashable to the standard library&quot; ran from Active review July 23…25. The proposal has been *accepted*.<br></p><p>The feedback on this proposal was quite positive.  A few questions were raised, but were answered on-thread.  Thank you to Dmitri Gribenko for writing this proposal and driving this discussion forward.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>[Accepted] SE-0131: Add AnyHashable to the standard library</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>July 27, 2016 at 01:00:00am</p></header><div class="content"><p>&gt; On 26 Jul 2016, at 19:52, Chris Lattner via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0131-anyhashable.md<br>&gt; <br>&gt; The review of &quot;SE-0131: Add AnyHashable to the standard library&quot; ran from Active review July 23…25. The proposal has been *accepted*.<br>&gt; <br>&gt; The feedback on this proposal was quite positive.  A few questions were raised, but were answered on-thread.  Thank you to Dmitri Gribenko for writing this proposal and driving this discussion forward.<br>&gt; <br>&gt; -Chris Lattner<br>&gt; Review Manager<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>I didn’t get an answer about making the wrapping implicit. Is something like that at all possible?<br></p><p>When I look at the changes required, this looks like a massive readability regression - especially given that AnyHashable is pretty much a hack around incomplete existential support anyway:<br></p><p>&gt;    let _ = NSError(domain: &quot;myDomain&quot;, code: 4, <br>&gt; -                  userInfo: [&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3])<br>&gt; +                  userInfo: [AnyHashable(&quot;a&quot;):1,<br>&gt; +                             AnyHashable(&quot;b&quot;):2,<br>&gt; +                             AnyHashable(&quot;c&quot;):3])<br></p><p>The proposal itself claims that &quot;AnyHashable itself is additive. Source-breaking changes are discussed in SE-0116.”, but that is not true. I don’t see any discussion of these source-breaking changes in SE-0116 - which in fact delegates discussion of the specific AnyHashable design back to this proposal.<br></p><p>Karl<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160727/fe8cb4de/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

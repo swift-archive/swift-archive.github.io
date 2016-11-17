@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dc0180c1b9aff52f5d42a1ca6bd1f184?s=50"></div><header><strong>Mac Toolchain is Unsigned?</strong> from <string>Thomas Catterall</string> &lt;me at swizzlr.co&gt;<p>December 25, 2015 at 07:00:00am</p></header><div class="content"><p>Merry Christmas all,<br></p><p>While I wait for the rest of the family to arrive and the kids are slowly going insane staring at presents, I’m doing some Swift dev. However, I note that the latest Mac snapshot is unsigned – has it always been this way? The installer displays the lock, but I have to option-click on the package to actually get it running.<br></p><p>I’ve installed it anyway. I’m not carrying any state secrets, I hope?<br></p><p>Family’s here, gotta go!<br></p><p>Tom<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Mac Toolchain is Unsigned?</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>December 25, 2015 at 09:00:00am</p></header><div class="content"><p>On Fri, Dec 25, 2015 at 4:38 AM, swizzlr via swift-users<br>&lt;swift-users at swift.org&gt; wrote:<br>&gt; Merry Christmas all,<br>&gt;<br>&gt; While I wait for the rest of the family to arrive and the kids are slowly going insane staring at presents, I’m doing some Swift dev. However, I note that the latest Mac snapshot is unsigned – has it always been this way? The installer displays the lock, but I have to option-click on the package to actually get it running.<br></p><p>Hi Tom,<br></p><p>I just checked, it is signed.  Here’s the SHA-1 hash on my end:<br></p><p>68e2ba878d2c9803bbfda760b24b399e8ada4f79<br>swift-2.2-SNAPSHOT-2015-12-22-a-osx.pkg<br></p><p>But, it is not downloaded from the App store.  Check your &quot;System<br>preferences&quot; &gt; &quot;Security and privacy&quot; &gt; &quot;General&quot; page.  If you have<br>it set to &quot;Mac App store only&quot; then it would explain what you are<br>seeing.<br></p><p>&gt; I’ve installed it anyway. I’m not carrying any state secrets, I hope?<br></p><p>Well, code signing is meant to allow you to ensure that the toolchain<br>that you are installing was indeed built by the Swift Open Source<br>project (and not, say, some attacker who is planting a<br>man-in-the-middle attack while you are downloading it).<br></p><p>To double-check, you can use the SHA-1 hash I pasted above.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

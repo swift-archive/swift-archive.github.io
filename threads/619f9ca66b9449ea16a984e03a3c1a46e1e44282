@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Revision requested] SE-0025: Scoped Access Level</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>March 11, 2016 at 05:00:00pm</p></header><div class="content"><p>The review of SE-0025 “Scoped Access Level” ran from February 26...March 3, 2016. The core team is requesting a revision to the proposal that will then come up for a second public review:<br></p><p>	https://github.com/apple/swift-evolution/blob/master/proposals/0025-scoped-access-level.md<br></p><p>The core team feels that Swift is a very “extension-oriented” language, where programmers are encouraged to put core functionality into the struct/class/enum/protocol definition and factor other functionality into extensions that each encapsulate some aspect of the type’s functionality. The proposed “local” access specifier fits that development methodology well, separating out the implementation details of an extension from the interface provided by that extension. While it is possible to place extensions in separate files to isolate them (and use file-private access), this is not always practical (because it might require nontrivial refactoring for existing code) and might have the unintended effect of requiring currently file-private declarations (that are only referenced within that file) to become internal declarations (once an extension is placed in a separate file).<br></p><p>The requested revision involves the proposed keyword, local. The core team feels that the most appropriate keyword for the proposed functionality is the existing private keyword. Other languages that have private access specifiers more closely align with the proposed locally-scoped behavior, so such a change would reduce friction for developers moving between the language and more naturally align when what the core team felt the keyword private implies.<br></p><p>Specifically, the core team is requesting a revised version of the proposal that changes the semantics of the existing private keyword to match those of the proposed local keyword, and introduce a new name for the existing private semantics that more strongly implies file-private access. Because this is a significant expansion in the scope of the change, the core team feels that we should have a second public review.<br></p><p>	Doug Gregor<br>	Review Manager<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160311/619f4282/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

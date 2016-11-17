@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c57a488f4772fb7ab5169ff713f409fa?s=50"></div><header><strong>[Pitch] Reducing the bridging magic in dynamic casts</strong> from <string>J.D. Healy</string> &lt;jdhealy at gmail.com&gt;<p>May  3, 2016 at 11:00:00am</p></header><div class="content"><p>Confused about getAsNSString from bullet point 5, used again in bullet<br>point 8 — the function wont compile for me:<br></p><p><br>&gt; Check whether a value is _ObjectiveCBridgeable to a class, or conversely,<br>&gt; that an object is _ObjectiveCBridgeable to a value type, and perform the<br>&gt; bridging conversion if so:<br>&gt;<br>&gt; func getAsString&lt;T&gt;(value: T) -&gt; String? {<br>&gt;   return value as? String<br>&gt; }func getAsNSString&lt;T&gt;(value: T) -&gt; NSString {<br>&gt;   return value as? NSString<br>&gt; }<br>&gt;<br>&gt; getAsString(value: &quot;string&quot;) // produces &quot;string&quot;: String<br>&gt; getAsNSString(value: &quot;string&quot;) // produces &quot;string&quot;: NSString<br>&gt; let ns = NSString(&quot;nsstring&quot;)<br>&gt; getAsString(value: ns) // produces &quot;nsstring&quot;: String<br>&gt; getAsNSString(value: ns) // produces &quot;nsstring&quot;: NSString<br>&gt;<br>&gt;<br>Drill through Optionals. If an Optional contains some value, it is<br>&gt; extracted, and the cast is attempted on the contained value; the cast fails<br>&gt; if the source value is none and the result type is not optional:<br>&gt;<br>&gt; var x: String? = &quot;optional string&quot;<br>&gt; getAsNSString(value: x) // produces &quot;optional string&quot;: NSString<br>&gt; x = nilgetAsNSString(value: x) // fails<br>&gt;<br>&gt; $ /Applications/Xcode-7D1010.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift<br>Welcome to Apple Swift version 2.2 (swiftlang-703.0.18.5<br>clang-703.0.31). Type :help for assistance.<br>  1&gt; import Foundation<br>  2&gt;<br>  3&gt; func getAsNSString&lt;T&gt;(value: T) -&gt; NSString {<br>  4.   return value as? NSString<br>  5. }<br>repl.swift:4:16: error: value of optional type &#39;NSString?&#39; not<br>unwrapped; did you mean to use &#39;!&#39; or &#39;?&#39;?<br>  return value as? NSString<br>               ^<br>         (                 )!<br></p><p>  3&gt;<br></p><p>$ /Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-04-12-a.xctoolchain/usr/bin/swift<br>Welcome to Apple Swift version 3.0-dev (LLVM 752e1430fc, Clang<br>3987718dae, Swift 36739f7b57). Type :help for assistance.<br>  1&gt; import Foundation<br>  2&gt;<br>  3&gt; func getAsNSString&lt;T&gt;(value: T) -&gt; NSString {<br>  4.   return value as? NSString<br>  5. }<br>error: repl.swift:4:16: error: value of optional type &#39;NSString?&#39; not<br>unwrapped; did you mean to use &#39;!&#39; or &#39;?&#39;?<br>  return value as? NSString<br>               ^<br>         (                 )!<br></p><p>I would think the function was meant to end -&gt; NSString?, if not for the //<br>fails comment in bullet 8. Could you clarify?<br></p><p>– J.D. Healy<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160503/9ca774b0/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

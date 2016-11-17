@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Review] SE-0115: Rename	Literal	Syntax	Protocols</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>July  2, 2016 at 04:00:00pm</p></header><div class="content"><p>Dave Abrahams via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; &gt; But as some of them noted in the discussion, low-level protocols that <br>&gt; &gt; interact with language syntax can focus on syntax entirely. I&#39;ve not <br>&gt; &gt; seen this point supported by other team members, though.<br>&gt; &gt;<br>&gt; &gt; Personally, I don&#39;t see any semantics in LiteralConvertible protocols. <br>&gt; &gt; If a type can be initialized with another type, then we can call it a <br>&gt; &gt; conversion. And I can&#39;t imagine any case where e.g. Bool that came<br>&gt; &gt; from a literal should be treated differently from any other Bool.<br>&gt; <br>&gt; Because there&#39;s no source type.  When you write a literal, you&#39;re not<br>&gt; converting *from* anything.<br></p><p>Literals don&#39;t have type. But values, which are passed to initializers,<br>do. Compiler will pick suitable From&lt;T&gt; conformance, depending on<br>built-in type in which literal can be expressed.<br></p><p>Initialization with a literal can be expressed in two steps:<br>1. Representation as a suitable built-in type, done by compiler<br>2. Conversion from that built-in type to our type<br></p><p>It&#39;s another way to look at things, which is implemented in Rust.<br>We can also use this generic protocol for error conversions in &#39;try&#39;<br>and all other conversions that we will need.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

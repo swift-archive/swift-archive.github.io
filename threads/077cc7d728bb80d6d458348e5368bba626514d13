@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/79cd2bdc2074f4e69eac60743fe785fc?s=50"></div><header><strong>non-inherited init</strong> from <string>Daniel Eggert</string> &lt;danieleggert at me.com&gt;<p>March 17, 2016 at 03:00:00pm</p></header><div class="content"><p>There&#39;re some initializers (namely in NSURLSession) that have a comment:<br></p><p>public /*not inherited*/ init(...<br></p><p>What is this “not inherited” comment trying to convey, and how would one go about implementing this in Swift?<br></p><p>/Daniel<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>non-inherited init</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>March 17, 2016 at 07:00:00am</p></header><div class="content"><p>That is a comment emitted by the importer, unfortunately it is impossible for non objc to mimic that behavior 100% because it is an init method that is constructed from a class method.<br></p><p>@interface Foo : NSObject<br>+ (Foo *)fooNamed:(NSString *)name; // this is not an inherited init method in that it will always return an instance of a Foo no matter the subclass it is called from<br>@end<br></p><p>@interface Bar : Foo<br>@end<br></p><p>// in objc it is like this:<br>Foo *f = [Bar fooNamed:@“test”];<br></p><p>// in swift it is like this:<br>let f = Bar(named:”test”)<br></p><p>but obviously by the method fooNamed always returns a Foo instead of an instancetype because it actually looks up Foo objects from a table.<br></p><p>&gt; On Mar 17, 2016, at 7:35 AM, Daniel Eggert via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; There&#39;re some initializers (namely in NSURLSession) that have a comment:<br>&gt; <br>&gt; public /*not inherited*/ init(...<br>&gt; <br>&gt; What is this “not inherited” comment trying to convey, and how would one go about implementing this in Swift?<br>&gt; <br>&gt; /Daniel<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6761b86fcf674411c42ea5d32bbf6e5?s=50"></div><header><strong>non-inherited init</strong> from <string>Pushkar N Kulkarni</string> &lt;pushkar.nk at in.ibm.com&gt;<p>March 17, 2016 at 02:00:00pm</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160317/bb8637a5/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

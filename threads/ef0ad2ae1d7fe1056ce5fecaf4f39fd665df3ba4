@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal draft] Make Optional Requirements Objective-C-only</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 25, 2016 at 03:00:00pm</p></header><div class="content"><p>on Sun Apr 24 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Apr 22, 2016, at 8:02 PM, Douglas Gregor via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; Sent from my iPhone<br>&gt;<br>&gt;&gt; <br>&gt;&gt;&gt; On Apr 22, 2016, at 5:56 PM, Xiaodi Wu &lt;xiaodi.wu at gmail.com&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Not an expert on Obj-C compatibility in Swift by any means, but this<br>&gt;&gt;&gt; reads like it&#39;s largely a change of nomenclature. To me, though,<br>&gt;&gt;&gt; `objcoptional` reads exceedingly poorly. Why not emphasize the Obj-C<br>&gt;&gt;&gt; compatibility angle by requiring the `@objc` attribute to precede each<br>&gt;&gt;&gt; use of `optional`? (In other words, effectively rename `optional` to<br>&gt;&gt;&gt; `@objc optional`.)<br>&gt;&gt; <br>&gt;&gt; That is a great idea. <br>&gt;<br>&gt; Doesn’t this have the same problem as the current (Swift 1/2)<br>&gt; implementation?  People will continue to believe that it is a bug that<br>&gt; you must specify @objc.<br></p><p>Doesn&#39;t that argue for @objc(optional)<br></p><p>?<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>[Proposal draft] Make Optional Requirements Objective-C-only</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>April 25, 2016 at 05:00:00pm</p></header><div class="content"><p>On Mon, Apr 25, 2016 at 5:08 PM, Dave Abrahams via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; on Sun Apr 24 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; &gt;&gt; On Apr 22, 2016, at 8:02 PM, Douglas Gregor via swift-evolution &lt;<br>&gt; swift-evolution at swift.org&gt; wrote:<br>&gt; &gt;&gt;<br>&gt; &gt;&gt;<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; Sent from my iPhone<br>&gt; &gt;<br>&gt; &gt;&gt;<br>&gt; &gt;&gt;&gt; On Apr 22, 2016, at 5:56 PM, Xiaodi Wu &lt;xiaodi.wu at gmail.com&gt; wrote:<br>&gt; &gt;&gt;&gt;<br>&gt; &gt;&gt;&gt; Not an expert on Obj-C compatibility in Swift by any means, but this<br>&gt; &gt;&gt;&gt; reads like it&#39;s largely a change of nomenclature. To me, though,<br>&gt; &gt;&gt;&gt; `objcoptional` reads exceedingly poorly. Why not emphasize the Obj-C<br>&gt; &gt;&gt;&gt; compatibility angle by requiring the `@objc` attribute to precede each<br>&gt; &gt;&gt;&gt; use of `optional`? (In other words, effectively rename `optional` to<br>&gt; &gt;&gt;&gt; `@objc optional`.)<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; That is a great idea.<br>&gt; &gt;<br>&gt; &gt; Doesn’t this have the same problem as the current (Swift 1/2)<br>&gt; &gt; implementation?  People will continue to believe that it is a bug that<br>&gt; &gt; you must specify @objc.<br>&gt;<br>&gt; Doesn&#39;t that argue for @objc(optional)<br>&gt;<br>&gt; ?<br>&gt;<br></p><p>That was my first instinct as well, but I&#39;m persuaded by Doug&#39;s points on<br>the issue, which I&#39;ll just quote below because he puts it much better than<br>I could:<br>* &quot;It shouldn&#39;t be an attribute because it changes the type signature of<br>references to the requirement.&quot;<br>* &quot;Do remember that @objc(something) already has a meaning: it gives the<br>Objective-C name “something” to the entity that the @objc(something)<br>describes.&quot;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160425/8012e574/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

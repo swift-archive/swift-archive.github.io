@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>named parameters - why hidden first?/proposal interest</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 21, 2016 at 12:00:00pm</p></header><div class="content"><p>on Thu Jan 21 2016, David Owens II via swift-evolution &lt;swift-evolution-m3FHrko0VLzYtjvyW6yDsg-AT-public.gmane.org&gt; wrote:<br></p><p>&gt; Ok, this is something that&#39;s bugged me since Swift was released. It<br>&gt; was almost fixed it back in the 1.x days (I think that was when it<br>&gt; changed to be a bit more consistent between top-level funcs and<br>&gt; members funcs).<br>&gt;<br>&gt; The question is this, why do we still implicitly have unnamed first<br>&gt; parameters for non-init functions, and in some cases, suggest putting<br>&gt; the name of the first parameter in the name of the function?<br>&gt;<br>&gt;     func say(message: String, times: Int) { ... } // or<br>&gt;     func sayMessage(message: String, times: Int) { ... }<br>&gt;<br>&gt;     say(&quot;hello world&quot;, times: 5) // or<br>&gt;     sayMessage(&quot;hello world&quot;, times: 5)<br>&gt;<br>&gt;     // vs.<br>&gt;<br>&gt;     say(message: &quot;hello world&quot;, times: 5)<br></p><p>Hi David; thanks for asking.  This is very much related to the upcoming<br>API Design Guidelines review<br>(https://github.com/apple/swift-evolution/blob/master/proposals/0023-api-guidelines.md),<br>so we may have an opportunity to discuss it in more depth.  For now, I&#39;m<br>going to give you my personal opinion below.<br></p><p>&gt; Let me be clear, I completely understand why the _ is supported, and I<br>&gt; understand that it&#39;s not feasible to implicitly convert all the ObjC<br>&gt; interfaces to move the parameter name into the first position (though<br>&gt; they could be annotated to do this...).<br>&gt;<br>&gt; However, why are we continuing that tradition with _new_ Swift APIs?<br>&gt; There seems to be a perfectly good spot for the first parameter name<br>&gt; of a function: the first parameter slot.<br></p><p>First of all, I&#39;ve found the convention to work quite well for the<br>standard library.  IMO well-designed APIs typically don&#39;t have many<br>parameters, and methods that take a single parameter are in fact<br>extremely common.  In these cases, the parameter often functions<br>grammatically as the direct object of the statement being made in the<br>call, adding a label doesn&#39;t help readability.  It&#39;s<br></p><p>    x.remove(y)<br></p><p>vs<br></p><p>    x.remove(containedThing: y)<br></p><p>or <br></p><p>    x.removeContainedThing(y)<br></p><p>It&#39;s my strong belief that it&#39;s usually impossible to improve on<br>&quot;x.remove(y)&quot;.  The less-common case where x contains a bunch of<br>different kinds of things and removing each kind is semantically<br>different—e.g. UIViews contain subviews and gestureRecognizers—is a<br>notable exception.<br></p><p>Of the methods and functions with multiple parameters, many of them have<br>one primary parameter that functions as a direct object, and a few other<br>parameters—often with defaults—used to &quot;tune&quot; the overall behavior of<br>the method.  So in these cases, having no label is appropriate as well<br>(c.f. print).<br></p><p>&gt; The seemingly poor choice of this shows up in other places too, like<br>&gt; Doug Gregor&#39;s Naming Functions with Arguments Labels proposal. The<br>&gt; default for that is to always have the _ in the first name slot.<br>&gt;<br>&gt;     say(_:times:)<br>&gt;     sayMessage(_:times:)<br>&gt;<br>&gt;     // vs.<br>&gt;<br>&gt;     say(message:times:)<br></p><p>I don&#39;t see why that&#39;s a problem; it&#39;s a side effect of most methods not<br>having an initial label, while some do.  <br></p><p>&gt; The other unfortunate thing about this, is that this is another<br>&gt; instance where &quot;init&quot; behaves differently then the rest of Swift. I<br>&gt; think it would be great to unify this.<br>&gt;<br>&gt; Am I just missing the really compelling rationale for this?<br></p><p>Aside from single-argument, type-conversion initializers (on which by<br>convention we are dropping the initial label), initializeations tend to<br>be different from methods and function calls.  There&#39;s no way for the<br>first argument to function as a direct object of a phrase, so they are<br>more functional/declarative than method calls.<br></p><p>I do have a few disagreements with the API guidelines in this area, but<br>I&#39;m going to leave that discussion for the review.<br></p><p><br>Hope this helps,<br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

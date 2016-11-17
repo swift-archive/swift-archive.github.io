@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Opt-out for first unnamed parameter instead of opt-in</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  8, 2016 at 08:00:00pm</p></header><div class="content"><p>Just a note on terminology: we&#39;re trying to standardize on the terms<br>“parameter name” and “argument label”:<br></p><p>           func f(argumentLabel parameterName: ParameterType)<br></p><p>           f(argumentLabel: argument)<br></p><p><br>on Mon Feb 08 2016, Dave &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; If we decide to allow external names without an internal name, I’m<br>&gt; strongly in favor of the “func doThing(with _: Int) {}“ syntax. It<br>&gt; makes it crystal clear that we’re purposefully not assigning an<br>&gt; internal name to that argument.<br>&gt;<br>&gt; - Dave Sweeris<br>&gt;<br>&gt;&gt; On Feb 8, 2016, at 16:46, Jessy Catterwaul via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Sorry, I forgot about this one:<br>&gt;&gt; <br>&gt;&gt; 5. An external, but not internal parameter name is needed. I don’t<br>&gt;&gt; think a colon is useful in these cases.<br>&gt;&gt; func doThing(with Int) {}<br>&gt;&gt; <br>&gt;&gt; It also could satisfy a protocol requirement, without having to<br>&gt;&gt; resort to this kind of underscore usage, which should become<br>&gt;&gt; illegal:<br>&gt;&gt; func doThing(with _: Int) {}<br>&gt;&gt; <br>&gt;&gt;&gt; On Feb 8, 2016, at 5:32 PM, Jessy Catterwaul<br>&gt;&gt;&gt; &lt;mr.jessy at gmail.com<br>&gt;&gt;&gt; &lt;mailto:mr.jessy at gmail.com&gt;&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; How often do you find yourself wanting an internal parameter name,<br>&gt;&gt;&gt; but not an external (case 4)? I think it’s very rare.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I doubt that the compiler’s AI will be able to deal with case 2.b,<br>&gt;&gt;&gt; automatically, any time soon. That is okay with me, as long as we<br>&gt;&gt;&gt; can manually type direct objects that would not be clear with only<br>&gt;&gt;&gt; a preposition.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I think these represent the options for parameter names in order of<br>&gt;&gt;&gt; prevalence. Case 3 has obviously never been available in Swift, but<br>&gt;&gt;&gt; can be emulated with generic-sounding internal parameter names. If<br>&gt;&gt;&gt; those types of names were not necessary, I believe all of these<br>&gt;&gt;&gt; “opting” problems would go away. Is that incorrect?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; 1. Internal is the same as external<br>&gt;&gt;&gt; func function(int: Int) {}<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; 2. External and internal names are different <br>&gt;&gt;&gt; a. func doThing(with int: Int) {}<br>&gt;&gt;&gt; b. func doThing(withGiraffe giraffe: Any) {}<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; 3. No parameter name is needed internally or externally<br>&gt;&gt;&gt; func function(Int)<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; 4. Underscore for external, name for internal<br>&gt;&gt;&gt; func function(_ int: Int) {}<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/34b9659227ea084bb09a8ba4a450a162?s=50"></div><header><strong>Opt-out for first unnamed parameter instead of opt-in</strong> from <string>Jessy Catterwaul</string> &lt;mr.jessy at gmail.com&gt;<p>February  9, 2016 at 06:00:00am</p></header><div class="content"><p>&gt; On Feb 8, 2016, at 11:47 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; Just a note on terminology: we&#39;re trying to standardize on the terms<br>&gt; “parameter name” and “argument label”:<br>&gt; <br>&gt;           func f(argumentLabel parameterName: ParameterType)<br>&gt; <br>&gt;           f(argumentLabel: argument)<br></p><p>I think that’s pretty good. Except, what is it known as when they are one and the same? &quot;Pargumenter name&quot;?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160209/2f95058e/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

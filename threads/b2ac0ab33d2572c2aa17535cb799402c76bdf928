@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/279fa63eae4ac804b4dbdb83686797bf?s=50"></div><header><strong>Capturing references to initializers?</strong> from <string>Austin Zheng</string> &lt;austinzheng at gmail.com&gt;<p>December 10, 2015 at 02:00:00pm</p></header><div class="content"><p>Hello Swift users,<br></p><p>I have a question about capturing references to initializers. You can do<br>the following right now:<br></p><p>struct Foo {<br>    let number : Int<br>    // This type has a single initializer<br>    init() {<br>        number = 10<br>    }<br>}<br></p><p>let a  = Foo.init  // a&#39;s type: () -&gt; Foo<br></p><p>So far so good. Now, let&#39;s add in a second initializer:<br></p><p>extension Foo {<br>    init(customNumber: Int) {<br>        number = customNumber<br>    }<br>}<br></p><p>Now, if you want to capture a reference to one of the initializers, you can<br>annotate the variable with the explicit function type:<br></p><p>let a : () -&gt; Foo = Foo.init<br>let b : Int -&gt; Foo = Foo.init<br></p><p>My question involves the case where you have multiple initializers that<br>take the same arguments and types. How would you capture initializers then?<br></p><p>extension Foo {<br>    init(numberToInc: Int) {<br>        number = numberToInc + 1<br>    }<br>}<br></p><p>How do I capture a reference to the numberToInc: initializer, versus the<br>customNumber: initializer?<br></p><p>Best regards,<br>Austin<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151210/b2acf928/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8b9f0c10986385f3c7f50615d6176be3?s=50"></div><header><strong>Capturing references to initializers?</strong> from <string>Pierre Monod-Broca</string> &lt;pierre at monod-broca.fr&gt;<p>December 11, 2015 at 08:00:00am</p></header><div class="content"><p>Hi,<br></p><p>I had the same problem with delegate methods (they all had the same prefix). I used lambda as a workaround, but I agree it is less elegant :<br></p><p>let b: = { Foo(customNumber: $0) }<br>let c: = { Foo(numberToInc: $0) }<br></p><p><br>Pierre<br></p><p>&gt; Le 10 déc. 2015 à 23:41, Austin Zheng via swift-users &lt;swift-users at swift.org&gt; a écrit :<br>&gt; <br>&gt; Hello Swift users,<br>&gt; <br>&gt; I have a question about capturing references to initializers. You can do the following right now:<br>&gt; <br>&gt; struct Foo {<br>&gt;     let number : Int<br>&gt;     // This type has a single initializer<br>&gt;     init() {<br>&gt;         number = 10<br>&gt;     }<br>&gt; }<br>&gt; <br>&gt; let a  = Foo.init  // a&#39;s type: () -&gt; Foo<br>&gt; <br>&gt; So far so good. Now, let&#39;s add in a second initializer:<br>&gt; <br>&gt; extension Foo {<br>&gt;     init(customNumber: Int) {<br>&gt;         number = customNumber<br>&gt;     }<br>&gt; }<br>&gt; <br>&gt; Now, if you want to capture a reference to one of the initializers, you can annotate the variable with the explicit function type:<br>&gt; <br>&gt; let a : () -&gt; Foo = Foo.init<br>&gt; let b : Int -&gt; Foo = Foo.init<br>&gt; <br>&gt; My question involves the case where you have multiple initializers that take the same arguments and types. How would you capture initializers then?<br>&gt; <br>&gt; extension Foo {<br>&gt;     init(numberToInc: Int) {<br>&gt;         number = numberToInc + 1<br>&gt;     }<br>&gt; }<br>&gt; <br>&gt; How do I capture a reference to the numberToInc: initializer, versus the customNumber: initializer?<br>&gt; <br>&gt; Best regards,<br>&gt; Austin<br>&gt;  _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151211/8b54a173/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

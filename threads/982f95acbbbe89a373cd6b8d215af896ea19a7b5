@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>announcing Server APIs work group</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>October 25, 2016 at 10:00:00am</p></header><div class="content"><p>Hi everyone,<br></p><p>I’d like to announce the introduction of a new Server APIs work group:<br></p><p>  https://swift.org/blog/server-api-workgroup/<br></p><p>From the blog post:<br></p><p>&quot;Since Swift became available on Linux there has been a huge amount of interest in using Swift on the server, resulting in the emergence of a number of Web Frameworks, including Kitura, Vapor, Perfect, and Zewo, along with many others. As an important part of the Swift ecosystem, and one that we are keen to foster, we are today announcing the formation of the Server APIs work group.<br></p><p>The work group provides the framework for participants in the the community with an interest in building server applications and frameworks to come together to work on providing new Swift APIs. These APIs will provide low level “server” functions as the basic building blocks for developing server-side capabilities, removing the reliance on interfacing with generally platform specific C libraries for these functions. This will enable more developers to create frameworks and server applications using pure-Swift code, without the need to also have systems programming skills and knowledge of multiple platforms.”<br></p><p>The idea behind the work group is to have a way for the Swift.org community to prototype and design a core set of APIs for empowering Swift development for server development.  This work group complements the evolution process on swift-evolution, whereby the work group will incubate new APIs and libraries that eventually will be brought back for formal review/proposal on swift-evolution.  The work group, however, provides a focused forum to develop and discuss these new APIs.  Please see the blog post for more information, as well as the project page on Swift.org:<br></p><p>  https://swift.org/server-apis/<br></p><p>Thanks so much to Chris Bailey for driving much of the effort to organize the work group.<br></p><p>Cheers,<br>Ted<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20161025/982fa7b5/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

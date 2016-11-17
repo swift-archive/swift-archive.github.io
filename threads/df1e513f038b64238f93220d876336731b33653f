@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b35b44357e4cca3a1de39ba1199c9ab5?s=50"></div><header><strong>For loop</strong> from <string>ted van gaalen</string> &lt;tedvgiosdev at gmail.com&gt;<p>March  8, 2016 at 01:00:00am</p></header><div class="content"><p>Apart from the indirect .stride method, (which is good for collections)<br>there are still no adequate equivalents for   <br>          for;;  <br> as used often in ‘traditional’ programming<br>for floating point numbers. <br></p><p>Of course, one can also code this in a “while {}”<br>but this would be cumbersome.<br></p><p>Because of this I am currently replacing for;;<br>by a global function ‘iterate’ :<br></p><p>/// Tested in Xcode Version 7.2.1 (7C1002) - Playground<br>// perhaps it should have generic parameters..<br>// and also a variant with floating point tolerance<br></p><p>func iterate(from from: Double,<br>                    to: Double,<br>                    by: Double,<br>                 block: (v: Double) -&gt; Void)<br>{<br>    let low:  Double<br>    let high: Double<br>    let moveForward: Bool<br></p><p>    var current = from<br>    <br>    if from &lt; to<br>    {<br>        low  = from<br>        high = to<br>        moveForward = true<br>    }<br>    else<br>    {<br>        low  = to<br>        high = from<br>        moveForward = false<br>    }<br>    <br>    var iterator = 0<br></p><p>    while current &gt;= low  &amp;&amp;<br>          current &lt;= high<br>    {<br>        block(v: current)  // &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br>        <br>        iterator += 1        // imho  iterator++   looks a lot cleaner <br>        if moveForward<br>        {<br>            current = low + Double(iterator) * by<br>        }<br>        else<br>        {<br>            current = high - Double(iterator) * by<br>        }<br>    }<br>}<br></p><p>////// Usage of the above function e.g.: /////////////<br></p><p>var factor = 5.0<br></p><p>iterate(from: 0.0, to: -2.0, by: 0.01,  block:<br> {<br>        (v: Double) in<br>        print(&quot;v = \(v) v * factor \(v * factor)&quot;)<br> }<br>)<br></p><p>///////////////////////////////////////////////////////////////////////<br></p><p>This tiny simple function is very efficient.<br>I did not yet run benchmarks on it,<br>but it probably is a lot faster than fetching values<br>from a pseudo-collection as with .stride.<br></p><p>Still, imho a better option would be as a Swift<br>language element:<br></p><p>for v from v1 to v2 by vstep {}<br></p><p>I will then write a proposal for it, unless<br>someone has a better solution?<br></p><p><br>All this would not have been necessary if the<br>for ;;   was not killed.<br></p><p>Kind Regards<br>TedvG<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

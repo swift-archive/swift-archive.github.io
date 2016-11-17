@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7321934b88ca8da079d7b89926501a9c?s=50"></div><header><strong>Good things are coming soon in Swift 2.2</strong> from <string>David Turnbull</string> &lt;dturnbull at gmail.com&gt;<p>February  2, 2016 at 11:00:00am</p></header><div class="content"><p>On the swift-dev list they announced the 2.2 branch is now under<br>restrictive change control. If you&#39;re been putting off checking it out, I&#39;d<br>suggest the next snapshot is worth a look.<br></p><p>I did some benchmarks on the last snapshot using a Parks-McClellan filter<br>design algorithm. The algorithm is heavy on floating point arithmetic with<br>a little trig while iterating over arrays.<br></p><p>         C:   2.07ms<br> Swift 2.2:   2.10ms<br> Swift 2.1:   2.70ms<br>  Go 1.5.2:   2.93ms<br>Ruby 2.0.0:  85.50ms<br></p><p><br>Math performance is important to my plans for Swift, so this makes me<br>happy. Ruby and Go haven&#39;t improved on this benchmark in two years.<br></p><p>The Parks-McClellan filter design algorithm is hosted here:<br>https://github.com/AE9RB/firpm<br></p><p>Unfortunately, compile times are longer in 2.2. But one day we&#39;ll have it<br>all.<br></p><p>-david  https://github.com/AE9RB/SwiftGL<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160202/c02ce9e3/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Good things are coming soon in Swift 2.2</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>February  2, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; On Feb 2, 2016, at 11:10 AM, David Turnbull via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; On the swift-dev list they announced the 2.2 branch is now under restrictive change control. If you&#39;re been putting off checking it out, I&#39;d suggest the next snapshot is worth a look.<br>&gt; <br>&gt; I did some benchmarks on the last snapshot using a Parks-McClellan filter design algorithm. The algorithm is heavy on floating point arithmetic with a little trig while iterating over arrays.<br>&gt; <br>&gt;          C:   2.07ms<br>&gt;  Swift 2.2:   2.10ms<br>&gt;  Swift 2.1:   2.70ms<br>&gt;   Go 1.5.2:   2.93ms<br>&gt; Ruby 2.0.0:  85.50ms<br>&gt; <br>&gt; Math performance is important to my plans for Swift, so this makes me happy. Ruby and Go haven&#39;t improved on this benchmark in two years.<br>&gt; <br>&gt; The Parks-McClellan filter design algorithm is hosted here:<br>&gt; https://github.com/AE9RB/firpm &lt;https://github.com/AE9RB/firpm&gt;<br></p><p>Nice to hear!<br></p><p>&gt; Unfortunately, compile times are longer in 2.2. But one day we&#39;ll have it all.<br></p><p>You might want to file a bug so we can investigate the build time regression. Erik&#39;s been working on some infrastructure improvements to make whole-module builds more parallel, so if you want to live on the bleeding edge, you might give the 3.0 snapshots a try and see if build time is more survivable.<br></p><p>-Joe<br></p><p>&gt; <br>&gt; -david  https://github.com/AE9RB/SwiftGL &lt;https://github.com/AE9RB/SwiftGL&gt;_______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160202/301b969f/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7321934b88ca8da079d7b89926501a9c?s=50"></div><header><strong>Good things are coming soon in Swift 2.2</strong> from <string>David Turnbull</string> &lt;dturnbull at gmail.com&gt;<p>February  2, 2016 at 05:00:00pm</p></header><div class="content"><p>On Tue, Feb 2, 2016 at 11:54 AM, Joe Groff &lt;jgroff at apple.com&gt; wrote:<br></p><p>&gt; You might want to file a bug so we can investigate the build time<br>&gt; regression.<br>&gt;<br></p><p>Done.  https://bugs.swift.org/browse/SR-663<br></p><p>-david<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160202/9aa180de/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>Why can&#39;t I declare subscript&lt;T&gt; ?</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>April 11, 2016 at 02:00:00pm</p></header><div class="content"><p>Why can&#39;t a custom subscript operator be made generic? That is, Swift allows this inside a class/struct:<br>	func get&lt;T&gt;(key: String) -&gt; T? { … }<br>but it doesn’t allow<br>	subscript&lt;T&gt;(key: String) -&gt; T? { … }		// syntax error at the “&lt;&quot;<br></p><p>This doesn’t make sense to me, since subscripts are just syntactic sugar; the subscript operator ought to support whatever a named function can support.<br></p><p>In this case I’m implementing a class that contains a JSON payload, and I want clients to be able to flexibly access properties of the JSON and assign them to values, with implicit type-casting, i.e.<br>	var name: String = revision[“name”]	// invoke subscript with T=String<br>	var age: Int = revision[“age”]		// invoke subscript with T=Int<br>(I got this idea from the Tailor library, although it doesn’t use subscripts, for reasons I now understand.)<br></p><p>—Jens<br></p><p>PS: I’m using Xcode 7.3; I believe that’s Swift 2.2?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c40db4457ab2c91a0d8006da31b177c6?s=50"></div><header><strong>Why can&#39;t I declare subscript&lt;T&gt; ?</strong> from <string>Trent Nadeau</string> &lt;tanadeau at gmail.com&gt;<p>April 11, 2016 at 05:00:00pm</p></header><div class="content"><p>This is a known language limitation. See<br>https://bugs.swift.org/browse/SR-115. It looks like someone started to<br>implement it, but it has been dormant since December.<br></p><p>On Mon, Apr 11, 2016 at 5:04 PM, Jens Alfke via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Why can&#39;t a custom subscript operator be made generic? That is, Swift<br>&gt; allows this inside a class/struct:<br>&gt;         func get&lt;T&gt;(key: String) -&gt; T? { … }<br>&gt; but it doesn’t allow<br>&gt;         subscript&lt;T&gt;(key: String) -&gt; T? { … }           // syntax error at<br>&gt; the “&lt;&quot;<br>&gt;<br>&gt; This doesn’t make sense to me, since subscripts are just syntactic sugar;<br>&gt; the subscript operator ought to support whatever a named function can<br>&gt; support.<br>&gt;<br>&gt; In this case I’m implementing a class that contains a JSON payload, and I<br>&gt; want clients to be able to flexibly access properties of the JSON and<br>&gt; assign them to values, with implicit type-casting, i.e.<br>&gt;         var name: String = revision[“name”]     // invoke subscript with<br>&gt; T=String<br>&gt;         var age: Int = revision[“age”]          // invoke subscript with<br>&gt; T=Int<br>&gt; (I got this idea from the Tailor library, although it doesn’t use<br>&gt; subscripts, for reasons I now understand.)<br>&gt;<br>&gt; —Jens<br>&gt;<br>&gt; PS: I’m using Xcode 7.3; I believe that’s Swift 2.2?<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br></p><p><br></p><p>-- <br>Trent Nadeau<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160411/3e89c71f/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>Why can&#39;t I declare subscript&lt;T&gt; ?</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>April 11, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Apr 11, 2016, at 2:08 PM, Trent Nadeau &lt;tanadeau at gmail.com&gt; wrote:<br>&gt; <br>&gt; This is a known language limitation. See https://bugs.swift.org/browse/SR-115 &lt;https://bugs.swift.org/browse/SR-115&gt;. It looks like someone started to implement it, but it has been dormant since December.<br></p><p>Thanks, good to know. The fork &lt;https://github.com/stephencelis/swift/commits/generic-subscripts&gt; with the implementation has been active more recently (Feb 29) but still looks incomplete.<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160411/7ab60c48/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

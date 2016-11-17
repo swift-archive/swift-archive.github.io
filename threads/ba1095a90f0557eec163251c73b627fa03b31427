@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a51efe0c2993455701ed4757862e4b11?s=50"></div><header><strong>Swift&#39;s code in VSCode</strong> from <string>Piero Sabino</string> &lt;piero.sa at icloud.com&gt;<p>December 12, 2015 at 11:00:00pm</p></header><div class="content"><p>Is it possible develop swift&#39;s code into Visual Studio Code?<br></p><p>Inviato da iPhone<br> Piero Sabino<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/012bc4c5e7b0c2829fff88611143c108?s=50"></div><header><strong>Swift&#39;s code in VSCode</strong> from <string>David Owens II</string> &lt;david at owensd.io&gt;<p>December 13, 2015 at 12:00:00pm</p></header><div class="content"><p>I&#39;ve started working on an extension to support this. <br></p><p>https://github.com/owensd/vscode-swift<br></p><p>Still early in the process. Syntax highlighting is mostly there. I&#39;m going to start the debugger integration next. <br></p><p>-David<br></p><p>Sent from my iPhone<br></p><p>&gt; On Dec 12, 2015, at 2:07 PM, Piero Sabino via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Is it possible develop swift&#39;s code into Visual Studio Code?<br>&gt; <br>&gt; Inviato da iPhone<br>&gt; Piero Sabino<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

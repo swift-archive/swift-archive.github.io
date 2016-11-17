@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dd033b3ed46d65c7d7394eab52d53e6b?s=50"></div><header><strong>Source vs Sources</strong> from <string>Evan Maloney</string> &lt;emaloney at gilt.com&gt;<p>December 18, 2015 at 09:00:00am</p></header><div class="content"><p>What is the preferred canonical directory name for Swift source code?<br></p><p>&quot;Source&quot; sounds right to my ear because it&#39;s short for &quot;source code&quot;.<br></p><p>However, &quot;Sources&quot; seems to be in more common usage, at least at Apple and in the current examples/documentation for SPM.<br></p><p>I&#39;d rather adopt something more likely to be in common usage than go with something where the lack of the trailing &quot;s&quot; is going to be a long-term source of mental toe-stubbing.<br></p><p>Any guidance appreciated!<br></p><p>Thanks,<br>E.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>Source vs Sources</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>December 18, 2015 at 11:00:00am</p></header><div class="content"><p>We encourage “Sources”, but all of “src”, “srcs”, “Source” and “Sources” are fully supported.<br></p><p>&gt; On Dec 18, 2015, at 8:57 AM, Evan Maloney via swift-build-dev &lt;swift-build-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; What is the preferred canonical directory name for Swift source code?<br>&gt; <br>&gt; &quot;Source&quot; sounds right to my ear because it&#39;s short for &quot;source code&quot;.<br>&gt; <br>&gt; However, &quot;Sources&quot; seems to be in more common usage, at least at Apple and in the current examples/documentation for SPM.<br>&gt; <br>&gt; I&#39;d rather adopt something more likely to be in common usage than go with something where the lack of the trailing &quot;s&quot; is going to be a long-term source of mental toe-stubbing.<br>&gt; <br>&gt; Any guidance appreciated!<br>&gt; <br>&gt; Thanks,<br>&gt; E.<br>&gt; _______________________________________________<br>&gt; swift-build-dev mailing list<br>&gt; swift-build-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-build-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

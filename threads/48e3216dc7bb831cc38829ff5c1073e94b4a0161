@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d9ce70a6cb7175e7a5e5db5658186a31?s=50"></div><header><strong>Discussion: Last chance to rename .self and .Self?</strong> from <string>Brandon Knope</string> &lt;bknope at me.com&gt;<p>July 15, 2016 at 03:00:00pm</p></header><div class="content"><p>July 27th is last day for breaking source changes for Swift 3...so I thought I would bring this up one final time. <br></p><p>Opinions:<br>- .self and .Self do not adequately convey what they do without some mental gymnastics<br>- self has somewhat two meanings (accessing a property on the type and getting the type of the object)<br>- We can get into a funky situation where we have self.someVar.self which looks odd (though symmetric!)<br>- What do we call these two selves? Postfix and prefix self? (I.e. Is it googleable?)<br></p><p><br>Ideas:<br>- rename to .type and .Type<br>- more bikeshedding? There has to be a better way to express these types other than .self and .Self<br></p><p>Brandon<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>Discussion: Last chance to rename .self and .Self?</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>July 15, 2016 at 09:00:00pm</p></header><div class="content"><p>You might have a look at our discussion thread. There is a huge overlap on your bikeshedding.<br></p><p>https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon–20160711/024439.html<br></p><p><br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br></p><p>Am 15. Juli 2016 um 21:25:50, Brandon Knope via swift-evolution (swift-evolution at swift.org) schrieb:<br></p><p>July 27th is last day for breaking source changes for Swift 3...so I thought I would bring this up one final time.  <br></p><p>Opinions:<br>- .self and .Self do not adequately convey what they do without some mental gymnastics<br>- self has somewhat two meanings (accessing a property on the type and getting the type of the object)<br>- We can get into a funky situation where we have self.someVar.self which looks odd (though symmetric!)<br>- What do we call these two selves? Postfix and prefix self? (I.e. Is it googleable?)<br></p><p><br>Ideas:<br>- rename to .type and .Type<br>- more bikeshedding? There has to be a better way to express these types other than .self and .Self<br></p><p>Brandon  <br></p><p>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160715/21aa10ea/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d9ce70a6cb7175e7a5e5db5658186a31?s=50"></div><header><strong>Discussion: Last chance to rename .self and .Self?</strong> from <string>Brandon Knope</string> &lt;bknope at me.com&gt;<p>July 15, 2016 at 03:00:00pm</p></header><div class="content"><p>Thanks! I will take a look<br></p><p>Brandon<br></p><p>&gt; On Jul 15, 2016, at 3:28 PM, Adrian Zubarev via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; You might have a look at our discussion thread. There is a huge overlap on your bikeshedding.<br>&gt; <br>&gt; https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon–20160711/024439.html<br>&gt; <br>&gt; <br>&gt; <br>&gt; -- <br>&gt; Adrian Zubarev<br>&gt; Sent with Airmail<br>&gt; <br>&gt; Am 15. Juli 2016 um 21:25:50, Brandon Knope via swift-evolution (swift-evolution at swift.org) schrieb:<br>&gt; <br>&gt;&gt; July 27th is last day for breaking source changes for Swift 3...so I thought I would bring this up one final time. <br>&gt;&gt; <br>&gt;&gt; Opinions:<br>&gt;&gt; - .self and .Self do not adequately convey what they do without some mental gymnastics<br>&gt;&gt; - self has somewhat two meanings (accessing a property on the type and getting the type of the object)<br>&gt;&gt; - We can get into a funky situation where we have self.someVar.self which looks odd (though symmetric!)<br>&gt;&gt; - What do we call these two selves? Postfix and prefix self? (I.e. Is it googleable?)<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; Ideas:<br>&gt;&gt; - rename to .type and .Type<br>&gt;&gt; - more bikeshedding? There has to be a better way to express these types other than .self and .Self<br>&gt;&gt; <br>&gt;&gt; Brandon <br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160715/2f784d03/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

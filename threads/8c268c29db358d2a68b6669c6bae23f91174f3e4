@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/07592719e6916b40622a074edee475db?s=50"></div><header><strong>OS/Environment check in Swift</strong> from <string>Muhammad Mominul Huque Nahid</string> &lt;mominul2082 at gmail.com&gt;<p>August 21, 2016 at 11:00:00pm</p></header><div class="content"><p>I&#39;d like to add two more conditional proposal:<br></p><p>```<br>osTarget(MSVC)<br></p><p>//or<br></p><p>osEnvironment(Mingw)<br>```<br></p><p>I have some comments about following conditionals<br></p><p>```<br>os(Windows, target: MSVC)<br></p><p>// or<br></p><p>os(Windows, environment: MSVC)<br>```<br>I don&#39;t like these two conditionals. Because these two conditionals will<br>not fit in for Apple platforms. If we consider those two:<br></p><p>```<br>os(Apple, target: macOS)<br>// or<br>os(Apple, environment: iOS)<br>```<br>So we would have to use Apple as main platform and macOS, iOS etc. as its<br>&#39;environments&#39; or as &#39;tagets&#39; if we consider that two.<br></p><p>As far now we have these conditionals or I proposed:<br></p><p>```<br>environment(_)<br>//or<br>target(_)<br>//or<br>osEnvironment(_)<br>//or<br>osTarget(_)<br>//or<br>os(_, environment: )<br>//or<br>os(_, target: )<br>```<br></p><p>Thanks!<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160821/8c26f3e4/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

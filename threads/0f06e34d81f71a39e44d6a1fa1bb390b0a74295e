@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c0196d32c5877957590e3b9f6e74df09?s=50"></div><header><strong>RPM builder for Swift 3 (Fedora/RHL)</strong> from <string>Ron Olson</string> &lt;tachoknight at gmail.com&gt;<p>October  1, 2016 at 09:00:00pm</p></header><div class="content"><p>Hi all-<br></p><p>I forked Corinne Krych’s repository for building RPMs for Swift; hers <br>worked great for the version she has in the swift.spec file, but at some <br>point it stopped working for Swift 3. I made some changes to get it to <br>work and have finally gotten it to build a full RPM of Swift 3.<br></p><p>I have submitted a pull request to her repo at <br>https://github.com/corinnekrych/swift-rpm. My version is <br>https://github.com/tachoknight/swift-rpm; I built it against Fedora 24, <br>up-to-date literally as of today.<br></p><p>Hope this helps folks get Swift going on Fedora/RHL/RPM-based flavors of <br>Linux.<br></p><p>All thanks to Corinne Krych for the original project.<br></p><p><br></p><p>Ron<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

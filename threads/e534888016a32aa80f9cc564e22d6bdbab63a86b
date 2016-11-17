@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f6b7154fd1d6a470d0b521a2e484bffc?s=50"></div><header><strong>[Discussion][Expericment] D-like slicing syntax</strong> from <string>Daniel Duan</string> &lt;daniel at duan.org&gt;<p>February 28, 2016 at 04:00:00am</p></header><div class="content"><p>Dave Abrahams via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; <br>&gt; <br>&gt; on Sat Feb 20 2016, Daniel Duan &lt;swift-evolution &lt;at&gt; swift.org&gt; wrote:<br>&gt; <br></p><p>&gt; Why not just make<br>&gt; <br>&gt;     x[..&lt;$-2]<br>&gt; <br>&gt; work?  You can create unary overloads for ..&lt;<br></p><p>Hi Dave, I took another stab at it today. The code is in the following link as<br>well as end of this email:<br>https://gist.github.com/dduan/fcd33a09fae4640fc83c<br></p><p><br>This implementation is almost good IMO :)<br></p><p><br>struct Dollar {}<br></p><p>let $ = Dollar()<br></p><p>struct BInt: IntegerLiteralConvertible {<br>    let bool: Bool<br>    let int: UInt<br>    func relativeTo(total: Int) -&gt; Int {<br>        return bool ? total - Int(int) : Int(int)<br>    }<br>    init(_ b: Bool, _ n: UInt) {<br>        bool = b<br>        int = n<br>    }<br>    init(integerLiteral value: Int) {<br>        bool = false<br>        int = UInt(value)<br>    }<br>}<br></p><p>func -(h: Dollar, d: UInt) -&gt; BInt { return BInt(true, d) }<br></p><p>typealias IncompleteRange = (BInt?, BInt?)<br></p><p>prefix operator ..&lt; {}<br>prefix func ..&lt;(end: BInt) -&gt; IncompleteRange {<br>    return (nil, end)<br>}<br></p><p>postfix operator ..&lt; {}<br>postfix func ..&lt;(start: BInt) -&gt; IncompleteRange {<br>    return (start, nil)<br>}<br>prefix operator ... {}<br>prefix func ...(end: BInt) -&gt; IncompleteRange {<br>    return (nil, BInt(end.bool, end.int+1))<br>}<br>postfix operator ... {}<br>postfix func ...(start: BInt) -&gt; IncompleteRange {<br>    return (start, nil)<br>}<br></p><p>func ..&lt;(start: BInt, end: BInt) -&gt; IncompleteRange {<br>    return (start, end)<br>}<br></p><p>func ...(start: BInt, end: BInt) -&gt; IncompleteRange {<br>    return (start, BInt(end.bool, end.int+1))<br>}<br></p><p>internal func normalize(range: IncompleteRange, total: Int) -&gt; (Int, Int) {<br>    var actualStart = range.0 == nil ? 0 : range.0!.relativeTo(total)<br>    var actualEnd = range.1 == nil ? total : range.1!.relativeTo(total)<br>    actualStart = actualStart &lt; 0 ? total + actualStart : actualStart<br>    actualEnd = actualEnd &lt; 0 ? total + actualEnd : actualEnd<br>    return (actualStart, actualEnd)<br>}<br></p><p>extension CollectionType {<br>    subscript(halfRange: IncompleteRange) -&gt; Self.SubSequence {<br>        let (safeStart, safeEnd) = normalize(<br>            halfRange,<br>            total: self.count as! Int<br>        )<br>        let safeStartIndex = startIndex.advancedBy(<br>            safeStart as! Self.Index.Distance)<br>        let safeEndIndex = startIndex.advancedBy(<br>            safeEnd as! Self.Index.Distance)<br>        return self[safeStartIndex..&lt;safeEndIndex]<br>    }<br>}<br></p><p><br>let s = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br></p><p><br>// all of these expression results in [6, 7, 8, 9]<br>s[6...]<br>s[($-4)...]<br>s[6..&lt;s.count]<br>s[6..&lt;$-0]<br>s[$-4...9]<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

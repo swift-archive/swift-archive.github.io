@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Discussion] Adopting a new common error type outside the bounds of NSError</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March  7, 2016 at 08:00:00am</p></header><div class="content"><p>on Sun Mar 06 2016, Charles Kissinger &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Erica,<br>&gt;<br>&gt; I wouldn’t want a single, universal error type for the standard<br>&gt; library. I would want to be able to selectively catch errors based on<br>&gt; their type rather than having to look into the “reason” string to<br>&gt; determine what happened. (In other words, the reason should be encoded<br>&gt; in the error type.)<br></p><p>Are you sure?  People often reflexively think they want strong static<br>typing in their errors, forgetting that error handling of the<br>throw/catch variety is fundamentally dynamically typed, effectively<br>introspecting the error at the catch site.  Think about the use cases.<br></p><p><br>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0089229ece6e648767cff4dc6c6d38ab?s=50"></div><header><strong>[Discussion] Adopting a new common error type outside the bounds of NSError</strong> from <string>Charles Kissinger</string> &lt;crk at akkyra.com&gt;<p>March  7, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Mar 7, 2016, at 8:23 AM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Sun Mar 06 2016, Charles Kissinger &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; Erica,<br>&gt;&gt; <br>&gt;&gt; I wouldn’t want a single, universal error type for the standard<br>&gt;&gt; library. I would want to be able to selectively catch errors based on<br>&gt;&gt; their type rather than having to look into the “reason” string to<br>&gt;&gt; determine what happened. (In other words, the reason should be encoded<br>&gt;&gt; in the error type.)<br>&gt; <br>&gt; Are you sure?  People often reflexively think they want strong static<br>&gt; typing in their errors, forgetting that error handling of the<br>&gt; throw/catch variety is fundamentally dynamically typed, effectively<br>&gt; introspecting the error at the catch site.  Think about the use cases.<br></p><p>Maybe we’re talking about two different things. I would typically want to be able to catch errors selectively by pattern matching based on their type, enum cases, etc.. I would not want to have to do a string match on the “reason” property in order to find out what the error was, as would be required with the Error struct that was proposed.<br></p><p>What approach are you suggesting?<br></p><p>—CK<br></p><p>&gt; <br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0089229ece6e648767cff4dc6c6d38ab?s=50"></div><header><strong>[Discussion] Adopting a new common error type outside the bounds of NSError</strong> from <string>Charles Kissinger</string> &lt;crk at akkyra.com&gt;<p>March  7, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Mar 7, 2016, at 8:23 AM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Sun Mar 06 2016, Charles Kissinger &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; Erica,<br>&gt;&gt; <br>&gt;&gt; I wouldn’t want a single, universal error type for the standard<br>&gt;&gt; library. I would want to be able to selectively catch errors based on<br>&gt;&gt; their type rather than having to look into the “reason” string to<br>&gt;&gt; determine what happened. (In other words, the reason should be encoded<br>&gt;&gt; in the error type.)<br>&gt; <br>&gt; Are you sure?  People often reflexively think they want strong static<br>&gt; typing in their errors, forgetting that error handling of the<br>&gt; throw/catch variety is fundamentally dynamically typed, effectively<br>&gt; introspecting the error at the catch site.  Think about the use cases.<br></p><p>Oh, you’re thinking about a single “StandardLibraryError” enum with multiple cases to differentiate the errors? That’s not the kind of “universal error type&quot; I was objecting to. I wasn’t making a distinction between catching by the enum type or the enum case, just not wanting to do it by string description.<br></p><p>—CK<br></p><p>&gt; <br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

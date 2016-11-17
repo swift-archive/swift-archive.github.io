@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0059: Update API Naming Guidelines and Rewrite Set APIs Accordingly</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  7, 2016 at 01:00:00pm</p></header><div class="content"><p>on Sun Apr 03 2016, Shawn Erickson &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Sun, Apr 3, 2016 at 6:41 AM Michel Fortin via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     &gt; What is your evaluation of the proposal?<br>&gt;<br>&gt;     I don&#39;t like &quot;form&quot; as a prefix. To me there is no difference between `union<br>&gt;     ` and `formUnion`: both sounds functional-style, and actually the second one<br>&gt;     perhaps a bit more to my ears. There&#39;s basically two dictionary definitions<br>&gt;     of &quot;form&quot;:<br>&gt;<br>&gt;     1. &quot;bring together parts or combine to create (something)&quot; which to me<br>&gt;     implies a new value is created, and<br>&gt;     2. &quot;make or fashion into a certain shape or form&quot; which would imply that the<br>&gt;     material you start with is transformed, which is apparently the intended<br>&gt;     meaning and also the reverse meaning from the above.<br>&gt;<br>&gt;     I mean, doesn&#39;t this make sense as an API?<br>&gt;<br>&gt;     let donut = baker.formDonut(dough) // non-mutating<br>&gt;<br>&gt;     Perhaps instead of &quot;form&quot; we could use &quot;become&quot; as a prefix when the<br>&gt;     operation is naturally described by a noun. That would seem less ambiguous<br>&gt;     to me:<br>&gt;<br>&gt;     a.becomeUnion(b)<br>&gt;     a.becomeIntersection(b)<br>&gt;     a.becomeSuccessor(b)<br>&gt;<br>&gt;     It&#39;s a bit passive, but I find it fits well when the operation is a noun.<br>&gt;<br>&gt;     And there&#39;s no way the term lends itself to non-mutating cases without<br>&gt;     things becoming nonsensical:<br>&gt;<br>&gt;     let donut = baker.becomeDonut(dough) // non-mutating?<br>&gt;<br>&gt; I also am having difficulty coming to terms with the use of &quot;form&quot; (I<br>&gt; am a native English speaker). As you note &quot;form&quot; can imply the<br>&gt; creation of something from parts (more like assembling a new thing) as<br>&gt; well as the creation of something out of a material say a of block<br>&gt; clay (more like molding something out of an existing thing). It<br>&gt; doesn&#39;t seem clear cut to me to imply in place mutation.<br>&gt;<br>&gt; Additionally my eyes / brain keep seeing &quot;from&quot; instead of<br>&gt; &quot;form&quot;. This type of issue is generally true with any short word made<br>&gt; up of the same set of letters (made worse since &quot;from&quot; is more common<br>&gt; in programming then &quot;form&quot;). The mind quickly narrows in on a set of<br>&gt; possible words given the letters we see and then uses context to help<br>&gt; get the correct one and/or additional visual parsing to understand the<br>&gt; exact ordering of letters (more energy expended). Anyway since I keep<br>&gt; seeing &quot;from&quot; instead of &quot;form&quot; I keep going in the direction of<br>&gt; thinking it returns something made from the two (or more) items<br>&gt; involved (not really sure why &quot;from&quot; goes that direction in my head,<br>&gt; it could also go the in place direction).<br></p><p>These are all good points.<br></p><p>&gt; I would prefer something other then &quot;form&quot; (note I just typed &quot;from&quot; by<br>&gt; mistake)... I think your suggestion of &quot;become&quot; has merit.<br>&gt;<br>&gt; y.becomeUnion(x) --reads to me as--&gt; &quot;y become union with x&quot;<br>&gt; y.formUnion(x) --read to me as--&gt; &quot;y from oops... y forming a union of x&quot;<br>&gt; y.becomeIntersection(x) --reads to me as--&gt; &quot;y become intersection with x&quot;<br>&gt; y.formIntersection(x) --read to me as--&gt; &quot;y from oops... y forming an<br>&gt; intersection with x&quot;<br></p><p>I don&#39;t like its verbosity, but it does solve the &quot;from&quot; problem.<br></p><p>&gt; In the &quot;forming&quot; situations it – to me – is ambiguous on if that is in<br>&gt; place or not. To me it implies more of giving something new back.<br>&gt;<br>&gt; I am -1 on &quot;form&quot; aspect of this proposal. ...of course things are<br>&gt; learnable as long as things are fairly consistent and not to far out<br>&gt; of the norm for typical language use. Personally I don&#39;t see &quot;form&quot; as<br>&gt; that typical in English.<br>&gt;<br>&gt; -Shawn<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

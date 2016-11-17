@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e2828bff9d06d558695c0fe8fa046f1b?s=50"></div><header><strong>Proposal: Contiguous Variables (A.K.A. Fixed Sized Array Type)</strong> from <string>Benedikt Terhechte</string> &lt;terhechte at me.com&gt;<p>January 29, 2016 at 11:00:00am</p></header><div class="content"><p>+ 1 For this. Subscriptable tuples would be awesome.<br></p><p>&gt; Rather than introduce a new kind of declaration, I think we could add a few small features to tuples:<br>&gt; <br>&gt; - We could say the type (n * T) is equivalent to a homogeneous tuple of n elements, and<br>&gt; - We could allow tuples to be subscriptable, producing a value of the common supertype of its elements.<br>&gt; <br>&gt; That would make the experience of working with imported C types a lot better.<br>&gt; <br>&gt; -Joe<br>&gt; <br>&gt; &gt; On Jan 27, 2016, at 7:50 PM, Justin Kolb via swift-evolution&lt;swift-evolution at swift.org&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; To better support interfacing with lower level systems, like graphics libraries for example, it would be helpful to support the concept of contiguous variables. The most common use case for this would be to create a Matrix struct that can be passed as data into something like Metal. This can be accomplished now, using something like the following:<br>&gt; &gt; <br>&gt; &gt; Current Option 1:<br>&gt; &gt; <br>&gt; &gt; struct Matrix2x2 {<br>&gt; &gt; var m00: Float<br>&gt; &gt; var m01: Float<br>&gt; &gt; var m10: Float<br>&gt; &gt; var m11: Float<br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; OR<br>&gt; &gt; Current Option 2:<br>&gt; &gt; <br>&gt; &gt; struct Matrix2x2 {<br>&gt; &gt; var m: (Float, Float, Float, Float)<br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; OR<br>&gt; &gt; Current Option 3:<br>&gt; &gt; <br>&gt; &gt; struct Matrix2x2 {<br>&gt; &gt; var m: [Float]<br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; Options 1&amp;2 allow for the compiler to enforce the fixed number of elements and also for the data to be easily passed into graphics libraries as their memory layout is somewhat predictable using sizeof, strideof, and alignof. The downside is that you lose the ability to easily subscript or iterate the elements.<br>&gt; &gt; <br>&gt; &gt; Option 3 does allow subscripting and iteration, but does not at compile time enforce a fixed number of elements and is not as easily passed into a library that expects to receive the raw data of the matrix.<br>&gt; &gt; <br>&gt; &gt; <br>&gt; &gt; Contiguous Variables:<br>&gt; &gt; <br>&gt; &gt; struct Matrix2x2 {<br>&gt; &gt; var m: Float:2*2<br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; The variable `m` represents a series of 4 contiguous Float values. The specific number of values must be a compile time constant. The only needed functionality includes `count`, `subscript`, and iteration. To make things easier to implement and to help avoid confusion and more complex documentation, multiple dimensions are not allowed. To define multiple dimensions you must provide your own ordering by wrapping this type in another type and providing a custom subscript implementation. For example:<br>&gt; &gt; <br>&gt; &gt; struct RowMajorMatrix2x2 {<br>&gt; &gt; var m: Float:2*2<br>&gt; &gt; <br>&gt; &gt; static let rows = 2<br>&gt; &gt; static let columns = 2<br>&gt; &gt; <br>&gt; &gt; subscript(row: Int, column: Int) -&gt;Float {<br>&gt; &gt; return m[column * Matrix2x2.rows + row]<br>&gt; &gt; }<br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; sizeof(Matrix2x2) is 16<br>&gt; &gt; strideof(Matrix2x2) is 16<br>&gt; &gt; <br>&gt; &gt; m.count is essentially a compile time constant and is not stored with the rest of the data but is available and can also be used to do runtime bounds checking.<br>&gt; &gt; <br>&gt; &gt; struct Vector3 {<br>&gt; &gt; var v: Float:3<br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; sizeof(Vector3) is 12<br>&gt; &gt; strideof(Vector3) is 12<br>&gt; &gt; <br>&gt; &gt; C code should also now be able to expose data types that contain fixed sized arrays within them.<br>&gt; &gt; <br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-evolution mailing list<br>&gt; &gt; swift-evolution at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

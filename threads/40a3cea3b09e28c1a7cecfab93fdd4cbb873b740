@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Subsequences and shared indices</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 16, 2016 at 03:00:00pm</p></header><div class="content"><p>on Thu Oct 13 2016, Tim Vermeulen &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; Is it a requirement that collections share indices with its<br>&gt; subsequence? <br></p><p>Yes.<br></p><p>&gt; Array and ArraySlice do share indices, which is why ArraySlice isn’t<br>&gt; zero-based, and I think this is convenient. But String.CharacterView<br>&gt; doesn’t seem to share indices with its subsequence (which is<br>&gt; String.CharacterView as well). <br></p><p>That&#39;s a bug.<br></p><p>&gt; Consider this example:<br>&gt;<br>&gt; let foo = &quot;foobar&quot;.characters<br>&gt;<br>&gt; let index = foo.index(foo.startIndex, offsetBy: 3)<br>&gt; let bar = foo.suffix(from: index)                   // &quot;bar&quot;<br>&gt;<br>&gt; foo[index]                                          // &quot;b&quot; :)<br>&gt; foo[bar.startIndex]                                 // &quot;f&quot; :(<br>&gt;<br>&gt; So does this mean that we can’t assume that collections and their<br>&gt; subsequences share their indices (which could be very handy), or is<br>&gt; this just a bug related to String.CharacterView?<br></p><p>The latter.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e7e554db1f80d7d6041d92edd5145698?s=50"></div><header><strong>Subsequences and shared indices</strong> from <string>Hooman Mehr</string> &lt;hooman at mac.com&gt;<p>October 16, 2016 at 07:00:00pm</p></header><div class="content"><p>Thanks to Ole Begemann (who closed my bug report), I found out that Nate Cook submitted a fix &lt;https://github.com/apple/swift/pull/4896&gt; for this issue a few day ago. The fix will hopefully make it to the next maintenance release of Swift.<br></p><p>The documentation of range subscript (which is the main API for creating subsequences) already specifies that SubSequences (slices) should use the same indices, but I think we need to better document the specifications of SubSequence associated type and make sure that any API that returns a SubSequence links to SubSequence documentation.<br></p><p>&gt; On Oct 16, 2016, at 3:33 PM, Dave Abrahams via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Thu Oct 13 2016, Tim Vermeulen &lt;swift-users-AT-swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; Is it a requirement that collections share indices with its<br>&gt;&gt; subsequence? <br>&gt; <br>&gt; Yes.<br>&gt; <br>&gt;&gt; Array and ArraySlice do share indices, which is why ArraySlice isn’t<br>&gt;&gt; zero-based, and I think this is convenient. But String.CharacterView<br>&gt;&gt; doesn’t seem to share indices with its subsequence (which is<br>&gt;&gt; String.CharacterView as well). <br>&gt; <br>&gt; That&#39;s a bug.<br>&gt; <br>&gt;&gt; Consider this example:<br>&gt;&gt; <br>&gt;&gt; let foo = &quot;foobar&quot;.characters<br>&gt;&gt; <br>&gt;&gt; let index = foo.index(foo.startIndex, offsetBy: 3)<br>&gt;&gt; let bar = foo.suffix(from: index)                   // &quot;bar&quot;<br>&gt;&gt; <br>&gt;&gt; foo[index]                                          // &quot;b&quot; :)<br>&gt;&gt; foo[bar.startIndex]                                 // &quot;f&quot; :(<br>&gt;&gt; <br>&gt;&gt; So does this mean that we can’t assume that collections and their<br>&gt;&gt; subsequences share their indices (which could be very handy), or is<br>&gt;&gt; this just a bug related to String.CharacterView?<br>&gt; <br>&gt; The latter.<br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161016/396325e6/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

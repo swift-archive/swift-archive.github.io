@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Update] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 23, 2016 at 09:00:00am</p></header><div class="content"><p>on Fri Jan 22 2016, Douglas Gregor &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hello Swift community,<br>&gt;<br>&gt; The review of SE-0023&quot;API Design Guidelines&quot; begins now and runs<br>&gt; through January 31, 2016. The proposal is available here:<br>&gt;<br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0023-api-guidelines.md<br></p><p>FYI, a number of minor changes were made to the development version of<br>the guidelines at<br>http://apple.github.io/swift-internals/api-design-guidelines/ that may<br>make it easier for you to evaluate:<br></p><p>* When the page is printed, all sections are always shown expanded.<br></p><p>* A button was added to the top of the page that expands or collapses<br>  all details sections.<br></p><p>* Presentation tweaks were made to:<br>  * Help the color-impaired interpret code examples<br>  * Omit needless graphical clutter.<br></p><p>* A series of copyedits by our editorial department were applied.  These<br>  are mostly &quot;gardening,&quot; as @practicalswift would put it; they<br>  eliminate inconsistencies and bring it &quot;up to code&quot; w.r.t. Apple<br>  editorial practices.<br></p><p>No substantial changes were made to any of the content, so this version<br>should be a suitable substitute for<br>https://swift.org/documentation/api-design-guidelines/ for the purposes<br>of the review.<br></p><p>Cheers,<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>[Update] SE-0023 API Design Guidelines</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>January 23, 2016 at 05:00:00pm</p></header><div class="content"><p>&gt; On Jan 23, 2016, at 10:49 AM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Fri Jan 22 2016, Douglas Gregor &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; Hello Swift community,<br>&gt;&gt; <br>&gt;&gt; The review of SE-0023&quot;API Design Guidelines&quot; begins now and runs<br>&gt;&gt; through January 31, 2016. The proposal is available here:<br>&gt;&gt; <br>&gt;&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0023-api-guidelines.md<br>&gt; <br>&gt; FYI, a number of minor changes were made to the development version of<br>&gt; the guidelines at<br>&gt; http://apple.github.io/swift-internals/api-design-guidelines/ that may<br>&gt; make it easier for you to evaluate:<br>&gt; <br>&gt; * When the page is printed, all sections are always shown expanded.<br></p><p>Thank you for this. Can you extend this practice to all Apple documentation please?<br></p><p><br>&gt; * A button was added to the top of the page that expands or collapses<br>&gt;  all details sections.<br></p><p>Another big thanks.<br></p><p>&gt; * Presentation tweaks were made to:<br>&gt;  * Help the color-impaired interpret code examples<br>&gt;  * Omit needless graphical clutter.<br>&gt; <br>&gt; * A series of copyedits by our editorial department were applied.  These<br>&gt;  are mostly &quot;gardening,&quot; as @practicalswift would put it; they<br>&gt;  eliminate inconsistencies and bring it &quot;up to code&quot; w.r.t. Apple<br>&gt;  editorial practices.<br>&gt; <br>&gt; No substantial changes were made to any of the content, so this version<br>&gt; should be a suitable substitute for<br>&gt; https://swift.org/documentation/api-design-guidelines/ for the purposes<br>&gt; of the review.<br>&gt; <br>&gt; Cheers,<br>&gt; <br>&gt; -- <br>&gt; -Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

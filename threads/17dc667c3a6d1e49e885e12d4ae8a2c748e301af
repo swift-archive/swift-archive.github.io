@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b59e7b375f749eea57308838cbd083ed?s=50"></div><header><strong>Support for coding styles and &quot;swift-format&quot;	tool</strong> from <string>Vincent Coetzee</string> &lt;vincent.coetzee at icloud.com&gt;<p>May 18, 2016 at 03:00:00pm</p></header><div class="content"><p>+1<br></p><p>I also hate the K&amp;R brace style. Really want the ability to customize the formatting of Swift code.<br></p><p>On 16 May 2016, at 22:42, Daniel Martín via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>As Swift is getting traction in more and more platforms outside of Apple, we can expect that many coding styles different from what Apple imposes with SourceKit&#39;s indenting rules will emerge. According tohttps://bugs.swift.org/browse/SR-146, we now have decoupled indenting logic from SourceKit into its own library, and a &quot;swift-format&quot; tool is in the making.<br></p><p>I am working on adding support for different coding styles to libIDE. For example, with my changes you could decide how a case label should be indented with respect to its parent switch context, among other things. The current, hard coded indenting decisions in libIDE could be named the &quot;Apple&quot; style, just like Clang supports Google, LLVM, Mozilla, coding styles for C++. Also, this is something that can be supported by external tools like Xcode quite easily.<br></p><p>Do you think this is a good feature to have?<br></p><p>--<br>Daniel Martín<br></p><p>Vince Coetzee <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160518/17dc01af/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3dad7bea24aa580cabe5c16e8e64183e?s=50"></div><header><strong>Support for coding styles and &quot;swift-format&quot; tool</strong> from <string>Krystof Vasa</string> &lt;kvasa at icloud.com&gt;<p>May 18, 2016 at 06:00:00pm</p></header><div class="content"><p>Definitely +1.<br></p><p>I&#39;ve had a long discussion about this from one of the Xcode developers a few months back, pointing out that given how long has Xcode been around it has really really poor support for customizing the codestyle.<br></p><p>I really like what AppCode from JetBrains does - it allows you to even apply the code style automatically on save and allows you to customize it and have teams share the code style - something like StyleCop in C# (though I&#39;ve never used it).<br></p><p>I do use Swimat (Xcode plugin) fairly often, which enforces spaces between operators, etc.<br></p><p>I&#39;ve also tried out tailor (https://tailor.sh &lt;https://tailor.sh/&gt;) which is fairly nice, but can be too strict at times.<br></p><p><br>&gt; On May 18, 2016, at 5:39 PM, Vincent Coetzee via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; +1<br>&gt; <br>&gt; I also hate the K&amp;R brace style. Really want the ability to customize the formatting of Swift code.<br>&gt; <br>&gt;&gt; On 16 May 2016, at 22:42, Daniel Martín via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; As Swift is getting traction in more and more platforms outside of Apple, we can expect that many coding styles different from what Apple imposes with SourceKit&#39;s indenting rules will emerge. According tohttps://bugs.swift.org/browse/SR-146 &lt;https://bugs.swift.org/browse/SR-146&gt;, we now have decoupled indenting logic from SourceKit into its own library, and a &quot;swift-format&quot; tool is in the making.<br>&gt;&gt; <br>&gt;&gt; I am working on adding support for different coding styles to libIDE. For example, with my changes you could decide how a case label should be indented with respect to its parent switch context, among other things. The current, hard coded indenting decisions in libIDE could be named the &quot;Apple&quot; style, just like Clang supports Google, LLVM, Mozilla, coding styles for C++. Also, this is something that can be supported by external tools like Xcode quite easily.<br>&gt;&gt; <br>&gt;&gt; Do you think this is a good feature to have?<br>&gt;&gt; <br>&gt;&gt; --<br>&gt;&gt; Daniel Martín<br>&gt; <br>&gt; <br>&gt; Vince Coetzee <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160518/d99ccc00/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

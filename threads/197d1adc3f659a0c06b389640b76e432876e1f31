@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/343be97b55cba3ab0786c450b1be9244?s=50"></div><header><strong>Inheritance with a Constrain</strong> from <string>Thane Gill</string> &lt;me at thanegill.com&gt;<p>December  8, 2015 at 11:00:00pm</p></header><div class="content"><p>There have been many use cases that I’ve come across where I want to do something like this:<br></p><p>protocol SomeProtocol { }<br></p><p>extension Array: SomeProtocol where Element: SomeProtocol { }<br></p><p>This seems like a something that swift should move toward as it is a “protocol oriented language”. This would enable ease of building new libraries that need to extend collection types and other storage type classes in the standard library.<br></p><p>- Thane Gill<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a59b0df1d55761e4d340da93232790ea?s=50"></div><header><strong>Inheritance with a Constrain</strong> from <string>Kevin Wooten</string> &lt;kdubb at me.com&gt;<p>December  9, 2015 at 03:00:00am</p></header><div class="content"><p>I have ran into this problem multiple times now.  When creating libraries for Thrift and YAML parsing we were forced to create wrapper objects for Array, Set &amp; Dictionary to make then Hashable for Hashable elements; made me feel dirty as the solution seemed so obvious that I couldn’t believe it wasn’t already available.<br></p><p>That being said. This is specifically mentioned as “in scope” for Swift 3 (under Generics).  Does that mean a proposal is already available from the internal Swift team? Is it already being developed internally?<br></p><p>&gt; On Dec 9, 2015, at 12:09 AM, Thane Gill via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; There have been many use cases that I’ve come across where I want to do something like this:<br>&gt; <br>&gt; protocol SomeProtocol { }<br>&gt; <br>&gt; extension Array: SomeProtocol where Element: SomeProtocol { }<br>&gt; <br>&gt; This seems like a something that swift should move toward as it is a “protocol oriented language”. This would enable ease of building new libraries that need to extend collection types and other storage type classes in the standard library.<br>&gt; <br>&gt; - Thane Gill<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>Inheritance with a Constrain</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>December 10, 2015 at 11:00:00pm</p></header><div class="content"><p>Sent from my iPhone<br></p><p>&gt; On Dec 9, 2015, at 2:18 AM, Kevin Wooten via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I have ran into this problem multiple times now.  When creating libraries for Thrift and YAML parsing we were forced to create wrapper objects for Array, Set &amp; Dictionary to make then Hashable for Hashable elements; made me feel dirty as the solution seemed so obvious that I couldn’t believe it wasn’t already available.<br>&gt; <br>&gt; That being said. This is specifically mentioned as “in scope” for Swift 3 (under Generics).  <br></p><p>Right. We tend to refer to this as &quot;conditional conformance&quot;.<br></p><p>&gt; Does that mean a proposal is already available from the internal Swift team?<br></p><p>Not yet. I have a general sense of the semantics we need here, but need to work out the implementation model a bit before putting together a proposal. <br></p><p>&gt; Is it already being developed internally?<br></p><p>No. When it&#39;s being worked on, it will happen on GitHub. <br></p><p>  - Doug<br></p><p><br>&gt; <br>&gt;&gt; On Dec 9, 2015, at 12:09 AM, Thane Gill via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; There have been many use cases that I’ve come across where I want to do something like this:<br>&gt;&gt; <br>&gt;&gt; protocol SomeProtocol { }<br>&gt;&gt; <br>&gt;&gt; extension Array: SomeProtocol where Element: SomeProtocol { }<br>&gt;&gt; <br>&gt;&gt; This seems like a something that swift should move toward as it is a “protocol oriented language”. This would enable ease of building new libraries that need to extend collection types and other storage type classes in the standard library.<br>&gt;&gt; <br>&gt;&gt; - Thane Gill<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

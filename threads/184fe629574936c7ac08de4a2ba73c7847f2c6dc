@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d2fcdd5a6abf7204973117f37a18671?s=50"></div><header><strong>Building SwiftPM with (Swift)Foundation</strong> from <string>Bouke Haarsma</string> &lt;bouke at haarsma.eu&gt;<p>May  5, 2016 at 11:00:00am</p></header><div class="content"><p>(Note: I’ve also posted this to swift-dev, as this mailing list didn’t show up on gmane.)<br></p><p>For SwiftPM, I&#39;m looking to replace some POSIX calls with Foundation. NSTask<br>and NSFileManager amongst others. I&#39;ve created a few PRs already for this, see<br>[1]. However before these can be merged, the build scripts need to be adjusted<br>to allow SwiftPM to build against Foundation.<br></p><p>There has already been some pointers posted in the comments on one of these PRs,<br>see [2]. I tried to implement those, see my changes to the swift build-script in<br>[3] and the &quot;fake toolchain&quot; in SwiftPM in [4]. However SwiftPM builds stage1;<br>stage2 is still failing. I don&#39;t know how to proceed; I&#39;ve only scratched the <br>surface regarding build systems and the many tools used to build the various <br>swift parts. I would really love some help going forward.<br></p><p>    $ swift/utils/build-script -R --swiftpm<br>    (...)<br>    --- bootstrap: note: building self-hosted &#39;swift-build&#39;: env SWIFT_EXEC=/media/sf_Developer/apple/build/Ninja-ReleaseAssert/swiftpm-linux-x86_64/debug/swiftc SWIFT_BUILD_PATH=/media/sf_Developer/apple/build/Ninja-ReleaseAssert/swiftpm-linux-x86_64 /media/sf_Developer/apple/build/Ninja-ReleaseAssert/swiftpm-linux-x86_64/debug/swift-build-stage1 -Xlinker -rpath -Xlinker $ORIGIN/../lib/swift/linux -Xlinker -L -Xlinker /media/sf_Developer/apple/build/Ninja-ReleaseAssert/foundation-linux-x86_64/Foundation -Xlinker -rpath -Xlinker /media/sf_Developer/apple/build/Ninja-ReleaseAssert/foundation-linux-x86_64/Foundation -Xswiftc -I/media/sf_Developer/apple/build/Ninja-ReleaseAssert/foundation-linux-x86_64/Foundation -Xswiftc -I/media/sf_Developer/apple/build/Ninja-ReleaseAssert/foundation-linux-x86_64/Foundation/usr/lib/swift<br>    /media/sf_Developer/apple/build/Ninja-ReleaseAssert/swiftpm-linux-x86_64/debug/swift-build-stage1: error while loading shared libraries: libFoundation.so: cannot open shared object file: No such file or directory<br>    --- bootstrap: error: build failed with exit status 127<br></p><p>- Bouke<br></p><p>[1]: https://github.com/apple/swift-package-manager/pulls/Bouke &lt;https://github.com/apple/swift-package-manager/pulls/Bouke&gt;<br>[2]: https://github.com/apple/swift-package-manager/pull/292#issuecomment-216508823 &lt;https://github.com/apple/swift-package-manager/pull/292#issuecomment-216508823&gt;<br>[3]: https://github.com/apple/swift/compare/master...Bouke:swiftpm-foundation &lt;https://github.com/apple/swift/compare/master...Bouke:swiftpm-foundation&gt;<br>[4]: https://github.com/apple/swift-package-manager/compare/ef491db...Bouke:swiftpm-foundation &lt;https://github.com/apple/swift-package-manager/compare/ef491db...Bouke:swiftpm-foundation&gt;<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160505/184fc6dc/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

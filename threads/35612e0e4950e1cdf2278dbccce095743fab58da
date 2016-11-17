@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/54da6eaeec6b83e06a5661ce8c62980d?s=50"></div><header><strong>Specialization of functions with default parameters or discardable result</strong> from <string>Guoye Zhang</string> &lt;cc941201 at me.com&gt;<p>April 26, 2016 at 06:00:00pm</p></header><div class="content"><p>Functions in Swift can have default parameters or discardable result, but without inlining, calling them could be suboptimal in performance.<br></p><p>I propose a solution which compiler generates specializations of those functions, hence more optimization can be performed for specific usage.<br></p><p>This can also be used to solve binary compatibility when new parameters are added to a function.<br></p><p><br>Draft:<br>https://github.com/cc941201/swift-evolution/blob/master/proposals/NNNN-function-specialization.md<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6fe87aed0d64cdbc46378bf7596a7553?s=50"></div><header><strong>Specialization of functions with default parameters or discardable result</strong> from <string>Andrew Trick</string> &lt;atrick at apple.com&gt;<p>April 27, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Apr 26, 2016, at 3:40 AM, 张国晔 via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Functions in Swift can have default parameters or discardable result, but without inlining, calling them could be suboptimal in performance.<br>&gt; <br>&gt; I propose a solution which compiler generates specializations of those functions, hence more optimization can be performed for specific usage.<br>&gt; <br>&gt; This can also be used to solve binary compatibility when new parameters are added to a function.<br>&gt; <br>&gt; <br>&gt; Draft:<br>&gt; https://github.com/cc941201/swift-evolution/blob/master/proposals/NNNN-function-specialization.md &lt;https://github.com/cc941201/swift-evolution/blob/master/proposals/NNNN-function-specialization.md&gt;<br></p><p>Thanks for the proposal. In the long run, we will probably have<br>API-level annotation for explicit specialization, as you are<br>proposing. But it&#39;s best to first experiment with different forms of<br>specialization, both automatic and annotation driven, internally<br>before proposing the language feature. Currently, the optimizer<br>performs a variety of automatic function specialization within a<br>module (with -whole-module-optimization). We also have an explicit<br>form of generic specialization (using @_specialize), which is hidden<br>from the Module&#39;s API. We don&#39;t yet have an explicit annotation that<br>allows specializing for argument values and for dead arguments and return<br>values since we haven&#39;t seen a compelling performance need to do that<br>across Module boundaries.<br></p><p>Exposing explicit function specialization as an API feature will<br>require specifying the affect on library evolution. We&#39;re deferring that<br>issue until other aspects of library evolution are sorted out:<br>https://github.com/apple/swift/blob/master/docs/LibraryEvolution.rst<br></p><p>-Andy<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160427/a0e968bc/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

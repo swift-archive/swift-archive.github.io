@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4db4fede2f4e473341b873406b68e4e1?s=50"></div><header><strong>SIMD in open source Swift?</strong> from <string>Geordie Jay</string> &lt;geojay at gmail.com&gt;<p>April 18, 2016 at 05:00:00pm</p></header><div class="content"><p>Dear fellow Swift-Devvers,<br></p><p>On Darwin we have a SIMD module, but I’m assuming (based on playing around with it in the past) that it is unavailable in open-source Swift.<br></p><p>Does anyone know another way of using SIMD intrinsics in a cross-platform way (Linux-only would also do)? Also, is it a goal to provide at least SIMD intrinsics and basic operations within Swift’s core in the future, or is the general philosophy that this kind of thing will be maintained by the community?<br></p><p>Regards,<br>Geordie<br></p><p>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: signature.asc<br>Type: application/pgp-signature<br>Size: 455 bytes<br>Desc: Message signed with OpenPGP using GPGMail<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160418/7083c5d4/attachment.sig&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b35b44357e4cca3a1de39ba1199c9ab5?s=50"></div><header><strong>Communication :o( :o| :o/ :o))</strong> from <string>ted van gaalen</string> &lt;tedvgiosdev at gmail.com&gt;<p>March  9, 2016 at 01:00:00pm</p></header><div class="content"><p>Some introspection is good at times.<br></p><p>I have looked back on my postings especially those <br>concerning the for-loop theme and find myself at times <br>to be a bit fierce, even maybe pushing my <br>wishes and comments a bit forward too much.<br>This is not my intention.<br></p><p>My appearance on this forum could give you the impression<br>that I am constantly walking around with my smile upside-down.<br>This is certainly not the case. I am quite happy with most of Swift.<br>And for most things I read on this forum I have very little to contribute<br>right now, simply because most things imho are striding :o) in the <br>right direction!  I am quite a colorful person, even literally, just take<br>a look at my app site ravelnotes.com or my profile on LinkedIn.<br>Contacts welcome.<br></p><p>Discussing on a forum, is just writing. If one write things down,<br>it all looks very definitive and sometimes it looks even harsh, <br>or aggressive. It all becomes too serious, looses fine nuances<br>and appears with undesired increased polarity. conflict-prone.<br>With this form of communication, there is no interaction, <br>no non-verbal communication, facial expressions etc.<br></p><p>I would rather sit together with all of you, with fresh coffee around<br>a large round :o)  table! Or even walk around for a week or so<br>at Apple to experience the spirit, the drive and give some<br>feedback. Not that I am that important. <br></p><p>I embrace you all, <br>Kind Regards,<br>Ted<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c9c44262e8b58b758a3876b9d29c095?s=50"></div><header><strong>private &amp; fileprivate</strong> from <string>Georgios Moschovitis</string> &lt;george.moschovitis at icloud.com&gt;<p>October  7, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; FWIW, I fully agree with you and I do believe your suggestion just much<br>&gt; ...<br>&gt; &#39;moduleprivate&#39;.. but these are just ugly(just like fileprivate ;-) )<br></p><p>+1<br></p><p>I would also much prefer <br></p><p>private(scope)<br>private(file)<br>private(module)<br>etc...<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e941adb360692446106cebd7f6d2a1a3?s=50"></div><header><strong>private &amp; fileprivate</strong> from <string>Charles Constant</string> &lt;charles at charlesism.com&gt;<p>October  7, 2016 at 05:00:00am</p></header><div class="content"><p>I actually prefer &quot;fileprivate&quot; to the alternatives, but imo using the word<br>&quot;private&quot; is a bad choice for this, since it&#39;s basically a relative term.<br>If we&#39;re going with parens &quot;visibility(file)&quot; makes more sense to me.<br></p><p><br></p><p>On Fri, Oct 7, 2016 at 5:00 AM, Georgios Moschovitis via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; &gt; FWIW, I fully agree with you and I do believe your suggestion just much<br>&gt; &gt; ...<br>&gt; &gt; &#39;moduleprivate&#39;.. but these are just ugly(just like fileprivate ;-) )<br>&gt;<br>&gt; +1<br>&gt;<br>&gt; I would also much prefer<br>&gt;<br>&gt; private(scope)<br>&gt; private(file)<br>&gt; private(module)<br>&gt; etc...<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161007/5804ce28/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

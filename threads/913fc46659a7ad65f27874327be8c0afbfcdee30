@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Ban the top value in Int/UInt</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 21, 2016 at 10:00:00am</p></header><div class="content"><p>on Thu Oct 20 2016, Guoye Zhang &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;&gt;&gt;&gt; I propose to ban the top value in Int/UInt which is 0xFFFF... in<br>&gt;&gt;&gt;&gt;&gt; hex. Int family would lose its smallest value, and UInt family<br>&gt;&gt;&gt;&gt;&gt; would lose its largest value. Top value is reserved for nil in<br>&gt;&gt;&gt;&gt;&gt; optionals. An additional benefit is that negating an Int would<br>&gt;&gt;&gt;&gt;&gt; never crash.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Well the “top value” for signed ints would have to be<br>&gt;&gt;&gt;&gt; 0x8000... not 0xffff... which is the representation of -1. The top<br>&gt;&gt;&gt;&gt; value for unsigned ints cannot be banned because unsigned integers<br>&gt;&gt;&gt;&gt; are often used as bit fields either directly or in OptionSets.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Furthermore, how would the semantics of &amp;+ and &amp;- be affected? What<br>&gt;&gt;&gt;&gt; about the performance of those two operators?<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt; I was originally going for the symmetry between Int and UInt as in<br>&gt;&gt;&gt; compatible bit patterns. Now that I think of it, UInt is commonly<br>&gt;&gt;&gt; used for bitwise operations, and it doesn&#39;t make sense to optimize<br>&gt;&gt;&gt; for &quot;UInt?&quot; which is uncommon. So I agree that 0x80... is better.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Int performance would surely suffer because of current instruction sets, but Int? would improve.<br>&gt;&gt; <br>&gt;&gt; I wouldn’t want to trade Int performance off against Int?<br>&gt;&gt; performance. I think the former is much more common.<br>&gt;<br>&gt; Slowing down Int is never my intent. I hope to have Int? that gives on<br>&gt; par performance with Int, and the possibility to have safe arithmetics<br>&gt; that doesn&#39;t impose overhead.<br></p><p>Swift arithmetic is already safe.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>[Proposal] Custom operators</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>April 14, 2016 at 08:00:00am</p></header><div class="content"><p>Антон Жилин:<br>&gt; No new suggestions have come in 2 days, and so I have created a pull request!<br>&gt; https://github.com/apple/swift-evolution/pull/253<br></p><p>1. Assignment operators in Swift 2.2 have an `assignment` keyword:<br></p><p>infix operator += {<br>  associativity right<br>  precedence 90<br>  assignment<br>}<br></p><p>2. If assignments can&#39;t be chained, should they be non-associative?<br></p><p>3. Instead of `precedencegroup`, I suggest an abstract declaration:<br></p><p>operator Multiplicative {<br>  associativity(left)<br>  precedence(&gt; Additive)<br>}<br>infix operator * : Multiplicative<br></p><p>4. In your proposal, `NilCoalesting` should be `NilCoalescing`.<br></p><p>-- Ben<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

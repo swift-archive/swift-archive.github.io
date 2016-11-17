@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17d2af4afb70023e28e655d17471a018?s=50"></div><header><strong>Updating llvm/clang stable branches</strong> from <string>Michael Gottesman</string> &lt;mgottesman at apple.com&gt;<p>August 30, 2016 at 01:00:00pm</p></header><div class="content"><p>Hello swift-dev!<br></p><p>We are going to be performing an update to the llvm/clang stable branches within the next couple of days. I will send out an email before I pull the trigger. We will be using a -s ours merge so if you run update-checkout (or even just git pull), everything should fast forward appropriately.<br></p><p>If you have any questions, please feel free to send me an email (or respond to this one).<br></p><p>Thanks,<br>Michael<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

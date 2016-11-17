@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6761b86fcf674411c42ea5d32bbf6e5?s=50"></div><header><strong>NSRegularExpression - NS prefix not dropped on Darwin</strong> from <string>Pushkar N Kulkarni</string> &lt;pushkar.nk at in.ibm.com&gt;<p>September 16, 2016 at 01:00:00pm</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160916/afac9dd5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>NSRegularExpression - NS prefix not dropped on Darwin</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>September 16, 2016 at 09:00:00pm</p></header><div class="content"><p>Hi Pushkar,<br></p><p>We decided to keep the NS on NSRegularExpression because we know that a strong goal for the Swift language is to have built-in support for regex. We wanted to be cautious about taking the name without knowing more about how that feature would shake out.<br></p><p>We should get a JIRA filed or a PR up to put the NS back for the class name in swift-corelibs-foundation.<br></p><p>Thanks,<br>- Tony<br></p><p>&gt; On Sep 16, 2016, at 6:16 AM, Pushkar N Kulkarni via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello, <br>&gt; <br>&gt; The NS prefix from NSRegularExpression seems to have been dropped only in open source Foundation. On Darwin the class is still called NSRegularExpression.<br>&gt; <br>&gt; https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSRegularExpression.swift#L30 &lt;https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSRegularExpression.swift#L30&gt;<br>&gt; <br>&gt; I went through the Drop NS prefix proposal &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0086-drop-foundation-ns.md&gt; but couldn&#39;t relate this to any of the rules mentioned there (except for a possibility that we will have a RegularExpression value type in future only on Darwin!)<br>&gt; <br>&gt; Is there any particular reason for this difference?<br>&gt; <br>&gt; Thanks in advance!<br>&gt; <br>&gt; Pushkar N Kulkarni,<br>&gt; IBM Runtimes<br>&gt; <br>&gt; Simplicity is prerequisite for reliability - Edsger W. Dijkstra<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160916/0c624f9a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6761b86fcf674411c42ea5d32bbf6e5?s=50"></div><header><strong>NSRegularExpression - NS prefix not dropped on Darwin</strong> from <string>Pushkar N Kulkarni</string> &lt;pushkar.nk at in.ibm.com&gt;<p>September 19, 2016 at 06:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160919/821a1a67/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

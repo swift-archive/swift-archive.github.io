@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Draft guide for id-as-Any migration and known issues</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>August  1, 2016 at 11:00:00am</p></header><div class="content"><p>Hi everyone. SE-0116 should be landing in snapshots soon, which changes how Objective-C APIs import into Swift. Instead of relying on special implicit conversions to AnyObject, we now import the ObjC APIs using `Any` to get the same effect without special language rules. I&#39;ve written up a draft guide about the kinds of changes necessary, along with some known issues. I&#39;d also like to gather feedback from anyone who&#39;s picked up the snapshot about their experiences to make sure we address any pain points introduced by the changes. Thank you for any feedback you can provide!<br></p><p>-Joe<br></p><p>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: id-as-Any-migration.md<br>Type: text/markdown<br>Size: 7154 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160801/19fc2f45/attachment.bin&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Draft guide for id-as-Any migration and known issues</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>August  1, 2016 at 04:00:00pm</p></header><div class="content"><p>I&#39;ve also posted the document as a gist, to gather updates as I collect them:<br></p><p>https://gist.github.com/jckarter/5ffa9ba75050b94cd2cf9092b332a866<br></p><p>-Joe<br></p><p>&gt; On Aug 1, 2016, at 11:46 AM, Joe Groff via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi everyone. SE-0116 should be landing in snapshots soon, which changes how Objective-C APIs import into Swift. Instead of relying on special implicit conversions to AnyObject, we now import the ObjC APIs using `Any` to get the same effect without special language rules. I&#39;ve written up a draft guide about the kinds of changes necessary, along with some known issues. I&#39;d also like to gather feedback from anyone who&#39;s picked up the snapshot about their experiences to make sure we address any pain points introduced by the changes. Thank you for any feedback you can provide!<br>&gt; <br>&gt; -Joe<br>&gt; <br>&gt; &lt;id-as-Any-migration.md&gt;_______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc38aef146f886571b3c445851add884?s=50"></div><header><strong>Draft guide for id-as-Any migration and known issues</strong> from <string>Honza Dvorsky</string> &lt;jan.dvorsky at me.com&gt;<p>August  2, 2016 at 07:00:00am</p></header><div class="content"><p>Thanks Joe!<br></p><p>Does this mean NSJSONSerialization in Foundation will now work with native<br>Swift dictionaries/arrays? That would be a great if so.<br></p><p>Honza<br></p><p>On Tue, Aug 2, 2016 at 1:05 AM Joe Groff via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; I&#39;ve also posted the document as a gist, to gather updates as I collect<br>&gt; them:<br>&gt;<br>&gt; https://gist.github.com/jckarter/5ffa9ba75050b94cd2cf9092b332a866<br>&gt;<br>&gt; -Joe<br>&gt;<br>&gt; &gt; On Aug 1, 2016, at 11:46 AM, Joe Groff via swift-users &lt;<br>&gt; swift-users at swift.org&gt; wrote:<br>&gt; &gt;<br>&gt; &gt; Hi everyone. SE-0116 should be landing in snapshots soon, which changes<br>&gt; how Objective-C APIs import into Swift. Instead of relying on special<br>&gt; implicit conversions to AnyObject, we now import the ObjC APIs using `Any`<br>&gt; to get the same effect without special language rules. I&#39;ve written up a<br>&gt; draft guide about the kinds of changes necessary, along with some known<br>&gt; issues. I&#39;d also like to gather feedback from anyone who&#39;s picked up the<br>&gt; snapshot about their experiences to make sure we address any pain points<br>&gt; introduced by the changes. Thank you for any feedback you can provide!<br>&gt; &gt;<br>&gt; &gt; -Joe<br>&gt; &gt;<br>&gt; &gt; &lt;id-as-Any-migration.md&gt;_______________________________________________<br>&gt; &gt; swift-users mailing list<br>&gt; &gt; swift-users at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160802/2b6f1a6d/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

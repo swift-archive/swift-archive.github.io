@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a9a3863e5d65369aacc65a74bf6083db?s=50"></div><header><strong>Swift and the new 2.2 release (Linux)</strong> from <string>louislepegue</string> &lt;louislepegue at gmail.com&gt;<p>March 23, 2016 at 11:00:00pm</p></header><div class="content"><p>Hi  Linux-Swifter!<br></p><p>Where is the Swift Linux compiler?<br></p><p>I&#39;ve installed many beta version of Linux Swift since December 2015 without any problems.<br></p><p>Then starting March 16, some buggy version appear. In fact, the compiler (not the REPL) is <br>no more working.<br>In the latest version 2.2 (March 21). The compiler swift-build is gone from the package!<br>I&#39;ve tested on Linux Mint 17.3 with the Ubuntu 14.04 version and on Ubuntu 15.10 with the <br>Ubuntu 15.10 version with the same problem.<br></p><p>Do I have missed something or Apple have changed the product ?<br></p><p>Thank for taking time to reading this.<br></p><p><br>-- Louis<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>Swift and the new 2.2 release (Linux)</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>March 23, 2016 at 10:00:00pm</p></header><div class="content"><p>This Swift Package Manager (swift-build) is not included in Swift 2.2.  This was called out in the release announcement:<br></p><p>  https://swift.org/blog/swift-2-2-released/ &lt;https://swift.org/blog/swift-2-2-released/&gt;<br></p><p>The Swift Package Manager remains something in development, and you can use the development snapshots to use it.<br></p><p>&gt; On Mar 23, 2016, at 8:33 PM, louislepegue via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi  Linux-Swifter!<br>&gt; <br>&gt; Where is the Swift Linux compiler?<br>&gt; <br>&gt; I&#39;ve installed many beta version of Linux Swift since December 2015 without any problems.<br>&gt; <br>&gt; Then starting March 16, some buggy version appear. In fact, the compiler (not the REPL) is no more working.<br>&gt; In the latest version 2.2 (March 21). The compiler swift-build is gone from the package!<br>&gt; I&#39;ve tested on Linux Mint 17.3 with the Ubuntu 14.04 version and on Ubuntu 15.10 with the Ubuntu 15.10 version with the same problem.<br>&gt; <br>&gt; Do I have missed something or Apple have changed the product ?<br>&gt; <br>&gt; Thank for taking time to reading this.<br>&gt; <br>&gt; <br>&gt; -- Louis<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160323/4cb419cb/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f79a7909dfca0088f4fdc01f109f497e?s=50"></div><header><strong>Swift and the new 2.2 release (Linux)</strong> from <string>Isaac Gouy</string> &lt;igouy2 at yahoo.com&gt;<p>March 24, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt; On Wednesday, March 23, 2016 8:33 PM, louislepegue via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p><br></p><p>&gt; Where is the Swift Linux compiler?<br></p><p>/swift-2.2-RELEASE-ubuntu15.10/usr/bin/swiftc<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

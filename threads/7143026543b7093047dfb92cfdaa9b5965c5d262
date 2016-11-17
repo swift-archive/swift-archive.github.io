@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d9ce70a6cb7175e7a5e5db5658186a31?s=50"></div><header><strong>Some clarity lost from the great renaming</strong> from <string>Brandon Knope</string> &lt;bknope at me.com&gt;<p>October 18, 2016 at 07:00:00pm</p></header><div class="content"><p>I meant to bring this up a bit ago but just came across it again.<br></p><p>I find this to not read properly:<br></p><p>button.setTitle(&quot;Test&quot;, for: .normal) //for normal what?<br></p><p>The for argument is really only clear in meaning when you are typing it out and see that it is a UIControlState type. While reading it without this context is it as clear? .normal doesn&#39;t seem descriptive enough on its own.<br></p><p>Contrast this with UISegmentedControl:<br>segmented.dividerImage(forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)<br></p><p>Here the parameter labels are needed because there needs to be a distinction in the method between left and right. But here it is not forLeft: or forRight: it is the much more clear forLeftSegmentState:<br></p><p>So my question is: why was this not setTitle(forControlState:) or forButtonState, etc...?<br></p><p>Brandon<br>Sent from my iPad<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161018/7143d262/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

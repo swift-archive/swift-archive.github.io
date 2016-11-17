@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>When to use argument labels, part DEUX</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  7, 2016 at 10:00:00pm</p></header><div class="content"><p>on Sun Feb 07 2016, ilya &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; One can consider everything inside the parentheses to be an argument list<br>&gt; and read them as &quot;with/using an argument list&quot;. It works well if the<br>&gt; preceding part has a verb, such as<br>&gt;<br>&gt; copy(zone: ...)<br>&gt; -&gt; &quot;Copy with [a single argument] zone equal to ...&quot;<br>&gt;<br>&gt; func doSomethingWith(completionHandler: (()-&gt;Void)? = nil)<br>&gt; -&gt; &quot;doSomething with a given completion handler or do something with a<br>&gt; default argument list.&quot;<br>&gt;<br>&gt; Not sure if there&#39;s any value in spelling it out. I believe we use &quot;with&quot;<br>&gt; so it in Objective-C mostly out of necessity and can easily omit it in<br>&gt; Swift.<br></p><p>There are a great number of vacuous uses of &quot;with&quot; in Objective-C API<br>names, but some of them are meaningful... which makes the importer&#39;s<br>job quite tricky.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

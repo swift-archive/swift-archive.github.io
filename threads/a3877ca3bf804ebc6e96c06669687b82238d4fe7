@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edef19574627937bf1cfb218aef49fcc?s=50"></div><header><strong>Swift Package Manager and main.swift</strong> from <string>Natthan Leong</string> &lt;kar.joon at icloud.com&gt;<p>May  1, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi there,<br></p><p>This is what happened as I was trying out the Swift Package Manager for another project similar to the one shown below:<br></p><p>~ $ mkdir example<br>~ $ cd example/<br>example $ touch Package.swift<br>example $ mkdir Sources<br>example $ vi Sources/Example.swift<br>example $ cat Sources/Example.swift<br>func printOther() {<br>  print(&quot;other&quot;)<br>}<br>example $ vi Sources/Main.swift<br>example $ cat Sources/Main.swift<br>print(&quot;Hello World&quot;)<br>printOther()<br></p><p>example $ swift build<br>Compile Swift Module &#39;example&#39; (2 sources)<br>/PATH/example/Sources/Main.swift:1:1: error: expressions are not allowed at the top level<br>print(&quot;Hello World&quot;)<br>^<br>/PATH/example/Sources/Main.swift:2:1: error: expressions are not allowed at the top level<br>printOther()<br>^<br>/PATH/example/Sources/Main.swift:1:1: error: expressions are not allowed at the top level<br>print(&quot;Hello World&quot;)<br>^<br>/PATH/example/Sources/Main.swift:2:1: error: expressions are not allowed at the top level<br>printOther()<br>^<br>&lt;unknown&gt;:0: error: build had 1 command failures<br>error: exit(1): /PATH-SWIFT/usr/bin/swift-build-tool -f /PATH/example/.build/debug.yaml<br></p><p>example $ mv Sources/Main.swift Sources/main.swift<br>example $ swift build<br>Compile Swift Module &#39;example&#39; (2 sources)<br>Linking .build/debug/example<br>example $ .build/debug/example<br>Hello World<br>other<br>example $<br></p><p>I had to rename Main.swift to main.swift. Is there a design decision on why the filename for the main swift file has to be lowercase or is this a bug?<br></p><p>If it’s a design decision, why are directory names for source files allowed to have variations like Sources, Source, src and srcs as stated here &lt;https://github.com/apple/swift-package-manager/blob/master/Documentation/SourceLayouts.md#other-rules&gt; but not the main swift file?<br></p><p>I’d be ok if only Main.swift and main.swift are allowed since other files in the Sources directory are commonly UpperCamelCase due to the Type naming conventions e.g. example-package-playingcard/Sources &lt;https://github.com/apple/example-package-playingcard/tree/master/Sources&gt;.<br></p><p>Or maybe I’m just being pedantic?<br></p><p>p.s. even Package.swift is capitalized and not package.swift<br></p><p>$ swift --version<br>Swift version 3.0-dev (LLVM 752e1430fc, Clang 1e6cba3ce3, Swift 56052cfe61)<br>Target: x86_64-unknown-linux-gnu<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160501/a3874fe7/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

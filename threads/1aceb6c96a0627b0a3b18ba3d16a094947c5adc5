@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 23, 2016 at 12:00:00pm</p></header><div class="content"><p>on Fri Jan 22 2016, Michael Wells &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Sat, Jan 23, 2016 at 12:00 AM, David Owens II via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt; wrote:<br>&gt;&gt;&gt; Compensate For Weak Type Information as needed to clarify a parameter’s role.<br>&gt;<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Especially when a parameter type is NSObject, Any, AnyObject, or a<br>&gt;&gt;&gt; fundamental type such Int or String, type information and context<br>&gt;&gt;&gt; at the point of use may not fully convey intent. In this example,<br>&gt;&gt;&gt; the declaration may be clear, but the use site is vague:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; func add(observer: NSObject, for keyPath: String)<br>&gt;&gt;&gt; grid.add(self, for: graphics) // vague<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; To restore clarity, precede each weakly-typed parameter with a noun describing its role:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; func addObserver(_ observer: NSObject, forKeyPath path: String)<br>&gt;&gt;&gt; grid.addObserver(self, forKeyPath: graphics) // clear<br>&gt;&gt; <br>&gt;<br>&gt; Where this rule feels clumsy to me is in code such as<br>&gt;<br>&gt; func loginWithUsername(username: String, password: String) -&gt; Bool<br>&gt;<br>&gt; vs.<br>&gt;<br>&gt; func login(username: String, password: String) -&gt; Bool<br>&gt;<br>&gt; But maybe it just takes some time to get used to the style.<br></p><p>FWIW, I agree with you that this one is awkward.  This seems like &quot;all<br>parameters are peers that /can/ be usefully distinguished.&quot;<br></p><p>Putting &quot;with&quot; in the base name of the method makes me want to add<br>&quot;and&quot;:<br></p><p>  connection.loginWithUsername(auth.name, andPassword: auth.password)<br></p><p>and I do not feel that the above has any advantages over:<br></p><p>  connection.login(username: auth.name, password: auth.password)<br></p><p>In fact, IMO the former seems to make &quot;username&quot; more important than<br>password, like there could be a different method that lets you login<br>with just a password and no username.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

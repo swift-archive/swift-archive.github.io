@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8da0cba30fa0e47cf4fb26ebb968e552?s=50"></div><header><strong>GCD : Getting current dispatch queue name with swift 3</strong> from <string>Jérôme Duquennoy</string> &lt;jerome+swift at duquennoy.fr&gt;<p>June 19, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>I&#39;m migrating one of my project to Swift 3 (xcode 8 beat release).<br>Most of the changes were pretty strait-forward, but I have one required change that is still blocking me :<br>In my code, I retrieve the current dispatch  queue name using that code :<br></p><p>let queueName = dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL)<br></p><p>DispatchQueue objects do have a label attribute, but I cannot find how to get the current dispatch queue.<br>What would be the equivalent of it in swift 3 ?<br></p><p>Any idea would be very welcome :-).<br></p><p>Jérôme Duquennoy<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160619/59971b72/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>GCD : Getting current dispatch queue name with swift 3</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>June 19, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; I&#39;m migrating one of my project to Swift 3 (xcode 8 beat release).<br>&gt; Most of the changes were pretty strait-forward, but I have one required change that is still blocking me :<br>&gt; In my code, I retrieve the current dispatch  queue name using that code :<br>&gt; <br>&gt; let queueName = dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL)<br>&gt; <br>&gt; DispatchQueue objects do have a label attribute, but I cannot find how to get the current dispatch queue.<br>&gt; What would be the equivalent of it in swift 3 ?<br>&gt; <br>&gt; Any idea would be very welcome :-).<br></p><p>Here&#39;s a horrible workaround:<br></p><p>	extension DispatchQueue {<br>		class var currentLabel: String {<br>			return String(validatingUTF8: __dispatch_queue_get_label(nil)) <br>		}<br>	}<br></p><p>But I think this is a hole in the current design. I&#39;m not sure if it&#39;s an *intentional* hole or not; the concept of a &quot;current queue&quot; in general is a bit squirrelly.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>GCD : Getting current dispatch queue name with swift 3</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>June 19, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; I&#39;m migrating one of my project to Swift 3 (xcode 8 beat release).<br>&gt; Most of the changes were pretty strait-forward, but I have one required change that is still blocking me :<br>&gt; In my code, I retrieve the current dispatch  queue name using that code :<br>&gt; <br>&gt; let queueName = dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL)<br>&gt; <br>&gt; DispatchQueue objects do have a label attribute, but I cannot find how to get the current dispatch queue.<br>&gt; What would be the equivalent of it in swift 3 ?<br>&gt; <br>&gt; Any idea would be very welcome :-).<br></p><p>Here&#39;s a horrible workaround:<br></p><p>	extension DispatchQueue {<br>		class var currentLabel: String {<br>			return String(validatingUTF8: __dispatch_queue_get_label(nil)) <br>		}<br>	}<br></p><p>But I think this is a hole in the current design. I&#39;m not sure if it&#39;s an *intentional* hole or not; the concept of a &quot;current queue&quot; in general is a bit squirrelly.<br></p><p>You should probably file a radar explaining what you want to do with this call.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

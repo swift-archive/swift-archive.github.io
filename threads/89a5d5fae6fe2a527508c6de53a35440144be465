@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6780924de59556b6f3bb57fe2d289937?s=50"></div><header><strong>[Pitch] Unifying init parameters with properties</strong> from <string>Yogev Sitton</string> &lt;yogev.sitton at gmail.com&gt;<p>April 17, 2016 at 11:00:00am</p></header><div class="content"><p>This is an interesting idea.<br>Although I didn’t like this at first read - it will remove a lot of generic init methods from my code that all they do is just fill properties with values.<br></p><p>&gt; Since we know the types of the properties, how about we replace the type in the signature with either an indication that the property should be automatically set, or better yet, the property which should be set:<br>&gt; <br>&gt; class Foo<br>&gt; {<br>&gt; let foo : String<br>&gt; let bar : String<br>&gt; let barCount : Int<br>&gt; let baz : Int<br>&gt; <br>&gt; init(foo: self.foo, bar: self.bar, baz: self.baz)<br>&gt; {<br>&gt; self.barCount = bar.characters.count<br>&gt; }<br>&gt; }<br>&gt; <br>&gt; That way you don’t always have to have the init’s parameter names match the names of the properties they set (even though they often would).We could also allow a leading dot as a shorthand for ‘self.’<br>&gt; <br>&gt; init(foo: .foo, bar: .bar, baz: .baz)<br>&gt; <br>&gt; I think I like explicit ‘self.’ better, but that may just be my preference.In either case, the generated interface would show the actual type.<br>&gt; <br>&gt; // init(foo: String, bar: String, baz: Int)<br>&gt; <br>&gt; Thanks,<br>&gt; Jon<br>&gt; <br>&gt; &gt; This is a common pattern for initialisers at the moment: class Foo { let foo : String let bar : String let barCount : Int let baz : Int  init(foo: String, bar: String, baz: Int) { self.foo = foo self.bar = bar self.baz = baz barCount = bar.characters.count } } This involves a lot of using &#39;self.&#39;. For those who prefer not to use &#39;self.&#39; explicitly everywhere, this is probably the main place it gets used. It&#39;s a lot of boilerplate code. How would it be if, like default variables, we could pack some of that information into the argument tuple, and unify parameters with properties immediately? class Foo { let foo : String let bar : String let barCount : Int let baz : Int  init(self.foo: String, self.bar: String, self.baz: Int) { barCount = bar.characters.count } } Less boilerplate, more focus on the properties which need to be generated. Thoughts?<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

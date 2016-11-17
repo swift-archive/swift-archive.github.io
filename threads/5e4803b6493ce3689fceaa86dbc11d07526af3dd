@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 22, 2016 at 07:00:00am</p></header><div class="content"><p>on Mon Feb 22 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 2, 2016, at 9:16 AM, Dave Abrahams &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt;&gt;&gt;&gt; Matthew J and I add:<br>&gt;&gt;&gt;&gt;&gt; https://github.com/apple/swift-evolution/pull/60  to introduce<br>&gt;&gt;&gt;&gt;&gt; precise conventional meanings for conversion suffixes. (Createable, Convertible,<br>&gt;&gt;&gt;&gt;&gt; Representable), which I&#39;d love for you to consider<br>&gt;&gt;&gt;&gt;&gt; under the SE-0023 API Design Guidelines review. I think it&#39;s applicable.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Yes, let&#39;s get that on the review schedule after this.<br>&gt;<br>&gt; Just a gentle reminder about this proposal. I think it would be a particularly good fit for 3.0 discussion.<br></p><p>Proposal PR merged.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>February 22, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On Feb 22, 2016, at 8:46 AM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Mon Feb 22 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt;&gt; On Feb 2, 2016, at 9:16 AM, Dave Abrahams &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt;&gt;&gt;&gt;&gt; Matthew J and I add:<br>&gt;&gt;&gt;&gt;&gt;&gt; https://github.com/apple/swift-evolution/pull/60  to introduce<br>&gt;&gt;&gt;&gt;&gt;&gt; precise conventional meanings for conversion suffixes. (Createable, Convertible,<br>&gt;&gt;&gt;&gt;&gt;&gt; Representable), which I&#39;d love for you to consider<br>&gt;&gt;&gt;&gt;&gt;&gt; under the SE-0023 API Design Guidelines review. I think it&#39;s applicable.<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; Yes, let&#39;s get that on the review schedule after this.<br>&gt;&gt; <br>&gt;&gt; Just a gentle reminder about this proposal. I think it would be a particularly good fit for 3.0 discussion.<br>&gt; <br>&gt; Proposal PR merged.<br></p><p>Thanks!<br></p><p>-- E<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

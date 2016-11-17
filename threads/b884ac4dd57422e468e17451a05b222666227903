@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/75f8396d91a35711f910866c8791c4df?s=50"></div><header><strong>Tuples as NominalTypes</strong> from <string>Muhammad Tahir Vali</string> &lt;tahir.vali13 at gmail.com&gt;<p>September 16, 2016 at 07:00:00am</p></header><div class="content"><p>Type safety would make tuples far more powerful than their current<br>limitations. Structs are usually used for slightly more complex objects<br>compared to tuples and usually, you need them longer in memory. Tuples are<br>just for quick manipulation. Since you are interested in just the content<br>inside, you should be able to manipulate it quickly. Concrete examples<br>would be destructing JSON or manipulating any list. That manipulation<br>itself shouldn&#39;t be something used with Switch statements or require<br>multiple if let statements.<br></p><p>I&#39;m actually not a fan of the C#&#39;s implementation of tuples. Mainly because<br>they don&#39;t use optionals and the tuple implementation isn&#39;t very clean<br></p><p>var aTuple = Tuple.Create (&quot;foo&quot;,&quot;bar&quot;,111)<br></p><p>The main problem is that Swift&#39;s tuples functionalities are very limited to<br>be able to use them.<br></p><p>-- <br>Best Regards,<br></p><p>Muhammad T. Vali<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160916/b8847903/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8083ad16248b8c031cc10d44f47aa442?s=50"></div><header><strong>Tuples as NominalTypes</strong> from <string>T.J. Usiyan</string> &lt;griotspeak at gmail.com&gt;<p>September 16, 2016 at 05:00:00pm</p></header><div class="content"><p>Hello Muhammad,<br></p><p>I am not exactly sure what you are after with this or your previous post<br>about tuples. Tuples are &#39;type safe&#39; for any definition of &#39;type safety&#39;<br>that I can summon. Switching over tuples to restructure them is, in my<br>opinion, a main source of the type safety provided in tuples. I do hope<br>that, along with conditional conformance and the ability to add extensions<br>with self same types, we get the ability to define extensions on tuples.<br>These features would allow us more convenience when dealing with tuples and<br>might possibly ease the woes that you are presenting.<br></p><p>TJ<br></p><p>On Fri, Sep 16, 2016 at 4:05 PM, Muhammad Tahir Vali via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Type safety would make tuples far more powerful than their current<br>&gt; limitations. Structs are usually used for slightly more complex objects<br>&gt; compared to tuples and usually, you need them longer in memory. Tuples are<br>&gt; just for quick manipulation. Since you are interested in just the content<br>&gt; inside, you should be able to manipulate it quickly. Concrete examples<br>&gt; would be destructing JSON or manipulating any list. That manipulation<br>&gt; itself shouldn&#39;t be something used with Switch statements or require<br>&gt; multiple if let statements.<br>&gt;<br>&gt; I&#39;m actually not a fan of the C#&#39;s implementation of tuples. Mainly<br>&gt; because they don&#39;t use optionals and the tuple implementation isn&#39;t very<br>&gt; clean<br>&gt;<br>&gt; var aTuple = Tuple.Create (&quot;foo&quot;,&quot;bar&quot;,111)<br>&gt;<br>&gt; The main problem is that Swift&#39;s tuples functionalities are very limited<br>&gt; to be able to use them.<br>&gt;<br>&gt; --<br>&gt; Best Regards,<br>&gt;<br>&gt; Muhammad T. Vali<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160916/4b631f51/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

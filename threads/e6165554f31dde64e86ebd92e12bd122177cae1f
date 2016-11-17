@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2febf4a3af60fab000109b053177f883?s=50"></div><header><strong>[Discussion] A Problem With SE-0025?</strong> from <string>Antoine Cœur</string> &lt;adigitalknight at gmail.com&gt;<p>June 18, 2016 at 06:00:00am</p></header><div class="content"><p>Forgive me for creating a new thread, I don&#39;t know how to reply to an<br>archived discussion (I just registered to the mailing-list).<br></p><p><br>&gt; On *Wed Jun 15 15:09:52 CDT 2016, **Matthew Johnson* matthew at<br>anandabits.com<br>&lt;swift-evolution%40swift.org?Subject=Re:%20Re%3A%20%5Bswift-evolution%5D%20%5BDiscussion%5D%20A%20Problem%20With%20SE-0025%3F&amp;In-Reply-To=%3CBD9FE13B-87B0-4CFB-9745-6C2DF506FE79%40anandabits.com%3E&gt;<br>wrote:<br></p><p>&gt; There are two reasonable options here:<br></p><p>&gt;<br></p><p>&gt; 1. Allow both `private` and `fileprivate` at file scope despite the fact<br>that they have the same meaning.  This is more consistent in the sense that<br>we are not introducing a special case that arbitrarily prohibits an<br>otherwise valid access modifier.  It also means that nothing needs to<br>change for top level `private` declarations in existing code.<br></p><p>&gt;<br></p><p>&gt; 2. Prohibit `private` at file scope.  Given that it appears as if the<br>behavior of `private` at file scope may not be intuitive and is equivalent<br>to `fileprivate` it might be reasonable to just disallow it.  This would<br>result in more consistent *code* (even if there needs to be a special case<br>in the language).<br></p><p>&gt;<br></p><p>&gt; I don’t have a strong opinion on which option we choose.  But I do feel<br>strongly that the semantics of `private` need to properly respect the scope<br>in which the keyword is written and into which the associated declaration<br>is introduced (rather than the scope *inside* the declaration it is<br>attached to).<br></p><p>The way we are defining those makes `fileprivate` closer to `internal` than<br>to `private`:<br></p><p>* `fileprivate` and `internal` have a predefined scope level (the file, the<br>module)<br></p><p>* `private` has a scope level depending on where it is declared<br></p><p>It would be more consistent to:<br></p><p>a) either rename `fileprivate` to `fileinternal`<br></p><p>b) either scoping `internal` keyword explicitly with a naming like<br>`internal(module)`, `internal(file)`<br></p><p>With this in mind, I wouldn&#39;t choose solution 2 from *Matthew* (prohibiting<br>`private` at some scope level), I would choose solution 1, with room for<br>renaming `fileinternal` in the future.<br></p><p><br>-- Antoine Cœur<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160618/e616ae1f/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

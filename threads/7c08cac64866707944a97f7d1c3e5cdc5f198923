@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>When to use argument labels, part DEUX</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  5, 2016 at 02:00:00pm</p></header><div class="content"><p>on Fri Feb 05 2016, David Owens II &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 5, 2016, at 1:32 PM, Dave Abrahams via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; Given all the awesome feedback I&#39;ve gotten on this thread, I went back<br>&gt;<br>&gt;&gt; to the drawing board and came up with something new; I think this one<br>&gt;&gt; works.  The previously-stated goals still apply:<br>&gt;&gt; <br>&gt;&gt; * describe when and where to use argument labels<br>&gt;&gt; * require labels in many of the cases people have asked for them<br>&gt;&gt; * are understandable by humans (this means relatively simple)<br>&gt;&gt; * preserve important semantics communicated by existing APIs.<br>&gt;&gt; <br>&gt;&gt; Please keep in mind that it is a non-goal to capture considerations we<br>&gt;&gt; think have a bearing on good names (such as relatedness of parameters):<br>&gt;&gt; it&#39;s to create simple guidelines that have the right effect in nearly<br>&gt;&gt; all cases.<br>&gt;&gt; <br>&gt;&gt; A. When arguments can&#39;t be usefully distinguished from one another, none<br>&gt;&gt;   should have argument labels, e.g. min(x,y), zip(x,y,z).  <br>&gt;<br>&gt; +1. Thanks for adding this set.<br>&gt;<br>&gt;&gt; B. Otherwise,<br>&gt;&gt; <br>&gt;&gt;  1. At the call site, a first parameter that has no argument label must<br>&gt;&gt;     form part of a grammatical phrase that starts with the basename, less<br>&gt;&gt;     any trailing nouns.  <br>&gt;&gt; <br>&gt;&gt;       print(x)<br>&gt;&gt;       a.contains(b)<br>&gt;&gt;       a.mergeWith(b)<br>&gt;&gt;       a.addGestureRecognizer(x)<br>&gt;&gt;            ^~~~~~~~~~~~~~~~~ trailing noun<br>&gt;&gt; <br>&gt;&gt;     This phrase must have the correct semantic implications, so, e.g.<br>&gt;&gt; <br>&gt;&gt;       a.dismiss(b)           // no, unless a is really dismissing b<br>&gt;&gt;       a.dismissAnimated(b)   // no, not grammatical<br>&gt;&gt;       a.dismiss(animated: b) // yes, using a label<br>&gt;<br>&gt; +1. Seems good.<br>&gt;<br>&gt;&gt; <br>&gt;&gt;  2. If the first argument is part of a prepositional phrase, put the<br>&gt;&gt;     parenthesis immediately after the preposition. <br>&gt;&gt; <br>&gt;&gt;       a.encodeWith(b)<br>&gt;&gt;       a.moveFrom(b, to: c)<br>&gt;&gt; <br>&gt;&gt;     Thus, if words are required for any reason between the preposition<br>&gt;&gt;     and the first argument, they go into the first argument label.<br>&gt;&gt; <br>&gt;&gt;       a.tracksWith(mediaType: b, composer: c)<br>&gt;&gt;       a.moveTo(x: 22, y: 99)<br>&gt;<br>&gt; +1. Looks good and I like the distinction, especially between `moveFrom` and `moveTo`.<br>&gt;<br>&gt;&gt; Notes: <br>&gt;&gt; <br>&gt;&gt; a. I would recommend prepositions other than &quot;with&quot; in nearly all<br>&gt;&gt;   cases, but that&#39;s not the point of these rules.<br>&gt;&gt; b. I can understand the aesthetic appeal of<br>&gt;&gt; <br>&gt;&gt;    a.move(from: b, to: c)<br>&gt;&gt; <br>&gt;&gt;   but I believe it is not a clear enough improvement to justify<br>&gt;&gt;   additional complexity in the guidelines.<br>&gt;&gt; <br>&gt;&gt; Questions:<br>&gt;&gt; <br>&gt;&gt; 1. I&#39;m not expecting these guidelines to make everybody optimally happy,<br>&gt;&gt;   all the time, but they shouldn&#39;t be harmful.  Are there any cases for<br>&gt;&gt;   which they produce results you couldn&#39;t live with?<br>&gt;&gt; <br>&gt;&gt; 2. Are there any cases where you&#39;d be confused about how to apply these<br>&gt;&gt;   guidelines?<br>&gt;&gt; <br>&gt;&gt; Thanks in advance for all your valuable input!<br>&gt;&gt; <br>&gt;&gt; P.S. Doug is presently working on generating new importer results, based<br>&gt;&gt;     on these guidelines, for your perusal.  They should be ready soon.<br>&gt;&gt; <br>&gt;&gt; -- <br>&gt;&gt; -Dave<br>&gt;<br>&gt; +1 to all of it. Great update.<br></p><p>Thanks!<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bffdf86cef4f7a52a9c00edefdbf57ed?s=50"></div><header><strong>NSTouchBar naming decision</strong> from <string>Robert Schwalbe</string> &lt;dev-null at inode.com&gt;<p>October 28, 2016 at 05:00:00pm</p></header><div class="content"><p>So why is the NS prefix being used on a brand new API?<br></p><p>After all the effort of &quot;the great renaming&quot; the NS prefix continues <br>to live on.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/44b9c3e92a40313850fdbc2cb0abdef7?s=50"></div><header><strong>NSTouchBar naming decision</strong> from <string>Jon Shier</string> &lt;jon at jonshier.com&gt;<p>October 28, 2016 at 06:00:00pm</p></header><div class="content"><p>The Great Renaming was only about Foundation (and libdispatch), not the UI frameworks of Apple’s platforms, AppKit, UIKit, or WatchKit.<br></p><p><br></p><p><br>Jon<br></p><p>&gt; On Oct 28, 2016, at 5:12 PM, Robert Schwalbe via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; So why is the NS prefix being used on a brand new API?<br>&gt; <br>&gt; After all the effort of &quot;the great renaming&quot; the NS prefix continues to live on.<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

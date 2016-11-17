@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/768487e5a7371f5824d4d33ee63428d1?s=50"></div><header><strong>Implicitly type conversion ?</strong> from <string>adelzhang at qq.com</string> &lt;adelzhang at qq.com&gt;<p>August 19, 2016 at 12:00:00am</p></header><div class="content"><p>I am confused by the code snippet following:<br></p><p>     func foo(_ value: Int?) {<br>     	// do nothing<br>     }<br></p><p>     let a: Int = 2<br>     foo(a) //  it works!<br></p><p><br>Why swift don&#39;t warn the type mismatch? I am woking on Xcode Version 7.3.1.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>Implicitly type conversion ?</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>August 18, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; On Aug 18, 2016, at 12:18 PM, adelzhang via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Why swift don&#39;t warn the type mismatch? I am woking on Xcode Version 7.3.1.<br></p><p>It’s an implicit type-cast. Any type `X` can always be implicitly converted to type `X?` (i.e. `Optional&lt;X&gt;`).<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160818/26d6d349/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

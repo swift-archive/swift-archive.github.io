@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Feature proposal: Range operator with step</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March 30, 2016 at 12:00:00pm</p></header><div class="content"><p>on Wed Mar 30 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Mar 30, 2016, at 11:42 AM, Dave Abrahams &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Wed Mar 30 2016, Joe Groff &lt;jgroff-AT-apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;<br>&gt;&gt;&gt;&gt; On Mar 30, 2016, at 8:50 AM, Dave Abrahams &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; on Tue Mar 29 2016, Joe Groff &lt;jgroff-AT-apple.com&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; On Mar 28, 2016, at 5:33 PM, Brent Royal-Gordon &lt;brent at architechies.com&gt; wrote:<br>&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Floating-point seconds (as NSTimeIntervals) are the natural<br>&gt;&gt;&gt;&gt;&gt;&gt;&gt; Strideable.Stride, but it&#39;s not particularly clear to me that you<br>&gt;&gt;&gt;&gt;&gt;&gt;&gt; want 1 second to be a default stride. It&#39;s the default you would<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt;&gt; guess, but it&#39;s not actually a particularly useful default.<br>&gt;&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt;&gt; Any fixed-time-period stride with dates is fraught with peril. Not<br>&gt;&gt;&gt;&gt;&gt;&gt;&gt; every day is 24 hours, not every minute is 60 seconds, etc. Working<br>&gt;&gt;&gt;&gt;&gt;&gt;&gt; with dates requires enough special domain knowledge that I think<br>&gt;&gt;&gt;&gt;&gt;&gt;&gt; it&#39;d be harmful to try to genericize numeric concepts over it.<br>&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; While this is true, &quot;ten seconds from now&quot; is always ten seconds<br>&gt;&gt;&gt;&gt;&gt;&gt; from now, and &quot;seconds between date1 and date2&quot; is always the same<br>&gt;&gt;&gt;&gt;&gt;&gt; number of seconds. There is a basic level of time measurement and<br>&gt;&gt;&gt;&gt;&gt;&gt; manipulation which is completely independent of time zones and<br>&gt;&gt;&gt;&gt;&gt;&gt; calendars; that&#39;s what NSDate and NSTimeInterval represent. They are<br>&gt;&gt;&gt;&gt;&gt;&gt; needed fairly often, and they are perfectly compatible with<br>&gt;&gt;&gt;&gt;&gt;&gt; Strideable&#39;s semantics.<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; Perhaps, but if you make Date strideable by seconds and automatically<br>&gt;&gt;&gt;&gt;&gt; receive a bunch of utility methods based on that, then it becomes<br>&gt;&gt;&gt;&gt;&gt; really tempting to abuse absolute time periods, or to accidentally<br>&gt;&gt;&gt;&gt;&gt; misuse generic Strideable utilities instead of calendar-aware ones. We<br>&gt;&gt;&gt;&gt;&gt; don&#39;t make String a sequence for similar reasons (though perhaps, by<br>&gt;&gt;&gt;&gt;&gt; analogy to String, there could be<br>&gt;&gt;&gt;&gt;&gt; `seconds`/`days`/`solarMonths`/`lunarMonths`/etc. views that are<br>&gt;&gt;&gt;&gt;&gt; Strideable).<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Except that collections aren&#39;t Strideable.  A strideable type is a<br>&gt;&gt;&gt;&gt; value that has an implied unit of measure so that you can offset it<br>&gt;&gt;&gt;&gt; without reference to any collection.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Who said anything about collections?<br>&gt;&gt; <br>&gt;&gt; That&#39;s what those views are.<br>&gt;<br>&gt; Sure, but I was making an analogy. String isn&#39;t a Collection by itself<br>&gt; because operating on pieces of a string usually requires a lot of<br>&gt; domain-specific knowledge, yet we provide Collection views that<br>&gt; present it as a collection of user-chosen units. Date (IMO) shouldn&#39;t<br>&gt; be Strideable for similar reasons, since correctly manipulating dates<br>&gt; requires a lot of domain-specific knowledge, yet we could provide<br>&gt; Strideable views of a Date that advances by user-selected intervals. <br></p><p>Oh, you really do mean to create a Strideable (rather than a Collection)<br>view.  I didn&#39;t understand that at first, sorry.  There are lots of ways<br>to slice this problem.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

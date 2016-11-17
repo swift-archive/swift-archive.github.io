@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Removing the empty initialiser requirement from RangeReplaceableCollection</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July  7, 2016 at 06:00:00pm</p></header><div class="content"><p>on Wed Jul 06 2016, Tim Vermeulen &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; This is a follow up from this swift-users thread: https://lists.swift.org/pipermail/swift-users/Week-of-Mon-20160704/002489.html<br>&gt;<br>&gt; As it stands, RangeReplaceableCollection requires an implementation<br>&gt; for init(), which is used in the default implementations of (as far as<br>&gt; I can tell) init(_:), init(repeating:count:) and<br>&gt; removeAll(keepingCapacity:). The latter of these methods should be<br>&gt; implementable with removeSubrange(_:) instead.<br></p><p>You can&#39;t implement `removeAll(keepingCapacity: false)` with<br>`removeSubrange(_:)`.  How do you propose to provide the other default<br>implementations?<br></p><p>&gt; I would like to propose to *remove* all three initialisers from this<br>&gt; protocol, because it makes it impossible for some collections to<br>&gt; conform to it that need extra data for its initialisation, but are<br>&gt; otherwise perfectly capable of having arbitrary subranges replaced by<br>&gt; elements from another collection. <br></p><p>I agree with the goal, but I&#39;d like to see an implementation before I<br>agree that it&#39;s acheivable.<br></p><p>&gt; Those three initialisers could<br>&gt; either move to a new protocol or simply not be part of any protocol.<br></p><p><br></p><p>&gt;<br></p><p>&gt;<br>&gt;<br>&gt; On a similar note, I’d like to have all initialisers of SetAlgebra removed as well, but that might need its own review.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>[Pitch] Removing the empty initialiser requirement from RangeReplaceableCollection</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>July  7, 2016 at 06:00:00pm</p></header><div class="content"><p>On Thu, Jul 7, 2016 at 6:14 PM, Dave Abrahams via swift-evolution<br>&lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; on Wed Jul 06 2016, Tim Vermeulen &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt; This is a follow up from this swift-users thread: https://lists.swift.org/pipermail/swift-users/Week-of-Mon-20160704/002489.html<br>&gt;&gt;<br>&gt;&gt; As it stands, RangeReplaceableCollection requires an implementation<br>&gt;&gt; for init(), which is used in the default implementations of (as far as<br>&gt;&gt; I can tell) init(_:), init(repeating:count:) and<br>&gt;&gt; removeAll(keepingCapacity:). The latter of these methods should be<br>&gt;&gt; implementable with removeSubrange(_:) instead.<br>&gt;<br>&gt; You can&#39;t implement `removeAll(keepingCapacity: false)` with<br>&gt; `removeSubrange(_:)`.  How do you propose to provide the other default<br>&gt; implementations?<br>&gt;<br>&gt;&gt; I would like to propose to *remove* all three initialisers from this<br>&gt;&gt; protocol, because it makes it impossible for some collections to<br>&gt;&gt; conform to it that need extra data for its initialisation, but are<br>&gt;&gt; otherwise perfectly capable of having arbitrary subranges replaced by<br>&gt;&gt; elements from another collection.<br>&gt;<br>&gt; I agree with the goal, but I&#39;d like to see an implementation before I<br>&gt; agree that it&#39;s acheivable.<br></p><p>I agree that we need to see an implementation to be able to evaluate<br>the suggestion.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

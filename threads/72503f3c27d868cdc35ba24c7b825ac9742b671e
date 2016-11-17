@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2e51f5d1f79b09442f62eef9702b8316?s=50"></div><header><strong>Need documentation on how to import C header into Swift 3.0</strong> from <string>Ken Burgett</string> &lt;kenb at iotone.io&gt;<p>May 21, 2016 at 08:00:00am</p></header><div class="content"><p>Hi Joe,<br></p><p>Can you point me to a good example of how to build a Swift 3.0 module <br>that wraps some C code?  I have searched, but keep finding Swift 2.2 <br>documentation and it all seems to involve connecting to Objective-C, <br>while my interests are accessing C code on a Linux platform, using the <br>latest Ubuntu Linux 14.04 version of the Swift 3.0 toolchain.<br></p><p>Thanks in advance for your help.<br></p><p>-- <br>Ken Burgett<br>Principal Software Engineer<br>Email: kenb at iotone.io<br>Office: 530.693.4449<br>Mobile: 831.332.6846<br>URL: www.iotone.co<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1966627b418931a036bad98003d0b65d?s=50"></div><header><strong>Need documentation on how to import C header into Swift 3.0</strong> from <string>Michal Kalinowski</string> &lt;michal.kalinowski at icloud.com&gt;<p>May 21, 2016 at 05:00:00pm</p></header><div class="content"><p>Some good info in Package Manager docs:<br></p><p>https://github.com/apple/swift-package-manager/blob/master/Documentation/SystemModules.md<br></p><p>Hope that helps,<br>Michał<br></p><p>&gt; On 21 May 2016, at 17:42, Ken Burgett via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi Joe,<br>&gt; <br>&gt; Can you point me to a good example of how to build a Swift 3.0 module that wraps some C code?  I have searched, but keep finding Swift 2.2 documentation and it all seems to involve connecting to Objective-C, while my interests are accessing C code on a Linux platform, using the latest Ubuntu Linux 14.04 version of the Swift 3.0 toolchain.<br>&gt; <br>&gt; Thanks in advance for your help.<br>&gt; <br>&gt; -- <br>&gt; Ken Burgett<br>&gt; Principal Software Engineer<br>&gt; Email: kenb at iotone.io<br>&gt; Office: 530.693.4449<br>&gt; Mobile: 831.332.6846<br>&gt; URL: www.iotone.co<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

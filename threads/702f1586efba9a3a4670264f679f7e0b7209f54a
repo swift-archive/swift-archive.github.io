@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2ddf7419fbdd69635522af227c08327c?s=50"></div><header><strong>[Review] SE-0058: Allow Swift types to provide custom Objective-C representations</strong> from <string>David P Grove</string> &lt;groved at us.ibm.com&gt;<p>April  7, 2016 at 05:00:00pm</p></header><div class="content"><p>&gt; On Apr 5, 2016, at 5:57 PM, Kevin Lundberg via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; Generally I&#39;m +1 on this, but I do have a concern. It&#39;s not made explicit<br>in the proposal, but I presume that this is meant to only be available on<br>Darwin, and not Linux or other platforms that don&#39;t have swift using the<br>Objective-C runtime? (Please correct me if I am mistaken.)<br>&gt;<br>&gt; I ask because of the swift-corelibs-foundation project; Presumably once<br>that is complete for Swift 3, code that makes use of this type bridging<br>should be able to be run cross-platform. For example:<br>&gt;<br>&gt; var a = [AnyObject]()<br>&gt; (a as NSArray).addObject(NSObject()) // should this work on all<br>platforms?<br>&gt;<br>&gt; swift-corelibs-foundation uses its own protocol named<br>_ObjectTypeBridgeable (defined here:<br>https://github.com/apple/swift-corelibs-foundation/blob/338f4bf3a89c75a0420b49f5701466e106af02b5/Foundation/NSSwiftRuntime.swift#L205<br> &lt;<br>https://github.com/apple/swift-corelibs-foundation/blob/338f4bf3a89c75a0420b49f5701466e106af02b5/Foundation/NSSwiftRuntime.swift#L205<br>&gt;) to simulate what happens today on Darwin platforms, but there is no<br>language support for it so API consumers must explicitly call its bridging<br>methods. It would be great if corelibs-foundation (and any code designed to<br>work on Linux) could take advantage of this proposal to provide the<br>language support, and if the proposal as written is not intended to have an<br>effect on Linux at all, then I would suggest we modify it so that the<br>resulting implementation is not tied to Objective-C and Darwin only.<br>&gt;<br>&gt; -Kevin<br>&gt;<br></p><p>This is a very timely observation.  Following a suggestion from Tony<br>Parker, I&#39;ve prototyped using (abusing?) ObjectiveCBridgeable to enable<br>this kind of conversion for swift-corelibs-foundation on Linux (where there<br>is no Objective-C runtime).  The motivation is to get consistent<br>cross-platform bridging.<br></p><p>On the plus side, the change is pretty straightforward and seems to be<br>working as expected (still working through all the TestFoundation test<br>cases and replacing bridge() calls with as operations).  I expect to<br>complete the initial pass through the foundation test cases by the weekend.<br></p><p>On the minus side, the name becomes a little misleading.  We are really<br>using ObjectCBridgeable to bridge from one Swift type to another Swift<br>type.<br></p><p>For the curious, the relevant pull requests are:<br>	https://github.com/apple/swift/pull/1994<br>	https://github.com/apple/swift-corelibs-foundation/pull/303<br></p><p>Would be interested in comments on the approach.<br></p><p>regards,<br></p><p>--dave<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160407/702ff54a/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

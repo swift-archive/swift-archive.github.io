@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9ae1f2ed10d2ef77cce06bbb5a2dcf7e?s=50"></div><header><strong>Bugs not reproducible on master</strong> from <string>Alex Hoppen</string> &lt;alex at ateamer.de&gt;<p>July 13, 2016 at 03:00:00pm</p></header><div class="content"><p>I’m currently crawling bugs.swift.org for bugs to fix and regularly encounter bugs which I cannot reproduce on master anymore. What’s the standard protocol for them? Close them with resolution &quot;Can’t Reproduce&quot; or &quot;Done&quot; or just add a comment and let the reporter close it?<br></p><p>– Alex<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>Bugs not reproducible on master</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>July 13, 2016 at 08:00:00am</p></header><div class="content"><p>&gt; On Jul 13, 2016, at 6:16 AM, Alex Hoppen via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I’m currently crawling bugs.swift.org for bugs to fix and regularly encounter bugs which I cannot reproduce on master anymore. What’s the standard protocol for them? Close them with resolution &quot;Can’t Reproduce&quot; or &quot;Done&quot; or just add a comment and let the reporter close it?<br></p><p>I suggest reporting that the bug doesn&#39;t reproduce with &lt;insert swiftc version here&gt;. setting the state to &quot;Can&#39;t Reproduce&quot; and resolved, and send back to the reporter to close it (or re-open if they think something is missed).<br></p><p> - Daniel<br></p><p>&gt; <br>&gt; – Alex<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0e8516d3703e35b7df26986815b23e7a?s=50"></div><header><strong>[swift-dev] Bugs not reproducible on master</strong> from <string>Robert Widmann</string> &lt;devteam.codafi at gmail.com&gt;<p>July 13, 2016 at 09:00:00am</p></header><div class="content"><p>Can&#39;t speak for everybody else, but I leave them a comment letting them know, try to find a pull request or commit that would have fixed it and close it if I can find one.  Otherwise, a lot of times IBM&#39;s exhaustive catalogue of Swift releases on bluemix can usually reproduce tricky SRs.<br></p><p>~Robert Widmann<br></p><p>2016/07/13 6:16、Alex Hoppen via swift-dev &lt;swift-dev at swift.org&gt; のメッセージ:<br></p><p>&gt; I’m currently crawling bugs.swift.org for bugs to fix and regularly encounter bugs which I cannot reproduce on master anymore. What’s the standard protocol for them? Close them with resolution &quot;Can’t Reproduce&quot; or &quot;Done&quot; or just add a comment and let the reporter close it?<br>&gt; <br>&gt; – Alex<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

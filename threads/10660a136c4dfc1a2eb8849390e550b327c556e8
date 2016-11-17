@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8667c86c3fa7cc873eca1533c7ebd5d2?s=50"></div><header><strong>Unmanaged API flip flop</strong> from <string>Kyle Jessup</string> &lt;kjessup.lists at gmail.com&gt;<p>July  4, 2016 at 04:00:00pm</p></header><div class="content"><p>I have this code which uses Unmanaged and the API seems to vary depending on if I am using a 3.0 Preview or a development snapshot. I see it now when trying the June 13th/27th preview vs June 20th snapshot.<br></p><p>class MyClass {}<br></p><p>let holderObject = MyClass()<br></p><p>#if FLIP // works with PREVIEW<br>	let leakyObject = UnsafeMutablePointer&lt;Void&gt;(OpaquePointer(bitPattern: Unmanaged.passRetained(holderObject)))<br>#else // works with SNAPSHOT<br>	let leakyObject = Unmanaged.passRetained(holderObject).toOpaque()<br>#endif<br></p><p>#if FLIP // works with PREVIEW<br>	let unleakyObject = Unmanaged&lt;MyClass&gt;.fromOpaque(OpaquePointer(leakyObject)).takeRetainedValue()<br>#else // works with SNAPSHOT<br>	let unleakyObject = Unmanaged&lt;MyClass&gt;.fromOpaque(leakyObject).takeRetainedValue()<br>#endif<br></p><p>I see the same difference between the previous snapshots and previews all the way back to the “false” preview of yore.<br></p><p>Am I misunderstanding something about the API or is this a bug?<br></p><p>Thanks,<br>-Kyle<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Unmanaged API flip flop</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>July  5, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Jul 4, 2016, at 13:32, Kyle Jessup via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I have this code which uses Unmanaged and the API seems to vary depending on if I am using a 3.0 Preview or a development snapshot. I see it now when trying the June 13th/27th preview vs June 20th snapshot.<br>&gt; <br>&gt; class MyClass {}<br>&gt; <br>&gt; let holderObject = MyClass()<br>&gt; <br>&gt; #if FLIP // works with PREVIEW<br>&gt; 	let leakyObject = UnsafeMutablePointer&lt;Void&gt;(OpaquePointer(bitPattern: Unmanaged.passRetained(holderObject)))<br>&gt; #else // works with SNAPSHOT<br>&gt; 	let leakyObject = Unmanaged.passRetained(holderObject).toOpaque()<br>&gt; #endif<br>&gt; <br>&gt; #if FLIP // works with PREVIEW<br>&gt; 	let unleakyObject = Unmanaged&lt;MyClass&gt;.fromOpaque(OpaquePointer(leakyObject)).takeRetainedValue()<br>&gt; #else // works with SNAPSHOT<br>&gt; 	let unleakyObject = Unmanaged&lt;MyClass&gt;.fromOpaque(leakyObject).takeRetainedValue()<br>&gt; #endif<br>&gt; <br>&gt; I see the same difference between the previous snapshots and previews all the way back to the “false” preview of yore.<br>&gt; <br>&gt; Am I misunderstanding something about the API or is this a bug?<br></p><p>We just didn’t manage to get SE-0017 &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0017-convert-unmanaged-to-use-unsafepointer.md&gt; in before the first preview. The development branch (your SNAPSHOT) is the one that will match the final Swift 3.<br></p><p>Jordan<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160705/3c231648/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

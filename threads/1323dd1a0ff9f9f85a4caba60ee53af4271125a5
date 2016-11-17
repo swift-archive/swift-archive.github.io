@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17d2af4afb70023e28e655d17471a018?s=50"></div><header><strong>PR Tests Failing</strong> from <string>Michael Gottesman</string> &lt;mgottesman at apple.com&gt;<p>October 19, 2016 at 02:00:00pm</p></header><div class="content"><p>My PR test is failing due to something unrelated:<br></p><p>https://ci.swift.org/job/swift-PR-osx-smoke-test/2441/console<br></p><p>Does anyone know what is going on?<br></p><p>Michael<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17d2af4afb70023e28e655d17471a018?s=50"></div><header><strong>PR Tests Failing</strong> from <string>Michael Gottesman</string> &lt;mgottesman at apple.com&gt;<p>October 19, 2016 at 02:00:00pm</p></header><div class="content"><p>I just talked with Roman. He said that this was due to his commit earlier and that we need to do clean builds to work around it.<br></p><p>Perhaps we should clean the workspaces?<br></p><p>Michael<br></p><p>&gt; On Oct 19, 2016, at 2:39 PM, Michael Gottesman via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; My PR test is failing due to something unrelated:<br>&gt; <br>&gt; https://ci.swift.org/job/swift-PR-osx-smoke-test/2441/console<br>&gt; <br>&gt; Does anyone know what is going on?<br>&gt; <br>&gt; Michael<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6b81089e81d6bb1e14b5adb746725de1?s=50"></div><header><strong>PR Tests Failing</strong> from <string>Alexis</string> &lt;abeingessner at apple.com&gt;<p>October 20, 2016 at 10:00:00am</p></header><div class="content"><p>This was fixed by https://github.com/apple/swift/pull/5372 &lt;https://github.com/apple/swift/pull/5372&gt;<br></p><p>Thanks Doug!<br></p><p>&gt; On Oct 19, 2016, at 5:39 PM, Michael Gottesman via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; My PR test is failing due to something unrelated:<br>&gt; <br>&gt; https://ci.swift.org/job/swift-PR-osx-smoke-test/2441/console<br>&gt; <br>&gt; Does anyone know what is going on?<br>&gt; <br>&gt; Michael<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161020/49e08a28/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

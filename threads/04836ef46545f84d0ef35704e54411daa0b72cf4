@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3754e9aaf5665d73a2d1de0e0352e73b?s=50"></div><header><strong>[Review] SE-0112: Improved NSError Bridging</strong> from <string>Mohsen Ramezanpoor</string> &lt;me at mohsenr.com&gt;<p>July  3, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; * I would like to see more work on `RecoverableError`. I know this is a more or less faithful translation of `NSErrorRecoveryAttempting`, but I don&#39;t think that&#39;s a particularly good API, and I would like to see it revisited.<br>&gt; <br>&gt; The design I&#39;d prefer would look more like this:<br>&gt; <br>&gt; protocol RecoverableError: Error {<br>&gt; var recoveryOptions: [ErrorRecoveryOption] { get }<br>&gt; }<br>&gt; <br>&gt; typealias ErrorRecoveryCompletionHandler = (recovered: Bool) -&gt;Void<br>&gt; <br>&gt; protocol ErrorRecoveryOption {<br>&gt; var localizedName: String { get }<br>&gt; func attemptRecovery(completion: ErrorRecoveryCompletionHandler) {…}<br>&gt; }<br>&gt; <br>&gt; struct AnyErrorRecoveryOption: ErrorRecoveryOption {<br>&gt; typealias RecoveryAttempter = (ErrorRecoveryCompletionHandler) -&gt;Void<br>&gt; <br>&gt; var localizedName: String<br>&gt; var attempter: RecoveryAttempter<br>&gt; <br>&gt; init(localizedName: String, attempter: RecoveryAttempter) {…}<br>&gt; <br>&gt; func attemptRecovery(completion: CompletionHandler) { attempter(completion) }<br>&gt; }<br>&gt; <br>&gt; Though further from the equivalent Foundation API, I think this is a much cleaner design. It requires no `switch` statements, avoids issues with matching indices between the option array and the recovery attempter, and makes it easier for interested subtypes to add or remove recovery options.<br>&gt; <br>&gt; In particular, in my view, there should be only one way to attempt recovery, and that way should not be application-modal. If a client wants to recover modally, we should invoke the non-modal API and then spin the runloop until the completion handler runs.<br>&gt; <br>&gt; If a better `RecoverableError` design isn&#39;t feasible in Swift 3, I think we can defer it. In a pinch, `CustomNSError` provides the ability to specify error-handling behavior the old-fashioned way.<br></p><p>I agree. This feels like a much better API, specially as it’s not tied to Cocoa (e.g. via `CustomNSError `). One tweak I would suggest is for the completion handler to return an error:<br></p><p>```<br>typealias ErrorRecoveryCompletionHandler = (recoveryError: Error?) -&gt;Void<br>```<br></p><p>If the recovery from an error fails, It’s almost certainly because *another* error occurred.<br></p><p>I realise this is an even larger departure from Cocoa, but it should not be difficult to do technically. A negative result returned by, say, `NSErrorRecoveryAttempting` can will be converted to a new `RecoveryFailed` error struct which wraps the original error; conversely, a “recovered” boolean can be created by simply checking if the recovery error is `nil`.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

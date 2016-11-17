@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Guidelines, First Argument Labels]: Prepositions inside the parens</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 11, 2016 at 05:00:00pm</p></header><div class="content"><p>on Thu Feb 11 2016, Jordan Rose &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 11, 2016, at 16:00, Dave Abrahams via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Doug and I reviewed these, and we don&#39;t think they work.  The right<br>&gt;&gt; criterion for cocoa seems to be “pull ‘of’ into the base name unless—as<br>&gt;&gt; Jordan suggested—it means “having.”  <br>&gt;&gt; <br>&gt;&gt; Fortunately that seems to be easily determined.  After looking at all<br>&gt;&gt; the APIs in Cocoa, “of” in the base name means “having” exactly when it<br>&gt;&gt; is followed by one of the following words: “type,” “types,” “kind,”<br>&gt;&gt; “size,” “length,” and maybe “stage” (we&#39;re trying to analyze<br>&gt;&gt; removeModifiersOfStage<br>&gt;&gt; &lt;https://developer.apple.com/library/mac/documentation/SceneKit/Reference/SCNParticleSystem_Class/#//apple_ref/doc/uid/TP40014177-CH1-SW132<br>&gt;&gt; &lt;https://developer.apple.com/library/mac/documentation/SceneKit/Reference/SCNParticleSystem_Class/#//apple_ref/doc/uid/TP40014177-CH1-SW132&gt;&gt;<br>&gt;&gt; to figure out how “of”is being used—assistance welcome).<br>&gt;<br>&gt; As usual, I object to hardcoded supposedly-exhaustive lists. I&#39;d<br>&gt; rather have people fix these up manually with NS_SWIFT_NAME and such.<br></p><p>We could “automatically fix them up manually” with NS_SWIFT_NAME and let<br>the framework owners review the patches, but since we know exactly which<br>ones work it would be a huge waste to ask each framework owner to find<br>them on their own.<br></p><p>&gt; Given that the parallel to -removeModifiersOfStage: is<br>&gt; -addModifierForProperties:atStage:withBlock:, I think the stage is not<br>&gt; being treated as part of the modifier.<br></p><p>I don&#39;t think I understand what you wrote above, sorry.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>[Guidelines, First Argument Labels]: Prepositions inside the parens</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>February 11, 2016 at 06:00:00pm</p></header><div class="content"><p>&gt; On Feb 11, 2016, at 17:41, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Thu Feb 11 2016, Jordan Rose &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt;&gt; On Feb 11, 2016, at 16:00, Dave Abrahams via swift-evolution<br>&gt;&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Doug and I reviewed these, and we don&#39;t think they work.  The right<br>&gt;&gt;&gt; criterion for cocoa seems to be “pull ‘of’ into the base name unless—as<br>&gt;&gt;&gt; Jordan suggested—it means “having.”  <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Fortunately that seems to be easily determined.  After looking at all<br>&gt;&gt;&gt; the APIs in Cocoa, “of” in the base name means “having” exactly when it<br>&gt;&gt;&gt; is followed by one of the following words: “type,” “types,” “kind,”<br>&gt;&gt;&gt; “size,” “length,” and maybe “stage” (we&#39;re trying to analyze<br>&gt;&gt;&gt; removeModifiersOfStage<br>&gt;&gt;&gt; &lt;https://developer.apple.com/library/mac/documentation/SceneKit/Reference/SCNParticleSystem_Class/#//apple_ref/doc/uid/TP40014177-CH1-SW132<br>&gt;&gt;&gt; &lt;https://developer.apple.com/library/mac/documentation/SceneKit/Reference/SCNParticleSystem_Class/#//apple_ref/doc/uid/TP40014177-CH1-SW132&gt;&gt;<br>&gt;&gt;&gt; to figure out how “of”is being used—assistance welcome).<br>&gt;&gt; <br>&gt;&gt; As usual, I object to hardcoded supposedly-exhaustive lists. I&#39;d<br>&gt;&gt; rather have people fix these up manually with NS_SWIFT_NAME and such.<br>&gt; <br>&gt; We could “automatically fix them up manually” with NS_SWIFT_NAME and let<br>&gt; the framework owners review the patches, but since we know exactly which<br>&gt; ones work it would be a huge waste to ask each framework owner to find<br>&gt; them on their own.<br></p><p>Yes, I&#39;m fine with that. My point is I don&#39;t want it added to the automatic translation rules. (I expect to be overruled, again.)<br></p><p>&gt; <br>&gt;&gt; Given that the parallel to -removeModifiersOfStage: is<br>&gt;&gt; -addModifierForProperties:atStage:withBlock:, I think the stage is not<br>&gt;&gt; being treated as part of the modifier.<br>&gt; <br>&gt; I don&#39;t think I understand what you wrote above, sorry.<br></p><p>This is in reference to &quot;we&#39;re trying to analyze -removeModifiersOfStage: to figure out how &#39;of&#39; is being used—assistance welcome&quot;. My reading is that it is not an &quot;of&quot; that really means &quot;having&quot;.<br></p><p>Jordan<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

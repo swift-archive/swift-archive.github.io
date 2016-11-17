@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Feature proposal: Range operator with step</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  5, 2016 at 03:00:00pm</p></header><div class="content"><p>on Tue Apr 05 2016, Xiaodi Wu &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Mon, Apr 4, 2016 at 1:22 PM, Dave Abrahams &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt;<br>&gt;&gt; on Sat Apr 02 2016, Xiaodi Wu &lt;xiaodi.wu-AT-gmail.com&gt; wrote:<br>&gt;&gt;<br>&gt;&gt;&gt; [snip]<br>&gt;&gt;&gt;<br>&gt;&gt;&gt; Not included:<br>&gt;&gt;&gt; 1. I know Ranges are in flux, so I&#39;ve held off on extending Range with<br>&gt;&gt;&gt; a striding(by:) method in this proof-of-concept.<br>&gt;&gt;<br>&gt;&gt; They&#39;re not in flux, except for not having been reviewed yet; they are<br>&gt;&gt; settled in the swift-3-indexing-model branch.<br>&gt;<br>&gt; Did not know that. Will have to study what&#39;s there in more detail.<br></p><p>Actually, let me amend that.  The protocols involved need to be<br>de-underscored, the doc comments need to be written, and I am noticing a<br>few missing things around the edges.  But the basic shape of it is stable.<br></p><p>&gt;<br>&gt;<br>&gt;&gt;&gt; 2. No attempt at the suggested stride(from:to:steps:) quite yet.<br>&gt;&gt;<br>&gt;&gt; #1 and #2 are mutually exclusive; we prefer #1 as it removes questions<br>&gt;&gt; about the meaning of &quot;to&quot; or &quot;through.&quot;<br>&gt;<br>&gt; I wasn&#39;t aware that was the thinking. Limiting strides to<br>&gt; `striding(by:)` removes the ability to express `stride(from: 0, to:<br>&gt; -10, by: -1)` because Range enforces (and it looks like it will<br>&gt; continue to do so in the swift-3-indexing-model branch?) `lowerBound<br>&gt; &lt;= upperBound`, and in a half-open range it&#39;s the upper bound that&#39;s<br>&gt; excluded.<br>&gt;<br>&gt;&gt;&gt; 2. No tests written yet for this proof-of-concept; I noticed that<br>&gt;&gt;&gt; there&#39;s a stub for testing strides with bounds of type Double, but<br>&gt;&gt;&gt; there&#39;s a comment about things not being ready because Double conforms<br>&gt;&gt;&gt; to RandomIndexType--not sure what to make of that.<br>&gt;&gt;<br>&gt;&gt; Comments in that branch are badly out-of-date.  It&#39;s worth trying that,<br>&gt;&gt; especially since there is no RandomAccessIndexType in that branch any<br>&gt;&gt; longer.<br>&gt;&gt;<br>&gt;&gt;&gt; 3. Haven&#39;t gotten around to testing performance.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

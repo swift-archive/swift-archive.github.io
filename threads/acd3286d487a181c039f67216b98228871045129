@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0118: Closure Parameter Names and Labels</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July 13, 2016 at 08:00:00pm</p></header><div class="content"><p>Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0118-closure-parameter-names-and-labels.md<br></p><p>The review of &quot;SE-0118: Closure Parameter Names and Labels &quot; ran from July 5...11, 2016. The proposal has been *accepted with modifications*:<br></p><p>The proposal has been very well received by the community and core team.  The core team agrees with community contributions that &quot;ManagedBuffer&lt;Header,Element&gt;.create(minimumCapacity: 10, makingValueWith: makeHeader)” should be renamed to “makingHeaderWith:”.  The core team extensively discussed the name of &quot;lines.split(whereSeparator: isAllWhitespace)” and agreed to keep the name as proposed, because the alternative name &quot;lines.split(where: isAllWhitespace)” could be confusing given the behavior of dropping the “separator” from the result.<br></p><p>Thank you to Dave Abrahams, Dmitri Gribenko, and Maxim Moiseev for driving this discussion forward!  I filed SR-2072 to track implementation of this feature.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8fe84f28049f4f2a218e283ee9d64ee3?s=50"></div><header><strong>Swift source code formatting tool like clang-format for objective-c</strong> from <string>Håkon Bogen</string> &lt;hakon.bogen at gmail.com&gt;<p>December 10, 2015 at 08:00:00pm</p></header><div class="content"><p>I&#39;m a huge fan of clang-format, (http://clang.llvm.org/docs/ClangFormat.html)<br>a tool that can set rules for formatting source code in Objective-C<br>projects. With tools like spacecommander (<br>https://github.com/square/spacecommander) and clang-format for XCode (<br>https://github.com/travisjeffery/ClangFormat-Xcode), it can enforce the<br>rules and auto run the formatter constantly so nicely formatted code stays<br>that way. It saves alot of time, and keeps acleaner commit log without<br>constant formatting adjustment.<br></p><p>Moving to Swift, it was a dearly missed feature. I actually asked about if<br>Swift would be supported by clang-format on the clang-developers forum<br>after it was announced in 2014, but got no replies. (<br>http://clang-developers.42468.n3.nabble.com/Will-clang-format-support-the-format-of-Swift-td4039910.html<br>)<br></p><p>Would auto formatting tools for Swift be a good idea to include in the<br>bundle of Swift Components, like clang-format is a part of clang/llvm?<br></p><p>-- <br>Regards Håkon Bogen<br>http://haaakon.org<br>+47 95 09 68 11<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151210/cd3136d5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>Swift source code formatting tool like clang-format for objective-c</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>December 10, 2015 at 11:00:00am</p></header><div class="content"><p>&gt; On Dec 10, 2015, at 11:13 AM, Håkon Bogen via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I&#39;m a huge fan of clang-format, (http://clang.llvm.org/docs/ClangFormat.html &lt;http://clang.llvm.org/docs/ClangFormat.html&gt;) a tool that can set rules for formatting source code in Objective-C projects. With tools like spacecommander (https://github.com/square/spacecommander &lt;https://github.com/square/spacecommander&gt;) and clang-format for XCode (https://github.com/travisjeffery/ClangFormat-Xcode &lt;https://github.com/travisjeffery/ClangFormat-Xcode&gt;), it can enforce the rules and auto run the formatter constantly so nicely formatted code stays that way. It saves alot of time, and keeps acleaner commit log without constant formatting adjustment. <br>&gt; <br>&gt; Moving to Swift, it was a dearly missed feature. I actually asked about if Swift would be supported by clang-format on the clang-developers forum after it was announced in 2014, but got no replies. ( http://clang-developers.42468.n3.nabble.com/Will-clang-format-support-the-format-of-Swift-td4039910.html &lt;http://clang-developers.42468.n3.nabble.com/Will-clang-format-support-the-format-of-Swift-td4039910.html&gt; ) <br>&gt; <br>&gt; Would auto formatting tools for Swift be a good idea to include in the bundle of Swift Components, like clang-format is a part of clang/llvm? <br></p><p><br>This would be a fantastic thing to have, but of course someone has to build it ;)<br></p><p>	- Doug<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151210/0b9d6fa4/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

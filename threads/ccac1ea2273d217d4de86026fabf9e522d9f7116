@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines (when to use properties)</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 27, 2016 at 11:00:00pm</p></header><div class="content"><p>on Wed Jan 27 2016, David Waite &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jan 27, 2016, at 4:45 PM, Dave Abrahams<br>&gt;&gt; &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt; on Wed Jan 27 2016, David Waite &lt;david-AT-alkaline-solutions.com<br>&gt;&gt; &lt;http://david-at-alkaline-solutions.com/&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; Whether I get a collection’s count once at the start of my loop or for<br>&gt;&gt;&gt; each iteration of my loop, both will give me safe behavior.<br>&gt;&gt; <br>&gt;&gt; I&#39;m not sure whether you&#39;re conflating two ideas here.  When we say<br>&gt;&gt; &quot;safe&quot; in Swift, we don&#39;t mean &quot;doesn&#39;t have side-effects;&quot; we mean<br>&gt;&gt; either type safety (not accessing initialized memory as a type it<br>&gt;&gt; doesn&#39;t have) or memory safety (not accessing uninitialized memory).<br>&gt;&gt; Could you clarify what you mean?<br>&gt;<br>&gt; Apologies, I omitted the definition of safe I was using when paring<br>&gt; down the email and didn’t notice (FYI, the original definition of safe<br>&gt; and idempotent came from HTTP).<br>&gt;<br>&gt; I mean without *impacting* side effects. For value types this means<br>&gt; non-mutable, but not necessarily forbidding mutation of classes<br>&gt; (including ones referenced internally by the struct). This means that<br>&gt; any side effects are not visible from the API perspective.<br>&gt;<br>&gt; On a separate reply of what I mean by this, I gave the example of<br>&gt; using a logging interface, or having a collection backed by a splay<br>&gt; tree (a data structure whose topology is modified on read).<br>&gt;<br>&gt;&gt; <br>&gt;&gt;&gt; Once you have the safety aspect underway, usability and consistency<br>&gt;&gt;&gt; determine what stays as properties or gets promoted to methods.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Example: from a safety perspective, “reverse” and many other methods<br>&gt;&gt;&gt; could be getter property on CollectionType. However, they could not be<br>&gt;&gt;&gt; properties on the super type SequenceType, because SequenceType is<br>&gt;&gt;&gt; allowed to consume the underlying data. To have “reverse’ be<br>&gt;&gt;&gt; consistent across both SequenceType and its subtype CollectionType, it<br>&gt;&gt;&gt; needs to be a method.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; underestimateCount() looks like it could be a property for safety, but<br>&gt;&gt;&gt; some other design/consistency aspects made it a method.<br>&gt;&gt; <br>&gt;&gt; This is useful, thanks!<br>&gt;<br>&gt; Yeah, once you qualify what can be a property by the basic level of<br>&gt; user expectation, there are other aspects (including complexity and<br>&gt; usage) that come into play when deciding between properties and<br>&gt; methods.<br>&gt;<br>&gt; Count is a great example; with C-style for loops in the picture, it<br>&gt; was probable someone would call count in their comparison on each<br>&gt; loop, not realizing it backs a possibly O(n) operation. With C-style<br>&gt; loops gone, having count be a property is more easily justified.<br></p><p>Meh. I don&#39;t think <br></p><p>    while i &lt; x.count {<br>      ...<br>      ++i<br>    }<br></p><p>is any less likely than a C-style for loop was.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

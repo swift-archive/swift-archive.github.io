@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0089:	Replace protocol&lt;P1, P2&gt; syntax with Any&lt;P1, P2&gt;</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>May 25, 2016 at 10:00:00am</p></header><div class="content"><p>Am 25. Mai 2016 um 09:34 schrieb Brent Royal-Gordon via swift-evolution &lt;swift-evolution at swift.org&gt;:<br></p><p><br> * What is your evaluation of the proposal?<br></p><p>I am in favor. This is a necessary step towards many future features: class-plus-protocol types, the replacement/reimplementation of AnyObject with Any&lt;class&gt;, existentials with associated types, etc.<br></p><p>One reason to prefer `Any` over `any` which is not listed in the proposal is confusion with the unparameterized `Any` type. Having an uppercase `Any` and a lowercase `any&lt;…&gt;` is going to lead to a lot of confusion; people aren&#39;t going to remember whether they need the capitalized form or the lowercase one for any particular use. I don&#39;t think we can have `any&lt;...&gt;` unless we&#39;re also willing to have an unparameterized `any`, and I think `any` is 100% wrong, because it is absolutely a type but is lowercase.<br></p><p>Since we are trying to cram as many breaking changes as possible into Swift 3, I also think we should consider now, or soon, whether or not we want to draw a strong syntactic line between protocols-as-existentials and protocols-as-constraints by requiring the use of `Any&lt;…&gt;` on all existentials and forbidding its use in constraints. That would mean, for instance, that code like this:<br></p><p>     let printable: CustomStringConvertible = foo<br></p><p>Would now be written:<br></p><p> let printable: Any&lt;CustomStringConvertible&gt; = foo<br></p><p>And also that code like:<br></p><p>     func foo&lt;X: Any&lt;Y, Z&gt;&gt;(x: X)<br></p><p>Would probably have to be written something like:<br></p><p> func foo&lt;X: Y&gt;(x: X) where X: Z<br></p><p><br>Although I am strictly against having to write non-existential protocols as existentials (as I have written in another post), I also think that it would be desirable to use existentials only for declaring types of variables or parameters etc. but not for defining constraints, i.e.<br></p><p><br>let printable: CustomStringConvertible = foo     // fine, CustomStringConvertible is not an existential<br></p><p>let coll: any&lt;Collection&gt;    // allowed usage of existential<br></p><p>func foo&lt;X&gt;(x: X) where X: Y, Z    // existential any&lt;Y, Z&gt; not allowed here<br></p><p><br></p><p>-Thorsten<br></p><p><br></p><p><br></p><p><br></p><p><br></p><p>However, I believe this would have a significant advantage: it would clarify the distinction between an existential and a constraint. It would more clearly mark where you are taking on the abstraction overhead of an existential. It would also improve the non-existential type situation: in the short term, it would make it clearer where uses of associated type protocols like `Comparable` would not be permitted; in the long term, once we have type-erased existentials for those protocols, it would make it clearer when type erasure was in effect.<br></p><p><br>     * Is the problem being addressed significant enough to warrant a change to Swift?<br></p><p>Yes. `protocol&lt;&gt;` is an ugly and unloved corner of the language; very few people know about it, remember it, or use it. The renaming improves this situation.<br></p><p><br>   * Does this proposal fit well with the feel and direction of Swift?<br></p><p>Given the way it enables many future features, yes.<br></p><p><br>   * If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br></p><p>The only language I&#39;ve used with similar features is Objective-C. There, too, the `&lt;&gt;` is overloaded, now that lightweight generics are part of the language.<br></p><p><br>       * How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br></p><p>I&#39;d like to think I have a fairly deep understanding of this feature, having participated heavily in the discussions about it.<br></p><p>--<br>Brent Royal-Gordon<br>Architechies<br></p><p>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160525/dd1fd3e4/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

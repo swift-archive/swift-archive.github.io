@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0686691c62c77f53c6e026472382453d?s=50"></div><header><strong>Swift merge commits no diff</strong> from <string>Vassil Vassilev</string> &lt;v.g.vassilev at gmail.com&gt;<p>June 22, 2016 at 12:00:00am</p></header><div class="content"><p>Hi,<br></p><p>   I am trying to follow the development of swift more closely recently. <br>I noticed that there is no diff below merge commits of pull requests to <br>swift-commits mailing lists. I&#39;d assume this is intentional, but feels <br>awkward. I was wondering what was the rationale for that?<br></p><p>Many thanks,<br></p><p>Vassil<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/569ed436467cf145f3bbdd0d53fbe115?s=50"></div><header><strong>Swift merge commits no diff</strong> from <string>Slava Pestov</string> &lt;spestov at apple.com&gt;<p>June 21, 2016 at 02:00:00pm</p></header><div class="content"><p>Hi Vassil,<br></p><p>Since a merge commit has two parents you might potentially want to diff against, I&#39;m assuming the tool is not smart enough to know which one is the PR and which one is trunk. Perhaps this is not too hard to fix with some kind of heuristic though.<br></p><p>Slava<br></p><p>&gt; On Jun 21, 2016, at 2:49 PM, Vassil Vassilev via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt;  I am trying to follow the development of swift more closely recently. I noticed that there is no diff below merge commits of pull requests to swift-commits mailing lists. I&#39;d assume this is intentional, but feels awkward. I was wondering what was the rationale for that?<br>&gt; <br>&gt; Many thanks,<br>&gt; <br>&gt; Vassil<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0686691c62c77f53c6e026472382453d?s=50"></div><header><strong>Swift merge commits no diff</strong> from <string>Vassil Vassilev</string> &lt;v.g.vassilev at gmail.com&gt;<p>June 22, 2016 at 10:00:00am</p></header><div class="content"><p>Hi Slava,<br>   Thanks for explaining. Would this be something useful for others then me?<br></p><p>   It seems the technical issue is solvable by adding a switch to the <br>git-notifier:<br>&quot;--allchanges &lt;branches&gt;<br>    Lists branches for which /all/ changes made to them should be mailed<br>    out as straight diffs to their previous state, independent of<br>    whether the corresponding commit has already been reported in the<br>    past. For merge commits, the mails include the full diff (i.e.,<br>    git&#39;s diff -m). This might for example make sense for master if one<br>    wants to closely track any modification applied. &lt;branches&gt; is a<br>    list of comma-separated names of heads to treat this way.  &quot;<br></p><p>Vassil<br>On 22/06/16 00:53, Slava Pestov wrote:<br>&gt; Hi Vassil,<br>&gt;<br>&gt; Since a merge commit has two parents you might potentially want to diff against, I&#39;m assuming the tool is not smart enough to know which one is the PR and which one is trunk. Perhaps this is not too hard to fix with some kind of heuristic though.<br>&gt;<br>&gt; Slava<br>&gt;<br>&gt;&gt; On Jun 21, 2016, at 2:49 PM, Vassil Vassilev via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt;&gt;<br>&gt;&gt; Hi,<br>&gt;&gt;<br>&gt;&gt;   I am trying to follow the development of swift more closely recently. I noticed that there is no diff below merge commits of pull requests to swift-commits mailing lists. I&#39;d assume this is intentional, but feels awkward. I was wondering what was the rationale for that?<br>&gt;&gt;<br>&gt;&gt; Many thanks,<br>&gt;&gt;<br>&gt;&gt; Vassil<br>&gt;&gt;<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-dev mailing list<br>&gt;&gt; swift-dev at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160622/5606d89b/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

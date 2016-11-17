@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8dfc6932943f38e7a7de48be3194f13c?s=50"></div><header><strong>Proposed changes to SE-0033 Import Objective-C Constants as Swift Types</strong> from <string>Michael Ilseman</string> &lt;milseman at apple.com&gt;<p>June  6, 2016 at 01:00:00pm</p></header><div class="content"><p>During implementation, I’ve come up with some problems with SE-0033  &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0033-import-objc-constants.md&gt; as written, and am proposing some changes to the proposal. I’d like to present them here for early discussion, and will write up a proposal amendment shortly.<br></p><p>The intent of this feature is to introduce a zero-cost type that serves as a source of safety and convenience, but has the same underlying storage as the typedef, and thus we pay no bridging cost.<br></p><p>The biggest issue with the proposal as written is with importing a typedef as an enum. Enums do not allow us to control the underlying storage, and thus we would constantly be paying a bridging cost in its use. The benefits of using enums was access to the switch/case syntax and the communication with the user that our intent is for there to be no new cases, that is, it’s non-extensible. <br></p><p>I propose that we import what were “struct” wrappers as structs whose raw-value initializer is implicitly labeled, that is init(_ rawValue: Type). What were “enum” wrappers have explicit labels, e.g. init(rawValue: Type). Otherwise, behavior is much the same, but we could think about enhanced warnings for the non-extensible case.<br></p><p>The second issue concerns importing bridged typedefs, e.g. NSString. In that case, we want the underlying storage to be NSString, but present it as a String to the users. I propose that for those we create a stored property _rawValue : NSString, and a computed property rawValue: String. <br></p><p>Third is common-word name stripping. I propose that we follow the common-prefix stripping logic that already exists for enum constants, albeit in this case it’s confined to common-prefix with the type name. This is a tradeoff in how much magic and heuristics the importer does, which can occasionally backfire. It’s worth noting that swift_name allows control of the name and importing a global as a member of the newly created type, e.g. swift_name(“MyTypedefStruct.globalValue”), if prefix-stripping is insufficient. <br></p><p>Due to these changes, I also propose to re-evaluate the attribute name and syntax. swift_wrapper(enum) doesn’t really make much sense. I propose that we use the name swift_struct and swift_struct(extensible), or something like that. The old attributes can stay around as aliases for now, and we can deprecate them later.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160606/a4848940/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

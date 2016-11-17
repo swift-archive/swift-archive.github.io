@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6fba6649141bd1c1fc079e9439996f15?s=50"></div><header><strong>Long, multiline strings</strong> from <string>Carlos Rodríguez Domínguez</string> &lt;khain2007 at gmail.com&gt;<p>December 21, 2015 at 07:00:00pm</p></header><div class="content"><p>In many cases, it is necessary to include in the code very long strings, spanning multiple lines. An example could be to include a piece of JavaScript code, XML, HTML, JSON, etc. Currently, we include those strings between ““, which makes it impossible for the IDE to understand that we are “including” external code, potentially providing syntax highlighting, autocompletion, etc. Moreover, at the end of each line it is necessary to include a “\n” character and each “ character needs to be escaped.<br></p><p>My idea is to include a new operator to generate multiline strings, similar to PHP, in which you can write something like this:<br></p><p>$text = &lt;&lt;&lt;EOT <br>  Place your text between the EOT. It&#39;s<br>  the delimiter that ends the text<br>  of your multiline string.<br>  $var<br>EOT;<br>This new feature could be highly beneficial, since it is increasingly common to mix multiple codes inside our own code. Furthermore, it could open the possibility to use Swift in Web environments in a friendlier manner (e.g. to generate HTML code faster, with syntax coloring, etc.). <br></p><p>- Carlos<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151221/bfaed38a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Long, multiline strings</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>December 21, 2015 at 10:00:00am</p></header><div class="content"><p>&gt; On Dec 21, 2015, at 10:02 AM, Carlos Rodríguez Domínguez via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; In many cases, it is necessary to include in the code very long strings, spanning multiple lines. An example could be to include a piece of JavaScript code, XML, HTML, JSON, etc. Currently, we include those strings between ““, which makes it impossible for the IDE to understand that we are “including” external code, potentially providing syntax highlighting, autocompletion, etc. Moreover, at the end of each line it is necessary to include a “\n” character and each “ character needs to be escaped.<br></p><p>Hi Carlos,<br></p><p>Please catch up on the &quot;multi-line string literals” thread, which discusses this exact topic.<br></p><p>-Chris<br></p><p>&gt; <br>&gt; My idea is to include a new operator to generate multiline strings, similar to PHP, in which you can write something like this:<br>&gt; <br>&gt; $text = &lt;&lt;&lt;EOT <br>&gt;   Place your text between the EOT. It&#39;s<br>&gt;   the delimiter that ends the text<br>&gt;   of your multiline string.<br>&gt;   $var<br>&gt; EOT;<br>&gt; This new feature could be highly beneficial, since it is increasingly common to mix multiple codes inside our own code. Furthermore, it could open the possibility to use Swift in Web environments in a friendlier manner (e.g. to generate HTML code faster, with syntax coloring, etc.). <br>&gt; <br>&gt; - Carlos<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151221/7a0fdc23/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

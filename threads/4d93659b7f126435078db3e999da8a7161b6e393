@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>[Accepted] SE-0022 Referencing the Objective-C selector of a method</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>January 26, 2016 at 02:00:00pm</p></header><div class="content"><p>The review of SE-0022 &quot;Referencing the Objective-C selector of a method&quot; ran from January 18...23, 2016. The proposal has been accepted, with a modification to the proposed selector reference syntax to use `#selector(Foo.bar)`. We plan to introduce the new syntax in both 2.2 and 3.0, and we&#39;ll also deprecate the StringLiteralConvertible-ness of Selector in 2.2 to be removed from 3.0. A few alternatives came up in discussion, including:<br></p><p>Foo.bar // (a) implicit conversion from decl ref to Selector<br>Selector(Foo.bar) // (b) magic constructor from decl ref to Selector<br>Foo.bar.selector // (c) magic member on function decls<br></p><p>On balance, we didn&#39;t want to introduce type system complexities for relatively rare ObjC interop features, nixing (a) and (b). Pre-allocating the member space of function types could also have long-term problems, should functions ever gain the ability to have real members (either directly, or indirectly via protocol extensions), so (c) also feels problematic. On the other hand, we already have precedent for &#39;#&#39; as the &quot;miscellaneous compiler magic&quot; sigil, as used in #availability, and &#39;#selector&#39; solidifies that convention.<br></p><p>-Joe<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160126/4d93e393/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

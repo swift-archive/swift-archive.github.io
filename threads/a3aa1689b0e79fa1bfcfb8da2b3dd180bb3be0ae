@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Remove type inference for associated types</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 28, 2016 at 11:00:00pm</p></header><div class="content"><p>on Tue Jun 28 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Jun 28, 2016, at 11:25 AM, Douglas Gregor via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Finally, I am very concerned that there are protocols such as Collection,<br>&gt;<br>&gt;&gt;&gt; with many inferrable associated types, and that conforming to these<br>&gt;&gt;&gt; protocols could become *much* uglier.<br>&gt;&gt; <br>&gt;&gt; That’s the general concern I have as well: how much boilerplate does<br>&gt;&gt; this add? In many cases, we get some of the associated type<br>&gt;&gt; witnesses for Collection types for free, and I don’t know to what<br>&gt;&gt; extent we can emulate that with defaulted associated type<br>&gt;&gt; requirements and typealiases in protocol extensions.<br>&gt;&gt; <br>&gt;&gt; That said, I’ll take some minor regressions in this area for the<br>&gt;&gt; massive simplification that this proposal brings.<br>&gt;<br>&gt; Another point to add to Doug’s great summary: instead of keeping it,<br>&gt; it is better in many ways to remove this feature in Swift 3, improve<br>&gt; the generics model throughout Swift 4 cycle, and then consider adding<br>&gt; inference back when we know more.<br>&gt;<br>&gt; The benefits of adding it back will be even more clear in the future,<br>&gt; and the implementation cost will also be more knowable as the rest of<br>&gt; the generics system is baked out.<br></p><p>I guess we&#39;re on the same page then:<br>http://article.gmane.org/gmane.comp.lang.swift.evolution/22112<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

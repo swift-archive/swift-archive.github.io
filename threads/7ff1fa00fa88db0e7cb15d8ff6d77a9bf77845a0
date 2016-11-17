@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>CGPathApply</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>May 12, 2016 at 09:00:00pm</p></header><div class="content"><p>I am having the darnedest time trying to figure out how to use CGPathApply with a swift function in Swift 2.2+.  I tried it before in Swift 1.2 and it wasn’t possible without bridging to ObjC, but I am fairly sure that changed with Swift 2.  Every search I do just comes up with people saying it isn’t possible in Swift 1.<br></p><p>Does anyone know how to pull this off?  (I am trying to read in a CGPath and create my own enum-based path struct for easy editing)<br></p><p>Thanks,<br>Jon<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76eb9711d45c1c9a71c0f24004072a22?s=50"></div><header><strong>CGPathApply</strong> from <string>Zach Waldowski</string> &lt;zach at waldowski.me&gt;<p>May 12, 2016 at 10:00:00pm</p></header><div class="content"><p>This seems to do it:<br>https://gist.github.com/zwaldowski/7e6eacc9dea0682690a820afa62e54ff<br></p><p>Problems are just like any context-based C API, you need to squeeze all<br>the important stuff into a word-size thing.<br></p><p>Cheers!<br>  Zachary Waldowski<br>  zach at waldowski.me<br></p><p>On Thu, May 12, 2016, at 09:04 PM, Jonathan Hull via swift-users wrote:<br>&gt; I am having the darnedest time trying to figure out how to use<br>&gt; CGPathApply with a swift function in Swift 2.2+.  I tried it before in<br>&gt; Swift 1.2 and it wasn’t possible without bridging to ObjC, but I am<br>&gt; fairly sure that changed with Swift 2.  Every search I do just comes up<br>&gt; with people saying it isn’t possible in Swift 1.<br>&gt; <br>&gt; Does anyone know how to pull this off?  (I am trying to read in a CGPath<br>&gt; and create my own enum-based path struct for easy editing)<br>&gt; <br>&gt; Thanks,<br>&gt; Jon<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2bc666e29724cd3bdf46b6cbbe4a07bb?s=50"></div><header><strong>CGPathApply</strong> from <string>Quinn &quot;The Eskimo!&quot;</string> &lt;eskimo1 at apple.com&gt;<p>May 13, 2016 at 08:00:00am</p></header><div class="content"><p>On 13 May 2016, at 06:24, Zach Waldowski via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>&gt; Problems are just like any context-based C API, you need to squeeze all<br></p><p>… and the best way to do that is to use a closure.<br></p><p>typealias CGPathApplierBlock = @convention(block) (CGPathElement) -&gt; Void<br></p><p>func CGPathApplyBlock(path: CGPath, @noescape block: CGPathApplierBlock) {<br>   CGPathApply(path, unsafeBitCast(block, UnsafeMutablePointer&lt;Void&gt;.self), { info, element in <br>       let block2 = unsafeBitCast(info, CGPathApplierBlock.self)<br>       block2(element.memory)<br>   })<br>}<br></p><p>Share and Enjoy<br>--<br>Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76eb9711d45c1c9a71c0f24004072a22?s=50"></div><header><strong>CGPathApply</strong> from <string>Zach Waldowski</string> &lt;zach at waldowski.me&gt;<p>May 13, 2016 at 08:00:00am</p></header><div class="content"><p>100% right. That solution is by far better if you wanted to work with<br>the CGPathElement, since that&#39;s block-representable. My solution was<br>assuming (perhaps wrongly) to want to represent it as a Swift type.<br>You&#39;re the best, as always! :)<br></p><p>Cheers!<br>Zach<br></p><p>On Fri, May 13, 2016, at 12:57 AM, Quinn The Eskimo! via swift-users<br>wrote:<br>&gt; <br>&gt; On 13 May 2016, at 06:24, Zach Waldowski via swift-users<br>&gt; &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; &gt; Problems are just like any context-based C API, you need to squeeze all<br>&gt; <br>&gt; … and the best way to do that is to use a closure.<br>&gt; <br>&gt; typealias CGPathApplierBlock = @convention(block) (CGPathElement) -&gt; Void<br>&gt; <br>&gt; func CGPathApplyBlock(path: CGPath, @noescape block: CGPathApplierBlock)<br>&gt; {<br>&gt;    CGPathApply(path, unsafeBitCast(block,<br>&gt;    UnsafeMutablePointer&lt;Void&gt;.self), { info, element in <br>&gt;        let block2 = unsafeBitCast(info, CGPathApplierBlock.self)<br>&gt;        block2(element.memory)<br>&gt;    })<br>&gt; }<br>&gt; <br>&gt; Share and Enjoy<br>&gt; --<br>&gt; Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>&gt; Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7bb3a38e890215cbaec227c5d26202aa?s=50"></div><header><strong>Problems building with dependency</strong> from <string>Swift Studies</string> &lt;swiftstudies at icloud.com&gt;<p>March 17, 2016 at 04:00:00pm</p></header><div class="content"><p>I have a package I am building that I have introduced a dependency for, but swift build is failing. It looks like a git error: <br></p><p>gbn-sstudies-mv:SmarkDown sstudies$ swift build<br>Cloning https://github.com/SwiftStudies/Duration.git<br>/usr/local/bin/git -C /Users/sstudies/Documents/Code/Swift/SPM/Packages/SmarkDown/Packages/Duration fetch --tags origin<br>Unknown option: -C<br>usage: git [--version] [--help] [-c name=value]<br>           [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]<br>           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]<br>           [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]<br>           &lt;command&gt; [&lt;args&gt;]<br></p><p>error: exit(129): git -C /Users/sstudies/Documents/Code/Swift/SPM/Packages/SmarkDown/Packages/Duration fetch --tags origin<br></p><p>Is it a git version issue? git --version reveals 1.8.4 which is being picked up from /usr/local/bin/git<br></p><p>Please let me know if you need more information<br></p><p>-s<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160317/9e08ddda/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>Problems building with dependency</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>March 17, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; I have a package I am building that I have introduced a dependency for, but swift build is failing. It looks like a git error: <br>&gt; <br>&gt; gbn-sstudies-mv:SmarkDown sstudies$ swift build<br>&gt; Cloning https://github.com/SwiftStudies/Duration.git<br>&gt; /usr/local/bin/git -C /Users/sstudies/Documents/Code/Swift/SPM/Packages/SmarkDown/Packages/Duration fetch --tags origin<br>&gt; Unknown option: -C<br>&gt; usage: git [--version] [--help] [-c name=value]<br>&gt;            [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]<br>&gt;            [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]<br>&gt;            [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]<br>&gt;            &lt;command&gt; [&lt;args&gt;]<br>&gt; <br>&gt; error: exit(129): git -C /Users/sstudies/Documents/Code/Swift/SPM/Packages/SmarkDown/Packages/Duration fetch --tags origin<br>&gt; <br>&gt; Is it a git version issue? git --version reveals 1.8.4 which is being picked up from /usr/local/bin/git<br>&gt; <br>&gt; Please let me know if you need more information<br></p><p>We depend on at least git version 2, I’ll record a bug to report this error in these situations.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160317/0d49ad82/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

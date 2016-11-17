@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>Binary Operator &#39;??&#39; cannot be applied to operands of type &#39;T?&#39; and &#39;Never&#39;</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>October  5, 2016 at 08:00:00pm</p></header><div class="content"><p>I used to be able to use ?? with fatalError(“Message”) to trap with a custom message in case of nil.  This no longer works in Swift 3 (I think because of the update to never type)<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>Binary Operator &#39;??&#39; cannot be applied to operands of type &#39;T?&#39; and &#39;Never&#39;</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>October  6, 2016 at 07:00:00am</p></header><div class="content"><p>I’ve build a custom operator for this: https://gist.github.com/DevAndArtist/dad641ee833e60b02fd1db2dbb488c6a<br></p><p>infix operator ?! : NilCoalescingPrecedence<br></p><p>func ?!&lt;T&gt;(optional: T?, noreturn: @autoclosure () -&gt; Never) -&gt; T {<br>   switch optional {<br>   case .some(let value):<br>      return value<br>   case .none:<br>      noreturn()<br>   }<br>}<br></p><p>// Usage<br>let test: Int? = nil<br></p><p>test ?! fatalError(&quot;Message&quot;)<br></p><p><br>-- <br>Adrian Zubarev<br>Sent with Airmail<br></p><p>Am 6. Oktober 2016 um 05:35:53, Jonathan Hull via swift-users (swift-users at swift.org) schrieb:<br></p><p>I used to be able to use ?? with fatalError(“Message”) to trap with a custom message in case of nil. This no longer works in Swift 3 (I think because of the update to never type)<br>_______________________________________________<br>swift-users mailing list<br>swift-users at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-users<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161006/8874f485/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>Binary Operator &#39;??&#39; cannot be applied to operands of type &#39;T?&#39; and &#39;Never&#39;</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>October  6, 2016 at 01:00:00am</p></header><div class="content"><p>Has there still not been a formal proposal for &quot;Never as universal<br>subtype/bottom&quot;? Someone please propose it :)<br></p><p>Jacob<br></p><p>On Sat, Nov 12, 2016 at 12:20 AM, Adrian Zubarev via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; I’ve build a custom operator for this: https://gist.github.com/<br>&gt; DevAndArtist/dad641ee833e60b02fd1db2dbb488c6a<br>&gt;<br>&gt; infix operator ?! : NilCoalescingPrecedence<br>&gt;<br>&gt; func ?!&lt;T&gt;(optional: T?, noreturn: @autoclosure () -&gt; Never) -&gt; T {<br>&gt;    switch optional {<br>&gt;    case .some(let value):<br>&gt;       return value<br>&gt;    case .none:<br>&gt;       noreturn()<br>&gt;    }<br>&gt; }<br>&gt;<br>&gt; // Usage<br>&gt; let test: Int? = nil<br>&gt;<br>&gt; test ?! fatalError(&quot;Message&quot;)<br>&gt;<br>&gt;<br>&gt;<br>&gt; --<br>&gt; Adrian Zubarev<br>&gt; Sent with Airmail<br>&gt;<br>&gt; Am 6. Oktober 2016 um 05:35:53, Jonathan Hull via swift-users (<br>&gt; swift-users at swift.org) schrieb:<br>&gt;<br>&gt; I used to be able to use ?? with fatalError(“Message”) to trap with a<br>&gt; custom message in case of nil. This no longer works in Swift 3 (I think<br>&gt; because of the update to never type)<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161006/0df064da/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

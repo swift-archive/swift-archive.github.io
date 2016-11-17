@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/17f3e4010ef1b1ed65d4926cbb191b2f?s=50"></div><header><strong>Looping with UInt64</strong> from <string>Gerriet M. Denkmann</string> &lt;g at mdenkmann.de&gt;<p>October 12, 2016 at 01:00:00pm</p></header><div class="content"><p>With:<br>let nbrBytes = 400_000_000<br>let localArray = UnsafeMutablePointer&lt;UInt8&gt;.allocate(capacity: nbrBytes)<br>//	touch every page before summing:<br>for i in 0 ..&lt; nbrBytes / 4096 { localArray[ 4096 * i ] = 1 }<br></p><p>This rather innocent loop:<br>var count: UInt64 = 0<br>for index in 0 ..&lt; loopLimit { count += UInt64( localArray[ Int(index) ] ) }<br></p><p>takes 2.4 times as long if preceded by:<br>	let loopLimit = UInt64(nbrBytes)	<br>compared to:	<br>	let loopLimit = Int(nbrBytes)	<br></p><p>Why can’t Swift iterate in UInt64  as efficient as with Int?<br>Any real issue here which I am overlooking or just a compiler bug?<br></p><p>Gerriet.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Looping with UInt64</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>October 11, 2016 at 11:00:00pm</p></header><div class="content"><p>&gt; On Oct 11, 2016, at 11:04 PM, Gerriet M. Denkmann via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; With:<br>&gt; let nbrBytes = 400_000_000<br>&gt; let localArray = UnsafeMutablePointer&lt;UInt8&gt;.allocate(capacity: nbrBytes)<br>&gt; //	touch every page before summing:<br>&gt; for i in 0 ..&lt; nbrBytes / 4096 { localArray[ 4096 * i ] = 1 }<br>&gt; <br>&gt; This rather innocent loop:<br>&gt; var count: UInt64 = 0<br>&gt; for index in 0 ..&lt; loopLimit { count += UInt64( localArray[ Int(index) ] ) }<br>&gt; <br>&gt; takes 2.4 times as long if preceded by:<br>&gt; 	let loopLimit = UInt64(nbrBytes)	<br>&gt; compared to:	<br>&gt; 	let loopLimit = Int(nbrBytes)	<br>&gt; <br>&gt; Why can’t Swift iterate in UInt64  as efficient as with Int?<br>&gt; Any real issue here which I am overlooking or just a compiler bug?<br></p><p>Looks like missed optimization opportunities due to the signedness of the index. <br></p><p>If the index is a signed type (Int, Int32, Int64) then the compiler optimizes away all of the integer overflow checks and performs two operations per loop iteration. <br>If the index is unsigned (UInt, UInt32, UInt64) then the compiler doesn&#39;t unroll the loop and doesn&#39;t remove all of the overflow checks. <br>I don&#39;t see any reason why the same optimizations would be disallowed in the unsigned case so it&#39;s probably a gap in some optimizer pass somewhere.<br></p><p><br>-- <br>Greg Parker     gparker at apple.com &lt;mailto:gparker at apple.com&gt;     Runtime Wrangler<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161011/a4ec321b/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

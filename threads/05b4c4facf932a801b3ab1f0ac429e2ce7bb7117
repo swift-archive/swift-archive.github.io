@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0735d3bf1d76c0385258ac7a2a22d6fe?s=50"></div><header><strong>[Pitch] Retiring `where` from for-in loops</strong> from <string>Károly Lőrentey</string> &lt;karoly at lorentey.hu&gt;<p>June 10, 2016 at 05:00:00pm</p></header><div class="content"><p>On 2016-06-10 11:39:34 +0000, Leonardo Pessoa via swift-evolution said:<br></p><p>&gt; I would vow to remove where clauses altogether. Most of the times I <br>&gt; used it in ifs, fors and switches I ended up thinking it hardened <br>&gt; readability of my code (perhaps because of placement, but I do not <br>&gt; think alternatives made it more readable) and so it was my decision to <br>&gt; stop using where whenever possible in my code. Since Erica&#39;s <br>&gt; performance test pointed out using guard is nearly as fast as using <br>&gt; where and the core team is removing wheres from ifs, I think the ones <br>&gt; in fors could go next.<br></p><p>Interestingly, I find where clauses in `for` to be a useful tool to <br>*improve* readibility. To me, it flows much better to write &amp; read this:<br></p><p>    for (start, duration) in days where calendar.isDateInWeekend(start) {<br>        ...<br>    }<br></p><p>rather than this:<br></p><p>	for (start, duration) in days {<br>        guard calendar.isDateInWeekend(start) else { continue }<br>        ...<br>    }<br></p><p>or this:<br></p><p>	for (start, duration) in days.filter({ calendar.isDateInWeekend($0.0) }) {<br>		...<br>	}<br></p><p>Of these three, I&#39;d argue the first is the easiest to understand for a <br>person who&#39;s never seen Swift code before. (Admittedly I doubt that&#39;s <br>something languages should be optimized for, though.) The extra <br>punctuation and the use of $0 instead of the loop&#39;s bindings makes the <br>third approach seem especially noisy &amp; scary.<br></p><p>Obviously, editorial tools like this aren&#39;t essential, and I could <br>easily adapt to live without such syntactic sugar. But I do not like <br>the idea of systematically ridding the language of such charming <br>constructs when there is no technical reason to do so. SE-0099 fixed a <br>technical problem with the syntax of a shorthand construct, without <br>removing it from the language. It did not bring back Swift 1&#39;s `if` <br>pyramids.<br></p><p><br></p><p>Moreover, Erica is absolutely right about `switch`: while `where` <br>clauses are arguably non-essential in `for` loops, `switch` statements <br>would lose a great deal of their expressive power without them. For <br>example, in the following snippet (taken from a lexer in SwiftPM), all <br>cases are logically at the same level. I think it&#39;s a win that Swift <br>allows them to be expressed as such, and I&#39;d strongly object to a <br>proposal that removed this capability.<br></p><p>    switch c {<br>    case UInt8(ascii: &quot;\n&quot;): ...<br>    case UInt8(ascii: &quot;#&quot;): ...<br>    case let c where c.isSpace(): ...<br>    case UInt8(ascii: &quot;\&quot;&quot;): ...<br>    case let c where c.isNumberInitialChar(): ...<br>    case let c where c.isIdentifierChar(): ...<br>    case UInt8(ascii: &quot;,&quot;): ...<br>    case UInt8(ascii: &quot;=&quot;): ...<br>    case UInt8(ascii: &quot;[&quot;): ...<br>    case UInt8(ascii: &quot;]&quot;): ...<br>    case UInt8(ascii: &quot;.&quot;): ...<br>    default: ...<br>    }<br></p><p>Obviously, we could rewrite this to use a single `if` ladder, but I <br>think most would not find that an improvement.<br></p><p>(The same argument applies to `catch` statements, although with less force.)<br></p><p>As long as `where` is kept in `switch` and `catch`, and as long the <br>grammar is unambiguous, I think there is little point to removing where <br>clauses from `for`. To improve consistency, I&#39;d not mind if SE-0099 <br>kept `where` as an alternative way to spell `,` in `if` statements, too.<br></p><p>-- <br>Károly<br>@lorentey<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

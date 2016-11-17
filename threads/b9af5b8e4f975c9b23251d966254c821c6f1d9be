@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0089:	Replace protocol&lt;P1, P2&gt; syntax with Any&lt;P1, P2&gt;</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>May 25, 2016 at 10:00:00am</p></header><div class="content"><p>Am 25. Mai 2016 um 03:07 schrieb Matthew Johnson via swift-evolution &lt;swift-evolution at swift.org&gt;:<br></p><p><br></p><p><br>On May 24, 2016, at 7:45 PM, Brent Royal-Gordon &lt;brent at architechies.com&gt; wrote:<br></p><p><br>I believe it was things like &quot;+&quot; and &quot;-&quot; for set union and subtraction, etc.<br></p><p><br>That, or &amp;, |, and ^, by analogy with bitwise operators. It definitely came up during the SetAlgebra discussions. <br></p><p><br>Another thread I guess I didn’t follow closely enough.  I think I agree with avoiding using unconventional operators for operations which already have conventional operators associated with them.  Maybe someday it will be easy enough to type unicode operators that it might be reasonable to think about using them.<br></p><p><br>Yes, there is precedent in other languages:<br>Ceylon uses &quot;&amp;&quot; for type intersection (any&lt;&gt;) and &quot;|&quot; for type union (one&lt;&gt;), see http://ceylon-lang.org/documentation/1.2/tour/types/.<br>TypeScript does the same (see https://www.typescriptlang.org/docs/handbook/advanced-types.html).<br></p><p><br></p><p>-Thorsten<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160525/b9afd9be/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/697f00e1b9be900f24cd1669cc931874?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0089: Replace protocol&lt;P1, P2&gt; syntax with Any&lt;P1, P2&gt;</strong> from <string>L. Mihalkovic</string> &lt;laurent.mihalkovic at gmail.com&gt;<p>May 26, 2016 at 05:00:00am</p></header><div class="content"><p>&gt; On May 25, 2016, at 12:29 PM, Thorsten Seitz via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; <br>&gt;&gt; Am 25. Mai 2016 um 03:07 schrieb Matthew Johnson via swift-evolution &lt;swift-evolution at swift.org&gt;:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt;&gt; On May 24, 2016, at 7:45 PM, Brent Royal-Gordon &lt;brent at architechies.com&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; I believe it was things like &quot;+&quot; and &quot;-&quot; for set union and subtraction, etc.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; That, or &amp;, |, and ^, by analogy with bitwise operators. It definitely came up during the SetAlgebra discussions. <br>&gt;&gt; <br>&gt;&gt; Another thread I guess I didn’t follow closely enough.  I think I agree with avoiding using unconventional operators for operations which already have conventional operators associated with them.  Maybe someday it will be easy enough to type unicode operators that it might be reasonable to think about using them.<br>&gt; <br>&gt; <br>&gt; Yes, there is precedent in other languages:<br>&gt; Ceylon uses &quot;&amp;&quot; for type intersection (any&lt;&gt;) and &quot;|&quot; for type union (one&lt;&gt;), see http://ceylon-lang.org/documentation/1.2/tour/types/.<br>&gt; TypeScript does the same (see https://www.typescriptlang.org/docs/handbook/advanced-types.html).<br>&gt; <br></p><p>Some great minds have said a lot of good things about typescript...<br></p><p><br>&gt; -Thorsten<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160526/1e66f2be/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dc0180c1b9aff52f5d42a1ca6bd1f184?s=50"></div><header><strong>How can I view a generated interface from the command line?</strong> from <string>Thomas Catterall</string> &lt;me at swizzlr.co&gt;<p>December 21, 2015 at 09:00:00pm</p></header><div class="content"><p>i.e. without Xcode, how can I see the Swift interface to a C header that’s been supplied by module map?<br></p><p>Thanks in advance!<br></p><p>Tom<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dc0180c1b9aff52f5d42a1ca6bd1f184?s=50"></div><header><strong>How can I view a generated interface from the command line?</strong> from <string>Thomas Catterall</string> &lt;me at swizzlr.co&gt;<p>December 21, 2015 at 09:00:00pm</p></header><div class="content"><p>Followup:<br></p><p>A pretty good sort of workaround is to debug an execution context, from which you can use the type lookup command in lldb.<br></p><p>So for instance:<br></p><p>Foo/main.swift:<br></p><p>&gt; import CHiRedis<br>&gt; print(“Hello”)<br></p><p>`swift build &amp;&amp; lldb .build/debug/Foo`<br></p><p>In LLDB, set a breakpoint:<br>`b -f main.swift -l 2`<br></p><p>then run til you hit it:<br>`run`<br></p><p>and finally:<br></p><p>`type lookup redisReply`.<br></p><p>&gt; On 21 Dec 2015, at 21:19, swizzlr &lt;me at swizzlr.co&gt; wrote:<br>&gt; <br>&gt; i.e. without Xcode, how can I see the Swift interface to a C header that’s been supplied by module map?<br>&gt; <br>&gt; Thanks in advance!<br>&gt; <br>&gt; Tom<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

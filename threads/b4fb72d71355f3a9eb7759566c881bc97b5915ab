@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ade0c334ecff1448bb96f5f733bf1f83?s=50"></div><header><strong>Currying and noescape/throws</strong> from <string>Chris Eidhof</string> &lt;chris at eidhof.nl&gt;<p>February 17, 2016 at 09:00:00am</p></header><div class="content"><p>Now that currying syntax is about to be removed, I changed one of my libraries. It uses currying a lot (I don’t use it all the time, but for this library, it really helps). However, I seem to have hit a limitation, and I’m not sure if it’s intended or not. Without built-in currying syntax, it looks like we cannot use noescape and/or rethrows anymore. Would people be interested in adding this back in?<br></p><p>For a very simple example, consider creating a curried variant of flatMap:<br></p><p>func curriedFlatMap&lt;A, B&gt;(x: [A]) -&gt; (@noescape A -&gt; [B]) -&gt; [B] {<br>    return { f in<br>        x.flatMap(f)<br>    }<br>}<br></p><p>or one that works with throws/rethrows:<br></p><p>func curriedFlatMap&lt;A, B&gt;(x: [A]) -&gt; (A throws -&gt; [B]) rethrows -&gt; [B] {<br>    return { f in<br>        try x.flatMap(f)<br>    }<br>}<br></p><p>I’m not sure how to make this concept work again when using currying. I’m also not sure if it is a big deal. I would personally love to have this functionality back. Seems like it’s mostly a type-system limitation?<br></p><p>Chris<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160217/b4fb15ab/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Currying and noescape/throws</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>February 17, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; On Feb 17, 2016, at 12:58 AM, Chris Eidhof via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Now that currying syntax is about to be removed, I changed one of my libraries. It uses currying a lot (I don’t use it all the time, but for this library, it really helps). However, I seem to have hit a limitation, and I’m not sure if it’s intended or not. Without built-in currying syntax, it looks like we cannot use noescape and/or rethrows anymore. Would people be interested in adding this back in?<br>&gt; <br>&gt; For a very simple example, consider creating a curried variant of flatMap:<br>&gt; <br>&gt; func curriedFlatMap&lt;A, B&gt;(x: [A]) -&gt; (@noescape A -&gt; [B]) -&gt; [B] {<br>&gt;     return { f in<br>&gt;         x.flatMap(f)<br>&gt;     }<br>&gt; }<br>&gt; <br>&gt; or one that works with throws/rethrows:<br>&gt; <br>&gt; func curriedFlatMap&lt;A, B&gt;(x: [A]) -&gt; (A throws -&gt; [B]) rethrows -&gt; [B] {<br>&gt;     return { f in<br>&gt;         try x.flatMap(f)<br>&gt;     }<br>&gt; }<br>&gt; <br>&gt; I’m not sure how to make this concept work again when using currying. I’m also not sure if it is a big deal. I would personally love to have this functionality back. Seems like it’s mostly a type-system limitation?<br></p><p>Yeah, these seem like bugs to be fixed.<br></p><p>-Joe<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160217/e88f8700/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

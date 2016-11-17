@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>[Pitch] &#39;Double modulo&#39; operator</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>May 22, 2016 at 02:00:00pm</p></header><div class="content"><p>+1, I’ve never actually wanted a negative return value from %. Array subscripting and getting an enum case from a raw integer value both expect non-negative integers, so in these cases it only makes sense to deal with positive values.<br></p><p>&gt; Hello,<br>&gt; <br>&gt; I think that Swift could use the &#39;double modulo&#39; operator which is for example in CoffeeScript (some discussion can be found herehttps://github.com/jashkenas/coffeescript/issues/1971).<br>&gt; <br>&gt; This operator, unlike normal modulo, takes sign from the divisor, not the dividend e.g. -10 % 3 == -1, but -10 %% 3 == 2.<br>&gt; <br>&gt; In practice, this operator is useful for &#39;cyclical&#39; indexing. For example, it would be useful for calculating the real index into a collection when we are using an index outside of the range of valid indices and could be used to index into a collection using a negative index à la Python and Ruby (where [1,2,3,4][-1] == 4).<br>&gt; <br>&gt; <br>&gt; The implementation would probably be something along these lines:<br>&gt; <br>&gt; infix operator %% {<br>&gt; associativity left<br>&gt; precedence 150<br>&gt; }<br>&gt; <br>&gt; func %%&lt;T: IntegerArithmeticType&gt;(lhs:T, rhs:T) -&gt;T {<br>&gt; return (lhs % rhs + rhs) % rhs<br>&gt; }<br>&gt; <br>&gt; If accepted, this could be later incorporated into a method or operator that works directly with collections using their count property.<br>&gt; Maybe the syntax could be something like [1,2,3,4] %% -1 == 4.<br>&gt; <br>&gt; Ideas, suggestions?_______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

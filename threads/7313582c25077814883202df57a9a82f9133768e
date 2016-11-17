@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>SR-22: build fails when following the &quot;getting started&quot; on Ubuntu 14.04 (https://bugs.swift.org/browse/SR-22)</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>December  3, 2015 at 03:00:00pm</p></header><div class="content"><p>FYI:<br></p><p>  https://bugs.swift.org/browse/SR-22<br></p><p>$ swift build<br>Linking Executable: .build/debug/Hello<br>&lt;unknown&gt;:0: error: link command failed with exit code 127 (use -v to see invocation)<br>&lt;unknown&gt;:0: error: build had 1 command failures<br>swift-build: exit(1): [&quot;/opt/swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu14.04/usr/bin/swift-build-tool&quot;, &quot;-f&quot;, &quot;/abyss/haohui/source.swift/Hello/.build/debug/Hello.o/llbuild.yaml?]<br></p><p>I moved this to the Package Manager component in JIRA.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20151203/7313768e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5d9baa679148bd83458d11df12327ce0?s=50"></div><header><strong>SR-22: build fails when following the &quot;getting started&quot; on Ubuntu 14.04 (https://bugs.swift.org/browse/SR-22)</strong> from <string>Daniel Dunbar</string> &lt;daniel_dunbar at apple.com&gt;<p>December  3, 2015 at 07:00:00pm</p></header><div class="content"><p>Thanks Ted,<br></p><p>I commented on the issue, this is the unfortunate error message when using swiftc w/o clang installed. We are going to try and have the package manager help report a more useful error message in this case to hopefully reduce confusion.<br></p><p> - Daniel<br></p><p>&gt; On Dec 3, 2015, at 3:26 PM, Ted Kremenek &lt;kremenek at apple.com&gt; wrote:<br>&gt; <br>&gt; FYI:<br>&gt; <br>&gt;   https://bugs.swift.org/browse/SR-22 &lt;https://bugs.swift.org/browse/SR-22&gt;<br>&gt; <br>&gt; $ swift build<br>&gt; Linking Executable: .build/debug/Hello<br>&gt; &lt;unknown&gt;:0: error: link command failed with exit code 127 (use -v to see invocation)<br>&gt; &lt;unknown&gt;:0: error: build had 1 command failures<br>&gt; swift-build: exit(1): [&quot;/opt/swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu14.04/usr/bin/swift-build-tool&quot;, &quot;-f&quot;, &quot;/abyss/haohui/source.swift/Hello/.build/debug/Hello.o/llbuild.yaml?]<br>&gt; <br>&gt; I moved this to the Package Manager component in JIRA.<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-build-dev mailing list<br>&gt; swift-build-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-build-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20151203/e88d3224/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bd4126f4ba4ae7f00a2b1e605797a326?s=50"></div><header><strong>Built-In Remote Class Support</strong> from <string>Weston Catron</string> &lt;wcatron at catrondevelopment.com&gt;<p>August 30, 2016 at 09:00:00am</p></header><div class="content"><p>I will acknowledge this idea is potentially inconsistent with many standard language practices however I’m interested in discussing the potential benefits of including this in Swift.<br></p><p>Swift has always had a lot of potential for being the one language (to rule them all) you code in whether it’s on client or server. However to do this you still have to implement some sort of bridge between the two systems. Whether it’s a REST API or web socket you have to step outside of Swift and you have to step outside of knowable interfaces (I.e., Server.call(api:”/route/users” withParams:.. &lt;- You just have to know that route and which params it takes, yes you can wrap your RestAPI in a framework, but someone still has to write and maintain that framework which is just another bridge).<br></p><p>Here’s an alternative:<br></p><p>```<br>// Local<br>remote import “swift://localhost” // URL for framework.<br></p><p>try Session(apiKey:”ABC”)<br>let results = DataController.searchData(term: “Foo”)<br></p><p>```<br></p><p>```<br>// Remote<br>import AnyOtherClass<br>// remote import “swift://...&quot;<br></p><p>remote class Session {<br>    init (apiKey:String) {<br>        <br>    }<br>}<br>remote class DataController {<br>    public static func searchData(term:String) -&gt; Array&lt;Data&gt; {<br>        return MySQL.call(“SELECT * FROM data WHERE field LIKE %?%”, term).map(…);<br>    }<br>}<br></p><p>remote struct Data {<br>    let field:String<br>    let id:String<br>    ….<br>}<br></p><p>class InternalController {<br>    <br>}<br>```<br></p><p>When you import a remote framework it fetches the interfaces so you know how you to interact with the framework. You know which functions you can call and the parameters for each. There could be key words for synchronous vs asynchronous and while the actual compiled code would setup TLS calls between the two those calls could be optimized and compressed to send only necessary elements of the scope.<br></p><p>This could be looked at similarly to Node.js which features a lot of calling functions on the server from the client without having to setup a RestAPI. Perhaps thats a model to look at however node seems to have a lot closer connection between the client and server and as far as I know there is no code completion for server calls in any IDE. Beyond that the ability to share classes is certainly a step above.<br></p><p>Again this may be breaking way too many rules of language development however as shown above the simplicity it could bring to client server communication may worth it. It raises many considerations as well, Authentication for private remote interfaces, versioning, session tracking, cross platform support (as in other languages, for instance you could have a RestAPI router in addition to the remote classes).<br></p><p>Weston<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

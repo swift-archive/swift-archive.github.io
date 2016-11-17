@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>ClangImporter /var/temp dir settings..</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>March 24, 2016 at 05:00:00pm</p></header><div class="content"><p>How to change the temp dir path: /var/tmp/, can I input my desired path as<br>a command argument during swift compiler invocation.<br></p><p>Thanks<br>Ramakrishna M<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160324/d362e013/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>ClangImporter /var/temp dir settings..</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>March 30, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi, Ramakrishna. IIRC, there&#39;s no command-line argument for this, but both Clang and Swift should be looking at the standard environment variable TMPDIR. As long as that&#39;s set early enough in compilation, it should work for your purposes.<br></p><p>Best,<br>Jordan<br></p><p><br>&gt; On Mar 24, 2016, at 4:34 , Ramakrishna Mallireddy via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; How to change the temp dir path: /var/tmp/, can I input my desired path as a command argument during swift compiler invocation.<br>&gt; <br>&gt; Thanks<br>&gt; Ramakrishna M <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bec901e49831834ec4a6f4b86ff1f9b5?s=50"></div><header><strong>ClangImporter /var/temp dir settings..</strong> from <string>Ramakrishna Mallireddy</string> &lt;ramakrishna.malli at gmail.com&gt;<p>March 31, 2016 at 11:00:00am</p></header><div class="content"><p>Thanks Jordan, I am running swift+llvm on iOS and I can&#39;t set TMPDIR and<br>have changed &quot;*getDefaultTempDir*&quot; according to my needs.<br></p><p>Thanks<br>Ramakrishna<br></p><p>On Thu, Mar 31, 2016 at 2:27 AM, Jordan Rose &lt;jordan_rose at apple.com&gt; wrote:<br></p><p>&gt; Hi, Ramakrishna. IIRC, there&#39;s no command-line argument for this, but both<br>&gt; Clang and Swift should be looking at the standard environment variable<br>&gt; TMPDIR. As long as that&#39;s set early enough in compilation, it should work<br>&gt; for your purposes.<br>&gt;<br>&gt; Best,<br>&gt; Jordan<br>&gt;<br>&gt;<br>&gt; &gt; On Mar 24, 2016, at 4:34 , Ramakrishna Mallireddy via swift-users &lt;<br>&gt; swift-users at swift.org&gt; wrote:<br>&gt; &gt;<br>&gt; &gt; How to change the temp dir path: /var/tmp/, can I input my desired path<br>&gt; as a command argument during swift compiler invocation.<br>&gt; &gt;<br>&gt; &gt; Thanks<br>&gt; &gt; Ramakrishna M<br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-users mailing list<br>&gt; &gt; swift-users at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160331/f1b69949/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

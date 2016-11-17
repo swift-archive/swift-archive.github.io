@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2d569462ac92d4619342b1c5ff305043?s=50"></div><header><strong>[Pitch] allow non-nominal type extension</strong> from <string>frogcjn at 163.com</string> &lt;frogcjn at 163.com&gt;<p>October 21, 2016 at 11:00:00am</p></header><div class="content"><p>It is just same as current grammar:<br></p><p>extension TrackCountProvider where Self : PublishDateProvider { ... }<br></p><p>with a more logical format<br></p><p>extension TrackCountProvider &amp; PublishDateProvider { ... }<br></p><p>&gt; e.g.<br>&gt; <br>&gt; extensionTrackCountProvider&amp;PublishDateProvider{<br>&gt; vartrackCountAndPublishDateText:String{<br>&gt; varinfos: [String] = []<br>&gt; <br>&gt; iflettrackCount = trackCount{<br>&gt; infos.append(&quot;\(trackCount)&quot;)<br>&gt; <br>&gt; }<br>&gt; <br>&gt; ifletpublishDateText = publishDate?.text {<br>&gt; infos.append(publishDateText)<br>&gt; }<br>&gt; <br>&gt; returninfos.joined(separator: seperator)<br>&gt; }<br>&gt; }<br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161021/f26f082e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/44b9c3e92a40313850fdbc2cb0abdef7?s=50"></div><header><strong>[Pitch] allow non-nominal type extension</strong> from <string>Jon Shier</string> &lt;jon at jonshier.com&gt;<p>October 21, 2016 at 02:00:00pm</p></header><div class="content"><p>It’s also the same as:<br></p><p>typealias CombinedProtocol = TrackCountProvider &amp; PublishDateProvier<br></p><p>extension CombinedProtocol { } <br></p><p>I, too, find the distinction largely pointless, but I’m not a language designer.<br></p><p><br>Jon<br></p><p>&gt; On Oct 20, 2016, at 11:30 PM, Cao Jiannan via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; It is just same as current grammar:<br>&gt; <br>&gt; extension TrackCountProvider where Self : PublishDateProvider { ... }<br>&gt; <br>&gt; with a more logical format<br>&gt; <br>&gt; extension TrackCountProvider &amp; PublishDateProvider { ... }<br>&gt; <br>&gt; &gt; e.g.<br>&gt; &gt; <br>&gt; &gt; extensionTrackCountProvider&amp;PublishDateProvider{<br>&gt; &gt; vartrackCountAndPublishDateText:String{<br>&gt; &gt; varinfos: [String] = []<br>&gt; &gt; <br>&gt; &gt; iflettrackCount = trackCount{<br>&gt; &gt; infos.append(&quot;\(trackCount)&quot;)<br>&gt; &gt; <br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; ifletpublishDateText = publishDate?.text {<br>&gt; &gt; infos.append(publishDateText)<br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; returninfos.joined(separator: seperator)<br>&gt; &gt; }<br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; <br>&gt; &gt; <br>&gt; &gt; <br>&gt; &gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161021/8b124946/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

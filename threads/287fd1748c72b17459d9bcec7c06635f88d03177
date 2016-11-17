@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1966627b418931a036bad98003d0b65d?s=50"></div><header><strong>NSURLComponents - setting scheme bug?</strong> from <string>Michal Kalinowski</string> &lt;michal.kalinowski at icloud.com&gt;<p>May 25, 2016 at 08:00:00pm</p></header><div class="content"><p>Hello all,<br></p><p>I have just discovered following behaviour of NSURLComponents and I&#39;m looking for confirmation if it is in fact a bug.<br></p><p>var components = NSURLComponents(string: &quot;apple.com&quot;)!<br>components.scheme = &quot;http&quot;<br>print(components.scheme)                            // prints &quot;Optional(&quot;http&quot;)\n&quot;<br>print(components.URL?.absoluteURL)                  // prints &quot;&quot;Optional(http:apple.com)\n&quot;, I&#39;d expect http://apple.com<br></p><p>When trying to set scheme as &quot;http://&quot; I get an error which is in line with what documentation says. So it seems there is no way of setting the scheme after URLComponents initialisation and getting correct URL as a result.<br></p><p>Any thoughts?<br>Regards,<br>Michał Kalinowski<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160525/287f3177/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>NSURLComponents - setting scheme bug?</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>May 25, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; On May 25, 2016, at 1:56 PM, Michal Kalinowski via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I have just discovered following behaviour of NSURLComponents and I&#39;m looking for confirmation if it is in fact a bug.<br></p><p>Unless you’re using Swift on Linux plus the in-development Foundation framework, NSURLComponents is part of a system framework, not part of Swift.<br></p><p>&gt; var components = NSURLComponents(string: &quot;apple.com&quot;)!<br></p><p>That’s incorrect, and I’m surprised the method didn’t fail, since “apple.com” is not a valid URL. Try initializing an empty object and then setting its host to “apple.com”.<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160525/e7e0bb2e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>NSURLComponents - setting scheme bug?</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>May 25, 2016 at 05:00:00pm</p></header><div class="content"><p>&gt;&gt; var components = NSURLComponents(string: &quot;apple.com&quot;)!<br>&gt; <br>&gt; That’s incorrect, and I’m surprised the method didn’t fail, since “apple.com” is not a valid URL. Try initializing an empty object and then setting its host to “apple.com”.<br></p><p>&quot;apple.com&quot; is a perfectly valid relative URL, and that&#39;s how NSURLComponents interpreted it:<br></p><p>  1&gt; import Foundation<br>  2&gt; let comps = NSURLComponents(string: &quot;apple.com&quot;)!<br>  3&gt; comps.description<br>$R1: String = &quot;&lt;NSURLComponents 0x100707670&gt; {scheme = (null), user = (null), password = (null), host = (null), port = (null), path = apple.com, query = (null), fragment = (null)}&quot;<br></p><p>Note that `host` is nil, but `path` is &quot;apple.com&quot;.<br></p><p>Your suggestion to initialize an empty `NSURLComponents` and set the `host` field is a good one, however.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review #2] SE-0101: Reconfiguring sizeof and related functions into a unified MemoryLayout struct</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July 15, 2016 at 02:00:00pm</p></header><div class="content"><p>on Thu Jul 14 2016, Tino Heth &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I share the minor concerns that have been expressed so far.<br>&gt; My first thought on this topic (&quot;MyStruct.size&quot;) had a obvious flaw, but I wouldn&#39;t fear name collisions with something like &quot;MyStruct.memoryLayout.size&quot;.<br>&gt; This one most likely has issues as well, but imho they aren&#39;t that<br>&gt; obvious and deserve being discussed in the alternatives-section (or a<br>&gt; short answer here to wake up my tired mind ;-)<br></p><p>We&#39;re trying to get away from “magic” properties that exist on every<br>type, I think.<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/831ba6eb600af4a6587f263373921bb2?s=50"></div><header><strong>[Review #2] SE-0101: Reconfiguring sizeof and related functions into a unified MemoryLayout struct</strong> from <string>Tino Heth</string> &lt;2th at gmx.de&gt;<p>July 21, 2016 at 10:00:00pm</p></header><div class="content"><p>&gt; Am 15.07.2016 um 23:56 schrieb Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt;:<br>&gt; <br>&gt; We&#39;re trying to get away from “magic” properties that exist on every<br>&gt; type, I think.<br>I&#39;ve a serious aversion against regular-looking constructs with special power as well (from time to time, I find myself thinking that ErrorType and SequenceType are somewhat odd… ;-)<br>On the other hand:<br>Is a magic struct better than a magic property?<br>After all, the size of a type is a property of that type…<br></p><p>Tino<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160721/597a1ebc/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

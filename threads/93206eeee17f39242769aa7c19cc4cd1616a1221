@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Marking sort and sorted with rethrows</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>June  8, 2016 at 01:00:00pm</p></header><div class="content"><p>Not that I know of. It’s rather an attempt at making the standard library more consistent. The main reason being that the `isOrderedBefore` parameter in `max(isOrderedBefore:)` has the exact same type (`@noescape (Iterator.Element, Iterator.Element) -&gt; Bool`) except that it is allowed to throw. I know that there’s no good reason to not let `max` rethrow, but for the sake of consistency, I figured it would make sense and it would be feasible to let `sort` and `sorted` also rethrow.<br></p><p>&gt; &gt; On Jun 7, 2016, at 12:07 PM, Tim Vermeulen via swift-evolution&lt;swift-evolution at swift.org&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; &gt; True, but the cost of being able to restore the original ordering, when<br>&gt; &gt; &gt; that restoration may not be needed at all, is prohibitive.<br>&gt; &gt; <br>&gt; &gt; What about simply restoring the elements, in no particular order? This seems like an easy enough task, and I don’t think it requires the sorting algorithm to allocate any extra memory (in case no error is thrown, at least).<br>&gt; What is the example that motivates this? Is there a widely used comparison function that throws?<br>&gt; <br>&gt; -Chris<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

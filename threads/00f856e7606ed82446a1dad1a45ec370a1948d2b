@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/37ed623c7e539c1e991c5be604e4a7aa?s=50"></div><header><strong>Is there a way to @NoInline a func or method?</strong> from <string>Karl Pickett</string> &lt;karl.pickett at gmail.com&gt;<p>December 10, 2015 at 10:00:00am</p></header><div class="content"><p>Two use cases:<br></p><p>1. poking around in the asm for learning.  Currently one can work around by<br>putting funcs in different files and not using -whole-module, but it is<br>time consuming and ugly.<br>2. Profiling an existing program.   When a class method calls another<br>method in the same class, I don&#39;t have a workaround to not inline it.<br></p><p>Also, is there a -fno-optimize-sibling-calls equivalent for swiftc?  I<br>don&#39;t have a pressing use but was just wondering, because it was shown in<br>the WWDC videos as being helpful for profiling.<br></p><p>Thanks,<br></p><p>- Karl<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151210/00f88d2b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dbc48a135881e122fea26cf27760d11a?s=50"></div><header><strong>Is there a way to @NoInline a func or method?</strong> from <string>Mish Awadah</string> &lt;mawadah at apple.com&gt;<p>December 10, 2015 at 10:00:00am</p></header><div class="content"><p>Maybe I don’t understand the depth of your question, but a cursory Google search turns up this: http://stackoverflow.com/questions/27881051/is-there-a-way-in-swift-to-declare-an-inline-function<br></p><p>- mish<br></p><p>&gt; On Dec 10, 2015, at 8:23 AM, Karl Pickett via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Two use cases:<br>&gt; <br>&gt; 1. poking around in the asm for learning.  Currently one can work around by putting funcs in different files and not using -whole-module, but it is time consuming and ugly.<br>&gt; 2. Profiling an existing program.   When a class method calls another method in the same class, I don&#39;t have a workaround to not inline it.  <br>&gt; <br>&gt; Also, is there a -fno-optimize-sibling-calls equivalent for swiftc?  I don&#39;t have a pressing use but was just wondering, because it was shown in the WWDC videos as being helpful for profiling.<br>&gt; <br>&gt; Thanks,<br>&gt; <br>&gt; - Karl<br>&gt;  _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151210/4313ef35/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/37ed623c7e539c1e991c5be604e4a7aa?s=50"></div><header><strong>Is there a way to @NoInline a func or method?</strong> from <string>Karl Pickett</string> &lt;karl.pickett at gmail.com&gt;<p>December 10, 2015 at 03:00:00pm</p></header><div class="content"><p>Thanks.  I filed a bug to have at inline documented.<br></p><p>On Thu, Dec 10, 2015 at 12:04 PM, Mish Awadah &lt;mawadah at apple.com&gt; wrote:<br></p><p>&gt; Maybe I don’t understand the depth of your question, but a cursory Google<br>&gt; search turns up this:<br>&gt; http://stackoverflow.com/questions/27881051/is-there-a-way-in-swift-to-declare-an-inline-function<br>&gt;<br>&gt; - mish<br>&gt;<br>&gt; On Dec 10, 2015, at 8:23 AM, Karl Pickett via swift-users &lt;<br>&gt; swift-users at swift.org&gt; wrote:<br>&gt;<br>&gt; Two use cases:<br>&gt;<br>&gt; 1. poking around in the asm for learning.  Currently one can work around<br>&gt; by putting funcs in different files and not using -whole-module, but it is<br>&gt; time consuming and ugly.<br>&gt; 2. Profiling an existing program.   When a class method calls another<br>&gt; method in the same class, I don&#39;t have a workaround to not inline it.<br>&gt;<br>&gt; Also, is there a -fno-optimize-sibling-calls equivalent for swiftc?  I<br>&gt; don&#39;t have a pressing use but was just wondering, because it was shown in<br>&gt; the WWDC videos as being helpful for profiling.<br>&gt;<br>&gt; Thanks,<br>&gt;<br>&gt; - Karl<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151210/35906e25/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

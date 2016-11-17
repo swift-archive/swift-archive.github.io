@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Draft] Rationalizing Sequence end-operation names</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July  5, 2016 at 11:00:00am</p></header><div class="content"><p>on Sun Jul 03 2016, Nevin Brackett-Rozinsky &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; The incomplete range concept is quite intriguing.<br>&gt;<br>&gt; Have we considered spelling the operators with an asterisk at the<br>&gt; incomplete end?<br>&gt; prefix *..&lt;<br>&gt; prefix *...<br>&gt; postfix ...*<br>&gt; postfix ..&lt;*<br>&gt;<br>&gt; That way the use-sites would look like:<br>&gt; someCollection[*..&lt;idx]<br>&gt; someCollection[*...idx]<br>&gt; someCollection[idx...*]<br>&gt; someCollection[idx..&lt;*]<br>&gt;<br>&gt; From a “first-glance” perspective, the asterisk “looks like” a wildcard<br>&gt; placeholder, which should help readers and writers of code to understand<br>&gt; the meaning.<br>&gt;<br>&gt; And from a future language development standpoint, we’ll keep the<br>&gt; triple-dot spelling available for whatever needs may arise (tuple<br>&gt; splatting, variadic generics, etc.)<br>&gt;<br>&gt; Thoughts?<br></p><p>That&#39;s an interesting possiblity, IMO.<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b3592d65fd9318ba2f2b70379835526b?s=50"></div><header><strong>[Draft] Rationalizing Sequence end-operation names</strong> from <string>Sean Heber</string> &lt;sean at fifthace.com&gt;<p>July  5, 2016 at 02:00:00pm</p></header><div class="content"><p>That’s pretty neat - although I’d inevitably forget and end up writing it with spaces between the “arguments&quot; and the “operator”:<br></p><p>someCollection[* … idx]<br></p><p>But maybe even that could be made to work with some cleverness.<br></p><p>l8r<br>Sean<br></p><p><br>&gt; On Jul 5, 2016, at 1:45 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Sun Jul 03 2016, Nevin Brackett-Rozinsky &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; The incomplete range concept is quite intriguing.<br>&gt;&gt; <br>&gt;&gt; Have we considered spelling the operators with an asterisk at the<br>&gt;&gt; incomplete end?<br>&gt;&gt; prefix *..&lt;<br>&gt;&gt; prefix *...<br>&gt;&gt; postfix ...*<br>&gt;&gt; postfix ..&lt;*<br>&gt;&gt; <br>&gt;&gt; That way the use-sites would look like:<br>&gt;&gt; someCollection[*..&lt;idx]<br>&gt;&gt; someCollection[*...idx]<br>&gt;&gt; someCollection[idx...*]<br>&gt;&gt; someCollection[idx..&lt;*]<br>&gt;&gt; <br>&gt;&gt; From a “first-glance” perspective, the asterisk “looks like” a wildcard<br>&gt;&gt; placeholder, which should help readers and writers of code to understand<br>&gt;&gt; the meaning.<br>&gt;&gt; <br>&gt;&gt; And from a future language development standpoint, we’ll keep the<br>&gt;&gt; triple-dot spelling available for whatever needs may arise (tuple<br>&gt;&gt; splatting, variadic generics, etc.)<br>&gt;&gt; <br>&gt;&gt; Thoughts?<br>&gt; <br>&gt; That&#39;s an interesting possiblity, IMO.<br>&gt; <br>&gt; -- <br>&gt; Dave<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

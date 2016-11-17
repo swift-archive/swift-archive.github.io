@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>mutating/non-mutating suggestion from a Rubyist</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 25, 2016 at 03:00:00pm</p></header><div class="content"><p>on Sun Apr 24 2016, Xiaodi Wu &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;     Anyways, I wouldn’t be surprised if this idea has come up before and has<br>&gt;     been rejected, but to me it sounds like a good idea.<br>&gt;<br>&gt; Yes, I suggested this a while back, and it was rejected.<br></p><p>That makes it sound much more definitive than anything on this list<br>other than a formal review response can ever be.  What actually<br>happened?<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>mutating/non-mutating suggestion from a Rubyist</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>April 25, 2016 at 10:00:00pm</p></header><div class="content"><p>Me:<br></p><p>Unless the functions also return an error, mutating/non-mutating pairs<br>of functions return Void/Self (or maybe Optional&lt;Self&gt;) respectively.<br>Are there other possibilities? But Swift is pretty unique among<br>C-family languages in allowing overloaded functions that differ only<br>by return type. Besides the loss of clarity to the reader at the call<br>site, what are downsides of simply naming both functions exactly the<br>same in today&#39;s Swift syntax?<br></p><p>You:<br></p><p>I don&#39;t think it&#39;s really worth exploring much further once you acknowledge<br>the loss of clarity to the reader at the call site ;-)<br></p><p>(I think the smiley really seals the deal in terms of definitiveness of<br>rejection, no?)<br>On Mon, Apr 25, 2016 at 17:05 Dave Abrahams via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; on Sun Apr 24 2016, Xiaodi Wu &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; &gt;     Anyways, I wouldn’t be surprised if this idea has come up before and<br>&gt; has<br>&gt; &gt;     been rejected, but to me it sounds like a good idea.<br>&gt; &gt;<br>&gt; &gt; Yes, I suggested this a while back, and it was rejected.<br>&gt;<br>&gt; That makes it sound much more definitive than anything on this list<br>&gt; other than a formal review response can ever be.  What actually<br>&gt; happened?<br>&gt;<br>&gt; --<br>&gt; Dave<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160425/d5324568/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>mutating/non-mutating suggestion from a Rubyist</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 25, 2016 at 04:00:00pm</p></header><div class="content"><p>on Mon Apr 25 2016, Xiaodi Wu &lt;xiaodi.wu-AT-gmail.com&gt; wrote:<br></p><p>&gt; Me:<br>&gt;<br>&gt; Unless the functions also return an error, mutating/non-mutating pairs<br>&gt; of functions return Void/Self (or maybe Optional&lt;Self&gt;) respectively.<br>&gt; Are there other possibilities? But Swift is pretty unique among<br>&gt; C-family languages in allowing overloaded functions that differ only<br>&gt; by return type. Besides the loss of clarity to the reader at the call<br>&gt; site, what are downsides of simply naming both functions exactly the<br>&gt; same in today&#39;s Swift syntax?<br>&gt;<br>&gt; You:<br>&gt;<br>&gt; I don&#39;t think it&#39;s really worth exploring much further once you<br>&gt; acknowledge the loss of clarity to the reader at the call site ;-)<br>&gt;<br>&gt; (I think the smiley really seals the deal in terms of definitiveness of<br>&gt; rejection, no?)<br></p><p>Hey, that was just my opinion at the time; that doesn&#39;t mean the<br>community rejected the idea or the core team rejected the idea [or even<br>that I still believe the same thing this week ;-)]<br></p><p>-- <br>Dave<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

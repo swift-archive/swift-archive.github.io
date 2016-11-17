@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1966627b418931a036bad98003d0b65d?s=50"></div><header><strong>Subclass doesn&#39;t inherit convenience initialiser</strong> from <string>Michal Kalinowski</string> &lt;michal.kalinowski at icloud.com&gt;<p>May 30, 2016 at 06:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>I&#39;m subclassing NSMutableURLRequest to patch lack of httpBody property. My subclass doesn&#39;t implement any initialisers so it inherits all the designated initialisers. From what I understand, since all designated initialisers are implemented(inherited) then I should also inherit convenience initialisers.<br></p><p>My code:<br>class safe_NSMutableURLRequest: NSMutableURLRequest {<br>  #if os(Linux)<br>  var httpBody: NSData?<br>  #endif<br>}<br></p><p>let someURL = NSURL(string: &quot;https://google.com&quot;)!<br>let request = safe_NSMutableURLRequest(url: someURL)<br></p><p>the last line produces an error:<br>error: incorrect argument label in call (have &#39;url:&#39;, expected &#39;coder:&#39;)<br></p><p>Could you please explain me why I&#39;m not inheriting convenience initialiser? <br></p><p>Regards,<br>Michal Kalinowski<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160530/6ebb55b5/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2ff1daab58cd5e44a457908d1905c322?s=50"></div><header><strong>Subclass doesn&#39;t inherit convenience initialiser</strong> from <string>Krzysztof Siejkowski</string> &lt;krzysztof at siejkowski.net&gt;<p>May 31, 2016 at 07:00:00am</p></header><div class="content"><p>Which swift version are you using? Your code works correctly for me on Swift 2.2 in the Playgrounds, apart from the wrong letter casing of the argument label (should be `URL`, not `url`).<br></p><p>On the separate note, your usecase seems like a great place for writing an extension of NSMutableURLRequest instead of inheriting from it.<br></p><p>Best,<br>Krzysztof<br></p><p><br>On 30 May 2016 at 21:00:12, Michal Kalinowski via swift-users (swift-users at swift.org) wrote:<br></p><p>Hello,<br></p><p>I&#39;m subclassing NSMutableURLRequest to patch lack of httpBody property. My subclass doesn&#39;t implement any initialisers so it inherits all the designated initialisers. From what I understand, since all designated initialisers are implemented(inherited) then I should also inherit convenience initialisers.<br></p><p>My code:<br>class safe_NSMutableURLRequest: NSMutableURLRequest {<br></p><p>  #if os(Linux)<br></p><p>  var httpBody: NSData?<br></p><p>  #endif<br></p><p>}<br></p><p><br></p><p>let someURL = NSURL(string: &quot;https://google.com&quot;)!<br></p><p>let request = <br></p><p>safe_NSMutableURLRequest(url: someURL)<br></p><p><br>the last line produces an error:<br></p><p>error: incorrect argument label in call (have &#39;url:&#39;, expected &#39;coder:&#39;)<br></p><p><br></p><p>Could you please explain me why I&#39;m not inheriting convenience initialiser? <br></p><p><br>Regards,<br></p><p>Michal Kalinowski<br></p><p>_______________________________________________<br>swift-users mailing list<br>swift-users at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-users<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160531/5bb914e1/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

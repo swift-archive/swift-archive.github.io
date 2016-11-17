@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5451f7df31d36d0159a018706aec7adb?s=50"></div><header><strong>[pitch] Printing versions of try! and try?</strong> from <string>Erica Sadun</string> &lt;erica at ericasadun.com&gt;<p>January 30, 2016 at 10:00:00pm</p></header><div class="content"><p>Not sure where to post this, so starting here. It&#39;s a behavior change more than an API change. I&#39;d like to request that try! and try? print errors in debug builds and in the playground. Right now, I use the following work-around.<br></p><p>/// Replacement for `try?` that introduces printing for<br>/// error conditions instead of discarding those errors<br>///<br>/// - Parameter shouldCrash: defaults to false. When set to true<br>///   will raise a fatal error, emulating try! instead of try?<br>///<br>/// ```swift<br>/// attempt {<br>///   let mgr = NSFileManager.defaultManager()<br>///   try mgr.createDirectoryAtPath(<br>///     &quot;/Users/notarealuser&quot;,<br>///     withIntermediateDirectories: true,<br>///     attributes: nil)<br>/// }<br>/// ```<br>///<br>public func attempt&lt;T&gt;(<br>    line line: Int = __LINE__,<br>    shouldCrash: Bool = false,<br>    closure: () throws -&gt; T<br>    ) -&gt; T?<br>{<br>    do {<br>        <br>        /// Return executes only if closure succeeds<br>        return try closure()<br>        <br>    } catch {<br>        <br>        /// Emulate try! by crashing<br>        if shouldCrash {<br>            print(&quot;Fatal error on line \(line): \(error)&quot;)<br>            fatalError()<br>        }<br>        <br>        /// Force print and return nil like try?<br>        print(&quot;Error \(line): \(error)&quot;)<br>        return nil<br>    }<br>}<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160130/5e3c836f/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0ca11611f1637938f1d1db967fa4b064?s=50"></div><header><strong>local copy of formatter properties</strong> from <string>Will Stanton</string> &lt;willstanton1 at yahoo.com&gt;<p>January 19, 2016 at 12:00:00am</p></header><div class="content"><p>Greetings,<br></p><p>I was wondering if there is a reason for keeping local copies of formatter attributes in NSDateFormatter and NSNumberFormatter. Why not create the CF formatter on initialization and pass attributes live?<br></p><p>For instance, instead of this (from line 509 of NSNumberFormatter.swift):<br>   internal var _minusSign: String!<br>   public var minusSign: String! {<br>       get {<br>           return _minusSign<br>       }<br>       set {<br>           _reset()<br>           _minusSign = newValue<br>       }<br>   }<br></p><p>this:<br>   public var minusSign: String! {<br>       get {<br>           return CFNumberFormatterCopyProperty(_cfFormatter, kCFNumberFormatterMinusSign) as! String<br>       }<br>       set {<br>           return CFNumberFormatterSetProperty(_cfFormatter, kCFNumberFormatterMinusSign, newValue as! AnyObject)<br>       }<br>   }<br></p><p><br>I feel like the existing code is a bit messy with the _reset() and _setFormatterAttribute() action, with the reset’s affecting performance if a property changed between string creation.<br></p><p>Regards,<br>Will Stanton<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

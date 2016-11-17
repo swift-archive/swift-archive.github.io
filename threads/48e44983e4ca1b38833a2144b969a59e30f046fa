@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a838c63b9093a77fb88231d65effa3b3?s=50"></div><header><strong>protocol conformance table problems / print doesn&#39;t work in a statically-linked executable</strong> from <string>Drew Crawford</string> &lt;drew at sealedabstract.com&gt;<p>March 18, 2016 at 01:00:00pm</p></header><div class="content"><p>I&#39;m getting a funny print when trying to create a statically linked executable on Linux x64.<br></p><p>The driver does not actually support this (https://bugs.swift.org/browse/SR-730) and so I&#39;m compiling by hand so I can learn to write the correct driver patch.<br></p><p>$ cat test.swift<br>print(&quot;hello world&quot;)<br>$ swiftc -frontend -c -primary-file test.swift -target x86_64-unknown-linux-gnu -disable-objc-interop -color-diagnostics -module-name test -o test.o<br>$ clang++ -ldl -lpthread -lbsd -licui18n -licuuc /usr/local/lib/swift/linux/x86_64/swift_begin.o test.o -L /usr/local/lib/swift_static/linux/ -lswiftCore -lswiftSwiftOnoneSupport --target=x86_64-unknown-linux-gnu  /usr/local/lib/swift/linux/x86_64/swift_end.o -o test<br>$ ./test<br>String(_core: Swift._StringCore(_baseAddress: Swift.COpaquePointer(_rawValue: (Opaque Value)), _countAndFlags: Swift.UInt(_value: (Opaque Value)), _owner: Swift.Optional&lt;Swift.AnyObject&gt;.None))<br></p><p>Literally the *only* difference between this and an ordinary swift build that works fine is that I&#39;m linking with libswiftCore.a libswiftSwiftOnoneSupport.a instead of libswiftCore.so libswiftSwiftOnoneSupport.so.<br></p><p>It&#39;s been suggested that this problem is due to &quot;missing protocol conformance tables&quot;, but I&#39;m afraid that vocabulary is greek to me.  Things I&#39;ve tried:<br></p><p>* Make sure swift_begin.o and swift_end.o surround the invocation (you can see them above)<br>* Make sure swift_begin.o and swift_end.o surround the *link* invocation (here&#39;s clang++ -v)<br></p><p>Debian clang version 3.5.0-10 (tags/RELEASE_350/final) (based on LLVM 3.5.0)<br>Target: x86_64-unknown-linux-gnu<br>Thread model: posix<br>Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8<br>Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8.4<br>Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9<br>Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9.2<br>Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.8<br>Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.8.4<br>Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9<br>Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9.2<br>Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9<br>Candidate multilib: .;@m64<br>Selected multilib: .;@m64<br> &quot;/usr/bin/ld&quot; --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o test /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/local/lib/swift_static/linux/ -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.9 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/4.9/../../.. -L/usr/lib/llvm-3.5/bin/../lib -L/lib -L/usr/lib -ldl -lpthread -lbsd -licui18n -licuuc /usr/local/lib/swift/linux/x86_64/swift_begin.o test.o -lswiftCore -lswiftSwiftOnoneSupport /usr/local/lib/swift/linux/x86_64/swift_end.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o<br></p><p>* Look at the executable with objdump.  Here is the objdump for a statically-linked executable &lt;https://bugs.swift.org/browse/SR-730?focusedCommentId=12798&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-12798&gt; (broken) and compared to a dynamically linked executable &lt;https://bugs.swift.org/browse/SR-730?focusedCommentId=12799&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-12799&gt;.  I don&#39;t know exactly what I&#39;m looking for, but people a lot smarter than me seem satisfied the output is plausible.<br>* Extract libswiftCore.a and libswiftSwiftOnoneSupport.a into object files and link the object files manually.  This has no effect.<br></p><p>I am totally out of leads on this, and many very bright people have tried, and failed, to help me understand WTF is going on.  I would greatly appreciate any leads, suggestions, ideas, or help.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160318/48e446fa/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

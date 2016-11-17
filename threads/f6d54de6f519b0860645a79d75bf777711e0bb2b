@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/26ea63f765d37ed60a1d0dbcf2073b17?s=50"></div><header><strong>Why we need `__attribute__((sentinel(0,1)))`?</strong> from <string>哀殿</string> &lt;644928955 at qq.com&gt;<p>September  7, 2016 at 09:00:00am</p></header><div class="content"><p>Hello Swift community,<br> <br>I found  `__attribute__((sentinel(0,1)))` at https://github.com/apple/swift-clang/blob/c52d85ede49adaec457400697b1d4c1b7ea12881/test/Analysis/variadic-method-types.m#L46.<br> <br>But I can&#39;t imagine how different it is from the `__attribute__((sentinel))`.<br></p><p>So,why we need `__attribute__((sentinel(0,1)))`?<br>Thanks.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160907/f6d5bb2b/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Why we need `__attribute__((sentinel(0,1)))`?</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>September  6, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; On Sep 6, 2016, at 6:50 PM, 哀殿 via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello Swift community,<br>&gt; <br>&gt; I found `__attribute__((sentinel(0,1)))` at https://github.com/apple/swift-clang/blob/c52d85ede49adaec457400697b1d4c1b7ea12881/test/Analysis/variadic-method-types.m#L46.<br>&gt; <br>&gt; But I can&#39;t imagine how different it is from the `__attribute__((sentinel))`.<br>&gt; <br>&gt; So,why we need `__attribute__((sentinel(0,1)))`?<br>&gt; <br></p><p>This is unrelated to Swift. That file is in clang; it&#39;s a test of clang&#39;s static analyzer.<br></p><p>__attribute__((sentinel)) is identical to __attribute__((sentinel(0, 0))). The difference between sentinel(n, 0) and sentinel(n, 1) has to do with the handling of the last named parameter before the variadic arguments. <br>(n, 0) means the last named parameter is not part of the null-terminated list; the required sentinel must come after the last named parameter. <br>(n, 1) means the last named parameter is part of the null-terminated list; passing null to the last named parameter will satisfy -Wsentinel.<br>n is the number of non-null arguments that must follow the null sentinel. This is used for functions like execle() which passes envp after the null at the end of argv.<br></p><p>-- <br>Greg Parker     gparker at apple.com &lt;mailto:gparker at apple.com&gt;     Runtime Wrangler<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160906/570ac57a/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

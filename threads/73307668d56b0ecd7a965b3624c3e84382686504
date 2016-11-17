@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3eada20d8d86f9b78ef64f570acd29e9?s=50"></div><header><strong>Embedded Swift - supporting Cortex M architecture</strong> from <string>Nicholas Outram</string> &lt;nicholas.outram at icloud.com&gt;<p>June 20, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi<br></p><p>This is a general suggestion, but one I’ve pondered about for quite a long time.<br></p><p>In short, it would be great if the Swift compiler could target embedded systems, and specifically the ARM Cortex M4 architecture (or later).<br></p><p>Rationale:<br></p><p>To date, Swift is ported to x86 and ARM Cortex A architectures (and there may be others in the pipeline)<br></p><p>There are billions of low-power devices out there running &quot;single process - multithreaded applications&quot; on ARM Cortex M class devices (https://en.wikipedia.org/wiki/ARM_Cortex-M). This is typically the world of the hidden embedded computer, be that antilock braking systems, lightbulbs, instrumentation, toys, consumer products, peripherals devices (accelerometers, gps, wifi, bluetooth, gyros, power management, screen controllers, huid) and white goods etc. The list goes on.<br></p><p>These are by far the most pervasive computers in the world, yet we are still writing embedded software in (older versions of) C and C++.<br></p><p>Now, with IoT, they are being increasingly connected to the internet - security and vulnerabilities are a big concern for IoT (yes, the first fridge has been hacked - http://www.cnet.com/uk/news/fridge-caught-sending-spam-emails-in-botnet-attack/!)<br></p><p>Cortex M devices are typically used for sense, control and real-time tasks, but now also IoT applications as M-class devices become more capable. <br></p><p>Of course, as with anything connected to the Internet, IoT applications are potentially vulnerable. <br></p><p>If you look at mbed 3 from ARM   https://www.mbed.com/en/ (which ARM seem to be pushing quite hard), as I understand it, you see only the Cortex M featured (others might be featured, but MBED 2 was certainly M-class only).<br></p><p>(Also, in the education space, where embedded computing is taught, Cortex M commonly features - the mbed 2 C++ abstraction libraries were originally designed for education and are excellent for prototyping).<br></p><p>Java ME has recently moved into this space, although I’ve no figures on uptake or how many platforms are supported.<br></p><p>Most embedded software is still written in C and C++. C is widely viewed to be simply unsafe; safer versions of C++ exist but adoption is slow, and performance is getting slower as I understand it.  Also, as a language for humans to write and maintain, it has legacy issues and does not benefit from the complete recent design you get with Swift.<br></p><p>Swift has a promise to be all things, and coupled with ARC, would seem to be an ideal candidate embedded language?<br></p><p>Now I’m no compiler engineer (I just happen to teach iOS and real-time embedded computing). <br></p><p>My take on this is as follows: <br></p><p>For this to happen, Swift + Swift Std. Libs. would need to target the Cortex M instruction set (I suggest M4 or later) and live with more limited protection. <br>Maybe it would require an “embedded Swift” variant? <br>Some quirks of embedded software: Embedded software often allows, but avoids dynamic memory allocation; there is only one process, but possibly multiple threads; it would need to target the reduced M instruction set; memory is much more limited; direct hardware access is available and required at some level, although most manufacturers (including mbed) provide some abstraction layers (a very good thing).<br></p><p>I think it would be great if platforms such as mbed 3 could offer Swift as an alternative to C++. I know which language I would rather write.<br></p><p>I&#39;m not best placed to say what technical issues might/might not prevent the Swift compiler from targeting Cortex M devices. What’s the view of the community on this?<br></p><p><br>Nick Outram<br></p><p>Plymouth University<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160620/73306504/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

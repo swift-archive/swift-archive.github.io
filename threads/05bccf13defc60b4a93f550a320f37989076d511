@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>[swift-3.0-branch] Fix typo in `sourcekitd-test` error handler response</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>August  9, 2016 at 09:00:00pm</p></header><div class="content"><p>I am proposing that https://github.com/apple/swift/pull/4177 be reviewed<br>for acceptance in Swift 3.0.<br></p><p>(Not really sure what the format of this e-mail should be, subject or<br>body. Sorry if this is wrong.)<br></p><p>Thank you!<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

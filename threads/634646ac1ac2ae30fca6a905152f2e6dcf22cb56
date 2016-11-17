@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/973319a12d18772d1442b3a8360583f7?s=50"></div><header><strong>[Idea] Represent a point in time as a Swift immutable scalar type TimePoint</strong> from <string>Steve Weller</string> &lt;bagelturf at mac.com&gt;<p>May  8, 2016 at 01:00:00pm</p></header><div class="content"><p>Proposal<br></p><p>Represent a point in time as a Swift immutable scalar type TimePoint<br></p><p>Motivation<br></p><p>The representation of time and calculations involving time are fundamental to the correct functioning of all computer systems. If the language can express and manipulate points in time in a consistent and well-defined way, then the user will make fewer programming errors, the reliability and security of the system will be improved, and the scope of applications for that language will increase.<br></p><p>Representing and manipulating points in time has historically been an error-prone endeavor. Problems include:<br></p><p>* Precision: lack of or unknown stored precision, loss during calculations, floating point quirks<br>* Range: Underflow or overflow during calculation due to unexpectedly small range or unsigned representation <br>* Lack of built-in representations: distant past and distant future usually require values with special meaning<br>* Use of inappropriate operators on scalar types that are used to store a representation of a point in time<br></p><p><br>Proposed Solution<br></p><p>The Swift language should provide an immutable scalar type TimePoint that can represent only a point in time. Additionally it should provide a mutable signed scalar type TimeOffset that can represent only the difference between two TimePoints.<br></p><p>TimePoint is approximated by the following enumeration:<br></p><p>enum TimePoint : Strideable, RawRepresentable, Hashable {<br>    case DistantPast, <br>    case DistantFuture,<br>    case At(Int64, UInt64)   // Seconds, nanos<br>}<br></p><p>TimePoint is similar to NSDate. However, its underying storage strategy is hidden from the user. To access the value, rawValue must be called to get a tuple (seconds: Int64, nanos: UInt64).<br></p><p>TimePoint provides the guarantee that it has sufficient resolution and range for all practical purposes (precision to nanos worst case, range of the order of the age of the universe).<br></p><p>The Stride of a TimePoint is of signed type TimeOffset. TimeOffset is approximated by the following struct:<br></p><p>struct TimeOffset : Comparable, RawRepresentable, Hashable {<br>    var seconds:Int64<br>    var nanos: UInt64<br>} <br></p><p>The compiler is aware of the meaning of .DistantFuture and .DistantPast and can warn of inappropriate or nonsensical use. For example, the following can never be true:<br></p><p>if t &gt; TimePoint.DistantFuture { return }<br></p><p>Since .DistantFuture and .DistantPast are not special values, TimePoint behaves as expected across its entire range.<br></p><p>The underlying storage can be made efficient since it is opaque. Since common, practical points in time are specified to units larger than nanos, and they do not need the full range, many zero or fixed bit values can be encoded into a small space, while rare or impractical points in time can still be faithfuly recorded.<br></p><p>TimePoint and TimeOffset have appropriate initializers, getters, and methods (TBD) to allow them to interoperate with other types.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

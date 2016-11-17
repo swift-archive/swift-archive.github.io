@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d78387b79b3acfe717471ddc5ed57572?s=50"></div><header><strong>Query on Bundle.unload()</strong> from <string>Sai Kanduri</string> &lt;sakandur at in.ibm.com&gt;<p>August  3, 2016 at 12:00:00pm</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160803/7d9fcbcf/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>Query on Bundle.unload()</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>August  8, 2016 at 09:00:00am</p></header><div class="content"><p>Hi Sai,<br></p><p>What I understand from the Swift runtime team is that unloading of Swift executables is basically unsupported. There are a lot of challenges to getting unloading right in general, because it can remove things like “constant” strings and cause mysterious crashes.<br></p><p>- Tony<br></p><p>&gt; On Aug 3, 2016, at 5:05 AM, Sai Kanduri via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi All,<br>&gt;  <br>&gt; I am trying to implement the unload() method in Bundle.The API document says that “unload dynamically unloads the executable which is supported from OS X v10.5 and later)”. I am wondering whether its applicable  on linux ? If its applicable can  CFBundleUnloadExecutable be used to unload plugin or framework or binary  ?<br>&gt;  <br>&gt; Thanks &amp; Regards<br>&gt; -Sai Hema<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160808/d5f92b8b/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

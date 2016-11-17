@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Analysis of case conventions for initialisms</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 14, 2016 at 12:00:00pm</p></header><div class="content"><p>on Sun Feb 14 2016, Tyler Fleming Cloutier &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 14, 2016, at 8:33 AM, Dave Abrahams via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Sat Feb 13 2016, Tyler Fleming Cloutier<br>&gt;<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; I don’t care what the heck it is as long as someone tells me whether<br>&gt;&gt;&gt; to use userID or userId. I’ve spent too many hours obsessing over this<br>&gt;&gt;&gt; and I still keep going back and forth. What is ID anyway? It seems<br>&gt;&gt;&gt; like it’s both an initialism and an acronym.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I think I lean towards #2 for a simple reason: the rules are the same<br>&gt;&gt;&gt; for initialisms, acronyms, abbreviations, words, or what have you. I<br>&gt;&gt;&gt; just want whatever guidelines are going to allow me to pick a casing<br>&gt;&gt;&gt; and move on with my life as soon as possible. The guideline with the<br>&gt;&gt;&gt; fewest rules is going to be the best at that.<br>&gt;&gt; <br>&gt;&gt; FYI,<br>&gt;&gt; http://news.gmane.org/find-root.php?message_id=m2twld4iax.fsf%40eno.apple.com<br>&gt;&gt; &lt;http://news.gmane.org/find-root.php?message_id=m2twld4iax.fsf at eno.apple.com&gt;<br>&gt;<br>&gt; Ah, thanks! <br>&gt;<br>&gt; So that would be userID then, since ID is pronounced “eye-dee”, right?<br>&gt; If it were pronounced “id” it would be userId, correct? I’m going to<br>&gt; be so excited to put this one to bed.<br></p><p>Yup, though I&#39;m not sure we&#39;re ready to prescribe that NASA be spelled<br>as Nasa (I&#39;ll ask), so you might want to leave pronunciation out of the<br>way you think about it.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

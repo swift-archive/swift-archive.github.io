@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>C-style For Loops</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 19, 2016 at 06:00:00pm</p></header><div class="content"><p>on Sat Dec 19 2015, Wallacy &lt;swift-dev-AT-swift.org&gt; wrote:<br></p><p>&gt;&gt;<br>&gt;&gt; Why?<br>&gt;&gt;<br>&gt;<br>&gt; Because this works:<br>&gt;<br>&gt; var rangeA = -150.0..&lt;150<br>&gt; for lat in rangeA.by(30) {<br>&gt;     print(lat)<br>&gt; }<br>&gt;<br>&gt; And this not:<br>&gt;<br>&gt; var rangeC = -150..&lt;150<br>&gt; for lat in rangeC.by(30) { // Error - Value of type &#39;Range&lt;Int&gt;&#39; has no<br>&gt; member &#39;by&#39;<br>&gt;     print(lat)<br>&gt; }<br>&gt;<br>&gt; I think this is expected to work, or not?<br></p><p>Fair enough; that makes sense.<br></p><p>&gt; If you make a extension for &quot;Range&quot; will work of course.<br>&gt;<br>&gt;&gt; I don&#39;t understand most of what you&#39;re saying here, or why you&#39;re saying<br>&gt;&gt; it.  The extensions as shown in Donnacha&#39;s post work for me.<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt; Not a big deal, just saying I think weird call &quot;startIndex&quot; and &quot;endIndex&quot;<br>&gt; on &quot;Range&quot;, because on (HalfOpen|Close)Interval are only &quot;start&quot; and &quot;end&quot;.<br></p><p>Range is a collection, so it has to have startIndex and endIndex.<br>Interval does not necessarily have anything to do with indices.<br></p><p>&gt; Also is weird the existence of the 3 types for basically the same<br>&gt; purpose.<br></p><p>We&#39;re missing the generics features that would allow them to be unified.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

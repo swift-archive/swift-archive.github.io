@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/957b675456a66c394945a7361aedd51d?s=50"></div><header><strong>Dictionary&lt;String, AnyObject&gt; can accept Bool as a Value, but my own function can&#39;t</strong> from <string>Zhao Xin</string> &lt;owenzx at gmail.com&gt;<p>May 25, 2016 at 12:00:00pm</p></header><div class="content"><p>See the code:<br></p><p>do {<br></p><p>    var dictionary = Dictionary&lt;String, AnyObject&gt;()<br></p><p><br></p><p>    func update&lt;T:AnyObject&gt;(value:T, key:String) {<br></p><p>        dictionary.updateValue(value, forKey: key)<br></p><p>    }<br></p><p><br></p><p>    let aBool = true<br></p><p>    let key = &quot;testBool&quot;<br></p><p><br></p><p>    update(aBool, key: key)<br></p><p>    // cannot invoke &#39;update&#39; with an argument list of type &#39;(Bool, key:<br>String)&#39;<br></p><p><br></p><p>    dictionary.updateValue(aBool, forKey: key)<br></p><p>    // works<br></p><p>}<br></p><p><br>My own function will get the error as shown in the comment part. But it<br>seams that Dictionary&lt;String, AnyObject&gt; has no issue. How to improving my<br>code?<br></p><p><br>Zhaoxin<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160525/ac8f8f05/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be09ed656d5d90501c958b001261f218?s=50"></div><header><strong>Dictionary&lt;String, AnyObject&gt; can accept Bool as a Value, but my own function can&#39;t</strong> from <string>Jeremy Pereira</string> &lt;jeremy.j.pereira at googlemail.com&gt;<p>May 25, 2016 at 04:00:00pm</p></header><div class="content"><p>Bool is a struct in Swift and doesn’t inherit from AnyObject. <br></p><p>The reason why dictionary.updateValue(aBool, forKey: key) works for you is that you have imported Foundation. which enables bridging between Dictionary and Foundation.NSDictionary, including converting value arguments into an Objective-C type.<br></p><p><br>&gt; On 25 May 2016, at 05:07, zh ao via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; See the code:<br>&gt; <br>&gt; do {<br>&gt;     var dictionary = Dictionary&lt;String, AnyObject&gt;()<br>&gt;     <br>&gt;     func update&lt;T:AnyObject&gt;(value:T, key:String) {<br>&gt;         dictionary.updateValue(value, forKey: key)<br>&gt;     }<br>&gt;     <br>&gt;     let aBool = true<br>&gt;     let key = &quot;testBool&quot;<br>&gt;     <br>&gt;     update(aBool, key: key)<br>&gt;     // cannot invoke &#39;update&#39; with an argument list of type &#39;(Bool, key: String)&#39;<br>&gt;     <br>&gt;     dictionary.updateValue(aBool, forKey: key)<br>&gt;     // works<br>&gt; }<br>&gt; <br>&gt; My own function will get the error as shown in the comment part. But it seams that Dictionary&lt;String, AnyObject&gt; has no issue. How to improving my code?<br>&gt; <br>&gt; Zhaoxin<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

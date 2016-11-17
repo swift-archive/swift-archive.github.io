@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0a2c0bcff308a97d2617cdba339914c6?s=50"></div><header><strong>Swift 3.0 Preview 1 Snapshots available!</strong> from <string>Charles Lane</string> &lt;clane_47 at bellsouth.net&gt;<p>June  1, 2016 at 03:00:00pm</p></header><div class="content"><p>I see that there is a ‘Trunk Development(master)’ and the &#39;Swift 3.0 Preview 1 Release Branch’ both from May 31, 2016.<br>Is there any difference in these two releases?<br></p><p>Thanks,<br>Chuck Lane<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>Swift 3.0 Preview 1 Snapshots available!</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>June  1, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi Charles, <br></p><p>Trunk Development toolchain was created from master branch, and Swift 3.0 Preview 1 toolchain was created from swift-3.0-preview-1-branch. <br></p><p>Difference between master and swift-3.0-preview-1-branch: <br>https://github.com/apple/swift/compare/swift-3.0-preview-1-branch<br></p><p>Master branch: https://github.com/apple/swift/tree/master<br>Swift 3.0 Preview 1 branch: https://github.com/apple/swift/tree/swift-3.0-preview-1-branch<br></p><p>Thanks, <br>Mishal Shah<br></p><p>&gt; On Jun 1, 2016, at 12:30 PM, Charles Lane &lt;clane_47 at bellsouth.net&gt; wrote:<br>&gt; <br>&gt; I see that there is a ‘Trunk Development(master)’ and the &#39;Swift 3.0 Preview 1 Release Branch’ both from May 31, 2016.<br>&gt; Is there any difference in these two releases?<br>&gt; <br>&gt; Thanks,<br>&gt; Chuck Lane<br>&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

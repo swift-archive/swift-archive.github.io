@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Rejected] SE-0013 Remove Partial Application of Non-Final Super Methods</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>January 21, 2016 at 10:00:00pm</p></header><div class="content"><p>The public review of proposal SE-0013 “Remove Partial Application of Non-Final Super Methods” ran from January 9…13, 2016. The proposal has been rejected. For reference, the proposal text is here:<br></p><p>	https://github.com/apple/swift-evolution/blob/master/proposals/0013-remove-partial-application-super.md<br></p><p>Response to the proposal was positive: the proposed restriction did not seem onerous given the implementation complexity, despite it being a regression from Swift 2.1. However, the core team felt that it doesn’t make sense to make this a restriction in the language: it would be an odd corner case that a user of Swift would not expect nor be able to explain based on an understanding of the implementation model.<br></p><p>That said, it is a reasonable temporary restriction in the implementation. The compiler can diagnose this case as “unsupported”, and there will be a bug to track the proper implementation of this feature. The core team believes that, in the future, such implementation restrictions—where something is possible to implement but is difficult and therefore not worth doing immediately—should be handled via the bug tracker and discussions on Swift developer’s mailing list, rather than going through the evolution process.<br></p><p>	Thanks all,<br>	Doug Gregor<br>	Review Manager<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160121/3ab66566/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

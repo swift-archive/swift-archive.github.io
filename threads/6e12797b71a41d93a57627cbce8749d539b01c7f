@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d9ce70a6cb7175e7a5e5db5658186a31?s=50"></div><header><strong>Something lightweight to discuss: improvement to print(_:separator:terminator:) ?</strong> from <string>Brandon Knope</string> &lt;bknope at me.com&gt;<p>August  5, 2016 at 12:00:00pm</p></header><div class="content"><p>One thing about print that I find odd to look at is when you don&#39;t want to use a line break: <br></p><p>print(someValue, terminator: &quot;&quot;) <br></p><p>What if we used an enum for these options, especially for the two most common ones?<br></p><p>enum PrintTerminatorTypes {<br>    case none<br>    case lineBreak //default<br>    case custom(String)<br>}<br></p><p>print(someValue, terminator: .none)<br>print(someValue, terminator: .lineBreak)<br>print(someValue, terminator: .custom(&quot; --- &quot;))<br></p><p>This seems clearer and more self documenting. <br></p><p>Obviously this isn&#39;t a really important change but:<br>1. Swift-Evo seems light lately so why not discuss something...especially something really lightweight <br>2. It&#39;s source breaking (...but it could be offered as an override?)<br></p><p>Brandon <br></p><p>Sent from my iPad<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160805/6e121c7f/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

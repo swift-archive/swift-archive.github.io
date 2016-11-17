@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Draft] Mixins</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>April 22, 2016 at 10:00:00am</p></header><div class="content"><p>Hi Niall,<br></p><p>This feature has been previously discussed. Search for Mixins on<br>swift-evolution archives.<br></p><p>I believe it would help to read previous version of the proposal:<br>https://github.com/Anton3/swift-evolution/blob/mixins/proposals/NNNN-mixins.md<br></p><p>This feature has been delayed to Swift 3 by Chris Lattner (at least, he<br>told about it).<br></p><p>- Anton<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160422/5b0910aa/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Draft] Mixins</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>April 22, 2016 at 10:00:00am</p></header><div class="content"><p>Sorry, it has been delayed *from* Swift 3 to future versions.<br></p><p>2016-04-22 10:22 GMT+03:00 Антон Жилин &lt;antonyzhilin at gmail.com&gt;:<br></p><p>&gt; Hi Niall,<br>&gt;<br>&gt; This feature has been previously discussed. Search for Mixins on<br>&gt; swift-evolution archives.<br>&gt;<br>&gt; I believe it would help to read previous version of the proposal:<br>&gt;<br>&gt; https://github.com/Anton3/swift-evolution/blob/mixins/proposals/NNNN-mixins.md<br>&gt;<br>&gt; This feature has been delayed to Swift 3 by Chris Lattner (at least, he<br>&gt; told about it).<br>&gt;<br>&gt; - Anton<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160422/2119281c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

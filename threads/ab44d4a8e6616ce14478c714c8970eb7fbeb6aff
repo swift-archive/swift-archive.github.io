@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0091: Improving operator requirements in protocols</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 10, 2016 at 05:00:00pm</p></header><div class="content"><p>on Fri Jun 10 2016, Tony Allevato &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;<br>&gt;&gt; 5) Forwarding functions aren’t good for tools. Under this proposal, if I<br>&gt;&gt; write “1 + 2” and use a tool to look at which “+” it resolved to, what will<br>&gt;&gt; we see? The generic forwarding operator. Even though I could look in the<br>&gt;&gt; source and see this:<br>&gt;&gt;<br>&gt;&gt; extension Int {<br>&gt;&gt;   static func +(lhs: Int, rhs: Int) -&gt; Int { … }<br>&gt;&gt; }<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; and even those that’s what will get called, my tools aren’t going to<br>&gt;&gt; interpret the body of the global forwarding function for + to resolve it in<br>&gt;&gt; the obvious way.<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; *The Good Parts*<br>&gt;&gt;<br>&gt;&gt; With all that negative, one might get the impression that I don’t like<br>&gt;&gt; operators in types. I think there are improvements here:<br>&gt;&gt;<br>&gt;&gt; I) Writing an operator function in a type/extension of a type is far more<br>&gt;&gt; natural that writing one at global scope for the common case. Even if<br>&gt;&gt; you’re not planning on conforming to a protocol, it just feels right that<br>&gt;&gt; (say) String + String should be defined in an extension of String. It’s<br>&gt;&gt; better for tooling (which can more easily associate the operator + with the<br>&gt;&gt; String type), code organization, works with the new meaning of the<br>&gt;&gt; “private” access modifier, and simply feels like Swift.<br>&gt;&gt;<br>&gt;&gt; II) The requirement to use “static” on the operator function requirement<br>&gt;&gt; in the protocol makes perfect sense to me. It’s a lot clearer, and<br>&gt;&gt; communicates the semantics better. I can’t recall why we didn’t do this in<br>&gt;&gt; the first place.<br>&gt;&gt;<br>&gt;&gt; III) The goal to reduce the total number of overloads is laudable. It can<br>&gt;&gt; help type checker performance (fewer overloads == less exponential<br>&gt;&gt; behavior) and improve diagnostics (fewer candidates to display on error).<br>&gt;&gt; The key insight here is that we don’t want to consider both a generic<br>&gt;&gt; operator based on some protocol (e.g., + for Arithmetic types) *and* the<br>&gt;&gt; operator functions that are used to satisfy the corresponding requirement.<br>&gt;&gt;<br>&gt;&gt; *An Alternative Approach*<br>&gt;&gt;<br>&gt;&gt; Let’s accept (I) and (II). But, let’s make operator lookup always be<br>&gt;&gt; global, so that it sees all operators defined at either module scope or<br>&gt;&gt; within a type/extension of a type. This gives us the syntactic improvements<br>&gt;&gt; of the SE-0091 “immediately”, and eliminates all five of my complaints<br>&gt;&gt; above: the natural Swift thing of defining your functionality within the<br>&gt;&gt; type or an extension thereof “just works”. It’s weird in the sense that<br>&gt;&gt; operators will be the only place where we do such global lookup—finding<br>&gt;&gt; entries at both global and type scope. However, SE-0091 is introducing a<br>&gt;&gt; different weird name lookup rule, and it feels like there’s really no way<br>&gt;&gt; to avoid it: we simply don’t want normal lexical name lookup for operators<br>&gt;&gt; when they can be defined in types.<br>&gt;&gt;<br>&gt;&gt; This approach does not (directly) give any of the type checker<br>&gt;&gt; performance/QoI improvements of (III). However, we can achieve that by<br>&gt;&gt; making the key insight of (III) part of the semantic model: when we find<br>&gt;&gt; all operators, we also find the operators in the protocols themselves. The<br>&gt;&gt; operators in the protocols are naturally generic, e.g., the Arithmetic +<br>&gt;&gt; effectively has a generic function type like this:<br>&gt;&gt;<br>&gt;&gt; &lt;Self: Arithmetic&gt; (Self, Self) -&gt; Self<br>&gt;&gt;<br>&gt;&gt; which is basically what the forwarding functions look like in SE-0091 at a<br>&gt;&gt; type level. Then, we say that we do not consider an operator function if it<br>&gt;&gt; implements a protocol requirement, because the requirement is a<br>&gt;&gt; generalization of all of the operator functions that satisfy that<br>&gt;&gt; requirement. With this rule, we’re effectively getting the same effects of<br>&gt;&gt; SE-0091’s approach to (III)—but it’s more automatic.<br>&gt;&gt;<br>&gt;<br>&gt; I like this suggestion very much, and I would support it—especially if it&#39;s<br>&gt; easier to implement than the trampoline generation that I proposed for the<br>&gt; same effect.<br></p><p>+1; I&#39;m on board.  Thanks for doing the hard design work, Doug!<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

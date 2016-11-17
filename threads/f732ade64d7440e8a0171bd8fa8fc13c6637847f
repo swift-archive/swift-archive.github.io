@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>Merging swift-corelibs-foundation PRs</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>April 27, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>I’m going through our open PRs for swift-corelibs-foundation and merging what I can. I’m sorry that some of them have been outstanding for so long - my time has been consumed with the value types work you recently saw on swift-evolution and a lot of other things.<br></p><p>Most of these need merging now due to changes in the language in the meantime, and I’m doing that where possible. If you have one outstanding and you want to rebase it yourself that will help too.<br></p><p>I want to get us to a point where the only outstanding PRs are ones that are waiting on something like changes in other repos or the grand libdispatch integration.<br></p><p>Thanks,<br>- Tony<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e44d22d5bd41eba71674f52a1b5be5b1?s=50"></div><header><strong>Some feedback / direction on an issue?</strong> from <string>Mark Woollard</string> &lt;mark.woollard at mac.com&gt;<p>November 14, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi<br></p><p>I decided to see if I could contribute and started looking into what seemed it would be a straightforward issue in Foundation framework for Linux. After debugging this led me to conclude it seems to be a more fundamental issue, maybe with the compiler code generation, around exception handling wrt Linux. I’d be interested in some feedback / guidance on this - am happy to take ownership and see where I might get with it but have a lot of learning to do !<br></p><p>The initial issue I looked at was SR-1547 &lt;https://bugs.swift.org/browse/SR-1547&gt; in Foundation but this I determined to be the same issue as SR-585 &lt;https://bugs.swift.org/browse/SR-585&gt;.<br></p><p>I’ve added some comments to these issues relating to my investigation. Anyone have any more insight into this issue or suggestions on where to look next ?<br></p><p>Thanks<br>Mark<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20161114/756ae8fa/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

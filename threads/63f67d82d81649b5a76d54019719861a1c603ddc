@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/953c32c8bab2eb596eb26b0804e3b782?s=50"></div><header><strong>Checking for a specific enum case and value</strong> from <string>Kristof Liliom</string> &lt;macandor.nullbit at gmail.com&gt;<p>December 29, 2015 at 12:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>What is the best way to do a one line check for an enum with a specific inner value? Example:<br></p><p>enum State {<br>	case Running, Stopped(Int32)<br>}<br></p><p>func stoppedSuccessfully(state: State) -&gt; Bool {<br>	return state == .Stopped(0) // So only return true if state is .Stopped and the inner value is 0<br>}<br></p><p>Thank You,<br>Chris<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>Checking for a specific enum case and value</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>December 29, 2015 at 08:00:00am</p></header><div class="content"><p>This is what I would do.<br></p><p>On Tue, Dec 29, 2015, at 06:37 AM, Kristof Liliom via swift-users wrote:<br>&gt; Hi,<br>&gt; <br>&gt; What is the best way to do a one line check for an enum with a specific<br>&gt; inner value? Example:<br>&gt; <br>&gt; enum State {<br>&gt; 	case Running, Stopped(Int32)<br>&gt; }<br>&gt; <br>&gt; func stoppedSuccessfully(state: State) -&gt; Bool {<br>&gt; 	return state == .Stopped(0) // So only return true if state is .Stopped and the inner value is 0<br>&gt; }<br></p><p>func stoppedSuccessfully(state: State) -&gt; Bool {<br>    if case let State.Stopped(value) = state where value == 0 {<br>        return true<br>    } else {<br>        return false<br>    }<br>}<br></p><p>stoppedSuccessfully(.Running) // false<br>stoppedSuccessfully(.Stopped(0)) // true<br>stoppedSuccessfully(.Stopped(100)) // false<br></p><p>&gt; <br>&gt; Thank You,<br>&gt; Chris<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d68c97e8e2f1653b54c24493caf236ae?s=50"></div><header><strong>Checking for a specific enum case and value</strong> from <string>Stephen Celis</string> &lt;stephen.celis at gmail.com&gt;<p>December 29, 2015 at 09:00:00am</p></header><div class="content"><p>&gt; On Dec 29, 2015, at 6:37 AM, Kristof Liliom via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; What is the best way to do a one line check for an enum with a specific inner value?<br></p><p><br>I&#39;m not sure this can be done in one line since it generally requires if- or guard-case-let.<br></p><p>I&#39;d do this two-liner:<br></p><p>    func stoppedSuccessfully(state: State) -&gt; Bool {<br>        guard case let .Stopped(val) = state else { return false }<br>        return val == 0<br>    }<br></p><p>Or:<br></p><p>    func stoppedSuccessfully(state: State) -&gt; Bool {<br>        guard case let .Stopped(val) = state where val == 0 else { return false }<br>        return true<br>    }<br></p><p>Stephen<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Checking for a specific enum case and value</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>December 29, 2015 at 10:00:00am</p></header><div class="content"><p>&gt; On Dec 29, 2015, at 3:37 AM, Kristof Liliom via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; What is the best way to do a one line check for an enum with a specific inner value? Example:<br>&gt; <br>&gt; enum State {<br>&gt; 	case Running, Stopped(Int32)<br>&gt; }<br>&gt; <br>&gt; func stoppedSuccessfully(state: State) -&gt; Bool {<br>&gt; 	return state == .Stopped(0) // So only return true if state is .Stopped and the inner value is 0<br>&gt; }<br></p><p>We don&#39;t yet synthesize an `==` operator for enums when they have associated values. However, you can still use pattern matching with switch or if/guard case:<br></p><p>if case .Stopped(0) = state {<br>  return true<br>} else {<br>  return false<br>}<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

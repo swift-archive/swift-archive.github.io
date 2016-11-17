@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c8f823910f180809a2420a8be5460be3?s=50"></div><header><strong>[Review] SE-0088: Modernize libdispatch for Swift 3 naming conventions</strong> from <string>Dan Appel</string> &lt;dan.appel00 at gmail.com&gt;<p>May 12, 2016 at 08:00:00am</p></header><div class="content"><p>&gt; Hello Swift community,<br>&gt;<br>&gt; The review of &quot;SE-0088: Modernize libdispatch for Swift 3 naming<br>conventions&quot; begins now and runs through May 17. The proposal is available<br>here:<br>&gt;<br>&gt;<br>https://github.com/apple/swift-evolution/blob/master/proposals/0088-libdispatch-for-swift3.md<br>&gt;<br>&gt; Reviews are an important part of the Swift evolution process. All reviews<br>should be sent to the swift-evolution mailing list at<br>&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; or, if you would like to keep your feedback private, directly to the<br>review manager.<br>&gt;<br>&gt; What goes into a review?<br>&gt;<br>&gt; The goal of the review process is to improve the proposal under review<br>through constructive criticism and contribute to the direction of Swift.<br>When writing your review, here are some questions you might want to answer<br>in your review:<br>&gt;<br>&gt; * What is your evaluation of the proposal?<br>&gt; * Is the problem being addressed significant enough to warrant a change<br>to Swift?<br>&gt; * Does this proposal fit well with the feel and direction of Swift?<br>&gt; * If you have used other languages or libraries with a similar feature,<br>how do you feel that this proposal compares to those?<br>&gt; * How much effort did you put into your review? A glance, a quick<br>reading, or an in-depth study?<br>&gt;<br>&gt; More information about the Swift evolution process is available at<br>&gt;<br>&gt; https://github.com/apple/swift-evolution/blob/master/process.md<br>&gt;<br>&gt; Thank you,<br>&gt;<br>&gt; -Chris Lattner<br>&gt; Review Manager<br>&gt;<br>&gt;<br>&gt;<br></p><p>Ok, I have mixed feeling about this proposal.<br></p><p>First, this is a huge breaking change, and it doesn’t really have to be<br>one. The current SPM convention is to prefix C libraries with Lib.<br>Following this convention, Dispatch (the C version) would be renamed to<br>LibDispatch, and this new wrapper library would be called just Dispatch.<br>With this setup, the old C api would still be there (under the module<br>LibDispatch), which makes migration much easier. In the proposal, this<br>issue is not addressed at all and it even says that all code using<br>libdispatch would have to be rewritten. That is not ok.<br></p><p>Another issues is the proposal to &#39;automagically&#39; translate the C api into<br>Swift. There are many libraries right now that wrap the current libdispatch<br>functions and provide a similar api, and I don’t think there’s any reason<br>why this shouldn’t be done the same way. I would also argue that doing this<br>links the Swift language to libdispatch in a way that isn’t necessary. For<br>example, there is a library called Venice<br>&lt;https://github.com/VeniceX/Venice&gt; which provides CSP (go-style<br>concurrency) for Swift by wrapping a fork of the C library libmill, and it<br>doesn’t do any of the proposed magic importing of any sort. I don’t see a<br>reason why libdispatch shouldn’t take the same approach.<br></p><p>Overall, I think the idea is good but some of the details are really<br>lacking. As it stands, I would vote to reject this proposal and request<br>revision, or reject it outright and suggest to use third-party wrappers<br>around libdispatch (which is what the community is currently doing).<br></p><p>Dan Appel<br>-- <br>Dan Appel<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160512/17f99eb1/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

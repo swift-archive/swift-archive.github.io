@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2780c451e84f15d9c629ed71ff1c8195?s=50"></div><header><strong>Array with associatedtype protocol pattern</strong> from <string>4 bottiglie g</string> &lt;4bottiglie at gmail.com&gt;<p>July 13, 2016 at 08:00:00pm</p></header><div class="content"><p>Hi, i have asked the same question :<br>Here: https://forums.developer.apple.com/message/153781#153781 &lt;https://forums.developer.apple.com/message/153781#153781&gt;<br>And here : http://stackoverflow.com/questions/38281800/array-with-associatedtype-protocol &lt;http://stackoverflow.com/questions/38281800/array-with-associatedtype-protocol&gt;<br></p><p>But it seams like swift doesn’t have generic protocols arrays. I am asking here as a last resource if it can be done yet or there is a better design. <br></p><p><br>Regards, <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160713/e7d688e1/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>Array with associatedtype protocol pattern</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>July 14, 2016 at 11:00:00pm</p></header><div class="content"><p>&gt; On Jul 13, 2016, at 11:23 AM, 4 bottiglie g via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi, i have asked the same question :<br>&gt; Here: https://forums.developer.apple.com/message/153781#153781<br>&gt; And here : http://stackoverflow.com/questions/38281800/array-with-associatedtype-protocol<br>&gt; <br>&gt; But it seams like swift doesn’t have generic protocols arrays. I am asking here as a last resource if it can be done yet or there is a better design. <br></p><p>The answer here is the same as the answer you&#39;ve gotten from those other excellent resources.<br></p><p>Here&#39;s the issue: Imagine that Swift supported this feature. You write this line of code:<br></p><p>	let event0 = events[0]<br>	let event1 = events[1]<br>	event0.doSomething(event1.interval)<br></p><p>Is this code valid? Well, who knows? `event0` and `event1` might have different Interval types, or might not.<br></p><p>Java&#39;s type system does not try to protect you from this kind of mistake; Swift&#39;s does. Unfortunately, it&#39;s not yet expressive enough to describe the types involved. Consider this snippet:<br></p><p>	let event = events[0]<br>	let interval = event.interval<br></p><p>What&#39;s the type of `interval`? There&#39;s no way you can know for sure, really. All you can really say is &quot;whatever the `IntervalType` of `event` is&quot;.<br></p><p>There are proposals in the works to actually allow you to say `event.IntervalType` as a type, but unfortunately they won&#39;t make Swift 3. Until that feature is added, you have three options:<br></p><p>1. Fake that intended future Swift feature by writing `AnyInterval` and `AnyEvent` type-erasing wrappers.<br>2. Halfway fake it by writing an `AnyEvent&lt;IntervalType&gt;` type-erasing wrapper.<br>3. Remove the associated type and require that any `Event` work with any `Interval` (or make `Interval` a concrete type).<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>Array with associatedtype protocol pattern</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>July 15, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On 13 Jul 2016, at 20:23, 4 bottiglie g via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi, i have asked the same question :<br>&gt; Here: https://forums.developer.apple.com/message/153781#153781 &lt;https://forums.developer.apple.com/message/153781#153781&gt;<br>&gt; And here : http://stackoverflow.com/questions/38281800/array-with-associatedtype-protocol &lt;http://stackoverflow.com/questions/38281800/array-with-associatedtype-protocol&gt;<br>&gt; <br>&gt; But it seams like swift doesn’t have generic protocols arrays. I am asking here as a last resource if it can be done yet or there is a better design. <br>&gt; <br>&gt; <br>&gt; Regards, <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p><br>I believe it&#39;s on the roadmap, but won’t make Swift 3.<br></p><p>See the Generics Manifesto: https://github.com/apple/swift/blob/master/docs/GenericsManifesto.md<br></p><p>When I read it before, I seem to remember it explicitly called out having an Array of Equatable as an example of something which should be allowed. I can’t see it there now, but I think it’s still the intention that it works some day.<br></p><p>Karl<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160715/cbce9f59/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

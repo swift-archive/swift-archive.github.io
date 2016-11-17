@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/268e1090c88890a4ed2387a4d22c661c?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0089: Replace protocol&lt;P1, P2&gt; syntax with Any&lt;P1, P2&gt;</strong> from <string>J.E. Schotsman</string> &lt;jeschot at xs4all.nl&gt;<p>May 25, 2016 at 11:00:00pm</p></header><div class="content"><p>Maybe we should adopt a Swift specific definition of existential, like<br></p><p>&quot;An existential type is a type derived from Any with constraints of  <br>the kinds listed below:&quot;<br>...<br>...<br>...<br></p><p>For example, the 5 kinds of constraint proposed by Austin Zheng.<br>Not very academic, but might save some discussion.<br></p><p>That would include the existing Protocol as type (no associated type  <br>or Self requirements).<br>Also Any&lt;ClassName&gt; which equals the class (which hides type  <br>information through automatic upcasting of subclass instances).<br></p><p>A narrower definition might require protocols to be involved somehow  <br>and the resulting type must be new (not equivalent to a class or  <br>struct or enum).<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0089: Replace protocol&lt;P1, P2&gt; syntax with Any&lt;P1, P2&gt;</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>May 26, 2016 at 11:00:00am</p></header><div class="content"><p>There is great feedback going on here. I&#39;d like to consider a few things here: <br></p><p>What if we name the whole thing `Existential&lt;&gt;` to sort out all confusion? This would allow `typealias Any = Existential&lt;&gt;`. <br>Should `protocol A: Any&lt;class&gt;` replace `protocol A: class`? Or at least deprecate it. <br>Do we need `typealias AnyClass = Any&lt;class&gt;` or do we want to use any class requirement existential directly? If second, we will need to allow direct existential usage on protocols (right now we only can use typealiases as a worksround).<br></p><p><br>-- <br>Adrian Zubarev<br>Sent with Airmail <br></p><p>Am 25. Mai 2016 um 23:26:25, Jan E. Schotsman via swift-evolution (swift-evolution at swift.org(mailto:swift-evolution at swift.org)) schrieb:<br></p><p>&gt; <br>&gt; Maybe we should adopt a Swift specific definition of existential, like<br>&gt; <br>&gt; &quot;An existential type is a type derived from Any with constraints of<br>&gt; the kinds listed below:&quot;<br>&gt; ...<br>&gt; ...<br>&gt; ...<br>&gt; <br>&gt; For example, the 5 kinds of constraint proposed by Austin Zheng.<br>&gt; Not very academic, but might save some discussion.<br>&gt; <br>&gt; That would include the existing Protocol as type (no associated type<br>&gt; or Self requirements).<br>&gt; Also Any&lt;ClassName&gt; which equals the class (which hides type<br>&gt; information through automatic upcasting of subclass instances).<br>&gt; <br>&gt; A narrower definition might require protocols to be involved somehow<br>&gt; and the resulting type must be new (not equivalent to a class or<br>&gt; struct or enum).<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160526/f3705056/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

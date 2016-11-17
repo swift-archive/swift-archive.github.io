@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b48b19073a969cdbc06e3a787d470e14?s=50"></div><header><strong>Using xcodebuild with Swift in a loop will raise a &quot;Cannot determine the current working directory&quot; error</strong> from <string>Tobias Scholze</string> &lt;tobias.scholze at gmail.com&gt;<p>December 14, 2015 at 11:00:00am</p></header><div class="content"><p>Hi folks,<br>great to see such an active and helpful community! I don&#39;t know if my issue<br>fits the requirements for this mailling list but I hope that you may help<br>me.<br></p><p>I&#39;m building a small script to run &quot;xcodebuild&quot; with different settings.<br>That&#39;s why I&#39;m using a loop to iterate my device settings.<br></p><p>Everything works fine as long as I have only one item in my list. If I have<br>two, the first build runs successful but the second, third, etc will fail<br>with the error &quot;Cannot determine the current working directory&quot;.<br></p><p>That is very confusing. Thanks for your help.<br></p><p>A short snippet of the bash script:<br></p><p>    for DEVICE in ${DEVICE_LIST[*]}<br>    do<br>        # DEVICE =&gt; &#39;iPhone 5&#39; or &#39;iPhone 6&#39;<br>        # SCHEME_NAME =&gt; &#39;myXcodeSchemeName&#39;<br>        xcodebuild test -scheme $SCHEME_NAME -destination &quot;platform=iOS<br>Simulator,name=${IDENTIFIER},OS=9.1&quot; -resultBundlePath $OUTPUT_WORKING_DIR<br>    done<br></p><p>I already ask this question in stackoverflow and in the offical Apple<br>developer forum. There were no answers until now.<br></p><p>Have a wonderful week,<br></p><p>Kind regards, Tobi<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151214/5c5864ac/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

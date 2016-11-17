@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f38cb038c3d9ae705c4db3b5b5272906?s=50"></div><header><strong>Web browser extension for SR-nnn links?</strong> from <string>Greg Parker</string> &lt;gparker at apple.com&gt;<p>March 28, 2016 at 03:00:00pm</p></header><div class="content"><p>Is there a web browser extension developer in the house? I want a Safari extension that transforms SR-nnn text into links to https://bugs.swift.org/browse/SR-nnn .<br></p><p><br>-- <br>Greg Parker     gparker at apple.com     Runtime Wrangler<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6ab7ae85b84ebb323fab427b11500742?s=50"></div><header><strong>Web browser extension for SR-nnn links?</strong> from <string>Keith Smiley</string> &lt;keithbsmiley at gmail.com&gt;<p>March 28, 2016 at 05:00:00pm</p></header><div class="content"><p>For those of you using mutt, here&#39;s a quick script you can use in a macro for<br>this.<br></p><p>cat \<br>  | sed -E &quot;s=[[:space:]]([Ss][Rr]-[[:digit:]])= https://bugs.swift.org/browse/\1=g&quot; \<br>  | grep &quot;bugs.swift.org&quot; \<br>  | urlview<br></p><p><br>--<br>Keith Smiley<br></p><p>On 03/28, Greg Parker via swift-dev wrote:<br>&gt; Is there a web browser extension developer in the house? I want a Safari extension that transforms SR-nnn text into links to https://bugs.swift.org/browse/SR-nnn .<br>&gt;<br>&gt;<br>&gt; --<br>&gt; Greg Parker     gparker at apple.com     Runtime Wrangler<br>&gt;<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: signature.asc<br>Type: application/pgp-signature<br>Size: 819 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160328/ff08312f/attachment.sig&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/04a3fc14ec0008acf8d406c93e23c3ae?s=50"></div><header><strong>Web browser extension for SR-nnn links?</strong> from <string>Jesse Rusak</string> &lt;me at jesserusak.com&gt;<p>April  3, 2016 at 12:00:00pm</p></header><div class="content"><p>I did a pretty dumb version of this if you&#39;d like to try it out. It adds a clickable icon after the text to make it clear what’s going on. https://github.com/jder/swift-bugs &lt;https://github.com/jder/swift-bugs&gt; <br></p><p>Download link is here: https://github.com/jder/swift-bugs/releases/download/v1.0-beta.1/SwiftBugs.safariextz &lt;https://github.com/jder/swift-bugs/releases/download/v1.0-beta.1/SwiftBugs.safariextz&gt;<br></p><p>- Jesse<br></p><p>&gt; On Mar 28, 2016, at 6:42 PM, Greg Parker via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Is there a web browser extension developer in the house? I want a Safari extension that transforms SR-nnn text into links to https://bugs.swift.org/browse/SR-nnn .<br>&gt; <br>&gt; <br>&gt; -- <br>&gt; Greg Parker     gparker at apple.com     Runtime Wrangler<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160403/a4f4c9cc/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

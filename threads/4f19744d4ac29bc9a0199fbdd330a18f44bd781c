@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7abf2ce34651dd5e97cd97b16ce21bae?s=50"></div><header><strong>asyncAfter(deadline: ...)</strong> from <string>Guillaume Lessard</string> &lt;glessard at tffenterprises.com&gt;<p>July 27, 2016 at 02:00:00am</p></header><div class="content"><p>Hello,<br></p><p>The newer version of the libdispatch overlay (as of 8ac413a) looks good: thanks for your work Matt!<br></p><p>It replaced async(when: ) with asyncAfter(deadline: ); however dictionaries say:<br></p><p>deadline |ˈdedˌlīn| <br>noun<br>1 the latest time or date by which something should be completed<br></p><p>dispatch_async’s timestamp is the *earliest* time at which work can be *initiated*, so “deadline” is completely backwards.<br></p><p>If a label is necessary, “time” would seem just fine, given the new name of the function: asyncAfter(time: ).<br>Personally, I don’t think a label is necessary anymore, since the first parameter of asyncAfter is a timestamp type.<br></p><p>Cheers,<br>Guillaume Lessard<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>asyncAfter(deadline: ...)</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>July 27, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; On 27 Jul 2016, at 10:23, Guillaume Lessard via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello,<br>&gt; <br>&gt; The newer version of the libdispatch overlay (as of 8ac413a) looks good: thanks for your work Matt!<br>&gt; <br>&gt; It replaced async(when: ) with asyncAfter(deadline: ); however dictionaries say:<br>&gt; <br>&gt; deadline |ˈdedˌlīn| <br>&gt; noun<br>&gt; 1 the latest time or date by which something should be completed<br>&gt; <br>&gt; dispatch_async’s timestamp is the *earliest* time at which work can be *initiated*, so “deadline” is completely backwards.<br>&gt; <br>&gt; If a label is necessary, “time” would seem just fine, given the new name of the function: asyncAfter(time: ).<br>&gt; Personally, I don’t think a label is necessary anymore, since the first parameter of asyncAfter is a timestamp type.<br>&gt; <br>&gt; Cheers,<br>&gt; Guillaume Lessard<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>+1<br></p><p>Have been saying this for a while. As have many others sporadically on here.<br></p><p>You are correct that the word “deadline” is the exact opposite of what this parameter means. It’s one of several problems with that particular function, but I got the impression the dispatch team really didn’t take kindly to my input last time and were resolute on their internally-decided name (despite the glaring flaw). So don’t expect anything to happen about it.<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2ba6724eff46a1732de41ce919882fb1?s=50"></div><header><strong>Broken development snapshot</strong> from <string>Mikio Takeuchi</string> &lt;mikio.takeuchi at gmail.com&gt;<p>May 11, 2016 at 01:00:00pm</p></header><div class="content"><p>It looks like the current (May 9) snapshot of master for Xcode with symbols<br>is broken.<br>Someone, please upload the right one.<br></p><p>thanks,<br>-- Mikio<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160511/b841f3d4/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>Broken development snapshot</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>May 11, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi Mikio, <br></p><p>This issue has been resolved, please re-download the symbols pkg. <br>https://bugs.swift.org/browse/SR-1460<br></p><p>Thanks, <br>Mishal Shah<br>&gt; On May 10, 2016, at 9:07 PM, Mikio Takeuchi via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; It looks like the current (May 9) snapshot of master for Xcode with symbols is broken.<br>&gt; Someone, please upload the right one.<br>&gt; <br>&gt; thanks,<br>&gt; -- Mikio<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

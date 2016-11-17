@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9ebd4f96d72358cfa22f7b3a92d547f4?s=50"></div><header><strong>Specify type of a delegate which conforms to a protocol</strong> from <string>Team AOL</string> &lt;alexey.demedetskiy at teamaol.com&gt;<p>February 12, 2016 at 12:00:00am</p></header><div class="content"><p>As alternative to a protocol solution, you can use value type wrapper:<br></p><p>struct Delegate&lt;T where T:UIViewController, T:UITableViewDelegate&gt; {<br>    let value: T<br>}<br></p><p>class MyController : UIViewController, UITableViewDelegate {}<br>class WrongController : UIViewController {}<br></p><p>let delegate = Delegate(value: MyController())<br></p><p>//  error: generic parameter &#39;T&#39; could not be inferred<br>let delegate = Delegate(value: WrongController())<br></p><p>- Alexey Demedetskiy<br></p><p>&gt; Hi All,<br>&gt; I used to do this in Obj-C but I&#39;m unable to do this in swift<br>&gt; <br>&gt; *UIViewController&lt;MyProtocol&gt;*delegate;*<br>&gt; <br>&gt; I posted this question on dev forums but didn&#39;t get the solution and<br>&gt; finally I&#39;m reporting here so that It can be added as a features in the<br>&gt; coming releases.<br>&gt; <br>&gt; Thanks<br>&gt; <br>&gt; Rathore<br>&gt; <br>&gt; <br>&gt; <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160212/3daca5e7/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

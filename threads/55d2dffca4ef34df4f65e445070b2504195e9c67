@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>dispatch concurrent map: is this right?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 30, 2016 at 09:00:00pm</p></header><div class="content"><p>on Sun Oct 30 2016, Dave Abrahams &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt;&gt; I quite like the API as an extension on Range. I think it would be a<br>&gt;&gt; nice addition to Dispatch (once we start allowing additive proposals):<br>&gt;&gt;<br>&gt;&gt; extension Range where Bound : Strideable, Bound.Stride : SignedInteger {<br>&gt;&gt;<br>&gt;&gt;   func concurrentMap&lt;T&gt;(_ transform: (Bound) -&gt; T) -&gt; [T] {<br>&gt;&gt;     let n        = numericCast(count) as Int<br>&gt;&gt;     let buffer = UnsafeMutablePointer&lt;T&gt;.allocate(capacity: n)<br>&gt;&gt;<br>&gt;&gt;     DispatchQueue.concurrentPerform(iterations: n) {<br>&gt;&gt;       (buffer + $0).initialize(to: transform(lowerBound + numericCast($0)))<br>&gt;&gt;     }<br>&gt;&gt;<br>&gt;&gt;     // Unfortunately, the buffer is copied when making it an Array&lt;T&gt;.<br>&gt;&gt;     defer { buffer.deallocate(capacity: n) }<br>&gt;&gt;     return Array(UnsafeMutableBufferPointer&lt;T&gt;(start: buffer, count: n))<br>&gt;&gt;   }<br>&gt;&gt; }<br>&gt;&gt;<br>&gt;&gt; extension Collection {<br>&gt;&gt;   func concurrentMap&lt;T&gt;(_ transform: (Iterator.Element)-&gt;T) -&gt; [T] {<br>&gt;&gt;<br>&gt;&gt;     // ‘as Range’ because CountableRange is a collection, causing the function to be recursive.<br>&gt;&gt;     return ((0..&lt;numericCast(count)) as Range).concurrentMap {<br>&gt;&gt;       transform(self[index(startIndex, offsetBy: numericCast($0))])<br>&gt;&gt;     }<br>&gt;&gt;   }<br>&gt;&gt; }<br>&gt;<br>&gt; I see the beauty in what you&#39;re doing here, but I don&#39;t see any<br>&gt; advantage to it for users.  Now Range (which will be collapsed with<br>&gt; CountableRange in Swift 4) will have two overloads of concurrentMap.  In<br>&gt; general, avoidable overloads are bad for the user experience.<br></p><p>Oh, and I should add, a suite of parallel algorithms would be great, but<br>it should be implemented similarly to lazy, so instead of <br></p><p>   x.concurrentMap { ... }.concurrentFilter { ... }<br></p><p>you&#39;d write<br></p><p>   x.parallel.map { ... }.filter { ... }<br></p><p>Cheers,<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

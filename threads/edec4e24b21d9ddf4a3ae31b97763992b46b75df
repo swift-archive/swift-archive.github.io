@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/886f7902c986a59d5cc184425d513c36?s=50"></div><header><strong>Properties with parameters</strong> from <string>Tim Vermeulen</string> &lt;tvermeulen at me.com&gt;<p>April 24, 2016 at 05:00:00pm</p></header><div class="content"><p>&gt; Tim Vermeulen via swift-evolution&lt;swift-evolution at ...&gt;writes:<br>&gt; <br>&gt; &gt; Properties are great. They allow us to write the more naturally looking<br>&gt; &gt; <br>&gt; &gt; myButton.hidden = true<br>&gt; &gt; <br>&gt; &gt; instead of<br>&gt; &gt; <br>&gt; &gt; myButton.setHidden(true)<br>&gt; &gt; <br>&gt; &gt; However, they don&#39;t take any parameters. That’s why we still have to write<br>&gt; &gt; <br>&gt; &gt; myButton.setImage(myImage, forState: .Normal)<br>&gt; &gt; <br>&gt; &gt; instead of<br>&gt; &gt; <br>&gt; &gt; myButton.imageForState(.Normal) = myImage<br>&gt; &gt; <br>&gt; &gt; The syntax to write such a function would be pretty straight-forward:<br>&gt; &gt; <br>&gt; &gt; var imageForState(state: UIControlState): UIImage? {<br>&gt; &gt; get { … }<br>&gt; &gt; set { … }<br>&gt; &gt; }<br>&gt; Alternatively, in a Swift 2.2 overlay:<br>&gt; <br>&gt; public extension UIButton {<br>&gt; @nonobjc public subscript(imageForState state: UIControlState) -&gt;UIImage? {<br>&gt; get {<br>&gt; return imageForState(state)<br>&gt; }<br>&gt; set {<br>&gt; setImage(newValue, forState: state)<br>&gt; }<br>&gt; }<br>&gt; }<br>&gt; <br>&gt; myButton[imageForState: .Normal] = myImage<br>&gt; <br>&gt; Apparently, C#&#39;s &quot;indexed properties&quot; were rejected by the Swift design team:<br>&gt; <br>&gt; &lt;https://github.com/apple/swift/blob/master/docs/proposals/Accessors.rst&gt;<br>&gt; <br>&gt; -- Ben<br>&gt; <br>&gt; <br>&gt; <br></p><p>You can indeed do all those things with subscripts, but I think the function syntax would be more readable, especially in case of more than one parameter.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

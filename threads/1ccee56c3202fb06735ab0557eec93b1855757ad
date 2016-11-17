@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2679e7a28cb46e207a562ad4e7fc45fc?s=50"></div><header><strong>Should we rename &quot;class&quot; when referring to protocol conformance?</strong> from <string>James F</string> &lt;conductator at ntlworld.com&gt;<p>May  3, 2016 at 10:00:00pm</p></header><div class="content"><p>An AnyValue protocol seems long overdue. I&#39;m not sure how useful AnyEnum would be, though I support the idea since it could become useful in the future.<br></p><p>------------ Begin Message ------------ <br>Group: gmane.comp.lang.swift.evolution <br>MsgID: &lt;etPan.5728ea0f.6ac6505c.f915 at DevAndArtist.fritz.box&gt; <br></p><p>I’d love to see Swift go in this direction with protocols:<br></p><p>                   +-------+<br>                   |  Any  |<br>                   +---+---+<br>                       |<br>         +-------------+-------------+<br>         |                           |<br>  +------+-------+             +-----+----+<br>  | AnyReference |             | AnyValue |<br>  +------+-------+             +-----+----+<br>         |                           |<br>+--------+---------+  ....................................<br>| AnyObject (ObjC) |  : Optionally Swift could also have :<br>+------------------+  :              |                   :<br>                      :      +-------+--------+          :<br>                      :      |                |          :<br>                      : +----+----+     +-----+-----+    :<br>                      : | AnyEnum |     | AnyStruct |    :<br>                      : +----+----+     +-----+-----+    :<br>                      ....................................<br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br></p><p>Am 3. Mai 2016 bei 18:42:15, Adrian Zubarev via swift-evolution (swift-evolution-m3FHrko0VLzYtjvyW6yDsg at public.gmane.org) schrieb:<br></p><p>+1 Yes please, get rid of the `class` keyword from protocols already and replace it with better implicit  protocols.<br></p><p>I posted the idea two weeks ago, but no one answered to it: https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160418/015568.html<br></p><p>Replacing `class` with something like `protocol AnyReference` is the first step to add a few more implicit protocols like `AnyValue` to Swift. We could build value or reference type specific libraries and overload correctly.<br></p><p>-- <br>Adrian Zubarev<br>Am 2. Mai 2016 um 15:55:15, David Sweeris via swift-evolution (swift-evolution-m3FHrko0VLzYtjvyW6yDsg at public.gmane.org) schrieb:<br></p><p>I was just thinking that:<br>protocol Foo : reference {}<br>might be more to the point than:<br>protocol Foo : class {}<br></p><p>I know that it’s currently a moot point because classes are the only* reference-semantics type of type in Swift, but it’s conceivable that there might some day be others. Anyway, I’m not saying it’s a big deal or anything, I’m just trying to think of any source-breaking changes we might want to make before Swift 3 drops, and this seems like an easy one.<br></p><p>- Dave Sweeris<br></p><p>* I’m not actually sure this is true. I have a very vague recollection about some protocols getting reference semantics in certain circumstances, but the memory is so hazy I’m not sure I trust it. Also I can’t remember if the “indirect” keyword in enums affects the semantics.<br>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution-m3FHrko0VLzYtjvyW6yDsg at public.gmane.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution-m3FHrko0VLzYtjvyW6yDsg at public.gmane.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p><br></p><p>------------- End Message ------------- <br></p><p><br></p><p>From James F<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

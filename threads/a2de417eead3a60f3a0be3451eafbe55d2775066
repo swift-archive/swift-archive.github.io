@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9632e5b06576428d580e66ddb71b74e7?s=50"></div><header><strong>Unicode problem</strong> from <string>Nabeel Imtiaz</string> &lt;nimtiazm at gmail.com&gt;<p>May  8, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I am having problem with emojis’ rendering. Emojis like \u{F3A4} and \u{F3B5} print question mark instead. They begin with number “F”. Whereas the emojis beginning with non-F number render just fine. Is there any way to fix it? <br></p><p>I also noticed that if it make \u{F3A4} to \u{1F3A4} instead, it renders correctly. So I tried the old-school way of traversing the characters and putting 1 before F but I can’t because str.debugDescription.characters only gives me 1 character and nothing to split on. <br></p><p>Any idea what do I do to simply render these emojis?<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160508/a2de5066/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>Unicode problem</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>May  8, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; On May 8, 2016, at 5:27 AM, Nabeel Imtiaz via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I am having problem with emojis’ rendering. Emojis like \u{F3A4} and \u{F3B5} print question mark instead. They begin with number “F”.<br></p><p>Those are not the correct Unicode values. There should be a “1” in front — for example, U+1F3A4 is “🎤”, the microphone emoji. Plain U+F3A4 is part of a private use area, i.e. isn’t a real character.<br></p><p>I’m not sure where you’re getting the emoji codes with the missing “1”. That seems to be the source of the problem.<br></p><p>—Jens<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

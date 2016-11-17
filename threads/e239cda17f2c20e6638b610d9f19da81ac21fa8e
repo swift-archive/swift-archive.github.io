@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f921fa5d507b31ef6984fd3d77ae710c?s=50"></div><header><strong>PVS-Studio static analysis results for the Swift project</strong> from <string>Brian Gesiak</string> &lt;modocache at gmail.com&gt;<p>November  7, 2016 at 04:00:00pm</p></header><div class="content"><p>Hello all,<br></p><p>The latest LLVM Weekly &lt;http://llvmweekly.org/issue/149&gt; featured a blog<br>post by some folks who make a static analyzer named PVS-Studio. They<br>published a blog post &lt;http://www.viva64.com/en/b/0446/&gt; of the errors they<br>encountered in the LLVM project. Although the report contained many false<br>positives &lt;https://twitter.com/chandlerc1024/status/794442485472706563&gt;,<br>some did lead to code improvements.<br></p><p>I tried running the analyzer on the Swift codebase; here are the results:<br>https://gist.github.com/modocache/00eb437ca3cac84960992cdc23fa0f52<br></p><p>It&#39;s a little hard to read, but there are some legitimate issues in the<br>report. For example, line #709 in lib/IDE/TypeReconstruction.cpp returns<br>&#39;false&#39; for a method that has a return type of &#39;size_t&#39;, which is probably<br>incorrect.<br></p><p>If you&#39;re interested in contributing to Swift, why not start by fixing some<br>of these warnings? :)<br></p><p>- Brian Gesiak<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161107/e239fa8e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>PVS-Studio static analysis results for the Swift project</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>November 14, 2016 at 10:00:00pm</p></header><div class="content"><p>Hi Brian,<br></p><p>I know you sent this out 7 days ago, but thanks very much for doing this!<br></p><p>Ted<br></p><p>&gt; On Nov 7, 2016, at 1:56 PM, Brian Gesiak via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello all,<br>&gt; <br>&gt; The latest LLVM Weekly &lt;http://llvmweekly.org/issue/149 &lt;http://llvmweekly.org/issue/149&gt;&gt; featured a blog post by some folks who make a static analyzer named PVS-Studio. They published a blog post &lt;http://www.viva64.com/en/b/0446/ &lt;http://www.viva64.com/en/b/0446/&gt;&gt; of the errors they encountered in the LLVM project. Although the report contained many false positives &lt;https://twitter.com/chandlerc1024/status/794442485472706563 &lt;https://twitter.com/chandlerc1024/status/794442485472706563&gt;&gt;, some did lead to code improvements.<br>&gt; <br>&gt; I tried running the analyzer on the Swift codebase; here are the results: https://gist.github.com/modocache/00eb437ca3cac84960992cdc23fa0f52 &lt;https://gist.github.com/modocache/00eb437ca3cac84960992cdc23fa0f52&gt;<br>&gt; <br>&gt; It&#39;s a little hard to read, but there are some legitimate issues in the report. For example, line #709 in lib/IDE/TypeReconstruction.cpp returns &#39;false&#39; for a method that has a return type of &#39;size_t&#39;, which is probably incorrect.<br>&gt; <br>&gt; If you&#39;re interested in contributing to Swift, why not start by fixing some of these warnings? :)<br>&gt; <br>&gt; - Brian Gesiak<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161114/4a8594e0/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

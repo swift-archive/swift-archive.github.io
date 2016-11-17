@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Chaining struct-mutating funcs</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>August  8, 2016 at 10:00:00am</p></header><div class="content"><p>on Fri Aug 05 2016, Joe Groff &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; Since your backing buffer is copy-on-write, you can do the in-place<br>&gt; mutation optimization in your immutable implementations, something<br>&gt; like this:<br>&gt;<br>&gt; class C {<br>&gt;   var value: Int<br>&gt;   init(value: Int) { self.value = value }<br>&gt; }<br>&gt;<br>&gt; struct S { var c: C }<br>&gt;<br>&gt; func addInts(x: S, y: S) -&gt; S {<br>&gt;   var tmp = x<br>&gt;   // Don&#39;t use x after this point so that it gets forwarded into tmp<br>&gt;   if isKnownUniquelyReferenced(&amp;tmp.c) {<br>&gt;     tmp.c.value += y.c.value<br>&gt;     return tmp<br>&gt;   } else {<br>&gt;     return S(c: C(value: tmp.c.value + y.c.value))<br>&gt;   }<br>&gt; }<br>&gt;<br>&gt; which should let you get similar efficiency to the mutating<br>&gt; formulation while using semantically immutable values.<br></p><p>Yep, that works.  The only other trick I know of is to create a<br>composition of operations that you apply at the end with an operator:<br></p><p>    pixelXes &lt;- multiply(perspectiveCorrections).sin<br>    speeds &lt;- multiply(pixelXes)<br>              .multiply(feetToMeters)<br>              .subtract(cameraSpeed.mean)<br>    let sumSquaredOfResiduals = speeds.sumOfSquares<br></p><p>HTH,<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>multi-line string literals.</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 30, 2016 at 06:00:00pm</p></header><div class="content"><p>on Sat Apr 30 2016, &quot;Ted F.A. van Gaalen via swift-evolution&quot; &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; @Dave  also<br>&gt; what do you think about this? <br>&gt; I am trying to avoid the conclusion that most Swift-evolution<br>&gt; participants are very much FP biased.  is this the case?<br></p><p>I don&#39;t believe so.<br></p><p>&gt; (some have ventilated this before in different tunes) <br>&gt; That wouldn’t be too much of a problem where it not for the (hopefully<br>&gt; wrong) impressions that:<br>&gt;<br>&gt; - Functional Programmers think (like the LISP-ers did in the<br>&gt; seventies) that they are superior and Mathematically Correct, there is<br>&gt; no other way, and therefore all else is hopelessly wrong and should be<br>&gt; recklessly removed (from Swift in this case) like removing language<br>&gt; elements that are not in line with FP?<br></p><p>The things we&#39;ve removed from the language, and the reasons we&#39;ve<br>removed them, don&#39;t have anything to do with FP.  Personally I&#39;m<br>ambivalent about many of the removals, but as I understand the rationale it is<br>mostly about eliminating some error-prone `C&#39; heritage, and that makes<br>sense to me.<br></p><p>&gt; Consider for a moment that Swift-Evolution was OOP-dominated<br>&gt; and therefore happily removing closures/lambdas protocols, <br>&gt; because they have never used it or even do not understand it?<br>&gt; would you accept that?<br>&gt;<br>&gt; (protocols in Swift are cool btw, as for me, <br>&gt; I take the best of both worlds whether FP and/or OOP) <br></p><p>Protocols have nothing in particular to do with FP either.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

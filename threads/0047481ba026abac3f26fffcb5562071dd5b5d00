@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7bb3a38e890215cbaec227c5d26202aa?s=50"></div><header><strong>Using an SPM built module in REPL</strong> from <string>Swift Studies</string> &lt;swiftstudies at icloud.com&gt;<p>March 26, 2016 at 11:00:00am</p></header><div class="content"><p>I have often wanted to quickly test a module I have built in the REPL after building... I can get so far, but then bump up against a problem where it can&#39;t seem to find the right symbols. I&#39;m sure I&#39;m doing something simple wrong but the flow is: <br></p><p>swift build<br></p><p>This correctly builds the module, and I can see .build/debug/PipMath.swiftmodule afterwards<br></p><p>So I try to run the REPL with the new module available for import<br></p><p>swift -I .build/debug<br></p><p>Which works and I can....<br></p><p>  1&gt; import CoreGraphics<br>  2&gt; import PipMath<br>  3&gt; print(random(from:1.0, to:2.0))<br>error: Couldn&#39;t lookup symbols:<br>  __TF7PipMath6randomFT4fromV12CoreGraphics7CGFloat2toS1__S1_<br></p><p>So it very nearly works, but can&#39;t seem to find the symbol. Any ideas what I need to do in addition? It would be very useful for iterative development!<br></p><p>-sstudies<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160326/00475d00/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>Using an SPM built module in REPL</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>March 28, 2016 at 10:00:00am</p></header><div class="content"><p>Possibly a mismatch in the import of the CoreGraphics swift runtime overlay?<br></p><p>Please open a bug with package-manager as the component. https://bugs.swift.org<br></p><p>&gt; On Mar 26, 2016, at 4:37 AM, Swift Studies via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I have often wanted to quickly test a module I have built in the REPL after building... I can get so far, but then bump up against a problem where it can&#39;t seem to find the right symbols. I&#39;m sure I&#39;m doing something simple wrong but the flow is: <br>&gt; <br>&gt; swift build<br>&gt; <br>&gt; This correctly builds the module, and I can see .build/debug/PipMath.swiftmodule afterwards<br>&gt; <br>&gt; So I try to run the REPL with the new module available for import<br>&gt; <br>&gt; swift -I .build/debug<br>&gt; <br>&gt; Which works and I can....<br>&gt; <br>&gt;   1&gt; import CoreGraphics<br>&gt;   2&gt; import PipMath<br>&gt;   3&gt; print(random(from:1.0, to:2.0))<br>&gt; error: Couldn&#39;t lookup symbols:<br>&gt;   __TF7PipMath6randomFT4fromV12CoreGraphics7CGFloat2toS1__S1_<br>&gt; <br>&gt; So it very nearly works, but can&#39;t seem to find the symbol. Any ideas what I need to do in addition? It would be very useful for iterative development!<br>&gt; <br>&gt; -sstudies<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160328/130dcc04/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

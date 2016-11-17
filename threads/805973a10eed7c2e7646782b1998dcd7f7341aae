@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Accepted with modifications] SE-0045: Add scan, prefix(while:), drop(while:), and unfold to the stdlib</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>May  6, 2016 at 06:00:00pm</p></header><div class="content"><p>on Fri May 06 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On May 6, 2016, at 6:27 PM, Dave Abrahams via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     on Thu May 05 2016, Erica Sadun<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;         On May 4, 2016, at 5:50 PM, Chris Lattner via swift-evolution<br>&gt;         &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;         Proposal link:<br>&gt;         https://github.com/apple/swift-evolution/blob/master/proposals/0045-scan-takewhile-dropwhile.md<br>&gt;<br>&gt;         Sequence.prefix(while:) &amp; Sequence.drop(while:) - These are *accepted*<br>&gt;         as<br>&gt;         specified in revision 3 of the proposal.<br>&gt;<br>&gt;         I&#39;m still a little sad we didn&#39;t go for `prefix`/`suffix` or `take`/<br>&gt;         `drop` pairs<br>&gt;         that linguistically matched.<br>&gt;<br>&gt;     I think building an API family around “prefix” and “suffix” that covers<br>&gt;     this and other functionality is a great idea, and would make a great<br>&gt;     proposal**<br>&gt;<br>&gt;     This whole area needs some design love. Among other things,<br>&gt;<br>&gt;     s.prefix(4)<br>&gt;<br>&gt;     should be<br>&gt;<br>&gt;     s.prefix(ofMaxLength: 4)<br>&gt;<br>&gt;     ** though we haven&#39;t been able to completely eliminate the moral<br>&gt;     equivalent of “drop” from the “dropWhile” function, whatever it&#39;s<br>&gt;     eventually called, in any of our experiments<br>&gt;<br>&gt; I&#39;m sure that Kevin or I or some other proposalista could put together a quick<br>&gt; fast-track rename request for<br>&gt;<br>&gt; * suffix(n) -&gt; Self.SubSequence // requires `n &gt;= 0`, `n &lt;= count`<br>&gt; * suffix(maxLength: n) -&gt; Self.SubSequence // requires `n &gt;= 0`<br>&gt; * suffix(while: predicate) -&gt; Self.SubSequence<br>&gt; * prefix(n) -&gt; Self.SubSequence<br>&gt; * prefix(maxLength: n) -&gt; Self.SubSequence<br>&gt; * prefix(while: predicate) -&gt; Self.SubSequence<br></p><p>Not *too* quick, please.  This area needs some thought and attention. :-)<br></p><p>&gt;<br>&gt;<br>&gt;     Nonetheless I&#39;m gratified these are hopping into the language. That<br>&gt;<br>&gt;     said, I&#39;m going to put on my painters cap to consider selecting some<br>&gt;         exterior latex for the feature I was most looking forward to in this<br>&gt;         proposal:<br>&gt;<br>&gt;         Core team writes:<br>&gt;<br>&gt;         unfold(_:applying:) - This addition is *rejected* by the core team as<br>&gt;         written, but deserves more discussion in the community, and potentially<br>&gt;         could be the subject of a future proposal. The core team felt that the<br>&gt;         utility of this operation is high enough to be worth including in the<br>&gt;         standard library, but could not find an acceptable name for it. “unfold”<br>&gt;         is<br>&gt;         problematic, despite its precedence in other language, because Swift<br>&gt;         calls<br>&gt;         the corresponding operation “reduce” and not “fold”. No one could get<br>&gt;         excited about “unreduce”. “iterate” was also considered, but a noun is<br>&gt;         more<br>&gt;         appropriate than an verb in this case. Given the lack of a good name,<br>&gt;         the<br>&gt;         core team preferred to reject to let the community discuss it more.<br>&gt;<br>&gt;         A few thoughts:<br>&gt;<br>&gt;         * I&#39;m not sure why a noun is more appropriate than a verb. Reduce isn&#39;t<br>&gt;         a noun,<br>&gt;         prefix isn&#39;t a noun, drop isn&#39;t a noun. <br>&gt;<br>&gt;     Can&#39;t let that one go by; prefix is definitely a noun :-)<br>&gt;<br>&gt; I knew you&#39;d point that out. It&#39;s not a noun when it&#39;s wearing its &quot;I AM<br>&gt; VERBING&quot; t-shirt.<br></p><p>It only ever wears http://www.memidex.com/shirtfront+insert<br></p><p>&gt; That aside, the prevailing sentiment is to rename reduce to `fold` and partner<br>&gt; it with `unfold`.<br>&gt; (I personally prefer Chris&#39;s `sequence` because I think it better reflects how<br>&gt; more Swift users will<br>&gt; use it (never for;;get; never sur;;render). <br></p><p>That&#39;s not “unfold,” FWIW.<br></p><p>&gt; But I recognize that terms of art have a strength of momentum and<br>&gt; familiarity.)<br>&gt;<br>&gt; -- E<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

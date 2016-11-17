@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6451ee8093c9cedc94f6c813b4dde2c5?s=50"></div><header><strong>Proposal: Allow @available(*, unavailable) methods to block resolving to an inherited protocol method</strong> from <string>Kevin Ballard</string> &lt;kevin at sb.org&gt;<p>December 30, 2015 at 08:00:00pm</p></header><div class="content"><p>Right now, providing a method marked with @available(*, unavailable) doesn&#39;t actually prevent anyone from calling that method if the type in question inherits the same method from any protocol. Instead the unavailable method is ignored. This is in contrast with overriding a method from your superclass, where the @available(*, unavailable) annotation works just fine (as long as you&#39;re invoking the method with the correct compile-time receiver type).<br></p><p>I believe this should be changed such that if the type that declares the @available(*, unavailable) method inherits from a protocol, it blocks the ability to resolve that method to the protocol version. On the other hand, if a class declares an unavailable method, and a subclass conforms to a protocol that provides the method (and the base class does not conform to the protocol), the protocol method should be accessible as it&#39;s not &quot;blocked&quot; by the parent class.<br></p><p>This logic should be the same for methods declared in the protocol as well as methods provided by extensions to the protocol (as long as the extension is visible to the type that declares the @available(*, unavailable) method).<br></p><p>The rationale for doing this is twofold:<br></p><p>1. If a particular implementation of a protocol can&#39;t actually support one of the extension methods, for example an infinite sequence can&#39;t possibly support an eager map() or reduce() (as it would result in an infinite loop), the concrete type could declare the method as @available(*, unavailable, message=&quot;this would loop infinitely, try the lazy version&quot;). Any code that attempts to call the method on the concrete type would then provide a nice compile-time error instead of failing at runtime. Of course, any code that calls the method on a generic type &lt;T: Proto&gt; would not be aware of this, but there&#39;s not much we can do about that.<br></p><p>2. Protocols like LazySequenceType that provide alternate versions of inherited methods may want to mark the inherited method as unavailable. In Swift 2.1, the code `someCol.lazy.filter(pred).first` compiles just fine, but it&#39;s not actually lazy; because SequenceType does not have a property `first`, the call to `.filter(pred)` actually resolves to the eager version inherited from SequenceType. This is likely to be very surprising to users (who may not even be aware of their accidental O(N) code), and so it would make sense for LazySequenceType to mark the inherited eager versions of map/filter/etc as unavailable.<br></p><p>-Kevin Ballard<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

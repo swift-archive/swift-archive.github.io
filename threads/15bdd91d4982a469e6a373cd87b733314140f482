@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Feature proposal: Range operator with step</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  5, 2016 at 01:00:00pm</p></header><div class="content"><p>on Tue Apr 05 2016, Howard Lovatt &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Yes I know what you are saying and I am suggesting changing that so that:<br>&gt;<br>&gt; (0 ... -9) and (0 ..&lt; -10)<br>&gt;<br>&gt; Are both empty ranges rather than errors because they implicitly have a &#39;by&#39; of<br>&gt; 1. <br></p><p>What are the startIndex and endIndex of these ranges when viewed as<br>Collections?  Remember, for an empty collection startIndex == endIndex<br>is an invariant.<br></p><p>&gt;<br>&gt; On Wednesday, 6 April 2016, Xiaodi Wu<br>&gt; &lt;xiaodi.wu at gmail.com&gt; wrote:<br>&gt;<br>&gt;     Howard, the point I am raising is that `0...(-9)` is not valid Swift because<br>&gt;     the first, &quot;lower&quot; bound is enforced to be less than the second, &quot;upper&quot;<br>&gt;     bound.<br>&gt;<br>&gt;     The problem is that with that restriction certain types of half-open<br>&gt;     intervals, namely those where the lower bound is the one being excluded,<br>&gt;     cannot be represented as a Range either currently or in Dave A&#39;s branch.<br>&gt;<br>&gt;     On Tue, Apr 5, 2016 at 3:30 PM Howard Lovatt<br>&gt;     &lt;howard.lovatt at gmail.com&gt; wrote:<br>&gt;<br>&gt;     I much prefer (0 ... -9).by(-1) and (0 ..&lt; -10).by(-1)<br>&gt;<br>&gt;         On Wednesday, 6 April 2016, Dave Abrahams via swift-evolution<br>&gt;         &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;             on Tue Apr 05 2016, Xiaodi Wu &lt;xiaodi.wu-AT-gmail.com&gt; wrote:<br>&gt;<br>&gt;             &gt; On Mon, Apr 4, 2016 at 1:22 PM, Dave Abrahams<br>&gt;             &lt;dabrahams at apple.com&gt; wrote:<br>&gt;             &gt;&gt;<br>&gt;             &gt;&gt; on Sat Apr 02 2016, Xiaodi Wu &lt;xiaodi.wu-AT-gmail.com&gt; wrote:<br>&gt;             &gt;&gt;<br>&gt;             &gt;&gt;&gt; [snip]<br>&gt;             &gt;&gt;&gt;<br>&gt;             &gt;&gt;&gt; Not included:<br>&gt;             &gt;&gt;&gt; 1. I know Ranges are in flux, so I&#39;ve held off on extending<br>&gt;             Range with<br>&gt;             &gt;&gt;&gt; a striding(by:) method in this proof-of-concept.<br>&gt;             &gt;&gt;<br>&gt;             &gt;&gt; They&#39;re not in flux, except for not having been reviewed yet;<br>&gt;             they are<br>&gt;             &gt;&gt; settled in the swift-3-indexing-model branch.<br>&gt;             &gt;<br>&gt;             &gt; Did not know that. Will have to study what&#39;s there in more detail.<br>&gt;             &gt;<br>&gt;             &gt;&gt;&gt; 2. No attempt at the suggested stride(from:to:steps:) quite yet.<br>&gt;             &gt;&gt;<br>&gt;             &gt;&gt; #1 and #2 are mutually exclusive; we prefer #1 as it removes<br>&gt;             questions<br>&gt;             &gt;&gt; about the meaning of &quot;to&quot; or &quot;through.&quot;<br>&gt;             &gt;<br>&gt;             &gt; I wasn&#39;t aware that was the thinking. Limiting strides to<br>&gt;             &gt; `striding(by:)` removes the ability to express `stride(from: 0,<br>&gt;             to:<br>&gt;             &gt; -10, by: -1)`<br>&gt;<br>&gt;             IMO this:<br>&gt;<br>&gt;             (-9...0).reverse()<br>&gt;<br>&gt;             is better than<br>&gt;<br>&gt;             stride(from: 0, to: -10, by: -1)<br>&gt;<br>&gt;             What do you think?<br>&gt;<br>&gt;             --<br>&gt;             Dave<br>&gt;<br>&gt;         _______________________________________________<br>&gt;             swift-evolution mailing list<br>&gt;             swift-evolution at swift.org<br>&gt;             https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;         -- <br>&gt;         -- Howard.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

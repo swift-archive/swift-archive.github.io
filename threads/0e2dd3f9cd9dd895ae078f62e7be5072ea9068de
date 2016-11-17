@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/44330516abe967fb36e6fac4ec419b99?s=50"></div><header><strong>missing SwiftShims when building Swift</strong> from <string>Bryan Chan</string> &lt;bryan.chan at ca.ibm.com&gt;<p>March  2, 2016 at 04:00:00pm</p></header><div class="content"><p>I ran into this error a couple of times when building Swift on X86:<br></p><p>/home/bryanpkc/swift/swift/stdlib/public/core/ArrayBody.swift:18:8: error:<br>opening import file for module &#39;SwiftShims&#39;: No such file or directory<br>import SwiftShims<br>       ^<br>[487/524] Generating UnicodeExtendedGraphemeClusters.cpp from<br>UnicodeExtendedGraphemeClusters.cpp.gyb with ptr size = 8<br>ninja: build stopped: subcommand failed.<br></p><p>My invocation to build is (I am using clang and LLVM trunk):<br></p><p>./utils/build-script -c -r -t -- --reconfigure --use-gold-linker<br></p><p>The last time I saw this, I updated the source and re-ran a clean build,<br>and it actually finished; I couldn&#39;t identify what had changed. But the<br>problem seems to come and go randomly. Has any one seen this, and how can I<br>debug it?<br></p><p>Thanks,<br>Bryan<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160302/0e2d68de/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>missing SwiftShims when building Swift</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>March  2, 2016 at 01:00:00pm</p></header><div class="content"><p>On Wed, Mar 2, 2016 at 1:20 PM, Bryan Chan via swift-dev<br>&lt;swift-dev at swift.org&gt; wrote:<br>&gt; I ran into this error a couple of times when building Swift on X86:<br>&gt;<br>&gt; /home/bryanpkc/swift/swift/stdlib/public/core/ArrayBody.swift:18:8: error:<br>&gt; opening import file for module &#39;SwiftShims&#39;: No such file or directory<br>&gt; import SwiftShims<br></p><p>This is https://bugs.swift.org/browse/SR-23<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/44330516abe967fb36e6fac4ec419b99?s=50"></div><header><strong>missing SwiftShims when building Swift</strong> from <string>Bryan Chan</string> &lt;bryan.chan at ca.ibm.com&gt;<p>March  2, 2016 at 05:00:00pm</p></header><div class="content"><p>Thanks a lot for the quick response! Downgrading libstdc++ to 6.0.19 on my<br>box seems to work around the issue and allow me to get further.<br></p><p>Bryan<br></p><p>Dmitri Gribenko &lt;gribozavr at gmail.com&gt; wrote on 2016-03-02 04:21:30 PM:<br></p><p>&gt; On Wed, Mar 2, 2016 at 1:20 PM, Bryan Chan via swift-dev<br>&gt; &lt;swift-dev at swift.org&gt; wrote:<br>&gt; &gt; I ran into this error a couple of times when building Swift on X86:<br>&gt; &gt;<br>&gt; &gt; /home/bryanpkc/swift/swift/stdlib/public/core/ArrayBody.swift:18:8:<br>error:<br>&gt; &gt; opening import file for module &#39;SwiftShims&#39;: No such file or directory<br>&gt; &gt; import SwiftShims<br>&gt;<br>&gt; This is https://bugs.swift.org/browse/SR-23<br>&gt;<br>&gt; Dmitri<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160302/53d76aa0/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

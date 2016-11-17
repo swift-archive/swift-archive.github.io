@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Comparing POP to OOP</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 25, 2016 at 04:00:00pm</p></header><div class="content"><p>on Sun Feb 14 2016, Jon Hoffman &lt;swift-users-AT-swift.org&gt; wrote:<br></p><p>&gt; Numerous tutorials that I have seen take a very Object-Oriented<br>&gt; approach to the protocol-oriented programming (POP) paradigm.  By this<br>&gt; statement I mean that they tell us that with POP we should begin our<br>&gt; design with the protocol rather than with the superclass as we did<br>&gt; with OOP however the protocol design tends to mirror the superclass<br>&gt; design of OOP.  They also tell us that we should use extensions to add<br>&gt; common functionality to types that conform to a protocol as we did<br>&gt; with superclasses in OOP.  While protocols and protocol extensions are<br>&gt; arguably two of the most important concepts of POP these tutorials<br>&gt; seem to be missing some other very important concepts.<br>&gt;<br>&gt; In this post I would like to compare Protocol-Oriented design to<br>&gt; Object-Oriented design to highlight some of the conceptual<br>&gt; differences.  You can view the blog post here:<br>&gt; http://masteringswift.blogspot.com/2016/02/pop-and-oop.html<br>&gt; &lt;http://masteringswift.blogspot.com/2016/02/pop-and-oop.html&gt;<br></p><p>While I agree that simply translating classes into protocols misses the<br>point, it seems as though your post still only deals with the<br>dynamically-polymorphic half of the protocol world.  I don&#39;t see any<br>generics in there at all, for example.  If you&#39;re really going for a<br>comprehensive view of POP, you need to get into that stuff too.<br></p><p>-- <br>-Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c8bc65b07027beac76b917624be47611?s=50"></div><header><strong>Comparing POP to OOP</strong> from <string>Jon Hoffman</string> &lt;hoffman.jon at gmail.com&gt;<p>March  5, 2016 at 05:00:00pm</p></header><div class="content"><p>&gt; On Feb 25, 2016, at 7:29 PM, Dave Abrahams via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Sun Feb 14 2016, Jon Hoffman &lt;swift-users-AT-swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; Numerous tutorials that I have seen take a very Object-Oriented<br>&gt;&gt; approach to the protocol-oriented programming (POP) paradigm.  By this<br>&gt;&gt; statement I mean that they tell us that with POP we should begin our<br>&gt;&gt; design with the protocol rather than with the superclass as we did<br>&gt;&gt; with OOP however the protocol design tends to mirror the superclass<br>&gt;&gt; design of OOP.  They also tell us that we should use extensions to add<br>&gt;&gt; common functionality to types that conform to a protocol as we did<br>&gt;&gt; with superclasses in OOP.  While protocols and protocol extensions are<br>&gt;&gt; arguably two of the most important concepts of POP these tutorials<br>&gt;&gt; seem to be missing some other very important concepts.<br>&gt;&gt; <br>&gt;&gt; In this post I would like to compare Protocol-Oriented design to<br>&gt;&gt; Object-Oriented design to highlight some of the conceptual<br>&gt;&gt; differences.  You can view the blog post here:<br>&gt;&gt; http://masteringswift.blogspot.com/2016/02/pop-and-oop.html<br>&gt;&gt; &lt;http://masteringswift.blogspot.com/2016/02/pop-and-oop.html&gt;<br>&gt; <br>&gt; While I agree that simply translating classes into protocols misses the<br>&gt; point, it seems as though your post still only deals with the<br>&gt; dynamically-polymorphic half of the protocol world.  I don&#39;t see any<br>&gt; generics in there at all, for example.  If you&#39;re really going for a<br>&gt; comprehensive view of POP, you need to get into that stuff too.<br>&gt; <br>&gt; -- <br>&gt; -Dave<br></p><p>You are correct that POP is about so much more than what was covered in this introductory post.  This post was written to be an introduction to be Protocol-Oriented programming with a comparison to Object-Oriented programming.<br></p><p>POP was introduced to the World less than a year ago.  Over the next few years, as Swift changes and matures; the Protocol-Oriented programming paradigm will mature with it.  Hopefully I can continue to write about these changes as well.<br></p><p>My book does cover POP and the technologies that make up POP more extensively than this post does however I plan on writing several more posts, as time allows with my day job, to expand not only on this post but also on the material in my book. <br></p><p>Jon<br></p><p>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160305/aae8d552/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>[Review] SE-0066: Standardize function type	argument syntax to require parentheses</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>April 27, 2016 at 09:00:00am</p></header><div class="content"><p>• What is your evaluation of the proposal?<br></p><p><br>I am against it. For me requiring parentheses around single arguments is just visual clutter.<br></p><p><br>An alternative for eliminating the ambiguities would be to require parentheses around<br></p><p>- single tuple arguments<br></p><p>- multiple arguments<br></p><p><br></p><p>Int -&gt; Int   // single non-tuple argument, no parentheses required<br></p><p>(Int, Int) -&gt; Int    // multiple arguments, parentheses required<br></p><p>((Int, Int)) -&gt; Int    // single tuple argument, parentheses required<br></p><p><br></p><p>=&gt; No ambiguities anymore.<br></p><p><br></p><p><br></p><p> • Is the problem being addressed significant enough to warrant a change to Swift?<br></p><p><br>The ambiguity should be solved, but I&#39;d prefer an alternative solution (see above).<br></p><p><br></p><p><br> • Does this proposal fit well with the feel and direction of Swift?<br></p><p><br>No, it introduces visual clutter which is IMHO unnecessary. Additionally it creates a slippery slope as there have already been voices to require parentheses around argument lists of closure expressions, just for consistency reasons, although there is not even an ambiguity problem (if parentheses would be prohibited there except for tuples).<br></p><p><br></p><p><br>   • If you have used other languages or libraries with a similar feature, how do you feel that this proposal compares to those?<br></p><p><br>Haskell does not need parentheses at all as all functions there are conceptually one argument functions, so it is not a fair comparison.<br></p><p><br></p><p><br></p><p> • How much effort did you put into your review? A glance, a quick reading, or an in-depth study?<br></p><p><br></p><p>I read the proposal, and followed the discussion.<br></p><p><br>-Thorsten<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160427/285d9693/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

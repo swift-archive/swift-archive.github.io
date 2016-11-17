@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6761b86fcf674411c42ea5d32bbf6e5?s=50"></div><header><strong>A question about @NSCopying</strong> from <string>Pushkar N Kulkarni</string> &lt;pushkar.nk at in.ibm.com&gt;<p>March 18, 2016 at 08:00:00pm</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160318/021fcbef/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>A question about @NSCopying</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>March 18, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Mar 18, 2016, at 1:18 PM, Pushkar N Kulkarni via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I am trying to implement some of the methods and properties in NSOrderedSet. <br>&gt; <br>&gt; The read-only property &quot;reversedOrderedSet&quot; has the @NSCopying attribute according to the NSOrderedSet class reference. <br>&gt; <br>&gt; So, I tried to do this: <br>&gt; @NSCopying public var reversedOrderedSet: NSOrderedSet {<br>&gt; <br>&gt;     return NSOrderedSet.init(array: _orderedStorage.reverse())<br>&gt; <br>&gt; }<br>&gt; <br>&gt; <br>&gt; <br></p><p>swift-corelibs-foundation can’t really implement that in terms of adopting the decorator of @NSCopying because it does not have objc backing.<br></p><p>&gt; The compiler says &quot;@NSCopying requires the property to be mutable&quot;. When inherited by NSMutableOrderedSet, doesn&#39;t this property qualify to be mutable? <br>&gt; <br>&gt; <br>&gt; <br>The mutable state here is a setter not a NSMutableOrderedSet<br></p><p><br>&gt; Does @NSCopying not apply here? Is my understanding of &quot;mutable (stored) property&quot; flawed? Or is there a problem with the implementation?<br>&gt; <br>&gt; <br>&gt; <br>just comment it out and you will be good to go likely.<br></p><p>&gt; Nowhere in Foundation is @NSCopying being used currently. So don&#39;t have a &quot;reference implementation&quot; :)<br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>&gt; Pushkar N Kulkarni,<br>&gt; IBM Runtimes<br>&gt; <br>&gt; Simplicity is prerequisite for reliability - Edsger W. Dijkstra<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160318/a84ce7b8/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

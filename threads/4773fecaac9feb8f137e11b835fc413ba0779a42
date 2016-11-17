@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8083ad16248b8c031cc10d44f47aa442?s=50"></div><header><strong>[Pitch] Self.withoutSpecialization</strong> from <string>T.J. Usiyan</string> &lt;griotspeak at gmail.com&gt;<p>July  1, 2016 at 11:00:00am</p></header><div class="content"><p>## The Issue<br>Given<br>``` swift<br>public protocol Zipper1D : CustomStringConvertible {<br>    associatedtype Element<br>}<br>```<br></p><p>We can almost write a `flatMap`  which keeps the general identity of self<br>and swaps out the Element in the output.<br></p><p>``` swift<br>func flatMap&lt;<br>        NewElement, SegmentOfResult : Collection, Output : Zipper1D where<br>        SegmentOfResult.Iterator.Element == NewElement, Output.Element ==<br>NewElement&gt;<br>        (_ transform: @noescape (Element) throws -&gt; SegmentOfResult)<br>rethrows -&gt; Output<br>```<br></p><p>## The Proposal<br>I propose that we allow `Type.withoutSpecialization`<br></p><p>``` swift<br>func flatMap&lt;<br>        NewElement, SegmentOfResult : Collection, Output : Zipper1D where<br>        SegmentOfResult.Iterator.Element == NewElement, Output.Element ==<br>NewElement, Output.withoutSpecialization == Self.withoutSepcialization&gt;<br>        (_ transform: @noescape (Element) throws -&gt; SegmentOfResult)<br>rethrows -&gt; Output<br>```<br></p><p><br>I recognize that generic protocols are another possible solution to this<br>problem. I am pitching this because of how much closer this idea seems to<br>being realized.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160701/47739a42/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8083ad16248b8c031cc10d44f47aa442?s=50"></div><header><strong>[Pitch] Self.withoutSpecialization</strong> from <string>T.J. Usiyan</string> &lt;griotspeak at gmail.com&gt;<p>July  1, 2016 at 07:00:00pm</p></header><div class="content"><p>Bump<br></p><p>On Fri, Jul 1, 2016 at 11:56 AM, T.J. Usiyan &lt;griotspeak at gmail.com&gt; wrote:<br></p><p>&gt;<br>&gt;<br>&gt; ## The Issue<br>&gt; Given<br>&gt; ``` swift<br>&gt; public protocol Zipper1D : CustomStringConvertible {<br>&gt;     associatedtype Element<br>&gt; }<br>&gt; ```<br>&gt;<br>&gt; We can almost write a `flatMap`  which keeps the general identity of self<br>&gt; and swaps out the Element in the output.<br>&gt;<br>&gt; ``` swift<br>&gt; func flatMap&lt;<br>&gt;         NewElement, SegmentOfResult : Collection, Output : Zipper1D where<br>&gt;         SegmentOfResult.Iterator.Element == NewElement, Output.Element ==<br>&gt; NewElement&gt;<br>&gt;         (_ transform: @noescape (Element) throws -&gt; SegmentOfResult)<br>&gt; rethrows -&gt; Output<br>&gt; ```<br>&gt;<br>&gt; ## The Proposal<br>&gt; I propose that we allow `Type.withoutSpecialization`<br>&gt;<br>&gt; ``` swift<br>&gt; func flatMap&lt;<br>&gt;         NewElement, SegmentOfResult : Collection, Output : Zipper1D where<br>&gt;         SegmentOfResult.Iterator.Element == NewElement, Output.Element ==<br>&gt; NewElement, Output.withoutSpecialization == Self.withoutSepcialization&gt;<br>&gt;         (_ transform: @noescape (Element) throws -&gt; SegmentOfResult)<br>&gt; rethrows -&gt; Output<br>&gt; ```<br>&gt;<br>&gt;<br>&gt; I recognize that generic protocols are another possible solution to this<br>&gt; problem. I am pitching this because of how much closer this idea seems to<br>&gt; being realized.<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160701/6f546dac/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

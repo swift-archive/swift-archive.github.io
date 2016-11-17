@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc2018ce0c170425a51033a54850a538?s=50"></div><header><strong>NSRegularExpression implementation</strong> from <string>Lukas Stabe</string> &lt;ahti333 at gmail.com&gt;<p>January  5, 2016 at 05:00:00am</p></header><div class="content"><p>I have been thinking about trying to work on NSRegularExpression in corelibs-foundation, although I am not yet sure I’ll have time for it.<br></p><p>If I were to attempt it, am I correct in assuming that it should be based on icus (u)regex.h? I have not found any Regex support in CoreFoundation.<br></p><p>— Lukas<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>NSRegularExpression implementation</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>January  5, 2016 at 07:00:00am</p></header><div class="content"><p>NSRegularExpression is backed by ICU’s uregex; there is no regex support in CF however since ICU is a pretty involved C API it would not be un-reasonable to create an accessor API to make certain behaviors easier to deal with in swift.<br></p><p>&gt; On Jan 4, 2016, at 8:58 PM, Lukas Stabe via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I have been thinking about trying to work on NSRegularExpression in corelibs-foundation, although I am not yet sure I’ll have time for it.<br>&gt; <br>&gt; If I were to attempt it, am I correct in assuming that it should be based on icus (u)regex.h? I have not found any Regex support in CoreFoundation.<br>&gt; <br>&gt; — Lukas<br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

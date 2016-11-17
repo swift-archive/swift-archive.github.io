@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Add .order() family of methods to Collection</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 11, 2016 at 01:00:00pm</p></header><div class="content"><p>on Mon Apr 11 2016, Taras Zakharko &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hi, <br>&gt;<br>&gt; I think it depends on how expensive the indexed access is on the collection. I<br>&gt; use it primarily on arrays, where self[i] essentially boils down to a pointer<br>&gt; dereference, so I expect the generated code to be very efficient. Your version<br>&gt; might be faster for collection with expensive element access, but it should be<br>&gt; slower for arrays and the like, as it involves additional intermediate structure<br>&gt; allocations and copies. <br>&gt;<br>&gt; — Taras<br>&gt;<br>&gt;     Just a side note that you could also:<br>&gt;<br>&gt;     extension SequenceType {<br>&gt;     func order(@noescape isOrderedBefore: (Generator.Element, Generator.Element)<br>&gt;     -&gt; Bool) -&gt; [Int] {<br>&gt;     return enumerate().sort{ isOrderedBefore($0.1, $1.1) }.map{ $0.0 }<br>&gt;     }<br>&gt;     }<br>&gt;<br>&gt;     (0...3).reverse().order(&lt;) // [3, 2, 1, 0]<br>&gt;<br>&gt;     This way you can `order` all sequences, and it is more efficient as you<br>&gt;     don’t fetch elements by index inside the `isOrderedBefore`. (You could also<br>&gt;     *not* `map` at the end and return all the elements along with their original<br>&gt;     indexes.)<br>&gt;<br></p><p>This is about as efficient as it gets:<br></p><p>extension CollectionType  {<br>  func order(@noescape isOrderedBefore areInOrder: (Generator.Element, Generator.Element) -&gt; Bool) -&gt; [Index] {<br>    var a = Array(indices)<br>    a.sortInPlace { areInOrder(self[$0], self[$1]) }<br>    return a<br>  }<br>}<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

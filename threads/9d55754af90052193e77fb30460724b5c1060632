@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Rename `index(of:)`and	`index(where:)` to `firstIndex(of:)` and `firstIndex(where:)`	respectively</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July 24, 2016 at 09:00:00pm</p></header><div class="content"><p>Jose Cheyo Jimenez via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; <br>&gt; Is your proposal going to make the swift3 window? <br></p><p>It should.  I&#39;m planning on merging it and launching the review <br>if Chris L doesn&#39;t beat me to it (which I hope he will ;-)).<br></p><p>--<br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Pitch] Rename `index(of:)`and `index(where:)` to `firstIndex(of:)` and `firstIndex(where:)` respectively</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>July 24, 2016 at 10:00:00pm</p></header><div class="content"><p>&gt; On Jul 24, 2016, at 2:41 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Jose Cheyo Jimenez via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; <br>&gt;&gt; <br>&gt;&gt; Is your proposal going to make the swift3 window? <br>&gt; <br>&gt; It should.  I&#39;m planning on merging it and launching the review <br>&gt; if Chris L doesn&#39;t beat me to it (which I hope he will ;-)).<br></p><p>I’m still waiting to be told that it is ready.  You guys appear to still be iterating in the PR.<br></p><p>-Chris<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>[Pitch] Rename `index(of:)`and `index(where:)` to `firstIndex(of:)` and `firstIndex(where:)` respectively</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>July 24, 2016 at 10:00:00pm</p></header><div class="content"><p>The latest comment from Brent on the PR indicated that it&#39;s ready, I<br>believe.<br></p><p>Jacob<br></p><p>On Sun, Jul 24, 2016 at 10:39 PM, Chris Lattner via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; &gt; On Jul 24, 2016, at 2:41 PM, Dave Abrahams via swift-evolution &lt;<br>&gt; swift-evolution at swift.org&gt; wrote:<br>&gt; &gt;<br>&gt; &gt; Jose Cheyo Jimenez via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; &gt;<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; Is your proposal going to make the swift3 window?<br>&gt; &gt;<br>&gt; &gt; It should.  I&#39;m planning on merging it and launching the review<br>&gt; &gt; if Chris L doesn&#39;t beat me to it (which I hope he will ;-)).<br>&gt;<br>&gt; I’m still waiting to be told that it is ready.  You guys appear to still<br>&gt; be iterating in the PR.<br>&gt;<br>&gt; -Chris<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160724/e44b5843/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>[Pitch] Rename `index(of:)`and `index(where:)` to `firstIndex(of:)` and `firstIndex(where:)` respectively</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>July 24, 2016 at 11:00:00pm</p></header><div class="content"><p>&gt; On Jul 24, 2016, at 10:39 PM, Chris Lattner via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; On Jul 24, 2016, at 2:41 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Jose Cheyo Jimenez via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Is your proposal going to make the swift3 window? <br>&gt;&gt; <br>&gt;&gt; It should.  I&#39;m planning on merging it and launching the review <br>&gt;&gt; if Chris L doesn&#39;t beat me to it (which I hope he will ;-)).<br>&gt; <br>&gt; I’m still waiting to be told that it is ready.  You guys appear to still be iterating in the PR.<br>&gt; <br>&gt; -Chris<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>I consider it ready.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

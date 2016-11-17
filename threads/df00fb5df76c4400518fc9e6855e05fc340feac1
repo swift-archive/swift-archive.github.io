@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/fd5bd4566ee1f286333b7dbf2df6fadb?s=50"></div><header><strong>[Accepted] SE-0082: Package Manager Editable Packages</strong> from <string>Anders Bertelrud</string> &lt;anders at apple.com&gt;<p>May 10, 2016 at 11:00:00am</p></header><div class="content"><p>Hello Swift Community,<br></p><p>The review of SE-0082 &quot;Package Manager Editable Packages&quot; for the Swift Package Manager ran from May 4th-9th, 2016.  The proposal has been accepted.<br></p><p>Feedback was very light, but generally positive.  A number of important points were raised and workflow ideas were suggested off-list, but since they refer to additional enhancements, we feel that they are best handled through additional proposals rather than modifications to this one.  Such enhancements include the ability to version multiple packages together, and to allow for a search-path style list of Packages directories.<br></p><p>The accepted proposal can be found at https://github.com/apple/swift-evolution/blob/master/proposals/0082-swiftpm-package-edit.md &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0082-swiftpm-package-edit.md&gt;.<br></p><p>We have not yet scheduled the implementation of this feature.<br></p><p>Thank you all for your comments.<br></p><p>Anders<br>Review Manager<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160510/df00eac1/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

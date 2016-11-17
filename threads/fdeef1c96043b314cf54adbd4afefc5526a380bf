@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2d569462ac92d4619342b1c5ff305043?s=50"></div><header><strong>[apple/swift-evolution] Proposal: Union Type</strong> from <string>frogcjn at 163.com</string> &lt;frogcjn at 163.com&gt;<p>July  1, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; 下面是被转发的邮件：<br>&gt; <br>&gt; 发件人: Cao Jiannan &lt;frogcjn at 163.com&gt;<br>&gt; 主题: 回复： [apple/swift-evolution] Proposal: Union Type (#404)<br>&gt; 日期: 2016年7月1日 GMT+8 21:22:32<br>&gt; 收件人: apple/swift-evolution &lt;reply+001b1f9a1742a747c12a7f51b5245cb71cd8effe20d7236d92cf00000001138e2b4a92a169ce09bc7c95 at reply.github.com&gt;<br>&gt; <br>&gt; what if OneOf&lt;A, A&gt;?<br>&gt; <br>&gt; duplicate variable compile warning?<br>&gt; <br>&gt;&gt; 在 2016年7月1日，20:59，Adrian Z. &lt;notifications at github.com &lt;mailto:notifications at github.com&gt;&gt; 写道：<br>&gt;&gt; <br>&gt;&gt; Just one simple thing to add:<br>&gt;&gt; <br>&gt;&gt; If ...T equals 10 then &lt;...T, U&gt; = 10 + 1 = 11 types<br>&gt;&gt; If ...U equals 17 then &lt;T, ...U&gt; = 1 + 17 = 18 types<br>&gt;&gt; If ...T equals 20 and ...Uequals 22 then &lt;...T, ...U&gt; = 20 + 22 = 42 types<br>&gt;&gt; —<br>&gt;&gt; You are receiving this because you were mentioned.<br>&gt;&gt; Reply to this email directly, view it on GitHub &lt;https://github.com/apple/swift-evolution/pull/404#issuecomment-229940122&gt;, or mute the thread &lt;https://github.com/notifications/unsubscribe/ABsfmhH9yasaWK8vAs17DGXWHV54QuCkks5qRQ9KgaJpZM4JC7-2&gt;.<br>&gt;&gt; <br>&gt; <br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160701/fdee80bf/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/5f8978dbb959b069613e2d027420615f?s=50"></div><header><strong>incremental compilation</strong> from <string>Erik Eckstein</string> &lt;eeckstein at apple.com&gt;<p>January 29, 2016 at 02:00:00pm</p></header><div class="content"><p>I&#39;d like to give some additional information about my recent commit https://github.com/apple/swift/commit/aaaf36e83521f153ba4b0720795efe4980d9b124<br>The idea is to run the swiftc&#39;s llvm-pipeline only if the llvm IR (the output of IRGen) did change. The llvm pipeline takes about 45% to 60% of total compilation time.<br>It&#39;s done by storing a MD5 hash of the IR in the generated object files. Specifically, on macho-o the hash is stored in a special section in the __LLVM segment, which is ignored by the linker.<br></p><p>The intention is to speed-up whole module compilation. We are already running the llvm part multi-threaded, which gives us about 30% speedup with 4 cores. Incremental gives us another 15% to 20%, assuming only a &quot;small&quot; thing changed in one of many files.<br>Of course the incremental speed-up totally depends on what changes are done on the sources. In worst case a small change might trigger a complete re-compilation e.g. if it&#39;s in an often inlined function. <br></p><p>Here are some numbers for three different modules: a 64 file module which quite large files, a 500 file module with smaller files and the Adventure project. The percentages are similar for all three modules. <br></p><p><br></p><p>A nice side-effect of incremental compilation is that it works for every type of compilation which produces an object file (not only for multi-threaded wmo). For example if you make changes in the compiler which do not affect code generation, then a library build (ninja swift-stdlib) is faster by 60%.<br></p><p><br></p><p>One additional note about the hash. It also includes the full compiler version, which contains e.g. the git SHAs (in a development build). So every time the branch head changes, everything is recompiled.<br>The hash also includes some option settings, like -disable-llvm-optzns.<br>There is only one situation where you should think of incremental compilation: if you make some local changes in swiftc&#39;s llvm-pipeline you should explicitly clean all compiled libraries, etc.<br></p><p>Erik<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160129/57f82f6b/attachment.html&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: PastedGraphic-1.png<br>Type: image/png<br>Size: 27184 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160129/57f82f6b/attachment.png&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: PastedGraphic-2.png<br>Type: image/png<br>Size: 25402 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160129/57f82f6b/attachment-0001.png&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: PastedGraphic-3.png<br>Type: image/png<br>Size: 26582 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160129/57f82f6b/attachment-0002.png&gt;<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: PastedGraphic-5.png<br>Type: image/png<br>Size: 21264 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160129/57f82f6b/attachment-0003.png&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

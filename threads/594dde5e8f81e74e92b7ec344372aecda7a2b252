@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2b19ddab2d7de4523412c875c258e278?s=50"></div><header><strong>Xcode crash with swift March 24th toolchain</strong> from <string>Matt Whiteside</string> &lt;mwhiteside.dev at gmail.com&gt;<p>March 26, 2016 at 12:00:00pm</p></header><div class="content"><p>Here is the Xcode project to reproduce the crash:<br></p><p>https://github.com/mattwhiteside/Combinatorics<br></p><p>Attached is the stack trace.<br></p><p>-Matt<br></p><p>-------------- next part --------------<br>An embedded and charset-unspecified text was scrubbed...<br>Name: stacktrace.txt<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160326/594db252/attachment.txt&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Xcode crash with swift March 24th toolchain</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>March 28, 2016 at 10:00:00am</p></header><div class="content"><p>Hi, Matt. Please file a bug report at bugs.swift.org &lt;http://bugs.swift.org/&gt;, or through Apple&#39;s bug reporter system at bugreport.apple.com &lt;http://bugreport.apple.com/&gt;.<br></p><p>Thank you,<br>Jordan<br></p><p>&gt; On Mar 26, 2016, at 12:30, Matt Whiteside via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Here is the Xcode project to reproduce the crash:<br>&gt; <br>&gt; https://github.com/mattwhiteside/Combinatorics<br>&gt; <br>&gt; Attached is the stack trace.<br>&gt; <br>&gt; -Matt<br>&gt; <br>&gt; &lt;stacktrace.txt&gt;_______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160328/01c0ab98/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2b19ddab2d7de4523412c875c258e278?s=50"></div><header><strong>Xcode crash with swift March 24th toolchain</strong> from <string>Matt Whiteside</string> &lt;mwhiteside.dev at gmail.com&gt;<p>March 28, 2016 at 10:00:00am</p></header><div class="content"><p>Ok, bug report filed here: https://bugs.swift.org/browse/SR-1087<br></p><p>-Matt<br></p><p><br>&gt; On Mar 28, 2016, at 10:15, Jordan Rose &lt;jordan_rose at apple.com&gt; wrote:<br>&gt; <br>&gt; Hi, Matt. Please file a bug report at bugs.swift.org &lt;http://bugs.swift.org/&gt;, or through Apple&#39;s bug reporter system at bugreport.apple.com &lt;http://bugreport.apple.com/&gt;.<br>&gt; <br>&gt; Thank you,<br>&gt; Jordan<br>&gt; <br>&gt;&gt; On Mar 26, 2016, at 12:30, Matt Whiteside via swift-users &lt;swift-users at swift.org &lt;mailto:swift-users at swift.org&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Here is the Xcode project to reproduce the crash:<br>&gt;&gt; <br>&gt;&gt; https://github.com/mattwhiteside/Combinatorics &lt;https://github.com/mattwhiteside/Combinatorics&gt;<br>&gt;&gt; <br>&gt;&gt; Attached is the stack trace.<br>&gt;&gt; <br>&gt;&gt; -Matt<br>&gt;&gt; <br>&gt;&gt; &lt;stacktrace.txt&gt;_______________________________________________<br>&gt;&gt; swift-users mailing list<br>&gt;&gt; swift-users at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt; <br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160328/f7053937/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

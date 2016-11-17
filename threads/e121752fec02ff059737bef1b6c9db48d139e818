@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f9e638540251a5a2a70ae516ad544281?s=50"></div><header><strong>Radar and bugs.swift.org</strong> from <string>Frederick Kellison-Linn</string> &lt;fred.kl at me.com&gt;<p>December  9, 2015 at 08:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>All throughout the Swift codebase there references to Radar bugs (just do a search for “rdar&quot; on the repo). As far as I am aware, these are all still private/internal. Is this the case? If so, is there any plan to migrate bugs on Radar to bugs.swift.org &lt;http://bugs.swift.org/&gt;?<br></p><p>FKL<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151209/e121e818/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Radar and bugs.swift.org</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>December  9, 2015 at 05:00:00pm</p></header><div class="content"><p>&gt; On Dec 9, 2015, at 5:21 PM, Frederick Kellison-Linn via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi everyone,<br>&gt; <br>&gt; All throughout the Swift codebase there references to Radar bugs (just do a search for “rdar&quot; on the repo). As far as I am aware, these are all still private/internal. Is this the case?<br></p><p>Yes.<br></p><p>&gt; If so, is there any plan to migrate bugs on Radar to bugs.swift.org &lt;http://bugs.swift.org/&gt;?<br></p><p>Not in general.  They sometimes contain proprietary information from submitters, who never agreed that they be published on swift.org, so we can’t just do a blanket push.  That said, we’ve already moved a number of the issues to Jira (and will probably keep pushing out others) which are general bugs and feature enhancements that can be made less sensitive.<br></p><p>Also, while radar numbers are frequently included in testcases, they are only their to allow book-keeping and do not replace the need to explain why a change is made.  To be more concrete, we don’t consider it to be acceptable for an Apple person to commit a bug saying “this fixes rdar://1234” without explaining what the patch is, what it does, etc.  Also, we generally dislike radar numbers in the source code for the compiler themselves, they should be in testcases only.  I don’t think we’re 100% clean on this though.<br></p><p>As the swift community grows, it is reasonable to expect other organizations with proprietary (or just “different”) bug trackers to contribute to swift.  As they do, it is perfectly reasonable to add their tracking numbers to testcases as well.<br></p><p>-Chris<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151209/1c7c80e9/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

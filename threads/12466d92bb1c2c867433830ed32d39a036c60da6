@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/02043b5490c02e153c75ec51033f9ccb?s=50"></div><header><strong>Use Package Manager for iOS Development</strong> from <string>Marco Betschart</string> &lt;marco at mandelkind.swiss&gt;<p>April 14, 2016 at 01:00:00pm</p></header><div class="content"><p>Dear Swift Users,<br>I’d like to use the Swift Package Manager for my dependency management - regardless of it’s early stage:<br></p><p>Something like having the Swift Package Manager doing all the dependency management work from terminal and using the current Xcode stable release for building an iOS App Store compatible App afterwards (obviously the grabbed dependencies have to support Swift 2.2 Syntax in order for this to work).<br></p><p>Is it possible to do so right now? And If so, how?<br></p><p>mit sonnigen Grüssen<br></p><p>	<br>MARCO<br>kowalski<br></p><p><br>+41 44 341 8000<br>marco at mandelkind.swiss<br></p><p><br>MANDELKIND eG Schweiz<br>Bahnhofstrasse 100<br>CH-8001 Zürich<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160414/12460da6/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>Use Package Manager for iOS Development</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>April 14, 2016 at 01:00:00pm</p></header><div class="content"><p>On Thu, Apr 14, 2016, at 07:54 AM, Marco Betschart via swift-users wrote:<br>&gt;<br>&gt; Dear Swift Users,<br>&gt; I’d like to use the Swift Package Manager for my dependency management<br>&gt; - regardless of it’s early stage:<br>&gt; Something like having the Swift Package Manager doing all the<br>&gt; dependency management work from terminal and using the current Xcode<br>&gt; stable release for building an iOS App Store compatible App afterwards<br>&gt; (obviously the grabbed dependencies have to support Swift 2.2 Syntax<br>&gt; in order for this to work).<br>&gt; Is it possible to do so right now? And If so, how?<br> <br>I doubt Swift 2.2 will allow such a thing to work easily. Mostly because<br>Swift 2.2 doesn&#39;t ship with SwiftPM. Therefore to get SwiftPM working<br>right off the bat extra work is going to be necessary.<br> <br>&gt; mit sonnigen Grüssen<br>&gt;<br></p><p><br>&gt;<br>&gt;<br>&gt; MARCO<br>&gt; *kowalski***<br></p><p><br>&gt;<br>&gt;<br>&gt; +41 44 341 8000<br>&gt; marco at mandelkind.swiss<br>&gt;<br></p><p><br>&gt;<br>&gt;<br>&gt; MANDELKIND eG Schweiz<br>&gt; Bahnhofstrasse 100<br>&gt; CH-8001 Zürich<br>&gt;<br></p><p><br>&gt;<br>&gt;<br>&gt;<br>&gt; _________________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br> <br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160414/a9f70b49/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>Use Package Manager for iOS Development</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>April 15, 2016 at 03:00:00pm</p></header><div class="content"><p>You can use the Swift 3 `swift build` to generate projects for Swift 2.2 use.<br></p><p>SwiftPM generates dylibs, not frameworks (currently), this may make things trickier.<br></p><p>But there shouldn’t be anything stopping you trying to make iOS app against them. I suggest generating a dependencies project, dragging and dropping that project into your App project and then depending against the targets in the generated project.<br></p><p>&gt; On Apr 14, 2016, at 4:54 AM, Marco Betschart via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; Dear Swift Users,<br>&gt; I’d like to use the Swift Package Manager for my dependency management - regardless of it’s early stage:<br>&gt; <br>&gt; Something like having the Swift Package Manager doing all the dependency management work from terminal and using the current Xcode stable release for building an iOS App Store compatible App afterwards (obviously the grabbed dependencies have to support Swift 2.2 Syntax in order for this to work).<br>&gt; <br>&gt; Is it possible to do so right now? And If so, how?<br>&gt; <br>&gt; mit sonnigen Grüssen<br>&gt; <br>&gt; <br>&gt; 	<br>&gt; MARCO<br>&gt; kowalski<br>&gt; <br>&gt; <br>&gt; +41 44 341 8000<br>&gt; marco at mandelkind.swiss &lt;mailto:marco at mandelkind.swiss&gt;<br>&gt; <br>&gt; <br>&gt; MANDELKIND eG Schweiz<br>&gt; Bahnhofstrasse 100<br>&gt; CH-8001 Zürich<br>&gt; <br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160415/a01e7a5b/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>Proposal: Allow Type Annotations on Throws</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>January 21, 2016 at 12:00:00am</p></header><div class="content"><p>I want to bump the old thread<br>&lt;https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151214/003284.html&gt;<br>on &quot;typed throws&quot;.<br></p><p>First of all, I just love the improvement from the caller point of view.<br>The following:<br></p><p>func updateData() throws DataUpdateError -&gt; Data<br></p><p>do {<br>    let updates = try updateData()<br>    doTheUpdate(updates)<br>} catch .DownloadError {<br>    //...<br>} catch .InvalidError {<br>    //...<br>}<br></p><p>Is much better than the following:<br></p><p>func updateData() throws -&gt; Data<br></p><p>do {<br>    let updates = try updateData()<br>    doTheUpdate(updates)<br>} catch DataUpdateError.DownloadError {<br>    //...<br>} catch DataUpdateError.InvalidError {<br>    //...<br>} catch {<br>    fatalError()<br>}<br></p><p>The main arguments for me are:<br>1. It is clear from the function definition, what errors will be thrown<br>2. The IDE also knows the error type and will help me as soon as I type the<br>dot<br>3. No catch-all boilerplate<br></p><p>Many people don&#39;t seem to understand the difference between Swift errors<br>and exceptions, that are like &quot;the current task has failed, period&quot;. Swift<br>errors carry information that is enough to recover from the error close to<br>the throwing call. If it cannot be immediately recovered from, it should be<br>converted to appropriate kind of unchecked exception. That is why it is<br>useful and logical for the calling side to be informed of the whole range<br>of possible errors. In type-safe way, if possible.<br></p><p>Some developer teams already use this paradigm, although the language makes<br>it more difficult currently. It just disciplines error handling.<br></p><p>The difficulties begin at the &quot;throwing side&quot;, where we have all these<br>error conversion issues.<br></p><p>I suggest that regardless of whether we do or do not find a way to resolve<br>those, we should add typed throws to the language. Developers of APIs that<br>use errors and want to simplify life for their users, will be able to do<br>so. If you don&#39;t want to mess with errors in your own code, continue to use<br>untyped &#39;throws&#39;.<br></p><p>That&#39;s my main point. Additionally, I have a couple of (possibly dumb)<br>suggestions for error conversion.<br></p><p>Assume we have &#39;ErrorTwo(errorConversion:ErrorOne)&#39; or other convention for<br>declaring convertion possibility. Then we have the following situation:<br></p><p>func foo() throws ErrorOne<br>func test() throws ErrorTwo {<br>    // how to call foo() ?<br>}<br></p><p>0. Current way (do-catch):<br></p><p>do {<br>    try foo()<br>} catch err as ErrorOne {<br>    throw ErrorTwo(errorConvertion: err)<br>}<br></p><p>Verbose.<br></p><p>1. Implicit error conversions:<br></p><p>try foo()<br></p><p>IMO, they are not as bad as implicit convertions would be in other parts of<br>the language. Just keep in mind that &#39;try&#39; might convert its error type to<br>match &#39;throws&#39; type of the current function.<br></p><p>2. &#39;try as&#39;<br></p><p>try as ErrorTwo foo()<br></p><p>Uses existing keywords, but contains excessive information about the<br>resulting error type. What if that type was long?<br></p><p>3. Add a keyword or attribute for &#39;try&#39; with conversion:<br></p><p>convertingtry foo()<br>converting try foo()<br>@converting try foo()<br></p><p>I prefer the attribute version.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160121/22ffdfa7/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

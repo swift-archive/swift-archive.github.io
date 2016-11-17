@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc045f9bdc3bd1885767f2a2ba8af458?s=50"></div><header><strong>[Completing Generics] Opening existentials</strong> from <string>Jonathan Tang</string> &lt;jonathan.d.tang at gmail.com&gt;<p>March 10, 2016 at 01:00:00am</p></header><div class="content"><p>On Wed, Mar 2, 2016 at 5:22 PM, Douglas Gregor via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; *Opening existentials*<br>&gt;<br>&gt; Generalized existentials as described above will still have trouble with<br>&gt; protocol requirements that involve Self or associated types in function<br>&gt; parameters. For example, let’s try to use Equatable as an existential:<br>&gt;<br>&gt; protocol Equatable {<br>&gt;   func ==(lhs: Self, rhs: Self) -&gt; Bool<br>&gt;   func !=(lhs: Self, rhs: Self) -&gt; Bool<br>&gt; }<br>&gt;<br>&gt; let e1: Equatable = …<br>&gt; let e2: Equatable = …<br>&gt; if e1 == e2 { … } *// error:* e1 and e2 don’t necessarily have the same<br>&gt; dynamic type<br>&gt;<br>&gt;<br>&gt; One explicit way to allow such operations in a type-safe manner is to<br>&gt; introduce an “open existential” operation of some sort, which extracts and<br>&gt; gives a name to the dynamic type stored inside an existential. For example:<br>&gt;<br>&gt;<br>&gt;<br>&gt; if let storedInE1 = e1 openas T {     // T is a the type of storedInE1, a<br>&gt; copy of the value stored in e1<br>&gt;<br>&gt;   if let storedInE2 = e2 as? T {      // is e2 also a T?<br>&gt;<br>&gt;     if storedInE1 == storedInE2 { … } // okay: storedInT1 and storedInE2<br>&gt; are both of type T, which we know is Equatable<br>&gt;<br>&gt;   }<br>&gt;<br>&gt; }<br>&gt;<br>&gt;<br>&gt;<br>&gt;<br>Any chance we could have the as? operator used for opening existentials<br>instead of introducing a new openas one?<br></p><p>My reasoning is that the usage for opening an existential is very similar<br>to the usage for downcasting to a subtype.  In both cases, the initial<br>variable may be one of a large number of possible values, and you are<br>conditionally testing for membership in a subset of those values.  With the<br>downcast, the subset is a subtype.  With the existential, the subset is a<br>single type in the type family.  Indeed, in many cases your &quot;test for a<br>concrete type conforming to a protocol&quot; became a &quot;test for a dynamic type<br>in an existential&quot; because you added an associated type or Self reference<br>to your protocol.  Syntactically, the rest of your program is identical.<br></p><p>I don&#39;t *think* there&#39;s any chance for ambiguity here: right now, you can&#39;t<br>even create a value of type Equatable (since it can only be used as a<br>generic constraint), so these are completely disjoint situations.<br></p><p>It&#39;d also be neat if there was a standard library function for &quot;if two<br>objects are the same type and both equatable, compare with ==.  Otherwise,<br>return false.&quot;  This seems to be by far the most common definition of<br>.equals in languages in languages that let you override it (Java, Python,<br>etc.)  Maybe as a default method on Equatable?<br></p><p>As a side note, will existentials mean that protocols can finally be useful<br>in Sets<br>&lt;http://stackoverflow.com/questions/29278624/pure-swift-set-with-protocol-objects&gt;?<br>Since Set requires that its element be Hashable yet adopting Hashable<br>requires that the protocol can only be used as a generic constraint, you<br>can&#39;t really put a bunch of objects all conforming to a protocol in a Set<br>and do anything useful with them.  This is a really common pattern for eg.<br>having a bunch of objects that all do something and wanting to apply all of<br>their effects.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160310/411ec0dc/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

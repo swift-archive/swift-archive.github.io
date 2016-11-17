@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>Source-breaking proposals?</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>September 25, 2016 at 07:00:00pm</p></header><div class="content"><p>Do I miss something, or proposals with source-breaking changes still can&#39;t<br>be submitted?<br>When will corresponsing guidelines be out? Are there any plans on that<br>matter?<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160925/b1c5e54d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>Source-breaking proposals?</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>September 25, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; On 25 Sep 2016, at 18:38, Anton Zhilin via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Do I miss something, or proposals with source-breaking changes still can&#39;t be submitted?<br>&gt; When will corresponsing guidelines be out? Are there any plans on that matter?<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>I believe the situation is that we’re going to support Swift 3 syntax with a compiler flag, which frees us to make source-breaking changes for Swift 4. <br></p><p>AFAIK, how we support this in the compiler isn’t determined yet.<br></p><p>That’s what I take from Ted’s email: https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160725/025587.html<br></p><p>- Karl<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8e2aa7fd262b7c4b6f53a89a52f527f9?s=50"></div><header><strong>Identity based object hash?</strong> from <string>Travis Griggs</string> &lt;travisgriggs at gmail.com&gt;<p>October  5, 2016 at 09:00:00am</p></header><div class="content"><p>I have a class that I’d rather not have based off of NSObject, but I do want to have identity based equality. I’ve done that as follows:<br></p><p>class Foobar { }<br></p><p>extension Foobar:Equatable { }<br></p><p>func == (a:Foobar, b:Foobar) -&gt; Bool {<br>	return a === b<br>}<br></p><p>What’s less clear to me is how to go about implementing an identity based hash<br></p><p>extension Foobar:Hashable {<br>	var hashValue:Int {<br>		// what magic should happen here?<br>	}<br>}<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>Identity based object hash?</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>October  5, 2016 at 09:00:00am</p></header><div class="content"><p>ObjectIdentifier(self).hashValue is a decent approach; it hashes based upon the pointer address. That is how swift-corelibs-foundation does it for the swift implementation of NSObject: https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSObject.swift#L94<br></p><p>&gt; On Oct 5, 2016, at 9:53 AM, Travis Griggs via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I have a class that I’d rather not have based off of NSObject, but I do want to have identity based equality. I’ve done that as follows:<br>&gt; <br>&gt; class Foobar { }<br>&gt; <br>&gt; extension Foobar:Equatable { }<br>&gt; <br>&gt; func == (a:Foobar, b:Foobar) -&gt; Bool {<br>&gt; 	return a === b<br>&gt; }<br>&gt; <br>&gt; What’s less clear to me is how to go about implementing an identity based hash<br>&gt; <br>&gt; extension Foobar:Hashable {<br>&gt; 	var hashValue:Int {<br>&gt; 		// what magic should happen here?<br>&gt; 	}<br>&gt; }<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

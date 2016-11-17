@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c2605dc1239d9ef4ac4d01f056edcd9f?s=50"></div><header><strong>How to export something similar to an xctoolchain for another platform</strong> from <string>Andrew Hyatt</string> &lt;ahyattdev at icloud.com&gt;<p>May 15, 2016 at 02:00:00pm</p></header><div class="content"><p>Hello swift-dev,<br></p><p>I am cross compiling for iOS. Everything compiles fine, but at the install step things are very broken. <br></p><p>My goal is for /tmp/install/swift to look like an xctoolchain. <br></p><p>The install commands fail to create the necessary directories, and even when I create the directories, all the swift-install-components are never copied over. Ninja also fails if --install-swift is specified after the dash-dash. Also, clang ignores the toolchain prefix and the install prefix. <br></p><p>cp: cannot create regular file &#39;/tmp/install//var/swift/bin/swift-stdlib-tool&#39;: No such file or directory<br></p><p>Here is my preset:<br></p><p>[preset: iphoneos]<br></p><p>release<br>assertions<br></p><p>extra-cmake-options = -DLLVM_ENABLE_BACKTRACES=Off -DSWIFT_BUILD_SOURCEKIT=FALSE<br></p><p>build-subdir = iphoneos<br></p><p>ios<br>tvos<br>watchos<br></p><p>#install-prefix = ~/src/install/swift<br>#install-symroot = ~/src/install/swift-sym<br>install-prefix = /var/swift<br>install-destdir= /tmp/install<br>install-symroot= /tmp/symroot<br>installable-package= /tmp/xcode-root.tar.gz<br></p><p>dash-dash<br></p><p>toolchain-prefix =<br></p><p>swift-install-components = compiler;clang-builtin-headers;stdlib;sdk-overlay;tools<br></p><p>llvm-install-components = libclang;libclang-headers<br>cross-compile-tools-deployment-targets = iphoneos-armv7s<br></p><p><br>Andrew Hyatt<br>ahyattdev at icloud.com<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160515/3bd54616/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

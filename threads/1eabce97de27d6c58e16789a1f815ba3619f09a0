@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/08834a9a77b4aad61edff82992a0a17d?s=50"></div><header><strong>[PITCH] Add Ability To Specify Error Type On Throws</strong> from <string>Mark Robinson</string> &lt;mr16839072 at gmail.com&gt;<p>August 31, 2016 at 08:00:00am</p></header><div class="content"><p>Hello,<br></p><p>Consider the scenario of the vending machine example in the Swift Book:<br></p><p>We have a function that throws errors from a single given ErrorType<br></p><p><br>   1. func vend(itemNamed name: String) throws {<br>   2. guard let item = inventory[name] else {<br>   3. throw VendingMachineError.InvalidSelection<br>   4. }<br>   5.<br>   6. guard item.count &gt; 0 else {<br>   7. throw VendingMachineError.OutOfStock<br>   8. }<br>   9.<br>   10. guard item.price &lt;= coinsDeposited else {<br>   11. throw VendingMachineError.InsufficientFunds(coinsNeeded: item.price<br>   - coinsDeposited)<br>   12. }<br></p><p><br>In this scenario - when we have a function that throws a single type of<br>error - I believe it would be useful to be able to *optionally* specify the<br>type of error thrown from the vend function, so that the code would look<br>like this:<br></p><p><br>   1. func vend(itemNamed name: String) throws VendingMachineError {<br>   2. guard let item = inventory[name] else {<br>   3. throw .InvalidSelection<br>   4. }<br>   5.<br>   6. guard item.count &gt; 0 else {<br>   7. throw .OutOfStock<br>   8. }<br>   9.<br>   10. guard item.price &lt;= coinsDeposited else {<br>   11. throw .InsufficientFunds(coinsNeeded: item.price - coinsDeposited)<br>   12. }<br></p><p><br>The purpose is to just let the compiler know that all errors thrown from<br>this function will be of type VendingMachineError so there&#39;s no longer any<br>need to constantly prefix the enumeration cases with the enumeration type.<br></p><p>This makes the code much cleaner to read and stops repetition of<br>VendingMachineError.<br>In the scenario where there&#39;s multiple types of errors thrown from a<br>function, using throws as we do now without a type would suffice, as in<br>this case it makes sense that the programmer has to tell the compiler what<br>type the Error is via prefixing the enumeration case with the enumeration<br>type.<br></p><p>Cheers,<br>Mark<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160831/1eab09a0/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[PITCH] Add Ability To Specify Error Type On Throws</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>August 31, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; On Aug 30, 2016, at 3:54 PM, Mark Robinson via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello,<br>&gt; <br>&gt; Consider the scenario of the vending machine example in the Swift Book:<br></p><p>Please catch up on the thread earlier this week on this exact topic.<br></p><p>-Chris<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160831/eb594d3d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3f7d9611fc919c98512b779cde637dfc?s=50"></div><header><strong>Mac Toolchain is Unsigned?</strong> from <string>John Lin</string> &lt;johnlinvc at gmail.com&gt;<p>December 29, 2015 at 01:00:00pm</p></header><div class="content"><p>&gt; On 25/12/15 15:00 , swift-users-request at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-users&gt; wrote:<br>&gt; &gt; Date: Fri, 25 Dec 2015 09:43:31 -0800<br>&gt; &gt; From: Dmitri Gribenko &lt;gribozavr at gmail.com &lt;https://lists.swift.org/mailman/listinfo/swift-users&gt;&gt;<br>&gt; &gt; To: swizzlr &lt;me at swizzlr.co &lt;https://lists.swift.org/mailman/listinfo/swift-users&gt;&gt; Cc:<br>&gt; &gt; Message-ID: &lt;CA+Y5xYe001pWgacNRxB9seojwEFcboAsKMDykp8DbN0nH24ypw at mail.gmail.com &lt;https://lists.swift.org/mailman/listinfo/swift-users&gt;&gt;<br>&gt; &gt;&gt; &gt;<br>&gt; &gt;&gt;&gt; While I wait for the rest of the family to arrive and the kids<br>&gt; &gt;&gt;&gt; are slowly going insane staring at presents, I’m doing some Swift<br>&gt; &gt;&gt;&gt; dev. However, I note that the latest Mac snapshot is unsigned –<br>&gt; &gt;&gt;&gt; has it always been this way? The installer displays the lock, but<br>&gt; &gt;&gt;&gt; I have to option-click on the package to actually get it<br>&gt; &gt;&gt;&gt; running.<br>&gt; <br>&gt; &gt; I just checked, it is signed.  Here’s the SHA-1 hash on my end:<br>&gt; &gt; <br>&gt; &gt; 68e2ba878d2c9803bbfda760b24b399e8ada4f79<br>&gt; &gt; swift-2.2-SNAPSHOT-2015-12-22-a-osx.pkg<br>&gt; <br>&gt; FWIW, version 1.1.5 and up of my RB App Checker Lite<br>&gt; (http://brockerhoff.net/RB/AppCheckerLite &lt;http://brockerhoff.net/RB/AppCheckerLite&gt;) now can show signatures for<br>&gt; this type of package, too.<br>&gt; <br>&gt; Enjoy,<br>&gt; <br>I got some issue on verifying the code signing too.<br>I got Xcode 7.2 installed on Yosemite , updated to El Capitan , install toolchain.<br>I got &quot;a sealed resource is missing or invalid” error when launching Xcode with the toolchain.<br>I tried to install toolchain again, not working.<br>Tried to install toolchain with debug symbol, not working.<br>Remove Xcode and install Xcode again, not working.<br>I verified the toolchain with <br>odesign --verify -vvvv -R=&#39;anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.1] exists and (certificate leaf[field.1.2.840.113635.100.6.1.2] exists or certificate leaf[field.1.2.840.113635.100.6.1.4] exists)&#39; swift-2.2-SNAPSHOT-2015-12-22-a.xctoolchain<br>it shows the same &quot;a sealed resource is missing or invalid”<br>At last I sudo remove the whole Library/Developer/Toolchains dir, then reinstall the toolchain, it finally start working.<br></p><p>Best, <br>John<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151229/adaad329/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

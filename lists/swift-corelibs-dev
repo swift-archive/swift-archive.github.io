@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="container">
+  <h2>swift-corelibs-dev</h2>
+  <p>Discussion of the implementation of the Swift core libraries.</p>
+
+  <ul>
+    <li>
+<a href="/threads/bf77519e9c6133f408a9ad94f06dd066878d0f6b">[xctest] Who tests the tests?</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/11304606dc9b7b27eb15f5c3bcd249db619a2615">Bounds Checking on NSArray</a>      &mdash; <em>Daniel Strokis</em>
+    </li>
+    <li>
+<a href="/threads/f5abc9ebb643da2cd618a88199fab7095c833005">Standard logging facility</a>      &mdash; <em>Alexander Kolov</em>
+    </li>
+    <li>
+<a href="/threads/f4f766f61d3af1aea2b3d82f0ca83af822e58f67">Proposal: Swift Open Source Project and Foundation replacements</a>      &mdash; <em>ChanMaxthon</em>
+    </li>
+    <li>
+<a href="/threads/ddaeffbd268e35f21d18be232454293fec4a6517">0.375-0.75 hash table load factor window is way too high</a>      &mdash; <em>Roman Leventov</em>
+    </li>
+    <li>
+<a href="/threads/bb842abecca1a0db50113b8b0c6bc4a08a985e38">Will the Portability Stack include KVC/KVO support ?</a>      &mdash; <em>Benoit Pereira da silva</em>
+    </li>
+    <li>
+<a href="/threads/b395c1611f6b9e36fc336116186f45251a387680">Will the Portability Stack include KVC/KVO support?</a>      &mdash; <em>Benoit Pereira da silva</em>
+    </li>
+    <li>
+<a href="/threads/c15e447b8bc10923cd304ec89afa75e13022f8d1">Third party license compatible libraries for JSON</a>      &mdash; <em>Thomas Catterall</em>
+    </li>
+    <li>
+<a href="/threads/311d3406243b50440d5e8b34b93d42a200d55c3d">New contributions document</a>      &mdash; <em>Tony Parker</em>
+    </li>
+    <li>
+<a href="/threads/4aa058eb247dcfbb25cc8558255d80507f930682">Rules on adding dependencies</a>      &mdash; <em>Tom Leavy</em>
+    </li>
+    <li>
+<a href="/threads/a519855f8f307657f011956dbe8a0274b78c2f04">Third party license compatible libraries for JSON</a>      &mdash; <em>Geordie Jay</em>
+    </li>
+    <li>
+<a href="/threads/0092f01725b0835b59f7ee743c9ccfaecce02994">NSJSONSerialization start</a>      &mdash; <em>David Owens II</em>
+    </li>
+    <li>
+<a href="/threads/dbc515ebf026f07c27ac567ba4aa6f5785da556a">Proposal: add `noescape` attribute to public API (particularly libdispatch)</a>      &mdash; <em>Jacob Bandes-Storch</em>
+    </li>
+    <li>
+<a href="/threads/115ee0b3696758318210166f149746b482f15fd7">Proposal: Conforming NSDate to Comparable</a>      &mdash; <em>Chris Amanse</em>
+    </li>
+    <li>
+<a href="/threads/e52b5591f37cfdbc709312ec4ee3a167bb43154d">[swift-evolution] Proposal: Conforming NSDate to Comparable</a>      &mdash; <em>Zach Waldowski</em>
+    </li>
+    <li>
+<a href="/threads/a93f2d16efbe68225e701a0dd7b9d2ad16be0562">libdispatch roadmap and api addition proposal</a>      &mdash; <em>Joakim Hassila</em>
+    </li>
+    <li>
+<a href="/threads/8e62086a4260464e7ff3416109f68d16d57b3cb4">running Foundation tests</a>      &mdash; <em>Nathan Mann</em>
+    </li>
+    <li>
+<a href="/threads/eb22a29d670495ae3cfe33c38db30553d28a5ce6">NSAttributedString attributesAtIndex return an optional.</a>      &mdash; <em>James Lee</em>
+    </li>
+    <li>
+<a href="/threads/1dea49e7ac6be35a7694e517107c25bf6e5e00e4">Implicit conversions between types will be disabled in Foundation</a>      &mdash; <em>Philippe Hausler</em>
+    </li>
+    <li>
+<a href="/threads/a405b1d0392b2fa19a88cc2a7a4391fbe22c6226">[xctest] Removing outliers from performance tests</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/321524d29445bf7fff0db43d3d465e6ce2b31eeb">NSDate, NSDateFormatter</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/a8c18fe259a17667b38723bec597e4b480588132">libdispatch build issue</a>      &mdash; <em>Dzianis Fedarenka</em>
+    </li>
+    <li>
+<a href="/threads/5fdc6bfc2c76a1b05235dfb0984ae0aedd42551b">NSDecimal &amp; NSDecimalNumber</a>      &mdash; <em>Florian Reinhart</em>
+    </li>
+    <li>
+<a href="/threads/b23b79bf809ca51a7eb17274669e8048b9876bff">NSDate Comparable &amp; Equatable</a>      &mdash; <em>James Lee</em>
+    </li>
+    <li>
+<a href="/threads/e9a7cb41b6daef792f44e5e139a783a897d9ca20">[swift-evolution] Proposal: Conforming NSDate to Comparable</a>      &mdash; <em>James Lee</em>
+    </li>
+    <li>
+<a href="/threads/3644add126ec5ec2af2419b5cc0f64008c06c4ec">Packaging Everything for Testing</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/4eb5e3f487822c8ca295d543ba43779b729af3ef">NSCoding methods</a>      &mdash; <em>Daniel Strokis</em>
+    </li>
+    <li>
+<a href="/threads/4d6ea7a30fe071e66f96f40ef7e19e2e17990b6e">Unresolved enumeration symbols</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/067cc996ed9bb3ea9040249525fa1448c5a82e09">Language or XCTest improvements to allow testing assert/precondition failures</a>      &mdash; <em>David Hart</em>
+    </li>
+    <li>
+<a href="/threads/971025afb67bcdf83bf83db92a4b49f5553af46f">Possible Proposal: Foundation corelibs API change necessary for NSPredicate</a>      &mdash; <em>Kevin Lundberg</em>
+    </li>
+    <li>
+<a href="/threads/a311ce2c5ad6fbe9a1a80f44e0796d2862910d3b">Git history</a>      &mdash; <em>Tom Jowett</em>
+    </li>
+    <li>
+<a href="/threads/c08695fea9d5e7685231c1bec1ff7662d8a78ceb">Upcoming holiday schedule</a>      &mdash; <em>Tony Parker</em>
+    </li>
+    <li>
+<a href="/threads/131350a9b61c6a9cfe9b20fcc09e64ff8672a9c3">Starter bug: Run Foundation tests against OS X Foundation</a>      &mdash; <em>Tony Parker</em>
+    </li>
+    <li>
+<a href="/threads/92d469f385b00d4070063dd52e0dc1d897c9ebde">Proposal: Make NSTask&#39;s standardInput/standardOutput/standardError properties type-safe</a>      &mdash; <em>Dan Stenmark</em>
+    </li>
+    <li>
+<a href="/threads/e8414c344e12b2263d0ba94d3d015d72f8580db3">NSThread properties</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/364fadcc8ebdc0e9c4d7ca3a094290a2e6714e8e">libdispatch epoll port</a>      &mdash; <em>Dzianis Fedarenka</em>
+    </li>
+    <li>
+<a href="/threads/20829d4a21e9b5fa575fba49645fdde7ee407c45">Recommended posix_spawnattr_t for NSTask&#39;s implementation</a>      &mdash; <em>Dan Stenmark</em>
+    </li>
+    <li>
+<a href="/threads/23c6f271a8f12009174aa3084775ee54ab2a289b">NSXMLNode and Friends</a>      &mdash; <em>Robert Stephen Thompson</em>
+    </li>
+    <li>
+<a href="/threads/9e145eaea3471c04047bf83b3db7c1e50cd187d3">Defining _GNU_SOURCE for module-map-included headers</a>      &mdash; <em>Dan Stenmark</em>
+    </li>
+    <li>
+<a href="/threads/eeeeeead24b21b6c74125299708a58c64349f148">NSArray.descriptionWithLocale implementation</a>      &mdash; <em>Eugene Gubin</em>
+    </li>
+    <li>
+<a href="/threads/051b18ef477351de748f9b65cd9e0dfe25c9bb67">Inconsistencies between Foundation APIs</a>      &mdash; <em>Ian Ynda-Hummel</em>
+    </li>
+    <li>
+<a href="/threads/5091e5b1c4f84b0be0b9d57a8a1e161f9bffd6d9">[xctest] Terminology: What to call &quot;swift-corelibs-xctest&quot; and &quot;Apple XCTest&quot;</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/801ff09c506f7ecdb9f6b0c7d9c5119831080fea">Upcoming holiday schedule</a>      &mdash; <em>Tom Jowett</em>
+    </li>
+    <li>
+<a href="/threads/49e6320d8fd23d4c2bf210f4d6b0e798219d7074">getCString question</a>      &mdash; <em>Luke Howard</em>
+    </li>
+    <li>
+<a href="/threads/928244ed2a2d43f753422a2e163015f8ecac2062">Equality, etc in Foundation</a>      &mdash; <em>Luke Howard</em>
+    </li>
+    <li>
+<a href="/threads/98433ee3b38a974ff9db7578d12ad85890b7b903">Testcases for NSDateFormatter</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/7ab2585b93e2855cad426d6962a09ce43868c35c">corelibs-xctest + swiftpm</a>      &mdash; <em>Keith Smiley</em>
+    </li>
+    <li>
+<a href="/threads/62105d08ec42d2478a12dc8091e5268b3b8eb745">#if __CORELIBS_FOUNDATION__</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/1c49f4abf63a64f08e629a28f6b1e52b0c302d9f">bridging (SR-138)</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/7c4889a5c1b115abde95009444506f041350778f">relationship of CF</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/cce3cc6f2c98638fa42c5801aef1ca03ef2c66f1">CChar vs Int8</a>      &mdash; <em>Luke Howard</em>
+    </li>
+    <li>
+<a href="/threads/c2489dc05319acb1fd5753a8eadec815484c68d3">NSURL.fileSystemRepresentation implementation</a>      &mdash; <em>Eugene Gubin</em>
+    </li>
+    <li>
+<a href="/threads/93b5866fa776113f9385b454bef7de2d6349b87e">LazySequenceType: make prefix return a lazy collection</a>      &mdash; <em>Mark Aron Szulyovszky</em>
+    </li>
+    <li>
+<a href="/threads/3c3153b8975dd775fd539bc73070f367edc233f8">NSRegularExpression implementation</a>      &mdash; <em>Lukas Stabe</em>
+    </li>
+    <li>
+<a href="/threads/4ea70504dc2fc8f940d28ce75a30e632fd8de0c3">Locale formatting (UAMeasureFormat)</a>      &mdash; <em>Johan Jensen</em>
+    </li>
+    <li>
+<a href="/threads/3e7a8fe286dcddd38adc82a1fb08d1c759f017be">Proposal: XCTest Support for Swift Error Handling</a>      &mdash; <em>Chris Hanson</em>
+    </li>
+    <li>
+<a href="/threads/a14398b696f21178a4cf4c6e9ff28894177a8473">building libdispatch on El Capitan</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/d6d03db7259702003ed032adbaa804e3e92b79f1">NSURLSession &amp; CFNetwork</a>      &mdash; <em>Antoine Palazzolo</em>
+    </li>
+    <li>
+<a href="/threads/c42da6c56bc3a88bc027f5f45e0558f42bf6cf5c">exit</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/6f50d6c1e814b1268d94ae92e08160bc3035d47f">error: value of type &#39;NSMutableData&#39; has no member &#39;rangeOfData&#39;</a>      &mdash; <em>Rajat Talwar</em>
+    </li>
+    <li>
+<a href="/threads/6e3c1fd8d1a6ef99d9f7a2838b2c153b786dc164">Proposal: A Swift Grand Central Dispatch</a>      &mdash; <em>Chris Amanse</em>
+    </li>
+    <li>
+<a href="/threads/36a47d9e01aaa82bbae03ebe6857e9ff29320150">Update on toolchain and XCTest requirements for Foundation</a>      &mdash; <em>Philippe Hausler</em>
+    </li>
+    <li>
+<a href="/threads/1a0ee0f63a40da8bab01f806b6cfa318074510e1">Missing libdispatch.so</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/b950b017e25706f268f9f87c951155a52847d1b8">libdispatch module on Linux</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/be9e3f8f74233791fcb029ceb022f5f09c18cde6">local copy of formatter properties</a>      &mdash; <em>Will Stanton</em>
+    </li>
+    <li>
+<a href="/threads/0b38bcc2018e9e1c0914635eab32d7184bbd3088">[libdispatch] DISPATCH_QUEUE_SERIAL &amp; DISPATCH_QUEUE_CONCURRENT</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/dce19a521d82fc3392a1874094b7414d55060732">incomplete implementation warning functions</a>      &mdash; <em>Will Stanton</em>
+    </li>
+    <li>
+<a href="/threads/190cddb8639369dd1d0535f884d28f6b6f750a3a">swift-corelibs-libdispatch - Swift binaries?</a>      &mdash; <em>Ricardo N Olivieri</em>
+    </li>
+    <li>
+<a href="/threads/fa3939e02ab682f7b314e4737a19b3e705df4775">Making Foundation classes easier for Swift development</a>      &mdash; <em>Ryan Breaker</em>
+    </li>
+    <li>
+<a href="/threads/249cc9eb3b2f6d34297276dae44802234a1b1bfe">[XCTest] 2016-02-03 snapshot output</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/cc7002b3e6a409ae24f8487ae0e5e216b0afe750">DISPATCH_QUEUE_CONCURRENT / DISPATCH_QUEUE_SERIAL</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/39f287f3eb5b3d3f847387553691d9347598c32e">qos_class_self()</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/042bd71d6cf2abce9612e4438f065e8d44c93a7e">testing guidance</a>      &mdash; <em>Scott Guyer</em>
+    </li>
+    <li>
+<a href="/threads/170305c9d1ab03c15812e9db8cef41dce163e59f">libdispatch import order / nondeterminism</a>      &mdash; <em>Drew Crawford</em>
+    </li>
+    <li>
+<a href="/threads/8bc0f79ff379d60ca11ac02aceff67eab8a4abd5">NSNumber status</a>      &mdash; <em>Ian Partridge</em>
+    </li>
+    <li>
+<a href="/threads/02db81fd2913b56fc576d85632aa8f06dc708dfd">add libdispatch to linux buildbot / development snapshots</a>      &mdash; <em>David P Grove</em>
+    </li>
+    <li>
+<a href="/threads/5f59c6e9ad448e6aca9bef30c047a58c74c890d8">[xctest] Terminology: What to call &quot;swift-corelibs-xctest&quot; and &quot;Apple XCTest&quot;</a>      &mdash; <em>Tony Arnold</em>
+    </li>
+    <li>
+<a href="/threads/1b2ac182519302abaec6e1201b8d976b938ef917">Testcases for NSDateFormatter</a>      &mdash; <em>Taylor Franklin</em>
+    </li>
+    <li>
+<a href="/threads/38a9e6bbb54041e98d3989acbccf68d91719f6b6">libdispatch and swift CI update</a>      &mdash; <em>Mish Awadah</em>
+    </li>
+    <li>
+<a href="/threads/33e7b0ef3945630d26c546a5a831fd77f77309ce">xcodebuild hits &quot;error deserializing an individual record&quot; when building XCTest w/ Foundation</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/a4b275ea075655e43886365c2fcb5dd66f3e4fda">NSRegularExpression.escapedPatternForString() unimplemented on Linux</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/c4e4f4b340bc54abe99864c9100c8b85ae6d48a9">Changing the name of XCTest* to Test*</a>      &mdash; <em>Tony Arnold</em>
+    </li>
+    <li>
+<a href="/threads/539ecf5e01418f1d9fbd77254ab0332262c3ebf5">Building Foundation in Xcode</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/36a4ff44c88116afc441c3f5705c2a6dfaed5f91">NSRegularExpression.firstMatchInString() fails on Linux</a>      &mdash; <em>Mamatha Busi</em>
+    </li>
+    <li>
+<a href="/threads/c406c0467bae33277a22e2bcc2a74801b8249818">False match reported by NSRegularExpression.firstMatchInString()</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/d3f1bc7a695999e5d11128dafb2696aec754349c">NSJSONSerialization and bridging</a>      &mdash; <em>Ian Partridge</em>
+    </li>
+    <li>
+<a href="/threads/69b31eb39abde968690ed097c6e4df08f08caf35">[xctest] New dependency upon corelibs-foundation</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/855ce8074195dfb369c40520cc586b99c159dab6">New TestFoundation failures?</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/04540bfd4f4495069079bf327d916c8c343258a3">difficulty building Foundation from fresh clone following getting started guides.</a>      &mdash; <em>Aaron Crespo</em>
+    </li>
+    <li>
+<a href="/threads/20950ab28ae380c1d48918f5ea5b7691d310cb4d">NSURLSession &amp; libcurl</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/6c4d2b701e824629191e652947a10ad06d14f4fe">KVC dependent classes</a>      &mdash; <em>David Hart</em>
+    </li>
+    <li>
+<a href="/threads/4347df5faa2e2e94475f57be6c79d2571a58c880">Internal Tests</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/76b8576bd823cc6c0fa9a9c6f9939348d0bbd7eb">Cannot call CFStreamCreatePairWithSocket on Linux</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/f6a2f6290e8776b7810f7acc7ae4d3d225a99008">Wrong type in NSHTTPURLResponse</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/26a34fefa7546a65343e662685b2b3e81d628813">NSURLRequest — missing attributes</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/077cc7d728bb80d6d458348e5368bba626514d13">non-inherited init</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/709c743f4eba3ed0ff2444f8c9f22518f80576a7">NSHTTPURLResponse.localizedStringForStatusCode()</a>      &mdash; <em>Ian Partridge</em>
+    </li>
+    <li>
+<a href="/threads/021fdaae7cc361e2d0544ab3ad97898bfd84cbef">A question about @NSCopying</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/72a6d439c56ccc21156211335d4a9a1e9b23ef11">NSOperationQueue and friends</a>      &mdash; <em>Philippe Hausler</em>
+    </li>
+    <li>
+<a href="/threads/8f78829ced65ef32040aa5354fd946de800bac1e">NSURL getResourceValue</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/1755af9a3a378cb72908627a583a8614f6338955">dispatch_data_t and NSData</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/a0db29be7dcfdbbe7a38dd1ca467c6fd7bad4437">Foundation and explicit pointer nullability</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/6932ce37a82eb4a39f5a47a82ea72b0aaff8cc7f">dispatch_data_create() crashes with EXC_BAD_INSTRUCTION</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/6264dff11d377bcba832518044c43c8e8d24ccf4">[SE-0046] Implemented consistent function labels</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/9d1e36a7180dc7c4567c7a5865c495de56dcfb36">Foundation and explicit pointer nullability (CI edition)</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/dcb0081564fd8ae8a7b9397205e23ec5df543df0">Migrate corelibs-foundation to the newest APIs</a>      &mdash; <em>Robert F Dickerson</em>
+    </li>
+    <li>
+<a href="/threads/31234ff36ca8b2ff28d93cc64e1ae5031f35a073">Why isn&#39;t Foundation shipped in OS X and iOS open source?</a>      &mdash; <em>Kiel Gillard</em>
+    </li>
+    <li>
+<a href="/threads/8bd6773d4763b7f289d04e21b985473d3a9cdc4b">NSMassFormatter implementation</a>      &mdash; <em>Mauricio Meirelles</em>
+    </li>
+    <li>
+<a href="/threads/f63ba2727248ca7981e99cfbf7f78ab4f67552fd">Rebased PRs</a>      &mdash; <em>Daniel Eggert</em>
+    </li>
+    <li>
+<a href="/threads/1e68faa5dbf260fe461051d19043e81c8fc0fd7d">Crypto as part of the core libraries</a>      &mdash; <em>Travis Beech</em>
+    </li>
+    <li>
+<a href="/threads/9bede9002c4cd4e6196d860474f4c3378a4f1f6c">Swift3 rewriting for XCTest APIs</a>      &mdash; <em>Mike Ferris</em>
+    </li>
+    <li>
+<a href="/threads/cc0add987f0b385c524ef12db1859140ddf8b11c">NSEnergyFormatter</a>      &mdash; <em>Vojtěch Šťavík</em>
+    </li>
+    <li>
+<a href="/threads/5cd0c19e90d4f4c74216fefd21e262a877a0b650">NSTask and NSFileHandle implementation</a>      &mdash; <em>Alexander Alemayhu</em>
+    </li>
+    <li>
+<a href="/threads/f732ade64d7440e8a0171bd8fa8fc13c6637847f">Merging swift-corelibs-foundation PRs</a>      &mdash; <em>Tony Parker</em>
+    </li>
+    <li>
+<a href="/threads/97206de78440955ce662ddc062ff0779998a9887">How to compile a single swift file from commandline</a>      &mdash; <em>Rajeev Jeyaraj</em>
+    </li>
+    <li>
+<a href="/threads/96cc0011db1855124872b582b08493604203bb32">Installing swift toolchain issues</a>      &mdash; <em>Jeyaram Jeyaraj</em>
+    </li>
+    <li>
+<a href="/threads/ff3aa3eb08abadccd48c5350d802e7406dcf738c">error: reference to &#39;va_list&#39; is ambiguous</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/d2596a01ac7b34b0d40f65e65ecd12b6eeff0af0">Setting property &quot;maxConcurrentOperationCount = 1&quot; of NSOperation fails to execute operations using OpenSource Foundation.</a>      &mdash; <em>Mamatha Busi</em>
+    </li>
+    <li>
+<a href="/threads/916ab01b686da2a472b253e586e17a638b9f48a7">removal of NSURL.filePathURL as it serves no purpose without file reference URL in Linux</a>      &mdash; <em>Bhaktavatsal R Maram</em>
+    </li>
+    <li>
+<a href="/threads/622a807598a528cccaa8414a10b4191e1256d25a">Change in String.CharacterView.Index?</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/54877929c737cbbd94baed44cfe8a24d814a7972">Use of pthread_main_np() in NSOperation</a>      &mdash; <em>Chris Bailey</em>
+    </li>
+    <li>
+<a href="/threads/9b56d5eeb52b61b52d6196ac0d7c5098b8e2d4cc">Looking at corelibs-foundation</a>      &mdash; <em>David Hart</em>
+    </li>
+    <li>
+<a href="/threads/c73f6feed01d49fba9fddf5ed3dcf89ef205376f">NSTask and try!</a>      &mdash; <em>James Lee</em>
+    </li>
+    <li>
+<a href="/threads/93e54a156641ee85e39de8b91bc694a490d46a5b">NSTask and try!</a>      &mdash; <em>Bouke Haarsma</em>
+    </li>
+    <li>
+<a href="/threads/24258b3bd7745485726dd62fe88140b8ed370d9c">NSTask and try!</a>      &mdash; <em>Bouke Haarsma</em>
+    </li>
+    <li>
+<a href="/threads/ae7832bc23ef3bee6ee7fe966b7b6a7dd887411d">NSMutableData memory leak</a>      &mdash; <em>Ian Partridge</em>
+    </li>
+    <li>
+<a href="/threads/31ead3727e5556d0771baf62a7401d66f1200205">Compilation Error - Which Toolchain</a>      &mdash; <em>David Hart</em>
+    </li>
+    <li>
+<a href="/threads/5e7188453823b8c7c1af527696af9bdc67e58477">Compilation Error - Which Toolchain?</a>      &mdash; <em>David Hart</em>
+    </li>
+    <li>
+<a href="/threads/d3fe5f87bffa0046dac577a484301ea29e2738c0">swift-corelibs-xctest JIRA dashboard</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/fad8be2e2ccd55f10338dc729896f3268c27f1f6">Objective-C Foundation vs CoreLibs Foundation</a>      &mdash; <em>David Hart</em>
+    </li>
+    <li>
+<a href="/threads/639a0beb5a02f4b7d7f3ca4d261a49c1c8a48678">my email</a>      &mdash; <em>developer at jaywalker.biz</em>
+    </li>
+    <li>
+<a href="/threads/fe04e3ff6d16e7fa9937656aad06a82222749471">Mail</a>      &mdash; <em>AbuNaser Saifullah</em>
+    </li>
+    <li>
+<a href="/threads/1f771883485bbf45ffdd0d3f7a79e7b2a743f15c">Crash in CFRegularExpressionCreate</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/949c0102c53cb953d63ceb3b6e226f6ff1348310">JIRA labels (no worries)</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/aa80c6c4fc6be4e3a18c28a6ed36106c59cfde11">[XCTest] Cannot build using XCode</a>      &mdash; <em>Madhu Samuel</em>
+    </li>
+    <li>
+<a href="/threads/631f1af2c02f529b36b5d552039b61a5dec2b366">libdispatch on Linux, or C++ std::async?</a>      &mdash; <em>Brian Gesiak</em>
+    </li>
+    <li>
+<a href="/threads/074a0394e5890578b380f73eccee64172dfd4605">unable to build swift core foundation</a>      &mdash; <em>Rajeev Jeyaraj</em>
+    </li>
+    <li>
+<a href="/threads/fe2d4c3b73c829c71d478ce446de220b7a36b347">Please remove your Swift build directory</a>      &mdash; <em>Dmitri Gribenko</em>
+    </li>
+    <li>
+<a href="/threads/a8dd7e2a367bd214a64b459b32f2de54a5baaf9a">NSHost.current()</a>      &mdash; <em>Sai Kanduri</em>
+    </li>
+    <li>
+<a href="/threads/88247f6a3b92b6cdd88681eb434c0844d92250b9">NSHost.current()</a>      &mdash; <em>Sai Kanduri</em>
+    </li>
+    <li>
+<a href="/threads/edab37dd5e67f35e62381684b481f29d361b8fbc">WWDC Meetup</a>      &mdash; <em>David Hart</em>
+    </li>
+    <li>
+<a href="/threads/48f42aa6cc6876790f48f46e4bc9c98878f45d78">Query on the NSTextCheckingResult.resultByAdjustingRangesWithOffset output.</a>      &mdash; <em>Mamatha Busi</em>
+    </li>
+    <li>
+<a href="/threads/e69847215f2dcc41b195b8dd4836912c6b8050cd">How to build swift-corelibs-foundation from command line</a>      &mdash; <em>Rajeev Jeyaraj</em>
+    </li>
+    <li>
+<a href="/threads/ba63d7a1988fc563a72e4440b5688ec3450be570">S</a>      &mdash; <em>AbuNaser Saifullah</em>
+    </li>
+    <li>
+<a href="/threads/75ed3445c7e5ef34e0649a572fba5ebb00d4eb8c">NSKeyValueCoding and the Swift Foundation</a>      &mdash; <em>Lars Sonchocky-Helldorf</em>
+    </li>
+    <li>
+<a href="/threads/4422ff0a248a401481699352a72e41ca7f6ab7cf">Xcode 8 beta 1 and swift-corelibs-foundation</a>      &mdash; <em>Tony Parker</em>
+    </li>
+    <li>
+<a href="/threads/1a3114031b6d9df27f9592c62d938b6e0606240c">Suggested DateInterval API improvement</a>      &mdash; <em>Dave Lyon</em>
+    </li>
+    <li>
+<a href="/threads/4d026ebcd3208d69306ee723c0b992ea45220248">IndexSet isStrictSubsetOf bug?</a>      &mdash; <em>Karl</em>
+    </li>
+    <li>
+<a href="/threads/6966ba044f7d30610b33e740aaf104d36915170d">mDNS -- NSNetService and related?</a>      &mdash; <em>Bouke Haarsma</em>
+    </li>
+    <li>
+<a href="/threads/138fce39abf3fbc93862c192fa96c142adb8d8d0">libdispatch/GCD for Swift 3.0 on Linux</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/6955ee90c0697b5f579e5244af074e4fb39ec6bd">NSFileHandle implementation</a>      &mdash; <em>Rhett Rogers</em>
+    </li>
+    <li>
+<a href="/threads/6f94ff0040f3ecf48139ddeca3070ca532b0c357">NSStream implementation</a>      &mdash; <em>Mamatha Busi</em>
+    </li>
+    <li>
+<a href="/threads/acc3728903c2bfc11c0def91686afb8f8347c6a1">Fix API disparities between Darwin and Corelibs Foundation</a>      &mdash; <em>David Hart</em>
+    </li>
+    <li>
+<a href="/threads/b9d81c168bc1c19ea0d1afa9f07a81a56486d46f">Implementing(overriding) the &quot;description&quot; property</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/14e6dd98b93c7663aa20eff785eb2e741f0e3fd5">Query on NSLog</a>      &mdash; <em>Sai Kanduri</em>
+    </li>
+    <li>
+<a href="/threads/fcdbe8486e7ac69641504646e23942ab62559f31">Foundation Renaming Question</a>      &mdash; <em>Joseph Bell</em>
+    </li>
+    <li>
+<a href="/threads/70c78d5584d140556a68a689b8d463e75ccd5f69">Troubleshooting libdispatch build failure</a>      &mdash; <em>Jean-Pierre Simard</em>
+    </li>
+    <li>
+<a href="/threads/d1f639290dffb3b4df76248f9b0a362ae9743089">Debugging Assistance</a>      &mdash; <em>Lau Bao</em>
+    </li>
+    <li>
+<a href="/threads/caa8561eceb128e535cb31c4951658d775072b75">New GCD API change: DispatchWorkItems should be retained by their groups</a>      &mdash; <em>Karl</em>
+    </li>
+    <li>
+<a href="/threads/2edbfd1879ac7b6a4270f1906abf4f77344e378e">Swift DispatchSource not working</a>      &mdash; <em>Darren Mo</em>
+    </li>
+    <li>
+<a href="/threads/9c76df25045cdbece85a6e158c3f0ca8e358de1a">Implementation of UnitConverter</a>      &mdash; <em>Alfredo Delli Bovi</em>
+    </li>
+    <li>
+<a href="/threads/f5ebf4898439a1960ecc9695b16b90678eaad363">NSOperationQueue</a>      &mdash; <em>swift3 at nsobject.net</em>
+    </li>
+    <li>
+<a href="/threads/177d8420173e3789daf58f29a066fc0cbdebf315">NSOrderedSet implementation</a>      &mdash; <em>Sowmya Vikram</em>
+    </li>
+    <li>
+<a href="/threads/8b26da4e0777c9404b91e23bc56a0c74d0d77a8e">Implementing JSONSerialization.jsonObject(with stream)</a>      &mdash; <em>Mamatha Busi</em>
+    </li>
+    <li>
+<a href="/threads/59cf6a8fa5861ef4f3e50a7f89907dd5f105c653">small nit in NSKeyedArchiver.swift</a>      &mdash; <em>Luke Howard</em>
+    </li>
+    <li>
+<a href="/threads/e146e8c7a1000fc73af780bf751a6187396832ac">Wrapping up Swift 3 for swift-corelibs</a>      &mdash; <em>Tony Parker</em>
+    </li>
+    <li>
+<a href="/threads/4aff75f69f212c0ba02e6cbcc5d137d7646a34a5">[SR-1608]</a>      &mdash; <em>David Liu</em>
+    </li>
+    <li>
+<a href="/threads/a0ab844e4d6428a6a4c7950880171abbf7995624">IndexPath performance</a>      &mdash; <em>Stephan Tolksdorf</em>
+    </li>
+    <li>
+<a href="/threads/39c3d68b9893aff11c40f391a2f6964982c8faa3">Can&#39;t build corelibs-libdispatch on OS X</a>      &mdash; <em>Kevin Ballard</em>
+    </li>
+    <li>
+<a href="/threads/f7149c2bd3e817f20720a547da3cc6d0fe62776c">Query on init methods in Data.swift</a>      &mdash; <em>Simon Evans</em>
+    </li>
+    <li>
+<a href="/threads/032d5ec93ae1995ad03db2a800e1c8cd63a204a6">Is NSXMLParser completely implemented (swift-3.0-PREVIEW-2)</a>      &mdash; <em>Tim Kreger</em>
+    </li>
+    <li>
+<a href="/threads/7d9f70e6d32c1ecf5a0a3e9af5bec5d023bfcbcf">Query on Bundle.unload()</a>      &mdash; <em>Sai Kanduri</em>
+    </li>
+    <li>
+<a href="/threads/b29e3c65e18e2bfd8d79ec9577992da831abd61c">SwiftShims</a>      &mdash; <em>Fernando Rodríguez</em>
+    </li>
+    <li>
+<a href="/threads/dee7658fe9b390ca019919156c374352dee95848">Swift Shims</a>      &mdash; <em>Fernando Rodríguez</em>
+    </li>
+    <li>
+<a href="/threads/7d4fd3572f6de4c7ff28c778fcad90af7bc6a93e">Compiling corelibs-libdispatch</a>      &mdash; <em>Andrey Fidrya</em>
+    </li>
+    <li>
+<a href="/threads/df3c39bce29359b3a7d3b5fd9348a34ffa8db847">in-app purchase</a>      &mdash; <em>developer at jaywalker.biz</em>
+    </li>
+    <li>
+<a href="/threads/67ba0424e7e3236305a5985797d71fc15953045b">Swiftier? implementation of Measurement and Unit in Foundation</a>      &mdash; <em>Joanna Carter</em>
+    </li>
+    <li>
+<a href="/threads/4d68369096565326e99e0cd62b332e9b2d542aa7">libdispatch Arch Linux</a>      &mdash; <em>Ryan Lovelett</em>
+    </li>
+    <li>
+<a href="/threads/4f579f64382c7128a6ef3263568b513b55e6dad2">NSObject&#39;s performSelector(inBackground:with:) doesn&#39;t feel right in Swift 3</a>      &mdash; <em>Paul Hudson</em>
+    </li>
+    <li>
+<a href="/threads/c49b069e777ccd20f150ea0df3cf3f0d7a1f3b73">Building with Xcode</a>      &mdash; <em>Luke Howard</em>
+    </li>
+    <li>
+<a href="/threads/3f14da9892e98b348251a76819ccfb0291684bb2">Duplicate definition of va_list on Arm</a>      &mdash; <em>William Dillon</em>
+    </li>
+    <li>
+<a href="/threads/b0233efc4ae79a6882e45eca84d92d3862d33c8b">Measurement Formatters &amp; ICU</a>      &mdash; <em>Henry Betts</em>
+    </li>
+    <li>
+<a href="/threads/6b692246d0709010b172d1b90c8715fb7ecc809d">f8c3fe6c breaks on Darwin</a>      &mdash; <em>Luke Howard</em>
+    </li>
+    <li>
+<a href="/threads/d7f36885f59af896fc6a3d12be5c8ea32e579033">libdispatch#162: Android support</a>      &mdash; <em>Gonzalo Larralde</em>
+    </li>
+    <li>
+<a href="/threads/e2e56fec141c360730fa8c1e91e07fea7693c48b">Fwd: [swift-users] [swift-dev] New Swift Snapshots Available!</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/891e9de47ef9f2b7bf0134f7ff8e457da9397050">Flaky NSOperationQueue test</a>      &mdash; <em>Jordan Rose</em>
+    </li>
+    <li>
+<a href="/threads/de604560b62c7fa62d729b4e918cdcc366cd91ef">Getting tests to work in xcode for foundation.</a>      &mdash; <em>Dan Tugendraich</em>
+    </li>
+    <li>
+<a href="/threads/40a63f1ce7967a9378305252140309983b175b1c">Swift compiler errors in clean build.</a>      &mdash; <em>Dan Tugendraich</em>
+    </li>
+    <li>
+<a href="/threads/a3331fbd5758c0c78dd825bc7ceba0ed6ad44fd3">Coercion problems on Linux</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/a29cf8f31b7c59d8de7f7f1768b168b60b67f8a0">Looking to contribute</a>      &mdash; <em>Leonid Kogan</em>
+    </li>
+    <li>
+<a href="/threads/4152890848e573135edff1921c55c33933874327">Inconsistent URLSession POST behaviour</a>      &mdash; <em>Mike Ferenduros</em>
+    </li>
+    <li>
+<a href="/threads/fad86605e0293e995c41394dc2f563a90014c781">A URLSession crash and potential solutions</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/afacd533dd5a4d25fcc458e81f54b259692d9dd5">NSRegularExpression - NS prefix not dropped on Darwin</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/10c7153b36b3145586b643511cb94cd305bd8e81">URLSession tests</a>      &mdash; <em>Mike Ferenduros</em>
+    </li>
+    <li>
+<a href="/threads/2af298c213d6d18018e6a9fa1cc21f5e5c3c191c">Mirror behavior</a>      &mdash; <em>Will Stanton</em>
+    </li>
+    <li>
+<a href="/threads/03f2fd77f6b0b9e373ef83cbc1fc3c1d8c3f2416">Collection.map doesn&#39;t call `makeIterator()`</a>      &mdash; <em>Tim Vermeulen</em>
+    </li>
+    <li>
+<a href="/threads/9c7f55faa5ae3d2823ee6c761af6f1da0514d73f">Foundation and NSDecimal</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/87fdfecab2f01bea5fceefda4f2a75aa6bc63a40">Failing test due to network XML validation</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/9626e03478aa45a4df603f0aef9e7e0f0dbed814">Calendar identifiers</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/fc71be7dbdf631b631ad8ea35e431e27a1f258aa">Adding retain to CFCalendar.c - SR2879</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/ebe1bcc21d6ea73daf6d3b6297d8c8c521060538">Cannot call CFStreamCreatePairWithSocket on Linux</a>      &mdash; <em>Bouke Haarsma</em>
+    </li>
+    <li>
+<a href="/threads/401c6a586bf26678967cf1d1325f08f3c0b779cd">Create InputStream and OutputStream inside CFSocket accept callback on Linux</a>      &mdash; <em>Bouke Haarsma</em>
+    </li>
+    <li>
+<a href="/threads/dbd419563f29a20a84622cb6f68112eb81f11790">Cherry-picking changes for the next Swift release?</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/9f8c8e5fb58cee14e0babd0b817181cdf7f63458">Outstanding pull request for NSDecimal?</a>      &mdash; <em>Alex Blewitt</em>
+    </li>
+    <li>
+<a href="/threads/a4d6bbf319956421473d8d68519b4d724b3e52a4">Query on NSKeyedArchiver</a>      &mdash; <em>Sai Kanduri</em>
+    </li>
+    <li>
+<a href="/threads/6a0b3014b9817f221664ba3b416d2dec59400eb6">Query on mapping kCFNumberCharType to kCFNumberSInt8Type</a>      &mdash; <em>Gayathri Bhaskaran</em>
+    </li>
+    <li>
+<a href="/threads/ef7761ae42afd26e100fa8b76bd9d1b35535716f">Implementing HTTPCookieStorage</a>      &mdash; <em>Pushkar N Kulkarni</em>
+    </li>
+    <li>
+<a href="/threads/0e4789ae95d8986172bed29201dfffd3dca93093">Updates to CF imports to swift-corelibs-foundation</a>      &mdash; <em>Philippe Hausler</em>
+    </li>
+    <li>
+<a href="/threads/756a1f51dbdb83a5b4799fcf2ca14e73d88ee8fa">Some feedback / direction on an issue?</a>      &mdash; <em>Mark Woollard</em>
+    </li>
+  </ul>
+</div>
+    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

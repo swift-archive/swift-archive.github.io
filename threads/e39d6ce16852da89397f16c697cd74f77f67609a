@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ed333046ebd481e33c9d893e689b886e?s=50"></div><header><strong>Shard Library using Swift</strong> from <string>Reed Mangino</string> &lt;reed at themanginos.com&gt;<p>August 26, 2016 at 01:00:00pm</p></header><div class="content"><p>Is it possible to create a shared library in Swift and then load it into a Swift application written for OS X?<br></p><p>Thank you,<br>Tom<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/957b675456a66c394945a7361aedd51d?s=50"></div><header><strong>Shard Library using Swift</strong> from <string>Zhao Xin</string> &lt;owenzx at gmail.com&gt;<p>August 27, 2016 at 06:00:00am</p></header><div class="content"><p>It called modules in Swift.<br>https://swift.org/package-manager/#conceptual-overview<br></p><p>You can use `package manager` to creating a Library Package.<br></p><p>Zhaoxin<br></p><p>On Sat, Aug 27, 2016 at 1:33 AM, Reed Mangino via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Is it possible to create a shared library in Swift and then load it into a<br>&gt; Swift application written for OS X?<br>&gt;<br>&gt; Thank you,<br>&gt; Tom<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160827/a884599d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

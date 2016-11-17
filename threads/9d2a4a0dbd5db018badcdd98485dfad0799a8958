@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b3d3a2cce932eca144b8c13a63966404?s=50"></div><header><strong>Implementing hasPrefix and hasSuffix</strong> from <string>Alex Blewitt</string> &lt;alex.blewitt at gmail.com&gt;<p>December 22, 2015 at 09:00:00pm</p></header><div class="content"><p>I raised https://bugs.swift.org/browse/SR-337 &lt;https://bugs.swift.org/browse/SR-337&gt; to implement hasPrefix and hasSuffix in Swift (instead of depending on the Objective-C implementation and only being available for OSX at present.<br></p><p>I have an implementation which I’d like to create a pull request for but don’t know where it should go. The current implementation is at<br></p><p>https://github.com/apple/swift/blob/master/stdlib/public/core/StringLegacy.swift#L98 &lt;https://github.com/apple/swift/blob/master/stdlib/public/core/StringLegacy.swift#L98&gt;<br></p><p>inside ‘StringLegacy.swift’ but I’d presume it’s better to live elsewhere.<br></p><p>In addition this uses the character view which I’m not sure follows the normalisation required for comparisons; or if there is some different normalisation routines that need to be written either.<br></p><p>Finally it’s not clear if this the right way to solve the problem, or if the implementation should be in the open-source version of the Foundation NSString implementation.<br></p><p>Happy to take comments by mail or on the bug.<br></p><p>Alex<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151222/9d2a8958/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6451ee8093c9cedc94f6c813b4dde2c5?s=50"></div><header><strong>Implementing hasPrefix and hasSuffix</strong> from <string>Kevin Ballard</string> &lt;kevin at sb.org&gt;<p>December 23, 2015 at 06:00:00pm</p></header><div class="content"><p>I&#39;m pretty sure the current implementation uses Unicode canonical<br>equivalence to perform the comparison. This is equivalent to invoking<br>`decomposedStringWithCanonicalMapping` on both strings and then<br>comparing the resulting utf8 (or utf16) sequences, although it doesn&#39;t<br>actually build new strings.<br></p><p>This is not the same thing as comparing character sequences.<br></p><p>For example, given the following two strings<br></p><p>let s1 = &quot;\u{1F1E6}\u{1F1F9}&quot; // 🇦🇹 let s2 = &quot;\u{1F1E6}&quot; // U+1F1E6<br>REGIONAL INDICATOR SYMBOL LETTER A<br></p><p>The current behavior of `s1.hasPrefix(s2)` is to return `true`, but any<br>kind of comparison on the character sequences is going to return `false`<br>as both strings have one character each, and the characters are not the<br>same. This is because String.characters is based on the notion of<br>extended grapheme clusters, which is not the same thing as canonical<br>equivalence.<br></p><p>FWIW, the comparison operators on String (for non-ASCII strings)<br>actually bridge into the ObjC runtime; if there is no ObjC runtime it<br>appears to use ICU instead to do the comparison over UTF16 or UTF8 (see<br>stdlib/public/stubs/UnicodeNormalization.cpp).<br></p><p>-Kevin Ballard<br></p><p>On Tue, Dec 22, 2015, at 01:28 PM, Alex Blewitt via swift-dev wrote:<br>&gt; I raised https://bugs.swift.org/browse/SR-337 to implement hasPrefix<br>&gt; and hasSuffix in Swift (instead of depending on the Objective-C<br>&gt; implementation and only being available for OSX at present.<br>&gt;<br>&gt; I have an implementation which I’d like to create a pull request for<br>&gt; but don’t know where it should go. The current implementation is at<br>&gt;<br>&gt; https://github.com/apple/swift/blob/master/stdlib/public/core/StringLegacy.swift#L98<br>&gt;<br>&gt; inside ‘StringLegacy.swift’ but I’d presume it’s better to live<br>&gt; elsewhere.<br>&gt;<br>&gt; In addition this uses the character view which I’m not sure follows<br>&gt; the normalisation required for comparisons; or if there is some<br>&gt; different normalisation routines that need to be written either.<br>&gt;<br>&gt; Finally it’s not clear if this the right way to solve the problem, or<br>&gt; if the implementation should be in the open-source version of the<br>&gt; Foundation NSString implementation.<br>&gt;<br>&gt; Happy to take comments by mail or on the bug.<br>&gt;<br>&gt; Alex<br>&gt;<br>&gt; _________________________________________________<br>&gt; swift-dev mailing list swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151223/87092e79/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

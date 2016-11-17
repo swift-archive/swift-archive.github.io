@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0a43024a852915daddd40400e54c96f3?s=50"></div><header><strong>proposal to add &quot;in range&quot; operator</strong> from <string>Gmail 2</string> &lt;leoyoontsaw at gmail.com&gt;<p>February  2, 2016 at 07:00:00pm</p></header><div class="content"><p>Hello everyone, <br>I have a proposal to add an &quot;in range” operator in swift.<br></p><p>##Current situation<br></p><p>Checking whether a value is or not within a certain range now depends on the control flow you use. for switch-statement, it is intuitive; but it is not  for if-statement.<br></p><p>Example:<br></p><p>let testValue = 0.3<br></p><p>switch testValue {<br>case 0.0..&lt;1.0: do something...<br>default: break<br>}<br></p><p>to write the same logic in if-statement, you have to write like this:<br></p><p>if testValue &gt;= 0.0 &amp;&amp; testValue &lt; 1.0 {<br>    do something...<br>}<br></p><p>The disadvantage here:<br>1. It’s wordy;<br>2. It’s risky to write the same variable name twice, typo can occur and be ignored;<br>3. It’s inconsistent with switch-statement.<br></p><p>##Proposed solution<br></p><p>Introduce a new operator to check a variable against a range.<br>Here is a drafted operator: ~ (infix operator)<br>With ~, the above if-statement can be rewritten like:<br></p><p>if testValue ~ 0.0..&lt;1.0 {<br>    do something...<br>}<br></p><p>looks much better.<br></p><p>What’s more, if combined with the draft proposal Generalized range operators in `for-in`loops and other purposes &lt;https://github.com/apple/swift-evolution/pull/129&gt;, this new operator would more powerful.<br></p><p>Thanks for reading<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160202/9f875423/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/de7ad0a98b5a246d7825f220b0174f4a?s=50"></div><header><strong>proposal to add &quot;in range&quot; operator</strong> from <string>Preston Sumner</string> &lt;preston.sumner at gmail.com&gt;<p>February  2, 2016 at 10:00:00am</p></header><div class="content"><p>You can do this:<br></p><p>let testValue = 0.3<br></p><p>// Using instance method.<br>if (0.0..&lt;1.0).contains(testValue) {<br>    print(&quot;Hello, world.&quot;)<br>}<br></p><p>// Using pattern matching operator.<br>if 0.0..&lt;1.0 ~= testValue {<br>    print(&quot;Hello, world.&quot;)<br>}<br></p><p>Preston<br></p><p>&gt; On Feb 2, 2016, at 4:53 AM, Gmail 2 via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello everyone, <br>&gt; I have a proposal to add an &quot;in range” operator in swift.<br>&gt; <br>&gt; ##Current situation<br>&gt; <br>&gt; Checking whether a value is or not within a certain range now depends on the control flow you use. for switch-statement, it is intuitive; but it is not  for if-statement.<br>&gt; <br>&gt; Example:<br>&gt; <br>&gt; let testValue = 0.3<br>&gt; <br>&gt; switch testValue {<br>&gt; case 0.0..&lt;1.0: do something...<br>&gt; default: break<br>&gt; }<br>&gt; <br>&gt; to write the same logic in if-statement, you have to write like this:<br>&gt; <br>&gt; if testValue &gt;= 0.0 &amp;&amp; testValue &lt; 1.0 {<br>&gt;     do something...<br>&gt; }<br>&gt; <br>&gt; The disadvantage here:<br>&gt; 1. It’s wordy;<br>&gt; 2. It’s risky to write the same variable name twice, typo can occur and be ignored;<br>&gt; 3. It’s inconsistent with switch-statement.<br>&gt; <br>&gt; ##Proposed solution<br>&gt; <br>&gt; Introduce a new operator to check a variable against a range.<br>&gt; Here is a drafted operator: ~ (infix operator)<br>&gt; With ~, the above if-statement can be rewritten like:<br>&gt; <br>&gt; if testValue ~ 0.0..&lt;1.0 {<br>&gt;     do something...<br>&gt; }<br>&gt; <br>&gt; looks much better.<br>&gt; <br>&gt; What’s more, if combined with the draft proposal Generalized range operators in `for-in`loops and other purposes &lt;https://github.com/apple/swift-evolution/pull/129&gt;, this new operator would more powerful.<br>&gt; <br>&gt; Thanks for reading<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160202/83534d21/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

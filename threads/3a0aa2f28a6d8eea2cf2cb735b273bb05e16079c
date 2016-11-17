@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/746ba6388208843641ebc39e427b7e96?s=50"></div><header><strong>Swift Meetup</strong> from <string>Emo Abadjiev</string> &lt;emo.abadjiev at tumba.solutions&gt;<p>June 15, 2016 at 01:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>We are organising Swift meetup &lt;http://www.meetup.com/Swift-Meetup-Sofia/&gt; in<br>Sofia and interested to find out more about:<br></p><p>   - can we use the Swift logo? Where we can get a vector image, if yes.<br>   - is there a good place to register as a new community<br></p><p><br>Thanks,<br>Emo Abadjiev<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160615/3a0a079c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/746ba6388208843641ebc39e427b7e96?s=50"></div><header><strong>Swift Meetup</strong> from <string>Emo Abadjiev</string> &lt;emo.abadjiev at tumba.solutions&gt;<p>June 17, 2016 at 10:00:00am</p></header><div class="content"><p>Anyone can help?<br></p><p>Thanks,<br>E.<br></p><p>On 15 June 2016 at 13:34, Emo Abadjiev &lt;emo.abadjiev at tumba.solutions&gt; wrote:<br></p><p>&gt; Hello,<br>&gt;<br>&gt; We are organising Swift meetup &lt;http://www.meetup.com/Swift-Meetup-Sofia/&gt; in<br>&gt; Sofia and interested to find out more about:<br>&gt;<br>&gt;    - can we use the Swift logo? Where we can get a vector image, if yes.<br>&gt;    - is there a good place to register as a new community<br>&gt;<br>&gt;<br>&gt; Thanks,<br>&gt; Emo Abadjiev<br>&gt;<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160617/38d1e715/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

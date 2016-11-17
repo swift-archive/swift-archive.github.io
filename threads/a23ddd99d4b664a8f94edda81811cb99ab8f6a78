@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/46f57b23adf34f5086c147d9870b3281?s=50"></div><header><strong>Named parameters</strong> from <string>David Keck</string> &lt;davidskeck at fastmail.com&gt;<p>January 23, 2016 at 02:00:00pm</p></header><div class="content"><p>Beginner here, so this may be obvious to some people, but I can&#39;t figure out why the first argument in a function call isn&#39;t referenced by name, but all subsequent ones are. I think I have the syntax down, but I just don&#39;t get why it is that way.<br></p><p>For example:<br>func add(notRequired: Int, required: Int) -&gt; Int {<br>	return notRequired + required<br>}<br></p><p>let result = add(2, required: 5)<br>// Not allowed:<br>// let result = add(notRequired: 2, required: 5)<br></p><p>I just want to know the rationale behind this.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/279fa63eae4ac804b4dbdb83686797bf?s=50"></div><header><strong>Named parameters</strong> from <string>Austin Zheng</string> &lt;austinzheng at gmail.com&gt;<p>January 23, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi David,<br></p><p>The given rationale is that the first argument is often the &quot;direct object&quot; to a subject-verb phrase formed by a method call, and hence deserves privileged treatment. There&#39;s actually a thread going on in the swift-evolution mailing list about whether this should be changed.<br></p><p>Best,<br>Austin<br></p><p>&gt; On Jan 23, 2016, at 12:02 PM, David Keck via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Beginner here, so this may be obvious to some people, but I can&#39;t figure out why the first argument in a function call isn&#39;t referenced by name, but all subsequent ones are. I think I have the syntax down, but I just don&#39;t get why it is that way.<br>&gt; <br>&gt; For example:<br>&gt; func add(notRequired: Int, required: Int) -&gt; Int {<br>&gt; 	return notRequired + required<br>&gt; }<br>&gt; <br>&gt; let result = add(2, required: 5)<br>&gt; // Not allowed:<br>&gt; // let result = add(notRequired: 2, required: 5)<br>&gt; <br>&gt; I just want to know the rationale behind this.<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0985ecd9f5bacb304e69a74f29bafe2f?s=50"></div><header><strong>Named parameters</strong> from <string>Zbyňa</string> &lt;zbynek.fiala at gmail.com&gt;<p>January 23, 2016 at 09:00:00pm</p></header><div class="content"><p>It has origin in Obj C:<br>excelent explaining here:<br>http://stackoverflow.com/questions/24680771/using-function-parameter-names-in-swift<br></p><p><br></p><p>Dne 23.1.2016 v 21:02 David Keck via swift-users napsal(a):<br>&gt; Beginner here, so this may be obvious to some people, but I can&#39;t figure out why the first argument in a function call isn&#39;t referenced by name, but all subsequent ones are. I think I have the syntax down, but I just don&#39;t get why it is that way.<br>&gt;<br>&gt; For example:<br>&gt; func add(notRequired: Int, required: Int) -&gt; Int {<br>&gt; 	return notRequired + required<br>&gt; }<br>&gt;<br>&gt; let result = add(2, required: 5)<br>&gt; // Not allowed:<br>&gt; // let result = add(notRequired: 2, required: 5)<br>&gt;<br>&gt; I just want to know the rationale behind this.<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

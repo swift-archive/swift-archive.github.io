@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dc0180c1b9aff52f5d42a1ca6bd1f184?s=50"></div><header><strong>Swift Class Encoding Standard?</strong> from <string>Thomas Catterall</string> &lt;me at swizzlr.co&gt;<p>October 31, 2016 at 08:00:00pm</p></header><div class="content"><p>Thanks all, I’ll take this info to try to come up with a draft proposal for encoding after having done deeper research into the ins and outs of the current options and decisions made.<br></p><p>Appreciate the kind and useful responses!<br></p><p>Tom<br></p><p>&gt; This is somewhat intentional. While simple names can be encoded hierarchically like this, generics make everything more tricky. Consider a demangled name &quot;Contacts.Person.Address&lt;AddressKit.UnitedStates&gt;.PostCode&quot;—in this case not only is splitting on &quot;.&quot; is no longer a reasonable thing to do, but there&#39;s not currently a way to get the type for &#39;Address&#39; with a particular generic argument.<br>&gt; <br>&gt; The Swift compiler and Foundation teams were a bit at odds here, trying to decide whether it would be appropriate to use Swift&#39;s current mangling scheme for encoded class names, or whether it would be better to pick something else. (This is what the Objective-C runtime currently does on Apple platforms, but that too could be changed, though we&#39;d have to be careful about backward-compatibility.) IIRC at the time we decided it was best to implement the minimal thing that handles the common case—top-level non-generic types—and worry about the more complicated things later.<br>&gt; <br>&gt; Jordan<br>&gt; <br>&gt; <br>&gt; <br>&gt; &gt; On Oct 27, 2016, at 6:54, swizzlr via swift-dev&lt;swift-dev at swift.org&gt;wrote:<br>&gt; &gt; <br>&gt; &gt; Swift Foundation has an incomplete implementation of NSClassFromString/NSStringFromClass (link: https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSObjCRuntime.swift#L230-L282&lt;https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSObjCRuntime.swift#L230-L282&gt;) due to a lack of a standardised method of encoding nested Swift classes, nor other Swift types.<br>&gt; &gt; <br>&gt; &gt; I would think that given<br>&gt; &gt; <br>&gt; &gt; module Contacts<br>&gt; &gt; <br>&gt; &gt; class Person {<br>&gt; &gt; struct Address {<br>&gt; &gt; class Postcode {}<br>&gt; &gt; }<br>&gt; &gt; }<br>&gt; &gt; <br>&gt; &gt; Postcode would be encoded as Contacts.Person.Address.Postcode. Since it is not possible to have two different types with the same identifier in the same namespace (i.e. an enum/a class/a struct with the same name at the same declaration level) the encoding would similarly be simple. May I proceed under that assumption or are there ABI stability issues I have yet to consider?<br>&gt; &gt; <br>&gt; &gt; Tom<br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-dev mailing list<br>&gt; &gt; swift-dev at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

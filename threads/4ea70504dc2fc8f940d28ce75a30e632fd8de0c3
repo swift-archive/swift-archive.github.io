@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/57885cfd0c4b4db16653e76d9e6f0266?s=50"></div><header><strong>Locale formatting (UAMeasureFormat)</strong> from <string>Johan Jensen</string> &lt;jj at johanjensen.dk&gt;<p>January  5, 2016 at 10:00:00pm</p></header><div class="content"><p>I was having a quick look at implementing some of the not-yet-implemented<br>formatters but quickly realized that some of them are highly locale<br>dependent.<br>After a quick look I found uameasureformat.h<br>&lt;https://github.com/apple/swift-corelibs-foundation/blob/88424c8c533ce903d10b8be2a8b9f30a4c2011aa/bootstrap/x86_64-apple-darwin/usr/local/include/unicode/uameasureformat.h&gt;<br>and uameasfmt_format() which looks quite interesting.<br>Is it possible to use these functions?<br>If so, should a Swift wrapper be made?<br>If not, how is locale dependent formatters expected to be implemented?<br></p><p>— Johan<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160105/4ea7e0c3/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00f9939846257c9db8ddc42ce61ec6d1?s=50"></div><header><strong>Locale formatting (UAMeasureFormat)</strong> from <string>Philippe Hausler</string> &lt;phausler at apple.com&gt;<p>January  5, 2016 at 01:00:00pm</p></header><div class="content"><p>Length, Energy and Mass formatters should definitely use the ICU backing. It might be a good idea to funnel them all into one unit formatter access point. I personally find it is sometimes easier to interface to C APIs in C and expose them back up as simple funnel methods but it depends on which APIs you are interfacing with so ymmv. The formatters are locale independent in that they should probably just have a simple callout to uameasfmt_format when creating strings from values given a certain unit type.<br></p><p><br>&gt; On Jan 5, 2016, at 1:23 PM, Johan Jensen via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I was having a quick look at implementing some of the not-yet-implemented formatters but quickly realized that some of them are highly locale dependent.<br>&gt; After a quick look I found uameasureformat.h &lt;https://github.com/apple/swift-corelibs-foundation/blob/88424c8c533ce903d10b8be2a8b9f30a4c2011aa/bootstrap/x86_64-apple-darwin/usr/local/include/unicode/uameasureformat.h&gt; and uameasfmt_format() which looks quite interesting.<br>&gt; Is it possible to use these functions?<br>&gt; If so, should a Swift wrapper be made?<br>&gt; If not, how is locale dependent formatters expected to be implemented?<br>&gt; <br>&gt; — Johan<br>&gt;  _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160105/f6ae468f/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>API Guidelines Update</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 18, 2016 at 11:00:00am</p></header><div class="content"><p>on Thu Feb 18 2016, Charles Kissinger &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Dave,<br>&gt;<br>&gt; At one point there was discussion of special handling of prepositional<br>&gt; phrases containing “of”, with the “of” being placed before the<br>&gt; parenthesis rather than in the argument label. Was that left out of<br>&gt; the guidelines deliberately or inadvertently (or did I miss it)?<br></p><p>Deliberately.  We prepared a diff that made this change<br>(https://github.com/apple/swift-3-api-guidelines-review/commit/36662d0fb98499811f58f73deeef80b36e2156a8),<br>but on review it we found that while it made some things “feel nicer,” it<br>never added actual clarity, so we could find no justification for<br>complicating the guidelines to make “of” a special case.<br></p><p>&gt; —CK<br>&gt;<br>&gt;&gt; On Feb 16, 2016, at 6:31 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; I&#39;ve updated the API guidelines document to account for the review<br>&gt;&gt; feedback and other issues.  Please see<br>&gt;&gt; http://apple.github.io/swift-internals/api-design-guidelines/<br>&gt;&gt; (presentation view)<br>&gt;&gt; and<br>&gt;&gt; https://github.com/apple/swift-internals/blob/gh-pages/api-design-guidelines/index.md<br>&gt;&gt; (source and commit history)<br>&gt;&gt; <br>&gt;&gt; -- <br>&gt;&gt; -Dave<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

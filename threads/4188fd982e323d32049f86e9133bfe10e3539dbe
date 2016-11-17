@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/279fa63eae4ac804b4dbdb83686797bf?s=50"></div><header><strong>Questions about _Reflectable and CustomReflectable</strong> from <string>Austin Zheng</string> &lt;austinzheng at gmail.com&gt;<p>December  8, 2015 at 11:00:00am</p></header><div class="content"><p>Hello devs,<br></p><p>I have two questions about the _Reflectable and CustomReflectable protocols in the stdlib. (These are both in context of Jira ticket SR-88.)<br></p><p>First, I notice that _Reflectable encompasses both CustomReflectable and CustomPlaygroundQuickLookable&#39;s functionality. It looks like there are a couple of _MirrorTypes that exist only to provide quicklook functionality. Can I assume that, quicklook behavior aside, a _MirrorType conformer that is hardcoded to report zero children can be replaced by the default runtime mirror (e.g. the type who the _FoobarMirrorType belongs to doesn&#39;t need to conform to CustomReflectable)?<br></p><p>Secondly, is there an explicit replacement for _MirrorType&#39;s &quot;summary&quot; property? As-is, the current Mirror type provides no analogous property, and in most cases the existing custom mirrors just return the object&#39;s description. Was the &quot;reflection summary&quot; functionality broken out into a third protocol, or dropped altogether?<br></p><p>Best regards,<br>Austin<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Questions about _Reflectable and CustomReflectable</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>December  8, 2015 at 12:00:00pm</p></header><div class="content"><p>&gt; On Dec 8, 2015, at 11:44 AM, Austin Zheng via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello devs,<br>&gt; <br>&gt; I have two questions about the _Reflectable and CustomReflectable protocols in the stdlib. (These are both in context of Jira ticket SR-88.)<br>&gt; <br>&gt; First, I notice that _Reflectable encompasses both CustomReflectable and CustomPlaygroundQuickLookable&#39;s functionality. It looks like there are a couple of _MirrorTypes that exist only to provide quicklook functionality. Can I assume that, quicklook behavior aside, a _MirrorType conformer that is hardcoded to report zero children can be replaced by the default runtime mirror (e.g. the type who the _FoobarMirrorType belongs to doesn&#39;t need to conform to CustomReflectable)?<br></p><p>There&#39;s some accretion here. We didn&#39;t have time to phase out _MirrorType completely, so the new Swift 2 interfaces are still implemented for some times by falling back to _MirrorType&#39;s implementation.<br></p><p>&gt; Secondly, is there an explicit replacement for _MirrorType&#39;s &quot;summary&quot; property? As-is, the current Mirror type provides no analogous property, and in most cases the existing custom mirrors just return the object&#39;s description. Was the &quot;reflection summary&quot; functionality broken out into a third protocol, or dropped altogether?<br></p><p>IIRC it was decided that the summary wasn&#39;t usefully different from debugDescription; I believe playgrounds just use the debugDescription now.<br></p><p>-Joe<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

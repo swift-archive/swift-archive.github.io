@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Discussion]: Renaming #line, the line control statement</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February  4, 2016 at 11:00:00am</p></header><div class="content"><p>on Thu Feb 04 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 3, 2016, at 7:29 PM, Brent Royal-Gordon via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; line-control-statement → #line­<br>&gt;&gt;&gt; line-control-statement → #line­line-number­file-name­<br>&gt;<br>&gt;&gt;&gt; line-number → A decimal integer greater than zero<br>&gt;&gt;&gt; file-name → static-string-literal­<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; The accepted implementation of SE-0028 disambiguates the two by<br>&gt;&gt;&gt; requiring #line (the control statement) to appear at the first<br>&gt;&gt;&gt; column for the time being. This is a stop-gap solution best<br>&gt;&gt;&gt; remedied by renaming #line.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Chris Lattner writes, &quot;The core team isn’t thrilled with the magic<br>&gt;&gt;&gt; “first token on a line” whitespace behavior that #line will be<br>&gt;&gt;&gt; getting, and would like someone to start a discussion about<br>&gt;&gt;&gt; renaming the old #line directive to something more specific and<br>&gt;&gt;&gt; tailored to its purpose.  Once that name and syntax is settled, we<br>&gt;&gt;&gt; can rename the directive and remove the whitespace rule.&quot;<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; I&#39;d recommend #setline or #linenumber. Starting this thread to solicit other suggestions.<br>&gt;&gt; <br>&gt;&gt; I don&#39;t love the way the current format has two unlabeled parameters<br>&gt;&gt; in an arbitrary order. Maybe something more like this?<br>&gt;&gt; <br>&gt;&gt; 	#reset line=50, file=&quot;foo.swift&quot;<br>&gt;&gt; <br>&gt;&gt; (I have a soft preference for &quot;reset&quot; over &quot;set&quot; because these are<br>&gt;&gt; things the compiler changes automatically, but that might be a silly<br>&gt;&gt; reason.)<br>&gt;&gt; <br>&gt;&gt; Perhaps this could even let you set any combination of the #whatever<br>&gt;&gt; parameters, so if, for instance, you were writing a parser<br>&gt;&gt; generator, you could set #function to the name of the rule a<br>&gt;&gt; particular piece of code came from.<br>&gt;<br>&gt; Using something like this as the grammar structure makes sense to me,<br>&gt; but I’d suggest something more specific (and longer) for this,<br>&gt; perhaps:<br>&gt;<br>&gt; #setsyntacticsourcelocation<br>&gt;<br>&gt; or something. :-)<br></p><p>What does “syntactic” communicate that isn&#39;t already in <br></p><p>     #setsourcelocation<br></p><p>?<br></p><p>ommitting-needless-words-ly y&#39;rs,<br>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

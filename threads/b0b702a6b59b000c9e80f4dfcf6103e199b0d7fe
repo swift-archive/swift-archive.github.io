@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c9c44262e8b58b758a3876b9d29c095?s=50"></div><header><strong>Swift-based Metal Shading Language</strong> from <string>Georgios Moschovitis</string> &lt;george.moschovitis at icloud.com&gt;<p>July  9, 2016 at 07:00:00pm</p></header><div class="content"><p>I am wondering if there are any plans to introduce a Swift-based Metal Shading Language in the future to replace (or be available along) the current c++-based language.<br></p><p>It would be great to use Swift for GPU-accelerated data-parallel tasks (e.g. ML).<br></p><p>Any thoughts?<br>-g.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1f823d615b521ed15f1006b105c77900?s=50"></div><header><strong>Swift-based Metal Shading Language</strong> from <string>David Sweeris</string> &lt;davesweeris at mac.com&gt;<p>July  9, 2016 at 03:00:00pm</p></header><div class="content"><p>I *think* it&#39;d be better to add C++ interoperability to Swift. A post from a long long time ago (http://article.gmane.org/gmane.comp.lang.swift.evolution/2899) suggests this would likely be possible (but I&#39;d assume not in time for Swift 3).<br></p><p>This isn&#39;t an area I know much about, though.<br></p><p>- Dave Sweeris<br></p><p><br></p><p>Sent from my iPhone<br>&gt; On Jul 9, 2016, at 11:59, Georgios Moschovitis via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I am wondering if there are any plans to introduce a Swift-based Metal Shading Language in the future to replace (or be available along) the current c++-based language.<br>&gt; <br>&gt; It would be great to use Swift for GPU-accelerated data-parallel tasks (e.g. ML).<br>&gt; <br>&gt; Any thoughts?<br>&gt; -g.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160709/e0530ea3/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/212199c56fae3d6b09dbf788f1c5e313?s=50"></div><header><strong>Swift-based Metal Shading Language</strong> from <string>G B</string> &lt;g.c.b.at.work at gmail.com&gt;<p>July  9, 2016 at 02:00:00pm</p></header><div class="content"><p>I would very much like to see this.  Perhaps not Metal per se, but the ability to compile code to a heterogenous architecture.<br></p><p>I’ve been mulling two sets of ideas that might be steps in that direction:<br></p><p>— making the simd.h types (double4, float2, etc) first class types in Swift<br>— introducing the concept of purely functional (or some other suitably constrained) closures that could be easily complied to parallel/vectorized architectures<br></p><p>I’d love to get to a point where GCD could handle GPU/SIMD/CPU execution without needing a whole separate language— even if only for a subset of applications.  It seems like Swift has been laying a lot of the ground work to move in that direction.<br></p><p><br></p><p><br></p><p>&gt; On Jul 9, 2016, at 09:59 , Georgios Moschovitis via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I am wondering if there are any plans to introduce a Swift-based Metal Shading Language in the future to replace (or be available along) the current c++-based language.<br>&gt; <br>&gt; It would be great to use Swift for GPU-accelerated data-parallel tasks (e.g. ML).<br>&gt; <br>&gt; Any thoughts?<br>&gt; -g.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

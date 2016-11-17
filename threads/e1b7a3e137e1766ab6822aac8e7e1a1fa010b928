@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/24469cbff05600a119b54ec712121cf0?s=50"></div><header><strong>Bootstrapping Swift compiler</strong> from <string>Atsuki Demizu</string> &lt;demmys.atsuki at gmail.com&gt;<p>December  4, 2015 at 11:00:00am</p></header><div class="content"><p>Is there any schedules or ideas concerning a bootstrapping Swift?<br>I think all Swift users have an ability to be a good committer, except for his/her skills in C++.<br>And also I think Swift can be the swiftest and most readable language in the future.<br>So isn&#39;t it natural to the Swift compiler to be self-hosted?<br></p><p>Thank you for your time.<br></p><p>- Atsuki<br>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: smime.p7s<br>Type: application/pkcs7-signature<br>Size: 4124 bytes<br>Desc: not available<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151204/e1b7b928/attachment.p7s&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6dc2fd642323cb9bab9a050710290353?s=50"></div><header><strong>Bootstrapping Swift compiler</strong> from <string>AlexDenisov</string> &lt;1101.debian at gmail.com&gt;<p>December  4, 2015 at 06:00:00am</p></header><div class="content"><p>Swift is heavily depends on LLVM, which is written in C++.<br>Seems it?s not going happen in the near future since there are no plans for C++ &lt;&gt; Swift interoperability (yet?).<br>--<br>AlexDenisov<br>Software Engineer, http://lowlevelbits.org<br></p><p>&gt; On 04 Dec 2015, at 03:39, ?? ?? &lt;demmys.atsuki at gmail.com&gt; wrote:<br>&gt; <br>&gt; Is there any schedules or ideas concerning a bootstrapping Swift?<br>&gt; I think all Swift users have an ability to be a good committer, except for his/her skills in C++.<br>&gt; And also I think Swift can be the swiftest and most readable language in the future.<br>&gt; So isn&#39;t it natural to the Swift compiler to be self-hosted?<br>&gt; <br>&gt; Thank you for your time.<br>&gt; <br>&gt; - Atsuki_______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p><p>-------------- next part --------------<br>A non-text attachment was scrubbed...<br>Name: signature.asc<br>Type: application/pgp-signature<br>Size: 496 bytes<br>Desc: Message signed with OpenPGP using GPGMail<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151204/a701e1e6/attachment.sig&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

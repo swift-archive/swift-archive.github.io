@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ac3e79b6eb658f75afeb7b5396122a01?s=50"></div><header><strong>Swift 3 on Linux</strong> from <string>Fabio Balancin</string> &lt;fabiodev at icloud.com&gt;<p>June 23, 2016 at 03:00:00am</p></header><div class="content"><p>Hi there!!!<br></p><p>I&#39;m expect very new features in Swift 3! Congrats for the project!<br></p><p>I have a complex question.. Will I can develop and compile in iOS devices with Swift 3 on linux SO?<br></p><p>Thanks<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Swift 3 on Linux</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>June 23, 2016 at 09:00:00am</p></header><div class="content"><p>I’m afraid not. Only Xcode is supported for developing for iOS. Whether or not the Linux distribution of Swift supports cross-compilation to iOS, it still doesn’t include the SDKs or any of the tools for actually getting the app onto an iOS device.<br></p><p>Best,<br>Jordan<br></p><p><br>&gt; On Jun 22, 2016, at 23:18, Fabio Balancin via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi there!!!<br>&gt; <br>&gt; I&#39;m expect very new features in Swift 3! Congrats for the project!<br>&gt; <br>&gt; I have a complex question.. Will I can develop and compile in iOS devices with Swift 3 on linux SO?<br>&gt; <br>&gt; Thanks <br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

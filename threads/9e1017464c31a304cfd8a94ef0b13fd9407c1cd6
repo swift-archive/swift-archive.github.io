@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9b5e7f229ebf32c8eca02e7cee0f379f?s=50"></div><header><strong>[Review] SE-0073: Marking closures as executing	exactly once</strong> from <string>Nicola Salmoria</string> &lt;nicola.salmoria at gmail.com&gt;<p>May  4, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; * What is your evaluation of the proposal?<br></p><p>-1. The proposed change seems to require a somewhat complex implementation<br>in the compiler, and I fail to see clear benefits in the change.<br></p><p>&gt; * Is the problem being addressed significant enough to warrant a change to<br>Swift?<br></p><p>Frankly, I don&#39;t think the motivating example in the proposal is strong<br>enough. If the only purpose is to simplify certain imperative constructs, I<br>think there are better, functional-style, solutions.<br></p><p>The example related to autoreleasepool is particularly significant:<br></p><p>// Current Swift:<br>var x: Int = 0 // `var` declaration, with some irrelevant value<br>autoreleasepool {<br>    x = 1<br>}<br></p><p>// Should SE-0061 be accepted:<br>let x = autoreleasepool {<br>    return 1<br>}<br></p><p>// Should this proposal be accepted:<br>let x: Int<br>let y: String<br>autoreleasepool {<br>    x = 1<br>    y = &quot;foo&quot;<br>}<br></p><p>I would argue that of these three examples, the second is the clearest and<br>most readable; the last one, which should support the proposal, could simply<br>be rewritten as<br></p><p>let (x, y) = autoreleasepool {<br>    return (1, &quot;foo&quot;)<br>}<br></p><p>&gt; * Does this proposal fit well with the feel and direction of Swift?<br></p><p>While it does build on the delayed initialization of let variables, which is<br>a peculiar feature of Swift, I don&#39;t think it fits the overall trend of<br>favoring functional constructs and discouraging reliance on side effects.<br></p><p>&gt; * If you have used other languages or libraries with a similar feature,<br>how do you feel that this proposal<br>&gt; compares to those?<br></p><p>I&#39;ve never seen this kind of feature.<br></p><p>&gt; * How much effort did you put into your review? A glance, a quick reading,<br>or an in-depth study?<br></p><p>A quick reading.<br></p><p>--<br>Nicola<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a06dd7924588141b9c907543798c2524?s=50"></div><header><strong>[Review] SE-0073: Marking closures as executing exactly once</strong> from <string>Gwendal Roué</string> &lt;gwendal.roue at gmail.com&gt;<p>May  5, 2016 at 12:00:00pm</p></header><div class="content"><p>&gt; Le 4 mai 2016 à 14:49, Nicola Salmoria via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt; <br>&gt;&gt; * What is your evaluation of the proposal?<br>&gt; <br>&gt; -1. The proposed change seems to require a somewhat complex implementation<br>&gt; in the compiler, and I fail to see clear benefits in the change.<br></p><p>Hello Nicola,<br></p><p>I don&#39;t have the slightest idea about the difficulty of implementation, I admit.<br></p><p>Gwendal<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

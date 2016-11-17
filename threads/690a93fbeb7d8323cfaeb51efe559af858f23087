@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/10d580a8c8a36e175efa97743d0b214e?s=50"></div><header><strong>Struct, Mutating and Property Observers</strong> from <string>Седых Александр</string> &lt;se-a at mail.ru&gt;<p>October  7, 2016 at 04:00:00pm</p></header><div class="content"><p>Please look at that code:<br></p><p>class Mut {<br>    <br>    var zetstruct = MutStr(z: 5) {<br>        didSet {<br>            print(&quot;struct was change&quot;)<br>            zetstruct.addZet(num: 10)<br>        }<br>    }<br>    <br>    struct MutStr {<br>        var z: Int<br>        mutating func addZet(num: Int) {<br>            z += num<br>        }<br>    }<br>    <br>    func work() {<br>        zetstruct.addZet(num: 10)<br>    }<br>}<br></p><p>let mut = Mut()<br>mut.work()<br></p><p>Why in this case we don&#39;t have infinity cycle? Because when we change struct&#39;s property within mutating function it cause that instance property &#39;zetstruct&#39; change and didSet invocate.<br></p><p>-- <br>Седых Александр<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>[swift-users] Struct, Mutating and Property Observers</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>October  7, 2016 at 06:00:00pm</p></header><div class="content"><p>From the Swift book we know this:<br></p><p>If you assign a value to a property within its own didSet observer, the new value that you assign replaces the one that was just set.<br>That means that it won’t fire another didSet observer due replacing or in your case mutating.<br></p><p><br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br></p><p>Am 7. Oktober 2016 um 17:46:37, Седых Александр via swift-users (swift-users at swift.org) schrieb:<br></p><p>Please look at that code:<br></p><p>class Mut {<br></p><p>var zetstruct = MutStr(z: 5) {<br>didSet {<br>print(&quot;struct was change&quot;)<br>zetstruct.addZet(num: 10)<br>}<br>}<br></p><p>struct MutStr {<br>var z: Int<br>mutating func addZet(num: Int) {<br>z += num<br>}<br>}<br></p><p>func work() {<br>zetstruct.addZet(num: 10)<br>}<br>}<br></p><p>let mut = Mut()<br>mut.work()<br></p><p>Why in this case we don&#39;t have infinity cycle? Because when we change struct&#39;s property within mutating function it cause that instance property &#39;zetstruct&#39; change and didSet invocate.<br></p><p>--  <br>Седых Александр<br>_______________________________________________<br>swift-users mailing list<br>swift-users at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-users<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161007/0c5a0645/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

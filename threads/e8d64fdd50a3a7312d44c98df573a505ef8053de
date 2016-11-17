@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9f3e3f9871fd088e42df4509aa724367?s=50"></div><header><strong>array.first vs. array[0]</strong> from <string>Adriano Ferreira</string> &lt;adriano.ferreira at me.com&gt;<p>January 16, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi everyone!<br></p><p>I’ve been tinkering with a few sorting algorithms in Swift &lt;https://github.com/adrfer/Sort&gt; and noticed a diference in behaviour when it comes to accessing the first element of a collection.<br></p><p>If the method `first` from `CollectionType` is used, one needs to unwrap the returned optional to use it. Pretty standard stuff... However, if one uses subscripting, no unwrapping is required. <br></p><p>For example, when using subscripting:<br></p><p>func quickSort(array: [Int]) -&gt; [Int] {<br></p><p>    guard array.count &gt; 1 else { return array }<br></p><p>    let (pivot, rest) = (array[0], array.dropFirst())    // no need to unwrap `pivot` for further use<br></p><p>    let lessThan = rest.filter({ $0 &lt; pivot })<br></p><p>    let greaterThanOrEqual = rest.filter({ $0 &gt;= pivot })<br></p><p>    return quickSort(lessThan) + [pivot] + quickSort(greaterThanOrEqual)<br>}<br></p><p>But, when using the method `first`:<br></p><p>func quickSort(array: [Int]) -&gt; [Int] {<br></p><p>    guard array.count &gt; 1 else { return array }<br></p><p>    let (pivot, rest) = (array.first, array.dropFirst())<br></p><p>    let lessThan = rest.filter({ $0 &lt; pivot })    // unwrapping `pivot` is not required here<br></p><p>    let greaterThanOrEqual = rest.filter({ $0 &gt;= pivot })    // unwrapping `pivot` is not required here<br></p><p>    return quickSort(lessThan) + [pivot!] + quickSort(greaterThanOrEqual)     // unwrapping `pivot` is now required here<br>}<br></p><p>Isn’t the subscript supposed to return an optional as well?<br></p><p>Why unwrapping isn&#39;t required when `pivot` is used within the `filter` call?<br></p><p>Best,<br></p><p>— A<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160116/e8d653de/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7321934b88ca8da079d7b89926501a9c?s=50"></div><header><strong>array.first vs. array[0]</strong> from <string>David Turnbull</string> &lt;dturnbull at gmail.com&gt;<p>January 16, 2016 at 03:00:00pm</p></header><div class="content"><p>On Sat, Jan 16, 2016 at 2:46 PM, Adriano Ferreira via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Isn’t the subscript supposed to return an optional as well?<br>&gt;<br></p><p>Not arrays. They stop your program when out of bounds.<br></p><p><br>&gt; Why unwrapping isn&#39;t required when `pivot` is used within the `filter`<br>&gt; call?<br>&gt;<br></p><p>Type inference on the closure. $0 is made optional as part of the call.<br></p><p>-david<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160116/1c873511/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>array.first vs. array[0]</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>January 20, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On Jan 16, 2016, at 15:07, David Turnbull via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; On Sat, Jan 16, 2016 at 2:46 PM, Adriano Ferreira via swift-users &lt;swift-users at swift.org &lt;mailto:swift-users at swift.org&gt;&gt; wrote:<br>&gt; Isn’t the subscript supposed to return an optional as well?<br>&gt; <br>&gt; Not arrays. They stop your program when out of bounds.<br>&gt;  <br></p><p>For the record, this isn&#39;t a difference between arrays and other collections. All Collections return a non-optional value when subscripted by an Index, with the assumption that you shouldn&#39;t be putting random indexes into a collection unless they came from that collection in the first place, or have been already validated in some way. With &#39;first&#39;, on the other hand, it&#39;s very convenient to be able to say &quot;collection.first ?? defaultValue&quot;.<br></p><p>&quot;But what about dictionaries?&quot; Ah, but a dictionary key is not an Index (note the capital). The relation between a Collection and an Index is that there must be a constant-time operation to get to a value from an Index. There&#39;s a separate DictionaryIndex that represents a position in a dictionary for that purpose.<br></p><p>Jordan<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160120/70a7e6ff/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

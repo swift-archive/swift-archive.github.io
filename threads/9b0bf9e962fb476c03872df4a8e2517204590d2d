@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>mutating/non-mutating suggestion from a Rubyist</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 28, 2016 at 02:00:00pm</p></header><div class="content"><p>on Thu Apr 28 2016, &quot;pyry.jahkola--- via swift-evolution&quot; &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;     On 28 Apr 2016, Dave Abrahams wrote:<br>&gt;<br>&gt;         I think I can guess what you wanted the above to mean but, mind you, the<br>&gt;         in-place sort returns `()` so you wouldn&#39;t chain its result like that.<br>&gt;         On the<br>&gt;         other hand, the above code already works using the non-mutating `.sort()<br>&gt;         ` (to be<br>&gt;         known as `.sorted()` in Swift 3), and—correct me if I&#39;m wrong—the<br>&gt;         compiler<br>&gt;         probably optimises the copy away using copy-on-write anyway.<br>&gt;<br>&gt;     No, the compiler can&#39;t automatically turn non-mutating operations into<br>&gt;     in-place operations.<br>&gt;<br>&gt; I&#39;m talking about `.sorted()` in particular. Its implementation is essentially<br>&gt; this:<br>&gt;<br>&gt; var result = ContiguousArray(self) // What if `self` is not used after this<br>&gt; line?<br>&gt; result.sort()<br>&gt; return Array(result)<br>&gt;<br>&gt; Depending on what `self ` is and how copy-on-write works, if `foo().sorted()`<br>&gt; was called on a temporary (unique) Array returned by `foo()`, I believe the<br>&gt; initialisation `ContiguousArray(self)` could be able to reuse `self._buffer`<br>&gt; instead of making a copy. <br></p><p>Yes, *if* `self` was a contiguous array, there will be no copy in that<br>line, and *if* ARC can determine that `self` is not used after `result`<br>is constructed, then `result` will have a unique reference to the same<br>buffer and `result.sort()` can avoid doing a copy before mutating the<br>result.<br></p><p>&gt; Whether it indeed does that, remains unclear to me, probably not.<br></p><p>It&#39;s worth doing an experiment; it might well work.  And if it doesn&#39;t,<br>someone should file a bug report :-)<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

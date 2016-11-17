@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/44b9c3e92a40313850fdbc2cb0abdef7?s=50"></div><header><strong>SCNetworkReachabilityFlags beta 4 issue</strong> from <string>Jon Shier</string> &lt;jon at jonshier.com&gt;<p>August  5, 2016 at 06:00:00pm</p></header><div class="content"><p>Swifters:<br>	I’m attempting to port a library to Xcode 8 beta 4 and have run into a peculiar issue with SCNetworkReachabilityFlags. Prior to beta 4, this extension on SCNetworkReachabilityFlags which provided convenience Bool properties worked just fine:<br></p><p>extension SCNetworkReachabilityFlags {<br>    var isLocalAddress: Bool {<br>        return contains(.isLocalAddress)<br>    }<br></p><p>    var isDirect: Bool {<br>        return contains(.isDirect)<br>    }<br>}<br></p><p>Now, it throws an error:<br></p><p>instance member &#39;isLocalAddress&#39; cannot be used on type ‘SCNetworkReachabilityFlags’<br></p><p>Now, this is rather peculiar, since other OptionSets I create with options and properties of the same name work fine. There must be something peculiar about SCNetworkReachabilityFlags. If I change the properties to no longer match the option values, it builds fine. Is this a bug? If it is, I’m assuming it’s better to report it to Apple rather than swift.org &lt;http://swift.org/&gt;, or should I do both?<br></p><p><br></p><p>Jon Shier<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160805/2784524d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>SCNetworkReachabilityFlags beta 4 issue</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>August  8, 2016 at 02:00:00pm</p></header><div class="content"><p>In master I’m seeing it at least be consistent, warning about both members and not just ‘isLocalAddress’. Since it seems to be a compiler issue I think just filing it at bugs.swift.org is fine, though I’ll warn you that since there’s an easy workaround it might not get prioritized.<br></p><p>Jordan<br></p><p><br>&gt; On Aug 5, 2016, at 15:09, Jon Shier via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Swifters:<br>&gt; 	I’m attempting to port a library to Xcode 8 beta 4 and have run into a peculiar issue with SCNetworkReachabilityFlags. Prior to beta 4, this extension on SCNetworkReachabilityFlags which provided convenience Bool properties worked just fine:<br>&gt; <br>&gt; extension SCNetworkReachabilityFlags {<br>&gt;     var isLocalAddress: Bool {<br>&gt;         return contains(.isLocalAddress)<br>&gt;     }<br>&gt; <br>&gt;     var isDirect: Bool {<br>&gt;         return contains(.isDirect)<br>&gt;     }<br>&gt; }<br>&gt; <br>&gt; Now, it throws an error:<br>&gt; <br>&gt; instance member &#39;isLocalAddress&#39; cannot be used on type ‘SCNetworkReachabilityFlags’<br>&gt; <br>&gt; Now, this is rather peculiar, since other OptionSets I create with options and properties of the same name work fine. There must be something peculiar about SCNetworkReachabilityFlags. If I change the properties to no longer match the option values, it builds fine. Is this a bug? If it is, I’m assuming it’s better to report it to Apple rather than swift.org &lt;http://swift.org/&gt;, or should I do both?<br>&gt; <br>&gt; <br>&gt; <br>&gt; Jon Shier<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160808/7a292a2e/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/881ccaf2edd00d9951f1cb8fe899d336?s=50"></div><header><strong>Removing explicit use of `let` from Function Parameters</strong> from <string>Nicholas Maccharoli</string> &lt;nmaccharoli at gmail.com&gt;<p>March 17, 2016 at 05:00:00pm</p></header><div class="content"><p>​As a follow-up to proposal SE-0003​: &quot;Removing var from Function<br>Parameters&quot; being accepted,<br>I think it might make sense to disallow explicitly declaring function<br>parameters with the `let` keyword since function parameters are immutable<br>by default.<br></p><p>Basically disallow writing functions like this:<br></p><p>func foo(let i: Int)  { ... }<br></p><p>and only allow the function above to be expressed as this:<br></p><p>func foo(i: Int) { ... }<br></p><p>​- Nick​<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160317/5af69e9c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d30e546d655d1c7ece0464791a9a90d5?s=50"></div><header><strong>Removing explicit use of `let` from Function Parameters</strong> from <string>Adrian Kashivskyy</string> &lt;adrian.kashivskyy at me.com&gt;<p>March 17, 2016 at 11:00:00am</p></header><div class="content"><p>+1, this should be consistent.<br></p><p>P.S. Finally somebody wrote an email using non-black Comic Sans. 😂<br></p><p>Pozdrawiam – Regards,<br>Adrian Kashivskyy<br></p><p>&gt; Wiadomość napisana przez Nicholas Maccharoli via swift-evolution &lt;swift-evolution at swift.org&gt; w dniu 17.03.2016, o godz. 09:27:<br>&gt; <br>&gt; ​As a follow-up to proposal SE-0003​: &quot;Removing var from Function Parameters&quot; being accepted,<br>&gt; I think it might make sense to disallow explicitly declaring function parameters with the `let` keyword since function parameters are immutable by default.<br>&gt; <br>&gt; Basically disallow writing functions like this:<br>&gt; <br>&gt; func foo(let i: Int)  { ... }<br>&gt; <br>&gt; and only allow the function above to be expressed as this:<br>&gt; <br>&gt; func foo(i: Int) { ... }<br>&gt; <br>&gt; ​- Nick​<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160317/e0af10c9/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

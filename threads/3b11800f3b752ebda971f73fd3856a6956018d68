@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/47e3aeeaf151d4f51ee15fc7871bf584?s=50"></div><header><strong>Convention to avoid conflicts with keywords</strong> from <string>Rudolf Adamkovič</string> &lt;salutis at me.com&gt;<p>December 24, 2015 at 12:00:00am</p></header><div class="content"><p>In Python, a single trailing underscore is used by convention to avoid conflicts with language keywords:<br></p><p>for case in cases<br>...<br></p><p>What about Swift?<br></p><p>Also, it would be great to document this in Swift’s API Design Guidelines.<br></p><p>R+<br></p><p>Rudolf Adamkovic<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4b25144c09555e7d5b5e288469e011ef?s=50"></div><header><strong>Convention to avoid conflicts with keywords</strong> from <string>Félix Cloutier</string> &lt;felixcca at yahoo.ca&gt;<p>December 23, 2015 at 06:00:00pm</p></header><div class="content"><p>Swift uses backticks: for `case` in cases<br></p><p>Additionally, you can use (almost) any character inside backticks, including operator characters.<br></p><p>Félix<br></p><p>&gt; Le 23 déc. 2015 à 18:01:20, Rudolf Adamkovič via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt; <br>&gt; In Python, a single trailing underscore is used by convention to avoid conflicts with language keywords:<br>&gt; <br>&gt; for case in cases<br>&gt; ...<br>&gt; <br>&gt; What about Swift?<br>&gt; <br>&gt; Also, it would be great to document this in Swift’s API Design Guidelines.<br>&gt; <br>&gt; R+<br>&gt; <br>&gt; Rudolf Adamkovic<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4b25144c09555e7d5b5e288469e011ef?s=50"></div><header><strong>Convention to avoid conflicts with keywords</strong> from <string>Félix Cloutier</string> &lt;felixcca at yahoo.ca&gt;<p>December 23, 2015 at 06:00:00pm</p></header><div class="content"><p>Wait, the last part is not true.<br></p><p>Félix<br></p><p>&gt; Le 23 déc. 2015 à 18:05:03, Félix Cloutier via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt; <br>&gt; Swift uses backticks: for `case` in cases<br>&gt; <br>&gt; Additionally, you can use (almost) any character inside backticks, including operator characters.<br>&gt; <br>&gt; Félix<br>&gt; <br>&gt;&gt; Le 23 déc. 2015 à 18:01:20, Rudolf Adamkovič via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt;&gt; <br>&gt;&gt; In Python, a single trailing underscore is used by convention to avoid conflicts with language keywords:<br>&gt;&gt; <br>&gt;&gt; for case in cases<br>&gt;&gt; ...<br>&gt;&gt; <br>&gt;&gt; What about Swift?<br>&gt;&gt; <br>&gt;&gt; Also, it would be great to document this in Swift’s API Design Guidelines.<br>&gt;&gt; <br>&gt;&gt; R+<br>&gt;&gt; <br>&gt;&gt; Rudolf Adamkovic<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/47e3aeeaf151d4f51ee15fc7871bf584?s=50"></div><header><strong>Convention to avoid conflicts with keywords</strong> from <string>Rudolf Adamkovič</string> &lt;salutis at me.com&gt;<p>December 24, 2015 at 12:00:00am</p></header><div class="content"><p>Ah, I missed that one. Thanks for letting me know, Félix!<br></p><p>From The Swift Programming Language:<br></p><p>&gt; To use a reserved word as an identifier, put a backtick (`) before and after it. For example, class is not a valid identifier, but `class` is valid.<br></p><p>Great!<br></p><p>R+<br></p><p>&gt; On 24 Dec 2015, at 00:05, Félix Cloutier &lt;felixcca at yahoo.ca&gt; wrote:<br>&gt; <br>&gt; Swift uses backticks: for `case` in cases<br>&gt; <br>&gt; Additionally, you can use (almost) any character inside backticks, including operator characters.<br>&gt; <br>&gt; Félix<br>&gt; <br>&gt;&gt; Le 23 déc. 2015 à 18:01:20, Rudolf Adamkovič via swift-evolution &lt;swift-evolution at swift.org&gt; a écrit :<br>&gt;&gt; <br>&gt;&gt; In Python, a single trailing underscore is used by convention to avoid conflicts with language keywords:<br>&gt;&gt; <br>&gt;&gt; for case in cases<br>&gt;&gt; ...<br>&gt;&gt; <br>&gt;&gt; What about Swift?<br>&gt;&gt; <br>&gt;&gt; Also, it would be great to document this in Swift’s API Design Guidelines.<br>&gt;&gt; <br>&gt;&gt; R+<br>&gt;&gt; <br>&gt;&gt; Rudolf Adamkovic<br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

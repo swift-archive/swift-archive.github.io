@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a4348d92b278534efd6ec8b9cff4054d?s=50"></div><header><strong>C interop: passing null pointers to unwrapped unsafe pointers</strong> from <string>Ingo Maier</string> &lt;ingoem at gmail.com&gt;<p>October  7, 2016 at 04:00:00pm</p></header><div class="content"><p>Is there a way in Swift 3 to pass a null pointer to a C function that<br>takes an implicitly unwrapped unsafe pointer? I understand that<br>pointer parameters in C that don&#39;t specify nullability are mapped to<br>implicitly unwrapped pointers in Swift 3. Since it&#39;s not uncommon for<br>existing unannotated C APIs to accept null pointers, I assume there<br>has to be a way other than creating my own bridge functions in C. I<br>hope I am not wrong.<br></p><p>I am a bit surprised that I couldn&#39;t find an answer to this, neither<br>on this list nor on stackoverflow, as I presume I am not the only one<br>with this problem. Sorry, if I missed something.<br></p><p>Cheers,<br>Ingo<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>C interop: passing null pointers to unwrapped unsafe pointers</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>October  7, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Oct 7, 2016, at 7:02 AM, Ingo Maier via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Is there a way in Swift 3 to pass a null pointer to a C function that<br>&gt; takes an implicitly unwrapped unsafe pointer? I understand that<br>&gt; pointer parameters in C that don&#39;t specify nullability are mapped to<br>&gt; implicitly unwrapped pointers in Swift 3. Since it&#39;s not uncommon for<br>&gt; existing unannotated C APIs to accept null pointers, I assume there<br>&gt; has to be a way other than creating my own bridge functions in C. I<br>&gt; hope I am not wrong.<br>&gt; <br>&gt; I am a bit surprised that I couldn&#39;t find an answer to this, neither<br>&gt; on this list nor on stackoverflow, as I presume I am not the only one<br>&gt; with this problem. Sorry, if I missed something.<br></p><p>An implicitly unwrapped Optional is still an Optional. You can use `nil` to pass a null pointer.<br></p><p>-Joe<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a4348d92b278534efd6ec8b9cff4054d?s=50"></div><header><strong>C interop: passing null pointers to unwrapped unsafe pointers</strong> from <string>Ingo Maier</string> &lt;ingoem at gmail.com&gt;<p>October  8, 2016 at 10:00:00am</p></header><div class="content"><p>Oh thanks, I fundamentally misunderstood how unwrapped optionals work.<br></p><p>On Fri, Oct 7, 2016 at 6:25 PM, Joe Groff &lt;jgroff at apple.com&gt; wrote:<br>&gt;<br>&gt;&gt; On Oct 7, 2016, at 7:02 AM, Ingo Maier via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt;&gt;<br>&gt;&gt; Is there a way in Swift 3 to pass a null pointer to a C function that<br>&gt;&gt; takes an implicitly unwrapped unsafe pointer? I understand that<br>&gt;&gt; pointer parameters in C that don&#39;t specify nullability are mapped to<br>&gt;&gt; implicitly unwrapped pointers in Swift 3. Since it&#39;s not uncommon for<br>&gt;&gt; existing unannotated C APIs to accept null pointers, I assume there<br>&gt;&gt; has to be a way other than creating my own bridge functions in C. I<br>&gt;&gt; hope I am not wrong.<br>&gt;&gt;<br>&gt;&gt; I am a bit surprised that I couldn&#39;t find an answer to this, neither<br>&gt;&gt; on this list nor on stackoverflow, as I presume I am not the only one<br>&gt;&gt; with this problem. Sorry, if I missed something.<br>&gt;<br>&gt; An implicitly unwrapped Optional is still an Optional. You can use `nil` to pass a null pointer.<br>&gt;<br>&gt; -Joe<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

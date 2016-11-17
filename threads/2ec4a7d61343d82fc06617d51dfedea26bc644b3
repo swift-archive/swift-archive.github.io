@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>Swift 3.0.1 Preview 2 branch</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>September 28, 2016 at 11:00:00pm</p></header><div class="content"><p>Swift 3.0.1 Preview 2 branch was just created from following sha.  <br></p><p>This branch was created from swift-3.0-branch, all changes to swift-3.0.1-preview-2-branch branch needs to be submitted via pull requests. The release manager for the given repository needs to approve and merge the pull request into the swift-3.0.1-preview-2-branch. <br></p><p><br>Projects						Sha<br>swift: 					        504504b7f79682e77e154032219c04782e4959b7<br>swift-lldb: 					3426206b5f7c3abff0bc216e71119e915076df5a<br>swiftpm: 						0e0b8fc8d1eee0acd118b6c2364d268754946920<br>swift-llvm: 					0e49d60410eee5e4e85f4e7064afa40af2919635<br>swift-clang: 					968470f17040c6a6c15a8b44854ab74b7b0f4b34<br>swift-xcode-playground-support: 	8f95ffc73f3a4b2d3336351b40ed88cc3e728c7d<br>swift-corelibs-libdispatch:                b3bec3ebb6caeff85f31202d16f00224badef1b2<br>swift-corelibs-foundation: 		b6898c75e42fe73552b22a32361fb440cc9fdefc<br>swift-corelibs-xctest: 			ad54a1f312f0290216aecbf395433c7b0e89aa93<br>swift-llbuild: 					26206baf938d25fbb7b1778991fea745c1a530cb<br>swift-compiler-rt: 				6646bc878a1b5cb896abe9bb2cb31dacac9d0135<br>swift-cmark:                                     5af77f3c1d7f34f252a897094936ac4d162adf4b<br>swift-integration-tests:                     c95c832cb2aa2c076e6518024110ac6d18eb94b2<br></p><p><br>Thanks, <br>Mishal Shah<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160928/2ec444b3/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

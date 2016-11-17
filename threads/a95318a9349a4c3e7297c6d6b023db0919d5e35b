@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>Help debugging equal-but-unequal archetypes in SILGen/emitMemberInitializers</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>January 16, 2016 at 06:00:00pm</p></header><div class="content"><p>I started taking a look at SR-493 &lt;https://bugs.swift.org/browse/SR-493&gt;,<br> which is triggered with this code:<br></p><p>    struct Foo&lt;G&gt; { var l1: G? }<br>    extension Foo { init(x: Int) { } }<br></p><p>It turns out that for the init in the extension,<br>SILGenFunction::emitSemanticStore is being called with src &amp; dest types<br>which *should* be the same, but aren&#39;t, so it goes down the wrong code path.<br></p><p>This is for the implicit initialization, which looks to be effectively<br>&quot;self.l1 = { Optional&lt;G&gt;(nilLiteral: ()) }()&quot;<br></p><p>(lldb) p *rvalue*<br>.getType().getSwiftType()-&gt;getInOutObjectType()-&gt;getOptionalObjectType()<br>(swift::Type) $191 = {<br>  Ptr = 0x000000010d0a28d8<br>}<br>(lldb) p *dest*<br>.getType().getSwiftType()-&gt;getInOutObjectType()-&gt;getOptionalObjectType()<br>(swift::Type) $192 = {<br>  Ptr = 0x000000010b00dd68<br>}<br></p><p>But these types &quot;look&quot; the same (they are both the archetype for G):<br></p><p>(lldb) p *rvalue*<br>.getType().getSwiftType()-&gt;getInOutObjectType()-&gt;getOptionalObjectType()-&gt;getString(PrintOptions::printEverything())<br>(std::__1::string) $201 = &quot;G&quot;<br>(lldb) p *dest*<br>.getType().getSwiftType()-&gt;getInOutObjectType()-&gt;getOptionalObjectType()-&gt;getString(PrintOptions::printEverything())<br>(std::__1::string) $202 = &quot;G&quot;<br></p><p>Now I&#39;m stuck. This is my first attempt to understand anything in SILGen,<br>but I think the problem might trace back to Sema. Why would it end up with<br>different Archetypes? Perhaps because the generic params are cloned<br>&lt;https://github.com/apple/swift/blob/c794609d29f85c76c7a6b1aba81b99cd213fd721/lib/Sema/TypeChecker.cpp#L333&gt;<br>for<br>the extension decl?<br></p><p>Or a better question: is there a more correct way of comparing these types<br>for the purpose of emitSemanticStore than simply by pointer equality<br>&lt;https://github.com/apple/swift/blob/c794609d29f85c76c7a6b1aba81b99cd213fd721/include/swift/SIL/SILType.h#L526&gt;<br>?<br></p><p>Thanks,<br>Jacob<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160116/a953e35b/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

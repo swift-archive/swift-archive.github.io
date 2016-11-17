@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b9904260218b6d7942782c2b2355f2aa?s=50"></div><header><strong>Branch purpose reference?</strong> from <string>William Dillon</string> &lt;william at housedillon.com&gt;<p>March 11, 2016 at 06:00:00pm</p></header><div class="content"><p>Hi all<br></p><p>Is there a reference somewhere for what each branch’s purpose is?  I’m trying to build foundation and I’m getting a ton of errors about inout.  I remember reading something about inout changing location in the parameter list, but I don’t remember what it was like in 2.2 versus 3.0.  If I’m on the master branch of swift-corelibs-foundation, should Foundation build using the master branch of swift?<br></p><p>Thanks!!<br>- Will<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Branch purpose reference?</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>March 11, 2016 at 06:00:00pm</p></header><div class="content"><p>On Fri, Mar 11, 2016 at 6:19 PM, William Dillon via swift-dev<br>&lt;swift-dev at swift.org&gt; wrote:<br>&gt; Hi all<br>&gt;<br>&gt; Is there a reference somewhere for what each branch’s purpose is?  I’m trying to build foundation and I’m getting a ton of errors about inout.  I remember reading something about inout changing location in the parameter list, but I don’t remember what it was like in 2.2 versus 3.0.  If I’m on the master branch of swift-corelibs-foundation, should Foundation build using the master branch of swift?<br></p><p>Foundation is not a part of the 2.2 release.  Yes, it builds with master.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

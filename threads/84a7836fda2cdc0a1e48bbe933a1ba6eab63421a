@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/283bdc6ec76dd4d16b7a8234222e55d4?s=50"></div><header><strong>Tracking Pixel</strong> from <string>Michel Fortin</string> &lt;michel.fortin at michelf.ca&gt;<p>December  5, 2015 at 09:00:00am</p></header><div class="content"><p>It looks like every time I receive an email from one of the Swift lists, if that email happen to be HTML-formatted it will also contain a 1x1 pixel image with tracking parameters hosted by SendGrid. Is that on purpose?<br></p><p>It is noticeable to me because my mail client will display a bar at the top of these messages asking me if I want to load the remote content.<br></p><p>-- <br>Michel Fortin<br>michel.fortin at michelf.ca<br>https://michelf.ca<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Tracking Pixel</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>December  5, 2015 at 11:00:00am</p></header><div class="content"><p>Thanks for reporting this, Michel. We&#39;ll get it turned off.<br></p><p>Jordan<br></p><p>&gt; On Dec 5, 2015, at 6:17 , Michel Fortin &lt;michel.fortin at michelf.ca&gt; wrote:<br>&gt; <br>&gt; It looks like every time I receive an email from one of the Swift lists, if that email happen to be HTML-formatted it will also contain a 1x1 pixel image with tracking parameters hosted by SendGrid. Is that on purpose?<br>&gt; <br>&gt; It is noticeable to me because my mail client will display a bar at the top of these messages asking me if I want to load the remote content.<br>&gt; <br>&gt; -- <br>&gt; Michel Fortin<br>&gt; michel.fortin at michelf.ca<br>&gt; https://michelf.ca<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

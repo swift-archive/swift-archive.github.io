@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/651ce5b61340a28e046c0419dcfa244f?s=50"></div><header><strong>Linux - Calendar date(byAdding:to:wrappingComponents:) returns nil when it shouldn&#39;t?</strong> from <string>Jason Ji</string> &lt;jason.y.ji at gmail.com&gt;<p>October  4, 2016 at 03:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>I&#39;m having an issue with (NS)Calendar on Linux which I think is a bug, but<br>I just wanted to check first if it was just me or if this is indeed a bug.<br>I&#39;ve filed a bug report here, just in case:<br>https://bugs.swift.org/browse/SR-2846<br></p><p>In short, Calendar has a method date(byAdding:to:wrappingComponents:) which<br>returns a new date which is the result of date arithmetic on the passed-in<br>date. It works fine on El Capitan, but doesn&#39;t seem to work properly on<br>Ubuntu 14.04. Below is some sample code:<br></p><p>import Foundation<br></p><p>let today = Date()<br>let diffComponents = DateComponents(day: -1)<br>let newDate = Calendar.current.date(byAdding: diffComponents, to:<br>today)		//returns nil<br></p><p><br>I&#39;ve tried this in the swift REPL on Ubuntu 14.04 with both Swift<br>3.0-RELEASE, and the latest snapshot (October 2).<br></p><p>If anyone else could try this out as a sanity check for me, that would be<br>great - I&#39;d be happy to be embarrassed that I&#39;ve done something wrong.<br></p><p>Thanks,<br></p><p>Jason<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161004/36f3f50c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c60436f08b7b107f0bb0848c31297fa?s=50"></div><header><strong>Linux - Calendar date(byAdding:to:wrappingComponents:) returns nil when it shouldn&#39;t?</strong> from <string>Alex Blewitt</string> &lt;alblue at apple.com&gt;<p>October  5, 2016 at 04:00:00pm</p></header><div class="content"><p>&gt; On 4 Oct 2016, at 20:10, Jason Ji via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello,<br>&gt; <br>&gt; I&#39;m having an issue with (NS)Calendar on Linux which I think is a bug, but I just wanted to check first if it was just me or if this is indeed a bug. I&#39;ve filed a bug report here, just in case: https://bugs.swift.org/browse/SR-2846 &lt;https://bugs.swift.org/browse/SR-2846&gt;<br>&gt; <br>&gt; In short, Calendar has a method date(byAdding:to:wrappingComponents:) which returns a new date which is the result of date arithmetic on the passed-in date. It works fine on El Capitan, but doesn&#39;t seem to work properly on Ubuntu 14.04. Below is some sample code:<br>&gt; <br>&gt; import Foundation<br>&gt; <br>&gt; let today = Date()<br>&gt; let diffComponents = DateComponents(day: -1)<br>&gt; let newDate = Calendar.current.date(byAdding: diffComponents, to: today)		//returns nil<br>&gt; <br>&gt; I&#39;ve tried this in the swift REPL on Ubuntu 14.04 with both Swift 3.0-RELEASE, and the latest snapshot (October 2).<br>&gt; <br>&gt; If anyone else could try this out as a sanity check for me, that would be great - I&#39;d be happy to be embarrassed that I&#39;ve done something wrong.<br></p><p>It&#39;s worth explicitly specifying a calendar (so that it rules out any environmental setup) -- for example, Calendar(identifier:.gregorian). However, I see &#39;nil&#39; as well as the return result for this operation, so it could be a bug.<br></p><p>Alex<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161005/21ad0e8c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

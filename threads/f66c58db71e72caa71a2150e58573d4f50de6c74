@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>Proposed changes to SE-0033 Import Objective-C Constants as Swift Types</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>June  6, 2016 at 10:00:00pm</p></header><div class="content"><p>SE-0033 and SE-0044 are already &quot;Implemented in Swift 3&quot; according to both<br>the proposals and the README, but not according to the bug tracker:<br></p><p>&lt;https://github.com/apple/swift-evolution/blob/master/README.md&gt;<br>&lt;https://bugs.swift.org/browse/SR-1053&gt;<br></p><p>(I can&#39;t find a bug report for SE-0033).<br></p><p>The example in SE-0033 imports HKQuantityTypeIdentifierBodyMassIndex as the<br>HKQuantityTypeIdentifier.bodyMassIndex enum case, but what if you also need<br>to nest this inside the class as HKQuantityType.Identifier.bodyMassIndex?<br></p><p>(See SE-0086 hoisted types).<br></p><p>-- Ben<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8dfc6932943f38e7a7de48be3194f13c?s=50"></div><header><strong>Proposed changes to SE-0033 Import Objective-C Constants as Swift Types</strong> from <string>Michael Ilseman</string> &lt;milseman at apple.com&gt;<p>June  7, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Jun 6, 2016, at 3:51 PM, Ben Rimmington via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; SE-0033 and SE-0044 are already &quot;Implemented in Swift 3&quot; according to both<br>&gt; the proposals and the README, but not according to the bug tracker:<br>&gt; <br>&gt; &lt;https://github.com/apple/swift-evolution/blob/master/README.md&gt;<br>&gt; &lt;https://bugs.swift.org/browse/SR-1053&gt;<br>&gt; <br>&gt; (I can&#39;t find a bug report for SE-0033).<br>&gt; <br>&gt; The example in SE-0033 imports HKQuantityTypeIdentifierBodyMassIndex as the<br>&gt; HKQuantityTypeIdentifier.bodyMassIndex enum case, but what if you also need<br>&gt; to nest this inside the class as HKQuantityType.Identifier.bodyMassIndex?<br>&gt; <br></p><p>SE0033 is fully compatible with the other enhancements to swift_name (see SE0044), including nesting types and renaming onto types. So in this case you can do something analogous to:<br></p><p>typedef … HKQuantityTypeIdentifier __attribute((swift_struct(extensible))) __attribute((swift_name(“HKQuantityType.Identifier&quot;)));<br></p><p>To import the type as a nested type. And, the globals that come in as static members will be members of this nested type (since that’s the only type that exists, that is it’s the Swift type to correspond to HKQuantityTypeIdentifier). A good point for me to clarify is how this interacts with common prefix stripping, common prefix stripping is performed on the C/Objective-C name. If you want full control over the name and where it ends up going, you can use swift_name on the constant itself:<br></p><p>extern const HKQuantityTypeIdentifier HKQuantityTypeIdentifierBodyMassIndex __attribute((swift_name(“HKQuantityType.Identifier.bodyMassIndex&quot;)))<br></p><p>Or whatever names / types you want.<br></p><p>Hope this answers your question. Thanks for pointing all of these out, as it deserves mention in any proposal adjustment.<br></p><p>&gt; (See SE-0086 hoisted types).<br>&gt; <br>&gt; -- Ben<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

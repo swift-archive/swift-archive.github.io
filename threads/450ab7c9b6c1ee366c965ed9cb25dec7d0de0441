@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7559ac465b184ec777f29d37c0e4b374?s=50"></div><header><strong>[pitch] Eliminate the &quot;T1 -&gt; T2&quot; syntax, require &quot;(T1) -&gt; T2&quot;</strong> from <string>Michael Peternell</string> &lt;michael.peternell at gmx.at&gt;<p>April 19, 2016 at 08:00:00pm</p></header><div class="content"><p>@Radek:<br>I totally agree, and would like to add some more reasons.<br></p><p>(For me), (parenthesis are mostly (a tool) to disambiguate the (parse tree)). a parenthesis around (just (one token)) doesn&#39;t really make sense, or disambiguate anything, IMHO. They tell the parser, &quot;you think I meant &#39;a+(b^2)&#39; but I really meant &#39;(a+b)^2&#39;, so I have put parens around &#39;a+b&#39;&quot;. I don&#39;t need to write &quot;a+(b^2)&quot; (given that &quot;^&quot; means exponentiation.) To use them for function application is okay though, because I have been used to it for a very long time, and because they serve a different role there, I guess.<br></p><p>For example 2 + (3 * 4) is different than (2 + 3) * 4. The first one is the default, because &quot;*&quot; binds stronger; if you want the second version you need the parens. On the other hand, ((2) + ((3) * (4))) doesn&#39;t really make anything more consistent than just writing 2 + 3*4. It looks more like a properly expanded C macro.<br></p><p>At least from a mathematical point of view, (and as a future language user), I feel that &quot;Int -&gt; Int&quot; looks much more intuitive than &quot;(Int) -&gt; Int&quot;.<br></p><p>And for all those guys who feel that &quot;(Int) -&gt; Int&quot; is more &quot;consistent&quot;: No one will prevent you from writing &quot;(Int) -&gt; Int&quot;. It&#39;s already valid Swift, right?<br></p><p>Just my 2 cents.<br></p><p>-Michael<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

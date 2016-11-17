@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e828f637e91f7d986b7a79574dc0c45a?s=50"></div><header><strong>Swift support for automatically sharing small code fragments with other iOS developers.</strong> from <string>Amir Michail</string> &lt;a.michail at me.com&gt;<p>December  6, 2015 at 09:00:00am</p></header><div class="content"><p>With Swift, the programming language is no longer a difficult part of iOS programming. That difficulty now shifts to the iOS frameworks. Although very powerful, these frameworks take time to learn.<br></p><p>So why not allow iOS developers to easily and automatically share small code fragments with each other and have the compiler automatically use them to provide warnings as to how to code various tasks better?<br></p><p>Recommended rewrites by the compiler would only involve small code fragments seen from multiple independent sources and so are unlikely to contain any sensitive code.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a6a2eebe83a60a4b42395145484cda15?s=50"></div><header><strong>Swift support for automatically sharing small code fragments with other iOS developers.</strong> from <string>Daniel Vollmer</string> &lt;lists at maven.de&gt;<p>December  6, 2015 at 03:00:00pm</p></header><div class="content"><p>Hi Amir,<br></p><p>&gt; So why not allow iOS developers to easily and automatically share small code fragments with each other and have the compiler automatically use them to provide warnings as to how to code various tasks better?<br></p><p>As I understand it, this is very much out of scope for *this* project. Swift aims to (eventually) be a general purpose programming language.<br></p><p>What you’re talking about is more relevant to an IDE or development aid for a specific narrowed purpose. You might be better off filing a radar against Xcode for example.<br></p><p>	Daniel.<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

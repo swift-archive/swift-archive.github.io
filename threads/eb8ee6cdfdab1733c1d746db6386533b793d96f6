@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/878d39a4d3dbe23b0200fed97e2ec138?s=50"></div><header><strong>Compile an old version of Swift from source</strong> from <string>Daniel Martín</string> &lt;mardani29 at yahoo.es&gt;<p>September  8, 2016 at 12:00:00am</p></header><div class="content"><p>What&#39;s the easiest way to compile a 2.2.x version of Swift from source? <br>AFAIK there&#39;s no clear way to know which ref you have to checkout from <br>Swift dependency repos, like LLVM or Swift-Clang, because there&#39;s not a <br>standard tag naming for release versions across repositories.<br></p><p>Thank you,<br>Daniel<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Compile an old version of Swift from source</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>September  8, 2016 at 09:00:00am</p></header><div class="content"><p>There should be for the actual releases and Apple-released previews. I see a swift-2.2.1-RELEASE tag in both swift-llvm and swift. Note that SwiftPM and the corelibs version of libdispatch were not part of the Swift 2.2 release.<br></p><p>Jordan<br></p><p><br>&gt; On Sep 7, 2016, at 15:30, Daniel Martín via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; What&#39;s the easiest way to compile a 2.2.x version of Swift from source? AFAIK there&#39;s no clear way to know which ref you have to checkout from Swift dependency repos, like LLVM or Swift-Clang, because there&#39;s not a standard tag naming for release versions across repositories.<br>&gt; <br>&gt; Thank you,<br>&gt; Daniel<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

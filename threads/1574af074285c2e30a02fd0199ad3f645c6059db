@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d40d0983c79ff0c8abc4d004db032624?s=50"></div><header><strong>Swift Generics: connection between equality constraints on generic parameters and GADTs</strong> from <string>Gabriel Scherer</string> &lt;gabriel.scherer at gmail.com&gt;<p>August  2, 2016 at 06:00:00pm</p></header><div class="content"><p>I&#39;m not familiar with Swift, but happened to find the Generics<br>Manifesto document at<br>  https://github.com/apple/swift/blob/master/docs/GenericsManifesto.md<br></p><p>I wonder if the Swift community is aware of the strong connection<br>between equalities on generic type parameters of the form &quot;where T ==<br>Foo&quot; in method or extension declarations, and the Generalized<br>Algebraic Datatypes (GADTs) of the functional programming community.<br>To my knowledge, this relation has first been established in the 2006<br>article &quot;Generalized Algebraic Data Types and Object-Oriented<br>Programming&quot;, by Andrew Kennedy and Claudio Russo, that contain<br>examples that you might find interesting:<br>  https://www.microsoft.com/en-us/research/publication/generalized-algebraic-data-types-and-object-oriented-programming/<br></p><p>There has been a lot of work on GADTs and their expressiveness in the<br>functional programming community, and I think that realizing the<br>connection could be helpful for some further generics language design.<br></p><p>The connection is rather subtle because, while sets of definitions by<br>cases on algebraic datatypes are known to correspond exactly to sets<br>of class extensions on a fixed method signature (this is the general<br>FP/OO duality), the duality do not extend to GADTs and equality<br>constraints as one could expect. There are simple functional<br>programming examples that require type parameter constraints to be<br>expressed in an object-oriented style, and correspondingly some GADTs<br>that don&#39;t need method-level parameter constraints in object-oriented<br>style. The latter has resulted in some wrong claims in the past that<br>GADTs are un-necessary in object-oriented languages. See the article<br>for more details.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

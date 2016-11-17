@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/364da3d28aa30065613e3a52045802a1?s=50"></div><header><strong>Details of defer statement in Swift</strong> from <string>Andrea VEH</string> &lt;andrea.veh.73 at gmail.com&gt;<p>November 10, 2016 at 07:00:00am</p></header><div class="content"><p>Hello,<br>    From *The Swift Programming Language*, I learn the defer statements<br>execute in the reverse order that they appear in the program. And when<br>there are two or more defer statements in a loop(e.g. a for loop), defer<br>statements execute still in the reverse order that they appear, but in the<br>loop order that the loop statement executes. Code snippet is here(<br>https://swiftlang.ng.bluemix.net/#/repl/582421bfdee52b5745935771).<br>    Early I saw this thread(<br>https://twitter.com/lexrus/status/796370747849441280) from Twitter, I am<br>curious about defer statement&#39;s execute order. Can you tell more details<br>about it?<br></p><p>Best regards,<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161110/bc619cc0/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/eddffe5cd2c817d61892d77edf66b6b2?s=50"></div><header><strong>Details of defer statement in Swift</strong> from <string>Rien</string> &lt;Rien at Balancingrock.nl&gt;<p>November 10, 2016 at 08:00:00am</p></header><div class="content"><p>The manual says this:<br></p><p>https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Statements.html<br></p><p>A defer statement is used for executing code just before transferring program control outside of the scope that the defer statement appears in.<br></p><p>The scope of a for loop ends when the loop ends.<br></p><p>Regards,<br>Rien<br></p><p>Site: http://balancingrock.nl<br>Blog: http://swiftrien.blogspot.com<br>Github: http://github.com/Swiftrien<br>Project: http://swiftfire.nl<br></p><p><br></p><p><br>&gt; On 10 Nov 2016, at 08:32, Andrea VEH via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello,<br>&gt;     From The Swift Programming Language, I learn the defer statements execute in the reverse order that they appear in the program. And when there are two or more defer statements in a loop(e.g. a for loop), defer statements execute still in the reverse order that they appear, but in the loop order that the loop statement executes. Code snippet is here(https://swiftlang.ng.bluemix.net/#/repl/582421bfdee52b5745935771).<br>&gt;     Early I saw this thread(https://twitter.com/lexrus/status/796370747849441280) from Twitter, I am curious about defer statement&#39;s execute order. Can you tell more details about it?<br>&gt; <br>&gt; Best regards,<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161110/d53e31f3/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Details of defer statement in Swift</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>November 10, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On Nov 9, 2016, at 11:45 PM, Rien &lt;Rien at balancingrock.nl&gt; wrote:<br>&gt; <br>&gt; The manual says this:<br>&gt; <br>&gt; https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Statements.html &lt;https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Statements.html&gt;<br>&gt; <br>&gt; A defer statement is used for executing code just before transferring program control outside of the scope that the defer statement appears in.<br>&gt; <br>&gt; The scope of a for loop ends when the loop ends.<br></p><p>Right, more specifically, it is the “static” scope that it is defined in.  Go has a similar but different defer statement, which runs defer&#39;d actions at the end of the current dynamic *function* scope.  The Swift rules are simpler, more predictable, and are able to be implemented more efficiently.<br></p><p>-Chris<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161110/aad370e5/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

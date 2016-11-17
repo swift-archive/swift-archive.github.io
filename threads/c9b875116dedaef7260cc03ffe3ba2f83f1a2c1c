@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d4fb9162c777a5d6d0b1fb00893d709?s=50"></div><header><strong>[Pre-proposal] Enforcing Correct use of Array Indices</strong> from <string>Haravikk</string> &lt;swift-evolution at haravikk.me&gt;<p>September 29, 2016 at 09:00:00am</p></header><div class="content"><p>So the issue of Array index safety came up on the discussion for the .indexed() proposal. Now of course there&#39;s nothing wrong with arrays using integers as indices as such, but it does mean that indices can be manipulated outside of the array, which somewhat defeats the idea of the indexing model requiring them to be passed back to the parent collection for manipulation.<br></p><p>In a few types of my own I&#39;ve avoided this problem by doing the following:<br></p><p>public struct MyMaskedIndex : Comparable { fileprivate var raw:Int }<br>// Comparable conformance omitted<br></p><p>public struct MyType : Collection {<br>    // Lots of stuff omitted<br>    public func distance(from start:MyMaskedIndex, to end:MyMaskedIndex) -&gt; Int {<br>        return end.raw - start.raw;<br>    }<br>}<br></p><p>In essence MaskedIndex is still just an Int, and should optimise as such, but in development the use of a type like this ensures that indices from my collection can&#39;t be manipulated externally, which enables the type-checker to conveniently prevent any mistakes I might make. It&#39;s a handy pattern for other things like hashed values, ensuring I can&#39;t use unhashed values of the same type by accident and so-on.<br></p><p>I just wanted to raise the topic to see what other people thought about the idea of doing something similar for Array and any other types that use integer types directly as indices? For convenience it is still possible to have a public initialiser on the masking type(s), so that custom values can be used, but by using MaskedIndex(raw:) it should be much more obvious what&#39;s happening.<br></p><p>Feedback welcome!<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160929/c9b82c1c/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

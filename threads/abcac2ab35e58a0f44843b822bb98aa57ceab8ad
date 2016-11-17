@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Why doesn&#39;t removeLast() on Collection return an optional?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October 17, 2016 at 01:00:00pm</p></header><div class="content"><p>on Mon Oct 17 2016, Louis D&#39;hauwe &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Regarding the removeLast() function on Collection:<br>&gt;<br>&gt; The current implementation<br>&gt; &lt;https://github.com/apple/swift/blob/c3b7709a7c4789f1ad7249d357f69509fb8be731/stdlib/public/core/BidirectionalCollection.swift#L228&gt;<br>&gt; is:<br>&gt; @discardableResult<br>&gt; public mutating func removeLast() -&gt; Iterator.Element {<br>&gt;  	let element = last!<br>&gt; 	self = self[startIndex..&lt;index(before: endIndex)]<br>&gt; 	return element<br>&gt; }<br>&gt;<br>&gt; This makes it so that if you call removeLast() on an empty collection you get a fatal error.<br>&gt; (&quot;fatal error: can&#39;t remove last element from an empty collection&quot;)<br>&gt;<br>&gt; The documentation for removeLast()<br>&gt; &lt;https://github.com/apple/swift/blob/c3b7709a7c4789f1ad7249d357f69509fb8be731/stdlib/public/core/BidirectionalCollection.swift#L220&gt;<br>&gt; even has this noted:<br>&gt; &quot;The collection must not be empty.&quot;.<br>&gt;<br>&gt; Surely you could just remove the explicit unwrapping of &#39;last&#39; and add a guard statement? <br>&gt;<br>&gt; As such:<br>&gt; @discardableResult<br>&gt; public mutating func removeLast() -&gt; Iterator.Element? {<br>&gt;  	guard let element = last else {<br>&gt; 		return nil<br>&gt; 	}<br>&gt; 	self = self[startIndex..&lt;index(before: endIndex)]<br>&gt; 	return element<br>&gt; }<br>&gt;<br>&gt; It sure seems more &quot;Swifty&quot; to alert at compile time that removing the last item of a collection<br>&gt; might fail, and make it return nil as a result.<br></p><p>see the popLast() method.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>ExpressibleByStringInterpolation vs. String re-evaluation vs. Regex</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>August  9, 2016 at 01:00:00pm</p></header><div class="content"><p>on Mon Aug 08 2016, Jacob Bandes-Storch &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hi Dave,<br>&gt; I just filed https://bugs.swift.org/browse/SR-2303.<br>&gt;<br>&gt; Brainstorming: is it important that the init(stringInterpolation:) and<br>&gt; init(stringInterpolationSegment:) requirements are on the same type?<br></p><p>As far as I&#39;m concerned the design space is wide open.<br></p><p>&gt; Perhaps it would work to separate these two requirements, allowing the<br>&gt; segments to construct intermediate types, and only requiring the type<br>&gt; adopting ExpressibleByStringInterpolation to implement<br>&gt; init(stringInterpolation:).<br>&gt;<br>&gt; This would be nice because it would be much easier for types which aren&#39;t<br>&gt; enums to conform to ExpressibleByStringInterpolation. In my auto layout<br>&gt; example (https://gist.github.com/jtbandes/9c1c25ee4996d2554375), the<br>&gt; ConstraintCollection type is only an enum because it has to provide all the<br>&gt; initializers, but it&#39;s strange that the cases are accessible publicly;<br></p><p>I&#39;m not sure whether what you&#39;re describing is just a limitation in our<br>access control (a public type conforming to a protocol must expose all<br>of that protocol&#39;s requirements as public members).  If so, maybe we<br>should fix *that*, rather than morphing designs to work around it.<br></p><p>That said, I don&#39;t really have time to think about the design of<br>ExpressibleByStringInterpolation in detail at the moment, as we&#39;re right<br>up against the Swift 3 ship date (sorry!)  If you&#39;d bring it up in a few<br>months I&#39;m sure I&#39;ll have a lot more bandwidth for it.<br></p><p>Thanks,<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

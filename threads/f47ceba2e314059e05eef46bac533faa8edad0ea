@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0a2c0bcff308a97d2617cdba339914c6?s=50"></div><header><strong>CoreData weirdness in development build</strong> from <string>Charles Lane</string> &lt;clane_47 at bellsouth.net&gt;<p>June  7, 2016 at 03:00:00pm</p></header><div class="content"><p>Here’s something ‘cute’. Make a simple ios project using coredata. Name an entity whatever you like, but give it any attribute that starts with ‘is’. Such as isVisited or isDone or whatever you like of type Boolean.  Try setting the entity to true or false, no matter, and save the entity. The project will fail saying : 2016-06-07 15:10:55.601 TestCoreData[5269:1527094] -[TestCoreData.HoldBoolean setDone:]: unrecognized selector sent to instance 0x7fd9fbc59380. (HoldBoolean was the entity name in the project)<br>The attribute in that case was set to ‘isDone’, if the attribute had been named ‘isWhatever’, it would have failed saying TestCoreData.HoldBoolean setWhatever:] <br>CoreData won’t accept any attribute starting with ‘is’. This is with the latest June 6 development build but it was the same in the May 31 build. This may only affect attributes of type boolean, I haven’t checked that.<br></p><p>Or am I doing something stupid?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>CoreData weirdness in development build</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>June  8, 2016 at 02:00:00am</p></header><div class="content"><p>&gt; Here’s something ‘cute’. Make a simple ios project using coredata. Name an entity whatever you like, but give it any attribute that starts with ‘is’. Such as isVisited or isDone or whatever you like of type Boolean.  Try setting the entity to true or false, no matter, and save the entity. The project will fail saying : 2016-06-07 15:10:55.601 TestCoreData[5269:1527094] -[TestCoreData.HoldBoolean setDone:]: unrecognized selector sent to instance 0x7fd9fbc59380. (HoldBoolean was the entity name in the project)<br>&gt; The attribute in that case was set to ‘isDone’, if the attribute had been named ‘isWhatever’, it would have failed saying TestCoreData.HoldBoolean setWhatever:] <br>&gt; CoreData won’t accept any attribute starting with ‘is’. This is with the latest June 6 development build but it was the same in the May 31 build. This may only affect attributes of type boolean, I haven’t checked that.<br>&gt; <br>&gt; Or am I doing something stupid?<br></p><p>Objective-C has a sort of informal, unevenly-used convention that the setter corresponding to `-isFoo` is `-setFoo:`, not `-setIsFoo:`. I suspect that Core Data is trying to follow this convention, but Swift doesn&#39;t generate setters using this pattern.<br></p><p>It would be nice if you could write something like this:<br></p><p>	var isFoo: Bool {<br>		get<br>		@objc(setFoo:) set<br>	}<br></p><p>But unfortunately you don&#39;t seem to be able to. Perhaps the simplest fix is to say:<br></p><p>	@objc(foo) var isFoo: Bool<br></p><p>And adjust your managed object model accordingly.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0a2c0bcff308a97d2617cdba339914c6?s=50"></div><header><strong>CoreData weirdness in development build</strong> from <string>Charles Lane</string> &lt;clane_47 at bellsouth.net&gt;<p>June  8, 2016 at 07:00:00am</p></header><div class="content"><p>Thanks Brent, sounds reasonable. Although I don’t think this was a problem in pre-Swift 3.0 builds. I think I’ll just avoid using attributes beginning with ‘is’ in the managed object model!<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

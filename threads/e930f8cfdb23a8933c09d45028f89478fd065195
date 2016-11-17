@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted with Revision] SE-0076: Add overrides taking an UnsafePointer source to non-destructive copying methods on UnsafeMutablePointer</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>May 11, 2016 at 03:00:00pm</p></header><div class="content"><p>Proposal link: https://github.com/apple/swift-evolution/blob/master/proposals/0076-copying-to-unsafe-mutable-pointer-with-unsafe-pointer-source.md<br></p><p>Hello Swift Community,<br></p><p>The review of SE-0076: &quot;Add overrides taking an UnsafePointer source to non-destructive copying methods on UnsafeMutablePointer&quot; ran from May 3…9, 2016. The proposal is *Accepted with Revision* for Swift 3.  <br></p><p>The feedback on the proposal from the community and the core team universally agreed that there is a problem that needs to be solved here.  However, instead of adding overloads of the methods as proposed, it would be better to change the existing methods to take UnsafePointer&lt;&gt; instead of UnsafeMutablePointer&lt;&gt;.  Given the existing promotion rules that exist in the compiler, it will achieve the same effect.  As part of this, other similar functions in the standard library should be audited and fixed as well.<br></p><p>Thank you to Janosch Hildebrand for driving this discussion.  I filed SR-1490 to track this work, it would be a great starter bug.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

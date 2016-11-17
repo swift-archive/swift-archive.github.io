@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/212199c56fae3d6b09dbf788f1c5e313?s=50"></div><header><strong>Genericitzing closures based on paramter-list/return type</strong> from <string>G B</string> &lt;g.c.b.at.work at gmail.com&gt;<p>June 18, 2016 at 05:00:00pm</p></header><div class="content"><p>Is there a way to make a generic type signature for a closure such that I can later call it generically? In particular my question is how to deal with an unknown number of arguments.<br></p><p>I have an object that I’d like to call a series of closures on an update, and I’d like other objects to be able to register closures that they’d like to be called with that first object.<br></p><p>Closures aren’t hashable, but I’d like to be able to also unregister a closure, so I wound up creating a custom type to handle this based on a dictionary:<br></p><p>//T is the closure signature such as Double-&gt;()<br>struct BlockCollection&lt;T&gt; : SequenceType {<br>    private var idx=0<br>    var blockDict:[Int:T]=[:]<br></p><p>    mutating func addBlock(b:T) -&gt; Int {<br>        blockDict[idx]=b<br>        idx+=1<br>        return idx-1<br>    }<br></p><p>    mutating func dropBlock(k:Int) {<br>        blockDict.removeValueForKey(k)<br>    }<br></p><p>    func generate() -&gt; AnyGenerator&lt;T&gt; {<br>        var dgen=blockDict.generate()<br>        return AnyGenerator {<br>            return dgen.next()?.1<br>        }<br>    }<br>}<br></p><p><br>This was some of the earliest Swift code I’d written, so looking back at it I can see room for improvement (including the type name), but it gets the job done.<br></p><p>This lets me use the collection in code like this:<br></p><p>Declare it:<br></p><p>private var stateCallbacks=BlockCollection&lt;State&lt;EngineType&gt; -&gt; ()&gt; ()<br></p><p>Use it:<br></p><p>for b in stateCallbacks {<br>    b(newValue!)<br>}<br></p><p><br></p><p>So far, all’s good.  Now, I’d like to extend this idea to where I can ask the collection to run the for loop itself using syntax something like<br></p><p>stateCallbacks.runAllWith(newValue!)<br></p><p>I suspect that can be done if I know the blocks accept one argument and return one argument by using two type placeholders, say T for the argument and U for the return value. <br></p><p>What I don’t seem able to do is make this generic across an unknown number of parameters.  The type I’m creating doesn’t care what the structure of the block is, it just wants to accept closures with a certain signature and then provide a mechanism to call them by exposing an API that depends on the closure signature.<br></p><p>For example, if I had a collection of closures with a signature such as `(Double, Double) -&gt; ()`, I would want to be able to call the elements with `callbacks.runAllWith(d1,d2)`.<br></p><p>I don’t think there’s support for variadic generic parameters, so I can’t go down that road.  <br></p><p>Is there a way to do this without requiring the caller to bundle arguments into a tuple and then requiring a wrapper around each closure to unwrap a tuple of arguments and do a hand-crafted tuple splat?<br></p><p>Thanks—<br> Greg<br></p><p><br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160618/dfaf158e/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

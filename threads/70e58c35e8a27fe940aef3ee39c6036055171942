@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8f89817ad0593320f71001b99e709d0a?s=50"></div><header><strong>The nil coalescing operator</strong> from <string>Valentin Radu</string> &lt;radu.v.valentin at icloud.com&gt;<p>February 23, 2016 at 01:00:00am</p></header><div class="content"><p>Hello all,<br></p><p><br>I have a question re the nil coalescing operator. Shouldn’t <br></p><p>print (&quot;This machine&#39;s ip is \(result[&quot;ip&quot;] ?? “unknown&quot;)”) <br></p><p>return This machine&#39;s ip is 78.97.202.31 ? Since the value is always String, not String?.  However, it still surrounds the ip with Optional(). <br></p><p>So I’m using, (result.0[&quot;ip&quot;] ?? &quot;nil&quot;).description but is long and dirty. Any thoughts? <br></p><p>Cheers!<br>– V<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160223/70e51942/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>The nil coalescing operator</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>February 23, 2016 at 09:00:00am</p></header><div class="content"><p>That does seem like a bug, but one possibility is that &#39;result&#39; has type &#39;AnyObject&#39;, and so you&#39;re getting an extra level of optional due to the subscript operator possibly not being there. Do you have a full, self-contained test case?<br></p><p>Jordan<br></p><p>&gt; On Feb 22, 2016, at 15:17 , Valentin Radu via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello all,<br>&gt; <br>&gt; <br>&gt; I have a question re the nil coalescing operator. Shouldn’t <br>&gt; <br>&gt; print (&quot;This machine&#39;s ip is \(result[&quot;ip&quot;] ?? “unknown&quot;)”) <br>&gt; <br>&gt; return This machine&#39;s ip is 78.97.202.31 ? Since the value is always String, not String?.  However, it still surrounds the ip with Optional(). <br>&gt; <br>&gt; So I’m using, (result.0[&quot;ip&quot;] ?? &quot;nil&quot;).description but is long and dirty. Any thoughts? <br>&gt; <br>&gt; Cheers!<br>&gt; – V<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160223/fc53ab20/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

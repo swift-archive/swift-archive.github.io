@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0d4fb9162c777a5d6d0b1fb00893d709?s=50"></div><header><strong>Should all GeneratorTypes also be SequenceTypes?</strong> from <string>Haravikk</string> &lt;swift-evolution at haravikk.me&gt;<p>March 14, 2016 at 11:00:00pm</p></header><div class="content"><p>There are quite a lot of generator implementations that also implement SequenceType (since it’s as simple as returning self). Indeed, the AnyGenerator type conforms to SequenceType, allowing any generator to be wrapped as a sequence, though I imagine this comes with some overhead. So it got me thinking, why doesn’t GeneratorType just require conformance to SequenceType? It would be extremely simple to provide the default implementation (return self like I say), and allow all generators to be passed seamlessly into functions that take sequences, without having to wrap them first. It also gives access to the same rich set of methods to generators directly.<br></p><p><br>I can’t really think of any reason not to do this, which is why I wanted to ask first, as I thought perhaps there’s something I’m missing. The only things I can think of are destructive sequences or generators implemented by classes (both of which could result in different references getting different elements, or one being consumed before it is used), however this is something that already requires clear documentation, since I could fall into the same trap using AnyGenerator anyway.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Should all GeneratorTypes also be SequenceTypes?</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>March 14, 2016 at 05:00:00pm</p></header><div class="content"><p>On Mon, Mar 14, 2016 at 4:42 PM, Haravikk via swift-evolution<br>&lt;swift-evolution at swift.org&gt; wrote:<br>&gt; There are quite a lot of generator implementations that also implement SequenceType (since it’s as simple as returning self). Indeed, the AnyGenerator type conforms to SequenceType, allowing any generator to be wrapped as a sequence, though I imagine this comes with some overhead. So it got me thinking, why doesn’t GeneratorType just require conformance to SequenceType?<br></p><p>Because of compiler bugs.  We have the default implementation in the<br>library already, we just can&#39;t declare the conformance.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

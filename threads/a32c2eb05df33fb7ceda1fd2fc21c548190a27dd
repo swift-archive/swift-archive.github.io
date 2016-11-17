@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>Currying/Partial Application</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>October  5, 2016 at 05:00:00pm</p></header><div class="content"><p>Erica’s thread on currying made me remember a (very) early discussion on the topic where currying was being removed temporarily in hopes that partial application could be added back in later with better syntax.<br></p><p>I would really like to be able to do the following:<br></p><p>	let partial = myFunc(a: 5, b: _, c: 7)<br>	let ans = partial(b: 6)<br></p><p>Thanks,<br>Jon<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be09ed656d5d90501c958b001261f218?s=50"></div><header><strong>Currying/Partial Application</strong> from <string>Jeremy Pereira</string> &lt;jeremy.j.pereira at googlemail.com&gt;<p>October  6, 2016 at 10:00:00am</p></header><div class="content"><p>You can emulate it with a closure<br></p><p>func myFunc(a: Int, b: Int, c: Int) -&gt; Int { return a + b + c }<br></p><p>let partial = { (b) -&gt; Int in return myFunc(a: 5, b: b, c: 7) }<br>let ans = partial(6) // 18<br></p><p>It’s not ideal because you lose the argument label, but I think they’re going to fix that one day.<br></p><p>&gt; On 6 Oct 2016, at 01:50, Jonathan Hull via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Erica’s thread on currying made me remember a (very) early discussion on the topic where currying was being removed temporarily in hopes that partial application could be added back in later with better syntax.<br>&gt; <br>&gt; I would really like to be able to do the following:<br>&gt; <br>&gt; 	let partial = myFunc(a: 5, b: _, c: 7)<br>&gt; 	let ans = partial(b: 6)<br>&gt; <br>&gt; Thanks,<br>&gt; Jon<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

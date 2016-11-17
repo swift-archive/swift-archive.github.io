@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>Ambiguity passing `Any?` to generic constructor</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>August 29, 2016 at 08:00:00am</p></header><div class="content"><p>I’m making a little utility struct that needs to be able to wrap an arbitrary value, which may be an optional, and be able to tell whether it’s nil. So I declared it like this (I’ve removed the interesting/useful parts of the code leaving just the constructors and one property):<br></p><p>public struct check&lt;T&gt; {<br>    let actual: T?<br></p><p>    public init(_ a: T) {<br>        actual = a<br>    }<br></p><p>    public init(_ a: T?) {<br>        actual = a<br>    }<br></p><p>    public var isNil: Bool {<br>        return actual == nil<br>    }<br>}<br></p><p>This works fine, except when I try to use it with a value of type `Any?`:<br></p><p>let str: String = &quot;Hi&quot;<br>check(str).isNil		// false<br></p><p>let maybe: String? = nil<br>check(maybe).isNil		// true<br></p><p>let hmm: Any? = nil<br>check(hmm).isNil		// Error: “Ambiguous use of ‘init&#39;&quot;<br></p><p>(I agree that `Any?` is sort of a weird type; in my code it represents a value that might be a JSON object. NSJSONSerialization parses to type `Any`, but there might not be a value, so it becomes an Optional&lt;Any&gt; or Any?.)<br></p><p>This worked in Swift 2.2, but after upgrading to Swift 3 [in the latest Xcode 8 beta] the compiler started complaining.<br></p><p>How can I fix the `check` struct&#39;s constructor(s) to make this work?<br></p><p>—Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160829/a784574f/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/957b675456a66c394945a7361aedd51d?s=50"></div><header><strong>Ambiguity passing `Any?` to generic constructor</strong> from <string>Zhao Xin</string> &lt;owenzx at gmail.com&gt;<p>August 30, 2016 at 05:00:00am</p></header><div class="content"><p>You can just remove<br></p><p>    public init(_ a: T) {<br>        actual = a<br>    }<br></p><p>It is redundant. Below code works.<br></p><p>public struct check&lt;T&gt; {<br></p><p>    let actual: T?<br></p><p>//<br></p><p>//    public init(_ a: T) {<br></p><p>//        actual = a<br></p><p>//    }<br></p><p><br></p><p>    public init(_ a: T?) {<br></p><p>        actual = a<br></p><p>    }<br></p><p><br></p><p>    public var isNil: Bool {<br></p><p>        return actual == nil<br></p><p>    }<br></p><p>}<br></p><p><br>let str: String = &quot;Hi&quot;<br></p><p>check(str).isNil // false<br></p><p><br>let maybe: String? = nil<br></p><p>check(maybe).isNil // true<br></p><p><br>let hmm: Any? = nil<br></p><p>check(hmm).isNil // true<br></p><p><br>Zhaoxin<br></p><p>On Mon, Aug 29, 2016 at 11:39 PM, Jens Alfke via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; I’m making a little utility struct that needs to be able to wrap an<br>&gt; arbitrary value, which may be an optional, and be able to tell whether it’s<br>&gt; nil. So I declared it like this (I’ve removed the interesting/useful parts<br>&gt; of the code leaving just the constructors and one property):<br>&gt;<br>&gt; public struct check&lt;T&gt; {<br>&gt;     let actual: T?<br>&gt;<br>&gt;     public init(_ a: T) {<br>&gt;         actual = a<br>&gt;     }<br>&gt;<br>&gt;     public init(_ a: T?) {<br>&gt;         actual = a<br>&gt;     }<br>&gt;<br>&gt;     public var isNil: Bool {<br>&gt;         return actual == nil<br>&gt;     }<br>&gt; }<br>&gt;<br>&gt;<br>&gt; This works fine, except when I try to use it with a value of type `Any?`:<br>&gt;<br>&gt; let str: String = &quot;Hi&quot;<br>&gt; check(str).isNil // false<br>&gt;<br>&gt; let maybe: String? = nil<br>&gt; check(maybe).isNil // true<br>&gt;<br>&gt; let hmm: Any? = nil<br>&gt; check(hmm).isNil // Error: “Ambiguous use of ‘init&#39;&quot;<br>&gt;<br>&gt;<br>&gt; (I agree that `Any?` is sort of a weird type; in my code it represents a<br>&gt; value that might be a JSON object. NSJSONSerialization parses to type<br>&gt; `Any`, but there might not be a value, so it becomes an Optional&lt;Any&gt; or<br>&gt; Any?.)<br>&gt;<br>&gt; This worked in Swift 2.2, but after upgrading to Swift 3 [in the latest<br>&gt; Xcode 8 beta] the compiler started complaining.<br>&gt;<br>&gt; How can I fix the `check` struct&#39;s constructor(s) to make this work?<br>&gt;<br>&gt; —Jens<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160830/f55a417d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a838c63b9093a77fb88231d65effa3b3?s=50"></div><header><strong>stale PRs</strong> from <string>Drew Crawford</string> &lt;drew at sealedabstract.com&gt;<p>April 14, 2016 at 06:00:00pm</p></header><div class="content"><p>Hello all,<br></p><p>I&#39;m growing concerned about a small workflow hangup.<br></p><p>I&#39;ve noticed a pattern in the PR queue where: a patch is generally uncontroversial, reviews are of very high quality, and authors are quick to respond to reviewer concerns.  However so much time elapses waiting for review or re-review that the patch becomes stale.  Authors bump infrequently to try not to be annoying, and I am sure reviewers grow weary as the bumps are a lot louder when there are 80 people doing it.<br></p><p>Examples I&#39;ve been following:<br></p><p>https://github.com/apple/swift/pull/629 &lt;https://github.com/apple/swift/pull/629&gt;<br>https://github.com/apple/swift/pull/1176 &lt;https://github.com/apple/swift/pull/1176&gt;<br>https://github.com/apple/swift/pull/1479 &lt;https://github.com/apple/swift/pull/1479&gt;<br>https://github.com/apple/swift/pull/1891 &lt;https://github.com/apple/swift/pull/1891&gt;<br>https://github.com/apple/swift-corelibs-libdispatch/pull/61 &lt;https://github.com/apple/swift-corelibs-libdispatch/pull/61&gt;<br>https://github.com/apple/swift-corelibs-libdispatch/pull/62 &lt;https://github.com/apple/swift-corelibs-libdispatch/pull/62&gt;<br>https://github.com/apple/swift-corelibs-libdispatch/pull/64 &lt;https://github.com/apple/swift-corelibs-libdispatch/pull/64&gt;<br></p><p>Speaking only for myself, dreading this outcome has prevented me from sending ~10 patches upstream in the last two months.  I can work around a bug from my code in five minutes; but to prosecute that fix upstream and into a snapshot takes 6 weeks, and it is just not worth the effort to me the vast majority of the time.  Only in cases where I absolutely must, and even then, the experience resolves me to do it locally next time.  Meanwhile, I wonder if some of the very bright reviewers I&#39;ve had the pleasure to work find pouring over a mountain of boring patches involving dark corners of platforms they don&#39;t personally use and problems they don&#39;t have to be a source of joy.<br></p><p>Now, perhaps this is all by design, and if so: Okay.  But if it isn&#39;t by design, I wonder if there is some small change we could make to increase everyone&#39;s happiness.<br></p><p>Respectfully,<br></p><p>Drew<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160414/86c2a934/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a0363a0549dd666b044b7674336b560c?s=50"></div><header><strong>swift-corelibs-libdispatch - Swift binaries?</strong> from <string>Ricardo N Olivieri</string> &lt;ricardo.olivieri at us.ibm.com&gt;<p>January 25, 2016 at 03:00:00pm</p></header><div class="content"><p>Hello, <br></p><p>Looking at the repos on GitHub (https://github.com/apple), we see the <br>different core libraries: swift-corelibs-xctest, <br>swift-corelibs-foundation, and swift-corelibs-libdispatch. <br>For swift-corelibs-foundation, the documentation states that it should be <br>part of Swift 3.0 (providing the same functionality as the Foundation <br>library). The swift-corelibs-xctest library is also expected to be part of <br>Swift 3. However, my understanding is that as of now, the <br>swift-corelibs-libdispatch is not part of the Swift binaries distribution. <br>We understand libdispatch is available on all Darwin platforms. However, <br>we are wondering, is the plan to make the swift-corelibs-libdispatch at <br>some point part of the Swift binary distribution for Linux systems? <br></p><p>Regards,<br>   Ricardo Olivieri<br>   Software Engineer<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160125/190c0a3a/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>swift-corelibs-libdispatch - Swift binaries?</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>January 25, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi Ricardo,<br></p><p>&gt; On Jan 25, 2016, at 1:43 PM, Ricardo N Olivieri via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hello, <br>&gt; <br>&gt; Looking at the repos on GitHub (https://github.com/apple &lt;https://github.com/apple&gt;), we see the different core libraries: swift-corelibs-xctest, swift-corelibs-foundation, and swift-corelibs-libdispatch. For swift-corelibs-foundation, the documentation states that it should be part of Swift 3.0 (providing the same functionality as the Foundation library). The swift-corelibs-xctest library is also expected to be part of Swift 3. However, my understanding is that as of now, the swift-corelibs-libdispatch is not part of the Swift binaries distribution &lt;https://swift.org/download/&gt;. We understand libdispatch is available on all Darwin platforms. However, we are wondering, is the plan to make the swift-corelibs-libdispatch at some point part of the Swift binary distribution for Linux systems? <br>&gt; <br></p><p>Yes, this is the long-term plan, once we get it up to a point where we can integrate it into the stack and Swift apps can use it seamlessly.<br></p><p>- Tony<br></p><p>&gt; Regards,<br>&gt;   Ricardo Olivieri<br>&gt;   Software Engineer<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160125/d5b5b3b4/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

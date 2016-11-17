@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/61f7b6db521e47b3807578cdf2c46b63?s=50"></div><header><strong>preprocessor and warnings for deprecated APIs...</strong> from <string>Martine Habib</string> &lt;marhab21 at gmail.com&gt;<p>October  5, 2016 at 11:00:00am</p></header><div class="content"><p>Hello!<br></p><p>I am working on porting my iOS app to iOS 10, using the new Notification<br>framework.<br>However, I still want it to work on iOS 9.*.<br>So, I invoke both frameworks within if blocks.<br></p><p>When I switch to iOS 10 deployment, I get a series of &quot;deprecated&quot; warnings<br>on the old API.<br>Is there a way in Swift to #ifdef the old API in case of deployment on iOS<br>10?<br>Something like:<br>#if SYSTEM_IOS10_OR_GREATER<br>etc.<br>Thank you for any help!<br></p><p>Martine<br>iOS/Android developer<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161005/31c573ed/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

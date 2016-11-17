@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c6fa15749be30ec7c60986b1a2349b9b?s=50"></div><header><strong>Constrained protocol extensions</strong> from <string>apetrovic@outlook.com</string> &lt;apetrovic at outlook.com&gt;<p>June  8, 2016 at 09:00:00pm</p></header><div class="content"><p>Hi swift-users,<br></p><p>I&#39;m trying achieve something similar to C++ template specialization with protocol extensions, and I found a strange behavior: <br></p><p>// ----------<br></p><p>protocol Printer {<br>    associatedtype TestType<br>    var value: TestType { get }<br>    func printMe()<br>}<br></p><p>extension Printer {<br>    func printMe() {<br>        print(&quot;Base printer: \(value)&quot;)<br>    }<br>}<br></p><p>extension Printer where TestType: SignedIntegerType {<br>    func printMe() {<br>        print(&quot;Int printer: \(value)&quot;)<br>    }<br>}<br></p><p>func testPrint&lt;T&gt;(value: T) {<br>    print(&quot;testPrint&quot;)<br>}<br></p><p>func testPrint&lt;T where T:SignedIntegerType&gt;(value: T) {<br>    print(&quot;testPrint for int&quot;)<br>}<br></p><p><br>class PrintClass&lt;T&gt;: Printer {<br>    var value: T<br>    init(value: T) { self.value = value }<br>}<br></p><p>func printPrinter&lt;T&gt;(printer: PrintClass&lt;T&gt;) {<br>    printer.printMe()<br>    testPrint(printer.value)<br>}<br></p><p><br>let intPrinter = PrintClass(value: 42)<br>let stringPrinter = PrintClass(value: &quot;test value&quot;)<br></p><p>intPrinter.printMe()                    // Int printer: 42<br>stringPrinter.printMe()               // Base printer: test value<br></p><p>testPrint(intPrinter.value)          // testPrint for int<br>testPrint(stringPrinter.value)     // testPrint<br></p><p>printPrinter(intPrinter)               // Base printer: 42    (!!!)<br>                                                 // testPrint                (!!!)<br></p><p>// ----------<br></p><p>The compiler correctly chooses specialized protocol extension as long as the function call is in the same scope with the object declaration. But all knowledge about types seems to be lost in the last line, when the scope is changed, in function printPrinter(). <br></p><p>Is this a bug or desired behaviour?<br></p><p>Alex<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

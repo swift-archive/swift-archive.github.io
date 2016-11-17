@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0c1c074a6e02963cd57f747ba0ccfe0b?s=50"></div><header><strong>NSStream implementation</strong> from <string>Mamatha Busi</string> &lt;mamabusi at in.ibm.com&gt;<p>June 23, 2016 at 08:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160623/6f94c357/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>NSStream implementation</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>June 24, 2016 at 03:00:00pm</p></header><div class="content"><p>Hi Mamatha,<br></p><p>This seems like a reasonable starting point. Thanks for taking this on!<br></p><p>- Tony<br></p><p>&gt; On Jun 23, 2016, at 1:14 AM, Mamatha Busi via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi <br>&gt; <br>&gt; Looking into the NSStream class in Foundation, the NSInputStream and NSOutputStream subclasses have their APIs unimplemented. I would like to have a go at implementing them. Found the Corefoundation implementation of streams in CFStream. Can I use CFStream and build upon it to get NSStream working?<br>&gt;  <br>&gt; Regards<br>&gt; Mamatha<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160624/3cc3deb0/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

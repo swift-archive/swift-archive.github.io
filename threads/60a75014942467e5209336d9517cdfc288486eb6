@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aec501e031dd5c000633709a7c3cf3f?s=50"></div><header><strong>Thank you, bye for now.</strong> from <string>Ted F.A.van Gaalen</string> &lt;tedvga at gmail.com&gt;<p>March 15, 2016 at 12:00:00pm</p></header><div class="content"><p>Dear colleagues <br></p><p>I’ve been on swift-evolution for a few weeks now<br>and I hope you liked at least some of<br>my contributions and ideas.<br></p><p>I won’t be on swift-evolution for some time,<br>because there are other things I must  do, <br>which have higher priority. <br></p><p>However, what also influenced my decision<br>was a hostile email I have have received<br>from someone who writes frequently on <br>swift-evolution. Positive feedback on that<br>from me was ignored. It doesn’t matter <br>wo that person is. I am not very good in dealing<br>with arrogance, too much ego and hypocrisy.<br></p><p>It was a pleasure to interact with so many creative<br>an inspiring people! I am sure this will<br>further improve Swift.<br></p><p>I would like to thank Chris and the other members<br>of the Swift Core Team for creating such a good<br>language that Swift already is!<br> <br></p><p>Kind Regards<br></p><p>Ted<br></p><p><br></p><p>ted van gaalen<br></p><p>Professional App development <br>for Apple IOS, OSX, Windows <br>and IBM Mainframes.<br>More about my iPad music maker apps <br>here:<br>RavelNotes &lt;http://www.ravelnotes.com/&gt;<br> &lt;http://ravelnotes.com/ravelnotesbasic/&gt;RavelNotesBasic &lt;http://www.ravelnotes.com/&gt;.<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160315/60a76eb6/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>Thank you, bye for now.</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>March 15, 2016 at 05:00:00pm</p></header><div class="content"><p>[swift-evolution -&gt; BCC so we take the remainder of the conversation private]<br></p><p>Hi Ted,<br></p><p>&gt; On Mar 15, 2016, at 4:10 AM, Ted F.A.van Gaalen via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Dear colleagues <br>&gt; <br>&gt; I’ve been on swift-evolution for a few weeks now<br>&gt; and I hope you liked at least some of<br>&gt; my contributions and ideas.<br>&gt; <br>&gt; I won’t be on swift-evolution for some time,<br>&gt; because there are other things I must  do, <br>&gt; which have higher priority. <br>&gt; <br>&gt; However, what also influenced my decision<br>&gt; was a hostile email I have have received<br>&gt; from someone who writes frequently on <br>&gt; swift-evolution. Positive feedback on that<br>&gt; from me was ignored. It doesn’t matter <br>&gt; wo that person is. I am not very good in dealing<br>&gt; with arrogance, too much ego and hypocrisy.<br>&gt; <br>&gt; It was a pleasure to interact with so many creative<br>&gt; an inspiring people! I am sure this will<br>&gt; further improve Swift.<br>&gt; <br>&gt; I would like to thank Chris and the other members<br>&gt; of the Swift Core Team for creating such a good<br>&gt; language that Swift already is!<br></p><p>We strive to maintain an open and welcoming community. It’s why we’ve had a code of conduct &lt;https://swift.org/community/#code-of-conduct&gt; governing our community from day one, and we take it seriously. I understand that you’re upset, but please help us address the underlying problem by contacting either conduct at swift.org &lt;mailto:conduct at swift.org&gt; or, if you prefer, one of the core team members &lt;https://swift.org/community/#community-structure&gt;.<br></p><p>	- Doug<br></p><p>&gt; <br>&gt; Kind Regards<br>&gt; <br>&gt; Ted<br>&gt; <br>&gt; <br>&gt; <br>&gt; ted van gaalen<br>&gt; <br>&gt; Professional App development <br>&gt; for Apple IOS, OSX, Windows <br>&gt; and IBM Mainframes.<br>&gt; More about my iPad music maker apps <br>&gt; here:<br>&gt; RavelNotes &lt;http://www.ravelnotes.com/&gt;<br>&gt;  &lt;http://ravelnotes.com/ravelnotesbasic/&gt;RavelNotesBasic &lt;http://www.ravelnotes.com/&gt;.<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160315/5b419334/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

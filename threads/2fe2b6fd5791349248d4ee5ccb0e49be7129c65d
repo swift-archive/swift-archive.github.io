@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>Swift 3.0 released!</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>September 13, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi everyone,<br></p><p>Swift 3.0 has been officially released:<br></p><p>    https://swift.org/blog/swift-3-0-released/<br></p><p>This moment marks an incredible achievement for the Swift open source community.  The release is the culmination of an incredible amount of discussion and implementation work to bring it all together.<br></p><p>Beyond the changes to Swift itself, the Linux port has made great strides in Swift 3 with the first official release of the core libraries.  The Swift Package Manager is now officially available for building cross-platform Swift packages.<br></p><p>Thank you to everyone — and I mean everyone — who contributed to Swift 3 in some way.<br></p><p>Ted<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160913/2fe2c65d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>[swift-users] Swift 3.0 released!</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>September 14, 2016 at 02:00:00am</p></header><div class="content"><p>Congratulations!!<br></p><p>On Tue, Sep 13, 2016 at 5:23 PM Ted kremenek via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Hi everyone,<br>&gt;<br>&gt; Swift 3.0 has been officially released:<br>&gt;<br>&gt;     https://swift.org/blog/swift-3-0-released/<br>&gt;<br>&gt; This moment marks an incredible achievement for the Swift open source<br>&gt; community.  The release is the culmination of an incredible amount of<br>&gt; discussion and implementation work to bring it all together.<br>&gt;<br>&gt; Beyond the changes to Swift itself, the Linux port has made great strides<br>&gt; in Swift 3 with the first official release of the core libraries.  The<br>&gt; Swift Package Manager is now officially available for building<br>&gt; cross-platform Swift packages.<br>&gt;<br>&gt; Thank you to everyone — and I mean everyone — who contributed to Swift 3<br>&gt; in some way.<br>&gt;<br>&gt; Ted<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160914/6e9069ad/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

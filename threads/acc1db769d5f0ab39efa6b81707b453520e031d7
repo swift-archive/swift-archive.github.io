@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f1b93037cbc5f78f16450bd925ce3b5b?s=50"></div><header><strong>Bug with override in class extension</strong> from <string>Marco Masser</string> &lt;lists at duckcode.com&gt;<p>December 30, 2015 at 06:00:00pm</p></header><div class="content"><p>There’s a case where a property (or function) override in a subclass’ extension leads to unexpected behavior:<br></p><p>class Base: NSObject {<br>    var directProperty: String { return &quot;This is Base&quot; }<br>    var indirectProperty: String { return directProperty }<br>}<br></p><p>class Sub : Base { }<br></p><p>extension Sub {<br>    override var directProperty: String { return &quot;This is Sub&quot; }<br>}<br></p><p>Accessing “directProperty” works as expected:<br></p><p>Base().directProperty // “This is Base“<br>Sub().directProperty // “This is Sub“<br></p><p>Accessing “indirectProperty”, shows the unexpected behavior:<br></p><p>Base().indirectProperty // “This is Base“<br>Sub().indirectProperty // “This is Base“ &lt;- Unexpected!<br></p><p>Adding the “dynamic” keyword to Base.directProperty resolves the issue, so it seems like the implementation of “indirectProperty” always accesses “directProperty” of the Base class directly instead of dispatching dynamically.<br></p><p>I think this is a bug, either because this doesn’t work as expected at runtime, or because it compiles at all. Because the Language Guide for Swift 2.1, chapter “Extensions” states in a note near the beginning:<br>&gt; “Extensions can add new functionality to a type, but they cannot override existing functionality.”<br></p><p>https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-ID151<br></p><p>That sounds to me like the “override” keyword must not appear in an extension. Curiously enough, the above code compiles and some parts of it even run without issues despite violating the Language Guide. If “Base” does not inherit from NSObject but becomes a root class instead, the compiler produces the following error in the extension:<br></p><p>&gt; Declarations in extensions cannot override yet<br></p><p><br>Note the “yet”. Seems like this is just not done yet. Also, I don’t understand how this feature could work except if overriding properties and methods in a subclass’ extension will only be supported if the original property or method was declared as dynamic. Otherwise the compiler could inline their implementation and the extension’s implementation would never be called – assuming the extension isn’t known at compile time, as could be the case for extensions to classes of system frameworks. Everything’s probably fine with Whole Module Optimization if the module contains all the classes and extensions.<br></p><p>Anyways, if this will be supported for non-Objective-C classes in the future, the above bug could point to something that doesn’t work correctly.<br></p><p>Also note that this could be related to (but not the same as) a bug reported already where methods implemented in a protocol extension cannot be overridden by a conforming class’ subclass:<br>https://bugs.swift.org/browse/SR-103<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151230/acc131d7/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

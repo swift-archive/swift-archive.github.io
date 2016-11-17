@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Custom equality/hash for Sets</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 21, 2016 at 04:00:00am</p></header><div class="content"><p>on Thu Feb 18 2016, Jordan Rose &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 18, 2016, at 16:09 , Dave Abrahams via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Thu Feb 18 2016, Jacob Bandes-Storch<br>&gt;<br>&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; Would it make sense for the standard library Set to provide variants (or<br>&gt;&gt;&gt; parallel versions of the same data structure) that take custom hashValue/==<br>&gt;&gt;&gt; implementations at init time (functions taking in Elements), rather than<br>&gt;&gt;&gt; relying on Hashable/Comparable protocols?<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Use case: I want a set of objects that are compared for equality using ===<br>&gt;&gt;&gt; rather than ==. This doesn&#39;t seem possible today, using Set, without<br>&gt;&gt;&gt; creating some sort of wrapper object.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; This particular case would be analogous to using NSHashTable with<br>&gt;&gt;&gt; NSPointerFunctionsObjectPointerPersonality. (Maybe all I&#39;m asking for is a<br>&gt;&gt;&gt; Swiftier API for NSHashTable — including ArrayLiteralConvertible, using<br>&gt;&gt;&gt; generics instead of UnsafePointer&lt;Void&gt;, etc.)<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Similarly, C++&#39;s unordered_map<br>&gt;&gt;&gt; &lt;http://en.cppreference.com/w/cpp/container/unordered_map<br>&gt;&gt;&gt; &lt;http://en.cppreference.com/w/cpp/container/unordered_map&gt;&gt; and<br>&gt;&gt;&gt; friends have<br>&gt;&gt;&gt; template parameters specifying the hash function and equality<br>&gt; comparator,<br>&gt;&gt;&gt; which use std::hash and == by default.<br>&gt;&gt; <br>&gt;&gt; It might make sense.  How bad is the wrapper solution for user code?<br>&gt;<br>&gt; struct CustomHashableFoo: Hashable {<br>&gt;   var value: Foo<br>&gt;   func hash() -&gt; Int {<br>&gt;     // custom hash function here<br>&gt;   }<br>&gt; }<br>&gt; func ==(a: CustomHashableWrapped, b: CustomHashableWrapped) {<br>&gt;   // custom == here<br>&gt; }<br>&gt;<br>&gt; Really not that bad, although you do have to get &#39;value&#39; in and out of<br>&gt; the box. <br></p><p>But that&#39;s the part I&#39;m worried about.<br></p><p>&gt; It&#39;s also not reusable code—you have to rewrite the box for every<br>&gt; type.<br></p><p>That&#39;s at least partially solvable: <br></p><p>protocol CustomHash {<br>  associatedtype Base<br>  static func hash(Base) -&gt; Int<br>  static func equal(Base, Base) -&gt; Bool<br>}<br></p><p>struct CustomHashed&lt;T: CustomHash&gt; : Hashable {<br>  let value: T.Base<br>  func hash() -&gt; Int { return T.hash(value) }<br>}<br></p><p>func == &lt;T&gt;(<br>  _ lhs: CustomHashed&lt;T&gt;, <br>  _ rhs: CustomHashed&lt;T&gt;<br>) -&gt; Bool {<br>  return T.equal(lhs, rhs)<br>}<br></p><p>// ---<br></p><p>// More compact than CustomHashableFoo at least.<br>struct MyFooHash : CustomHash {<br>  static func hash(Foo) -&gt; Int { ... }<br>  static func equal(Foo, Foo) -&gt; Bool { ... }<br>}<br></p><p>let s: Set&lt;CustomHashed&lt;MyFooHash&gt;&gt; = [ <br>  CustomHashed(myFoo1), CustomHashed(myFoo2)<br>]<br></p><p>&gt;<br>&gt; I&#39;d say you usually don&#39;t want to allow custom hash/== closures<br>&gt; because (a) then you have to store them somewhere, and (b) the<br>&gt; compiler won&#39;t usually be able to inline them away. You also end up<br>&gt; with a Set&lt;Foo&gt; that doesn&#39;t behave like a normal Set&lt;Foo&gt;—maybe you<br>&gt; can insert equal-but-not-identical elements—which is bad if anyone&#39;s<br>&gt; relying on normal Set-like guarantees.<br></p><p>Not to mention that we don&#39;t know how to implement equality of closures.<br></p><p>If we were going to parameterize Set somehow, it would have to be<br></p><p>  CustomSet&lt;T, H: CustomHash where H.Base == T&gt;<br></p><p>and we&#39;d want the ability to have a default for H when T conforms to<br>Hashable, which is currently beyond the language.<br></p><p><br>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

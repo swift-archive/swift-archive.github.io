@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7688418cc7ca56c719746cc448149e28?s=50"></div><header><strong>Beginner Question</strong> from <string>Rich De Steno</string> &lt;ironrock at verizon.net&gt;<p>February 13, 2016 at 01:00:00pm</p></header><div class="content"><p>I have created and circulated over years several games for Windows <br>written in the C++ language.  I would like to upgrade the code to Swift <br>and create iPhone apps for them.  I reviewed much of the Swift Guide at <br>Swift.org, but it appears that I must install this Xcode 7 and a <br>compiler, but all of this must be done on a Mac, which I do not <br>currently have.  Is it correct that I must purchase a Mac computer to do <br>this, and how difficult will it be to make this transition from a C++ <br>Windows game to a Swift iPhone app? Programming is basically a hobby for <br>me, not a profession.  Any guidance would be appreciated.<br></p><p>-- <br>Rich De Steno<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7321934b88ca8da079d7b89926501a9c?s=50"></div><header><strong>Beginner Question</strong> from <string>David Turnbull</string> &lt;dturnbull at gmail.com&gt;<p>February 13, 2016 at 10:00:00am</p></header><div class="content"><p>Swift is a wonderful alternative to C++ for games and creative coding. I<br>already have OpenGL, a math library, and image loading working. None of<br>this needs a Mac.<br></p><p>https://github.com/AE9RB/SwiftGL<br></p><p>If you simply want to make iPhone apps then buying a Mac is the only<br>option. But if you wanted to play with graphics on Swift before committing<br>to a purchase, SwiftGL can give you a taste. Although the *Kit libraries<br>from Apple are far more comprehensive than SwiftGL which is an unfunded<br>one-man show right now.<br></p><p>-david<br></p><p>On Sat, Feb 13, 2016 at 10:09 AM, Rich De Steno via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; I have created and circulated over years several games for Windows written<br>&gt; in the C++ language.  I would like to upgrade the code to Swift and create<br>&gt; iPhone apps for them.  I reviewed much of the Swift Guide at Swift.org, but<br>&gt; it appears that I must install this Xcode 7 and a compiler, but all of this<br>&gt; must be done on a Mac, which I do not currently have.  Is it correct that I<br>&gt; must purchase a Mac computer to do this, and how difficult will it be to<br>&gt; make this transition from a C++ Windows game to a Swift iPhone app?<br>&gt; Programming is basically a hobby for me, not a profession.  Any guidance<br>&gt; would be appreciated.<br>&gt;<br>&gt; --<br>&gt; Rich De Steno<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160213/364ef574/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

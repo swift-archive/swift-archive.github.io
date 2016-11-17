@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e828f637e91f7d986b7a79574dc0c45a?s=50"></div><header><strong>Proposal: Port open source productivity apps to Swift to gain insight into language evolution.</strong> from <string>Amir Michail</string> &lt;a.michail at me.com&gt;<p>December 20, 2015 at 12:00:00pm</p></header><div class="content"><p>Major productivity apps are probably most representative of what &quot;normal code&quot; looks like and would therefore give you excellent insight into how the language should evolve.<br></p><p>My recommendation would be to port the open source TeXmacs to Swift. It’s by far the best coded and powerful productivity app that I have seen and should have replaced TeX/LaTeX for education and research long ago.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/831ba6eb600af4a6587f263373921bb2?s=50"></div><header><strong>Proposal: Port open source productivity apps to Swift to gain insight into language evolution.</strong> from <string>Tino Heth</string> &lt;2th at gmx.de&gt;<p>December 20, 2015 at 06:00:00pm</p></header><div class="content"><p>&gt; My recommendation would be to port the open source TeXmacs to Swift. It’s by far the best coded and powerful productivity app that I have seen and should have replaced TeX/LaTeX for education and research long ago.<br>That&#39;s a joke, isn&#39;t it?<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e828f637e91f7d986b7a79574dc0c45a?s=50"></div><header><strong>Proposal: Port open source productivity apps to Swift to gain insight into language evolution.</strong> from <string>Amir Michail</string> &lt;a.michail at me.com&gt;<p>December 20, 2015 at 12:00:00pm</p></header><div class="content"><p>&gt; On Dec 20, 2015, at 12:19 PM, Tino Heth via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; My recommendation would be to port the open source TeXmacs to Swift. It’s by far the best coded and powerful productivity app that I have seen and should have replaced TeX/LaTeX for education and research long ago.<br>&gt; That&#39;s a joke, isn&#39;t it?<br></p><p>No, I’m serious.<br></p><p>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3d118cdf2fe31053bc7032466c4da282?s=50"></div><header><strong>Proposal: Port open source productivity apps to Swift to gain insight into language evolution.</strong> from <string>Craig Cruden</string> &lt;ccruden at novafore.com&gt;<p>December 21, 2015 at 12:00:00am</p></header><div class="content"><p>Port Scalaz just for fun :p<br></p><p>another one would be porting a DSL like maybe a SQL DB DSL….. :p<br></p><p><br>&gt; On 2015-12-21, at 0:13:30, Amir Michail via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Major productivity apps are probably most representative of what &quot;normal code&quot; looks like and would therefore give you excellent insight into how the language should evolve.<br>&gt; <br>&gt; My recommendation would be to port the open source TeXmacs to Swift. It’s by far the best coded and powerful productivity app that I have seen and should have replaced TeX/LaTeX for education and research long ago.<br>&gt; <br>&gt; <br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>Proposal: Port open source productivity apps to Swift to gain insight into language evolution.</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>December 21, 2015 at 12:00:00am</p></header><div class="content"><p>&gt; My recommendation would be to port the open source TeXmacs to Swift. It’s by far the best coded and powerful productivity app that I have seen and should have replaced TeX/LaTeX for education and research long ago.<br></p><p>If you want to do it, go ahead. It&#39;s not really part of the Swift project (compiler, standard library, core libraries, package manager), so you don&#39;t need to ask anyone&#39;s permission or make a formal proposal.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

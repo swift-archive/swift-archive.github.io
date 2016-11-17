@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Analysis of case conventions for initialisms</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 11, 2016 at 11:00:00pm</p></header><div class="content"><p>on Thu Feb 11 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; I just posted a write-up about various case conventions for<br>&gt; initialisms:<br>&gt;&gt; https://gist.github.com/dabrahams/55fc5ece355da4664730.  I was<br>&gt; surprised<br>&gt;&gt; at how it turned out, FWIW.<br>&gt;<br>&gt; This is perhaps not a practical answer, but honestly, I&#39;m having<br>&gt; trouble thinking of a case where a variable name that&#39;s an initialism<br>&gt; is a *good* name. Initialisms often make sense as types—HTML, URL,<br>&gt; UUID, etc. But as variable names, they tend to be overly vague. For<br>&gt; instance, in the example you give:<br>&gt;<br>&gt; 	func saveToURL(<br>&gt; 	  _ url: NSURL,<br>&gt; 	  forSaveOperation saveOperation: UIDocumentSaveOperation,<br>&gt; 	  completionHandler completionHandler: ((Bool) -&gt; Void)?)<br>&gt;<br>&gt; `url` is not really a very descriptive name for the parameter; it<br>&gt; would probably be better as `destinationURL` or `fileURL` or<br>&gt; `documentURL`. You might even want to drop the `URL` from the end of<br>&gt; those, making `destination`, `file`, or `document`. The name `url` is<br>&gt; about as descriptive as `block` would be for the last parameter.<br></p><p>Yeah, it&#39;s a poor name, but people do it anyway, and there are still<br>plenty of legitimate uses for names *starting* with &quot;url&quot;<br></p><p>&gt; (That&#39;s not to say I haven&#39;t done this; I certainly have. <br></p><p>See, there?<br></p><p>&gt; But I&#39;m thinking that maybe the code where I did it wasn&#39;t as good as<br>&gt; it could have been.)<br>&gt;<br>&gt; So I wonder if we shouldn&#39;t instead guide that initialisms should not<br>&gt; appear at the beginning of variable names. You should name your<br>&gt; variables (and properties) for their semantic, not their type.<br>&gt;<br>&gt; If initialisms don&#39;t appear at the beginning of variable names, then<br>&gt; you can distinguish between types and variables by<br>&gt; capitalization. That leaves only the word boundary issues, which I<br>&gt; think we can live with.<br></p><p>It&#39;s an interesting angle, but does banning “urlToOpen” or “asciiSpace”<br>(pick your favorite spelling convention) really make sense?<br></p><p><br>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

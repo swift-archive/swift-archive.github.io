@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Update the signature of ObjectiveC.autoreleasepool [SR-842]</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>March 25, 2016 at 09:00:00am</p></header><div class="content"><p>on Wed Mar 23 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Mar 21, 2016, at 9:37 AM, Jordan Rose via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; -1 for the signature change. The most common case of autoreleasepool<br>&gt;&gt; does not return a value and has a multi-statement body that prevents<br>&gt;<br>&gt;&gt; the result type from being inferred. This needs to continue to work:<br>&gt;&gt; <br>&gt;&gt; autoreleasepool {<br>&gt;&gt;   foo()<br>&gt;&gt;   bar()<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; If we had a rule to default generic return values to Void if they<br>&gt;&gt; aren&#39;t used then I&#39;d be okay with it, but that&#39;d be a separate<br>&gt;&gt; proposal. (Providing two overloads may also work; haven&#39;t tested<br>&gt;&gt; it.)<br>&gt;<br>&gt; I understand that Jordan withdrew his objection later (because no<br>&gt; overload is required) but it still isn&#39;t clear to me that<br>&gt; autoreleasepool should return a value.<br>&gt;<br>&gt; Here’s my thought process: autoreleasepool is *intentionally* looking<br>&gt; like a statement, not an expression.  <br></p><p>I guess there&#39;s no arguing with the intention here, because<br>autoreleasepool in the library predates me on the project, but it&#39;s<br>worth asking: why is it a good thing for autoreleasepool to be like a<br>statement and not like an expression?  As far as I can tell that just<br>makes it less useful and more cumbersome.  It is also an illusion that<br>breaks down at the edges, so why try to maintain it?<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Safer half-open range operator</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 11, 2016 at 12:00:00pm</p></header><div class="content"><p>on Mon Apr 11 2016, Haravikk &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; I like the idea in theory, but the question is; is it really safer to return a<br>&gt; result that the developer may not have wanted, versus an error indicating that a<br>&gt; mistake may have been made? <br></p><p>That&#39;s exactly the question.  We&#39;ve considered doing it both ways.<br></p><p>&gt; I wonder if perhaps there could be an alternative, such as a variation<br>&gt; of the operator like so:<br>&gt;<br>&gt; let b = a [0 &amp;..&lt; 5] // Equivalent to let b = a[0 ..&lt; min(5, a.endIndex)],<br>&gt; becomes let b = a[0 ..&lt; 3]<br>&gt;<br>&gt; I’m just not sure that we can assume that an array index out of range error is<br>&gt; okay without some kind of indication from the developer, as otherwise we could<br>&gt; end up returning a partial slice, which could end up causing an error elsewhere<br>&gt; where the size of the slice is assumed to be 5 but isn’t.<br>&gt;<br>&gt;     On 11 Apr 2016, at 13:23, Luis Henrique B. Sousa via swift-evolution<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     This proposal seeks to provide a safer ..&lt; (aka half-open range operator) in<br>&gt;     order to avoid **Array index out of range** errors in execution time.<br>&gt;<br>&gt;     Here is my first draft for this proposal:<br>&gt;     https://github.com/luish/swift-evolution/blob/half-open-range-operator/proposals/nnnn-safer-half-open-range-operator.md<br>&gt;<br>&gt;     In short, doing that in Swift causes a runtime error:<br>&gt;<br>&gt;     let a = [1,2,3]<br>&gt;     let b = a[0..&lt;5]<br>&gt;     print(b)<br>&gt;<br>&gt;     &gt; Error running code: <br>&gt;     &gt; fatal error: Array index out of range<br>&gt;<br>&gt;     The proposed solution is to slice the array returning all elements that are<br>&gt;     below the half-open operator, even though the number of elements is lesser<br>&gt;     than the ending of the half-open operator. So the example above would return<br>&gt;     [1,2,3]. <br>&gt;     We can see this very behaviour in other languages, such as Python and Ruby<br>&gt;     as shown in the proposal draft.<br>&gt;<br>&gt;     This would eliminate the need for verifications on the array size before<br>&gt;     slicing it -- and consequently runtime errors in cases when the programmer<br>&gt;     didn&#39;t. <br>&gt;<br>&gt;     Viewing that it is my very first proposal, any feedback will be helpful.<br>&gt;<br>&gt;     Thanks!<br>&gt;<br>&gt;     Luis Henrique Borges<br>&gt;     @luishborges<br>&gt;     _______________________________________________<br>&gt;     swift-evolution mailing list<br>&gt;     swift-evolution at swift.org<br>&gt;     https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Proposal] Safer half-open range operator</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>April 11, 2016 at 10:00:00pm</p></header><div class="content"><p>&gt; On Apr 11, 2016, at 12:30 PM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; on Mon Apr 11 2016, Haravikk &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; I like the idea in theory, but the question is; is it really safer to return a<br>&gt;&gt; result that the developer may not have wanted, versus an error indicating that a<br>&gt;&gt; mistake may have been made? <br>&gt; <br>&gt; That&#39;s exactly the question.  We&#39;ve considered doing it both ways.<br></p><p>Right.  There is a natural tension here between:<br></p><p>1) “fail fast” - so that an error is easily detected and reasoned about by the programmer, and<br>2) &quot;blunder on” - hope that an error didn’t matter in practice, at the cost to making actual errors harder to diagnose.<br></p><p>-Chris<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

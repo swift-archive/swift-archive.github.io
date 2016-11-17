@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0041: Updating Protocol Naming Conventions for Conversions</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June  8, 2016 at 12:00:00pm</p></header><div class="content"><p>on Wed May 18 2016, Brent Royal-Gordon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;&gt; If we&#39;re doing this, I wonder if category 1 shouldn&#39;t just be<br>&gt;&gt; `Convertible`. This would preserve our `LiteralConvertible`<br>&gt;&gt; protocols with the same names (which, consistency issues aside, seem<br>&gt;&gt; perfectly cromulent), while shifting the `StringConvertible`<br>&gt;&gt; protocols over to the `Representable` category.<br>&gt;&gt; <br>&gt;&gt; Do you really think &#39;Convertible&#39; is more clear than &#39;Initializable&#39;?<br>&gt;<br>&gt; I don&#39;t think `Convertible` is clearer than `Initializable`, but I<br>&gt; think it rolls off the tongue better, is easier to spell, is more<br>&gt; compatible with non-initializer implementations, and in general wins<br>&gt; on a lot of squishy, subjective, hard-to-define axes.<br>&gt;<br>&gt; Subjectively, I&#39;ve noticed that a lot of people *don&#39;t* think of<br>&gt; things like `Double(myFloat)` as being initializers; they think of<br>&gt; them as conversions. To those people, `Convertible` is probably the<br>&gt; right name.<br></p><p>Convertible also tends to implies some semantics, whereas Initializable<br>just describes a valid syntax.  Protocols that merely describe what<br>you&#39;re allowed to write in code but nothing about its meaning are<br>usually a bad idea.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

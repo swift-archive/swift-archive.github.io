@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Adding a Self type name shortcut for static member access</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 10, 2016 at 10:00:00am</p></header><div class="content"><p>on Sat Apr 09 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On Apr 4, 2016, at 7:13 PM, Joe Groff via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; On Apr 4, 2016, at 11:17 AM, Erica Sadun &lt;erica at ericasadun.com&gt; wrote:<br>&gt;&gt;&gt;&gt; On Apr 4, 2016, at 12:13 PM, Joe Groff &lt;jgroff at apple.com&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; On Apr 4, 2016, at 11:00 AM, Erica Sadun via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; Are there reasons that prevent using `Self` as a synonym for an instance&#39;s type name?<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; Consider:<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; struct MyStruct {<br>&gt;&gt;&gt;&gt;&gt;   static func foo() { print(&quot;foo&quot;) }<br>&gt;&gt;&gt;&gt;&gt;   func bar() {<br>&gt;&gt;&gt;&gt;&gt;       MyStruct.foo() // works<br>&gt;&gt;&gt;&gt;&gt;       self.dynamicType.foo() // works<br>&gt;&gt;&gt;&gt;&gt;       Self.foo() // error<br>&gt;&gt;&gt;&gt;&gt;   }<br>&gt;&gt;&gt;&gt;&gt; }<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; Obviously, you can always name a type directly or use `self.dynamicType` but<br>&gt;&gt;&gt;&gt;&gt; neither solution does any favors for readability. Both approaches obscure intent, <br>&gt;&gt;&gt;&gt;&gt; especially as type names grow large: `MyExtremelyLargeTypeName.staticMember`,<br>&gt;&gt;&gt;&gt;&gt; for example. Plus, as Kevin B pointed out to me,  `self.dynamicType.classMember`  <br>&gt;&gt;&gt;&gt;&gt; and `TypeName.classMember` may not be synonyms in class types with non-final members.<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; I&#39;d like to see `Self.staticMember` introduced as a synonym for `TypeName.staticMember`.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; There&#39;s the wrinkle of inheritance, as there so often is. `Self`<br>&gt;&gt;&gt;&gt; inside a class scope already means &quot;the dynamic class of &#39;self&#39;&quot;,<br>&gt;&gt;&gt;&gt; not &quot;the type this declaration statically appears within&quot;. Now, we<br>&gt;&gt;&gt;&gt; really ought to allow you to utter Self in the bodies of class<br>&gt;&gt;&gt;&gt; methods too. It would be consistent to extend that courtesy to<br>&gt;&gt;&gt;&gt; value types, where dynamic `Self` always matches the static type,<br>&gt;&gt;&gt;&gt; from that principle.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; -Joe<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Would using another word or symbol fix that problem?<br>&gt;&gt; <br>&gt;&gt; My preference would be for there to be only one Self, and have it<br>&gt;&gt; always be the dynamic type of &#39;self&#39;. Some people disagree, but I<br>&gt;&gt; don&#39;t think it&#39;s all that onerous to have to write ClassName.foo if<br>&gt;&gt; that&#39;s really what you specifically mean.<br>&gt;<br>&gt; I agree with this, with the clarification that “Self” should be valid<br>&gt; inside of structs and enums, where it is unambiguous what it refers<br>&gt; to.<br></p><p>It is not that it&#39;s “all that onerous,” but that I (at least) was driven<br>to the assumption based on the uses “Self” in the language that it would<br>naturally work in other contexts.  As a user experience, it feels like a<br>violation when “Self” doesn&#39;t work where one would expect it to, and<br>that is compounded by the fact that the expected workaround<br></p><p>     private typealias _Self = NameOfTheTypeIAmDefining<br></p><p>doesn&#39;t work either because I can&#39;t use a private name in public APIs,<br>and<br></p><p>     public typealias Self_ = NameOfTheTypeIAmDefining<br></p><p>doesn&#39;t work because now I have to expose this extra name, “Self_,”<br>publicly.  It&#39;s a frustration I&#39;ve learned to live with, and others can<br>too, but it&#39;s really annoying.  The annoyance doesn&#39;t go away easily,<br>either: I&#39;m reminded of the frustration every time I have to work around<br>it.  IMO we should try to reduce the number of these repeated points of<br>friction when we can.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6b81089e81d6bb1e14b5adb746725de1?s=50"></div><header><strong>The Legend of the Toll-Free Swift -&gt; ObjC Collection Bridge</strong> from <string>Alexis</string> &lt;abeingessner at apple.com&gt;<p>October  7, 2016 at 05:00:00pm</p></header><div class="content"><p>I’ve been looking a lot into how Swift and Objective C collections inter-convert because a bunch of necessary cleanup for ABI stability interacts with it. Unfortunately I’ve run into some conflicting information with respect to how stuff should work, and how it seems to actually work. Hoping y&#39;all could help me clear this up.<br></p><p>Here’s the literal state of the Swift codebase, as I currently understand it:<br></p><p>* String, Array, Dictionary, and Set are all effectively tagged unions of &quot;Native || Objc”. <br>* The ObjC case is the result of lazy bridging, and is basically just storing an NSWhatever pointer.<br>* If any of these collections are in the ObjC state, then bridging to ObjC is obvious and trivial. (yay!)<br>* If any of these collections are in the Native state:<br></p><p><br></p><p>Array: If the storage is verbatim bridgeable to ObjC (~it’s a class or objc existential), just return the buffer (toll free). Otherwise, wrap the storage in a _SwiftDeferredNSArray (not toll free). The first time someone tries to access the contents of the _SwiftDeferredNSArray, a CAS-loop race occurs to create a new buffer containing all the bridged values. The only alternative to this would be bridging each element as it’s requested, but that’s ultimately just a trade-off (and has issues if people are relying on pointer equality). There has to be some toll here.<br></p><p>However the construction of the _SwiftDeferredNSArray is hypothetically unnecessary, as alluded to in the comments on _SDNSArray. The class and its CAS pointer could be embedded in the native array buffer. This would presumably incur some bloat on all native Arrays, but it might not be too bad (and platforms which don’t support _runtime(ObjC) presumably can omit it)? That said, I’m not 100% clear if we have the machinery to accomplish this yet or not. If anyone knows this, it would help a lot!<br></p><p>(there’s also some special case singleton for empty arrays, that all seems fine)<br>	<br>See: <br>	ContiguousArrayBuffer.swift: _asCocoaArray<br>	ContiguousArrayBuffer.swift: _getNonVerbatimBridgedHeapBuffer<br>	SwiftNativeNSArray: _SwiftDeferredNSArray (the class that wraps the storage)<br>		<br></p><p><br></p><p>Dictionary/Set: Looks to be pretty much the same thing as Array, except that the old indexing model led to a double-indirection being baked into the design, so a wrapper class doesn’t need to be constructed in the non-verbatim case.<br>(_NativeDictionaryStorageOwner contains the CAS-pointer). (toll free as can be!)<br></p><p>But this means that cleaning up all the gunk from the old indexing model and removing this indirection will lead to a regression in bridging performance *unless* Dictionary/Set gets the kind of optimizations discussed for Array. The class inlining optimization also seem more acceptable for Dictionary, since it’s necessarily a more bloated allocation than Array (less overhead by %).<br></p><p>See: <br>	HashedCollections.swift.gyb: _bridgeToObjectiveCImpl<br>	HashedCollections.swift.gyb: _Native${Self}StorageOwner (the “outer” class)<br></p><p><br></p><p><br>String: Unconditionally construct a class that wraps the String’s storage. (not toll free)<br>	<br>This just seems bad, and as far as I can tell isn’t expected. It seems to be the result of _StringBuffer (the lowest-level type in the String abstraction stack that still actually knows it’s a string) being a struct, and not a class that inherits from _HeapBuffer due to some problems with deriving from generic classes. I’m not 100% sure what the “fix” for this is supposed to be.<br></p><p>I think any fix will necessarily lead to String becoming pointer-sized, which appears to be a desirable ABI feature anyway.<br>However this has tricky consequences for Strings which are actually sub-slices of other Strings. At the limit, this will definitely require some slices which don’t allocate (because they just create a new String pointing at the old buffer with different start/length values) to start requiring an allocation (because those fields will be in a class, and not a struct). Maybe stack promotion and careful pointer-tagging can eliminate most allocations in practice.<br></p><p>See: <br>	StringBridge.swift: _stdlib_binary_bridgeToObjectiveCImpl<br>	StringBridge.swift: _NSContiguousString (the class that wraps the storage)<br>	StringBuffer.swift: _StringBuffer (the type that wants to subclass _HeapBuffer)<br></p><p><br></p><p><br>So that’s the situation as I understand it. Did I get anything wrong? Are there any details I’m missing?<br></p><p><br></p><p><br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161007/12009dd7/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

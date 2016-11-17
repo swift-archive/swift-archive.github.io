@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal draft] Enhanced floating-point protocols</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 21, 2016 at 05:00:00pm</p></header><div class="content"><p>on Thu Apr 21 2016, Thorsten Seitz &lt;tseitz42-AT-icloud.com&gt; wrote:<br></p><p>&gt; I totally agree with you. <br>&gt;<br>&gt; But I think that the suggested Summable with zero fits the bill of<br>&gt; your citation quite nicely as it actually is a very generic concept<br>&gt; which is widely useful.<br></p><p>Sure, that&#39;s Monoid.  My main objection is to adding a &quot;Multiplicative&quot;<br>that doesn&#39;t actually have two operations with the right relationships.<br></p><p>I&#39;m trying to explain general principles here, not pick on Summable<br>specifically.  The main reason not to add Summable is that once you<br>attach numeric semantics to the operation of Monoid, there are no useful<br>models I know of that can&#39;t also satisfy some much richer protocols such<br>as Arithmetic.<br></p><p>&gt; FWIW I had chosen the name Summable instead of Monoid for two reasons: (1) there<br>&gt; has been reluctance by some people on this list to add algebraic types to the<br>&gt; standard library<br></p><p>Yeah, we&#39;re reluctant because we want to do it right and that&#39;s hard.<br></p><p>&gt; and (2) Summable is one concrete instance of Monoid for numbers (with<br>&gt; respect to addition) just as my other suggestion Multiplicative is<br>&gt; another instance of Monoid for numbers (with respect to<br>&gt; multiplication).<br></p><p>Yeah... having a system where some things conform to the same protocol<br>in multiple ways is a whole &#39;nother kettle of fish that needs its own<br>language features<br>(c.f. http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2006/n2098.pdf)<br></p><p>&gt; If we want to add Monoid (and other algebraic types) to the standard<br>&gt; library (I would welcome that), you are certainly right that we should<br>&gt; design this well.  <br></p><p>We should design it well even if we&#39;re going to stick to numerical<br>subsets of Monoid ;^)<br></p><p>&gt; The above actually suggests that summable and multiplicative instances<br>&gt; for numbers might just be that: (singleton?)  instances of Monoid with<br>&gt; an associated type of Number (instead of protocols) so that they can<br>&gt; be passed around more easily.  <br></p><p>I don&#39;t know what you have in mind here.<br></p><p>&gt; On the other hand we could borrow some ideas from Eiffel to solve the<br>&gt; (semantic) diamond problem via renaming and choosing defaults. Like<br>&gt; the early work about generics you found, <br></p><p>I don&#39;t mean to be a pedant, but what I pointed you about is not about<br>generics, which is a collection language features.  Generics had been<br>around for years in Ada and C++ when that was written.  That paper is<br>about *generic programming*, which I won&#39;t define here because the paper<br>does a much better job than I can.<br></p><p>&gt; Eiffel&#39;s solution sadly is ignored in most language designs (and<br>&gt; interfaces thought of as a solution of the diamond problem... they are<br>&gt; not). Not too long ago I wrote a lenghty mail on this list about that<br>&gt; in the Mixin thread IIRC.<br>&gt;<br>&gt;     I&#39;m not sure I&#39;m adding anything by saying this, but one problem with<br>&gt;     creating protocols that satisfy the absolute minimum requirements for a<br>&gt;     particular algorithm is that you end up without any meaningful<br>&gt;     abstractions.<br>&gt;<br>&gt; I think Dave Sweeris&#39; example is not about creating Addable a.k.a<br>&gt; Summable just because it satisfies the algorithm but rather it happens<br>&gt; that Monoid *is* such a useful abstraction that it naturally pops up<br>&gt; in many algorithms.<br></p><p>Why do you think that?  It seemed pretty well focused around addition to<br>me.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

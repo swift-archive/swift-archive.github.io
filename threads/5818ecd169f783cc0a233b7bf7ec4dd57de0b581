@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e2303da56647c283b6d8e58d5831faca?s=50"></div><header><strong>Glibc struct sigaction and sigaction</strong> from <string>Joseph Bell</string> &lt;joe at iachieved.it&gt;<p>January 10, 2016 at 11:00:00pm</p></header><div class="content"><p>Not sure if anyone has ran into this use case before; thought I&#39;d ask.<br></p><p>On many Unices the sigaction function is used to trap receipt of a signal<br>and run a signal handler action.  I want to use this to trap SIGINT and I<br>think Swift&#39;s presentation of Glibc is leaving the struct sigaction<br>definition masked by the function definition (see man 2 sigaction).<br></p><p>Example:<br></p><p>import Glibc<br></p><p>enum Signal: Int32 {<br>  case HUP    = 1<br>  case INT    = 2<br>  case QUIT   = 3<br>  case ABRT   = 6<br>  case KILL   = 9<br>  case ALRM   = 14<br>  case TERM   = 15<br>}<br></p><p>typealias SignalHandler = (Int) -&gt; Void<br></p><p>func trap(signal:Signal, action:SignalHandler) {<br>  var act:sigaction = sigaction() // would expect this to be struct<br>  act.sa_handler = &amp;action        // but woe, it is not<br>  sigaction(signal.rawValue, &amp;act, nil)<br>}<br></p><p>trap(.INT) { signal in<br>  print(&quot;Intercepted signal \(signal)&quot;)<br>}<br></p><p>print(&quot;going to sleep...&quot;)<br>sigsuspend(nil)<br></p><p>This code gives:<br></p><p>sighandle.swift:17:3: error: value of type &#39;sigaction&#39; has no member<br>&#39;sa_handler&#39;<br>  act.sa_handler = &amp;action        // but woe, it is not<br></p><p>Any ideas of working around this or alternative approach to trapping<br>signals on Linux with Swift?<br></p><p>Joe<br></p><p>Credit for original to Adam Sharp&#39;s gist at<br>https://gist.github.com/sharplet/d640eea5b6c99605ac79<br></p><p>-- <br>---<br>http://dev.iachieved.it/iachievedit/<br>@iachievedit<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160110/5818b581/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e2303da56647c283b6d8e58d5831faca?s=50"></div><header><strong>Glibc struct sigaction and sigaction</strong> from <string>Joseph Bell</string> &lt;joe at iachieved.it&gt;<p>January 10, 2016 at 11:00:00pm</p></header><div class="content"><p>Using signal rather than sigaction does work:<br></p><p>typealias SignalHandler = __sighandler_t<br></p><p>func trap(signum:Signal, action:SignalHandler) {<br>  signal(signum.rawValue, action)<br>}<br></p><p>Not ideal but serviceable.  I&#39;d still be curious to understand whether<br>sigaction can be used.<br>Joe<br></p><p><br>On Sun, Jan 10, 2016 at 11:01 PM, Joseph Bell &lt;joe at iachieved.it&gt; wrote:<br></p><p>&gt; Not sure if anyone has ran into this use case before; thought I&#39;d ask.<br>&gt;<br>&gt; On many Unices the sigaction function is used to trap receipt of a signal<br>&gt; and run a signal handler action.  I want to use this to trap SIGINT and I<br>&gt; think Swift&#39;s presentation of Glibc is leaving the struct sigaction<br>&gt; definition masked by the function definition (see man 2 sigaction).<br>&gt;<br>&gt; Example:<br>&gt;<br>&gt; import Glibc<br>&gt;<br>&gt; enum Signal: Int32 {<br>&gt;   case HUP    = 1<br>&gt;   case INT    = 2<br>&gt;   case QUIT   = 3<br>&gt;   case ABRT   = 6<br>&gt;   case KILL   = 9<br>&gt;   case ALRM   = 14<br>&gt;   case TERM   = 15<br>&gt; }<br>&gt;<br>&gt; typealias SignalHandler = (Int) -&gt; Void<br>&gt;<br>&gt; func trap(signal:Signal, action:SignalHandler) {<br>&gt;   var act:sigaction = sigaction() // would expect this to be struct<br>&gt;   act.sa_handler = &amp;action        // but woe, it is not<br>&gt;   sigaction(signal.rawValue, &amp;act, nil)<br>&gt; }<br>&gt;<br>&gt; trap(.INT) { signal in<br>&gt;   print(&quot;Intercepted signal \(signal)&quot;)<br>&gt; }<br>&gt;<br>&gt; print(&quot;going to sleep...&quot;)<br>&gt; sigsuspend(nil)<br>&gt;<br>&gt; This code gives:<br>&gt;<br>&gt; sighandle.swift:17:3: error: value of type &#39;sigaction&#39; has no member<br>&gt; &#39;sa_handler&#39;<br>&gt;   act.sa_handler = &amp;action        // but woe, it is not<br>&gt;<br>&gt; Any ideas of working around this or alternative approach to trapping<br>&gt; signals on Linux with Swift?<br>&gt;<br>&gt; Joe<br>&gt;<br>&gt; Credit for original to Adam Sharp&#39;s gist at<br>&gt; https://gist.github.com/sharplet/d640eea5b6c99605ac79<br>&gt;<br>&gt; --<br>&gt; ---<br>&gt; http://dev.iachieved.it/iachievedit/<br>&gt; @iachievedit<br>&gt;<br></p><p><br></p><p>-- <br>---<br>http://dev.iachieved.it/iachievedit/<br>@iachievedit<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160110/9e97f015/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

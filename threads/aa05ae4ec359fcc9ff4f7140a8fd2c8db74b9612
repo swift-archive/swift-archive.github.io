@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted] SE-0089: Renaming String.init&lt;T&gt;(_: T)</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>June 22, 2016 at 07:00:00pm</p></header><div class="content"><p>Proposal link: https://github.com/apple/swift-evolution/blob/master/proposals/0089-rename-string-reflection-init.md<br></p><p>Hello Swift Community,<br></p><p>The second review of SE-0089: &quot;Renaming String.init&lt;T&gt;(_: T)&quot; ran from June 4...7. The proposal is *accepted* for Swift 3.  <br></p><p>The feedback from the community on this second round was light, which indicates that the extensive iteration on earlier rounds brought this to a good place.  The core team discussed other possibilities for the parameter label (e.g. from: instead of describing:) but ended up agreeing that a more explicit “describing:” label is the best fit for this API.<br></p><p>Many thanks to Austin Zheng and Brent Royal-Gordon for driving this discussion, iterating on the design, and writing a great proposal!  I filed SR-1881 to track implementation of this work.  This would be a great project for someone who wants to work on the standard library.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

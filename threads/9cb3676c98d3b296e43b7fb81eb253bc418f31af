@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e95942f1fe843f007ef5430b9acff78b?s=50"></div><header><strong>Idea for declaring expected types and value ranges</strong> from <string>Jaden Geller</string> &lt;jaden.geller at gmail.com&gt;<p>December  4, 2015 at 07:00:00pm</p></header><div class="content"><p>This seems to me like it’d require dependent types for all but trivial things. For example, imagine the condition `x &gt; 0`. The compiler must know how all function that act on `x` behave. It must know that, when acting on a positive, multiplying by a negative always flips the sign, subtracting a positive sometimes flips the sign, and adding a positive never flips the sign. The compiler must be taught rules about each each and every operation. It’s infeasible for the Swift compiler to infer these rules automatically with the current type system.<br></p><p>I’d definitely find it exciting if Swift ventured into dependent typing territory, but it’d be a significant complication of the type system.<br></p><p>— Jaden Geller<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

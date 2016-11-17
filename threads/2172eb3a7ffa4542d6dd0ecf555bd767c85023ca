@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c8bc65b07027beac76b917624be47611?s=50"></div><header><strong>swift build command</strong> from <string>Jon Hoffman</string> &lt;hoffman.jon at gmail.com&gt;<p>February  6, 2016 at 06:00:00pm</p></header><div class="content"><p>I am not sure if I am missing something but the ubuntu 15.10 build on January 25 and February 3 are both missing the ./usr/bin/swift-build and the ./usr/bin/swift-build-tool executables.  When I run the “swift build” command I get the error:<br></p><p>error: unable to invoke subcommand: /opt/swift/swift-2.2-SNAPSHOT-2016-02-03-a-ubuntu15.10/usr/bin/swift-build (No such file or directory)<br></p><p>Since it seems to be missing from the last two builds, I was wondering if it was going to be permanently removed and if so what should I be using instead.<br>Thanks,<br></p><p>Jon<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160206/217223ca/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>swift build command</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>February  6, 2016 at 03:00:00pm</p></header><div class="content"><p>On Sat, Feb 6, 2016 at 3:23 PM, Jon Hoffman via swift-users<br>&lt;swift-users at swift.org&gt; wrote:<br>&gt; I am not sure if I am missing something but the ubuntu 15.10 build on<br>&gt; January 25 and February 3 are both missing the ./usr/bin/swift-build and the<br>&gt; ./usr/bin/swift-build-tool executables.  When I run the “swift build”<br>&gt; command I get the error:<br></p><p>Hi Jon,<br></p><p>&gt;From https://swift.org/blog/swift-2-2-release-process/ :<br></p><p>&gt; The Swift Package Manager is still early in development and will not be included in this release.<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

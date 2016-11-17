@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ea43fa2e2f9fb02c26d654737d55cdc2?s=50"></div><header><strong>[proposal] extra if syntax</strong> from <string>Piotr)</string> &lt;piotr at mobilesoft-lab.com (MobileSoft&gt;<p>May 11, 2016 at 09:00:00pm</p></header><div class="content"><p>&gt; In your example:<br>&gt; a = 5 if b == x<br>&gt; <br>&gt; What value is assigned to &#39;a&#39; if &#39;b&#39; and &#39;x&#39; are not equal?<br></p><p>And what is with ‘a’ if this situation:<br></p><p>if b == x {<br>	a = 5<br>}<br></p><p>Nothing :)<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2ff1daab58cd5e44a457908d1905c322?s=50"></div><header><strong>[proposal] extra if syntax</strong> from <string>Krzysztof Siejkowski</string> &lt;krzysztof at siejkowski.net&gt;<p>May 12, 2016 at 12:00:00pm</p></header><div class="content"><p>And what is with ‘a’ if this situation:<br></p><p>if b == x {<br>a = 5<br>}<br></p><p>Nothing :)<br>Well, it’s not nothing, it has the same value that it had before.<br></p><p>However, as pointed by Leonardo Pessoa, there is a problem with expression:<br></p><p>let a = 5 if b == x<br></p><p>It is equivalent to:<br></p><p>if b == x {<br></p><p>    let a = 5 <br></p><p>} <br></p><p>but doesn’t communicate clearly that in the next line `a` is already out of scope and that you cannot write:<br></p><p>let a = 5 if b == x<br></p><p>let c = a // a is not defined here<br></p><p>but you can write:<br></p><p>let a = 1 if b == x <br></p><p>let a = 2 if b == x // other a from other scope<br></p><p>let a = 3 if b == x // another a from another scope<br></p><p>without error concerning immutability.<br></p><p>Austin Zheng has also rightly pointed that this “postfix” syntax looks as if the if-statement is now an expression, which will further confuse people coming from languages that use if-expressions.<br></p><p>Also, I find:<br></p><p>{<br></p><p>    // … a lot of code <br></p><p>} if b == x<br></p><p>way less readable, simply because I read top to bottom. This syntax makes me search for the scope delimiter, understand the condition and only after lets me read the logic.<br></p><p><br></p><p>All the best,<br></p><p>Krzysztof<br></p><p><br></p><p>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160512/852bd41d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

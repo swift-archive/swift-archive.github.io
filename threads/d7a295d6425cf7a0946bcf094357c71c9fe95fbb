@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d0659d0725d0f35fa2b7d2cd23631502?s=50"></div><header><strong>#import (project scope import) (former: &quot;Pre-imported modules (sort of PCH)”)</strong> from <string>Vanderlei Martinelli</string> &lt;vmartinelli at alecrim.com&gt;<p>January 30, 2016 at 06:00:00pm</p></header><div class="content"><p>On second thought in the proposal: maybe bringing `#import` to the party as<br>a project scope `import` instead of having a dedicated file is a better<br>ideia.<br></p><p>Something like:<br></p><p>#import MyAwsomeFramework<br></p><p>The difference between `#import` and the regular `import`: the `#import`<br>says “import this module everywhere for then entire project even if it was<br>imported again somewhere” and the `import` says &quot;import this module only<br>for this file&quot;.<br></p><p>The `#import` would be included in any source code file and taken into<br>account. I know the analyser/compiler have to search each single file for<br>`global imports`, but they already do something like this when we use<br>`public let something = “something”` outside a structure/class.<br></p><p>What do you think?<br></p><p>Best,<br>-Van<br></p><p><br></p><p><br>On Tue, Jan 26, 2016 at 12:19 AM, Vanderlei Martinelli via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hello everybody.<br>&gt;<br>&gt; I&#39;ve been following the list, but I have not had time to participate more<br>&gt; actively. I must say that I am very happy for what has been discussed, the<br>&gt; more because of what Swift will *not* become than of what it will become.<br>&gt; ;-)<br>&gt;<br>&gt; OK. In Objective-C and other languages we have “.PCH” files or some kind<br>&gt; of “prefix headers”. In Swift we do not have header files (thankfully), but<br>&gt; there is no simple way to “pre-import” modules in a way that all source<br>&gt; files can “see” them without the need of a big list of “imports” at the<br>&gt; beginning of each file, every single time. I know that the “.PCH-like” it<br>&gt; is not a good practice in most cases, but I believe it would be interesting<br>&gt; in some other cases.<br>&gt;<br>&gt; Today we have some kind of this functionality when using bridging headers,<br>&gt; but this is in fact a side effect provided by the interoperability with<br>&gt; Objective-C. I am suggesting a pure Swift version of this functionality.<br>&gt;<br>&gt; I do not know how we can implement this in Swift, but since we now have<br>&gt; the special case of “Package.swift” to handling SPM things, maybe something<br>&gt; like “Preimport.swift” or “Modules.swift” or something better than these<br>&gt; names (I do not like them…) with the intention of saying: “Hi, compiler!<br>&gt; I&#39;m listing here the modules that are common to the whole project, OK? Can<br>&gt; you take them into account when compiling each project source code file<br>&gt; from now?&quot;<br>&gt;<br>&gt; What do you think?<br>&gt;<br>&gt; Regards,<br>&gt;<br>&gt; Vanderlei Martinelli<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160130/d7a25fbb/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

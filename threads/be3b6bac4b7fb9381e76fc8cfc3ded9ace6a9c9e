@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c78187ddebbbaaa01f814fa1c2dd9773?s=50"></div><header><strong>Protocol declaration inside a class</strong> from <string>Виктор Шаманов</string> &lt;wiruzx at gmail.com&gt;<p>December 11, 2015 at 01:00:00am</p></header><div class="content"><p>Happy Friday everyone!<br></p><p>I wonder why the protocol declaration should be only at the file scope?<br>Is this a design choice or limitation of the current implementation?<br></p><p>I think, the ability of declaring protocols inside the other declarations<br>would improve readability and code-organization.<br></p><p>For example, instead of:<br></p><p>protocol UITableViewDelegate {<br>...<br>}<br></p><p>class UITableView {<br>    var delegate: UITableViewDelegate?<br>}<br></p><p><br>we would write:<br></p><p>class UITableView {<br></p><p>    protocol Delegate {<br>    ...<br>    }<br></p><p><br>    var delegate: Delegate?<br>}<br></p><p><br>Thanks<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151211/be3b9c9e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/569ed436467cf145f3bbdd0d53fbe115?s=50"></div><header><strong>Protocol declaration inside a class</strong> from <string>Slava Pestov</string> &lt;spestov at apple.com&gt;<p>December 10, 2015 at 08:00:00pm</p></header><div class="content"><p>Hi Victor,<br></p><p>&gt; On Dec 10, 2015, at 2:25 PM, Виктор Шаманов via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Happy Friday everyone!<br>&gt; <br>&gt; I wonder why the protocol declaration should be only at the file scope?<br>&gt; Is this a design choice or limitation of the current implementation?<br></p><p>It is mostly the latter. As long as a protocol does not generic parameters from the outer type, there shouldn’t be any conceptual difficulties in allowing this, just implementation churn. It would make a good beginner project for someone who wants to dive deeper into Sema.<br></p><p>As for capturing generic parameters in nested types, we do want to make this possible for nested concrete types, but it needs a fair bit of Sema and SIL work. For protocols, one can imagine something like this:<br></p><p>class C&lt;T&gt; {<br>	protocol P {<br>		func f() -&gt; T<br>	}<br></p><p>	struct S : P {<br>		func f() -&gt; T { … }<br>	}<br>}<br></p><p>However I’m not sure what the implementation implications of this are.<br></p><p>Slava<br></p><p>&gt; <br>&gt; I think, the ability of declaring protocols inside the other declarations would improve readability and code-organization.<br>&gt; <br>&gt; For example, instead of:<br>&gt; <br>&gt; protocol UITableViewDelegate {<br>&gt; ...<br>&gt; }<br>&gt; <br>&gt; class UITableView {<br>&gt;     var delegate: UITableViewDelegate?<br>&gt; }<br>&gt; <br>&gt; we would write:<br>&gt; <br>&gt; class UITableView {<br>&gt; <br>&gt;     protocol Delegate {<br>&gt;     ...<br>&gt;     }<br>&gt; <br>&gt;     var delegate: Delegate?<br>&gt; }<br>&gt; <br>&gt; Thanks<br>&gt;  _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151210/8a494af0/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/85a454a69ee2cf2ac4b990dc9e87b664?s=50"></div><header><strong>Ability to mark a class as publicly final while	remaining internally non-final</strong> from <string>Thorsten Seitz</string> &lt;tseitz42 at icloud.com&gt;<p>April 25, 2016 at 07:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160425/41fb4be8/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e5e9fe83ef519ec199b7a5f313f33cf?s=50"></div><header><strong>Ability to mark a class as publicly final while remaining internally non-final</strong> from <string>Matt Comi</string> &lt;mattcomi at gmail.com&gt;<p>April 26, 2016 at 11:00:00am</p></header><div class="content"><p>&gt; On 25 Apr 2016, at 3:08 PM, Thorsten Seitz via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I think the underlying problem is that you cannot &quot;internally&quot; conform to the internal protocol.<br>&gt; <br>&gt; Desirable would be something like the following:<br>&gt; <br>&gt; public class SomePublicClass: internal SomeInternalProtocol { // note internal conformance<br>&gt;   public convenience init(someOtherParameter: Int) {<br>&gt;     self.init(parameter: SomeInternalClass())<br>&gt;   }<br>&gt;   internal required init(parameter: SomeInternalClass) {<br>&gt;       // do something<br>&gt;   }<br>&gt; }<br>&gt; <br>&gt; i.e. when conforming internally the required init would only have to have internal visibility and you could introduce a convenience init for the public API. SomePublicClass would only be usable as SomeInternalProtocol within the module. <br></p><p>I like that. So I guess, more broadly, my proposal is:<br></p><p>Provide a mechanism that allows a non-final class to conform to an internal protocol that has an initializer requirement without needing to expose that initializer publicly.<br></p><p>And to recap, my suggestion was:<br></p><p>- Allow a class to be marked publicly final, but internally non-final.<br></p><p>And yours was:<br></p><p>- Allow a class to “internally” conform to a protocol.<br></p><p>Both approaches solve the same problem. Anyone got any other thoughts? Thanks.<br></p><p>Matt<br></p><p>&gt; Am 25. April 2016 um 08:27 schrieb Matt Comi via swift-evolution &lt;swift-evolution at swift.org&gt;:<br>&gt; <br>&gt;&gt; Consider a public class that conforms to an internal protocol that has an initializer requirement:<br>&gt;&gt; <br>&gt;&gt; internal class SomeInternalClass { }<br>&gt;&gt; <br>&gt;&gt; internal protocol SomeInternalProtocol {<br>&gt;&gt; init(parameter: SomeInternalClass)<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; public class SomePublicClass: SomeInternalProtocol {<br>&gt;&gt; // compiler error: initializer requirement ‘init(parameter:)’ can only be satisfied by a `required` initializer in non-final class ‘SomePublicClass’<br>&gt;&gt; init(parameter: SomeInternalClass) { }<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; To resolve this error, init(parameter:) must be made public required, or SomePublicClass must be made final.<br>&gt;&gt; <br>&gt;&gt; If init(parameter:) were made public required, it would expose the module&#39;s internal structure; SomeInternalClass would need to be made public also. This makes sense, of course; if SomePublicClass is public and non-final, it may be subclassed outside the module and any subclass would need to know about init(parameter:) in order to remain conformant to SomeInternalProtocol.<br>&gt;&gt; <br>&gt;&gt; Alternatively, If SomePublicClass were made final, it could not be subclassed outside the module and thus, SomeInternalClass would not need to be exposed, but subclassing SomePublicClass within the module would also be impossible also.<br>&gt;&gt; <br>&gt;&gt; I propose that it should be possible to mark a class as publicly final while remaining internally non-final. This would resolve both issues: SomeInternalClass can remain internal, and SomePublicClass can be subclassed within the module.<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org &lt;mailto:swift-evolution at swift.org&gt;<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160426/d86d369b/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

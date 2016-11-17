@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Helping out with larger-scope items?</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 16, 2016 at 11:00:00am</p></header><div class="content"><p>on Tue Feb 16 2016, Austin Zheng &lt;swift-dev-AT-swift.org&gt; wrote:<br></p><p>&gt; Hi all,<br>&gt;<br>&gt; The bug tracker contains a number of small, relatively straightforward<br>&gt; tasks and bugs marked as &#39;starter bugs&#39;. What would be a good way to<br>&gt; find, start working on, or collaborate on tasks and engineering<br>&gt; projects with larger, more complex scope? I know there are Apple<br>&gt; engineers concentrating on specific subsets of Swift 3.0<br>&gt; functionality, and it would be great if there were a way for us on the<br>&gt; outside to usefully help out.<br></p><p>Thanks, Austin!  I have some ideas; we have some planning to do this<br>week and I&#39;ll try to take advantage of your offer when that&#39;s done.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

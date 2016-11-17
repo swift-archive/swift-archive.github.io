@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Returned for revision] SE-0077:	Improved	operator declarations</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 24, 2016 at 12:00:00pm</p></header><div class="content"><p>L. Mihalkovic via swift-evolution &lt;swift-evolution at ...&gt; writes:<br></p><p>&gt; &gt; Could you please explain what you mean by &quot;meta-circular syntax for <br>the <br>&gt; &gt; precedence group definitions&quot;? An example?<br>&gt; =define it using existing swift constructs rather than by extending <br>swift with new kwd looks like grp<br>&gt; matches a struct. <br></p><p>I still don&#39;t fully understand without an example :(<br>If you mean something like this:<br></p><p>protocol PrecedenceGroup_Additive {<br>    associatedtype StrongerThan_Comparative<br>    associatedtype WeakerThan_Multiplicative<br>}<br></p><p>Then this is just ugly.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/697f00e1b9be900f24cd1669cc931874?s=50"></div><header><strong>[Returned for revision] SE-0077: Improved operator declarations</strong> from <string>L. Mihalkovic</string> &lt;laurent.mihalkovic at gmail.com&gt;<p>June 24, 2016 at 07:00:00pm</p></header><div class="content"><p>Swift is all about values and protocols, so I was thinking about smthg like this:<br></p><p>enum OperatorAssociativity { case left, right }<br>enum PrecedenceGroup {<br>    casedefaultGroup(OperatorAssociativity)<br>    indirect case strongerThan(OperatorAssociativity,PrecedenceGroup)<br>    indirect case weakerThan(OperatorAssociativity,PrecedenceGroup)<br>    indirect case between(OperatorAssociativity, strongerThan: PrecedenceGroup, weakerThan: PrecedenceGroup)<br>}<br></p><p>let Additive: PrecedenceGroup = .defaultGroup(.left)<br>let Multiplicative: PrecedenceGroup = .strongerThan(.left, Additive)<br>let Exponentiative: PrecedenceGroup = .strongerThan(.left, Multiplicative)<br>let SomeOtherGroup: PrecedenceGroup = .between(.right, strongerThan: Multiplicative, weakerThan: Exponentiative)<br></p><p><br>standard Swift, which makes it easier to reflect when the api gets created in 4.0<br></p><p>Regards<br>LM<br>(From mobile)<br></p><p><br>&gt; On Jun 24, 2016, at 2:47 PM, Anton Zhilin via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; L. Mihalkovic via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; <br>&gt;&gt;&gt; Could you please explain what you mean by &quot;meta-circular syntax for <br>&gt; the <br>&gt;&gt;&gt; precedence group definitions&quot;? An example?<br>&gt;&gt; =define it using existing swift constructs rather than by extending <br>&gt; swift with new kwd looks like grp<br>&gt;&gt; matches a struct. <br>&gt; <br>&gt; I still don&#39;t fully understand without an example :(<br>&gt; If you mean something like this:<br>&gt; <br>&gt; protocol PrecedenceGroup_Additive {<br>&gt;    associatedtype StrongerThan_Comparative<br>&gt;    associatedtype WeakerThan_Multiplicative<br>&gt; }<br>&gt; <br>&gt; Then this is just ugly.<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160624/29efe2f2/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

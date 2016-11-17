@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f292ab7887c2e8698d013b40e1718e8b?s=50"></div><header><strong>Effects Typing | Type Extensions | Attributes</strong> from <string>Suminda Dharmasena</string> &lt;sirinath1978m at gmail.com&gt;<p>January 14, 2016 at 08:00:00am</p></header><div class="content"><p>Hello,<br></p><p>Attributes in language like Java and C# is of great benefit. It is possible<br>to consider adding this.<br></p><p>This can also further used as meas to have type system extension there by<br>you capture effects.<br></p><p>Perhaps you can make the attributes flexible whereby you can specify<br>associativity and whether or not a special character like @ is needed in<br>front of it. This way some keywords can become attributes.<br></p><p>Also this can be a useful when using meta programming.<br></p><p>Suminda<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160114/c2a83582/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

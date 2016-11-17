@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cee0974ef4ec169976342ae5c812d273?s=50"></div><header><strong>import module into REPL</strong> from <string>Jonas Fredriksson</string> &lt;jonas.mb at gmail.com&gt;<p>December 22, 2015 at 10:00:00pm</p></header><div class="content"><p>if I have a source code in file A, how can I compile it as an module and<br>import it to REPL (I am using swift on ubuntu)?<br>I am looking for something similar like %run in ipython.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151222/88ef5d75/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d631f09a3a336a15ae258e01899cb736?s=50"></div><header><strong>import module into REPL</strong> from <string>Kate Stone</string> &lt;k8stone at apple.com&gt;<p>December 22, 2015 at 02:00:00pm</p></header><div class="content"><p>There isn’t a mechanism for importing definitions from source as a module in the REPL currently, though it would make a perfectly reasonable enhancement and might constitute an interesting project for someone motivated to do so.  Using the existing REPL you have two options:<br></p><p>Compile the source as a library with public entry points and invoke the REPL with -l&lt;library-path&gt; to make it available during a REPL session.<br>Copy and paste a source file into the REPL.  The input system automatically recognizes when code is being pasted and disables automatic formatting and completion detection.  Pressing return after the paste operation will parse the entire buffer as one compilation unit, making all of the relevant declarations available for subsequent use.<br></p><p>Kate Stone k8stone at apple.com &lt;mailto:k8stone at apple.com&gt;<br> Xcode Low Level Tools<br></p><p>&gt; On Dec 22, 2015, at 1:38 PM, Jonas Fredriksson via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; if I have a source code in file A, how can I compile it as an module and import it to REPL (I am using swift on ubuntu)? <br>&gt; I am looking for something similar like %run in ipython. <br>&gt;  _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151222/32aba8c7/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

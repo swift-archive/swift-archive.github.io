@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/48f79089ad5e6919622082c1acc1d917?s=50"></div><header><strong>C-style For Loops</strong> from <string>Clemens Wagner</string> &lt;clemens.wagner.2 at gmx.de&gt;<p>December  6, 2015 at 11:00:00am</p></header><div class="content"><p>&gt; We’ve developed a number of Swift apps for various clients over the past year and have not needed C style for loops either.<br></p><p>But I think this is a very weak reason for *removing* any portion like C-loops and increment or decrement operators of a programming language. How about the developers and the productive code which used C-style loops already?<br></p><p>I understand the reasons why you, Erica and the others don’t like C-style loops. But changing the philosophy of a productive programming language is a very bad idea.<br></p><p>Cheers<br>Clemens<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

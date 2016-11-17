@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d747702642bd0492d9040387336153a0?s=50"></div><header><strong>libdispatch#162: Android support</strong> from <string>Gonzalo Larralde</string> &lt;gonzalolarralde at gmail.com&gt;<p>August 24, 2016 at 11:00:00am</p></header><div class="content"><p>Hi guys,<br></p><p>I&#39;ve been working on the following PR to enable cross-compilation for<br>Android armv7, in a similar way as it&#39;s being done in swift project<br></p><p>https://github.com/apple/swift-corelibs-libdispatch/pull/162<br></p><p>My idea was to bring a change that can be streamlined in swift&#39;s<br>compilation process easily, taking the same set of options. This should be<br>modified in the future when swift add support for multiple android archs.<br></p><p>I&#39;m not sure how far from acceptable is this changeset, but let me know how<br>it can be improved. There are some potential issues I identified, where my<br>inexperience on libtools and cross compilation processes couldn&#39;t take me<br>to figure out a better solution.<br></p><p>Any comment is appreciated. Thanks!<br></p><p>--<br>Slds,<br></p><p>Gonzalo.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160824/d7f39033/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

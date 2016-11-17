@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal draft] Introducing `indexed()` collections</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>September 30, 2016 at 08:00:00pm</p></header><div class="content"><p>on Wed Sep 28 2016, Robert Widmann &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; +1.  One of those things where you wonder why this wasn&#39;t the default behavior.<br></p><p>FWIW, it&#39;s because what Nevin did below is easy to write, but getting<br>integer offsets isn&#39;t easy, at least not without introducing your own<br>counter state.<br></p><p>&gt; ~Robert Widmann<br>&gt;<br>&gt; 2016/09/28 14:23、Nevin Brackett-Rozinsky via swift-evolution<br>&gt; &lt;swift-evolution at swift.org&gt; のメッセージ:<br>&gt;<br>&gt;&gt; +1, I have been mildly surprised that this was not already present.<br>&gt;&gt; <br>&gt;&gt; My workaround heretofore has been:<br>&gt;&gt; <br>&gt;&gt; for idx in abc.indices {<br>&gt;&gt;   let val = abc[i]<br>&gt;&gt;   // do something with idx and val<br>&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; Nevin<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt;&gt; On Wed, Sep 28, 2016 at 1:55 PM, Erica Sadun via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; Gist here: https://gist.github.com/erica/2b2d92e6db787d001c689d3e37a7c3f2<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Introducing indexed() collections<br>&gt;&gt;&gt; Proposal: TBD<br>&gt;&gt;&gt; Author: Erica Sadun, Nate Cook, Jacob Bandes-Storch, Kevin Ballard<br>&gt;&gt;&gt; Status: TBD<br>&gt;&gt;&gt; Review manager: TBD<br>&gt;&gt;&gt; Introduction<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; This proposal introduces indexed() to the standard library, a method on collections that returns an (index, element) tuple sequence.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Swift-evolution thread: TBD<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Motivation<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; The standard library&#39;s enumerated() method returns a sequence of pairs enumerating a sequence. The pair&#39;s first member is a monotonically incrementing integer starting at zero, and the second member is the corresponding element of the sequence. When working with arrays, the integer is coincidentally the same type and value as an Array index but the enumerated value is not generated with index-specific semantics. This may lead to confusion when developers attempt to subscript a non-array collection with enumerated integers. It can introduce serious bugs when developers use enumerated()-based integer subscripting with non-zero-based array slices.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Indices have a specific, fixed meaning in Swift, which are used to create valid collection subscripts. This proposal introduces indexed() to produce a more semantically relevant sequence by pairing a collection&#39;s indices with its members. While it is trivial to create a solution in Swift, the most common developer approach shown here calculates indexes twice: <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; extension Collection {<br>&gt;&gt;&gt;     /// Returns a sequence of pairs (*idx*, *x*), where *idx* represents a<br>&gt;&gt;&gt;     /// consecutive collection index, and *x* represents an element of<br>&gt;&gt;&gt;     /// the sequence.<br>&gt;&gt;&gt;     func indexed() -&gt; Zip2Sequence&lt;Self.Indices, Self&gt; {<br>&gt;&gt;&gt;         return zip(indices, self)<br>&gt;&gt;&gt;     }<br>&gt;&gt;&gt; }<br>&gt;&gt;&gt; Incrementing an index in some collections can be unnecessarily costly. In a lazy filtered collection, an index increment is potentially O(N). We feel this is better addressed introducing a new function into the Standard Library to provide a more efficient design that avoids the attractive nuisance of the &quot;obvious&quot; solution.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Detailed Design<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Our vision of indexed() bypasses duplicated index generation with their potentially high computation costs. We&#39;d create an iterator that calculates each index once and then applies that index to subscript the collection. Implementation would take place through IndexedSequence, similar to EnumeratedSequence.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Impact on Existing Code<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; This proposal is purely additive and has no impact on existing code.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Alternatives Considered<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Not yet<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; _______________________________________________<br>&gt;&gt;&gt; swift-evolution mailing list<br>&gt;&gt;&gt; swift-evolution at swift.org<br>&gt;&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 23, 2016 at 01:00:00pm</p></header><div class="content"><p>on Fri Jan 22 2016, Kevin Lundberg &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; *Protocols* that describe what something *is* should read as nouns<br>&gt; (e.g. |Collection|). Protocols that describe a *capability* should be<br>&gt; named using the suffixes |able|, |ible|, or |ing| (e.g. |Equatable|,<br>&gt; |ProgressReporting|).<br>&gt;<br>&gt; I personally like the idea behind the current convention for protocols<br>&gt; that describe a thing (IntegerType, CollectionType, etc) where there is<br>&gt; a suffix of Type appended to the end, so I give this specific part of<br>&gt; the proposal a -1. <br></p><p>For some people, that convention made no sense at all, no matter how<br>many times I explained the rationale: they would always come back to,<br>“but that&#39;s a protocol, not a type, so ending its name with Type makes<br>no sense.”  At some point, empirical evidence of people&#39;s cognitive<br>dissonance outweighs nice theories, and I had to admit that it wasn&#39;t<br>working for people overall.<br></p><p>(That assessment was from a small sample, and if nobody in the community<br>feels the same way, that would be significant news.)<br></p><p>&gt; The specific wording of the protocol&#39;s name is not so important as the<br>&gt; recognition at a glance that this is a protocol vs a concrete type. I<br>&gt; like being able to infer at a glance how I&#39;m expected to use a<br>&gt; specific type reference based on its name alone; otherwise I may have<br>&gt; to refer back to the type definition to refresh my memory of whether<br>&gt; or not it is in fact a protocol or is something else.<br></p><p>That was part of the original motivation.  One issue with that is that<br>protocols without Self requirements or associated types *are* concrete<br>types, so it weakens the argument for making a strong distinction.<br></p><p>The other thing, is, I wonder how much of that warm fuzzy feeling we get<br>from being able to know at a glance it&#39;s a protocol is actually useful<br>in programming or maintenance.  After we made the changes in the<br>standard library I was quite pleased by what IMO was the resulting<br>improvement in readability.  I ask that you take a look at the effect<br>this has on actual code.<br></p><p>&gt;From the standard library,<br>https://github.com/apple/swift/compare/swift-3-api-guidelines has a few<br>of these.  You might try this on your own project.<br></p><p>&gt; This change could also lead to confusion among some developers. For<br>&gt; someone who is new to Swift, would they know they should use Bool over<br>&gt; Boolean if they&#39;ve seen both types before? Both names look reasonable to<br>&gt; store a boolean value, but the semantics of each type differ<br>&gt; significantly. <br></p><p>Well, yeah.  BooleanType should be retired; if we didn&#39;t know that was<br>in the plan, we&#39;d have renamed it to BooleanProtocol or TruthValue or<br>somthing.<br></p><p>&gt; Someone may try to have a type conform to Bool instead of Boolean,<br>&gt; which would obviously not work, but could cause some consternation for<br>&gt; developers who don&#39;t know the difference by heart.  Naming the<br>&gt; protocol BooleanType at least calls out that this may not be<br>&gt; conceptually the same as a plain boolean value, which could make a<br>&gt; developer think twice before trying to use that over Bool.<br>&gt;<br>&gt; Removing some common prefix <br></p><p>suffix?<br></p><p>&gt; from these kinds of protocols could also run the risk of<br>&gt; unintentionally shadowing type names, if someone wanted to write their<br>&gt; own Collection or Error struct or class for instance, or if a<br>&gt; pre-existing concrete type in their code turned out to unexpectedly<br>&gt; shadow a protocol in a new dependency that they want to add. These<br>&gt; situations would not cause any technical hiccups due to module<br>&gt; namespacing, but it could lead to confusion when a developer forgets<br>&gt; to qualify the name and tries to use one type where the other is<br>&gt; expected.<br></p><p>Yes, but shadowing surprises are a fact of life whether we make this<br>change or not.<br></p><p>&gt; In short, appending Type (or something like it) i think is a reasonable<br>&gt; convention to keep around for non-behavioral protocols.<br>&gt;<br>&gt; As far as alternatives to &#39;Type&#39;, I personally don&#39;t like the suffix<br>&gt; &#39;Protocol&#39; as much (which is suggested as a disambiguation option in the<br>&gt; related standard library review), since &#39;Type&#39; is shorter, feels nicer<br>&gt; to read, and describes the purpose of the protocol well to me. C#&#39;s<br>&gt; approach of prefixing all interfaces with a capital I would be even more<br>&gt; succinct, but I personally don&#39;t think that approach would look nice to<br>&gt; read either. (PCollection, PBoolean? Ick.)<br></p><p>Ick indeed.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

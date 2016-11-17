@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e593d7a2fe3f814ec265deedc2a6adce?s=50"></div><header><strong>Defer Question</strong> from <string>Ezekiel Elin</string> &lt;ezekielelin at me.com&gt;<p>December  7, 2015 at 01:00:00pm</p></header><div class="content"><p>Is there any way for me to identify what value is/will be returned by the function in a defer block<br></p><p>here’s some example code<br></p><p>func someFunction() -&gt; Int {<br>    defer {<br>        //Can I get the &quot;5&quot; that I&#39;m returning here?<br>    }<br>    return 5<br>}<br></p><p>- Ezekiel<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/d73a1b22/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Defer Question</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>December  7, 2015 at 10:00:00am</p></header><div class="content"><p>&gt; On Dec 7, 2015, at 10:29 AM, Ezekiel Elin via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Is there any way for me to identify what value is/will be returned by the function in a defer block<br>&gt; <br>&gt; here’s some example code<br>&gt; <br>&gt; func someFunction() -&gt; Int {<br>&gt;     defer {<br>&gt;         //Can I get the &quot;5&quot; that I&#39;m returning here?<br>&gt;     }<br>&gt;     return 5<br>&gt; }<br></p><p>Not implicitly. You could do something like this:<br></p><p>var returnValue: Int?<br>defer { use(returnValue!) }<br></p><p>...<br>returnValue = 5<br>return returnValue!<br></p><p>though that&#39;s obviously not ideal.<br></p><p>-Joe<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/66837273/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/569ed436467cf145f3bbdd0d53fbe115?s=50"></div><header><strong>Defer Question</strong> from <string>Slava Pestov</string> &lt;spestov at apple.com&gt;<p>December  7, 2015 at 11:00:00am</p></header><div class="content"><p>&gt; On Dec 7, 2015, at 10:38 AM, Joe Groff via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt;&gt; On Dec 7, 2015, at 10:29 AM, Ezekiel Elin via swift-users &lt;swift-users at swift.org &lt;mailto:swift-users at swift.org&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Is there any way for me to identify what value is/will be returned by the function in a defer block<br>&gt;&gt; <br>&gt;&gt; here’s some example code<br>&gt;&gt; <br>&gt;&gt; func someFunction() -&gt; Int {<br>&gt;&gt;     defer {<br>&gt;&gt;         //Can I get the &quot;5&quot; that I&#39;m returning here?<br>&gt;&gt;     }<br>&gt;&gt;     return 5<br>&gt;&gt; }<br>&gt; <br>&gt; Not implicitly. You could do something like this:<br>&gt; <br>&gt; var returnValue: Int?<br>&gt; defer { use(returnValue!) }<br>&gt; <br>&gt; ...<br>&gt; returnValue = 5<br>&gt; return returnValue!<br>&gt; <br>&gt; though that&#39;s obviously not ideal.<br>&gt; <br></p><p>And of course if you entered the defer because you&#39;re throwing an error, &#39;returnValue&#39; might not be set.<br></p><p>Slava<br></p><p>&gt; -Joe<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/7edc2a6b/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

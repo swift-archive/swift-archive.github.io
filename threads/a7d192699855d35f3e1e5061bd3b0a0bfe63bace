@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Design Question] Metaprogramming as a non-goal</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 24, 2016 at 02:00:00pm</p></header><div class="content"><p>on Sat Jan 23 2016, Michael Henson &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; In the swift/docs/Generics.rst documentation, I see:<br>&gt;<br>&gt; &quot;<br>&gt; As important as the goals of a feature are the explicit non-goals, which we<br>&gt; don&#39;t want<br>&gt; or don&#39;t need to support:<br>&gt; * Compile-time &quot;metaprogramming&quot; in any form<br>&gt; * Expression-template tricks a la Boost.Spirit, POOMA<br>&gt; &quot;<br>&gt;<br>&gt; What kinds of things count as compile-time metaprogramming? I&#39;ve been<br>&gt; tinkering with some ideas related to the type system and having a more<br>&gt; specific description here might help me pare many / most / all of them<br>&gt; down.<br></p><p>Some of us suspect that the generics model we already have would offer<br>this capability, if it weren&#39;t for bugs in the implementation:<br></p><p>  protocol BooleanType {}<br></p><p>  struct False : BooleanType {}<br>  struct True : BooleanType {}<br></p><p>  protocol IfType {<br>    typealias C : BooleanType<br>    typealias T<br>    typealias F<br>    typealias Result = F<br></p><p>    var result: Result? {get}<br>  }<br></p><p>  extension IfType {<br>    var result: Result? { return nil }<br>  }<br></p><p>  // Take this extension away to change the result<br>  extension IfType where Self.C == True {<br>    var result: T? { return nil }<br>  }<br></p><p>  struct If&lt;C_: BooleanType, T_, F_&gt; : IfType {<br>    typealias C = C_<br>    typealias T = T_<br>    typealias F = F_<br>  }<br></p><p>  print(If&lt;True, Int, String&gt;.Result.self)  // prints Int; OK<br>  print(If&lt;False, Int, String&gt;.Result.self) // prints Int; should print String<br></p><p>But, basically, that part is saying we would prefer it if ideas like<br>this were expressed directly (e.g. by an actual &quot;if&quot; statement used with<br>a macro system) rather than by hijacking features of generics.<br></p><p>HTH,<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

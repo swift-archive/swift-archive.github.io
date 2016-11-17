@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6ee830e3f2ce3913e9aa8e800cacee25?s=50"></div><header><strong>[xctest] Terminology: What to call &quot;swift-corelibs-xctest&quot; and &quot;Apple XCTest&quot;</strong> from <string>Tony Arnold</string> &lt;tony at thecocoabots.com&gt;<p>February 19, 2016 at 11:00:00am</p></header><div class="content"><p>Sorry to resurrect an older thread —<br></p><p>&gt; What are the canonical names for these projects? I&#39;d like to agree on<br>&gt; common terminology to avoid confusion in the future.<br>&gt; <br>&gt; Over the past few weeks I&#39;ve seen several names for<br>&gt; https://github.com/apple/swift-corelibs-xctest:<br>&gt; <br>&gt; - Open source XCTest<br>&gt; - Swift XCTest<br>&gt; - Linux XCTest<br>&gt; - swift-corelibs-xctest<br>&gt; <br>&gt; And several names for the XCTest framework shipped alongside Xcode:<br>&gt; <br>&gt; - Darwin XCTest<br>&gt; - Apple XCTest<br>&gt; <br>&gt; How do you refer to these projects? What do you think is the simplest<br>&gt; way to refer to them, in a way that clearly differentiates them?<br>&gt; <br>&gt; Personally, I prefer calling them &quot;swift-corelibs-xctest&quot; and &quot;Apple<br>&gt; XCTest&quot;, although I do think that &quot;swift-corelibs-xctest&quot; is a<br>&gt; mouthful.<br></p><p>Is there any benefit to dropping the “XC” from the front and coming up with something simple and unprefixed? (I assume that the “XC&quot; is a reference to Xcode)<br></p><p>Perhaps something like “CoreTest” or even just “Test”?<br></p><p>thanks,<br></p><p><br>Tony<br></p><p><br></p><p><br>----------<br>Tony Arnold<br>+61 411 268 532<br>http://thecocoabots.com/<br></p><p>ABN: 14831833541<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

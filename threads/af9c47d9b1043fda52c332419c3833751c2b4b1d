@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3720f2e1476c723001d17aec6fcff0b7?s=50"></div><header><strong>[swift-evolution-announce] [Review #3] SE-0117: Allow distinguishing between public access and public overridability</strong> from <string>Davor Jankolija</string> &lt;djankolija at gmail.com&gt;<p>July 25, 2016 at 04:00:00pm</p></header><div class="content"><p>I have to agree with what Scott said. At this point it really does seem a bit rusked just to meet the Swift 3 deadline. There will certainly be breaking changes in Swift 4, 5 etc… so although I understand the reasoning to get as many of these into Swift 3, IMO now it’s just trying to rush the proposal at the cost of perhaps more discussion.<br></p><p>P.S. <br>I’m entirely in favor of the idea and reasoning behind the proposal and feel that a way to prevent all classes being subclassable even if they’re declared public is a worthwhile notion.<br></p><p>— Davor<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/00464d59365595ecaebd19b44de312fa?s=50"></div><header><strong>[swift-evolution-announce] [Review #3] SE-0117: Allow distinguishing between public access and public overridability</strong> from <string>Gwynne Raskind</string> &lt;gwynne at darkrainfall.org&gt;<p>July 25, 2016 at 10:00:00am</p></header><div class="content"><p>Agreed as well. This is one of the most contentious topics I’ve seen come across Swift so far. While there may be no stopping the avalanche now as far as implementing the proposal in general (which I remain against, though many of the arguments I’ve heard in favor of it are starting to shake my conviction!), it definitely begs more consideration than running up hard against a release deadline. Goes double considering the disagreement even among the proposal’s supporters about the best semantics.<br></p><p>This being said, for the record, in the current version of the proposal I’d prefer option 1 over option 2 (if I’m not allowed to naysay the whole thing). Option 2 strikes me as a halfway measure; if we really are going to do this, then let’s *do* it.<br></p><p>(And as a general statement, I agree that in that context, &quot;open&quot; should be its own access level. I don’t mind having 5 access levels as long as they’re clearly defined.)<br></p><p>-- Gwynne Raskind<br></p><p><br></p><p>&gt; On Jul 25, 2016, at 09:43, Davor Jankolija via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I have to agree with what Scott said. At this point it really does seem a bit rusked just to meet the Swift 3 deadline. There will certainly be breaking changes in Swift 4, 5 etc… so although I understand the reasoning to get as many of these into Swift 3, IMO now it’s just trying to rush the proposal at the cost of perhaps more discussion.<br>&gt; <br>&gt; P.S. <br>&gt; I’m entirely in favor of the idea and reasoning behind the proposal and feel that a way to prevent all classes being subclassable even if they’re declared public is a worthwhile notion.<br>&gt; <br>&gt; — Davor<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>Starter project: increase test coverage on Linux</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>December 13, 2015 at 12:00:00am</p></header><div class="content"><p>Hi,<br></p><p>Many important tests are XFAIL&#39;ed on Linux. Usually this is because<br>one or few parts of the test use the Objective-C runtime or rely on<br>Foundation.<br></p><p>These parts can usually be separated into separate files, or guarded<br>with `#if _runtime(_ObjC)`. Sometimes these failures are real issues<br>that we are unaware of and need to start tracking in the bug tracker.<br></p><p>It is easy to find disabled tests with:<br></p><p>$ git grep &#39;XFAIL: linux&#39;<br></p><p>I consider the following tests to be of high value to be looked at first.<br></p><p>Standard library:<br></p><p>test/1_stdlib/ArrayTraps.swift.gyb<br>test/1_stdlib/Print.swift<br>test/1_stdlib/ReflectionHashing.swift<br>test/1_stdlib/Runtime.swift<br>test/1_stdlib/SetTraps.swift<br>test/1_stdlib/StringTraps.swift<br>validation-test/stdlib/Dictionary.swift<br>validation-test/stdlib/Set.swift<br>validation-test/stdlib/String.swift<br>validation-test/stdlib/Unicode.swift<br>validation-test/stdlib/UnicodeTrie.swift.gyb<br>validation-test/stdlib/UnicodeUTFEncoders.swift<br></p><p>SIL and the optimizer:<br></p><p>test/SIL/Parser/basic.sil<br>test/SILOptimizer/cse.sil<br>test/SILOptimizer/definite_init_diagnostics.swift<br>test/SILOptimizer/sil_combine.sil<br>test/Serialization/basic_sil.swift<br></p><p>https://bugs.swift.org/browse/SR-216<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

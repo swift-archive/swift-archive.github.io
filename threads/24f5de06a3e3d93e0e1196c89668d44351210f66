@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9b5e7f229ebf32c8eca02e7cee0f379f?s=50"></div><header><strong>[Review] SE-0081: Move where clause to end of	declaration</strong> from <string>Nicola Salmoria</string> &lt;nicola.salmoria at gmail.com&gt;<p>May 14, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; * What is your evaluation of the proposal?<br></p><p>-1.<br></p><p>I&#39;m in strong agreement with what Karl Wagner and Jon Shier said.<br></p><p>The current &#39;where&#39; syntax seems perfectly fine to me. It puts the<br>constraints in the logical place, next to the type declarations, which is<br>clear and intuitive.<br></p><p>The proposed change seems akin to declaring a variable:<br></p><p>var x<br></p><p>and then, several lines later, after unrelated code, specifying its type:<br></p><p>where x: Int<br></p><p>I can&#39;t see the advantage in doing that.<br></p><p>Yes, the &#39;where&#39; statements can get long, but that&#39;s because they need to<br>express complex constraints. Moving them to a different place doesn&#39;t make<br>them any shorter, it just makes the problem less apparent by sweeping the<br>dirt under the carpet.<br></p><p>To make the &#39;where&#39; statements better, what we need to do is make them<br>simpler. To do that, we need to reduce the complexity of the constraints<br>that need to be specified in a declaration.<br></p><p>The most obvious ways to do that are:<br>* add generic constraints to associatedtype;<br>* support typealias in protocols;<br>* add generic constraints to typealias.<br></p><p>Those improvements would allow to break up the complexity, making the<br>&#39;where&#39; clauses in declarations much shorter and simpler.<br></p><p>protocol Collection {<br>    associatedtype Iterator: IteratorProtocol<br>    typealias Element = Iterator.Element<br>    associatedtype SubSequence: Sequence where SubSequence.Element == Element<br>}<br></p><p>typealias SortableCollection = protocol&lt;Collection&gt; where<br>Collection.Element: Comparable<br></p><p>being able to use the above constructs would go a long way to making the<br>&#39;where&#39; clauses simpler without needing to change their syntax.<br></p><p>&gt; * Is the problem being addressed significant enough to warrant a change to<br>Swift?<br></p><p>Yes, but the proposed change seems to do little to actually address the real<br>problem.<br></p><p>&gt; * Does this proposal fit well with the feel and direction of Swift?<br></p><p>Swift excels at being terse and focused. The proposed change doesn&#39;t improve<br>terseness and reduces focus by putting related information in two different<br>places. So I don&#39;t think it is going in the right direction.<br></p><p>&gt; * If you have used other languages or libraries with a similar feature,<br>how do you feel that this proposal compares to those?<br></p><p>I can&#39;t think of anything similar to this.<br></p><p>&gt; * How much effort did you put into your review? A glance, a quick reading,<br>or an in-depth study?<br></p><p>A full reading of the proposal, a quick reading of the relevant threads, and<br>careful thought about the issue and my experience using Swift&#39;s type system.<br></p><p>Nicola<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

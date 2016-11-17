@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[SR-933] Rename flatten to flattened</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April  8, 2016 at 11:00:00am</p></header><div class="content"><p>on Fri Apr 08 2016, Pyry Jahkola &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;     On 08 Apr 2016, at 13:19, Haravikk via swift-evolution<br>&gt;     &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;     I think it makes sense to just rename them; it’s not as though flattened or<br>&gt;     mapped is somehow far removed from the original meaning as the actual action<br>&gt;     is the same, it’s just changing tense.<br>&gt;<br>&gt; -1, and not only for the reasons we neither call trigonometric functions `sine`,<br>&gt; `cosine`, and `tangent`. The existing names are widely known, commonly taught in<br>&gt; modern introductory programming courses, to the point, and googleable.<br>&gt;<br>&gt; In addition:<br>&gt;<br>&gt;     If we want mutating forms of this methods then I much prefer .map() and .<br>&gt;     mapped() to .map() and .mapInPlace() or whatever, as the latter contradicts<br>&gt;     the naming convention used everywhere else which only adds confusion.<br>&gt;<br>&gt; This idea of in-place versions is innocuous but absurd. In general, there&#39;s no<br>&gt; way mapping `T -&gt; U` over a `[T]` could possibly accommodate the result in the<br>&gt; argument of type `[T]`:<br>&gt;<br>&gt; var xs: [Int] = ...<br>&gt; xs.mapInPlace {String($0)} // ???<br></p><p>No, you&#39;d just give it a more-restricted signature that only accepted<br>T-&gt;T closures.<br></p><p>&gt; And the same goes for `flatMap`, and `Optional` and others. Likewise, `flatten()<br>&gt; ` couldn&#39;t possibly happen in place because the result type has one level of<br>&gt; nesting less than the argument.<br></p><p>C&#39;rect.<br>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

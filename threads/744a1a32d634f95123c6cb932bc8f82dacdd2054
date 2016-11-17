@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d2c3d4b58904e0024f229c7f2994837b?s=50"></div><header><strong>cast operator precedence</strong> from <string>Elena Vilchik</string> &lt;vilchik.elena at gmail.com&gt;<p>December  4, 2015 at 12:00:00pm</p></header><div class="content"><p>Hello,<br></p><p>I&#39;ve found here<br>&lt;https://developer.apple.com/library/prerelease/ios/documentation/Swift/Reference/Swift_StandardLibrary_Operators/index.html#//apple_ref/doc/uid/TP40016054&gt;<br>that &quot;as&quot; operator has a lower precedence than &quot;*&quot; operator (132 vs 160).<br>Why then this code compiles if multiplication should be made first?<br></p><p>var x = 1<br>print(x as Int * 100)<br></p><p>Conversely this code doesn&#39;t compile (as expected) - multiplication is made<br>first:<br></p><p>var x : Float = 1<br>print(100 * x as Int)<br></p><p>------<br>Elena Vilchik<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151204/744a2054/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/edbd5f1c2f535b14165ae883fa7c3f37?s=50"></div><header><strong>cast operator precedence</strong> from <string>Jens Alfke</string> &lt;jens at mooseyard.com&gt;<p>December  4, 2015 at 11:00:00am</p></header><div class="content"><p>&gt; On Dec 4, 2015, at 3:21 AM, Elena Vilchik &lt;vilchik.elena at gmail.com&gt; wrote:<br>&gt; <br>&gt; I&#39;ve found here &lt;https://developer.apple.com/library/prerelease/ios/documentation/Swift/Reference/Swift_StandardLibrary_Operators/index.html#//apple_ref/doc/uid/TP40016054&gt; that &quot;as&quot; operator has a lower precedence than &quot;*&quot; operator (132 vs 160).<br>&gt; Why then this code compiles if multiplication should be made first? <br>&gt; <br>&gt; var x = 1<br>&gt; print(x as Int * 100)<br></p><p>?as ___? is a *postfix* operator (the following type name has to be considered part of the ?as?.) So there?s only one way to parse that expression as valid Swift, and thus the parser doesn?t even have to look at operator precedence.<br></p><p>In other words, `x as (Int * 100)` isn?t valid Swift syntax, so the parser doesn?t even consider it.<br></p><p>?Jens<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151204/42b23b4c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d2c3d4b58904e0024f229c7f2994837b?s=50"></div><header><strong>cast operator precedence</strong> from <string>Elena Vilchik</string> &lt;vilchik.elena at gmail.com&gt;<p>December  7, 2015 at 11:00:00am</p></header><div class="content"><p>Hello Jens,<br></p><p>Thanks for an answer. Anyway it&#39;s confusing to have this &quot;as ___&quot; operator<br>among infix operators<br>&lt;https://developer.apple.com/library/prerelease/ios/documentation/Swift/Reference/Swift_StandardLibrary_Operators/index.html#//apple_ref/doc/uid/TP40016054&gt;<br>and as binary-expression<br>&lt;https://developer.apple.com/library/mac/documentation/Swift/Conceptual/Swift_Programming_Language/Expressions.html#//apple_ref/swift/grammar/binary-expression&gt;<br>.<br></p><p>2015-12-04 20:30 GMT+01:00 Jens Alfke &lt;jens at mooseyard.com&gt;:<br></p><p>&gt;<br>&gt; On Dec 4, 2015, at 3:21 AM, Elena Vilchik &lt;vilchik.elena at gmail.com&gt; wrote:<br>&gt;<br>&gt; I&#39;ve found here<br>&gt; &lt;https://developer.apple.com/library/prerelease/ios/documentation/Swift/Reference/Swift_StandardLibrary_Operators/index.html#//apple_ref/doc/uid/TP40016054&gt;<br>&gt;  that &quot;as&quot; operator has a lower precedence than &quot;*&quot; operator (132 vs 160).<br>&gt; Why then this code compiles if multiplication should be made first?<br>&gt;<br>&gt; var x = 1<br>&gt; print(x as Int * 100)<br>&gt;<br>&gt;<br>&gt; “as ___” is a *postfix* operator (the following type name has to be<br>&gt; considered part of the ‘as’.) So there’s only one way to parse that<br>&gt; expression as valid Swift, and thus the parser doesn’t even have to look at<br>&gt; operator precedence.<br>&gt;<br>&gt; In other words, `x as (Int * 100)` isn’t valid Swift syntax, so the parser<br>&gt; doesn’t even consider it.<br>&gt;<br>&gt; —Jens<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151207/edc46139/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

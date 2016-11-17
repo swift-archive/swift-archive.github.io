@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f7d3036e2eaf1283f20f43d62472a29f?s=50"></div><header><strong>CoerceAndExpand switch warnings after latest clang/llvm stable merge</strong> from <string>David Farler</string> &lt;dfarler at apple.com&gt;<p>April  4, 2016 at 03:00:00pm</p></header><div class="content"><p>Just a heads up - the latest stable merge exposed a couple of switch warnings:<br></p><p>swift/lib/IRGen/GenFunc.cpp:1338:13: warning: enumeration value &#39;CoerceAndExpand&#39; not handled in switch [-Wswitch]<br>    switch (AI.getKind()) {<br>            ^<br>swift/lib/IRGen/GenFunc.cpp:2916:13: warning: enumeration value &#39;CoerceAndExpand&#39; not handled in switch [-Wswitch]<br>    switch (AI.getKind()) {<br>            ^<br>2 warnings generated.<br>[171/926] Building CXX object lib/IRGen/CMakeFiles/swiftIRGen.dir/IRGenSIL.cpp.o<br>swift/lib/IRGen/IRGenSIL.cpp:1280:13: warning: enumeration value &#39;CoerceAndExpand&#39; not handled in switch [-Wswitch]<br>    switch (AI.getKind()) {<br>            ^<br></p><p>https://bugs.swift.org/browse/SR-1157<br></p><p>David<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c69b8eb4df5af15923fd1647a8276890?s=50"></div><header><strong>CoerceAndExpand switch warnings after latest clang/llvm stable merge</strong> from <string>John McCall</string> &lt;rjmccall at apple.com&gt;<p>April  4, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; On Apr 4, 2016, at 3:02 PM, David Farler via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; Just a heads up - the latest stable merge exposed a couple of switch warnings:<br>&gt; <br>&gt; swift/lib/IRGen/GenFunc.cpp:1338:13: warning: enumeration value &#39;CoerceAndExpand&#39; not handled in switch [-Wswitch]<br>&gt;    switch (AI.getKind()) {<br>&gt;            ^<br>&gt; swift/lib/IRGen/GenFunc.cpp:2916:13: warning: enumeration value &#39;CoerceAndExpand&#39; not handled in switch [-Wswitch]<br>&gt;    switch (AI.getKind()) {<br>&gt;            ^<br>&gt; 2 warnings generated.<br>&gt; [171/926] Building CXX object lib/IRGen/CMakeFiles/swiftIRGen.dir/IRGenSIL.cpp.o<br>&gt; swift/lib/IRGen/IRGenSIL.cpp:1280:13: warning: enumeration value &#39;CoerceAndExpand&#39; not handled in switch [-Wswitch]<br>&gt;    switch (AI.getKind()) {<br>&gt;            ^<br>&gt; <br>&gt; https://bugs.swift.org/browse/SR-1157 &lt;https://bugs.swift.org/browse/SR-1157&gt;<br></p><p>I&#39;ll get to it.  It&#39;s harmless for now.<br></p><p>John.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160404/015a0743/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

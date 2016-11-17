@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>Trial balloon: conforming sizeof, sizeofValue, etc. to naming guidelines</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>May  1, 2016 at 07:00:00pm</p></header><div class="content"><p>Then why not rename stride(from:to:by:) to range(from:to:by:) ?<br>I think, range is closer to what people coming from other languages expect<br>to see.<br></p><p>- Anton<br></p><p>&gt; With the renaming proposed above, stride(of:) will appear to be related<br>&gt; to stride(from:to:by:). This conflict arises from a pre-existing issue;<br>&gt; namely, the term &quot;stride&quot; is used to mean two different things. Although<br>&gt; moving the preposition only highlights the issue, one possible resolution<br>&gt; is to rename strideof(_:) to strideSize(of:) and strideofValue(_:)<br>&gt; tostrideSize(ofValue:).<br>&gt; I wonder if it might make sense to rename all of these, then?<br>&gt; instanceSize(of:)<br>&gt; instanceSize(ofValue:)<br>&gt; alignmentSize(of:)<br>&gt; alignmentSize(ofValue:)<br>&gt; strideSize(of:)<br>&gt; strideSize(ofValue:)<br>&gt; --<br>&gt; Brent Royal-Gordon<br>&gt; Architechies<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160501/deae50d9/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>Trial balloon: conforming sizeof, sizeofValue, etc. to naming guidelines</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>May  1, 2016 at 04:00:00pm</p></header><div class="content"><p>I think I agree with you that stride(from:to:by:) is the better candidate<br>for renaming. But, ranges and strides are distinct in Swift, and I don&#39;t<br>think we want to confuse the two, especially since ranges and intervals are<br>already being merged. A few of us have some ideas about striding over<br>things, which I hope we&#39;ll discuss soon :) Out of scope for this proposal,<br>clearly.<br>On Sun, May 1, 2016 at 11:29 Антон Жилин &lt;antonyzhilin at gmail.com&gt; wrote:<br></p><p>&gt; Then why not rename stride(from:to:by:) to range(from:to:by:) ?<br>&gt; I think, range is closer to what people coming from other languages expect<br>&gt; to see.<br>&gt;<br>&gt; - Anton<br>&gt;<br>&gt; &gt; With the renaming proposed above, stride(of:) will appear to be related<br>&gt;&gt; to stride(from:to:by:). This conflict arises from a pre-existing issue;<br>&gt;&gt; namely, the term &quot;stride&quot; is used to mean two different things. Although<br>&gt;&gt; moving the preposition only highlights the issue, one possible resolution<br>&gt;&gt; is to rename strideof(_:) to strideSize(of:) and strideofValue(_:)<br>&gt;&gt; tostrideSize(ofValue:).<br>&gt;&gt; I wonder if it might make sense to rename all of these, then?<br>&gt;&gt; instanceSize(of:)<br>&gt;&gt; instanceSize(ofValue:)<br>&gt;&gt; alignmentSize(of:)<br>&gt;&gt; alignmentSize(ofValue:)<br>&gt;&gt; strideSize(of:)<br>&gt;&gt; strideSize(ofValue:)<br>&gt;<br>&gt;<br>&gt;&gt; --<br>&gt;&gt; Brent Royal-Gordon<br>&gt;&gt; Architechies<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160501/854d2b3c/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc8eae356a7d359691154094ae6d56a7?s=50"></div><header><strong>Amusing function return warning in swift 3</strong> from <string>Marco S Hyman</string> &lt;marc at snafu.org&gt;<p>June 12, 2016 at 03:00:00pm</p></header><div class="content"><p>My first try with 5/31 swift 3 snapshot gave me a warning regarding an unused return value -- in main.swift.   Wouldn’t you know, NS ApplicationMain is declared as<br></p><p>func NSApplicationMain(_ argc: Int32,<br>    _ argv: UnsafeMutablePointer&lt;UnsafeMutablePointer&lt;CChar&gt;?&gt;) -&gt; Int32<br></p><p>And what does the second line of function help say?<br></p><p>&quot;This method never returns a result code.&quot;<br></p><p>OK ;)<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6bd902ea39480cfd0a34cf8bc63dfc14?s=50"></div><header><strong>Amusing function return warning in swift 3</strong> from <string>Nathan de Vries</string> &lt;ndevries at apple.com&gt;<p>June 12, 2016 at 04:00:00pm</p></header><div class="content"><p>I had similar issues with UIApplicationMain when I moved to Swift 3:<br></p><p>&lt;rdar://problem/25693546&gt; UIApplicationMain&#39;s argv parameter should be declared nullable<br></p><p>Presumably NSApplicationMain&#39;s argv parameter needs the same nullable annotation.<br></p><p>—Nathan<br></p><p><br>&gt; On Jun 12, 2016, at 3:56 PM, Marco S Hyman via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; My first try with 5/31 swift 3 snapshot gave me a warning regarding an unused return value -- in main.swift.   Wouldn’t you know, NS ApplicationMain is declared as<br>&gt; <br>&gt; func NSApplicationMain(_ argc: Int32,<br>&gt;    _ argv: UnsafeMutablePointer&lt;UnsafeMutablePointer&lt;CChar&gt;?&gt;) -&gt; Int32<br>&gt; <br>&gt; And what does the second line of function help say?<br>&gt; <br>&gt; &quot;This method never returns a result code.&quot;<br>&gt; <br>&gt; OK ;)<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160612/f5ea2cb1/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

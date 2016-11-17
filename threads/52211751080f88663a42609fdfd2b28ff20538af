@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal draft] Enhanced floating-point protocols</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 20, 2016 at 11:00:00am</p></header><div class="content"><p>on Mon Apr 18 2016, Greg Parker &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Apr 14, 2016, at 10:07 PM, Stephen Canon via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; On Apr 14, 2016, at 8:34 PM, Brent Royal-Gordon &lt;brent at architechies.com&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Stephen Canon wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; public protocol Arithmetic<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Is there a rationale for the name &quot;Arithmetic&quot;? There&#39;s probably<br>&gt;&gt;&gt; nothing wrong with it, but I would have guessed you&#39;d use the name<br>&gt;&gt;&gt; &quot;Number”.<br>&gt;&gt; <br>&gt;&gt; Dave A. came up with the name, though I think it’s a good one.  Number isn’t bad either.<br>&gt;<br>&gt; Does Number hew too close to Foundation&#39;s NSNumber name?<br>&gt;<br>&gt; `Arithmetic` provides a beautiful hook for grammar pedants: as a<br>&gt; protocol name it ought to be pronounced as the adjective &quot;arithMEtic&quot;<br></p><p>Yes, or for those less excited by the idea, arith-MEH-tic.<br></p><p>&gt; and not the noun &quot;aRITHmetic&quot;. Complaining about that sounds like fun<br>&gt; to me, but naming the protocol `Arithmetical` would avoid that issue<br>&gt; if others disagree.<br></p><p>Point taken, but... blick.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

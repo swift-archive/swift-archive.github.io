@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0a2c0bcff308a97d2617cdba339914c6?s=50"></div><header><strong>Cannot implement NSURLSessionDownloadDelegate</strong> from <string>Charles Lane</string> &lt;clane_47 at bellsouth.net&gt;<p>March 30, 2016 at 06:00:00pm</p></header><div class="content"><p>I have the same problem except it’s with the UISearchResultsUpdating protocol. I read Jordan’s reply with the workaround but I’m not familiar enough with OBJC to implement it. Could you possibly show me the correct form for the following:<br></p><p>func updateSearchResults(for searchController: UISearchController) {<br>        <br>    }<br></p><p>How do I format that using the ‘objc’ attribute to make it satisfy the protocol requirements? I know that Apple will fix this soon, but I’m curious…..<br></p><p>Thanks,<br>Chuck Lane<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160330/8a011690/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a0a299ea776456e5b490c6af93682926?s=50"></div><header><strong>Cannot implement NSURLSessionDownloadDelegate</strong> from <string>Sebastian Hagedorn</string> &lt;sebastian at iosphere.de&gt;<p>March 31, 2016 at 11:00:00am</p></header><div class="content"><p>You’d have to add @objc(updateSearchResultsForSearchController:) to it.<br></p><p>If you’re having issues in other places of your code, you can easily get the ObjC selector form by looking into the online docs, e.g.:<br>https://developer.apple.com/library/ios/documentation/UIKit/Reference/UISearchResultsUpdating_ClassRef/index.html<br></p><p>…and choose Objective-C as your preferred language in the top panel.<br></p><p>While this works well enough for required protocol methods, the bigger problem is with optional methods, as the compiler won’t complain if it doesn’t find a matching Swift method, it just won’t ever be called.<br></p><p><br>&gt; On 31 Mar 2016, at 00:34, Charles Lane &lt;clane_47 at bellsouth.net&gt; wrote:<br>&gt; <br>&gt; I have the same problem except it’s with the UISearchResultsUpdating protocol. I read Jordan’s reply with the workaround but I’m not familiar enough with OBJC to implement it. Could you possibly show me the correct form for the following:<br>&gt; <br>&gt; func updateSearchResults(for searchController: UISearchController) {<br>&gt;         <br>&gt;     }<br>&gt; <br>&gt; How do I format that using the ‘objc’ attribute to make it satisfy the protocol requirements? I know that Apple will fix this soon, but I’m curious…..<br>&gt; <br>&gt; Thanks,<br>&gt; Chuck Lane<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160331/38135ad6/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

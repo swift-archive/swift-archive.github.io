@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Rename &#39;guard&#39; to &#39;ensure&#39;</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 22, 2016 at 03:00:00pm</p></header><div class="content"><p>on Mon Feb 22 2016, Greg Parker &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 22, 2016, at 10:15 AM, Dave Abrahams via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; on Mon Feb 22 2016, Erica Sadun &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; On the other hand, I&#39;d love if assert/precondition would be combined<br>&gt;&gt;&gt; into a single call, with an optional `forReleaseBuild:` arg (better<br>&gt;&gt;&gt; named) that defaults to false.<br>&gt;&gt; <br>&gt;&gt; I really don&#39;t want to do that.  Assert and precondition have different<br>&gt;&gt; use-cases, and I don&#39;t want people to ask “do I want this on in a<br>&gt;&gt; release build?” (which is a hard decision to make correctly and<br>&gt;&gt; consistently) when they write them.  I want them to ask, “Am I checking<br>&gt;&gt; whether this method is being called correctly or is this just a<br>&gt;&gt; self-sanity check?”<br>&gt;<br>&gt; Conversely, &quot;do I want this on in a release build&quot; is precisely the<br>&gt; decision I usually make in my own code. The dichotomy is not parameter<br>&gt; validation versus sanity checks. Instead the dichotomy is checks that<br>&gt; are fast enough for release builds versus checks that are too slow or<br>&gt; have rare false positives and must be left only for non-release<br>&gt; builds. &quot;assert&quot; and &quot;precondition&quot; are not useful names for that<br>&gt; usage.<br></p><p>Well, I&#39;d be open to a proposal for a checkInReleaseBuilds: Bool = false<br>parameter to assert, for those people who want to run their sanity<br>checks in release builds, but I don&#39;t think I want to retire precondition().<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

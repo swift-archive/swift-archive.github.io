@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>Custom little/big endian data structure.</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>October 30, 2016 at 08:00:00pm</p></header><div class="content"><p>Hi there,<br></p><p>is there actually a way to build a custom data structure that will automatically be converted to little/big endian on a little/big endian system, just like (U)Int16/32/64 do?<br></p><p>I could build as a workaround a mechanism that will do that for me, but I’m curious if this is possible with some workaround. <br></p><p>Specifically, I’m talking about a 128 Bit data structure.<br></p><p>Best regards,<br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161030/5e96e243/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>Custom little/big endian data structure.</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>November  1, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On Oct 30, 2016, at 12:50 PM, Adrian Zubarev via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi there,<br>&gt; <br>&gt; is there actually a way to build a custom data structure that will automatically be converted to little/big endian on a little/big endian system, just like (U)Int16/32/64 do?<br>&gt; <br>&gt; I could build as a workaround a mechanism that will do that for me, but I’m curious if this is possible with some workaround. <br></p><p>Hi Adrian,<br></p><p>This isn’t something that Swift provides a magic answer to today, but it seems possible that the “property behaviors” proposal (which is currently shelved, but will hopefully come back in the future) could be used to address this.<br></p><p>-Chris<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161101/b2a3dd5e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>Custom little/big endian data structure.</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>November  1, 2016 at 10:00:00pm</p></header><div class="content"><p>Hi Chris,<br></p><p>thank you for your answer. I can’t wait for property behaviors, it’s going to be such a powerful feature. :)<br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br></p><p>Am 1. November 2016 um 18:34:55, Chris Lattner (clattner at apple.com) schrieb:<br></p><p><br>On Oct 30, 2016, at 12:50 PM, Adrian Zubarev via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>Hi there,<br></p><p>is there actually a way to build a custom data structure that will automatically be converted to little/big endian on a little/big endian system, just like (U)Int16/32/64 do?<br></p><p>I could build as a workaround a mechanism that will do that for me, but I’m curious if this is possible with some workaround. <br></p><p>Hi Adrian,<br></p><p>This isn’t something that Swift provides a magic answer to today, but it seems possible that the “property behaviors” proposal (which is currently shelved, but will hopefully come back in the future) could be used to address this.<br></p><p>-Chris<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161101/89d5944b/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

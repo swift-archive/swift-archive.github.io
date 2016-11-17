@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Review] SE-0125: Remove NonObjectiveCBase and isUniquelyReferenced</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July 21, 2016 at 10:00:00am</p></header><div class="content"><p>on Wed Jul 20 2016, Arnold &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Sent from my iPhone<br>&gt;<br>&gt;&gt; On Jul 20, 2016, at 12:47 PM, Dave Abrahams &lt;dabrahams at apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Wed Jul 20 2016, Arnold Schwaighofer &lt;aschwaighofer-AT-apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt;&gt; On Jul 20, 2016, at 9:54 AM, Andrew Trick &lt;atrick at apple.com&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; On Jul 20, 2016, at 9:44 AM, Arnold Schwaighofer &lt;aschwaighofer at apple.com&gt; wrote:<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; The question is are they relying on the non- at objc post-condition<br>&gt;&gt;&gt;&gt;&gt; when the API returns true? If they were to implement something like<br>&gt;&gt;&gt;&gt;&gt; array they might.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; The conservative thing to do is not make that promise for now and<br>&gt;&gt;&gt;&gt; address need later if it’s important. Conservative makes sense to me<br>&gt;&gt;&gt;&gt; given the current level of confusion.<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt;&gt; That said, something like “isUniquelyReferencedNativeSwift” would<br>&gt;&gt;&gt;&gt;&gt;&gt; work assuming that’s semantically correct (“native&quot; Swfit objects<br>&gt;&gt;&gt;&gt;&gt;&gt; do not inherit from NSObject). “isKnownUniquelyReferenced” would<br>&gt;&gt;&gt;&gt;&gt;&gt; be fine with a warning in the doc comment that it may always<br>&gt;&gt;&gt;&gt;&gt;&gt; return false for objc objects.<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; Native swift objects are the ones that use native swift reference<br>&gt;&gt;&gt;&gt;&gt; counting and don’t alias Objc class instances. That is at least how<br>&gt;&gt;&gt;&gt;&gt; we have defined it at the SIL (Builtin.NativeObject vs<br>&gt;&gt;&gt;&gt;&gt; Builtin.UnknownObject) level:<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; * A ``Builtin.NativeObject`` may alias any native Swift heap object,<br>&gt;&gt;&gt;&gt;&gt; including a Swift class instance, a box allocated by ``alloc_box``,<br>&gt;&gt;&gt;&gt;&gt; or a thick function&#39;s closure context.<br>&gt;&gt;&gt;&gt;&gt; It may not alias natively Objective-C class instances.<br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; I think at the language/stdlib level the “native” concept is<br>&gt;&gt;&gt;&gt;&gt; implementation detail that is not witnessed other than with the<br>&gt;&gt;&gt;&gt;&gt; non- at objc requirement of ManageBufferPointer and<br>&gt;&gt;&gt;&gt;&gt; isUniquelyReferencedNonObjC, i.e at the language/stdlib level we<br>&gt;&gt;&gt;&gt;&gt; call “native” &quot;non- at objc”. Which IMO is more descriptive.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; I totally agree, but people can’t have it both ways. You can’t avoid<br>&gt;&gt;&gt;&gt; a negative in the name and refuse to define the positive<br>&gt;&gt;&gt;&gt; nomenclature.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt;&gt; I understand the desire to remove Objc’ness from API names that can be used on platforms without ObjC.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; Me too.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; +1 forisKnownUniquelyReferenced, with clarifying doc comments<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Do we continue promise that “isKnownUniquelyReferenced” returns false<br>&gt;&gt;&gt; for non- at objc objects in the comments?<br>&gt;&gt; <br>&gt;&gt; I think you mean, “do we promise that “isKnownUniquelyReferenced” returns<br>&gt;&gt; false for @objc objects?”<br>&gt;<br>&gt; Yes.<br>&gt;<br>&gt;&gt; <br>&gt;&gt; IMO we should not make that promise.  There&#39;s not much you can do with it.<br>&gt;<br>&gt; You can implement Array (or a similar bridged) type outside of the<br>&gt; standard library -- at least the aspect of it that transitions to a<br>&gt; native representation when you write to it if it is non-native.<br></p><p>You can still do that, even without a guarantee from<br>isKnownUniquelyReferenced.  You can dynamic cast to your native storage<br>type and see if you have it.  Or you can use an enum to remember what<br>representation you store.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

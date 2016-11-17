@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6ff404e5928c7aeb05ee97fd4109bf38?s=50"></div><header><strong>Add a type like Double but with much more precision?</strong> from <string>tuuranton at tutanota.de</string> &lt;tuuranton at tutanota.de&gt;<p>December  8, 2015 at 06:00:00pm</p></header><div class="content"><p>I need a floating-point type with more precision than Double. Would this be <br>possible to add in Swift?<br>Here is just one use case: Measuring time using seconds since the first <br>instant of 1970. For example, the first instant of 2016 is 1451602800.0 <br>seconds since the first instance of 1970. But with 1451602800.0, I&#39;m already <br>at 11 significant digits. This means I cannot add a nanosecond (1e-9) to this <br>number within Double&#39;s precision because that would require a lot more <br>significant digits than Double can handle.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151208/46401de6/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>Add a type like Double but with much more precision?</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>December  8, 2015 at 02:00:00pm</p></header><div class="content"><p>&gt; I need a floating-point type with more precision than Double.<br></p><p>There’s a Float80, at least on OS X. (Not sure about iOS or Linux.) Does that meet your needs?<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Add a type like Double but with much more precision?</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>December  8, 2015 at 02:00:00pm</p></header><div class="content"><p>&gt; On Dec 8, 2015, at 2:01 PM, Brent Royal-Gordon via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; I need a floating-point type with more precision than Double.<br>&gt; <br>&gt; There’s a Float80, at least on OS X. (Not sure about iOS or Linux.) Does that meet your needs?<br></p><p>Should be available on x86_64 or i386 Linux as well.<br></p><p>-Joe<br></p></div></li></ul></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Add a type like Double but with much more precision?</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>December  8, 2015 at 02:00:00pm</p></header><div class="content"><p>&gt; On Dec 8, 2015, at 10:27 AM, Tuur Anton via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; I need a floating-point type with more precision than Double. Would this be possible to add in Swift?<br>&gt; <br>&gt; Here is just one use case: Measuring time using seconds since the first instant of 1970. For example, the first instant of 2016 is 1451602800.0 seconds since the first instance of 1970. But with 1451602800.0, I&#39;m already at 11 significant digits. This means I cannot add a nanosecond (1e-9) to this number within Double&#39;s precision because that would require a lot more significant digits than Double can handle.<br>&gt; <br></p><p>There&#39;s support at the LLVM level for fp128 types. I&#39;m not sure how good or portable its backend support is though. You might look at FloatingPoint.swift.gyb and see what breaks if you extend it to generate a Quad type backed by Builtin.FPIEEE128.<br></p><p>-Joe<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20151208/330f06ab/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

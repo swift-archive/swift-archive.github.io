@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/fd5bd4566ee1f286333b7dbf2df6fadb?s=50"></div><header><strong>[Accepted] SE-0063: SwiftPM System Module Search Paths</strong> from <string>Anders Bertelrud</string> &lt;anders at apple.com&gt;<p>April 15, 2016 at 01:00:00pm</p></header><div class="content"><p>Hello Swift Community,<br></p><p>The review of SE-0063 &quot;SwiftPM System Module Search Paths&quot; for the Swift Package Manager ran from Feb. 7th-13th, 2016.  The proposal has been accepted.<br></p><p>Feedback was light but positive, which was not surprising since there had been email discussions of this topic for some time and there was general agreement about the need.<br></p><p>The accepted proposal can be found at https://github.com/apple/swift-evolution/blob/master/proposals/0064-property-selectors.md &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0064-property-selectors.md&gt;.<br></p><p>There is an implementation for this proposal already, and creation of a pull request has been awaiting acceptance of the proposal.<br></p><p>Thank you all for your comments.<br></p><p>Anders<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160415/6f680dce/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>[swift-evolution] [Accepted] SE-0063: SwiftPM System Module Search Paths</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>April 15, 2016 at 01:00:00pm</p></header><div class="content"><p>That link would be<br>https://github.com/apple/swift-evolution/blob/master/proposals/0063-swiftpm-system-module-search-paths.md<br></p><p><br>On Fri, Apr 15, 2016 at 1:14 PM, Anders Bertelrud via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hello Swift Community,<br>&gt;<br>&gt; The review of SE-0063 &quot;SwiftPM System Module Search Paths&quot; for the Swift<br>&gt; Package Manager ran from Feb. 7th-13th, 2016.  The proposal has been<br>&gt; accepted.<br>&gt;<br>&gt; Feedback was light but positive, which was not surprising since there had<br>&gt; been email discussions of this topic for some time and there was general<br>&gt; agreement about the need.<br>&gt;<br>&gt; The accepted proposal can be found at<br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0064-property-selectors.md<br>&gt; .<br>&gt;<br>&gt; There is an implementation for this proposal already, and creation of a<br>&gt; pull request has been awaiting acceptance of the proposal.<br>&gt;<br>&gt; Thank you all for your comments.<br>&gt;<br>&gt; Anders<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20160415/c9ed2f83/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

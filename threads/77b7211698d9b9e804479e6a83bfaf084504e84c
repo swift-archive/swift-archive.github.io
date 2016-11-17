@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b470e0e8b1493968544fb4a9062f4aa3?s=50"></div><header><strong>[stdlib] Collection mutators availability inconsistent</strong> from <string>Louis D&#39;hauwe</string> &lt;louisdhauwe at silverfox.be&gt;<p>October 18, 2016 at 08:00:00pm</p></header><div class="content"><p>Collections have mutating functions for removing the first and last element.<br>One of these is popLast(), which will safely check if the collection is empty before popping the last element.<br></p><p>So calling popLast() is like doing:<br>if !collection.isEmpty {<br>	collection.removeLast()<br>}<br></p><p>There also exists a popFirst() function, but what I find inconsistent is that popFirst() is only available on ArraySlice.<br></p><p>Example:<br>var collection = [1, 2, 3, 4]<br>collection.removeFirst() // works fine<br>collection.removeLast() // works fine<br>let last = collection.popLast() // works fine<br>let first = collection.popFirst() // Compile error: [Int] is not convertible to &#39;ArraySlice&lt;Int&gt;&#39;<br></p><p>Is it intended that popLast() is available on collections, but popFirst() is not?<br></p><p>– Louis D&#39;hauwe<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161018/77b7e84c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c53218a6524f4d644b6a75a4441ea631?s=50"></div><header><strong>[stdlib] Collection mutators availability inconsistent</strong> from <string>Max Moiseev</string> &lt;moiseev at apple.com&gt;<p>October 18, 2016 at 01:00:00pm</p></header><div class="content"><p>Hi Louis,<br></p><p>I believe the difference is due to the performance guarantees. One can only efficiently implement `popFirst` and `removeFirst` on slices, where it’s just a matter of index manipulation. Removing the first element of a Collection is potentially an O(n) operation. Using `popFirst` in a loop in some algorithm would result in a quadratic complexity.<br></p><p>So the reason is: we only provide `popFirst` in a context where it is guaranteed to be O(1). Same applies to `popLast`, actually.. I think.<br></p><p>To reiterate what I mentioned in your pull request &lt;https://github.com/apple/swift/pull/5333&gt;:<br>&gt; This case clearly identifies the flaw in the design of these methods, solving which might become a part of a follow-up to this proposal  &lt;https://github.com/apple/swift-evolution/blob/master/proposals/0132-sequence-end-ops.md&gt;one day.<br></p><p>Max<br></p><p>&gt; On Oct 18, 2016, at 11:16 AM, Louis D&#39;hauwe via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Collections have mutating functions for removing the first and last element.<br>&gt; One of these is popLast(), which will safely check if the collection is empty before popping the last element.<br>&gt; <br>&gt; So calling popLast() is like doing:<br>&gt; if !collection.isEmpty {<br>&gt; 	collection.removeLast()<br>&gt; }<br>&gt; <br>&gt; There also exists a popFirst() function, but what I find inconsistent is that popFirst() is only available on ArraySlice.<br>&gt; <br>&gt; Example:<br>&gt; var collection = [1, 2, 3, 4]<br>&gt; collection.removeFirst() // works fine<br>&gt; collection.removeLast() // works fine<br>&gt; let last = collection.popLast() // works fine<br>&gt; let first = collection.popFirst() // Compile error: [Int] is not convertible to &#39;ArraySlice&lt;Int&gt;&#39;<br>&gt; <br>&gt; Is it intended that popLast() is available on collections, but popFirst() is not?<br>&gt; <br>&gt; – Louis D&#39;hauwe<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161018/000a0a12/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

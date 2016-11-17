@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal draft] Enhanced floating-point protocols</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 18, 2016 at 03:00:00pm</p></header><div class="content"><p>on Thu Apr 14 2016, Stephen Canon &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hi Howard, thanks for the feedback.<br>&gt;<br>&gt;     On Apr 14, 2016, at 6:05 PM, Howard Lovatt &lt;howard.lovatt at gmail.com&gt; wrote:<br>&gt;<br>&gt;     +1 great addition.<br>&gt;<br>&gt;     Would suggest the naming could be more consistent, in particular:<br>&gt;<br>&gt;     1 Anything returning Self could be named xxxed. In the current proposal this<br>&gt;       naming convention is sometimes used, e.g. divided, and sometimes not, e.g.<br>&gt;       subtracting. Suggest all unified with the xxxed convention.<br>&gt;<br>&gt; The names in the Arithmetic protocol are Dave A’s creation, but I think they’re<br>&gt; a reasonable compromise given the constraints placed on us. While consistency<br>&gt; would be nice, I think that clarity at use site is more important, under the<br>&gt; rationale that code is read more often than written. Also, keep in mind that in<br>&gt; practice, “everyone” will use the operators for arithmetic. Dave may have more<br>&gt; to say on the subject.<br>&gt;<br>&gt;     1 Anything returning Bool could be named isXxx. In some cases this is used,<br>&gt;       e.g. isUnordered, but not others, e.g. totalOrder.<br></p><p>FWIW, that is a much more restrictive constraint than what our API guidelines<br>specify.  They say the usage should read as an assertion about the<br>receiver, e.g.<br></p><p>    person.hasTooManyCats<br>    waterSupply.containsUnsafeLevelsOfLead<br></p><p>are fine.<br></p><p>&gt;<br>&gt;<br>&gt; That’s a reasonable point. isTotallyOrdered(with: ) is simple, but I’m not sure<br>&gt; how I would handle totalOrderMagnitude( ) under this scheme. Thoughts?<br>&gt;<br>&gt; Thanks,<br>&gt; – Steve<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

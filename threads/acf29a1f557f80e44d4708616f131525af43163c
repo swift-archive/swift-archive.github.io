@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Idea] How to eliminate &#39;optional&#39; protocol requirements</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>April  9, 2016 at 10:00:00pm</p></header><div class="content"><p>Here is how I would like this to be implemented.<br></p><p>1. Optional method requirements will be represented in Swift as methods<br>having import-only attribute @optional and defaulted to be fatalError()<br></p><p>2. On the inside, this default implementation will not define a method.<br>These objects will not respond to corresponding selector unless the default<br>implementation is overridden.<br></p><p>3. Calls from Swift side will turn into checks with fatalError()<br></p><p>4. The only way to check existence of such method from Swift will be<br>`responds(to: Selector)`<br></p><p>Example:<br></p><p>// Objective-C protocol is imported as:<br>protocol NSTableViewDelegate {<br>@optional func tableView(_: NSTableView, viewFor: NSTableColumn, row: Int)<br>-&gt; NSView?<br>@optional func tableView(_: NSTableView, heightOfRow: Int) -&gt; CGFloat<br>}<br>extension NSTableViewDelegate {<br>@optional func tableView(_: NSTableView, viewFor: NSTableColumn, row: Int)<br>-&gt; NSView? {<br>fatalError(&quot;Unimplemented&quot;)<br>}<br>@optional func tableView(_: NSTableView, heightOfRow: Int) -&gt; CGFloat {<br>fatalError(&quot;Unimplemented&quot;)<br>}<br>}<br></p><p>class MyDelegate : NSTableViewDelegate {<br>@optional func tableView(_: NSTableView, viewFor: NSTableColumn, row: Int)<br>-&gt; NSView? {<br>//...<br>}<br>}<br></p><p>getTableViewDelegate().tableView(x, heightOfRow: y) // will fatalError() if<br>not responds to selector<br>if getTableViewDelegate().responds(to: #selector(...)) { ... }<br></p><p>- Anton<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160409/acf2163c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4027ca32415d9fecd483292ef8f98b02?s=50"></div><header><strong>[Idea] How to eliminate &#39;optional&#39; protocol requirements</strong> from <string>Andrew Bennett</string> &lt;cacoyi at gmail.com&gt;<p>April 10, 2016 at 06:00:00am</p></header><div class="content"><p>For a while I&#39;ve thought it would be useful to have a way to refer to the<br>protocol&#39;s default implementation, even when you provide your own. We could<br>possibly do away with most people&#39;s concerns and optional methods if we<br>could do something like this:<br></p><p>if MyProtocol.someMethod === Self.someMethod {<br>}<br></p><p>On Sunday, 10 April 2016, Антон Жилин &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Here is how I would like this to be implemented.<br>&gt;<br>&gt; 1. Optional method requirements will be represented in Swift as methods<br>&gt; having import-only attribute @optional and defaulted to be fatalError()<br>&gt;<br>&gt; 2. On the inside, this default implementation will not define a method.<br>&gt; These objects will not respond to corresponding selector unless the default<br>&gt; implementation is overridden.<br>&gt;<br>&gt; 3. Calls from Swift side will turn into checks with fatalError()<br>&gt;<br>&gt; 4. The only way to check existence of such method from Swift will be<br>&gt; `responds(to: Selector)`<br>&gt;<br>&gt; Example:<br>&gt;<br>&gt; // Objective-C protocol is imported as:<br>&gt; protocol NSTableViewDelegate {<br>&gt; @optional func tableView(_: NSTableView, viewFor: NSTableColumn, row:<br>&gt; Int) -&gt; NSView?<br>&gt; @optional func tableView(_: NSTableView, heightOfRow: Int) -&gt; CGFloat<br>&gt; }<br>&gt; extension NSTableViewDelegate {<br>&gt; @optional func tableView(_: NSTableView, viewFor: NSTableColumn, row:<br>&gt; Int) -&gt; NSView? {<br>&gt; fatalError(&quot;Unimplemented&quot;)<br>&gt; }<br>&gt; @optional func tableView(_: NSTableView, heightOfRow: Int) -&gt; CGFloat {<br>&gt; fatalError(&quot;Unimplemented&quot;)<br>&gt; }<br>&gt; }<br>&gt;<br>&gt; class MyDelegate : NSTableViewDelegate {<br>&gt; @optional func tableView(_: NSTableView, viewFor: NSTableColumn, row:<br>&gt; Int) -&gt; NSView? {<br>&gt; //...<br>&gt; }<br>&gt; }<br>&gt;<br>&gt; getTableViewDelegate().tableView(x, heightOfRow: y) // will fatalError()<br>&gt; if not responds to selector<br>&gt; if getTableViewDelegate().responds(to: #selector(...)) { ... }<br>&gt;<br>&gt; - Anton<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160410/2b075059/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

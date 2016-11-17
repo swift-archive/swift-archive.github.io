@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bdd257c9369fb68e1d06923d10ff789e?s=50"></div><header><strong>Mutability for Foundation types in Swift</strong> from <string>Ben Rimmington</string> &lt;me at benrimmington.com&gt;<p>April 24, 2016 at 10:00:00pm</p></header><div class="content"><p>&lt;https://github.com/apple/swift-evolution/blob/master/proposals/<br>0069-swift-mutability-for-foundation.md&gt;<br></p><p>The proposal looks great.<br></p><p>## Introduction<br></p><p>Broken link:<br></p><p>-- &lt;https://developer.apple.com/videos/play/wwdc2015-414/&gt;<br>++ &lt;https://developer.apple.com/videos/play/wwdc2015/414/&gt;<br></p><p>### New Value Types<br></p><p>CharacterSet:<br></p><p>* Rename to UnicodeScalarSet?<br>* Update APIs to follow SE-0059 (SetAlgebra) proposal?<br>* Add `enumerateRanges` method, similar to NSIndexSet?<br></p><p>-- Ben<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>Mutability for Foundation types in Swift</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>April 25, 2016 at 10:00:00am</p></header><div class="content"><p>Hi Ben,<br></p><p>&gt; On Apr 24, 2016, at 3:51 PM, Ben Rimmington via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; &lt;https://github.com/apple/swift-evolution/blob/master/proposals/<br>&gt; 0069-swift-mutability-for-foundation.md&gt;<br>&gt; <br>&gt; The proposal looks great.<br>&gt; <br>&gt; ## Introduction<br>&gt; <br>&gt; Broken link:<br>&gt; <br>&gt; -- &lt;https://developer.apple.com/videos/play/wwdc2015-414/&gt;<br>&gt; ++ &lt;https://developer.apple.com/videos/play/wwdc2015/414/&gt;<br>&gt; <br></p><p>Thanks; I’ll fix that.<br></p><p>&gt; ### New Value Types<br>&gt; <br>&gt; CharacterSet:<br>&gt; <br>&gt; * Rename to UnicodeScalarSet?<br></p><p>We made a decision to leave the names of the types the same between Swift and Foundation. It’s a tradeoff for sure, but it seems better than other alternatives. Consistent documentation and hindering a common understanding of purpose for the type would be the biggest challenge if we change the names.<br></p><p>&gt; * Update APIs to follow SE-0059 (SetAlgebra) proposal?<br></p><p>We’ll make sure they match in the implementation.<br></p><p>&gt; * Add `enumerateRanges` method, similar to NSIndexSet?<br>&gt; <br></p><p>Not a bad idea. We’ll consider new API separately from the main thrust of the proposal (its transition to a value type in the first place).<br></p><p>Thanks!<br>- Tony<br></p><p><br>&gt; -- Ben<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

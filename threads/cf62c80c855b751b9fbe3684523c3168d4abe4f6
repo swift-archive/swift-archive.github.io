@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Pitch] Flattening the function type of unapplied instance methods</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 22, 2016 at 03:00:00pm</p></header><div class="content"><p>on Mon Feb 22 2016, Joe Groff &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Today, you can reference an instance property as a member of its type<br>&gt; to access it as a fully unbound function, which is currently curried:<br>&gt;<br>&gt; struct Foo {<br>&gt;   var x: Int<br>&gt;   func foo(y y: Int) { return x + y }<br>&gt; }<br>&gt;<br>&gt; let foo = Foo.foo<br>&gt; foo(Foo(x: 1))(y: 2) // returns 3<br>&gt;<br>&gt; However, this is problematic for `mutating` methods. Since the first<br>&gt; argument is `inout`, the mutation window for the parameter formally<br>&gt; ends before the second argument can be applied to complete the<br>&gt; call. Currently we miscompile this, and form a closure over a dangling<br>&gt; pointer, leading to undefined behavior:<br>&gt;<br>&gt; struct Bar {<br>&gt;   var x = 0<br>&gt;   mutating func bar() { x += 1 }<br>&gt; }<br>&gt;<br>&gt; let bar = Bar.bar<br>&gt; var a = Bar()<br>&gt; bar(&amp;a)() // This might appear to work, if we don&#39;t optimize too hard<br>&gt;<br>&gt; let closure: () -&gt; ()<br>&gt; do {<br>&gt;   var b = Bar()<br>&gt;   closure = bar(&amp;b)<br>&gt; }<br>&gt; closure() // This scribbles dead stack space<br>&gt;<br>&gt; var c = Bar() {<br>&gt;   didSet { print(&quot;c was set&quot;) }<br>&gt; }<br>&gt;<br>&gt; bar(&amp;c)() // This will scribble over c after didSet is called, if not worse<br>&gt;<br>&gt; We can close this hole by disallowing a reference to Bar.bar, like we<br>&gt; already disallow partial applications. However, I think it would be in<br>&gt; line with our other simplifications of the function type system to<br>&gt; change the type of `Bar.bar` and other unapplied instance method<br>&gt; references to no longer be curried. <br>&gt; In addition to providing a model<br>&gt; for unapplied instance methods that works with mutating methods, this<br>&gt; would also eliminate a type difference between free functions and<br>&gt; methods of the same arity, allowing for easier code reuse. For<br>&gt; instance, `reduce` takes a closure of type (State, Element) -&gt;<br>&gt; State. Flattening the formal type of instance methods would allow<br>&gt; binary methods to be used as-is with `reduce`, like binary free<br>&gt; functions can:<br>&gt;<br>&gt; func sumOfInts(ints: [Int]) -&gt; Int { <br>&gt;   return ints.reduce(0, combine: +)<br>&gt; }<br>&gt; func unionOfSets&lt;T&gt;(sets: [Set&lt;T&gt;]) -&gt; Set&lt;T&gt; { <br>&gt;   return ints.reduce([], combine: Set.union)<br>&gt; }<br>&gt;<br>&gt; What do you all think?<br></p><p>+1; it&#39;s about time.<br></p><p><br>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

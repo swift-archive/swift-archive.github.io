@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e941adb360692446106cebd7f6d2a1a3?s=50"></div><header><strong>[proposal] Allow convenience initializers to use &quot;self = Foo()&quot;</strong> from <string>Charles Constant</string> &lt;charles at charlesism.com&gt;<p>October  9, 2016 at 02:00:00pm</p></header><div class="content"><p>Does anyone else think we should allow assignment to self in Class<br>&quot;convenience init&quot; methods?<br></p><p>Ie: this is legal for a struct, but complains about self being immutable if<br>you try it in a Class, even if it&#39;s a convenience init:<br></p><p>    init( foo:String ){<br>        self = Me( bar:foo )<br>    }<br></p><p>I haven&#39;t seen this proposed so far, but is there even a reason why can&#39;t?<br></p><p>I&#39;ve run into headaches with this a couple times lately. Specifically,<br>where the appropriate construct for my code seemed to be an init, but I<br>didn&#39;t have access to the desired required init, only a class function.<br>It&#39;s also confusing if you decide to change some Type from a struct to a<br>class, to find you have to turn an init into a static function.<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161009/d2d104d7/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6e0bf2aabb9fc16782586e834dc6e2d7?s=50"></div><header><strong>[proposal] Allow convenience initializers to use &quot;self = Foo()&quot;</strong> from <string>Braeden Profile</string> &lt;jhaezhyr12 at gmail.com&gt;<p>October  9, 2016 at 06:00:00pm</p></header><div class="content"><p>Not good.  In classes, we can’t always determine the exact type of &quot;self”.  In subclasses of “Me”, such an assignment would not work.  Something like `self = Self(bar: foo)` could work, but that exact case is exactly the same as `self.init(bar: foo)`.<br></p><p>I would still appreciate being able to do this, though, as it could let us do what you want in classes marked “final” (with no subclasses).  It would also be great to be able to use operations and build the class I want to build, then assign it to “self”.<br></p><p>The only problem that becomes apparent here to me is memory management.  At the start of a class’s init, it allocates memory for the instance.  Assigning another instance to “self” would actually change the reference stored in “self”, and the old reference must be deallocated.  Still, I wouldn’t mind such syntax and functionality.<br></p><p>&gt; On Oct 9, 2016, at 3:15 PM, Charles Constant via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Does anyone else think we should allow assignment to self in Class &quot;convenience init&quot; methods?<br>&gt; <br>&gt; Ie: this is legal for a struct, but complains about self being immutable if you try it in a Class, even if it&#39;s a convenience init:<br>&gt; <br>&gt;     init( foo:String ){<br>&gt;         self = Me( bar:foo )<br>&gt;     }<br>&gt; <br>&gt; I haven&#39;t seen this proposed so far, but is there even a reason why can&#39;t?<br>&gt; <br>&gt; I&#39;ve run into headaches with this a couple times lately. Specifically, where the appropriate construct for my code seemed to be an init, but I didn&#39;t have access to the desired required init, only a class function. It&#39;s also confusing if you decide to change some Type from a struct to a class, to find you have to turn an init into a static function.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

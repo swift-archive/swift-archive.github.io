@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0f5e460daedc625457bc16580ecdbc04?s=50"></div><header><strong>Make non-void functions @warn_unused_result by default</strong> from <string>Davide De Franceschi</string> &lt;defrenz98 at hotmail.com&gt;<p>March  2, 2016 at 02:00:00pm</p></header><div class="content"><p>I think you might have overseen one _big_ point in all of this though.<br></p><p>If `@warn_unused_result` becomes a default for functions returning non-Void, then there&#39;s a _really_ easy way to explicitly discard the result:<br></p><p>`_ = myNonVoidFunc()`<br></p><p>&gt; Cc:swift-evolution&lt;swift-evolution at swift.org&gt;<br>&gt; Subject:[swift-evolution] Make non-void functions @warn_unused_result y default<br>&gt; Date:2 March 2016 at 12:20:58 GMT<br>&gt; <br>&gt; <br>&gt; <br>&gt; &gt; Macho posturing about how only bad programmers need safety is not helpful<br>&gt; I&#39;m not arguing against safety at all — but safeguards sacrificing ease of use often open a new can of worms.<br>&gt; Swift is already quite &quot;mothering&quot; with its warnings, and I&#39;d rather move some checks to a separate analyze-step than adding new ones (one example are the hints to replace &quot;var&quot; with &quot;let&quot;, which are a constant distraction until I finally write the line with the change…)<br>&gt; It is fine to throw a warning for pure functions, and it is good practice to annotate methods that can be misinterpreted easily, but I&#39;d rather trust in the developer discarding a result in most other situations.<br>&gt; The compiler can&#39;t know wether a method was called for its side effects, so I prefer to leave this decision to the human using it — he should know.<br>&gt; <br>&gt; You may code in a different style as Andrey and I, but discardable return values are no anti-pattern, so I don&#39;t think they should be punished with a monstrosity like &quot;@dont_warn_unused_result&quot; (shiver).<br>&gt; <br>&gt; - Tino<br>&gt; <br>&gt; I myself break the most prominent programmer cliches easily (including the ability to cook quiche that has never seen a freezer ;-), but apparently, I should strive for more bluntness, as it greatly increases the chances for reactions...<br>&gt; <br>&gt; <br>&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

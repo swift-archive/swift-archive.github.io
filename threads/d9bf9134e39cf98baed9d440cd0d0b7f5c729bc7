@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>API Guidelines Update</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>February 24, 2016 at 02:00:00pm</p></header><div class="content"><p>on Wed Feb 24 2016, Jordan Rose &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On Feb 24, 2016, at 11:25, Dave Abrahams via swift-evolution<br>&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; on Wed Feb 24 2016, David Owens II<br>&gt;<br>&gt;&gt; &lt;swift-evolution at swift.org<br>&gt;&gt; &lt;mailto:swift-evolution at swift.org&gt;&gt;<br>&gt;&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt;&gt; On Feb 22, 2016, at 11:02 AM, Jordan Rose via swift-evolution<br>&gt;&gt;&gt;&gt; &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt;&gt; In case it&#39;s been lost in all the discussion, the -ing/-ed rule is<br>&gt;&gt;&gt;&gt; essentially the rule Objective-C uses, minus the noun labels for the<br>&gt;&gt;&gt;&gt; return value and types and the word &quot;by&quot;. It&#39;s definitely very<br>&gt;&gt;&gt;&gt; different grammatically from most other API guidelines, but so are<br>&gt;&gt;&gt;&gt; Objective-C&#39;s guidelines.<br>&gt;&gt;&gt;&gt; <br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Sure, but I&#39;d actually argue that the noun-labels in ObjC are what<br>&gt;&gt;&gt; actually provide the context of the non-mutating nature of the<br>&gt;&gt;&gt; function. <br>&gt;&gt; <br>&gt;&gt; I disagree with that assertion.  The nouns tell you what type is going<br>&gt;&gt; to be returned and what type is being passed, not whether there will be<br>&gt;&gt; mutation to the receiver.<br>&gt;<br>&gt; For the Cocoa value types, I agree with DavidO that a return-type noun<br>&gt; reliably distinguishes mutation from non-mutation, <br></p><p>I would agree with that too, but IIUC he&#39;s not claiming something about<br>how it works statistically in Cocoa.  Instead, I understand him to be<br>saying that it&#39;s somehow intrinsically more obvious to an English<br>speaker.<br></p><p>&gt; and is a better-than-50% indicator for methods on other types as well.<br></p><p>Types other than what?<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

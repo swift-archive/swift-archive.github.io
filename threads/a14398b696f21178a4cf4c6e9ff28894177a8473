@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a838c63b9093a77fb88231d65effa3b3?s=50"></div><header><strong>building libdispatch on El Capitan</strong> from <string>Drew Crawford</string> &lt;drew at sealedabstract.com&gt;<p>January 11, 2016 at 07:00:00am</p></header><div class="content"><p>I&#39;m having some trouble building libdispatch on el capitan.  I opened an issue a week ago: https://bugs.swift.org/browse/SR-449<br></p><p>The problem seems to be that os/lock_private.h doesn&#39;t exist.  I&#39;ve searched my whole system for this header, and can not find it in any location.<br></p><p>The installation instructions mention a libplatform &lt;https://github.com/apple/swift-corelibs-libdispatch/blob/master/INSTALL#L90&gt;, I wonder if the header might be in there.  However I cannot actually find any libplatform on opensource.apple.com &lt;http://opensource.apple.com/release/os-x-10112/&gt;.  Not sure if related or a red herring.<br></p><p>If someone can reply here with a configure/make invocation that builds successfully on El Cap I&#39;d be grateful.<br></p><p>Since El Cap *ships* with a libdispatch I wonder if nobody has tried to build from github.  Alternatively I must be missing something obvious, which is entirely possible as I am quite poor with autotools.<br></p><p>Thanks in advance.<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160111/a1438473/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/be4c3c3b76631a155e1358db48066692?s=50"></div><header><strong>building libdispatch on El Capitan</strong> from <string>Tony Parker</string> &lt;anthony.parker at apple.com&gt;<p>January 11, 2016 at 09:00:00am</p></header><div class="content"><p>Hi Drew,<br></p><p>Unfortunately you are correct. We are aware that the open source version of dispatch will not build on OS X due to missing dependencies. The one on GitHub is focused on the Linux port at the moment, but we will update the list if there is any change in the status of the dependencies required to build on OS X.<br></p><p>Thanks,<br>- Tony<br></p><p>&gt; On Jan 11, 2016, at 5:07 AM, Drew Crawford via swift-corelibs-dev &lt;swift-corelibs-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I&#39;m having some trouble building libdispatch on el capitan.  I opened an issue a week ago: https://bugs.swift.org/browse/SR-449 &lt;https://bugs.swift.org/browse/SR-449&gt;<br>&gt; <br>&gt; The problem seems to be that os/lock_private.h doesn&#39;t exist.  I&#39;ve searched my whole system for this header, and can not find it in any location.<br>&gt; <br>&gt; The installation instructions mention a libplatform &lt;https://github.com/apple/swift-corelibs-libdispatch/blob/master/INSTALL#L90&gt;, I wonder if the header might be in there.  However I cannot actually find any libplatform on opensource.apple.com &lt;http://opensource.apple.com/release/os-x-10112/&gt;.  Not sure if related or a red herring.<br>&gt; <br>&gt; If someone can reply here with a configure/make invocation that builds successfully on El Cap I&#39;d be grateful.<br>&gt; <br>&gt; Since El Cap *ships* with a libdispatch I wonder if nobody has tried to build from github.  Alternatively I must be missing something obvious, which is entirely possible as I am quite poor with autotools.<br>&gt; <br>&gt; Thanks in advance.<br>&gt; <br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-corelibs-dev mailing list<br>&gt; swift-corelibs-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-corelibs-dev<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160111/918707c4/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

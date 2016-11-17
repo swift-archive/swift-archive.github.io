@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Review] SE-0091: Improving operator requirements in protocols</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>May 28, 2016 at 03:00:00pm</p></header><div class="content"><p>&gt; Then, the protocol author is responsible for providing a generic global<br>trampoline operator that is constrained by the protocol type and delegates<br>to the static operator on that type:<br></p><p>This feels like an unnatural &quot;hack&quot; to me. This proposal definitely needs<br>more discussion.<br></p><p>Personally, I&#39;d prefer the following:<br>* allow `self` internal parameter name in functions<br>* move `prefix` and `postfix` to external parameter name<br></p><p>Example:<br></p><p>====begin====<br></p><p>protocol SomeProtocol {<br>    mutating func +(left self: Self, right: Self)<br>    func ~(prefix self: Self) -&gt; Self<br>    func -(postfix self: Self) -&gt; Self<br>}<br></p><p>struct SomeStruct : SomeProtocol {<br>    func +(left self: SomeStruct, right: SomeStruct)<br>    func ~(prefix self: Self) -&gt; Self<br>}<br></p><p>func -(postfix nonSelf: SomeStruct)<br></p><p>====end====<br></p><p><br>* What is your evaluation of the proposal?<br>As it stands, -1<br></p><p>* Is the problem being addressed significant enough to warrant a change to<br>Swift?<br>Yes.<br></p><p>* Does this proposal fit well with the feel and direction of Swift?<br>No, I find that it is obscure and brings more &quot;magic&quot; into the language.<br></p><p>* If you have used other languages or libraries with a similar feature, how<br>do you feel that this proposal compares to those?<br>No.<br></p><p>* How much effort did you put into your review? A glance, a quick reading,<br>or an in-depth study?<br>A quick reading.<br></p><p>- Anton<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160528/a2bf8192/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

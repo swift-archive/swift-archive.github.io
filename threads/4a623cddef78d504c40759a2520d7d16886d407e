@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7559ac465b184ec777f29d37c0e4b374?s=50"></div><header><strong>Swift 3 and cross platform development</strong> from <string>Michael Peternell</string> &lt;michael.peternell at gmx.at&gt;<p>May 12, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>I&#39;ve seen on the swift-evolution git repository README.md page that Portability is one of the design goals for Swift 3.<br></p><p>Does this mean that Swift 3 will be available and useful on Windows too? So that it could be used for cross platform app development on both Windows and OS X (and probably also Android)?<br></p><p>For example, will Swift 3 be able to interoperate with Objective-C on Windows (e.g. using GnuSTEP or the WinObjC bridge from Microsoft)? Maybe using WinObjC+Swift on Windows, GnuSTEP+Swift on Linux and Native-objc+Swift on OS X? Such an application could probably share very much code between different platforms.<br></p><p>Regards,<br>Michael<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b9904260218b6d7942782c2b2355f2aa?s=50"></div><header><strong>Swift 3 and cross platform development</strong> from <string>William Dillon</string> &lt;william at housedillon.com&gt;<p>May 12, 2016 at 09:00:00am</p></header><div class="content"><p>Hi Michael,<br></p><p>This topic (in a form) has come up on list before.  It&#39;s my understanding that the portability that is targeted is core Swift, not so much Obj-C interoperability.<br></p><p>That said, there are a few people working on Swift for MSVC, and Swift already works with Cygwin.  Someone has considered making Swift work with an open source implementation of the Obj-C libraries (I don&#39;t think it was GnuSTEP), but I haven&#39;t heard from them in quite a while.<br></p><p>I hope that helps.<br>- Will<br></p><p>&gt; On May 12, 2016, at 8:42 AM, Michael Peternell via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; I&#39;ve seen on the swift-evolution git repository README.md page that Portability is one of the design goals for Swift 3.<br>&gt; <br>&gt; Does this mean that Swift 3 will be available and useful on Windows too? So that it could be used for cross platform app development on both Windows and OS X (and probably also Android)?<br>&gt; <br>&gt; For example, will Swift 3 be able to interoperate with Objective-C on Windows (e.g. using GnuSTEP or the WinObjC bridge from Microsoft)? Maybe using WinObjC+Swift on Windows, GnuSTEP+Swift on Linux and Native-objc+Swift on OS X? Such an application could probably share very much code between different platforms.<br>&gt; <br>&gt; Regards,<br>&gt; Michael<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

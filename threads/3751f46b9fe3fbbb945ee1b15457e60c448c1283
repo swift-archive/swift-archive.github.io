@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dd033b3ed46d65c7d7394eab52d53e6b?s=50"></div><header><strong>Proposal: An Either Type in the STL</strong> from <string>Evan Maloney</string> &lt;emaloney at gilt.com&gt;<p>December 10, 2015 at 02:00:00pm</p></header><div class="content"><p>Kevin Ballard wrote:<br></p><p>&gt; I do not support the addition of Either. As far as I am aware, the only<br>&gt; compelling argument in favor of an Either type is &quot;because Haskell has<br>&gt; one&quot;, but I believe it&#39;s commonly recognized that Haskell&#39;s Either is<br>&gt; not particularly good. It&#39;s a weird name for results (which Result<br>&gt; covers), and for other cases it&#39;s usually better just to define your own<br>&gt; two-variant enum anyway. Rust provides some evidence in favor of this,<br>&gt; as this was the rationale for why Rust has a Result&lt;T,E&gt; but no Either,<br>&gt; and it turns out there has been no need to add an Either.<br></p><p>I could not agree more. Either is a weird name, and trying to decipher the underlying meaning of &#39;left&#39; and &#39;right&#39; is maddening.<br></p><p>Result&lt;T&gt; or Result&lt;T,E&gt; would make a lot more sense for Swift.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

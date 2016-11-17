@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2d569462ac92d4619342b1c5ff305043?s=50"></div><header><strong>[Pitch] Several improvements points about extension and typealias</strong> from <string>frogcjn at 163.com</string> &lt;frogcjn at 163.com&gt;<p>October  5, 2016 at 11:00:00pm</p></header><div class="content"><p>1. Allow extension specific dictionary<br>e.g.<br>extension Dictionary where Key == String, Value == String<br>or<br>extension Dictionary&lt;String, String&gt;<br></p><p>2. Allow extending Equatable internally<br>currently any type extend to Equatable should make theme public<br></p><p>3. Allow internal typealias for a public type<br>this internal typealias will only can be used in that package.<br></p><p>Thanks<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161005/984349e2/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0e8516d3703e35b7df26986815b23e7a?s=50"></div><header><strong>[Pitch] Several improvements points about extension and typealias</strong> from <string>Robert Widmann</string> &lt;devteam.codafi at gmail.com&gt;<p>October  5, 2016 at 11:00:00am</p></header><div class="content"><p>~Robert Widmann<br></p><p>2016/10/05 11:00、Cao, Jiannan via swift-evolution &lt;swift-evolution at swift.org&gt; のメッセージ:<br></p><p>&gt; 1. Allow extension specific dictionary<br>&gt; e.g.<br>&gt; extension Dictionary where Key == String, Value == String<br>&gt; or<br>&gt; extension Dictionary&lt;String, String&gt;<br>&gt; <br></p><p>This was just committed by Slava yesterday.<br></p><p>&gt; 2. Allow extending Equatable internally<br>&gt; currently any type extend to Equatable should make theme public<br></p><p>&quot;Hidden Conformances&quot; are discussed in the generics manifesto.<br></p><p>&gt; <br>&gt; 3. Allow internal typealias for a public type<br>&gt; this internal typealias will only can be used in that package.<br></p><p>Interesting idea.<br></p><p>&gt; <br>&gt; Thanks<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161005/2917b68e/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3c450c87df0788b8e1f7a6ca17ea34c7?s=50"></div><header><strong>[Pitch] Several improvements points about extension and typealias</strong> from <string>Douglas Gregor</string> &lt;dgregor at apple.com&gt;<p>October  5, 2016 at 09:00:00am</p></header><div class="content"><p>&gt; On Oct 5, 2016, at 8:07 AM, Robert Widmann via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; <br>&gt; <br>&gt; ~Robert Widmann<br>&gt; <br>&gt; 2016/10/05 11:00、Cao, Jiannan via swift-evolution &lt;swift-evolution at swift.org &lt;mailto:swift-evolution at swift.org&gt;&gt; のメッセージ:<br>&gt; <br>&gt;&gt; 1. Allow extension specific dictionary<br>&gt;&gt; e.g.<br>&gt;&gt; extension Dictionary where Key == String, Value == String<br>&gt;&gt; or<br>&gt;&gt; extension Dictionary&lt;String, String&gt;<br>&gt;&gt; <br>&gt; <br>&gt; This was just committed by Slava yesterday.<br></p><p>Right, the first extension is now accepted by the Swift compiler, which is *awesome*.<br></p><p>The second one is still ill-formed, because the grammar doesn’t permit it. If we want to go there, it needs a swift-evolution proposal.<br></p><p>	- Doug<br></p><p><br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161005/894695fb/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

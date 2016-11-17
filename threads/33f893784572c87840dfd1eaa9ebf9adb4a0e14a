@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ceee3416184656c101818713f1885af0?s=50"></div><header><strong>ASTContext::getUInt32Decl, continuation of github pull 1534</strong> from <string>Jon Rafkind</string> &lt;jon.rafkind at hpe.com&gt;<p>March  4, 2016 at 06:00:00pm</p></header><div class="content"><p>Pull request 1534 deals with adding the function getUInt32Decl() to ASTContext that returns the declaration for the standard UInt32 type. getUInt32Decl was meant to be similar to the other getXYZDecl() functions in ASTContext.<br></p><p>My use case for this is to unwrap the constructor call to a UInt32, and extract the argument expression. In general I unwrap all &#39;primitive&#39; type constructors. For example,<br></p><p>let x = UInt32(2)<br></p><p>The AST will contain a constructor for UInt32.init(2), but I only care about the 2. To accomplish this, I compare the MetatypeType that is associated with the constructor with the existing NominalTypeDecl that exists for the UInt32 type.<br></p><p>On the pull request, Chris Lattner suggests that I can determine if the constructor is for UInt32 by looking at the DeclRefExpr associated with the constructor call. I don&#39;t see how the DeclRefExpr will tell me that it came from the UInt32 type, though.<br></p><p>For now I am basing my code on advice given by Jordan Rose<br></p><p>&quot;&quot;&quot;<br>You can do something like this to build your own metatype:<br></p><p>ASTContext &amp;ctx = …<br>Type intTy = ctx.getIntDecl()-&gt;getDeclaredType();<br>auto *intMetaTy = MetatypeType::get(intTy, ctx);<br></p><p>And then compare types using TypeBase::isEqual (which looks through typealiases and such—it&#39;s comparing &quot;canonical&quot; types).<br></p><p>  Type unknownTy = …<br>    if (unknownTy-&gt;isEqual(intMetaTy)) {<br>    // celebrate<br>  }<br>&quot;&quot;&quot;<br></p><p>Starting from a ConstructorRefCallExpr this is how I come up with the unknownTy. (simplified and psuedo-codish)<br></p><p>DeclRefExpr * fn = constructor-&gt;getFn();<br>ValueDecl * value = fn-&gt;getDecl();<br>AnyFunctionType * functionType = value-&gt;getType().getPointer();<br>MetatypeType * unknownTy = functionType-&gt;getInput().getPointer();<br></p><p>(The input type to a constructor always seems to be a MetatypeType, even though in general functionType-&gt;getInput() could be almost anything.)<br></p><p>I am not very concerned with adding getUInt32Decl() to ASTContext, I just figured it was an omission. At first I thought getUInt32Decl would be an obvious welcome addition to ASTContext. After all, there are two dozen or so other getXYZDecl functions that all seem to get types from the standard library. Perhaps getUIntDecl() is enough -- does UInt32 inherit from UInt, and is that something I can easily check?<br></p><p>For now I have copied findStdlibType() from ASTContext.cpp into my own code, so I can find the UInt32 decl myself. Luckily the function that does the heavy lifting, ASTContext::lookupInSwiftModule, is public.<br></p><p>If there is a better way to determine that a ConstructorRefCallExpr is calling a specific type&#39;s constructor then I would be interested to hear it.<br></p><p>--<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

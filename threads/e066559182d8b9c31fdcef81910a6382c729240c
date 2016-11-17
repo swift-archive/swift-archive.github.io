@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Proposal] Remove Boolean</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>June 23, 2016 at 09:00:00pm</p></header><div class="content"><p>Following goals of Swift 3, I&#39;ve prepaired a minimalistic proposal to <br>remove Boolean protocol.<br></p><p>https://github.com/Anton3/swift-evolution/blob/remove-<br>boolean/proposals/NNNN-remove-boolean.md<br></p><p>## Introduction<br></p><p>Remove `Boolean` protocol. Only Bool will be able to be used in logical <br>contexts:<br></p><p>let x: ObjCBool = true<br>if x {  // will become an error!<br>  ...<br>}<br></p><p>## Motivation<br></p><p>&quot;Boolean&quot; isn&#39;t pulling its weight:<br>- It only abstracts over Bool and ObjCBool.<br>- It only enables a few operations on ObjCBool, which are not very <br>important.<br>- ObjCBool is a bridging problem, and we don&#39;t handle bridging by <br>introducing common protocols (e.g. in the case of String vs NSString, we <br>don&#39;t introduce a common &quot;Stringable&quot; protocol.<br></p><p>Further, it complicates the model:<br>- People are confused by it and the similar but very different Bool <br>type.<br>- Bool is a simple enough concept to not need a family of protocols.<br></p><p>## Impact on existing code<br></p><p>Change is backwards incompatible, but automatic migration is possible:<br></p><p>- In places where Boolean (but not Bool) was in logical contexts, <br>migrator can add `.boolValue`<br>- Migrator can remove conformances to Boolean<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>[Proposal] Remove Boolean</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>June 23, 2016 at 03:00:00pm</p></header><div class="content"><p>It does abstract over DarwinBoolean as well, but this still seems reasonable to me. The most common cases to encounter ObjCBool and DarwinBoolean are out-parameters (which you are usually setting rather than reading, and they will remain BooleanLiteralConvertible) and imported struct fields (which are fairly rare). And John McCall has some ideas for how to even eliminate the latter, though I think that can be separated from this proposal.<br></p><p>Jordan<br></p><p><br>&gt; On Jun 23, 2016, at 14:33, Anton Zhilin via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Following goals of Swift 3, I&#39;ve prepaired a minimalistic proposal to <br>&gt; remove Boolean protocol.<br>&gt; <br>&gt; https://github.com/Anton3/swift-evolution/blob/remove-<br>&gt; boolean/proposals/NNNN-remove-boolean.md<br>&gt; <br>&gt; ## Introduction<br>&gt; <br>&gt; Remove `Boolean` protocol. Only Bool will be able to be used in logical <br>&gt; contexts:<br>&gt; <br>&gt; let x: ObjCBool = true<br>&gt; if x {  // will become an error!<br>&gt;  ...<br>&gt; }<br>&gt; <br>&gt; ## Motivation<br>&gt; <br>&gt; &quot;Boolean&quot; isn&#39;t pulling its weight:<br>&gt; - It only abstracts over Bool and ObjCBool.<br>&gt; - It only enables a few operations on ObjCBool, which are not very <br>&gt; important.<br>&gt; - ObjCBool is a bridging problem, and we don&#39;t handle bridging by <br>&gt; introducing common protocols (e.g. in the case of String vs NSString, we <br>&gt; don&#39;t introduce a common &quot;Stringable&quot; protocol.<br>&gt; <br>&gt; Further, it complicates the model:<br>&gt; - People are confused by it and the similar but very different Bool <br>&gt; type.<br>&gt; - Bool is a simple enough concept to not need a family of protocols.<br>&gt; <br>&gt; ## Impact on existing code<br>&gt; <br>&gt; Change is backwards incompatible, but automatic migration is possible:<br>&gt; <br>&gt; - In places where Boolean (but not Bool) was in logical contexts, <br>&gt; migrator can add `.boolValue`<br>&gt; - Migrator can remove conformances to Boolean<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Proposal] Remove Boolean</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>June 23, 2016 at 08:00:00pm</p></header><div class="content"><p>&gt; On Jun 23, 2016, at 3:38 PM, Jordan Rose via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; It does abstract over DarwinBoolean as well, but this still seems reasonable to me. The most common cases to encounter ObjCBool and DarwinBoolean are out-parameters (which you are usually setting rather than reading, and they will remain BooleanLiteralConvertible) and imported struct fields (which are fairly rare). And John McCall has some ideas for how to even eliminate the latter, though I think that can be separated from this proposal.<br></p><p>Right.<br></p><p>-Chris<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

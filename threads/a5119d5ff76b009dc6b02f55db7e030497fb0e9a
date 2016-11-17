@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0023 API Design Guidelines (when to use properties)</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>January 30, 2016 at 07:00:00pm</p></header><div class="content"><p>on Sat Jan 30 2016, Joseph Lord &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; On 27/01/2016 23:50, Dave Abrahams via swift-evolution wrote:<br>&gt;&gt;<br>&gt;&gt; on Wed Jan 27 2016, Howard Lovatt &lt;howard.lovatt-AT-gmail.com&gt; wrote:<br>&gt;&gt;<br>&gt;&gt;&gt; I would say that if it doesn&#39;t have arguments and doesn&#39;t mutate then it<br>&gt;&gt;&gt; should be a property, since it will read better and is flexible (you can<br>&gt;&gt;&gt; switch between a stored and calculated property without affecting the<br>&gt;&gt;&gt; external interface easily).<br>&gt;&gt;<br>&gt;&gt; We had at least one member of the guidelines group initially felt *very*<br>&gt;&gt; strongly that we should use (basically) that criterion.  But then, in<br>&gt;&gt; our survey of the standard library, we found that applying it left us<br>&gt;&gt; with many properties that he wasn&#39;t comfortable with, such as<br>&gt;&gt; `sequence.iterator` (today&#39;s `sequence.generate()`).<br>&gt;<br>&gt; I think that if you get a new instance of something back that will be<br>&gt; distinct from the one you will get if you access it again then it<br>&gt; should be a method and not a property. In a way the state has changed<br>&gt; because it won&#39;t give you the same instance. This would keep<br>&gt; generate() in the method category (for single use ones anyway).<br></p><p>Well, that&#39;s roughly why we have iterator() (neé generate()) as a<br>method.  It&#39;s a little subtler than that, though; you really need to ask<br>whether it&#39;s *significant* that you get a distinct instance.  In the<br>case of iterator(), it is.  Some properties may produce equivalent but<br>technically-distinct instances, and I don&#39;t think that&#39;s a problem.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

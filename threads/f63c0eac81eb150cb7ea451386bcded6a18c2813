@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b9904260218b6d7942782c2b2355f2aa?s=50"></div><header><strong>Minimal clang to support swift?</strong> from <string>William Dillon</string> &lt;william at housedillon.com&gt;<p>November  3, 2016 at 10:00:00am</p></header><div class="content"><p>HI all,<br></p><p>I&#39;m working on a resource-constrained embedded system, and I&#39;d like to reduce the size of my swift install as much as possible.  In deployment, I&#39;ll need to figure out what a non-compiling swift support install looks like, but that&#39;s not the question for today.  Currently, I&#39;d like to have a functioning swift compiler on our hardware for rapid iteration, testing and debug.<br></p><p>So, my question is about the support that the swift compiler requires.  Based upon the instructions at swift.org, I know that I need at least Clang.  So, I followed the instructions at llvm.org and built it.  It seems to work, but it&#39;s &#39;uuge; around 700 MB with MinSizeRel and -Os.  Add Swift to it, and we&#39;re at about 1.1GB.  As a point of reference, I noticed that the Clang binary I built is 45Mb relative to the 13Mb clang in Debian.  <br></p><p>How much of llvm and clang do I really need to support Swift?<br></p><p>Is there any way built into llvm/clang&#39;s build system to strip the binaries, or otherwise make them smaller?<br></p><p>Thanks!<br>- Will<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161103/f63c2813/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>Minimal clang to support swift?</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>November  7, 2016 at 01:00:00pm</p></header><div class="content"><p>&gt; On 3 Nov 2016, at 18:48, William Dillon via swift-dev &lt;swift-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; HI all,<br>&gt; <br>&gt; I&#39;m working on a resource-constrained embedded system, and I&#39;d like to reduce the size of my swift install as much as possible.  In deployment, I&#39;ll need to figure out what a non-compiling swift support install looks like, but that&#39;s not the question for today.  Currently, I&#39;d like to have a functioning swift compiler on our hardware for rapid iteration, testing and debug.<br>&gt; <br>&gt; So, my question is about the support that the swift compiler requires.  Based upon the instructions at swift.org &lt;http://swift.org/&gt;, I know that I need at least Clang.  So, I followed the instructions at llvm.org &lt;http://llvm.org/&gt; and built it.  It seems to work, but it&#39;s &#39;uuge; around 700 MB with MinSizeRel and -Os.  Add Swift to it, and we&#39;re at about 1.1GB.  As a point of reference, I noticed that the Clang binary I built is 45Mb relative to the 13Mb clang in Debian.  <br>&gt; <br>&gt; How much of llvm and clang do I really need to support Swift?<br>&gt; <br>&gt; Is there any way built into llvm/clang&#39;s build system to strip the binaries, or otherwise make them smaller?<br>&gt; <br>&gt; Thanks!<br>&gt; - Will<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org &lt;mailto:swift-dev at swift.org&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev &lt;https://lists.swift.org/mailman/listinfo/swift-dev&gt;<br>The swift compiler delegates to clang for linking executables on non-Darwin platforms.<br>I believe that’s the only reason we need it - other things from libclang, such as stuff for the importer, seem to get statically-linked.<br></p><p>- Karl<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20161107/34b8d4f9/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

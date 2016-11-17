@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8aa3a9da9a32d3e98805b4a5409e4cee?s=50"></div><header><strong>[Review] SE-0115: Rename Literal Syntax	Protocols</strong> from <string>Anton Zhilin</string> &lt;antonyzhilin at gmail.com&gt;<p>July  2, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; &gt;Anton Zhilin via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt; &gt; -1 from me. I suggest to wait until we get generic protocols<br>&gt; &gt; in Swift 4, then we can use the following:<br>&gt; &gt; <br>&gt; &gt; protocol From&lt;T&gt; {<br>&gt; &gt;    init(_ from: T)<br>&gt; &gt; }<br>&gt;<br>&gt; I&#39;m not sure this feature would be relevant in the case of literals.  It <br>would definitely require something other than just From.  What specific <br>design would you propose (assuming generic protocols) to replace the <br>protocols impacted by this proposal?<br></p><p>With From definition given above, I would define IntLiteralConvertible === <br>From&lt;Int&gt;, BoolLiteralConvertible === From&lt;Bool&gt;, etc. That means, if you <br>conform to From&lt;T&gt; where T is one of Int, Bool, ... then the type becomes <br>&quot;literal convertible&quot;.<br></p><p>&gt;From name and external label are discussable.<br></p><p>I&#39;d also note that although the two proposals are not orthogonal, they do <br>not strictly conflict. I don&#39;t find it too bad if current renaming is <br>applied, and later the whole convertibles system is overhauled.<br></p><p>It&#39;s not globally important, but I&#39;ve just invented a solution for <br>NilLiteralConvertible. We can make nil a value of type Nil:<br></p><p>enum Nil { case nil }  // nil keyword is a macro for Nil.nil<br></p><p>And then From&lt;Nil&gt; will replace NilLiteralConvertible.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc3a9ea0c6c870343d9acb4ac3059cdc?s=50"></div><header><strong>[Review] SE-0115: Rename Literal Syntax Protocols</strong> from <string>Matthew Johnson</string> &lt;matthew at anandabits.com&gt;<p>July  2, 2016 at 09:00:00am</p></header><div class="content"><p>Sent from my iPad<br></p><p>On Jul 2, 2016, at 9:10 AM, Anton Zhilin via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt;&gt; Anton Zhilin via swift-evolution &lt;swift-evolution at ...&gt; writes:<br>&gt;&gt;&gt; -1 from me. I suggest to wait until we get generic protocols<br>&gt;&gt;&gt; in Swift 4, then we can use the following:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; protocol From&lt;T&gt; {<br>&gt;&gt;&gt;   init(_ from: T)<br>&gt;&gt;&gt; }<br>&gt;&gt; <br>&gt;&gt; I&#39;m not sure this feature would be relevant in the case of literals.  It<br>&gt; would definitely require something other than just From.  What specific <br>&gt; design would you propose (assuming generic protocols) to replace the <br>&gt; protocols impacted by this proposal?<br>&gt; <br>&gt; With From definition given above, I would define IntLiteralConvertible === <br>&gt; From&lt;Int&gt;, BoolLiteralConvertible === From&lt;Bool&gt;, etc. That means, if you <br>&gt; conform to From&lt;T&gt; where T is one of Int, Bool, ... then the type becomes <br>&gt; &quot;literal convertible&quot;.<br></p><p>But that doesn&#39;t capture the semantics of these protocols.  See the observations made by the library team quoted in the motivation section as well as Dave Abrahams&#39; comments quoted in the alternatives section.  None of this changes if we get generic protocols.  <br></p><p>Protocols aren&#39;t just about the syntax, they are also about semantics.  These protocols encode specific and important semantics.<br></p><p>&gt; <br>&gt; From name and external label are discussable.<br>&gt; <br>&gt; I&#39;d also note that although the two proposals are not orthogonal, they do <br>&gt; not strictly conflict. I don&#39;t find it too bad if current renaming is <br>&gt; applied, and later the whole convertibles system is overhauled.<br>&gt; <br>&gt; It&#39;s not globally important, but I&#39;ve just invented a solution for <br>&gt; NilLiteralConvertible. We can make nil a value of type Nil:<br>&gt; <br>&gt; enum Nil { case nil }  // nil keyword is a macro for Nil.nil<br>&gt; <br>&gt; And then From&lt;Nil&gt; will replace NilLiteralConvertible.<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

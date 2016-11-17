@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0f0154768aeec561194e651b0bca02d9?s=50"></div><header><strong>[Pitch] unavailable(*) attribute as alias for available(*, unavailable)</strong> from <string>Dan Loewenherz</string> &lt;dan at lionheartsw.com&gt;<p>July 20, 2016 at 09:00:00am</p></header><div class="content"><p>I find myself using the @available(*, unavailable) pattern quite<br>often, and the more I use it, the more weird it feels to use a name<br>called “available” to mark something as &quot;unavailable&quot;. I propose<br>creating a new attribute, called @unavailable, that takes an<br>availability argument, an optional message, and an optional renamed<br>value, that does the same thing as adding “unavailable” to the<br>@available attribute.<br></p><p>Usage:<br></p><p>// Make the method unavailable on all platforms<br>@unavailable(*) == @available(*, unavailable)<br>func hi() {<br>    print(“Hi.”)<br>}<br></p><p>// Make the method unavailable on watchOS, refer to its renamed counterpart<br>@unavailable(*, renamed=&quot;hello&quot;) == @available(*, renamed=&quot;hello&quot;, unavailable)<br></p><p>// Make the method unavailable on watchOS, refer to its renamed<br>counterpart, and add a message<br>@unavailable(*, renamed=&quot;hello&quot;, message=&quot;This method had been<br>renamed&quot;) == @available(*, renamed=&quot;hello&quot;, message=&quot;This method had<br>been renamed&quot;, unavailable)<br></p><p>** I’m not subscribed to the ML so please include me in replies. :)<br></p><p>Best,<br>Dan<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/0f0154768aeec561194e651b0bca02d9?s=50"></div><header><strong>[Pitch] unavailable(*) attribute as alias for available(*, unavailable)</strong> from <string>Dan Loewenherz</string> &lt;dan at lionheartsw.com&gt;<p>July 20, 2016 at 09:00:00am</p></header><div class="content"><p>Oops, some typos in my original message. Fixes below:<br></p><p>On Wed, Jul 20, 2016 at 9:22 AM, Dan Loewenherz &lt;dan at lionheartsw.com&gt; wrote:<br>&gt; // Make the method unavailable on watchOS, refer to its renamed counterpart<br>&gt; @unavailable(*, renamed=“hello&quot;) == @available(*, renamed=&quot;hello&quot;, unavailable)<br></p><p>Should be:<br></p><p>@unavailable(watchOS, renamed=“hello”)<br></p><p>&gt;<br>&gt; // Make the method unavailable on watchOS, refer to its renamed<br>&gt; counterpart, and add a message<br>&gt; @unavailable(*, renamed=&quot;hello&quot;, message=&quot;This method had been<br>renamed”)<br></p><p>Should be:<br></p><p>@unavailable(watchOS, renamed=“hello”, message=“This method had been renamed&quot;)<br></p><p>Dan<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

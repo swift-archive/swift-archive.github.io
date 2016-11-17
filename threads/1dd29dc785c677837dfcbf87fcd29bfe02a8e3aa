@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/10d580a8c8a36e175efa97743d0b214e?s=50"></div><header><strong>comparison Non-Optional and Optional without unwrap</strong> from <string>Седых Александр</string> &lt;se-a at mail.ru&gt;<p>October 18, 2016 at 11:00:00am</p></header><div class="content"><p>This code work: <br></p><p>let one:  Int ? =  5<br>let two =  5<br>let result =  one ==  two<br> <br>print ( result )<br></p><p>//print true<br>Why we can access to Optional value without unwrap within comparison operations?<br></p><p>-- <br>Седых Александр<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161018/1dd2e3aa/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/4c60436f08b7b107f0bb0848c31297fa?s=50"></div><header><strong>comparison Non-Optional and Optional without unwrap</strong> from <string>Alex Blewitt</string> &lt;alblue at apple.com&gt;<p>October 18, 2016 at 10:00:00am</p></header><div class="content"><p>&gt; On 18 Oct 2016, at 09:58, Седых Александр via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; This code work: <br>&gt; <br>&gt; let one: Int? = 5<br>&gt; let two = 5<br>&gt; let result = one == two<br>&gt;  <br>&gt; print(result)<br>&gt; <br>&gt; //print true<br>&gt; <br>&gt; Why we can access to Optional value without unwrap within comparison operations?<br></p><p>The &#39;one&#39; value isn&#39;t being unwrapped; the &#39;two&#39; value is being wrapped in an optional, and then compared. In effect, it&#39;s doing:<br></p><p>let result = one == Optional(two)<br></p><p>This allows you to pass in non-optional values to functions that take optional arguments, e.g.<br></p><p>func printme(_ i:Int?) { print(&quot;\(i)&quot;) }<br></p><p>printme(one)<br>printme(two)<br></p><p>Alex<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20161018/0a6f1690/attachment.html&gt;<br></p></div></li><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/eddffe5cd2c817d61892d77edf66b6b2?s=50"></div><header><strong>comparison Non-Optional and Optional without unwrap</strong> from <string>Rien</string> &lt;Rien at Balancingrock.nl&gt;<p>October 18, 2016 at 11:00:00am</p></header><div class="content"><p>Because the comparison function “==“ has the signature: <br></p><p>func ==&lt;T : Equatable&gt;(lhs: T?, rhs: T?) -&gt; Bool<br></p><p>An optional parameter accepts non-optionals. In a sense non-optionals are “promoted” to optionals when used for an optional parameter.<br></p><p>Rien.<br></p><p>&gt; On 18 Oct 2016, at 10:58, Седых Александр via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; This code work: <br>&gt; <br>&gt; let one: Int? = 5<br>&gt; let two = 5<br>&gt; let result = one == two<br>&gt;  <br>&gt; print(result)<br>&gt; <br>&gt; //print true<br>&gt; <br>&gt; Why we can access to Optional value without unwrap within comparison operations?<br>&gt; <br>&gt; -- <br>&gt; Седых Александр<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

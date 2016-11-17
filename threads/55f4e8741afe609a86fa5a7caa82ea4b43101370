@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14acce5600c02e834668b97536b3836d?s=50"></div><header><strong>Request: Swift for Linux ARM 32 Support</strong> from <string>Dallas Brown</string> &lt;dbrown at hashbangind.com&gt;<p>December 22, 2015 at 10:00:00am</p></header><div class="content"><p>I know there has been talk about getting Swift working on ARM, and I have even tried myself to get it to cross-compile and local compile. <br></p><p>I However haven&#39;t seen an &quot;official&quot; request for ARM support to be added, so I am &quot;officially&quot; requesting it now. <br>Personally l am interested in Linux ARM 32 bit support. <br></p><p>Thanks.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e2303da56647c283b6d8e58d5831faca?s=50"></div><header><strong>Request: Swift for Linux ARM 32 Support</strong> from <string>Joseph Bell</string> &lt;joe at iachieved.it&gt;<p>December 22, 2015 at 11:00:00am</p></header><div class="content"><p>Dallas, see SR-40 https://bugs.swift.org/browse/SR-40 and<br>http://dev.iachieved.it/iachievedit/debian-packages-for-swift-on-arm/,<br>folks are definitely working on it.<br></p><p>On Tue, Dec 22, 2015 at 11:32 AM, Dallas Brown via swift-dev &lt;<br>swift-dev at swift.org&gt; wrote:<br></p><p>&gt; I know there has been talk about getting Swift working on ARM, and I have<br>&gt; even tried myself to get it to cross-compile and local compile.<br>&gt;<br>&gt; I However haven&#39;t seen an &quot;official&quot; request for ARM support to be added,<br>&gt; so I am &quot;officially&quot; requesting it now.<br>&gt; Personally l am interested in Linux ARM 32 bit support.<br>&gt;<br>&gt; Thanks.<br>&gt; _______________________________________________<br>&gt; swift-dev mailing list<br>&gt; swift-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-dev<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20151222/c9d96df2/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a49c2b8a7e2ffa1339ac013f4cf9b6ff?s=50"></div><header><strong>Initializer inheritance doesn&#39;t work with generic class?</strong> from <string>Neil Faiman</string> &lt;neil.swift at faiman.org&gt;<p>May 15, 2016 at 03:00:00pm</p></header><div class="content"><p>This compiles fine:<br></p><p>    class Sup {<br>        init(supDes: Int) {}<br>        convenience init(supCon: Int) { self.init(supDes: supCon) }<br>    }<br></p><p>    class Sub : Sup {<br>        convenience init(subCon1: Int) { self.init(supDes: subCon1) }<br>        convenience init(subCon2: Int) { self.init(supCon: subCon2) }<br>    }<br></p><p>But if I make the classes generic:<br></p><p>    class Sup&lt;T&gt; {<br>        init(supDes: T) {}<br>        convenience init(supCon: T) { self.init(supDes: supCon) }<br>    }<br></p><p>    class Sub&lt;T&gt; : Sup&lt;T&gt; {<br>        convenience init(subCon1: T) { self.init(supDes: subCon1) }<br>        convenience init(subCon2: T) { self.init(supCon: subCon2) }<br>    }<br></p><p>the compiler is doesn’t like it:<br></p><p>    error: argument labels &#39;(supDes:)&#39; do not match any available overloads<br>            convenience init(subCon1: T) { self.init(supDes: subCon1) }<br>                                                ^   ~~~~~~~~~~~~~~~~~<br>    note: overloads for &#39;Sub&lt;T&gt;.init&#39; exist with these partially matching parameter lists: (subCon1: T), (subCon2: T)<br>            convenience init(subCon1: T) { self.init(supDes: subCon1) }<br>                                                ^<br>    error: argument labels &#39;(supCon:)&#39; do not match any available overloads<br>            convenience init(subCon2: T) { self.init(supCon: subCon2) }<br>                                                ^   ~~~~~~~~~~~~~~~~~<br>     note: overloads for &#39;Sub&lt;T&gt;.init&#39; exist with these partially matching parameter lists: (subCon1: T), (subCon2: T)<br>            convenience init(subCon2: T) { self.init(supCon: subCon2) }<br>                                                ^<br></p><p>Expected behavior? Implementation limitation? Bug?<br></p><p>Thanks,<br></p><p>	Neil Faiman<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a49c2b8a7e2ffa1339ac013f4cf9b6ff?s=50"></div><header><strong>Initializer inheritance doesn&#39;t work with generic class?</strong> from <string>Neil Faiman</string> &lt;neil.swift at faiman.org&gt;<p>May 15, 2016 at 05:00:00pm</p></header><div class="content"><p>Here is another, more blatant example of the failure to inherit initializers from a generic base class:<br></p><p>    class Concrete {<br>        init(value: Int) {}<br>    }<br></p><p>    class ConcreteSub : Concrete {<br>    }<br></p><p>    class Generic&lt;T&gt; {<br>        init(value: T) {}<br>    }<br></p><p>    class GenericSub : Generic&lt;Int&gt; {<br>    }<br></p><p>    let concrete = ConcreteSub(value: 1)<br>    let generic = GenericSub(value: 1)<br></p><p>error: &#39;GenericSub&#39; cannot be constructed because it has no accessible initializers<br>    let generic = GenericSub(value: 1)<br>                  ^<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/06c1dcc7dce6a93d194b9c013376e3f0?s=50"></div><header><strong>Initializer inheritance doesn&#39;t work with generic class?</strong> from <string>Joe Groff</string> &lt;jgroff at apple.com&gt;<p>May 16, 2016 at 09:00:00am</p></header><div class="content"><p>This is a known bug. I think Slava&#39;s currently working on fixing it.<br>&gt; On May 15, 2016, at 2:41 PM, Neil Faiman via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; Here is another, more blatant example of the failure to inherit initializers from a generic base class:<br>&gt; <br>&gt;    class Concrete {<br>&gt;        init(value: Int) {}<br>&gt;    }<br>&gt; <br>&gt;    class ConcreteSub : Concrete {<br>&gt;    }<br>&gt; <br>&gt;    class Generic&lt;T&gt; {<br>&gt;        init(value: T) {}<br>&gt;    }<br>&gt; <br>&gt;    class GenericSub : Generic&lt;Int&gt; {<br>&gt;    }<br>&gt; <br>&gt;    let concrete = ConcreteSub(value: 1)<br>&gt;    let generic = GenericSub(value: 1)<br>&gt; <br>&gt; error: &#39;GenericSub&#39; cannot be constructed because it has no accessible initializers<br>&gt;    let generic = GenericSub(value: 1)<br>&gt;                  ^<br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

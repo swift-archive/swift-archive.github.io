@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/27ca9066ad05bd8aa9ec366115f3cd38?s=50"></div><header><strong>[Review] SE-0117: Default classes to be non-subclassable publicly</strong> from <string>Kurt Werle</string> &lt;kurt at circlew.org&gt;<p>July 11, 2016 at 02:00:00pm</p></header><div class="content"><p>-1<br></p><p>On Tue, Jul 5, 2016 at 4:11 PM, Chris Lattner via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hello Swift community,<br>&gt;<br>&gt; The review of &quot;SE-0117: Default classes to be non-subclassable publicly&quot;<br>&gt; begins now and runs through July 11. The proposal is available here:<br>&gt;<br>&gt;<br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0117-non-public-subclassable-by-default.md<br>&gt;<br>&gt; Reviews are an important part of the Swift evolution process. All reviews<br>&gt; should be sent to the swift-evolution mailing list at<br>&gt;<br>&gt;         https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; or, if you would like to keep your feedback private, directly to the<br>&gt; review manager.<br>&gt;<br>&gt; What goes into a review?<br>&gt;<br>&gt; The goal of the review process is to improve the proposal under review<br>&gt; through constructive criticism and contribute to the direction of Swift.<br>&gt; When writing your review, here are some questions you might want to answer<br>&gt; in your review:<br>&gt;<br>&gt;         * What is your evaluation of the proposal?<br>&gt;<br></p><p>I&#39;ve used classes that were marked final that I wish were not.<br>I&#39;ve never used a class that was not final that I wish was marked so.<br></p><p><br>&gt;         * Is the problem being addressed significant enough to warrant a<br>&gt; change to Swift?<br>&gt;<br></p><p>I don&#39;t think the &#39;problem&#39; described is a problem.<br></p><p>If you expose a class, you should think about how it might be subclassed.<br>In the very rare (and still too frequent) case when something should not be<br>subclassed, you should document it that way and explain why.<br></p><p><br>&gt;         * Does this proposal fit well with the feel and direction of Swift?<br>&gt;<br></p><p>I hope not.<br></p><p>Kurt<br>-- <br>kurt at CircleW.org<br>http://www.CircleW.org/kurt/<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160711/4b7184dd/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[Accepted with Revision] SE-0080: Failable Numeric Conversion Initializers</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>May 11, 2016 at 04:00:00pm</p></header><div class="content"><p>Proposal link: https://github.com/apple/swift-evolution/blob/master/proposals/0080-failable-numeric-initializers.md<br></p><p>Hello Swift Community,<br></p><p>The review of SE-0080: &quot;Failable Numeric Conversion Initializers&quot; ran from May 3…9, 2016. The proposal is *Accepted with Revision* for Swift 3.  <br></p><p>The feedback on the proposal from the community and the core team was universally positive, and the new initializers on the primitive integer and floating point types have been approved.  However, swift-evolution isn’t the right mechanism to propose extensions to Foundation types, so the extensions that adds conversions from NSNumber and to Foundation types should be subset out of the proposal.<br></p><p>Thank you to Matthew Johnson for driving this discussion.  I filed SR-1491 to track this work, it would be a great starter bug.<br></p><p>-Chris Lattner<br>Review Manager<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/bc3a9ea0c6c870343d9acb4ac3059cdc?s=50"></div><header><strong>[swift-evolution-announce] [Accepted with Revision] SE-0080: Failable Numeric Conversion Initializers</strong> from <string>Matthew Johnson</string> &lt;matthew at anandabits.com&gt;<p>May 11, 2016 at 06:00:00pm</p></header><div class="content"><p>Sent from my iPad<br></p><p>&gt; On May 11, 2016, at 6:01 PM, Chris Lattner &lt;clattner at apple.com&gt; wrote:<br>&gt; <br>&gt; Proposal link: https://github.com/apple/swift-evolution/blob/master/proposals/0080-failable-numeric-initializers.md<br>&gt; <br>&gt; Hello Swift Community,<br>&gt; <br>&gt; The review of SE-0080: &quot;Failable Numeric Conversion Initializers&quot; ran from May 3…9, 2016. The proposal is *Accepted with Revision* for Swift 3.  <br>&gt; <br>&gt; The feedback on the proposal from the community and the core team was universally positive, and the new initializers on the primitive integer and floating point types have been approved.  However, swift-evolution isn’t the right mechanism to propose extensions to Foundation types, so the extensions that adds conversions from NSNumber and to Foundation types should be subset out of the proposal.<br>&gt; <br>&gt; Thank you to Matthew Johnson for driving this discussion.  I filed SR-1491 to track this work, it would be a great starter bug.<br></p><p>Thanks Chris.  Is there a mechanism for the community to propose extensions to Foundation types?  I was under the impression that swift-evolution was the mechanism for proposing changes to any public Swift API including corelibs.<br></p><p>-Matthew<br></p><p>&gt; <br>&gt; -Chris Lattner<br>&gt; Review Manager<br>&gt; _______________________________________________<br>&gt; swift-evolution-announce mailing list<br>&gt; swift-evolution-announce at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution-announce<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>[swift-evolution-announce] [Accepted with Revision] SE-0080: Failable Numeric Conversion Initializers</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>May 11, 2016 at 09:00:00pm</p></header><div class="content"><p>On May 11, 2016, at 4:18 PM, Matthew Johnson via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt;&gt; Thank you to Matthew Johnson for driving this discussion.  I filed SR-1491 to track this work, it would be a great starter bug.<br>&gt; <br>&gt; Thanks Chris.  Is there a mechanism for the community to propose extensions to Foundation types?  I was under the impression that swift-evolution was the mechanism for proposing changes to any public Swift API including corelibs.<br></p><p>At the moment, there isn’t other than filing a radar on bugreporter.apple.com.  This is a bit of a procedural issue, because corelibs foundation is currently scoped to a direct reimplementation of the existing Foundation APIs.  This may improve in the future, but right now everyone is pretty occupied with high priority stuff.<br></p><p>That said, the Foundation team is aware of this proposal already.<br></p><p>-Chris<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

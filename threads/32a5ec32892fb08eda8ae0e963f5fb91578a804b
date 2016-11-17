@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/e87ccf25bba85b734471a74329b2ae8c?s=50"></div><header><strong>Support for custom attributes</strong> from <string>JOSE MARIA GOMEZ CAMA</string> &lt;jm.gomez at ub.edu&gt;<p>December 26, 2015 at 10:00:00am</p></header><div class="content"><p>Dear all,<br></p><p>I am quite new to Swift, though I have made some small checks within Xcode, so I could have missed some feature in swift that provides a functionality similar to the want I am proposing.<br></p><p>I have been using my own annotations in Java or decorators in Python, and I would like to have an equivalent functionality in Swift. As far as I have seen, there are attributes that can provide a similar solution, but AFAIK you cannot create new ones. Would it be possible to add this feature in Swift.<br></p><p>        Thanks in advance,<br></p><p>                Jose M.<br></p><p><br></p><p>Aquest correu electrònic i els annexos poden contenir informació confidencial o protegida legalment i està adreçat exclusivament a la persona o entitat destinatària. Si no sou el destinatari final o la persona encarregada de rebre’l, no esteu autoritzat a llegir-lo, retenir-lo, modificar-lo, distribuir-lo, copiar-lo ni a revelar-ne el contingut. Si heu rebut aquest correu electrònic per error, us preguem que n’informeu al remitent i que elimineu del sistema el missatge i el material annex que pugui contenir. Gràcies per la vostra col·laboració.<br></p><p>Este correo electrónico y sus anexos pueden contener información confidencial o legalmente protegida y está exclusivamente dirigido a la persona o entidad destinataria. Si usted no es el destinatario final o la persona encargada de recibirlo, no está autorizado a leerlo, retenerlo, modificarlo, distribuirlo, copiarlo ni a revelar su contenido. Si ha recibido este mensaje electrónico por error, le rogamos que informe al remitente y elimine del sistema el mensaje y el material anexo que pueda contener. Gracias por su colaboración.<br></p><p>This email message and any documents attached to it may contain confidential or legally protected material and are intended solely for the use of the individual or organization to whom they are addressed. We remind you that if you are not the intended recipient of this email message or the person responsible for processing it, then you are not authorized to read, save, modify, send, copy or disclose any of its contents. If you have received this email message by mistake, we kindly ask you to inform the sender of this and to eliminate both the message and any attachments it carries from your account. Thank you for your collaboration.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

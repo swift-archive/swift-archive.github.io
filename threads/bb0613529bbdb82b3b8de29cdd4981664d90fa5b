@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Review] SE-0045: Add scan, prefix(while:), drop(while:), and iterate to the stdlib</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>April 28, 2016 at 03:00:00pm</p></header><div class="content"><p>FWIW, I&#39;m posting this review on behalf of Dmitri Gribenko, and Maxim<br>Moiseev, and me:<br></p><p>on Thu Apr 28 2016, Chris Lattner &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hello Swift community,<br>&gt;<br>&gt; The review of &quot;SE-0045: Add scan, prefix(while:), drop(while:), and<br>&gt; iterate to the stdlib&quot; begins now and runs through May 3. The proposal<br>&gt; is available here:<br>&gt;<br>&gt; 	https://github.com/apple/swift-evolution/blob/master/proposals/0045-scan-takewhile-dropwhile.md<br>&gt;<br>&gt; 	* What is your evaluation of the proposal?<br></p><p>We like the bones, but we have some issues with the proposal as<br>submitted:<br></p><p>1. The proposal should be revised to account for language and standard<br>   library changes, most notably, the first argument label rules and API<br>   names have been overhauled since the proposal was written.  There are<br>   still many occurrences of obsolete names such as `SequenceType`.<br></p><p>   One good way to get there is to make the APIs compile (with<br>   `fatalError()` in method bodies if necessary) against the master<br>   branch in GitHub.  I realize it&#39;s been a long time since it was<br>   originally submitted, but it&#39;s really hard to evaluate a proposal if<br>   we&#39;d have to change the APIs before they could even be incorporated<br>   into the codebase.<br></p><p>   The fact that names are out of date also casts doubt upon whether a<br>   first argument label is being proposed or not.  IMO it&#39;s really<br>   crucial that the proposal be revised this way *before* it is accepted.<br></p><p>2. In the “Detailed design” section it would have helped to have an<br>   explanation of the remark about “matching expected behavior.” We were<br>   scratching our heads over this one until we figured out it’s about<br>   the policy of not making multiple passes using a user-defined closure<br>   without an explicit appearance of `.lazy`.<br></p><p>3. We would prefer that `scan`’s first argument label was changed from<br>   `initial` to `startingWith`, and we would like to update `reduce` to<br>   use the same argument label. Whatever we do, `reduce` and `scan`<br>   should be consistent in this respect.<br></p><p>4. We find the name `iterate` problematic, in part because it is an<br>   active verb on a non-mutating method, but also because to us, it<br>   strongly implies eager evaluation.  In lieu of `iterate`, we&#39;d prefer<br>   to see two overloads of `unfold` as shown below.  Although `unfold`<br>   is also an active verb, it is very much the correct term of art for<br>   the more general method and it allows us to establish the semantic<br>   relationship between the single- and two-argument forms.<br></p><p>    func unfold&lt;T, State&gt;(<br>      _ initialState: State, <br>      applying nextElementAndState: (State)-&gt;(T, State)?<br>    ) -&gt; UnfoldSequence&lt;T&gt;<br></p><p>    func unfold&lt;T&gt;(<br>      _ initialElement: T, applying nextElement: (T)-&gt;T?<br>    ) -&gt; UnfoldSequence&lt;T&gt;<br></p><p>The second overload returns, approximately, <br></p><p>  unfold(initialElement) { state in nextElement(state).map { (state, $0) } }<br></p><p>though that implementation would be a bit more eager than necessary; a<br>fully-lazy implementation is at<br>https://github.com/apple/swift-evolution/pull/195#issuecomment-214927063<br></p><p>&gt; 	* Is the problem being addressed significant enough to warrant a<br>&gt; 	  change to Swift?<br></p><p>Yes, it is crucial that Swift have a complete vocabulary of high-level<br>algorithms.  While these are simple, they are also fundamental missing<br>pieces.<br></p><p>&gt; 	* Does this proposal fit well with the feel and direction of<br>&gt; 	Swift?  <br></p><p>Yes.<br>        <br>&gt;       * If you have you used other languages or libraries with<br>&gt; 	a similar feature, how do you feel that this proposal compares<br>&gt; 	to those?  <br></p><p>We don&#39;t have anything to say as a group about this, but Max or Dmitri<br>may have individual feedback.<br></p><p>&gt;       * How much effort did you put into your review? A<br>&gt; 	glance, a quick reading, or an in-depth study?<br></p><p>An in-depth, collaborative, study.<br></p><p>&gt; More information about the Swift evolution process is available at<br>&gt;<br>&gt; 	https://github.com/apple/swift-evolution/blob/master/process.md<br>&gt;<br>&gt; Thank you,<br>&gt;<br>&gt; -Chris Lattner<br>&gt; Review Manager<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave, Dmitri, and Maxim<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

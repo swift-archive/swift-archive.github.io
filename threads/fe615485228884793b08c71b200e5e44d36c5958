@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8d92e9730c561c120200f34e7e50ed46?s=50"></div><header><strong>What is [weak self]?</strong> from <string>Jeff Kelley</string> &lt;slaunchaman at gmail.com&gt;<p>December 14, 2015 at 11:00:00pm</p></header><div class="content"><p>Just looking for a technical term here: what is [weak self] at the beginning of a closure? An annotation? Thanks in advance!<br></p><p><br>Jeff Kelley<br></p><p>SlaunchaMan at gmail.com | @SlaunchaMan &lt;https://twitter.com/SlaunchaMan&gt; | jeffkelley.org &lt;http://jeffkelley.org/&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151214/fe615958/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>What is [weak self]?</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>December 14, 2015 at 08:00:00pm</p></header><div class="content"><p>It&#39;s a &quot;capture list&quot;:<br>https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID56<br></p><p>Jacob Bandes-Storch<br></p><p>On Mon, Dec 14, 2015 at 8:50 PM, Jeff Kelley via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; Just looking for a technical term here: what is [weak self] at the<br>&gt; beginning of a closure? An annotation? Thanks in advance!<br>&gt;<br>&gt;<br>&gt; Jeff Kelley<br>&gt;<br>&gt; SlaunchaMan at gmail.com | @SlaunchaMan &lt;https://twitter.com/SlaunchaMan&gt; |<br>&gt; jeffkelley.org<br>&gt;<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151214/286c3203/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/8d92e9730c561c120200f34e7e50ed46?s=50"></div><header><strong>What is [weak self]?</strong> from <string>Jeff Kelley</string> &lt;slaunchaman at gmail.com&gt;<p>December 14, 2015 at 11:00:00pm</p></header><div class="content"><p>Thank you!<br></p><p><br>Jeff Kelley<br></p><p>SlaunchaMan at gmail.com | @SlaunchaMan &lt;https://twitter.com/SlaunchaMan&gt; | jeffkelley.org &lt;http://jeffkelley.org/&gt;<br>&gt; On Dec 14, 2015, at 11:51 PM, Jacob Bandes-Storch &lt;jtbandes at gmail.com&gt; wrote:<br>&gt; <br>&gt; It&#39;s a &quot;capture list&quot;: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID56 &lt;https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID56&gt;<br>&gt; <br>&gt; Jacob Bandes-Storch<br>&gt; <br>&gt; On Mon, Dec 14, 2015 at 8:50 PM, Jeff Kelley via swift-users &lt;swift-users at swift.org &lt;mailto:swift-users at swift.org&gt;&gt; wrote:<br>&gt; Just looking for a technical term here: what is [weak self] at the beginning of a closure? An annotation? Thanks in advance!<br>&gt; <br>&gt; <br>&gt; Jeff Kelley<br>&gt; <br>&gt; SlaunchaMan at gmail.com &lt;mailto:SlaunchaMan at gmail.com&gt; | @SlaunchaMan &lt;https://twitter.com/SlaunchaMan&gt; | jeffkelley.org &lt;http://jeffkelley.org/&gt;<br>&gt; <br>&gt; <br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org &lt;mailto:swift-users at swift.org&gt;<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users &lt;https://lists.swift.org/mailman/listinfo/swift-users&gt;<br>&gt; <br>&gt; <br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151214/e7736366/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

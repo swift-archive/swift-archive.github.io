@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/29d840b263b092c23a4828ed40d034c9?s=50"></div><header><strong>Allow failable initializers to return .none as well as nil</strong> from <string>Rui Costa</string> &lt;rui.pfcosta at gmail.com&gt;<p>August 28, 2016 at 03:00:00pm</p></header><div class="content"><p>With the introduction of the Optional type in Swift, it is possible to<br>write an entire application without explicitly referring to nil and instead<br>use the Optional&#39;s .none case. However, on failable initializers nil is the<br>only return value permitted by the compiler.<br>Given that the initialization of a type with a failable initializer<br>generates an Optional, it feels it should be possible to *also* return<br>.none from a failable initializer as an alternative to nil.<br></p><p>Example:<br></p><p><br>class Foo {<br>    let bar: String<br></p><p>    init?(bar: String?) {<br>        guard let bar = bar else { return .none } // Compile error: nil is<br>the only return value permitted in an initializer...<br></p><p>        self.bar = bar<br>    }<br>}<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160828/3298154a/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

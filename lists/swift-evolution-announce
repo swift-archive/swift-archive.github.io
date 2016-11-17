@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="container">
+  <h2>swift-evolution-announce</h2>
+  <p>Announcement of Swift evolution proposal reviews and results. Read-only.</p>
+
+  <ul>
+    <li>
+<a href="/threads/fecb6a340934014493c9ac2b612780f5fbfb181d">[Review] Remove C-style for-loops with conditions and incrementers</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/a3b01821e78bd4d06e84fd274844777a6f091e5b">[Accepted] SE-0007 Remove C-style for-loops with conditions and incrementers</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/9e1897728b56ab0670c7d36fee4e640fd85dedd3">[Review] Add a Lazy flatMap for Sequences of Optionals</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/66b5577f9298b6528b0f82d43f8c23f0cbb00e7c">[Review] Require self for accessing instance members</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/a11d0d240003c8115a3391c9b1eb1b4f7525deff">[Review] Constraining AnySequence.init</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/22774d0b5c03453124f66f65cb3df85d4d975e12">[Review] Resend: Constraining AnySequence.init</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/f41c61f55c78d53871327f3ef4fd2f9cb4164c07">[Accepted] SE-0008: Add a Lazy flatMap for Sequences of Optionals</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/c756b61000258f4949dd9bfd70ca48d0c7e5aea3">[Review] Replace `typealias` keyword with `associatedtype` for associated type declarations</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/9acc660c6f5cebc5a8dff554d66bc620128163f6">[Accepted] SE-0014 Constraining `AnySequence.init`</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/9bdc9047791a80bd88ea218631124ae4be4c8dcd">[Rejected] SE-0009 Require self for accessing instance members</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/1e53eeea47b9b0b7d58092055c33e5700241ad73">[Review] SE-0018 Flexible Memberwise Initialization</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/075c620332079827e73fd317132929f58e0ddd07">[Review] SE-0010 Add StaticString.UnicodeScalarView</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/7826ac9317181b32bc2669910f8a29b952be47f4">[Review] SE-0013 Remove Partial Application of Non-Final Super Methods</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/05370cb8f894d90d2f5685bfadb0eadbb4efb39d">[Accepted] SE-0011 Replace `typealias` keyword with `associatedtype` for associated type declarations</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/f8a1405f6e17d4344afb9737fd1a9d5dc54b2cff">[Review] SE-0020 Swift Language Version Build Configuration</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/61050c3cdc6872627f09cf151ce307a81f5bfdd6">[Review] Naming Functions with Argument Labels</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/308bdf62d84b396d79d5521b1e75b24cb7be009f">[Review] SE-0022: Referencing the Objective-C selector of a method</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/3ab65410aad04c68cbcd3d121e16967f79976566">[Rejected] SE-0013 Remove Partial Application of Non-Final Super Methods</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/b6de05c6f577120be4d153ecf2d5da84a5a2c2ee">[Review] SE-0023 API Design Guidelines</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/58a49cc60cb25a16c7404fcfd32fe34ca600c6e0">[Review] SE-0006 Apply API Guidelines to the Standard Library</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/10aa6dc2ad01bdb47dfa0d8b6127649ab532020b">[Review] SE-0005 Better Translation of Objective-C APIs Into Swift</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/4d93659b7f126435078db3e999da8a7161b6e393">[Accepted] SE-0022 Referencing the Objective-C selector of a method</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/f46954dec57fc37558aed4eabb66404455731757">SE-0003 Removing var from Function Parameters and Pattern Matching</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/fa948605adea7ddba0bb7e5985f8012c39e0a790">[Review] SE-0028 Modernizing Swift&#39;s Debugging Identifiers (__LINE__, etc)</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/df01ea7aef6c6f0dc08211d6da541c4147ed5b3a">[Extending review] SE-0005, SE-0006, SE-0023 API Guidelines and impact</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/98e45c4bde2f43bf5147e4e55e5e7c8ca7a512a3">[Accepted] SE-0028 Modernizing Swift&#39;s Debugging Identifiers (__LINE__, etc)</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/ed5cd57cb75707eb328bbabaf387845e24d012f0">[Review] SE-0029 Remove implicit tuple splat behavior from function applications</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/c844324fb529be3a76aef16e73032e39e7f341fc">[Accepted] SE-0029 Remove implicit tuple splat behavior from function applications</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/fa0cb9d8ea7aaab5665430a8abba002cc1c04680">[Review] SE-0030 Property Behaviors</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/ce2605beee0b4f747c1d98bb11946074b7a772dc">[Review] SE-0031 Adjusting inout Declarations for Type Decoration</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/71ed3a7436ff5d42d9c7f9efffd04a990062be76">[Review] SE-0027 Expose code unit initializers on String</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/931d7e018c023584949c2198aa3a4a5623b1a784">[Review] SE-0024 &quot;Optional Value Setter `??=`&quot;</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/3064a675e69cc9a1be8eccc79e2ceb4a5aa2fc25">[Review] SE-0035 Limiting inout capture to @noescape contexts</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/a0347dc00a90c139bb70dd5e3fa502788bd346a8">[Review[ SE-0034 Disambiguating Line Control Statements from Debugging Identifiers</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/de7164376f85c55144d1b6c7a23c411ceebd21a2">[Accepted] SE-0031 Adjusting inout Declarations for Type Decoration</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/10758ffd597ce23ac89e4f092293fd518fb6a919">Review: Import Objective-C Constants as Swift Types</a>      &mdash; <em>John McCall</em>
+    </li>
+    <li>
+<a href="/threads/48f05618de5b0f74c94eec21ab1fd57def524d15">[Rejected] SE-0024 Optional Value Setter ??=</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/1854b8e90e9d188177a6baab3ffba97edafe8856">[Rejected] SE-0027 Expose code unit initializers on String</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/25f6501eb156e9f963d61bef75eb0439cb48304d">[Rejected] SE-0010 &quot;Add StaticString.UnicodeScalarView&quot;</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/a9f3c3cdd0c917bd0c98eda5230ff00fb47ef792">[Accepted] SE-0035 Limiting inout capture to @noescape contexts</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/86b77c91886ef75a5fbfae9334c550d29d7c9335">[Rejected] SE-0030 Property Behaviors</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/1cadfab9b7d1deb4f0dc7d7e844692c388437d71">[Review] SE-0026 Abstract classes and methods</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/711f4aaa51e22b86f8e4cc176dd383808e27b810">[Review] SE-0025 Scoped Access Level</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/84740840e8ec96d082f343523a60a54f8618934b">[Accepted] SE-0034 - Disambiguating Line Control Statements from Debugging Identifiers</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/c7dc000220a15743a4b1047fb2036e09d463a345">[Review] SE-0040 Replacing Equal Signs with Colons For Attribute Arguments</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/d102d28a9a4942deeb1551a9595287f599aedd0e">[Accepted with modifications] SE-0023 API Design Guidelines</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/cf1b98f7223e99d74c380f42d9873362fa39b266">[Accepted with modifications] SE-0006 &quot;Apply API Guidelines to the Standard Library&quot;</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/01648004aaff3eb78eba4bc6ff00a660731ca285">[Accepted with modification] SE-0005 &quot;Better Translation of Objective-C APIs Into Swift&quot;</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/9573c92e219795f74f1be391c49624a453d89e6a">[Deferred] SE-0026 Abstract classes and methods</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/12a6cfcf49dcdf3d3751580790ff8f9f0ff88218">[Review] SE-0039 Modernizing Playground Literals</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/ffd8f79fb668f57caf5615f02111b6de55c5aed3">[Accepted] SE-0040 Replacing Equal Signs with Colons For Attribute Arguments</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/71964c1bb067cbf9b3ef88060e1b5dfe5864c7dd">[Accepted] SE-0039: Modernizing Playground Literals</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/3cacf129b4ba36d78f409fd25a079726dfad8228">[Review] SE-0037 Clarify interaction between comments &amp; operators</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/948f9aaece0af95b8a06e72db31e3864a95bb10f">[Review] SE-0046 Establish consistent label behavior across all parameters including first labels</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/619f9ca66b9449ea16a984e03a3c1a46e1e44282">[Revision requested] SE-0025: Scoped Access Level</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/fadebac1acfabe52d61336ad1978b4d503ff432d">[Review] SE-0044 Import as Member</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/1209ea04eb3a88a9615342680c9065804f056ddf">[Accepted] SE-0037: Clarify interaction between comments &amp; operators</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/74fe89585afebee994ff6a7dbd62ddd70fc95bd4">[Accepted] SE-0046: Establish consistent label behavior across all parameters including first labels</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/76847512e02bcdb5a1d1fb784b2d4f150fbd9258">[Review] SE-0042 Flattening the function type of unapplied method references</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/c9384f44eccd89f10f7d800d1a1b3f0f1a8334a8">[Review] SE-0043 Declare variables in &#39;case&#39; labels with multiple patterns</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/09c87c1eacb4233cffe737cdda2a90eaf56f4647">[Review] SE-0047 Defaulting non-Void functions so they warn on unused results</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/d1694401a2b76612aeb33661f31bdf19f2122019">Swift 2.2 released!</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/22f4d43f2ce34e23615590ba6d5ce0ef711fb3cd">[Review] SE-0016 - Adding initializers to Int and UInt to convert from UnsafePointer and UnsafeMutablePointer</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/c7077b11e21347d96133b631886f5c4ee9164a7b">[Accepted] SE-0043: Declare variables in &#39;case&#39; labels with multiple patterns</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/e1c62f97a0808924abd0f64e0937cafed81479ff">[Accepted] SE-0042: Flattening the function type of unapplied method references</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/246d4ef4d7f2f7ca52021bebe320b21c76002288">[Accepted with revision] SE-0047: Defaulting non-Void functions so they warn on unused results</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/5aaf97eb1f3054eb903b15e088690eb8af84298e">[Accepted] SE-0044: Import as member</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/c5bb7d2094bb1eb2f2749f82e3dbb933e2605192">[Review] SE-0048: Generic Type Aliases</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/b200394f1f8356f01cf8e429771964b184e3dd6a">[Review] SE-0053 Remove explicit use of let from Function Parameters</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/eeeae0117827afa79d90d410d7dfc0cba839ed96">[Review] SE-0055 Make unsafe pointer nullability explicit using Optional</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/9b13c52e3248c0fb75544558b7aa05cb79665b78">[Review] SE-0054: Abolish ImplicitlyUnwrappedOptional type</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/646a1c033b14931bb9d194a5110a91812695d6bf">[Review] SE-0049 Move @noescape and @autoclosure to be type attributes</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/3e5e845a9b0528217a551e204acde88cf227ec09">[Accepted] SE-0053: Remove explicit use of let from Function Parameters</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/d8e9ea6f12b9a24f3341b60eced780dad8b20b79">[Accepted] SE-0016 - Adding initializers to Int and UInt to convert from UnsafePointer and UnsafeMutablePointer</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/baaa3998e916d4a328e25592236c24476c1fe005">[Accepted, pending implementation] SE-0054: Abolish ImplicitlyUnwrappedOptional type</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/1b4cab12133b39045075ba3b59887bef99c55ed3">[Review] SE-0057: Importing Objective-C Lightweight Generics</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/f6310c2d70933e4457f27a94f3fa23f1af7f9730">[Accepted] SE-0055: Make unsafe pointer nullability explicit using Optional</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/4492f6a41ee99fa120847979ff2f656a7f845274">[Review] SE-0056: Allow trailing closures in `guard` conditions</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/a2c8204bd3ec267c10162395ed61ce648e4a925f">[Review] SE-0036: Requiring Leading Dot Prefixes for Enum Instance Member Implementations</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/a0d191e31622008fc7792d26ba14eaaab3fc8593">[Review] SE-0059: Update API Naming Guidelines and Rewrite Set APIs Accordingly</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/0d4694ea862bf695b9247c648a5de5c39f7bc23e">[Review] SE-0058: Allow Swift types to provide custom Objective-C representations</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/8034d37434db96111a686734a39a5eb3023e1aaf">[Review] SE-0062: Referencing Objective-C key-paths</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/7f876f30c9813ffb875d2fd55101381fd13362dc">[Review] SE-0064: Referencing the Objective-C selector of property getters and setters</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/8cbe7d06532b1c8acaf2ebb7e3b5be16fe0d355b">[Review] SE-0065 A New Model for Collections and Indices</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/d558f6fee38e2a89b790246d7ee82d2ad1a08ae2">[Deferred] SE-0058 Allow Swift types to provide custom Objective-C representations</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/125a0d6e3a5d8c8076c77f8f79cfcaef01586be3">[Accepted] SE-0057: Make unsafe pointer nullability explicit using Optional</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/daa5a635b8c0a31e3f7c4d8eb743747105eb1636">[Accepted] SE-0057: Importing Objective-C Lightweight Generics</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/49844d5447b2b33fd34736d64cbf66c5d48a83b8">[Accepted] SE-0048: Generic Type Aliases</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/29aa7954173ccdb28d213673f8eb8881afbb2ea9">[Accepted] SE-0049: Move @noescape and @autoclosure to be type attributes</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/c4a6b9ba4c8b17aeb1ab556283da014e3d5ad5fe">[Accepted] SE-0036: Requiring Leading Dot Prefixes for Enum Instance Member Implementations</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/673e50cd9e1712332a5258d9709396b083645258">[Accepted] SE-0062: Referencing Objective-C key-paths</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/677836eb1a0e0e863816d77442b3972cc9195170">[Accepted] SE-0064: Referencing the Objective-C selector of property getters and setters</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/0ff0d52ae9e28f0f59aa298c24fb2b687380c60e">[Accepted] SE-0059: Update API Naming Guidelines and Rewrite Set APIs Accordingly</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/d44803452e0559869eabc7cbf02a25f620503d4c">[Review] SE-0067: Enhanced Floating Point Protocols</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/2784b759bee23fd54bf151429805fd60e392afdd">[Review] SE-0068: Expanding Swift Self to class members and value types</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/25272e14b4c38fc0f0bb0a4afd2299c0965ebff4">[Rejected] SE-0056: Allow trailing closures in `guard` conditions</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/439a7fdadd1bcb60522e19ce1745a02d0f069a7d">[Review] SE-0070: Make Optional Requirements Objective-C only</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/423a757c300cbe7e56cbe2ef9c4b124806360210">[Review] SE-0069: Mutability and Foundation Value Types</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/dee7932bd94dc9e994eb285d8a5498ee9058fe12">[Review #2] SE-0067: Enhanced Floating Point Protocols</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/5097c8fd65d131d2ebfdb1e0e9108745a27a40f6">[Review] SE-0071: Allow (most) keywords in member references</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/66ef73b555cc038fc46e9e4c395e2e7343e37269">[Review] SE-0066: Standardize function type argument syntax to require parentheses</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/f99d8025339a705c2e430c11ecce20c576ce659e">[Review] SE-0072: Fully eliminate implicit bridging conversions from Swift</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/e7ba1990e84149330c1a38b420ccfd15cfeef43d">[Accepted] SE-0065: A New Model for Collections</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/b059fb8e6194c27645115f823488d9a6bd083bf1">[Accepted with modification] SE-0068: Expanding Swift Self to class members and value types</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/77c3e5326579c9b4cbd20fc27cb85aebf225915d">[Review] SE-0017: Change Unmanaged to use UnsafePointer</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/17e753fbc34c0da783eba2219b51acc60e429a9e">[Review] SE-0032: Add find method to SequenceType</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/eb464c8d4f160d18daf96e707c5e0ff9550a3e57">[Review] SE-0045: Add scan, prefix(while:), drop(while:), and iterate to the stdlib</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/b285559fcf5aa91033c71e3fcc6c4d1fe737f056">[Review] SE-0052: Change IteratorType post-nil guarantee</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/79afcb88f301927abed144e8e17b2571a9b339be">[Accepted] SE-0067: Enhanced Floating Point Protocols</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/bd1f4dd77c00fcde2c88095bd3eaef5bfb082965">[Accepted] SE-0071: Allow (most) keywords in member references</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/628309a49d15df48f1a20dd52223869437efc4be">[Accepted] SE-0061: Add Generic Result and Error Handling to autoreleasepool()</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/3d2a13e254dcf8bdb861a4c72b0c7ff539763100">[Accepted] SE-0070: Make Optional Requirements Objective-C-only</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/b81db04d4254d1e05c36af966d9770ffe0afae7e">[Review] SE-0060: Enforcing order of defaulted parameters</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/60defeef1cbc526f28bc8da1e95f8968834ae643">[Review] SE-0073: Marking closures as executing exactly once</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/0e8c7dfba2b6aadc78de9033d1c1128cb292e5b7">[Review] SE-0074: Implementation of Binary Search functions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/3463c621fc225cc8ac4ee0b37cc601b1831bd26d">[Review] SE-0076: Add overrides taking an UnsafePointer source to non-destructive copying methods on UnsafeMutablePointer</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/fe29362df12756590b5fc6609d7f025d519ea32d">[Review] SE-0078: Implement a rotate algorithm, equivalent to std::rotate() in C++</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/9e8583aa094d863c199a48ab76017e937d621e8c">[Review] SE-0080: Failable Numeric Conversion Initializers</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/163ef68aa9d6d5621cb6bcac9d5131641c745e99">[Accepted] SE-0069: Mutability and Foundation Value Types</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/8d5a1a0554f40b2a1513f1a22c134b1501d17c24">[Accepted] SE-0017: Change Unmanaged to use UnsafePointer</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/3a6910be1a1d7fc574708145ec75c1005b7b5d59">[Accepted] SE-0032: Add find method to Sequence</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/fe330e8a06714ab5b8dbedb6380b378458d94616">[Accepted] SE-0052: Change IteratorType post-nil guarantee</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/d133d4bded904c877c7f30dd367c128f7db8ab29">[Accepted with modifications] SE-0045: Add scan, prefix(while:), drop(while:), and unfold to the stdlib</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/dfded86d24ccd412e037125b3926d51abfca1e5d">[Accepted] SE-0072: Fully eliminate implicit bridging conversions from Swift</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/cb91fa79a054edeb7b2c9b955b6f0b4718e27c88">[Accepted] SE-0066: Standardize function type argument syntax to require parentheses</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/0bb44087fd1033f7a60d6157f92beb4f3fc7a0cc">[Review] SE-0086: Drop NS Prefix in Swift Foundation</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/347aa3a0f6e59d9f84ec68903b19d801f563d180">[Review] SE-0041: Updating Protocol Naming Conventions for Conversions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/838f8bf0506a2bd8139cf5d957f5cea3af5489e4">[Review] SE-0075: Adding a Build Configuration Import Test</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/eadb6ef1cbf1984f046084272c2cacb24c5d8af5">[Review] SE-0081: Move where clause to end of declaration</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/a8bb67602f19fea451a7c4ae7651512d090794bf">[Review] SE-0083: Remove bridging conversion behavior from dynamic casts</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/526f27a0980cd528c4772b029bbcf8705271e13b">[Review] SE-0084: Allow trailing commas in parameter lists and tuples</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/7581059dc0c5bfec77c9b0638943e3ddbbce3bee">[Review] SE-0088: Modernize libdispatch for Swift 3 naming conventions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/f01c7acb9f76b6e42399ffc5125f2ab47ffea9a6">[Accepted] SE-0060: Enforcing order of defaulted parameters</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/4f2998ac48c1c7c83af76b42686d58f8a23359dc">[Rejected] SE-0073: Marking closures as executing exactly once</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/2a836af8b1e06f77cc5baf4d865c1e7dee9a7da5">[Rejected] SE-0074: Implementation of Binary Search functions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/e930f8cfdb23a8933c09d45028f89478fd065195">[Accepted with Revision] SE-0076: Add overrides taking an UnsafePointer source to non-destructive copying methods on UnsafeMutablePointer</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/4b3753c1612d6cfb028f4bbc7f7b72f44fc42083">[Accepted with Revision] SE-0080: Failable Numeric Conversion Initializers</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/b8f469bd23d53c924f2e738718de0def1ca005e3">[Accepted] SE-0092: Typealiases in protocols and protocol extensions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/5d445fdff7bf44ea6d39d0bede2c330d9756be23">[Review] Amendment: SE-0039: Moderning Playground Literals</a>      &mdash; <em>John McCall</em>
+    </li>
+    <li>
+<a href="/threads/0ce6c5f954f8321517e95b7f6c4603c9bcb8ca6d">[Review] SE-0050: Decoupling Floating Point Strides from Generic Implementations</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/9fb2da9762663371699875a4b2f695380f33186b">[Review] SE-0077: Improved operator declarations</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/a6bd1be8f9a1908c0e7193cf889f181207e33ade">[Review] SE-0087: Rename lazy to @lazy</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/296b5a77ee1b98790998e6c0cc36ca28ebf6bcd7">[Review] SE-0089: Renaming String.init&lt;T&gt;(_: T)</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/01d4934f613366b43fddcda90ecb544781f75f3b">[Review] SE-0090: Remove .self and freely allow type references in expressions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/46d5560e97a7e15f4a03f246bd9ce056c9bcc3a2">[Review] SE-0091: Improving operator requirements in protocols</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/5df588140547f845f5c4537148d66241723e5044">[Accepted] SE-0075: Adding a Build Configuration Import Test</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/fcce48e3ca5552b8d9e76ba569892cfdaeb9ca87">[Rejected] SE-0041: Updating Protocol Naming Conventions for Conversions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/23aaca98bf9f74c5cb2b242b7313ee7a388f54cc">[Accepted] SE-0081: Move where clause to end of declaration</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/c94cdc51ba93c5fab73a50d451e6c827b53f252a">[Review] SE-0094: Add sequence(initial:next:) and sequence(state:next:) to the stdlib</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/5015fea34b02dd0fcb10c2302edbf452300954d7">[Accepted with Revision] SE-0088: Modernize libdispatch for Swift 3 naming conventions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/89d55dba218b529b783e2503fc3f9d826977f2f1">[Amendment] SE-0022: Referencing the Objective-C selector of a method</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/753be24b924d15d68241f0288783a68b882e91ff">[Deferred] SE-0078: Implement a rotate algorithm, equivalent to std::rotate() in C++</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/064b83a7044b70b5860c5b0ea83ef6478801a53b">[Review] SE-0089: Replace protocol&lt;P1, P2&gt; syntax with Any&lt;P1, P2&gt;</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/7587453c5d85a7d1a65c28d09a1c93738797d985">[Review] SE-0097: Normalizing naming for &quot;negative&quot; attributes</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/7b9be63e22173de49b3391fc4fedeb2e99230728">[Review] SE-0098: Lowercase didSet and willSet for more consistent keyword casing</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/d9ff72fdba848fc14c458150679bbe1ce5b876ae">[Review] SE-0096: Converting dynamicType from a property to an operator</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/1dfc73e060a718afb83bc24b0a0a71466f99a7e9">[Accepted with Revision] SE-0094: Add sequence(initial:next:) and sequence(state:next:) to the stdlib</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/c426fa6d1baa7cd8bc1ae53f44d24cfc7df22381">[Rejected] SE-0084: Allow trailing commas in parameter lists and tuples</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/c1cfe3999f29da1fc4d1fcee61aa7d39c7f5a6dc">[Rejected] SE-0087: Rename lazy to @lazy</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/f9ee68835c660354264e0365e4153c4008c21564">[Deferred to later in Swift 3] SE-0083: Remove bridging conversion behavior from dynamic casts</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/e2414f365116a414b650cffa951448c6468c2987">[Deferred] SE-0090: Remove .self and freely allow type references in expressions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/980944ef7503b20be4b20500d573dac18e833e4c">[Returned for revision] SE-0089: Renaming String.init&lt;T&gt;(_: T)</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/06a06701ef0efa2bd9ee2c20d61c1fc53f23cd01">Fwd: [swift-evolution] [Accepted] SE-0093: Adding a public base property to slices</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/2e6a2fef27755b74c1790d5f997213f76df36d11">[Review] SE-0099: Restructuring Condition Clauses</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/a05f734801add3148d04677e0ecd22cedf55251e">[Returned for revision] SE-0050: Decoupling Floating Point Strides from Generic Implementations</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/0dec3562a7cc791eb546d673c089486003ab65e0">[Rejected] SE-0098: Lowercase didSet and willSet for more consistent keyword casing</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/36a0296f98f7fdfddb17db0675f520d8013591d5">[Accepted with Revision] SE-0098: Converting dynamicType from a property to an operator</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/fc749a1b08c76367ad1ba1668548862b991e54ed">[Rejected] SE-0097: Normalizing naming for &quot;negative&quot; attributes</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/b64ccead4d35695c73691bca5e860df7c53ce01e">[Returned for Revision] SE-0095: Replace protocol&lt;P1, P2&gt; syntax with Any&lt;P1, P2&gt;</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/cc0dc86625b7b0cb08432e8cecc01682285b1431">[Review #2] SE-0089: Renaming String.init&lt;T&gt;(_: T)</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/3ad03f5d59990b5e32491df82cc4a235bf6a8dd3">[Accepted with Revision] SE-0099 Restructuring Condition Clauses</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/88526bd7e4ecaf864856afa5f15a3f703757e337">[Review] SE-0101: Rename sizeof and related functions to comply with API Guidelines</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/d8b5d80571aa8cc76cf02e1fee92858b165490ef">[Review] SE-0102: Remove @noreturn attribute and introduce an empty NoReturn type</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/58ea663067bef25092fad9eb1c806968674946cd">[Review] SE-0103: Make non-escaping closures the default</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/0ee0444bcf60ee405ea051a9131b9e4278f6ed64">[Review] SE-0095: Replace `protocol&lt;P1, P2&gt;` syntax with `Any&lt;P1, P2&gt;`</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/4e12023391d22adcb4e0681c66dbed57d3b99a1e">[Review] SE-0104: Protocol-oriented integers</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/aa05ae4ec359fcc9ff4f7140a8fd2c8db74b9612">[Accepted] SE-0089: Renaming String.init&lt;T&gt;(_: T)</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/e8ab0944a7b702410ec6646d5442bf82031b58f2">[Returned for revision] SE-0077: Improved operator declarations</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/8bff8ecb609271a77c5d244ad7e0267f2c08fccf">[Review] SE-0105: Removing Where Clauses from For-In Loops</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/1bf3e066f12ebb8fae60256b409d5b0306eb4cdb">[Accepted] SE-0106: Add a macOS Alias for the OSX Platform Configuration Test</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/091502059bab85d630b06095aa6d2beb250e10c6">[Review] SE-0107: UnsafeRawPointer API</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/f7bfab6d6ba969dd3daa91dca69d3655ef6c6764">[Review] SE-0109: Remove the Boolean protocol</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/e6df7306e820002235da69cfe89e90b239eb21fb">[Review] SE-0108: Remove associated type inference</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/b45a2b888be9d44379c182f342dc39b27e83bd5f">[Review] SE-0077 v2: Improved operator declarations</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/da53e7ef45ab7181784db011f7d40901f9a7fb06">[Accepted] SE-0095: Replace protocol&lt;P1, P2&gt; syntax with P1 &amp; P2 syntax</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/b186005c4e59a3f0d9b93a5554df3e8e1a674f42">[Rejected] SE-0105: Removing Where Clauses from For-In Loops</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/54675614f62e22fa1b32f96d068a53b2de8e8779">[Review] SE-0112: Improved NSError Bridging</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/a98ef83fd0a43325a796ce3ba63adfbe8b9fccf4">[Review] SE-0110: Distinguish between single-tuple and multiple-argument function types</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/3e348b0c468ada9aa5f9dd3c0a72cae902b118ee">[Review] SE-0111: Remove type system significance of function argument labels</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/94c3765963b0588bb611189a0d638688fbb076cc">[Returned for Revision] SE-0101: Rename sizeof and related functions to comply with API Guidelines</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/5ecd9dc18336d2e09e35342826260004fec0d954">[Accepted] SE-0103: Make non-escaping closures the default</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/08d4cf5847ff2fa1cec0ce59be509b2247f97132">[Accepted] SE-0102: Remove @noreturn attribute and introduce an empty Never type</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/02aa304fd4c51ddd3ee3f1dfd05392ff8074bb3d">[Accepted] SE-0104: Protocol-oriented integers</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/5b98e4232f87c2456f208ea76c6fa45aab80c22b">[Review] SE-0113: Add integral rounding functions to FloatingPoint</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/2cf9634149750a4136fd71ecc19819248683c37e">[Review] SE-0114: Updating Buffer &quot;Value&quot; Names to &quot;Header&quot; Names</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/ab96293e7e0160a3065710fc2ef967a395bd4573">[Returned for Revision] SE-0091: Improving operator requirements in protocols</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/66201a09648621fa227bbe6a55381a6e8ee4394f">[Review] SE-0115: Rename Literal Syntax Protocols</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/9cec94b764c15ab54f65ff90b11add48b34e47fe">[Review] SE-0116: Import Objective-C id as Swift Any type</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/4b917030cdb54007ba4baeaa7a5554fe0613b2cb">[Review] SE-0118: Closure Parameter Names and Labels</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/a0f57514333270ac989de6d3658ed3ec16ee182e">[Review] SE-0117: Default classes to be non-subclassable publicly</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/fd9ad14008eabe20da1231158925badbeb068fe3">[Rejected] SE-0108: Remove associated type inference</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/b955054451e75654e11fcf5b8b19d0deb10add74">[Accepted] SE-0110: Distinguish between single-tuple and multiple-argument function types</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/b1fe429e9a1adfe908138e09f2d2687585d3f40e">[Accepted] SE-0111: Remove type system significance of function argument labels</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/9c8e133904e0176b25f94c1949e078533b33e08c">[Accepted] SE-0113: Add integral rounding functions to FloatingPoint</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/8972963f5fc403aea8ed51fe07f0a35ae132663c">[Review #2] SE-0091: Improving operator requirements in protocols</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/07dff0d0a2f2bcf027c81b72d81718b65e2bd7d7">[Accepted with revision] SE-0077 v2: Improved operator declarations</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/3e82c028acb199e4b42fcc899c35544f354f48a1">[Accepted] SE-0115: Rename Literal Syntax Protocols</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/d7c8ea7c32ac429dd84b82e44ef9bc2358a12d32">[Accepted] SE-0114: Updating Buffer &quot;Value&quot; Names to &quot;Header&quot; Names</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/60d2b70b46221be74e038e99a62d24c2a311377c">[Accepted] SE-0112: Improved NSError Bridging</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/24fcbc664f62749b01e0fa0b60f399a34221321e">[Review] SE-0119: Remove access modifiers from extensions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/2587f8e15ca60b9272b329a72fd34cb6eb53de0e">[Review] SE-0120: Revise &#39;partition&#39; Method Signature</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/844f570661c3098a45fbfcc7d551b1ae90a946d4">[Review] SE-0121: Remove `Optional` Comparison Operators</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/c646c936fbe9f297e4166657f60e90c457e99b68">[Review #2] SE-0101: Reconfiguring sizeof and related functions into a unified MemoryLayout struct</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/7e1976423acb68ee7df3457db186863475df61a9">[Review] SE-0123: Disallow coercion to optionals in operator arguments</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/f460fad3e42f2fe84fb8202497abdd7f5a6f1dca">[Accepted] SE-0109: Remove the Boolean protoco</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/aeeb4e8cd55621640f3f020bdadf755b9bad9aa9">[Accepted] SE-0086 &quot;Drop NS Prefix in Swift Foundation&quot;</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/acd3286d487a181c039f67216b98228871045129">[Accepted] SE-0118: Closure Parameter Names and Labels</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/fc5f4b0bd44c3bb162e6c6391ed1e6dcf3e691c9">[Accepted] SE-0107: UnsafeRawPointer API</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/4666a83c3c12ac2ee6a82cfa75fa28a30901b15f">[Accepted] SE-0091: Improving operator requirements in protocols</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/0c1adbf7eb8672ec4478a460c7fa3691716572fc">[Update + Commentary] SE-0111: Remove type system significance of function argument labels</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/cf4e9878379b270d0463edca42289e59e5e71bf6">[Returned for revision] SE-0117: Default classes to be non-subclassable publicly</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/20de6bfab401c7eace9d89871c9749e2c766cf5b">Endgame for Swift 3</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/29c9ee4b5a4ba2029013cdc05e259500f715d979">[Review #2] SE-0117: Default classes to be non-subclassable publicly</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/d00e995a9ae2226c424b12538c16a0ac84b1b423">[Review] SE-0124: `Int.init(ObjectIdentifier)` and `UInt.init(ObjectIdentifier)` should have a `bitPattern:` label</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/87abf0634189da1ae527e805ff1c35480951b2c4">[Review] SE-0122: Use colons for subscript declarations</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/791e07b4762102a2bfb7b7a4a03a65c298c109d8">[Review] SE-0125: Remove NonObjectiveCBase and isUniquelyReferenced</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/272d358202d6790470ce330892bd8a838683c03d">[Review] SE-0126: Refactor Metatypes, repurpose T.self and Mirror</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/7e58205b748ea53412f5d1a17ad435d226dc0fe5">[Accepted] SE-0124: Int.init(ObjectIdentifier) and UInt.init(ObjectIdentifier) should have a bitPattern: label</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/6c9a5dbacdf7bd3f48ce211919e5b4469f92e605">[Accepted] SE-0120: Revise partition Method Signature</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/05969d459ae7410c4a52cb3dfb8625d0e4f864af">[Accepted] SE-0116: Import Objective-C id as Swift Any type</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/0915f16f3fecc65a19d9d483168302131fdef4c8">[Accepted] SE-0101: Reconfiguring sizeof and related functions into a unified MemoryLayout struct</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/5f6aa883c1b384ec4b7f72d87ead688874f7f927">[Accepted] SE-0121: Remove Optional Comparison Operators</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/50eaea6a67967084be4a4ea93aa34238527410af">[Rejected] SE-0123: Disallow coercion to optionals in operator arguments</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/e2120cee96ea0a3278f63f672fe34661a877f56c">[Returned for revision #2] SE-0117: Default classes to be non-subclassable publicly</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/37fbabae43d1060c8019165c4f404d2aec15502a">[Review] SE-0127: Cleaning up stdlib Pointer and Buffer Routines</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/468ea6626474da3f2c384e7f73a7ccfc3b0e4769">[Review #3] SE-0117: Allow distinguishing between public access and public overridability</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/296aee803fea6bd83236d3d2c7b30e0decc4b766">[Rejected] SE-0119: Remove access modifiers from extensions</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/0141af14942d5528ec9cb570d9c47cf75a25b885">[Withdrawn for revision] SE-0126: Refactor Metatypes, repurpose T.self and Mirror</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/d6b021dc8cbfd0a57e9bdc8425132b93f557e7a9">[Review] SE-0128: Change failable UnicodeScalar initializers to failable</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/3091106e55e2d725a62924dd1d22517b52a5599e">[Review] SE-0130: Replace repeating Character and UnicodeScalar forms of String.init</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/e6df94fe154dc97e007190d6b72f981adeb70033">[Review] SE-0131: Add AnyHashable to the standard library</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/5b5d8b7ff5855faa6e25b2810491fd5d39a4405b">[SHORT Review] SE-0133: Rename `flatten()` to `joined()`</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/a90e3a78806601c96d23ff4b871ff06ebe688ece">[SHORT Review] SE-0132: Rationalizing Sequence end-operation names</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/a6641c0b011ee9a5f01a4dbdf96bb23920815d84">[SHORT Review] SE-0134: Rename two UTF8-related properties on String</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/eb8dbc4a62edb30d919e90b15df4bcd25bf794c5">[Rejected] SE-0122: Use colons for subscript declarations</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/5108bf07d4c1aa725adb449ca3b59d029691e374">[Accepted] SE-0128: Change failable UnicodeScalar initializers to failable</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/913a92e90118555cc1760a926be93a7f7a38b0d9">[Accepted] SE-0130: Replace repeating Character and UnicodeScalar forms of String.init</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/f6d4216f30923e2d6529657f75667bf557c3d35a">[Accepted] SE-0125: Remove NonObjectiveCBase and isUniquelyReferenced</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/223c746ec7c9653d060c8a638d6474c3cbd2bf72">[Accepted] SE-0127: Cleaning up stdlib Pointer and Buffer Routines</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/418a7be5072c682aabc25e2171f925ff735295a6">[Accepted] SE-0131: Add AnyHashable to the standard library</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/fa9beafdf51ac62260c95848d20dc37508b50ccf">End of source-breaking changes for Swift 3</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/a8e227590c77a976fa870e2161b5c45147424acb">[Accepted] SE-0133: Rename flatten() to joined()</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/1fc2dfe1b8f9e29e1725ad853e2b19ad9211107f">[Accepted with revision] SE-0134: Rename two UTF8-related properties on String</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/434cddce2de88db025f7b84ca90fcd638ee33672">[Deferred] SE-0132: Rationalizing Sequence end-operation names</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/00c4fab2117d38bb64e2f410b082b173efe63cb0">[Accepted with Revision] SE-0177: Allow distinguishing between public access and public overridability</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/3b4e843c1340146a9bdf0afdc6ef6e4f7b07fd36">Looking back on Swift 3 and ahead to Swift 4</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/4010bcf37a9969ed2761e3338be515549e2400af">[Review] SE-0137: Avoiding Lock-In to Legacy Protocol Designs</a>      &mdash; <em>John McCall</em>
+    </li>
+    <li>
+<a href="/threads/91f5eb9703754f532a710f276b30d36ec85362a0">[Accepted] SE-0137: Avoiding Lock-In to Legacy Protocol Designs</a>      &mdash; <em>John McCall</em>
+    </li>
+    <li>
+<a href="/threads/15b3043c993d6c34d321bf20f47274adbd40804a">[Review] SE-0138 UnsafeBytes</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/5b5b7743aad9e8f0d0f78abbadba8ab123e14573">[Review] SE-0138 UnsafeBytes</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/5ed3d8817ab3b85e780b259112170d18884f75a9">[Review] SE-0138 UnsafeBytes</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/c679fd7cc46b8177c9cc483f208667cd262afe33">[Review] SE-0138 UnsafeBytes</a>      &mdash; <em>Dave Abrahams</em>
+    </li>
+    <li>
+<a href="/threads/49cb0985427814989823e3f01b595268599c7880">SE-0138 UnsafeBytes</a>      &mdash; <em>Andrew Trick</em>
+    </li>
+    <li>
+<a href="/threads/569a4bdec8267592d74e80a6fb39fe0a8485a966">[Review] SE-0139: Bridge Numeric Types to NSNumber and Cocoa Structs to NSValue</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/5fccf62ce2bbab0898b04375a02f2045554a1ae8">[Review] SE-0140: Bridge Optional As Its Payload Or NSNull</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/66bdbb5ceee5e573f8d1492e81dab7f74b97a774">[SE-0139] Bridge Numeric Types to NSNumber and Cocoa Structs to NSValue</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/4322c215f51e2d2e05a95aa8b231ebfca3490bd9">[Accepted] SE-0140: Bridge Optional As Its Payload Or NSNull</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/2fe2b6fd5791349248d4ee5ccb0e49be7129c65d">Swift 3.0 released!</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+    <li>
+<a href="/threads/c3b96bbdcdf35f4a8bcd1147b20afa986e6895c9">[Review] SE-0141: Availability by Swift version</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/d0dedefcfec8008001df43b64850dc60feb5f54b">[Review] SE-0142: Permit where clauses to constrain associated types</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/03f6cc3f4f7567f228862ed6e452c7c329f34af9">[Review] SE-0143: Conditional Conformances</a>      &mdash; <em>Joe Groff</em>
+    </li>
+    <li>
+<a href="/threads/7945fb36f4d82f9888d0699b5e1b79693a1d5de2">[Accepted] SE-0141: Availability by Swift version</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/1e075b32367cf91c7790dec97a0cc29f8054c705">[Accepted] SE-0142: Permit where clauses to constrain associated types</a>      &mdash; <em>Douglas Gregor</em>
+    </li>
+    <li>
+<a href="/threads/c085cb8ddc29bbf87f66dc2e381cd37b571e8bdc">[Review] SE-0144: Allow Single Dollar Sign as a Valid Identifier</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/e095d67fe36b231bb8a620adc07b68b833f1ab2f">[Rejected] SE-0144: Allow Single Dollar Sign as a Valid Identifier</a>      &mdash; <em>Chris Lattner</em>
+    </li>
+    <li>
+<a href="/threads/982f95acbbbe89a373cd6b8d215af896ea19a7b5">announcing Server APIs work group</a>      &mdash; <em>Ted Kremenek</em>
+    </li>
+  </ul>
+</div>
+    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

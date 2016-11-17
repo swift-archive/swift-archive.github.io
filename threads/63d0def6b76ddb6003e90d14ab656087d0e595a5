@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/969b04d28c02f951ccc03f615b9a92b3?s=50"></div><header><strong>[Swift 2.2] Request to merge a build-script fix</strong> from <string>Dmitri Gribenko</string> &lt;gribozavr at gmail.com&gt;<p>February  2, 2016 at 05:00:00pm</p></header><div class="content"><p>Hi Ted,<br></p><p>Under certain circumstances, when the OS X machine has the<br>`/usr/include` directory that contains stale headers (not from the<br>current Xcode installation), the build might fail.  This patch works<br>around the issue by ensuring that LLVM CMake scripts don&#39;t try to look<br>in `/usr/include`.<br></p><p>https://github.com/apple/swift/pull/1175<br>https://github.com/apple/swift/commit/79fdc7831d2039b4c59954c8845df622d9360e9e<br></p><p>Dmitri<br></p><p>-- <br>main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>(j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/b6520643611a05fd040d0abcee3c883c?s=50"></div><header><strong>[Swift 2.2] Request to merge a build-script fix</strong> from <string>Ted Kremenek</string> &lt;kremenek at apple.com&gt;<p>February  2, 2016 at 06:00:00pm</p></header><div class="content"><p>Approved for swift-2.2.<br></p><p>Cherry-picked to https://github.com/apple/swift/commit/d16df7a62cbbdcd10dcd9ee9733cf2f6c050348c.<br></p><p>&gt; On Feb 2, 2016, at 5:58 PM, Dmitri Gribenko &lt;gribozavr at gmail.com&gt; wrote:<br>&gt; <br>&gt; Hi Ted,<br>&gt; <br>&gt; Under certain circumstances, when the OS X machine has the<br>&gt; `/usr/include` directory that contains stale headers (not from the<br>&gt; current Xcode installation), the build might fail.  This patch works<br>&gt; around the issue by ensuring that LLVM CMake scripts don&#39;t try to look<br>&gt; in `/usr/include`.<br>&gt; <br>&gt; https://github.com/apple/swift/pull/1175<br>&gt; https://github.com/apple/swift/commit/79fdc7831d2039b4c59954c8845df622d9360e9e<br>&gt; <br>&gt; Dmitri<br>&gt; <br>&gt; -- <br>&gt; main(i,j){for(i=2;;i++){for(j=2;j&lt;i;j++){if(!(i%j)){j=0;break;}}if<br>&gt; (j){printf(&quot;%d\n&quot;,i);}}} /*Dmitri Gribenko &lt;gribozavr at gmail.com&gt;*/<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160202/0044b705/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

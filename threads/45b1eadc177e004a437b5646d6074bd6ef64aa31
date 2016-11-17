@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>[Swift CI] [swift-3.0-preview-3] TEST &#39;Swift :: Runtime/weak-reference-racetests-dispatch.swift&#39; FAILED</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>July 14, 2016 at 11:00:00am</p></header><div class="content"><p>Hi, <br></p><p>Can someone please look at this test? It has been failing for long time. <br></p><p>https://ci.swift.org/view/swift-3.0-preview-3/job/oss-swift-3.0-preview-3_tools-RA_stdlib-DA_test-simulator/41/consoleFull#682065832fca400bf-2f4a-462e-b517-e058d770b2d7<br></p><p>******************** TEST &#39;Swift :: Runtime/weak-reference-racetests-dispatch.swift&#39; FAILED ********************<br></p><p>Script:<br>--<br>rm -rf /Users/buildnode/jenkins/workspace/oss-swift-3.0-preview-3_tools-RA_stdlib-DA_test-simulator/Ninja-ReleaseAssert/swift-macosx-x86_64/test-macosx-x86_64/Runtime/Output/weak-reference-racetests-dispatch.swift.tmp &amp;&amp; mkdir -p /Users/buildnode/jenkins/workspace/oss-swift-3.0-preview-3_tools-RA_stdlib-DA_test-simulator/Ninja-ReleaseAssert/swift-macosx-x86_64/test-macosx-x86_64/Runtime/Output/weak-reference-racetests-dispatch.swift.tmp &amp;&amp; xcrun --toolchain default --sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk /Users/buildnode/jenkins/workspace/oss-swift-3.0-preview-3_tools-RA_stdlib-DA_test-simulator/Ninja-ReleaseAssert/swift-macosx-x86_64/bin/swiftc -target x86_64-apple-macosx10.9  -module-cache-path &#39;/var/folders/_8/79jmzf2142z2xydc_01btlx00000gn/T/swift-testsuite-clang-module-cachetRhwVP&#39; -F /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/../../../Developer/Library/Frameworks -Xlinker -rpath -Xlinker /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/../../../Developer/Library/Frameworks    -module-cache-path &#39;/var/folders/_8/79jmzf2142z2xydc_01btlx00000gn/T/swift-testsuite-clang-module-cachetRhwVP&#39; /Users/buildnode/jenkins/workspace/oss-swift-3.0-preview-3_tools-RA_stdlib-DA_test-simulator/swift/test/Runtime/weak-reference-racetests-dispatch.swift -o /Users/buildnode/jenkins/workspace/oss-swift-3.0-preview-3_tools-RA_stdlib-DA_test-simulator/Ninja-ReleaseAssert/swift-macosx-x86_64/test-macosx-x86_64/Runtime/Output/weak-reference-racetests-dispatch.swift.tmp/a.out -module-name main &amp;&amp;  /Users/buildnode/jenkins/workspace/oss-swift-3.0-preview-3_tools-RA_stdlib-DA_test-simulator/Ninja-ReleaseAssert/swift-macosx-x86_64/test-macosx-x86_64/Runtime/Output/weak-reference-racetests-dispatch.swift.tmp/a.out<br>--<br>Exit Code: 134<br></p><p>Command Output (stdout):<br>--<br>[ RUN      ] WeakReferenceRaceTests.class instance property [SR-192] (copy)<br>stderr&gt;&gt;&gt; CRASHED: SIGSEGV<br>the test crashed unexpectedly<br>[     FAIL ] WeakReferenceRaceTests.class instance property [SR-192] (copy)<br>[ RUN      ] WeakReferenceRaceTests.class instance property [SR-192] (load)<br>stderr&gt;&gt;&gt; CRASHED: SIGSEGV<br>the test crashed unexpectedly<br>[     FAIL ] WeakReferenceRaceTests.class instance property [SR-192] (load)<br>[ RUN      ] WeakReferenceRaceTests.direct capture (copy)<br>stderr&gt;&gt;&gt; CRASHED: SIGSEGV<br>the test crashed unexpectedly<br>[     FAIL ] WeakReferenceRaceTests.direct capture (copy)<br>[ RUN      ] WeakReferenceRaceTests.direct capture (load)<br>stderr&gt;&gt;&gt; CRASHED: SIGSEGV<br>the test crashed unexpectedly<br>[     FAIL ] WeakReferenceRaceTests.direct capture (load)<br>WeakReferenceRaceTests: Some tests failed, aborting<br>UXPASS: []<br>FAIL: [&quot;class instance property [SR-192] (copy)&quot;, &quot;class instance property [SR-192] (load)&quot;, &quot;direct capture (copy)&quot;, &quot;direct capture (load)&quot;]<br>SKIP: []<br>To debug, run:<br>$ /Users/buildnode/jenkins/workspace/oss-swift-3.0-preview-3_tools-RA_stdlib-DA_test-simulator/Ninja-ReleaseAssert/swift-macosx-x86_64/test-macosx-x86_64/Runtime/Output/weak-reference-racetests-dispatch.swift.tmp/a.out --stdlib-unittest-in-process --stdlib-unittest-filter &quot;class instance property [SR-192] (copy)&quot;<br></p><p><br>Thanks, <br>Mishal Shah<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

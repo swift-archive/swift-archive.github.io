@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>[Proposal] Refining Identifier and Operator Symbology</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>October 19, 2016 at 07:00:00pm</p></header><div class="content"><p>&gt; &gt; On Oct 19, 2016, at 12:29 PM, Jonathan S. Shapiro via swift-evolution &lt;swift-evolution at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;&gt; wrote:<br>&gt; &gt; <br>&gt; &gt; On Wed, Oct 19, 2016 at 6:41 AM, Matthew Johnson via swift-evolution &lt;swift-evolution at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt; &lt;mailto:swift-evolution at swift.org &lt;https://lists.swift.org/mailman/listinfo/swift-evolution&gt;&gt;&gt; wrote:<br>&gt; &gt; IMO, the best argument against using unicode symbols for operators defined by mathematics is that they are currently difficult to type.<br>&gt; &gt; <br>&gt; &gt; And there is no realistic hope of that changing. This issue is so compelling that C and C++ introduced standardized text-ascii alternatives for the punctuation operators to relieve stress on non-english keyboard users.<br>&gt; <br>&gt; Wait, what? They’re only hard to type because people don’t seem to realize they can make their own keyboard layouts to use while they’re waiting for the USB Consortium to notice that it’s not the &#39;80s anymore and update the class driver spec to allow keyboards to directly type unicode characters.<br>&gt; For macOS, I use Ukelele (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=ukelele &lt;http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=ukelele&gt;). I don’t know what tools there are for Windows or Linux, but I’d be *shocked* if they didn’t exist.<br>Not to mention things like the iPad where the keyboard can directly show the symbols based on context.  We already have playgrounds on iOS, and I for one will be programming on my iPad often once that becomes a possibility.<br></p><p>Also, there are UI things that can be added to Xcode to easily type emoji’s and other symbols.  If I could type ‘``dog`’ or something like that and get the dog emoji, why shouldn’t I use it?  That was, after all, one of the initial promises of Swift.<br></p><p>Thanks,<br>Jon<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161019/9da03614/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

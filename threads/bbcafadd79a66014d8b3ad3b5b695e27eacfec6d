@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/6d2bf2608be6efe76931a1fde522488b?s=50"></div><header><strong>Property with class and protocol type</strong> from <string>Adrian Śliwa</string> &lt;adiki69 at gmail.com&gt;<p>June 14, 2016 at 04:00:00pm</p></header><div class="content"><p>Hi all,<br></p><p>In Obj-C we have:<br></p><p>@property UIViewController&lt;Protocol1, Protocol2, ...&gt; *viewController;<br></p><p>Is there any reason we don&#39;t have in Swift:<br></p><p>var viewController: UViewController&lt;Protocol1, Protocol2, ...&gt;<br></p><p>Do you think it will be nice feature to have in Swift?<br>One example I have is is to have VC&#39;s container with view controllers(some<br>forms) which implement Validable protocol to enforce them to have<br>implementation of this method and to prevent situation that there is<br>somewhere default implementation of the method &quot;isValid&quot; e.g. in superclass<br>or protocol extension.<br>What are your thoughts?<br></p><p>Cheers,<br>Adrian<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160614/bbcaec6d/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>Property with class and protocol type</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>June 14, 2016 at 08:00:00pm</p></header><div class="content"><p>=D<br></p><p>We’re already discussing this in a looooot (I mean really lot) different threads.<br></p><p>Search for existentials or Any&lt;…&gt; or type&lt;…&gt; or All&lt;…&gt;.<br></p><p>SE–0095 is the first step in that direction. We want a shorthand version first and design a more complex functionality like Any&lt;…&gt; later.<br></p><p>Any&lt;UIViewController, Protocol1, Protocol2&gt; (I prefer this one)<br>or Any&lt;UIViewController &amp; Protocol1 &amp; Protocol2&gt;<br>After Swift 3 will drop I’ll submit a proposal for class-requirement for the shorthand version: UIViewController &amp; Protocol1 &amp; Protocol2 or a type alias: typealias CustomConstrainedController = UIViewController &amp; Protocol1 &amp; Protocol2<br></p><p><br>-- <br>Adrian Zubarev<br>Sent with Airmail<br></p><p>Am 14. Juni 2016 um 18:59:54, Adrian Śliwa via swift-evolution (swift-evolution at swift.org) schrieb:<br></p><p>Hi all,<br></p><p>In Obj-C we have:<br>@property UIViewController&lt;Protocol1, Protocol2, ...&gt; *viewController;<br>Is there any reason we don&#39;t have in Swift:<br>var viewController: UViewController&lt;Protocol1, Protocol2, ...&gt;<br>Do you think it will be nice feature to have in Swift?<br>One example I have is is to have VC&#39;s container with view controllers(some forms) which implement Validable protocol to enforce them to have implementation of this method and to prevent situation that there is somewhere default implementation of the method &quot;isValid&quot; e.g. in superclass or protocol extension.<br>What are your thoughts?<br></p><p>Cheers,<br>Adrian<br>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160614/22fce3c2/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7321934b88ca8da079d7b89926501a9c?s=50"></div><header><strong>C/FFI interop</strong> from <string>David Turnbull</string> &lt;dturnbull at gmail.com&gt;<p>December 23, 2015 at 09:00:00pm</p></header><div class="content"><p>Option 1. Export your Swift to Obj-C. Write Obj-C that exports C. Compile<br>to a library.<br></p><p>Option 2. Use this syntax and swift-demangle to figure out the symbols:<br></p><p>public var badfood:@convention(c)(Int) -&gt; Void = { (i:Int) in<br></p><p>    print(i)<br></p><p>}<br></p><p>-david<br></p><p><br>On 12/23/15, Thomas Catterall via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; &gt; Indeed I was - I&#39;m quite sorry for the confusion, I didn&#39;t make my intent<br>&gt; &gt; clear as I should have, such as through example. What I&#39;m referring to<br>&gt; is,<br>&gt; &gt; for instance, offering a way for a Ruby library to interface with a<br>&gt; module<br>&gt; &gt; written in Swift to communicate with Redis (as an example, not something<br>&gt; I&#39;m<br>&gt; &gt; thinking too seriously about).<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20151223/d3e89be1/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/76dd8f23593c1a1f5c57cc6a8982d726?s=50"></div><header><strong>C/FFI interop</strong> from <string>Brent Royal-Gordon</string> &lt;brent at architechies.com&gt;<p>December 23, 2015 at 11:00:00pm</p></header><div class="content"><p>&gt; Option 2. Use this syntax and swift-demangle to figure out the symbols:<br>&gt; <br>&gt; public var badfood:@convention(c)(Int) -&gt; Void = { (i:Int) in<br>&gt;     print(i)<br>&gt; }<br></p><p>There&#39;s an @asmname(&quot;foo&quot;) directive which can override name mangling, but I don&#39;t know how useful it is in practice for this kind of thing.<br></p><p>-- <br>Brent Royal-Gordon<br>Architechies<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dad1fc0d2023332e239a5c05e01fb577?s=50"></div><header><strong>New snapshots available! (and snapshot name format change)</strong> from <string>Nicole Jacque</string> &lt;nicole_jacque at apple.com&gt;<p>January 26, 2016 at 12:00:00am</p></header><div class="content"><p>New Swift development and Swift 2.2 branch snapshots are now available! <br></p><p>In order to make it clearer whether a snapshot is off of the development or a release branch, starting with this snapshot, we will be identifying the mainline development snapshot as such, using the naming format: swift-DEVELOPMENT-SNAPSHOT-YYYY-MM-DD-a.  Snapshots for release branches will continue to use the existing format, i.e.: &lt;Swift release version&gt;-SNAPSHOT-YYYY-MM-DD-a.<br></p><p>You can download the new packages from https://swift.org/download/ &lt;https://swift.org/download/&gt; <br></p><p>The following repositories have been tagged with &quot;swift-DEVELOPMENT-SNAPSHOT-2016-01-25-a&quot; :<br></p><p>https://github.com/apple/swift &lt;https://github.com/apple/swift&gt;	<br>https://github.com/apple/swift-clang &lt;https://github.com/apple/swift-clang&gt;	<br>https://github.com/apple/swift-llbuild &lt;https://github.com/apple/swift-llbuild&gt;	<br>https://github.com/apple/swift-lldb &lt;https://github.com/apple/swift-lldb&gt;	<br>https://github.com/apple/swift-llvm &lt;https://github.com/apple/swift-llvm&gt;	<br>https://github.com/apple/swift-corelibs-foundation &lt;https://github.com/apple/swift-corelibs-foundation&gt;	<br>https://github.com/apple/swift-corelibs-xctest &lt;https://github.com/apple/swift-corelibs-xctest&gt;	<br>https://github.com/apple/swift-package-manager &lt;https://github.com/apple/swift-package-manager&gt; <br>https://github.com/apple/swift-cmark &lt;https://github.com/apple/swift-cmark&gt; <br>https://github.com/apple/swift-integration-tests &lt;https://github.com/apple/swift-integration-tests&gt;	<br></p><p><br>Cheers!<br>Nicole Jacque<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

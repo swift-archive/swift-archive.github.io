@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dc7496f196a2409a2e21190cea4c4d8c?s=50"></div><header><strong>removal of NSURL.filePathURL as it serves no purpose without file reference URL in Linux</strong> from <string>Bhaktavatsal R Maram</string> &lt;bhamaram at in.ibm.com&gt;<p>May  7, 2016 at 11:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160507/916a48a7/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/49f329a0267f5a1773a77017882a82a8?s=50"></div><header><strong>removal of NSURL.filePathURL as it serves no purpose without file reference URL in Linux</strong> from <string>Rainer Brockerhoff</string> &lt;rainer at brockerhoff.net&gt;<p>May  7, 2016 at 11:00:00am</p></header><div class="content"><p>On 5/7/16 08:07, Bhaktavatsal R Maram via swift-corelibs-dev wrote:<br>&gt; I&#39;m working on implementation of unimplemented properties in NSURL.swift.<br>&gt; <br>&gt; /public var filePathURL: NSURL?/<br>&gt; <br>&gt; As per specification[1] which says &quot;If the receiver is a file reference URL, <br>&gt; this property contains a copy of the URL converted to a file path URL. If the <br>&gt; receiver’s URL is a file path URL, this property contains the original URL. If <br>&gt; the original URL is not a file URL, or if the resource is not reachable or no <br>&gt; longer exists, this property contains |nil|. &quot;<br>&gt; <br>&gt; &#39;filePathURL&#39; property is to hold copy of file reference URL converted to file <br>&gt; path URL.<br>&gt; <br>&gt; <br>&gt; for example,<br>&gt; <br>&gt; file reference URL - *file:///.file/id=6571367.3617528/*<br>&gt; file path URL - *file:///Users/mbvreddy/workarea/swift/MyTest/MyTest.xcodeproj/*<br>&gt; <br>&gt; File reference URL is a special URL on OS X which is of type <br>&gt; file:///.file/id=&lt;volume_id&gt;.&lt;file_id&gt;/. And it is not available on Linux. APIs <br>&gt; that return file reference URLs [2] on OS X foundation NSURL.fileReferenceURL() <br>&gt; is removed from Linux Foundation.<br></p><p>AFAIK this particular format of file reference URLs is an OS X<br>implementation detail, and should not be relied upon (nor is it, I<br>think, supported on certain file systems).<br></p><p>One reason for it, no doubt, is to be able to use low-level file system<br>APIs independently of things like maximum path length or POSIX working<br>file directory.<br></p><p>Nothing precludes an implementation on another platform that leverages<br>per-file identifiers analogous to volume and file id — or you may even<br>have a trivial implementation that just stores the full path from<br>fileSystemImplementation.<br></p><p><br>&gt; So, I think NSURL.filePathURL also should be removed as it serves no purpose <br>&gt; without file reference URL. Any comments are appreciated.<br></p><p>I&#39;m not a Linux user but this will probably unduly restrict<br>cross-platform apps. Using file reference URLs is quite common,<br>especially if at some point you need a path to pass to a POSIX API.<br></p><p>-- <br>Rainer Brockerhoff  &lt;rainer at brockerhoff.net&gt;<br>Belo Horizonte, Brazil<br>&quot;In the affairs of others even fools are wise<br>In their own business even sages err.&quot;<br>http://brockerhoff.net/blog/<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/dc7496f196a2409a2e21190cea4c4d8c?s=50"></div><header><strong>removal of NSURL.filePathURL as it serves no purpose without file reference URL in Linux</strong> from <string>Bhaktavatsal R Maram</string> &lt;bhamaram at in.ibm.com&gt;<p>May 12, 2016 at 04:00:00am</p></header><div class="content"><p>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-corelibs-dev/attachments/20160512/9979283e/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

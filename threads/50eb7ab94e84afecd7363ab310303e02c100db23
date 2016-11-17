@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c1ab69ba998892ce0168c9b9e3ba2597?s=50"></div><header><strong>Binary framework distribution?</strong> from <string>晓敏 褚</string> &lt;mirrorinf at icloud.com&gt;<p>August 10, 2016 at 10:00:00am</p></header><div class="content"><p>The current swift package manager has several major weak points:<br>Incomplete Xcode compatibility. Xcode seems not supporting swift package.<br>No pre-building information. For example, I employ swift package manager to add a framework to my project, then no information could be reached before I build my project. This is a particularly bad experience in Xcode, as CocoaPods and Carthage DOES allow Xcode to access the framework itself and provide auto-completion and checking.<br>No patent framework support. Open source is great, but there ARE developers who want to share functionalities only, not the code. Apple releases iOS or macOS frameworks, but most of them are not open sourced.<br>A waste of time for huge frameworks. The current solution builds the framework in every project. If the framework is something like scipy, a significant longer build time is expected as compared to pre-built ones.<br></p><p>The existing UNIX dynamic libraries are also not good enough. They cause, somehow, pollution to the system. The /usr/include /usr/lib system spread files in different locations. And it is not easy to make an integrated framework in an application.<br></p><p>And if we are able to directly create and distribute binary frameworks, all of the problems are cleared. All of informations about the framework is contained in itself, we could just download the frameworks for the particular platform, and use them.<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/3b3f5abbe48b7127e20fd69808c714bf?s=50"></div><header><strong>Binary framework distribution?</strong> from <string>Charlie Monroe</string> &lt;charlie at charliemonroe.net&gt;<p>August 10, 2016 at 07:00:00am</p></header><div class="content"><p>Binary framework distribution is discouraged from due to the ABI not being finalized - i.e. the framework wouldn&#39;t be compatible with Swift 4, and perhaps even with Swift 3.1.<br></p><p>Xcode issues should be filed via Apple&#39;s radar system - http://bugreport.apple.com<br></p><p>&gt; On Aug 10, 2016, at 4:24 AM, 晓敏 褚 via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; The current swift package manager has several major weak points:<br>&gt; Incomplete Xcode compatibility. Xcode seems not supporting swift package.<br>&gt; No pre-building information. For example, I employ swift package manager to add a framework to my project, then no information could be reached before I build my project. This is a particularly bad experience in Xcode, as CocoaPods and Carthage DOES allow Xcode to access the framework itself and provide auto-completion and checking.<br>&gt; No patent framework support. Open source is great, but there ARE developers who want to share functionalities only, not the code. Apple releases iOS or macOS frameworks, but most of them are not open sourced.<br>&gt; A waste of time for huge frameworks. The current solution builds the framework in every project. If the framework is something like scipy, a significant longer build time is expected as compared to pre-built ones.<br>&gt; <br>&gt; The existing UNIX dynamic libraries are also not good enough. They cause, somehow, pollution to the system. The /usr/include /usr/lib system spread files in different locations. And it is not easy to make an integrated framework in an application.<br>&gt; <br>&gt; And if we are able to directly create and distribute binary frameworks, all of the problems are cleared. All of informations about the framework is contained in itself, we could just download the frameworks for the particular platform, and use them.<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

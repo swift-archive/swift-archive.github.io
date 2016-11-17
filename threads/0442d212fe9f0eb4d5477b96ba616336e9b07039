@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/9b5e7f229ebf32c8eca02e7cee0f379f?s=50"></div><header><strong>[Proposal] Improving operator requirements in protocols</strong> from <string>Nicola Salmoria</string> &lt;nicola.salmoria at gmail.com&gt;<p>May  3, 2016 at 02:00:00pm</p></header><div class="content"><p>&gt; 4. What do you think about adding a rule to disallow defining member<br>&gt; operators that don&#39;t satisfy a protocol requirement?<br>&gt; <br>&gt; Dmitri<br></p><p>I’m wondering if we could go in the opposite direction, instead.<br></p><p>If I’m understanding the proposal correctly, it only boils down to relaxing the rules about naming of (static) methods: the other functionality needed to implement operators this way is already there.<br>What we are missing is that we currently have to use normal words to name the methods, because the Swift grammar reserves certain character to only be used by operators.<br></p><p>If I understood the rationale correctly, this limitation was a technical requirement to ensure the compiler doesn’t have to deal with ambiguous syntax.<br></p><p>It seems to me that if this proposal is taken to its logical conclusion, by completely forbidding operator declarations anywhere but at global scope, the source of the ambiguities should be removed, which should allow more freedom on method names.<br></p><p>To be clear, the rules would remain the same for global functions, but would become more relaxed for methods.<br></p><p>If we allowed this, it would be possible to revisit another proposal which was floated by some time ago to improve the names of functional vs. mutating methods. It would become possible to simply do e.g. instead of<br></p><p>func union(other: Self) -&gt; Self<br>mutating func formUnion(other: Self)<br></p><p>we could simply to<br></p><p>func union(other: Self) -&gt; Self<br>mutating func =union(other: Self)<br></p><p>and then<br></p><p>x = y.union(z)<br>y.=union(z) <br></p><p>—<br>Nicola<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

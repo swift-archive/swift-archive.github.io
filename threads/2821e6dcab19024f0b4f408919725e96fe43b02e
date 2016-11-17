@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>SwiftPM bootstrap and gold linker</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>March 14, 2016 at 02:00:00pm</p></header><div class="content"><p>I am using a newer version of binutils (2.26) which is leading me to run<br>into a known issue with the linker. The suggested work around is to use<br>the gold linker* [1] [2].<br></p><p>However when I run the gold linker with the SwiftPM bootstrap it doesn&#39;t<br>seem to honor the gold linker request. Is this a feature or a bug?<br></p><p>[1] http://comments.gmane.org/gmane.comp.lang.swift.devel/1174<br>[2] http://comments.gmane.org/gmane.comp.lang.swift.devel/1258<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/ae51ca494b37cc270597830da66f089f?s=50"></div><header><strong>SwiftPM bootstrap and gold linker</strong> from <string>Max Howell</string> &lt;max.howell at apple.com&gt;<p>March 14, 2016 at 11:00:00am</p></header><div class="content"><p>Bug, please report it to https://bugs.swift.org<br></p><p>Thanks!<br></p><p>&gt; On Mar 14, 2016, at 11:24 AM, Ryan Lovelett via swift-build-dev &lt;swift-build-dev at swift.org&gt; wrote:<br>&gt; <br>&gt; I am using a newer version of binutils (2.26) which is leading me to run<br>&gt; into a known issue with the linker. The suggested work around is to use<br>&gt; the gold linker* [1] [2].<br>&gt; <br>&gt; However when I run the gold linker with the SwiftPM bootstrap it doesn&#39;t<br>&gt; seem to honor the gold linker request. Is this a feature or a bug?<br>&gt; <br>&gt; [1] http://comments.gmane.org/gmane.comp.lang.swift.devel/1174<br>&gt; [2] http://comments.gmane.org/gmane.comp.lang.swift.devel/1258<br>&gt; _______________________________________________<br>&gt; swift-build-dev mailing list<br>&gt; swift-build-dev at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-build-dev<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/14477c366d6ee4e41adf14837bc4f2f9?s=50"></div><header><strong>SwiftPM bootstrap and gold linker</strong> from <string>Ryan Lovelett</string> &lt;swift-dev at ryan.lovelett.me&gt;<p>March 14, 2016 at 02:00:00pm</p></header><div class="content"><p>Done https://bugs.swift.org/browse/SR-941 👍<br></p><p>I&#39;m not sure where this falls on a priority list (if at all). So I&#39;ll<br>say that I&#39;m interested in attempting to fix this because its of a<br>relatively high priority for me.<br></p><p>Additionally do you have intuition into where you&#39;d look to fix this? If<br>not no worries.<br></p><p>On Mon, Mar 14, 2016, at 02:36 PM, Max Howell wrote:<br>&gt; Bug, please report it to https://bugs.swift.org<br>&gt; <br>&gt; Thanks!<br>&gt; <br>&gt; &gt; On Mar 14, 2016, at 11:24 AM, Ryan Lovelett via swift-build-dev &lt;swift-build-dev at swift.org&gt; wrote:<br>&gt; &gt; <br>&gt; &gt; I am using a newer version of binutils (2.26) which is leading me to run<br>&gt; &gt; into a known issue with the linker. The suggested work around is to use<br>&gt; &gt; the gold linker* [1] [2].<br>&gt; &gt; <br>&gt; &gt; However when I run the gold linker with the SwiftPM bootstrap it doesn&#39;t<br>&gt; &gt; seem to honor the gold linker request. Is this a feature or a bug?<br>&gt; &gt; <br>&gt; &gt; [1] http://comments.gmane.org/gmane.comp.lang.swift.devel/1174<br>&gt; &gt; [2] http://comments.gmane.org/gmane.comp.lang.swift.devel/1258<br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-build-dev mailing list<br>&gt; &gt; swift-build-dev at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-build-dev<br>&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/1cf189f1dc2613ba3f5c3967576ae16d?s=50"></div><header><strong>[Idea] [Pitch] Distinguishing code comments from text comments</strong> from <string>Doug McKenna</string> &lt;doug at mathemaesthetics.com&gt;<p>February 26, 2016 at 03:00:00pm</p></header><div class="content"><p>Dmitri Gribenko responded:<br></p><p>&gt;&gt; Suppose an analysis program that takes source code as mere text input<br></p><p>&gt;That is the root of the issue.  You shouldn&#39;t be parsing source code<br>&gt;with ad-hoc tools.  You need to use a real compiler.<br></p><p>One may want to use a real compiler, but one doesn&#39;t need an entire compiler to parse otherwise ignored source code just looking for comments.<br></p><p>&gt;Just because it<br>&gt;happened to work with, say C, does not mean that you got it right.  I<br>&gt;doubt that a program that you described was correctly handling, say,<br>&gt;line continuations in comments.<br></p><p>You would be incorrect in my case (I handle even the weirdest situations like backslash line continuation in the middle of a delimiter), but point taken for simple-minded tools.  The fact that C or other source code can have some weird legal constructions (and I&#39;m assuming Swift has fewer such possible weird constructions) doesn&#39;t mean the user is required to employ those very rare constructions.<br></p><p>The point is to make the job easier, at almost no cost, for simple tools.  And if the compiler doesn&#39;t recognize text comments as distinguishable from code comments, then relying on a complete compiler to do the source parsing isn&#39;t going to help any, especially since it presumably just tosses the text in the comment.<br></p><p>&gt;The bottom line is, you need to use a real compiler frontend to parse<br>&gt;source code.<br></p><p>It&#39;s not about parsing the meat of the source code.  It&#39;s about robustly and easily recognizing a delimiter that signals the basic purpose of an otherwise-ignored comment.  It&#39;s about wanting unambiguously to know which part of a source file is text comment for humans and which part is excised code being kept around for later uses.  The alternative is doing some kind of non-robust statistical test on the text to make the call as to what its purpose is (which is also language-specific).<br></p><p>All I&#39;m advocating is that with a tiny little bit of *standardized* help that harms no one and is upwardly compatible, the world could be a better place for everyone, not just me with my private /*{ ... }*/ solution.<br></p><p><br>Doug McKenna<br>Mathemaesthetics, Inc.<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

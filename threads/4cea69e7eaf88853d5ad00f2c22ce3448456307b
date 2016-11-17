@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c354b21edb9ba56fe6b42950e08195fa?s=50"></div><header><strong>guard let x = x</strong> from <string>Jonathan Hull</string> &lt;jhull at gbis.com&gt;<p>November  1, 2016 at 05:00:00pm</p></header><div class="content"><p>I am a little worried about shadowing as well (isn’t that why we don’t allow ‘let x’… even though it seems a bit more obvious to me with that syntax that there is shadowing?)<br></p><p>Have we considered doing exactly what people naively expect?  That is, instead of creating a shadow constant/variable, we have unwrap cause the variable to be implicitly unwrapped within the scope of the if/guard statement?  In other words, it is still the same variable, but it has been safely implicitly unwrapped, so you don’t have to worry about the optional.  The compiler should be able to optimize well enough with the knowledge it has (that it is actually non-nil… especially if it isn’t modified in that scope) that it shouldn’t add a performance hit...<br></p><p>Thanks,<br>Jon<br></p><p>&gt; -1 on<br>&gt; <br>&gt; if unwrap myValue { ... }<br>&gt; <br>&gt; <br>&gt; In my opinion, *shadowing names is an anti-pattern,* so making it easier<br>&gt; isn&#39;t something we should encourage. Detailed examples, shall you wish, are<br>&gt; below.<br>&gt; <br>&gt; Consider a developer who is suddenly able to change all employment<br>&gt; relationships in the company.<br>&gt; He&#39;s happily coding a function that should guarantee him a boss-free<br>&gt; lifestyle:<br>&gt; <br>&gt; class Employee {<br>&gt;     var currentSupervisor: Employee?<br>&gt; <br>&gt;     // Precondition: you can do whatever you want :)<br>&gt;     // Requirements: currentSupervisor == nil at the end<br>&gt;     func fireYourBoss() {<br>&gt;         if unwrap currentSupervisor {<br>&gt;             company.goToMeeting() // &lt;- anything can happen on a meeting<br>&gt;             company.fire(currentSupervisor) // &lt;- firing a manager<br>&gt; nullifies the supervisor relationship<br>&gt;             // Now I definitely have currentSupervisor == nil... or do I?<br>&gt;         }<br>&gt;     }<br>&gt; }<br>&gt; <br>&gt; This code contains a design problem: the local variable bound to<br>&gt; currentSupervisor name shadows the instance property with the same name.<br>&gt; The unwrap operator guarantees that the values bound to those names are<br>&gt; equal in the beginning of the then-block; however, there is no reason to<br>&gt; think that this will hold after company.goToMeeting().<br>&gt; <br>&gt; Compare this to how this code will read without the shadowing:<br>&gt; <br>&gt;         if let bad_boss = currentSupervisor {<br>&gt;             company.goToMeeting()<br>&gt;             company.fire(bad_boss)<br>&gt;         }<br>&gt; <br>&gt; It is much clearer in this case what happens – the person being fired is<br>&gt; the old value of currentSupervisor. Since the problem is now clearly<br>&gt; diagnozed, the code can now be improved to guarantee the blissful future,<br>&gt; for example as follows<br>&gt; <br>&gt;         if let bad_boss = currentSupervisor {<br>&gt;             company.goToMeeting()<br>&gt;             if let another_boss = currentSupervisor {<br>&gt;                 company.fire(another_boss)<br>&gt;             }<br>&gt;         }<br>&gt; <br>&gt; Similarly, in general, shadowing is a big source of bugs and should be<br>&gt; avoided in all cases where the shadowed and shadowing variable&#39;s values can<br>&gt; be different.<br>&gt; <br>&gt; In multithreaded programs it&#39;s basically only safe to shadow those names<br>&gt; that are bound with let, so we could implement unwrap for those, but it&#39;s<br>&gt; unclear what the big benefits of it are.<br>&gt; <br>&gt; Thanks for reading up to here,<br>&gt; Ilya.<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20161101/4cea307b/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

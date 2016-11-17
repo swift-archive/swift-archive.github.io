@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/79cd2bdc2074f4e69eac60743fe785fc?s=50"></div><header><strong>Retro-fitting @noescape</strong> from <string>Daniel Eggert</string> &lt;danieleggert at me.com&gt;<p>January 11, 2016 at 03:00:00pm</p></header><div class="content"><p>I’m trying to wrap<br></p><p>  public typealias dispatch_data_applier_t = (dispatch_data_t!, Int, UnsafePointer&lt;Void&gt;, Int) -&gt; Bool<br>  public func dispatch_data_apply(data: dispatch_data_t, _ applier: dispatch_data_applier_t) -&gt; Bool<br></p><p>with<br></p><p>  func forEach(@noescape body: (UInt8) throws -&gt; ()) rethrows<br></p><p>but since dispatch_data_apply() promises to be @noescape (in the documentation), but doesn’t declare it, I’m stuck. Is there a way to tell the compiler: Really, this will not escape?<br></p><p>/Daniel<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/7e9f543f0ffdb7c9a899e628fe76e7f3?s=50"></div><header><strong>Retro-fitting @noescape</strong> from <string>Jacob Bandes-Storch</string> &lt;jtbandes at gmail.com&gt;<p>January 14, 2016 at 12:00:00am</p></header><div class="content"><p>You can work around this by wrapping it with a C function that uses<br>__attribute__((noescape)).<br></p><p>An example of this is in my proposal &quot;Add @noescape to public library API&quot;:<br>https://github.com/apple/swift-evolution/blob/master/proposals/0012-add-noescape-to-public-library-api.md<br></p><p>Jacob Bandes-Storch<br></p><p>On Mon, Jan 11, 2016 at 6:29 AM, Daniel Eggert via swift-users &lt;<br>swift-users at swift.org&gt; wrote:<br></p><p>&gt; I’m trying to wrap<br>&gt;<br>&gt;   public typealias dispatch_data_applier_t = (dispatch_data_t!, Int,<br>&gt; UnsafePointer&lt;Void&gt;, Int) -&gt; Bool<br>&gt;   public func dispatch_data_apply(data: dispatch_data_t, _ applier:<br>&gt; dispatch_data_applier_t) -&gt; Bool<br>&gt;<br>&gt; with<br>&gt;<br>&gt;   func forEach(@noescape body: (UInt8) throws -&gt; ()) rethrows<br>&gt;<br>&gt; but since dispatch_data_apply() promises to be @noescape (in the<br>&gt; documentation), but doesn’t declare it, I’m stuck. Is there a way to tell<br>&gt; the compiler: Really, this will not escape?<br>&gt;<br>&gt; /Daniel<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160114/6e04727d/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

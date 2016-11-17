@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/89d14a8f8ba1b44422d330656a87e531?s=50"></div><header><strong>Build issue on amd64</strong> from <string>Richard Neese</string> &lt;r.neese at gmail.com&gt;<p>July  8, 2016 at 01:00:00pm</p></header><div class="content"><p>Linux swift 4.6.0-1-amd64 #1 SMP Debian 4.6.2-2 (2016-06-25) x86_64 GNU/Linux<br>root at swift:~# clang -v<br>Debian clang version 3.6.2-3 (tags/RELEASE_362/final) (based on LLVM 3.6.2)<br>Target: x86_64-pc-linux-gnu<br>Thread model: posix<br>Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8<br>Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.8.4<br>Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9<br>Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/4.9.3<br>Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0<br>Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/6.1.1<br>Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.8<br>Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.8.4<br>Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9<br>Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9.3<br>Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.4.0<br>Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/6.1.1<br>Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/6.1.1<br>Candidate multilib: .<br></p><p>/usr/bin/../lib/gcc/x86_64-linux-gnu/6.1.1/../../../../include/c++/6.1.1/tuple:652:17: note: candidate constructor not viable: requires 1 argument, but 4 were provided<br>      constexpr tuple(const tuple&amp;) = default;<br>                ^<br>/usr/src/llvm/lib/CodeGen/LexicalScopes.cpp:209:32: error: no matching function for call to &#39;forward_as_tuple&#39;<br>                               std::forward_as_tuple(Parent, Scope,<br>                               ^~~~~~~~~~~~~~~~~~~~~<br>/usr/bin/../lib/gcc/x86_64-linux-gnu/6.1.1/../../../../include/c++/6.1.1/tuple:1399:5: note: candidate template ignored: substitution failure [with _Elements = &lt;llvm::LexicalScope *&amp;, const llvm::DILocalScope *&amp;, nullptr_t, bool&gt;]<br>    forward_as_tuple(_Elements&amp;&amp;... __args) noexcept<br>    ^<br>3 errors generated.<br>ninja: build stopped: subcommand failed.<br>./utils/build-script: fatal error: command terminated with a non-zero exit status 1, aborting<br></p><p><br>My build script<br>#!/bin/bash<br>#clean src<br>rm -rf /usr/src/*<br></p><p>#git src<br>git clone -b swift-3.0-preview-3-branch https://github.com/apple/swift.git /usr/src/swift<br>git clone -b swift-3.0-branch https://github.com/apple/swift-llvm.git /usr/src/llvm<br>git clone -b swift-3.0-branch https://github.com/apple/swift-clang.git /usr/src/clang<br></p><p>git clone -b swift-3.0-branch https://github.com/apple/swift-lldb.git /usr/src/lldb<br>cd /usr/src/lldb<br>lldb/scripts/build-swift-cmake.py --test<br></p><p>cd ~<br>git clone https://github.com/jgm/cmark.git /usr/src/cmark<br></p><p>git clone https://github.com/ninja-build/ninja.git /usr/src/ninja &amp;&amp; cd usr/src/ninja<br>git checkout release<br>cat README<br></p><p>#build<br>cd /usr/src/swift<br></p><p>./utils/build-script  -r -t<br></p><p>This is for testing . working on building debian pkgs .<br></p><p>Sent from Mail for Windows 10<br></p><p><br></p><p>---<br>This email has been checked for viruses by Avast antivirus software.<br>https://www.avast.com/antivirus<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-dev/attachments/20160708/87da7c77/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

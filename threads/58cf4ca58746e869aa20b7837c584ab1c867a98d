@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[Proposal] Add Array binary search to the standard library</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>September 14, 2016 at 09:00:00am</p></header><div class="content"><p>on Wed Sep 07 2016, Xiaodi Wu &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Hi Igor,<br>&gt;<br>&gt; Since your proposal would be additive, it probably wouldn&#39;t be considered<br>&gt; for review until the next phase of Swift evolution.<br>&gt;<br>&gt; My read of the core team&#39;s feedback is that some binary search<br>&gt; functionality is welcome, but it&#39;s a question of *how* it&#39;s designed. When<br>&gt; purely additive changes are in scope, a successful proposal will likely<br>&gt; address the weaknesses of the previous proposal. Since that proposal<br>&gt; considered as an alternative a design such as yours, but it concluded that<br>&gt; a different design was better, you&#39;ll probably want to address why you<br>&gt; think this API design is best, or alternatively, you may want to study the<br>&gt; alternatives presented in that proposal and refine them to be better.<br></p><p>+1 to all that.  Also, this is not Array-specific; it applies to any<br>random-access collection at least, and arguably to any collection at<br>all.<br></p><p>&gt; On Wed, Sep 7, 2016 at 05:16 Igor Vasilenko via swift-evolution &lt;<br>&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt;&gt; do you mean this?<br>&gt;&gt;<br>&gt;&gt; public func binarySearch&lt;T: Comparable&gt;(array: [T], key: T, range: Range&lt;Int&gt;, sorted: Bool) -&gt; Int?<br>&gt;&gt;<br>&gt;&gt; Best regards, Igor Vasilenko<br>&gt;&gt;<br>&gt;&gt; iOS Developer at Yota<br>&gt;&gt;<br>&gt;&gt; +7 (999) 527 - 07 - 59<br>&gt;&gt; spb.vasilenko at gmail.com &lt;name.surname-nvfCEkAOCAdWk0Htik3J/w at public.gmane.org&gt;<br>&gt;&gt; www.spbvasilenko.github.io &lt;http://www.e-legion.com/&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; On 07 Sep 2016, at 13:08, Guillaume DIDIER &lt;<br>&gt;&gt; guillaume.didier.2014 at polytechnique.org&gt; wrote:<br>&gt;&gt;<br>&gt;&gt; Basically for a binary search to work it needs to operate on a sorted<br>&gt;&gt; array (it is a necessary invariant).<br>&gt;&gt;<br>&gt;&gt; It is really interesting when you make a lot of search in the same sorted<br>&gt;&gt; array, hence I would +1 the sorted array, with initializer from an array.<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; *Guillaume  DIDIER*<br>&gt;&gt; —<br>&gt;&gt; *ÉCOLE POLYTECHNIQUE*<br>&gt;&gt; 91128 PALAISEAU CEDEX<br>&gt;&gt; M. +33 (0)7 70 43 18 40<br>&gt;&gt; guillaume.didier at polytechnique.edu<br>&gt;&gt; &lt;guillaume.didier at polytechnique.edu?subject=&gt;<br>&gt;&gt; www.polytechnique.edu<br>&gt;&gt; —<br>&gt;&gt;<br>&gt;&gt; Le 7 sept. 2016 à 12:04, Haravikk via swift-evolution &lt;<br>&gt;&gt; swift-evolution at swift.org&gt; a écrit :<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; On 7 Sep 2016, at 10:08, Charlie Monroe via swift-evolution &lt;<br>&gt;&gt; swift-evolution at swift.org&gt; wrote:<br>&gt;&gt;<br>&gt;&gt; Aside from this being additive (i.e. out of scope for Swift 4), this<br>&gt;&gt; requires the array to be sorted in order for the search to work - who will<br>&gt;&gt; guarantee this? The caller? What happens when this is called on an array<br>&gt;&gt; that is not sorted? You likely get nil, while the item is in the array<br>&gt;&gt; (false negative).<br>&gt;&gt;<br>&gt;&gt; This would probably make sense by not extending Array itself, but<br>&gt;&gt; introducing SortedArray which would automatically keep its members sorted<br>&gt;&gt; instead - this way there would be a guarantee that the array is sorted and<br>&gt;&gt; the user won&#39;t have to deal with sorting the array. It would however be at<br>&gt;&gt; the cost of O(log N) for insertion…<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; I don&#39;t think this is really a problem, just needs to be clear that<br>&gt;&gt; behaviour is undefined if the array wasn&#39;t previously sorted (or not in the<br>&gt;&gt; same order).<br>&gt;&gt;<br>&gt;&gt; On this topic there was a previous proposal that was undergoing<br>&gt;&gt; refinements after being initially rejected, you can find it here:<br>&gt;&gt;<br>&gt;&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0074-binary-search.md<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt;<br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution mailing list<br>&gt;&gt; swift-evolution at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f46669a21939310a6abc8926026de34e?s=50"></div><header><strong>build-toolchain failing</strong> from <string>David Liu</string> &lt;david.yang.liu at gmail.com&gt;<p>August  4, 2016 at 02:00:00am</p></header><div class="content"><p>I am getting errors compiling the toolchain from the tip of master.<br>Specifically inside of stdlib/SDK/.., it has some syntax issue which leads<br>to compilation failure.<br>I did a swift/utils/update-checkout then swift/utils/build-toolchain.<br>I see the CI builds are green, am I out of sync some where?  Any help would<br>be much appreciated.<br></p><p>Thanks<br></p><p>Dave<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160804/bbac824c/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/12dd65fe648ab7baf7b432dd586a8388?s=50"></div><header><strong>build-toolchain failing</strong> from <string>mishal_shah</string> &lt;mishal_shah at apple.com&gt;<p>August  4, 2016 at 10:00:00am</p></header><div class="content"><p>Hi David, <br></p><p>Which version of Xcode are you using? We now require Xcode 8 Beta 4 to be able to build swift. Also, please provide full error message.<br></p><p>Thanks, <br>Mishal Shah<br>&gt; On Aug 4, 2016, at 2:00 AM, David Liu via swift-users &lt;swift-users at swift.org&gt; wrote:<br>&gt; <br>&gt; I am getting errors compiling the toolchain from the tip of master. <br>&gt; Specifically inside of stdlib/SDK/.., it has some syntax issue which leads to compilation failure.<br>&gt; I did a swift/utils/update-checkout then swift/utils/build-toolchain.<br>&gt; I see the CI builds are green, am I out of sync some where?  Any help would be much appreciated.<br>&gt; <br>&gt; Thanks<br>&gt; <br>&gt; Dave<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160804/97580cd8/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/f46669a21939310a6abc8926026de34e?s=50"></div><header><strong>build-toolchain failing</strong> from <string>David Liu</string> &lt;david.yang.liu at gmail.com&gt;<p>August  4, 2016 at 02:00:00pm</p></header><div class="content"><p>Thanks Mishal!<br></p><p>My fault I did not install the latests Xcode, thanks again for the help!<br>Everything is building fine now.<br></p><p>I do have another question was wondering if you had any tips.<br>I am currently debugging the toolchain via REPL, creating a test function<br>and setting a break point<br>1&gt; func test(){<br>2&gt;   Array&lt;Int&gt;.myFunc()<br>3&gt; }<br>e.g (:b 2) and then stepping in to the std lib functions.<br>The problem I am facing is that i am not able to figure out how to set a<br>break point on a std lib function that i have modified with out stepping in<br>from the test function. I would like to be able to set a break point  :b<br>Array.swift.gyb:809 with out having to step in from the test function in<br>the REPL. When i try i get no locations.<br>4&gt; :b Array.swift.gyb:800<br>Breakpoint 1: no locations (pending)<br></p><p>Any help is much appreciated, this would help speed up debugging time<br>significantly.<br></p><p>Cheers<br></p><p>Dave<br></p><p><br></p><p><br></p><p>On Thu, Aug 4, 2016 at 10:45 AM, Mishal Shah &lt;mishal_shah at apple.com&gt; wrote:<br></p><p>&gt; Hi David,<br>&gt;<br>&gt; Which version of Xcode are you using? We now require Xcode 8 Beta 4 to be<br>&gt; able to build swift. Also, please provide full error message.<br>&gt;<br>&gt; Thanks,<br>&gt; Mishal Shah<br>&gt;<br>&gt; On Aug 4, 2016, at 2:00 AM, David Liu via swift-users &lt;<br>&gt; swift-users at swift.org&gt; wrote:<br>&gt;<br>&gt; I am getting errors compiling the toolchain from the tip of master.<br>&gt; Specifically inside of stdlib/SDK/.., it has some syntax issue which leads<br>&gt; to compilation failure.<br>&gt; I did a swift/utils/update-checkout then swift/utils/build-toolchain.<br>&gt; I see the CI builds are green, am I out of sync some where?  Any help<br>&gt; would be much appreciated.<br>&gt;<br>&gt; Thanks<br>&gt;<br>&gt; Dave<br>&gt; _______________________________________________<br>&gt; swift-users mailing list<br>&gt; swift-users at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-users<br>&gt;<br>&gt;<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-users/attachments/20160804/64bb60da/attachment.html&gt;<br></p></div></li></ul></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

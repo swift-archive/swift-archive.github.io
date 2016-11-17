@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Should Swift apply &quot;statement scope&quot; for ARC</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>September 22, 2016 at 06:00:00pm</p></header><div class="content"><p>on Thu Sep 22 2016, John Holdsworth &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; On 22 Sep 2016, at 23:57, Michael Gottesman &lt;mgottesman at apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt;&gt; As a result the following transfer of a Java instance always worked:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;     init(imageProducer:ImageProducer) {<br>&gt;<br>&gt;&gt;&gt;         let supr = CanvasBase()<br>&gt;&gt;&gt;         super.init( javaObject: supr.javaObject )<br>&gt;&gt;&gt;         image = createImage(imageProducer)<br>&gt;&gt;&gt;     }<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; But the following only worked for debug compiles:<br>&gt;&gt;&gt; <br>&gt;&gt;&gt;     init(imageProducer:ImageProducer) {<br>&gt;&gt;&gt;         super.init( javaObject: CanvasBase().javaObject )<br>&gt;&gt;&gt;         image = createImage(imageProducer)<br>&gt;&gt;&gt;     }<br>&gt;&gt;&gt; <br>&gt;&gt;&gt; Felt like a bit of a bear trap is all. Statement scope would avoid problems like this.<br>&gt;&gt; <br>&gt;&gt; You are thinking about this the inverse way. That the first case<br>&gt;&gt; works is an artifact of the optimizer failing to do a good enough<br>&gt;&gt; job. Future improved ARC optimization can cause both to fail.<br>&gt;<br>&gt; Were this the case I think it would be a step in the wrong direction. Swift is getting<br>&gt; very eager at deallocating objects hence all the &quot;withXYZ()&quot; methods of late which<br>&gt; seem like noise to me. Certainly, having something perform differently from debug<br>&gt; to release builds was not a feature! Viva la Statement Scope which solves all this.<br></p><p>Having had a background in C++, where that rule is de rigeur, and after<br>working on its core language definition including move semantics, I am<br>*really* happy we&#39;re not making the same mistake in Swift.<br></p><p>The lack of such a guarantee, which is very seldom actually useful<br>anyhow, is what allows us to turn costly copies (with associated<br>refcount traffic and, often CoW allocation and copying fallout) into<br>moves, which are practically free.  Adopting it would basically kill our<br>performance story for CoW.<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

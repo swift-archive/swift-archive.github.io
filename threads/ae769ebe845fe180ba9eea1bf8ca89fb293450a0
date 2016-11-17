@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/05540cd6be96706f76aa66a4519f7db9?s=50"></div><header><strong>Git Branch support</strong> from <string>Ankit Agarwal</string> &lt;ankit at ankit.im&gt;<p>December  5, 2015 at 07:00:00pm</p></header><div class="content"><p>Hi,<br></p><p>Is pointing to a branch instead of version for a package in scope of SPM?<br>if it is, I&#39;d love to try to implement it<br></p><p>-- <br>Ankit<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-build-dev/attachments/20151205/ae7650a0/attachment.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/58e2591737c75b7700b11f23381b9590?s=50"></div><header><strong>Git Branch support</strong> from <string>Rick Ballard</string> &lt;rballard at apple.com&gt;<p>December  7, 2015 at 02:00:00pm</p></header><div class="content"><p>&gt; On Dec 5, 2015, at 5:59 AM, Ankit Agarwal &lt;ankit at ankit.im&gt; wrote:<br>&gt; <br>&gt; Hi,<br>&gt; <br>&gt; Is pointing to a branch instead of version for a package in scope of SPM? <br>&gt; if it is, I&#39;d love to try to implement it<br></p><p>Hi Ankit,<br></p><p>This is in scope, though not yet designed. Prior to anyone working on an implementation, we should agree on a design for how you&#39;d do this. While this isn&#39;t at the top of our priority list at the moment, we&#39;d welcome both design contributions and eventual implementation.<br></p><p>If you&#39;d like to put a proposal together for this, please see the Swift evolution process at https://github.com/apple/swift-evolution/blob/master/process.md. We&#39;d be happy to discuss this here as part of your process for putting a proposal together. Some things to think about in this area are:<br></p><p>– How should refs (branches or tags) that aren&#39;t simple version numbers be specified?<br></p><p>– Right now we require you to tag something as a versioned &quot;release&quot;. Should we require that you tag a branch before someone can make a package depend on it? It could be convenient to be able to just depend on a branch, but the meaning of depending on a branch changes over time as more commits come in. Is it harmful to allow packages to depend on something that&#39;s not an identified commit?<br></p><p>	– Note that we have yet to design our security story (https://github.com/apple/swift-package-manager/blob/master/Documentation/PackageManagerCommunityProposal.md#security-and-signing); what we settle on there might require dependencies to be specified as a specific tagged commit, so that it can be signed.<br></p><p>– Should it be possible to override a package&#39;s dependency to use a different branch, without having to modify and commit a change to that package&#39;s Package.swift?<br></p><p>– We may want to design a way for packages to support different versions of the Swift language, as the language continues to change – e.g. a branch of the package for the last released swift vs the current under development swift snapshot. Is supporting dependencies on package branches a part of how we&#39;ll do that?<br></p><p>Thanks,<br></p><p>	- Rick<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

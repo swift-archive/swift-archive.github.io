@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/552a3e0dcef60ac896560e0c8f4baf5b?s=50"></div><header><strong>How to build a CLI tool which links a Swift framework? (OSX)</strong> from <string>Karl</string> &lt;razielim at gmail.com&gt;<p>August 25, 2016 at 12:00:00pm</p></header><div class="content"><p>Hi<br></p><p>I’ve got a cross-platform Swift framework which is used in a project, and I want to make a CLI tool which also uses it. I’m having a problem getting the framework and CLI tool to work together, because of the Swift standard libraries:<br></p><p>[1] If I just create a new CLI app and link it to my framework (setting rpath for the CLI app to “@executable_path” so it can find MyFramework sitting adjacent to it), the first error I receive is:<br></p><p>dyld: Library not loaded: @rpath/libswiftAppKit.dylib<br>  Referenced from: /blah/&lt;MyFramework&gt;.framework/Versions/A/&lt;MyFramework&gt;<br>  Reason: image not found<br></p><p>OK, that’s fair enough - the rpath is set to ../Frameworks (because &lt;MyFramework&gt; is assuming it will be embedded), but the CLI tool isn’t a package and can’t embed anything. So let’s help it by going to Xcode and selecting “Always Embed Swift Standard Libraries” for the framework.<br></p><p>[2] Now it can find the libraries, but the dynamic linker complains about duplicate definitions. The application doesn’t actually work because it trips up an assertion:<br></p><p>objc[99642]: Class _SwiftNativeNSDataBase is implemented in both /blah/&lt;MyFramework&gt;.framework/Versions/A/Frameworks/libswiftCore.dylib (0x109d7e488) and /blah/MyApp (0x109444350). One of the two will be used. Which one is undefined.<br>objc[99642]: Class _SwiftNativeNSCharacterSetBase is implemented in both /blah/&lt;MyFramework&gt;.framework/Versions/A/Frameworks/libswiftCore.dylib (0x109d7e4d8) and /blah/MyApp (0x1094443a0). One of the two will be used. Which one is undefined.<br>objc[99642]: Class _SwiftNativeNSIndexSetBase is implemented in both /blah/&lt;MyFramework&gt;.framework/Versions/A/Frameworks/libswiftCore.dylib (0x109d7e528) and /blah/MyApp (0x1094443f0). One of the two will be used. Which one is undefined.<br></p><p>Assertion failed: (registered == c &amp;&amp; &quot;objc_readClassPair failed to instantiate the class in-place&quot;), function swift_instantiateObjCClass, file /Spring/Projects/3rdParty/OpenSource/Apple/swift/stdlib/public/runtime/SwiftObject.mm, line 1273.<br></p><p>— <br></p><p>So what I’d like to know is — is there a way for this to work? <br></p><p>The CLI app itself embeds the standard libraries, and the framework wants to dynamically link them. I can’t tell the framework not to dynamically load the libraries, and I also can’t make the framework in to a static library, because that’s not supported with Swift (yet?).<br></p><p>The only workaround I can think of is compiling the framework source files directly in to the CLI app. The downside is that it’s more work to manage and isn’t easily scalable to more CLI tools. Do we have anything better?<br></p><p>Thanks<br></p><p>Karl<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/2bc666e29724cd3bdf46b6cbbe4a07bb?s=50"></div><header><strong>How to build a CLI tool which links a Swift framework? (OSX)</strong> from <string>Quinn &quot;The Eskimo!&quot;</string> &lt;eskimo1 at apple.com&gt;<p>August 25, 2016 at 05:00:00pm</p></header><div class="content"><p>On 25 Aug 2016, at 11:28, Karl via swift-users &lt;swift-users at swift.org&gt; wrote:<br></p><p>&gt; I’m having a problem getting the framework and CLI tool to work together, because of the Swift standard libraries …<br></p><p>Yep, I know this problem well.<br></p><p>What I do is use Xcode to create an app target, remove all the app-specific stuff from that, add then a `main.swift`, and add my command line code to that.  If I need to provide easy access to the ‘tool’ from Terminal, a quick alias or symlink will do the trick.<br></p><p>Share and Enjoy <br>--<br>Quinn &quot;The Eskimo!&quot;                    &lt;http://www.apple.com/developer/&gt;<br>Apple Developer Relations, Developer Technical Support, Core OS/Hardware<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

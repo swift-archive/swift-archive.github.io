@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Proposal: Filter split extension on Sequence to return tuple of sequences that meet criteria and that do not</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June  8, 2016 at 01:00:00pm</p></header><div class="content"><p>on Wed Jun 08 2016, gadiraju praneeth &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Many times, I came across a scenario where I had to filter an array with a<br>&gt; condition and filter the same array with opposite of that condition. For<br>&gt; example:<br>&gt;<br>&gt; let values = [2, 4, 3, 5, 6, 9]<br>&gt;<br>&gt; let divisibleByTwo = values.filter { $0 % 2 == 0 }<br>&gt; let notDivisibleByTwo = values.filter { $0 % 2 != 0 }<br>&gt;<br>&gt; Is there a way currently where we can filter the array into two arrays<br>&gt; based on a condition?<br></p><p>Well, you need a stable partition for this if you care about ordering<br>(see<br>https://github.com/apple/swift/blob/master/test/Prototypes/Algorithms.swift#L299)<br>but then you can do <br></p><p>var parts = values<br>let mid = values.stablePartition { $0 % 2 == 0 }<br>let divisibleByTwo = parts.prefix(upTo: mid)<br>let notDivisibleByTwo = parts.suffix(from: mid)<br></p><p>Nate Cook has an enhancement to the result of stablyPartitioned in that<br>prototype that would let you write:<br></p><p>  let parts = values.stablyPartitioned { $0 % 2 == 0 }<br>  let divisibleByTwo = parts.prefix(upTo: parts.partitionPoint)<br>  let notDivisibleByTwo = parts.suffix(from: parts.partitionPoint)<br></p><p><br>&gt; If not how about something like a filterSplit function where we get a tuple<br>&gt; of values:<br>&gt;<br>&gt; values.filterSplit { $0 % 2 == 0 } = ([2,4,6], [3,5,9])<br>&gt;<br>&gt; I have implemented this in our project and wanted to get your thoughts on it<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

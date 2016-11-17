@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/c4fe988326eed161b989d0c5521cb105?s=50"></div><header><strong>Mailing list flakiness</strong> from <string>Jordan Rose</string> &lt;jordan_rose at apple.com&gt;<p>September  1, 2016 at 01:00:00pm</p></header><div class="content"><p>Hey, all. You might have noticed messages being dropped or taking a long time to get through on the swift.org mailing lists. The story is that the configuration for our outbound mail server changed on Tuesday, but we didn&#39;t get around to updating it until Wednesday. We think the system is just catching up at this point and should be back to normal by the end of the week, but we&#39;ll continue to investigate.<br></p><p>(Preemptive &quot;this is why swift-evolution should use a forum site instead of mailing lists&quot;. There, now you don&#39;t have to say it.)<br></p><p>Sorry for the trouble,<br>Jordan<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/cce5c4aaa87dd6df9c22ede21d5d1ed6?s=50"></div><header><strong>Mailing list flakiness</strong> from <string>Adrian Zubarev</string> &lt;adrian.zubarev at devandartist.com&gt;<p>September  1, 2016 at 10:00:00pm</p></header><div class="content"><p>😆 Keep it rolling.<br></p><p><br></p><p>-- <br>Adrian Zubarev<br>Sent with Airmail<br></p><p>Am 1. September 2016 um 22:35:46, Jordan Rose via swift-evolution (swift-evolution at swift.org) schrieb:<br></p><p>Hey, all. You might have noticed messages being dropped or taking a long time to get through on the swift.org mailing lists. The story is that the configuration for our outbound mail server changed on Tuesday, but we didn&#39;t get around to updating it until Wednesday. We think the system is just catching up at this point and should be back to normal by the end of the week, but we&#39;ll continue to investigate.<br></p><p>(Preemptive &quot;this is why swift-evolution should use a forum site instead of mailing lists&quot;. There, now you don&#39;t have to say it.)<br></p><p>Sorry for the trouble,<br>Jordan<br>_______________________________________________<br>swift-evolution mailing list<br>swift-evolution at swift.org<br>https://lists.swift.org/mailman/listinfo/swift-evolution<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160901/2b1e6471/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

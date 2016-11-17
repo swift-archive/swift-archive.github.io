@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>[swift-evolution-announce] [Accepted] SE-0115: Rename Literal Syntax Protocols</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>July 12, 2016 at 10:00:00am</p></header><div class="content"><p>on Mon Jul 11 2016, Robert Widmann &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Does this one have an SR number yet?  It would make for a fantastic starter bug.<br></p><p>Not that I know of.<br></p><p>&gt;&gt; On Jul 11, 2016, at 4:16 PM, Chris Lattner &lt;clattner at apple.com&gt; wrote:<br>&gt;&gt; <br>&gt;&gt; Proposal Link: https://github.com/apple/swift-evolution/blob/master/proposals/0115-literal-syntax-protocols.md<br>&gt;&gt; <br>&gt;&gt; The review of &quot;SE-0115: Rename Literal Syntax Protocols &quot; ran from Active review July 1...7. The proposal has been *accepted*:<br>&gt;&gt; <br>&gt;&gt; The community and core team agree that this proposal is a better set<br>&gt;&gt; of names for these protocols.  The core team agrees with the<br>&gt;&gt; community sentiment that “By” is better than “As” in the protocol<br>&gt;&gt; names, and has accepted the proposal with this revision.<br>&gt;&gt; <br>&gt;&gt; Thank you to Matthew Johnson and many others for driving this discussion forward!<br>&gt;&gt; <br>&gt;&gt; -Chris Lattner<br>&gt;&gt; Review Manager<br>&gt;&gt; <br>&gt;&gt; <br>&gt;&gt; _______________________________________________<br>&gt;&gt; swift-evolution-announce mailing list<br>&gt;&gt; swift-evolution-announce at swift.org<br>&gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution-announce<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>Dave<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/60dcb74d816e29b2aa6b9c0b5969670e?s=50"></div><header><strong>[swift-evolution-announce] [Accepted] SE-0115: Rename Literal Syntax Protocols</strong> from <string>Xiaodi Wu</string> &lt;xiaodi.wu at gmail.com&gt;<p>July 12, 2016 at 03:00:00pm</p></header><div class="content"><p>...I&#39;ll go ahead and file one.<br></p><p>On Tue, Jul 12, 2016 at 12:17 PM, Dave Abrahams via swift-evolution &lt;<br>swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;<br>&gt; on Mon Jul 11 2016, Robert Widmann &lt;swift-evolution at swift.org&gt; wrote:<br>&gt;<br>&gt; &gt; Does this one have an SR number yet?  It would make for a fantastic<br>&gt; starter bug.<br>&gt;<br>&gt; Not that I know of.<br>&gt;<br>&gt; &gt;&gt; On Jul 11, 2016, at 4:16 PM, Chris Lattner &lt;clattner at apple.com&gt; wrote:<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; Proposal Link:<br>&gt; https://github.com/apple/swift-evolution/blob/master/proposals/0115-literal-syntax-protocols.md<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; The review of &quot;SE-0115: Rename Literal Syntax Protocols &quot; ran from<br>&gt; Active review July 1...7. The proposal has been *accepted*:<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; The community and core team agree that this proposal is a better set<br>&gt; &gt;&gt; of names for these protocols.  The core team agrees with the<br>&gt; &gt;&gt; community sentiment that “By” is better than “As” in the protocol<br>&gt; &gt;&gt; names, and has accepted the proposal with this revision.<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; Thank you to Matthew Johnson and many others for driving this<br>&gt; discussion forward!<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; -Chris Lattner<br>&gt; &gt;&gt; Review Manager<br>&gt; &gt;&gt;<br>&gt; &gt;&gt;<br>&gt; &gt;&gt; _______________________________________________<br>&gt; &gt;&gt; swift-evolution-announce mailing list<br>&gt; &gt;&gt; swift-evolution-announce at swift.org<br>&gt; &gt;&gt; https://lists.swift.org/mailman/listinfo/swift-evolution-announce<br>&gt; &gt;<br>&gt; &gt; _______________________________________________<br>&gt; &gt; swift-evolution mailing list<br>&gt; &gt; swift-evolution at swift.org<br>&gt; &gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>&gt; --<br>&gt; Dave<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br>&gt;<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160712/74bf4aab/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

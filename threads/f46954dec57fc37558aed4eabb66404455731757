@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/09b6a9b66eecf177910c8e47db78d8eb?s=50"></div><header><strong>SE-0003 Removing var from Function Parameters and Pattern Matching</strong> from <string>Chris Lattner</string> &lt;clattner at apple.com&gt;<p>January 28, 2016 at 10:00:00pm</p></header><div class="content"><p>The core team met to discuss SE-0003, and we have a new conclusion, described below.  As was mentioned on the swift-evolution discussion thread, this proposal is a bit unusual because it predates Swift open source, and thus didn’t go through the full evolution process, nor did it get the normal public review that would come with it.<br></p><p><br>The core team broke this proposal down into a few different cases, each of which came to a different conclusion.  To be clear up front, this is not a clear-cut topic, and there are opinions on all sides.  Here are the decisions the core team came to, along with some rationale:<br></p><p><br>Parameter Lists<br></p><p>‘var’ in a parameter list is problematic for a number of reasons:<br></p><p>- Parameter lists currently allow both “inout” and “var”, and real confusion occurs for some people learning swift that expect “var” to provide reference semantics.<br></p><p>- Parameter lists are not “patterns” in the language, so neither “let” nor “var” really make sense there.  Parameters were patterns in a much older swift design, but that was eliminated a long time ago and this aspect never got reconsidered.<br></p><p>- “var” in a parameter list is odd because it is an implementation detail being foisted on the interface to the function.  To be fair, we already have this with &quot;API names&quot; vs &quot;internal names”, but this is a bigger semantic implementation detail.<br></p><p><br>Conclusion: The core team decided that we should REMOVE “var” and “let” from parameter lists.<br></p><p>“var” in a parameter list is convenient sugar that defines away some minor boilerplate (the shadowing copy), however, the cost benefit tradeoff doesn’t pay enough to keep it.<br></p><p><br>Patterns<br></p><p>&quot;if var”, “for var”, &quot;if case var&quot; etc all use the pattern grammar (aka &quot;pattern matching&quot; and “destructuring” features described in TSPL).  We discussed whether to eliminate var from this, with much more mixed results:<br></p><p>- We currently have a duality across the language between var and let which is common, unifying, and works really well in practice.  Eliminating var from pattern matching would make the language less uniform, because patterns wouldn’t align with var/let declarations.<br></p><p>- Working in Swift *demands* that you get an early grasp on what value semantics means, and “var x = y” is always a copy of the value.  As such, based on the strong duality mentioned above, it is reasonable to expect people to learn that “if var x = y” produces a copy and not a reference binding.<br></p><p>- There certainly is confusion from people who expect “if var” to do a reference binding, despite the comment directly above.  However, we feel that this is more of a point-in-time confusion than the parameter case, given that the parameter case exposes the ‘var’ as part of the function signature.<br></p><p><br>Conclusion: The core team decided that we should KEEP “var” and “let” in patterns.<br></p><p><br>Case Patterns<br></p><p>We had an additional discussion focused specifically on whether it would make sense to ban var in case patterns, e.g.:<br>	case .Foo(var x):<br></p><p>- The core team agrees that this specific case is a common point of confusion, particularly because Swift doesn’t provide a way to get a mutable binding to the associated value in an enum.<br></p><p>- That said, making a special case for this would make Swift less regular.<br></p><p><br>Conclusions: <br>- The core team decided to KEEP “var” here.<br>- We will stop leading people into it by eliminating the &quot;note: change &#39;let&#39; to &#39;var&#39; to make it mutable” note that the compiler produces for patterns.<br></p><p>Eliminating the note allows users sufficiently knowledgable about Swift to keep using it, but people who just mash the “fixit” button to silence the compiler won’t get surprising behavior.<br></p><p>-Swift Core Team<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution-announce/attachments/20160128/f4691757/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

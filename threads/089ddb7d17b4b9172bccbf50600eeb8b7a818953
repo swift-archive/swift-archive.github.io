@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/27ca9066ad05bd8aa9ec366115f3cd38?s=50"></div><header><strong>[Review] SE-0054: Abolish ImplicitlyUnwrappedOptional type</strong> from <string>Kurt Werle</string> &lt;kurt at circlew.org&gt;<p>March 25, 2016 at 09:00:00am</p></header><div class="content"><p>&gt;<br>&gt;         * What is your evaluation of the proposal?<br></p><p>Stuck on one point:<br></p><p>let x: Int! = 5<br>let y = x<br></p><p>I expect to be able to treat y exactly the same as I treat x.  Making y an<br>Int? is an [unpleasant] surprise.  But I don&#39;t think this kind of thing is<br>terribly common, so I think I could live with it.<br></p><p>Most of the rest of the discussion surrounds points I had never considered<br>and can&#39;t imagine using.  Having an array of [Type!], returning -&gt; Type! -<br>these things do not appeal to me.<br></p><p>        * Is the problem being addressed significant enough to warrant a<br>change to Swift?<br></p><p>No opinion<br></p><p>&gt;<br>        * Does this proposal fit well with the feel and direction of Swift?<br></p><p>No opinion<br></p><p>&gt;<br>        * If you have you used other languages or libraries with a similar<br>feature, how do you feel that this proposal compares to those?<br></p><p>N/A<br></p><p>        * How much effort did you put into your review? A glance, a quick<br>reading, or an in-depth study?<br></p><p>Read through the discussion<br></p><p>-- <br>kurt at CircleW.org<br>http://www.CircleW.org/kurt/<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160325/089d8953/attachment.html&gt;<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

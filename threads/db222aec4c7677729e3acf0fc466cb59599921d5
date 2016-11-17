@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>NSString.contains(_:) returns false for empty string argument</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>October  2, 2016 at 11:00:00am</p></header><div class="content"><p>on Mon Sep 05 2016, Ole Begemann &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt; Six weeks ago there was a discussion [1] (and a subsequent fix [2])<br>&gt; about the behavior of `String.hasPrefix(_:)` and<br>&gt; `String.hasSuffix(_:)` with empty string arguments. After the fix,<br>&gt; `str.hasPrefix(&quot;&quot;)` always returns `true`.<br>&gt;<br>&gt; This leads to inconsistent behavior with the `NSString.contains(_:)`<br>&gt; method, which returns `false` for an empty string argument:<br>&gt;<br>&gt;     let str = &quot;Hello&quot;<br>&gt;     str.contains(&quot;&quot;) // returns false<br>&gt;<br>&gt; If `contains` were part of the stdlib like `hasPrefix` and `hasSuffix`<br>&gt; are, I would consider this a bug. But `contains` comes from Foundation<br>&gt; and I&#39;m not sure how that changes things. Would it make sense to add a<br>&gt; variant of `contains(_:)` to the stdlib and fix the behavior there?<br></p><p>It might be worth doing something for Swift 3.1<br></p><p>&gt;<br>&gt; I&#39;m assuming it&#39;s too late for Swift 3 and it will be fixed with the<br>&gt; String remodeling in Swift 4 anyway, <br></p><p>That&#39;s my plan.<br></p><p>&gt; but I just noticed this and I thought I&#39;d ask.<br>&gt;<br>&gt; Ole<br>&gt;<br>&gt; [1]: https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160718/024630.html<br>&gt; [2]: https://bugs.swift.org/browse/SR-2131<br>&gt;<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-- <br>-Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/d53b7c5f9b5f5557b9082face9b632a0?s=50"></div><header><strong>Stdlib closure argument labels and parameter names</strong> from <string>Dave Abrahams</string> &lt;dabrahams at apple.com&gt;<p>June 27, 2016 at 03:00:00pm</p></header><div class="content"><p>on Fri Jun 24 2016, Anton Zhilin &lt;swift-evolution at swift.org&gt; wrote:<br></p><p>&gt;&gt; +100. I even want to brought the term-of-art argument here. IMO These <br>&gt;&gt; functions are expected to be called without any parameter names.<br>&gt;<br>&gt; That would probably be a good scenario, but core team needs to release <br>&gt; their grip on strictly following new naming conventions.<br></p><p>No such grip exists.  We prefer to follow the API guidelines where<br>possible, but this discussion is about figuring out what&#39;s right to do<br>for *these APIs*.<br></p><p>-- <br>Dave<br></p></div></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>

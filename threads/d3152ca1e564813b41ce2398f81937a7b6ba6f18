@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Swift Mailing List Archive</title>
+    <link rel="stylesheet" href="/css/app-13f065ae5e595562a5022c544e3b976c.css?vsn=d">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="/images/swift-d0237fc716ba0932a940049990beba1b.svg?vsn=d" height="70">
+      </header>
+
+      <p class="alert alert-info" role="alert"></p>
+      <p class="alert alert-danger" role="alert"></p>
+
+    </div> <!-- /container -->
+    <main role="main">
+<div class="comment-wrapper"><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/a69f91816dae5f787bd9f58ceb7b70bd?s=50"></div><header><strong>[Proposal] Switch Let</strong> from <string>Eduardo Mourey Lopez Ne</string> &lt;edmourey at icloud.com&gt;<p>May 18, 2016 at 10:00:00pm</p></header><div class="content"><p>Hi<br></p><p>I will like to make the proposal to allow a switch let, similar to a if let, this will avoid having to repeat every variable name<br></p><p>enum Barcode {<br>    case UPCA(Int, Int, Int, Int)<br>    case QRCode(String)<br>}<br>var productBarcode = Barcode.UPCA(8, 85909, 51226, 3)<br></p><p>//current:<br>switch productBarcode {<br>case .UPCA(let numberSystem, let manufacturer, let product, let check):<br>    print(&quot;UPC-A: \(numberSystem), \(manufacturer), \(product), \(check).&quot;)<br>case .QRCode(let productCode):<br>    print(&quot;QR code: \(productCode).&quot;)<br>}<br>//suggestion:<br>switch let p = productBarcode {<br>case .UPCA:<br>    print(&quot;UPC-A: \(p.numberSystem), \(p.manufacturer), \(p.product), \(p.check).&quot;)<br>case .QRCode:<br>    print(&quot;QR code: \(p.productCode).&quot;)<br>}<br>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160518/d3156f18/attachment-0001.html&gt;<br></p></div><ul class="comments"><li class="comment"><div class="avatar"><img src="https://www.gravatar.com/avatar/423beb7cfb5894f7b53623d6e515b01d?s=50"></div><header><strong>[Proposal] Switch Let</strong> from <string>Jed Lewison</string> &lt;jed.lewison at icloud.com&gt;<p>May 18, 2016 at 08:00:00pm</p></header><div class="content"><p>You can already do something pretty close to what you want:<br></p><p>enum Barcode {<br>    case UPCA(numberSystem: Int, manufacturer: Int, product: Int, check: Int)<br>    case QRCode(productCode: String)<br>}<br></p><p>var productBarcode = Barcode.UPCA(numberSystem: 8, manufacturer: 85909, product: 51226, check: 3)<br></p><p>switch productBarcode {<br>case .UPCA(let p):<br>    print(&quot;UPC-A: \(p.numberSystem), \(p.manufacturer), \(p.product), \(p.check).&quot;)<br>case .QRCode(let p):<br>    print(&quot;QR code: \(p.productCode).&quot;)<br>}<br></p><p>(Note that you need to label the tuple elements, or use p.0, p.1, etc.)<br></p><p>&gt; On May 18, 2016, at 8:28 PM, Eduardo Mourey Lopez Ne via swift-evolution &lt;swift-evolution at swift.org&gt; wrote:<br>&gt; <br>&gt; Hi<br>&gt; <br>&gt; I will like to make the proposal to allow a switch let, similar to a if let, this will avoid having to repeat every variable name<br>&gt; <br>&gt; enum Barcode {<br>&gt;     case UPCA(Int, Int, Int, Int)<br>&gt;     case QRCode(String)<br>&gt; }<br>&gt; var productBarcode = Barcode.UPCA(8, 85909, 51226, 3)<br>&gt; <br>&gt; //current:<br>&gt; switch productBarcode {<br>&gt; case .UPCA(let numberSystem, let manufacturer, let product, let check):<br>&gt;     print(&quot;UPC-A: \(numberSystem), \(manufacturer), \(product), \(check).&quot;)<br>&gt; case .QRCode(let productCode):<br>&gt;     print(&quot;QR code: \(productCode).&quot;)<br>&gt; }<br>&gt; //suggestion:<br>&gt; switch let p = productBarcode {<br>&gt; case .UPCA:<br>&gt;     print(&quot;UPC-A: \(p.numberSystem), \(p.manufacturer), \(p.product), \(p.check).&quot;)<br>&gt; case .QRCode:<br>&gt;     print(&quot;QR code: \(p.productCode).&quot;)<br>&gt; }<br>&gt; _______________________________________________<br>&gt; swift-evolution mailing list<br>&gt; swift-evolution at swift.org<br>&gt; https://lists.swift.org/mailman/listinfo/swift-evolution<br></p><p>-------------- next part --------------<br>An HTML attachment was scrubbed...<br>URL: &lt;https://lists.swift.org/pipermail/swift-evolution/attachments/20160518/ec07ddd8/attachment.html&gt;<br></p></div></li></ul></li></ul></div>    </main>
+    <script src="/js/app-c283ee129de63ad743722e9511e67a5d.js?vsn=d"></script>
+  </body>
+  <footer>
+    <p>Swift and the Swift logo are trademarks of Apple Inc.</p>
+  </footer>
+</html>
